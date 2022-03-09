@@ -51,24 +51,24 @@ namespace SwRebellionEditor
         private NumericUpDown bombardmentMod;
         private Label bombardLabel;
         private GroupBox wepFPGroup;
-        private NumericUpDown laserRanNum;
-        private NumericUpDown fpArc12Num;
-        private NumericUpDown fpArc9Num;
-        private NumericUpDown fpArc6Num;
-        private NumericUpDown ionRanNum;
-        private NumericUpDown fpArc11Num;
-        private NumericUpDown fpArc8Num;
-        private NumericUpDown fpArc5Num;
-        private NumericUpDown turboRanNum;
-        private NumericUpDown fpArc2Num;
-        private NumericUpDown fpArc3Num;
+        private NumericUpDown laserCannonRange;
+        private NumericUpDown laserCannonStar;
+        private NumericUpDown laserCannonPort;
+        private NumericUpDown laserCannonAft;
+        private NumericUpDown ionCannonRange;
+        private NumericUpDown ionCannonStar;
+        private NumericUpDown ionCannonPort;
+        private NumericUpDown ionCannonAft;
+        private NumericUpDown turboLaserRange;
+        private NumericUpDown ionCannonFore;
+        private NumericUpDown laserCannonFore;
         private Label wepLaserLabel;
         private Label wepIonLabel;
         private Label wepTurboLabel;
-        private NumericUpDown fpArc10Num;
-        private NumericUpDown fpArc7Num;
-        private NumericUpDown fpArc4Num;
-        private NumericUpDown fpArc1Num;
+        private NumericUpDown turboLaserStar;
+        private NumericUpDown turboLaserPort;
+        private NumericUpDown turboLaserAft;
+        private NumericUpDown turboLaserFore;
         private Label wepRanLabel;
         private Label wepStarLabel;
         private Label wepPortLabel;
@@ -80,19 +80,19 @@ namespace SwRebellionEditor
         private TabPage tabPage3;
         private Label label31;
         private GroupBox groupBox13;
-        private NumericUpDown sumFPNum;
+        private NumericUpDown totalFirePower;
         private Label label16;
         private Label label30;
-        private NumericUpDown sumIonNum;
+        private NumericUpDown ionCannonTotalFirePower;
         private Label label29;
-        private NumericUpDown sumLaserNum;
-        private NumericUpDown sumTurboNum;
+        private NumericUpDown laserCannonTotalFirePower;
+        private NumericUpDown turboLaserTotalFirePower;
         private Label label26;
         private Label label28;
         private Label label27;
         private Label UnkownMoralHPlabel;
         private NumericUpDown unknownMoralHp;
-        private NumericUpDown unknown3Num;
+        private NumericUpDown unknown;
         private NumericUpDown textStraDllId;
         private NumericUpDown productionFacility;
         private Label unkown3Label;
@@ -101,13 +101,13 @@ namespace SwRebellionEditor
         private Label idLabel;
         private Label familyLabel;
         private Label secProdFacNumlabel;
-        private NumericUpDown secProdFacNum;
+        private NumericUpDown nextProductionFacility;
         private Label encyclopediaName;
         private PictureBox picture;
-        private NumericUpDown torpRanNum;
-        private NumericUpDown torpPowNum;
+        private NumericUpDown torpedoRange;
+        private NumericUpDown torpedoFore;
         private Label wepTorpLabel;
-        private NumericUpDown squadSizeNum;
+        private NumericUpDown squadronSize;
         private Label squadSizeLabel;
         private Label familyIdHexLabel;
         private Label fighterIdHexLabel;
@@ -167,31 +167,31 @@ namespace SwRebellionEditor
             this.researchDifficulty = new System.Windows.Forms.NumericUpDown();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.squadSizeNum = new System.Windows.Forms.NumericUpDown();
+            this.squadronSize = new System.Windows.Forms.NumericUpDown();
             this.wepFPGroup = new System.Windows.Forms.GroupBox();
-            this.torpRanNum = new System.Windows.Forms.NumericUpDown();
-            this.torpPowNum = new System.Windows.Forms.NumericUpDown();
+            this.torpedoRange = new System.Windows.Forms.NumericUpDown();
+            this.torpedoFore = new System.Windows.Forms.NumericUpDown();
             this.wepTorpLabel = new System.Windows.Forms.Label();
             this.bombardmentMod = new System.Windows.Forms.NumericUpDown();
-            this.laserRanNum = new System.Windows.Forms.NumericUpDown();
-            this.fpArc12Num = new System.Windows.Forms.NumericUpDown();
+            this.laserCannonRange = new System.Windows.Forms.NumericUpDown();
+            this.laserCannonStar = new System.Windows.Forms.NumericUpDown();
             this.bombardLabel = new System.Windows.Forms.Label();
-            this.fpArc9Num = new System.Windows.Forms.NumericUpDown();
-            this.fpArc6Num = new System.Windows.Forms.NumericUpDown();
-            this.ionRanNum = new System.Windows.Forms.NumericUpDown();
-            this.fpArc11Num = new System.Windows.Forms.NumericUpDown();
-            this.fpArc8Num = new System.Windows.Forms.NumericUpDown();
-            this.fpArc5Num = new System.Windows.Forms.NumericUpDown();
-            this.turboRanNum = new System.Windows.Forms.NumericUpDown();
-            this.fpArc2Num = new System.Windows.Forms.NumericUpDown();
-            this.fpArc3Num = new System.Windows.Forms.NumericUpDown();
+            this.laserCannonPort = new System.Windows.Forms.NumericUpDown();
+            this.laserCannonAft = new System.Windows.Forms.NumericUpDown();
+            this.ionCannonRange = new System.Windows.Forms.NumericUpDown();
+            this.ionCannonStar = new System.Windows.Forms.NumericUpDown();
+            this.ionCannonPort = new System.Windows.Forms.NumericUpDown();
+            this.ionCannonAft = new System.Windows.Forms.NumericUpDown();
+            this.turboLaserRange = new System.Windows.Forms.NumericUpDown();
+            this.ionCannonFore = new System.Windows.Forms.NumericUpDown();
+            this.laserCannonFore = new System.Windows.Forms.NumericUpDown();
             this.wepLaserLabel = new System.Windows.Forms.Label();
             this.wepIonLabel = new System.Windows.Forms.Label();
             this.wepTurboLabel = new System.Windows.Forms.Label();
-            this.fpArc10Num = new System.Windows.Forms.NumericUpDown();
-            this.fpArc7Num = new System.Windows.Forms.NumericUpDown();
-            this.fpArc4Num = new System.Windows.Forms.NumericUpDown();
-            this.fpArc1Num = new System.Windows.Forms.NumericUpDown();
+            this.turboLaserStar = new System.Windows.Forms.NumericUpDown();
+            this.turboLaserPort = new System.Windows.Forms.NumericUpDown();
+            this.turboLaserAft = new System.Windows.Forms.NumericUpDown();
+            this.turboLaserFore = new System.Windows.Forms.NumericUpDown();
             this.wepRanLabel = new System.Windows.Forms.Label();
             this.wepStarLabel = new System.Windows.Forms.Label();
             this.wepPortLabel = new System.Windows.Forms.Label();
@@ -208,19 +208,19 @@ namespace SwRebellionEditor
             this.label1 = new System.Windows.Forms.Label();
             this.label31 = new System.Windows.Forms.Label();
             this.groupBox13 = new System.Windows.Forms.GroupBox();
-            this.sumFPNum = new System.Windows.Forms.NumericUpDown();
+            this.totalFirePower = new System.Windows.Forms.NumericUpDown();
             this.label16 = new System.Windows.Forms.Label();
             this.label30 = new System.Windows.Forms.Label();
-            this.sumIonNum = new System.Windows.Forms.NumericUpDown();
+            this.ionCannonTotalFirePower = new System.Windows.Forms.NumericUpDown();
             this.label29 = new System.Windows.Forms.Label();
-            this.sumLaserNum = new System.Windows.Forms.NumericUpDown();
-            this.sumTurboNum = new System.Windows.Forms.NumericUpDown();
+            this.laserCannonTotalFirePower = new System.Windows.Forms.NumericUpDown();
+            this.turboLaserTotalFirePower = new System.Windows.Forms.NumericUpDown();
             this.label26 = new System.Windows.Forms.Label();
             this.label28 = new System.Windows.Forms.Label();
             this.label27 = new System.Windows.Forms.Label();
             this.UnkownMoralHPlabel = new System.Windows.Forms.Label();
             this.unknownMoralHp = new System.Windows.Forms.NumericUpDown();
-            this.unknown3Num = new System.Windows.Forms.NumericUpDown();
+            this.unknown = new System.Windows.Forms.NumericUpDown();
             this.textStraDllId = new System.Windows.Forms.NumericUpDown();
             this.productionFacility = new System.Windows.Forms.NumericUpDown();
             this.unkown3Label = new System.Windows.Forms.Label();
@@ -229,7 +229,7 @@ namespace SwRebellionEditor
             this.idLabel = new System.Windows.Forms.Label();
             this.familyLabel = new System.Windows.Forms.Label();
             this.secProdFacNumlabel = new System.Windows.Forms.Label();
-            this.secProdFacNum = new System.Windows.Forms.NumericUpDown();
+            this.nextProductionFacility = new System.Windows.Forms.NumericUpDown();
             this.Open = new System.Windows.Forms.Button();
             this.SaveAs = new System.Windows.Forms.Button();
             this.Cancel = new System.Windows.Forms.Button();
@@ -237,63 +237,61 @@ namespace SwRebellionEditor
             this.encyclopediaName = new System.Windows.Forms.Label();
             this.selector = new System.Windows.Forms.TrackBar();
             this.picture = new System.Windows.Forms.PictureBox();
-
+            this.hyperdriveGroup.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.hyperdriveBackup)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.hyperdrivePrimary)).BeginInit();
+            this.sublightGroup.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.sublightManoeuvrability)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.sublightSpeed)).BeginInit();
+            this.BasicGroup.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.detectionRating)).BeginInit();
+            this.shieldGroup.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.shieldsMaxCapacity)).BeginInit();
+            this.buildByGroup.SuspendLayout();
+            this.costsGroup.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.constructionCost)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.maintenanceCost)).BeginInit();
+            this.researchGroup.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.researchOrder)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.researchDifficulty)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.squadSizeNum)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.torpRanNum)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.torpPowNum)).BeginInit();
+            this.tabControl1.SuspendLayout();
+            this.tabPage1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.squadronSize)).BeginInit();
+            this.wepFPGroup.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.torpedoRange)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.torpedoFore)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bombardmentMod)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.laserRanNum)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.fpArc12Num)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.fpArc9Num)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.fpArc6Num)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ionRanNum)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.fpArc11Num)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.fpArc8Num)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.fpArc5Num)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.turboRanNum)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.fpArc2Num)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.fpArc3Num)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.fpArc10Num)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.fpArc7Num)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.fpArc4Num)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.fpArc1Num)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.laserCannonRange)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.laserCannonStar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.laserCannonPort)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.laserCannonAft)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ionCannonRange)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ionCannonStar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ionCannonPort)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ionCannonAft)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.turboLaserRange)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ionCannonFore)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.laserCannonFore)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.turboLaserStar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.turboLaserPort)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.turboLaserAft)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.turboLaserFore)).BeginInit();
+            this.tabPage2.SuspendLayout();
+            this.tabPage3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.fighterId)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.sumFPNum)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.sumIonNum)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.sumLaserNum)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.sumTurboNum)).BeginInit();
+            this.groupBox13.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.totalFirePower)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ionCannonTotalFirePower)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.laserCannonTotalFirePower)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.turboLaserTotalFirePower)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.unknownMoralHp)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.unknown3Num)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.unknown)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textStraDllId)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.productionFacility)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.familyId)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.secProdFacNum)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nextProductionFacility)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.selector)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picture)).BeginInit();
-
-            this.hyperdriveGroup.SuspendLayout();
-            this.sublightGroup.SuspendLayout();
-            this.BasicGroup.SuspendLayout();
-            this.shieldGroup.SuspendLayout();
-            this.buildByGroup.SuspendLayout();
-            this.costsGroup.SuspendLayout();
-            this.researchGroup.SuspendLayout();
-            this.tabControl1.SuspendLayout();
-            this.tabPage1.SuspendLayout();
-            this.wepFPGroup.SuspendLayout();
-            this.tabPage2.SuspendLayout();
-            this.tabPage3.SuspendLayout();
-            this.groupBox13.SuspendLayout();
             this.SuspendLayout();
             // 
             // hyperdriveGroup
@@ -311,7 +309,7 @@ namespace SwRebellionEditor
             this.hyperdriveGroup.TabStop = false;
             this.hyperdriveGroup.Text = "HyperDrive";
             // 
-            // hyper2Num
+            // hyperdriveBackup
             // 
             this.hyperdriveBackup.Location = new System.Drawing.Point(125, 46);
             this.hyperdriveBackup.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -320,11 +318,11 @@ namespace SwRebellionEditor
             0,
             0,
             0});
-            this.hyperdriveBackup.Name = "hyper2Num";
+            this.hyperdriveBackup.Name = "hyperdriveBackup";
             this.hyperdriveBackup.Size = new System.Drawing.Size(59, 23);
             this.hyperdriveBackup.TabIndex = 12;
             this.hyperdriveBackup.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.hyperdriveBackup.ValueChanged += new System.EventHandler(this.updateHyper2Num);
+            this.hyperdriveBackup.ValueChanged += new System.EventHandler(this.hyperdriveBackup_ValueChanged);
             // 
             // hyperLabel
             // 
@@ -346,7 +344,7 @@ namespace SwRebellionEditor
             this.hyper2Label.TabIndex = 0;
             this.hyper2Label.Text = "Backup";
             // 
-            // hyperNum
+            // hyperdrivePrimary
             // 
             this.hyperdrivePrimary.Location = new System.Drawing.Point(125, 16);
             this.hyperdrivePrimary.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -355,11 +353,11 @@ namespace SwRebellionEditor
             0,
             0,
             0});
-            this.hyperdrivePrimary.Name = "hyperNum";
+            this.hyperdrivePrimary.Name = "hyperdrivePrimary";
             this.hyperdrivePrimary.Size = new System.Drawing.Size(59, 23);
             this.hyperdrivePrimary.TabIndex = 11;
             this.hyperdrivePrimary.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.hyperdrivePrimary.ValueChanged += new System.EventHandler(this.updateHyperNum);
+            this.hyperdrivePrimary.ValueChanged += new System.EventHandler(this.hyperdrivePrimary_ValueChanged);
             // 
             // sublightGroup
             // 
@@ -386,7 +384,7 @@ namespace SwRebellionEditor
             this.manuverLabel.TabIndex = 0;
             this.manuverLabel.Text = "Manuverablity";
             // 
-            // maneuverNum
+            // sublightManoeuvrability
             // 
             this.sublightManoeuvrability.Location = new System.Drawing.Point(125, 46);
             this.sublightManoeuvrability.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -395,11 +393,11 @@ namespace SwRebellionEditor
             0,
             0,
             0});
-            this.sublightManoeuvrability.Name = "maneuverNum";
+            this.sublightManoeuvrability.Name = "sublightManoeuvrability";
             this.sublightManoeuvrability.Size = new System.Drawing.Size(59, 23);
             this.sublightManoeuvrability.TabIndex = 10;
             this.sublightManoeuvrability.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.sublightManoeuvrability.ValueChanged += new System.EventHandler(this.updateManeuverNum);
+            this.sublightManoeuvrability.ValueChanged += new System.EventHandler(this.sublightManoeuvrability_ValueChanged);
             // 
             // sublightLabel
             // 
@@ -411,7 +409,7 @@ namespace SwRebellionEditor
             this.sublightLabel.TabIndex = 0;
             this.sublightLabel.Text = "Sublight Speed";
             // 
-            // sublightNum
+            // sublightSpeed
             // 
             this.sublightSpeed.Location = new System.Drawing.Point(125, 16);
             this.sublightSpeed.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -420,11 +418,11 @@ namespace SwRebellionEditor
             0,
             0,
             0});
-            this.sublightSpeed.Name = "sublightNum";
+            this.sublightSpeed.Name = "sublightSpeed";
             this.sublightSpeed.Size = new System.Drawing.Size(59, 23);
             this.sublightSpeed.TabIndex = 9;
             this.sublightSpeed.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.sublightSpeed.ValueChanged += new System.EventHandler(this.updateSublightNum);
+            this.sublightSpeed.ValueChanged += new System.EventHandler(this.sublightSpeed_ValueChanged);
             // 
             // BasicGroup
             // 
@@ -439,7 +437,7 @@ namespace SwRebellionEditor
             this.BasicGroup.TabStop = false;
             this.BasicGroup.Text = "Basic Info";
             // 
-            // detectionNum
+            // detectionRating
             // 
             this.detectionRating.Location = new System.Drawing.Point(121, 50);
             this.detectionRating.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -448,7 +446,7 @@ namespace SwRebellionEditor
             0,
             0,
             0});
-            this.detectionRating.Name = "detectionNum";
+            this.detectionRating.Name = "detectionRating";
             this.detectionRating.Size = new System.Drawing.Size(59, 23);
             this.detectionRating.TabIndex = 5;
             this.detectionRating.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
@@ -457,7 +455,7 @@ namespace SwRebellionEditor
             0,
             0,
             0});
-            this.detectionRating.ValueChanged += new System.EventHandler(this.updateDetectionNum);
+            this.detectionRating.ValueChanged += new System.EventHandler(this.detectionRating_ValueChanged);
             // 
             // DetectionLabel
             // 
@@ -482,7 +480,7 @@ namespace SwRebellionEditor
             this.shieldGroup.TabStop = false;
             this.shieldGroup.Text = "Shields";
             // 
-            // shieldNum
+            // shieldsMaxCapacity
             // 
             this.shieldsMaxCapacity.Location = new System.Drawing.Point(125, 37);
             this.shieldsMaxCapacity.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -491,11 +489,11 @@ namespace SwRebellionEditor
             0,
             0,
             0});
-            this.shieldsMaxCapacity.Name = "shieldNum";
+            this.shieldsMaxCapacity.Name = "shieldsMaxCapacity";
             this.shieldsMaxCapacity.Size = new System.Drawing.Size(59, 23);
             this.shieldsMaxCapacity.TabIndex = 13;
             this.shieldsMaxCapacity.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.shieldsMaxCapacity.ValueChanged += new System.EventHandler(this.updateShieldNum);
+            this.shieldsMaxCapacity.ValueChanged += new System.EventHandler(this.shieldsMaxCapacity_ValueChanged);
             // 
             // shieldLabel
             // 
@@ -520,29 +518,29 @@ namespace SwRebellionEditor
             this.buildByGroup.TabStop = false;
             this.buildByGroup.Text = "Build by";
             // 
-            // rebelUnit
+            // isAllianceUnit
             // 
             this.isAllianceUnit.AutoSize = true;
             this.isAllianceUnit.Location = new System.Drawing.Point(7, 22);
             this.isAllianceUnit.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.isAllianceUnit.Name = "rebelUnit";
+            this.isAllianceUnit.Name = "isAllianceUnit";
             this.isAllianceUnit.Size = new System.Drawing.Size(93, 19);
             this.isAllianceUnit.TabIndex = 15;
             this.isAllianceUnit.Text = "Alliance Unit";
             this.isAllianceUnit.UseVisualStyleBackColor = true;
-            this.isAllianceUnit.CheckStateChanged += new System.EventHandler(this.updateRebelUnitCheck);
+            this.isAllianceUnit.CheckStateChanged += new System.EventHandler(this.isAllianceUnit_CheckStateChanged);
             // 
-            // empireUnit
+            // isEmpireUnit
             // 
             this.isEmpireUnit.AutoSize = true;
             this.isEmpireUnit.Location = new System.Drawing.Point(7, 48);
             this.isEmpireUnit.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.isEmpireUnit.Name = "empireUnit";
+            this.isEmpireUnit.Name = "isEmpireUnit";
             this.isEmpireUnit.Size = new System.Drawing.Size(94, 19);
             this.isEmpireUnit.TabIndex = 16;
             this.isEmpireUnit.Text = "Imperial Unit";
             this.isEmpireUnit.UseVisualStyleBackColor = true;
-            this.isEmpireUnit.CheckStateChanged += new System.EventHandler(this.updateEmpireUnitCheck);
+            this.isEmpireUnit.CheckStateChanged += new System.EventHandler(this.isEmpireUnit_CheckStateChanged);
             // 
             // costsGroup
             // 
@@ -569,7 +567,7 @@ namespace SwRebellionEditor
             this.conCostLabel.TabIndex = 0;
             this.conCostLabel.Text = "Construction";
             // 
-            // conCostNum
+            // constructionCost
             // 
             this.constructionCost.Location = new System.Drawing.Point(121, 17);
             this.constructionCost.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -578,7 +576,7 @@ namespace SwRebellionEditor
             0,
             0,
             0});
-            this.constructionCost.Name = "conCostNum";
+            this.constructionCost.Name = "constructionCost";
             this.constructionCost.Size = new System.Drawing.Size(59, 23);
             this.constructionCost.TabIndex = 2;
             this.constructionCost.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
@@ -587,7 +585,7 @@ namespace SwRebellionEditor
             0,
             0,
             0});
-            this.constructionCost.ValueChanged += new System.EventHandler(this.updateConCost);
+            this.constructionCost.ValueChanged += new System.EventHandler(this.constructionCost_ValueChanged);
             // 
             // maintCostLabel
             // 
@@ -599,7 +597,7 @@ namespace SwRebellionEditor
             this.maintCostLabel.TabIndex = 0;
             this.maintCostLabel.Text = "Maintenance";
             // 
-            // maintCostNum
+            // maintenanceCost
             // 
             this.maintenanceCost.Location = new System.Drawing.Point(121, 47);
             this.maintenanceCost.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -608,7 +606,7 @@ namespace SwRebellionEditor
             0,
             0,
             0});
-            this.maintenanceCost.Name = "maintCostNum";
+            this.maintenanceCost.Name = "maintenanceCost";
             this.maintenanceCost.Size = new System.Drawing.Size(59, 23);
             this.maintenanceCost.TabIndex = 3;
             this.maintenanceCost.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
@@ -617,7 +615,7 @@ namespace SwRebellionEditor
             0,
             0,
             0});
-            this.maintenanceCost.ValueChanged += new System.EventHandler(this.updateMaintCost);
+            this.maintenanceCost.ValueChanged += new System.EventHandler(this.maintenanceCost_ValueChanged);
             // 
             // researchGroup
             // 
@@ -634,15 +632,15 @@ namespace SwRebellionEditor
             this.researchGroup.TabStop = false;
             this.researchGroup.Text = "Research";
             // 
-            // researchNum
+            // researchOrder
             // 
             this.researchOrder.Location = new System.Drawing.Point(121, 22);
             this.researchOrder.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.researchOrder.Name = "researchNum";
+            this.researchOrder.Name = "researchOrder";
             this.researchOrder.Size = new System.Drawing.Size(59, 23);
             this.researchOrder.TabIndex = 7;
             this.researchOrder.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.researchOrder.ValueChanged += new System.EventHandler(this.updateResearchNum);
+            this.researchOrder.ValueChanged += new System.EventHandler(this.researchOrder_ValueChanged);
             // 
             // researchLabel
             // 
@@ -664,7 +662,7 @@ namespace SwRebellionEditor
             this.resDiffLabel.TabIndex = 0;
             this.resDiffLabel.Text = "Difficulty";
             // 
-            // resDiffNum
+            // researchDifficulty
             // 
             this.researchDifficulty.Location = new System.Drawing.Point(121, 55);
             this.researchDifficulty.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -673,11 +671,11 @@ namespace SwRebellionEditor
             0,
             0,
             0});
-            this.researchDifficulty.Name = "resDiffNum";
+            this.researchDifficulty.Name = "researchDifficulty";
             this.researchDifficulty.Size = new System.Drawing.Size(59, 23);
             this.researchDifficulty.TabIndex = 8;
             this.researchDifficulty.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.researchDifficulty.ValueChanged += new System.EventHandler(this.updateResDiffNum);
+            this.researchDifficulty.ValueChanged += new System.EventHandler(this.researchDifficulty_ValueChanged);
             // 
             // tabControl1
             // 
@@ -695,7 +693,7 @@ namespace SwRebellionEditor
             // 
             this.tabPage1.BackColor = System.Drawing.SystemColors.Control;
             this.tabPage1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.tabPage1.Controls.Add(this.squadSizeNum);
+            this.tabPage1.Controls.Add(this.squadronSize);
             this.tabPage1.Controls.Add(this.wepFPGroup);
             this.tabPage1.Controls.Add(this.squadSizeLabel);
             this.tabPage1.Location = new System.Drawing.Point(4, 24);
@@ -706,51 +704,51 @@ namespace SwRebellionEditor
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Weapons";
             // 
-            // squadSizeNum
+            // squadronSize
             // 
-            this.squadSizeNum.Location = new System.Drawing.Point(248, 279);
-            this.squadSizeNum.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.squadSizeNum.Maximum = new decimal(new int[] {
+            this.squadronSize.Location = new System.Drawing.Point(248, 279);
+            this.squadronSize.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.squadronSize.Maximum = new decimal(new int[] {
             9999,
             0,
             0,
             0});
-            this.squadSizeNum.Name = "squadSizeNum";
-            this.squadSizeNum.Size = new System.Drawing.Size(59, 23);
-            this.squadSizeNum.TabIndex = 44;
-            this.squadSizeNum.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.squadSizeNum.Value = new decimal(new int[] {
+            this.squadronSize.Name = "squadronSize";
+            this.squadronSize.Size = new System.Drawing.Size(59, 23);
+            this.squadronSize.TabIndex = 44;
+            this.squadronSize.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.squadronSize.Value = new decimal(new int[] {
             9999,
             0,
             0,
             0});
-            this.squadSizeNum.ValueChanged += new System.EventHandler(this.updateSquadSizeNum);
+            this.squadronSize.ValueChanged += new System.EventHandler(this.squadronSize_ValueChanged);
             // 
             // wepFPGroup
             // 
-            this.wepFPGroup.Controls.Add(this.torpRanNum);
-            this.wepFPGroup.Controls.Add(this.torpPowNum);
+            this.wepFPGroup.Controls.Add(this.torpedoRange);
+            this.wepFPGroup.Controls.Add(this.torpedoFore);
             this.wepFPGroup.Controls.Add(this.wepTorpLabel);
             this.wepFPGroup.Controls.Add(this.bombardmentMod);
-            this.wepFPGroup.Controls.Add(this.laserRanNum);
-            this.wepFPGroup.Controls.Add(this.fpArc12Num);
+            this.wepFPGroup.Controls.Add(this.laserCannonRange);
+            this.wepFPGroup.Controls.Add(this.laserCannonStar);
             this.wepFPGroup.Controls.Add(this.bombardLabel);
-            this.wepFPGroup.Controls.Add(this.fpArc9Num);
-            this.wepFPGroup.Controls.Add(this.fpArc6Num);
-            this.wepFPGroup.Controls.Add(this.ionRanNum);
-            this.wepFPGroup.Controls.Add(this.fpArc11Num);
-            this.wepFPGroup.Controls.Add(this.fpArc8Num);
-            this.wepFPGroup.Controls.Add(this.fpArc5Num);
-            this.wepFPGroup.Controls.Add(this.turboRanNum);
-            this.wepFPGroup.Controls.Add(this.fpArc2Num);
-            this.wepFPGroup.Controls.Add(this.fpArc3Num);
+            this.wepFPGroup.Controls.Add(this.laserCannonPort);
+            this.wepFPGroup.Controls.Add(this.laserCannonAft);
+            this.wepFPGroup.Controls.Add(this.ionCannonRange);
+            this.wepFPGroup.Controls.Add(this.ionCannonStar);
+            this.wepFPGroup.Controls.Add(this.ionCannonPort);
+            this.wepFPGroup.Controls.Add(this.ionCannonAft);
+            this.wepFPGroup.Controls.Add(this.turboLaserRange);
+            this.wepFPGroup.Controls.Add(this.ionCannonFore);
+            this.wepFPGroup.Controls.Add(this.laserCannonFore);
             this.wepFPGroup.Controls.Add(this.wepLaserLabel);
             this.wepFPGroup.Controls.Add(this.wepIonLabel);
             this.wepFPGroup.Controls.Add(this.wepTurboLabel);
-            this.wepFPGroup.Controls.Add(this.fpArc10Num);
-            this.wepFPGroup.Controls.Add(this.fpArc7Num);
-            this.wepFPGroup.Controls.Add(this.fpArc4Num);
-            this.wepFPGroup.Controls.Add(this.fpArc1Num);
+            this.wepFPGroup.Controls.Add(this.turboLaserStar);
+            this.wepFPGroup.Controls.Add(this.turboLaserPort);
+            this.wepFPGroup.Controls.Add(this.turboLaserAft);
+            this.wepFPGroup.Controls.Add(this.turboLaserFore);
             this.wepFPGroup.Controls.Add(this.wepRanLabel);
             this.wepFPGroup.Controls.Add(this.wepStarLabel);
             this.wepFPGroup.Controls.Add(this.wepPortLabel);
@@ -766,45 +764,45 @@ namespace SwRebellionEditor
             this.wepFPGroup.TabStop = false;
             this.wepFPGroup.Text = "Weapons FirePower";
             // 
-            // torpRanNum
+            // torpedoRange
             // 
-            this.torpRanNum.Location = new System.Drawing.Point(365, 135);
-            this.torpRanNum.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.torpRanNum.Maximum = new decimal(new int[] {
+            this.torpedoRange.Location = new System.Drawing.Point(365, 135);
+            this.torpedoRange.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.torpedoRange.Maximum = new decimal(new int[] {
             9999,
             0,
             0,
             0});
-            this.torpRanNum.Name = "torpRanNum";
-            this.torpRanNum.Size = new System.Drawing.Size(59, 23);
-            this.torpRanNum.TabIndex = 34;
-            this.torpRanNum.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.torpRanNum.Value = new decimal(new int[] {
+            this.torpedoRange.Name = "torpedoRange";
+            this.torpedoRange.Size = new System.Drawing.Size(59, 23);
+            this.torpedoRange.TabIndex = 34;
+            this.torpedoRange.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.torpedoRange.Value = new decimal(new int[] {
             9999,
             0,
             0,
             0});
-            this.torpRanNum.ValueChanged += new System.EventHandler(this.updateTorpRanNum);
+            this.torpedoRange.ValueChanged += new System.EventHandler(this.torpedoRange_ValueChanged);
             // 
-            // torpPowNum
+            // torpedoFore
             // 
-            this.torpPowNum.Location = new System.Drawing.Point(99, 135);
-            this.torpPowNum.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.torpPowNum.Maximum = new decimal(new int[] {
+            this.torpedoFore.Location = new System.Drawing.Point(99, 135);
+            this.torpedoFore.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.torpedoFore.Maximum = new decimal(new int[] {
             9999,
             0,
             0,
             0});
-            this.torpPowNum.Name = "torpPowNum";
-            this.torpPowNum.Size = new System.Drawing.Size(59, 23);
-            this.torpPowNum.TabIndex = 22;
-            this.torpPowNum.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.torpPowNum.Value = new decimal(new int[] {
+            this.torpedoFore.Name = "torpedoFore";
+            this.torpedoFore.Size = new System.Drawing.Size(59, 23);
+            this.torpedoFore.TabIndex = 22;
+            this.torpedoFore.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.torpedoFore.Value = new decimal(new int[] {
             9999,
             0,
             0,
             0});
-            this.torpPowNum.ValueChanged += new System.EventHandler(this.updateTorpPowNum);
+            this.torpedoFore.ValueChanged += new System.EventHandler(this.torpedoFore_ValueChanged);
             // 
             // wepTorpLabel
             // 
@@ -819,7 +817,7 @@ namespace SwRebellionEditor
             this.wepTorpLabel.Text = "Torpedo";
             this.wepTorpLabel.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // bombardNum
+            // bombardmentMod
             // 
             this.bombardmentMod.Location = new System.Drawing.Point(241, 182);
             this.bombardmentMod.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -828,7 +826,7 @@ namespace SwRebellionEditor
             0,
             0,
             0});
-            this.bombardmentMod.Name = "bombardNum";
+            this.bombardmentMod.Name = "bombardmentMod";
             this.bombardmentMod.Size = new System.Drawing.Size(59, 23);
             this.bombardmentMod.TabIndex = 35;
             this.bombardmentMod.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
@@ -837,49 +835,49 @@ namespace SwRebellionEditor
             0,
             0,
             0});
-            this.bombardmentMod.ValueChanged += new System.EventHandler(this.updateBombardNum);
+            this.bombardmentMod.ValueChanged += new System.EventHandler(this.bombardmentMod_ValueChanged);
             // 
-            // laserRanNum
+            // laserCannonRange
             // 
-            this.laserRanNum.Location = new System.Drawing.Point(365, 106);
-            this.laserRanNum.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.laserRanNum.Maximum = new decimal(new int[] {
+            this.laserCannonRange.Location = new System.Drawing.Point(365, 106);
+            this.laserCannonRange.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.laserCannonRange.Maximum = new decimal(new int[] {
             9999,
             0,
             0,
             0});
-            this.laserRanNum.Name = "laserRanNum";
-            this.laserRanNum.Size = new System.Drawing.Size(59, 23);
-            this.laserRanNum.TabIndex = 33;
-            this.laserRanNum.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.laserRanNum.Value = new decimal(new int[] {
+            this.laserCannonRange.Name = "laserCannonRange";
+            this.laserCannonRange.Size = new System.Drawing.Size(59, 23);
+            this.laserCannonRange.TabIndex = 33;
+            this.laserCannonRange.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.laserCannonRange.Value = new decimal(new int[] {
             9999,
             0,
             0,
             0});
-            this.laserRanNum.ValueChanged += new System.EventHandler(this.updateLaserRanNum);
+            this.laserCannonRange.ValueChanged += new System.EventHandler(this.laserCannonRange_ValueChanged);
             // 
-            // fpArc12Num
+            // laserCannonStar
             // 
-            this.fpArc12Num.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.fpArc12Num.Location = new System.Drawing.Point(299, 106);
-            this.fpArc12Num.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.fpArc12Num.Maximum = new decimal(new int[] {
+            this.laserCannonStar.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.laserCannonStar.Location = new System.Drawing.Point(299, 106);
+            this.laserCannonStar.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.laserCannonStar.Maximum = new decimal(new int[] {
             9999,
             0,
             0,
             0});
-            this.fpArc12Num.Name = "fpArc12Num";
-            this.fpArc12Num.Size = new System.Drawing.Size(59, 23);
-            this.fpArc12Num.TabIndex = 30;
-            this.fpArc12Num.TabStop = false;
-            this.fpArc12Num.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.fpArc12Num.Value = new decimal(new int[] {
+            this.laserCannonStar.Name = "laserCannonStar";
+            this.laserCannonStar.Size = new System.Drawing.Size(59, 23);
+            this.laserCannonStar.TabIndex = 30;
+            this.laserCannonStar.TabStop = false;
+            this.laserCannonStar.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.laserCannonStar.Value = new decimal(new int[] {
             9999,
             0,
             0,
             0});
-            this.fpArc12Num.ValueChanged += new System.EventHandler(this.updateFpArc12Num);
+            this.laserCannonStar.ValueChanged += new System.EventHandler(this.laserCannonStar_ValueChanged);
             // 
             // bombardLabel
             // 
@@ -894,197 +892,197 @@ namespace SwRebellionEditor
             this.bombardLabel.Text = "Bombardment Mod";
             this.bombardLabel.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // fpArc9Num
+            // laserCannonPort
             // 
-            this.fpArc9Num.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.fpArc9Num.Location = new System.Drawing.Point(232, 106);
-            this.fpArc9Num.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.fpArc9Num.Maximum = new decimal(new int[] {
+            this.laserCannonPort.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.laserCannonPort.Location = new System.Drawing.Point(232, 106);
+            this.laserCannonPort.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.laserCannonPort.Maximum = new decimal(new int[] {
             9999,
             0,
             0,
             0});
-            this.fpArc9Num.Name = "fpArc9Num";
-            this.fpArc9Num.Size = new System.Drawing.Size(59, 23);
-            this.fpArc9Num.TabIndex = 27;
-            this.fpArc9Num.TabStop = false;
-            this.fpArc9Num.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.fpArc9Num.Value = new decimal(new int[] {
+            this.laserCannonPort.Name = "laserCannonPort";
+            this.laserCannonPort.Size = new System.Drawing.Size(59, 23);
+            this.laserCannonPort.TabIndex = 27;
+            this.laserCannonPort.TabStop = false;
+            this.laserCannonPort.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.laserCannonPort.Value = new decimal(new int[] {
             9999,
             0,
             0,
             0});
-            this.fpArc9Num.ValueChanged += new System.EventHandler(this.updateFpArc9Num);
+            this.laserCannonPort.ValueChanged += new System.EventHandler(this.laserCannonPort_ValueChanged);
             // 
-            // fpArc6Num
+            // laserCannonAft
             // 
-            this.fpArc6Num.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.fpArc6Num.Location = new System.Drawing.Point(166, 106);
-            this.fpArc6Num.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.fpArc6Num.Maximum = new decimal(new int[] {
+            this.laserCannonAft.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.laserCannonAft.Location = new System.Drawing.Point(166, 106);
+            this.laserCannonAft.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.laserCannonAft.Maximum = new decimal(new int[] {
             9999,
             0,
             0,
             0});
-            this.fpArc6Num.Name = "fpArc6Num";
-            this.fpArc6Num.Size = new System.Drawing.Size(59, 23);
-            this.fpArc6Num.TabIndex = 24;
-            this.fpArc6Num.TabStop = false;
-            this.fpArc6Num.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.fpArc6Num.Value = new decimal(new int[] {
+            this.laserCannonAft.Name = "laserCannonAft";
+            this.laserCannonAft.Size = new System.Drawing.Size(59, 23);
+            this.laserCannonAft.TabIndex = 24;
+            this.laserCannonAft.TabStop = false;
+            this.laserCannonAft.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.laserCannonAft.Value = new decimal(new int[] {
             9999,
             0,
             0,
             0});
-            this.fpArc6Num.ValueChanged += new System.EventHandler(this.updateFpArc6Num);
+            this.laserCannonAft.ValueChanged += new System.EventHandler(this.laserCannonAft_ValueChanged);
             // 
-            // ionRanNum
+            // ionCannonRange
             // 
-            this.ionRanNum.Location = new System.Drawing.Point(365, 76);
-            this.ionRanNum.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.ionRanNum.Maximum = new decimal(new int[] {
+            this.ionCannonRange.Location = new System.Drawing.Point(365, 76);
+            this.ionCannonRange.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.ionCannonRange.Maximum = new decimal(new int[] {
             9999,
             0,
             0,
             0});
-            this.ionRanNum.Name = "ionRanNum";
-            this.ionRanNum.Size = new System.Drawing.Size(59, 23);
-            this.ionRanNum.TabIndex = 32;
-            this.ionRanNum.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.ionRanNum.Value = new decimal(new int[] {
+            this.ionCannonRange.Name = "ionCannonRange";
+            this.ionCannonRange.Size = new System.Drawing.Size(59, 23);
+            this.ionCannonRange.TabIndex = 32;
+            this.ionCannonRange.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.ionCannonRange.Value = new decimal(new int[] {
             9999,
             0,
             0,
             0});
-            this.ionRanNum.ValueChanged += new System.EventHandler(this.updateIonRanNum);
+            this.ionCannonRange.ValueChanged += new System.EventHandler(this.ionCannonRange_ValueChanged);
             // 
-            // fpArc11Num
+            // ionCannonStar
             // 
-            this.fpArc11Num.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.fpArc11Num.Location = new System.Drawing.Point(299, 76);
-            this.fpArc11Num.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.fpArc11Num.Maximum = new decimal(new int[] {
+            this.ionCannonStar.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.ionCannonStar.Location = new System.Drawing.Point(299, 76);
+            this.ionCannonStar.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.ionCannonStar.Maximum = new decimal(new int[] {
             9999,
             0,
             0,
             0});
-            this.fpArc11Num.Name = "fpArc11Num";
-            this.fpArc11Num.Size = new System.Drawing.Size(59, 23);
-            this.fpArc11Num.TabIndex = 29;
-            this.fpArc11Num.TabStop = false;
-            this.fpArc11Num.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.fpArc11Num.Value = new decimal(new int[] {
+            this.ionCannonStar.Name = "ionCannonStar";
+            this.ionCannonStar.Size = new System.Drawing.Size(59, 23);
+            this.ionCannonStar.TabIndex = 29;
+            this.ionCannonStar.TabStop = false;
+            this.ionCannonStar.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.ionCannonStar.Value = new decimal(new int[] {
             9999,
             0,
             0,
             0});
-            this.fpArc11Num.ValueChanged += new System.EventHandler(this.updateFpArc11Num);
+            this.ionCannonStar.ValueChanged += new System.EventHandler(this.ionCannonStar_ValueChanged);
             // 
-            // fpArc8Num
+            // ionCannonPort
             // 
-            this.fpArc8Num.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.fpArc8Num.Location = new System.Drawing.Point(232, 76);
-            this.fpArc8Num.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.fpArc8Num.Maximum = new decimal(new int[] {
+            this.ionCannonPort.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.ionCannonPort.Location = new System.Drawing.Point(232, 76);
+            this.ionCannonPort.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.ionCannonPort.Maximum = new decimal(new int[] {
             9999,
             0,
             0,
             0});
-            this.fpArc8Num.Name = "fpArc8Num";
-            this.fpArc8Num.Size = new System.Drawing.Size(59, 23);
-            this.fpArc8Num.TabIndex = 26;
-            this.fpArc8Num.TabStop = false;
-            this.fpArc8Num.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.fpArc8Num.Value = new decimal(new int[] {
+            this.ionCannonPort.Name = "ionCannonPort";
+            this.ionCannonPort.Size = new System.Drawing.Size(59, 23);
+            this.ionCannonPort.TabIndex = 26;
+            this.ionCannonPort.TabStop = false;
+            this.ionCannonPort.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.ionCannonPort.Value = new decimal(new int[] {
             9999,
             0,
             0,
             0});
-            this.fpArc8Num.ValueChanged += new System.EventHandler(this.updateFpArc8Num);
+            this.ionCannonPort.ValueChanged += new System.EventHandler(this.ionCannonPort_ValueChanged);
             // 
-            // fpArc5Num
+            // ionCannonAft
             // 
-            this.fpArc5Num.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.fpArc5Num.Location = new System.Drawing.Point(166, 76);
-            this.fpArc5Num.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.fpArc5Num.Maximum = new decimal(new int[] {
+            this.ionCannonAft.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.ionCannonAft.Location = new System.Drawing.Point(166, 76);
+            this.ionCannonAft.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.ionCannonAft.Maximum = new decimal(new int[] {
             9999,
             0,
             0,
             0});
-            this.fpArc5Num.Name = "fpArc5Num";
-            this.fpArc5Num.Size = new System.Drawing.Size(59, 23);
-            this.fpArc5Num.TabIndex = 23;
-            this.fpArc5Num.TabStop = false;
-            this.fpArc5Num.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.fpArc5Num.Value = new decimal(new int[] {
+            this.ionCannonAft.Name = "ionCannonAft";
+            this.ionCannonAft.Size = new System.Drawing.Size(59, 23);
+            this.ionCannonAft.TabIndex = 23;
+            this.ionCannonAft.TabStop = false;
+            this.ionCannonAft.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.ionCannonAft.Value = new decimal(new int[] {
             9999,
             0,
             0,
             0});
-            this.fpArc5Num.ValueChanged += new System.EventHandler(this.updateFpArc5Num);
+            this.ionCannonAft.ValueChanged += new System.EventHandler(this.ionCannonAft_ValueChanged);
             // 
-            // turboRanNum
+            // turboLaserRange
             // 
-            this.turboRanNum.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.turboRanNum.Location = new System.Drawing.Point(365, 46);
-            this.turboRanNum.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.turboRanNum.Maximum = new decimal(new int[] {
+            this.turboLaserRange.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.turboLaserRange.Location = new System.Drawing.Point(365, 46);
+            this.turboLaserRange.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.turboLaserRange.Maximum = new decimal(new int[] {
             9999,
             0,
             0,
             0});
-            this.turboRanNum.Name = "turboRanNum";
-            this.turboRanNum.Size = new System.Drawing.Size(59, 23);
-            this.turboRanNum.TabIndex = 31;
-            this.turboRanNum.TabStop = false;
-            this.turboRanNum.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.turboRanNum.Value = new decimal(new int[] {
+            this.turboLaserRange.Name = "turboLaserRange";
+            this.turboLaserRange.Size = new System.Drawing.Size(59, 23);
+            this.turboLaserRange.TabIndex = 31;
+            this.turboLaserRange.TabStop = false;
+            this.turboLaserRange.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.turboLaserRange.Value = new decimal(new int[] {
             9999,
             0,
             0,
             0});
-            this.turboRanNum.ValueChanged += new System.EventHandler(this.updateTurboRanNum);
+            this.turboLaserRange.ValueChanged += new System.EventHandler(this.turboLaserRange_ValueChanged);
             // 
-            // fpArc2Num
+            // ionCannonFore
             // 
-            this.fpArc2Num.Location = new System.Drawing.Point(99, 76);
-            this.fpArc2Num.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.fpArc2Num.Maximum = new decimal(new int[] {
+            this.ionCannonFore.Location = new System.Drawing.Point(99, 76);
+            this.ionCannonFore.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.ionCannonFore.Maximum = new decimal(new int[] {
             9999,
             0,
             0,
             0});
-            this.fpArc2Num.Name = "fpArc2Num";
-            this.fpArc2Num.Size = new System.Drawing.Size(59, 23);
-            this.fpArc2Num.TabIndex = 20;
-            this.fpArc2Num.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.fpArc2Num.Value = new decimal(new int[] {
+            this.ionCannonFore.Name = "ionCannonFore";
+            this.ionCannonFore.Size = new System.Drawing.Size(59, 23);
+            this.ionCannonFore.TabIndex = 20;
+            this.ionCannonFore.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.ionCannonFore.Value = new decimal(new int[] {
             9999,
             0,
             0,
             0});
-            this.fpArc2Num.ValueChanged += new System.EventHandler(this.updateFpArc2Num);
+            this.ionCannonFore.ValueChanged += new System.EventHandler(this.ionCannonFore_ValueChanged);
             // 
-            // fpArc3Num
+            // laserCannonFore
             // 
-            this.fpArc3Num.Location = new System.Drawing.Point(99, 106);
-            this.fpArc3Num.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.fpArc3Num.Maximum = new decimal(new int[] {
+            this.laserCannonFore.Location = new System.Drawing.Point(99, 106);
+            this.laserCannonFore.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.laserCannonFore.Maximum = new decimal(new int[] {
             9999,
             0,
             0,
             0});
-            this.fpArc3Num.Name = "fpArc3Num";
-            this.fpArc3Num.Size = new System.Drawing.Size(59, 23);
-            this.fpArc3Num.TabIndex = 21;
-            this.fpArc3Num.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.fpArc3Num.Value = new decimal(new int[] {
+            this.laserCannonFore.Name = "laserCannonFore";
+            this.laserCannonFore.Size = new System.Drawing.Size(59, 23);
+            this.laserCannonFore.TabIndex = 21;
+            this.laserCannonFore.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.laserCannonFore.Value = new decimal(new int[] {
             9999,
             0,
             0,
             0});
-            this.fpArc3Num.ValueChanged += new System.EventHandler(this.updateFpArc3Num);
+            this.laserCannonFore.ValueChanged += new System.EventHandler(this.laserCannonFore_ValueChanged);
             // 
             // wepLaserLabel
             // 
@@ -1125,93 +1123,93 @@ namespace SwRebellionEditor
             this.wepTurboLabel.Text = "Turbolaser";
             this.wepTurboLabel.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // fpArc10Num
+            // turboLaserStar
             // 
-            this.fpArc10Num.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.fpArc10Num.Location = new System.Drawing.Point(299, 46);
-            this.fpArc10Num.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.fpArc10Num.Maximum = new decimal(new int[] {
+            this.turboLaserStar.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.turboLaserStar.Location = new System.Drawing.Point(299, 46);
+            this.turboLaserStar.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.turboLaserStar.Maximum = new decimal(new int[] {
             9999,
             0,
             0,
             0});
-            this.fpArc10Num.Name = "fpArc10Num";
-            this.fpArc10Num.Size = new System.Drawing.Size(59, 23);
-            this.fpArc10Num.TabIndex = 28;
-            this.fpArc10Num.TabStop = false;
-            this.fpArc10Num.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.fpArc10Num.Value = new decimal(new int[] {
+            this.turboLaserStar.Name = "turboLaserStar";
+            this.turboLaserStar.Size = new System.Drawing.Size(59, 23);
+            this.turboLaserStar.TabIndex = 28;
+            this.turboLaserStar.TabStop = false;
+            this.turboLaserStar.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.turboLaserStar.Value = new decimal(new int[] {
             9999,
             0,
             0,
             0});
-            this.fpArc10Num.ValueChanged += new System.EventHandler(this.updateFpArc10Num);
+            this.turboLaserStar.ValueChanged += new System.EventHandler(this.turboLaserStar_ValueChanged);
             // 
-            // fpArc7Num
+            // turboLaserPort
             // 
-            this.fpArc7Num.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.fpArc7Num.Location = new System.Drawing.Point(232, 46);
-            this.fpArc7Num.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.fpArc7Num.Maximum = new decimal(new int[] {
+            this.turboLaserPort.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.turboLaserPort.Location = new System.Drawing.Point(232, 46);
+            this.turboLaserPort.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.turboLaserPort.Maximum = new decimal(new int[] {
             9999,
             0,
             0,
             0});
-            this.fpArc7Num.Name = "fpArc7Num";
-            this.fpArc7Num.Size = new System.Drawing.Size(59, 23);
-            this.fpArc7Num.TabIndex = 25;
-            this.fpArc7Num.TabStop = false;
-            this.fpArc7Num.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.fpArc7Num.Value = new decimal(new int[] {
+            this.turboLaserPort.Name = "turboLaserPort";
+            this.turboLaserPort.Size = new System.Drawing.Size(59, 23);
+            this.turboLaserPort.TabIndex = 25;
+            this.turboLaserPort.TabStop = false;
+            this.turboLaserPort.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.turboLaserPort.Value = new decimal(new int[] {
             9999,
             0,
             0,
             0});
-            this.fpArc7Num.ValueChanged += new System.EventHandler(this.updateFpArc7Num);
+            this.turboLaserPort.ValueChanged += new System.EventHandler(this.turboLaserPort_ValueChanged);
             // 
-            // fpArc4Num
+            // turboLaserAft
             // 
-            this.fpArc4Num.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.fpArc4Num.Location = new System.Drawing.Point(166, 46);
-            this.fpArc4Num.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.fpArc4Num.Maximum = new decimal(new int[] {
+            this.turboLaserAft.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.turboLaserAft.Location = new System.Drawing.Point(166, 46);
+            this.turboLaserAft.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.turboLaserAft.Maximum = new decimal(new int[] {
             9999,
             0,
             0,
             0});
-            this.fpArc4Num.Name = "fpArc4Num";
-            this.fpArc4Num.Size = new System.Drawing.Size(59, 23);
-            this.fpArc4Num.TabIndex = 22;
-            this.fpArc4Num.TabStop = false;
-            this.fpArc4Num.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.fpArc4Num.Value = new decimal(new int[] {
+            this.turboLaserAft.Name = "turboLaserAft";
+            this.turboLaserAft.Size = new System.Drawing.Size(59, 23);
+            this.turboLaserAft.TabIndex = 22;
+            this.turboLaserAft.TabStop = false;
+            this.turboLaserAft.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.turboLaserAft.Value = new decimal(new int[] {
             9999,
             0,
             0,
             0});
-            this.fpArc4Num.ValueChanged += new System.EventHandler(this.updateFpArc4Num);
+            this.turboLaserAft.ValueChanged += new System.EventHandler(this.turboLaserAft_ValueChanged);
             // 
-            // fpArc1Num
+            // turboLaserFore
             // 
-            this.fpArc1Num.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.fpArc1Num.Location = new System.Drawing.Point(99, 46);
-            this.fpArc1Num.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.fpArc1Num.Maximum = new decimal(new int[] {
+            this.turboLaserFore.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.turboLaserFore.Location = new System.Drawing.Point(99, 46);
+            this.turboLaserFore.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.turboLaserFore.Maximum = new decimal(new int[] {
             9999,
             0,
             0,
             0});
-            this.fpArc1Num.Name = "fpArc1Num";
-            this.fpArc1Num.Size = new System.Drawing.Size(59, 23);
-            this.fpArc1Num.TabIndex = 19;
-            this.fpArc1Num.TabStop = false;
-            this.fpArc1Num.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.fpArc1Num.Value = new decimal(new int[] {
+            this.turboLaserFore.Name = "turboLaserFore";
+            this.turboLaserFore.Size = new System.Drawing.Size(59, 23);
+            this.turboLaserFore.TabIndex = 19;
+            this.turboLaserFore.TabStop = false;
+            this.turboLaserFore.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.turboLaserFore.Value = new decimal(new int[] {
             9999,
             0,
             0,
             0});
-            this.fpArc1Num.ValueChanged += new System.EventHandler(this.updateFpArc1Num);
+            this.turboLaserFore.ValueChanged += new System.EventHandler(this.turboLaserFore_ValueChanged);
             // 
             // wepRanLabel
             // 
@@ -1339,7 +1337,7 @@ namespace SwRebellionEditor
             this.tabPage3.Controls.Add(this.groupBox13);
             this.tabPage3.Controls.Add(this.UnkownMoralHPlabel);
             this.tabPage3.Controls.Add(this.unknownMoralHp);
-            this.tabPage3.Controls.Add(this.unknown3Num);
+            this.tabPage3.Controls.Add(this.unknown);
             this.tabPage3.Controls.Add(this.textStraDllId);
             this.tabPage3.Controls.Add(this.productionFacility);
             this.tabPage3.Controls.Add(this.unkown3Label);
@@ -1348,7 +1346,7 @@ namespace SwRebellionEditor
             this.tabPage3.Controls.Add(this.idLabel);
             this.tabPage3.Controls.Add(this.familyLabel);
             this.tabPage3.Controls.Add(this.secProdFacNumlabel);
-            this.tabPage3.Controls.Add(this.secProdFacNum);
+            this.tabPage3.Controls.Add(this.nextProductionFacility);
             this.tabPage3.Location = new System.Drawing.Point(4, 24);
             this.tabPage3.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.tabPage3.Name = "tabPage3";
@@ -1357,29 +1355,29 @@ namespace SwRebellionEditor
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "DAT Misc";
             // 
-            // famHexLabel
+            // familyIdHexLabel
             // 
             this.familyIdHexLabel.AutoSize = true;
             this.familyIdHexLabel.Enabled = false;
             this.familyIdHexLabel.Location = new System.Drawing.Point(412, 117);
             this.familyIdHexLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.familyIdHexLabel.Name = "famHexLabel";
+            this.familyIdHexLabel.Name = "familyIdHexLabel";
             this.familyIdHexLabel.Size = new System.Drawing.Size(26, 15);
             this.familyIdHexLabel.TabIndex = 1119;
             this.familyIdHexLabel.Text = "hex";
             // 
-            // shipHexLabel
+            // fighterIdHexLabel
             // 
             this.fighterIdHexLabel.AutoSize = true;
             this.fighterIdHexLabel.Enabled = false;
             this.fighterIdHexLabel.Location = new System.Drawing.Point(412, 204);
             this.fighterIdHexLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.fighterIdHexLabel.Name = "shipHexLabel";
+            this.fighterIdHexLabel.Name = "fighterIdHexLabel";
             this.fighterIdHexLabel.Size = new System.Drawing.Size(26, 15);
             this.fighterIdHexLabel.TabIndex = 1118;
             this.fighterIdHexLabel.Text = "hex";
             // 
-            // shipNum
+            // fighterId
             // 
             this.fighterId.BackColor = System.Drawing.SystemColors.ControlLight;
             this.fighterId.Enabled = false;
@@ -1390,7 +1388,7 @@ namespace SwRebellionEditor
             0,
             0,
             0});
-            this.fighterId.Name = "shipNum";
+            this.fighterId.Name = "fighterId";
             this.fighterId.Size = new System.Drawing.Size(59, 23);
             this.fighterId.TabIndex = 1117;
             this.fighterId.TabStop = false;
@@ -1399,12 +1397,12 @@ namespace SwRebellionEditor
             // 
             this.label1.AutoSize = true;
             this.label1.Enabled = false;
-            this.label1.Location = new System.Drawing.Point(234, 204);
+            this.label1.Location = new System.Drawing.Point(240, 204);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(44, 15);
+            this.label1.Size = new System.Drawing.Size(57, 15);
             this.label1.TabIndex = 1116;
-            this.label1.Text = "Ship ID";
+            this.label1.Text = "Fighter Id";
             // 
             // label31
             // 
@@ -1419,13 +1417,13 @@ namespace SwRebellionEditor
             // 
             // groupBox13
             // 
-            this.groupBox13.Controls.Add(this.sumFPNum);
+            this.groupBox13.Controls.Add(this.totalFirePower);
             this.groupBox13.Controls.Add(this.label16);
             this.groupBox13.Controls.Add(this.label30);
-            this.groupBox13.Controls.Add(this.sumIonNum);
+            this.groupBox13.Controls.Add(this.ionCannonTotalFirePower);
             this.groupBox13.Controls.Add(this.label29);
-            this.groupBox13.Controls.Add(this.sumLaserNum);
-            this.groupBox13.Controls.Add(this.sumTurboNum);
+            this.groupBox13.Controls.Add(this.laserCannonTotalFirePower);
+            this.groupBox13.Controls.Add(this.turboLaserTotalFirePower);
             this.groupBox13.Controls.Add(this.label26);
             this.groupBox13.Controls.Add(this.label28);
             this.groupBox13.Controls.Add(this.label27);
@@ -1438,22 +1436,22 @@ namespace SwRebellionEditor
             this.groupBox13.TabStop = false;
             this.groupBox13.Text = "Weapons Total FirePower";
             // 
-            // sumFPNum
+            // totalFirePower
             // 
-            this.sumFPNum.Enabled = false;
-            this.sumFPNum.Location = new System.Drawing.Point(99, 138);
-            this.sumFPNum.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.sumFPNum.Maximum = new decimal(new int[] {
+            this.totalFirePower.Enabled = false;
+            this.totalFirePower.Location = new System.Drawing.Point(99, 138);
+            this.totalFirePower.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.totalFirePower.Maximum = new decimal(new int[] {
             9999,
             0,
             0,
             0});
-            this.sumFPNum.Name = "sumFPNum";
-            this.sumFPNum.Size = new System.Drawing.Size(59, 23);
-            this.sumFPNum.TabIndex = 152;
-            this.sumFPNum.TabStop = false;
-            this.sumFPNum.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.sumFPNum.Value = new decimal(new int[] {
+            this.totalFirePower.Name = "totalFirePower";
+            this.totalFirePower.Size = new System.Drawing.Size(59, 23);
+            this.totalFirePower.TabIndex = 152;
+            this.totalFirePower.TabStop = false;
+            this.totalFirePower.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.totalFirePower.Value = new decimal(new int[] {
             9999,
             0,
             0,
@@ -1485,22 +1483,22 @@ namespace SwRebellionEditor
             this.label30.Text = "Type";
             this.label30.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // sumIonNum
+            // ionCannonTotalFirePower
             // 
-            this.sumIonNum.Enabled = false;
-            this.sumIonNum.Location = new System.Drawing.Point(99, 78);
-            this.sumIonNum.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.sumIonNum.Maximum = new decimal(new int[] {
+            this.ionCannonTotalFirePower.Enabled = false;
+            this.ionCannonTotalFirePower.Location = new System.Drawing.Point(99, 78);
+            this.ionCannonTotalFirePower.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.ionCannonTotalFirePower.Maximum = new decimal(new int[] {
             9999,
             0,
             0,
             0});
-            this.sumIonNum.Name = "sumIonNum";
-            this.sumIonNum.Size = new System.Drawing.Size(59, 23);
-            this.sumIonNum.TabIndex = 150;
-            this.sumIonNum.TabStop = false;
-            this.sumIonNum.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.sumIonNum.Value = new decimal(new int[] {
+            this.ionCannonTotalFirePower.Name = "ionCannonTotalFirePower";
+            this.ionCannonTotalFirePower.Size = new System.Drawing.Size(59, 23);
+            this.ionCannonTotalFirePower.TabIndex = 150;
+            this.ionCannonTotalFirePower.TabStop = false;
+            this.ionCannonTotalFirePower.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.ionCannonTotalFirePower.Value = new decimal(new int[] {
             9999,
             0,
             0,
@@ -1519,43 +1517,43 @@ namespace SwRebellionEditor
             this.label29.Text = "FP Total";
             this.label29.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // sumLaserNum
+            // laserCannonTotalFirePower
             // 
-            this.sumLaserNum.Enabled = false;
-            this.sumLaserNum.Location = new System.Drawing.Point(99, 108);
-            this.sumLaserNum.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.sumLaserNum.Maximum = new decimal(new int[] {
+            this.laserCannonTotalFirePower.Enabled = false;
+            this.laserCannonTotalFirePower.Location = new System.Drawing.Point(99, 108);
+            this.laserCannonTotalFirePower.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.laserCannonTotalFirePower.Maximum = new decimal(new int[] {
             9999,
             0,
             0,
             0});
-            this.sumLaserNum.Name = "sumLaserNum";
-            this.sumLaserNum.Size = new System.Drawing.Size(59, 23);
-            this.sumLaserNum.TabIndex = 149;
-            this.sumLaserNum.TabStop = false;
-            this.sumLaserNum.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.sumLaserNum.Value = new decimal(new int[] {
+            this.laserCannonTotalFirePower.Name = "laserCannonTotalFirePower";
+            this.laserCannonTotalFirePower.Size = new System.Drawing.Size(59, 23);
+            this.laserCannonTotalFirePower.TabIndex = 149;
+            this.laserCannonTotalFirePower.TabStop = false;
+            this.laserCannonTotalFirePower.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.laserCannonTotalFirePower.Value = new decimal(new int[] {
             9999,
             0,
             0,
             0});
             // 
-            // sumTurboNum
+            // turboLaserTotalFirePower
             // 
-            this.sumTurboNum.Enabled = false;
-            this.sumTurboNum.Location = new System.Drawing.Point(99, 48);
-            this.sumTurboNum.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.sumTurboNum.Maximum = new decimal(new int[] {
+            this.turboLaserTotalFirePower.Enabled = false;
+            this.turboLaserTotalFirePower.Location = new System.Drawing.Point(99, 48);
+            this.turboLaserTotalFirePower.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.turboLaserTotalFirePower.Maximum = new decimal(new int[] {
             9999,
             0,
             0,
             0});
-            this.sumTurboNum.Name = "sumTurboNum";
-            this.sumTurboNum.Size = new System.Drawing.Size(59, 23);
-            this.sumTurboNum.TabIndex = 145;
-            this.sumTurboNum.TabStop = false;
-            this.sumTurboNum.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.sumTurboNum.Value = new decimal(new int[] {
+            this.turboLaserTotalFirePower.Name = "turboLaserTotalFirePower";
+            this.turboLaserTotalFirePower.Size = new System.Drawing.Size(59, 23);
+            this.turboLaserTotalFirePower.TabIndex = 145;
+            this.turboLaserTotalFirePower.TabStop = false;
+            this.turboLaserTotalFirePower.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.turboLaserTotalFirePower.Value = new decimal(new int[] {
             9999,
             0,
             0,
@@ -1610,7 +1608,7 @@ namespace SwRebellionEditor
             this.UnkownMoralHPlabel.TabIndex = 94;
             this.UnkownMoralHPlabel.Text = "Unknown - ?HP?";
             // 
-            // unknownMoralHpNum
+            // unknownMoralHp
             // 
             this.unknownMoralHp.BackColor = System.Drawing.SystemColors.ControlLight;
             this.unknownMoralHp.Location = new System.Drawing.Point(351, 21);
@@ -1620,28 +1618,28 @@ namespace SwRebellionEditor
             0,
             0,
             0});
-            this.unknownMoralHp.Name = "unknownMoralHpNum";
+            this.unknownMoralHp.Name = "unknownMoralHp";
             this.unknownMoralHp.Size = new System.Drawing.Size(59, 23);
             this.unknownMoralHp.TabIndex = 125;
             this.unknownMoralHp.TabStop = false;
-            this.unknownMoralHp.ValueChanged += new System.EventHandler(this.updateUnknownMoralHpNum);
+            this.unknownMoralHp.ValueChanged += new System.EventHandler(this.unknownMoralHp_ValueChanged);
             // 
             // unknown3Num
             // 
-            this.unknown3Num.Enabled = false;
-            this.unknown3Num.Location = new System.Drawing.Point(351, 142);
-            this.unknown3Num.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.unknown3Num.Maximum = new decimal(new int[] {
+            this.unknown.Enabled = false;
+            this.unknown.Location = new System.Drawing.Point(351, 142);
+            this.unknown.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.unknown.Maximum = new decimal(new int[] {
             9999,
             0,
             0,
             0});
-            this.unknown3Num.Name = "unknown3Num";
-            this.unknown3Num.Size = new System.Drawing.Size(59, 23);
-            this.unknown3Num.TabIndex = 110;
-            this.unknown3Num.TabStop = false;
+            this.unknown.Name = "unknown3Num";
+            this.unknown.Size = new System.Drawing.Size(59, 23);
+            this.unknown.TabIndex = 110;
+            this.unknown.TabStop = false;
             // 
-            // idNum
+            // textStraDllId
             // 
             this.textStraDllId.Enabled = false;
             this.textStraDllId.Location = new System.Drawing.Point(351, 172);
@@ -1651,12 +1649,12 @@ namespace SwRebellionEditor
             0,
             0,
             0});
-            this.textStraDllId.Name = "idNum";
+            this.textStraDllId.Name = "textStraDllId";
             this.textStraDllId.Size = new System.Drawing.Size(59, 23);
             this.textStraDllId.TabIndex = 112;
             this.textStraDllId.TabStop = false;
             // 
-            // prodFacNum
+            // productionFacility
             // 
             this.productionFacility.BackColor = System.Drawing.SystemColors.ControlLight;
             this.productionFacility.Enabled = false;
@@ -1667,11 +1665,11 @@ namespace SwRebellionEditor
             0,
             0,
             0});
-            this.productionFacility.Name = "prodFacNum";
+            this.productionFacility.Name = "productionFacility";
             this.productionFacility.Size = new System.Drawing.Size(59, 23);
             this.productionFacility.TabIndex = 93;
             this.productionFacility.TabStop = false;
-            this.productionFacility.ValueChanged += new System.EventHandler(this.updateProdFacNum);
+            this.productionFacility.ValueChanged += new System.EventHandler(this.productionFacility_ValueChanged);
             // 
             // unkown3Label
             // 
@@ -1684,7 +1682,7 @@ namespace SwRebellionEditor
             this.unkown3Label.TabIndex = 109;
             this.unkown3Label.Text = "Unknown";
             // 
-            // familyIdNum
+            // familyId
             // 
             this.familyId.BackColor = System.Drawing.SystemColors.ControlLight;
             this.familyId.Enabled = false;
@@ -1695,11 +1693,11 @@ namespace SwRebellionEditor
             0,
             0,
             0});
-            this.familyId.Name = "familyIdNum";
+            this.familyId.Name = "familyId";
             this.familyId.Size = new System.Drawing.Size(59, 23);
             this.familyId.TabIndex = 111;
             this.familyId.TabStop = false;
-            this.familyId.ValueChanged += new System.EventHandler(this.updateFamilyIdNum);
+            this.familyId.ValueChanged += new System.EventHandler(this.familyId_ValueChanged);
             // 
             // prodLabel
             // 
@@ -1747,26 +1745,26 @@ namespace SwRebellionEditor
             // 
             // secProdFacNum
             // 
-            this.secProdFacNum.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.secProdFacNum.Enabled = false;
-            this.secProdFacNum.Location = new System.Drawing.Point(351, 82);
-            this.secProdFacNum.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.secProdFacNum.Maximum = new decimal(new int[] {
+            this.nextProductionFacility.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.nextProductionFacility.Enabled = false;
+            this.nextProductionFacility.Location = new System.Drawing.Point(351, 82);
+            this.nextProductionFacility.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.nextProductionFacility.Maximum = new decimal(new int[] {
             999,
             0,
             0,
             0});
-            this.secProdFacNum.Name = "secProdFacNum";
-            this.secProdFacNum.Size = new System.Drawing.Size(59, 23);
-            this.secProdFacNum.TabIndex = 96;
-            this.secProdFacNum.TabStop = false;
-            this.secProdFacNum.ValueChanged += new System.EventHandler(this.updateSecProdFacNum);
+            this.nextProductionFacility.Name = "secProdFacNum";
+            this.nextProductionFacility.Size = new System.Drawing.Size(59, 23);
+            this.nextProductionFacility.TabIndex = 96;
+            this.nextProductionFacility.TabStop = false;
+            this.nextProductionFacility.ValueChanged += new System.EventHandler(this.nextProductionFacility_ValueChanged);
             // 
-            // openNew
+            // Open
             // 
             this.Open.Location = new System.Drawing.Point(371, 443);
             this.Open.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.Open.Name = "openNew";
+            this.Open.Name = "Open";
             this.Open.Size = new System.Drawing.Size(88, 27);
             this.Open.TabIndex = 116;
             this.Open.TabStop = false;
@@ -1809,40 +1807,40 @@ namespace SwRebellionEditor
             this.Ok.UseVisualStyleBackColor = true;
             this.Ok.Click += new System.EventHandler(this.Ok_Click);
             // 
-            // ItemName
+            // encyclopediaName
             // 
             this.encyclopediaName.AutoSize = true;
             this.encyclopediaName.Location = new System.Drawing.Point(243, 82);
             this.encyclopediaName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.encyclopediaName.Name = "ItemName";
+            this.encyclopediaName.Name = "encyclopediaName";
             this.encyclopediaName.Size = new System.Drawing.Size(116, 15);
             this.encyclopediaName.TabIndex = 118;
             this.encyclopediaName.Text = "-- Item name here --";
             // 
-            // ItemSelect
+            // selector
             // 
             this.selector.LargeChange = 4;
             this.selector.Location = new System.Drawing.Point(246, 27);
             this.selector.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.selector.Maximum = 7;
-            this.selector.Name = "ItemSelect";
+            this.selector.Name = "selector";
             this.selector.Size = new System.Drawing.Size(121, 45);
             this.selector.TabIndex = 119;
             this.selector.ValueChanged += new System.EventHandler(this.GameObjectsSelector_ValueChanged);
             // 
-            // ItemPicture
+            // picture
             // 
             this.picture.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.picture.InitialImage = null;
             this.picture.Location = new System.Drawing.Point(12, 7);
             this.picture.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.picture.Name = "ItemPicture";
+            this.picture.Name = "picture";
             this.picture.Size = new System.Drawing.Size(205, 104);
             this.picture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picture.TabIndex = 130;
             this.picture.TabStop = false;
             // 
-            // FighterForm
+            // FightersForm
             // 
             this.AcceptButton = this.Ok;
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -1870,81 +1868,81 @@ namespace SwRebellionEditor
             this.MaximizeBox = false;
             this.MaximumSize = new System.Drawing.Size(942, 513);
             this.MinimumSize = new System.Drawing.Size(942, 513);
-            this.Name = "FighterForm";
+            this.Name = "FightersForm";
             this.Text = "Fighters (FIGHTSD.DAT)";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.GameObjectsListForm_FormClosing);
             this.Load += new System.EventHandler(this.GameObjectsListForm_Load);
             this.Enter += new System.EventHandler(this.GameObjectsSelector_ValueChanged);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.GameObjectsListForm_KeyDown);
-            ((System.ComponentModel.ISupportInitialize)(this.hyperdriveBackup)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.hyperdrivePrimary)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.sublightManoeuvrability)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.sublightSpeed)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.detectionRating)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.shieldsMaxCapacity)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.constructionCost)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.maintenanceCost)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.researchOrder)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.researchDifficulty)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.squadSizeNum)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.torpRanNum)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.torpPowNum)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bombardmentMod)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.laserRanNum)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.fpArc12Num)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.fpArc9Num)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.fpArc6Num)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ionRanNum)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.fpArc11Num)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.fpArc8Num)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.fpArc5Num)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.turboRanNum)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.fpArc2Num)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.fpArc3Num)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.fpArc10Num)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.fpArc7Num)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.fpArc4Num)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.fpArc1Num)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.fighterId)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.sumFPNum)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.sumIonNum)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.sumLaserNum)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.sumTurboNum)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.unknownMoralHp)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.unknown3Num)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textStraDllId)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.productionFacility)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.familyId)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.secProdFacNum)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.selector)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picture)).EndInit();
-
             this.hyperdriveGroup.ResumeLayout(false);
             this.hyperdriveGroup.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.hyperdriveBackup)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.hyperdrivePrimary)).EndInit();
             this.sublightGroup.ResumeLayout(false);
             this.sublightGroup.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.sublightManoeuvrability)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sublightSpeed)).EndInit();
             this.BasicGroup.ResumeLayout(false);
             this.BasicGroup.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.detectionRating)).EndInit();
             this.shieldGroup.ResumeLayout(false);
             this.shieldGroup.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.shieldsMaxCapacity)).EndInit();
             this.buildByGroup.ResumeLayout(false);
             this.buildByGroup.PerformLayout();
             this.costsGroup.ResumeLayout(false);
             this.costsGroup.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.constructionCost)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.maintenanceCost)).EndInit();
             this.researchGroup.ResumeLayout(false);
             this.researchGroup.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.researchOrder)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.researchDifficulty)).EndInit();
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.squadronSize)).EndInit();
             this.wepFPGroup.ResumeLayout(false);
             this.wepFPGroup.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.torpedoRange)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.torpedoFore)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bombardmentMod)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.laserCannonRange)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.laserCannonStar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.laserCannonPort)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.laserCannonAft)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ionCannonRange)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ionCannonStar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ionCannonPort)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ionCannonAft)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.turboLaserRange)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ionCannonFore)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.laserCannonFore)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.turboLaserStar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.turboLaserPort)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.turboLaserAft)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.turboLaserFore)).EndInit();
             this.tabPage2.ResumeLayout(false);
             this.tabPage3.ResumeLayout(false);
             this.tabPage3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.fighterId)).EndInit();
             this.groupBox13.ResumeLayout(false);
             this.groupBox13.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.totalFirePower)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ionCannonTotalFirePower)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.laserCannonTotalFirePower)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.turboLaserTotalFirePower)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.unknownMoralHp)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.unknown)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textStraDllId)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.productionFacility)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.familyId)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nextProductionFacility)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.selector)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picture)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
+
         }
 
         #endregion

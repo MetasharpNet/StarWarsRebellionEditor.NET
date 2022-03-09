@@ -20,14 +20,6 @@
         public string GameFilePath;
         protected TrackBar GameObjectsSelector;
 
-        #region .ctor
-
-        public GameObjectsListForm()
-        {
-        }
-
-        #endregion
-
         #region Business Layer
 
         protected virtual void DisplaySelectedGameObject(int selectorIndex)

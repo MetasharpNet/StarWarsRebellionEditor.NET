@@ -45,7 +45,7 @@
 
         #endregion
 
-        #region Checked/ValueChanged events
+        #region Changed events
 
         private void constructionCost_ValueChanged(object sender, EventArgs e)
         {

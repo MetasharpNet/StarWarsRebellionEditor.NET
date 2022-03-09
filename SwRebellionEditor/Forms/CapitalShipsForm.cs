@@ -97,7 +97,7 @@
 
         #endregion
 
-        #region Checked/ValueChanged events
+        #region Changed events
 
         private void bombardmentMod_ValueChanged(object sender, EventArgs e)
         {
