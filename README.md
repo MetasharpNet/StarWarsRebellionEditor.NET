@@ -6,6 +6,7 @@ The project is going under a heavy cleanup phase. So don't inspect the code as i
 
 Runtime can be downloaded here :
 https://dotnet.microsoft.com/en-us/download/dotnet/6.0
+
 Direct link :
 https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/runtime-6.0.2-windows-x64-installer
 
