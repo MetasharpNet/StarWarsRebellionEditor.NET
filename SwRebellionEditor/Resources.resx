@@ -1,0 +1,238 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="about_button_texture_61x20_bmp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\about_button_texture_61x20_bmp.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ahhh_ah_ah_ah_ahhhhh_wav" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\ahhh_ah_ah_ah_ahhhhh_wav.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="app_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\app_icon.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="c3po_16x16_bmp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\c3po_16x16_bmp.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="c3po_16x16_ico" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\c3po_16x16_ico.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="c3po_400x200_bmp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\c3po_400x200_bmp.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="close_wav" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\close_wav.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="defense_facility_16x16_bmp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\defense_facility_16x16_bmp.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="defense_facility_16x16_ico" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\defense_facility_16x16_ico.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="door_opening_wav" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\door_opening_wav.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="droid_ding_wav" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\droid_ding_wav.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="galaxy_640x480_bmp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\galaxy_640x480_bmp.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="how_can_i_assist_you_wav" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\how_can_i_assist_you_wav.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="look_jabba_i_was_on_my_way_to_pay_you_back_wav" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\look_jabba_i_was_on_my_way_to_pay_you_back_wav.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="luke_16x16_bmp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\luke_16x16_bmp.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="luke_16x16_ico" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\luke_16x16_ico.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mine_16x16_bmp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\mine_16x16_bmp.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mine_16x16_ico" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\mine_16x16_ico.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="obiwan_has_tought_you_well_wav" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\obiwan_has_tought_you_well_wav.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="open_wav" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\open_wav.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="planet_16x16_ico" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\planet_16x16_ico.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="planet_37x37_bmp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\planet_37x37_bmp.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sector_16x16_bmp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\sector_16x16_bmp.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="shipyard_16x16_bmp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\shipyard_16x16_bmp.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="shipyard_16x16_ico" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\shipyard_16x16_ico.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="star_destroyer_16x16_bmp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\star_destroyer_16x16_bmp.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="star_destroyer_16x16_ico" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\star_destroyer_16x16_ico.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="stormtrooper_16x16_bmp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\stormtrooper_16x16_bmp.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="stormtrooper_16x16_ico" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\stormtrooper_16x16_ico.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="there_is_a_trauma_in_the_force_wav" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\there_is_a_trauma_in_the_force_wav.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="these_guys_just_dont_know_when_to_quit_wav" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\these_guys_just_dont_know_when_to_quit_wav.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="the_force_is_with_you_young_skywalker_wav" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\the_force_is_with_you_young_skywalker_wav.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="thrawn_16x16_bmp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\thrawn_16x16_bmp.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="thrawn_16x16_ico" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\thrawn_16x16_ico.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tie_fighter_16x16_bmp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\tie_fighter_16x16_bmp.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tie_fighter_16x16_ico" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\tie_fighter_16x16_ico.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="well_if_you_will_not_be_needing_me_wav" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\well_if_you_will_not_be_needing_me_wav.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="you_failed_your_highness_i_am_a_jedi_wav" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\you_failed_your_highness_i_am_a_jedi_wav.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="you_like_your_father_are_now_mine_wav" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\you_like_your_father_are_now_mine_wav.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+</root>
