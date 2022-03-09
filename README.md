@@ -8,4 +8,8 @@ Runtime can be downloaded here : https://dotnet.microsoft.com/en-us/download/dot
 
 Direct link : https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/runtime-6.0.2-windows-x64-installer
 
+To buy the game or get free fan mods, check : https://swrebellion.net/
+
+--
+
 Meta
