@@ -12,18 +12,18 @@
     public class MJCHARSD_Character
     {
         public uint UnitId;
-        public uint unknown1;
-        public uint prodFacilityNum;
-        public uint unknown2;
+        public uint Unknown1;
+        public uint ProductionFacility;
+        public uint NextProductionFacility;
         public uint FamilyId;
         public ushort TextStraDllId;
-        public ushort unknown3;
+        public ushort Unknown2;
         public uint IsAllianceUnit;
         public uint IsEmpireUnit;
-        public uint conCost;
-        public uint maintCost;
-        public uint researchNum;
-        public uint researchDiff;
+        public uint UnusedContructionCost;
+        public uint UnusedMaintenanceCost;
+        public uint UnusedResearchOrder;
+        public uint UnusedResearchDifficulty;
         public uint DiplomacyBase;
         public uint DiplomacyVariance;
         public uint EspionageBase;
@@ -31,13 +31,13 @@
         public uint ShipResearchBase;
         public uint ShipResearchVariance;
         public uint TroopsResearchBase;
-        public uint troopsReseachVariance;
+        public uint TroopsReseachVariance;
         public uint FacilitiesResearchBase;
         public uint FacilitiesResearchVariance;
         public uint CombatBase;
         public uint CombatVariance;
-        public uint leadershipBase;
-        public uint leadershipVar;
+        public uint UnusedLeadershipBase;
+        public uint UnusedLeadershipVariance;
         public uint LoyaltyBase;
         public uint LoyaltyVariance;
         public uint JediProbabilityBase;

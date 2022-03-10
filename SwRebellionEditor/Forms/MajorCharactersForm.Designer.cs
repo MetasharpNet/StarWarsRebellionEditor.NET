@@ -86,14 +86,14 @@ namespace SwRebellionEditor
         private ListView charListView;
         private NumericUpDown unknown3Num;
         private NumericUpDown textStraDllId;
-        private NumericUpDown prodFacNum;
+        private NumericUpDown productionFacility;
         private Label unkown3Label;
         private NumericUpDown familyId;
         private Label prodLabel;
         private Label idLabel;
         private Label familyLabel;
         private Label secProdFacNumlabel;
-        private NumericUpDown secProdFacNum;
+        private NumericUpDown nextProductionFacility;
         private Label familyIdHexLabel;
         private Label unitIdHexLabel;
         private NumericUpDown unitId;
@@ -182,14 +182,14 @@ namespace SwRebellionEditor
             this.label1 = new System.Windows.Forms.Label();
             this.unknown3Num = new System.Windows.Forms.NumericUpDown();
             this.textStraDllId = new System.Windows.Forms.NumericUpDown();
-            this.prodFacNum = new System.Windows.Forms.NumericUpDown();
+            this.productionFacility = new System.Windows.Forms.NumericUpDown();
             this.unkown3Label = new System.Windows.Forms.Label();
             this.familyId = new System.Windows.Forms.NumericUpDown();
             this.prodLabel = new System.Windows.Forms.Label();
             this.idLabel = new System.Windows.Forms.Label();
             this.familyLabel = new System.Windows.Forms.Label();
             this.secProdFacNumlabel = new System.Windows.Forms.Label();
-            this.secProdFacNum = new System.Windows.Forms.NumericUpDown();
+            this.nextProductionFacility = new System.Windows.Forms.NumericUpDown();
             this.encyText = new System.Windows.Forms.RichTextBox();
             this.encyclopediaName = new System.Windows.Forms.Label();
             this.selector = new System.Windows.Forms.TrackBar();
@@ -242,9 +242,9 @@ namespace SwRebellionEditor
             ((System.ComponentModel.ISupportInitialize)(this.unitId)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.unknown3Num)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textStraDllId)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.prodFacNum)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.productionFacility)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.familyId)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.secProdFacNum)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nextProductionFacility)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.selector)).BeginInit();
             this.charLoyalGroup.SuspendLayout();
             this.cmdAbilityGroup.SuspendLayout();
@@ -514,7 +514,7 @@ namespace SwRebellionEditor
             this.isJediTrainer.TabIndex = 22;
             this.isJediTrainer.Text = "Jedi Trainer";
             this.isJediTrainer.UseVisualStyleBackColor = true;
-            this.isJediTrainer.CheckStateChanged += new System.EventHandler(this.updateTrainJediCheck);
+            this.isJediTrainer.CheckStateChanged += new System.EventHandler(this.isJediTrainer_CheckStateChanged);
             // 
             // isKnownJedi
             // 
@@ -526,7 +526,7 @@ namespace SwRebellionEditor
             this.isKnownJedi.TabIndex = 21;
             this.isKnownJedi.Text = "Known Jedi";
             this.isKnownJedi.UseVisualStyleBackColor = true;
-            this.isKnownJedi.CheckStateChanged += new System.EventHandler(this.updateknownJediCheck);
+            this.isKnownJedi.CheckStateChanged += new System.EventHandler(this.isKnownJedi_CheckStateChanged);
             // 
             // jediVarLabel
             // 
@@ -570,7 +570,7 @@ namespace SwRebellionEditor
             0,
             0,
             0});
-            this.jediLevelVariance.ValueChanged += new System.EventHandler(this.updateJediLevelVarNum);
+            this.jediLevelVariance.ValueChanged += new System.EventHandler(this.jediLevelVariance_ValueChanged);
             // 
             // label12
             // 
@@ -600,7 +600,7 @@ namespace SwRebellionEditor
             0,
             0,
             0});
-            this.jediProbabilityBase.ValueChanged += new System.EventHandler(this.updateJediProbBaseNum);
+            this.jediProbabilityBase.ValueChanged += new System.EventHandler(this.jediProbabilityBase_ValueChanged);
             // 
             // jediLevelBase
             // 
@@ -620,7 +620,7 @@ namespace SwRebellionEditor
             0,
             0,
             0});
-            this.jediLevelBase.ValueChanged += new System.EventHandler(this.updateJediLevelBaseNum);
+            this.jediLevelBase.ValueChanged += new System.EventHandler(this.jediLevelBase_ValueChanged);
             // 
             // label13
             // 
@@ -696,7 +696,7 @@ namespace SwRebellionEditor
             0,
             0,
             0});
-            this.facilitiesResearchVariance.ValueChanged += new System.EventHandler(this.updateFacResVarNum);
+            this.facilitiesResearchVariance.ValueChanged += new System.EventHandler(this.facilitiesResearchVariance_ValueChanged);
             // 
             // shipResearchVariance
             // 
@@ -716,7 +716,7 @@ namespace SwRebellionEditor
             0,
             0,
             0});
-            this.shipResearchVariance.ValueChanged += new System.EventHandler(this.updateShipResVarNum);
+            this.shipResearchVariance.ValueChanged += new System.EventHandler(this.shipResearchVariance_ValueChanged);
             // 
             // troopsReseachVariance
             // 
@@ -736,7 +736,7 @@ namespace SwRebellionEditor
             0,
             0,
             0});
-            this.troopsReseachVariance.ValueChanged += new System.EventHandler(this.updateTroopResVarNum);
+            this.troopsReseachVariance.ValueChanged += new System.EventHandler(this.troopsReseachVariance_ValueChanged);
             // 
             // facResLabel
             // 
@@ -766,7 +766,7 @@ namespace SwRebellionEditor
             0,
             0,
             0});
-            this.facilitiesResearchBase.ValueChanged += new System.EventHandler(this.updateFacResBaseNum);
+            this.facilitiesResearchBase.ValueChanged += new System.EventHandler(this.facilitiesResearchBase_ValueChanged);
             // 
             // shipResLabel
             // 
@@ -796,7 +796,7 @@ namespace SwRebellionEditor
             0,
             0,
             0});
-            this.shipResearchBase.ValueChanged += new System.EventHandler(this.updateShipResBaseNum);
+            this.shipResearchBase.ValueChanged += new System.EventHandler(this.shipResearchBase_ValueChanged);
             // 
             // troopsResearchBase
             // 
@@ -816,7 +816,7 @@ namespace SwRebellionEditor
             0,
             0,
             0});
-            this.troopsResearchBase.ValueChanged += new System.EventHandler(this.updateTroopResBaseNum);
+            this.troopsResearchBase.ValueChanged += new System.EventHandler(this.troopsResearchBase_ValueChanged);
             // 
             // troopResLabel
             // 
@@ -871,7 +871,7 @@ namespace SwRebellionEditor
             0,
             0,
             0});
-            this.loyaltyVariance.ValueChanged += new System.EventHandler(this.updateLoyalVarNum);
+            this.loyaltyVariance.ValueChanged += new System.EventHandler(this.loyaltyVariance_ValueChanged);
             // 
             // loyaltyBase
             // 
@@ -891,7 +891,7 @@ namespace SwRebellionEditor
             0,
             0,
             0});
-            this.loyaltyBase.ValueChanged += new System.EventHandler(this.updateLoyalBaseNum);
+            this.loyaltyBase.ValueChanged += new System.EventHandler(this.loyaltyBase_ValueChanged);
             // 
             // loyaltyLabel
             // 
@@ -945,7 +945,7 @@ namespace SwRebellionEditor
             0,
             0,
             0});
-            this.combatVariance.ValueChanged += new System.EventHandler(this.updateCombatVarNum);
+            this.combatVariance.ValueChanged += new System.EventHandler(this.combatVariance_ValueChanged);
             // 
             // diplomacyVariance
             // 
@@ -965,7 +965,7 @@ namespace SwRebellionEditor
             0,
             0,
             0});
-            this.diplomacyVariance.ValueChanged += new System.EventHandler(this.updateDipVarNum);
+            this.diplomacyVariance.ValueChanged += new System.EventHandler(this.diplomacyVariance_ValueChanged);
             // 
             // espionageVariance
             // 
@@ -985,7 +985,7 @@ namespace SwRebellionEditor
             0,
             0,
             0});
-            this.espionageVariance.ValueChanged += new System.EventHandler(this.updateEspVarNum);
+            this.espionageVariance.ValueChanged += new System.EventHandler(this.espionageVariance_ValueChanged);
             // 
             // combatLabel
             // 
@@ -1015,7 +1015,7 @@ namespace SwRebellionEditor
             0,
             0,
             0});
-            this.combatBase.ValueChanged += new System.EventHandler(this.updateCombatBaseNum);
+            this.combatBase.ValueChanged += new System.EventHandler(this.combatBase_ValueChanged);
             // 
             // diploLabel
             // 
@@ -1045,7 +1045,7 @@ namespace SwRebellionEditor
             0,
             0,
             0});
-            this.diplomacyBase.ValueChanged += new System.EventHandler(this.updateDipBaseNum);
+            this.diplomacyBase.ValueChanged += new System.EventHandler(this.diplomacyBase_ValueChanged);
             // 
             // espionageBase
             // 
@@ -1065,7 +1065,7 @@ namespace SwRebellionEditor
             0,
             0,
             0});
-            this.espionageBase.ValueChanged += new System.EventHandler(this.updateEspBaseNum);
+            this.espionageBase.ValueChanged += new System.EventHandler(this.espionageBase_ValueChanged);
             // 
             // espLabel
             // 
@@ -1098,14 +1098,14 @@ namespace SwRebellionEditor
             this.groupBox5.Controls.Add(this.label1);
             this.groupBox5.Controls.Add(this.unknown3Num);
             this.groupBox5.Controls.Add(this.textStraDllId);
-            this.groupBox5.Controls.Add(this.prodFacNum);
+            this.groupBox5.Controls.Add(this.productionFacility);
             this.groupBox5.Controls.Add(this.unkown3Label);
             this.groupBox5.Controls.Add(this.familyId);
             this.groupBox5.Controls.Add(this.prodLabel);
             this.groupBox5.Controls.Add(this.idLabel);
             this.groupBox5.Controls.Add(this.familyLabel);
             this.groupBox5.Controls.Add(this.secProdFacNumlabel);
-            this.groupBox5.Controls.Add(this.secProdFacNum);
+            this.groupBox5.Controls.Add(this.nextProductionFacility);
             this.groupBox5.Location = new System.Drawing.Point(4, 167);
             this.groupBox5.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.groupBox5.Name = "groupBox5";
@@ -1196,20 +1196,20 @@ namespace SwRebellionEditor
             // 
             // prodFacNum
             // 
-            this.prodFacNum.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.prodFacNum.Enabled = false;
-            this.prodFacNum.Location = new System.Drawing.Point(279, 22);
-            this.prodFacNum.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.prodFacNum.Maximum = new decimal(new int[] {
+            this.productionFacility.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.productionFacility.Enabled = false;
+            this.productionFacility.Location = new System.Drawing.Point(279, 22);
+            this.productionFacility.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.productionFacility.Maximum = new decimal(new int[] {
             999,
             0,
             0,
             0});
-            this.prodFacNum.Name = "prodFacNum";
-            this.prodFacNum.Size = new System.Drawing.Size(59, 23);
-            this.prodFacNum.TabIndex = 138;
-            this.prodFacNum.TabStop = false;
-            this.prodFacNum.ValueChanged += new System.EventHandler(this.updateProdFacNum);
+            this.productionFacility.Name = "prodFacNum";
+            this.productionFacility.Size = new System.Drawing.Size(59, 23);
+            this.productionFacility.TabIndex = 138;
+            this.productionFacility.TabStop = false;
+            this.productionFacility.ValueChanged += new System.EventHandler(this.productionFacility_ValueChanged);
             // 
             // unkown3Label
             // 
@@ -1237,7 +1237,7 @@ namespace SwRebellionEditor
             this.familyId.Size = new System.Drawing.Size(59, 23);
             this.familyId.TabIndex = 147;
             this.familyId.TabStop = false;
-            this.familyId.ValueChanged += new System.EventHandler(this.updateFamilyIdNum);
+            this.familyId.ValueChanged += new System.EventHandler(this.familyId_ValueChanged);
             // 
             // prodLabel
             // 
@@ -1285,20 +1285,20 @@ namespace SwRebellionEditor
             // 
             // secProdFacNum
             // 
-            this.secProdFacNum.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.secProdFacNum.Enabled = false;
-            this.secProdFacNum.Location = new System.Drawing.Point(279, 53);
-            this.secProdFacNum.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.secProdFacNum.Maximum = new decimal(new int[] {
+            this.nextProductionFacility.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.nextProductionFacility.Enabled = false;
+            this.nextProductionFacility.Location = new System.Drawing.Point(279, 53);
+            this.nextProductionFacility.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.nextProductionFacility.Maximum = new decimal(new int[] {
             999,
             0,
             0,
             0});
-            this.secProdFacNum.Name = "secProdFacNum";
-            this.secProdFacNum.Size = new System.Drawing.Size(59, 23);
-            this.secProdFacNum.TabIndex = 141;
-            this.secProdFacNum.TabStop = false;
-            this.secProdFacNum.ValueChanged += new System.EventHandler(this.updateSecProdFacNum);
+            this.nextProductionFacility.Name = "secProdFacNum";
+            this.nextProductionFacility.Size = new System.Drawing.Size(59, 23);
+            this.nextProductionFacility.TabIndex = 141;
+            this.nextProductionFacility.TabStop = false;
+            this.nextProductionFacility.ValueChanged += new System.EventHandler(this.nextProductionFacility_ValueChanged);
             // 
             // encyText
             // 
@@ -1357,7 +1357,7 @@ namespace SwRebellionEditor
             this.isUnableToBetray.TabIndex = 17;
             this.isUnableToBetray.Text = "Unable to Betray";
             this.isUnableToBetray.UseVisualStyleBackColor = true;
-            this.isUnableToBetray.CheckStateChanged += new System.EventHandler(this.updateBetrayFlagCheck);
+            this.isUnableToBetray.CheckStateChanged += new System.EventHandler(this.isUnableToBetray_CheckStateChanged);
             // 
             // isAllianceUnit
             // 
@@ -1369,7 +1369,7 @@ namespace SwRebellionEditor
             this.isAllianceUnit.TabIndex = 15;
             this.isAllianceUnit.Text = "Alliance";
             this.isAllianceUnit.UseVisualStyleBackColor = true;
-            this.isAllianceUnit.CheckStateChanged += new System.EventHandler(this.updateRebelUnitCheck);
+            this.isAllianceUnit.CheckStateChanged += new System.EventHandler(this.isAllianceUnit_CheckStateChanged);
             // 
             // isEmpireUnit
             // 
@@ -1381,7 +1381,7 @@ namespace SwRebellionEditor
             this.isEmpireUnit.TabIndex = 16;
             this.isEmpireUnit.Text = "Imperial";
             this.isEmpireUnit.UseVisualStyleBackColor = true;
-            this.isEmpireUnit.CheckStateChanged += new System.EventHandler(this.updateEmpireUnitCheck);
+            this.isEmpireUnit.CheckStateChanged += new System.EventHandler(this.isEmpireUnit_CheckStateChanged);
             // 
             // cmdAbilityGroup
             // 
@@ -1407,7 +1407,7 @@ namespace SwRebellionEditor
             this.canBeCommander.TabIndex = 20;
             this.canBeCommander.Text = "Commander";
             this.canBeCommander.UseVisualStyleBackColor = true;
-            this.canBeCommander.CheckStateChanged += new System.EventHandler(this.updateCmdCommCheck);
+            this.canBeCommander.CheckStateChanged += new System.EventHandler(this.canBeCommander_CheckStateChanged);
             // 
             // cmdAdmCheck
             // 
@@ -1419,7 +1419,7 @@ namespace SwRebellionEditor
             this.canBeAdmiral.TabIndex = 18;
             this.canBeAdmiral.Text = "Admiral";
             this.canBeAdmiral.UseVisualStyleBackColor = true;
-            this.canBeAdmiral.CheckStateChanged += new System.EventHandler(this.updateCmdAdmCheck);
+            this.canBeAdmiral.CheckStateChanged += new System.EventHandler(this.canBeAdmiral_CheckStateChanged);
             // 
             // cmdGenCheck
             // 
@@ -1431,7 +1431,7 @@ namespace SwRebellionEditor
             this.canBeGeneral.TabIndex = 19;
             this.canBeGeneral.Text = "General";
             this.canBeGeneral.UseVisualStyleBackColor = true;
-            this.canBeGeneral.CheckStateChanged += new System.EventHandler(this.updateCmdGenCheck);
+            this.canBeGeneral.CheckStateChanged += new System.EventHandler(this.canBeGeneral_CheckStateChanged);
             // 
             // Open
             // 
@@ -1586,9 +1586,9 @@ namespace SwRebellionEditor
             ((System.ComponentModel.ISupportInitialize)(this.unitId)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.unknown3Num)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textStraDllId)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.prodFacNum)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.productionFacility)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.familyId)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.secProdFacNum)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nextProductionFacility)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.selector)).EndInit();
             this.charLoyalGroup.ResumeLayout(false);
             this.charLoyalGroup.PerformLayout();

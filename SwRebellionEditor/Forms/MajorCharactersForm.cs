@@ -47,7 +47,7 @@
             shipResearchVariance.Value = majorCharacter.ShipResearchVariance;
             textStraDllId.Value = majorCharacter.TextStraDllId;
             troopsResearchBase.Value = majorCharacter.TroopsResearchBase;
-            troopsReseachVariance.Value = majorCharacter.troopsReseachVariance;
+            troopsReseachVariance.Value = majorCharacter.TroopsReseachVariance;
             unitId.Value = majorCharacter.UnitId;
             unitIdHexLabel.Text = majorCharacter.UnitId.ToString("X");
 
@@ -78,9 +78,146 @@
 
         #region Changed events
 
-
-
-
+        private void canBeAdmiral_CheckStateChanged(object sender, EventArgs e)
+        {
+            GameFile.MajorCharacters[selector.Value].CanBeAdmiral = canBeAdmiral.Checked ? 1U : 0U;
+            GameFile.UnsavedData = true;
+        }
+        private void canBeCommander_CheckStateChanged(object sender, EventArgs e)
+        {
+            GameFile.MajorCharacters[selector.Value].CanBeCommander = canBeCommander.Checked ? 1U : 0U;
+            GameFile.UnsavedData = true;
+        }
+        private void canBeGeneral_CheckStateChanged(object sender, EventArgs e)
+        {
+            GameFile.MajorCharacters[selector.Value].CanBeGeneral = canBeGeneral.Checked ? 1U : 0U;
+            GameFile.UnsavedData = true;
+        }
+        private void combatBase_ValueChanged(object sender, EventArgs e)
+        {
+            GameFile.MajorCharacters[selector.Value].CombatBase = (uint)combatBase.Value;
+            GameFile.UnsavedData = true;
+        }
+        private void combatVariance_ValueChanged(object sender, EventArgs e)
+        {
+            GameFile.MajorCharacters[selector.Value].CombatVariance = (uint)combatVariance.Value;
+            GameFile.UnsavedData = true;
+        }
+        private void diplomacyBase_ValueChanged(object sender, EventArgs e)
+        {
+            GameFile.MajorCharacters[selector.Value].DiplomacyBase = (uint)diplomacyBase.Value;
+            GameFile.UnsavedData = true;
+        }
+        private void diplomacyVariance_ValueChanged(object sender, EventArgs e)
+        {
+            GameFile.MajorCharacters[selector.Value].DiplomacyVariance = (uint)diplomacyVariance.Value;
+            GameFile.UnsavedData = true;
+        }
+        private void espionageBase_ValueChanged(object sender, EventArgs e)
+        {
+            GameFile.MajorCharacters[selector.Value].EspionageBase = (uint)espionageBase.Value;
+            GameFile.UnsavedData = true;
+        }
+        private void espionageVariance_ValueChanged(object sender, EventArgs e)
+        {
+            GameFile.MajorCharacters[selector.Value].EspionageVariance = (uint)espionageVariance.Value;
+            GameFile.UnsavedData = true;
+        }
+        private void facilitiesResearchBase_ValueChanged(object sender, EventArgs e)
+        {
+            GameFile.MajorCharacters[selector.Value].FacilitiesResearchBase = (uint)facilitiesResearchBase.Value;
+            GameFile.UnsavedData = true;
+        }
+        private void facilitiesResearchVariance_ValueChanged(object sender, EventArgs e)
+        {
+            GameFile.MajorCharacters[selector.Value].FacilitiesResearchVariance = (uint)facilitiesResearchVariance.Value;
+            GameFile.UnsavedData = true;
+        }
+        private void familyId_ValueChanged(object sender, EventArgs e)
+        {
+            GameFile.MajorCharacters[selector.Value].FamilyId = (uint)familyId.Value;
+            GameFile.UnsavedData = true;
+        }
+        private void isAllianceUnit_CheckStateChanged(object sender, EventArgs e)
+        {
+            GameFile.MajorCharacters[selector.Value].IsAllianceUnit = isAllianceUnit.Checked ? 1U : 0U;
+            GameFile.UnsavedData = true;
+        }
+        private void isEmpireUnit_CheckStateChanged(object sender, EventArgs e)
+        {
+            GameFile.MajorCharacters[selector.Value].IsEmpireUnit = isEmpireUnit.Checked ? 1U : 0U;
+            GameFile.UnsavedData = true;
+        }
+        private void isJediTrainer_CheckStateChanged(object sender, EventArgs e)
+        {
+            GameFile.MajorCharacters[selector.Value].IsJediTrainer = isJediTrainer.Checked ? 1U : 0U;
+            GameFile.UnsavedData = true;
+        }
+        private void isKnownJedi_CheckStateChanged(object sender, EventArgs e)
+        {
+            GameFile.MajorCharacters[selector.Value].IsKnownJedi = isKnownJedi.Checked ? 1U : 0U;
+            GameFile.UnsavedData = true;
+        }
+        private void isUnableToBetray_CheckStateChanged(object sender, EventArgs e)
+        {
+            GameFile.MajorCharacters[selector.Value].IsUnableToBetray = isUnableToBetray.Checked ? 1U : 0U;
+            GameFile.UnsavedData = true;
+        }
+        private void jediLevelBase_ValueChanged(object sender, EventArgs e)
+        {
+            GameFile.MajorCharacters[selector.Value].JediLevelBase = (uint)jediLevelBase.Value;
+            GameFile.UnsavedData = true;
+        }
+        private void jediLevelVariance_ValueChanged(object sender, EventArgs e)
+        {
+            GameFile.MajorCharacters[selector.Value].JediLevelVariance = (uint)jediLevelVariance.Value;
+            GameFile.UnsavedData = true;
+        }
+        private void jediProbabilityBase_ValueChanged(object sender, EventArgs e)
+        {
+            GameFile.MajorCharacters[selector.Value].JediProbabilityBase = (uint)jediProbabilityBase.Value;
+            GameFile.UnsavedData = true;
+        }
+        private void loyaltyBase_ValueChanged(object sender, EventArgs e)
+        {
+            GameFile.MajorCharacters[selector.Value].LoyaltyBase = (uint)loyaltyBase.Value;
+            GameFile.UnsavedData = true;
+        }
+        private void loyaltyVariance_ValueChanged(object sender, EventArgs e)
+        {
+            GameFile.MajorCharacters[selector.Value].LoyaltyVariance = (uint)loyaltyVariance.Value;
+            GameFile.UnsavedData = true;
+        }
+        private void nextProductionFacility_ValueChanged(object sender, EventArgs e)
+        {
+            GameFile.MajorCharacters[selector.Value].NextProductionFacility = (uint)nextProductionFacility.Value;
+            GameFile.UnsavedData = true;
+        }
+        private void productionFacility_ValueChanged(object sender, EventArgs e)
+        {
+            GameFile.MajorCharacters[selector.Value].ProductionFacility = (uint)productionFacility.Value;
+            GameFile.UnsavedData = true;
+        }
+        private void shipResearchBase_ValueChanged(object sender, EventArgs e)
+        {
+            GameFile.MajorCharacters[selector.Value].ShipResearchBase = (uint)shipResearchBase.Value;
+            GameFile.UnsavedData = true;
+        }
+        private void shipResearchVariance_ValueChanged(object sender, EventArgs e)
+        {
+            GameFile.MajorCharacters[selector.Value].ShipResearchVariance = (uint)shipResearchVariance.Value;
+            GameFile.UnsavedData = true;
+        }
+        private void troopsResearchBase_ValueChanged(object sender, EventArgs e)
+        {
+            GameFile.MajorCharacters[selector.Value].TroopsResearchBase = (uint)troopsResearchBase.Value;
+            GameFile.UnsavedData = true;
+        }
+        private void troopsReseachVariance_ValueChanged(object sender, EventArgs e)
+        {
+            GameFile.MajorCharacters[selector.Value].TroopsReseachVariance = (uint)troopsReseachVariance.Value;
+            GameFile.UnsavedData = true;
+        }
 
         #endregion
 
@@ -91,180 +228,16 @@
 
 
 
-        private void updateDipBaseNum(object sender, EventArgs e)
-        {
-            GameFile.MajorCharacters[selector.Value].DiplomacyBase = (uint)diplomacyBase.Value;
-            GameFile.UnsavedData = true;
-        }
-        private void updateDipVarNum(object sender, EventArgs e)
-        {
-            GameFile.MajorCharacters[selector.Value].DiplomacyVariance = (uint)diplomacyVariance.Value;
-            GameFile.UnsavedData = true;
-        }
-        private void updateEspBaseNum(object sender, EventArgs e)
-        {
-            GameFile.MajorCharacters[selector.Value].EspionageBase = (uint)espionageBase.Value;
-            GameFile.UnsavedData = true;
-        }
-        private void updateEspVarNum(object sender, EventArgs e)
-        {
-            GameFile.MajorCharacters[selector.Value].EspionageVariance = (uint)espionageVariance.Value;
-            GameFile.UnsavedData = true;
-        }
-
-        private void updateCombatBaseNum(object sender, EventArgs e)
-        {
-            GameFile.MajorCharacters[selector.Value].CombatBase = (uint)combatBase.Value;
-            GameFile.UnsavedData = true;
-        }
-
-        private void updateCombatVarNum(object sender, EventArgs e)
-        {
-            GameFile.MajorCharacters[selector.Value].CombatVariance = (uint)combatVariance.Value;
-            GameFile.UnsavedData = true;
-        }
-
-        private void updateLoyalBaseNum(object sender, EventArgs e)
-        {
-            GameFile.MajorCharacters[selector.Value].LoyaltyBase = (uint)loyaltyBase.Value;
-            GameFile.UnsavedData = true;
-        }
-
-        private void updateLoyalVarNum(object sender, EventArgs e)
-        {
-            GameFile.MajorCharacters[selector.Value].LoyaltyVariance = (uint)loyaltyVariance.Value;
-            GameFile.UnsavedData = true;
-        }
-
-        private void updateShipResBaseNum(object sender, EventArgs e)
-        {
-            GameFile.MajorCharacters[selector.Value].ShipResearchBase = (uint)shipResearchBase.Value;
-            GameFile.UnsavedData = true;
-        }
-
-        private void updateShipResVarNum(object sender, EventArgs e)
-        {
-            GameFile.MajorCharacters[selector.Value].ShipResearchVariance = (uint)shipResearchVariance.Value;
-            GameFile.UnsavedData = true;
-        }
-
-        private void updateTroopResBaseNum(object sender, EventArgs e)
-        {
-            GameFile.MajorCharacters[selector.Value].TroopsResearchBase = (uint)troopsResearchBase.Value;
-            GameFile.UnsavedData = true;
-        }
-
-        private void updateTroopResVarNum(object sender, EventArgs e)
-        {
-            GameFile.MajorCharacters[selector.Value].troopsReseachVariance = (uint)troopsReseachVariance.Value;
-            GameFile.UnsavedData = true;
-        }
-
-        private void updateFacResBaseNum(object sender, EventArgs e)
-        {
-            GameFile.MajorCharacters[selector.Value].FacilitiesResearchBase = (uint)facilitiesResearchBase.Value;
-            GameFile.UnsavedData = true;
-        }
-
-        private void updateFacResVarNum(object sender, EventArgs e)
-        {
-            GameFile.MajorCharacters[selector.Value].FacilitiesResearchVariance = (uint)facilitiesResearchVariance.Value;
-            GameFile.UnsavedData = true;
-        }
-
-        private void updateJediProbBaseNum(object sender, EventArgs e)
-        {
-            GameFile.MajorCharacters[selector.Value].JediProbabilityBase = (uint)jediProbabilityBase.Value;
-            GameFile.UnsavedData = true;
-        }
-
-        private void updateJediLevelBaseNum(object sender, EventArgs e)
-        {
-            GameFile.MajorCharacters[selector.Value].JediLevelBase = (uint)jediLevelBase.Value;
-            GameFile.UnsavedData = true;
-        }
-
-        private void updateJediLevelVarNum(object sender, EventArgs e)
-        {
-            GameFile.MajorCharacters[selector.Value].JediLevelVariance = (uint)jediLevelVariance.Value;
-            GameFile.UnsavedData = true;
-        }
-
-        private void updateknownJediCheck(object sender, EventArgs e)
-        {
-            GameFile.MajorCharacters[selector.Value].IsKnownJedi = !isKnownJedi.Checked ? 0U : 1U;
-            GameFile.UnsavedData = true;
-        }
-
-        private void updateTrainJediCheck(object sender, EventArgs e)
-        {
-            GameFile.MajorCharacters[selector.Value].IsJediTrainer = !isJediTrainer.Checked ? 0U : 1U;
-            GameFile.UnsavedData = true;
-        }
-
-        private void updateRebelUnitCheck(object sender, EventArgs e)
-        {
-            GameFile.MajorCharacters[selector.Value].IsAllianceUnit = !isAllianceUnit.Checked ? 0U : 1U;
-            GameFile.UnsavedData = true;
-        }
-
-        private void updateEmpireUnitCheck(object sender, EventArgs e)
-        {
-            GameFile.MajorCharacters[selector.Value].IsEmpireUnit = !isEmpireUnit.Checked ? 0U : 1U;
-            GameFile.UnsavedData = true;
-        }
-
-        private void updateBetrayFlagCheck(object sender, EventArgs e)
-        {
-            GameFile.MajorCharacters[selector.Value].IsUnableToBetray = !isUnableToBetray.Checked ? 0U : 1U;
-            GameFile.UnsavedData = true;
-        }
-
-        private void updateCmdAdmCheck(object sender, EventArgs e)
-        {
-            GameFile.MajorCharacters[selector.Value].CanBeAdmiral = !canBeAdmiral.Checked ? 0U : 1U;
-            GameFile.UnsavedData = true;
-        }
-
-        private void updateCmdGenCheck(object sender, EventArgs e)
-        {
-            GameFile.MajorCharacters[selector.Value].CanBeGeneral = !canBeGeneral.Checked ? 0U : 1U;
-            GameFile.UnsavedData = true;
-        }
-
-        private void updateCmdCommCheck(object sender, EventArgs e)
-        {
-            GameFile.MajorCharacters[selector.Value].CanBeCommander = !canBeCommander.Checked ? 0U : 1U;
-            GameFile.UnsavedData = true;
-        }
-
-        private void updateProdFacNum(object sender, EventArgs e)
-        {
-            GameFile.MajorCharacters[selector.Value].prodFacilityNum = (uint)prodFacNum.Value;
-            GameFile.UnsavedData = true;
-        }
-
-        private void updateSecProdFacNum(object sender, EventArgs e)
-        {
-            GameFile.MajorCharacters[selector.Value].unknown2 = (uint)secProdFacNum.Value;
-            GameFile.UnsavedData = true;
-        }
-
-        private void updateFamilyIdNum(object sender, EventArgs e)
-        {
-            GameFile.MajorCharacters[selector.Value].FamilyId = (uint)familyId.Value;
-            GameFile.UnsavedData = true;
-        }
 
         private void loadMajCharImageList()
         {
-            int num = 72;
             charListView.Sorting = SortOrder.None;
             majCharImageList.Images.Clear();
-            for (int index = num; index <= num + GameFile.MajorCharactersCount - 1; ++index)
+            for (int selectorIndex = 0; selectorIndex < GameFile.MajorCharactersCount; ++selectorIndex)
             {
-                majCharImageList.Images.Add(Image.FromFile(RegistryKeys.InstalledLocation + "\\EData\\EDATA.0" + index));
-                charListView.Items.Add(GameFile.MajorCharacters[index - num].EncyclopediaName, index - num);
+                var edataId = 72 + selectorIndex;
+                majCharImageList.Images.Add(Image.FromFile(RegistryKeys.InstalledLocation + "\\EData\\EDATA." + edataId.ToString("000")));
+                charListView.Items.Add(GameFile.MajorCharacters[selectorIndex].EncyclopediaName, selectorIndex);
             }
         }
 
