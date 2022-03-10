@@ -16,6 +16,17 @@
 
         #region Business Layer
 
+        protected override void DisplayGameItemsImages()
+        {
+            majorCharactersListView.Sorting = SortOrder.None;
+            majorCharactersImages.Images.Clear();
+            for (int selectorIndex = 0; selectorIndex < GameFile.MajorCharactersCount; ++selectorIndex)
+            {
+                var edataId = 72 + selectorIndex;
+                majorCharactersImages.Images.Add(Image.FromFile(RegistryKeys.InstalledLocation + "\\EData\\EDATA." + edataId.ToString("000")));
+                majorCharactersListView.Items.Add(GameFile.MajorCharacters[selectorIndex].EncyclopediaName, selectorIndex);
+            }
+        }
         protected override void DisplaySelectedGameObject(int selectorIndex)
         {
             var majorCharacter = GameFile.MajorCharacters[selectorIndex];
@@ -32,7 +43,7 @@
             facilitiesResearchBase.Value = majorCharacter.FacilitiesResearchBase;
             facilitiesResearchVariance.Value = majorCharacter.FacilitiesResearchVariance;
             familyId.Value = majorCharacter.FamilyId;
-            familyIdHexLabel.Text = majorCharacter.FamilyId.ToString("X");
+            familyIdHexLabel.Text = "0x" + majorCharacter.FamilyId.ToString("X");
             isAllianceUnit.Checked = majorCharacter.IsAllianceUnit > 0U;
             isEmpireUnit.Checked = majorCharacter.IsEmpireUnit > 0U;
             isJediTrainer.Checked = majorCharacter.IsJediTrainer > 0U;
@@ -49,7 +60,7 @@
             troopsResearchBase.Value = majorCharacter.TroopsResearchBase;
             troopsReseachVariance.Value = majorCharacter.TroopsReseachVariance;
             unitId.Value = majorCharacter.UnitId;
-            unitIdHexLabel.Text = majorCharacter.UnitId.ToString("X");
+            unitIdHexLabel.Text = "0x" + majorCharacter.UnitId.ToString("X");
 
             if (majorCharacter.EncyclopediaName == "Leia Organa")
             {
@@ -72,6 +83,36 @@
             picture.SizeMode = PictureBoxSizeMode.Zoom;
             var edataId = 72 + selectorIndex;
             picture.Image = Image.FromFile(RegistryKeys.InstalledLocation + "\\EData\\EDATA." + edataId.ToString("000"));
+        }
+
+        #endregion
+
+        #region Control events
+
+        private void majorCharactersListView_DoubleClick(object sender, EventArgs e)
+        {
+            selector.Value = majorCharactersListView.Items.IndexOf(majorCharactersListView.FocusedItem);
+            DisplaySelectedGameObject(selector.Value);
+            selector.Select();
+        }
+
+        private void majorCharactersListView_Click(object sender, EventArgs e)
+        {
+            selector.Value = majorCharactersListView.Items.IndexOf(majorCharactersListView.FocusedItem);
+            DisplaySelectedGameObject(selector.Value);
+            selector.Select();
+        }
+
+        private void picture_Click(object sender, EventArgs e)
+        {
+            if (majorCharactersListView.Items.Count > selector.Value + 1 && selector.Value - 1 >= 0)
+            {
+                majorCharactersListView.Items[selector.Value + 1].EnsureVisible();
+                majorCharactersListView.Items[selector.Value - 1].EnsureVisible();
+            }
+            else
+                majorCharactersListView.Items[selector.Value].EnsureVisible();
+            selector.Select();
         }
 
         #endregion
@@ -220,74 +261,5 @@
         }
 
         #endregion
-
-
-
-
-
-
-
-
-
-        private void loadMajCharImageList()
-        {
-            charListView.Sorting = SortOrder.None;
-            majCharImageList.Images.Clear();
-            for (int selectorIndex = 0; selectorIndex < GameFile.MajorCharactersCount; ++selectorIndex)
-            {
-                var edataId = 72 + selectorIndex;
-                majCharImageList.Images.Add(Image.FromFile(RegistryKeys.InstalledLocation + "\\EData\\EDATA." + edataId.ToString("000")));
-                charListView.Items.Add(GameFile.MajorCharacters[selectorIndex].EncyclopediaName, selectorIndex);
-            }
-        }
-
-        private void charListView_NewSelection()
-        {
-            selector.Value = charListView.Items.IndexOf(charListView.FocusedItem);
-            //DisplayMajCharData(selector.Value);
-            selector.Select();
-        }
-
-        private void charListView_DoubleClick(object sender, EventArgs e)
-        {
-            charListView_NewSelection();
-        }
-
-        private void charListView_Click(object sender, EventArgs e)
-        {
-            charListView_NewSelection();
-        }
-
-        private void ItemPicture_Click(object sender, EventArgs e)
-        {
-            if (charListView.Items.Count > selector.Value + 1 && selector.Value - 1 >= 0)
-            {
-                charListView.Items[selector.Value + 1].EnsureVisible();
-                charListView.Items[selector.Value - 1].EnsureVisible();
-            }
-            else
-            {
-                charListView.Items[selector.Value].EnsureVisible();
-            }
-
-            selector.Select();
-        }
-
-        private void MajCharForm_Load(object sender, EventArgs e)
-        {
-            if (RegistryKeys.PlaySounds)
-            {
-                Sound.Play(Resources.open_wav);
-            }
-
-            if (RegistryKeys.PlayMusic)
-            {
-                Sound.PlayRandomMusic();
-            }
-
-            //DisplayMajCharData(selector.Value);
-            loadMajCharImageList();
-            selector.Select();
-        }
     }
 }

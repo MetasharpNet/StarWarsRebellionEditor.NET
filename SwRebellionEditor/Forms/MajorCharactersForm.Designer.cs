@@ -81,9 +81,9 @@ namespace SwRebellionEditor
         private GroupBox groupBox5;
         private RichTextBox encyText;
         private PictureBox picture;
-        private ImageList majCharImageList;
+        private ImageList majorCharactersImages;
         private Label leiaForceLabel;
-        private ListView charListView;
+        private ListView majorCharactersListView;
         private NumericUpDown unknown3Num;
         private NumericUpDown textStraDllId;
         private NumericUpDown productionFacility;
@@ -205,8 +205,8 @@ namespace SwRebellionEditor
             this.SaveAs = new System.Windows.Forms.Button();
             this.Cancel = new System.Windows.Forms.Button();
             this.Ok = new System.Windows.Forms.Button();
-            this.majCharImageList = new System.Windows.Forms.ImageList(this.components);
-            this.charListView = new System.Windows.Forms.ListView();
+            this.majorCharactersImages = new System.Windows.Forms.ImageList(this.components);
+            this.majorCharactersListView = new System.Windows.Forms.ListView();
             this.picture = new System.Windows.Forms.PictureBox();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -1480,29 +1480,29 @@ namespace SwRebellionEditor
             this.Ok.UseVisualStyleBackColor = true;
             this.Ok.Click += new System.EventHandler(this.Ok_Click);
             // 
-            // majCharImageList
+            // majorCharactersImages
             // 
-            this.majCharImageList.ColorDepth = System.Windows.Forms.ColorDepth.Depth24Bit;
-            this.majCharImageList.ImageSize = new System.Drawing.Size(120, 60);
-            this.majCharImageList.TransparentColor = System.Drawing.Color.Transparent;
+            this.majorCharactersImages.ColorDepth = System.Windows.Forms.ColorDepth.Depth24Bit;
+            this.majorCharactersImages.ImageSize = new System.Drawing.Size(120, 60);
+            this.majorCharactersImages.TransparentColor = System.Drawing.Color.Transparent;
             // 
             // charListView
             // 
-            this.charListView.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.charListView.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.charListView.GridLines = true;
-            this.charListView.LargeImageList = this.majCharImageList;
-            this.charListView.Location = new System.Drawing.Point(0, 110);
-            this.charListView.Margin = new System.Windows.Forms.Padding(0);
-            this.charListView.MultiSelect = false;
-            this.charListView.Name = "charListView";
-            this.charListView.ShowGroups = false;
-            this.charListView.Size = new System.Drawing.Size(220, 475);
-            this.charListView.TabIndex = 0;
-            this.charListView.TabStop = false;
-            this.charListView.UseCompatibleStateImageBehavior = false;
-            this.charListView.Click += new System.EventHandler(this.charListView_Click);
-            this.charListView.DoubleClick += new System.EventHandler(this.charListView_DoubleClick);
+            this.majorCharactersListView.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.majorCharactersListView.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.majorCharactersListView.GridLines = true;
+            this.majorCharactersListView.LargeImageList = this.majorCharactersImages;
+            this.majorCharactersListView.Location = new System.Drawing.Point(0, 110);
+            this.majorCharactersListView.Margin = new System.Windows.Forms.Padding(0);
+            this.majorCharactersListView.MultiSelect = false;
+            this.majorCharactersListView.Name = "charListView";
+            this.majorCharactersListView.ShowGroups = false;
+            this.majorCharactersListView.Size = new System.Drawing.Size(220, 475);
+            this.majorCharactersListView.TabIndex = 0;
+            this.majorCharactersListView.TabStop = false;
+            this.majorCharactersListView.UseCompatibleStateImageBehavior = false;
+            this.majorCharactersListView.Click += new System.EventHandler(this.majorCharactersListView_Click);
+            this.majorCharactersListView.DoubleClick += new System.EventHandler(this.majorCharactersListView_DoubleClick);
             // 
             // picture
             // 
@@ -1515,7 +1515,7 @@ namespace SwRebellionEditor
             this.picture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picture.TabIndex = 134;
             this.picture.TabStop = false;
-            this.picture.Click += new System.EventHandler(this.ItemPicture_Click);
+            this.picture.Click += new System.EventHandler(this.picture_Click);
             // 
             // MajorCharactersForm
             // 
@@ -1524,7 +1524,7 @@ namespace SwRebellionEditor
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.Cancel;
             this.ClientSize = new System.Drawing.Size(810, 584);
-            this.Controls.Add(this.charListView);
+            this.Controls.Add(this.majorCharactersListView);
             this.Controls.Add(this.picture);
             this.Controls.Add(this.Open);
             this.Controls.Add(this.SaveAs);
@@ -1544,7 +1544,7 @@ namespace SwRebellionEditor
             this.Name = "MajorCharactersForm";
             this.Text = "Major Characters (MJCHARSD.DAT)";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.GameObjectsListForm_FormClosing);
-            this.Load += new System.EventHandler(this.MajCharForm_Load);
+            this.Load += new System.EventHandler(this.GameObjectsListForm_Load);
             this.Enter += new System.EventHandler(this.GameObjectsSelector_ValueChanged);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.GameObjectsListForm_KeyDown);
             this.tabControl1.ResumeLayout(false);

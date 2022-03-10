@@ -22,7 +22,7 @@
             constructionCost.Value = defenseFacility.ConstructionCost;
             encyclopediaName.Text = defenseFacility.EncyclopediaName;
             familyId.Value = defenseFacility.FamilyId;
-            familyIdHexLabel.Text = defenseFacility.FamilyId.ToString("X");
+            familyIdHexLabel.Text = "0x" + defenseFacility.FamilyId.ToString("X");
             firePowerRating.Value = defenseFacility.FirePowerRating;
             isAllianceUnit.Checked = defenseFacility.IsAllianceUnit > 0U;
             isEmpireUnit.Checked = defenseFacility.IsEmpireUnit > 0U;
@@ -34,7 +34,7 @@
             shieldRating.Value = defenseFacility.ShieldRating;
             textStraDllId.Value = defenseFacility.TextStraDllId;
             unitId.Value = defenseFacility.UnitId;
-            unitIdHexLabel.Text = defenseFacility.UnitId.ToString("X");
+            unitIdHexLabel.Text = "0x" + defenseFacility.UnitId.ToString("X");
             unknownMoralHp.Value = defenseFacility.UnknownMoralHp;
             unknown3Num.Value = defenseFacility.Unknown2;
 

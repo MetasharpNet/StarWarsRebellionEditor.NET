@@ -24,9 +24,9 @@
             detectionRating.Value = fighter.DetectionRating;
             encyclopediaName.Text = fighter.EncyclopediaName;
             familyId.Value = fighter.FamilyId;
-            familyIdHexLabel.Text = fighter.FamilyId.ToString("X");
+            familyIdHexLabel.Text = "0x" + fighter.FamilyId.ToString("X");
             fighterId.Value = fighter.FighterId;
-            fighterIdHexLabel.Text = fighter.FighterId.ToString("x");
+            fighterIdHexLabel.Text = "0x" + fighter.FighterId.ToString("X");
             hyperdriveBackup.Value = fighter.HyperdriveBackup;
             hyperdrivePrimary.Value = fighter.HyperdrivePrimary;
             ionCannonAft.Value = fighter.IonCannonAft;

@@ -21,7 +21,7 @@
             var capitalShip = GameFile.CapitalShips[selectorIndex];
             bombardmentMod.Value = capitalShip.BombardmentMod;
             capitalShipId.Value = capitalShip.CapitalShipId;
-            capitalShipIdHexLabel.Text = capitalShip.CapitalShipId.ToString("X");
+            capitalShipIdHexLabel.Text = "0x" + capitalShip.CapitalShipId.ToString("X");
             encyclopediaName.Text = capitalShip.EncyclopediaName;
             cargoFighters.Value = capitalShip.CargoFighters;
             cargoTroops.Value = capitalShip.CargoTroops;
@@ -29,7 +29,7 @@
             damageControl.Value = capitalShip.DamageControl;
             detectionRating.Value = capitalShip.DetectionRating;
             hullStrength.Value = capitalShip.HullStrength;
-            familyIdHexLabel.Text = capitalShip.FamilyId.ToString("x");
+            familyIdHexLabel.Text = "0x" + capitalShip.FamilyId.ToString("x");
             familyId.Value = capitalShip.FamilyId;
             gravityUnknown1.Value = capitalShip.GravityUnknown1;
             gravityUnknown2.Value = capitalShip.GravityUnknown2;

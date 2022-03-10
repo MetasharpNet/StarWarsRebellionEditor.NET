@@ -18,16 +18,19 @@
     {
         public TDatFile GameFile;
         public string GameFilePath;
-        protected TrackBar GameObjectsSelector;
+        protected TrackBar TrackBarSelector;
 
         #region Business Layer
 
+        protected virtual void DisplayGameItemsImages()
+        {
+        }
         protected virtual void DisplaySelectedGameObject(int selectorIndex)
         {
         }
         protected void InitializeBaseComponent(TrackBar selector)
         {
-            GameObjectsSelector = selector;
+            TrackBarSelector = selector;
         }
         protected void OpenSpecificGameFile()
         {
@@ -57,16 +60,16 @@
             {
                 if (e.Shift)
                 {
-                    if (GameObjectsSelector.Value - GameObjectsSelector.LargeChange > GameObjectsSelector.Minimum)
-                        GameObjectsSelector.Value -= GameObjectsSelector.LargeChange;
+                    if (TrackBarSelector.Value - TrackBarSelector.LargeChange > TrackBarSelector.Minimum)
+                        TrackBarSelector.Value -= TrackBarSelector.LargeChange;
                     else
-                        GameObjectsSelector.Value = GameObjectsSelector.Minimum;
+                        TrackBarSelector.Value = TrackBarSelector.Minimum;
                 }
                 else
                 {
-                    if (GameObjectsSelector.Value <= GameObjectsSelector.Minimum)
+                    if (TrackBarSelector.Value <= TrackBarSelector.Minimum)
                         return;
-                    --GameObjectsSelector.Value;
+                    --TrackBarSelector.Value;
                 }
             }
             else
@@ -75,16 +78,16 @@
                     return;
                 if (e.Shift)
                 {
-                    if (GameObjectsSelector.Value + GameObjectsSelector.LargeChange < GameObjectsSelector.Maximum)
-                        GameObjectsSelector.Value += GameObjectsSelector.LargeChange;
+                    if (TrackBarSelector.Value + TrackBarSelector.LargeChange < TrackBarSelector.Maximum)
+                        TrackBarSelector.Value += TrackBarSelector.LargeChange;
                     else
-                        GameObjectsSelector.Value = GameObjectsSelector.Maximum;
+                        TrackBarSelector.Value = TrackBarSelector.Maximum;
                 }
                 else
                 {
-                    if (GameObjectsSelector.Value >= GameObjectsSelector.Maximum)
+                    if (TrackBarSelector.Value >= TrackBarSelector.Maximum)
                         return;
-                    ++GameObjectsSelector.Value;
+                    ++TrackBarSelector.Value;
                 }
             }
         }
@@ -94,8 +97,9 @@
                 Sound.Play(Resources.open_wav);
             if (RegistryKeys.PlayMusic)
                 Sound.PlayRandomMusic();
-            DisplaySelectedGameObject(GameObjectsSelector.Value);
-            GameObjectsSelector.Select();
+            DisplaySelectedGameObject(TrackBarSelector.Value);
+            DisplayGameItemsImages();
+            TrackBarSelector.Select();
         }
 
         #endregion
@@ -125,8 +129,9 @@
                 GameFile.UnsavedData = false;
             }
             OpenSpecificGameFile();
-            DisplaySelectedGameObject(GameObjectsSelector.Value);
-            GameObjectsSelector.Select();
+            DisplaySelectedGameObject(TrackBarSelector.Value);
+            DisplayGameItemsImages();
+            TrackBarSelector.Select();
         }
         protected void SaveAs_Click(object sender, EventArgs e)
         {
@@ -139,16 +144,16 @@
                 GameFile.UnsavedData = false;
                 int num = (int)MessageBox.Show(this, "File saved", "", MessageBoxButtons.OK);
             }
-            GameObjectsSelector.Focus();
+            TrackBarSelector.Focus();
         }
 
         #endregion
 
-        #region ValueChanged events
+        #region Changed events
 
         protected void GameObjectsSelector_ValueChanged(object sender, EventArgs e)
         {
-            DisplaySelectedGameObject(GameObjectsSelector.Value);
+            DisplaySelectedGameObject(TrackBarSelector.Value);
         }
 
         #endregion
