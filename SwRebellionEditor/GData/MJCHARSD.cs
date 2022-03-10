@@ -2,11 +2,11 @@
 {
     public class MJCHARSD : DatFile
     {
-        public uint UnknownHeader1;
+        public uint UnknownHeader1; // 1
         [ArraySize]
-        public uint MajorCharactersCount;
-        public uint FamilyIdHeader;
-        public uint UnknownHeader2;
+        public uint MajorCharactersCount; // 6
+        public uint FamilyIdHeader; // 48
+        public uint UnknownHeader2; // 56
         public MJCHARSD_Character[] MajorCharacters;
     }
     public class MJCHARSD_Character
