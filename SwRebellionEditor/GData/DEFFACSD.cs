@@ -9,7 +9,6 @@
         public uint UnknownHeader2; //40
         public DEFFACSD_DefenseFacility[] DefenseFacilities;
     }
-
     public class DEFFACSD_DefenseFacility
     {
         public uint UnitId;

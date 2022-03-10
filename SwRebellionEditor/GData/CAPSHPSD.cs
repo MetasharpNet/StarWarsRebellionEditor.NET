@@ -9,7 +9,6 @@
         public uint UnknownHeader2; // 28
         public CAPSHPSD_CapitalShip[] CapitalShips;
     }
-
     public class CAPSHPSD_CapitalShip
     {
         public uint CapitalShipId;

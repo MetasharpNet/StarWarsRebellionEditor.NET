@@ -9,7 +9,6 @@
         public uint UnknownHeader2; // 32
         public FIGHTSD_Fighter[] Fighters;
     }
-
     public class FIGHTSD_Fighter
     {
         public uint FighterId;
@@ -58,6 +57,6 @@
         [Ignore]
         public string EncyclopediaName;
         [Ignore]
-        public string swrEncyText;
+        public string EncyclopediaDescription;
     }
 }

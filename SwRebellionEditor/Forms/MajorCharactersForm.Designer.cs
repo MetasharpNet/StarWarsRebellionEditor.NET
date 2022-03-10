@@ -12,91 +12,91 @@ namespace SwRebellionEditor
         /// Required designer variable.
         /// </summary>
         private System.ComponentModel.IContainer components = null;
+        private Button Open;
+        private Button SaveAs;
+        private Button Cancel;
+        private Button Ok;
+        private TrackBar selector;
         private TabControl tabControl1;
         private TabPage tabPage1;
         private TabPage tabPage2;
-        private Label ItemName;
-        private TrackBar ItemSelect;
+        private Label encyclopediaName;
         private GroupBox charLoyalGroup;
-        private CheckBox rebelUnit;
-        private CheckBox empireUnit;
+        private CheckBox isAllianceUnit;
+        private CheckBox isEmpireUnit;
         private GroupBox BasicGroup;
-        private NumericUpDown combatVarNum;
-        private NumericUpDown dipVarNum;
-        private NumericUpDown espVarNum;
+        private NumericUpDown combatVariance;
+        private NumericUpDown diplomacyVariance;
+        private NumericUpDown espionageVariance;
         private Label combatLabel;
-        private NumericUpDown combatBaseNum;
+        private NumericUpDown combatBase;
         private Label diploLabel;
-        private NumericUpDown dipBaseNum;
-        private NumericUpDown espBaseNum;
+        private NumericUpDown diplomacyBase;
+        private NumericUpDown espionageBase;
         private Label espLabel;
         private GroupBox researchGroup;
         private Label resVarLabel;
         private Label resBaseLabel;
-        private NumericUpDown facResVarNum;
-        private NumericUpDown shipResVarNum;
-        private NumericUpDown troopResVarNum;
+        private NumericUpDown facilitiesResearchVariance;
+        private NumericUpDown shipResearchVariance;
+        private NumericUpDown troopsReseachVariance;
         private Label facResLabel;
-        private NumericUpDown facResBaseNum;
+        private NumericUpDown facilitiesResearchBase;
         private Label shipResLabel;
-        private NumericUpDown shipResBaseNum;
-        private NumericUpDown troopResBaseNum;
+        private NumericUpDown shipResearchBase;
+        private NumericUpDown troopsResearchBase;
         private Label troopResLabel;
-        private NumericUpDown loyalVarNum;
-        private NumericUpDown loyalBaseNum;
+        private NumericUpDown loyaltyVariance;
+        private NumericUpDown loyaltyBase;
         private Label loyaltyLabel;
         private Label statsVarLabel;
         private Label statsBaseLabel;
-        private CheckBox betrayFlagCheck;
+        private CheckBox isUnableToBetray;
         private GroupBox jediStatGroup;
         private Label jediVarLabel;
         private Label jediBaseLabel;
-        private NumericUpDown jediLevelVarNum;
+        private NumericUpDown jediLevelVariance;
         private Label label12;
-        private NumericUpDown jediProbBaseNum;
-        private NumericUpDown jediLevelBaseNum;
+        private NumericUpDown jediProbabilityBase;
+        private NumericUpDown jediLevelBase;
         private Label label13;
         private GroupBox cmdAbilityGroup;
-        private CheckBox cmdCommCheck;
-        private CheckBox cmdAdmCheck;
-        private CheckBox cmdGenCheck;
+        private CheckBox canBeCommander;
+        private CheckBox canBeAdmiral;
+        private CheckBox canBeGeneral;
         private GroupBox jediModStatGroup;
         private Label jediStatVarLabel;
         private Label jediDipLabel;
         private Label jediEspLabel;
         private Label jediStatBaseLabel;
-        private NumericUpDown jediEspBaseNum;
-        private NumericUpDown jediDipBaseNum;
-        private NumericUpDown jediCombatVarNum;
-        private NumericUpDown jediCombatBaseNum;
+        private NumericUpDown jediEspionageBase;
+        private NumericUpDown jediDiplomacyBase;
+        private NumericUpDown jediCombatVariance;
+        private NumericUpDown jediCombatBase;
         private Label jediCombatLabel;
-        private NumericUpDown jediDipVarNum;
-        private NumericUpDown jediEspVarNum;
-        private CheckBox trainJediCheck;
-        private CheckBox knownJediCheck;
-        private Button openNew;
-        private Button SaveAs;
-        private Button Cancel;
-        private Button Ok;
+        private NumericUpDown jediDiplomacyVariance;
+        private NumericUpDown jediEspionageVariance;
+        private CheckBox isJediTrainer;
+        private CheckBox isKnownJedi;
         private GroupBox groupBox5;
         private RichTextBox encyText;
-        private PictureBox ItemPicture;
+        private PictureBox picture;
         private ImageList majCharImageList;
         private Label leiaForceLabel;
         private ListView charListView;
         private NumericUpDown unknown3Num;
-        private NumericUpDown idNum;
+        private NumericUpDown textStraDllId;
         private NumericUpDown prodFacNum;
         private Label unkown3Label;
-        private NumericUpDown familyIdNum;
+        private NumericUpDown familyId;
         private Label prodLabel;
         private Label idLabel;
         private Label familyLabel;
         private Label secProdFacNumlabel;
         private NumericUpDown secProdFacNum;
-        private Label famHexLabel;
-        private Label unitHexLabel;
-        private NumericUpDown unitNum;
+        private Label familyIdHexLabel;
+        private Label unitIdHexLabel;
+        private NumericUpDown unitId;
         private Label label1;
 
         /// <summary>
@@ -130,125 +130,125 @@ namespace SwRebellionEditor
             this.jediDipLabel = new System.Windows.Forms.Label();
             this.jediEspLabel = new System.Windows.Forms.Label();
             this.jediStatBaseLabel = new System.Windows.Forms.Label();
-            this.jediEspBaseNum = new System.Windows.Forms.NumericUpDown();
-            this.jediDipBaseNum = new System.Windows.Forms.NumericUpDown();
-            this.jediCombatVarNum = new System.Windows.Forms.NumericUpDown();
-            this.jediCombatBaseNum = new System.Windows.Forms.NumericUpDown();
+            this.jediEspionageBase = new System.Windows.Forms.NumericUpDown();
+            this.jediDiplomacyBase = new System.Windows.Forms.NumericUpDown();
+            this.jediCombatVariance = new System.Windows.Forms.NumericUpDown();
+            this.jediCombatBase = new System.Windows.Forms.NumericUpDown();
             this.jediCombatLabel = new System.Windows.Forms.Label();
-            this.jediDipVarNum = new System.Windows.Forms.NumericUpDown();
-            this.jediEspVarNum = new System.Windows.Forms.NumericUpDown();
+            this.jediDiplomacyVariance = new System.Windows.Forms.NumericUpDown();
+            this.jediEspionageVariance = new System.Windows.Forms.NumericUpDown();
             this.jediStatGroup = new System.Windows.Forms.GroupBox();
-            this.trainJediCheck = new System.Windows.Forms.CheckBox();
-            this.knownJediCheck = new System.Windows.Forms.CheckBox();
+            this.isJediTrainer = new System.Windows.Forms.CheckBox();
+            this.isKnownJedi = new System.Windows.Forms.CheckBox();
             this.jediVarLabel = new System.Windows.Forms.Label();
             this.jediBaseLabel = new System.Windows.Forms.Label();
-            this.jediLevelVarNum = new System.Windows.Forms.NumericUpDown();
+            this.jediLevelVariance = new System.Windows.Forms.NumericUpDown();
             this.label12 = new System.Windows.Forms.Label();
-            this.jediProbBaseNum = new System.Windows.Forms.NumericUpDown();
-            this.jediLevelBaseNum = new System.Windows.Forms.NumericUpDown();
+            this.jediProbabilityBase = new System.Windows.Forms.NumericUpDown();
+            this.jediLevelBase = new System.Windows.Forms.NumericUpDown();
             this.label13 = new System.Windows.Forms.Label();
             this.researchGroup = new System.Windows.Forms.GroupBox();
             this.resVarLabel = new System.Windows.Forms.Label();
             this.resBaseLabel = new System.Windows.Forms.Label();
-            this.facResVarNum = new System.Windows.Forms.NumericUpDown();
-            this.shipResVarNum = new System.Windows.Forms.NumericUpDown();
-            this.troopResVarNum = new System.Windows.Forms.NumericUpDown();
+            this.facilitiesResearchVariance = new System.Windows.Forms.NumericUpDown();
+            this.shipResearchVariance = new System.Windows.Forms.NumericUpDown();
+            this.troopsReseachVariance = new System.Windows.Forms.NumericUpDown();
             this.facResLabel = new System.Windows.Forms.Label();
-            this.facResBaseNum = new System.Windows.Forms.NumericUpDown();
+            this.facilitiesResearchBase = new System.Windows.Forms.NumericUpDown();
             this.shipResLabel = new System.Windows.Forms.Label();
-            this.shipResBaseNum = new System.Windows.Forms.NumericUpDown();
-            this.troopResBaseNum = new System.Windows.Forms.NumericUpDown();
+            this.shipResearchBase = new System.Windows.Forms.NumericUpDown();
+            this.troopsResearchBase = new System.Windows.Forms.NumericUpDown();
             this.troopResLabel = new System.Windows.Forms.Label();
             this.BasicGroup = new System.Windows.Forms.GroupBox();
-            this.loyalVarNum = new System.Windows.Forms.NumericUpDown();
-            this.loyalBaseNum = new System.Windows.Forms.NumericUpDown();
+            this.loyaltyVariance = new System.Windows.Forms.NumericUpDown();
+            this.loyaltyBase = new System.Windows.Forms.NumericUpDown();
             this.loyaltyLabel = new System.Windows.Forms.Label();
             this.statsVarLabel = new System.Windows.Forms.Label();
             this.statsBaseLabel = new System.Windows.Forms.Label();
-            this.combatVarNum = new System.Windows.Forms.NumericUpDown();
-            this.dipVarNum = new System.Windows.Forms.NumericUpDown();
-            this.espVarNum = new System.Windows.Forms.NumericUpDown();
+            this.combatVariance = new System.Windows.Forms.NumericUpDown();
+            this.diplomacyVariance = new System.Windows.Forms.NumericUpDown();
+            this.espionageVariance = new System.Windows.Forms.NumericUpDown();
             this.combatLabel = new System.Windows.Forms.Label();
-            this.combatBaseNum = new System.Windows.Forms.NumericUpDown();
+            this.combatBase = new System.Windows.Forms.NumericUpDown();
             this.diploLabel = new System.Windows.Forms.Label();
-            this.dipBaseNum = new System.Windows.Forms.NumericUpDown();
-            this.espBaseNum = new System.Windows.Forms.NumericUpDown();
+            this.diplomacyBase = new System.Windows.Forms.NumericUpDown();
+            this.espionageBase = new System.Windows.Forms.NumericUpDown();
             this.espLabel = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
-            this.famHexLabel = new System.Windows.Forms.Label();
-            this.unitHexLabel = new System.Windows.Forms.Label();
-            this.unitNum = new System.Windows.Forms.NumericUpDown();
+            this.familyIdHexLabel = new System.Windows.Forms.Label();
+            this.unitIdHexLabel = new System.Windows.Forms.Label();
+            this.unitId = new System.Windows.Forms.NumericUpDown();
             this.label1 = new System.Windows.Forms.Label();
             this.unknown3Num = new System.Windows.Forms.NumericUpDown();
-            this.idNum = new System.Windows.Forms.NumericUpDown();
+            this.textStraDllId = new System.Windows.Forms.NumericUpDown();
             this.prodFacNum = new System.Windows.Forms.NumericUpDown();
             this.unkown3Label = new System.Windows.Forms.Label();
-            this.familyIdNum = new System.Windows.Forms.NumericUpDown();
+            this.familyId = new System.Windows.Forms.NumericUpDown();
             this.prodLabel = new System.Windows.Forms.Label();
             this.idLabel = new System.Windows.Forms.Label();
             this.familyLabel = new System.Windows.Forms.Label();
             this.secProdFacNumlabel = new System.Windows.Forms.Label();
             this.secProdFacNum = new System.Windows.Forms.NumericUpDown();
             this.encyText = new System.Windows.Forms.RichTextBox();
-            this.ItemName = new System.Windows.Forms.Label();
-            this.ItemSelect = new System.Windows.Forms.TrackBar();
+            this.encyclopediaName = new System.Windows.Forms.Label();
+            this.selector = new System.Windows.Forms.TrackBar();
             this.charLoyalGroup = new System.Windows.Forms.GroupBox();
-            this.betrayFlagCheck = new System.Windows.Forms.CheckBox();
-            this.rebelUnit = new System.Windows.Forms.CheckBox();
-            this.empireUnit = new System.Windows.Forms.CheckBox();
+            this.isUnableToBetray = new System.Windows.Forms.CheckBox();
+            this.isAllianceUnit = new System.Windows.Forms.CheckBox();
+            this.isEmpireUnit = new System.Windows.Forms.CheckBox();
             this.cmdAbilityGroup = new System.Windows.Forms.GroupBox();
-            this.cmdCommCheck = new System.Windows.Forms.CheckBox();
-            this.cmdAdmCheck = new System.Windows.Forms.CheckBox();
-            this.cmdGenCheck = new System.Windows.Forms.CheckBox();
-            this.openNew = new System.Windows.Forms.Button();
+            this.canBeCommander = new System.Windows.Forms.CheckBox();
+            this.canBeAdmiral = new System.Windows.Forms.CheckBox();
+            this.canBeGeneral = new System.Windows.Forms.CheckBox();
+            this.Open = new System.Windows.Forms.Button();
             this.SaveAs = new System.Windows.Forms.Button();
             this.Cancel = new System.Windows.Forms.Button();
             this.Ok = new System.Windows.Forms.Button();
             this.majCharImageList = new System.Windows.Forms.ImageList(this.components);
             this.charListView = new System.Windows.Forms.ListView();
-            this.ItemPicture = new System.Windows.Forms.PictureBox();
+            this.picture = new System.Windows.Forms.PictureBox();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.jediModStatGroup.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.jediEspBaseNum)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.jediDipBaseNum)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.jediCombatVarNum)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.jediCombatBaseNum)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.jediDipVarNum)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.jediEspVarNum)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.jediEspionageBase)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.jediDiplomacyBase)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.jediCombatVariance)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.jediCombatBase)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.jediDiplomacyVariance)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.jediEspionageVariance)).BeginInit();
             this.jediStatGroup.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.jediLevelVarNum)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.jediProbBaseNum)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.jediLevelBaseNum)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.jediLevelVariance)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.jediProbabilityBase)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.jediLevelBase)).BeginInit();
             this.researchGroup.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.facResVarNum)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.shipResVarNum)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.troopResVarNum)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.facResBaseNum)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.shipResBaseNum)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.troopResBaseNum)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.facilitiesResearchVariance)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.shipResearchVariance)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.troopsReseachVariance)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.facilitiesResearchBase)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.shipResearchBase)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.troopsResearchBase)).BeginInit();
             this.BasicGroup.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.loyalVarNum)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.loyalBaseNum)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.combatVarNum)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dipVarNum)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.espVarNum)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.combatBaseNum)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dipBaseNum)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.espBaseNum)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.loyaltyVariance)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.loyaltyBase)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.combatVariance)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.diplomacyVariance)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.espionageVariance)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.combatBase)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.diplomacyBase)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.espionageBase)).BeginInit();
             this.tabPage2.SuspendLayout();
             this.groupBox5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.unitNum)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.unitId)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.unknown3Num)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.idNum)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textStraDllId)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.prodFacNum)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.familyIdNum)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.familyId)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.secProdFacNum)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ItemSelect)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.selector)).BeginInit();
             this.charLoyalGroup.SuspendLayout();
             this.cmdAbilityGroup.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ItemPicture)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picture)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -284,13 +284,13 @@ namespace SwRebellionEditor
             this.jediModStatGroup.Controls.Add(this.jediDipLabel);
             this.jediModStatGroup.Controls.Add(this.jediEspLabel);
             this.jediModStatGroup.Controls.Add(this.jediStatBaseLabel);
-            this.jediModStatGroup.Controls.Add(this.jediEspBaseNum);
-            this.jediModStatGroup.Controls.Add(this.jediDipBaseNum);
-            this.jediModStatGroup.Controls.Add(this.jediCombatVarNum);
-            this.jediModStatGroup.Controls.Add(this.jediCombatBaseNum);
+            this.jediModStatGroup.Controls.Add(this.jediEspionageBase);
+            this.jediModStatGroup.Controls.Add(this.jediDiplomacyBase);
+            this.jediModStatGroup.Controls.Add(this.jediCombatVariance);
+            this.jediModStatGroup.Controls.Add(this.jediCombatBase);
             this.jediModStatGroup.Controls.Add(this.jediCombatLabel);
-            this.jediModStatGroup.Controls.Add(this.jediDipVarNum);
-            this.jediModStatGroup.Controls.Add(this.jediEspVarNum);
+            this.jediModStatGroup.Controls.Add(this.jediDiplomacyVariance);
+            this.jediModStatGroup.Controls.Add(this.jediEspionageVariance);
             this.jediModStatGroup.Location = new System.Drawing.Point(273, 204);
             this.jediModStatGroup.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.jediModStatGroup.Name = "jediModStatGroup";
@@ -354,41 +354,41 @@ namespace SwRebellionEditor
             this.jediStatBaseLabel.TabIndex = 26;
             this.jediStatBaseLabel.Text = "Base";
             // 
-            // jediEspBaseNum
+            // jediEspionageBase
             // 
-            this.jediEspBaseNum.Enabled = false;
-            this.jediEspBaseNum.Location = new System.Drawing.Point(119, 73);
-            this.jediEspBaseNum.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.jediEspBaseNum.Maximum = new decimal(new int[] {
+            this.jediEspionageBase.Enabled = false;
+            this.jediEspionageBase.Location = new System.Drawing.Point(119, 73);
+            this.jediEspionageBase.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.jediEspionageBase.Maximum = new decimal(new int[] {
             999,
             0,
             0,
             0});
-            this.jediEspBaseNum.Name = "jediEspBaseNum";
-            this.jediEspBaseNum.Size = new System.Drawing.Size(59, 23);
-            this.jediEspBaseNum.TabIndex = 0;
-            this.jediEspBaseNum.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.jediEspBaseNum.Value = new decimal(new int[] {
+            this.jediEspionageBase.Name = "jediEspionageBase";
+            this.jediEspionageBase.Size = new System.Drawing.Size(59, 23);
+            this.jediEspionageBase.TabIndex = 0;
+            this.jediEspionageBase.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.jediEspionageBase.Value = new decimal(new int[] {
             999,
             0,
             0,
             0});
             // 
-            // jediDipBaseNum
+            // jediDiplomacyBase
             // 
-            this.jediDipBaseNum.Enabled = false;
-            this.jediDipBaseNum.Location = new System.Drawing.Point(119, 39);
-            this.jediDipBaseNum.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.jediDipBaseNum.Maximum = new decimal(new int[] {
+            this.jediDiplomacyBase.Enabled = false;
+            this.jediDiplomacyBase.Location = new System.Drawing.Point(119, 39);
+            this.jediDiplomacyBase.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.jediDiplomacyBase.Maximum = new decimal(new int[] {
             99999,
             0,
             0,
             0});
-            this.jediDipBaseNum.Name = "jediDipBaseNum";
-            this.jediDipBaseNum.Size = new System.Drawing.Size(59, 23);
-            this.jediDipBaseNum.TabIndex = 0;
-            this.jediDipBaseNum.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.jediDipBaseNum.Value = new decimal(new int[] {
+            this.jediDiplomacyBase.Name = "jediDiplomacyBase";
+            this.jediDiplomacyBase.Size = new System.Drawing.Size(59, 23);
+            this.jediDiplomacyBase.TabIndex = 0;
+            this.jediDiplomacyBase.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.jediDiplomacyBase.Value = new decimal(new int[] {
             999,
             0,
             0,
@@ -396,39 +396,39 @@ namespace SwRebellionEditor
             // 
             // jediCombatVarNum
             // 
-            this.jediCombatVarNum.Enabled = false;
-            this.jediCombatVarNum.Location = new System.Drawing.Point(186, 103);
-            this.jediCombatVarNum.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.jediCombatVarNum.Maximum = new decimal(new int[] {
+            this.jediCombatVariance.Enabled = false;
+            this.jediCombatVariance.Location = new System.Drawing.Point(186, 103);
+            this.jediCombatVariance.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.jediCombatVariance.Maximum = new decimal(new int[] {
             999,
             0,
             0,
             0});
-            this.jediCombatVarNum.Name = "jediCombatVarNum";
-            this.jediCombatVarNum.Size = new System.Drawing.Size(59, 23);
-            this.jediCombatVarNum.TabIndex = 0;
-            this.jediCombatVarNum.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.jediCombatVarNum.Value = new decimal(new int[] {
+            this.jediCombatVariance.Name = "jediCombatVarNum";
+            this.jediCombatVariance.Size = new System.Drawing.Size(59, 23);
+            this.jediCombatVariance.TabIndex = 0;
+            this.jediCombatVariance.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.jediCombatVariance.Value = new decimal(new int[] {
             999,
             0,
             0,
             0});
             // 
-            // jediCombatBaseNum
+            // jediCombatBase
             // 
-            this.jediCombatBaseNum.Enabled = false;
-            this.jediCombatBaseNum.Location = new System.Drawing.Point(119, 103);
-            this.jediCombatBaseNum.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.jediCombatBaseNum.Maximum = new decimal(new int[] {
+            this.jediCombatBase.Enabled = false;
+            this.jediCombatBase.Location = new System.Drawing.Point(119, 103);
+            this.jediCombatBase.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.jediCombatBase.Maximum = new decimal(new int[] {
             999,
             0,
             0,
             0});
-            this.jediCombatBaseNum.Name = "jediCombatBaseNum";
-            this.jediCombatBaseNum.Size = new System.Drawing.Size(59, 23);
-            this.jediCombatBaseNum.TabIndex = 0;
-            this.jediCombatBaseNum.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.jediCombatBaseNum.Value = new decimal(new int[] {
+            this.jediCombatBase.Name = "jediCombatBase";
+            this.jediCombatBase.Size = new System.Drawing.Size(59, 23);
+            this.jediCombatBase.TabIndex = 0;
+            this.jediCombatBase.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.jediCombatBase.Value = new decimal(new int[] {
             999,
             0,
             0,
@@ -446,19 +446,19 @@ namespace SwRebellionEditor
             // 
             // jediDipVarNum
             // 
-            this.jediDipVarNum.Enabled = false;
-            this.jediDipVarNum.Location = new System.Drawing.Point(186, 39);
-            this.jediDipVarNum.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.jediDipVarNum.Maximum = new decimal(new int[] {
+            this.jediDiplomacyVariance.Enabled = false;
+            this.jediDiplomacyVariance.Location = new System.Drawing.Point(186, 39);
+            this.jediDiplomacyVariance.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.jediDiplomacyVariance.Maximum = new decimal(new int[] {
             99999,
             0,
             0,
             0});
-            this.jediDipVarNum.Name = "jediDipVarNum";
-            this.jediDipVarNum.Size = new System.Drawing.Size(59, 23);
-            this.jediDipVarNum.TabIndex = 0;
-            this.jediDipVarNum.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.jediDipVarNum.Value = new decimal(new int[] {
+            this.jediDiplomacyVariance.Name = "jediDipVarNum";
+            this.jediDiplomacyVariance.Size = new System.Drawing.Size(59, 23);
+            this.jediDiplomacyVariance.TabIndex = 0;
+            this.jediDiplomacyVariance.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.jediDiplomacyVariance.Value = new decimal(new int[] {
             999,
             0,
             0,
@@ -466,19 +466,19 @@ namespace SwRebellionEditor
             // 
             // jediEspVarNum
             // 
-            this.jediEspVarNum.Enabled = false;
-            this.jediEspVarNum.Location = new System.Drawing.Point(186, 73);
-            this.jediEspVarNum.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.jediEspVarNum.Maximum = new decimal(new int[] {
+            this.jediEspionageVariance.Enabled = false;
+            this.jediEspionageVariance.Location = new System.Drawing.Point(186, 73);
+            this.jediEspionageVariance.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.jediEspionageVariance.Maximum = new decimal(new int[] {
             999,
             0,
             0,
             0});
-            this.jediEspVarNum.Name = "jediEspVarNum";
-            this.jediEspVarNum.Size = new System.Drawing.Size(59, 23);
-            this.jediEspVarNum.TabIndex = 0;
-            this.jediEspVarNum.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.jediEspVarNum.Value = new decimal(new int[] {
+            this.jediEspionageVariance.Name = "jediEspVarNum";
+            this.jediEspionageVariance.Size = new System.Drawing.Size(59, 23);
+            this.jediEspionageVariance.TabIndex = 0;
+            this.jediEspionageVariance.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.jediEspionageVariance.Value = new decimal(new int[] {
             999,
             0,
             0,
@@ -486,14 +486,14 @@ namespace SwRebellionEditor
             // 
             // jediStatGroup
             // 
-            this.jediStatGroup.Controls.Add(this.trainJediCheck);
-            this.jediStatGroup.Controls.Add(this.knownJediCheck);
+            this.jediStatGroup.Controls.Add(this.isJediTrainer);
+            this.jediStatGroup.Controls.Add(this.isKnownJedi);
             this.jediStatGroup.Controls.Add(this.jediVarLabel);
             this.jediStatGroup.Controls.Add(this.jediBaseLabel);
-            this.jediStatGroup.Controls.Add(this.jediLevelVarNum);
+            this.jediStatGroup.Controls.Add(this.jediLevelVariance);
             this.jediStatGroup.Controls.Add(this.label12);
-            this.jediStatGroup.Controls.Add(this.jediProbBaseNum);
-            this.jediStatGroup.Controls.Add(this.jediLevelBaseNum);
+            this.jediStatGroup.Controls.Add(this.jediProbabilityBase);
+            this.jediStatGroup.Controls.Add(this.jediLevelBase);
             this.jediStatGroup.Controls.Add(this.label13);
             this.jediStatGroup.Location = new System.Drawing.Point(4, 204);
             this.jediStatGroup.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -504,29 +504,29 @@ namespace SwRebellionEditor
             this.jediStatGroup.TabStop = false;
             this.jediStatGroup.Text = "Jedi Stats";
             // 
-            // trainJediCheck
+            // isJediTrainer
             // 
-            this.trainJediCheck.AutoSize = true;
-            this.trainJediCheck.Location = new System.Drawing.Point(163, 37);
-            this.trainJediCheck.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.trainJediCheck.Name = "trainJediCheck";
-            this.trainJediCheck.Size = new System.Drawing.Size(74, 19);
-            this.trainJediCheck.TabIndex = 22;
-            this.trainJediCheck.Text = "Train Jedi";
-            this.trainJediCheck.UseVisualStyleBackColor = true;
-            this.trainJediCheck.CheckStateChanged += new System.EventHandler(this.updateTrainJediCheck);
+            this.isJediTrainer.AutoSize = true;
+            this.isJediTrainer.Location = new System.Drawing.Point(163, 37);
+            this.isJediTrainer.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.isJediTrainer.Name = "isJediTrainer";
+            this.isJediTrainer.Size = new System.Drawing.Size(84, 19);
+            this.isJediTrainer.TabIndex = 22;
+            this.isJediTrainer.Text = "Jedi Trainer";
+            this.isJediTrainer.UseVisualStyleBackColor = true;
+            this.isJediTrainer.CheckStateChanged += new System.EventHandler(this.updateTrainJediCheck);
             // 
-            // knownJediCheck
+            // isKnownJedi
             // 
-            this.knownJediCheck.AutoSize = true;
-            this.knownJediCheck.Location = new System.Drawing.Point(10, 37);
-            this.knownJediCheck.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.knownJediCheck.Name = "knownJediCheck";
-            this.knownJediCheck.Size = new System.Drawing.Size(86, 19);
-            this.knownJediCheck.TabIndex = 21;
-            this.knownJediCheck.Text = "Known Jedi";
-            this.knownJediCheck.UseVisualStyleBackColor = true;
-            this.knownJediCheck.CheckStateChanged += new System.EventHandler(this.updateknownJediCheck);
+            this.isKnownJedi.AutoSize = true;
+            this.isKnownJedi.Location = new System.Drawing.Point(10, 37);
+            this.isKnownJedi.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.isKnownJedi.Name = "isKnownJedi";
+            this.isKnownJedi.Size = new System.Drawing.Size(86, 19);
+            this.isKnownJedi.TabIndex = 21;
+            this.isKnownJedi.Text = "Known Jedi";
+            this.isKnownJedi.UseVisualStyleBackColor = true;
+            this.isKnownJedi.CheckStateChanged += new System.EventHandler(this.updateknownJediCheck);
             // 
             // jediVarLabel
             // 
@@ -552,25 +552,25 @@ namespace SwRebellionEditor
             this.jediBaseLabel.TabIndex = 10;
             this.jediBaseLabel.Text = "Base";
             // 
-            // jediLevelVarNum
+            // jediLevelVariance
             // 
-            this.jediLevelVarNum.Location = new System.Drawing.Point(186, 137);
-            this.jediLevelVarNum.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.jediLevelVarNum.Maximum = new decimal(new int[] {
+            this.jediLevelVariance.Location = new System.Drawing.Point(186, 137);
+            this.jediLevelVariance.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.jediLevelVariance.Maximum = new decimal(new int[] {
             999,
             0,
             0,
             0});
-            this.jediLevelVarNum.Name = "jediLevelVarNum";
-            this.jediLevelVarNum.Size = new System.Drawing.Size(59, 23);
-            this.jediLevelVarNum.TabIndex = 25;
-            this.jediLevelVarNum.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.jediLevelVarNum.Value = new decimal(new int[] {
+            this.jediLevelVariance.Name = "jediLevelVariance";
+            this.jediLevelVariance.Size = new System.Drawing.Size(59, 23);
+            this.jediLevelVariance.TabIndex = 25;
+            this.jediLevelVariance.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.jediLevelVariance.Value = new decimal(new int[] {
             999,
             0,
             0,
             0});
-            this.jediLevelVarNum.ValueChanged += new System.EventHandler(this.updateJediLevelVarNum);
+            this.jediLevelVariance.ValueChanged += new System.EventHandler(this.updateJediLevelVarNum);
             // 
             // label12
             // 
@@ -582,45 +582,45 @@ namespace SwRebellionEditor
             this.label12.TabIndex = 0;
             this.label12.Text = "Probability";
             // 
-            // jediProbBaseNum
+            // jediProbabilityBase
             // 
-            this.jediProbBaseNum.Location = new System.Drawing.Point(119, 104);
-            this.jediProbBaseNum.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.jediProbBaseNum.Maximum = new decimal(new int[] {
+            this.jediProbabilityBase.Location = new System.Drawing.Point(119, 104);
+            this.jediProbabilityBase.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.jediProbabilityBase.Maximum = new decimal(new int[] {
             99999,
             0,
             0,
             0});
-            this.jediProbBaseNum.Name = "jediProbBaseNum";
-            this.jediProbBaseNum.Size = new System.Drawing.Size(59, 23);
-            this.jediProbBaseNum.TabIndex = 23;
-            this.jediProbBaseNum.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.jediProbBaseNum.Value = new decimal(new int[] {
+            this.jediProbabilityBase.Name = "jediProbabilityBase";
+            this.jediProbabilityBase.Size = new System.Drawing.Size(59, 23);
+            this.jediProbabilityBase.TabIndex = 23;
+            this.jediProbabilityBase.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.jediProbabilityBase.Value = new decimal(new int[] {
             999,
             0,
             0,
             0});
-            this.jediProbBaseNum.ValueChanged += new System.EventHandler(this.updateJediProbBaseNum);
+            this.jediProbabilityBase.ValueChanged += new System.EventHandler(this.updateJediProbBaseNum);
             // 
-            // jediLevelBaseNum
+            // jediLevelBase
             // 
-            this.jediLevelBaseNum.Location = new System.Drawing.Point(119, 137);
-            this.jediLevelBaseNum.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.jediLevelBaseNum.Maximum = new decimal(new int[] {
+            this.jediLevelBase.Location = new System.Drawing.Point(119, 137);
+            this.jediLevelBase.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.jediLevelBase.Maximum = new decimal(new int[] {
             999,
             0,
             0,
             0});
-            this.jediLevelBaseNum.Name = "jediLevelBaseNum";
-            this.jediLevelBaseNum.Size = new System.Drawing.Size(59, 23);
-            this.jediLevelBaseNum.TabIndex = 24;
-            this.jediLevelBaseNum.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.jediLevelBaseNum.Value = new decimal(new int[] {
+            this.jediLevelBase.Name = "jediLevelBase";
+            this.jediLevelBase.Size = new System.Drawing.Size(59, 23);
+            this.jediLevelBase.TabIndex = 24;
+            this.jediLevelBase.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.jediLevelBase.Value = new decimal(new int[] {
             999,
             0,
             0,
             0});
-            this.jediLevelBaseNum.ValueChanged += new System.EventHandler(this.updateJediLevelBaseNum);
+            this.jediLevelBase.ValueChanged += new System.EventHandler(this.updateJediLevelBaseNum);
             // 
             // label13
             // 
@@ -636,14 +636,14 @@ namespace SwRebellionEditor
             // 
             this.researchGroup.Controls.Add(this.resVarLabel);
             this.researchGroup.Controls.Add(this.resBaseLabel);
-            this.researchGroup.Controls.Add(this.facResVarNum);
-            this.researchGroup.Controls.Add(this.shipResVarNum);
-            this.researchGroup.Controls.Add(this.troopResVarNum);
+            this.researchGroup.Controls.Add(this.facilitiesResearchVariance);
+            this.researchGroup.Controls.Add(this.shipResearchVariance);
+            this.researchGroup.Controls.Add(this.troopsReseachVariance);
             this.researchGroup.Controls.Add(this.facResLabel);
-            this.researchGroup.Controls.Add(this.facResBaseNum);
+            this.researchGroup.Controls.Add(this.facilitiesResearchBase);
             this.researchGroup.Controls.Add(this.shipResLabel);
-            this.researchGroup.Controls.Add(this.shipResBaseNum);
-            this.researchGroup.Controls.Add(this.troopResBaseNum);
+            this.researchGroup.Controls.Add(this.shipResearchBase);
+            this.researchGroup.Controls.Add(this.troopsResearchBase);
             this.researchGroup.Controls.Add(this.troopResLabel);
             this.researchGroup.Location = new System.Drawing.Point(273, 7);
             this.researchGroup.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -678,65 +678,65 @@ namespace SwRebellionEditor
             this.resBaseLabel.TabIndex = 10;
             this.resBaseLabel.Text = "Base";
             // 
-            // facResVarNum
+            // facilitiesResearchVariance
             // 
-            this.facResVarNum.Location = new System.Drawing.Point(186, 99);
-            this.facResVarNum.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.facResVarNum.Maximum = new decimal(new int[] {
+            this.facilitiesResearchVariance.Location = new System.Drawing.Point(186, 99);
+            this.facilitiesResearchVariance.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.facilitiesResearchVariance.Maximum = new decimal(new int[] {
             999,
             0,
             0,
             0});
-            this.facResVarNum.Name = "facResVarNum";
-            this.facResVarNum.Size = new System.Drawing.Size(59, 23);
-            this.facResVarNum.TabIndex = 9;
-            this.facResVarNum.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.facResVarNum.Value = new decimal(new int[] {
+            this.facilitiesResearchVariance.Name = "facilitiesResearchVariance";
+            this.facilitiesResearchVariance.Size = new System.Drawing.Size(59, 23);
+            this.facilitiesResearchVariance.TabIndex = 9;
+            this.facilitiesResearchVariance.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.facilitiesResearchVariance.Value = new decimal(new int[] {
             999,
             0,
             0,
             0});
-            this.facResVarNum.ValueChanged += new System.EventHandler(this.updateFacResVarNum);
+            this.facilitiesResearchVariance.ValueChanged += new System.EventHandler(this.updateFacResVarNum);
             // 
-            // shipResVarNum
+            // shipResearchVariance
             // 
-            this.shipResVarNum.Location = new System.Drawing.Point(186, 36);
-            this.shipResVarNum.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.shipResVarNum.Maximum = new decimal(new int[] {
+            this.shipResearchVariance.Location = new System.Drawing.Point(186, 36);
+            this.shipResearchVariance.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.shipResearchVariance.Maximum = new decimal(new int[] {
             99999,
             0,
             0,
             0});
-            this.shipResVarNum.Name = "shipResVarNum";
-            this.shipResVarNum.Size = new System.Drawing.Size(59, 23);
-            this.shipResVarNum.TabIndex = 5;
-            this.shipResVarNum.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.shipResVarNum.Value = new decimal(new int[] {
+            this.shipResearchVariance.Name = "shipResearchVariance";
+            this.shipResearchVariance.Size = new System.Drawing.Size(59, 23);
+            this.shipResearchVariance.TabIndex = 5;
+            this.shipResearchVariance.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.shipResearchVariance.Value = new decimal(new int[] {
             999,
             0,
             0,
             0});
-            this.shipResVarNum.ValueChanged += new System.EventHandler(this.updateShipResVarNum);
+            this.shipResearchVariance.ValueChanged += new System.EventHandler(this.updateShipResVarNum);
             // 
-            // troopResVarNum
+            // troopsReseachVariance
             // 
-            this.troopResVarNum.Location = new System.Drawing.Point(186, 69);
-            this.troopResVarNum.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.troopResVarNum.Maximum = new decimal(new int[] {
+            this.troopsReseachVariance.Location = new System.Drawing.Point(186, 69);
+            this.troopsReseachVariance.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.troopsReseachVariance.Maximum = new decimal(new int[] {
             999,
             0,
             0,
             0});
-            this.troopResVarNum.Name = "troopResVarNum";
-            this.troopResVarNum.Size = new System.Drawing.Size(59, 23);
-            this.troopResVarNum.TabIndex = 7;
-            this.troopResVarNum.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.troopResVarNum.Value = new decimal(new int[] {
+            this.troopsReseachVariance.Name = "troopsReseachVariance";
+            this.troopsReseachVariance.Size = new System.Drawing.Size(59, 23);
+            this.troopsReseachVariance.TabIndex = 7;
+            this.troopsReseachVariance.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.troopsReseachVariance.Value = new decimal(new int[] {
             999,
             0,
             0,
             0});
-            this.troopResVarNum.ValueChanged += new System.EventHandler(this.updateTroopResVarNum);
+            this.troopsReseachVariance.ValueChanged += new System.EventHandler(this.updateTroopResVarNum);
             // 
             // facResLabel
             // 
@@ -748,25 +748,25 @@ namespace SwRebellionEditor
             this.facResLabel.TabIndex = 0;
             this.facResLabel.Text = "Facility";
             // 
-            // facResBaseNum
+            // facilitiesResearchBase
             // 
-            this.facResBaseNum.Location = new System.Drawing.Point(119, 99);
-            this.facResBaseNum.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.facResBaseNum.Maximum = new decimal(new int[] {
+            this.facilitiesResearchBase.Location = new System.Drawing.Point(119, 99);
+            this.facilitiesResearchBase.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.facilitiesResearchBase.Maximum = new decimal(new int[] {
             999,
             0,
             0,
             0});
-            this.facResBaseNum.Name = "facResBaseNum";
-            this.facResBaseNum.Size = new System.Drawing.Size(59, 23);
-            this.facResBaseNum.TabIndex = 8;
-            this.facResBaseNum.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.facResBaseNum.Value = new decimal(new int[] {
+            this.facilitiesResearchBase.Name = "facilitiesResearchBase";
+            this.facilitiesResearchBase.Size = new System.Drawing.Size(59, 23);
+            this.facilitiesResearchBase.TabIndex = 8;
+            this.facilitiesResearchBase.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.facilitiesResearchBase.Value = new decimal(new int[] {
             999,
             0,
             0,
             0});
-            this.facResBaseNum.ValueChanged += new System.EventHandler(this.updateFacResBaseNum);
+            this.facilitiesResearchBase.ValueChanged += new System.EventHandler(this.updateFacResBaseNum);
             // 
             // shipResLabel
             // 
@@ -778,45 +778,45 @@ namespace SwRebellionEditor
             this.shipResLabel.TabIndex = 0;
             this.shipResLabel.Text = "Ship";
             // 
-            // shipResBaseNum
+            // shipResearchBase
             // 
-            this.shipResBaseNum.Location = new System.Drawing.Point(119, 36);
-            this.shipResBaseNum.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.shipResBaseNum.Maximum = new decimal(new int[] {
+            this.shipResearchBase.Location = new System.Drawing.Point(119, 36);
+            this.shipResearchBase.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.shipResearchBase.Maximum = new decimal(new int[] {
             99999,
             0,
             0,
             0});
-            this.shipResBaseNum.Name = "shipResBaseNum";
-            this.shipResBaseNum.Size = new System.Drawing.Size(59, 23);
-            this.shipResBaseNum.TabIndex = 4;
-            this.shipResBaseNum.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.shipResBaseNum.Value = new decimal(new int[] {
+            this.shipResearchBase.Name = "shipResearchBase";
+            this.shipResearchBase.Size = new System.Drawing.Size(59, 23);
+            this.shipResearchBase.TabIndex = 4;
+            this.shipResearchBase.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.shipResearchBase.Value = new decimal(new int[] {
             999,
             0,
             0,
             0});
-            this.shipResBaseNum.ValueChanged += new System.EventHandler(this.updateShipResBaseNum);
+            this.shipResearchBase.ValueChanged += new System.EventHandler(this.updateShipResBaseNum);
             // 
-            // troopResBaseNum
+            // troopsResearchBase
             // 
-            this.troopResBaseNum.Location = new System.Drawing.Point(119, 69);
-            this.troopResBaseNum.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.troopResBaseNum.Maximum = new decimal(new int[] {
+            this.troopsResearchBase.Location = new System.Drawing.Point(119, 69);
+            this.troopsResearchBase.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.troopsResearchBase.Maximum = new decimal(new int[] {
             999,
             0,
             0,
             0});
-            this.troopResBaseNum.Name = "troopResBaseNum";
-            this.troopResBaseNum.Size = new System.Drawing.Size(59, 23);
-            this.troopResBaseNum.TabIndex = 6;
-            this.troopResBaseNum.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.troopResBaseNum.Value = new decimal(new int[] {
+            this.troopsResearchBase.Name = "troopsResearchBase";
+            this.troopsResearchBase.Size = new System.Drawing.Size(59, 23);
+            this.troopsResearchBase.TabIndex = 6;
+            this.troopsResearchBase.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.troopsResearchBase.Value = new decimal(new int[] {
             999,
             0,
             0,
             0});
-            this.troopResBaseNum.ValueChanged += new System.EventHandler(this.updateTroopResBaseNum);
+            this.troopsResearchBase.ValueChanged += new System.EventHandler(this.updateTroopResBaseNum);
             // 
             // troopResLabel
             // 
@@ -830,19 +830,19 @@ namespace SwRebellionEditor
             // 
             // BasicGroup
             // 
-            this.BasicGroup.Controls.Add(this.loyalVarNum);
-            this.BasicGroup.Controls.Add(this.loyalBaseNum);
+            this.BasicGroup.Controls.Add(this.loyaltyVariance);
+            this.BasicGroup.Controls.Add(this.loyaltyBase);
             this.BasicGroup.Controls.Add(this.loyaltyLabel);
             this.BasicGroup.Controls.Add(this.statsVarLabel);
             this.BasicGroup.Controls.Add(this.statsBaseLabel);
-            this.BasicGroup.Controls.Add(this.combatVarNum);
-            this.BasicGroup.Controls.Add(this.dipVarNum);
-            this.BasicGroup.Controls.Add(this.espVarNum);
+            this.BasicGroup.Controls.Add(this.combatVariance);
+            this.BasicGroup.Controls.Add(this.diplomacyVariance);
+            this.BasicGroup.Controls.Add(this.espionageVariance);
             this.BasicGroup.Controls.Add(this.combatLabel);
-            this.BasicGroup.Controls.Add(this.combatBaseNum);
+            this.BasicGroup.Controls.Add(this.combatBase);
             this.BasicGroup.Controls.Add(this.diploLabel);
-            this.BasicGroup.Controls.Add(this.dipBaseNum);
-            this.BasicGroup.Controls.Add(this.espBaseNum);
+            this.BasicGroup.Controls.Add(this.diplomacyBase);
+            this.BasicGroup.Controls.Add(this.espionageBase);
             this.BasicGroup.Controls.Add(this.espLabel);
             this.BasicGroup.Location = new System.Drawing.Point(4, 3);
             this.BasicGroup.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -853,45 +853,45 @@ namespace SwRebellionEditor
             this.BasicGroup.TabStop = false;
             this.BasicGroup.Text = "Basic Stats";
             // 
-            // loyalVarNum
+            // loyaltyVariance
             // 
-            this.loyalVarNum.Location = new System.Drawing.Point(186, 129);
-            this.loyalVarNum.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.loyalVarNum.Maximum = new decimal(new int[] {
+            this.loyaltyVariance.Location = new System.Drawing.Point(186, 129);
+            this.loyaltyVariance.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.loyaltyVariance.Maximum = new decimal(new int[] {
             999,
             0,
             0,
             0});
-            this.loyalVarNum.Name = "loyalVarNum";
-            this.loyalVarNum.Size = new System.Drawing.Size(59, 23);
-            this.loyalVarNum.TabIndex = 11;
-            this.loyalVarNum.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.loyalVarNum.Value = new decimal(new int[] {
+            this.loyaltyVariance.Name = "loyaltyVariance";
+            this.loyaltyVariance.Size = new System.Drawing.Size(59, 23);
+            this.loyaltyVariance.TabIndex = 11;
+            this.loyaltyVariance.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.loyaltyVariance.Value = new decimal(new int[] {
             999,
             0,
             0,
             0});
-            this.loyalVarNum.ValueChanged += new System.EventHandler(this.updateLoyalVarNum);
+            this.loyaltyVariance.ValueChanged += new System.EventHandler(this.updateLoyalVarNum);
             // 
-            // loyalBaseNum
+            // loyaltyBase
             // 
-            this.loyalBaseNum.Location = new System.Drawing.Point(119, 129);
-            this.loyalBaseNum.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.loyalBaseNum.Maximum = new decimal(new int[] {
+            this.loyaltyBase.Location = new System.Drawing.Point(119, 129);
+            this.loyaltyBase.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.loyaltyBase.Maximum = new decimal(new int[] {
             999,
             0,
             0,
             0});
-            this.loyalBaseNum.Name = "loyalBaseNum";
-            this.loyalBaseNum.Size = new System.Drawing.Size(59, 23);
-            this.loyalBaseNum.TabIndex = 10;
-            this.loyalBaseNum.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.loyalBaseNum.Value = new decimal(new int[] {
+            this.loyaltyBase.Name = "loyaltyBase";
+            this.loyaltyBase.Size = new System.Drawing.Size(59, 23);
+            this.loyaltyBase.TabIndex = 10;
+            this.loyaltyBase.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.loyaltyBase.Value = new decimal(new int[] {
             999,
             0,
             0,
             0});
-            this.loyalBaseNum.ValueChanged += new System.EventHandler(this.updateLoyalBaseNum);
+            this.loyaltyBase.ValueChanged += new System.EventHandler(this.updateLoyalBaseNum);
             // 
             // loyaltyLabel
             // 
@@ -927,65 +927,65 @@ namespace SwRebellionEditor
             this.statsBaseLabel.TabIndex = 10;
             this.statsBaseLabel.Text = "Base";
             // 
-            // combatVarNum
+            // combatVariance
             // 
-            this.combatVarNum.Location = new System.Drawing.Point(186, 99);
-            this.combatVarNum.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.combatVarNum.Maximum = new decimal(new int[] {
+            this.combatVariance.Location = new System.Drawing.Point(186, 99);
+            this.combatVariance.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.combatVariance.Maximum = new decimal(new int[] {
             999,
             0,
             0,
             0});
-            this.combatVarNum.Name = "combatVarNum";
-            this.combatVarNum.Size = new System.Drawing.Size(59, 23);
-            this.combatVarNum.TabIndex = 9;
-            this.combatVarNum.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.combatVarNum.Value = new decimal(new int[] {
+            this.combatVariance.Name = "combatVariance";
+            this.combatVariance.Size = new System.Drawing.Size(59, 23);
+            this.combatVariance.TabIndex = 9;
+            this.combatVariance.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.combatVariance.Value = new decimal(new int[] {
             999,
             0,
             0,
             0});
-            this.combatVarNum.ValueChanged += new System.EventHandler(this.updateCombatVarNum);
+            this.combatVariance.ValueChanged += new System.EventHandler(this.updateCombatVarNum);
             // 
-            // dipVarNum
+            // diplomacyVariance
             // 
-            this.dipVarNum.Location = new System.Drawing.Point(186, 36);
-            this.dipVarNum.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.dipVarNum.Maximum = new decimal(new int[] {
+            this.diplomacyVariance.Location = new System.Drawing.Point(186, 36);
+            this.diplomacyVariance.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.diplomacyVariance.Maximum = new decimal(new int[] {
             99999,
             0,
             0,
             0});
-            this.dipVarNum.Name = "dipVarNum";
-            this.dipVarNum.Size = new System.Drawing.Size(59, 23);
-            this.dipVarNum.TabIndex = 5;
-            this.dipVarNum.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.dipVarNum.Value = new decimal(new int[] {
+            this.diplomacyVariance.Name = "diplomacyVariance";
+            this.diplomacyVariance.Size = new System.Drawing.Size(59, 23);
+            this.diplomacyVariance.TabIndex = 5;
+            this.diplomacyVariance.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.diplomacyVariance.Value = new decimal(new int[] {
             999,
             0,
             0,
             0});
-            this.dipVarNum.ValueChanged += new System.EventHandler(this.updateDipVarNum);
+            this.diplomacyVariance.ValueChanged += new System.EventHandler(this.updateDipVarNum);
             // 
-            // espVarNum
+            // espionageVariance
             // 
-            this.espVarNum.Location = new System.Drawing.Point(186, 69);
-            this.espVarNum.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.espVarNum.Maximum = new decimal(new int[] {
+            this.espionageVariance.Location = new System.Drawing.Point(186, 69);
+            this.espionageVariance.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.espionageVariance.Maximum = new decimal(new int[] {
             999,
             0,
             0,
             0});
-            this.espVarNum.Name = "espVarNum";
-            this.espVarNum.Size = new System.Drawing.Size(59, 23);
-            this.espVarNum.TabIndex = 7;
-            this.espVarNum.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.espVarNum.Value = new decimal(new int[] {
+            this.espionageVariance.Name = "espionageVariance";
+            this.espionageVariance.Size = new System.Drawing.Size(59, 23);
+            this.espionageVariance.TabIndex = 7;
+            this.espionageVariance.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.espionageVariance.Value = new decimal(new int[] {
             999,
             0,
             0,
             0});
-            this.espVarNum.ValueChanged += new System.EventHandler(this.updateEspVarNum);
+            this.espionageVariance.ValueChanged += new System.EventHandler(this.updateEspVarNum);
             // 
             // combatLabel
             // 
@@ -997,25 +997,25 @@ namespace SwRebellionEditor
             this.combatLabel.TabIndex = 0;
             this.combatLabel.Text = "Combat";
             // 
-            // combatBaseNum
+            // combatBase
             // 
-            this.combatBaseNum.Location = new System.Drawing.Point(119, 99);
-            this.combatBaseNum.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.combatBaseNum.Maximum = new decimal(new int[] {
+            this.combatBase.Location = new System.Drawing.Point(119, 99);
+            this.combatBase.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.combatBase.Maximum = new decimal(new int[] {
             999,
             0,
             0,
             0});
-            this.combatBaseNum.Name = "combatBaseNum";
-            this.combatBaseNum.Size = new System.Drawing.Size(59, 23);
-            this.combatBaseNum.TabIndex = 8;
-            this.combatBaseNum.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.combatBaseNum.Value = new decimal(new int[] {
+            this.combatBase.Name = "combatBase";
+            this.combatBase.Size = new System.Drawing.Size(59, 23);
+            this.combatBase.TabIndex = 8;
+            this.combatBase.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.combatBase.Value = new decimal(new int[] {
             999,
             0,
             0,
             0});
-            this.combatBaseNum.ValueChanged += new System.EventHandler(this.updateCombatBaseNum);
+            this.combatBase.ValueChanged += new System.EventHandler(this.updateCombatBaseNum);
             // 
             // diploLabel
             // 
@@ -1027,45 +1027,45 @@ namespace SwRebellionEditor
             this.diploLabel.TabIndex = 0;
             this.diploLabel.Text = "Diplomacy";
             // 
-            // dipBaseNum
+            // diplomacyBase
             // 
-            this.dipBaseNum.Location = new System.Drawing.Point(119, 36);
-            this.dipBaseNum.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.dipBaseNum.Maximum = new decimal(new int[] {
+            this.diplomacyBase.Location = new System.Drawing.Point(119, 36);
+            this.diplomacyBase.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.diplomacyBase.Maximum = new decimal(new int[] {
             99999,
             0,
             0,
             0});
-            this.dipBaseNum.Name = "dipBaseNum";
-            this.dipBaseNum.Size = new System.Drawing.Size(59, 23);
-            this.dipBaseNum.TabIndex = 4;
-            this.dipBaseNum.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.dipBaseNum.Value = new decimal(new int[] {
+            this.diplomacyBase.Name = "diplomacyBase";
+            this.diplomacyBase.Size = new System.Drawing.Size(59, 23);
+            this.diplomacyBase.TabIndex = 4;
+            this.diplomacyBase.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.diplomacyBase.Value = new decimal(new int[] {
             999,
             0,
             0,
             0});
-            this.dipBaseNum.ValueChanged += new System.EventHandler(this.updateDipBaseNum);
+            this.diplomacyBase.ValueChanged += new System.EventHandler(this.updateDipBaseNum);
             // 
-            // espBaseNum
+            // espionageBase
             // 
-            this.espBaseNum.Location = new System.Drawing.Point(119, 69);
-            this.espBaseNum.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.espBaseNum.Maximum = new decimal(new int[] {
+            this.espionageBase.Location = new System.Drawing.Point(119, 69);
+            this.espionageBase.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.espionageBase.Maximum = new decimal(new int[] {
             999,
             0,
             0,
             0});
-            this.espBaseNum.Name = "espBaseNum";
-            this.espBaseNum.Size = new System.Drawing.Size(59, 23);
-            this.espBaseNum.TabIndex = 6;
-            this.espBaseNum.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.espBaseNum.Value = new decimal(new int[] {
+            this.espionageBase.Name = "espionageBase";
+            this.espionageBase.Size = new System.Drawing.Size(59, 23);
+            this.espionageBase.TabIndex = 6;
+            this.espionageBase.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.espionageBase.Value = new decimal(new int[] {
             999,
             0,
             0,
             0});
-            this.espBaseNum.ValueChanged += new System.EventHandler(this.updateEspBaseNum);
+            this.espionageBase.ValueChanged += new System.EventHandler(this.updateEspBaseNum);
             // 
             // espLabel
             // 
@@ -1092,15 +1092,15 @@ namespace SwRebellionEditor
             // 
             // groupBox5
             // 
-            this.groupBox5.Controls.Add(this.famHexLabel);
-            this.groupBox5.Controls.Add(this.unitHexLabel);
-            this.groupBox5.Controls.Add(this.unitNum);
+            this.groupBox5.Controls.Add(this.familyIdHexLabel);
+            this.groupBox5.Controls.Add(this.unitIdHexLabel);
+            this.groupBox5.Controls.Add(this.unitId);
             this.groupBox5.Controls.Add(this.label1);
             this.groupBox5.Controls.Add(this.unknown3Num);
-            this.groupBox5.Controls.Add(this.idNum);
+            this.groupBox5.Controls.Add(this.textStraDllId);
             this.groupBox5.Controls.Add(this.prodFacNum);
             this.groupBox5.Controls.Add(this.unkown3Label);
-            this.groupBox5.Controls.Add(this.familyIdNum);
+            this.groupBox5.Controls.Add(this.familyId);
             this.groupBox5.Controls.Add(this.prodLabel);
             this.groupBox5.Controls.Add(this.idLabel);
             this.groupBox5.Controls.Add(this.familyLabel);
@@ -1117,41 +1117,41 @@ namespace SwRebellionEditor
             // 
             // famHexLabel
             // 
-            this.famHexLabel.AutoSize = true;
-            this.famHexLabel.Enabled = false;
-            this.famHexLabel.Location = new System.Drawing.Point(340, 88);
-            this.famHexLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.famHexLabel.Name = "famHexLabel";
-            this.famHexLabel.Size = new System.Drawing.Size(26, 15);
-            this.famHexLabel.TabIndex = 1127;
-            this.famHexLabel.Text = "hex";
+            this.familyIdHexLabel.AutoSize = true;
+            this.familyIdHexLabel.Enabled = false;
+            this.familyIdHexLabel.Location = new System.Drawing.Point(340, 88);
+            this.familyIdHexLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.familyIdHexLabel.Name = "famHexLabel";
+            this.familyIdHexLabel.Size = new System.Drawing.Size(26, 15);
+            this.familyIdHexLabel.TabIndex = 1127;
+            this.familyIdHexLabel.Text = "hex";
             // 
             // unitHexLabel
             // 
-            this.unitHexLabel.AutoSize = true;
-            this.unitHexLabel.Enabled = false;
-            this.unitHexLabel.Location = new System.Drawing.Point(340, 175);
-            this.unitHexLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.unitHexLabel.Name = "unitHexLabel";
-            this.unitHexLabel.Size = new System.Drawing.Size(26, 15);
-            this.unitHexLabel.TabIndex = 1126;
-            this.unitHexLabel.Text = "hex";
+            this.unitIdHexLabel.AutoSize = true;
+            this.unitIdHexLabel.Enabled = false;
+            this.unitIdHexLabel.Location = new System.Drawing.Point(340, 175);
+            this.unitIdHexLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.unitIdHexLabel.Name = "unitHexLabel";
+            this.unitIdHexLabel.Size = new System.Drawing.Size(26, 15);
+            this.unitIdHexLabel.TabIndex = 1126;
+            this.unitIdHexLabel.Text = "hex";
             // 
             // unitNum
             // 
-            this.unitNum.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.unitNum.Enabled = false;
-            this.unitNum.Location = new System.Drawing.Point(279, 173);
-            this.unitNum.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.unitNum.Maximum = new decimal(new int[] {
+            this.unitId.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.unitId.Enabled = false;
+            this.unitId.Location = new System.Drawing.Point(279, 173);
+            this.unitId.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.unitId.Maximum = new decimal(new int[] {
             999,
             0,
             0,
             0});
-            this.unitNum.Name = "unitNum";
-            this.unitNum.Size = new System.Drawing.Size(59, 23);
-            this.unitNum.TabIndex = 1125;
-            this.unitNum.TabStop = false;
+            this.unitId.Name = "unitNum";
+            this.unitId.Size = new System.Drawing.Size(59, 23);
+            this.unitId.TabIndex = 1125;
+            this.unitId.TabStop = false;
             // 
             // label1
             // 
@@ -1181,18 +1181,18 @@ namespace SwRebellionEditor
             // 
             // idNum
             // 
-            this.idNum.Enabled = false;
-            this.idNum.Location = new System.Drawing.Point(279, 143);
-            this.idNum.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.idNum.Maximum = new decimal(new int[] {
+            this.textStraDllId.Enabled = false;
+            this.textStraDllId.Location = new System.Drawing.Point(279, 143);
+            this.textStraDllId.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.textStraDllId.Maximum = new decimal(new int[] {
             99999,
             0,
             0,
             0});
-            this.idNum.Name = "idNum";
-            this.idNum.Size = new System.Drawing.Size(59, 23);
-            this.idNum.TabIndex = 148;
-            this.idNum.TabStop = false;
+            this.textStraDllId.Name = "idNum";
+            this.textStraDllId.Size = new System.Drawing.Size(59, 23);
+            this.textStraDllId.TabIndex = 148;
+            this.textStraDllId.TabStop = false;
             // 
             // prodFacNum
             // 
@@ -1224,20 +1224,20 @@ namespace SwRebellionEditor
             // 
             // familyIdNum
             // 
-            this.familyIdNum.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.familyIdNum.Enabled = false;
-            this.familyIdNum.Location = new System.Drawing.Point(279, 83);
-            this.familyIdNum.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.familyIdNum.Maximum = new decimal(new int[] {
+            this.familyId.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.familyId.Enabled = false;
+            this.familyId.Location = new System.Drawing.Point(279, 83);
+            this.familyId.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.familyId.Maximum = new decimal(new int[] {
             999,
             0,
             0,
             0});
-            this.familyIdNum.Name = "familyIdNum";
-            this.familyIdNum.Size = new System.Drawing.Size(59, 23);
-            this.familyIdNum.TabIndex = 147;
-            this.familyIdNum.TabStop = false;
-            this.familyIdNum.ValueChanged += new System.EventHandler(this.updateFamilyIdNum);
+            this.familyId.Name = "familyIdNum";
+            this.familyId.Size = new System.Drawing.Size(59, 23);
+            this.familyId.TabIndex = 147;
+            this.familyId.TabStop = false;
+            this.familyId.ValueChanged += new System.EventHandler(this.updateFamilyIdNum);
             // 
             // prodLabel
             // 
@@ -1312,32 +1312,32 @@ namespace SwRebellionEditor
             this.encyText.TabStop = false;
             this.encyText.Text = "Not Implemented yet....Encylopedia Data...Will add .Someday";
             // 
-            // ItemName
+            // encyclopediaName
             // 
-            this.ItemName.AutoSize = true;
-            this.ItemName.Location = new System.Drawing.Point(230, 88);
-            this.ItemName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.ItemName.Name = "ItemName";
-            this.ItemName.Size = new System.Drawing.Size(116, 15);
-            this.ItemName.TabIndex = 120;
-            this.ItemName.Text = "-- Item name here --";
+            this.encyclopediaName.AutoSize = true;
+            this.encyclopediaName.Location = new System.Drawing.Point(230, 88);
+            this.encyclopediaName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.encyclopediaName.Name = "encyclopediaName";
+            this.encyclopediaName.Size = new System.Drawing.Size(116, 15);
+            this.encyclopediaName.TabIndex = 120;
+            this.encyclopediaName.Text = "-- Item name here --";
             // 
-            // ItemSelect
+            // selector
             // 
-            this.ItemSelect.LargeChange = 4;
-            this.ItemSelect.Location = new System.Drawing.Point(233, 32);
-            this.ItemSelect.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.ItemSelect.Maximum = 5;
-            this.ItemSelect.Name = "ItemSelect";
-            this.ItemSelect.Size = new System.Drawing.Size(121, 45);
-            this.ItemSelect.TabIndex = 1;
-            this.ItemSelect.ValueChanged += new System.EventHandler(this.MajCharFormUpdateUI);
+            this.selector.LargeChange = 4;
+            this.selector.Location = new System.Drawing.Point(233, 32);
+            this.selector.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.selector.Maximum = 5;
+            this.selector.Name = "selector";
+            this.selector.Size = new System.Drawing.Size(121, 45);
+            this.selector.TabIndex = 1;
+            this.selector.ValueChanged += new System.EventHandler(this.GameObjectsSelector_ValueChanged);
             // 
             // charLoyalGroup
             // 
-            this.charLoyalGroup.Controls.Add(this.betrayFlagCheck);
-            this.charLoyalGroup.Controls.Add(this.rebelUnit);
-            this.charLoyalGroup.Controls.Add(this.empireUnit);
+            this.charLoyalGroup.Controls.Add(this.isUnableToBetray);
+            this.charLoyalGroup.Controls.Add(this.isAllianceUnit);
+            this.charLoyalGroup.Controls.Add(this.isEmpireUnit);
             this.charLoyalGroup.Location = new System.Drawing.Point(398, 32);
             this.charLoyalGroup.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.charLoyalGroup.Name = "charLoyalGroup";
@@ -1347,47 +1347,47 @@ namespace SwRebellionEditor
             this.charLoyalGroup.TabStop = false;
             this.charLoyalGroup.Text = "Character Loyalty";
             // 
-            // betrayFlagCheck
+            // isUnableToBetray
             // 
-            this.betrayFlagCheck.AutoSize = true;
-            this.betrayFlagCheck.Location = new System.Drawing.Point(7, 75);
-            this.betrayFlagCheck.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.betrayFlagCheck.Name = "betrayFlagCheck";
-            this.betrayFlagCheck.Size = new System.Drawing.Size(119, 19);
-            this.betrayFlagCheck.TabIndex = 17;
-            this.betrayFlagCheck.Text = "Won\'t Betray Flag";
-            this.betrayFlagCheck.UseVisualStyleBackColor = true;
-            this.betrayFlagCheck.CheckStateChanged += new System.EventHandler(this.updateBetrayFlagCheck);
+            this.isUnableToBetray.AutoSize = true;
+            this.isUnableToBetray.Location = new System.Drawing.Point(7, 75);
+            this.isUnableToBetray.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.isUnableToBetray.Name = "isUnableToBetray";
+            this.isUnableToBetray.Size = new System.Drawing.Size(113, 19);
+            this.isUnableToBetray.TabIndex = 17;
+            this.isUnableToBetray.Text = "Unable to Betray";
+            this.isUnableToBetray.UseVisualStyleBackColor = true;
+            this.isUnableToBetray.CheckStateChanged += new System.EventHandler(this.updateBetrayFlagCheck);
             // 
-            // rebelUnit
+            // isAllianceUnit
             // 
-            this.rebelUnit.AutoSize = true;
-            this.rebelUnit.Location = new System.Drawing.Point(7, 22);
-            this.rebelUnit.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.rebelUnit.Name = "rebelUnit";
-            this.rebelUnit.Size = new System.Drawing.Size(68, 19);
-            this.rebelUnit.TabIndex = 15;
-            this.rebelUnit.Text = "Alliance";
-            this.rebelUnit.UseVisualStyleBackColor = true;
-            this.rebelUnit.CheckStateChanged += new System.EventHandler(this.updateRebelUnitCheck);
+            this.isAllianceUnit.AutoSize = true;
+            this.isAllianceUnit.Location = new System.Drawing.Point(7, 22);
+            this.isAllianceUnit.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.isAllianceUnit.Name = "isAllianceUnit";
+            this.isAllianceUnit.Size = new System.Drawing.Size(68, 19);
+            this.isAllianceUnit.TabIndex = 15;
+            this.isAllianceUnit.Text = "Alliance";
+            this.isAllianceUnit.UseVisualStyleBackColor = true;
+            this.isAllianceUnit.CheckStateChanged += new System.EventHandler(this.updateRebelUnitCheck);
             // 
-            // empireUnit
+            // isEmpireUnit
             // 
-            this.empireUnit.AutoSize = true;
-            this.empireUnit.Location = new System.Drawing.Point(7, 48);
-            this.empireUnit.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.empireUnit.Name = "empireUnit";
-            this.empireUnit.Size = new System.Drawing.Size(69, 19);
-            this.empireUnit.TabIndex = 16;
-            this.empireUnit.Text = "Imperial";
-            this.empireUnit.UseVisualStyleBackColor = true;
-            this.empireUnit.CheckStateChanged += new System.EventHandler(this.updateEmpireUnitCheck);
+            this.isEmpireUnit.AutoSize = true;
+            this.isEmpireUnit.Location = new System.Drawing.Point(7, 48);
+            this.isEmpireUnit.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.isEmpireUnit.Name = "isEmpireUnit";
+            this.isEmpireUnit.Size = new System.Drawing.Size(69, 19);
+            this.isEmpireUnit.TabIndex = 16;
+            this.isEmpireUnit.Text = "Imperial";
+            this.isEmpireUnit.UseVisualStyleBackColor = true;
+            this.isEmpireUnit.CheckStateChanged += new System.EventHandler(this.updateEmpireUnitCheck);
             // 
             // cmdAbilityGroup
             // 
-            this.cmdAbilityGroup.Controls.Add(this.cmdCommCheck);
-            this.cmdAbilityGroup.Controls.Add(this.cmdAdmCheck);
-            this.cmdAbilityGroup.Controls.Add(this.cmdGenCheck);
+            this.cmdAbilityGroup.Controls.Add(this.canBeCommander);
+            this.cmdAbilityGroup.Controls.Add(this.canBeAdmiral);
+            this.cmdAbilityGroup.Controls.Add(this.canBeGeneral);
             this.cmdAbilityGroup.Location = new System.Drawing.Point(612, 32);
             this.cmdAbilityGroup.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.cmdAbilityGroup.Name = "cmdAbilityGroup";
@@ -1399,51 +1399,51 @@ namespace SwRebellionEditor
             // 
             // cmdCommCheck
             // 
-            this.cmdCommCheck.AutoSize = true;
-            this.cmdCommCheck.Location = new System.Drawing.Point(7, 75);
-            this.cmdCommCheck.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.cmdCommCheck.Name = "cmdCommCheck";
-            this.cmdCommCheck.Size = new System.Drawing.Size(93, 19);
-            this.cmdCommCheck.TabIndex = 20;
-            this.cmdCommCheck.Text = "Commander";
-            this.cmdCommCheck.UseVisualStyleBackColor = true;
-            this.cmdCommCheck.CheckStateChanged += new System.EventHandler(this.updateCmdCommCheck);
+            this.canBeCommander.AutoSize = true;
+            this.canBeCommander.Location = new System.Drawing.Point(7, 75);
+            this.canBeCommander.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.canBeCommander.Name = "cmdCommCheck";
+            this.canBeCommander.Size = new System.Drawing.Size(93, 19);
+            this.canBeCommander.TabIndex = 20;
+            this.canBeCommander.Text = "Commander";
+            this.canBeCommander.UseVisualStyleBackColor = true;
+            this.canBeCommander.CheckStateChanged += new System.EventHandler(this.updateCmdCommCheck);
             // 
             // cmdAdmCheck
             // 
-            this.cmdAdmCheck.AutoSize = true;
-            this.cmdAdmCheck.Location = new System.Drawing.Point(7, 22);
-            this.cmdAdmCheck.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.cmdAdmCheck.Name = "cmdAdmCheck";
-            this.cmdAdmCheck.Size = new System.Drawing.Size(68, 19);
-            this.cmdAdmCheck.TabIndex = 18;
-            this.cmdAdmCheck.Text = "Admiral";
-            this.cmdAdmCheck.UseVisualStyleBackColor = true;
-            this.cmdAdmCheck.CheckStateChanged += new System.EventHandler(this.updateCmdAdmCheck);
+            this.canBeAdmiral.AutoSize = true;
+            this.canBeAdmiral.Location = new System.Drawing.Point(7, 22);
+            this.canBeAdmiral.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.canBeAdmiral.Name = "cmdAdmCheck";
+            this.canBeAdmiral.Size = new System.Drawing.Size(68, 19);
+            this.canBeAdmiral.TabIndex = 18;
+            this.canBeAdmiral.Text = "Admiral";
+            this.canBeAdmiral.UseVisualStyleBackColor = true;
+            this.canBeAdmiral.CheckStateChanged += new System.EventHandler(this.updateCmdAdmCheck);
             // 
             // cmdGenCheck
             // 
-            this.cmdGenCheck.AutoSize = true;
-            this.cmdGenCheck.Location = new System.Drawing.Point(7, 48);
-            this.cmdGenCheck.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.cmdGenCheck.Name = "cmdGenCheck";
-            this.cmdGenCheck.Size = new System.Drawing.Size(66, 19);
-            this.cmdGenCheck.TabIndex = 19;
-            this.cmdGenCheck.Text = "General";
-            this.cmdGenCheck.UseVisualStyleBackColor = true;
-            this.cmdGenCheck.CheckStateChanged += new System.EventHandler(this.updateCmdGenCheck);
+            this.canBeGeneral.AutoSize = true;
+            this.canBeGeneral.Location = new System.Drawing.Point(7, 48);
+            this.canBeGeneral.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.canBeGeneral.Name = "cmdGenCheck";
+            this.canBeGeneral.Size = new System.Drawing.Size(66, 19);
+            this.canBeGeneral.TabIndex = 19;
+            this.canBeGeneral.Text = "General";
+            this.canBeGeneral.UseVisualStyleBackColor = true;
+            this.canBeGeneral.CheckStateChanged += new System.EventHandler(this.updateCmdGenCheck);
             // 
-            // openNew
+            // Open
             // 
-            this.openNew.Location = new System.Drawing.Point(663, 554);
-            this.openNew.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.openNew.Name = "openNew";
-            this.openNew.Size = new System.Drawing.Size(88, 27);
-            this.openNew.TabIndex = 0;
-            this.openNew.TabStop = false;
-            this.openNew.Text = "Open...";
-            this.openNew.UseVisualStyleBackColor = true;
-            this.openNew.Click += new System.EventHandler(this.openNew_Click);
+            this.Open.Location = new System.Drawing.Point(663, 554);
+            this.Open.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.Open.Name = "Open";
+            this.Open.Size = new System.Drawing.Size(88, 27);
+            this.Open.TabIndex = 0;
+            this.Open.TabStop = false;
+            this.Open.Text = "Open...";
+            this.Open.UseVisualStyleBackColor = true;
+            this.Open.Click += new System.EventHandler(this.Open_Click);
             // 
             // SaveAs
             // 
@@ -1504,18 +1504,18 @@ namespace SwRebellionEditor
             this.charListView.Click += new System.EventHandler(this.charListView_Click);
             this.charListView.DoubleClick += new System.EventHandler(this.charListView_DoubleClick);
             // 
-            // ItemPicture
+            // picture
             // 
-            this.ItemPicture.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.ItemPicture.InitialImage = null;
-            this.ItemPicture.Location = new System.Drawing.Point(0, 0);
-            this.ItemPicture.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.ItemPicture.Name = "ItemPicture";
-            this.ItemPicture.Size = new System.Drawing.Size(220, 110);
-            this.ItemPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.ItemPicture.TabIndex = 134;
-            this.ItemPicture.TabStop = false;
-            this.ItemPicture.Click += new System.EventHandler(this.ItemPicture_Click);
+            this.picture.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.picture.InitialImage = null;
+            this.picture.Location = new System.Drawing.Point(0, 0);
+            this.picture.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.picture.Name = "picture";
+            this.picture.Size = new System.Drawing.Size(220, 110);
+            this.picture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picture.TabIndex = 134;
+            this.picture.TabStop = false;
+            this.picture.Click += new System.EventHandler(this.ItemPicture_Click);
             // 
             // MajorCharactersForm
             // 
@@ -1525,15 +1525,15 @@ namespace SwRebellionEditor
             this.CancelButton = this.Cancel;
             this.ClientSize = new System.Drawing.Size(810, 584);
             this.Controls.Add(this.charListView);
-            this.Controls.Add(this.ItemPicture);
-            this.Controls.Add(this.openNew);
+            this.Controls.Add(this.picture);
+            this.Controls.Add(this.Open);
             this.Controls.Add(this.SaveAs);
             this.Controls.Add(this.Cancel);
             this.Controls.Add(this.Ok);
             this.Controls.Add(this.cmdAbilityGroup);
             this.Controls.Add(this.charLoyalGroup);
-            this.Controls.Add(this.ItemName);
-            this.Controls.Add(this.ItemSelect);
+            this.Controls.Add(this.encyclopediaName);
+            this.Controls.Add(this.selector);
             this.Controls.Add(this.tabControl1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.KeyPreview = true;
@@ -1543,58 +1543,58 @@ namespace SwRebellionEditor
             this.MinimumSize = new System.Drawing.Size(826, 623);
             this.Name = "MajorCharactersForm";
             this.Text = "Major Characters (MJCHARSD.DAT)";
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.MajCharForm_FormClosing);
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.GameObjectsListForm_FormClosing);
             this.Load += new System.EventHandler(this.MajCharForm_Load);
-            this.Enter += new System.EventHandler(this.MajCharFormUpdateUI);
-            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.MajCharForm_KeyDown);
+            this.Enter += new System.EventHandler(this.GameObjectsSelector_ValueChanged);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.GameObjectsListForm_KeyDown);
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.jediModStatGroup.ResumeLayout(false);
             this.jediModStatGroup.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.jediEspBaseNum)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.jediDipBaseNum)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.jediCombatVarNum)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.jediCombatBaseNum)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.jediDipVarNum)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.jediEspVarNum)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.jediEspionageBase)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.jediDiplomacyBase)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.jediCombatVariance)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.jediCombatBase)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.jediDiplomacyVariance)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.jediEspionageVariance)).EndInit();
             this.jediStatGroup.ResumeLayout(false);
             this.jediStatGroup.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.jediLevelVarNum)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.jediProbBaseNum)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.jediLevelBaseNum)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.jediLevelVariance)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.jediProbabilityBase)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.jediLevelBase)).EndInit();
             this.researchGroup.ResumeLayout(false);
             this.researchGroup.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.facResVarNum)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.shipResVarNum)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.troopResVarNum)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.facResBaseNum)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.shipResBaseNum)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.troopResBaseNum)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.facilitiesResearchVariance)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.shipResearchVariance)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.troopsReseachVariance)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.facilitiesResearchBase)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.shipResearchBase)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.troopsResearchBase)).EndInit();
             this.BasicGroup.ResumeLayout(false);
             this.BasicGroup.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.loyalVarNum)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.loyalBaseNum)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.combatVarNum)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dipVarNum)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.espVarNum)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.combatBaseNum)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dipBaseNum)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.espBaseNum)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.loyaltyVariance)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.loyaltyBase)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.combatVariance)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.diplomacyVariance)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.espionageVariance)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.combatBase)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.diplomacyBase)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.espionageBase)).EndInit();
             this.tabPage2.ResumeLayout(false);
             this.groupBox5.ResumeLayout(false);
             this.groupBox5.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.unitNum)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.unitId)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.unknown3Num)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.idNum)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textStraDllId)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.prodFacNum)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.familyIdNum)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.familyId)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.secProdFacNum)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ItemSelect)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.selector)).EndInit();
             this.charLoyalGroup.ResumeLayout(false);
             this.charLoyalGroup.PerformLayout();
             this.cmdAbilityGroup.ResumeLayout(false);
             this.cmdAbilityGroup.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ItemPicture)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picture)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
