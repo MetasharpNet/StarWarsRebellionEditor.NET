@@ -1,247 +1,107 @@
 ﻿namespace SwRebellionEditor
 {
-    public partial class ProductionFacilitiesForm : Form
+    public partial class ProductionFacilitiesForm : ProductionFacilitiesDesignForm
     {
+        #region .ctor
+
         public ProductionFacilitiesForm()
         {
+            GameFilePath = RegistryKeys.InstalledLocation + "\\GData\\PROFACSD.DAT";
+            GameFile = DatFile.Load<PROFACSD>(GameFilePath);
             InitializeComponent();
+            InitializeBaseComponent(selector);
         }
 
-        private void updateConCost(object sender, EventArgs e)
+        #endregion
+
+        #region Business Layer
+
+        protected override void DisplaySelectedGameObject(int selectorIndex)
         {
-            PROFACSD.ProdFac[ItemSelect.Value].conCost = (uint)conCostNum.Value;
-            PROFACSD.SetUnsavedData();
+            var productionFacility = GameFile.ProductionFacilities[selectorIndex];
+            bombardmentDefense.Value = productionFacility.BombardmentDefense;
+            constructionCost.Value = productionFacility.ConstructionCost;
+            encyclopediaName.Text = productionFacility.EncyclopediaName;
+            familyId.Value = productionFacility.FamilyId;
+            familyIdHexLabel.Text = "0x" + productionFacility.FamilyId.ToString("X");
+            isAllianceUnit.Checked = productionFacility.IsAllianceUnit > 0U;
+            isEmpireUnit.Checked = productionFacility.IsEmpireUnit > 0U;
+            maintenanceCost.Value = productionFacility.MaintenanceCost;
+            nextProductionFacility.Value = productionFacility.NextProductionFacility;
+            this.productionFacility.Value = productionFacility.ProductionFacility;
+            productionRate.Value = productionFacility.ProductionRate;
+            researchDifficulty.Value = productionFacility.ResearchDifficulty;
+            researchOrder.Value = productionFacility.ResearchOrder;
+            textStraDllId.Value = productionFacility.TextStraDllId;
+            unitId.Value = productionFacility.UnitId;
+            unitIdHexLabel.Text = "0x" + productionFacility.UnitId.ToString("X");
+            unknown2.Value = productionFacility.Unknown2;
+
+            var edataId = 1 + selectorIndex;
+            picture.SizeMode = PictureBoxSizeMode.Zoom;
+            picture.Image = Image.FromFile(RegistryKeys.InstalledLocation + "\\EData\\EDATA." + edataId.ToString("000"));
         }
 
-        private void updateMaintCost(object sender, EventArgs e)
+        #endregion
+
+        #region Changed events
+
+        private void bombardmentDefense_ValueChanged(object sender, EventArgs e)
         {
-            PROFACSD.ProdFac[ItemSelect.Value].maintCost = (uint)maintCostNum.Value;
-            PROFACSD.SetUnsavedData();
+            GameFile.ProductionFacilities[selector.Value].BombardmentDefense = (uint)bombardmentDefense.Value;
+            GameFile.UnsavedData = true;
         }
-
-        private void updateResearchNum(object sender, EventArgs e)
+        private void constructionCost_ValueChanged(object sender, EventArgs e)
         {
-            PROFACSD.ProdFac[ItemSelect.Value].researchNum = (uint)researchNum.Value;
-            PROFACSD.SetUnsavedData();
+            GameFile.ProductionFacilities[selector.Value].ConstructionCost = (uint)constructionCost.Value;
+            GameFile.UnsavedData = true;
         }
-
-        private void updateRateNum(object sender, EventArgs e)
+        private void familyId_ValueChanged(object sender, EventArgs e)
         {
-            PROFACSD.ProdFac[ItemSelect.Value].rate = (uint)RateNum.Value;
-            PROFACSD.SetUnsavedData();
+            GameFile.ProductionFacilities[selector.Value].FamilyId = (uint)familyId.Value;
+            GameFile.UnsavedData = true;
         }
-
-        private void updateResDiffNum(object sender, EventArgs e)
+        private void isAllianceUnit_CheckStateChanged(object sender, EventArgs e)
         {
-            PROFACSD.ProdFac[ItemSelect.Value].researchDiff = (uint)resDiffNum.Value;
-            PROFACSD.SetUnsavedData();
+            GameFile.ProductionFacilities[selector.Value].IsAllianceUnit = !isAllianceUnit.Checked ? 0U : 1U;
+            GameFile.UnsavedData = true;
         }
-
-        private void updateUnknownMoralHpNum(object sender, EventArgs e)
+        private void isEmpireUnit_CheckStateChanged(object sender, EventArgs e)
         {
-            PROFACSD.ProdFac[ItemSelect.Value].unknown4 = (uint)unknownMoralHpNum.Value;
-            PROFACSD.SetUnsavedData();
+            GameFile.ProductionFacilities[selector.Value].IsEmpireUnit = !isEmpireUnit.Checked ? 0U : 1U;
+            GameFile.UnsavedData = true;
         }
-
-        private void updateProdFacNum(object sender, EventArgs e)
+        private void maintenanceCost_ValueChanged(object sender, EventArgs e)
         {
-            PROFACSD.ProdFac[ItemSelect.Value].prodFacilityNum = (uint)prodFacNum.Value;
-            PROFACSD.SetUnsavedData();
+            GameFile.ProductionFacilities[selector.Value].MaintenanceCost = (uint)maintenanceCost.Value;
+            GameFile.UnsavedData = true;
         }
-
-        private void updateSecProdFacNum(object sender, EventArgs e)
+        private void nextProductionFacility_ValueChanged(object sender, EventArgs e)
         {
-            PROFACSD.ProdFac[ItemSelect.Value].unknown2 = (uint)secProdFacNum.Value;
-            PROFACSD.SetUnsavedData();
+            GameFile.ProductionFacilities[selector.Value].NextProductionFacility = (uint)nextProductionFacility.Value;
+            GameFile.UnsavedData = true;
         }
-
-        private void updateFamilyIdNum(object sender, EventArgs e)
+        private void productionFacility_ValueChanged(object sender, EventArgs e)
         {
-            PROFACSD.ProdFac[ItemSelect.Value].familyNum = (uint)familyIdNum.Value;
-            PROFACSD.SetUnsavedData();
+            GameFile.ProductionFacilities[selector.Value].ProductionFacility = (uint)productionFacility.Value;
+            GameFile.UnsavedData = true;
         }
-
-        private void updateRebelUnitCheck(object sender, EventArgs e)
+        private void productionRate_ValueChanged(object sender, EventArgs e)
         {
-            PROFACSD.ProdFac[ItemSelect.Value].rebel = !rebelUnit.Checked ? 0U : 1U;
-            PROFACSD.SetUnsavedData();
+            GameFile.ProductionFacilities[selector.Value].ProductionRate = (uint)productionRate.Value;
+            GameFile.UnsavedData = true;
         }
-
-        private void updateEmpireUnitCheck(object sender, EventArgs e)
+        private void researchDifficulty_ValueChanged(object sender, EventArgs e)
         {
-            PROFACSD.ProdFac[ItemSelect.Value].empire = !empireUnit.Checked ? 0U : 1U;
-            PROFACSD.SetUnsavedData();
+            GameFile.ProductionFacilities[selector.Value].ResearchDifficulty = (uint)researchDifficulty.Value;
+            GameFile.UnsavedData = true;
         }
-
-        private void ProdFacFormUpdateUI(object sender, EventArgs e)
+        private void researchOrder_ValueChanged(object sender, EventArgs e)
         {
-            DisplayProdFacData(ItemSelect.Value);
+            GameFile.ProductionFacilities[selector.Value].ResearchOrder = (uint)researchOrder.Value;
+            GameFile.UnsavedData = true;
         }
 
-        private void DisplayProdFacData(int index)
-        {
-            int num = 1 + index;
-            PROFACSD.LockChange();
-            ItemName.Text = PROFACSD.ProdFac[index].swrName;
-            conCostNum.Value = PROFACSD.ProdFac[index].conCost;
-            maintCostNum.Value = PROFACSD.ProdFac[index].maintCost;
-            researchNum.Value = PROFACSD.ProdFac[index].researchNum;
-            RateNum.Value = PROFACSD.ProdFac[index].rate;
-            resDiffNum.Value = PROFACSD.ProdFac[index].researchDiff;
-            unknownMoralHpNum.Value = PROFACSD.ProdFac[index].unknown4;
-            rebelUnit.Checked = PROFACSD.ProdFac[index].rebel > 0U;
-            empireUnit.Checked = PROFACSD.ProdFac[index].empire > 0U;
-            prodFacNum.Value = PROFACSD.ProdFac[index].prodFacilityNum;
-            secProdFacNum.Value = PROFACSD.ProdFac[index].unknown2;
-            familyIdNum.Value = PROFACSD.ProdFac[index].familyNum;
-            unknown3Num.Value = PROFACSD.ProdFac[index].unknown3;
-            idNum.Value = PROFACSD.ProdFac[index].textstratNum;
-            famHexLabel.Text = PROFACSD.ProdFac[index].familyNum.ToString("X");
-            unitNum.Value = PROFACSD.ProdFac[index].number;
-            unitHexLabel.Text = PROFACSD.ProdFac[index].number.ToString("X");
-            ItemPicture.SizeMode = PictureBoxSizeMode.Zoom;
-            ItemPicture.Image = Image.FromFile(RegistryKeys.InstalledLocation + "\\edata\\edata.00" + num);
-            PROFACSD.UnlockChange();
-        }
-
-        private void Ok_Click(object sender, EventArgs e)
-        {
-            if (PROFACSD.unsavedProdFacData)
-            {
-                PROFACSD.GetProdFacPath();
-                PROFACSD.SaveProdFacData(PROFACSD.GetProdFacPath());
-                PROFACSD.ClearUnsavedData();
-            }
-            Close();
-        }
-
-        private void Cancel_Click(object sender, EventArgs e)
-        {
-            if (PROFACSD.unsavedProdFacData)
-            {
-                if (MessageBox.Show(this, "Unsaved ProdFac data, are you sure you want to Close this Dialog?", "Save data", MessageBoxButtons.YesNo) != DialogResult.Yes)
-                {
-                    return;
-                }
-
-                Close();
-            }
-            else
-            {
-                Close();
-            }
-        }
-
-        private void SaveAs_Click(object sender, EventArgs e)
-        {
-            SaveFileDialog saveFileDialog = new SaveFileDialog();
-            saveFileDialog.InitialDirectory = RegistryKeys.InstalledLocation + "\\Gdata";
-            saveFileDialog.Filter = "Data Files (*.dat)| *.dat";
-            if (saveFileDialog.ShowDialog(this) == DialogResult.OK)
-            {
-                PROFACSD.SaveProdFacData(saveFileDialog.FileName);
-                PROFACSD.ClearUnsavedData();
-                int num = (int)MessageBox.Show(this, "ProdFac Data Saved", "", MessageBoxButtons.OK);
-            }
-            ItemSelect.Focus();
-        }
-
-        private void openNew_Click(object sender, EventArgs e)
-        {
-            if (PROFACSD.unsavedProdFacData && MessageBox.Show(this, "Save ProdFac data before opening new datafile?", "Save data", MessageBoxButtons.YesNo) == DialogResult.Yes)
-            {
-                PROFACSD.SaveProdFacData(PROFACSD.GetProdFacPath());
-                PROFACSD.ClearUnsavedData();
-            }
-            PROFACSD.OpenNewProdFacFile();
-            DisplayProdFacData(ItemSelect.Value);
-            ItemSelect.Focus();
-        }
-
-        private void ProdFacForm_Load(object sender, EventArgs e)
-        {
-            if (RegistryKeys.PlaySounds)
-            {
-                Sound.Play(Resources.open_wav);
-            }
-
-            if (RegistryKeys.PlayMusic)
-            {
-                Sound.PlayRandomMusic();
-            }
-
-            DisplayProdFacData(ItemSelect.Value);
-            ItemSelect.Select();
-        }
-
-        private void ProdFacForm_KeyDown(object sender, KeyEventArgs e)
-        {
-            if (e.KeyValue == 114)
-            {
-                if (e.Shift)
-                {
-                    if (ItemSelect.Value - ItemSelect.LargeChange > ItemSelect.Minimum)
-                    {
-                        ItemSelect.Value -= ItemSelect.LargeChange;
-                    }
-                    else
-                    {
-                        ItemSelect.Value = ItemSelect.Minimum;
-                    }
-                }
-                else
-                {
-                    if (ItemSelect.Value <= ItemSelect.Minimum)
-                    {
-                        return;
-                    }
-
-                    --ItemSelect.Value;
-                }
-            }
-            else
-            {
-                if (e.KeyValue != 115)
-                {
-                    return;
-                }
-
-                if (e.Shift)
-                {
-                    if (ItemSelect.Value + ItemSelect.LargeChange < ItemSelect.Maximum)
-                    {
-                        ItemSelect.Value += ItemSelect.LargeChange;
-                    }
-                    else
-                    {
-                        ItemSelect.Value = ItemSelect.Maximum;
-                    }
-                }
-                else
-                {
-                    if (ItemSelect.Value >= ItemSelect.Maximum)
-                    {
-                        return;
-                    }
-
-                    ++ItemSelect.Value;
-                }
-            }
-        }
-
-        private void ProdFacForm_FormClosing(object sender, FormClosingEventArgs e)
-        {
-            if (RegistryKeys.PlaySounds)
-            {
-                Sound.Play(Resources.close_wav);
-            }
-
-            if (!RegistryKeys.PlayMusic)
-            {
-                return;
-            }
-
-            Sound.PlayRandomMusic();
-        }
+        #endregion
     }
 }
