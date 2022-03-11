@@ -2,11 +2,11 @@
 {
     public class DEFFACSD : DatFile
     {
-        public uint UnknownHeader1; //1
+        public uint UnknownHeader1; // 1
         [ArraySize]
-        public uint DefenseFacilitiesCount; //6
-        public uint FamilyIdHeader; //34
-        public uint UnknownHeader2; //40
+        public uint DefenseFacilitiesCount; // 6
+        public uint FamilyIdHeader; // 34
+        public uint UnknownHeader2; // 40
         public DEFFACSD_DefenseFacility[] DefenseFacilities;
     }
     public class DEFFACSD_DefenseFacility

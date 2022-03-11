@@ -2,11 +2,11 @@
 {
     public class MNCHARSD : DatFile
     {
-        public uint UnknownHeader1;
+        public uint UnknownHeader1; // 1
         [ArraySize]
-        public uint MinorCharactersCount;
-        public uint FamilyIdHeader;
-        public uint UnknownHeader2;
+        public uint MinorCharactersCount; // 54
+        public uint FamilyIdHeader; // 56
+        public uint UnknownHeader2; // 60
         public MNCHARSD_MinorCharacter[] MinorCharacters;
     }
     public class MNCHARSD_MinorCharacter
