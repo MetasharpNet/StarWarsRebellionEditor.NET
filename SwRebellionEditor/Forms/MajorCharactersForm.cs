@@ -58,7 +58,7 @@
             shipResearchVariance.Value = majorCharacter.ShipResearchVariance;
             textStraDllId.Value = majorCharacter.TextStraDllId;
             troopsResearchBase.Value = majorCharacter.TroopsResearchBase;
-            troopsReseachVariance.Value = majorCharacter.TroopsReseachVariance;
+            troopsReseachVariance.Value = majorCharacter.TroopsResearchVariance;
             unitId.Value = majorCharacter.UnitId;
             unitIdHexLabel.Text = "0x" + majorCharacter.UnitId.ToString("X");
 
@@ -95,14 +95,12 @@
             DisplaySelectedGameObject(selector.Value);
             selector.Select();
         }
-
         private void majorCharactersListView_Click(object sender, EventArgs e)
         {
             selector.Value = majorCharactersListView.Items.IndexOf(majorCharactersListView.FocusedItem);
             DisplaySelectedGameObject(selector.Value);
             selector.Select();
         }
-
         private void picture_Click(object sender, EventArgs e)
         {
             if (majorCharactersListView.Items.Count > selector.Value + 1 && selector.Value - 1 >= 0)
@@ -256,7 +254,7 @@
         }
         private void troopsReseachVariance_ValueChanged(object sender, EventArgs e)
         {
-            GameFile.MajorCharacters[selector.Value].TroopsReseachVariance = (uint)troopsReseachVariance.Value;
+            GameFile.MajorCharacters[selector.Value].TroopsResearchVariance = (uint)troopsReseachVariance.Value;
             GameFile.UnsavedData = true;
         }
 

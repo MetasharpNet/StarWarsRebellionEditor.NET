@@ -12,12 +12,12 @@
     public class MANFACSD_ManufacturingFacility
     {
         public uint UnitId;
-        public uint unknown1;
+        public uint Unknown1;
         public uint ProductionFacility;
         public uint NextProductionFacility;
         public uint FamilyId;
         public ushort TextStraDllId;
-        public ushort Unknown;
+        public ushort Unknown2;
         public uint IsAllianceUnit;
         public uint IsEmpireUnit;
         public uint ConstructionCost;

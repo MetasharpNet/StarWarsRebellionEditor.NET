@@ -1,439 +1,263 @@
 ﻿namespace SwRebellionEditor
 {
-    public partial class MinorCharactersForm : Form
+    public partial class MinorCharactersForm : MinorCharactersDesignForm
     {
+        #region .ctor
+
         public MinorCharactersForm()
         {
+            GameFilePath = RegistryKeys.InstalledLocation + "\\GData\\MNCHARSD.DAT";
+            GameFile = DatFile.Load<MNCHARSD>(GameFilePath);
             InitializeComponent();
+            InitializeBaseComponent(selector);
         }
 
-        private void updateDipBaseNum(object sender, EventArgs e)
-        {
-            MNCHARSD.MinChar[ItemSelect.Value].diplomacyBase = (uint)dipBaseNum.Value;
-            DisplayMinCharData(ItemSelect.Value);
-            MNCHARSD.SetUnsavedData();
-        }
+        #endregion
 
-        private void updateDipVarNum(object sender, EventArgs e)
-        {
-            MNCHARSD.MinChar[ItemSelect.Value].diplomacyVar = (uint)dipVarNum.Value;
-            MNCHARSD.SetUnsavedData();
-        }
+        #region Business Layer
 
-        private void updateEspBaseNum(object sender, EventArgs e)
+        protected override void DisplayGameItemsImages()
         {
-            MNCHARSD.MinChar[ItemSelect.Value].espionageBase = (uint)espBaseNum.Value;
-            DisplayMinCharData(ItemSelect.Value);
-            MNCHARSD.SetUnsavedData();
-        }
-
-        private void updateEspVarNum(object sender, EventArgs e)
-        {
-            MNCHARSD.MinChar[ItemSelect.Value].espionageVar = (uint)espVarNum.Value;
-            MNCHARSD.SetUnsavedData();
-        }
-
-        private void updateCombatBaseNum(object sender, EventArgs e)
-        {
-            MNCHARSD.MinChar[ItemSelect.Value].combatBase = (uint)combatBaseNum.Value;
-            DisplayMinCharData(ItemSelect.Value);
-            MNCHARSD.SetUnsavedData();
-        }
-
-        private void updateCombatVarNum(object sender, EventArgs e)
-        {
-            MNCHARSD.MinChar[ItemSelect.Value].combatVar = (uint)combatVarNum.Value;
-            MNCHARSD.SetUnsavedData();
-        }
-
-        private void updateLoyalBaseNum(object sender, EventArgs e)
-        {
-            MNCHARSD.MinChar[ItemSelect.Value].loyaltyBase = (uint)loyalBaseNum.Value;
-            MNCHARSD.SetUnsavedData();
-        }
-
-        private void updateLoyalVarNum(object sender, EventArgs e)
-        {
-            MNCHARSD.MinChar[ItemSelect.Value].loyaltyVar = (uint)loyalVarNum.Value;
-            MNCHARSD.SetUnsavedData();
-        }
-
-        private void updateShipResBaseNum(object sender, EventArgs e)
-        {
-            MNCHARSD.MinChar[ItemSelect.Value].shipResBase = (uint)shipResBaseNum.Value;
-            MNCHARSD.SetUnsavedData();
-        }
-
-        private void updateShipResVarNum(object sender, EventArgs e)
-        {
-            MNCHARSD.MinChar[ItemSelect.Value].shipResVar = (uint)shipResVarNum.Value;
-            MNCHARSD.SetUnsavedData();
-        }
-
-        private void updateTroopResBaseNum(object sender, EventArgs e)
-        {
-            MNCHARSD.MinChar[ItemSelect.Value].troopResBase = (uint)troopResBaseNum.Value;
-            MNCHARSD.SetUnsavedData();
-        }
-
-        private void updateTroopResVarNum(object sender, EventArgs e)
-        {
-            MNCHARSD.MinChar[ItemSelect.Value].troopResVar = (uint)troopResVarNum.Value;
-            MNCHARSD.SetUnsavedData();
-        }
-
-        private void updateFacResBaseNum(object sender, EventArgs e)
-        {
-            MNCHARSD.MinChar[ItemSelect.Value].facilityResBase = (uint)facResBaseNum.Value;
-            MNCHARSD.SetUnsavedData();
-        }
-
-        private void updateFacResVarNum(object sender, EventArgs e)
-        {
-            MNCHARSD.MinChar[ItemSelect.Value].facilityResVar = (uint)facResVarNum.Value;
-            MNCHARSD.SetUnsavedData();
-        }
-
-        private void updateJediProbBaseNum(object sender, EventArgs e)
-        {
-            MNCHARSD.MinChar[ItemSelect.Value].jediProbability = (uint)jediProbBaseNum.Value;
-            MNCHARSD.SetUnsavedData();
-        }
-
-        private void updateJediLevelBaseNum(object sender, EventArgs e)
-        {
-            MNCHARSD.MinChar[ItemSelect.Value].jediLevelBase = (uint)jediLevelBaseNum.Value;
-            MNCHARSD.SetUnsavedData();
-        }
-
-        private void updateJediLevelVarNum(object sender, EventArgs e)
-        {
-            MNCHARSD.MinChar[ItemSelect.Value].jediLevelVar = (uint)jediLevelVarNum.Value;
-            MNCHARSD.SetUnsavedData();
-        }
-
-        private void updateknownJediCheck(object sender, EventArgs e)
-        {
-            MNCHARSD.MinChar[ItemSelect.Value].knownJediFlag = !knownJediCheck.Checked ? 0U : 1U;
-            MNCHARSD.SetUnsavedData();
-        }
-
-        private void updateTrainJediCheck(object sender, EventArgs e)
-        {
-            MNCHARSD.MinChar[ItemSelect.Value].jediTrainFlag = !trainJediCheck.Checked ? 0U : 1U;
-            MNCHARSD.SetUnsavedData();
-        }
-
-        private void updateRebelUnitCheck(object sender, EventArgs e)
-        {
-            MNCHARSD.MinChar[ItemSelect.Value].rebel = !rebelUnit.Checked ? 0U : 1U;
-            MNCHARSD.SetUnsavedData();
-        }
-
-        private void updateEmpireUnitCheck(object sender, EventArgs e)
-        {
-            MNCHARSD.MinChar[ItemSelect.Value].empire = !empireUnit.Checked ? 0U : 1U;
-            MNCHARSD.SetUnsavedData();
-        }
-
-        private void updateBetrayFlagCheck(object sender, EventArgs e)
-        {
-            MNCHARSD.MinChar[ItemSelect.Value].betrayFlag = !betrayFlagCheck.Checked ? 0U : 1U;
-            MNCHARSD.SetUnsavedData();
-        }
-
-        private void updateCmdAdmCheck(object sender, EventArgs e)
-        {
-            MNCHARSD.MinChar[ItemSelect.Value].admiralFlag = !cmdAdmCheck.Checked ? 0U : 1U;
-            MNCHARSD.SetUnsavedData();
-        }
-
-        private void updateCmdGenCheck(object sender, EventArgs e)
-        {
-            MNCHARSD.MinChar[ItemSelect.Value].generalFlag = !cmdGenCheck.Checked ? 0U : 1U;
-            MNCHARSD.SetUnsavedData();
-        }
-
-        private void updateCmdCommCheck(object sender, EventArgs e)
-        {
-            MNCHARSD.MinChar[ItemSelect.Value].commanderFlag = !cmdCommCheck.Checked ? 0U : 1U;
-            MNCHARSD.SetUnsavedData();
-        }
-
-        private void updateProdFacNum(object sender, EventArgs e)
-        {
-            MNCHARSD.MinChar[ItemSelect.Value].prodFacilityNum = (uint)prodFacNum.Value;
-            MNCHARSD.SetUnsavedData();
-        }
-
-        private void updateSecProdFacNum(object sender, EventArgs e)
-        {
-            MNCHARSD.MinChar[ItemSelect.Value].unknown2 = (uint)secProdFacNum.Value;
-            MNCHARSD.SetUnsavedData();
-        }
-
-        private void MinCharFormUpdateUI(object sender, EventArgs e)
-        {
-            DisplayMinCharData(ItemSelect.Value);
-        }
-
-        private void updateFamilyIdNum(object sender, EventArgs e)
-        {
-            MNCHARSD.MinChar[ItemSelect.Value].familyNum = (uint)familyIdNum.Value;
-            MNCHARSD.SetUnsavedData();
-        }
-
-        private void DisplayMinCharData(int index)
-        {
-            int num1 = 78 + index;
-            MNCHARSD.LockChange();
-            ItemName.Text = MNCHARSD.MinChar[index].swrName;
-            dipBaseNum.Value = MNCHARSD.MinChar[index].diplomacyBase;
-            dipVarNum.Value = MNCHARSD.MinChar[index].diplomacyVar;
-            espBaseNum.Value = MNCHARSD.MinChar[index].espionageBase;
-            espVarNum.Value = MNCHARSD.MinChar[index].espionageVar;
-            combatBaseNum.Value = MNCHARSD.MinChar[index].combatBase;
-            combatVarNum.Value = MNCHARSD.MinChar[index].combatVar;
-            loyalBaseNum.Value = MNCHARSD.MinChar[index].loyaltyBase;
-            loyalVarNum.Value = MNCHARSD.MinChar[index].loyaltyVar;
-            shipResBaseNum.Value = MNCHARSD.MinChar[index].shipResBase;
-            shipResVarNum.Value = MNCHARSD.MinChar[index].shipResVar;
-            troopResBaseNum.Value = MNCHARSD.MinChar[index].troopResBase;
-            troopResVarNum.Value = MNCHARSD.MinChar[index].troopResVar;
-            facResBaseNum.Value = MNCHARSD.MinChar[index].facilityResBase;
-            facResVarNum.Value = MNCHARSD.MinChar[index].facilityResVar;
-            knownJediCheck.Checked = MNCHARSD.MinChar[index].knownJediFlag > 0U;
-            trainJediCheck.Checked = MNCHARSD.MinChar[index].jediTrainFlag > 0U;
-            jediProbBaseNum.Value = MNCHARSD.MinChar[index].jediProbability;
-            jediLevelBaseNum.Value = MNCHARSD.MinChar[index].jediLevelBase;
-            jediLevelVarNum.Value = MNCHARSD.MinChar[index].jediLevelVar;
-            if (MNCHARSD.MinChar[index].swrName != "Leia Organa")
+            minorCharactersListView.Sorting = SortOrder.None;
+            minorCharactersImages.Images.Clear();
+            for (int selectorIndex = 0; selectorIndex < GameFile.MinorCharactersCount; ++selectorIndex)
             {
-                leiaForceLabel.Text = "";
-                float num2 = MNCHARSD.MinChar[index].jediLevelBase / 100f;
-                jediDipBaseNum.Value = (int)(MNCHARSD.MinChar[index].diplomacyBase + MNCHARSD.MinChar[index].diplomacyBase * (double)num2);
-                jediDipVarNum.Value = MNCHARSD.MinChar[index].diplomacyVar;
-                float num3 = MNCHARSD.MinChar[index].jediLevelBase / 100f;
-                jediEspBaseNum.Value = (int)(MNCHARSD.MinChar[index].espionageBase + MNCHARSD.MinChar[index].espionageBase * (double)num3);
-                jediEspVarNum.Value = MNCHARSD.MinChar[index].espionageVar;
-                float num4 = MNCHARSD.MinChar[index].jediLevelBase / 100f;
-                jediCombatBaseNum.Value = (int)(MNCHARSD.MinChar[index].combatBase + MNCHARSD.MinChar[index].combatBase * (double)num4);
-                jediCombatVarNum.Value = MNCHARSD.MinChar[index].combatVar;
+                var edataId = 78 + selectorIndex;
+                minorCharactersImages.Images.Add(Image.FromFile(RegistryKeys.InstalledLocation + "\\EData\\EDATA." + edataId.ToString("000")));
+                minorCharactersListView.Items.Add(GameFile.MinorCharacters[selectorIndex].EncyclopediaName, selectorIndex);
             }
-            else
+        }
+        protected override void DisplaySelectedGameObject(int selectorIndex)
+        {
+            var minorCharacter = GameFile.MinorCharacters[selectorIndex];
+            canBeAdmiral.Checked = minorCharacter.CanBeAdmiral > 0U;
+            canBeCommander.Checked = minorCharacter.canBeCommander > 0U;
+            canBeGeneral.Checked = minorCharacter.CanBeGeneral > 0U;
+            combatBase.Value = minorCharacter.CombatBase;
+            combatVariance.Value = minorCharacter.CombatVariance;
+            diplomacyBase.Value = minorCharacter.DiplomacyBase;
+            diplomacyVariance.Value = minorCharacter.DiplomacyVariance;
+            encyclopediaName.Text = minorCharacter.EncyclopediaName;
+            espionageBase.Value = minorCharacter.EspionageBase;
+            espionageVariance.Value = minorCharacter.EspionageVariance;
+            facilitiesResearchBase.Value = minorCharacter.FacilitiesResearchBase;
+            facilitiesResearchVariance.Value = minorCharacter.FacilitiesResearchVariance;
+            familyId.Value = minorCharacter.FamilyId;
+            familyIdHexLabel.Text = "0x" + minorCharacter.FamilyId.ToString("X");
+            isAllianceUnit.Checked = minorCharacter.IsAllianceUnit > 0U;
+            isEmpireUnit.Checked = minorCharacter.IsEmpireUnit > 0U;
+            isJediTrainer.Checked = minorCharacter.IsJediTrainer > 0U;
+            isKnownJedi.Checked = minorCharacter.IsKnownJedi > 0U;
+            isUnableToBetray.Checked = minorCharacter.IsUnableToBetray > 0U;
+            jediLevelBase.Value = minorCharacter.JediLevelBase;
+            jediLevelVariance.Value = minorCharacter.JediLevelVariance;
+            jediProbabilityBase.Value = minorCharacter.JediProbabilityBase;
+            loyaltyBase.Value = minorCharacter.LoyaltyBase;
+            loyaltyVariance.Value = minorCharacter.LoyaltyVariance;
+            shipResearchBase.Value = minorCharacter.ShipResearchBase;
+            shipResearchVariance.Value = minorCharacter.ShipResearchVariance;
+            textStraDllId.Value = minorCharacter.TextStraDllId;
+            troopsResearchBase.Value = minorCharacter.TroopsResearchBase;
+            troopsResearchVariance.Value = minorCharacter.TroopsResearchVariance;
+            unitId.Value = minorCharacter.UnitId;
+            unitIdHexLabel.Text = "0x" + minorCharacter.UnitId.ToString("X");
+
+            if (minorCharacter.EncyclopediaName == "Leia Organa")
             {
                 leiaForceLabel.Text = "Leia has no Force ability at start of game";
-                jediDipBaseNum.Value = MNCHARSD.MinChar[index].diplomacyBase;
-                jediEspBaseNum.Value = MNCHARSD.MinChar[index].espionageBase;
-                jediCombatBaseNum.Value = MNCHARSD.MinChar[index].combatBase;
-            }
-            rebelUnit.Checked = MNCHARSD.MinChar[index].rebel > 0U;
-            empireUnit.Checked = MNCHARSD.MinChar[index].empire > 0U;
-            betrayFlagCheck.Checked = MNCHARSD.MinChar[index].betrayFlag > 0U;
-            cmdAdmCheck.Checked = MNCHARSD.MinChar[index].admiralFlag > 0U;
-            cmdGenCheck.Checked = MNCHARSD.MinChar[index].generalFlag > 0U;
-            cmdCommCheck.Checked = MNCHARSD.MinChar[index].commanderFlag > 0U;
-            familyIdNum.Value = MNCHARSD.MinChar[index].familyNum;
-            idNum.Value = MNCHARSD.MinChar[index].textstratNum;
-            famHexLabel.Text = MNCHARSD.MinChar[index].familyNum.ToString("X");
-            unitNum.Value = MNCHARSD.MinChar[index].number;
-            unitHexLabel.Text = MNCHARSD.MinChar[index].number.ToString("X");
-            ItemPicture.SizeMode = PictureBoxSizeMode.Zoom;
-            ItemPicture.Image = num1 >= 100 ? Image.FromFile(RegistryKeys.InstalledLocation + "\\edata\\edata." + num1) : Image.FromFile(RegistryKeys.InstalledLocation + "\\edata\\edata.0" + num1);
-            MNCHARSD.UnlockChange();
-        }
-
-        private void loadMinCharImageList()
-        {
-            int num = 78;
-            charListView.Sorting = SortOrder.None;
-            MinCharImageList.Images.Clear();
-            for (int index = num; index <= num + MNCHARSD.numUnits - 1; ++index)
-            {
-                if (index < 100)
-                {
-                    MinCharImageList.Images.Add(Image.FromFile(RegistryKeys.InstalledLocation + "\\edata\\edata.0" + index));
-                }
-                else
-                {
-                    MinCharImageList.Images.Add(Image.FromFile(RegistryKeys.InstalledLocation + "\\edata\\edata." + index));
-                }
-
-                charListView.Items.Add(MNCHARSD.MinChar[index - num].swrName, index - num);
-            }
-        }
-
-        private void charListView_NewSelection()
-        {
-            ItemSelect.Value = charListView.Items.IndexOf(charListView.FocusedItem);
-            DisplayMinCharData(ItemSelect.Value);
-            ItemSelect.Select();
-        }
-
-        private void ItemPicture_Click(object sender, EventArgs e)
-        {
-            if (charListView.Items.Count > ItemSelect.Value + 1 && ItemSelect.Value - 1 >= 0)
-            {
-                charListView.Items[ItemSelect.Value + 1].EnsureVisible();
-                charListView.Items[ItemSelect.Value - 1].EnsureVisible();
+                jediCombatBase.Value = minorCharacter.CombatBase;
+                jediDiplomacyBase.Value = minorCharacter.DiplomacyBase;
+                jediEspionageBase.Value = minorCharacter.EspionageBase;
             }
             else
             {
-                charListView.Items[ItemSelect.Value].EnsureVisible();
+                leiaForceLabel.Text = "";
+                jediCombatBase.Value = (int)(minorCharacter.CombatBase + minorCharacter.CombatBase * (double)(minorCharacter.JediLevelBase / 100f));
+                jediCombatVariance.Value = minorCharacter.CombatVariance;
+                jediDiplomacyBase.Value = (int)(minorCharacter.DiplomacyBase + minorCharacter.DiplomacyBase * (double)(minorCharacter.JediLevelBase / 100f));
+                jediDiplomacyVariance.Value = minorCharacter.DiplomacyVariance;
+                jediEspionageBase.Value = (int)(minorCharacter.EspionageBase + minorCharacter.EspionageBase * (double)(minorCharacter.JediLevelBase / 100f));
+                jediEspionageVariance.Value = minorCharacter.EspionageVariance;
             }
 
-            ItemSelect.Select();
+            picture.SizeMode = PictureBoxSizeMode.Zoom;
+            var edataId = 78 + selectorIndex;
+            picture.Image = Image.FromFile(RegistryKeys.InstalledLocation + "\\EData\\EDATA." + edataId.ToString("000"));
         }
 
-        private void charListView_DoubleClick(object sender, EventArgs e)
-        {
-            charListView_NewSelection();
-        }
+        #endregion
 
-        private void charListView_Click(object sender, EventArgs e)
-        {
-            charListView_NewSelection();
-        }
+        #region Control events
 
-        private void Ok_Click(object sender, EventArgs e)
+        private void minorCharactersListView_DoubleClick(object sender, EventArgs e)
         {
-            if (MNCHARSD.unsavedMinCharData)
+            selector.Value = minorCharactersListView.Items.IndexOf(minorCharactersListView.FocusedItem);
+            DisplaySelectedGameObject(selector.Value);
+            selector.Select();
+        }
+        private void minorCharactersListView_Click(object sender, EventArgs e)
+        {
+            selector.Value = minorCharactersListView.Items.IndexOf(minorCharactersListView.FocusedItem);
+            DisplaySelectedGameObject(selector.Value);
+            selector.Select();
+        }
+        private void picture_Click(object sender, EventArgs e)
+        {
+            if (minorCharactersListView.Items.Count > selector.Value + 1 && selector.Value - 1 >= 0)
             {
-                MNCHARSD.GetMinCharPath();
-                MNCHARSD.SaveMinCharData(MNCHARSD.GetMinCharPath());
-                MNCHARSD.ClearUnsavedData();
-            }
-            Close();
-        }
-
-        private void Cancel_Click(object sender, EventArgs e)
-        {
-            if (MNCHARSD.unsavedMinCharData)
-            {
-                if (MessageBox.Show(this, "Unsaved MinChar data, are you sure you want to Close this Dialog?", "Save data", MessageBoxButtons.YesNo) != DialogResult.Yes)
-                {
-                    return;
-                }
-
-                Close();
+                minorCharactersListView.Items[selector.Value + 1].EnsureVisible();
+                minorCharactersListView.Items[selector.Value - 1].EnsureVisible();
             }
             else
-            {
-                Close();
-            }
+                minorCharactersListView.Items[selector.Value].EnsureVisible();
+            selector.Select();
         }
 
-        private void SaveAs_Click(object sender, EventArgs e)
+        #endregion
+
+        #region Changed events
+
+        private void canBeAdmiral_CheckStateChanged(object sender, EventArgs e)
         {
-            SaveFileDialog saveFileDialog = new SaveFileDialog();
-            saveFileDialog.InitialDirectory = RegistryKeys.InstalledLocation + "\\Gdata";
-            saveFileDialog.Filter = "Data Files (*.dat)| *.dat";
-            if (saveFileDialog.ShowDialog(this) == DialogResult.OK)
-            {
-                MNCHARSD.SaveMinCharData(saveFileDialog.FileName);
-                MNCHARSD.ClearUnsavedData();
-                int num = (int)MessageBox.Show(this, "MinChar Data Saved", "", MessageBoxButtons.OK);
-            }
-            ItemSelect.Focus();
+            GameFile.MinorCharacters[selector.Value].CanBeAdmiral = canBeAdmiral.Checked ? 1U : 0U;
+            GameFile.UnsavedData = true;
         }
-
-        private void openNew_Click(object sender, EventArgs e)
+        private void canBeCommander_CheckStateChanged(object sender, EventArgs e)
         {
-            if (MNCHARSD.unsavedMinCharData && MessageBox.Show(this, "Save MinChar data before opening new datafile?", "Save data", MessageBoxButtons.YesNo) == DialogResult.Yes)
-            {
-                MNCHARSD.SaveMinCharData(MNCHARSD.GetMinCharPath());
-                MNCHARSD.ClearUnsavedData();
-            }
-            MNCHARSD.OpenNewMinCharFile();
-            DisplayMinCharData(ItemSelect.Value);
-            ItemSelect.Select();
+            GameFile.MinorCharacters[selector.Value].canBeCommander = canBeCommander.Checked ? 1U : 0U;
+            GameFile.UnsavedData = true;
         }
-
-        private void MinCharForm_Load(object sender, EventArgs e)
+        private void canBeGeneral_CheckStateChanged(object sender, EventArgs e)
         {
-            DisplayMinCharData(ItemSelect.Value);
-            loadMinCharImageList();
-            if (RegistryKeys.PlaySounds)
-            {
-                Sound.Play(Resources.open_wav);
-            }
-
-            if (RegistryKeys.PlayMusic)
-            {
-                Sound.PlayRandomMusic();
-            }
-
-            ItemSelect.Select();
+            GameFile.MinorCharacters[selector.Value].CanBeGeneral = canBeGeneral.Checked ? 1U : 0U;
+            GameFile.UnsavedData = true;
         }
-
-        private void MinCharForm_KeyDown(object sender, KeyEventArgs e)
+        private void combatBase_ValueChanged(object sender, EventArgs e)
         {
-            if (e.KeyValue == 114)
-            {
-                if (e.Shift)
-                {
-                    if (ItemSelect.Value - ItemSelect.LargeChange > ItemSelect.Minimum)
-                    {
-                        ItemSelect.Value -= ItemSelect.LargeChange;
-                    }
-                    else
-                    {
-                        ItemSelect.Value = ItemSelect.Minimum;
-                    }
-                }
-                else
-                {
-                    if (ItemSelect.Value <= ItemSelect.Minimum)
-                    {
-                        return;
-                    }
-
-                    --ItemSelect.Value;
-                }
-            }
-            else
-            {
-                if (e.KeyValue != 115)
-                {
-                    return;
-                }
-
-                if (e.Shift)
-                {
-                    if (ItemSelect.Value + ItemSelect.LargeChange < ItemSelect.Maximum)
-                    {
-                        ItemSelect.Value += ItemSelect.LargeChange;
-                    }
-                    else
-                    {
-                        ItemSelect.Value = ItemSelect.Maximum;
-                    }
-                }
-                else
-                {
-                    if (ItemSelect.Value >= ItemSelect.Maximum)
-                    {
-                        return;
-                    }
-
-                    ++ItemSelect.Value;
-                }
-            }
+            GameFile.MinorCharacters[selector.Value].CombatBase = (uint)combatBase.Value;
+            GameFile.UnsavedData = true;
         }
-
-        private void MinCharForm_FormClosing(object sender, FormClosingEventArgs e)
+        private void combatVariance_ValueChanged(object sender, EventArgs e)
         {
-            if (RegistryKeys.PlaySounds)
-            {
-                Sound.Play(Resources.close_wav);
-            }
-
-            if (!RegistryKeys.PlayMusic)
-            {
-                return;
-            }
-
-            Sound.PlayRandomMusic();
+            GameFile.MinorCharacters[selector.Value].CombatVariance = (uint)combatVariance.Value;
+            GameFile.UnsavedData = true;
         }
+        private void diplomacyBase_ValueChanged(object sender, EventArgs e)
+        {
+            GameFile.MinorCharacters[selector.Value].DiplomacyBase = (uint)diplomacyBase.Value;
+            GameFile.UnsavedData = true;
+        }
+        private void diplomacyVariance_ValueChanged(object sender, EventArgs e)
+        {
+            GameFile.MinorCharacters[selector.Value].DiplomacyVariance = (uint)diplomacyVariance.Value;
+            GameFile.UnsavedData = true;
+        }
+        private void espionageBase_ValueChanged(object sender, EventArgs e)
+        {
+            GameFile.MinorCharacters[selector.Value].EspionageBase = (uint)espionageBase.Value;
+            GameFile.UnsavedData = true;
+        }
+        private void espionageVariance_ValueChanged(object sender, EventArgs e)
+        {
+            GameFile.MinorCharacters[selector.Value].EspionageVariance = (uint)espionageVariance.Value;
+            GameFile.UnsavedData = true;
+        }
+        private void facilitiesResearchBase_ValueChanged(object sender, EventArgs e)
+        {
+            GameFile.MinorCharacters[selector.Value].FacilitiesResearchBase = (uint)facilitiesResearchBase.Value;
+            GameFile.UnsavedData = true;
+        }
+        private void facilitiesResearchVariance_ValueChanged(object sender, EventArgs e)
+        {
+            GameFile.MinorCharacters[selector.Value].FacilitiesResearchVariance = (uint)facilitiesResearchVariance.Value;
+            GameFile.UnsavedData = true;
+        }
+        private void familyId_ValueChanged(object sender, EventArgs e)
+        {
+            GameFile.MinorCharacters[selector.Value].FamilyId = (uint)familyId.Value;
+            GameFile.UnsavedData = true;
+        }
+        private void isAllianceUnit_CheckStateChanged(object sender, EventArgs e)
+        {
+            GameFile.MinorCharacters[selector.Value].IsAllianceUnit = isAllianceUnit.Checked ? 1U : 0U;
+            GameFile.UnsavedData = true;
+        }
+        private void isEmpireUnit_CheckStateChanged(object sender, EventArgs e)
+        {
+            GameFile.MinorCharacters[selector.Value].IsEmpireUnit = isEmpireUnit.Checked ? 1U : 0U;
+            GameFile.UnsavedData = true;
+        }
+        private void isJediTrainer_CheckStateChanged(object sender, EventArgs e)
+        {
+            GameFile.MinorCharacters[selector.Value].IsJediTrainer = isJediTrainer.Checked ? 1U : 0U;
+            GameFile.UnsavedData = true;
+        }
+        private void isKnownJedi_CheckStateChanged(object sender, EventArgs e)
+        {
+            GameFile.MinorCharacters[selector.Value].IsKnownJedi = isKnownJedi.Checked ? 1U : 0U;
+            GameFile.UnsavedData = true;
+        }
+        private void isUnableToBetray_CheckStateChanged(object sender, EventArgs e)
+        {
+            GameFile.MinorCharacters[selector.Value].IsUnableToBetray = isUnableToBetray.Checked ? 1U : 0U;
+            GameFile.UnsavedData = true;
+        }
+        private void jediLevelBase_ValueChanged(object sender, EventArgs e)
+        {
+            GameFile.MinorCharacters[selector.Value].JediLevelBase = (uint)jediLevelBase.Value;
+            GameFile.UnsavedData = true;
+        }
+        private void jediLevelVariance_ValueChanged(object sender, EventArgs e)
+        {
+            GameFile.MinorCharacters[selector.Value].JediLevelVariance = (uint)jediLevelVariance.Value;
+            GameFile.UnsavedData = true;
+        }
+        private void jediProbabilityBase_ValueChanged(object sender, EventArgs e)
+        {
+            GameFile.MinorCharacters[selector.Value].JediProbabilityBase = (uint)jediProbabilityBase.Value;
+            GameFile.UnsavedData = true;
+        }
+        private void loyaltyBase_ValueChanged(object sender, EventArgs e)
+        {
+            GameFile.MinorCharacters[selector.Value].LoyaltyBase = (uint)loyaltyBase.Value;
+            GameFile.UnsavedData = true;
+        }
+        private void loyaltyVariance_ValueChanged(object sender, EventArgs e)
+        {
+            GameFile.MinorCharacters[selector.Value].LoyaltyVariance = (uint)loyaltyVariance.Value;
+            GameFile.UnsavedData = true;
+        }
+        private void nextProductionFacility_ValueChanged(object sender, EventArgs e)
+        {
+            GameFile.MinorCharacters[selector.Value].NextProductionFacility = (uint)nextProductionFacility.Value;
+            GameFile.UnsavedData = true;
+        }
+        private void productionFacility_ValueChanged(object sender, EventArgs e)
+        {
+            GameFile.MinorCharacters[selector.Value].ProductionFacility = (uint)productionFacility.Value;
+            GameFile.UnsavedData = true;
+        }
+        private void shipResearchBase_ValueChanged(object sender, EventArgs e)
+        {
+            GameFile.MinorCharacters[selector.Value].ShipResearchBase = (uint)shipResearchBase.Value;
+            GameFile.UnsavedData = true;
+        }
+        private void shipResearchVariance_ValueChanged(object sender, EventArgs e)
+        {
+            GameFile.MinorCharacters[selector.Value].ShipResearchVariance = (uint)shipResearchVariance.Value;
+            GameFile.UnsavedData = true;
+        }
+        private void troopsResearchBase_ValueChanged(object sender, EventArgs e)
+        {
+            GameFile.MinorCharacters[selector.Value].TroopsResearchBase = (uint)troopsResearchBase.Value;
+            GameFile.UnsavedData = true;
+        }
+        private void troopsResearchVariance_ValueChanged(object sender, EventArgs e)
+        {
+            GameFile.MinorCharacters[selector.Value].TroopsResearchVariance = (uint)troopsResearchVariance.Value;
+            GameFile.UnsavedData = true;
+        }
+
+        #endregion
     }
 }

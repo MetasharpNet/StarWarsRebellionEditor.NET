@@ -22,7 +22,7 @@ namespace SwRebellionEditor
         private Label idLabel;
         private NumericUpDown textStraDllId;
         private Label unkown3Label;
-        private NumericUpDown unknown;
+        private NumericUpDown unknown2;
         private NumericUpDown familyId;
         private Label familyLabel;
         private NumericUpDown nextProductionFacility;
@@ -87,7 +87,7 @@ namespace SwRebellionEditor
             this.idLabel = new System.Windows.Forms.Label();
             this.textStraDllId = new System.Windows.Forms.NumericUpDown();
             this.unkown3Label = new System.Windows.Forms.Label();
-            this.unknown = new System.Windows.Forms.NumericUpDown();
+            this.unknown2 = new System.Windows.Forms.NumericUpDown();
             this.familyId = new System.Windows.Forms.NumericUpDown();
             this.familyLabel = new System.Windows.Forms.Label();
             this.nextProductionFacility = new System.Windows.Forms.NumericUpDown();
@@ -122,7 +122,7 @@ namespace SwRebellionEditor
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.picture = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.textStraDllId)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.unknown)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.unknown2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.familyId)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nextProductionFacility)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.productionFacility)).BeginInit();
@@ -256,19 +256,19 @@ namespace SwRebellionEditor
             // 
             // unknown3Num
             // 
-            this.unknown.Enabled = false;
-            this.unknown.Location = new System.Drawing.Point(119, 108);
-            this.unknown.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.unknown.Maximum = new decimal(new int[] {
+            this.unknown2.Enabled = false;
+            this.unknown2.Location = new System.Drawing.Point(119, 108);
+            this.unknown2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.unknown2.Maximum = new decimal(new int[] {
             9999,
             0,
             0,
             0});
-            this.unknown.Name = "unknown3Num";
-            this.unknown.Size = new System.Drawing.Size(59, 23);
-            this.unknown.TabIndex = 34;
-            this.unknown.TabStop = false;
-            this.unknown.Value = new decimal(new int[] {
+            this.unknown2.Name = "unknown3Num";
+            this.unknown2.Size = new System.Drawing.Size(59, 23);
+            this.unknown2.TabIndex = 34;
+            this.unknown2.TabStop = false;
+            this.unknown2.Value = new decimal(new int[] {
             9999,
             0,
             0,
@@ -621,7 +621,7 @@ namespace SwRebellionEditor
             this.groupBox4.Controls.Add(this.familyLabel);
             this.groupBox4.Controls.Add(this.familyId);
             this.groupBox4.Controls.Add(this.idLabel);
-            this.groupBox4.Controls.Add(this.unknown);
+            this.groupBox4.Controls.Add(this.unknown2);
             this.groupBox4.Controls.Add(this.textStraDllId);
             this.groupBox4.Controls.Add(this.unkown3Label);
             this.groupBox4.Location = new System.Drawing.Point(202, 12);
@@ -781,7 +781,7 @@ namespace SwRebellionEditor
             this.Enter += new System.EventHandler(this.GameObjectsSelector_ValueChanged);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.GameObjectsListForm_KeyDown);
             ((System.ComponentModel.ISupportInitialize)(this.textStraDllId)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.unknown)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.unknown2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.familyId)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nextProductionFacility)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.productionFacility)).EndInit();

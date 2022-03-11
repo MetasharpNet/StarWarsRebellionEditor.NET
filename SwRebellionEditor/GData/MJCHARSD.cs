@@ -31,7 +31,7 @@
         public uint ShipResearchBase;
         public uint ShipResearchVariance;
         public uint TroopsResearchBase;
-        public uint TroopsReseachVariance;
+        public uint TroopsResearchVariance;
         public uint FacilitiesResearchBase;
         public uint FacilitiesResearchVariance;
         public uint CombatBase;
