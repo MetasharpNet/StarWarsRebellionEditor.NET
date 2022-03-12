@@ -12,39 +12,39 @@ namespace SwRebellionEditor
         /// Required designer variable.
         /// </summary>
         private System.ComponentModel.IContainer components = null;
+        private TrackBar selector;
+        private PictureBox picture;
         private Label conCostLabel;
-        private NumericUpDown conCostNum;
-        private PictureBox troopPicture;
+        private NumericUpDown constructionCost;
         private Label maintCostLabel;
-        private NumericUpDown maintCostNum;
-        private NumericUpDown researchNum;
+        private NumericUpDown maintenanceCost;
+        private NumericUpDown researchOrder;
         private Label researchLabel;
         private Label BombardLabel;
-        private NumericUpDown bombardNum;
-        private NumericUpDown defNum;
+        private NumericUpDown bombardmentRating;
+        private NumericUpDown defenseRating;
         private Label defenseLabel;
-        private NumericUpDown attackNum;
+        private NumericUpDown atttackRating;
         private Label attacklabel;
         private Label DetectionLabel;
-        private NumericUpDown detectNum;
-        private TrackBar ItemSelect;
-        private CheckBox rebelUnit;
-        private CheckBox empireUnit;
+        private NumericUpDown detectionRating;
+        private CheckBox isAllianceUnit;
+        private CheckBox isEmpireUnit;
         private Label idLabel;
-        private NumericUpDown idNum;
+        private NumericUpDown textStraDllId;
         private Label unkown3Label;
-        private NumericUpDown unknown3Num;
-        private NumericUpDown familyIdNum;
+        private NumericUpDown unknwown2;
+        private NumericUpDown familyId;
         private Label familyLabel;
-        private NumericUpDown secProdFacNum;
+        private NumericUpDown nextProductionFacility;
         private Label secProdFacNumlabel;
         private Label prodLabel;
-        private NumericUpDown prodFacNum;
-        private NumericUpDown unknownMoralHpNum;
+        private NumericUpDown productionFacility;
+        private NumericUpDown unknownMoralHp;
         private Label UnkownMoralHPlabel;
-        private NumericUpDown resDiffNum;
+        private NumericUpDown researchDifficulty;
         private Label resDiffLabel;
-        private Label troopName;
+        private Label encyclopediaName;
         private RichTextBox encyText;
         private Button Ok;
         private Button Cancel;
@@ -58,9 +58,9 @@ namespace SwRebellionEditor
         private GroupBox researchBox;
         private GroupBox troopStatsBox;
         private GroupBox miscDATGroup;
-        private Label famHexLabel;
-        private Label unitHexLabel;
-        private NumericUpDown unitNum;
+        private Label familyIdHexLabel;
+        private Label troopIdHexLabel;
+        private NumericUpDown troopId;
         private Label label1;
 
         /// <summary>
@@ -86,37 +86,37 @@ namespace SwRebellionEditor
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TroopsForm));
             this.conCostLabel = new System.Windows.Forms.Label();
-            this.conCostNum = new System.Windows.Forms.NumericUpDown();
+            this.constructionCost = new System.Windows.Forms.NumericUpDown();
             this.maintCostLabel = new System.Windows.Forms.Label();
-            this.maintCostNum = new System.Windows.Forms.NumericUpDown();
-            this.researchNum = new System.Windows.Forms.NumericUpDown();
+            this.maintenanceCost = new System.Windows.Forms.NumericUpDown();
+            this.researchOrder = new System.Windows.Forms.NumericUpDown();
             this.researchLabel = new System.Windows.Forms.Label();
             this.BombardLabel = new System.Windows.Forms.Label();
-            this.bombardNum = new System.Windows.Forms.NumericUpDown();
-            this.defNum = new System.Windows.Forms.NumericUpDown();
+            this.bombardmentRating = new System.Windows.Forms.NumericUpDown();
+            this.defenseRating = new System.Windows.Forms.NumericUpDown();
             this.defenseLabel = new System.Windows.Forms.Label();
-            this.attackNum = new System.Windows.Forms.NumericUpDown();
+            this.atttackRating = new System.Windows.Forms.NumericUpDown();
             this.attacklabel = new System.Windows.Forms.Label();
             this.DetectionLabel = new System.Windows.Forms.Label();
-            this.detectNum = new System.Windows.Forms.NumericUpDown();
-            this.ItemSelect = new System.Windows.Forms.TrackBar();
-            this.rebelUnit = new System.Windows.Forms.CheckBox();
-            this.empireUnit = new System.Windows.Forms.CheckBox();
+            this.detectionRating = new System.Windows.Forms.NumericUpDown();
+            this.selector = new System.Windows.Forms.TrackBar();
+            this.isAllianceUnit = new System.Windows.Forms.CheckBox();
+            this.isEmpireUnit = new System.Windows.Forms.CheckBox();
             this.idLabel = new System.Windows.Forms.Label();
-            this.idNum = new System.Windows.Forms.NumericUpDown();
+            this.textStraDllId = new System.Windows.Forms.NumericUpDown();
             this.unkown3Label = new System.Windows.Forms.Label();
-            this.unknown3Num = new System.Windows.Forms.NumericUpDown();
-            this.familyIdNum = new System.Windows.Forms.NumericUpDown();
+            this.unknwown2 = new System.Windows.Forms.NumericUpDown();
+            this.familyId = new System.Windows.Forms.NumericUpDown();
             this.familyLabel = new System.Windows.Forms.Label();
-            this.secProdFacNum = new System.Windows.Forms.NumericUpDown();
+            this.nextProductionFacility = new System.Windows.Forms.NumericUpDown();
             this.secProdFacNumlabel = new System.Windows.Forms.Label();
             this.prodLabel = new System.Windows.Forms.Label();
-            this.prodFacNum = new System.Windows.Forms.NumericUpDown();
-            this.unknownMoralHpNum = new System.Windows.Forms.NumericUpDown();
+            this.productionFacility = new System.Windows.Forms.NumericUpDown();
+            this.unknownMoralHp = new System.Windows.Forms.NumericUpDown();
             this.UnkownMoralHPlabel = new System.Windows.Forms.Label();
-            this.resDiffNum = new System.Windows.Forms.NumericUpDown();
+            this.researchDifficulty = new System.Windows.Forms.NumericUpDown();
             this.resDiffLabel = new System.Windows.Forms.Label();
-            this.troopName = new System.Windows.Forms.Label();
+            this.encyclopediaName = new System.Windows.Forms.Label();
             this.encyText = new System.Windows.Forms.RichTextBox();
             this.Ok = new System.Windows.Forms.Button();
             this.Cancel = new System.Windows.Forms.Button();
@@ -126,39 +126,39 @@ namespace SwRebellionEditor
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.miscDATGroup = new System.Windows.Forms.GroupBox();
-            this.famHexLabel = new System.Windows.Forms.Label();
-            this.unitHexLabel = new System.Windows.Forms.Label();
-            this.unitNum = new System.Windows.Forms.NumericUpDown();
+            this.familyIdHexLabel = new System.Windows.Forms.Label();
+            this.troopIdHexLabel = new System.Windows.Forms.Label();
+            this.troopId = new System.Windows.Forms.NumericUpDown();
             this.label1 = new System.Windows.Forms.Label();
             this.troopStatsBox = new System.Windows.Forms.GroupBox();
             this.researchBox = new System.Windows.Forms.GroupBox();
             this.costGroup = new System.Windows.Forms.GroupBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.troopPicture = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.conCostNum)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.maintCostNum)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.researchNum)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bombardNum)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.defNum)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.attackNum)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.detectNum)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ItemSelect)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.idNum)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.unknown3Num)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.familyIdNum)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.secProdFacNum)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.prodFacNum)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.unknownMoralHpNum)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.resDiffNum)).BeginInit();
+            this.picture = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.constructionCost)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.maintenanceCost)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.researchOrder)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bombardmentRating)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.defenseRating)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.atttackRating)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.detectionRating)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.selector)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textStraDllId)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.unknwown2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.familyId)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nextProductionFacility)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.productionFacility)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.unknownMoralHp)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.researchDifficulty)).BeginInit();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.miscDATGroup.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.unitNum)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.troopId)).BeginInit();
             this.troopStatsBox.SuspendLayout();
             this.researchBox.SuspendLayout();
             this.costGroup.SuspendLayout();
             this.tabPage2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.troopPicture)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picture)).BeginInit();
             this.SuspendLayout();
             // 
             // conCostLabel
@@ -173,22 +173,22 @@ namespace SwRebellionEditor
             // 
             // conCostNum
             // 
-            this.conCostNum.Location = new System.Drawing.Point(119, 18);
-            this.conCostNum.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.conCostNum.Maximum = new decimal(new int[] {
+            this.constructionCost.Location = new System.Drawing.Point(119, 18);
+            this.constructionCost.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.constructionCost.Maximum = new decimal(new int[] {
             9999,
             0,
             0,
             0});
-            this.conCostNum.Name = "conCostNum";
-            this.conCostNum.Size = new System.Drawing.Size(59, 23);
-            this.conCostNum.TabIndex = 4;
-            this.conCostNum.Value = new decimal(new int[] {
+            this.constructionCost.Name = "conCostNum";
+            this.constructionCost.Size = new System.Drawing.Size(59, 23);
+            this.constructionCost.TabIndex = 4;
+            this.constructionCost.Value = new decimal(new int[] {
             9999,
             0,
             0,
             0});
-            this.conCostNum.ValueChanged += new System.EventHandler(this.updateConCost);
+            this.constructionCost.ValueChanged += new System.EventHandler(this.constructionCost_ValueChanged);
             // 
             // maintCostLabel
             // 
@@ -202,41 +202,41 @@ namespace SwRebellionEditor
             // 
             // maintCostNum
             // 
-            this.maintCostNum.Location = new System.Drawing.Point(119, 48);
-            this.maintCostNum.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.maintCostNum.Maximum = new decimal(new int[] {
+            this.maintenanceCost.Location = new System.Drawing.Point(119, 48);
+            this.maintenanceCost.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.maintenanceCost.Maximum = new decimal(new int[] {
             9999,
             0,
             0,
             0});
-            this.maintCostNum.Name = "maintCostNum";
-            this.maintCostNum.Size = new System.Drawing.Size(59, 23);
-            this.maintCostNum.TabIndex = 5;
-            this.maintCostNum.Value = new decimal(new int[] {
+            this.maintenanceCost.Name = "maintCostNum";
+            this.maintenanceCost.Size = new System.Drawing.Size(59, 23);
+            this.maintenanceCost.TabIndex = 5;
+            this.maintenanceCost.Value = new decimal(new int[] {
             9999,
             0,
             0,
             0});
-            this.maintCostNum.ValueChanged += new System.EventHandler(this.updateMaintCost);
+            this.maintenanceCost.ValueChanged += new System.EventHandler(this.maintenanceCost_ValueChanged);
             // 
             // researchNum
             // 
-            this.researchNum.Location = new System.Drawing.Point(119, 16);
-            this.researchNum.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.researchNum.Maximum = new decimal(new int[] {
+            this.researchOrder.Location = new System.Drawing.Point(119, 16);
+            this.researchOrder.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.researchOrder.Maximum = new decimal(new int[] {
             999,
             0,
             0,
             0});
-            this.researchNum.Name = "researchNum";
-            this.researchNum.Size = new System.Drawing.Size(59, 23);
-            this.researchNum.TabIndex = 6;
-            this.researchNum.Value = new decimal(new int[] {
+            this.researchOrder.Name = "researchNum";
+            this.researchOrder.Size = new System.Drawing.Size(59, 23);
+            this.researchOrder.TabIndex = 6;
+            this.researchOrder.Value = new decimal(new int[] {
             999,
             0,
             0,
             0});
-            this.researchNum.ValueChanged += new System.EventHandler(this.updateResearchNum);
+            this.researchOrder.ValueChanged += new System.EventHandler(this.researchOrder_ValueChanged);
             // 
             // researchLabel
             // 
@@ -260,41 +260,41 @@ namespace SwRebellionEditor
             // 
             // bombardNum
             // 
-            this.bombardNum.Location = new System.Drawing.Point(119, 78);
-            this.bombardNum.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.bombardNum.Maximum = new decimal(new int[] {
+            this.bombardmentRating.Location = new System.Drawing.Point(119, 78);
+            this.bombardmentRating.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.bombardmentRating.Maximum = new decimal(new int[] {
             9999,
             0,
             0,
             0});
-            this.bombardNum.Name = "bombardNum";
-            this.bombardNum.Size = new System.Drawing.Size(59, 23);
-            this.bombardNum.TabIndex = 9;
-            this.bombardNum.Value = new decimal(new int[] {
+            this.bombardmentRating.Name = "bombardNum";
+            this.bombardmentRating.Size = new System.Drawing.Size(59, 23);
+            this.bombardmentRating.TabIndex = 9;
+            this.bombardmentRating.Value = new decimal(new int[] {
             9999,
             0,
             0,
             0});
-            this.bombardNum.ValueChanged += new System.EventHandler(this.updateBombardNum);
+            this.bombardmentRating.ValueChanged += new System.EventHandler(this.bombardmentRating_ValueChanged);
             // 
             // defNum
             // 
-            this.defNum.Location = new System.Drawing.Point(119, 48);
-            this.defNum.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.defNum.Maximum = new decimal(new int[] {
+            this.defenseRating.Location = new System.Drawing.Point(119, 48);
+            this.defenseRating.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.defenseRating.Maximum = new decimal(new int[] {
             9999,
             0,
             0,
             0});
-            this.defNum.Name = "defNum";
-            this.defNum.Size = new System.Drawing.Size(59, 23);
-            this.defNum.TabIndex = 8;
-            this.defNum.Value = new decimal(new int[] {
+            this.defenseRating.Name = "defNum";
+            this.defenseRating.Size = new System.Drawing.Size(59, 23);
+            this.defenseRating.TabIndex = 8;
+            this.defenseRating.Value = new decimal(new int[] {
             9999,
             0,
             0,
             0});
-            this.defNum.ValueChanged += new System.EventHandler(this.updateDefNum);
+            this.defenseRating.ValueChanged += new System.EventHandler(this.defenseRating_ValueChanged);
             // 
             // defenseLabel
             // 
@@ -308,22 +308,22 @@ namespace SwRebellionEditor
             // 
             // attackNum
             // 
-            this.attackNum.Location = new System.Drawing.Point(119, 18);
-            this.attackNum.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.attackNum.Maximum = new decimal(new int[] {
+            this.atttackRating.Location = new System.Drawing.Point(119, 18);
+            this.atttackRating.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.atttackRating.Maximum = new decimal(new int[] {
             9999,
             0,
             0,
             0});
-            this.attackNum.Name = "attackNum";
-            this.attackNum.Size = new System.Drawing.Size(59, 23);
-            this.attackNum.TabIndex = 7;
-            this.attackNum.Value = new decimal(new int[] {
+            this.atttackRating.Name = "attackNum";
+            this.atttackRating.Size = new System.Drawing.Size(59, 23);
+            this.atttackRating.TabIndex = 7;
+            this.atttackRating.Value = new decimal(new int[] {
             9999,
             0,
             0,
             0});
-            this.attackNum.ValueChanged += new System.EventHandler(this.updateAttackNum);
+            this.atttackRating.ValueChanged += new System.EventHandler(this.atttackRating_ValueChanged);
             // 
             // attacklabel
             // 
@@ -347,56 +347,56 @@ namespace SwRebellionEditor
             // 
             // detectNum
             // 
-            this.detectNum.Location = new System.Drawing.Point(119, 108);
-            this.detectNum.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.detectNum.Maximum = new decimal(new int[] {
+            this.detectionRating.Location = new System.Drawing.Point(119, 108);
+            this.detectionRating.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.detectionRating.Maximum = new decimal(new int[] {
             9999,
             0,
             0,
             0});
-            this.detectNum.Name = "detectNum";
-            this.detectNum.Size = new System.Drawing.Size(59, 23);
-            this.detectNum.TabIndex = 10;
-            this.detectNum.Value = new decimal(new int[] {
+            this.detectionRating.Name = "detectNum";
+            this.detectionRating.Size = new System.Drawing.Size(59, 23);
+            this.detectionRating.TabIndex = 10;
+            this.detectionRating.Value = new decimal(new int[] {
             9999,
             0,
             0,
             0});
-            this.detectNum.ValueChanged += new System.EventHandler(this.updateDetectNum);
+            this.detectionRating.ValueChanged += new System.EventHandler(this.detectionRating_ValueChanged);
             // 
             // ItemSelect
             // 
-            this.ItemSelect.Location = new System.Drawing.Point(236, 20);
-            this.ItemSelect.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.ItemSelect.Maximum = 9;
-            this.ItemSelect.Name = "ItemSelect";
-            this.ItemSelect.Size = new System.Drawing.Size(121, 45);
-            this.ItemSelect.TabIndex = 1;
-            this.ItemSelect.ValueChanged += new System.EventHandler(this.TroopFormUpdateUI);
+            this.selector.Location = new System.Drawing.Point(236, 20);
+            this.selector.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.selector.Maximum = 9;
+            this.selector.Name = "ItemSelect";
+            this.selector.Size = new System.Drawing.Size(121, 45);
+            this.selector.TabIndex = 1;
+            this.selector.ValueChanged += new System.EventHandler(this.GameObjectsSelector_ValueChanged);
             // 
             // rebelUnit
             // 
-            this.rebelUnit.AutoSize = true;
-            this.rebelUnit.Location = new System.Drawing.Point(26, 97);
-            this.rebelUnit.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.rebelUnit.Name = "rebelUnit";
-            this.rebelUnit.Size = new System.Drawing.Size(93, 19);
-            this.rebelUnit.TabIndex = 2;
-            this.rebelUnit.Text = "Alliance Unit";
-            this.rebelUnit.UseVisualStyleBackColor = true;
-            this.rebelUnit.CheckStateChanged += new System.EventHandler(this.updateRebelUnitCheck);
+            this.isAllianceUnit.AutoSize = true;
+            this.isAllianceUnit.Location = new System.Drawing.Point(26, 97);
+            this.isAllianceUnit.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.isAllianceUnit.Name = "rebelUnit";
+            this.isAllianceUnit.Size = new System.Drawing.Size(93, 19);
+            this.isAllianceUnit.TabIndex = 2;
+            this.isAllianceUnit.Text = "Alliance Unit";
+            this.isAllianceUnit.UseVisualStyleBackColor = true;
+            this.isAllianceUnit.CheckStateChanged += new System.EventHandler(this.isAllianceUnit_CheckStateChanged);
             // 
             // empireUnit
             // 
-            this.empireUnit.AutoSize = true;
-            this.empireUnit.Location = new System.Drawing.Point(132, 97);
-            this.empireUnit.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.empireUnit.Name = "empireUnit";
-            this.empireUnit.Size = new System.Drawing.Size(94, 19);
-            this.empireUnit.TabIndex = 3;
-            this.empireUnit.Text = "Imperial Unit";
-            this.empireUnit.UseVisualStyleBackColor = true;
-            this.empireUnit.CheckStateChanged += new System.EventHandler(this.updateEmpireUnitCheck);
+            this.isEmpireUnit.AutoSize = true;
+            this.isEmpireUnit.Location = new System.Drawing.Point(132, 97);
+            this.isEmpireUnit.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.isEmpireUnit.Name = "empireUnit";
+            this.isEmpireUnit.Size = new System.Drawing.Size(94, 19);
+            this.isEmpireUnit.TabIndex = 3;
+            this.isEmpireUnit.Text = "Imperial Unit";
+            this.isEmpireUnit.UseVisualStyleBackColor = true;
+            this.isEmpireUnit.CheckStateChanged += new System.EventHandler(this.isEmpireUnit_CheckStateChanged);
             // 
             // idLabel
             // 
@@ -411,19 +411,19 @@ namespace SwRebellionEditor
             // 
             // idNum
             // 
-            this.idNum.Enabled = false;
-            this.idNum.Location = new System.Drawing.Point(118, 163);
-            this.idNum.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.idNum.Maximum = new decimal(new int[] {
+            this.textStraDllId.Enabled = false;
+            this.textStraDllId.Location = new System.Drawing.Point(118, 163);
+            this.textStraDllId.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.textStraDllId.Maximum = new decimal(new int[] {
             99999,
             0,
             0,
             0});
-            this.idNum.Name = "idNum";
-            this.idNum.Size = new System.Drawing.Size(59, 23);
-            this.idNum.TabIndex = 0;
-            this.idNum.TabStop = false;
-            this.idNum.Value = new decimal(new int[] {
+            this.textStraDllId.Name = "idNum";
+            this.textStraDllId.Size = new System.Drawing.Size(59, 23);
+            this.textStraDllId.TabIndex = 0;
+            this.textStraDllId.TabStop = false;
+            this.textStraDllId.Value = new decimal(new int[] {
             99999,
             0,
             0,
@@ -442,19 +442,19 @@ namespace SwRebellionEditor
             // 
             // unknown3Num
             // 
-            this.unknown3Num.Enabled = false;
-            this.unknown3Num.Location = new System.Drawing.Point(118, 133);
-            this.unknown3Num.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.unknown3Num.Maximum = new decimal(new int[] {
+            this.unknwown2.Enabled = false;
+            this.unknwown2.Location = new System.Drawing.Point(118, 133);
+            this.unknwown2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.unknwown2.Maximum = new decimal(new int[] {
             9999,
             0,
             0,
             0});
-            this.unknown3Num.Name = "unknown3Num";
-            this.unknown3Num.Size = new System.Drawing.Size(59, 23);
-            this.unknown3Num.TabIndex = 0;
-            this.unknown3Num.TabStop = false;
-            this.unknown3Num.Value = new decimal(new int[] {
+            this.unknwown2.Name = "unknown3Num";
+            this.unknwown2.Size = new System.Drawing.Size(59, 23);
+            this.unknwown2.TabIndex = 0;
+            this.unknwown2.TabStop = false;
+            this.unknwown2.Value = new decimal(new int[] {
             9999,
             0,
             0,
@@ -462,25 +462,25 @@ namespace SwRebellionEditor
             // 
             // familyIdNum
             // 
-            this.familyIdNum.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.familyIdNum.Enabled = false;
-            this.familyIdNum.Location = new System.Drawing.Point(118, 103);
-            this.familyIdNum.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.familyIdNum.Maximum = new decimal(new int[] {
+            this.familyId.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.familyId.Enabled = false;
+            this.familyId.Location = new System.Drawing.Point(118, 103);
+            this.familyId.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.familyId.Maximum = new decimal(new int[] {
             9999,
             0,
             0,
             0});
-            this.familyIdNum.Name = "familyIdNum";
-            this.familyIdNum.Size = new System.Drawing.Size(59, 23);
-            this.familyIdNum.TabIndex = 0;
-            this.familyIdNum.TabStop = false;
-            this.familyIdNum.Value = new decimal(new int[] {
+            this.familyId.Name = "familyIdNum";
+            this.familyId.Size = new System.Drawing.Size(59, 23);
+            this.familyId.TabIndex = 0;
+            this.familyId.TabStop = false;
+            this.familyId.Value = new decimal(new int[] {
             9999,
             0,
             0,
             0});
-            this.familyIdNum.ValueChanged += new System.EventHandler(this.updateFamilyIdNum);
+            this.familyId.ValueChanged += new System.EventHandler(this.familyId_ValueChanged);
             // 
             // familyLabel
             // 
@@ -495,25 +495,25 @@ namespace SwRebellionEditor
             // 
             // secProdFacNum
             // 
-            this.secProdFacNum.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.secProdFacNum.Enabled = false;
-            this.secProdFacNum.Location = new System.Drawing.Point(118, 73);
-            this.secProdFacNum.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.secProdFacNum.Maximum = new decimal(new int[] {
+            this.nextProductionFacility.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.nextProductionFacility.Enabled = false;
+            this.nextProductionFacility.Location = new System.Drawing.Point(118, 73);
+            this.nextProductionFacility.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.nextProductionFacility.Maximum = new decimal(new int[] {
             9999,
             0,
             0,
             0});
-            this.secProdFacNum.Name = "secProdFacNum";
-            this.secProdFacNum.Size = new System.Drawing.Size(59, 23);
-            this.secProdFacNum.TabIndex = 0;
-            this.secProdFacNum.TabStop = false;
-            this.secProdFacNum.Value = new decimal(new int[] {
+            this.nextProductionFacility.Name = "secProdFacNum";
+            this.nextProductionFacility.Size = new System.Drawing.Size(59, 23);
+            this.nextProductionFacility.TabIndex = 0;
+            this.nextProductionFacility.TabStop = false;
+            this.nextProductionFacility.Value = new decimal(new int[] {
             9999,
             0,
             0,
             0});
-            this.secProdFacNum.ValueChanged += new System.EventHandler(this.updateSecProdFacNum);
+            this.nextProductionFacility.ValueChanged += new System.EventHandler(this.nextProductionFacility_ValueChanged);
             // 
             // secProdFacNumlabel
             // 
@@ -539,44 +539,44 @@ namespace SwRebellionEditor
             // 
             // prodFacNum
             // 
-            this.prodFacNum.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.prodFacNum.Enabled = false;
-            this.prodFacNum.Location = new System.Drawing.Point(118, 43);
-            this.prodFacNum.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.prodFacNum.Maximum = new decimal(new int[] {
+            this.productionFacility.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.productionFacility.Enabled = false;
+            this.productionFacility.Location = new System.Drawing.Point(118, 43);
+            this.productionFacility.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.productionFacility.Maximum = new decimal(new int[] {
             9999,
             0,
             0,
             0});
-            this.prodFacNum.Name = "prodFacNum";
-            this.prodFacNum.Size = new System.Drawing.Size(59, 23);
-            this.prodFacNum.TabIndex = 0;
-            this.prodFacNum.TabStop = false;
-            this.prodFacNum.Value = new decimal(new int[] {
+            this.productionFacility.Name = "prodFacNum";
+            this.productionFacility.Size = new System.Drawing.Size(59, 23);
+            this.productionFacility.TabIndex = 0;
+            this.productionFacility.TabStop = false;
+            this.productionFacility.Value = new decimal(new int[] {
             9999,
             0,
             0,
             0});
-            this.prodFacNum.ValueChanged += new System.EventHandler(this.updateProdFacNum);
+            this.productionFacility.ValueChanged += new System.EventHandler(this.productionFacility_ValueChanged);
             // 
             // unknownMoralHpNum
             // 
-            this.unknownMoralHpNum.Location = new System.Drawing.Point(118, 13);
-            this.unknownMoralHpNum.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.unknownMoralHpNum.Maximum = new decimal(new int[] {
+            this.unknownMoralHp.Location = new System.Drawing.Point(118, 13);
+            this.unknownMoralHp.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.unknownMoralHp.Maximum = new decimal(new int[] {
             9999,
             0,
             0,
             0});
-            this.unknownMoralHpNum.Name = "unknownMoralHpNum";
-            this.unknownMoralHpNum.Size = new System.Drawing.Size(59, 23);
-            this.unknownMoralHpNum.TabIndex = 12;
-            this.unknownMoralHpNum.Value = new decimal(new int[] {
+            this.unknownMoralHp.Name = "unknownMoralHpNum";
+            this.unknownMoralHp.Size = new System.Drawing.Size(59, 23);
+            this.unknownMoralHp.TabIndex = 12;
+            this.unknownMoralHp.Value = new decimal(new int[] {
             9999,
             0,
             0,
             0});
-            this.unknownMoralHpNum.ValueChanged += new System.EventHandler(this.updateUnknownMoralHpNum);
+            this.unknownMoralHp.ValueChanged += new System.EventHandler(this.unknownMoralHp_ValueChanged);
             // 
             // UnkownMoralHPlabel
             // 
@@ -590,22 +590,22 @@ namespace SwRebellionEditor
             // 
             // resDiffNum
             // 
-            this.resDiffNum.Location = new System.Drawing.Point(119, 43);
-            this.resDiffNum.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.resDiffNum.Maximum = new decimal(new int[] {
+            this.researchDifficulty.Location = new System.Drawing.Point(119, 43);
+            this.researchDifficulty.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.researchDifficulty.Maximum = new decimal(new int[] {
             999,
             0,
             0,
             0});
-            this.resDiffNum.Name = "resDiffNum";
-            this.resDiffNum.Size = new System.Drawing.Size(59, 23);
-            this.resDiffNum.TabIndex = 11;
-            this.resDiffNum.Value = new decimal(new int[] {
+            this.researchDifficulty.Name = "resDiffNum";
+            this.researchDifficulty.Size = new System.Drawing.Size(59, 23);
+            this.researchDifficulty.TabIndex = 11;
+            this.researchDifficulty.Value = new decimal(new int[] {
             999,
             0,
             0,
             0});
-            this.resDiffNum.ValueChanged += new System.EventHandler(this.updateResDiffNum);
+            this.researchDifficulty.ValueChanged += new System.EventHandler(this.researchDifficulty_ValueChanged);
             // 
             // resDiffLabel
             // 
@@ -619,12 +619,12 @@ namespace SwRebellionEditor
             // 
             // troopName
             // 
-            this.troopName.AutoSize = true;
-            this.troopName.Location = new System.Drawing.Point(232, 75);
-            this.troopName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.troopName.Name = "troopName";
-            this.troopName.Size = new System.Drawing.Size(0, 15);
-            this.troopName.TabIndex = 13;
+            this.encyclopediaName.AutoSize = true;
+            this.encyclopediaName.Location = new System.Drawing.Point(232, 75);
+            this.encyclopediaName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.encyclopediaName.Name = "troopName";
+            this.encyclopediaName.Size = new System.Drawing.Size(0, 15);
+            this.encyclopediaName.TabIndex = 13;
             // 
             // encyText
             // 
@@ -685,7 +685,7 @@ namespace SwRebellionEditor
             this.openNew.TabIndex = 16;
             this.openNew.Text = "Open...";
             this.openNew.UseVisualStyleBackColor = true;
-            this.openNew.Click += new System.EventHandler(this.openNew_Click);
+            this.openNew.Click += new System.EventHandler(this.Open_Click);
             // 
             // tabControl1
             // 
@@ -715,21 +715,21 @@ namespace SwRebellionEditor
             // 
             // miscDATGroup
             // 
-            this.miscDATGroup.Controls.Add(this.famHexLabel);
+            this.miscDATGroup.Controls.Add(this.familyIdHexLabel);
             this.miscDATGroup.Controls.Add(this.UnkownMoralHPlabel);
-            this.miscDATGroup.Controls.Add(this.unitHexLabel);
-            this.miscDATGroup.Controls.Add(this.unknownMoralHpNum);
-            this.miscDATGroup.Controls.Add(this.unitNum);
+            this.miscDATGroup.Controls.Add(this.troopIdHexLabel);
+            this.miscDATGroup.Controls.Add(this.unknownMoralHp);
+            this.miscDATGroup.Controls.Add(this.troopId);
             this.miscDATGroup.Controls.Add(this.label1);
-            this.miscDATGroup.Controls.Add(this.prodFacNum);
+            this.miscDATGroup.Controls.Add(this.productionFacility);
             this.miscDATGroup.Controls.Add(this.prodLabel);
             this.miscDATGroup.Controls.Add(this.secProdFacNumlabel);
-            this.miscDATGroup.Controls.Add(this.secProdFacNum);
+            this.miscDATGroup.Controls.Add(this.nextProductionFacility);
             this.miscDATGroup.Controls.Add(this.familyLabel);
             this.miscDATGroup.Controls.Add(this.idLabel);
-            this.miscDATGroup.Controls.Add(this.familyIdNum);
-            this.miscDATGroup.Controls.Add(this.idNum);
-            this.miscDATGroup.Controls.Add(this.unknown3Num);
+            this.miscDATGroup.Controls.Add(this.familyId);
+            this.miscDATGroup.Controls.Add(this.textStraDllId);
+            this.miscDATGroup.Controls.Add(this.unknwown2);
             this.miscDATGroup.Controls.Add(this.unkown3Label);
             this.miscDATGroup.Location = new System.Drawing.Point(192, 7);
             this.miscDATGroup.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -742,41 +742,41 @@ namespace SwRebellionEditor
             // 
             // famHexLabel
             // 
-            this.famHexLabel.AutoSize = true;
-            this.famHexLabel.Enabled = false;
-            this.famHexLabel.Location = new System.Drawing.Point(178, 107);
-            this.famHexLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.famHexLabel.Name = "famHexLabel";
-            this.famHexLabel.Size = new System.Drawing.Size(26, 15);
-            this.famHexLabel.TabIndex = 1119;
-            this.famHexLabel.Text = "hex";
+            this.familyIdHexLabel.AutoSize = true;
+            this.familyIdHexLabel.Enabled = false;
+            this.familyIdHexLabel.Location = new System.Drawing.Point(178, 107);
+            this.familyIdHexLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.familyIdHexLabel.Name = "famHexLabel";
+            this.familyIdHexLabel.Size = new System.Drawing.Size(26, 15);
+            this.familyIdHexLabel.TabIndex = 1119;
+            this.familyIdHexLabel.Text = "hex";
             // 
             // unitHexLabel
             // 
-            this.unitHexLabel.AutoSize = true;
-            this.unitHexLabel.Enabled = false;
-            this.unitHexLabel.Location = new System.Drawing.Point(178, 195);
-            this.unitHexLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.unitHexLabel.Name = "unitHexLabel";
-            this.unitHexLabel.Size = new System.Drawing.Size(26, 15);
-            this.unitHexLabel.TabIndex = 1118;
-            this.unitHexLabel.Text = "hex";
+            this.troopIdHexLabel.AutoSize = true;
+            this.troopIdHexLabel.Enabled = false;
+            this.troopIdHexLabel.Location = new System.Drawing.Point(178, 195);
+            this.troopIdHexLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.troopIdHexLabel.Name = "unitHexLabel";
+            this.troopIdHexLabel.Size = new System.Drawing.Size(26, 15);
+            this.troopIdHexLabel.TabIndex = 1118;
+            this.troopIdHexLabel.Text = "hex";
             // 
             // unitNum
             // 
-            this.unitNum.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.unitNum.Enabled = false;
-            this.unitNum.Location = new System.Drawing.Point(118, 193);
-            this.unitNum.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.unitNum.Maximum = new decimal(new int[] {
+            this.troopId.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.troopId.Enabled = false;
+            this.troopId.Location = new System.Drawing.Point(118, 193);
+            this.troopId.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.troopId.Maximum = new decimal(new int[] {
             999,
             0,
             0,
             0});
-            this.unitNum.Name = "unitNum";
-            this.unitNum.Size = new System.Drawing.Size(59, 23);
-            this.unitNum.TabIndex = 1117;
-            this.unitNum.TabStop = false;
+            this.troopId.Name = "unitNum";
+            this.troopId.Size = new System.Drawing.Size(59, 23);
+            this.troopId.TabIndex = 1117;
+            this.troopId.TabStop = false;
             // 
             // label1
             // 
@@ -792,12 +792,12 @@ namespace SwRebellionEditor
             // troopStatsBox
             // 
             this.troopStatsBox.Controls.Add(this.attacklabel);
-            this.troopStatsBox.Controls.Add(this.attackNum);
+            this.troopStatsBox.Controls.Add(this.atttackRating);
             this.troopStatsBox.Controls.Add(this.defenseLabel);
-            this.troopStatsBox.Controls.Add(this.defNum);
-            this.troopStatsBox.Controls.Add(this.bombardNum);
+            this.troopStatsBox.Controls.Add(this.defenseRating);
+            this.troopStatsBox.Controls.Add(this.bombardmentRating);
             this.troopStatsBox.Controls.Add(this.BombardLabel);
-            this.troopStatsBox.Controls.Add(this.detectNum);
+            this.troopStatsBox.Controls.Add(this.detectionRating);
             this.troopStatsBox.Controls.Add(this.DetectionLabel);
             this.troopStatsBox.Location = new System.Drawing.Point(4, 181);
             this.troopStatsBox.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -811,9 +811,9 @@ namespace SwRebellionEditor
             // researchBox
             // 
             this.researchBox.Controls.Add(this.researchLabel);
-            this.researchBox.Controls.Add(this.researchNum);
+            this.researchBox.Controls.Add(this.researchOrder);
             this.researchBox.Controls.Add(this.resDiffLabel);
-            this.researchBox.Controls.Add(this.resDiffNum);
+            this.researchBox.Controls.Add(this.researchDifficulty);
             this.researchBox.Location = new System.Drawing.Point(4, 96);
             this.researchBox.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.researchBox.Name = "researchBox";
@@ -826,9 +826,9 @@ namespace SwRebellionEditor
             // costGroup
             // 
             this.costGroup.Controls.Add(this.conCostLabel);
-            this.costGroup.Controls.Add(this.conCostNum);
+            this.costGroup.Controls.Add(this.constructionCost);
             this.costGroup.Controls.Add(this.maintCostLabel);
-            this.costGroup.Controls.Add(this.maintCostNum);
+            this.costGroup.Controls.Add(this.maintenanceCost);
             this.costGroup.Location = new System.Drawing.Point(4, 3);
             this.costGroup.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.costGroup.Name = "costGroup";
@@ -852,15 +852,15 @@ namespace SwRebellionEditor
             // 
             // troopPicture
             // 
-            this.troopPicture.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.troopPicture.InitialImage = null;
-            this.troopPicture.Location = new System.Drawing.Point(26, 14);
-            this.troopPicture.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.troopPicture.Name = "troopPicture";
-            this.troopPicture.Size = new System.Drawing.Size(147, 74);
-            this.troopPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.troopPicture.TabIndex = 2;
-            this.troopPicture.TabStop = false;
+            this.picture.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.picture.InitialImage = null;
+            this.picture.Location = new System.Drawing.Point(26, 14);
+            this.picture.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.picture.Name = "troopPicture";
+            this.picture.Size = new System.Drawing.Size(147, 74);
+            this.picture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picture.TabIndex = 2;
+            this.picture.TabStop = false;
             // 
             // TroopsForm
             // 
@@ -874,11 +874,11 @@ namespace SwRebellionEditor
             this.Controls.Add(this.SaveAs);
             this.Controls.Add(this.Cancel);
             this.Controls.Add(this.Ok);
-            this.Controls.Add(this.troopName);
-            this.Controls.Add(this.empireUnit);
-            this.Controls.Add(this.rebelUnit);
-            this.Controls.Add(this.ItemSelect);
-            this.Controls.Add(this.troopPicture);
+            this.Controls.Add(this.encyclopediaName);
+            this.Controls.Add(this.isEmpireUnit);
+            this.Controls.Add(this.isAllianceUnit);
+            this.Controls.Add(this.selector);
+            this.Controls.Add(this.picture);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.KeyPreview = true;
             this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -888,30 +888,30 @@ namespace SwRebellionEditor
             this.Name = "TroopsForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "Troops (TROOPSD.DAT)";
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.TroopForm_FormClosing);
-            this.Load += new System.EventHandler(this.TroopForm_Load);
-            this.Enter += new System.EventHandler(this.TroopFormUpdateUI);
-            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.TroopForm_KeyDown);
-            ((System.ComponentModel.ISupportInitialize)(this.conCostNum)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.maintCostNum)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.researchNum)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bombardNum)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.defNum)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.attackNum)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.detectNum)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ItemSelect)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.idNum)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.unknown3Num)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.familyIdNum)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.secProdFacNum)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.prodFacNum)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.unknownMoralHpNum)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.resDiffNum)).EndInit();
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.GameObjectsListForm_FormClosing);
+            this.Load += new System.EventHandler(this.GameObjectsListForm_Load);
+            this.Enter += new System.EventHandler(this.GameObjectsSelector_ValueChanged);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.GameObjectsListForm_KeyDown);
+            ((System.ComponentModel.ISupportInitialize)(this.constructionCost)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.maintenanceCost)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.researchOrder)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bombardmentRating)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.defenseRating)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.atttackRating)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.detectionRating)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.selector)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textStraDllId)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.unknwown2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.familyId)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nextProductionFacility)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.productionFacility)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.unknownMoralHp)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.researchDifficulty)).EndInit();
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.miscDATGroup.ResumeLayout(false);
             this.miscDATGroup.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.unitNum)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.troopId)).EndInit();
             this.troopStatsBox.ResumeLayout(false);
             this.troopStatsBox.PerformLayout();
             this.researchBox.ResumeLayout(false);
@@ -919,7 +919,7 @@ namespace SwRebellionEditor
             this.costGroup.ResumeLayout(false);
             this.costGroup.PerformLayout();
             this.tabPage2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.troopPicture)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picture)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

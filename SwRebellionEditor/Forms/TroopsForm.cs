@@ -1,266 +1,122 @@
 ﻿namespace SwRebellionEditor
 {
-    public partial class TroopsForm : Form
+    public partial class TroopsForm : TroopsDesignForm
     {
+        #region .ctor
+
         public TroopsForm()
         {
+            GameFilePath = RegistryKeys.InstalledLocation + "\\GData\\TROOPSD.DAT";
+            GameFile = DatFile.Load<TROOPSD>(GameFilePath);
             InitializeComponent();
+            InitializeBaseComponent(selector);
         }
 
-        private void updateConCost(object sender, EventArgs e)
+        #endregion
+
+        #region Business Layer
+
+        protected override void DisplaySelectedGameObject(int selectorIndex)
         {
-            TROOPSD.Troops[ItemSelect.Value].conCost = (uint)conCostNum.Value;
-            TROOPSD.setUnsavedData();
+            var troop = GameFile.Troops[selectorIndex];
+            atttackRating.Value = troop.AttackRating;
+            constructionCost.Value = troop.ConstructionCost;
+            defenseRating.Value = troop.DefenseRating;
+            encyclopediaName.Text = troop.EncyclopediaName;
+            familyIdHexLabel.Text = "0x" + troop.FamilyId.ToString("X");
+            isAllianceUnit.Checked = troop.IsAllianceUnit > 0U;
+            isEmpireUnit.Checked = troop.IsEmpireUnit > 0U;
+            maintenanceCost.Value = troop.MaintenanceCost;
+            nextProductionFacility.Value = troop.NextProductionFacility;
+            productionFacility.Value = troop.ProductionFacility;
+            researchDifficulty.Value = troop.ResearchDifficulty;
+            researchOrder.Value = troop.ResearchOrder;
+            textStraDllId.Value = troop.TextStraDllId;
+            troopId.Value = troop.TroopId;
+            troopIdHexLabel.Text = "0x" + troop.TroopId.ToString("X");
+            unknwown2.Value = troop.Unknwown2;
+            unknownMoralHp.Value = troop.UnknownMoralHp;
+
+            picture.SizeMode = PictureBoxSizeMode.Zoom;
+            var edataId = 15 + selectorIndex;
+            picture.Image = Image.FromFile(RegistryKeys.InstalledLocation + "\\EData\\EDATA." + edataId.ToString("000"));
         }
 
-        private void updateMaintCost(object sender, EventArgs e)
+        #endregion
+
+        #region Changed events
+
+        private void atttackRating_ValueChanged(object sender, EventArgs e)
         {
-            TROOPSD.Troops[ItemSelect.Value].maintCost = (uint)maintCostNum.Value;
-            TROOPSD.setUnsavedData();
+            GameFile.Troops[selector.Value].AttackRating = (uint)atttackRating.Value;
+            GameFile.UnsavedData = true;
         }
-
-        private void updateResearchNum(object sender, EventArgs e)
+        private void bombardmentRating_ValueChanged(object sender, EventArgs e)
         {
-            TROOPSD.Troops[ItemSelect.Value].researchNum = (uint)researchNum.Value;
-            TROOPSD.setUnsavedData();
+            GameFile.Troops[selector.Value].BombardmentRating = (uint)bombardmentRating.Value;
+            GameFile.UnsavedData = true;
         }
-
-        private void updateAttackNum(object sender, EventArgs e)
+        private void constructionCost_ValueChanged(object sender, EventArgs e)
         {
-            TROOPSD.Troops[ItemSelect.Value].attack = (uint)attackNum.Value;
-            TROOPSD.setUnsavedData();
+            GameFile.Troops[selector.Value].ConstructionCost = (uint)constructionCost.Value;
+            GameFile.UnsavedData = true;
         }
-
-        private void updateDefNum(object sender, EventArgs e)
+        private void defenseRating_ValueChanged(object sender, EventArgs e)
         {
-            TROOPSD.Troops[ItemSelect.Value].defense = (uint)defNum.Value;
-            TROOPSD.setUnsavedData();
+            GameFile.Troops[selector.Value].DefenseRating = (uint)defenseRating.Value;
+            GameFile.UnsavedData = true;
         }
-
-        private void updateBombardNum(object sender, EventArgs e)
+        private void detectionRating_ValueChanged(object sender, EventArgs e)
         {
-            TROOPSD.Troops[ItemSelect.Value].bombardment = (uint)bombardNum.Value;
-            TROOPSD.setUnsavedData();
+            GameFile.Troops[selector.Value].DetectionRating = (uint)detectionRating.Value;
+            GameFile.UnsavedData = true;
         }
-
-        private void updateDetectNum(object sender, EventArgs e)
+        private void familyId_ValueChanged(object sender, EventArgs e)
         {
-            TROOPSD.Troops[ItemSelect.Value].detection = (uint)detectNum.Value;
-            TROOPSD.setUnsavedData();
+            GameFile.Troops[selector.Value].FamilyId = (uint)familyId.Value;
+            GameFile.UnsavedData = true;
         }
-
-        private void updateResDiffNum(object sender, EventArgs e)
+        private void isAllianceUnit_CheckStateChanged(object sender, EventArgs e)
         {
-            TROOPSD.Troops[ItemSelect.Value].researchDiff = (uint)resDiffNum.Value;
-            TROOPSD.setUnsavedData();
+            GameFile.Troops[selector.Value].IsAllianceUnit = !isAllianceUnit.Checked ? 0U : 1U;
+            GameFile.UnsavedData = true;
         }
-
-        private void updateUnknownMoralHpNum(object sender, EventArgs e)
+        private void isEmpireUnit_CheckStateChanged(object sender, EventArgs e)
         {
-            TROOPSD.Troops[ItemSelect.Value].unknown4 = (uint)unknownMoralHpNum.Value;
-            TROOPSD.setUnsavedData();
+            GameFile.Troops[selector.Value].IsEmpireUnit = !isEmpireUnit.Checked ? 0U : 1U;
+            GameFile.UnsavedData = true;
         }
-
-        private void updateProdFacNum(object sender, EventArgs e)
+        private void maintenanceCost_ValueChanged(object sender, EventArgs e)
         {
-            TROOPSD.Troops[ItemSelect.Value].prodFacilityNum = (uint)prodFacNum.Value;
-            TROOPSD.setUnsavedData();
+            GameFile.Troops[selector.Value].MaintenanceCost = (uint)maintenanceCost.Value;
+            GameFile.UnsavedData = true;
         }
-
-        private void updateSecProdFacNum(object sender, EventArgs e)
+        private void nextProductionFacility_ValueChanged(object sender, EventArgs e)
         {
-            TROOPSD.Troops[ItemSelect.Value].unknown2 = (uint)secProdFacNum.Value;
-            TROOPSD.setUnsavedData();
+            GameFile.Troops[selector.Value].NextProductionFacility = (uint)nextProductionFacility.Value;
+            GameFile.UnsavedData = true;
         }
-
-        private void updateFamilyIdNum(object sender, EventArgs e)
+        private void productionFacility_ValueChanged(object sender, EventArgs e)
         {
-            TROOPSD.Troops[ItemSelect.Value].familyNum = (uint)familyIdNum.Value;
-            TROOPSD.setUnsavedData();
+            GameFile.Troops[selector.Value].ProductionFacility = (uint)productionFacility.Value;
+            GameFile.UnsavedData = true;
         }
-
-        private void updateRebelUnitCheck(object sender, EventArgs e)
+        private void researchDifficulty_ValueChanged(object sender, EventArgs e)
         {
-            TROOPSD.Troops[ItemSelect.Value].rebel = !rebelUnit.Checked ? 0U : 1U;
-            TROOPSD.setUnsavedData();
+            GameFile.Troops[selector.Value].ResearchDifficulty = (uint)researchDifficulty.Value;
+            GameFile.UnsavedData = true;
         }
-
-        private void updateEmpireUnitCheck(object sender, EventArgs e)
+        private void researchOrder_ValueChanged(object sender, EventArgs e)
         {
-            TROOPSD.Troops[ItemSelect.Value].empire = !empireUnit.Checked ? 0U : 1U;
-            TROOPSD.setUnsavedData();
+            GameFile.Troops[selector.Value].ResearchOrder = (uint)researchOrder.Value;
+            GameFile.UnsavedData = true;
         }
-
-        private void DisplayTroopData(int index)
+        private void unknownMoralHp_ValueChanged(object sender, EventArgs e)
         {
-            int num = 15 + index;
-            TROOPSD.LockChange();
-            troopName.Text = TROOPSD.Troops[index].swrName;
-            conCostNum.Value = TROOPSD.Troops[index].conCost;
-            maintCostNum.Value = TROOPSD.Troops[index].maintCost;
-            researchNum.Value = TROOPSD.Troops[index].researchNum;
-            attackNum.Value = TROOPSD.Troops[index].attack;
-            defNum.Value = TROOPSD.Troops[index].defense;
-            bombardNum.Value = TROOPSD.Troops[index].bombardment;
-            detectNum.Value = TROOPSD.Troops[index].detection;
-            resDiffNum.Value = TROOPSD.Troops[index].researchDiff;
-            unknownMoralHpNum.Value = TROOPSD.Troops[index].unknown4;
-            rebelUnit.Checked = TROOPSD.Troops[index].rebel > 0U;
-            empireUnit.Checked = TROOPSD.Troops[index].empire > 0U;
-            prodFacNum.Value = TROOPSD.Troops[index].prodFacilityNum;
-            secProdFacNum.Value = TROOPSD.Troops[index].unknown2;
-            familyIdNum.Value = TROOPSD.Troops[index].familyNum;
-            unknown3Num.Value = TROOPSD.Troops[index].unknown3;
-            idNum.Value = TROOPSD.Troops[index].textstratNum;
-            famHexLabel.Text = TROOPSD.Troops[index].familyNum.ToString("X");
-            unitNum.Value = TROOPSD.Troops[index].number;
-            unitHexLabel.Text = TROOPSD.Troops[index].number.ToString("X");
-            troopPicture.SizeMode = PictureBoxSizeMode.Zoom;
-            troopPicture.Image = Image.FromFile(RegistryKeys.InstalledLocation + "\\edata\\edata.0" + num);
-            TROOPSD.UnlockChange();
+            GameFile.Troops[selector.Value].UnknownMoralHp = (uint)unknownMoralHp.Value;
+            GameFile.UnsavedData = true;
         }
 
-        private void TroopFormUpdateUI(object sender, EventArgs e)
-        {
-            DisplayTroopData(ItemSelect.Value);
-        }
-
-        private void TroopForm_Load(object sender, EventArgs e)
-        {
-            if (RegistryKeys.PlaySounds)
-            {
-                Sound.Play(Resources.open_wav);
-            }
-
-            if (RegistryKeys.PlayMusic)
-            {
-                Sound.PlayRandomMusic();
-            }
-
-            DisplayTroopData(ItemSelect.Value);
-        }
-
-        private void SaveAs_Click(object sender, EventArgs e)
-        {
-            SaveFileDialog saveFileDialog = new SaveFileDialog();
-            saveFileDialog.InitialDirectory = RegistryKeys.InstalledLocation + "\\Gdata";
-            if (saveFileDialog.ShowDialog(this) == DialogResult.OK)
-            {
-                TROOPSD.SaveTroopData(saveFileDialog.FileName);
-                TROOPSD.ClearUnsavedData();
-                int num = (int)MessageBox.Show(this, "Troop Data Saved", "", MessageBoxButtons.OK);
-            }
-            ItemSelect.Focus();
-        }
-
-        private void openNew_Click(object sender, EventArgs e)
-        {
-            if (TROOPSD.unsavedTroopData && MessageBox.Show(this, "Save Troop data before opening new datafile?", "Save data", MessageBoxButtons.YesNo) == DialogResult.Yes)
-            {
-                TROOPSD.SaveTroopData(TROOPSD.GetTroopPath());
-                TROOPSD.ClearUnsavedData();
-            }
-            TROOPSD.OpenNewTroopFile();
-            DisplayTroopData(ItemSelect.Value);
-            ItemSelect.Focus();
-        }
-
-        private void Cancel_Click(object sender, EventArgs e)
-        {
-            if (TROOPSD.unsavedTroopData)
-            {
-                if (MessageBox.Show(this, "Unsaved Troop data, are you sure you want to Close this Dialog?", "Save data", MessageBoxButtons.YesNo) != DialogResult.Yes)
-                {
-                    return;
-                }
-
-                Close();
-            }
-            else
-            {
-                Close();
-            }
-        }
-
-        private void Ok_Click(object sender, EventArgs e)
-        {
-            if (TROOPSD.unsavedTroopData)
-            {
-                TROOPSD.GetTroopPath();
-                TROOPSD.SaveTroopData(TROOPSD.GetTroopPath());
-                TROOPSD.ClearUnsavedData();
-            }
-            Close();
-        }
-
-        private void TroopForm_KeyDown(object sender, KeyEventArgs e)
-        {
-            if (e.KeyValue == 114)
-            {
-                if (e.Shift)
-                {
-                    if (ItemSelect.Value - ItemSelect.LargeChange > ItemSelect.Minimum)
-                    {
-                        ItemSelect.Value -= ItemSelect.LargeChange;
-                    }
-                    else
-                    {
-                        ItemSelect.Value = ItemSelect.Minimum;
-                    }
-                }
-                else
-                {
-                    if (ItemSelect.Value <= ItemSelect.Minimum)
-                    {
-                        return;
-                    }
-
-                    --ItemSelect.Value;
-                }
-            }
-            else
-            {
-                if (e.KeyValue != 115)
-                {
-                    return;
-                }
-
-                if (e.Shift)
-                {
-                    if (ItemSelect.Value + ItemSelect.LargeChange < ItemSelect.Maximum)
-                    {
-                        ItemSelect.Value += ItemSelect.LargeChange;
-                    }
-                    else
-                    {
-                        ItemSelect.Value = ItemSelect.Maximum;
-                    }
-                }
-                else
-                {
-                    if (ItemSelect.Value >= ItemSelect.Maximum)
-                    {
-                        return;
-                    }
-
-                    ++ItemSelect.Value;
-                }
-            }
-        }
-
-        private void TroopForm_FormClosing(object sender, FormClosingEventArgs e)
-        {
-            if (RegistryKeys.PlaySounds)
-            {
-                Sound.Play(Resources.close_wav);
-            }
-
-            if (!RegistryKeys.PlayMusic)
-            {
-                return;
-            }
-
-            Sound.PlayRandomMusic();
-        }
+        #endregion
     }
 }

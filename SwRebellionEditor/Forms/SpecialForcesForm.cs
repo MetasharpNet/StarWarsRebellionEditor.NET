@@ -59,7 +59,7 @@
             textStraDllId.Value = specialForce.TextStraDllId;
             troopsResearchBase.Value = specialForce.TroopsResearchBase;
             troopsResearchVariance.Value = specialForce.TroopsResearchVariance;
-            unknown3Num.Value = specialForce.Unknown2;
+            unknown2.Value = specialForce.Unknown2;
 
             picture.SizeMode = PictureBoxSizeMode.Zoom;
             var edataId = 25 + selectorIndex;

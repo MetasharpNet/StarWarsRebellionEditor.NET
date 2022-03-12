@@ -70,7 +70,7 @@ namespace SwRebellionEditor
         private Label resDiffLabel;
         private NumericUpDown researchDifficulty;
         private GroupBox groupBox1;
-        private NumericUpDown unknown3Num;
+        private NumericUpDown unknown2;
         private NumericUpDown textStraDllId;
         private NumericUpDown productionFacility;
         private Label unkown3Label;
@@ -168,7 +168,7 @@ namespace SwRebellionEditor
             this.label4 = new System.Windows.Forms.Label();
             this.missionId = new System.Windows.Forms.NumericUpDown();
             this.label3 = new System.Windows.Forms.Label();
-            this.unknown3Num = new System.Windows.Forms.NumericUpDown();
+            this.unknown2 = new System.Windows.Forms.NumericUpDown();
             this.textStraDllId = new System.Windows.Forms.NumericUpDown();
             this.productionFacility = new System.Windows.Forms.NumericUpDown();
             this.unkown3Label = new System.Windows.Forms.Label();
@@ -214,7 +214,7 @@ namespace SwRebellionEditor
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.specialForceId)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.missionId)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.unknown3Num)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.unknown2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textStraDllId)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.productionFacility)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.familyId)).BeginInit();
@@ -1000,7 +1000,7 @@ namespace SwRebellionEditor
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.missionId);
             this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.unknown3Num);
+            this.groupBox1.Controls.Add(this.unknown2);
             this.groupBox1.Controls.Add(this.textStraDllId);
             this.groupBox1.Controls.Add(this.productionFacility);
             this.groupBox1.Controls.Add(this.unkown3Label);
@@ -1096,18 +1096,18 @@ namespace SwRebellionEditor
             // 
             // unknown3Num
             // 
-            this.unknown3Num.Enabled = false;
-            this.unknown3Num.Location = new System.Drawing.Point(138, 118);
-            this.unknown3Num.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.unknown3Num.Maximum = new decimal(new int[] {
+            this.unknown2.Enabled = false;
+            this.unknown2.Location = new System.Drawing.Point(138, 118);
+            this.unknown2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.unknown2.Maximum = new decimal(new int[] {
             9999,
             0,
             0,
             0});
-            this.unknown3Num.Name = "unknown3Num";
-            this.unknown3Num.Size = new System.Drawing.Size(59, 23);
-            this.unknown3Num.TabIndex = 144;
-            this.unknown3Num.TabStop = false;
+            this.unknown2.Name = "unknown3Num";
+            this.unknown2.Size = new System.Drawing.Size(59, 23);
+            this.unknown2.TabIndex = 144;
+            this.unknown2.TabStop = false;
             // 
             // idNum
             // 
@@ -1351,7 +1351,7 @@ namespace SwRebellionEditor
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.specialForceId)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.missionId)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.unknown3Num)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.unknown2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textStraDllId)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.productionFacility)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.familyId)).EndInit();
