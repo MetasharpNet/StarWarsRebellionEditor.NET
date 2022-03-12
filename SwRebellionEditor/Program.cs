@@ -22,6 +22,8 @@ namespace SwRebellionEditor
             //t6.Save("E:\\star wars rebellion\\GData\\MNCHARSD2.DAT");
             var t7 = DatFile.Load<PROFACSD>("E:\\star wars rebellion\\GData\\PROFACSD.DAT");
             //t7.Save("E:\\star wars rebellion\\GData\\PROFACSD2.DAT");
+            var t8 = DatFile.Load<SPECFCSD>("E:\\star wars rebellion\\GData\\SPECFCSD.DAT");
+            //t8.Save("E:\\star wars rebellion\\GData\\SPECFCSD2.DAT");
 
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
