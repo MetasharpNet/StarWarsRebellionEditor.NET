@@ -259,6 +259,14 @@ namespace SwRebellionEditor
         }
 
         // Editor - Galaxy - Sectors
+        private void Sectors_ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Show<SectorsForm>();
+        }
+        private void Sectors_Button_Click(object sender, EventArgs e)
+        {
+            Show<SectorsForm>();
+        }
         // Editor - Galaxy - Systems
         private void Systems_ToolStripMenuItem_Click(object sender, EventArgs e)
         {

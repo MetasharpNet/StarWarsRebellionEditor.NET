@@ -235,7 +235,7 @@ namespace SwRebellionEditor
             this.DisplayToolBar_ToolStripMenuItem.CheckOnClick = true;
             this.DisplayToolBar_ToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Checked;
             this.DisplayToolBar_ToolStripMenuItem.Name = "DisplayToolBar_ToolStripMenuItem";
-            this.DisplayToolBar_ToolStripMenuItem.Size = new System.Drawing.Size(167, 22);
+            this.DisplayToolBar_ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.DisplayToolBar_ToolStripMenuItem.Text = "Display Toolbar";
             this.DisplayToolBar_ToolStripMenuItem.Click += new System.EventHandler(this.DisplayToolBar_ToolStripMenuItem_Click);
             // 
@@ -245,21 +245,21 @@ namespace SwRebellionEditor
             this.DisplayStatusBar_ToolStripMenuItem.CheckOnClick = true;
             this.DisplayStatusBar_ToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Checked;
             this.DisplayStatusBar_ToolStripMenuItem.Name = "DisplayStatusBar_ToolStripMenuItem";
-            this.DisplayStatusBar_ToolStripMenuItem.Size = new System.Drawing.Size(167, 22);
+            this.DisplayStatusBar_ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.DisplayStatusBar_ToolStripMenuItem.Text = "Display Status Bar";
             this.DisplayStatusBar_ToolStripMenuItem.Click += new System.EventHandler(this.DisplayStatusBar_ToolStripMenuItem_Click);
             // 
             // PlayMusic_ToolStripMenuItem
             // 
             this.PlayMusic_ToolStripMenuItem.Name = "PlayMusic_ToolStripMenuItem";
-            this.PlayMusic_ToolStripMenuItem.Size = new System.Drawing.Size(167, 22);
+            this.PlayMusic_ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.PlayMusic_ToolStripMenuItem.Text = "Play Music";
             this.PlayMusic_ToolStripMenuItem.Click += new System.EventHandler(this.PlayMusic_ToolStripMenuItem_Click);
             // 
             // PlaySounds_ToolStripMenuItem
             // 
             this.PlaySounds_ToolStripMenuItem.Name = "PlaySounds_ToolStripMenuItem";
-            this.PlaySounds_ToolStripMenuItem.Size = new System.Drawing.Size(167, 22);
+            this.PlaySounds_ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.PlaySounds_ToolStripMenuItem.Text = "Play Sounds";
             this.PlaySounds_ToolStripMenuItem.Click += new System.EventHandler(this.PlaySounds_ToolStripMenuItem_Click);
             // 
@@ -287,17 +287,17 @@ namespace SwRebellionEditor
             // 
             // Sectors_ToolStripMenuItem
             // 
-            this.Sectors_ToolStripMenuItem.Enabled = false;
             this.Sectors_ToolStripMenuItem.Image = global::SwRebellionEditor.Resources.sector_16x16_bmp;
             this.Sectors_ToolStripMenuItem.Name = "Sectors_ToolStripMenuItem";
-            this.Sectors_ToolStripMenuItem.Size = new System.Drawing.Size(117, 22);
+            this.Sectors_ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.Sectors_ToolStripMenuItem.Text = "Sectors";
+            this.Sectors_ToolStripMenuItem.Click += new System.EventHandler(this.Sectors_ToolStripMenuItem_Click);
             // 
             // Systems_ToolStripMenuItem
             // 
             this.Systems_ToolStripMenuItem.Image = global::SwRebellionEditor.Resources.planet_37x37_bmp;
             this.Systems_ToolStripMenuItem.Name = "Systems_ToolStripMenuItem";
-            this.Systems_ToolStripMenuItem.Size = new System.Drawing.Size(117, 22);
+            this.Systems_ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.Systems_ToolStripMenuItem.Text = "Systems";
             this.Systems_ToolStripMenuItem.Click += new System.EventHandler(this.Systems_ToolStripMenuItem_Click);
             // 
@@ -681,11 +681,11 @@ namespace SwRebellionEditor
             // Sectors_Button
             // 
             this.Sectors_Button.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.Sectors_Button.Enabled = false;
             this.Sectors_Button.Image = global::SwRebellionEditor.Resources.sector_16x16_bmp;
             this.Sectors_Button.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.Sectors_Button.Name = "Sectors_Button";
             this.Sectors_Button.Size = new System.Drawing.Size(23, 22);
+            this.Sectors_Button.Click += new System.EventHandler(this.Sectors_Button_Click);
             // 
             // Systems_Button
             // 

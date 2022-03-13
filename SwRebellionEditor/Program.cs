@@ -26,6 +26,10 @@ namespace SwRebellionEditor
             //t8.Save("E:\\star wars rebellion\\GData\\SPECFCSD2.DAT");
             var t9 = DatFile.Load<TROOPSD>("E:\\star wars rebellion\\GData\\TROOPSD.DAT");
             //t9.Save("E:\\star wars rebellion\\GData\\TROOPSD2.DAT");
+            var t10 = DatFile.Load<SYSTEMSD>("E:\\star wars rebellion\\GData\\SYSTEMSD.DAT");
+            //t10.Save("E:\\star wars rebellion\\GData\\SYSTEMSD2.DAT");
+            var t11 = DatFile.Load<SECTORSD>("E:\\star wars rebellion\\GData\\SECTORSD.DAT");
+            //t11.Save("E:\\star wars rebellion\\GData\\SECTORSD2.DAT");
 
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.

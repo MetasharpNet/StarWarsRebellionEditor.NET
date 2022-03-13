@@ -283,6 +283,16 @@ namespace SwRebellionEditor {
         }
         
         /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Icon semblable à (Icône).
+        /// </summary>
+        internal static System.Drawing.Icon sector_16x16_ico {
+            get {
+                object obj = ResourceManager.GetObject("sector_16x16_ico", resourceCulture);
+                return ((System.Drawing.Icon)(obj));
+            }
+        }
+        
+        /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap shipyard_16x16_bmp {
