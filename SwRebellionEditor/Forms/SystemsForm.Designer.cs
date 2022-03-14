@@ -54,7 +54,7 @@ namespace SwRebellionEditor
         private Label sectorFamilyIdHexLabel;
         private NumericUpDown sectorId;
         private Label label15;
-        private Label label12;
+        private Label familyIdInfoLabel;
 
         /// <summary>
         /// Clean up any resources being used.
@@ -124,7 +124,7 @@ namespace SwRebellionEditor
             this.xPosition = new System.Windows.Forms.NumericUpDown();
             this.positionLabel = new System.Windows.Forms.Label();
             this.picture = new System.Windows.Forms.PictureBox();
-            this.label12 = new System.Windows.Forms.Label();
+            this.familyIdInfoLabel = new System.Windows.Forms.Label();
             this.pictureIdLabel = new System.Windows.Forms.Label();
             this.unknown1 = new System.Windows.Forms.NumericUpDown();
             this.unknown1Label = new System.Windows.Forms.Label();
@@ -171,7 +171,7 @@ namespace SwRebellionEditor
             this.systemsListView.MultiSelect = false;
             this.systemsListView.Name = "systemsListView";
             this.systemsListView.ShowGroups = false;
-            this.systemsListView.Size = new System.Drawing.Size(220, 475);
+            this.systemsListView.Size = new System.Drawing.Size(220, 394);
             this.systemsListView.TabIndex = 148;
             this.systemsListView.TabStop = false;
             this.systemsListView.UseCompatibleStateImageBehavior = false;
@@ -186,7 +186,7 @@ namespace SwRebellionEditor
             // 
             // Open
             // 
-            this.Open.Location = new System.Drawing.Point(527, 556);
+            this.Open.Location = new System.Drawing.Point(527, 475);
             this.Open.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Open.Name = "Open";
             this.Open.Size = new System.Drawing.Size(88, 27);
@@ -198,7 +198,7 @@ namespace SwRebellionEditor
             // 
             // SaveAs
             // 
-            this.SaveAs.Location = new System.Drawing.Point(431, 556);
+            this.SaveAs.Location = new System.Drawing.Point(431, 475);
             this.SaveAs.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.SaveAs.Name = "SaveAs";
             this.SaveAs.Size = new System.Drawing.Size(88, 27);
@@ -211,7 +211,7 @@ namespace SwRebellionEditor
             // Cancel
             // 
             this.Cancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.Cancel.Location = new System.Drawing.Point(335, 556);
+            this.Cancel.Location = new System.Drawing.Point(335, 475);
             this.Cancel.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Cancel.Name = "Cancel";
             this.Cancel.Size = new System.Drawing.Size(88, 27);
@@ -222,7 +222,7 @@ namespace SwRebellionEditor
             // 
             // Ok
             // 
-            this.Ok.Location = new System.Drawing.Point(239, 556);
+            this.Ok.Location = new System.Drawing.Point(239, 475);
             this.Ok.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Ok.Name = "Ok";
             this.Ok.Size = new System.Drawing.Size(88, 27);
@@ -238,7 +238,7 @@ namespace SwRebellionEditor
             this.selector.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.selector.Maximum = 199;
             this.selector.Name = "selector";
-            this.selector.Size = new System.Drawing.Size(288, 45);
+            this.selector.Size = new System.Drawing.Size(275, 45);
             this.selector.TabIndex = 149;
             this.selector.ValueChanged += new System.EventHandler(this.GameObjectsSelector_ValueChanged);
             // 
@@ -256,7 +256,7 @@ namespace SwRebellionEditor
             this.sectorGroupBox.Controls.Add(this.sectorTextStraDllId);
             this.sectorGroupBox.Controls.Add(this.sectorSecImport);
             this.sectorGroupBox.Controls.Add(this.sectorGalaxySize);
-            this.sectorGroupBox.Location = new System.Drawing.Point(522, 355);
+            this.sectorGroupBox.Location = new System.Drawing.Point(517, 295);
             this.sectorGroupBox.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.sectorGroupBox.Name = "sectorGroupBox";
             this.sectorGroupBox.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -456,7 +456,7 @@ namespace SwRebellionEditor
             // unknown2Label
             // 
             this.unknown2Label.AutoSize = true;
-            this.unknown2Label.Location = new System.Drawing.Point(239, 239);
+            this.unknown2Label.Location = new System.Drawing.Point(239, 252);
             this.unknown2Label.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.unknown2Label.Name = "unknown2Label";
             this.unknown2Label.Size = new System.Drawing.Size(66, 15);
@@ -465,7 +465,7 @@ namespace SwRebellionEditor
             // 
             // unknown3
             // 
-            this.unknown3.Location = new System.Drawing.Point(377, 324);
+            this.unknown3.Location = new System.Drawing.Point(377, 337);
             this.unknown3.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.unknown3.Maximum = new decimal(new int[] {
             99999,
@@ -486,7 +486,7 @@ namespace SwRebellionEditor
             // sectorId
             // 
             this.sectorId.BackColor = System.Drawing.SystemColors.Window;
-            this.sectorId.Location = new System.Drawing.Point(377, 266);
+            this.sectorId.Location = new System.Drawing.Point(377, 279);
             this.sectorId.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.sectorId.Maximum = new decimal(new int[] {
             999,
@@ -508,7 +508,7 @@ namespace SwRebellionEditor
             // label15
             // 
             this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(239, 271);
+            this.label15.Location = new System.Drawing.Point(239, 284);
             this.label15.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(52, 15);
@@ -628,7 +628,7 @@ namespace SwRebellionEditor
             // textStraDllIdLabel
             // 
             this.textStraDllIdLabel.AutoSize = true;
-            this.textStraDllIdLabel.Location = new System.Drawing.Point(239, 210);
+            this.textStraDllIdLabel.Location = new System.Drawing.Point(239, 223);
             this.textStraDllIdLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.textStraDllIdLabel.Name = "textStraDllIdLabel";
             this.textStraDllIdLabel.Size = new System.Drawing.Size(75, 15);
@@ -658,7 +658,7 @@ namespace SwRebellionEditor
             // 
             // textStraDllId
             // 
-            this.textStraDllId.Location = new System.Drawing.Point(377, 208);
+            this.textStraDllId.Location = new System.Drawing.Point(377, 221);
             this.textStraDllId.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.textStraDllId.Maximum = new decimal(new int[] {
             99999,
@@ -679,7 +679,7 @@ namespace SwRebellionEditor
             // 
             // unknown2
             // 
-            this.unknown2.Location = new System.Drawing.Point(377, 237);
+            this.unknown2.Location = new System.Drawing.Point(377, 250);
             this.unknown2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.unknown2.Maximum = new decimal(new int[] {
             9999,
@@ -701,7 +701,7 @@ namespace SwRebellionEditor
             // unkown3Label
             // 
             this.unkown3Label.AutoSize = true;
-            this.unkown3Label.Location = new System.Drawing.Point(239, 326);
+            this.unkown3Label.Location = new System.Drawing.Point(239, 339);
             this.unkown3Label.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.unkown3Label.Name = "unkown3Label";
             this.unkown3Label.Size = new System.Drawing.Size(66, 15);
@@ -710,7 +710,7 @@ namespace SwRebellionEditor
             // 
             // pictureId
             // 
-            this.pictureId.Location = new System.Drawing.Point(377, 295);
+            this.pictureId.Location = new System.Drawing.Point(377, 308);
             this.pictureId.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.pictureId.Maximum = new decimal(new int[] {
             999,
@@ -740,7 +740,7 @@ namespace SwRebellionEditor
             // 
             // yPosition
             // 
-            this.yPosition.Location = new System.Drawing.Point(444, 353);
+            this.yPosition.Location = new System.Drawing.Point(444, 366);
             this.yPosition.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.yPosition.Maximum = new decimal(new int[] {
             999,
@@ -761,7 +761,7 @@ namespace SwRebellionEditor
             // combatLabel
             // 
             this.combatLabel.AutoSize = true;
-            this.combatLabel.Location = new System.Drawing.Point(239, 384);
+            this.combatLabel.Location = new System.Drawing.Point(239, 397);
             this.combatLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.combatLabel.Name = "combatLabel";
             this.combatLabel.Size = new System.Drawing.Size(66, 15);
@@ -770,7 +770,7 @@ namespace SwRebellionEditor
             // 
             // unknown4
             // 
-            this.unknown4.Location = new System.Drawing.Point(377, 382);
+            this.unknown4.Location = new System.Drawing.Point(377, 395);
             this.unknown4.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.unknown4.Maximum = new decimal(new int[] {
             999,
@@ -790,7 +790,7 @@ namespace SwRebellionEditor
             // 
             // xPosition
             // 
-            this.xPosition.Location = new System.Drawing.Point(377, 353);
+            this.xPosition.Location = new System.Drawing.Point(377, 366);
             this.xPosition.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.xPosition.Maximum = new decimal(new int[] {
             999,
@@ -811,7 +811,7 @@ namespace SwRebellionEditor
             // positionLabel
             // 
             this.positionLabel.AutoSize = true;
-            this.positionLabel.Location = new System.Drawing.Point(239, 355);
+            this.positionLabel.Location = new System.Drawing.Point(239, 368);
             this.positionLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.positionLabel.Name = "positionLabel";
             this.positionLabel.Size = new System.Drawing.Size(81, 15);
@@ -831,20 +831,20 @@ namespace SwRebellionEditor
             this.picture.TabStop = false;
             this.picture.Click += new System.EventHandler(this.picture_Click);
             // 
-            // label12
+            // familyIdInfoLabel
             // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(540, 29);
-            this.label12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(325, 15);
-            this.label12.TabIndex = 158;
-            this.label12.Text = "***** System Family ID may be updated 144 = core 146= Rim";
+            this.familyIdInfoLabel.AutoSize = true;
+            this.familyIdInfoLabel.Location = new System.Drawing.Point(249, 196);
+            this.familyIdInfoLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.familyIdInfoLabel.Name = "familyIdInfoLabel";
+            this.familyIdInfoLabel.Size = new System.Drawing.Size(120, 15);
+            this.familyIdInfoLabel.TabIndex = 158;
+            this.familyIdInfoLabel.Text = "144 = Core, 146= Rim";
             // 
             // pictureIdLabel
             // 
             this.pictureIdLabel.AutoSize = true;
-            this.pictureIdLabel.Location = new System.Drawing.Point(239, 297);
+            this.pictureIdLabel.Location = new System.Drawing.Point(239, 310);
             this.pictureIdLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.pictureIdLabel.Name = "pictureIdLabel";
             this.pictureIdLabel.Size = new System.Drawing.Size(57, 15);
@@ -890,7 +890,7 @@ namespace SwRebellionEditor
             this.encyclopediaGroupBox.Controls.Add(this.encyclopediaName);
             this.encyclopediaGroupBox.Controls.Add(this.encyclopediaNameLabel);
             this.encyclopediaGroupBox.Controls.Add(this.encyclopediaDescription);
-            this.encyclopediaGroupBox.Location = new System.Drawing.Point(522, 65);
+            this.encyclopediaGroupBox.Location = new System.Drawing.Point(517, 5);
             this.encyclopediaGroupBox.Name = "encyclopediaGroupBox";
             this.encyclopediaGroupBox.Size = new System.Drawing.Size(451, 284);
             this.encyclopediaGroupBox.TabIndex = 1153;
@@ -961,7 +961,7 @@ namespace SwRebellionEditor
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.Cancel;
-            this.ClientSize = new System.Drawing.Size(980, 594);
+            this.ClientSize = new System.Drawing.Size(980, 510);
             this.Controls.Add(this.encyclopediaGroupBox);
             this.Controls.Add(this.sectorGroupBox);
             this.Controls.Add(this.unknown1Label);
@@ -975,7 +975,7 @@ namespace SwRebellionEditor
             this.Controls.Add(this.unknown2);
             this.Controls.Add(this.pictureId);
             this.Controls.Add(this.familyIdHexLabel);
-            this.Controls.Add(this.label12);
+            this.Controls.Add(this.familyIdInfoLabel);
             this.Controls.Add(this.nextProductionFacility);
             this.Controls.Add(this.textStraDllId);
             this.Controls.Add(this.label15);
