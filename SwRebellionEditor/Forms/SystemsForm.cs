@@ -4,8 +4,11 @@
     {
         #region .ctor
 
+        private SECTORSD SectorsGameFile;
+
         public SystemsForm()
         {
+            SectorsGameFile = DatFile.Load<SECTORSD>(RegistryKeys.InstalledLocation + "\\GData\\SECTORSD.DAT");
             GameFilePath = RegistryKeys.InstalledLocation + "\\GData\\SYSTEMSD.DAT";
             GameFile = DatFile.Load<SYSTEMSD>(GameFilePath);
             InitializeComponent();
@@ -29,6 +32,7 @@
         }
         protected override void DisplaySelectedGameObject(int selectorIndex)
         {
+            var previousUnsavedData = GameFile.UnsavedData;
             var system = GameFile.Systems[selectorIndex];
             encyclopediaName.Text = system.EncyclopediaName;
             familyId.Value = system.FamilyId;
@@ -47,25 +51,20 @@
             xPosition.Value = system.XPosition;
             yPosition.Value = system.YPosition;
 
-            /*
-            sectorName.Text = "Sector(" + SECTORSD.Sectors[system.SectorId - 20U].swrName + ")";
-            secNameLabel.Text = SECTORSD.Sectors[system.SectorId - 20U].swrName;
-            sectorImport.Value = SECTORSD.Sectors[system.SectorId - 20U].secImport;
-            galSize.Value = SECTORSD.Sectors[system.SectorId - 20U].galSize;
-            sectorXpos.Value = SECTORSD.Sectors[system.SectorId - 20U].yPos;
-            sectorYpos.Value = SECTORSD.Sectors[system.SectorId - 20U].xPos;
-            sectorProductionFacility.Value = SECTORSD.Sectors[system.SectorId - 20U].prodFacilityNum;
-            sectorNextProductionFacility.Value = SECTORSD.Sectors[system.SectorId - 20U].unknown2;
-            sectorFamilyId.Value = SECTORSD.Sectors[system.SectorId - 20U].familyNum;
-            sectorUnknown3.Value = SECTORSD.Sectors[system.SectorId - 20U].unknown3;
-            sectorTextStraDllId.Value = SECTORSD.Sectors[system.SectorId - 20U].textstratNum;
-            secfamHexLabel.Text = SECTORSD.Sectors[system.SectorId - 20U].familyNum.ToString("X");
-            sectorSectorId.Value = SECTORSD.Sectors[system.SectorId - 20U].number;
-            secUnitHexLabel.Text = SECTORSD.Sectors[system.SectorId - 20U].number.ToString("X");
-            */
+            var sector = SectorsGameFile.Sectors[system.SectorId - 20U];
+            sectorEncyclopediaName.Text = sector.EncyclopediaName;
+            sectorFamilyId.Value = sector.FamilyId;
+            sectorFamilyIdHexLabel.Text = "0x" + sector.FamilyId.ToString("X");
+            sectorGalaxySize.Value = sector.GalaxySize;
+            sectorSecImport.Value = sector.SecImport;
+            sectorTextStraDllId.Value = sector.TextStraDllId;
+            sectorXPosition.Value = sector.YPosition;
+            sectorYPosition.Value = sector.XPosition;
+            
             picture.SizeMode = PictureBoxSizeMode.Zoom;
             var edataId = 165 + system.PictureId;
             picture.Image = Image.FromFile(RegistryKeys.InstalledLocation + "\\EData\\EDATA." + edataId.ToString("000"));
+            GameFile.UnsavedData = previousUnsavedData;
         }
 
         #endregion

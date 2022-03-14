@@ -29,6 +29,7 @@
         }
         protected override void DisplaySelectedGameObject(int selectorIndex)
         {
+            var previousUnsavedData = GameFile.UnsavedData;
             var specialForce = GameFile.SpecialForces[selectorIndex];
             combatBase.Value = specialForce.CombatBase;
             combatVariance.Value = specialForce.CombatVariance;
@@ -64,6 +65,7 @@
             picture.SizeMode = PictureBoxSizeMode.Zoom;
             var edataId = 25 + selectorIndex;
             picture.Image = Image.FromFile(RegistryKeys.InstalledLocation + "\\EData\\EDATA." + edataId.ToString("000"));
+            GameFile.UnsavedData = previousUnsavedData;
         }
 
         #endregion

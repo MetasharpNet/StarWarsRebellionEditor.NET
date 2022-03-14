@@ -18,6 +18,7 @@
 
         protected override void DisplaySelectedGameObject(int selectorIndex)
         {
+            var previousUnsavedData = GameFile.UnsavedData;
             var sector = GameFile.Sectors[selectorIndex];
             encyclopediaName.Text = sector.EncyclopediaName;
             familyId.Value = sector.FamilyId;
@@ -33,7 +34,9 @@
             unknown2.Value = sector.Unknown2;
             xPosition.Value = sector.XPosition;
             yPosition.Value = sector.YPosition;
+            GameFile.UnsavedData = previousUnsavedData;
         }
+
         #endregion
 
         #region Changed events

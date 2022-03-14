@@ -29,6 +29,7 @@
         }
         protected override void DisplaySelectedGameObject(int selectorIndex)
         {
+            var previousUnsavedData = GameFile.UnsavedData;
             var minorCharacter = GameFile.MinorCharacters[selectorIndex];
             canBeAdmiral.Checked = minorCharacter.CanBeAdmiral > 0U;
             canBeCommander.Checked = minorCharacter.canBeCommander > 0U;
@@ -83,6 +84,7 @@
             picture.SizeMode = PictureBoxSizeMode.Zoom;
             var edataId = 78 + selectorIndex;
             picture.Image = Image.FromFile(RegistryKeys.InstalledLocation + "\\EData\\EDATA." + edataId.ToString("000"));
+            GameFile.UnsavedData = previousUnsavedData;
         }
 
         #endregion

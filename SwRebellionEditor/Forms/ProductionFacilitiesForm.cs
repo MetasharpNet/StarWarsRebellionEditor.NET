@@ -18,6 +18,7 @@
 
         protected override void DisplaySelectedGameObject(int selectorIndex)
         {
+            var previousUnsavedData = GameFile.UnsavedData;
             var productionFacility = GameFile.ProductionFacilities[selectorIndex];
             bombardmentDefense.Value = productionFacility.BombardmentDefense;
             constructionCost.Value = productionFacility.ConstructionCost;
@@ -40,6 +41,7 @@
             var edataId = 1 + selectorIndex;
             picture.SizeMode = PictureBoxSizeMode.Zoom;
             picture.Image = Image.FromFile(RegistryKeys.InstalledLocation + "\\EData\\EDATA." + edataId.ToString("000"));
+            GameFile.UnsavedData = previousUnsavedData;
         }
 
         #endregion

@@ -18,6 +18,7 @@
 
         protected override void DisplaySelectedGameObject(int selectorIndex)
         {
+            var previousUnsavedData = GameFile.UnsavedData;
             var fighter = GameFile.Fighters[selectorIndex];
             bombardmentMod.Value = fighter.BombardmentMod;
             constructionCost.Value = fighter.ConstructionCost;
@@ -68,6 +69,7 @@
             picture.SizeMode = PictureBoxSizeMode.Zoom;
             var edataId = 34 + selectorIndex;
             picture.Image = Image.FromFile(RegistryKeys.InstalledLocation + "\\EData\\EDATA." + edataId.ToString("000"));
+            GameFile.UnsavedData = previousUnsavedData;
         }
         private void UpdateTotals(int selectorIndex)
         {

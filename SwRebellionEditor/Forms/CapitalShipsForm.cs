@@ -18,6 +18,7 @@
 
         protected override void DisplaySelectedGameObject(int selectorIndex)
         {
+            var previousUnsavedData = GameFile.UnsavedData;
             var capitalShip = GameFile.CapitalShips[selectorIndex];
             bombardmentMod.Value = capitalShip.BombardmentMod;
             capitalShipId.Value = capitalShip.CapitalShipId;
@@ -75,6 +76,7 @@
             picture.SizeMode = PictureBoxSizeMode.Zoom;
             var edataId = 42 + selectorIndex;
             picture.Image = Image.FromFile(RegistryKeys.InstalledLocation + "\\EData\\EDATA." + edataId.ToString("000"));
+            GameFile.UnsavedData = previousUnsavedData;
         }
         private void UpdateTotals(int selectorIndex)
         {

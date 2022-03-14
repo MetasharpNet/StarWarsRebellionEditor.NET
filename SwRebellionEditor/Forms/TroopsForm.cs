@@ -18,6 +18,7 @@
 
         protected override void DisplaySelectedGameObject(int selectorIndex)
         {
+            var previousUnsavedData = GameFile.UnsavedData;
             var troop = GameFile.Troops[selectorIndex];
             atttackRating.Value = troop.AttackRating;
             constructionCost.Value = troop.ConstructionCost;
@@ -40,6 +41,7 @@
             picture.SizeMode = PictureBoxSizeMode.Zoom;
             var edataId = 15 + selectorIndex;
             picture.Image = Image.FromFile(RegistryKeys.InstalledLocation + "\\EData\\EDATA." + edataId.ToString("000"));
+            GameFile.UnsavedData = previousUnsavedData;
         }
 
         #endregion
