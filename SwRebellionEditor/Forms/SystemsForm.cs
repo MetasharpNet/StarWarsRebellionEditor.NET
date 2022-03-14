@@ -40,9 +40,10 @@
             systemId.Value = system.SystemId;
             SystemIdHexLabel.Text = "0x" + system.SystemId.ToString("X");
             textStraDllId.Value = system.TextStraDllId;
-            unknown3.Value = system.Unknown2;
+            unknown1.Value = system.Unknown1;
+            unknown2.Value = system.Unknown2;
+            unknown3.Value = system.Unknown3;
             unknown4.Value = system.Unknown4;
-            unknown5.Value = system.Unknown3;
             xPosition.Value = system.XPosition;
             yPosition.Value = system.YPosition;
 
@@ -102,6 +103,66 @@
         private void familyId_ValueChanged(object sender, EventArgs e)
         {
             GameFile.Systems[selector.Value].FamilyId = (uint)familyId.Value;
+            GameFile.UnsavedData = true;
+        }
+        private void nextProductionFacility_ValueChanged(object sender, EventArgs e)
+        {
+            GameFile.Systems[selector.Value].NextProductionFacility = (uint)nextProductionFacility.Value;
+            GameFile.UnsavedData = true;
+        }
+        private void pictureId_ValueChanged(object sender, EventArgs e)
+        {
+            GameFile.Systems[selector.Value].PictureId = (uint)pictureId.Value;
+            GameFile.UnsavedData = true;
+        }
+        private void productionFacility_ValueChanged(object sender, EventArgs e)
+        {
+            GameFile.Systems[selector.Value].ProductionFacility = (uint)productionFacility.Value;
+            GameFile.UnsavedData = true;
+        }
+        private void sectorId_ValueChanged(object sender, EventArgs e)
+        {
+            GameFile.Systems[selector.Value].SectorId = (uint)sectorId.Value;
+            GameFile.UnsavedData = true;
+        }
+        private void systemId_ValueChanged(object sender, EventArgs e)
+        {
+            GameFile.Systems[selector.Value].SystemId = (uint)systemId.Value;
+            GameFile.UnsavedData = true;
+        }
+        private void textStraDllId_ValueChanged(object sender, EventArgs e)
+        {
+            GameFile.Systems[selector.Value].TextStraDllId = (ushort)textStraDllId.Value;
+            GameFile.UnsavedData = true;
+        }
+        private void unknown1_ValueChanged(object sender, EventArgs e)
+        {
+            GameFile.Systems[selector.Value].Unknown1 = (uint)unknown1.Value;
+            GameFile.UnsavedData = true;
+        }
+        private void unknown2_ValueChanged(object sender, EventArgs e)
+        {
+            GameFile.Systems[selector.Value].Unknown2 = (ushort)unknown2.Value;
+            GameFile.UnsavedData = true;
+        }
+        private void unknown3_ValueChanged(object sender, EventArgs e)
+        {
+            GameFile.Systems[selector.Value].Unknown3 = (uint)unknown3.Value;
+            GameFile.UnsavedData = true;
+        }
+        private void unknown4_ValueChanged(object sender, EventArgs e)
+        {
+            GameFile.Systems[selector.Value].Unknown4 = (uint)unknown4.Value;
+            GameFile.UnsavedData = true;
+        }
+        private void xPosition_ValueChanged(object sender, EventArgs e)
+        {
+            GameFile.Systems[selector.Value].XPosition = (ushort)xPosition.Value;
+            GameFile.UnsavedData = true;
+        }
+        private void yPosition_ValueChanged(object sender, EventArgs e)
+        {
+            GameFile.Systems[selector.Value].YPosition = (ushort)yPosition.Value;
             GameFile.UnsavedData = true;
         }
 

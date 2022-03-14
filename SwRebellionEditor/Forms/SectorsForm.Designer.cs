@@ -219,7 +219,6 @@ namespace SwRebellionEditor
             // galaxySizeLabel
             // 
             this.galaxySizeLabel.AutoSize = true;
-            this.galaxySizeLabel.Enabled = false;
             this.galaxySizeLabel.Location = new System.Drawing.Point(26, 292);
             this.galaxySizeLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.galaxySizeLabel.Name = "galaxySizeLabel";
@@ -525,7 +524,7 @@ namespace SwRebellionEditor
             this.encyclopediaGroupBox.Controls.Add(this.encyclopediaName);
             this.encyclopediaGroupBox.Controls.Add(this.nameLabel);
             this.encyclopediaGroupBox.Controls.Add(this.encyclopediaDescription);
-            this.encyclopediaGroupBox.Location = new System.Drawing.Point(299, 58);
+            this.encyclopediaGroupBox.Location = new System.Drawing.Point(298, 58);
             this.encyclopediaGroupBox.Name = "encyclopediaGroupBox";
             this.encyclopediaGroupBox.Size = new System.Drawing.Size(451, 284);
             this.encyclopediaGroupBox.TabIndex = 167;

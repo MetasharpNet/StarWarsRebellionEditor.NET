@@ -21,40 +21,31 @@ namespace SwRebellionEditor
         private ImageList systemsImageList;
         private PictureBox picture;
         private Label encyclopediaName;
-        private TabControl tabControl1;
-        private TabPage tabPage1;
-        private GroupBox BasicGroup;
         private NumericUpDown pictureId;
-        private NumericUpDown sectorId;
-        private Label loyaltyLabel;
+        private Label systemIdLabel;
         private NumericUpDown yPosition;
         private Label combatLabel;
         private NumericUpDown unknown4;
-        private Label diploLabel;
-        private NumericUpDown unknown5;
+        private Label unknown2Label;
+        private NumericUpDown unknown3;
         private NumericUpDown xPosition;
-        private Label espLabel;
-        private TabPage tabPage2;
-        private GroupBox groupBox5;
-        private RichTextBox encyclopediaDescription;
+        private Label positionLabel;
         private Label sectorName;
-        private GroupBox miscDATGroup;
         private NumericUpDown productionFacility;
-        private Label prodLabel;
-        private Label secProdFacNumlabel;
+        private Label productionFacilityLabel;
+        private Label nextProductionFacilityLabel;
         private NumericUpDown nextProductionFacility;
-        private Label familyLabel;
-        private Label idLabel;
+        private Label familyIdLabel;
+        private Label textStraDllIdLabel;
         private NumericUpDown familyId;
         private NumericUpDown textStraDllId;
-        private NumericUpDown unknown3;
+        private NumericUpDown unknown2;
         private Label unkown3Label;
         private GroupBox groupBox2;
         private NumericUpDown sectorProductionFacility;
         private Label label7;
         private Label label8;
         private NumericUpDown sectorNextProductionFacility;
-        private Label label9;
         private Label label10;
         private NumericUpDown sectorFamilyId;
         private NumericUpDown sectorTextStraDllId;
@@ -65,7 +56,6 @@ namespace SwRebellionEditor
         private Label label3;
         private NumericUpDown sectorImport;
         private NumericUpDown galSize;
-        private Label label1;
         private NumericUpDown sectorYpos;
         private NumericUpDown sectorXpos;
         private Label label4;
@@ -74,10 +64,8 @@ namespace SwRebellionEditor
         private Label familyIdHexLabel;
         private Label SystemIdHexLabel;
         private NumericUpDown systemId;
-        private Label label5;
         private Label secfamHexLabel;
-        private Label secUnitHexLabel;
-        private NumericUpDown sectorSectorId;
+        private NumericUpDown sectorId;
         private Label label15;
         private Label label12;
 
@@ -112,18 +100,12 @@ namespace SwRebellionEditor
             this.Ok = new System.Windows.Forms.Button();
             this.encyclopediaName = new System.Windows.Forms.Label();
             this.selector = new System.Windows.Forms.TrackBar();
-            this.tabControl1 = new System.Windows.Forms.TabControl();
-            this.tabPage1 = new System.Windows.Forms.TabPage();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.secfamHexLabel = new System.Windows.Forms.Label();
             this.sectorProductionFacility = new System.Windows.Forms.NumericUpDown();
-            this.secUnitHexLabel = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.sectorSectorId = new System.Windows.Forms.NumericUpDown();
-            this.label15 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.sectorNextProductionFacility = new System.Windows.Forms.NumericUpDown();
-            this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.sectorFamilyId = new System.Windows.Forms.NumericUpDown();
             this.sectorTextStraDllId = new System.Windows.Forms.NumericUpDown();
@@ -139,45 +121,44 @@ namespace SwRebellionEditor
             this.label3 = new System.Windows.Forms.Label();
             this.sectorImport = new System.Windows.Forms.NumericUpDown();
             this.galSize = new System.Windows.Forms.NumericUpDown();
-            this.miscDATGroup = new System.Windows.Forms.GroupBox();
+            this.unknown2Label = new System.Windows.Forms.Label();
+            this.unknown3 = new System.Windows.Forms.NumericUpDown();
+            this.sectorId = new System.Windows.Forms.NumericUpDown();
+            this.label15 = new System.Windows.Forms.Label();
             this.familyIdHexLabel = new System.Windows.Forms.Label();
             this.productionFacility = new System.Windows.Forms.NumericUpDown();
-            this.prodLabel = new System.Windows.Forms.Label();
+            this.productionFacilityLabel = new System.Windows.Forms.Label();
             this.SystemIdHexLabel = new System.Windows.Forms.Label();
-            this.secProdFacNumlabel = new System.Windows.Forms.Label();
+            this.nextProductionFacilityLabel = new System.Windows.Forms.Label();
             this.nextProductionFacility = new System.Windows.Forms.NumericUpDown();
             this.systemId = new System.Windows.Forms.NumericUpDown();
-            this.label5 = new System.Windows.Forms.Label();
-            this.familyLabel = new System.Windows.Forms.Label();
-            this.idLabel = new System.Windows.Forms.Label();
+            this.familyIdLabel = new System.Windows.Forms.Label();
+            this.textStraDllIdLabel = new System.Windows.Forms.Label();
             this.familyId = new System.Windows.Forms.NumericUpDown();
             this.textStraDllId = new System.Windows.Forms.NumericUpDown();
-            this.unknown3 = new System.Windows.Forms.NumericUpDown();
+            this.unknown2 = new System.Windows.Forms.NumericUpDown();
             this.unkown3Label = new System.Windows.Forms.Label();
-            this.BasicGroup = new System.Windows.Forms.GroupBox();
             this.pictureId = new System.Windows.Forms.NumericUpDown();
-            this.sectorId = new System.Windows.Forms.NumericUpDown();
-            this.loyaltyLabel = new System.Windows.Forms.Label();
+            this.systemIdLabel = new System.Windows.Forms.Label();
             this.yPosition = new System.Windows.Forms.NumericUpDown();
             this.combatLabel = new System.Windows.Forms.Label();
             this.unknown4 = new System.Windows.Forms.NumericUpDown();
-            this.diploLabel = new System.Windows.Forms.Label();
-            this.unknown5 = new System.Windows.Forms.NumericUpDown();
             this.xPosition = new System.Windows.Forms.NumericUpDown();
-            this.espLabel = new System.Windows.Forms.Label();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.groupBox5 = new System.Windows.Forms.GroupBox();
-            this.encyclopediaDescription = new System.Windows.Forms.RichTextBox();
+            this.positionLabel = new System.Windows.Forms.Label();
             this.sectorName = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
             this.picture = new System.Windows.Forms.PictureBox();
             this.label12 = new System.Windows.Forms.Label();
+            this.pictureIdLabel = new System.Windows.Forms.Label();
+            this.unknown1 = new System.Windows.Forms.NumericUpDown();
+            this.unknown1Label = new System.Windows.Forms.Label();
+            this.encyclopediaGroupBox = new System.Windows.Forms.GroupBox();
+            this.encyclopediaDescriptionLabel = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.encyclopediaNameLabel = new System.Windows.Forms.Label();
+            this.encyclopediaDescription = new System.Windows.Forms.RichTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.selector)).BeginInit();
-            this.tabControl1.SuspendLayout();
-            this.tabPage1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.sectorProductionFacility)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.sectorSectorId)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.sectorNextProductionFacility)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.sectorFamilyId)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.sectorTextStraDllId)).BeginInit();
@@ -187,22 +168,21 @@ namespace SwRebellionEditor
             ((System.ComponentModel.ISupportInitialize)(this.sectorXpos)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.sectorImport)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.galSize)).BeginInit();
-            this.miscDATGroup.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.unknown3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sectorId)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.productionFacility)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nextProductionFacility)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.systemId)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.familyId)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textStraDllId)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.unknown3)).BeginInit();
-            this.BasicGroup.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.unknown2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureId)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.sectorId)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.yPosition)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.unknown4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.unknown5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xPosition)).BeginInit();
-            this.tabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picture)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.unknown1)).BeginInit();
+            this.encyclopediaGroupBox.SuspendLayout();
             this.SuspendLayout();
             // 
             // systemsListView
@@ -231,7 +211,7 @@ namespace SwRebellionEditor
             // 
             // Open
             // 
-            this.Open.Location = new System.Drawing.Point(663, 543);
+            this.Open.Location = new System.Drawing.Point(527, 556);
             this.Open.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Open.Name = "Open";
             this.Open.Size = new System.Drawing.Size(88, 27);
@@ -243,7 +223,7 @@ namespace SwRebellionEditor
             // 
             // SaveAs
             // 
-            this.SaveAs.Location = new System.Drawing.Point(568, 543);
+            this.SaveAs.Location = new System.Drawing.Point(431, 556);
             this.SaveAs.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.SaveAs.Name = "SaveAs";
             this.SaveAs.Size = new System.Drawing.Size(88, 27);
@@ -256,7 +236,7 @@ namespace SwRebellionEditor
             // Cancel
             // 
             this.Cancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.Cancel.Location = new System.Drawing.Point(390, 543);
+            this.Cancel.Location = new System.Drawing.Point(335, 556);
             this.Cancel.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Cancel.Name = "Cancel";
             this.Cancel.Size = new System.Drawing.Size(88, 27);
@@ -267,7 +247,7 @@ namespace SwRebellionEditor
             // 
             // Ok
             // 
-            this.Ok.Location = new System.Drawing.Point(295, 543);
+            this.Ok.Location = new System.Drawing.Point(239, 556);
             this.Ok.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Ok.Name = "Ok";
             this.Ok.Size = new System.Drawing.Size(88, 27);
@@ -279,7 +259,7 @@ namespace SwRebellionEditor
             // encyclopediaName
             // 
             this.encyclopediaName.AutoSize = true;
-            this.encyclopediaName.Location = new System.Drawing.Point(230, 77);
+            this.encyclopediaName.Location = new System.Drawing.Point(623, 42);
             this.encyclopediaName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.encyclopediaName.Name = "encyclopediaName";
             this.encyclopediaName.Size = new System.Drawing.Size(116, 15);
@@ -289,61 +269,31 @@ namespace SwRebellionEditor
             // selector
             // 
             this.selector.LargeChange = 10;
-            this.selector.Location = new System.Drawing.Point(233, 22);
+            this.selector.Location = new System.Drawing.Point(228, 12);
             this.selector.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.selector.Maximum = 199;
             this.selector.Name = "selector";
-            this.selector.Size = new System.Drawing.Size(121, 45);
+            this.selector.Size = new System.Drawing.Size(288, 45);
             this.selector.TabIndex = 149;
             this.selector.ValueChanged += new System.EventHandler(this.GameObjectsSelector_ValueChanged);
-            // 
-            // tabControl1
-            // 
-            this.tabControl1.Controls.Add(this.tabPage1);
-            this.tabControl1.Controls.Add(this.tabPage2);
-            this.tabControl1.Location = new System.Drawing.Point(233, 108);
-            this.tabControl1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.tabControl1.Name = "tabControl1";
-            this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(583, 428);
-            this.tabControl1.TabIndex = 152;
-            // 
-            // tabPage1
-            // 
-            this.tabPage1.BackColor = System.Drawing.SystemColors.Control;
-            this.tabPage1.Controls.Add(this.groupBox2);
-            this.tabPage1.Controls.Add(this.groupBox1);
-            this.tabPage1.Controls.Add(this.miscDATGroup);
-            this.tabPage1.Controls.Add(this.BasicGroup);
-            this.tabPage1.Location = new System.Drawing.Point(4, 24);
-            this.tabPage1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.tabPage1.Size = new System.Drawing.Size(575, 400);
-            this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "Stats";
             // 
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.secfamHexLabel);
             this.groupBox2.Controls.Add(this.sectorProductionFacility);
-            this.groupBox2.Controls.Add(this.secUnitHexLabel);
             this.groupBox2.Controls.Add(this.label7);
-            this.groupBox2.Controls.Add(this.sectorSectorId);
-            this.groupBox2.Controls.Add(this.label15);
             this.groupBox2.Controls.Add(this.label8);
             this.groupBox2.Controls.Add(this.sectorNextProductionFacility);
-            this.groupBox2.Controls.Add(this.label9);
             this.groupBox2.Controls.Add(this.label10);
             this.groupBox2.Controls.Add(this.sectorFamilyId);
             this.groupBox2.Controls.Add(this.sectorTextStraDllId);
             this.groupBox2.Controls.Add(this.sectorUnknown3);
             this.groupBox2.Controls.Add(this.label11);
-            this.groupBox2.Location = new System.Drawing.Point(308, 196);
+            this.groupBox2.Location = new System.Drawing.Point(522, 368);
             this.groupBox2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.groupBox2.Size = new System.Drawing.Size(204, 198);
+            this.groupBox2.Size = new System.Drawing.Size(204, 174);
             this.groupBox2.TabIndex = 14;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "(sector) DAT Misc Data";
@@ -379,17 +329,6 @@ namespace SwRebellionEditor
             0,
             0});
             // 
-            // secUnitHexLabel
-            // 
-            this.secUnitHexLabel.AutoSize = true;
-            this.secUnitHexLabel.Enabled = false;
-            this.secUnitHexLabel.Location = new System.Drawing.Point(173, 170);
-            this.secUnitHexLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.secUnitHexLabel.Name = "secUnitHexLabel";
-            this.secUnitHexLabel.Size = new System.Drawing.Size(26, 15);
-            this.secUnitHexLabel.TabIndex = 1150;
-            this.secUnitHexLabel.Text = "hex";
-            // 
             // label7
             // 
             this.label7.AutoSize = true;
@@ -400,33 +339,6 @@ namespace SwRebellionEditor
             this.label7.Size = new System.Drawing.Size(106, 15);
             this.label7.TabIndex = 0;
             this.label7.Text = "Production Facility";
-            // 
-            // sectorSectorId
-            // 
-            this.sectorSectorId.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.sectorSectorId.Enabled = false;
-            this.sectorSectorId.Location = new System.Drawing.Point(112, 167);
-            this.sectorSectorId.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.sectorSectorId.Maximum = new decimal(new int[] {
-            999,
-            0,
-            0,
-            0});
-            this.sectorSectorId.Name = "sectorSectorId";
-            this.sectorSectorId.Size = new System.Drawing.Size(59, 23);
-            this.sectorSectorId.TabIndex = 1149;
-            this.sectorSectorId.TabStop = false;
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Enabled = false;
-            this.label15.Location = new System.Drawing.Point(0, 170);
-            this.label15.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(54, 15);
-            this.label15.TabIndex = 1148;
-            this.label15.Text = "Sector ID";
             // 
             // label8
             // 
@@ -458,17 +370,6 @@ namespace SwRebellionEditor
             0,
             0,
             0});
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Enabled = false;
-            this.label9.Location = new System.Drawing.Point(0, 75);
-            this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(56, 15);
-            this.label9.TabIndex = 0;
-            this.label9.Text = "Family ID";
             // 
             // label10
             // 
@@ -563,7 +464,7 @@ namespace SwRebellionEditor
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.sectorImport);
             this.groupBox1.Controls.Add(this.galSize);
-            this.groupBox1.Location = new System.Drawing.Point(4, 185);
+            this.groupBox1.Location = new System.Drawing.Point(727, 368);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -707,46 +608,82 @@ namespace SwRebellionEditor
             0,
             0});
             // 
-            // miscDATGroup
+            // unknown2Label
             // 
-            this.miscDATGroup.Controls.Add(this.familyIdHexLabel);
-            this.miscDATGroup.Controls.Add(this.productionFacility);
-            this.miscDATGroup.Controls.Add(this.prodLabel);
-            this.miscDATGroup.Controls.Add(this.SystemIdHexLabel);
-            this.miscDATGroup.Controls.Add(this.secProdFacNumlabel);
-            this.miscDATGroup.Controls.Add(this.nextProductionFacility);
-            this.miscDATGroup.Controls.Add(this.systemId);
-            this.miscDATGroup.Controls.Add(this.label5);
-            this.miscDATGroup.Controls.Add(this.familyLabel);
-            this.miscDATGroup.Controls.Add(this.idLabel);
-            this.miscDATGroup.Controls.Add(this.familyId);
-            this.miscDATGroup.Controls.Add(this.textStraDllId);
-            this.miscDATGroup.Controls.Add(this.unknown3);
-            this.miscDATGroup.Controls.Add(this.unkown3Label);
-            this.miscDATGroup.Location = new System.Drawing.Point(308, 0);
-            this.miscDATGroup.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.miscDATGroup.Name = "miscDATGroup";
-            this.miscDATGroup.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.miscDATGroup.Size = new System.Drawing.Size(204, 196);
-            this.miscDATGroup.TabIndex = 13;
-            this.miscDATGroup.TabStop = false;
-            this.miscDATGroup.Text = "(system) DAT Misc Data";
+            this.unknown2Label.AutoSize = true;
+            this.unknown2Label.Location = new System.Drawing.Point(252, 239);
+            this.unknown2Label.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.unknown2Label.Name = "unknown2Label";
+            this.unknown2Label.Size = new System.Drawing.Size(66, 15);
+            this.unknown2Label.TabIndex = 0;
+            this.unknown2Label.Text = "unknown 2";
+            // 
+            // unknown3
+            // 
+            this.unknown3.Location = new System.Drawing.Point(390, 324);
+            this.unknown3.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.unknown3.Maximum = new decimal(new int[] {
+            99999,
+            0,
+            0,
+            0});
+            this.unknown3.Name = "unknown3";
+            this.unknown3.Size = new System.Drawing.Size(59, 23);
+            this.unknown3.TabIndex = 4;
+            this.unknown3.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.unknown3.Value = new decimal(new int[] {
+            999,
+            0,
+            0,
+            0});
+            this.unknown3.ValueChanged += new System.EventHandler(this.unknown3_ValueChanged);
+            // 
+            // sectorId
+            // 
+            this.sectorId.BackColor = System.Drawing.SystemColors.Window;
+            this.sectorId.Location = new System.Drawing.Point(390, 266);
+            this.sectorId.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.sectorId.Maximum = new decimal(new int[] {
+            999,
+            0,
+            0,
+            0});
+            this.sectorId.Name = "sectorId";
+            this.sectorId.Size = new System.Drawing.Size(59, 23);
+            this.sectorId.TabIndex = 1149;
+            this.sectorId.TabStop = false;
+            this.sectorId.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.sectorId.Value = new decimal(new int[] {
+            999,
+            0,
+            0,
+            0});
+            this.sectorId.ValueChanged += new System.EventHandler(this.sectorId_ValueChanged);
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(252, 271);
+            this.label15.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(52, 15);
+            this.label15.TabIndex = 1148;
+            this.label15.Text = "sector id";
             // 
             // familyIdHexLabel
             // 
             this.familyIdHexLabel.AutoSize = true;
             this.familyIdHexLabel.Enabled = false;
-            this.familyIdHexLabel.Location = new System.Drawing.Point(173, 82);
+            this.familyIdHexLabel.Location = new System.Drawing.Point(457, 181);
             this.familyIdHexLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.familyIdHexLabel.Name = "familyIdHexLabel";
-            this.familyIdHexLabel.Size = new System.Drawing.Size(26, 15);
+            this.familyIdHexLabel.Size = new System.Drawing.Size(31, 15);
             this.familyIdHexLabel.TabIndex = 1147;
-            this.familyIdHexLabel.Text = "hex";
+            this.familyIdHexLabel.Text = "0x00";
             // 
             // productionFacility
             // 
-            this.productionFacility.Enabled = false;
-            this.productionFacility.Location = new System.Drawing.Point(112, 16);
+            this.productionFacility.Location = new System.Drawing.Point(390, 121);
             this.productionFacility.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.productionFacility.Maximum = new decimal(new int[] {
             9999,
@@ -757,49 +694,48 @@ namespace SwRebellionEditor
             this.productionFacility.Size = new System.Drawing.Size(59, 23);
             this.productionFacility.TabIndex = 0;
             this.productionFacility.TabStop = false;
+            this.productionFacility.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.productionFacility.Value = new decimal(new int[] {
             9999,
             0,
             0,
             0});
+            this.productionFacility.ValueChanged += new System.EventHandler(this.productionFacility_ValueChanged);
             // 
-            // prodLabel
+            // productionFacilityLabel
             // 
-            this.prodLabel.AutoSize = true;
-            this.prodLabel.Enabled = false;
-            this.prodLabel.Location = new System.Drawing.Point(0, 18);
-            this.prodLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.prodLabel.Name = "prodLabel";
-            this.prodLabel.Size = new System.Drawing.Size(106, 15);
-            this.prodLabel.TabIndex = 0;
-            this.prodLabel.Text = "Production Facility";
+            this.productionFacilityLabel.AutoSize = true;
+            this.productionFacilityLabel.Location = new System.Drawing.Point(248, 123);
+            this.productionFacilityLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.productionFacilityLabel.Name = "productionFacilityLabel";
+            this.productionFacilityLabel.Size = new System.Drawing.Size(104, 15);
+            this.productionFacilityLabel.TabIndex = 0;
+            this.productionFacilityLabel.Text = "production facility";
             // 
             // SystemIdHexLabel
             // 
             this.SystemIdHexLabel.AutoSize = true;
             this.SystemIdHexLabel.Enabled = false;
-            this.SystemIdHexLabel.Location = new System.Drawing.Point(173, 170);
+            this.SystemIdHexLabel.Location = new System.Drawing.Point(457, 65);
             this.SystemIdHexLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.SystemIdHexLabel.Name = "SystemIdHexLabel";
-            this.SystemIdHexLabel.Size = new System.Drawing.Size(26, 15);
+            this.SystemIdHexLabel.Size = new System.Drawing.Size(31, 15);
             this.SystemIdHexLabel.TabIndex = 1146;
-            this.SystemIdHexLabel.Text = "hex";
+            this.SystemIdHexLabel.Text = "0x00";
             // 
-            // secProdFacNumlabel
+            // nextProductionFacilityLabel
             // 
-            this.secProdFacNumlabel.AutoSize = true;
-            this.secProdFacNumlabel.Enabled = false;
-            this.secProdFacNumlabel.Location = new System.Drawing.Point(0, 47);
-            this.secProdFacNumlabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.secProdFacNumlabel.Name = "secProdFacNumlabel";
-            this.secProdFacNumlabel.Size = new System.Drawing.Size(92, 15);
-            this.secProdFacNumlabel.TabIndex = 0;
-            this.secProdFacNumlabel.Text = "Prod Facility + 1";
+            this.nextProductionFacilityLabel.AutoSize = true;
+            this.nextProductionFacilityLabel.Location = new System.Drawing.Point(248, 152);
+            this.nextProductionFacilityLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.nextProductionFacilityLabel.Name = "nextProductionFacilityLabel";
+            this.nextProductionFacilityLabel.Size = new System.Drawing.Size(130, 15);
+            this.nextProductionFacilityLabel.TabIndex = 0;
+            this.nextProductionFacilityLabel.Text = "next production facility";
             // 
             // nextProductionFacility
             // 
-            this.nextProductionFacility.Enabled = false;
-            this.nextProductionFacility.Location = new System.Drawing.Point(112, 47);
+            this.nextProductionFacility.Location = new System.Drawing.Point(390, 150);
             this.nextProductionFacility.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.nextProductionFacility.Maximum = new decimal(new int[] {
             9999,
@@ -810,17 +746,18 @@ namespace SwRebellionEditor
             this.nextProductionFacility.Size = new System.Drawing.Size(59, 23);
             this.nextProductionFacility.TabIndex = 0;
             this.nextProductionFacility.TabStop = false;
+            this.nextProductionFacility.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.nextProductionFacility.Value = new decimal(new int[] {
             9999,
             0,
             0,
             0});
+            this.nextProductionFacility.ValueChanged += new System.EventHandler(this.nextProductionFacility_ValueChanged);
             // 
             // systemId
             // 
-            this.systemId.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.systemId.Enabled = false;
-            this.systemId.Location = new System.Drawing.Point(112, 167);
+            this.systemId.BackColor = System.Drawing.SystemColors.Window;
+            this.systemId.Location = new System.Drawing.Point(390, 63);
             this.systemId.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.systemId.Maximum = new decimal(new int[] {
             999,
@@ -830,44 +767,32 @@ namespace SwRebellionEditor
             this.systemId.Name = "systemId";
             this.systemId.Size = new System.Drawing.Size(59, 23);
             this.systemId.TabIndex = 1145;
-            this.systemId.TabStop = false;
+            this.systemId.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.systemId.ValueChanged += new System.EventHandler(this.systemId_ValueChanged);
             // 
-            // label5
+            // familyIdLabel
             // 
-            this.label5.AutoSize = true;
-            this.label5.Enabled = false;
-            this.label5.Location = new System.Drawing.Point(0, 170);
-            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(59, 15);
-            this.label5.TabIndex = 1144;
-            this.label5.Text = "System ID";
+            this.familyIdLabel.AutoSize = true;
+            this.familyIdLabel.Location = new System.Drawing.Point(252, 181);
+            this.familyIdLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.familyIdLabel.Name = "familyIdLabel";
+            this.familyIdLabel.Size = new System.Drawing.Size(53, 15);
+            this.familyIdLabel.TabIndex = 0;
+            this.familyIdLabel.Text = "family id";
             // 
-            // familyLabel
+            // textStraDllIdLabel
             // 
-            this.familyLabel.AutoSize = true;
-            this.familyLabel.Enabled = false;
-            this.familyLabel.Location = new System.Drawing.Point(0, 75);
-            this.familyLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.familyLabel.Name = "familyLabel";
-            this.familyLabel.Size = new System.Drawing.Size(56, 15);
-            this.familyLabel.TabIndex = 0;
-            this.familyLabel.Text = "Family ID";
-            // 
-            // idLabel
-            // 
-            this.idLabel.AutoSize = true;
-            this.idLabel.Enabled = false;
-            this.idLabel.Location = new System.Drawing.Point(0, 140);
-            this.idLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.idLabel.Name = "idLabel";
-            this.idLabel.Size = new System.Drawing.Size(85, 15);
-            this.idLabel.TabIndex = 0;
-            this.idLabel.Text = "TextStra.DLL ID";
+            this.textStraDllIdLabel.AutoSize = true;
+            this.textStraDllIdLabel.Location = new System.Drawing.Point(252, 210);
+            this.textStraDllIdLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.textStraDllIdLabel.Name = "textStraDllIdLabel";
+            this.textStraDllIdLabel.Size = new System.Drawing.Size(75, 15);
+            this.textStraDllIdLabel.TabIndex = 0;
+            this.textStraDllIdLabel.Text = "textstra.dll id";
             // 
             // familyId
             // 
-            this.familyId.Location = new System.Drawing.Point(112, 77);
+            this.familyId.Location = new System.Drawing.Point(390, 179);
             this.familyId.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.familyId.Maximum = new decimal(new int[] {
             9999,
@@ -878,6 +803,7 @@ namespace SwRebellionEditor
             this.familyId.Size = new System.Drawing.Size(59, 23);
             this.familyId.TabIndex = 0;
             this.familyId.TabStop = false;
+            this.familyId.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.familyId.Value = new decimal(new int[] {
             9999,
             0,
@@ -887,8 +813,7 @@ namespace SwRebellionEditor
             // 
             // textStraDllId
             // 
-            this.textStraDllId.Enabled = false;
-            this.textStraDllId.Location = new System.Drawing.Point(112, 137);
+            this.textStraDllId.Location = new System.Drawing.Point(390, 208);
             this.textStraDllId.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.textStraDllId.Maximum = new decimal(new int[] {
             99999,
@@ -899,68 +824,48 @@ namespace SwRebellionEditor
             this.textStraDllId.Size = new System.Drawing.Size(59, 23);
             this.textStraDllId.TabIndex = 0;
             this.textStraDllId.TabStop = false;
+            this.textStraDllId.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.textStraDllId.Value = new decimal(new int[] {
             99999,
             0,
             0,
             0});
+            this.textStraDllId.ValueChanged += new System.EventHandler(this.textStraDllId_ValueChanged);
             // 
-            // unknown3
+            // unknown2
             // 
-            this.unknown3.Enabled = false;
-            this.unknown3.Location = new System.Drawing.Point(112, 107);
-            this.unknown3.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.unknown3.Maximum = new decimal(new int[] {
+            this.unknown2.Location = new System.Drawing.Point(390, 237);
+            this.unknown2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.unknown2.Maximum = new decimal(new int[] {
             9999,
             0,
             0,
             0});
-            this.unknown3.Name = "unknown3";
-            this.unknown3.Size = new System.Drawing.Size(59, 23);
-            this.unknown3.TabIndex = 0;
-            this.unknown3.TabStop = false;
-            this.unknown3.Value = new decimal(new int[] {
+            this.unknown2.Name = "unknown2";
+            this.unknown2.Size = new System.Drawing.Size(59, 23);
+            this.unknown2.TabIndex = 0;
+            this.unknown2.TabStop = false;
+            this.unknown2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.unknown2.Value = new decimal(new int[] {
             9999,
             0,
             0,
             0});
+            this.unknown2.ValueChanged += new System.EventHandler(this.unknown2_ValueChanged);
             // 
             // unkown3Label
             // 
             this.unkown3Label.AutoSize = true;
-            this.unkown3Label.Enabled = false;
-            this.unkown3Label.Location = new System.Drawing.Point(0, 110);
+            this.unkown3Label.Location = new System.Drawing.Point(252, 326);
             this.unkown3Label.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.unkown3Label.Name = "unkown3Label";
-            this.unkown3Label.Size = new System.Drawing.Size(64, 15);
+            this.unkown3Label.Size = new System.Drawing.Size(66, 15);
             this.unkown3Label.TabIndex = 0;
-            this.unkown3Label.Text = "Unknown3";
-            // 
-            // BasicGroup
-            // 
-            this.BasicGroup.Controls.Add(this.pictureId);
-            this.BasicGroup.Controls.Add(this.sectorId);
-            this.BasicGroup.Controls.Add(this.loyaltyLabel);
-            this.BasicGroup.Controls.Add(this.yPosition);
-            this.BasicGroup.Controls.Add(this.combatLabel);
-            this.BasicGroup.Controls.Add(this.unknown4);
-            this.BasicGroup.Controls.Add(this.diploLabel);
-            this.BasicGroup.Controls.Add(this.unknown5);
-            this.BasicGroup.Controls.Add(this.xPosition);
-            this.BasicGroup.Controls.Add(this.espLabel);
-            this.BasicGroup.Location = new System.Drawing.Point(4, 3);
-            this.BasicGroup.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.BasicGroup.Name = "BasicGroup";
-            this.BasicGroup.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.BasicGroup.Size = new System.Drawing.Size(262, 174);
-            this.BasicGroup.TabIndex = 4;
-            this.BasicGroup.TabStop = false;
-            this.BasicGroup.Text = "Planet stats";
+            this.unkown3Label.Text = "unknown 3";
             // 
             // pictureId
             // 
-            this.pictureId.Enabled = false;
-            this.pictureId.Location = new System.Drawing.Point(186, 129);
+            this.pictureId.Location = new System.Drawing.Point(390, 295);
             this.pictureId.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.pictureId.Maximum = new decimal(new int[] {
             999,
@@ -976,41 +881,21 @@ namespace SwRebellionEditor
             0,
             0,
             0});
+            this.pictureId.ValueChanged += new System.EventHandler(this.pictureId_ValueChanged);
             // 
-            // sectorId
+            // systemIdLabel
             // 
-            this.sectorId.Enabled = false;
-            this.sectorId.Location = new System.Drawing.Point(119, 129);
-            this.sectorId.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.sectorId.Maximum = new decimal(new int[] {
-            999,
-            0,
-            0,
-            0});
-            this.sectorId.Name = "sectorId";
-            this.sectorId.Size = new System.Drawing.Size(59, 23);
-            this.sectorId.TabIndex = 10;
-            this.sectorId.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.sectorId.Value = new decimal(new int[] {
-            999,
-            0,
-            0,
-            0});
-            // 
-            // loyaltyLabel
-            // 
-            this.loyaltyLabel.AutoSize = true;
-            this.loyaltyLabel.Location = new System.Drawing.Point(0, 137);
-            this.loyaltyLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.loyaltyLabel.Name = "loyaltyLabel";
-            this.loyaltyLabel.Size = new System.Drawing.Size(109, 15);
-            this.loyaltyLabel.TabIndex = 12;
-            this.loyaltyLabel.Text = "sec ID/planet pic ID";
+            this.systemIdLabel.AutoSize = true;
+            this.systemIdLabel.Location = new System.Drawing.Point(248, 65);
+            this.systemIdLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.systemIdLabel.Name = "systemIdLabel";
+            this.systemIdLabel.Size = new System.Drawing.Size(57, 15);
+            this.systemIdLabel.TabIndex = 12;
+            this.systemIdLabel.Text = "system id";
             // 
             // yPosition
             // 
-            this.yPosition.Enabled = false;
-            this.yPosition.Location = new System.Drawing.Point(186, 69);
+            this.yPosition.Location = new System.Drawing.Point(457, 353);
             this.yPosition.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.yPosition.Maximum = new decimal(new int[] {
             999,
@@ -1026,21 +911,21 @@ namespace SwRebellionEditor
             0,
             0,
             0});
+            this.yPosition.ValueChanged += new System.EventHandler(this.yPosition_ValueChanged);
             // 
             // combatLabel
             // 
             this.combatLabel.AutoSize = true;
-            this.combatLabel.Location = new System.Drawing.Point(7, 102);
+            this.combatLabel.Location = new System.Drawing.Point(252, 384);
             this.combatLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.combatLabel.Name = "combatLabel";
-            this.combatLabel.Size = new System.Drawing.Size(63, 15);
+            this.combatLabel.Size = new System.Drawing.Size(66, 15);
             this.combatLabel.TabIndex = 0;
-            this.combatLabel.Text = "unknown4";
+            this.combatLabel.Text = "unknown 4";
             // 
             // unknown4
             // 
-            this.unknown4.Enabled = false;
-            this.unknown4.Location = new System.Drawing.Point(119, 99);
+            this.unknown4.Location = new System.Drawing.Point(390, 382);
             this.unknown4.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.unknown4.Maximum = new decimal(new int[] {
             999,
@@ -1056,41 +941,11 @@ namespace SwRebellionEditor
             0,
             0,
             0});
-            // 
-            // diploLabel
-            // 
-            this.diploLabel.AutoSize = true;
-            this.diploLabel.Location = new System.Drawing.Point(7, 38);
-            this.diploLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.diploLabel.Name = "diploLabel";
-            this.diploLabel.Size = new System.Drawing.Size(63, 15);
-            this.diploLabel.TabIndex = 0;
-            this.diploLabel.Text = "unknown5";
-            // 
-            // unknown5
-            // 
-            this.unknown5.Enabled = false;
-            this.unknown5.Location = new System.Drawing.Point(119, 36);
-            this.unknown5.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.unknown5.Maximum = new decimal(new int[] {
-            99999,
-            0,
-            0,
-            0});
-            this.unknown5.Name = "unknown5";
-            this.unknown5.Size = new System.Drawing.Size(59, 23);
-            this.unknown5.TabIndex = 4;
-            this.unknown5.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.unknown5.Value = new decimal(new int[] {
-            999,
-            0,
-            0,
-            0});
+            this.unknown4.ValueChanged += new System.EventHandler(this.unknown4_ValueChanged);
             // 
             // xPosition
             // 
-            this.xPosition.Enabled = false;
-            this.xPosition.Location = new System.Drawing.Point(119, 69);
+            this.xPosition.Location = new System.Drawing.Point(390, 353);
             this.xPosition.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.xPosition.Maximum = new decimal(new int[] {
             999,
@@ -1106,72 +961,27 @@ namespace SwRebellionEditor
             0,
             0,
             0});
+            this.xPosition.ValueChanged += new System.EventHandler(this.xPosition_ValueChanged);
             // 
-            // espLabel
+            // positionLabel
             // 
-            this.espLabel.AutoSize = true;
-            this.espLabel.Location = new System.Drawing.Point(7, 72);
-            this.espLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.espLabel.Name = "espLabel";
-            this.espLabel.Size = new System.Drawing.Size(76, 15);
-            this.espLabel.TabIndex = 0;
-            this.espLabel.Text = "x / y Position";
-            // 
-            // tabPage2
-            // 
-            this.tabPage2.BackColor = System.Drawing.SystemColors.Control;
-            this.tabPage2.Controls.Add(this.groupBox5);
-            this.tabPage2.Controls.Add(this.encyclopediaDescription);
-            this.tabPage2.Location = new System.Drawing.Point(4, 24);
-            this.tabPage2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.tabPage2.Size = new System.Drawing.Size(575, 400);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "Ency";
-            // 
-            // groupBox5
-            // 
-            this.groupBox5.Location = new System.Drawing.Point(4, 167);
-            this.groupBox5.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.groupBox5.Size = new System.Drawing.Size(550, 195);
-            this.groupBox5.TabIndex = 135;
-            this.groupBox5.TabStop = false;
-            this.groupBox5.Text = "DAT Misc";
-            // 
-            // encyclopediaDescription
-            // 
-            this.encyclopediaDescription.Cursor = System.Windows.Forms.Cursors.No;
-            this.encyclopediaDescription.Enabled = false;
-            this.encyclopediaDescription.Location = new System.Drawing.Point(0, 0);
-            this.encyclopediaDescription.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.encyclopediaDescription.Name = "encyclopediaDescription";
-            this.encyclopediaDescription.Size = new System.Drawing.Size(559, 160);
-            this.encyclopediaDescription.TabIndex = 134;
-            this.encyclopediaDescription.TabStop = false;
-            this.encyclopediaDescription.Text = "Not Implemented yet....Encylopedia Data...Will add .Someday";
+            this.positionLabel.AutoSize = true;
+            this.positionLabel.Location = new System.Drawing.Point(252, 355);
+            this.positionLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.positionLabel.Name = "positionLabel";
+            this.positionLabel.Size = new System.Drawing.Size(81, 15);
+            this.positionLabel.TabIndex = 0;
+            this.positionLabel.Text = "position (X, Y)";
             // 
             // sectorName
             // 
             this.sectorName.AutoSize = true;
-            this.sectorName.Location = new System.Drawing.Point(268, 97);
+            this.sectorName.Location = new System.Drawing.Point(770, 42);
             this.sectorName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.sectorName.Name = "sectorName";
             this.sectorName.Size = new System.Drawing.Size(116, 15);
             this.sectorName.TabIndex = 157;
             this.sectorName.Text = "-- Item name here --";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(364, 33);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(281, 15);
-            this.label1.TabIndex = 12;
-            this.label1.Text = "*****This GUI is  for viewing DAT data in the \'rough\'. ";
             // 
             // picture
             // 
@@ -1189,12 +999,106 @@ namespace SwRebellionEditor
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(364, 57);
+            this.label12.Location = new System.Drawing.Point(585, 12);
             this.label12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(325, 15);
             this.label12.TabIndex = 158;
             this.label12.Text = "***** System Family ID may be updated 144 = core 146= Rim";
+            // 
+            // pictureIdLabel
+            // 
+            this.pictureIdLabel.AutoSize = true;
+            this.pictureIdLabel.Location = new System.Drawing.Point(252, 297);
+            this.pictureIdLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.pictureIdLabel.Name = "pictureIdLabel";
+            this.pictureIdLabel.Size = new System.Drawing.Size(57, 15);
+            this.pictureIdLabel.TabIndex = 1150;
+            this.pictureIdLabel.Text = "picture id";
+            // 
+            // unknown1
+            // 
+            this.unknown1.Location = new System.Drawing.Point(390, 92);
+            this.unknown1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.unknown1.Maximum = new decimal(new int[] {
+            9999,
+            0,
+            0,
+            0});
+            this.unknown1.Name = "unknown1";
+            this.unknown1.Size = new System.Drawing.Size(59, 23);
+            this.unknown1.TabIndex = 1151;
+            this.unknown1.TabStop = false;
+            this.unknown1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.unknown1.Value = new decimal(new int[] {
+            9999,
+            0,
+            0,
+            0});
+            this.unknown1.ValueChanged += new System.EventHandler(this.unknown1_ValueChanged);
+            // 
+            // unknown1Label
+            // 
+            this.unknown1Label.AutoSize = true;
+            this.unknown1Label.Location = new System.Drawing.Point(248, 94);
+            this.unknown1Label.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.unknown1Label.Name = "unknown1Label";
+            this.unknown1Label.Size = new System.Drawing.Size(66, 15);
+            this.unknown1Label.TabIndex = 1152;
+            this.unknown1Label.Text = "unknown 1";
+            // 
+            // encyclopediaGroupBox
+            // 
+            this.encyclopediaGroupBox.Controls.Add(this.encyclopediaDescriptionLabel);
+            this.encyclopediaGroupBox.Controls.Add(this.textBox1);
+            this.encyclopediaGroupBox.Controls.Add(this.encyclopediaNameLabel);
+            this.encyclopediaGroupBox.Controls.Add(this.encyclopediaDescription);
+            this.encyclopediaGroupBox.Location = new System.Drawing.Point(535, 65);
+            this.encyclopediaGroupBox.Name = "encyclopediaGroupBox";
+            this.encyclopediaGroupBox.Size = new System.Drawing.Size(451, 284);
+            this.encyclopediaGroupBox.TabIndex = 1153;
+            this.encyclopediaGroupBox.TabStop = false;
+            this.encyclopediaGroupBox.Text = "encyclopedia";
+            // 
+            // encyclopediaDescriptionLabel
+            // 
+            this.encyclopediaDescriptionLabel.AutoSize = true;
+            this.encyclopediaDescriptionLabel.Location = new System.Drawing.Point(17, 49);
+            this.encyclopediaDescriptionLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.encyclopediaDescriptionLabel.Name = "encyclopediaDescriptionLabel";
+            this.encyclopediaDescriptionLabel.Size = new System.Drawing.Size(66, 15);
+            this.encyclopediaDescriptionLabel.TabIndex = 170;
+            this.encyclopediaDescriptionLabel.Text = "description";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Enabled = false;
+            this.textBox1.Location = new System.Drawing.Point(112, 21);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(331, 23);
+            this.textBox1.TabIndex = 169;
+            // 
+            // encyclopediaNameLabel
+            // 
+            this.encyclopediaNameLabel.AutoSize = true;
+            this.encyclopediaNameLabel.Location = new System.Drawing.Point(17, 24);
+            this.encyclopediaNameLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.encyclopediaNameLabel.Name = "encyclopediaNameLabel";
+            this.encyclopediaNameLabel.Size = new System.Drawing.Size(77, 15);
+            this.encyclopediaNameLabel.TabIndex = 168;
+            this.encyclopediaNameLabel.Text = "system name";
+            // 
+            // encyclopediaDescription
+            // 
+            this.encyclopediaDescription.Cursor = System.Windows.Forms.Cursors.No;
+            this.encyclopediaDescription.Enabled = false;
+            this.encyclopediaDescription.Location = new System.Drawing.Point(7, 70);
+            this.encyclopediaDescription.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.encyclopediaDescription.Name = "encyclopediaDescription";
+            this.encyclopediaDescription.Size = new System.Drawing.Size(436, 208);
+            this.encyclopediaDescription.TabIndex = 134;
+            this.encyclopediaDescription.TabStop = false;
+            this.encyclopediaDescription.Text = "Not Implemented yet....Encylopedia Data...Will add .Someday";
             // 
             // SystemsForm
             // 
@@ -1202,37 +1106,60 @@ namespace SwRebellionEditor
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.Cancel;
-            this.ClientSize = new System.Drawing.Size(821, 578);
+            this.ClientSize = new System.Drawing.Size(999, 594);
+            this.Controls.Add(this.encyclopediaGroupBox);
+            this.Controls.Add(this.groupBox2);
+            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.unknown1Label);
+            this.Controls.Add(this.unknown1);
+            this.Controls.Add(this.unknown2Label);
+            this.Controls.Add(this.combatLabel);
+            this.Controls.Add(this.unknown3);
+            this.Controls.Add(this.pictureIdLabel);
+            this.Controls.Add(this.unknown4);
+            this.Controls.Add(this.unkown3Label);
+            this.Controls.Add(this.unknown2);
+            this.Controls.Add(this.pictureId);
+            this.Controls.Add(this.familyIdHexLabel);
             this.Controls.Add(this.label12);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.nextProductionFacility);
+            this.Controls.Add(this.textStraDllId);
+            this.Controls.Add(this.label15);
+            this.Controls.Add(this.sectorId);
+            this.Controls.Add(this.textStraDllIdLabel);
+            this.Controls.Add(this.familyIdLabel);
+            this.Controls.Add(this.familyId);
+            this.Controls.Add(this.nextProductionFacilityLabel);
+            this.Controls.Add(this.productionFacilityLabel);
+            this.Controls.Add(this.productionFacility);
+            this.Controls.Add(this.systemIdLabel);
+            this.Controls.Add(this.SystemIdHexLabel);
             this.Controls.Add(this.sectorName);
+            this.Controls.Add(this.yPosition);
             this.Controls.Add(this.systemsListView);
+            this.Controls.Add(this.systemId);
             this.Controls.Add(this.picture);
             this.Controls.Add(this.Open);
             this.Controls.Add(this.SaveAs);
             this.Controls.Add(this.Cancel);
+            this.Controls.Add(this.xPosition);
             this.Controls.Add(this.Ok);
+            this.Controls.Add(this.positionLabel);
             this.Controls.Add(this.encyclopediaName);
             this.Controls.Add(this.selector);
-            this.Controls.Add(this.tabControl1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.KeyPreview = true;
             this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.MaximizeBox = false;
-            this.MaximumSize = new System.Drawing.Size(837, 617);
-            this.MinimumSize = new System.Drawing.Size(837, 617);
             this.Name = "SystemsForm";
             this.Text = "Systems (SYSTEMSD.DAT)";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.GameObjectsListForm_FormClosing);
             this.Load += new System.EventHandler(this.GameObjectsListForm_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.GameObjectsListForm_KeyDown);
             ((System.ComponentModel.ISupportInitialize)(this.selector)).EndInit();
-            this.tabControl1.ResumeLayout(false);
-            this.tabPage1.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.sectorProductionFacility)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.sectorSectorId)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.sectorNextProductionFacility)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.sectorFamilyId)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.sectorTextStraDllId)).EndInit();
@@ -1243,29 +1170,36 @@ namespace SwRebellionEditor
             ((System.ComponentModel.ISupportInitialize)(this.sectorXpos)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.sectorImport)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.galSize)).EndInit();
-            this.miscDATGroup.ResumeLayout(false);
-            this.miscDATGroup.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.unknown3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sectorId)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.productionFacility)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nextProductionFacility)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.systemId)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.familyId)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textStraDllId)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.unknown3)).EndInit();
-            this.BasicGroup.ResumeLayout(false);
-            this.BasicGroup.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.unknown2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureId)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.sectorId)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.yPosition)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.unknown4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.unknown5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.xPosition)).EndInit();
-            this.tabPage2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.picture)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.unknown1)).EndInit();
+            this.encyclopediaGroupBox.ResumeLayout(false);
+            this.encyclopediaGroupBox.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
+
+        private Label pictureIdLabel;
+        private NumericUpDown unknown1;
+        private Label unknown1Label;
+        private GroupBox encyclopediaGroupBox;
+        private Label encyclopediaDescriptionLabel;
+        private TextBox textBox1;
+        private Label encyclopediaNameLabel;
+        private RichTextBox encyclopediaDescription;
     }
 }
