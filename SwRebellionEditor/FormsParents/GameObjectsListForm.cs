@@ -25,7 +25,7 @@
         protected virtual void DisplayGameItemsImages()
         {
         }
-        protected virtual void DisplaySelectedGameObject(int selectorIndex)
+        protected virtual void DisplaySelectedGameObject(int selectorIndex = -1)
         {
         }
         protected void InitializeBaseComponent(TrackBar selector)
@@ -56,6 +56,8 @@
         }
         protected void GameObjectsListForm_KeyDown(object sender, KeyEventArgs e)
         {
+            if (TrackBarSelector == null)
+                return;
             if (e.KeyCode == Keys.F4)
             {
                 if (e.Shift)
@@ -97,9 +99,13 @@
                 Sound.Play(Resources.open_wav);
             if (RegistryKeys.PlayMusic)
                 Sound.PlayRandomMusic();
-            DisplaySelectedGameObject(TrackBarSelector.Value);
+            if (TrackBarSelector != null)
+                DisplaySelectedGameObject(TrackBarSelector.Value);
+            else
+                DisplaySelectedGameObject(-1);
             DisplayGameItemsImages();
-            TrackBarSelector.Select();
+            if (TrackBarSelector != null)
+                TrackBarSelector.Select();
         }
 
         #endregion
@@ -129,9 +135,13 @@
                 GameFile.UnsavedData = false;
             }
             OpenSpecificGameFile();
-            DisplaySelectedGameObject(TrackBarSelector.Value);
+            if (TrackBarSelector != null)
+                DisplaySelectedGameObject(TrackBarSelector.Value);
+            else
+                DisplaySelectedGameObject(-1);
             DisplayGameItemsImages();
-            TrackBarSelector.Select();
+            if (TrackBarSelector != null)
+                TrackBarSelector.Select();
         }
         protected void SaveAs_Click(object sender, EventArgs e)
         {
@@ -153,7 +163,10 @@
 
         protected void GameObjectsSelector_ValueChanged(object sender, EventArgs e)
         {
-            DisplaySelectedGameObject(TrackBarSelector.Value);
+            if (TrackBarSelector != null)
+                DisplaySelectedGameObject(TrackBarSelector.Value);
+            else
+                DisplaySelectedGameObject(-1);
         }
 
         #endregion

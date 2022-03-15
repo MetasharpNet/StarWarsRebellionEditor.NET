@@ -33,15 +33,17 @@ namespace SwRebellionEditor
                     case "Byte":
                         inputFieldInfo.SetValue(outputObject, inputBinaryReader.ReadByte());
                         break;
-                    //case "Bytes":
-                    //    field.SetValue(outputObject, binaryReader.ReadBytes(0));
-                    //    break;
+                    case "Byte[]":
+                        var byteArray = (byte[])inputFieldInfo.GetValue(outputObject);
+                        inputFieldInfo.SetValue(outputObject, inputBinaryReader.ReadBytes(byteArray.Length));
+                        break;
                     case "Char":
                         inputFieldInfo.SetValue(outputObject, inputBinaryReader.ReadChar());
                         break;
-                    //case "Chars":
-                    //    field.SetValue(outputObject, binaryReader.ReadChars(0));
-                    //    break;
+                    case "Char[]":
+                        var charArray = (char[])inputFieldInfo.GetValue(outputObject);
+                        inputFieldInfo.SetValue(outputObject, inputBinaryReader.ReadChars(charArray.Length));
+                        break;
                     case "Decimal":
                         inputFieldInfo.SetValue(outputObject, inputBinaryReader.ReadDecimal());
                         break;
@@ -139,15 +141,15 @@ namespace SwRebellionEditor
                     case "Byte":
                         outputBinaryWriter.Write((byte)inputFieldInfo.GetValue(inputObject));
                         break;
-                    //case "Bytes":
-                    //    field.SetValue(outputObject, binaryReader.ReadBytes(0));
-                    //    break;
+                    case "Byte[]":
+                        outputBinaryWriter.Write((byte[])inputFieldInfo.GetValue(inputObject));
+                        break;
                     case "Char":
                         outputBinaryWriter.Write((char)inputFieldInfo.GetValue(inputObject));
                         break;
-                    //case "Chars":
-                    //    field.SetValue(outputObject, binaryReader.ReadChars(0));
-                    //    break;
+                    case "Char[]":
+                        outputBinaryWriter.Write((char[])inputFieldInfo.GetValue(inputObject));
+                        break;
                     case "Decimal":
                         outputBinaryWriter.Write((decimal)inputFieldInfo.GetValue(inputObject));
                         break;

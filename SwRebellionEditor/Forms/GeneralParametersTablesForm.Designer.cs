@@ -14,50 +14,49 @@ namespace SwRebellionEditor
         private System.ComponentModel.IContainer components = null;
         private TabControl tabControl1;
         private TabPage tabPage1;
-        private NumericUpDown empAdvancedNum;
+        private NumericUpDown empireExpertHyperspaceSpeedMod;
         private GroupBox costGroup;
         private Label conCostLabel;
-        private NumericUpDown empNoviceNum;
+        private NumericUpDown empireNoviceHyperspaceSpeedMod;
         private Label maintCostLabel;
-        private NumericUpDown empInterNum;
+        private NumericUpDown empireIntermediateHyperspaceSpeedMod;
         private RichTextBox encyText;
         private GroupBox groupBox2;
-        private NumericUpDown mfAdvancedNum;
+        private NumericUpDown falconExpertHyperspaceSpeedMod;
         private Label label5;
         private Label label6;
-        private NumericUpDown mfNoviceNum;
+        private NumericUpDown falconNoviceHyperspaceSpeedMod;
         private Label label7;
-        private NumericUpDown mfInterNum;
-        private GroupBox groupBox1;
-        private NumericUpDown rebAdvancedNum;
+        private NumericUpDown falconIntermediateHyperspaceSpeedMod;
+        private GroupBox allianceGroupBox;
+        private NumericUpDown allianceExpertHyperspaceSpeedMod;
         private Label label2;
         private Label label3;
-        private NumericUpDown rebNoviceNum;
+        private NumericUpDown allianceNoviceHyperspaceSpeedMod;
         private Label label4;
-        private NumericUpDown rebInterNum;
+        private NumericUpDown allianceIntermediateHyperspaceSpeedMod;
         private Label label1;
         private Button openNew;
         private Button SaveAs;
         private Button Cancel;
         private Button Ok;
         internal TabPage tabPage2;
-        private Label label8;
         private SaveFileDialog saveFileDialog;
         private GroupBox groupBox3;
-        private NumericUpDown mfUnk5Num;
+        private NumericUpDown falconUnknown5;
         private Label label15;
-        private NumericUpDown mfUnk4Num;
+        private NumericUpDown falconUnknown4;
         private Label label14;
-        private NumericUpDown mfUnk3Num;
+        private NumericUpDown falconUnknown3;
         private Label label13;
-        private NumericUpDown mfUnk2Num;
+        private NumericUpDown falconUnknown2;
         private Label label12;
-        private NumericUpDown mfUnk1Num;
+        private NumericUpDown falconUnknown1;
         private Label label9;
         private Label label10;
-        private NumericUpDown empUnk1Num;
+        private NumericUpDown empireUnknown;
         private Label label11;
-        private NumericUpDown rebUnk1Num;
+        private NumericUpDown allianceUnknown;
 
         /// <summary>
         /// Clean up any resources being used.
@@ -83,71 +82,70 @@ namespace SwRebellionEditor
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.mfUnk5Num = new System.Windows.Forms.NumericUpDown();
+            this.falconUnknown5 = new System.Windows.Forms.NumericUpDown();
             this.label15 = new System.Windows.Forms.Label();
-            this.mfUnk4Num = new System.Windows.Forms.NumericUpDown();
+            this.falconUnknown4 = new System.Windows.Forms.NumericUpDown();
             this.label14 = new System.Windows.Forms.Label();
-            this.mfUnk3Num = new System.Windows.Forms.NumericUpDown();
+            this.falconUnknown3 = new System.Windows.Forms.NumericUpDown();
             this.label13 = new System.Windows.Forms.Label();
-            this.mfUnk2Num = new System.Windows.Forms.NumericUpDown();
+            this.falconUnknown2 = new System.Windows.Forms.NumericUpDown();
             this.label12 = new System.Windows.Forms.Label();
-            this.mfUnk1Num = new System.Windows.Forms.NumericUpDown();
+            this.falconUnknown1 = new System.Windows.Forms.NumericUpDown();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
-            this.empUnk1Num = new System.Windows.Forms.NumericUpDown();
+            this.empireUnknown = new System.Windows.Forms.NumericUpDown();
             this.label11 = new System.Windows.Forms.Label();
-            this.rebUnk1Num = new System.Windows.Forms.NumericUpDown();
+            this.allianceUnknown = new System.Windows.Forms.NumericUpDown();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.mfAdvancedNum = new System.Windows.Forms.NumericUpDown();
+            this.falconExpertHyperspaceSpeedMod = new System.Windows.Forms.NumericUpDown();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.mfNoviceNum = new System.Windows.Forms.NumericUpDown();
+            this.falconNoviceHyperspaceSpeedMod = new System.Windows.Forms.NumericUpDown();
             this.label7 = new System.Windows.Forms.Label();
-            this.mfInterNum = new System.Windows.Forms.NumericUpDown();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.rebAdvancedNum = new System.Windows.Forms.NumericUpDown();
+            this.falconIntermediateHyperspaceSpeedMod = new System.Windows.Forms.NumericUpDown();
+            this.allianceGroupBox = new System.Windows.Forms.GroupBox();
+            this.allianceExpertHyperspaceSpeedMod = new System.Windows.Forms.NumericUpDown();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.rebNoviceNum = new System.Windows.Forms.NumericUpDown();
+            this.allianceNoviceHyperspaceSpeedMod = new System.Windows.Forms.NumericUpDown();
             this.label4 = new System.Windows.Forms.Label();
-            this.rebInterNum = new System.Windows.Forms.NumericUpDown();
+            this.allianceIntermediateHyperspaceSpeedMod = new System.Windows.Forms.NumericUpDown();
             this.costGroup = new System.Windows.Forms.GroupBox();
-            this.empAdvancedNum = new System.Windows.Forms.NumericUpDown();
+            this.empireExpertHyperspaceSpeedMod = new System.Windows.Forms.NumericUpDown();
             this.label1 = new System.Windows.Forms.Label();
             this.conCostLabel = new System.Windows.Forms.Label();
-            this.empNoviceNum = new System.Windows.Forms.NumericUpDown();
+            this.empireNoviceHyperspaceSpeedMod = new System.Windows.Forms.NumericUpDown();
             this.maintCostLabel = new System.Windows.Forms.Label();
-            this.empInterNum = new System.Windows.Forms.NumericUpDown();
+            this.empireIntermediateHyperspaceSpeedMod = new System.Windows.Forms.NumericUpDown();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.encyText = new System.Windows.Forms.RichTextBox();
             this.openNew = new System.Windows.Forms.Button();
             this.SaveAs = new System.Windows.Forms.Button();
             this.Cancel = new System.Windows.Forms.Button();
             this.Ok = new System.Windows.Forms.Button();
-            this.label8 = new System.Windows.Forms.Label();
             this.saveFileDialog = new System.Windows.Forms.SaveFileDialog();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.groupBox3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.mfUnk5Num)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.mfUnk4Num)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.mfUnk3Num)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.mfUnk2Num)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.mfUnk1Num)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.empUnk1Num)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.rebUnk1Num)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.falconUnknown5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.falconUnknown4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.falconUnknown3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.falconUnknown2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.falconUnknown1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.empireUnknown)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.allianceUnknown)).BeginInit();
             this.groupBox2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.mfAdvancedNum)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.mfNoviceNum)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.mfInterNum)).BeginInit();
-            this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.rebAdvancedNum)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.rebNoviceNum)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.rebInterNum)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.falconExpertHyperspaceSpeedMod)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.falconNoviceHyperspaceSpeedMod)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.falconIntermediateHyperspaceSpeedMod)).BeginInit();
+            this.allianceGroupBox.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.allianceExpertHyperspaceSpeedMod)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.allianceNoviceHyperspaceSpeedMod)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.allianceIntermediateHyperspaceSpeedMod)).BeginInit();
             this.costGroup.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.empAdvancedNum)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.empNoviceNum)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.empInterNum)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.empireExpertHyperspaceSpeedMod)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.empireNoviceHyperspaceSpeedMod)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.empireIntermediateHyperspaceSpeedMod)).BeginInit();
             this.tabPage2.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -155,7 +153,7 @@ namespace SwRebellionEditor
             // 
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
-            this.tabControl1.Location = new System.Drawing.Point(14, 28);
+            this.tabControl1.Location = new System.Drawing.Point(15, 12);
             this.tabControl1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
@@ -167,7 +165,7 @@ namespace SwRebellionEditor
             this.tabPage1.BackColor = System.Drawing.SystemColors.Control;
             this.tabPage1.Controls.Add(this.groupBox3);
             this.tabPage1.Controls.Add(this.groupBox2);
-            this.tabPage1.Controls.Add(this.groupBox1);
+            this.tabPage1.Controls.Add(this.allianceGroupBox);
             this.tabPage1.Controls.Add(this.costGroup);
             this.tabPage1.Location = new System.Drawing.Point(4, 24);
             this.tabPage1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -180,20 +178,20 @@ namespace SwRebellionEditor
             // 
             // groupBox3
             // 
-            this.groupBox3.Controls.Add(this.mfUnk5Num);
+            this.groupBox3.Controls.Add(this.falconUnknown5);
             this.groupBox3.Controls.Add(this.label15);
-            this.groupBox3.Controls.Add(this.mfUnk4Num);
+            this.groupBox3.Controls.Add(this.falconUnknown4);
             this.groupBox3.Controls.Add(this.label14);
-            this.groupBox3.Controls.Add(this.mfUnk3Num);
+            this.groupBox3.Controls.Add(this.falconUnknown3);
             this.groupBox3.Controls.Add(this.label13);
-            this.groupBox3.Controls.Add(this.mfUnk2Num);
+            this.groupBox3.Controls.Add(this.falconUnknown2);
             this.groupBox3.Controls.Add(this.label12);
-            this.groupBox3.Controls.Add(this.mfUnk1Num);
+            this.groupBox3.Controls.Add(this.falconUnknown1);
             this.groupBox3.Controls.Add(this.label9);
             this.groupBox3.Controls.Add(this.label10);
-            this.groupBox3.Controls.Add(this.empUnk1Num);
+            this.groupBox3.Controls.Add(this.empireUnknown);
             this.groupBox3.Controls.Add(this.label11);
-            this.groupBox3.Controls.Add(this.rebUnk1Num);
+            this.groupBox3.Controls.Add(this.allianceUnknown);
             this.groupBox3.Location = new System.Drawing.Point(203, 7);
             this.groupBox3.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.groupBox3.Name = "groupBox3";
@@ -203,252 +201,252 @@ namespace SwRebellionEditor
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Unknown Values";
             // 
-            // mfUnk5Num
+            // falconUnknown5
             // 
-            this.mfUnk5Num.Location = new System.Drawing.Point(110, 329);
-            this.mfUnk5Num.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.mfUnk5Num.Maximum = new decimal(new int[] {
+            this.falconUnknown5.Location = new System.Drawing.Point(116, 329);
+            this.falconUnknown5.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.falconUnknown5.Maximum = new decimal(new int[] {
             9999,
             0,
             0,
             0});
-            this.mfUnk5Num.Minimum = new decimal(new int[] {
+            this.falconUnknown5.Minimum = new decimal(new int[] {
             1,
             0,
             0,
             0});
-            this.mfUnk5Num.Name = "mfUnk5Num";
-            this.mfUnk5Num.Size = new System.Drawing.Size(59, 23);
-            this.mfUnk5Num.TabIndex = 14;
-            this.mfUnk5Num.Value = new decimal(new int[] {
+            this.falconUnknown5.Name = "falconUnknown5";
+            this.falconUnknown5.Size = new System.Drawing.Size(59, 23);
+            this.falconUnknown5.TabIndex = 14;
+            this.falconUnknown5.Value = new decimal(new int[] {
             9999,
             0,
             0,
             0});
-            this.mfUnk5Num.ValueChanged += new System.EventHandler(this.updateMfUnk5);
+            this.falconUnknown5.ValueChanged += new System.EventHandler(this.falconUnknown5_ValueChanged);
             // 
             // label15
             // 
             this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(27, 331);
+            this.label15.Location = new System.Drawing.Point(8, 330);
             this.label15.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(49, 15);
+            this.label15.Size = new System.Drawing.Size(105, 15);
             this.label15.TabIndex = 13;
-            this.label15.Text = "mfUnk5";
+            this.label15.Text = "Falcon Unknown 5";
             // 
-            // mfUnk4Num
+            // falconUnknown4
             // 
-            this.mfUnk4Num.Location = new System.Drawing.Point(110, 302);
-            this.mfUnk4Num.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.mfUnk4Num.Maximum = new decimal(new int[] {
+            this.falconUnknown4.Location = new System.Drawing.Point(116, 302);
+            this.falconUnknown4.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.falconUnknown4.Maximum = new decimal(new int[] {
             9999,
             0,
             0,
             0});
-            this.mfUnk4Num.Minimum = new decimal(new int[] {
+            this.falconUnknown4.Minimum = new decimal(new int[] {
             1,
             0,
             0,
             0});
-            this.mfUnk4Num.Name = "mfUnk4Num";
-            this.mfUnk4Num.Size = new System.Drawing.Size(59, 23);
-            this.mfUnk4Num.TabIndex = 12;
-            this.mfUnk4Num.Value = new decimal(new int[] {
+            this.falconUnknown4.Name = "falconUnknown4";
+            this.falconUnknown4.Size = new System.Drawing.Size(59, 23);
+            this.falconUnknown4.TabIndex = 12;
+            this.falconUnknown4.Value = new decimal(new int[] {
             9999,
             0,
             0,
             0});
-            this.mfUnk4Num.ValueChanged += new System.EventHandler(this.updateMfUnk4);
+            this.falconUnknown4.ValueChanged += new System.EventHandler(this.falconUnknown4_ValueChanged);
             // 
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(27, 305);
+            this.label14.Location = new System.Drawing.Point(8, 304);
             this.label14.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(49, 15);
+            this.label14.Size = new System.Drawing.Size(105, 15);
             this.label14.TabIndex = 11;
-            this.label14.Text = "mfUnk4";
+            this.label14.Text = "Falcon Unknown 4";
             // 
-            // mfUnk3Num
+            // falconUnknown3
             // 
-            this.mfUnk3Num.Location = new System.Drawing.Point(110, 272);
-            this.mfUnk3Num.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.mfUnk3Num.Maximum = new decimal(new int[] {
+            this.falconUnknown3.Location = new System.Drawing.Point(116, 272);
+            this.falconUnknown3.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.falconUnknown3.Maximum = new decimal(new int[] {
             9999,
             0,
             0,
             0});
-            this.mfUnk3Num.Minimum = new decimal(new int[] {
+            this.falconUnknown3.Minimum = new decimal(new int[] {
             1,
             0,
             0,
             0});
-            this.mfUnk3Num.Name = "mfUnk3Num";
-            this.mfUnk3Num.Size = new System.Drawing.Size(59, 23);
-            this.mfUnk3Num.TabIndex = 10;
-            this.mfUnk3Num.Value = new decimal(new int[] {
+            this.falconUnknown3.Name = "falconUnknown3";
+            this.falconUnknown3.Size = new System.Drawing.Size(59, 23);
+            this.falconUnknown3.TabIndex = 10;
+            this.falconUnknown3.Value = new decimal(new int[] {
             9999,
             0,
             0,
             0});
-            this.mfUnk3Num.ValueChanged += new System.EventHandler(this.updateMfUnk3);
+            this.falconUnknown3.ValueChanged += new System.EventHandler(this.falconUnknown3_ValueChanged);
             // 
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(27, 275);
+            this.label13.Location = new System.Drawing.Point(8, 274);
             this.label13.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(49, 15);
+            this.label13.Size = new System.Drawing.Size(105, 15);
             this.label13.TabIndex = 9;
-            this.label13.Text = "mfUnk3";
+            this.label13.Text = "Falcon Unknown 3";
             // 
-            // mfUnk2Num
+            // falconUnknown2
             // 
-            this.mfUnk2Num.Location = new System.Drawing.Point(110, 242);
-            this.mfUnk2Num.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.mfUnk2Num.Maximum = new decimal(new int[] {
+            this.falconUnknown2.Location = new System.Drawing.Point(116, 242);
+            this.falconUnknown2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.falconUnknown2.Maximum = new decimal(new int[] {
             9999,
             0,
             0,
             0});
-            this.mfUnk2Num.Minimum = new decimal(new int[] {
+            this.falconUnknown2.Minimum = new decimal(new int[] {
             1,
             0,
             0,
             0});
-            this.mfUnk2Num.Name = "mfUnk2Num";
-            this.mfUnk2Num.Size = new System.Drawing.Size(59, 23);
-            this.mfUnk2Num.TabIndex = 8;
-            this.mfUnk2Num.Value = new decimal(new int[] {
+            this.falconUnknown2.Name = "falconUnknown2";
+            this.falconUnknown2.Size = new System.Drawing.Size(59, 23);
+            this.falconUnknown2.TabIndex = 8;
+            this.falconUnknown2.Value = new decimal(new int[] {
             9999,
             0,
             0,
             0});
-            this.mfUnk2Num.ValueChanged += new System.EventHandler(this.updateMfUnk2);
+            this.falconUnknown2.ValueChanged += new System.EventHandler(this.falconUnknown2_ValueChanged);
             // 
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(27, 245);
+            this.label12.Location = new System.Drawing.Point(8, 244);
             this.label12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(49, 15);
+            this.label12.Size = new System.Drawing.Size(105, 15);
             this.label12.TabIndex = 7;
-            this.label12.Text = "mfUnk2";
+            this.label12.Text = "Falcon Unknown 2";
             // 
-            // mfUnk1Num
+            // falconUnknown1
             // 
-            this.mfUnk1Num.Location = new System.Drawing.Point(110, 212);
-            this.mfUnk1Num.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.mfUnk1Num.Maximum = new decimal(new int[] {
+            this.falconUnknown1.Location = new System.Drawing.Point(116, 212);
+            this.falconUnknown1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.falconUnknown1.Maximum = new decimal(new int[] {
             9999,
             0,
             0,
             0});
-            this.mfUnk1Num.Minimum = new decimal(new int[] {
+            this.falconUnknown1.Minimum = new decimal(new int[] {
             1,
             0,
             0,
             0});
-            this.mfUnk1Num.Name = "mfUnk1Num";
-            this.mfUnk1Num.Size = new System.Drawing.Size(59, 23);
-            this.mfUnk1Num.TabIndex = 6;
-            this.mfUnk1Num.Value = new decimal(new int[] {
+            this.falconUnknown1.Name = "falconUnknown1";
+            this.falconUnknown1.Size = new System.Drawing.Size(59, 23);
+            this.falconUnknown1.TabIndex = 6;
+            this.falconUnknown1.Value = new decimal(new int[] {
             9999,
             0,
             0,
             0});
-            this.mfUnk1Num.ValueChanged += new System.EventHandler(this.updateMfUnk1);
+            this.falconUnknown1.ValueChanged += new System.EventHandler(this.falconUnknown1_ValueChanged);
             // 
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(27, 215);
+            this.label9.Location = new System.Drawing.Point(8, 214);
             this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(49, 15);
+            this.label9.Size = new System.Drawing.Size(105, 15);
             this.label9.TabIndex = 6;
-            this.label9.Text = "mfUnk1";
+            this.label9.Text = "Falcon Unknown 1";
             // 
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(27, 22);
+            this.label10.Location = new System.Drawing.Point(8, 22);
             this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(61, 15);
+            this.label10.Size = new System.Drawing.Size(98, 15);
             this.label10.TabIndex = 0;
-            this.label10.Text = "Emp Unk1";
+            this.label10.Text = "Empire Unknown";
             // 
-            // empUnk1Num
+            // empireUnknown
             // 
-            this.empUnk1Num.Location = new System.Drawing.Point(110, 20);
-            this.empUnk1Num.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.empUnk1Num.Maximum = new decimal(new int[] {
+            this.empireUnknown.Location = new System.Drawing.Point(116, 20);
+            this.empireUnknown.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.empireUnknown.Maximum = new decimal(new int[] {
             9999,
             0,
             0,
             0});
-            this.empUnk1Num.Minimum = new decimal(new int[] {
+            this.empireUnknown.Minimum = new decimal(new int[] {
             1,
             0,
             0,
             0});
-            this.empUnk1Num.Name = "empUnk1Num";
-            this.empUnk1Num.Size = new System.Drawing.Size(59, 23);
-            this.empUnk1Num.TabIndex = 4;
-            this.empUnk1Num.Value = new decimal(new int[] {
+            this.empireUnknown.Name = "empireUnknown";
+            this.empireUnknown.Size = new System.Drawing.Size(59, 23);
+            this.empireUnknown.TabIndex = 4;
+            this.empireUnknown.Value = new decimal(new int[] {
             9999,
             0,
             0,
             0});
-            this.empUnk1Num.ValueChanged += new System.EventHandler(this.updateEmpUnk);
+            this.empireUnknown.ValueChanged += new System.EventHandler(this.empireUnknown_ValueChanged);
             // 
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(27, 142);
+            this.label11.Location = new System.Drawing.Point(8, 142);
             this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(57, 15);
+            this.label11.Size = new System.Drawing.Size(103, 15);
             this.label11.TabIndex = 0;
-            this.label11.Text = "Reb Unk1";
+            this.label11.Text = "Alliance Unknown";
             // 
-            // rebUnk1Num
+            // allianceUnknown
             // 
-            this.rebUnk1Num.Location = new System.Drawing.Point(110, 140);
-            this.rebUnk1Num.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.rebUnk1Num.Maximum = new decimal(new int[] {
+            this.allianceUnknown.Location = new System.Drawing.Point(116, 140);
+            this.allianceUnknown.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.allianceUnknown.Maximum = new decimal(new int[] {
             9999,
             0,
             0,
             0});
-            this.rebUnk1Num.Minimum = new decimal(new int[] {
+            this.allianceUnknown.Minimum = new decimal(new int[] {
             1,
             0,
             0,
             0});
-            this.rebUnk1Num.Name = "rebUnk1Num";
-            this.rebUnk1Num.Size = new System.Drawing.Size(59, 23);
-            this.rebUnk1Num.TabIndex = 5;
-            this.rebUnk1Num.Value = new decimal(new int[] {
+            this.allianceUnknown.Name = "allianceUnknown";
+            this.allianceUnknown.Size = new System.Drawing.Size(59, 23);
+            this.allianceUnknown.TabIndex = 5;
+            this.allianceUnknown.Value = new decimal(new int[] {
             9999,
             0,
             0,
             0});
-            this.rebUnk1Num.ValueChanged += new System.EventHandler(this.updateRebUnk);
+            this.allianceUnknown.ValueChanged += new System.EventHandler(this.allianceUnknown_ValueChanged);
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.mfAdvancedNum);
+            this.groupBox2.Controls.Add(this.falconExpertHyperspaceSpeedMod);
             this.groupBox2.Controls.Add(this.label5);
             this.groupBox2.Controls.Add(this.label6);
-            this.groupBox2.Controls.Add(this.mfNoviceNum);
+            this.groupBox2.Controls.Add(this.falconNoviceHyperspaceSpeedMod);
             this.groupBox2.Controls.Add(this.label7);
-            this.groupBox2.Controls.Add(this.mfInterNum);
+            this.groupBox2.Controls.Add(this.falconIntermediateHyperspaceSpeedMod);
             this.groupBox2.Location = new System.Drawing.Point(7, 249);
             this.groupBox2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.groupBox2.Name = "groupBox2";
@@ -458,29 +456,29 @@ namespace SwRebellionEditor
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Millenium Falcon";
             // 
-            // mfAdvancedNum
+            // falconExpertHyperspaceSpeedMod
             // 
-            this.mfAdvancedNum.Location = new System.Drawing.Point(110, 80);
-            this.mfAdvancedNum.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.mfAdvancedNum.Maximum = new decimal(new int[] {
+            this.falconExpertHyperspaceSpeedMod.Location = new System.Drawing.Point(110, 80);
+            this.falconExpertHyperspaceSpeedMod.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.falconExpertHyperspaceSpeedMod.Maximum = new decimal(new int[] {
             9999,
             0,
             0,
             0});
-            this.mfAdvancedNum.Minimum = new decimal(new int[] {
+            this.falconExpertHyperspaceSpeedMod.Minimum = new decimal(new int[] {
             1,
             0,
             0,
             0});
-            this.mfAdvancedNum.Name = "mfAdvancedNum";
-            this.mfAdvancedNum.Size = new System.Drawing.Size(59, 23);
-            this.mfAdvancedNum.TabIndex = 6;
-            this.mfAdvancedNum.Value = new decimal(new int[] {
+            this.falconExpertHyperspaceSpeedMod.Name = "falconExpertHyperspaceSpeedMod";
+            this.falconExpertHyperspaceSpeedMod.Size = new System.Drawing.Size(59, 23);
+            this.falconExpertHyperspaceSpeedMod.TabIndex = 6;
+            this.falconExpertHyperspaceSpeedMod.Value = new decimal(new int[] {
             9999,
             0,
             0,
             0});
-            this.mfAdvancedNum.ValueChanged += new System.EventHandler(this.updatemfAdv);
+            this.falconExpertHyperspaceSpeedMod.ValueChanged += new System.EventHandler(this.falconExpertHyperspaceSpeedMod_ValueChanged);
             // 
             // label5
             // 
@@ -502,29 +500,29 @@ namespace SwRebellionEditor
             this.label6.TabIndex = 0;
             this.label6.Text = "Novice";
             // 
-            // mfNoviceNum
+            // falconNoviceHyperspaceSpeedMod
             // 
-            this.mfNoviceNum.Location = new System.Drawing.Point(110, 20);
-            this.mfNoviceNum.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.mfNoviceNum.Maximum = new decimal(new int[] {
+            this.falconNoviceHyperspaceSpeedMod.Location = new System.Drawing.Point(110, 20);
+            this.falconNoviceHyperspaceSpeedMod.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.falconNoviceHyperspaceSpeedMod.Maximum = new decimal(new int[] {
             9999,
             0,
             0,
             0});
-            this.mfNoviceNum.Minimum = new decimal(new int[] {
+            this.falconNoviceHyperspaceSpeedMod.Minimum = new decimal(new int[] {
             1,
             0,
             0,
             0});
-            this.mfNoviceNum.Name = "mfNoviceNum";
-            this.mfNoviceNum.Size = new System.Drawing.Size(59, 23);
-            this.mfNoviceNum.TabIndex = 4;
-            this.mfNoviceNum.Value = new decimal(new int[] {
+            this.falconNoviceHyperspaceSpeedMod.Name = "falconNoviceHyperspaceSpeedMod";
+            this.falconNoviceHyperspaceSpeedMod.Size = new System.Drawing.Size(59, 23);
+            this.falconNoviceHyperspaceSpeedMod.TabIndex = 4;
+            this.falconNoviceHyperspaceSpeedMod.Value = new decimal(new int[] {
             9999,
             0,
             0,
             0});
-            this.mfNoviceNum.ValueChanged += new System.EventHandler(this.updatemfNov);
+            this.falconNoviceHyperspaceSpeedMod.ValueChanged += new System.EventHandler(this.falconNoviceHyperspaceSpeedMod_ValueChanged);
             // 
             // label7
             // 
@@ -536,70 +534,70 @@ namespace SwRebellionEditor
             this.label7.TabIndex = 0;
             this.label7.Text = "Intermediate";
             // 
-            // mfInterNum
+            // falconIntermediateHyperspaceSpeedMod
             // 
-            this.mfInterNum.Location = new System.Drawing.Point(110, 50);
-            this.mfInterNum.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.mfInterNum.Maximum = new decimal(new int[] {
+            this.falconIntermediateHyperspaceSpeedMod.Location = new System.Drawing.Point(110, 50);
+            this.falconIntermediateHyperspaceSpeedMod.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.falconIntermediateHyperspaceSpeedMod.Maximum = new decimal(new int[] {
             9999,
             0,
             0,
             0});
-            this.mfInterNum.Minimum = new decimal(new int[] {
+            this.falconIntermediateHyperspaceSpeedMod.Minimum = new decimal(new int[] {
             1,
             0,
             0,
             0});
-            this.mfInterNum.Name = "mfInterNum";
-            this.mfInterNum.Size = new System.Drawing.Size(59, 23);
-            this.mfInterNum.TabIndex = 5;
-            this.mfInterNum.Value = new decimal(new int[] {
+            this.falconIntermediateHyperspaceSpeedMod.Name = "falconIntermediateHyperspaceSpeedMod";
+            this.falconIntermediateHyperspaceSpeedMod.Size = new System.Drawing.Size(59, 23);
+            this.falconIntermediateHyperspaceSpeedMod.TabIndex = 5;
+            this.falconIntermediateHyperspaceSpeedMod.Value = new decimal(new int[] {
             9999,
             0,
             0,
             0});
-            this.mfInterNum.ValueChanged += new System.EventHandler(this.updatemfInt);
+            this.falconIntermediateHyperspaceSpeedMod.ValueChanged += new System.EventHandler(this.falconIntermediateHyperspaceSpeedMod_ValueChanged);
             // 
-            // groupBox1
+            // allianceGroupBox
             // 
-            this.groupBox1.Controls.Add(this.rebAdvancedNum);
-            this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.rebNoviceNum);
-            this.groupBox1.Controls.Add(this.label4);
-            this.groupBox1.Controls.Add(this.rebInterNum);
-            this.groupBox1.Location = new System.Drawing.Point(7, 127);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.groupBox1.Size = new System.Drawing.Size(196, 113);
-            this.groupBox1.TabIndex = 7;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Rebellion";
+            this.allianceGroupBox.Controls.Add(this.allianceExpertHyperspaceSpeedMod);
+            this.allianceGroupBox.Controls.Add(this.label2);
+            this.allianceGroupBox.Controls.Add(this.label3);
+            this.allianceGroupBox.Controls.Add(this.allianceNoviceHyperspaceSpeedMod);
+            this.allianceGroupBox.Controls.Add(this.label4);
+            this.allianceGroupBox.Controls.Add(this.allianceIntermediateHyperspaceSpeedMod);
+            this.allianceGroupBox.Location = new System.Drawing.Point(7, 127);
+            this.allianceGroupBox.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.allianceGroupBox.Name = "allianceGroupBox";
+            this.allianceGroupBox.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.allianceGroupBox.Size = new System.Drawing.Size(196, 113);
+            this.allianceGroupBox.TabIndex = 7;
+            this.allianceGroupBox.TabStop = false;
+            this.allianceGroupBox.Text = "Alliance";
             // 
-            // rebAdvancedNum
+            // allianceExpertHyperspaceSpeedMod
             // 
-            this.rebAdvancedNum.Location = new System.Drawing.Point(110, 80);
-            this.rebAdvancedNum.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.rebAdvancedNum.Maximum = new decimal(new int[] {
+            this.allianceExpertHyperspaceSpeedMod.Location = new System.Drawing.Point(110, 80);
+            this.allianceExpertHyperspaceSpeedMod.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.allianceExpertHyperspaceSpeedMod.Maximum = new decimal(new int[] {
             9999,
             0,
             0,
             0});
-            this.rebAdvancedNum.Minimum = new decimal(new int[] {
+            this.allianceExpertHyperspaceSpeedMod.Minimum = new decimal(new int[] {
             1,
             0,
             0,
             0});
-            this.rebAdvancedNum.Name = "rebAdvancedNum";
-            this.rebAdvancedNum.Size = new System.Drawing.Size(59, 23);
-            this.rebAdvancedNum.TabIndex = 6;
-            this.rebAdvancedNum.Value = new decimal(new int[] {
+            this.allianceExpertHyperspaceSpeedMod.Name = "allianceExpertHyperspaceSpeedMod";
+            this.allianceExpertHyperspaceSpeedMod.Size = new System.Drawing.Size(59, 23);
+            this.allianceExpertHyperspaceSpeedMod.TabIndex = 6;
+            this.allianceExpertHyperspaceSpeedMod.Value = new decimal(new int[] {
             9999,
             0,
             0,
             0});
-            this.rebAdvancedNum.ValueChanged += new System.EventHandler(this.updateRebAdv);
+            this.allianceExpertHyperspaceSpeedMod.ValueChanged += new System.EventHandler(this.allianceExpertHyperspaceSpeedMod_ValueChanged);
             // 
             // label2
             // 
@@ -621,29 +619,29 @@ namespace SwRebellionEditor
             this.label3.TabIndex = 0;
             this.label3.Text = "Novice";
             // 
-            // rebNoviceNum
+            // allianceNoviceHyperspaceSpeedMod
             // 
-            this.rebNoviceNum.Location = new System.Drawing.Point(110, 20);
-            this.rebNoviceNum.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.rebNoviceNum.Maximum = new decimal(new int[] {
+            this.allianceNoviceHyperspaceSpeedMod.Location = new System.Drawing.Point(110, 20);
+            this.allianceNoviceHyperspaceSpeedMod.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.allianceNoviceHyperspaceSpeedMod.Maximum = new decimal(new int[] {
             9999,
             0,
             0,
             0});
-            this.rebNoviceNum.Minimum = new decimal(new int[] {
+            this.allianceNoviceHyperspaceSpeedMod.Minimum = new decimal(new int[] {
             1,
             0,
             0,
             0});
-            this.rebNoviceNum.Name = "rebNoviceNum";
-            this.rebNoviceNum.Size = new System.Drawing.Size(59, 23);
-            this.rebNoviceNum.TabIndex = 4;
-            this.rebNoviceNum.Value = new decimal(new int[] {
+            this.allianceNoviceHyperspaceSpeedMod.Name = "allianceNoviceHyperspaceSpeedMod";
+            this.allianceNoviceHyperspaceSpeedMod.Size = new System.Drawing.Size(59, 23);
+            this.allianceNoviceHyperspaceSpeedMod.TabIndex = 4;
+            this.allianceNoviceHyperspaceSpeedMod.Value = new decimal(new int[] {
             9999,
             0,
             0,
             0});
-            this.rebNoviceNum.ValueChanged += new System.EventHandler(this.updateRebNov);
+            this.allianceNoviceHyperspaceSpeedMod.ValueChanged += new System.EventHandler(this.allianceNoviceHyperspaceSpeedMod_ValueChanged);
             // 
             // label4
             // 
@@ -655,38 +653,38 @@ namespace SwRebellionEditor
             this.label4.TabIndex = 0;
             this.label4.Text = "Intermediate";
             // 
-            // rebInterNum
+            // allianceIntermediateHyperspaceSpeedMod
             // 
-            this.rebInterNum.Location = new System.Drawing.Point(110, 50);
-            this.rebInterNum.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.rebInterNum.Maximum = new decimal(new int[] {
+            this.allianceIntermediateHyperspaceSpeedMod.Location = new System.Drawing.Point(110, 50);
+            this.allianceIntermediateHyperspaceSpeedMod.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.allianceIntermediateHyperspaceSpeedMod.Maximum = new decimal(new int[] {
             9999,
             0,
             0,
             0});
-            this.rebInterNum.Minimum = new decimal(new int[] {
+            this.allianceIntermediateHyperspaceSpeedMod.Minimum = new decimal(new int[] {
             1,
             0,
             0,
             0});
-            this.rebInterNum.Name = "rebInterNum";
-            this.rebInterNum.Size = new System.Drawing.Size(59, 23);
-            this.rebInterNum.TabIndex = 5;
-            this.rebInterNum.Value = new decimal(new int[] {
+            this.allianceIntermediateHyperspaceSpeedMod.Name = "allianceIntermediateHyperspaceSpeedMod";
+            this.allianceIntermediateHyperspaceSpeedMod.Size = new System.Drawing.Size(59, 23);
+            this.allianceIntermediateHyperspaceSpeedMod.TabIndex = 5;
+            this.allianceIntermediateHyperspaceSpeedMod.Value = new decimal(new int[] {
             9999,
             0,
             0,
             0});
-            this.rebInterNum.ValueChanged += new System.EventHandler(this.updateRebInt);
+            this.allianceIntermediateHyperspaceSpeedMod.ValueChanged += new System.EventHandler(this.allianceIntermediateHyperspaceSpeedMod_ValueChanged);
             // 
             // costGroup
             // 
-            this.costGroup.Controls.Add(this.empAdvancedNum);
+            this.costGroup.Controls.Add(this.empireExpertHyperspaceSpeedMod);
             this.costGroup.Controls.Add(this.label1);
             this.costGroup.Controls.Add(this.conCostLabel);
-            this.costGroup.Controls.Add(this.empNoviceNum);
+            this.costGroup.Controls.Add(this.empireNoviceHyperspaceSpeedMod);
             this.costGroup.Controls.Add(this.maintCostLabel);
-            this.costGroup.Controls.Add(this.empInterNum);
+            this.costGroup.Controls.Add(this.empireIntermediateHyperspaceSpeedMod);
             this.costGroup.Location = new System.Drawing.Point(7, 7);
             this.costGroup.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.costGroup.Name = "costGroup";
@@ -696,29 +694,29 @@ namespace SwRebellionEditor
             this.costGroup.TabStop = false;
             this.costGroup.Text = "Empire";
             // 
-            // empAdvancedNum
+            // empireExpertHyperspaceSpeedMod
             // 
-            this.empAdvancedNum.Location = new System.Drawing.Point(110, 80);
-            this.empAdvancedNum.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.empAdvancedNum.Maximum = new decimal(new int[] {
+            this.empireExpertHyperspaceSpeedMod.Location = new System.Drawing.Point(110, 80);
+            this.empireExpertHyperspaceSpeedMod.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.empireExpertHyperspaceSpeedMod.Maximum = new decimal(new int[] {
             9999,
             0,
             0,
             0});
-            this.empAdvancedNum.Minimum = new decimal(new int[] {
+            this.empireExpertHyperspaceSpeedMod.Minimum = new decimal(new int[] {
             1,
             0,
             0,
             0});
-            this.empAdvancedNum.Name = "empAdvancedNum";
-            this.empAdvancedNum.Size = new System.Drawing.Size(59, 23);
-            this.empAdvancedNum.TabIndex = 6;
-            this.empAdvancedNum.Value = new decimal(new int[] {
+            this.empireExpertHyperspaceSpeedMod.Name = "empireExpertHyperspaceSpeedMod";
+            this.empireExpertHyperspaceSpeedMod.Size = new System.Drawing.Size(59, 23);
+            this.empireExpertHyperspaceSpeedMod.TabIndex = 6;
+            this.empireExpertHyperspaceSpeedMod.Value = new decimal(new int[] {
             9999,
             0,
             0,
             0});
-            this.empAdvancedNum.ValueChanged += new System.EventHandler(this.updateEmpAdv);
+            this.empireExpertHyperspaceSpeedMod.ValueChanged += new System.EventHandler(this.empireExpertHyperspaceSpeedMod_ValueChanged);
             // 
             // label1
             // 
@@ -740,29 +738,29 @@ namespace SwRebellionEditor
             this.conCostLabel.TabIndex = 0;
             this.conCostLabel.Text = "Novice";
             // 
-            // empNoviceNum
+            // empireNoviceHyperspaceSpeedMod
             // 
-            this.empNoviceNum.Location = new System.Drawing.Point(110, 20);
-            this.empNoviceNum.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.empNoviceNum.Maximum = new decimal(new int[] {
+            this.empireNoviceHyperspaceSpeedMod.Location = new System.Drawing.Point(110, 20);
+            this.empireNoviceHyperspaceSpeedMod.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.empireNoviceHyperspaceSpeedMod.Maximum = new decimal(new int[] {
             9999,
             0,
             0,
             0});
-            this.empNoviceNum.Minimum = new decimal(new int[] {
+            this.empireNoviceHyperspaceSpeedMod.Minimum = new decimal(new int[] {
             1,
             0,
             0,
             0});
-            this.empNoviceNum.Name = "empNoviceNum";
-            this.empNoviceNum.Size = new System.Drawing.Size(59, 23);
-            this.empNoviceNum.TabIndex = 4;
-            this.empNoviceNum.Value = new decimal(new int[] {
+            this.empireNoviceHyperspaceSpeedMod.Name = "empireNoviceHyperspaceSpeedMod";
+            this.empireNoviceHyperspaceSpeedMod.Size = new System.Drawing.Size(59, 23);
+            this.empireNoviceHyperspaceSpeedMod.TabIndex = 4;
+            this.empireNoviceHyperspaceSpeedMod.Value = new decimal(new int[] {
             9999,
             0,
             0,
             0});
-            this.empNoviceNum.ValueChanged += new System.EventHandler(this.updateEmpNov);
+            this.empireNoviceHyperspaceSpeedMod.ValueChanged += new System.EventHandler(this.empireNoviceHyperspaceSpeedMod_ValueChanged);
             // 
             // maintCostLabel
             // 
@@ -774,29 +772,29 @@ namespace SwRebellionEditor
             this.maintCostLabel.TabIndex = 0;
             this.maintCostLabel.Text = "Intermediate";
             // 
-            // empInterNum
+            // empireIntermediateHyperspaceSpeedMod
             // 
-            this.empInterNum.Location = new System.Drawing.Point(110, 50);
-            this.empInterNum.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.empInterNum.Maximum = new decimal(new int[] {
+            this.empireIntermediateHyperspaceSpeedMod.Location = new System.Drawing.Point(110, 50);
+            this.empireIntermediateHyperspaceSpeedMod.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.empireIntermediateHyperspaceSpeedMod.Maximum = new decimal(new int[] {
             9999,
             0,
             0,
             0});
-            this.empInterNum.Minimum = new decimal(new int[] {
+            this.empireIntermediateHyperspaceSpeedMod.Minimum = new decimal(new int[] {
             1,
             0,
             0,
             0});
-            this.empInterNum.Name = "empInterNum";
-            this.empInterNum.Size = new System.Drawing.Size(59, 23);
-            this.empInterNum.TabIndex = 5;
-            this.empInterNum.Value = new decimal(new int[] {
+            this.empireIntermediateHyperspaceSpeedMod.Name = "empireIntermediateHyperspaceSpeedMod";
+            this.empireIntermediateHyperspaceSpeedMod.Size = new System.Drawing.Size(59, 23);
+            this.empireIntermediateHyperspaceSpeedMod.TabIndex = 5;
+            this.empireIntermediateHyperspaceSpeedMod.Value = new decimal(new int[] {
             9999,
             0,
             0,
             0});
-            this.empInterNum.ValueChanged += new System.EventHandler(this.updateEmpInt);
+            this.empireIntermediateHyperspaceSpeedMod.ValueChanged += new System.EventHandler(this.empireIntermediateHyperspaceSpeedMod_ValueChanged);
             // 
             // tabPage2
             // 
@@ -830,7 +828,7 @@ namespace SwRebellionEditor
             this.openNew.TabIndex = 22;
             this.openNew.Text = "Open...";
             this.openNew.UseVisualStyleBackColor = true;
-            this.openNew.Click += new System.EventHandler(this.openNew_Click);
+            this.openNew.Click += new System.EventHandler(this.Open_Click);
             // 
             // SaveAs
             // 
@@ -867,16 +865,6 @@ namespace SwRebellionEditor
             this.Ok.UseVisualStyleBackColor = true;
             this.Ok.Click += new System.EventHandler(this.Ok_Click);
             // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(22, 9);
-            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(222, 15);
-            this.label8.TabIndex = 7;
-            this.label8.Text = "General Param Table Entry - GNPRTB.DAT";
-            // 
             // saveFileDialog
             // 
             this.saveFileDialog.DefaultExt = "DAT";
@@ -889,7 +877,6 @@ namespace SwRebellionEditor
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.Cancel;
             this.ClientSize = new System.Drawing.Size(418, 477);
-            this.Controls.Add(this.label8);
             this.Controls.Add(this.openNew);
             this.Controls.Add(this.SaveAs);
             this.Controls.Add(this.Cancel);
@@ -898,37 +885,36 @@ namespace SwRebellionEditor
             this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Name = "GeneralParametersTablesForm";
             this.Text = "General Parameters Tables (GNPRTB.DAT)";
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.TroopForm_FormClosing);
-            this.Load += new System.EventHandler(this.GNPRTBForm_Load);
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.GameObjectsListForm_FormClosing);
+            this.Load += new System.EventHandler(this.GameObjectsListForm_Load);
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.mfUnk5Num)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.mfUnk4Num)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.mfUnk3Num)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.mfUnk2Num)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.mfUnk1Num)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.empUnk1Num)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.rebUnk1Num)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.falconUnknown5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.falconUnknown4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.falconUnknown3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.falconUnknown2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.falconUnknown1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.empireUnknown)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.allianceUnknown)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.mfAdvancedNum)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.mfNoviceNum)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.mfInterNum)).EndInit();
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.rebAdvancedNum)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.rebNoviceNum)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.rebInterNum)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.falconExpertHyperspaceSpeedMod)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.falconNoviceHyperspaceSpeedMod)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.falconIntermediateHyperspaceSpeedMod)).EndInit();
+            this.allianceGroupBox.ResumeLayout(false);
+            this.allianceGroupBox.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.allianceExpertHyperspaceSpeedMod)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.allianceNoviceHyperspaceSpeedMod)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.allianceIntermediateHyperspaceSpeedMod)).EndInit();
             this.costGroup.ResumeLayout(false);
             this.costGroup.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.empAdvancedNum)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.empNoviceNum)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.empInterNum)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.empireExpertHyperspaceSpeedMod)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.empireNoviceHyperspaceSpeedMod)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.empireIntermediateHyperspaceSpeedMod)).EndInit();
             this.tabPage2.ResumeLayout(false);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
