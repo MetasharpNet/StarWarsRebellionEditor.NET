@@ -291,7 +291,7 @@
                         }
                     }
                 }
-                SYFCCRTB.SetTablePath(saveFileName);
+                //SYFCCRTB.SetTablePath(saveFileName);
                 return true;
             }
             catch (EndOfStreamException)

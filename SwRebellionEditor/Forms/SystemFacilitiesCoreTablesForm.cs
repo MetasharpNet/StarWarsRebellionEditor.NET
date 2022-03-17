@@ -1,13 +1,50 @@
 ﻿namespace SwRebellionEditor
 {
-    public partial class SystemFacilitiesCoreTablesForm : Form
+    public partial class SystemFacilitiesCoreTablesForm : SystemFacilitiesCoreTablesDesignForm
     {
+        #region .ctor
+
         public SystemFacilitiesCoreTablesForm()
         {
+            GameFilePath = RegistryKeys.InstalledLocation + "\\GData\\SYFCCRTB.DAT";
+            GameFile = DatFile.Load<SYFCCRTB>(GameFilePath);
             InitializeComponent();
         }
 
-        private int facilityBoxChange(string facility)
+        #endregion
+
+        #region Business Layer
+
+        protected override void DisplaySelectedGameObject(int selectorIndex)
+        {
+            var previousUnsavedData = GameFile.UnsavedData;
+            facilityPercent0.Value = GameFile.FacilityProbabilities[0].Percent;
+            facilityPercent1.Value = GameFile.FacilityProbabilities[1].Percent;
+            facilityPercent2.Value = GameFile.FacilityProbabilities[2].Percent;
+            facilityPercent3.Value = GameFile.FacilityProbabilities[3].Percent;
+            facilityPercent4.Value = GameFile.FacilityProbabilities[4].Percent;
+            facilityPercent5.Value = GameFile.FacilityProbabilities[5].Percent;
+            facilityPercent6.Value = GameFile.FacilityProbabilities[6].Percent;
+            facilityPercent7.Value = GameFile.FacilityProbabilities[7].Percent;
+            facilityType0.Value = GameFile.FacilityProbabilities[0].TypeId;
+            facilityType1.Value = GameFile.FacilityProbabilities[1].TypeId;
+            facilityType2.Value = GameFile.FacilityProbabilities[2].TypeId;
+            facilityType3.Value = GameFile.FacilityProbabilities[3].TypeId;
+            facilityType4.Value = GameFile.FacilityProbabilities[4].TypeId;
+            facilityType5.Value = GameFile.FacilityProbabilities[5].TypeId;
+            facilityType6.Value = GameFile.FacilityProbabilities[6].TypeId;
+            facilityType7.Value = GameFile.FacilityProbabilities[7].TypeId;
+            SelectFacilityIndex(facilityBox0, GameFile.FacilityProbabilities[0]);
+            SelectFacilityIndex(facilityBox1, GameFile.FacilityProbabilities[1]);
+            SelectFacilityIndex(facilityBox2, GameFile.FacilityProbabilities[2]);
+            SelectFacilityIndex(facilityBox3, GameFile.FacilityProbabilities[3]);
+            SelectFacilityIndex(facilityBox4, GameFile.FacilityProbabilities[4]);
+            SelectFacilityIndex(facilityBox5, GameFile.FacilityProbabilities[5]);
+            SelectFacilityIndex(facilityBox6, GameFile.FacilityProbabilities[6]);
+            SelectFacilityIndex(facilityBox7, GameFile.FacilityProbabilities[7]);
+            GameFile.UnsavedData = previousUnsavedData;
+        }
+        public byte FacilityStringToByte(string facility)
         {
             switch (facility)
             {
@@ -39,1128 +76,231 @@
                     return 0;
             }
         }
-
-        private void updateFacilityBox1(object sender, EventArgs e)
+        public decimal FacilityStringToFacilityTypeDecimal(string facility)
         {
-            SYFCCRTB.Table[0].facilityNum = (byte)facilityBoxChange(FacilityBox1.Text);
-            switch (FacilityBox1.Text)
+            switch (facility)
             {
                 case "Advanced Construction":
-                    facType1.Value = 6M;
-                    break;
-                case "Construction":
-                    facType1.Value = 3M;
-                    break;
-                case "Advanced Shipyard":
-                    facType1.Value = 4M;
-                    break;
-                case "Shipyard":
-                    facType1.Value = 1M;
-                    break;
+                    return 6;
                 case "Advanced Troop Training":
-                    facType1.Value = 5M;
-                    break;
-                case "Training":
-                    facType1.Value = 2M;
-                    break;
-                case "Refinery":
-                    facType1.Value = 2M;
-                    break;
-                case "Shield":
-                    facType1.Value = 3M;
-                    break;
-                case "Shield Generator II":
-                    facType1.Value = 3M;
-                    break;
-                case "Laser":
-                    facType1.Value = 2M;
-                    break;
-                case "Laser II":
-                    facType1.Value = 2M;
-                    break;
-                case "Ion":
-                    facType1.Value = 1M;
-                    break;
-                default:
-                    facType1.Value = 0M;
-                    break;
-            }
-            SYFCCRTB.SetUnsavedData();
-        }
-
-        private void updateFacilityBox2(object sender, EventArgs e)
-        {
-            SYFCCRTB.Table[1].facilityNum = (byte)facilityBoxChange(FacilityBox2.Text);
-            switch (FacilityBox2.Text)
-            {
-                case "Advanced Construction":
-                    facType2.Value = 6M;
-                    break;
-                case "Construction":
-                    facType2.Value = 3M;
-                    break;
+                    return 5;
                 case "Advanced Shipyard":
-                    facType2.Value = 4M;
-                    break;
-                case "Shipyard":
-                    facType2.Value = 1M;
-                    break;
-                case "Advanced Troop Training":
-                    facType2.Value = 5M;
-                    break;
-                case "Training":
-                    facType2.Value = 2M;
-                    break;
-                case "Refinery":
-                    facType2.Value = 2M;
-                    break;
-                case "Shield":
-                    facType2.Value = 3M;
-                    break;
-                case "Shield Generator II":
-                    facType2.Value = 3M;
-                    break;
-                case "Laser":
-                    facType2.Value = 2M;
-                    break;
-                case "Laser II":
-                    facType2.Value = 2M;
-                    break;
-                case "Ion":
-                    facType2.Value = 1M;
-                    break;
-                default:
-                    facType2.Value = 0M;
-                    break;
-            }
-            SYFCCRTB.SetUnsavedData();
-        }
-
-        private void updateFacilityBox3(object sender, EventArgs e)
-        {
-            SYFCCRTB.Table[2].facilityNum = (byte)facilityBoxChange(FacilityBox3.Text);
-            switch (FacilityBox3.Text)
-            {
-                case "Advanced Construction":
-                    facType3.Value = 6M;
-                    break;
+                    return 4;
                 case "Construction":
-                    facType3.Value = 3M;
-                    break;
-                case "Advanced Shipyard":
-                    facType3.Value = 4M;
-                    break;
-                case "Shipyard":
-                    facType3.Value = 1M;
-                    break;
-                case "Advanced Troop Training":
-                    facType3.Value = 5M;
-                    break;
-                case "Training":
-                    facType3.Value = 2M;
-                    break;
-                case "Refinery":
-                    facType3.Value = 2M;
-                    break;
                 case "Shield":
-                    facType3.Value = 3M;
-                    break;
                 case "Shield Generator II":
-                    facType3.Value = 3M;
-                    break;
+                    return 3;
                 case "Laser":
-                    facType3.Value = 2M;
-                    break;
                 case "Laser II":
-                    facType3.Value = 2M;
-                    break;
-                case "Ion":
-                    facType3.Value = 1M;
-                    break;
-                default:
-                    facType3.Value = 0M;
-                    break;
-            }
-            SYFCCRTB.SetUnsavedData();
-        }
-
-        private void updateFacilityBox4(object sender, EventArgs e)
-        {
-            SYFCCRTB.Table[3].facilityNum = (byte)facilityBoxChange(FacilityBox4.Text);
-            switch (FacilityBox4.Text)
-            {
-                case "Advanced Construction":
-                    facType4.Value = 6M;
-                    break;
-                case "Construction":
-                    facType4.Value = 3M;
-                    break;
-                case "Advanced Shipyard":
-                    facType4.Value = 4M;
-                    break;
-                case "Shipyard":
-                    facType4.Value = 1M;
-                    break;
-                case "Advanced Troop Training":
-                    facType4.Value = 5M;
-                    break;
-                case "Training":
-                    facType4.Value = 2M;
-                    break;
                 case "Refinery":
-                    facType4.Value = 2M;
-                    break;
-                case "Shield":
-                    facType4.Value = 3M;
-                    break;
-                case "Shield Generator II":
-                    facType4.Value = 3M;
-                    break;
-                case "Laser":
-                    facType4.Value = 2M;
-                    break;
-                case "Laser II":
-                    facType4.Value = 2M;
-                    break;
-                case "Ion":
-                    facType4.Value = 1M;
-                    break;
-                default:
-                    facType4.Value = 0M;
-                    break;
-            }
-            SYFCCRTB.SetUnsavedData();
-        }
-
-        private void updateFacilityBox5(object sender, EventArgs e)
-        {
-            SYFCCRTB.Table[4].facilityNum = (byte)facilityBoxChange(FacilityBox5.Text);
-            switch (FacilityBox5.Text)
-            {
-                case "Advanced Construction":
-                    facType5.Value = 6M;
-                    break;
-                case "Construction":
-                    facType5.Value = 3M;
-                    break;
-                case "Advanced Shipyard":
-                    facType5.Value = 4M;
-                    break;
-                case "Shipyard":
-                    facType5.Value = 1M;
-                    break;
-                case "Advanced Troop Training":
-                    facType5.Value = 5M;
-                    break;
                 case "Training":
-                    facType5.Value = 2M;
-                    break;
-                case "Refinery":
-                    facType5.Value = 2M;
-                    break;
-                case "Shield":
-                    facType5.Value = 3M;
-                    break;
-                case "Shield Generator II":
-                    facType5.Value = 3M;
-                    break;
-                case "Laser":
-                    facType5.Value = 2M;
-                    break;
-                case "Laser II":
-                    facType5.Value = 2M;
-                    break;
+                    return 2;
                 case "Ion":
-                    facType5.Value = 1M;
-                    break;
-                default:
-                    facType5.Value = 0M;
-                    break;
-            }
-            SYFCCRTB.SetUnsavedData();
-        }
-
-        private void updateFacilityBox6(object sender, EventArgs e)
-        {
-            SYFCCRTB.Table[5].facilityNum = (byte)facilityBoxChange(FacilityBox6.Text);
-            switch (FacilityBox6.Text)
-            {
-                case "Advanced Construction":
-                    facType6.Value = 6M;
-                    break;
-                case "Construction":
-                    facType6.Value = 3M;
-                    break;
-                case "Advanced Shipyard":
-                    facType6.Value = 4M;
-                    break;
                 case "Shipyard":
-                    facType6.Value = 1M;
-                    break;
-                case "Advanced Troop Training":
-                    facType6.Value = 5M;
-                    break;
-                case "Training":
-                    facType6.Value = 2M;
-                    break;
-                case "Refinery":
-                    facType6.Value = 2M;
-                    break;
-                case "Shield":
-                    facType6.Value = 3M;
-                    break;
-                case "Shield Generator II":
-                    facType6.Value = 3M;
-                    break;
-                case "Laser":
-                    facType6.Value = 2M;
-                    break;
-                case "Laser II":
-                    facType6.Value = 2M;
-                    break;
-                case "Ion":
-                    facType6.Value = 1M;
-                    break;
+                    return 1;
                 default:
-                    facType6.Value = 0M;
-                    break;
+                    return 0;
             }
-            SYFCCRTB.SetUnsavedData();
         }
-
-        private void updateFacilityBox7(object sender, EventArgs e)
+        public void UpdateFacilityComboBox(ComboBox facility, decimal newFacilityId)
         {
-            SYFCCRTB.Table[6].facilityNum = (byte)facilityBoxChange(FacilityBox7.Text);
-            switch (FacilityBox7.Text)
-            {
-                case "Advanced Construction":
-                    facType7.Value = 6M;
-                    break;
-                case "Construction":
-                    facType7.Value = 3M;
-                    break;
-                case "Advanced Shipyard":
-                    facType7.Value = 4M;
-                    break;
-                case "Shipyard":
-                    facType7.Value = 1M;
-                    break;
-                case "Advanced Troop Training":
-                    facType7.Value = 5M;
-                    break;
-                case "Training":
-                    facType7.Value = 2M;
-                    break;
-                case "Refinery":
-                    facType7.Value = 2M;
-                    break;
-                case "Shield":
-                    facType7.Value = 3M;
-                    break;
-                case "Shield Generator II":
-                    facType7.Value = 3M;
-                    break;
-                case "Laser":
-                    facType7.Value = 2M;
-                    break;
-                case "Laser II":
-                    facType7.Value = 2M;
-                    break;
-                case "Ion":
-                    facType7.Value = 1M;
-                    break;
-                default:
-                    facType7.Value = 0M;
-                    break;
-            }
-            SYFCCRTB.SetUnsavedData();
+            if (facility.Text == "Advanced Construction" && newFacilityId == 1)
+                facility.Text = "Construction";
+            else if (facility.Text == "Advanced Troop Training" && newFacilityId == 2)
+                facility.Text = "Training";
+            else if (facility.Text == "Advanced Shipyard" && newFacilityId == 3)
+                facility.Text = "Shipyard";
+            else if (facility.Text == "Construction" && newFacilityId == 4)
+                facility.Text = "Advanced Construction";
+            else if (facility.Text == "Training" && newFacilityId == 5)
+                facility.Text = "Advanced Troop Training";
+            else if (facility.Text == "Shipyard" && newFacilityId == 6)
+                facility.Text = "Advanced Shipyard";
         }
-
-        private void updateFacilityBox8(object sender, EventArgs e)
+        private void SelectFacilityIndex(ComboBox facility, SYFCCRTB_FacilityProbability facilityProbability)
         {
-            SYFCCRTB.Table[7].facilityNum = (byte)facilityBoxChange(FacilityBox8.Text);
-            switch (FacilityBox8.Text)
-            {
-                case "Advanced Construction":
-                    facType8.Value = 6M;
-                    break;
-                case "Construction":
-                    facType8.Value = 3M;
-                    break;
-                case "Advanced Shipyard":
-                    facType8.Value = 4M;
-                    break;
-                case "Shipyard":
-                    facType8.Value = 1M;
-                    break;
-                case "Advanced Troop Training":
-                    facType8.Value = 5M;
-                    break;
-                case "Training":
-                    facType8.Value = 2M;
-                    break;
-                case "Refinery":
-                    facType8.Value = 2M;
-                    break;
-                case "Shield":
-                    facType8.Value = 3M;
-                    break;
-                case "Shield Generator II":
-                    facType8.Value = 3M;
-                    break;
-                case "Laser":
-                    facType8.Value = 2M;
-                    break;
-                case "Laser II":
-                    facType8.Value = 2M;
-                    break;
-                case "Ion":
-                    facType8.Value = 1M;
-                    break;
-                default:
-                    facType8.Value = 0M;
-                    break;
-            }
-            SYFCCRTB.SetUnsavedData();
-        }
-
-        private void updateFacType1(object sender, EventArgs e)
-        {
-            if (FacilityBox1.Text == "Advanced Shipyard" && facType1.Value == 3M)
-            {
-                FacilityBox1.Text = "Shipyard";
-            }
-
-            if (FacilityBox1.Text == "Shipyard" && facType1.Value == 6M)
-            {
-                FacilityBox1.Text = "Advanced Shipyard";
-            }
-
-            if (FacilityBox1.Text == "Advanced Troop Training" && facType1.Value == 2M)
-            {
-                FacilityBox1.Text = "Training";
-            }
-
-            if (FacilityBox1.Text == "Training" && facType1.Value == 5M)
-            {
-                FacilityBox1.Text = "Advanced Troop Training";
-            }
-
-            if (FacilityBox1.Text == "Advanced Construction" && facType1.Value == 1M)
-            {
-                FacilityBox1.Text = "Construction";
-            }
-
-            if (FacilityBox1.Text == "Construction" && facType1.Value == 4M)
-            {
-                FacilityBox1.Text = "Advanced Construction";
-            }
-
-            SYFCCRTB.Table[0].entNum2 = (byte)facType1.Value;
-            SYFCCRTB.SetUnsavedData();
-        }
-
-        private void updateFacType2(object sender, EventArgs e)
-        {
-            if (FacilityBox2.Text == "Advanced Shipyard" && facType2.Value == 3M)
-            {
-                FacilityBox2.Text = "Shipyard";
-            }
-
-            if (FacilityBox2.Text == "Shipyard" && facType2.Value == 6M)
-            {
-                FacilityBox2.Text = "Advanced Shipyard";
-            }
-
-            if (FacilityBox2.Text == "Advanced Troop Training" && facType2.Value == 2M)
-            {
-                FacilityBox2.Text = "Training";
-            }
-
-            if (FacilityBox2.Text == "Training" && facType2.Value == 5M)
-            {
-                FacilityBox2.Text = "Advanced Troop Training";
-            }
-
-            if (FacilityBox2.Text == "Advanced Construction" && facType2.Value == 1M)
-            {
-                FacilityBox2.Text = "Construction";
-            }
-
-            if (FacilityBox2.Text == "Construction" && facType2.Value == 4M)
-            {
-                FacilityBox2.Text = "Advanced Construction";
-            }
-
-            SYFCCRTB.Table[1].entNum2 = (byte)facType2.Value;
-            SYFCCRTB.SetUnsavedData();
-        }
-
-        private void updateFacType3(object sender, EventArgs e)
-        {
-            if (FacilityBox3.Text == "Advanced Shipyard" && facType3.Value == 3M)
-            {
-                FacilityBox3.Text = "Shipyard";
-            }
-
-            if (FacilityBox3.Text == "Shipyard" && facType3.Value == 6M)
-            {
-                FacilityBox3.Text = "Advanced Shipyard";
-            }
-
-            if (FacilityBox3.Text == "Advanced Troop Training" && facType3.Value == 2M)
-            {
-                FacilityBox3.Text = "Training";
-            }
-
-            if (FacilityBox3.Text == "Training" && facType3.Value == 5M)
-            {
-                FacilityBox3.Text = "Advanced Troop Training";
-            }
-
-            if (FacilityBox3.Text == "Advanced Construction" && facType3.Value == 1M)
-            {
-                FacilityBox3.Text = "Construction";
-            }
-
-            if (FacilityBox3.Text == "Construction" && facType3.Value == 4M)
-            {
-                FacilityBox3.Text = "Advanced Construction";
-            }
-
-            SYFCCRTB.Table[2].entNum2 = (byte)facType3.Value;
-            SYFCCRTB.SetUnsavedData();
-        }
-
-        private void updateFacType4(object sender, EventArgs e)
-        {
-            if (FacilityBox4.Text == "Advanced Shipyard" && facType4.Value == 3M)
-            {
-                FacilityBox4.Text = "Shipyard";
-            }
-
-            if (FacilityBox4.Text == "Shipyard" && facType4.Value == 6M)
-            {
-                FacilityBox4.Text = "Advanced Shipyard";
-            }
-
-            if (FacilityBox4.Text == "Advanced Troop Training" && facType4.Value == 2M)
-            {
-                FacilityBox4.Text = "Training";
-            }
-
-            if (FacilityBox4.Text == "Training" && facType4.Value == 5M)
-            {
-                FacilityBox4.Text = "Advanced Troop Training";
-            }
-
-            if (FacilityBox4.Text == "Advanced Construction" && facType4.Value == 1M)
-            {
-                FacilityBox4.Text = "Construction";
-            }
-
-            if (FacilityBox4.Text == "Construction" && facType4.Value == 4M)
-            {
-                FacilityBox4.Text = "Advanced Construction";
-            }
-
-            SYFCCRTB.Table[3].entNum2 = (byte)facType4.Value;
-            SYFCCRTB.SetUnsavedData();
-        }
-
-        private void updateFacType5(object sender, EventArgs e)
-        {
-            if (FacilityBox5.Text == "Advanced Shipyard" && facType5.Value == 3M)
-            {
-                FacilityBox5.Text = "Shipyard";
-            }
-
-            if (FacilityBox5.Text == "Shipyard" && facType5.Value == 6M)
-            {
-                FacilityBox5.Text = "Advanced Shipyard";
-            }
-
-            if (FacilityBox5.Text == "Advanced Troop Training" && facType5.Value == 2M)
-            {
-                FacilityBox5.Text = "Training";
-            }
-
-            if (FacilityBox5.Text == "Training" && facType5.Value == 5M)
-            {
-                FacilityBox5.Text = "Advanced Troop Training";
-            }
-
-            if (FacilityBox5.Text == "Advanced Construction" && facType5.Value == 1M)
-            {
-                FacilityBox5.Text = "Construction";
-            }
-
-            if (FacilityBox5.Text == "Construction" && facType5.Value == 4M)
-            {
-                FacilityBox5.Text = "Advanced Construction";
-            }
-
-            SYFCCRTB.Table[4].entNum2 = (byte)facType5.Value;
-            SYFCCRTB.SetUnsavedData();
-        }
-
-        private void updateFacType6(object sender, EventArgs e)
-        {
-            if (FacilityBox6.Text == "Advanced Shipyard" && facType6.Value == 3M)
-            {
-                FacilityBox6.Text = "Shipyard";
-            }
-
-            if (FacilityBox6.Text == "Shipyard" && facType6.Value == 6M)
-            {
-                FacilityBox6.Text = "Advanced Shipyard";
-            }
-
-            if (FacilityBox6.Text == "Advanced Troop Training" && facType6.Value == 2M)
-            {
-                FacilityBox6.Text = "Training";
-            }
-
-            if (FacilityBox6.Text == "Training" && facType6.Value == 5M)
-            {
-                FacilityBox6.Text = "Advanced Troop Training";
-            }
-
-            if (FacilityBox6.Text == "Advanced Construction" && facType6.Value == 1M)
-            {
-                FacilityBox6.Text = "Construction";
-            }
-
-            if (FacilityBox6.Text == "Construction" && facType6.Value == 4M)
-            {
-                FacilityBox6.Text = "Advanced Construction";
-            }
-
-            SYFCCRTB.Table[5].entNum2 = (byte)facType6.Value;
-            SYFCCRTB.SetUnsavedData();
-        }
-
-        private void updateFacType7(object sender, EventArgs e)
-        {
-            if (FacilityBox7.Text == "Advanced Shipyard" && facType7.Value == 3M)
-            {
-                FacilityBox7.Text = "Shipyard";
-            }
-
-            if (FacilityBox7.Text == "Shipyard" && facType7.Value == 6M)
-            {
-                FacilityBox7.Text = "Advanced Shipyard";
-            }
-
-            if (FacilityBox7.Text == "Advanced Troop Training" && facType7.Value == 2M)
-            {
-                FacilityBox7.Text = "Training";
-            }
-
-            if (FacilityBox7.Text == "Training" && facType7.Value == 5M)
-            {
-                FacilityBox7.Text = "Advanced Troop Training";
-            }
-
-            if (FacilityBox7.Text == "Advanced Construction" && facType7.Value == 1M)
-            {
-                FacilityBox7.Text = "Construction";
-            }
-
-            if (FacilityBox7.Text == "Construction" && facType7.Value == 4M)
-            {
-                FacilityBox7.Text = "Advanced Construction";
-            }
-
-            SYFCCRTB.Table[6].entNum2 = (byte)facType7.Value;
-            SYFCCRTB.SetUnsavedData();
-        }
-
-        private void updateFacType8(object sender, EventArgs e)
-        {
-            if (FacilityBox8.Text == "Advanced Shipyard" && facType8.Value == 3M)
-            {
-                FacilityBox8.Text = "Shipyard";
-            }
-
-            if (FacilityBox8.Text == "Shipyard" && facType8.Value == 6M)
-            {
-                FacilityBox8.Text = "Advanced Shipyard";
-            }
-
-            if (FacilityBox8.Text == "Advanced Troop Training" && facType8.Value == 2M)
-            {
-                FacilityBox8.Text = "Training";
-            }
-
-            if (FacilityBox8.Text == "Training" && facType8.Value == 5M)
-            {
-                FacilityBox8.Text = "Advanced Troop Training";
-            }
-
-            if (FacilityBox8.Text == "Advanced Construction" && facType8.Value == 1M)
-            {
-                FacilityBox8.Text = "Construction";
-            }
-
-            if (FacilityBox8.Text == "Construction" && facType8.Value == 4M)
-            {
-                FacilityBox8.Text = "Advanced Construction";
-            }
-
-            SYFCCRTB.Table[7].entNum2 = (byte)facType8.Value;
-            SYFCCRTB.SetUnsavedData();
-        }
-
-        private void updatePercNum1(object sender, EventArgs e)
-        {
-            SYFCCRTB.Table[0].ent1chance = (ushort)percNum1.Value;
-            SYFCCRTB.SetUnsavedData();
-        }
-
-        private void updatePercNum2(object sender, EventArgs e)
-        {
-            SYFCCRTB.Table[1].ent1chance = (ushort)percNum2.Value;
-            SYFCCRTB.SetUnsavedData();
-        }
-
-        private void updatePercNum3(object sender, EventArgs e)
-        {
-            SYFCCRTB.Table[2].ent1chance = (ushort)percNum3.Value;
-            SYFCCRTB.SetUnsavedData();
-        }
-
-        private void updatePercNum4(object sender, EventArgs e)
-        {
-            SYFCCRTB.Table[3].ent1chance = (ushort)percNum4.Value;
-            SYFCCRTB.SetUnsavedData();
-        }
-
-        private void updatePercNum5(object sender, EventArgs e)
-        {
-            SYFCCRTB.Table[4].ent1chance = (ushort)percNum5.Value;
-            SYFCCRTB.SetUnsavedData();
-        }
-
-        private void updatePercNum6(object sender, EventArgs e)
-        {
-            SYFCCRTB.Table[5].ent1chance = (ushort)percNum6.Value;
-            SYFCCRTB.SetUnsavedData();
-        }
-
-        private void updatePercNum7(object sender, EventArgs e)
-        {
-            SYFCCRTB.Table[6].ent1chance = (ushort)percNum7.Value;
-            SYFCCRTB.SetUnsavedData();
-        }
-
-        private void updatePercNum8(object sender, EventArgs e)
-        {
-            SYFCCRTB.Table[7].ent1chance = (ushort)percNum8.Value;
-            SYFCCRTB.SetUnsavedData();
-        }
-
-        private void SetFacilityBox()
-        {
-            switch (SYFCCRTB.Table[0].facilityNum)
+            switch (facilityProbability.FacilityId)
             {
                 case 34:
-                    FacilityBox1.SelectedIndex = FacilityBox1.FindString("Ion");
+                    facility.SelectedIndex = facility.FindString("Ion");
                     break;
                 case 35:
-                    FacilityBox1.SelectedIndex = FacilityBox1.FindString("Laser");
+                    facility.SelectedIndex = facility.FindString("Laser");
                     break;
                 case 36:
-                    FacilityBox1.SelectedIndex = FacilityBox1.FindString("Shield");
+                    facility.SelectedIndex = facility.FindString("Shield");
                     break;
                 case 40:
-                    if (SYFCCRTB.Table[0].entNum2 == 6)
+                    if (facilityProbability.TypeId == 6)
                     {
-                        FacilityBox1.SelectedIndex = FacilityBox1.FindString("Advanced Shipyard");
+                        facility.SelectedIndex = facility.FindString("Advanced Shipyard");
                         break;
                     }
-                    FacilityBox1.SelectedIndex = FacilityBox1.FindString("Shipyard");
+                    facility.SelectedIndex = facility.FindString("Shipyard");
                     break;
                 case 41:
-                    FacilityBox1.SelectedIndex = FacilityBox1.FindString("Training");
+                    if (facilityProbability.TypeId == 5)
+                    {
+                        facility.SelectedIndex = facility.FindString("Advanced Troop ");
+                        break;
+                    }
+                    facility.SelectedIndex = facilityBox2.FindString("Training");
                     break;
                 case 42:
-                    FacilityBox1.SelectedIndex = FacilityBox1.FindString("Construction");
+                    if (facilityProbability.TypeId == 4)
+                    {
+                        facility.SelectedIndex = facility.FindString("Advanced Construction");
+                        break;
+                    }
+                    facility.SelectedIndex = facility.FindString("Construction");
                     break;
                 case 45:
-                    FacilityBox1.SelectedIndex = FacilityBox1.FindString("Refinery");
-                    break;
-            }
-            switch (SYFCCRTB.Table[1].facilityNum)
-            {
-                case 34:
-                    FacilityBox2.SelectedIndex = FacilityBox2.FindString("Ion");
-                    break;
-                case 35:
-                    FacilityBox2.SelectedIndex = FacilityBox2.FindString("Laser");
-                    break;
-                case 36:
-                    FacilityBox2.SelectedIndex = FacilityBox2.FindString("Shield");
-                    break;
-                case 40:
-                    if (SYFCCRTB.Table[1].entNum2 == 6)
-                    {
-                        FacilityBox2.SelectedIndex = FacilityBox2.FindString("Advanced Shipyard");
-                        break;
-                    }
-                    FacilityBox2.SelectedIndex = FacilityBox2.FindString("Shipyard");
-                    break;
-                case 41:
-                    FacilityBox2.SelectedIndex = FacilityBox2.FindString("Training");
-                    break;
-                case 42:
-                    FacilityBox2.SelectedIndex = FacilityBox2.FindString("Construction");
-                    break;
-                case 45:
-                    FacilityBox2.SelectedIndex = FacilityBox2.FindString("Refinery");
-                    break;
-            }
-            switch (SYFCCRTB.Table[2].facilityNum)
-            {
-                case 34:
-                    FacilityBox3.SelectedIndex = FacilityBox3.FindString("Ion");
-                    break;
-                case 35:
-                    FacilityBox3.SelectedIndex = FacilityBox3.FindString("Laser");
-                    break;
-                case 36:
-                    FacilityBox3.SelectedIndex = FacilityBox3.FindString("Shield");
-                    break;
-                case 40:
-                    if (SYFCCRTB.Table[2].entNum2 == 6)
-                    {
-                        FacilityBox3.SelectedIndex = FacilityBox3.FindString("Advanced Shipyard");
-                        break;
-                    }
-                    FacilityBox3.SelectedIndex = FacilityBox3.FindString("Shipyard");
-                    break;
-                case 41:
-                    if (SYFCCRTB.Table[2].entNum2 == 5)
-                    {
-                        FacilityBox3.SelectedIndex = FacilityBox3.FindString("Advanced Troop ");
-                        break;
-                    }
-                    FacilityBox3.SelectedIndex = FacilityBox3.FindString("Training");
-                    break;
-                case 42:
-                    if (SYFCCRTB.Table[2].entNum2 == 4)
-                    {
-                        FacilityBox3.SelectedIndex = FacilityBox3.FindString("Advanced Construction");
-                        break;
-                    }
-                    FacilityBox3.SelectedIndex = FacilityBox3.FindString("Construction");
-                    break;
-                case 45:
-                    FacilityBox3.SelectedIndex = FacilityBox3.FindString("Refinery");
-                    break;
-            }
-            switch (SYFCCRTB.Table[3].facilityNum)
-            {
-                case 34:
-                    FacilityBox4.SelectedIndex = FacilityBox4.FindString("Ion");
-                    break;
-                case 35:
-                    FacilityBox4.SelectedIndex = FacilityBox4.FindString("Laser");
-                    break;
-                case 36:
-                    FacilityBox4.SelectedIndex = FacilityBox4.FindString("Shield");
-                    break;
-                case 40:
-                    if (SYFCCRTB.Table[3].entNum2 == 6)
-                    {
-                        FacilityBox4.SelectedIndex = FacilityBox4.FindString("Advanced Shipyard");
-                        break;
-                    }
-                    FacilityBox4.SelectedIndex = FacilityBox4.FindString("Shipyard");
-                    break;
-                case 41:
-                    if (SYFCCRTB.Table[3].entNum2 == 5)
-                    {
-                        FacilityBox4.SelectedIndex = FacilityBox4.FindString("Advanced Troop ");
-                        break;
-                    }
-                    FacilityBox4.SelectedIndex = FacilityBox4.FindString("Training");
-                    break;
-                case 42:
-                    if (SYFCCRTB.Table[3].entNum2 == 4)
-                    {
-                        FacilityBox4.SelectedIndex = FacilityBox4.FindString("Advanced Construction");
-                        break;
-                    }
-                    FacilityBox4.SelectedIndex = FacilityBox4.FindString("Construction");
-                    break;
-                case 45:
-                    FacilityBox4.SelectedIndex = FacilityBox4.FindString("Refinery");
-                    break;
-            }
-            switch (SYFCCRTB.Table[4].facilityNum)
-            {
-                case 34:
-                    FacilityBox5.SelectedIndex = FacilityBox5.FindString("Ion");
-                    break;
-                case 35:
-                    FacilityBox5.SelectedIndex = FacilityBox5.FindString("Laser");
-                    break;
-                case 36:
-                    FacilityBox5.SelectedIndex = FacilityBox5.FindString("Shield");
-                    break;
-                case 40:
-                    if (SYFCCRTB.Table[4].entNum2 == 6)
-                    {
-                        FacilityBox5.SelectedIndex = FacilityBox5.FindString("Advanced Shipyard");
-                        break;
-                    }
-                    FacilityBox5.SelectedIndex = FacilityBox5.FindString("Shipyard");
-                    break;
-                case 41:
-                    if (SYFCCRTB.Table[4].entNum2 == 5)
-                    {
-                        FacilityBox5.SelectedIndex = FacilityBox5.FindString("Advanced Troop ");
-                        break;
-                    }
-                    FacilityBox5.SelectedIndex = FacilityBox5.FindString("Training");
-                    break;
-                case 42:
-                    if (SYFCCRTB.Table[4].entNum2 == 4)
-                    {
-                        FacilityBox5.SelectedIndex = FacilityBox5.FindString("Advanced Construction");
-                        break;
-                    }
-                    FacilityBox5.SelectedIndex = FacilityBox5.FindString("Construction");
-                    break;
-                case 45:
-                    FacilityBox5.SelectedIndex = FacilityBox5.FindString("Refinery");
-                    break;
-            }
-            switch (SYFCCRTB.Table[5].facilityNum)
-            {
-                case 34:
-                    FacilityBox6.SelectedIndex = FacilityBox6.FindString("Ion");
-                    break;
-                case 35:
-                    FacilityBox6.SelectedIndex = FacilityBox6.FindString("Laser");
-                    break;
-                case 36:
-                    FacilityBox6.SelectedIndex = FacilityBox6.FindString("Shield");
-                    break;
-                case 40:
-                    if (SYFCCRTB.Table[5].entNum2 == 6)
-                    {
-                        FacilityBox6.SelectedIndex = FacilityBox6.FindString("Advanced Shipyard");
-                        break;
-                    }
-                    FacilityBox6.SelectedIndex = FacilityBox6.FindString("Shipyard");
-                    break;
-                case 41:
-                    if (SYFCCRTB.Table[5].entNum2 == 5)
-                    {
-                        FacilityBox6.SelectedIndex = FacilityBox6.FindString("Advanced Troop ");
-                        break;
-                    }
-                    FacilityBox6.SelectedIndex = FacilityBox6.FindString("Training");
-                    break;
-                case 42:
-                    if (SYFCCRTB.Table[5].entNum2 == 4)
-                    {
-                        FacilityBox6.SelectedIndex = FacilityBox6.FindString("Advanced Construction");
-                        break;
-                    }
-                    FacilityBox6.SelectedIndex = FacilityBox6.FindString("Construction");
-                    break;
-                case 45:
-                    FacilityBox6.SelectedIndex = FacilityBox6.FindString("Refinery");
-                    break;
-            }
-            switch (SYFCCRTB.Table[6].facilityNum)
-            {
-                case 34:
-                    FacilityBox7.SelectedIndex = FacilityBox7.FindString("Ion");
-                    break;
-                case 35:
-                    FacilityBox7.SelectedIndex = FacilityBox7.FindString("Laser");
-                    break;
-                case 36:
-                    FacilityBox7.SelectedIndex = FacilityBox7.FindString("Shield");
-                    break;
-                case 40:
-                    if (SYFCCRTB.Table[6].entNum2 == 6)
-                    {
-                        FacilityBox7.SelectedIndex = FacilityBox7.FindString("Advanced Shipyard");
-                        break;
-                    }
-                    FacilityBox7.SelectedIndex = FacilityBox7.FindString("Shipyard");
-                    break;
-                case 41:
-                    if (SYFCCRTB.Table[6].entNum2 == 5)
-                    {
-                        FacilityBox7.SelectedIndex = FacilityBox7.FindString("Advanced Troop ");
-                        break;
-                    }
-                    FacilityBox7.SelectedIndex = FacilityBox7.FindString("Training");
-                    break;
-                case 42:
-                    if (SYFCCRTB.Table[6].entNum2 == 4)
-                    {
-                        FacilityBox7.SelectedIndex = FacilityBox7.FindString("Advanced Construction");
-                        break;
-                    }
-                    FacilityBox7.SelectedIndex = FacilityBox7.FindString("Construction");
-                    break;
-                case 45:
-                    FacilityBox7.SelectedIndex = FacilityBox7.FindString("Refinery");
-                    break;
-            }
-            switch (SYFCCRTB.Table[7].facilityNum)
-            {
-                case 34:
-                    FacilityBox8.SelectedIndex = FacilityBox8.FindString("Ion");
-                    break;
-                case 35:
-                    FacilityBox8.SelectedIndex = FacilityBox8.FindString("Laser");
-                    break;
-                case 36:
-                    FacilityBox8.SelectedIndex = FacilityBox8.FindString("Shield");
-                    break;
-                case 40:
-                    if (SYFCCRTB.Table[7].entNum2 == 6)
-                    {
-                        FacilityBox8.SelectedIndex = FacilityBox8.FindString("Advanced Shipyard");
-                        break;
-                    }
-                    FacilityBox8.SelectedIndex = FacilityBox8.FindString("Shipyard");
-                    break;
-                case 41:
-                    if (SYFCCRTB.Table[7].entNum2 == 5)
-                    {
-                        FacilityBox8.SelectedIndex = FacilityBox8.FindString("Advanced Troop ");
-                        break;
-                    }
-                    FacilityBox8.SelectedIndex = FacilityBox8.FindString("Training");
-                    break;
-                case 42:
-                    if (SYFCCRTB.Table[7].entNum2 == 4)
-                    {
-                        FacilityBox8.SelectedIndex = FacilityBox8.FindString("Advanced Construction");
-                        break;
-                    }
-                    FacilityBox8.SelectedIndex = FacilityBox8.FindString("Construction");
-                    break;
-                case 45:
-                    FacilityBox8.SelectedIndex = FacilityBox8.FindString("Refinery");
+                    facility.SelectedIndex = facility.FindString("Refinery");
                     break;
             }
         }
 
-        private void DisplayTableData(int index)
+        #endregion
+
+        #region Control events
+
+        private void facilityBox0_SelectionChangeCommitted(object sender, EventArgs e)
         {
-            SYFCCRTB.LockChange();
-            percNum1.Value = SYFCCRTB.Table[0].ent1chance;
-            percNum2.Value = SYFCCRTB.Table[1].ent1chance;
-            percNum3.Value = SYFCCRTB.Table[2].ent1chance;
-            percNum4.Value = SYFCCRTB.Table[3].ent1chance;
-            percNum5.Value = SYFCCRTB.Table[4].ent1chance;
-            percNum6.Value = SYFCCRTB.Table[5].ent1chance;
-            percNum7.Value = SYFCCRTB.Table[6].ent1chance;
-            percNum8.Value = SYFCCRTB.Table[7].ent1chance;
-            facType1.Value = SYFCCRTB.Table[0].entNum2;
-            facType2.Value = SYFCCRTB.Table[1].entNum2;
-            facType3.Value = SYFCCRTB.Table[2].entNum2;
-            facType4.Value = SYFCCRTB.Table[3].entNum2;
-            facType5.Value = SYFCCRTB.Table[4].entNum2;
-            facType6.Value = SYFCCRTB.Table[5].entNum2;
-            facType7.Value = SYFCCRTB.Table[6].entNum2;
-            facType8.Value = SYFCCRTB.Table[7].entNum2;
-            SetFacilityBox();
-            SYFCCRTB.UnlockChange();
+            GameFile.FacilityProbabilities[0].FacilityId = FacilityStringToByte(facilityBox0.Text);
+            facilityType0.Value = FacilityStringToFacilityTypeDecimal(facilityBox0.Text);
+            GameFile.UnsavedData = true;
         }
-
-        private void TableForm_Load(object sender, EventArgs e)
+        private void facilityBox1_SelectionChangeCommitted(object sender, EventArgs e)
         {
-            if (RegistryKeys.PlaySounds)
-            {
-                Sound.Play(Resources.open_wav);
-            }
-
-            if (RegistryKeys.PlayMusic)
-            {
-                Sound.PlayRandomMusic();
-            }
-
-            DisplayTableData(0);
+            GameFile.FacilityProbabilities[1].FacilityId = FacilityStringToByte(facilityBox1.Text);
+            facilityType1.Value = FacilityStringToFacilityTypeDecimal(facilityBox1.Text);
+            GameFile.UnsavedData = true;
         }
-
-        private void SaveAs_Click(object sender, EventArgs e)
+        private void facilityBox2_SelectionChangeCommitted(object sender, EventArgs e)
         {
-            SaveFileDialog saveFileDialog = new SaveFileDialog();
-            saveFileDialog.InitialDirectory = RegistryKeys.InstalledLocation + "\\Gdata";
-            saveFileDialog.Filter = "Data Files (*.dat)| *.dat";
-            saveFileDialog.FileName = SYFCCRTB.fileName;
-            if (saveFileDialog.ShowDialog(this) != DialogResult.OK)
-            {
-                return;
-            }
-
-            SYFCCRTB.SaveTableData(saveFileDialog.FileName);
-            SYFCCRTB.ClearUnsavedData();
-            int num = (int)MessageBox.Show(this, "Table Data Saved", "", MessageBoxButtons.OK);
+            GameFile.FacilityProbabilities[2].FacilityId = FacilityStringToByte(facilityBox2.Text);
+            facilityType2.Value = FacilityStringToFacilityTypeDecimal(facilityBox2.Text);
+            GameFile.UnsavedData = true;
         }
-
-        private void openNew_Click(object sender, EventArgs e)
+        private void facilityBox3_SelectionChangeCommitted(object sender, EventArgs e)
         {
-            if (SYFCCRTB.unsavedTableData && MessageBox.Show(this, "Save Table data before opening new datafile?", "Save data", MessageBoxButtons.YesNo) == DialogResult.Yes)
-            {
-                SYFCCRTB.SaveTableData(SYFCCRTB.GetTablePath());
-                SYFCCRTB.ClearUnsavedData();
-            }
-            SYFCCRTB.OpenNewTableFile();
-            DisplayTableData(0);
+            GameFile.FacilityProbabilities[3].FacilityId = FacilityStringToByte(facilityBox3.Text);
+            facilityType3.Value = FacilityStringToFacilityTypeDecimal(facilityBox3.Text);
+            GameFile.UnsavedData = true;
         }
-
-        private void Cancel_Click(object sender, EventArgs e)
+        private void facilityBox4_SelectionChangeCommitted(object sender, EventArgs e)
         {
-            if (SYFCCRTB.unsavedTableData)
-            {
-                if (MessageBox.Show(this, "Unsaved Table data, are you sure you want to Close this Dialog?", "Save data", MessageBoxButtons.YesNo) != DialogResult.Yes)
-                {
-                    return;
-                }
-
-                Close();
-            }
-            else
-            {
-                Close();
-            }
+            GameFile.FacilityProbabilities[4].FacilityId = FacilityStringToByte(facilityBox4.Text);
+            facilityType4.Value = FacilityStringToFacilityTypeDecimal(facilityBox4.Text);
+            GameFile.UnsavedData = true;
         }
-
-        private void Ok_Click(object sender, EventArgs e)
+        private void facilityBox5_SelectionChangeCommitted(object sender, EventArgs e)
         {
-            if (SYFCCRTB.unsavedTableData)
-            {
-                SYFCCRTB.SaveTableData(SYFCCRTB.GetTablePath());
-                SYFCCRTB.ClearUnsavedData();
-            }
-            Close();
+            GameFile.FacilityProbabilities[5].FacilityId = FacilityStringToByte(facilityBox5.Text);
+            facilityType5.Value = FacilityStringToFacilityTypeDecimal(facilityBox5.Text);
+            GameFile.UnsavedData = true;
         }
-
-        private void TableForm_FormClosing(object sender, FormClosingEventArgs e)
+        private void facilityBox6_SelectionChangeCommitted(object sender, EventArgs e)
         {
-            if (RegistryKeys.PlaySounds)
-            {
-                Sound.Play(Resources.close_wav);
-            }
-
-            if (!RegistryKeys.PlayMusic)
-            {
-                return;
-            }
-
-            Sound.PlayRandomMusic();
+            GameFile.FacilityProbabilities[6].FacilityId = FacilityStringToByte(facilityBox6.Text);
+            facilityType6.Value = FacilityStringToFacilityTypeDecimal(facilityBox6.Text);
+            GameFile.UnsavedData = true;
         }
+        private void facilityBox7_SelectionChangeCommitted(object sender, EventArgs e)
+        {
+            GameFile.FacilityProbabilities[7].FacilityId = FacilityStringToByte(facilityBox7.Text);
+            facilityType7.Value = FacilityStringToFacilityTypeDecimal(facilityBox7.Text);
+            GameFile.UnsavedData = true;
+        }
+        private void facilityPercent0_ValueChanged(object sender, EventArgs e)
+        {
+            GameFile.FacilityProbabilities[0].Percent = (ushort)facilityPercent0.Value;
+            GameFile.UnsavedData = true;
+        }
+        private void facilityPercent1_ValueChanged(object sender, EventArgs e)
+        {
+            GameFile.FacilityProbabilities[1].Percent = (ushort)facilityPercent1.Value;
+            GameFile.UnsavedData = true;
+        }
+        private void facilityPercent2_ValueChanged(object sender, EventArgs e)
+        {
+            GameFile.FacilityProbabilities[2].Percent = (ushort)facilityPercent2.Value;
+            GameFile.UnsavedData = true;
+        }
+        private void facilityPercent3_ValueChanged(object sender, EventArgs e)
+        {
+            GameFile.FacilityProbabilities[3].Percent = (ushort)facilityPercent3.Value;
+            GameFile.UnsavedData = true;
+        }
+        private void facilityPercent4_ValueChanged(object sender, EventArgs e)
+        {
+            GameFile.FacilityProbabilities[4].Percent = (ushort)facilityPercent4.Value;
+            GameFile.UnsavedData = true;
+        }
+        private void facilityPercent5_ValueChanged(object sender, EventArgs e)
+        {
+            GameFile.FacilityProbabilities[5].Percent = (ushort)facilityPercent5.Value;
+            GameFile.UnsavedData = true;
+        }
+        private void facilityPercent6_ValueChanged(object sender, EventArgs e)
+        {
+            GameFile.FacilityProbabilities[6].Percent = (ushort)facilityPercent6.Value;
+            GameFile.UnsavedData = true;
+        }
+        private void facilityPercent7_ValueChanged(object sender, EventArgs e)
+        {
+            GameFile.FacilityProbabilities[7].Percent = (ushort)facilityPercent7.Value;
+            GameFile.UnsavedData = true;
+        }
+        private void facilityType0_ValueChanged(object sender, EventArgs e)
+        {
+            UpdateFacilityComboBox(facilityBox0, facilityType0.Value);
+            GameFile.FacilityProbabilities[0].TypeId = (byte)facilityType0.Value;
+            GameFile.UnsavedData = true;
+        }
+        private void facilityType1_ValueChanged(object sender, EventArgs e)
+        {
+            UpdateFacilityComboBox(facilityBox1, facilityType1.Value);
+            GameFile.FacilityProbabilities[1].TypeId = (byte)facilityType1.Value;
+            GameFile.UnsavedData = true;
+        }
+        private void facilityType2_ValueChanged(object sender, EventArgs e)
+        {
+            UpdateFacilityComboBox(facilityBox2, facilityType2.Value);
+            GameFile.FacilityProbabilities[2].TypeId = (byte)facilityType2.Value;
+            GameFile.UnsavedData = true;
+        }
+        private void facilityType3_ValueChanged(object sender, EventArgs e)
+        {
+            UpdateFacilityComboBox(facilityBox3, facilityType3.Value);
+            GameFile.FacilityProbabilities[3].TypeId = (byte)facilityType3.Value;
+            GameFile.UnsavedData = true;
+        }
+        private void facilityType4_ValueChanged(object sender, EventArgs e)
+        {
+            UpdateFacilityComboBox(facilityBox4, facilityType4.Value);
+            GameFile.FacilityProbabilities[4].TypeId = (byte)facilityType4.Value;
+            GameFile.UnsavedData = true;
+        }
+        private void facilityType5_ValueChanged(object sender, EventArgs e)
+        {
+            UpdateFacilityComboBox(facilityBox5, facilityType5.Value);
+            GameFile.FacilityProbabilities[5].TypeId = (byte)facilityType5.Value;
+            GameFile.UnsavedData = true;
+        }
+        private void facilityType6_ValueChanged(object sender, EventArgs e)
+        {
+            UpdateFacilityComboBox(facilityBox6, facilityType6.Value);
+            GameFile.FacilityProbabilities[6].TypeId = (byte)facilityType6.Value;
+            GameFile.UnsavedData = true;
+        }
+        private void facilityType7_ValueChanged(object sender, EventArgs e)
+        {
+            UpdateFacilityComboBox(facilityBox7, facilityType7.Value);
+            GameFile.FacilityProbabilities[7].TypeId = (byte)facilityType7.Value;
+            GameFile.UnsavedData = true;
+        }
+
+        #endregion
     }
 }

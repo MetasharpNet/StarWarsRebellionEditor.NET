@@ -32,6 +32,8 @@ namespace SwRebellionEditor
             //t11.Save("E:\\star wars rebellion\\GData\\SECTORSD2.DAT");
             var t12 = DatFile.Load<GNPRTB>("E:\\star wars rebellion\\GData\\GNPRTB.DAT");
             //t12.Save("E:\\star wars rebellion\\GData\\GNPRTB2.DAT");
+            var t13 = DatFile.Load<SYFCCRTB>("E:\\star wars rebellion\\GData\\SYFCCRTB.DAT");
+            t13.Save("E:\\star wars rebellion\\GData\\SYFCCRTB2.DAT");
 
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
