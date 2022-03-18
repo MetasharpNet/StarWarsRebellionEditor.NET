@@ -235,7 +235,7 @@ namespace SwRebellionEditor
             this.DisplayToolBar_ToolStripMenuItem.CheckOnClick = true;
             this.DisplayToolBar_ToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Checked;
             this.DisplayToolBar_ToolStripMenuItem.Name = "DisplayToolBar_ToolStripMenuItem";
-            this.DisplayToolBar_ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.DisplayToolBar_ToolStripMenuItem.Size = new System.Drawing.Size(167, 22);
             this.DisplayToolBar_ToolStripMenuItem.Text = "Display Toolbar";
             this.DisplayToolBar_ToolStripMenuItem.Click += new System.EventHandler(this.DisplayToolBar_ToolStripMenuItem_Click);
             // 
@@ -245,21 +245,21 @@ namespace SwRebellionEditor
             this.DisplayStatusBar_ToolStripMenuItem.CheckOnClick = true;
             this.DisplayStatusBar_ToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Checked;
             this.DisplayStatusBar_ToolStripMenuItem.Name = "DisplayStatusBar_ToolStripMenuItem";
-            this.DisplayStatusBar_ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.DisplayStatusBar_ToolStripMenuItem.Size = new System.Drawing.Size(167, 22);
             this.DisplayStatusBar_ToolStripMenuItem.Text = "Display Status Bar";
             this.DisplayStatusBar_ToolStripMenuItem.Click += new System.EventHandler(this.DisplayStatusBar_ToolStripMenuItem_Click);
             // 
             // PlayMusic_ToolStripMenuItem
             // 
             this.PlayMusic_ToolStripMenuItem.Name = "PlayMusic_ToolStripMenuItem";
-            this.PlayMusic_ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.PlayMusic_ToolStripMenuItem.Size = new System.Drawing.Size(167, 22);
             this.PlayMusic_ToolStripMenuItem.Text = "Play Music";
             this.PlayMusic_ToolStripMenuItem.Click += new System.EventHandler(this.PlayMusic_ToolStripMenuItem_Click);
             // 
             // PlaySounds_ToolStripMenuItem
             // 
             this.PlaySounds_ToolStripMenuItem.Name = "PlaySounds_ToolStripMenuItem";
-            this.PlaySounds_ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.PlaySounds_ToolStripMenuItem.Size = new System.Drawing.Size(167, 22);
             this.PlaySounds_ToolStripMenuItem.Text = "Play Sounds";
             this.PlaySounds_ToolStripMenuItem.Click += new System.EventHandler(this.PlaySounds_ToolStripMenuItem_Click);
             // 
@@ -289,7 +289,7 @@ namespace SwRebellionEditor
             // 
             this.Sectors_ToolStripMenuItem.Image = global::SwRebellionEditor.Resources.sector_16x16_bmp;
             this.Sectors_ToolStripMenuItem.Name = "Sectors_ToolStripMenuItem";
-            this.Sectors_ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.Sectors_ToolStripMenuItem.Size = new System.Drawing.Size(117, 22);
             this.Sectors_ToolStripMenuItem.Text = "Sectors";
             this.Sectors_ToolStripMenuItem.Click += new System.EventHandler(this.Sectors_ToolStripMenuItem_Click);
             // 
@@ -297,7 +297,7 @@ namespace SwRebellionEditor
             // 
             this.Systems_ToolStripMenuItem.Image = global::SwRebellionEditor.Resources.planet_37x37_bmp;
             this.Systems_ToolStripMenuItem.Name = "Systems_ToolStripMenuItem";
-            this.Systems_ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.Systems_ToolStripMenuItem.Size = new System.Drawing.Size(117, 22);
             this.Systems_ToolStripMenuItem.Text = "Systems";
             this.Systems_ToolStripMenuItem.Click += new System.EventHandler(this.Systems_ToolStripMenuItem_Click);
             // 
@@ -419,7 +419,7 @@ namespace SwRebellionEditor
             // GeneralParametersTables_ToolStripMenuItem
             // 
             this.GeneralParametersTables_ToolStripMenuItem.Name = "GeneralParametersTables_ToolStripMenuItem";
-            this.GeneralParametersTables_ToolStripMenuItem.Size = new System.Drawing.Size(177, 22);
+            this.GeneralParametersTables_ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.GeneralParametersTables_ToolStripMenuItem.Text = "HyperSpace Speeds";
             this.GeneralParametersTables_ToolStripMenuItem.Click += new System.EventHandler(this.GeneralParametersTables_ToolStripMenuItem_Click);
             // 
@@ -429,7 +429,7 @@ namespace SwRebellionEditor
             this.SystemFacilitiesCoreTables_ToolStripMenuItem,
             this.SystemFacilitiesRimTables_ToolStripMenuItem});
             this.ProbabilityTables_ToolStripMenuItem.Name = "ProbabilityTables_ToolStripMenuItem";
-            this.ProbabilityTables_ToolStripMenuItem.Size = new System.Drawing.Size(177, 22);
+            this.ProbabilityTables_ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.ProbabilityTables_ToolStripMenuItem.Text = "Probability Tables";
             // 
             // SystemFacilitiesCoreTables_ToolStripMenuItem
@@ -453,15 +453,16 @@ namespace SwRebellionEditor
             this.CMUNEmpireTables_ToolStripMenuItem,
             this.AllianceHq_ToolStripMenuItem,
             this.CMUNAllianceTables_ToolStripMenuItem});
+            this.StartingFleets_ToolStripMenuItem.Enabled = false;
             this.StartingFleets_ToolStripMenuItem.Name = "StartingFleets_ToolStripMenuItem";
-            this.StartingFleets_ToolStripMenuItem.Size = new System.Drawing.Size(177, 22);
+            this.StartingFleets_ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.StartingFleets_ToolStripMenuItem.Text = "Starting Fleets";
             // 
             // EmpireHq_ToolStripMenuItem
             // 
             this.EmpireHq_ToolStripMenuItem.Enabled = false;
             this.EmpireHq_ToolStripMenuItem.Name = "EmpireHq_ToolStripMenuItem";
-            this.EmpireHq_ToolStripMenuItem.Size = new System.Drawing.Size(160, 22);
+            this.EmpireHq_ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.EmpireHq_ToolStripMenuItem.Text = "Empire HQ Fleet";
             this.EmpireHq_ToolStripMenuItem.ToolTipText = "Starting Fleet on Coruscant";
             // 
@@ -469,7 +470,7 @@ namespace SwRebellionEditor
             // 
             this.CMUNEmpireTables_ToolStripMenuItem.Enabled = false;
             this.CMUNEmpireTables_ToolStripMenuItem.Name = "CMUNEmpireTables_ToolStripMenuItem";
-            this.CMUNEmpireTables_ToolStripMenuItem.Size = new System.Drawing.Size(160, 22);
+            this.CMUNEmpireTables_ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.CMUNEmpireTables_ToolStripMenuItem.Text = "Empire Random";
             this.CMUNEmpireTables_ToolStripMenuItem.ToolTipText = "Randomly Generated Empiral Starting Fleet";
             this.CMUNEmpireTables_ToolStripMenuItem.Click += new System.EventHandler(this.CMUNEmpireTables_ToolStripMenuItem_Click);
@@ -478,14 +479,14 @@ namespace SwRebellionEditor
             // 
             this.AllianceHq_ToolStripMenuItem.Enabled = false;
             this.AllianceHq_ToolStripMenuItem.Name = "AllianceHq_ToolStripMenuItem";
-            this.AllianceHq_ToolStripMenuItem.Size = new System.Drawing.Size(160, 22);
+            this.AllianceHq_ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.AllianceHq_ToolStripMenuItem.Text = "Rebel HQ";
             this.AllianceHq_ToolStripMenuItem.ToolTipText = "Starting Fleet with Rebel Headquarters";
             // 
             // CMUNAllianceTables_ToolStripMenuItem
             // 
             this.CMUNAllianceTables_ToolStripMenuItem.Name = "CMUNAllianceTables_ToolStripMenuItem";
-            this.CMUNAllianceTables_ToolStripMenuItem.Size = new System.Drawing.Size(160, 22);
+            this.CMUNAllianceTables_ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.CMUNAllianceTables_ToolStripMenuItem.Text = "Rebel Random";
             this.CMUNAllianceTables_ToolStripMenuItem.ToolTipText = "Randomly Generated Rebel Starting Fleet";
             this.CMUNAllianceTables_ToolStripMenuItem.Click += new System.EventHandler(this.CMUNAllianceTables_ToolStripMenuItem_Click);
