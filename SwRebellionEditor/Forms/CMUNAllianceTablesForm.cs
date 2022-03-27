@@ -1,5 +1,5 @@
 ﻿namespace SwRebellionEditor
-{
+{/*
     public partial class CMUNAllianceTablesForm : Form
     {
         public CMUNAllianceTablesForm()
@@ -1165,4 +1165,4 @@
             Close();
         }
     }
-}
+*/}

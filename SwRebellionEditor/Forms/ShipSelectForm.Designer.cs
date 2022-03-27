@@ -4,7 +4,7 @@ using System.Drawing;
 using System.Windows.Forms;
 
 namespace SwRebellionEditor
-{
+{/*
     partial class ShipSelectForm
     {
         /// <summary>
@@ -194,4 +194,4 @@ namespace SwRebellionEditor
 
         #endregion
     }
-}
+*/}

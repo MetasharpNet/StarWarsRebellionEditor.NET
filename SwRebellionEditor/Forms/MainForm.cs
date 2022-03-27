@@ -380,13 +380,13 @@ namespace SwRebellionEditor
         // Editor - Test Code - Starting Fleets - Empire Random
         private void CMUNEmpireTables_ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Show<CMUNAllianceTablesForm>(); // EMPIRE version
+            //Show<CMUNAllianceTablesForm>(); // EMPIRE version
         }
         // Editor - Test Code - Starting Fleets - Rebel HQ
         // Editor - Test Code - Starting Fleets - Rebel Random
         private void CMUNAllianceTables_ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Show<CMUNAllianceTablesForm>();
+            //Show<CMUNAllianceTablesForm>();
         }
 
 

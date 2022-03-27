@@ -1,5 +1,5 @@
 ﻿namespace SwRebellionEditor
-{
+{/*
     public partial class ShipSelectForm : Form
     {
         public ShipSelectForm()
@@ -98,4 +98,4 @@
             Close();
         }
     }
-}
+*/}

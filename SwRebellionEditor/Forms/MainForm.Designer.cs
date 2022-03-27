@@ -507,35 +507,35 @@ namespace SwRebellionEditor
             // Cascade_ToolStripMenuItem
             // 
             this.Cascade_ToolStripMenuItem.Name = "Cascade_ToolStripMenuItem";
-            this.Cascade_ToolStripMenuItem.Size = new System.Drawing.Size(150, 22);
+            this.Cascade_ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.Cascade_ToolStripMenuItem.Text = "Cascade";
             this.Cascade_ToolStripMenuItem.Click += new System.EventHandler(this.Cascade_ToolStripMenuItem_Click);
             // 
             // TileVertical_ToolStripMenuItem
             // 
             this.TileVertical_ToolStripMenuItem.Name = "TileVertical_ToolStripMenuItem";
-            this.TileVertical_ToolStripMenuItem.Size = new System.Drawing.Size(150, 22);
+            this.TileVertical_ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.TileVertical_ToolStripMenuItem.Text = "Tile Vertical";
             this.TileVertical_ToolStripMenuItem.Click += new System.EventHandler(this.TileVertical_ToolStripMenuItem_Click);
             // 
             // TileHorizontal_ToolStripMenuItem
             // 
             this.TileHorizontal_ToolStripMenuItem.Name = "TileHorizontal_ToolStripMenuItem";
-            this.TileHorizontal_ToolStripMenuItem.Size = new System.Drawing.Size(150, 22);
+            this.TileHorizontal_ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.TileHorizontal_ToolStripMenuItem.Text = "Tile Horizontal";
             this.TileHorizontal_ToolStripMenuItem.Click += new System.EventHandler(this.TileHorizontal_ToolStripMenuItem_Click);
             // 
             // CloseAll_ToolStripMenuItem
             // 
             this.CloseAll_ToolStripMenuItem.Name = "CloseAll_ToolStripMenuItem";
-            this.CloseAll_ToolStripMenuItem.Size = new System.Drawing.Size(150, 22);
+            this.CloseAll_ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.CloseAll_ToolStripMenuItem.Text = "Close All";
             this.CloseAll_ToolStripMenuItem.Click += new System.EventHandler(this.CloseAll_ToolStripMenuItem_Click);
             // 
             // ArrangeIcons_ToolStripMenuItem
             // 
             this.ArrangeIcons_ToolStripMenuItem.Name = "ArrangeIcons_ToolStripMenuItem";
-            this.ArrangeIcons_ToolStripMenuItem.Size = new System.Drawing.Size(150, 22);
+            this.ArrangeIcons_ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.ArrangeIcons_ToolStripMenuItem.Text = "Arrange Icons";
             this.ArrangeIcons_ToolStripMenuItem.Click += new System.EventHandler(this.ArrangeIcons_ToolStripMenuItem_Click);
             // 
@@ -549,7 +549,7 @@ namespace SwRebellionEditor
             this.RestoreDefaults_ToolStripMenuItem,
             this.RestorePreviousSave_ToolStripMenuItem});
             this.Options_ToolStripMenuItem.Name = "Options_ToolStripMenuItem";
-            this.Options_ToolStripMenuItem.Size = new System.Drawing.Size(150, 22);
+            this.Options_ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.Options_ToolStripMenuItem.Text = "Options";
             // 
             // Size1280x1024_ToolStripMenuItem

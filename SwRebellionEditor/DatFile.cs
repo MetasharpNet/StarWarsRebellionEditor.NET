@@ -83,12 +83,14 @@ namespace SwRebellionEditor
                     default:
                         if (fieldType.IsArray)
                         {
-                            dynamic array = Activator.CreateInstance(inputFieldInfo.FieldType, arraySizes[currentArray]);
-                            for (int i = 0; i < arraySizes[currentArray]; ++i)
+                            dynamic tArray = inputFieldInfo.GetValue(outputObject);
+                            var arraySize = (tArray != null) ? tArray.Length : arraySizes[currentArray];
+                            dynamic array = Activator.CreateInstance(inputFieldInfo.FieldType, arraySize);
+                            for (int i = 0; i < arraySize; ++i)
                             {
                                 dynamic arrayElement = Activator.CreateInstance(inputFieldInfo.FieldType.GetElementType());
                                 array[i] = arrayElement;
-                                LoadFields(inputBinaryReader, inputFieldInfo.FieldType.GetElementType().GetFields(), arrayElement); ;
+                                LoadFields(inputBinaryReader, inputFieldInfo.FieldType.GetElementType().GetFields(), arrayElement);
                             }
                             ++currentArray;
                             inputFieldInfo.SetValue(outputObject, array);
