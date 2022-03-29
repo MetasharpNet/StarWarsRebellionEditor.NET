@@ -2,28 +2,28 @@
 {
     public class SYSTEMSD : DatFile
     {
-        public uint UnknownHeader1; // 1
+        public uint Field1_1; // 1
         [ArraySize]
         public uint SystemsCount; // 200
         public uint FamilyId; // 144
-        public uint UnknownHeader2; // 152
+        public uint Field4_152; // 152
         public SYSTEMSD_System[] Systems;
     }
     public class SYSTEMSD_System
     {
         public uint SystemId;
-        public uint Unknown1;
+        public uint Field2_Unknown;
         public uint ProductionFacility;
         public uint NextProductionFacility;
         public uint FamilyId;
         public ushort TextStraDllId;
-        public ushort Unknown2;
+        public ushort Field7_Unknown;
         public uint SectorId;
         public uint PictureId;
-        public uint Unknown3;
+        public uint Field10_Unknown;
         public ushort XPosition;
         public ushort YPosition;
-        public uint Unknown4;
+        public uint Field13_Unknown;
         [Ignore]
         public string EncyclopediaName;
         [Ignore]

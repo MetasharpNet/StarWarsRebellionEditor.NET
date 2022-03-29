@@ -2,25 +2,25 @@
 {
     public class PROFACSD : DatFile
     {
-        public uint UnknownHeader1; // 1
+        public uint Field1_1; // 1
         [ArraySize]
         public uint ProductionFacilitiesCount; // 2
-        public uint FamilyIdHeader; // 44
-        public uint UnknownHeader2; // 48
+        public uint FamilyId; // 44
+        public uint Field4_48; // 48
         public PROFACSD_ProductionFacility[] ProductionFacilities;
     }
     public class PROFACSD_ProductionFacility
     {
         public uint UnitId;
-        public uint Unknown1;
+        public uint Field2_Unknown;
         public uint ProductionFacility;
         public uint NextProductionFacility;
         public uint FamilyId;
         public ushort TextStraDllId;
-        public ushort Unknown2;
+        public ushort Field7_Unknown;
         public uint IsAllianceUnit;
         public uint IsEmpireUnit;
-        public uint ConstructionCost;
+        public uint RefinedMaterialCost;
         public uint MaintenanceCost;
         public uint ResearchOrder;
         public uint ResearchDifficulty;

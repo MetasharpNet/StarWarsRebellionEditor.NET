@@ -20,9 +20,9 @@
         {
             var previousUnsavedData = GameFile.UnsavedData;
             var troop = GameFile.Troops[selectorIndex];
-            atttackRating.Value = troop.AttackRating;
-            constructionCost.Value = troop.ConstructionCost;
-            defenseRating.Value = troop.DefenseRating;
+            atttackRating.Value = troop.AttackStrength;
+            constructionCost.Value = troop.RefinedMaterialCost;
+            defenseRating.Value = troop.DefenseStrength;
             encyclopediaName.Text = troop.EncyclopediaName;
             familyIdHexLabel.Text = "0x" + troop.FamilyId.ToString("X");
             isAllianceUnit.Checked = troop.IsAllianceUnit > 0U;
@@ -35,7 +35,7 @@
             textStraDllId.Value = troop.TextStraDllId;
             troopId.Value = troop.TroopId;
             troopIdHexLabel.Text = "0x" + troop.TroopId.ToString("X");
-            unknwown2.Value = troop.Unknwown2;
+            unknwown2.Value = troop.Field7_Unknown;
             unknownMoralHp.Value = troop.UnknownMoralHp;
 
             picture.SizeMode = PictureBoxSizeMode.Zoom;
@@ -50,22 +50,22 @@
 
         private void atttackRating_ValueChanged(object sender, EventArgs e)
         {
-            GameFile.Troops[selector.Value].AttackRating = (uint)atttackRating.Value;
+            GameFile.Troops[selector.Value].AttackStrength = (uint)atttackRating.Value;
             GameFile.UnsavedData = true;
         }
         private void bombardmentRating_ValueChanged(object sender, EventArgs e)
         {
-            GameFile.Troops[selector.Value].BombardmentRating = (uint)bombardmentRating.Value;
+            GameFile.Troops[selector.Value].BombardmentDefense = (uint)bombardmentRating.Value;
             GameFile.UnsavedData = true;
         }
         private void constructionCost_ValueChanged(object sender, EventArgs e)
         {
-            GameFile.Troops[selector.Value].ConstructionCost = (uint)constructionCost.Value;
+            GameFile.Troops[selector.Value].RefinedMaterialCost = (uint)constructionCost.Value;
             GameFile.UnsavedData = true;
         }
         private void defenseRating_ValueChanged(object sender, EventArgs e)
         {
-            GameFile.Troops[selector.Value].DefenseRating = (uint)defenseRating.Value;
+            GameFile.Troops[selector.Value].DefenseStrength = (uint)defenseRating.Value;
             GameFile.UnsavedData = true;
         }
         private void detectionRating_ValueChanged(object sender, EventArgs e)

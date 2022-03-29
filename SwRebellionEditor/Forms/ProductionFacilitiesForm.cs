@@ -21,7 +21,7 @@
             var previousUnsavedData = GameFile.UnsavedData;
             var productionFacility = GameFile.ProductionFacilities[selectorIndex];
             bombardmentDefense.Value = productionFacility.BombardmentDefense;
-            constructionCost.Value = productionFacility.ConstructionCost;
+            constructionCost.Value = productionFacility.RefinedMaterialCost;
             encyclopediaName.Text = productionFacility.EncyclopediaName;
             familyId.Value = productionFacility.FamilyId;
             familyIdHexLabel.Text = "0x" + productionFacility.FamilyId.ToString("X");
@@ -36,7 +36,7 @@
             textStraDllId.Value = productionFacility.TextStraDllId;
             unitId.Value = productionFacility.UnitId;
             unitIdHexLabel.Text = "0x" + productionFacility.UnitId.ToString("X");
-            unknown2.Value = productionFacility.Unknown2;
+            unknown2.Value = productionFacility.Field7_Unknown;
 
             var edataId = 1 + selectorIndex;
             picture.SizeMode = PictureBoxSizeMode.Zoom;
@@ -55,7 +55,7 @@
         }
         private void constructionCost_ValueChanged(object sender, EventArgs e)
         {
-            GameFile.ProductionFacilities[selector.Value].ConstructionCost = (uint)constructionCost.Value;
+            GameFile.ProductionFacilities[selector.Value].RefinedMaterialCost = (uint)constructionCost.Value;
             GameFile.UnsavedData = true;
         }
         private void familyId_ValueChanged(object sender, EventArgs e)

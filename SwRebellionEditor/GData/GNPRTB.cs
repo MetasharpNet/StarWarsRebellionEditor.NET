@@ -2,7 +2,7 @@
 {
     public class GNPRTB : DatFile
     {
-        public byte[] Unknown1 = new byte[46];
+        public byte[] Field1_Unknown = new byte[46];
         public uint EmpireUnknown;
         public uint EmpireNoviceHyperspaceSpeedMod;
         public uint EmpireIntermediateHyperspaceSpeedMod;
@@ -11,7 +11,7 @@
         public uint AllianceIntermediateHyperspaceSpeedMod;
         public uint AllianceExpertHyperspaceSpeedMod;
         public uint AllianceUnknown;
-        public byte[] Unknown2 = new byte[2564];
+        public byte[] Field10_Unknown = new byte[2564];
         public uint FalconUnknown1;
         public uint FalconExpertHyperspaceSpeedMod;
         public uint FalconIntermediateHyperspaceSpeedMod;
@@ -20,6 +20,6 @@
         public uint FalconUnknown3;
         public uint FalconUnknown4;
         public uint FalconUnknown5;
-        public byte[] Unknown3 = new byte[6732];
+        public byte[] Field19_Unknown = new byte[6732];
     }
 }

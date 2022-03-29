@@ -30,8 +30,8 @@
             sectorId.Value = sector.SectorId;
             sectorIdHexLabel.Text = "0x" + sector.SectorId.ToString("X");
             textStraDllId.Value = sector.TextStraDllId;
-            unknown1.Value = sector.Unknown1;
-            unknown2.Value = sector.Unknown2;
+            unknown1.Value = sector.Field2_Unknown;
+            unknown2.Value = sector.Field7_Unknown;
             xPosition.Value = sector.XPosition;
             yPosition.Value = sector.YPosition;
             GameFile.UnsavedData = previousUnsavedData;
@@ -78,12 +78,12 @@
         }
         private void unknown1_ValueChanged(object sender, EventArgs e)
         {
-            GameFile.Sectors[selector.Value].Unknown1 = (uint)unknown1.Value;
+            GameFile.Sectors[selector.Value].Field2_Unknown = (uint)unknown1.Value;
             GameFile.UnsavedData = true;
         }
         private void unknown2_ValueChanged(object sender, EventArgs e)
         {
-            GameFile.Sectors[selector.Value].Unknown2 = (ushort)unknown2.Value;
+            GameFile.Sectors[selector.Value].Field7_Unknown = (ushort)unknown2.Value;
             GameFile.UnsavedData = true;
         }
         private void xPosition_ValueChanged(object sender, EventArgs e)

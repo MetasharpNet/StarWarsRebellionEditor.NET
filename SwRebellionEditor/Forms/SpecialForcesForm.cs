@@ -33,7 +33,7 @@
             var specialForce = GameFile.SpecialForces[selectorIndex];
             combatBase.Value = specialForce.CombatBase;
             combatVariance.Value = specialForce.CombatVariance;
-            constructionCost.Value = specialForce.ConstructionCost;
+            constructionCost.Value = specialForce.RefinedMaterialCost;
             diplomacyBase.Value = specialForce.DiplomacyBase;
             diplomacyVariance.Value = specialForce.DiplomacyVariance;
             encyclopediaName.Text = specialForce.EncyclopediaName;
@@ -60,7 +60,7 @@
             textStraDllId.Value = specialForce.TextStraDllId;
             troopsResearchBase.Value = specialForce.TroopsResearchBase;
             troopsResearchVariance.Value = specialForce.TroopsResearchVariance;
-            unknown2.Value = specialForce.Unknown2;
+            unknown2.Value = specialForce.Field7_Unknown;
 
             picture.SizeMode = PictureBoxSizeMode.Zoom;
             var edataId = 25 + selectorIndex;
@@ -112,7 +112,7 @@
         }
         private void constructionCost_ValueChanged(object sender, EventArgs e)
         {
-            GameFile.SpecialForces[selector.Value].ConstructionCost = (uint)constructionCost.Value;
+            GameFile.SpecialForces[selector.Value].RefinedMaterialCost = (uint)constructionCost.Value;
             GameFile.UnsavedData = true;
         }
         private void diplomacyBase_ValueChanged(object sender, EventArgs e)

@@ -37,7 +37,7 @@
             unitId.Value = defenseFacility.UnitId;
             unitIdHexLabel.Text = "0x" + defenseFacility.UnitId.ToString("X");
             unknownMoralHp.Value = defenseFacility.UnknownMoralHp;
-            unknown3Num.Value = defenseFacility.Unknown2;
+            unknown3Num.Value = defenseFacility.Field7_Unknown;
 
             picture.SizeMode = PictureBoxSizeMode.Zoom;
             var edataId = 9 + selectorIndex;

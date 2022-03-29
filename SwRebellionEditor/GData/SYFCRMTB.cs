@@ -2,7 +2,7 @@
 {
     public class SYFCRMTB : DatFile
     {
-        public uint Field1_One; // 1
+        public uint Field1_1; // 1
         [ArraySize(1)]
         public uint FacilityProbabilitiesCount; // 7
         [ArraySize(0)]

@@ -2,25 +2,25 @@
 {
     public class MJCHARSD : DatFile
     {
-        public uint UnknownHeader1; // 1
+        public uint Field1_1; // 1
         [ArraySize]
         public uint MajorCharactersCount; // 6
-        public uint FamilyIdHeader; // 48
-        public uint UnknownHeader2; // 56
+        public uint FamilyId; // 48
+        public uint Field4_56; // 56
         public MJCHARSD_Character[] MajorCharacters;
     }
     public class MJCHARSD_Character
     {
         public uint UnitId;
-        public uint Unknown1;
+        public uint Field2_Unknown;
         public uint ProductionFacility;
         public uint NextProductionFacility;
         public uint FamilyId;
         public ushort TextStraDllId;
-        public ushort Unknown2;
+        public ushort Field7_Unknown;
         public uint IsAllianceUnit;
         public uint IsEmpireUnit;
-        public uint UnusedContructionCost;
+        public uint UnusedRefinedMaterialCost;
         public uint UnusedMaintenanceCost;
         public uint UnusedResearchOrder;
         public uint UnusedResearchDifficulty;

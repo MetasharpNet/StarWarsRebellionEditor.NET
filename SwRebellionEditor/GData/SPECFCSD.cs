@@ -2,25 +2,25 @@
 {
     public class SPECFCSD : DatFile
     {
-        public uint UnknownHeader1; // 1
+        public uint Field1_1; // 1
         [ArraySize]
         public uint SpecialForcesCount; // 9
-        public uint FamilyIdHeader; // 60
-        public uint UnknownHeader2; // 64
+        public uint FamilyId; // 60
+        public uint Field4_64; // 64
         public SPECFCSD_SpecialForce[] SpecialForces;
     }
     public class SPECFCSD_SpecialForce
     {
         public uint SpecialForceId;
-        public uint Unknown1;
+        public uint Field2_Unknown;
         public uint ProductionFacility;
         public uint NextProductionFacility;
         public uint FamilyId;
         public ushort TextStraDllId;
-        public ushort Unknown2;
+        public ushort Field7_Unknown;
         public uint IsAllianceUnit;
         public uint IsEmpireUnit;
-        public uint ConstructionCost;
+        public uint RefinedMaterialCost;
         public uint MaintenanceCost;
         public uint ResearchOrder;
         public uint ResearchDifficulty;

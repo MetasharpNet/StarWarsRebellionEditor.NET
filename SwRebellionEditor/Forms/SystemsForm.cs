@@ -44,10 +44,10 @@
             systemId.Value = system.SystemId;
             SystemIdHexLabel.Text = "0x" + system.SystemId.ToString("X");
             textStraDllId.Value = system.TextStraDllId;
-            unknown1.Value = system.Unknown1;
-            unknown2.Value = system.Unknown2;
-            unknown3.Value = system.Unknown3;
-            unknown4.Value = system.Unknown4;
+            unknown1.Value = system.Field2_Unknown;
+            unknown2.Value = system.Field7_Unknown;
+            unknown3.Value = system.Field10_Unknown;
+            unknown4.Value = system.Field13_Unknown;
             xPosition.Value = system.XPosition;
             yPosition.Value = system.YPosition;
 
@@ -136,22 +136,22 @@
         }
         private void unknown1_ValueChanged(object sender, EventArgs e)
         {
-            GameFile.Systems[selector.Value].Unknown1 = (uint)unknown1.Value;
+            GameFile.Systems[selector.Value].Field2_Unknown = (uint)unknown1.Value;
             GameFile.UnsavedData = true;
         }
         private void unknown2_ValueChanged(object sender, EventArgs e)
         {
-            GameFile.Systems[selector.Value].Unknown2 = (ushort)unknown2.Value;
+            GameFile.Systems[selector.Value].Field7_Unknown = (ushort)unknown2.Value;
             GameFile.UnsavedData = true;
         }
         private void unknown3_ValueChanged(object sender, EventArgs e)
         {
-            GameFile.Systems[selector.Value].Unknown3 = (uint)unknown3.Value;
+            GameFile.Systems[selector.Value].Field10_Unknown = (uint)unknown3.Value;
             GameFile.UnsavedData = true;
         }
         private void unknown4_ValueChanged(object sender, EventArgs e)
         {
-            GameFile.Systems[selector.Value].Unknown4 = (uint)unknown4.Value;
+            GameFile.Systems[selector.Value].Field13_Unknown = (uint)unknown4.Value;
             GameFile.UnsavedData = true;
         }
         private void xPosition_ValueChanged(object sender, EventArgs e)

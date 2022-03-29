@@ -2,25 +2,25 @@
 {
     public class MNCHARSD : DatFile
     {
-        public uint UnknownHeader1; // 1
+        public uint Field1_1; // 1
         [ArraySize]
         public uint MinorCharactersCount; // 54
-        public uint FamilyIdHeader; // 56
-        public uint UnknownHeader2; // 60
+        public uint FamilyId; // 56
+        public uint Field4_60; // 60
         public MNCHARSD_MinorCharacter[] MinorCharacters;
     }
     public class MNCHARSD_MinorCharacter
     {
         public uint UnitId;
-        public uint Unknown1;
+        public uint Field2_Unknown;
         public uint ProductionFacility;
         public uint NextProductionFacility;
         public uint FamilyId;
         public ushort TextStraDllId;
-        public ushort Unknown2;
+        public ushort Field7_Unknown;
         public uint IsAllianceUnit;
         public uint IsEmpireUnit;
-        public uint UnusedContructionCost;
+        public uint UnusedRefinedMaterialCost;
         public uint UnusedMaintenanceCost;
         public uint UnusedResearchOrder;
         public uint UnusedResearchDifficulty;

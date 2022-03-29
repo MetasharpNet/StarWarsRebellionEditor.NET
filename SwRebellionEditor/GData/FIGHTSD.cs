@@ -2,58 +2,58 @@
 {
     public class FIGHTSD : DatFile
     {
-        public uint UnknownHeader1; // 1
+        public uint Field1_1; // 1
         [ArraySize]
         public uint FightersCount; // 8
-        public uint FamilyIdHeader; // 28
-        public uint UnknownHeader2; // 32
+        public uint FamilyId; // 28
+        public uint Field4_32; // 32
         public FIGHTSD_Fighter[] Fighters;
     }
     public class FIGHTSD_Fighter
     {
         public uint FighterId;
-        public uint unknown1;
+        public uint Field2_Unknown;
         public uint ProductionFacility;
         public uint NextProductionFacility;
         public uint FamilyId;
         public ushort TextStraDllId;
-        public ushort Unknown;
+        public ushort Field7_Unknown;
         public uint IsAllianceUnit;
         public uint IsEmpireUnit;
-        public uint ConstructionCost;
+        public uint RefinedMaterialCost;
         public uint MaintenanceCost;
         public uint ResearchOrder;
         public uint ResearchDifficulty;
         public uint UnknownMoralHp;
         public uint DetectionRating;
-        public uint ShieldsMaxCapacity;
+        public uint ShieldEnergy;
         public uint SublightSpeed;
         public uint SublightManoeuvrability;
         public uint HyperdrivePrimary;
         public uint HyperdriveBackup;
-        public uint TurboLaserFore;
+        public uint TurbolaserFore;
         public uint IonCannonFore;
         public uint LaserCannonFore;
-        public uint TurboLaserAft;
+        public uint TurbolaserAft;
         public uint IonCannonAft;
         public uint LaserCannonAft;
-        public uint TurboLaserPort;
+        public uint TurbolaserPort;
         public uint IonCannonPort;
         public uint LaserCannonPort;
-        public uint TurboLaserStar;
-        public uint IonCannonStar;
-        public uint LaserCannonStar;
-        public uint TurboLaserRange;
+        public uint TurbolaserStarboard;
+        public uint IonCannonStarboard;
+        public uint LaserCannonStarboard;
+        public uint TurbolaserRange;
         public uint IonCannonRange;
         public uint LaserCannonRange;
-        public uint TurboLaserTotalFirePower;
+        public uint TurbolaserTotalFirePower;
         public uint IonCannonTotalFirePower;
         public uint LaserCannonTotalFirePower;
         public uint TotalFirePower;
         public uint TorpedoFore;
         public uint TorpedoRange;
         public uint SquadronSize;
-        public uint BombardmentMod;
+        public uint BombardmentDefense;
         [Ignore]
         public string EncyclopediaName;
         [Ignore]
