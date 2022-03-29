@@ -5,7 +5,7 @@
         public uint UnknownHeader1; // 1
         [ArraySize]
         public uint CapitalShipsCount; // 30
-        public uint FamilyIdHeader; // 20
+        public uint FamilyId; // 20
         public uint UnknownHeader2; // 28
         public CAPSHPSD_CapitalShip[] CapitalShips;
     }

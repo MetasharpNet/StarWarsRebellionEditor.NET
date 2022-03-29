@@ -5,7 +5,7 @@
         public uint UnknownHeader1; // 1
         [ArraySize]
         public uint SystemsCount; // 200
-        public uint HeaderFamilyId; // 144
+        public uint FamilyId; // 144
         public uint UnknownHeader2; // 152
         public SYSTEMSD_System[] Systems;
     }

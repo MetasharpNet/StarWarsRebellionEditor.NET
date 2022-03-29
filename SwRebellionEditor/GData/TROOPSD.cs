@@ -5,7 +5,7 @@
         public uint UnknownHeader1; // 1
         [ArraySize]
         public uint TroopsCount; // 10
-        public uint FamilyIdHeader; // 16
+        public uint FamilyId; // 16
         public uint UnknownHeader2;  // 20
         public TROOPSD_Troop[] Troops;
     }

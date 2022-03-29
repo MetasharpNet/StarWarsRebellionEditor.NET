@@ -60,7 +60,7 @@ namespace SwRebellionEditor
         private ToolStripMenuItem SystemFacilitiesCoreTables_ToolStripMenuItem;
         private ToolStripMenuItem Size1280x1024_ToolStripMenuItem;
         private ToolStripMenuItem SystemFacilitiesRimTables_ToolStripMenuItem;
-        private ToolStripMenuItem StartingFleets_ToolStripMenuItem;
+        private ToolStripMenuItem StartingArmies_ToolStripMenuItem;
         private ToolStripMenuItem EmpireHq_ToolStripMenuItem;
         private ToolStripMenuItem CMUNEmpireTables_ToolStripMenuItem;
         private ToolStripMenuItem AllianceHq_ToolStripMenuItem;
@@ -135,7 +135,7 @@ namespace SwRebellionEditor
             this.ProbabilityTables_ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.SystemFacilitiesCoreTables_ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.SystemFacilitiesRimTables_ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.StartingFleets_ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.StartingArmies_ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.EmpireHq_ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.CMUNEmpireTables_ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.AllianceHq_ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -411,7 +411,7 @@ namespace SwRebellionEditor
             this.TestCode_ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.GeneralParametersTables_ToolStripMenuItem,
             this.ProbabilityTables_ToolStripMenuItem,
-            this.StartingFleets_ToolStripMenuItem});
+            this.StartingArmies_ToolStripMenuItem});
             this.TestCode_ToolStripMenuItem.Name = "TestCode_ToolStripMenuItem";
             this.TestCode_ToolStripMenuItem.Size = new System.Drawing.Size(191, 22);
             this.TestCode_ToolStripMenuItem.Text = "Test Code";
@@ -446,17 +446,16 @@ namespace SwRebellionEditor
             this.SystemFacilitiesRimTables_ToolStripMenuItem.Text = "System Facilities Rim Tables";
             this.SystemFacilitiesRimTables_ToolStripMenuItem.Click += new System.EventHandler(this.SystemFacilitiesRimTables_ToolStripMenuItem_Click);
             // 
-            // StartingFleets_ToolStripMenuItem
+            // StartingArmies_ToolStripMenuItem
             // 
-            this.StartingFleets_ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.StartingArmies_ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.EmpireHq_ToolStripMenuItem,
             this.CMUNEmpireTables_ToolStripMenuItem,
             this.AllianceHq_ToolStripMenuItem,
             this.CMUNAllianceTables_ToolStripMenuItem});
-            this.StartingFleets_ToolStripMenuItem.Enabled = false;
-            this.StartingFleets_ToolStripMenuItem.Name = "StartingFleets_ToolStripMenuItem";
-            this.StartingFleets_ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.StartingFleets_ToolStripMenuItem.Text = "Starting Fleets";
+            this.StartingArmies_ToolStripMenuItem.Name = "StartingArmies_ToolStripMenuItem";
+            this.StartingArmies_ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.StartingArmies_ToolStripMenuItem.Text = "Starting Armies";
             // 
             // EmpireHq_ToolStripMenuItem
             // 
@@ -507,35 +506,35 @@ namespace SwRebellionEditor
             // Cascade_ToolStripMenuItem
             // 
             this.Cascade_ToolStripMenuItem.Name = "Cascade_ToolStripMenuItem";
-            this.Cascade_ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.Cascade_ToolStripMenuItem.Size = new System.Drawing.Size(150, 22);
             this.Cascade_ToolStripMenuItem.Text = "Cascade";
             this.Cascade_ToolStripMenuItem.Click += new System.EventHandler(this.Cascade_ToolStripMenuItem_Click);
             // 
             // TileVertical_ToolStripMenuItem
             // 
             this.TileVertical_ToolStripMenuItem.Name = "TileVertical_ToolStripMenuItem";
-            this.TileVertical_ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.TileVertical_ToolStripMenuItem.Size = new System.Drawing.Size(150, 22);
             this.TileVertical_ToolStripMenuItem.Text = "Tile Vertical";
             this.TileVertical_ToolStripMenuItem.Click += new System.EventHandler(this.TileVertical_ToolStripMenuItem_Click);
             // 
             // TileHorizontal_ToolStripMenuItem
             // 
             this.TileHorizontal_ToolStripMenuItem.Name = "TileHorizontal_ToolStripMenuItem";
-            this.TileHorizontal_ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.TileHorizontal_ToolStripMenuItem.Size = new System.Drawing.Size(150, 22);
             this.TileHorizontal_ToolStripMenuItem.Text = "Tile Horizontal";
             this.TileHorizontal_ToolStripMenuItem.Click += new System.EventHandler(this.TileHorizontal_ToolStripMenuItem_Click);
             // 
             // CloseAll_ToolStripMenuItem
             // 
             this.CloseAll_ToolStripMenuItem.Name = "CloseAll_ToolStripMenuItem";
-            this.CloseAll_ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.CloseAll_ToolStripMenuItem.Size = new System.Drawing.Size(150, 22);
             this.CloseAll_ToolStripMenuItem.Text = "Close All";
             this.CloseAll_ToolStripMenuItem.Click += new System.EventHandler(this.CloseAll_ToolStripMenuItem_Click);
             // 
             // ArrangeIcons_ToolStripMenuItem
             // 
             this.ArrangeIcons_ToolStripMenuItem.Name = "ArrangeIcons_ToolStripMenuItem";
-            this.ArrangeIcons_ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.ArrangeIcons_ToolStripMenuItem.Size = new System.Drawing.Size(150, 22);
             this.ArrangeIcons_ToolStripMenuItem.Text = "Arrange Icons";
             this.ArrangeIcons_ToolStripMenuItem.Click += new System.EventHandler(this.ArrangeIcons_ToolStripMenuItem_Click);
             // 
@@ -549,7 +548,7 @@ namespace SwRebellionEditor
             this.RestoreDefaults_ToolStripMenuItem,
             this.RestorePreviousSave_ToolStripMenuItem});
             this.Options_ToolStripMenuItem.Name = "Options_ToolStripMenuItem";
-            this.Options_ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.Options_ToolStripMenuItem.Size = new System.Drawing.Size(150, 22);
             this.Options_ToolStripMenuItem.Text = "Options";
             // 
             // Size1280x1024_ToolStripMenuItem

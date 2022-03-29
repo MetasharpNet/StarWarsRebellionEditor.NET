@@ -2,11 +2,12 @@
 {
     public class SYFCRMTB : DatFile
     {
-        public uint UnknownHeader1; // 1
-        [ArraySize]
+        public uint Field1_One; // 1
+        [ArraySize(1)]
         public uint FacilityProbabilitiesCount; // 7
-        public uint FamilyIdHeader; // 14
-        public byte[] SeedTableEntry = new byte[14]; // "SeedTableEntry" as 1 byte per char
+        [ArraySize(0)]
+        public uint InfoLength; // 14
+        public byte[] Info; // "SeedTableEntry" as 1 byte per char
         public SYFCRMTB_FacilityProbability[] FacilityProbabilities;
     }
     public class SYFCRMTB_FacilityProbability

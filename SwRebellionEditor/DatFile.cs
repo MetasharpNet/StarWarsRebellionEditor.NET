@@ -34,15 +34,17 @@ namespace SwRebellionEditor
                         inputFieldInfo.SetValue(outputObject, inputBinaryReader.ReadByte());
                         break;
                     case "Byte[]":
-                        var byteArray = (byte[])inputFieldInfo.GetValue(outputObject);
-                        inputFieldInfo.SetValue(outputObject, inputBinaryReader.ReadBytes(byteArray.Length));
+                        dynamic byteArray = inputFieldInfo.GetValue(outputObject);
+                        var byteArraySize = (byteArray != null) ? byteArray.Length : arraySizes[currentArray++];
+                        inputFieldInfo.SetValue(outputObject, inputBinaryReader.ReadBytes(byteArraySize));
                         break;
                     case "Char":
                         inputFieldInfo.SetValue(outputObject, inputBinaryReader.ReadChar());
                         break;
                     case "Char[]":
-                        var charArray = (char[])inputFieldInfo.GetValue(outputObject);
-                        inputFieldInfo.SetValue(outputObject, inputBinaryReader.ReadChars(charArray.Length));
+                        dynamic charArray = inputFieldInfo.GetValue(outputObject);
+                        var charArraySize = (charArray != null) ? charArray.Length : arraySizes[currentArray++];
+                        inputFieldInfo.SetValue(outputObject, inputBinaryReader.ReadChars(charArraySize));
                         break;
                     case "Decimal":
                         inputFieldInfo.SetValue(outputObject, inputBinaryReader.ReadDecimal());
@@ -84,7 +86,7 @@ namespace SwRebellionEditor
                         if (fieldType.IsArray)
                         {
                             dynamic tArray = inputFieldInfo.GetValue(outputObject);
-                            var arraySize = (tArray != null) ? tArray.Length : arraySizes[currentArray];
+                            var arraySize = (tArray != null) ? tArray.Length : arraySizes[currentArray++];
                             dynamic array = Activator.CreateInstance(inputFieldInfo.FieldType, arraySize);
                             for (int i = 0; i < arraySize; ++i)
                             {
@@ -92,7 +94,6 @@ namespace SwRebellionEditor
                                 array[i] = arrayElement;
                                 LoadFields(inputBinaryReader, inputFieldInfo.FieldType.GetElementType().GetFields(), arrayElement);
                             }
-                            ++currentArray;
                             inputFieldInfo.SetValue(outputObject, array);
                             break;
                         }
