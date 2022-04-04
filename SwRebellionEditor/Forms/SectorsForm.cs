@@ -36,6 +36,11 @@
             yPosition.Value = sector.YPosition;
             GameFile.UnsavedData = previousUnsavedData;
         }
+        protected override void LoadSideInfo()
+        {
+            foreach (var s in GameFile.Sectors)
+                s.EncyclopediaName = TextStra.Get(s.TextStraDllId.ToString());
+        }
 
         #endregion
 

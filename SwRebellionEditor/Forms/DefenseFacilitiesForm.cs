@@ -41,8 +41,17 @@
 
             picture.SizeMode = PictureBoxSizeMode.Zoom;
             var edataId = 9 + selectorIndex;
+            if (edataId == 12)
+                edataId = 14;
+            else if (edataId > 12)
+                --edataId;
             picture.Image = Image.FromFile(RegistryKeys.InstalledLocation + "\\EData\\EDATA." + edataId.ToString("000"));
             GameFile.UnsavedData = previousUnsavedData;
+        }
+        protected override void LoadSideInfo()
+        {
+            foreach (var df in GameFile.DefenseFacilities)
+                df.EncyclopediaName = TextStra.Get(df.TextStraDllId.ToString());
         }
 
         #endregion

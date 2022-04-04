@@ -6,24 +6,6 @@ namespace SwRebellionEditor
     {
         #region Business Layer
 
-        /*public SECTORSD Sectors;
-        public SYSTEMSD Systems;
-        public TROOPSD troops;
-        public MJCHARSD majChars;
-        public MNCHARSD minChars;
-        public SPECFCSD specOps;
-        public CAPSHPSD CapShip;
-        public FIGHTSD Fighter;
-        public MANFACSD Manufacturing;
-        public DEFFACSD DefenseFac;
-        public PROFACSD ProdFac;
-        public CMUNCRTB CorHQ;
-        public SAVEGAME swrSaveGame;
-        public GNPRTB GNPRTB;
-        public SYFCCRTB SYFCCRTB;
-        public SYFCRMTB SYFCRMTB;
-        public CMUNALTB CNUNALTB;
-        public static bool fighterDataChanged;*/
         private Settings appSettings = new Settings();
 
         private void LoadSettings()
@@ -105,32 +87,6 @@ namespace SwRebellionEditor
             if (RegistryKeys.PlaySounds)
                 Sound.Play(Resources.droid_ding_wav);
 
-            /*if (RegistryKeys.InstalledLocation != null)
-            {
-                troops = new TROOPSD();
-                majChars = new MJCHARSD();
-                minChars = new MNCHARSD();
-                specOps = new SPECFCSD();
-                CapShip = new CAPSHPSD();
-                Fighter = new FIGHTSD();
-                Manufacturing = new MANFACSD();
-                DefenseFac = new DEFFACSD();
-                ProdFac = new PROFACSD();
-                Sectors = new SECTORSD();
-                Systems = new SYSTEMSD();
-                CorHQ = new CMUNCRTB();
-                GNPRTB = new GNPRTB();
-                SYFCCRTB = new SYFCCRTB();
-                SYFCRMTB = new SYFCRMTB();
-                CNUNALTB = new CMUNALTB();
-            }
-            else
-            {
-                appSettings.IsFirstStartup = true;
-                int num = (int)MessageBox.Show("Error retreiving Star Wars Rebellion Data from the registry. Verify that Star Wars Rebellion is correctly installed, and restart.");
-                appSettings.Save();
-                Application.Exit();
-            }*/
             if (RegistryKeys.PlayMusic)
                 Sound.PlayRandomMusic();
 

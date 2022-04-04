@@ -66,6 +66,11 @@
             picture.Image = Image.FromFile(RegistryKeys.InstalledLocation + "\\EData\\EDATA." + edataId.ToString("000"));
             GameFile.UnsavedData = previousUnsavedData;
         }
+        protected override void LoadSideInfo()
+        {
+            foreach (var s in GameFile.Systems)
+                s.EncyclopediaName = TextStra.Get(s.TextStraDllId.ToString());
+        }
 
         #endregion
 

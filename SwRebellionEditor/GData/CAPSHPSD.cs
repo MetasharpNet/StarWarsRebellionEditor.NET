@@ -15,7 +15,7 @@
         public uint Field2_1;
         public uint ProductionFacility;
         public uint NextProductionFacility;
-        public uint FamilyId;
+        public uint FamilyId; // 20 for capital ships, 24 for death star
         public ushort TextStraDllId;
         public ushort Field7_2;
         public uint IsAllianceUnit;
@@ -24,13 +24,13 @@
         public uint MaintenanceCost;
         public uint ResearchOrder;
         public uint ResearchDifficulty;
-        public uint UnknownMoralHp;
+        public uint MoraleModifier; // moral modifier : 0.45 x Refined Material Cost
         public uint DetectionRating;
         public uint ShieldStrength;
         public uint SublightSpeed;
         public uint SublightManoeuvrability;
-        public uint HyperdrivePrimary;
-        public uint HyperdriveBackup;
+        public uint PrimaryHyperdrive;
+        public uint BackupHyperdrive;
         public uint TurbolaserFore;
         public uint IonCannonFore;
         public uint LaserCannonFore;
@@ -53,15 +53,15 @@
         public uint HullStrength;
         public uint TractorBeamPower;
         public uint TractorBeamRange;
-        public uint GravityUnknown1;
-        public uint GravityUnknown2;
+        public uint GravityWellProjectors;
+        public uint InterdictionStrength;
         public uint BombardmentDefense;
         public uint DamageControl;
         public uint WeaponsRecharge;
         public uint ShieldRechargeRate;
         public uint FighterCapacity;
         public uint TroopCapacity;
-        public uint Field51_Unknown;
+        public uint Field51_0;
         [Ignore]
         public string EncyclopediaName;
         [Ignore]

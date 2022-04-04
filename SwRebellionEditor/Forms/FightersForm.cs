@@ -71,6 +71,11 @@
             picture.Image = Image.FromFile(RegistryKeys.InstalledLocation + "\\EData\\EDATA." + edataId.ToString("000"));
             GameFile.UnsavedData = previousUnsavedData;
         }
+        protected override void LoadSideInfo()
+        {
+            foreach (var f in GameFile.Fighters)
+                f.EncyclopediaName = TextStra.Get(f.TextStraDllId.ToString());
+        }
         private void UpdateTotals(int selectorIndex)
         {
             var fighter = GameFile.Fighters[selectorIndex];

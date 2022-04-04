@@ -28,6 +28,9 @@
         protected virtual void DisplaySelectedGameObject(int selectorIndex = -1)
         {
         }
+        protected virtual void LoadSideInfo()
+        {
+        }
         protected void InitializeBaseComponent(TrackBar selector)
         {
             TrackBarSelector = selector;
@@ -39,6 +42,7 @@
                 return;
             GameFilePath = openFileDialog.FileName;
             GameFile = DatFile.Load<TDatFile>(GameFilePath);
+            LoadSideInfo();
             GameFile.UnsavedData = false;
         }
 
@@ -99,6 +103,7 @@
                 Sound.Play(Resources.open_wav);
             if (RegistryKeys.PlayMusic)
                 Sound.PlayRandomMusic();
+            LoadSideInfo();
             if (TrackBarSelector != null)
                 DisplaySelectedGameObject(TrackBarSelector.Value);
             else

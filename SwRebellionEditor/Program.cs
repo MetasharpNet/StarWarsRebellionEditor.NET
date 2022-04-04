@@ -1,3 +1,6 @@
+using System.Diagnostics;
+using Vestris.ResourceLib;
+
 namespace SwRebellionEditor
 {
     internal static class Program
