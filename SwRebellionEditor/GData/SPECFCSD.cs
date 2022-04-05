@@ -42,8 +42,8 @@
         public uint LoyaltyVariance;
         public uint MissionId;
         [Ignore]
-        public string EncyclopediaName;
+        public string Name;
         [Ignore]
-        public string EncyclopediaDescription;
+        public string Description;
     }
 }

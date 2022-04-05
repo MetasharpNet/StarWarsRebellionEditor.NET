@@ -20,7 +20,7 @@
         {
             var previousUnsavedData = GameFile.UnsavedData;
             var sector = GameFile.Sectors[selectorIndex];
-            encyclopediaName.Text = sector.EncyclopediaName;
+            name.Text = sector.Name;
             familyId.Value = sector.FamilyId;
             familyIdHexLabel.Text = "0x" + sector.FamilyId.ToString("X");
             galaxySize.Value = sector.GalaxySize;
@@ -39,7 +39,7 @@
         protected override void LoadSideInfo()
         {
             foreach (var s in GameFile.Sectors)
-                s.EncyclopediaName = TextStra.Get(s.TextStraDllId.ToString());
+                s.Name = TextStra.Get(s.TextStraDllId.ToString());
         }
 
         #endregion

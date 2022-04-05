@@ -23,8 +23,8 @@
         public ushort XPosition;
         public ushort YPosition;
         [Ignore]
-        public string EncyclopediaName;
+        public string Name;
         [Ignore]
-        public string EncyclopediaDescription;
+        public string Description;
     }
 }

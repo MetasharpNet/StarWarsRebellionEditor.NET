@@ -24,15 +24,16 @@ namespace SwRebellionEditor
             var capitalShip = GameFile.CapitalShips[selectorIndex];
             backupHyperdrive.Value = capitalShip.BackupHyperdrive;
             bombardmentDefense.Value = capitalShip.BombardmentDefense;
-            capitalShipId.Value = capitalShip.CapitalShipId;
-            capitalShipIdHexLabel.Text = "0x" + capitalShip.CapitalShipId.ToString("X");
-            encyclopediaDescription.Text = capitalShip.EncyclopediaDescription;
-            encyclopediaName.Text = capitalShip.EncyclopediaName;
+            capitalShipId.Value = capitalShip.Id;
+            capitalShipIdHexLabel.Text = "0x" + capitalShip.Id.ToString("X");
+            description.Text = capitalShip.Description;
+            name.Text = capitalShip.Name;
             fighterCapacity.Value = capitalShip.FighterCapacity;
             damageControl.Value = capitalShip.DamageControl;
             detectionRating.Value = capitalShip.DetectionRating;
             familyIdHexLabel.Text = "0x" + capitalShip.FamilyId.ToString("x");
             familyId.Value = capitalShip.FamilyId;
+            field2_1.Value = capitalShip.Field2_1;
             field7_2.Value = capitalShip.Field7_2;
             field51_0.Value = capitalShip.Field51_0;
             gravityWellProjectors.Value = capitalShip.GravityWellProjectors;
@@ -85,7 +86,7 @@ namespace SwRebellionEditor
         protected override void LoadSideInfo()
         {
             foreach (var ship in  GameFile.CapitalShips)
-                ship.EncyclopediaName = TextStra.Get(ship.TextStraDllId.ToString());
+                ship.Name = TextStra.Get(ship.TextStraDllId.ToString());
         }
         private void UpdateTotals(int selectorIndex)
         {
@@ -133,6 +134,11 @@ namespace SwRebellionEditor
         private void familyId_ValueChanged(object sender, EventArgs e)
         {
             GameFile.CapitalShips[selector.Value].FamilyId = (uint)familyId.Value;
+            GameFile.UnsavedData = true;
+        }
+        private void field2_1_ValueChanged(object sender, EventArgs e)
+        {
+            GameFile.CapitalShips[selector.Value].Field2_1 = (ushort)field2_1.Value;
             GameFile.UnsavedData = true;
         }
         private void field7_2_ValueChanged(object sender, EventArgs e)
@@ -344,6 +350,5 @@ namespace SwRebellionEditor
         }
 
         #endregion
-
     }
 }

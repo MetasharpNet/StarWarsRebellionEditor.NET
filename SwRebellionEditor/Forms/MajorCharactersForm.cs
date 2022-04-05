@@ -24,7 +24,7 @@
             {
                 var edataId = 72 + selectorIndex;
                 majorCharactersImages.Images.Add(Image.FromFile(RegistryKeys.InstalledLocation + "\\EData\\EDATA." + edataId.ToString("000")));
-                majorCharactersListView.Items.Add(GameFile.MajorCharacters[selectorIndex].EncyclopediaName, selectorIndex);
+                majorCharactersListView.Items.Add(GameFile.MajorCharacters[selectorIndex].Name, selectorIndex);
             }
         }
         protected override void DisplaySelectedGameObject(int selectorIndex)
@@ -38,7 +38,7 @@
             combatVariance.Value = majorCharacter.CombatVariance;
             diplomacyBase.Value = majorCharacter.DiplomacyBase;
             diplomacyVariance.Value = majorCharacter.DiplomacyVariance;
-            encyclopediaName.Text = majorCharacter.EncyclopediaName;
+            name.Text = majorCharacter.Name;
             espionageBase.Value = majorCharacter.EspionageBase;
             espionageVariance.Value = majorCharacter.EspionageVariance;
             facilitiesResearchBase.Value = majorCharacter.FacilitiesResearchBase;
@@ -63,7 +63,7 @@
             unitId.Value = majorCharacter.UnitId;
             unitIdHexLabel.Text = "0x" + majorCharacter.UnitId.ToString("X");
 
-            if (majorCharacter.EncyclopediaName == "Leia Organa")
+            if (majorCharacter.Name == "Leia Organa")
             {
                 leiaForceLabel.Text = "Leia has no Force ability at start of game";
                 jediCombatBase.Value = majorCharacter.CombatBase;
@@ -89,7 +89,7 @@
         protected override void LoadSideInfo()
         {
             foreach (var mc in GameFile.MajorCharacters)
-                mc.EncyclopediaName = TextStra.Get(mc.TextStraDllId.ToString());
+                mc.Name = TextStra.Get(mc.TextStraDllId.ToString());
         }
 
         #endregion

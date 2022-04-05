@@ -20,7 +20,7 @@ namespace SwRebellionEditor
         private TabControl tabControl1;
         private TabPage tabPage1;
         private TabPage tabPage2;
-        private Label encyclopediaName;
+        private Label name;
         private GroupBox charLoyalGroup;
         private CheckBox isAllianceUnit;
         private CheckBox isEmpireUnit;
@@ -191,7 +191,7 @@ namespace SwRebellionEditor
             this.secProdFacNumlabel = new System.Windows.Forms.Label();
             this.nextProductionFacility = new System.Windows.Forms.NumericUpDown();
             this.encyText = new System.Windows.Forms.RichTextBox();
-            this.encyclopediaName = new System.Windows.Forms.Label();
+            this.name = new System.Windows.Forms.Label();
             this.selector = new System.Windows.Forms.TrackBar();
             this.charLoyalGroup = new System.Windows.Forms.GroupBox();
             this.isUnableToBetray = new System.Windows.Forms.CheckBox();
@@ -1312,15 +1312,15 @@ namespace SwRebellionEditor
             this.encyText.TabStop = false;
             this.encyText.Text = "Not Implemented yet....Encylopedia Data...Will add .Someday";
             // 
-            // encyclopediaName
+            // name
             // 
-            this.encyclopediaName.AutoSize = true;
-            this.encyclopediaName.Location = new System.Drawing.Point(230, 88);
-            this.encyclopediaName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.encyclopediaName.Name = "encyclopediaName";
-            this.encyclopediaName.Size = new System.Drawing.Size(116, 15);
-            this.encyclopediaName.TabIndex = 120;
-            this.encyclopediaName.Text = "-- Item name here --";
+            this.name.AutoSize = true;
+            this.name.Location = new System.Drawing.Point(230, 88);
+            this.name.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.name.Name = "name";
+            this.name.Size = new System.Drawing.Size(116, 15);
+            this.name.TabIndex = 120;
+            this.name.Text = "-- Item name here --";
             // 
             // selector
             // 
@@ -1532,7 +1532,7 @@ namespace SwRebellionEditor
             this.Controls.Add(this.Ok);
             this.Controls.Add(this.cmdAbilityGroup);
             this.Controls.Add(this.charLoyalGroup);
-            this.Controls.Add(this.encyclopediaName);
+            this.Controls.Add(this.name);
             this.Controls.Add(this.selector);
             this.Controls.Add(this.tabControl1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));

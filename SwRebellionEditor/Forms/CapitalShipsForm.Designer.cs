@@ -17,8 +17,8 @@ namespace SwRebellionEditor
         private Button SaveAs;
         private Button Cancel;
         private Button Ok;
-        private RichTextBox encyclopediaDescription;
-        private Label encyclopediaName;
+        private RichTextBox description;
+        private Label name;
         private Label idLabel;
         private NumericUpDown textStraDllId;
         private Label unkown3Label;
@@ -134,8 +134,8 @@ namespace SwRebellionEditor
             this.SaveAs = new System.Windows.Forms.Button();
             this.Cancel = new System.Windows.Forms.Button();
             this.Ok = new System.Windows.Forms.Button();
-            this.encyclopediaDescription = new System.Windows.Forms.RichTextBox();
-            this.encyclopediaName = new System.Windows.Forms.Label();
+            this.description = new System.Windows.Forms.RichTextBox();
+            this.name = new System.Windows.Forms.Label();
             this.idLabel = new System.Windows.Forms.Label();
             this.textStraDllId = new System.Windows.Forms.NumericUpDown();
             this.unkown3Label = new System.Windows.Forms.Label();
@@ -232,6 +232,8 @@ namespace SwRebellionEditor
             this.label8 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.field51_0 = new System.Windows.Forms.NumericUpDown();
+            this.field2_1 = new System.Windows.Forms.NumericUpDown();
+            this.label11 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.textStraDllId)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.field7_2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.familyId)).BeginInit();
@@ -284,11 +286,12 @@ namespace SwRebellionEditor
             ((System.ComponentModel.ISupportInitialize)(this.backupHyperdrive)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picture)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.field51_0)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.field2_1)).BeginInit();
             this.SuspendLayout();
             // 
             // Open
             // 
-            this.Open.Location = new System.Drawing.Point(665, 558);
+            this.Open.Location = new System.Drawing.Point(307, 493);
             this.Open.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Open.Name = "Open";
             this.Open.Size = new System.Drawing.Size(88, 27);
@@ -300,7 +303,7 @@ namespace SwRebellionEditor
             // 
             // SaveAs
             // 
-            this.SaveAs.Location = new System.Drawing.Point(665, 525);
+            this.SaveAs.Location = new System.Drawing.Point(215, 493);
             this.SaveAs.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.SaveAs.Name = "SaveAs";
             this.SaveAs.Size = new System.Drawing.Size(88, 27);
@@ -313,7 +316,7 @@ namespace SwRebellionEditor
             // Cancel
             // 
             this.Cancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.Cancel.Location = new System.Drawing.Point(665, 492);
+            this.Cancel.Location = new System.Drawing.Point(124, 493);
             this.Cancel.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Cancel.Name = "Cancel";
             this.Cancel.Size = new System.Drawing.Size(88, 27);
@@ -324,7 +327,7 @@ namespace SwRebellionEditor
             // 
             // Ok
             // 
-            this.Ok.Location = new System.Drawing.Point(665, 459);
+            this.Ok.Location = new System.Drawing.Point(33, 493);
             this.Ok.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Ok.Name = "Ok";
             this.Ok.Size = new System.Drawing.Size(88, 27);
@@ -333,32 +336,33 @@ namespace SwRebellionEditor
             this.Ok.UseVisualStyleBackColor = true;
             this.Ok.Click += new System.EventHandler(this.Ok_Click);
             // 
-            // encyclopediaDescription
+            // description
             // 
-            this.encyclopediaDescription.Cursor = System.Windows.Forms.Cursors.No;
-            this.encyclopediaDescription.Enabled = false;
-            this.encyclopediaDescription.Location = new System.Drawing.Point(8, 174);
-            this.encyclopediaDescription.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.encyclopediaDescription.Name = "encyclopediaDescription";
-            this.encyclopediaDescription.Size = new System.Drawing.Size(596, 65);
-            this.encyclopediaDescription.TabIndex = 0;
-            this.encyclopediaDescription.TabStop = false;
-            this.encyclopediaDescription.Text = "Not Implemented yet....Encylopedia Data...Will add .Someday";
+            this.description.Cursor = System.Windows.Forms.Cursors.No;
+            this.description.Enabled = false;
+            this.description.Location = new System.Drawing.Point(8, 144);
+            this.description.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.description.Name = "description";
+            this.description.Size = new System.Drawing.Size(565, 65);
+            this.description.TabIndex = 0;
+            this.description.TabStop = false;
+            this.description.Text = "Not Implemented yet....Encylopedia Data...Will add .Someday";
             // 
-            // encyclopediaName
+            // name
             // 
-            this.encyclopediaName.AutoSize = true;
-            this.encyclopediaName.Location = new System.Drawing.Point(244, 19);
-            this.encyclopediaName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.encyclopediaName.Name = "encyclopediaName";
-            this.encyclopediaName.Size = new System.Drawing.Size(131, 15);
-            this.encyclopediaName.TabIndex = 0;
-            this.encyclopediaName.Text = "-- Capital Ship Name --";
+            this.name.AutoSize = true;
+            this.name.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.name.Location = new System.Drawing.Point(226, 15);
+            this.name.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.name.Name = "name";
+            this.name.Size = new System.Drawing.Size(120, 15);
+            this.name.TabIndex = 0;
+            this.name.Text = "CAPITAL SHIP NAME";
             // 
             // idLabel
             // 
             this.idLabel.AutoSize = true;
-            this.idLabel.Location = new System.Drawing.Point(258, 488);
+            this.idLabel.Location = new System.Drawing.Point(471, 488);
             this.idLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.idLabel.Name = "idLabel";
             this.idLabel.Size = new System.Drawing.Size(85, 15);
@@ -367,7 +371,7 @@ namespace SwRebellionEditor
             // 
             // textStraDllId
             // 
-            this.textStraDllId.Location = new System.Drawing.Point(395, 486);
+            this.textStraDllId.Location = new System.Drawing.Point(617, 488);
             this.textStraDllId.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.textStraDllId.Maximum = new decimal(new int[] {
             99999,
@@ -383,7 +387,7 @@ namespace SwRebellionEditor
             // unkown3Label
             // 
             this.unkown3Label.AutoSize = true;
-            this.unkown3Label.Location = new System.Drawing.Point(258, 546);
+            this.unkown3Label.Location = new System.Drawing.Point(248, 464);
             this.unkown3Label.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.unkown3Label.Name = "unkown3Label";
             this.unkown3Label.Size = new System.Drawing.Size(49, 15);
@@ -392,7 +396,7 @@ namespace SwRebellionEditor
             // 
             // field7_2
             // 
-            this.field7_2.Location = new System.Drawing.Point(395, 544);
+            this.field7_2.Location = new System.Drawing.Point(381, 462);
             this.field7_2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.field7_2.Maximum = new decimal(new int[] {
             9999,
@@ -414,7 +418,7 @@ namespace SwRebellionEditor
             // familyId
             // 
             this.familyId.BackColor = System.Drawing.SystemColors.Window;
-            this.familyId.Location = new System.Drawing.Point(395, 457);
+            this.familyId.Location = new System.Drawing.Point(617, 337);
             this.familyId.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.familyId.Maximum = new decimal(new int[] {
             999,
@@ -431,7 +435,7 @@ namespace SwRebellionEditor
             // familyLabel
             // 
             this.familyLabel.AutoSize = true;
-            this.familyLabel.Location = new System.Drawing.Point(258, 459);
+            this.familyLabel.Location = new System.Drawing.Point(471, 339);
             this.familyLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.familyLabel.Name = "familyLabel";
             this.familyLabel.Size = new System.Drawing.Size(56, 15);
@@ -441,7 +445,7 @@ namespace SwRebellionEditor
             // nextProductionFacility
             // 
             this.nextProductionFacility.BackColor = System.Drawing.SystemColors.Window;
-            this.nextProductionFacility.Location = new System.Drawing.Point(694, 96);
+            this.nextProductionFacility.Location = new System.Drawing.Point(661, 91);
             this.nextProductionFacility.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.nextProductionFacility.Maximum = new decimal(new int[] {
             999,
@@ -452,13 +456,14 @@ namespace SwRebellionEditor
             this.nextProductionFacility.Size = new System.Drawing.Size(59, 23);
             this.nextProductionFacility.TabIndex = 96;
             this.nextProductionFacility.TabStop = false;
+            this.nextProductionFacility.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.nextProductionFacility.ValueChanged += new System.EventHandler(this.nextProductionFacility_ValueChanged);
             // 
             // secProdFacNumlabel
             // 
             this.secProdFacNumlabel.AutoSize = true;
             this.secProdFacNumlabel.Enabled = false;
-            this.secProdFacNumlabel.Location = new System.Drawing.Point(560, 98);
+            this.secProdFacNumlabel.Location = new System.Drawing.Point(527, 93);
             this.secProdFacNumlabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.secProdFacNumlabel.Name = "secProdFacNumlabel";
             this.secProdFacNumlabel.Size = new System.Drawing.Size(123, 15);
@@ -469,7 +474,7 @@ namespace SwRebellionEditor
             // 
             this.prodLabel.AutoSize = true;
             this.prodLabel.Enabled = false;
-            this.prodLabel.Location = new System.Drawing.Point(580, 67);
+            this.prodLabel.Location = new System.Drawing.Point(527, 68);
             this.prodLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.prodLabel.Name = "prodLabel";
             this.prodLabel.Size = new System.Drawing.Size(106, 15);
@@ -479,7 +484,7 @@ namespace SwRebellionEditor
             // productionFacility
             // 
             this.productionFacility.BackColor = System.Drawing.SystemColors.Window;
-            this.productionFacility.Location = new System.Drawing.Point(694, 65);
+            this.productionFacility.Location = new System.Drawing.Point(661, 66);
             this.productionFacility.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.productionFacility.Maximum = new decimal(new int[] {
             999,
@@ -490,12 +495,13 @@ namespace SwRebellionEditor
             this.productionFacility.Size = new System.Drawing.Size(59, 23);
             this.productionFacility.TabIndex = 93;
             this.productionFacility.TabStop = false;
+            this.productionFacility.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.productionFacility.ValueChanged += new System.EventHandler(this.productionFacility_ValueChanged);
             // 
             // moraleModifier
             // 
             this.moraleModifier.BackColor = System.Drawing.SystemColors.Window;
-            this.moraleModifier.Location = new System.Drawing.Point(395, 515);
+            this.moraleModifier.Location = new System.Drawing.Point(381, 437);
             this.moraleModifier.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.moraleModifier.Maximum = new decimal(new int[] {
             99999,
@@ -512,7 +518,7 @@ namespace SwRebellionEditor
             // UnkownMoralHPlabel
             // 
             this.UnkownMoralHPlabel.AutoSize = true;
-            this.UnkownMoralHPlabel.Location = new System.Drawing.Point(258, 517);
+            this.UnkownMoralHPlabel.Location = new System.Drawing.Point(248, 439);
             this.UnkownMoralHPlabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.UnkownMoralHPlabel.Name = "UnkownMoralHPlabel";
             this.UnkownMoralHPlabel.Size = new System.Drawing.Size(92, 15);
@@ -521,7 +527,7 @@ namespace SwRebellionEditor
             // 
             // researchDifficulty
             // 
-            this.researchDifficulty.Location = new System.Drawing.Point(467, 94);
+            this.researchDifficulty.Location = new System.Drawing.Point(661, 41);
             this.researchDifficulty.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.researchDifficulty.Maximum = new decimal(new int[] {
             9999,
@@ -537,7 +543,7 @@ namespace SwRebellionEditor
             // resDiffLabel
             // 
             this.resDiffLabel.AutoSize = true;
-            this.resDiffLabel.Location = new System.Drawing.Point(358, 96);
+            this.resDiffLabel.Location = new System.Drawing.Point(527, 43);
             this.resDiffLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.resDiffLabel.Name = "resDiffLabel";
             this.resDiffLabel.Size = new System.Drawing.Size(105, 15);
@@ -547,7 +553,7 @@ namespace SwRebellionEditor
             // isEmpireUnit
             // 
             this.isEmpireUnit.AutoSize = true;
-            this.isEmpireUnit.Location = new System.Drawing.Point(220, 89);
+            this.isEmpireUnit.Location = new System.Drawing.Point(395, 66);
             this.isEmpireUnit.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.isEmpireUnit.Name = "isEmpireUnit";
             this.isEmpireUnit.Size = new System.Drawing.Size(63, 19);
@@ -559,7 +565,7 @@ namespace SwRebellionEditor
             // isAllianceUnit
             // 
             this.isAllianceUnit.AutoSize = true;
-            this.isAllianceUnit.Location = new System.Drawing.Point(220, 67);
+            this.isAllianceUnit.Location = new System.Drawing.Point(395, 44);
             this.isAllianceUnit.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.isAllianceUnit.Name = "isAllianceUnit";
             this.isAllianceUnit.Size = new System.Drawing.Size(68, 19);
@@ -571,18 +577,18 @@ namespace SwRebellionEditor
             // selector
             // 
             this.selector.LargeChange = 15;
-            this.selector.Location = new System.Drawing.Point(220, 16);
+            this.selector.Location = new System.Drawing.Point(220, 66);
             this.selector.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.selector.Maximum = 29;
             this.selector.Name = "selector";
-            this.selector.Size = new System.Drawing.Size(225, 45);
+            this.selector.Size = new System.Drawing.Size(159, 45);
             this.selector.TabIndex = 1;
             this.selector.ValueChanged += new System.EventHandler(this.GameObjectsSelector_ValueChanged);
             // 
             // DetectionLabel
             // 
             this.DetectionLabel.AutoSize = true;
-            this.DetectionLabel.Location = new System.Drawing.Point(15, 430);
+            this.DetectionLabel.Location = new System.Drawing.Point(15, 389);
             this.DetectionLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.DetectionLabel.Name = "DetectionLabel";
             this.DetectionLabel.Size = new System.Drawing.Size(98, 15);
@@ -591,7 +597,7 @@ namespace SwRebellionEditor
             // 
             // detectionRating
             // 
-            this.detectionRating.Location = new System.Drawing.Point(184, 428);
+            this.detectionRating.Location = new System.Drawing.Point(153, 387);
             this.detectionRating.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.detectionRating.Maximum = new decimal(new int[] {
             999,
@@ -612,7 +618,7 @@ namespace SwRebellionEditor
             // researchLabel
             // 
             this.researchLabel.AutoSize = true;
-            this.researchLabel.Location = new System.Drawing.Point(376, 67);
+            this.researchLabel.Location = new System.Drawing.Point(527, 18);
             this.researchLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.researchLabel.Name = "researchLabel";
             this.researchLabel.Size = new System.Drawing.Size(87, 15);
@@ -621,7 +627,7 @@ namespace SwRebellionEditor
             // 
             // researchOrder
             // 
-            this.researchOrder.Location = new System.Drawing.Point(467, 65);
+            this.researchOrder.Location = new System.Drawing.Point(661, 16);
             this.researchOrder.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.researchOrder.Name = "researchOrder";
             this.researchOrder.Size = new System.Drawing.Size(59, 23);
@@ -631,7 +637,7 @@ namespace SwRebellionEditor
             // 
             // maintenanceCost
             // 
-            this.maintenanceCost.Location = new System.Drawing.Point(177, 46);
+            this.maintenanceCost.Location = new System.Drawing.Point(140, 43);
             this.maintenanceCost.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.maintenanceCost.Maximum = new decimal(new int[] {
             9999,
@@ -652,7 +658,7 @@ namespace SwRebellionEditor
             // maintCostLabel
             // 
             this.maintCostLabel.AutoSize = true;
-            this.maintCostLabel.Location = new System.Drawing.Point(8, 48);
+            this.maintCostLabel.Location = new System.Drawing.Point(10, 47);
             this.maintCostLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.maintCostLabel.Name = "maintCostLabel";
             this.maintCostLabel.Size = new System.Drawing.Size(103, 15);
@@ -661,7 +667,7 @@ namespace SwRebellionEditor
             // 
             // refinedMaterialCost
             // 
-            this.refinedMaterialCost.Location = new System.Drawing.Point(177, 17);
+            this.refinedMaterialCost.Location = new System.Drawing.Point(140, 18);
             this.refinedMaterialCost.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.refinedMaterialCost.Maximum = new decimal(new int[] {
             9999,
@@ -682,7 +688,7 @@ namespace SwRebellionEditor
             // conCostLabel
             // 
             this.conCostLabel.AutoSize = true;
-            this.conCostLabel.Location = new System.Drawing.Point(8, 19);
+            this.conCostLabel.Location = new System.Drawing.Point(9, 22);
             this.conCostLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.conCostLabel.Name = "conCostLabel";
             this.conCostLabel.Size = new System.Drawing.Size(120, 15);
@@ -691,7 +697,7 @@ namespace SwRebellionEditor
             // 
             // bombardmentDefense
             // 
-            this.bombardmentDefense.Location = new System.Drawing.Point(395, 370);
+            this.bombardmentDefense.Location = new System.Drawing.Point(153, 437);
             this.bombardmentDefense.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.bombardmentDefense.Maximum = new decimal(new int[] {
             9999,
@@ -711,7 +717,7 @@ namespace SwRebellionEditor
             // 
             // weaponsRecharge
             // 
-            this.weaponsRecharge.Location = new System.Drawing.Point(694, 311);
+            this.weaponsRecharge.Location = new System.Drawing.Point(662, 264);
             this.weaponsRecharge.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.weaponsRecharge.Maximum = new decimal(new int[] {
             9999,
@@ -733,7 +739,7 @@ namespace SwRebellionEditor
             // 
             this.bombardLabel.AutoSize = true;
             this.bombardLabel.BackColor = System.Drawing.SystemColors.Control;
-            this.bombardLabel.Location = new System.Drawing.Point(258, 372);
+            this.bombardLabel.Location = new System.Drawing.Point(15, 439);
             this.bombardLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.bombardLabel.Name = "bombardLabel";
             this.bombardLabel.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -746,7 +752,7 @@ namespace SwRebellionEditor
             // 
             this.wepRechLabel.AutoSize = true;
             this.wepRechLabel.BackColor = System.Drawing.SystemColors.Control;
-            this.wepRechLabel.Location = new System.Drawing.Point(630, 313);
+            this.wepRechLabel.Location = new System.Drawing.Point(598, 267);
             this.wepRechLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.wepRechLabel.Name = "wepRechLabel";
             this.wepRechLabel.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -759,7 +765,7 @@ namespace SwRebellionEditor
             // 
             this.gravWell2Label.AutoSize = true;
             this.gravWell2Label.BackColor = System.Drawing.SystemColors.Control;
-            this.gravWell2Label.Location = new System.Drawing.Point(464, 401);
+            this.gravWell2Label.Location = new System.Drawing.Point(248, 414);
             this.gravWell2Label.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.gravWell2Label.Name = "gravWell2Label";
             this.gravWell2Label.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -772,7 +778,7 @@ namespace SwRebellionEditor
             // 
             this.gravWell1Label.AutoSize = true;
             this.gravWell1Label.BackColor = System.Drawing.SystemColors.Control;
-            this.gravWell1Label.Location = new System.Drawing.Point(464, 372);
+            this.gravWell1Label.Location = new System.Drawing.Point(248, 389);
             this.gravWell1Label.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.gravWell1Label.Name = "gravWell1Label";
             this.gravWell1Label.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -784,7 +790,7 @@ namespace SwRebellionEditor
             // interdictionStrength
             // 
             this.interdictionStrength.BackColor = System.Drawing.SystemColors.Window;
-            this.interdictionStrength.Location = new System.Drawing.Point(597, 399);
+            this.interdictionStrength.Location = new System.Drawing.Point(381, 412);
             this.interdictionStrength.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.interdictionStrength.Maximum = new decimal(new int[] {
             9999,
@@ -806,7 +812,7 @@ namespace SwRebellionEditor
             // gravityWellProjectors
             // 
             this.gravityWellProjectors.BackColor = System.Drawing.SystemColors.Window;
-            this.gravityWellProjectors.Location = new System.Drawing.Point(597, 370);
+            this.gravityWellProjectors.Location = new System.Drawing.Point(381, 387);
             this.gravityWellProjectors.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.gravityWellProjectors.Maximum = new decimal(new int[] {
             9999,
@@ -827,7 +833,7 @@ namespace SwRebellionEditor
             // 
             // tractorBeamRange
             // 
-            this.tractorBeamRange.Location = new System.Drawing.Point(395, 428);
+            this.tractorBeamRange.Location = new System.Drawing.Point(381, 362);
             this.tractorBeamRange.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.tractorBeamRange.Maximum = new decimal(new int[] {
             9999,
@@ -847,7 +853,7 @@ namespace SwRebellionEditor
             // 
             // tractorBeamStrength
             // 
-            this.tractorBeamStrength.Location = new System.Drawing.Point(395, 399);
+            this.tractorBeamStrength.Location = new System.Drawing.Point(381, 337);
             this.tractorBeamStrength.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.tractorBeamStrength.Maximum = new decimal(new int[] {
             9999,
@@ -886,18 +892,18 @@ namespace SwRebellionEditor
             this.attackStrengthGroup.Controls.Add(this.wepPortLabel);
             this.attackStrengthGroup.Controls.Add(this.wepAftLabel);
             this.attackStrengthGroup.Controls.Add(this.wepForeLabel);
-            this.attackStrengthGroup.Location = new System.Drawing.Point(244, 38);
+            this.attackStrengthGroup.Location = new System.Drawing.Point(213, 14);
             this.attackStrengthGroup.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.attackStrengthGroup.Name = "attackStrengthGroup";
             this.attackStrengthGroup.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.attackStrengthGroup.Size = new System.Drawing.Size(360, 130);
+            this.attackStrengthGroup.Size = new System.Drawing.Size(360, 112);
             this.attackStrengthGroup.TabIndex = 10;
             this.attackStrengthGroup.TabStop = false;
             this.attackStrengthGroup.Text = "Attack Strength";
             // 
             // laserCannonStarboard
             // 
-            this.laserCannonStarboard.Location = new System.Drawing.Point(291, 97);
+            this.laserCannonStarboard.Location = new System.Drawing.Point(291, 83);
             this.laserCannonStarboard.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.laserCannonStarboard.Maximum = new decimal(new int[] {
             9999,
@@ -917,7 +923,7 @@ namespace SwRebellionEditor
             // 
             // laserCannonPort
             // 
-            this.laserCannonPort.Location = new System.Drawing.Point(224, 97);
+            this.laserCannonPort.Location = new System.Drawing.Point(224, 83);
             this.laserCannonPort.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.laserCannonPort.Maximum = new decimal(new int[] {
             9999,
@@ -937,7 +943,7 @@ namespace SwRebellionEditor
             // 
             // laserCannonAft
             // 
-            this.laserCannonAft.Location = new System.Drawing.Point(158, 97);
+            this.laserCannonAft.Location = new System.Drawing.Point(158, 83);
             this.laserCannonAft.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.laserCannonAft.Maximum = new decimal(new int[] {
             9999,
@@ -957,7 +963,7 @@ namespace SwRebellionEditor
             // 
             // ionCannonStarboard
             // 
-            this.ionCannonStarboard.Location = new System.Drawing.Point(291, 67);
+            this.ionCannonStarboard.Location = new System.Drawing.Point(291, 58);
             this.ionCannonStarboard.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.ionCannonStarboard.Maximum = new decimal(new int[] {
             9999,
@@ -977,7 +983,7 @@ namespace SwRebellionEditor
             // 
             // ionCannonPort
             // 
-            this.ionCannonPort.Location = new System.Drawing.Point(224, 67);
+            this.ionCannonPort.Location = new System.Drawing.Point(224, 58);
             this.ionCannonPort.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.ionCannonPort.Maximum = new decimal(new int[] {
             9999,
@@ -997,7 +1003,7 @@ namespace SwRebellionEditor
             // 
             // ionCannonAft
             // 
-            this.ionCannonAft.Location = new System.Drawing.Point(158, 67);
+            this.ionCannonAft.Location = new System.Drawing.Point(158, 58);
             this.ionCannonAft.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.ionCannonAft.Maximum = new decimal(new int[] {
             9999,
@@ -1017,7 +1023,7 @@ namespace SwRebellionEditor
             // 
             // ionCannonFore
             // 
-            this.ionCannonFore.Location = new System.Drawing.Point(91, 67);
+            this.ionCannonFore.Location = new System.Drawing.Point(91, 58);
             this.ionCannonFore.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.ionCannonFore.Maximum = new decimal(new int[] {
             9999,
@@ -1037,7 +1043,7 @@ namespace SwRebellionEditor
             // 
             // laserCannonFore
             // 
-            this.laserCannonFore.Location = new System.Drawing.Point(91, 97);
+            this.laserCannonFore.Location = new System.Drawing.Point(91, 83);
             this.laserCannonFore.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.laserCannonFore.Maximum = new decimal(new int[] {
             9999,
@@ -1059,7 +1065,7 @@ namespace SwRebellionEditor
             // 
             this.wepLaserLabel.AutoSize = true;
             this.wepLaserLabel.BackColor = System.Drawing.SystemColors.Control;
-            this.wepLaserLabel.Location = new System.Drawing.Point(4, 99);
+            this.wepLaserLabel.Location = new System.Drawing.Point(7, 85);
             this.wepLaserLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.wepLaserLabel.Name = "wepLaserLabel";
             this.wepLaserLabel.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -1072,7 +1078,7 @@ namespace SwRebellionEditor
             // 
             this.wepIonLabel.AutoSize = true;
             this.wepIonLabel.BackColor = System.Drawing.SystemColors.Control;
-            this.wepIonLabel.Location = new System.Drawing.Point(11, 69);
+            this.wepIonLabel.Location = new System.Drawing.Point(7, 60);
             this.wepIonLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.wepIonLabel.Name = "wepIonLabel";
             this.wepIonLabel.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -1085,7 +1091,7 @@ namespace SwRebellionEditor
             // 
             this.wepTurboLabel.AutoSize = true;
             this.wepTurboLabel.BackColor = System.Drawing.SystemColors.Control;
-            this.wepTurboLabel.Location = new System.Drawing.Point(18, 39);
+            this.wepTurboLabel.Location = new System.Drawing.Point(6, 35);
             this.wepTurboLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.wepTurboLabel.Name = "wepTurboLabel";
             this.wepTurboLabel.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -1096,7 +1102,7 @@ namespace SwRebellionEditor
             // 
             // turbolaserStarboard
             // 
-            this.turbolaserStarboard.Location = new System.Drawing.Point(291, 37);
+            this.turbolaserStarboard.Location = new System.Drawing.Point(291, 33);
             this.turbolaserStarboard.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.turbolaserStarboard.Maximum = new decimal(new int[] {
             9999,
@@ -1116,7 +1122,7 @@ namespace SwRebellionEditor
             // 
             // turbolaserPort
             // 
-            this.turbolaserPort.Location = new System.Drawing.Point(224, 37);
+            this.turbolaserPort.Location = new System.Drawing.Point(224, 33);
             this.turbolaserPort.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.turbolaserPort.Maximum = new decimal(new int[] {
             9999,
@@ -1136,7 +1142,7 @@ namespace SwRebellionEditor
             // 
             // turbolaserAft
             // 
-            this.turbolaserAft.Location = new System.Drawing.Point(158, 37);
+            this.turbolaserAft.Location = new System.Drawing.Point(158, 33);
             this.turbolaserAft.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.turbolaserAft.Maximum = new decimal(new int[] {
             9999,
@@ -1156,7 +1162,7 @@ namespace SwRebellionEditor
             // 
             // turbolaserFore
             // 
-            this.turbolaserFore.Location = new System.Drawing.Point(91, 37);
+            this.turbolaserFore.Location = new System.Drawing.Point(91, 33);
             this.turbolaserFore.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.turbolaserFore.Maximum = new decimal(new int[] {
             9999,
@@ -1228,7 +1234,7 @@ namespace SwRebellionEditor
             // 
             // laserCannonRange
             // 
-            this.laserCannonRange.Location = new System.Drawing.Point(627, 252);
+            this.laserCannonRange.Location = new System.Drawing.Point(595, 214);
             this.laserCannonRange.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.laserCannonRange.Maximum = new decimal(new int[] {
             9999,
@@ -1248,7 +1254,7 @@ namespace SwRebellionEditor
             // 
             // ionCannonRange
             // 
-            this.ionCannonRange.Location = new System.Drawing.Point(627, 222);
+            this.ionCannonRange.Location = new System.Drawing.Point(595, 189);
             this.ionCannonRange.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.ionCannonRange.Maximum = new decimal(new int[] {
             9999,
@@ -1268,7 +1274,7 @@ namespace SwRebellionEditor
             // 
             // turbolaserRange
             // 
-            this.turbolaserRange.Location = new System.Drawing.Point(627, 192);
+            this.turbolaserRange.Location = new System.Drawing.Point(595, 164);
             this.turbolaserRange.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.turbolaserRange.Maximum = new decimal(new int[] {
             9999,
@@ -1290,7 +1296,7 @@ namespace SwRebellionEditor
             // 
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.SystemColors.Control;
-            this.label6.Location = new System.Drawing.Point(627, 171);
+            this.label6.Location = new System.Drawing.Point(595, 143);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
             this.label6.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -1303,7 +1309,7 @@ namespace SwRebellionEditor
             // 
             this.familyIdHexLabel.AutoSize = true;
             this.familyIdHexLabel.Enabled = false;
-            this.familyIdHexLabel.Location = new System.Drawing.Point(464, 459);
+            this.familyIdHexLabel.Location = new System.Drawing.Point(686, 339);
             this.familyIdHexLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.familyIdHexLabel.Name = "familyIdHexLabel";
             this.familyIdHexLabel.Size = new System.Drawing.Size(26, 15);
@@ -1314,7 +1320,7 @@ namespace SwRebellionEditor
             // 
             this.capitalShipIdHexLabel.AutoSize = true;
             this.capitalShipIdHexLabel.Enabled = false;
-            this.capitalShipIdHexLabel.Location = new System.Drawing.Point(635, 26);
+            this.capitalShipIdHexLabel.Location = new System.Drawing.Point(321, 41);
             this.capitalShipIdHexLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.capitalShipIdHexLabel.Name = "capitalShipIdHexLabel";
             this.capitalShipIdHexLabel.Size = new System.Drawing.Size(26, 15);
@@ -1325,7 +1331,7 @@ namespace SwRebellionEditor
             // 
             this.capitalShipId.BackColor = System.Drawing.SystemColors.ControlLight;
             this.capitalShipId.Enabled = false;
-            this.capitalShipId.Location = new System.Drawing.Point(566, 24);
+            this.capitalShipId.Location = new System.Drawing.Point(252, 39);
             this.capitalShipId.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.capitalShipId.Maximum = new decimal(new int[] {
             999,
@@ -1336,23 +1342,24 @@ namespace SwRebellionEditor
             this.capitalShipId.Size = new System.Drawing.Size(59, 23);
             this.capitalShipId.TabIndex = 1113;
             this.capitalShipId.TabStop = false;
+            this.capitalShipId.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Enabled = false;
-            this.label1.Location = new System.Drawing.Point(475, 26);
+            this.label1.Location = new System.Drawing.Point(227, 41);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(84, 15);
+            this.label1.Size = new System.Drawing.Size(17, 15);
             this.label1.TabIndex = 1112;
-            this.label1.Text = "Capital Ship ID";
+            this.label1.Text = "Id";
             // 
             // totalFirePower
             // 
             this.totalFirePower.BackColor = System.Drawing.SystemColors.Menu;
             this.totalFirePower.Enabled = false;
-            this.totalFirePower.Location = new System.Drawing.Point(694, 281);
+            this.totalFirePower.Location = new System.Drawing.Point(662, 239);
             this.totalFirePower.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.totalFirePower.Maximum = new decimal(new int[] {
             9999,
@@ -1374,7 +1381,7 @@ namespace SwRebellionEditor
             // 
             this.ionCannonTotalFirePower.BackColor = System.Drawing.SystemColors.Menu;
             this.ionCannonTotalFirePower.Enabled = false;
-            this.ionCannonTotalFirePower.Location = new System.Drawing.Point(694, 222);
+            this.ionCannonTotalFirePower.Location = new System.Drawing.Point(662, 189);
             this.ionCannonTotalFirePower.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.ionCannonTotalFirePower.Maximum = new decimal(new int[] {
             9999,
@@ -1396,7 +1403,7 @@ namespace SwRebellionEditor
             // 
             this.laserCannonTotalFirePower.BackColor = System.Drawing.SystemColors.Menu;
             this.laserCannonTotalFirePower.Enabled = false;
-            this.laserCannonTotalFirePower.Location = new System.Drawing.Point(694, 252);
+            this.laserCannonTotalFirePower.Location = new System.Drawing.Point(662, 214);
             this.laserCannonTotalFirePower.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.laserCannonTotalFirePower.Maximum = new decimal(new int[] {
             9999,
@@ -1418,7 +1425,7 @@ namespace SwRebellionEditor
             // 
             this.turbolaserTotalFirePower.BackColor = System.Drawing.SystemColors.Menu;
             this.turbolaserTotalFirePower.Enabled = false;
-            this.turbolaserTotalFirePower.Location = new System.Drawing.Point(694, 192);
+            this.turbolaserTotalFirePower.Location = new System.Drawing.Point(662, 164);
             this.turbolaserTotalFirePower.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.turbolaserTotalFirePower.Maximum = new decimal(new int[] {
             9999,
@@ -1450,13 +1457,12 @@ namespace SwRebellionEditor
             this.costsGroup.Controls.Add(this.conCostLabel);
             this.costsGroup.Controls.Add(this.maintCostLabel);
             this.costsGroup.Controls.Add(this.refinedMaterialCost);
-            this.costsGroup.Controls.Add(this.encyclopediaName);
-            this.costsGroup.Controls.Add(this.encyclopediaDescription);
+            this.costsGroup.Controls.Add(this.description);
             this.costsGroup.Location = new System.Drawing.Point(7, 117);
             this.costsGroup.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.costsGroup.Name = "costsGroup";
             this.costsGroup.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.costsGroup.Size = new System.Drawing.Size(612, 248);
+            this.costsGroup.Size = new System.Drawing.Size(580, 216);
             this.costsGroup.TabIndex = 2;
             this.costsGroup.TabStop = false;
             this.costsGroup.Text = "In Game Data";
@@ -1466,7 +1472,7 @@ namespace SwRebellionEditor
             this.label9.AutoSize = true;
             this.label9.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.label9.ForeColor = System.Drawing.Color.White;
-            this.label9.Location = new System.Drawing.Point(19, 160);
+            this.label9.Location = new System.Drawing.Point(495, 130);
             this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(67, 15);
@@ -1476,7 +1482,7 @@ namespace SwRebellionEditor
             // infRegNumLabel
             // 
             this.infRegNumLabel.AutoSize = true;
-            this.infRegNumLabel.Location = new System.Drawing.Point(8, 106);
+            this.infRegNumLabel.Location = new System.Drawing.Point(11, 97);
             this.infRegNumLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.infRegNumLabel.Name = "infRegNumLabel";
             this.infRegNumLabel.Size = new System.Drawing.Size(86, 15);
@@ -1485,7 +1491,7 @@ namespace SwRebellionEditor
             // 
             // troopCapacity
             // 
-            this.troopCapacity.Location = new System.Drawing.Point(177, 104);
+            this.troopCapacity.Location = new System.Drawing.Point(140, 93);
             this.troopCapacity.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.troopCapacity.Maximum = new decimal(new int[] {
             9999,
@@ -1501,7 +1507,7 @@ namespace SwRebellionEditor
             // shieldLabel
             // 
             this.shieldLabel.AutoSize = true;
-            this.shieldLabel.Location = new System.Drawing.Point(8, 135);
+            this.shieldLabel.Location = new System.Drawing.Point(12, 122);
             this.shieldLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.shieldLabel.Name = "shieldLabel";
             this.shieldLabel.Size = new System.Drawing.Size(87, 15);
@@ -1510,7 +1516,7 @@ namespace SwRebellionEditor
             // 
             // shieldStrength
             // 
-            this.shieldStrength.Location = new System.Drawing.Point(177, 133);
+            this.shieldStrength.Location = new System.Drawing.Point(140, 118);
             this.shieldStrength.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.shieldStrength.Maximum = new decimal(new int[] {
             9999,
@@ -1525,7 +1531,7 @@ namespace SwRebellionEditor
             // 
             // fighterCapacity
             // 
-            this.fighterCapacity.Location = new System.Drawing.Point(177, 75);
+            this.fighterCapacity.Location = new System.Drawing.Point(140, 68);
             this.fighterCapacity.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.fighterCapacity.Maximum = new decimal(new int[] {
             9999,
@@ -1541,7 +1547,7 @@ namespace SwRebellionEditor
             // fighterNumLabel
             // 
             this.fighterNumLabel.AutoSize = true;
-            this.fighterNumLabel.Location = new System.Drawing.Point(8, 77);
+            this.fighterNumLabel.Location = new System.Drawing.Point(10, 72);
             this.fighterNumLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.fighterNumLabel.Name = "fighterNumLabel";
             this.fighterNumLabel.Size = new System.Drawing.Size(93, 15);
@@ -1550,7 +1556,7 @@ namespace SwRebellionEditor
             // 
             // shieldRechargeRate
             // 
-            this.shieldRechargeRate.Location = new System.Drawing.Point(184, 370);
+            this.shieldRechargeRate.Location = new System.Drawing.Point(153, 337);
             this.shieldRechargeRate.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.shieldRechargeRate.Maximum = new decimal(new int[] {
             999,
@@ -1566,7 +1572,7 @@ namespace SwRebellionEditor
             // shieldRechLabel
             // 
             this.shieldRechLabel.AutoSize = true;
-            this.shieldRechLabel.Location = new System.Drawing.Point(15, 372);
+            this.shieldRechLabel.Location = new System.Drawing.Point(15, 339);
             this.shieldRechLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.shieldRechLabel.Name = "shieldRechLabel";
             this.shieldRechLabel.Size = new System.Drawing.Size(117, 15);
@@ -1576,7 +1582,7 @@ namespace SwRebellionEditor
             // damageConLabel
             // 
             this.damageConLabel.AutoSize = true;
-            this.damageConLabel.Location = new System.Drawing.Point(15, 459);
+            this.damageConLabel.Location = new System.Drawing.Point(15, 414);
             this.damageConLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.damageConLabel.Name = "damageConLabel";
             this.damageConLabel.Size = new System.Drawing.Size(94, 15);
@@ -1585,7 +1591,7 @@ namespace SwRebellionEditor
             // 
             // damageControl
             // 
-            this.damageControl.Location = new System.Drawing.Point(184, 457);
+            this.damageControl.Location = new System.Drawing.Point(153, 412);
             this.damageControl.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.damageControl.Maximum = new decimal(new int[] {
             999,
@@ -1606,7 +1612,7 @@ namespace SwRebellionEditor
             // hullLabel
             // 
             this.hullLabel.AutoSize = true;
-            this.hullLabel.Location = new System.Drawing.Point(15, 401);
+            this.hullLabel.Location = new System.Drawing.Point(15, 364);
             this.hullLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.hullLabel.Name = "hullLabel";
             this.hullLabel.Size = new System.Drawing.Size(77, 15);
@@ -1615,7 +1621,7 @@ namespace SwRebellionEditor
             // 
             // hullStrength
             // 
-            this.hullStrength.Location = new System.Drawing.Point(184, 399);
+            this.hullStrength.Location = new System.Drawing.Point(153, 362);
             this.hullStrength.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.hullStrength.Maximum = new decimal(new int[] {
             99999,
@@ -1636,7 +1642,7 @@ namespace SwRebellionEditor
             // manuverLabel
             // 
             this.manuverLabel.AutoSize = true;
-            this.manuverLabel.Location = new System.Drawing.Point(15, 575);
+            this.manuverLabel.Location = new System.Drawing.Point(471, 439);
             this.manuverLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.manuverLabel.Name = "manuverLabel";
             this.manuverLabel.Size = new System.Drawing.Size(140, 15);
@@ -1645,7 +1651,7 @@ namespace SwRebellionEditor
             // 
             // sublightManoeuvrability
             // 
-            this.sublightManoeuvrability.Location = new System.Drawing.Point(184, 573);
+            this.sublightManoeuvrability.Location = new System.Drawing.Point(617, 437);
             this.sublightManoeuvrability.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.sublightManoeuvrability.Maximum = new decimal(new int[] {
             9999,
@@ -1661,7 +1667,7 @@ namespace SwRebellionEditor
             // sublightLabel
             // 
             this.sublightLabel.AutoSize = true;
-            this.sublightLabel.Location = new System.Drawing.Point(15, 546);
+            this.sublightLabel.Location = new System.Drawing.Point(471, 414);
             this.sublightLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.sublightLabel.Name = "sublightLabel";
             this.sublightLabel.Size = new System.Drawing.Size(86, 15);
@@ -1670,7 +1676,7 @@ namespace SwRebellionEditor
             // 
             // sublightSpeed
             // 
-            this.sublightSpeed.Location = new System.Drawing.Point(184, 544);
+            this.sublightSpeed.Location = new System.Drawing.Point(617, 412);
             this.sublightSpeed.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.sublightSpeed.Maximum = new decimal(new int[] {
             9999,
@@ -1685,7 +1691,7 @@ namespace SwRebellionEditor
             // 
             // primaryHyperdrive
             // 
-            this.primaryHyperdrive.Location = new System.Drawing.Point(184, 486);
+            this.primaryHyperdrive.Location = new System.Drawing.Point(617, 362);
             this.primaryHyperdrive.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.primaryHyperdrive.Maximum = new decimal(new int[] {
             999,
@@ -1701,7 +1707,7 @@ namespace SwRebellionEditor
             // hyper2Label
             // 
             this.hyper2Label.AutoSize = true;
-            this.hyper2Label.Location = new System.Drawing.Point(15, 517);
+            this.hyper2Label.Location = new System.Drawing.Point(471, 389);
             this.hyper2Label.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.hyper2Label.Name = "hyper2Label";
             this.hyper2Label.Size = new System.Drawing.Size(107, 15);
@@ -1710,7 +1716,7 @@ namespace SwRebellionEditor
             // 
             // backupHyperdrive
             // 
-            this.backupHyperdrive.Location = new System.Drawing.Point(184, 515);
+            this.backupHyperdrive.Location = new System.Drawing.Point(617, 387);
             this.backupHyperdrive.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.backupHyperdrive.Maximum = new decimal(new int[] {
             999,
@@ -1738,7 +1744,7 @@ namespace SwRebellionEditor
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(15, 488);
+            this.label2.Location = new System.Drawing.Point(471, 364);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(109, 15);
@@ -1749,7 +1755,7 @@ namespace SwRebellionEditor
             // 
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.SystemColors.Control;
-            this.label3.Location = new System.Drawing.Point(694, 171);
+            this.label3.Location = new System.Drawing.Point(652, 143);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
             this.label3.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -1762,7 +1768,7 @@ namespace SwRebellionEditor
             // 
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.SystemColors.Control;
-            this.label4.Location = new System.Drawing.Point(642, 283);
+            this.label4.Location = new System.Drawing.Point(610, 243);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
             this.label4.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -1774,7 +1780,7 @@ namespace SwRebellionEditor
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(255, 401);
+            this.label7.Location = new System.Drawing.Point(248, 339);
             this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(124, 15);
@@ -1784,7 +1790,7 @@ namespace SwRebellionEditor
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(255, 430);
+            this.label8.Location = new System.Drawing.Point(248, 364);
             this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(112, 15);
@@ -1794,7 +1800,7 @@ namespace SwRebellionEditor
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(258, 575);
+            this.label10.Location = new System.Drawing.Point(471, 464);
             this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(55, 15);
@@ -1803,7 +1809,7 @@ namespace SwRebellionEditor
             // 
             // field51_0
             // 
-            this.field51_0.Location = new System.Drawing.Point(395, 573);
+            this.field51_0.Location = new System.Drawing.Point(617, 462);
             this.field51_0.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.field51_0.Maximum = new decimal(new int[] {
             9999,
@@ -1817,13 +1823,46 @@ namespace SwRebellionEditor
             this.field51_0.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.field51_0.ValueChanged += new System.EventHandler(this.field51_0_ValueChanged);
             // 
+            // field2_1
+            // 
+            this.field2_1.Location = new System.Drawing.Point(153, 462);
+            this.field2_1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.field2_1.Maximum = new decimal(new int[] {
+            9999,
+            0,
+            0,
+            0});
+            this.field2_1.Name = "field2_1";
+            this.field2_1.Size = new System.Drawing.Size(59, 23);
+            this.field2_1.TabIndex = 1121;
+            this.field2_1.TabStop = false;
+            this.field2_1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.field2_1.Value = new decimal(new int[] {
+            2,
+            0,
+            0,
+            0});
+            this.field2_1.ValueChanged += new System.EventHandler(this.field2_1_ValueChanged);
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(15, 464);
+            this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(49, 15);
+            this.label11.TabIndex = 1120;
+            this.label11.Text = "Field2_1";
+            // 
             // CapitalShipsForm
             // 
             this.AcceptButton = this.Ok;
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.Cancel;
-            this.ClientSize = new System.Drawing.Size(769, 604);
+            this.ClientSize = new System.Drawing.Size(726, 526);
+            this.Controls.Add(this.field2_1);
+            this.Controls.Add(this.label11);
             this.Controls.Add(this.field51_0);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.wepRechLabel);
@@ -1836,6 +1875,7 @@ namespace SwRebellionEditor
             this.Controls.Add(this.interdictionStrength);
             this.Controls.Add(this.familyIdHexLabel);
             this.Controls.Add(this.gravityWellProjectors);
+            this.Controls.Add(this.name);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.researchLabel);
             this.Controls.Add(this.capitalShipIdHexLabel);
@@ -1957,6 +1997,7 @@ namespace SwRebellionEditor
             ((System.ComponentModel.ISupportInitialize)(this.backupHyperdrive)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picture)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.field51_0)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.field2_1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1972,5 +2013,7 @@ namespace SwRebellionEditor
         private Label label8;
         private Label label10;
         private NumericUpDown field51_0;
+        private NumericUpDown field2_1;
+        private Label label11;
     }
 }

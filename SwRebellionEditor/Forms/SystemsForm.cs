@@ -27,14 +27,14 @@
             {
                 var edataId = 165 + GameFile.Systems[selectorIndex].PictureId;
                 systemsImageList.Images.Add(Image.FromFile(RegistryKeys.InstalledLocation + "\\EData\\EDATA." + edataId.ToString("000")));
-                systemsListView.Items.Add(GameFile.Systems[selectorIndex].EncyclopediaName, selectorIndex);
+                systemsListView.Items.Add(GameFile.Systems[selectorIndex].Name, selectorIndex);
             }
         }
         protected override void DisplaySelectedGameObject(int selectorIndex)
         {
             var previousUnsavedData = GameFile.UnsavedData;
             var system = GameFile.Systems[selectorIndex];
-            encyclopediaName.Text = system.EncyclopediaName;
+            name.Text = system.Name;
             familyId.Value = system.FamilyId;
             familyIdHexLabel.Text = "0x" + system.FamilyId.ToString("X");
             nextProductionFacility.Value = system.NextProductionFacility;
@@ -52,7 +52,7 @@
             yPosition.Value = system.YPosition;
 
             var sector = SectorsGameFile.Sectors[system.SectorId - 20U];
-            sectorEncyclopediaName.Text = sector.EncyclopediaName;
+            sectorEncyclopediaName.Text = sector.Name;
             sectorFamilyId.Value = sector.FamilyId;
             sectorFamilyIdHexLabel.Text = "0x" + sector.FamilyId.ToString("X");
             sectorGalaxySize.Value = sector.GalaxySize;
@@ -69,7 +69,7 @@
         protected override void LoadSideInfo()
         {
             foreach (var s in GameFile.Systems)
-                s.EncyclopediaName = TextStra.Get(s.TextStraDllId.ToString());
+                s.Name = TextStra.Get(s.TextStraDllId.ToString());
         }
 
         #endregion

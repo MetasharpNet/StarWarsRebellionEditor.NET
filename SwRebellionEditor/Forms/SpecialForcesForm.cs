@@ -24,7 +24,7 @@
             {
                 var edataId = 25 + selectorIndex;
                 SpecialForcesImageList.Images.Add(Image.FromFile(RegistryKeys.InstalledLocation + "\\EData\\EDATA." + edataId.ToString("000")));
-                specialForcesListView.Items.Add(GameFile.SpecialForces[selectorIndex].EncyclopediaName, selectorIndex);
+                specialForcesListView.Items.Add(GameFile.SpecialForces[selectorIndex].Name, selectorIndex);
             }
         }
         protected override void DisplaySelectedGameObject(int selectorIndex)
@@ -36,7 +36,7 @@
             constructionCost.Value = specialForce.RefinedMaterialCost;
             diplomacyBase.Value = specialForce.DiplomacyBase;
             diplomacyVariance.Value = specialForce.DiplomacyVariance;
-            encyclopediaName.Text = specialForce.EncyclopediaName;
+            name.Text = specialForce.Name;
             espionageBase.Value = specialForce.EspionageBase;
             espionageVariance.Value = specialForce.EspionageVariance;
             facilitiesResearchBase.Value = specialForce.FacilitiesResearchBase;
@@ -70,7 +70,7 @@
         protected override void LoadSideInfo()
         {
             foreach (var sf in GameFile.SpecialForces)
-                sf.EncyclopediaName = TextStra.Get(sf.TextStraDllId.ToString());
+                sf.Name = TextStra.Get(sf.TextStraDllId.ToString());
         }
 
         #endregion

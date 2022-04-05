@@ -21,7 +21,7 @@
             var previousUnsavedData = GameFile.UnsavedData;
             var defenseFacility = GameFile.DefenseFacilities[selectorIndex];
             constructionCost.Value = defenseFacility.ConstructionCost;
-            encyclopediaName.Text = defenseFacility.EncyclopediaName;
+            name.Text = defenseFacility.Name;
             familyId.Value = defenseFacility.FamilyId;
             familyIdHexLabel.Text = "0x" + defenseFacility.FamilyId.ToString("X");
             firePowerRating.Value = defenseFacility.FirePowerRating;
@@ -51,7 +51,7 @@
         protected override void LoadSideInfo()
         {
             foreach (var df in GameFile.DefenseFacilities)
-                df.EncyclopediaName = TextStra.Get(df.TextStraDllId.ToString());
+                df.Name = TextStra.Get(df.TextStraDllId.ToString());
         }
 
         #endregion

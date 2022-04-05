@@ -43,8 +43,8 @@ namespace SwRebellionEditor
         private NumericUpDown galaxySize;
         private NumericUpDown textStraDllId;
         private NumericUpDown unknown2;
-        private RichTextBox encyclopediaDescription;
-        private TextBox encyclopediaName;
+        private RichTextBox description;
+        private TextBox name;
         private TrackBar selector;
 
         /// <summary>
@@ -88,7 +88,7 @@ namespace SwRebellionEditor
             this.sectorIdLabel = new System.Windows.Forms.Label();
             this.xPosition = new System.Windows.Forms.NumericUpDown();
             this.positionLabel = new System.Windows.Forms.Label();
-            this.encyclopediaDescription = new System.Windows.Forms.RichTextBox();
+            this.description = new System.Windows.Forms.RichTextBox();
             this.label12 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.familyIdLabel = new System.Windows.Forms.Label();
@@ -99,7 +99,7 @@ namespace SwRebellionEditor
             this.secImportLabel = new System.Windows.Forms.Label();
             this.encyclopediaGroupBox = new System.Windows.Forms.GroupBox();
             this.descriptionLabel = new System.Windows.Forms.Label();
-            this.encyclopediaName = new System.Windows.Forms.TextBox();
+            this.name = new System.Windows.Forms.TextBox();
             this.nameLabel = new System.Windows.Forms.Label();
             this.familyIdHexLabel = new System.Windows.Forms.Label();
             this.sectorIdHexLabel = new System.Windows.Forms.Label();
@@ -406,17 +406,17 @@ namespace SwRebellionEditor
             this.positionLabel.TabIndex = 0;
             this.positionLabel.Text = "position (X, Y)";
             // 
-            // encyclopediaDescription
+            // description
             // 
-            this.encyclopediaDescription.Cursor = System.Windows.Forms.Cursors.No;
-            this.encyclopediaDescription.Enabled = false;
-            this.encyclopediaDescription.Location = new System.Drawing.Point(7, 70);
-            this.encyclopediaDescription.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.encyclopediaDescription.Name = "encyclopediaDescription";
-            this.encyclopediaDescription.Size = new System.Drawing.Size(436, 208);
-            this.encyclopediaDescription.TabIndex = 134;
-            this.encyclopediaDescription.TabStop = false;
-            this.encyclopediaDescription.Text = "Not Implemented yet....Encylopedia Data...Will add .Someday";
+            this.description.Cursor = System.Windows.Forms.Cursors.No;
+            this.description.Enabled = false;
+            this.description.Location = new System.Drawing.Point(7, 70);
+            this.description.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.description.Name = "description";
+            this.description.Size = new System.Drawing.Size(436, 208);
+            this.description.TabIndex = 134;
+            this.description.TabStop = false;
+            this.description.Text = "Not Implemented yet....Encylopedia Data...Will add .Someday";
             // 
             // label12
             // 
@@ -521,9 +521,9 @@ namespace SwRebellionEditor
             // encyclopediaGroupBox
             // 
             this.encyclopediaGroupBox.Controls.Add(this.descriptionLabel);
-            this.encyclopediaGroupBox.Controls.Add(this.encyclopediaName);
+            this.encyclopediaGroupBox.Controls.Add(this.name);
             this.encyclopediaGroupBox.Controls.Add(this.nameLabel);
-            this.encyclopediaGroupBox.Controls.Add(this.encyclopediaDescription);
+            this.encyclopediaGroupBox.Controls.Add(this.description);
             this.encyclopediaGroupBox.Location = new System.Drawing.Point(298, 58);
             this.encyclopediaGroupBox.Name = "encyclopediaGroupBox";
             this.encyclopediaGroupBox.Size = new System.Drawing.Size(451, 284);
@@ -541,13 +541,13 @@ namespace SwRebellionEditor
             this.descriptionLabel.TabIndex = 170;
             this.descriptionLabel.Text = "description";
             // 
-            // encyclopediaName
+            // name
             // 
-            this.encyclopediaName.Enabled = false;
-            this.encyclopediaName.Location = new System.Drawing.Point(112, 21);
-            this.encyclopediaName.Name = "encyclopediaName";
-            this.encyclopediaName.Size = new System.Drawing.Size(331, 23);
-            this.encyclopediaName.TabIndex = 169;
+            this.name.Enabled = false;
+            this.name.Location = new System.Drawing.Point(112, 21);
+            this.name.Name = "name";
+            this.name.Size = new System.Drawing.Size(331, 23);
+            this.name.TabIndex = 169;
             // 
             // nameLabel
             // 

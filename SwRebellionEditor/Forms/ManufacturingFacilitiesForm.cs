@@ -22,7 +22,7 @@
             var manufacturingFacility = GameFile.ManufacturingFacilities[selectorIndex];
             bombardmentDefense.Value = manufacturingFacility.BombardmentDefense;
             constructionCost.Value = manufacturingFacility.RefinedMaterialCost;
-            encyclopediaName.Text = manufacturingFacility.EncyclopediaName;
+            name.Text = manufacturingFacility.Name;
             familyId.Value = manufacturingFacility.FamilyId;
             familyIdHexLabel.Text = "0x" + manufacturingFacility.FamilyId.ToString("X");
             isAllianceUnit.Checked = manufacturingFacility.IsAllianceUnit > 0U;
@@ -46,7 +46,7 @@
         protected override void LoadSideInfo()
         {
             foreach (var mf in GameFile.ManufacturingFacilities)
-                mf.EncyclopediaName = TextStra.Get(mf.TextStraDllId.ToString());
+                mf.Name = TextStra.Get(mf.TextStraDllId.ToString());
         }
 
         #endregion

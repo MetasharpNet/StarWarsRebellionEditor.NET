@@ -22,7 +22,7 @@ namespace SwRebellionEditor
         private GroupBox charLoyalGroup;
         private CheckBox isAllianceUnit;
         private CheckBox isEmpireUnit;
-        private Label encyclopediaName;
+        private Label name;
         private TabControl tabControl1;
         private TabPage tabPage1;
         private GroupBox researchGroup;
@@ -119,7 +119,7 @@ namespace SwRebellionEditor
             this.charLoyalGroup = new System.Windows.Forms.GroupBox();
             this.isAllianceUnit = new System.Windows.Forms.CheckBox();
             this.isEmpireUnit = new System.Windows.Forms.CheckBox();
-            this.encyclopediaName = new System.Windows.Forms.Label();
+            this.name = new System.Windows.Forms.Label();
             this.selector = new System.Windows.Forms.TrackBar();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
@@ -334,13 +334,13 @@ namespace SwRebellionEditor
             // 
             // ItemName
             // 
-            this.encyclopediaName.AutoSize = true;
-            this.encyclopediaName.Location = new System.Drawing.Point(230, 78);
-            this.encyclopediaName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.encyclopediaName.Name = "ItemName";
-            this.encyclopediaName.Size = new System.Drawing.Size(116, 15);
-            this.encyclopediaName.TabIndex = 155;
-            this.encyclopediaName.Text = "-- Item name here --";
+            this.name.AutoSize = true;
+            this.name.Location = new System.Drawing.Point(230, 78);
+            this.name.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.name.Name = "ItemName";
+            this.name.Size = new System.Drawing.Size(116, 15);
+            this.name.TabIndex = 155;
+            this.name.Text = "-- Item name here --";
             // 
             // ItemSelect
             // 
@@ -1301,7 +1301,7 @@ namespace SwRebellionEditor
             this.Controls.Add(this.Cancel);
             this.Controls.Add(this.Ok);
             this.Controls.Add(this.charLoyalGroup);
-            this.Controls.Add(this.encyclopediaName);
+            this.Controls.Add(this.name);
             this.Controls.Add(this.selector);
             this.Controls.Add(this.tabControl1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));

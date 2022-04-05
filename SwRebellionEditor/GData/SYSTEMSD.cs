@@ -25,8 +25,8 @@
         public ushort YPosition;
         public uint Field13_Unknown;
         [Ignore]
-        public string EncyclopediaName;
+        public string Name;
         [Ignore]
-        public string EncyclopediaDescription;
+        public string Description;
     }
 }

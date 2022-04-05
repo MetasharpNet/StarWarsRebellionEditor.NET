@@ -30,7 +30,7 @@
         public uint AttackStrength;
         public uint DefenseStrength;
         [Ignore]
-        public string EncyclopediaName;
+        public string Name;
         [Ignore]
         public string EncyclopediaText;
     }

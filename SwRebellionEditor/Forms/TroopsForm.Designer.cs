@@ -44,7 +44,7 @@ namespace SwRebellionEditor
         private Label UnkownMoralHPlabel;
         private NumericUpDown researchDifficulty;
         private Label resDiffLabel;
-        private Label encyclopediaName;
+        private Label name;
         private RichTextBox encyText;
         private Button Ok;
         private Button Cancel;
@@ -116,7 +116,7 @@ namespace SwRebellionEditor
             this.UnkownMoralHPlabel = new System.Windows.Forms.Label();
             this.researchDifficulty = new System.Windows.Forms.NumericUpDown();
             this.resDiffLabel = new System.Windows.Forms.Label();
-            this.encyclopediaName = new System.Windows.Forms.Label();
+            this.name = new System.Windows.Forms.Label();
             this.encyText = new System.Windows.Forms.RichTextBox();
             this.Ok = new System.Windows.Forms.Button();
             this.Cancel = new System.Windows.Forms.Button();
@@ -619,12 +619,12 @@ namespace SwRebellionEditor
             // 
             // troopName
             // 
-            this.encyclopediaName.AutoSize = true;
-            this.encyclopediaName.Location = new System.Drawing.Point(232, 75);
-            this.encyclopediaName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.encyclopediaName.Name = "troopName";
-            this.encyclopediaName.Size = new System.Drawing.Size(0, 15);
-            this.encyclopediaName.TabIndex = 13;
+            this.name.AutoSize = true;
+            this.name.Location = new System.Drawing.Point(232, 75);
+            this.name.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.name.Name = "troopName";
+            this.name.Size = new System.Drawing.Size(0, 15);
+            this.name.TabIndex = 13;
             // 
             // encyText
             // 
@@ -874,7 +874,7 @@ namespace SwRebellionEditor
             this.Controls.Add(this.SaveAs);
             this.Controls.Add(this.Cancel);
             this.Controls.Add(this.Ok);
-            this.Controls.Add(this.encyclopediaName);
+            this.Controls.Add(this.name);
             this.Controls.Add(this.isEmpireUnit);
             this.Controls.Add(this.isAllianceUnit);
             this.Controls.Add(this.selector);

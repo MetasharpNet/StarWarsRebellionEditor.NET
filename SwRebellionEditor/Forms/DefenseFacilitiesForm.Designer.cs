@@ -18,7 +18,7 @@ namespace SwRebellionEditor
         private Button Ok;
         private TrackBar selector;
         private RichTextBox encyText;
-        private Label encyclopediaName;
+        private Label name;
         private Label idLabel;
         private NumericUpDown textStraDllId;
         private Label unkown3Label;
@@ -85,7 +85,7 @@ namespace SwRebellionEditor
             this.Cancel = new System.Windows.Forms.Button();
             this.Ok = new System.Windows.Forms.Button();
             this.encyText = new System.Windows.Forms.RichTextBox();
-            this.encyclopediaName = new System.Windows.Forms.Label();
+            this.name = new System.Windows.Forms.Label();
             this.idLabel = new System.Windows.Forms.Label();
             this.textStraDllId = new System.Windows.Forms.NumericUpDown();
             this.unkown3Label = new System.Windows.Forms.Label();
@@ -205,14 +205,14 @@ namespace SwRebellionEditor
             this.encyText.TabStop = false;
             this.encyText.Text = "Not Implemented yet....Encylopedia Data...Will add .Someday";
             // 
-            // ItemName
+            // name
             // 
-            this.encyclopediaName.AutoSize = true;
-            this.encyclopediaName.Location = new System.Drawing.Point(230, 75);
-            this.encyclopediaName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.encyclopediaName.Name = "ItemName";
-            this.encyclopediaName.Size = new System.Drawing.Size(0, 15);
-            this.encyclopediaName.TabIndex = 89;
+            this.name.AutoSize = true;
+            this.name.Location = new System.Drawing.Point(230, 75);
+            this.name.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.name.Name = "name";
+            this.name.Size = new System.Drawing.Size(0, 15);
+            this.name.TabIndex = 89;
             // 
             // idLabel
             // 
@@ -225,7 +225,7 @@ namespace SwRebellionEditor
             this.idLabel.TabIndex = 68;
             this.idLabel.Text = "TextStra.DLL ID";
             // 
-            // idNum
+            // textStraDllId
             // 
             this.textStraDllId.Enabled = false;
             this.textStraDllId.Location = new System.Drawing.Point(119, 141);
@@ -235,7 +235,7 @@ namespace SwRebellionEditor
             0,
             0,
             0});
-            this.textStraDllId.Name = "idNum";
+            this.textStraDllId.Name = "textStraDllId";
             this.textStraDllId.Size = new System.Drawing.Size(59, 23);
             this.textStraDllId.TabIndex = 74;
             this.textStraDllId.TabStop = false;
@@ -276,7 +276,7 @@ namespace SwRebellionEditor
             0,
             0});
             // 
-            // familyIdNum
+            // familyId
             // 
             this.familyId.BackColor = System.Drawing.SystemColors.ControlLight;
             this.familyId.Enabled = false;
@@ -287,7 +287,7 @@ namespace SwRebellionEditor
             0,
             0,
             0});
-            this.familyId.Name = "familyIdNum";
+            this.familyId.Name = "familyId";
             this.familyId.Size = new System.Drawing.Size(59, 23);
             this.familyId.TabIndex = 73;
             this.familyId.TabStop = false;
@@ -309,7 +309,7 @@ namespace SwRebellionEditor
             this.familyLabel.TabIndex = 66;
             this.familyLabel.Text = "Family ID";
             // 
-            // secProdFacNum
+            // nextProductionFacility
             // 
             this.nextProductionFacility.BackColor = System.Drawing.SystemColors.ControlLight;
             this.nextProductionFacility.Enabled = false;
@@ -320,7 +320,7 @@ namespace SwRebellionEditor
             0,
             0,
             0});
-            this.nextProductionFacility.Name = "secProdFacNum";
+            this.nextProductionFacility.Name = "nextProductionFacility";
             this.nextProductionFacility.Size = new System.Drawing.Size(59, 23);
             this.nextProductionFacility.TabIndex = 58;
             this.nextProductionFacility.TabStop = false;
@@ -353,7 +353,7 @@ namespace SwRebellionEditor
             this.prodLabel.TabIndex = 57;
             this.prodLabel.Text = "Production Facility";
             // 
-            // prodFacNum
+            // productionFacility
             // 
             this.productionFacility.BackColor = System.Drawing.SystemColors.ControlLight;
             this.productionFacility.Enabled = false;
@@ -364,7 +364,7 @@ namespace SwRebellionEditor
             0,
             0,
             0});
-            this.productionFacility.Name = "prodFacNum";
+            this.productionFacility.Name = "productionFacility";
             this.productionFacility.Size = new System.Drawing.Size(59, 23);
             this.productionFacility.TabIndex = 55;
             this.productionFacility.TabStop = false;
@@ -375,7 +375,7 @@ namespace SwRebellionEditor
             0});
             this.productionFacility.ValueChanged += new System.EventHandler(this.productionFacility_ValueChanged);
             // 
-            // unknownMoralHpNum
+            // unknownMoralHp
             // 
             this.unknownMoralHp.Location = new System.Drawing.Point(119, 83);
             this.unknownMoralHp.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -384,7 +384,7 @@ namespace SwRebellionEditor
             0,
             0,
             0});
-            this.unknownMoralHp.Name = "unknownMoralHpNum";
+            this.unknownMoralHp.Name = "unknownMoralHp";
             this.unknownMoralHp.Size = new System.Drawing.Size(59, 23);
             this.unknownMoralHp.TabIndex = 87;
             this.unknownMoralHp.Value = new decimal(new int[] {
@@ -404,7 +404,7 @@ namespace SwRebellionEditor
             this.UnkownMoralHPlabel.TabIndex = 56;
             this.UnkownMoralHPlabel.Text = "Bombard Def.";
             // 
-            // resDiffNum
+            // researchDifficulty
             // 
             this.researchDifficulty.Location = new System.Drawing.Point(119, 43);
             this.researchDifficulty.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -413,7 +413,7 @@ namespace SwRebellionEditor
             0,
             0,
             0});
-            this.researchDifficulty.Name = "resDiffNum";
+            this.researchDifficulty.Name = "researchDifficulty";
             this.researchDifficulty.Size = new System.Drawing.Size(59, 23);
             this.researchDifficulty.TabIndex = 86;
             this.researchDifficulty.Value = new decimal(new int[] {
@@ -433,42 +433,42 @@ namespace SwRebellionEditor
             this.resDiffLabel.TabIndex = 64;
             this.resDiffLabel.Text = "Research Difficulty";
             // 
-            // empireUnit
+            // isEmpireUnit
             // 
             this.isEmpireUnit.AutoSize = true;
             this.isEmpireUnit.Location = new System.Drawing.Point(130, 97);
             this.isEmpireUnit.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.isEmpireUnit.Name = "empireUnit";
+            this.isEmpireUnit.Name = "isEmpireUnit";
             this.isEmpireUnit.Size = new System.Drawing.Size(94, 19);
             this.isEmpireUnit.TabIndex = 78;
             this.isEmpireUnit.Text = "Imperial Unit";
             this.isEmpireUnit.UseVisualStyleBackColor = true;
             this.isEmpireUnit.CheckStateChanged += new System.EventHandler(this.isEmpireUnit_CheckStateChanged);
             // 
-            // rebelUnit
+            // isAllianceUnit
             // 
             this.isAllianceUnit.AutoSize = true;
             this.isAllianceUnit.Location = new System.Drawing.Point(23, 97);
             this.isAllianceUnit.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.isAllianceUnit.Name = "rebelUnit";
+            this.isAllianceUnit.Name = "isAllianceUnit";
             this.isAllianceUnit.Size = new System.Drawing.Size(93, 19);
             this.isAllianceUnit.TabIndex = 77;
             this.isAllianceUnit.Text = "Alliance Unit";
             this.isAllianceUnit.UseVisualStyleBackColor = true;
             this.isAllianceUnit.CheckStateChanged += new System.EventHandler(this.isAllianceUnit_CheckStateChanged);
             // 
-            // ItemSelect
+            // selector
             // 
             this.selector.LargeChange = 3;
             this.selector.Location = new System.Drawing.Point(233, 20);
             this.selector.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.selector.Maximum = 5;
-            this.selector.Name = "ItemSelect";
+            this.selector.Name = "selector";
             this.selector.Size = new System.Drawing.Size(121, 45);
             this.selector.TabIndex = 75;
             this.selector.ValueChanged += new System.EventHandler(this.GameObjectsSelector_ValueChanged);
             // 
-            // ShieldNum
+            // shieldRating
             // 
             this.shieldRating.Location = new System.Drawing.Point(119, 48);
             this.shieldRating.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -477,7 +477,7 @@ namespace SwRebellionEditor
             0,
             0,
             0});
-            this.shieldRating.Name = "ShieldNum";
+            this.shieldRating.Name = "shieldRating";
             this.shieldRating.Size = new System.Drawing.Size(61, 23);
             this.shieldRating.TabIndex = 83;
             this.shieldRating.Value = new decimal(new int[] {
@@ -497,7 +497,7 @@ namespace SwRebellionEditor
             this.ShieldLabel.TabIndex = 61;
             this.ShieldLabel.Text = "Shield Rating";
             // 
-            // FirePowerNum
+            // firePowerRating
             // 
             this.firePowerRating.Location = new System.Drawing.Point(119, 18);
             this.firePowerRating.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -506,7 +506,7 @@ namespace SwRebellionEditor
             0,
             0,
             0});
-            this.firePowerRating.Name = "FirePowerNum";
+            this.firePowerRating.Name = "firePowerRating";
             this.firePowerRating.Size = new System.Drawing.Size(61, 23);
             this.firePowerRating.TabIndex = 82;
             this.firePowerRating.Value = new decimal(new int[] {
@@ -536,7 +536,7 @@ namespace SwRebellionEditor
             this.researchLabel.TabIndex = 60;
             this.researchLabel.Text = "Research";
             // 
-            // researchNum
+            // researchOrder
             // 
             this.researchOrder.Location = new System.Drawing.Point(119, 16);
             this.researchOrder.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -545,7 +545,7 @@ namespace SwRebellionEditor
             0,
             0,
             0});
-            this.researchOrder.Name = "researchNum";
+            this.researchOrder.Name = "researchOrder";
             this.researchOrder.Size = new System.Drawing.Size(61, 23);
             this.researchOrder.TabIndex = 81;
             this.researchOrder.Value = new decimal(new int[] {
@@ -555,7 +555,7 @@ namespace SwRebellionEditor
             0});
             this.researchOrder.ValueChanged += new System.EventHandler(this.researchOrder_ValueChanged);
             // 
-            // maintCostNum
+            // maintenanceCost
             // 
             this.maintenanceCost.Location = new System.Drawing.Point(119, 47);
             this.maintenanceCost.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -564,7 +564,7 @@ namespace SwRebellionEditor
             0,
             0,
             0});
-            this.maintenanceCost.Name = "maintCostNum";
+            this.maintenanceCost.Name = "maintenanceCost";
             this.maintenanceCost.Size = new System.Drawing.Size(61, 23);
             this.maintenanceCost.TabIndex = 80;
             this.maintenanceCost.Value = new decimal(new int[] {
@@ -584,7 +584,7 @@ namespace SwRebellionEditor
             this.maintCostLabel.TabIndex = 70;
             this.maintCostLabel.Text = "Maintenance Cost";
             // 
-            // conCostNum
+            // constructionCost
             // 
             this.constructionCost.Location = new System.Drawing.Point(119, 17);
             this.constructionCost.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -593,7 +593,7 @@ namespace SwRebellionEditor
             0,
             0,
             0});
-            this.constructionCost.Name = "conCostNum";
+            this.constructionCost.Name = "constructionCost";
             this.constructionCost.Size = new System.Drawing.Size(61, 23);
             this.constructionCost.TabIndex = 79;
             this.constructionCost.Value = new decimal(new int[] {
@@ -664,29 +664,29 @@ namespace SwRebellionEditor
             this.DATgroup.TabStop = false;
             this.DATgroup.Text = "DAT misc";
             // 
-            // famHexLabel
+            // familyIdHexLabel
             // 
             this.familyIdHexLabel.AutoSize = true;
             this.familyIdHexLabel.Enabled = false;
             this.familyIdHexLabel.Location = new System.Drawing.Point(180, 85);
             this.familyIdHexLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.familyIdHexLabel.Name = "famHexLabel";
+            this.familyIdHexLabel.Name = "familyIdHexLabel";
             this.familyIdHexLabel.Size = new System.Drawing.Size(26, 15);
             this.familyIdHexLabel.TabIndex = 1123;
             this.familyIdHexLabel.Text = "hex";
             // 
-            // unitHexLabel
+            // unitIdHexLabel
             // 
             this.unitIdHexLabel.AutoSize = true;
             this.unitIdHexLabel.Enabled = false;
             this.unitIdHexLabel.Location = new System.Drawing.Point(180, 173);
             this.unitIdHexLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.unitIdHexLabel.Name = "unitHexLabel";
+            this.unitIdHexLabel.Name = "unitIdHexLabel";
             this.unitIdHexLabel.Size = new System.Drawing.Size(26, 15);
             this.unitIdHexLabel.TabIndex = 1122;
             this.unitIdHexLabel.Text = "hex";
             // 
-            // unitNum
+            // unitId
             // 
             this.unitId.BackColor = System.Drawing.SystemColors.ControlLight;
             this.unitId.Enabled = false;
@@ -697,7 +697,7 @@ namespace SwRebellionEditor
             0,
             0,
             0});
-            this.unitId.Name = "unitNum";
+            this.unitId.Name = "unitId";
             this.unitId.Size = new System.Drawing.Size(59, 23);
             this.unitId.TabIndex = 1121;
             this.unitId.TabStop = false;
@@ -772,13 +772,13 @@ namespace SwRebellionEditor
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Ency. Data";
             // 
-            // ItemPicture
+            // picture
             // 
             this.picture.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.picture.InitialImage = null;
             this.picture.Location = new System.Drawing.Point(23, 14);
             this.picture.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.picture.Name = "ItemPicture";
+            this.picture.Name = "picture";
             this.picture.Size = new System.Drawing.Size(147, 74);
             this.picture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picture.TabIndex = 76;
@@ -796,7 +796,7 @@ namespace SwRebellionEditor
             this.Controls.Add(this.SaveAs);
             this.Controls.Add(this.Cancel);
             this.Controls.Add(this.Ok);
-            this.Controls.Add(this.encyclopediaName);
+            this.Controls.Add(this.name);
             this.Controls.Add(this.isEmpireUnit);
             this.Controls.Add(this.isAllianceUnit);
             this.Controls.Add(this.selector);

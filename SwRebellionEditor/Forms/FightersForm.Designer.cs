@@ -102,7 +102,7 @@ namespace SwRebellionEditor
         private Label familyLabel;
         private Label secProdFacNumlabel;
         private NumericUpDown nextProductionFacility;
-        private Label encyclopediaName;
+        private Label name;
         private PictureBox picture;
         private NumericUpDown torpedoRange;
         private NumericUpDown torpedoFore;
@@ -234,7 +234,7 @@ namespace SwRebellionEditor
             this.SaveAs = new System.Windows.Forms.Button();
             this.Cancel = new System.Windows.Forms.Button();
             this.Ok = new System.Windows.Forms.Button();
-            this.encyclopediaName = new System.Windows.Forms.Label();
+            this.name = new System.Windows.Forms.Label();
             this.selector = new System.Windows.Forms.TrackBar();
             this.picture = new System.Windows.Forms.PictureBox();
             this.hyperdriveGroup.SuspendLayout();
@@ -1807,15 +1807,15 @@ namespace SwRebellionEditor
             this.Ok.UseVisualStyleBackColor = true;
             this.Ok.Click += new System.EventHandler(this.Ok_Click);
             // 
-            // encyclopediaName
+            // name
             // 
-            this.encyclopediaName.AutoSize = true;
-            this.encyclopediaName.Location = new System.Drawing.Point(243, 82);
-            this.encyclopediaName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.encyclopediaName.Name = "encyclopediaName";
-            this.encyclopediaName.Size = new System.Drawing.Size(116, 15);
-            this.encyclopediaName.TabIndex = 118;
-            this.encyclopediaName.Text = "-- Item name here --";
+            this.name.AutoSize = true;
+            this.name.Location = new System.Drawing.Point(243, 82);
+            this.name.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.name.Name = "name";
+            this.name.Size = new System.Drawing.Size(116, 15);
+            this.name.TabIndex = 118;
+            this.name.Text = "-- Item name here --";
             // 
             // selector
             // 
@@ -1859,7 +1859,7 @@ namespace SwRebellionEditor
             this.Controls.Add(this.SaveAs);
             this.Controls.Add(this.Cancel);
             this.Controls.Add(this.Ok);
-            this.Controls.Add(this.encyclopediaName);
+            this.Controls.Add(this.name);
             this.Controls.Add(this.selector);
             this.Controls.Add(this.picture);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));

@@ -23,7 +23,7 @@
             atttackRating.Value = troop.AttackStrength;
             constructionCost.Value = troop.RefinedMaterialCost;
             defenseRating.Value = troop.DefenseStrength;
-            encyclopediaName.Text = troop.EncyclopediaName;
+            name.Text = troop.Name;
             familyIdHexLabel.Text = "0x" + troop.FamilyId.ToString("X");
             isAllianceUnit.Checked = troop.IsAllianceUnit > 0U;
             isEmpireUnit.Checked = troop.IsEmpireUnit > 0U;
@@ -46,7 +46,7 @@
         protected override void LoadSideInfo()
         {
             foreach (var t in GameFile.Troops)
-                t.EncyclopediaName = TextStra.Get(t.TextStraDllId.ToString());
+                t.Name = TextStra.Get(t.TextStraDllId.ToString());
         }
 
         #endregion

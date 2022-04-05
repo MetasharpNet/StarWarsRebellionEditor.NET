@@ -23,7 +23,7 @@
             bombardmentMod.Value = fighter.BombardmentDefense;
             constructionCost.Value = fighter.RefinedMaterialCost;
             detectionRating.Value = fighter.DetectionRating;
-            encyclopediaName.Text = fighter.EncyclopediaName;
+            name.Text = fighter.Name;
             familyId.Value = fighter.FamilyId;
             familyIdHexLabel.Text = "0x" + fighter.FamilyId.ToString("X");
             fighterId.Value = fighter.FighterId;
@@ -74,7 +74,7 @@
         protected override void LoadSideInfo()
         {
             foreach (var f in GameFile.Fighters)
-                f.EncyclopediaName = TextStra.Get(f.TextStraDllId.ToString());
+                f.Name = TextStra.Get(f.TextStraDllId.ToString());
         }
         private void UpdateTotals(int selectorIndex)
         {

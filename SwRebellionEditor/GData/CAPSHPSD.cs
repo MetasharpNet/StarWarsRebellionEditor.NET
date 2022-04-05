@@ -11,7 +11,7 @@
     }
     public class CAPSHPSD_CapitalShip
     {
-        public uint CapitalShipId;
+        public uint Id;
         public uint Field2_1;
         public uint ProductionFacility;
         public uint NextProductionFacility;
@@ -63,8 +63,8 @@
         public uint TroopCapacity;
         public uint Field51_0;
         [Ignore]
-        public string EncyclopediaName;
+        public string Name;
         [Ignore]
-        public string EncyclopediaDescription;
+        public string Description;
     }
 }

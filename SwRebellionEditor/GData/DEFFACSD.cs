@@ -28,8 +28,8 @@
         public uint FirePowerRating;
         public uint ShieldRating;
         [Ignore]
-        public string EncyclopediaName;
+        public string Name;
         [Ignore]
-        public string EncyclopediaDescription;
+        public string Description;
     }
 }
