@@ -20,24 +20,25 @@
         {
             var previousUnsavedData = GameFile.UnsavedData;
             var defenseFacility = GameFile.DefenseFacilities[selectorIndex];
-            constructionCost.Value = defenseFacility.ConstructionCost;
-            name.Text = defenseFacility.Name;
+            attackStrength.Value = defenseFacility.AttackStrength;
+            bombardmentDefense.Value = defenseFacility.BombardmentDefense;
             familyId.Value = defenseFacility.FamilyId;
             familyIdHexLabel.Text = "0x" + defenseFacility.FamilyId.ToString("X");
-            firePowerRating.Value = defenseFacility.FirePowerRating;
+            //field2_Unknown.Value = defenseFacility.Field2_Unknown;
+            field7_Unknown.Value = defenseFacility.Field7_Unknown;
+            id.Value = defenseFacility.Id;
+            idHexLabel.Text = "0x" + defenseFacility.Id.ToString("X");
             isAllianceUnit.Checked = defenseFacility.IsAllianceUnit > 0U;
             isEmpireUnit.Checked = defenseFacility.IsEmpireUnit > 0U;
             maintenanceCost.Value = defenseFacility.MaintenanceCost;
+            name.Text = defenseFacility.Name;
             nextProductionFacility.Value = defenseFacility.NextProductionFacility;
             productionFacility.Value = defenseFacility.ProductionFacility;
+            refinedMaterialCost.Value = defenseFacility.RefinedMaterialCost;
             researchDifficulty.Value = defenseFacility.ResearchDifficulty;
             researchOrder.Value = defenseFacility.ResearchOrder;
-            shieldRating.Value = defenseFacility.ShieldRating;
+            shieldStrength.Value = defenseFacility.ShieldStrength;
             textStraDllId.Value = defenseFacility.TextStraDllId;
-            unitId.Value = defenseFacility.UnitId;
-            unitIdHexLabel.Text = "0x" + defenseFacility.UnitId.ToString("X");
-            unknownMoralHp.Value = defenseFacility.UnknownMoralHp;
-            unknown3Num.Value = defenseFacility.Field7_Unknown;
 
             picture.SizeMode = PictureBoxSizeMode.Zoom;
             var edataId = 9 + selectorIndex;
@@ -60,7 +61,7 @@
 
         private void constructionCost_ValueChanged(object sender, EventArgs e)
         {
-            GameFile.DefenseFacilities[selector.Value].ConstructionCost = (uint)constructionCost.Value;
+            GameFile.DefenseFacilities[selector.Value].RefinedMaterialCost = (uint)refinedMaterialCost.Value;
             GameFile.UnsavedData = true;
         }
         private void familyId_ValueChanged(object sender, EventArgs e)
@@ -70,7 +71,7 @@
         }
         private void firePowerRating_ValueChanged(object sender, EventArgs e)
         {
-            GameFile.DefenseFacilities[selector.Value].FirePowerRating = (uint)firePowerRating.Value;
+            GameFile.DefenseFacilities[selector.Value].AttackStrength = (uint)attackStrength.Value;
             GameFile.UnsavedData = true;
         }
         private void isAllianceUnit_CheckStateChanged(object sender, EventArgs e)
@@ -110,12 +111,12 @@
         }
         private void shieldRating_ValueChanged(object sender, EventArgs e)
         {
-            GameFile.DefenseFacilities[selector.Value].ShieldRating = (uint)shieldRating.Value;
+            GameFile.DefenseFacilities[selector.Value].ShieldStrength = (uint)shieldStrength.Value;
             GameFile.UnsavedData = true;
         }
         private void unknownMoralHp_ValueChanged(object sender, EventArgs e)
         {
-            GameFile.DefenseFacilities[selector.Value].UnknownMoralHp = (uint)unknownMoralHp.Value;
+            GameFile.DefenseFacilities[selector.Value].BombardmentDefense = (uint)bombardmentDefense.Value;
             GameFile.UnsavedData = true;
         }
 

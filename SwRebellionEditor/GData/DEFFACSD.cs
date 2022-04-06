@@ -11,7 +11,7 @@
     }
     public class DEFFACSD_DefenseFacility
     {
-        public uint UnitId;
+        public uint Id;
         public uint Field2_Unknown;
         public uint ProductionFacility;
         public uint NextProductionFacility;
@@ -20,13 +20,13 @@
         public ushort Field7_Unknown;
         public uint IsAllianceUnit;
         public uint IsEmpireUnit;
-        public uint ConstructionCost;
+        public uint RefinedMaterialCost;
         public uint MaintenanceCost;
         public uint ResearchOrder;
         public uint ResearchDifficulty;
-        public uint UnknownMoralHp;
-        public uint FirePowerRating;
-        public uint ShieldRating;
+        public uint BombardmentDefense;
+        public uint AttackStrength;
+        public uint ShieldStrength;
         [Ignore]
         public string Name;
         [Ignore]

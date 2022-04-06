@@ -355,9 +355,9 @@ namespace SwRebellionEditor
             this.name.Location = new System.Drawing.Point(226, 15);
             this.name.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.name.Name = "name";
-            this.name.Size = new System.Drawing.Size(120, 15);
+            this.name.Size = new System.Drawing.Size(41, 15);
             this.name.TabIndex = 0;
-            this.name.Text = "CAPITAL SHIP NAME";
+            this.name.Text = "NAME";
             // 
             // idLabel
             // 
@@ -553,7 +553,7 @@ namespace SwRebellionEditor
             // isEmpireUnit
             // 
             this.isEmpireUnit.AutoSize = true;
-            this.isEmpireUnit.Location = new System.Drawing.Point(395, 66);
+            this.isEmpireUnit.Location = new System.Drawing.Point(444, 37);
             this.isEmpireUnit.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.isEmpireUnit.Name = "isEmpireUnit";
             this.isEmpireUnit.Size = new System.Drawing.Size(63, 19);
@@ -565,7 +565,7 @@ namespace SwRebellionEditor
             // isAllianceUnit
             // 
             this.isAllianceUnit.AutoSize = true;
-            this.isAllianceUnit.Location = new System.Drawing.Point(395, 44);
+            this.isAllianceUnit.Location = new System.Drawing.Point(444, 19);
             this.isAllianceUnit.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.isAllianceUnit.Name = "isAllianceUnit";
             this.isAllianceUnit.Size = new System.Drawing.Size(68, 19);
