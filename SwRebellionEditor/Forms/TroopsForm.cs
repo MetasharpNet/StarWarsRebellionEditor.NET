@@ -21,6 +21,7 @@
             var previousUnsavedData = GameFile.UnsavedData;
             var troop = GameFile.Troops[selectorIndex];
             atttackRating.Value = troop.AttackStrength;
+            bombardmentRating.Value = troop.BombardmentDefense;
             constructionCost.Value = troop.RefinedMaterialCost;
             defenseRating.Value = troop.DefenseStrength;
             name.Text = troop.Name;
