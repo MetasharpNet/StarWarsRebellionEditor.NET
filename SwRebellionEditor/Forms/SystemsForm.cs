@@ -58,8 +58,8 @@
             sectorGalaxySize.Value = sector.GalaxySize;
             sectorSecImport.Value = sector.SecImport;
             sectorTextStraDllId.Value = sector.TextStraDllId;
-            sectorXPosition.Value = sector.YPosition;
-            sectorYPosition.Value = sector.XPosition;
+            sectorXPosition.Value = sector.XPosition;
+            sectorYPosition.Value = sector.YPosition;
             
             picture.SizeMode = PictureBoxSizeMode.Zoom;
             var edataId = 165 + system.PictureId;
