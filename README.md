@@ -1,6 +1,6 @@
 Star Wars Rebellion Editor .NET
 
-This C# 9.0 project is built with .NET 6 in Visual Studio 2022 : https://visualstudio.microsoft.com/vs/community/
+This C# 11.0 project is built with .NET 7 in Visual Studio 2022 : https://visualstudio.microsoft.com/vs/community/
 
 The project is going under a heavy cleanup phase. So don't inspect the code as if it was "ready to receive new features" yet.
 
