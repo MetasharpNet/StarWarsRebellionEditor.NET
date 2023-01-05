@@ -46,7 +46,7 @@
         protected override void LoadSideInfo()
         {
             foreach (var mf in GameFile.ManufacturingFacilities)
-                mf.Name = TextStra.Get(mf.TextStraDllId.ToString());
+                mf.Name = TextStra.GetString(mf.TextStraDllId);
         }
 
         #endregion

@@ -89,7 +89,7 @@
         protected override void LoadSideInfo()
         {
             foreach (var mc in GameFile.MajorCharacters)
-                mc.Name = TextStra.Get(mc.TextStraDllId.ToString());
+                mc.Name = TextStra.GetString(mc.TextStraDllId);
         }
 
         #endregion

@@ -229,7 +229,7 @@ namespace SwRebellionEditor
             this.Ok.TabIndex = 153;
             this.Ok.Text = "&Ok";
             this.Ok.UseVisualStyleBackColor = true;
-            this.Ok.Click += new System.EventHandler(this.Cancel_Click);
+            this.Ok.Click += new System.EventHandler(this.Ok_Click);
             // 
             // selector
             // 
@@ -927,11 +927,11 @@ namespace SwRebellionEditor
             // 
             // name
             // 
-            this.name.Enabled = false;
             this.name.Location = new System.Drawing.Point(112, 21);
             this.name.Name = "name";
             this.name.Size = new System.Drawing.Size(331, 23);
             this.name.TabIndex = 169;
+            this.name.TextChanged += new System.EventHandler(this.name_TextChanged);
             // 
             // encyclopediaNameLabel
             // 

@@ -86,7 +86,7 @@ namespace SwRebellionEditor
         protected override void LoadSideInfo()
         {
             foreach (var ship in  GameFile.CapitalShips)
-                ship.Name = TextStra.Get(ship.TextStraDllId.ToString());
+                ship.Name = TextStra.GetString(ship.TextStraDllId);
         }
         private void UpdateTotals(int selectorIndex)
         {

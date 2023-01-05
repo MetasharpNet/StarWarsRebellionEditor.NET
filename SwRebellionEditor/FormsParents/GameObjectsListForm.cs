@@ -31,6 +31,9 @@
         protected virtual void LoadSideInfo()
         {
         }
+        protected virtual void SaveSideInfo()
+        {
+        }
         protected void InitializeBaseComponent(TrackBar selector)
         {
             TrackBarSelector = selector;
@@ -128,6 +131,7 @@
             if (GameFile.UnsavedData)
             {
                 GameFile.Save(GameFilePath);
+                SaveSideInfo();
                 GameFile.UnsavedData = false;
             }
             Close();
@@ -137,6 +141,7 @@
             if (GameFile.UnsavedData && MessageBox.Show(this, "Save file before opening a new one?", "Save data", MessageBoxButtons.YesNo) == DialogResult.Yes)
             {
                 GameFile.Save(GameFilePath);
+                SaveSideInfo();
                 GameFile.UnsavedData = false;
             }
             OpenSpecificGameFile();
@@ -156,6 +161,7 @@
             if (saveFileDialog.ShowDialog(this) == DialogResult.OK)
             {
                 GameFile.Save(saveFileDialog.FileName);
+                SaveSideInfo();
                 GameFile.UnsavedData = false;
                 int num = (int)MessageBox.Show(this, "File saved", "", MessageBoxButtons.OK);
             }

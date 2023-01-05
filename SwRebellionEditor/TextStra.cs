@@ -1,29 +1,25 @@
-﻿using Vestris.ResourceLib;
+﻿using System.Resources;
+using Vestris.ResourceLib;
 
 namespace SwRebellionEditor
 {
     public static class TextStra
     {
-        private static Dictionary<string, string> _dic;
+        private static ResourceFile Resources;
 
         static TextStra()
         {
-            var filePath = RegistryKeys.InstalledLocation + "\\TEXTSTRA.DLL";
-            _dic = new Dictionary<string, string>();
-            using (ResourceInfo vi = new ResourceInfo())
-            {
-                vi.Load(filePath);
-                foreach (ResourceId id in vi.ResourceTypes)
-                {
-                    foreach (Resource resource in vi.Resources[id])
-                        Tools.AddToDictionary(resource, _dic);
-                }
-            }
+            Resources = new ResourceFile(RegistryKeys.InstalledLocation + "\\TEXTSTRA.DLL");
         }
 
-        public static string Get(string id)
+        public static string GetString(ushort id)
         {
-            return _dic[id];
+            return Resources.RT_STRING[id];
+        }
+
+        public static void SaveString(ushort id, string text)
+        {
+            Resources.SaveString(id, text);
         }
     }
 }

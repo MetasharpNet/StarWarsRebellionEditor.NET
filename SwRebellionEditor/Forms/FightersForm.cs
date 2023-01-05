@@ -74,7 +74,7 @@
         protected override void LoadSideInfo()
         {
             foreach (var f in GameFile.Fighters)
-                f.Name = TextStra.Get(f.TextStraDllId.ToString());
+                f.Name = TextStra.GetString(f.TextStraDllId);
         }
         private void UpdateTotals(int selectorIndex)
         {

@@ -39,7 +39,11 @@
         protected override void LoadSideInfo()
         {
             foreach (var s in GameFile.Sectors)
-                s.Name = TextStra.Get(s.TextStraDllId.ToString());
+                s.Name = TextStra.GetString(s.TextStraDllId);
+        }
+        protected override void SaveSideInfo()
+        {
+            TextStra.SaveString(Convert.ToUInt16(textStraDllId.Value), name.Text);
         }
 
         #endregion
@@ -54,6 +58,11 @@
         private void galaxySize_ValueChanged(object sender, EventArgs e)
         {
             GameFile.Sectors[selector.Value].GalaxySize = (uint)galaxySize.Value;
+            GameFile.UnsavedData = true;
+        }
+        private void name_TextChanged(object sender, EventArgs e)
+        {
+            GameFile.Sectors[selector.Value].Name = name.Text;
             GameFile.UnsavedData = true;
         }
         private void nextProductionFacility_ValueChanged(object sender, EventArgs e)

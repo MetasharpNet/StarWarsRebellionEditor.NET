@@ -69,7 +69,11 @@
         protected override void LoadSideInfo()
         {
             foreach (var s in GameFile.Systems)
-                s.Name = TextStra.Get(s.TextStraDllId.ToString());
+                s.Name = TextStra.GetString(s.TextStraDllId);
+        }
+        protected override void SaveSideInfo()
+        {
+            TextStra.SaveString(Convert.ToUInt16(textStraDllId.Value), name.Text);
         }
 
         #endregion
@@ -107,6 +111,11 @@
         private void familyId_ValueChanged(object sender, EventArgs e)
         {
             GameFile.Systems[selector.Value].FamilyId = (uint)familyId.Value;
+            GameFile.UnsavedData = true;
+        }
+        private void name_TextChanged(object sender, EventArgs e)
+        {
+            GameFile.Systems[selector.Value].Name = name.Text;
             GameFile.UnsavedData = true;
         }
         private void nextProductionFacility_ValueChanged(object sender, EventArgs e)

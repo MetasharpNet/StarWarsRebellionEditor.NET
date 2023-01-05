@@ -17,35 +17,5 @@ namespace SwRebellionEditor
                 return Encoding.Unicode.GetString(text);
             return Encoding.UTF8.GetString(text);
         }
-
-        public static void AddToDictionary(Resource resource, Dictionary<string, string> dic)
-        {
-            var lines = resource.ToString().Split("\r\n");
-            if (lines.Length > 0 && lines[0] == "STRINGTABLE")
-            {
-                if (lines.Length < 1 || lines[1] != "BEGIN")
-                    return;
-                for (int l = 2; l < lines.Length - 1; ++l)
-                {
-                    lines[l] = lines[l].Trim();
-                    if (lines[l] == "END")
-                        break;
-                    string id;
-                    string val = "";
-                    if (lines[l].IndexOf(" ") < 0)
-                        id = lines[l];
-                    else
-                    {
-                        id = lines[l].Substring(0, lines[l].IndexOf(" "));
-                        val = lines[l].Substring(lines[l].IndexOf(" ") + 1);
-                    }
-                    dic.Add(id, val);
-                }
-            }
-            else
-            {
-                dic.Add(resource.Name.Name, Tools.ToString(resource.WriteAndGetBytes()));
-            }
-        }
     }
 }

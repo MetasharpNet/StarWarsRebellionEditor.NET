@@ -47,7 +47,7 @@
         protected override void LoadSideInfo()
         {
             foreach (var t in GameFile.Troops)
-                t.Name = TextStra.Get(t.TextStraDllId.ToString());
+                t.Name = TextStra.GetString(t.TextStraDllId);
         }
 
         #endregion

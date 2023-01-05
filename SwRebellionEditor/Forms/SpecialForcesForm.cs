@@ -70,7 +70,7 @@
         protected override void LoadSideInfo()
         {
             foreach (var sf in GameFile.SpecialForces)
-                sf.Name = TextStra.Get(sf.TextStraDllId.ToString());
+                sf.Name = TextStra.GetString(sf.TextStraDllId);
         }
 
         #endregion

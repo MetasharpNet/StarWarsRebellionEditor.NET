@@ -52,7 +52,7 @@
         protected override void LoadSideInfo()
         {
             foreach (var df in GameFile.DefenseFacilities)
-                df.Name = TextStra.Get(df.TextStraDllId.ToString());
+                df.Name = TextStra.GetString(df.TextStraDllId);
         }
 
         #endregion
