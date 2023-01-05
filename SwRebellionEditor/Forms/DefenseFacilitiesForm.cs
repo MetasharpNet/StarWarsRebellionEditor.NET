@@ -24,7 +24,7 @@
             bombardmentDefense.Value = defenseFacility.BombardmentDefense;
             familyId.Value = defenseFacility.FamilyId;
             familyIdHexLabel.Text = "0x" + defenseFacility.FamilyId.ToString("X");
-            //field2_Unknown.Value = defenseFacility.Field2_Unknown;
+            field2_Unknown.Value = defenseFacility.Field2_Unknown;
             field7_Unknown.Value = defenseFacility.Field7_Unknown;
             id.Value = defenseFacility.Id;
             idHexLabel.Text = "0x" + defenseFacility.Id.ToString("X");
@@ -54,24 +54,29 @@
             foreach (var df in GameFile.DefenseFacilities)
                 df.Name = TextStra.GetString(df.TextStraDllId);
         }
+        protected override void SaveSideInfo()
+        {
+            TextStra.SaveString(Convert.ToUInt16(textStraDllId.Value), name.Text);
+            //EncyText.SaveString(Convert.ToUInt16(xxx.Value), name.Text);
+        }
 
         #endregion
 
         #region Changed events
 
-        private void constructionCost_ValueChanged(object sender, EventArgs e)
+        private void attackStrength_ValueChanged(object sender, EventArgs e)
         {
-            GameFile.DefenseFacilities[selector.Value].RefinedMaterialCost = (uint)refinedMaterialCost.Value;
+            GameFile.DefenseFacilities[selector.Value].AttackStrength = (uint)attackStrength.Value;
+            GameFile.UnsavedData = true;
+        }
+        private void bombardmentDefense_ValueChanged(object sender, EventArgs e)
+        {
+            GameFile.DefenseFacilities[selector.Value].BombardmentDefense = (uint)bombardmentDefense.Value;
             GameFile.UnsavedData = true;
         }
         private void familyId_ValueChanged(object sender, EventArgs e)
         {
             GameFile.DefenseFacilities[selector.Value].FamilyId = (uint)familyId.Value;
-            GameFile.UnsavedData = true;
-        }
-        private void firePowerRating_ValueChanged(object sender, EventArgs e)
-        {
-            GameFile.DefenseFacilities[selector.Value].AttackStrength = (uint)attackStrength.Value;
             GameFile.UnsavedData = true;
         }
         private void isAllianceUnit_CheckStateChanged(object sender, EventArgs e)
@@ -89,6 +94,11 @@
             GameFile.DefenseFacilities[selector.Value].MaintenanceCost = (uint)maintenanceCost.Value;
             GameFile.UnsavedData = true;
         }
+        private void name_TextChanged(object sender, EventArgs e)
+        {
+            GameFile.DefenseFacilities[selector.Value].Name = name.Text;
+            GameFile.UnsavedData = true;
+        }
         private void nextProductionFacility_ValueChanged(object sender, EventArgs e)
         {
             GameFile.DefenseFacilities[selector.Value].NextProductionFacility = (uint)nextProductionFacility.Value;
@@ -97,6 +107,11 @@
         private void productionFacility_ValueChanged(object sender, EventArgs e)
         {
             GameFile.DefenseFacilities[selector.Value].ProductionFacility = (uint)productionFacility.Value;
+            GameFile.UnsavedData = true;
+        }
+        private void refinedMaterialCost_ValueChanged(object sender, EventArgs e)
+        {
+            GameFile.DefenseFacilities[selector.Value].RefinedMaterialCost = (uint)refinedMaterialCost.Value;
             GameFile.UnsavedData = true;
         }
         private void researchDifficulty_ValueChanged(object sender, EventArgs e)
@@ -109,14 +124,9 @@
             GameFile.DefenseFacilities[selector.Value].ResearchOrder = (uint)researchOrder.Value;
             GameFile.UnsavedData = true;
         }
-        private void shieldRating_ValueChanged(object sender, EventArgs e)
+        private void shieldStrength_ValueChanged(object sender, EventArgs e)
         {
             GameFile.DefenseFacilities[selector.Value].ShieldStrength = (uint)shieldStrength.Value;
-            GameFile.UnsavedData = true;
-        }
-        private void unknownMoralHp_ValueChanged(object sender, EventArgs e)
-        {
-            GameFile.DefenseFacilities[selector.Value].BombardmentDefense = (uint)bombardmentDefense.Value;
             GameFile.UnsavedData = true;
         }
 
