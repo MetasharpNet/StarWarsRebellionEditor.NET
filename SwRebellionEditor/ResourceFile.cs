@@ -3,7 +3,7 @@ using Vestris.ResourceLib;
 
 namespace SwRebellionEditor
 {
-    // RT_RCDATA
+    // resource lib: https://github.com/resourcelib/resourcelib
 
     public class ResourceFile
     {
