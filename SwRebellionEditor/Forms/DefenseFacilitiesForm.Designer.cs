@@ -123,7 +123,7 @@ namespace SwRebellionEditor
             // 
             // openNew
             // 
-            this.openNew.Location = new System.Drawing.Point(388, 289);
+            this.openNew.Location = new System.Drawing.Point(386, 283);
             this.openNew.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.openNew.Name = "openNew";
             this.openNew.Size = new System.Drawing.Size(88, 27);
@@ -134,7 +134,7 @@ namespace SwRebellionEditor
             // 
             // SaveAs
             // 
-            this.SaveAs.Location = new System.Drawing.Point(293, 289);
+            this.SaveAs.Location = new System.Drawing.Point(291, 283);
             this.SaveAs.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.SaveAs.Name = "SaveAs";
             this.SaveAs.Size = new System.Drawing.Size(88, 27);
@@ -146,7 +146,7 @@ namespace SwRebellionEditor
             // Cancel
             // 
             this.Cancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.Cancel.Location = new System.Drawing.Point(179, 289);
+            this.Cancel.Location = new System.Drawing.Point(177, 283);
             this.Cancel.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Cancel.Name = "Cancel";
             this.Cancel.Size = new System.Drawing.Size(88, 27);
@@ -157,7 +157,7 @@ namespace SwRebellionEditor
             // 
             // Ok
             // 
-            this.Ok.Location = new System.Drawing.Point(84, 289);
+            this.Ok.Location = new System.Drawing.Point(82, 283);
             this.Ok.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Ok.Name = "Ok";
             this.Ok.Size = new System.Drawing.Size(88, 27);
@@ -341,7 +341,7 @@ namespace SwRebellionEditor
             // isEmpireUnit
             // 
             this.isEmpireUnit.AutoSize = true;
-            this.isEmpireUnit.Location = new System.Drawing.Point(214, 75);
+            this.isEmpireUnit.Location = new System.Drawing.Point(214, 76);
             this.isEmpireUnit.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.isEmpireUnit.Name = "isEmpireUnit";
             this.isEmpireUnit.Size = new System.Drawing.Size(63, 19);
@@ -353,7 +353,7 @@ namespace SwRebellionEditor
             // isAllianceUnit
             // 
             this.isAllianceUnit.AutoSize = true;
-            this.isAllianceUnit.Location = new System.Drawing.Point(214, 57);
+            this.isAllianceUnit.Location = new System.Drawing.Point(214, 58);
             this.isAllianceUnit.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.isAllianceUnit.Name = "isAllianceUnit";
             this.isAllianceUnit.Size = new System.Drawing.Size(68, 19);
@@ -453,7 +453,7 @@ namespace SwRebellionEditor
             this.inGameDataGroupBox.Controls.Add(this.picture);
             this.inGameDataGroupBox.Controls.Add(this.isEmpireUnit);
             this.inGameDataGroupBox.Controls.Add(this.isAllianceUnit);
-            this.inGameDataGroupBox.Location = new System.Drawing.Point(4, 48);
+            this.inGameDataGroupBox.Location = new System.Drawing.Point(4, 41);
             this.inGameDataGroupBox.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.inGameDataGroupBox.Name = "inGameDataGroupBox";
             this.inGameDataGroupBox.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -464,7 +464,7 @@ namespace SwRebellionEditor
             // 
             // name
             // 
-            this.name.Location = new System.Drawing.Point(214, 29);
+            this.name.Location = new System.Drawing.Point(214, 25);
             this.name.Name = "name";
             this.name.Size = new System.Drawing.Size(270, 23);
             this.name.TabIndex = 1126;
@@ -746,7 +746,7 @@ namespace SwRebellionEditor
             this.hiddenDataGroupBox.Controls.Add(this.id);
             this.hiddenDataGroupBox.Controls.Add(this.idHexLabel);
             this.hiddenDataGroupBox.Controls.Add(this.productionFacility);
-            this.hiddenDataGroupBox.Location = new System.Drawing.Point(501, 35);
+            this.hiddenDataGroupBox.Location = new System.Drawing.Point(501, 28);
             this.hiddenDataGroupBox.Name = "hiddenDataGroupBox";
             this.hiddenDataGroupBox.Size = new System.Drawing.Size(241, 250);
             this.hiddenDataGroupBox.TabIndex = 1126;
@@ -759,7 +759,7 @@ namespace SwRebellionEditor
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.Cancel;
-            this.ClientSize = new System.Drawing.Size(749, 322);
+            this.ClientSize = new System.Drawing.Size(749, 316);
             this.Controls.Add(this.hiddenDataGroupBox);
             this.Controls.Add(this.inGameDataGroupBox);
             this.Controls.Add(this.openNew);
@@ -771,6 +771,8 @@ namespace SwRebellionEditor
             this.KeyPreview = true;
             this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(765, 355);
+            this.MinimumSize = new System.Drawing.Size(765, 355);
             this.Name = "DefenseFacilitiesForm";
             this.Text = "Defense Facilities (DEFFACSD.DAT)";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.GameObjectsListForm_FormClosing);

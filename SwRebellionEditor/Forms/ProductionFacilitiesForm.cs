@@ -21,7 +21,7 @@
             var previousUnsavedData = GameFile.UnsavedData;
             var productionFacility = GameFile.ProductionFacilities[selectorIndex];
             bombardmentDefense.Value = productionFacility.BombardmentDefense;
-            constructionCost.Value = productionFacility.RefinedMaterialCost;
+            refinedMaterialCost.Value = productionFacility.RefinedMaterialCost;
             name.Text = productionFacility.Name;
             familyId.Value = productionFacility.FamilyId;
             familyIdHexLabel.Text = "0x" + productionFacility.FamilyId.ToString("X");
@@ -34,9 +34,9 @@
             researchDifficulty.Value = productionFacility.ResearchDifficulty;
             researchOrder.Value = productionFacility.ResearchOrder;
             textStraDllId.Value = productionFacility.TextStraDllId;
-            unitId.Value = productionFacility.UnitId;
+            id.Value = productionFacility.UnitId;
             unitIdHexLabel.Text = "0x" + productionFacility.UnitId.ToString("X");
-            unknown2.Value = productionFacility.Field7_Unknown;
+            field2_Unknown.Value = productionFacility.Field7_Unknown;
 
             var edataId = 1 + selectorIndex;
             picture.SizeMode = PictureBoxSizeMode.Zoom;
@@ -48,6 +48,11 @@
             foreach (var pf in GameFile.ProductionFacilities)
                 pf.Name = TextStra.GetString(pf.TextStraDllId);
         }
+        protected override void SaveSideInfo()
+        {
+            TextStra.SaveString(Convert.ToUInt16(textStraDllId.Value), name.Text);
+            //EncyText.SaveString(Convert.ToUInt16(xxx.Value), name.Text);
+        }
 
         #endregion
 
@@ -56,11 +61,6 @@
         private void bombardmentDefense_ValueChanged(object sender, EventArgs e)
         {
             GameFile.ProductionFacilities[selector.Value].BombardmentDefense = (uint)bombardmentDefense.Value;
-            GameFile.UnsavedData = true;
-        }
-        private void constructionCost_ValueChanged(object sender, EventArgs e)
-        {
-            GameFile.ProductionFacilities[selector.Value].RefinedMaterialCost = (uint)constructionCost.Value;
             GameFile.UnsavedData = true;
         }
         private void familyId_ValueChanged(object sender, EventArgs e)
@@ -83,6 +83,11 @@
             GameFile.ProductionFacilities[selector.Value].MaintenanceCost = (uint)maintenanceCost.Value;
             GameFile.UnsavedData = true;
         }
+        private void name_TextChanged(object sender, EventArgs e)
+        {
+            GameFile.ProductionFacilities[selector.Value].Name = name.Text;
+            GameFile.UnsavedData = true;
+        }
         private void nextProductionFacility_ValueChanged(object sender, EventArgs e)
         {
             GameFile.ProductionFacilities[selector.Value].NextProductionFacility = (uint)nextProductionFacility.Value;
@@ -96,6 +101,11 @@
         private void productionRate_ValueChanged(object sender, EventArgs e)
         {
             GameFile.ProductionFacilities[selector.Value].ProductionRate = (uint)productionRate.Value;
+            GameFile.UnsavedData = true;
+        }
+        private void refinedMaterialCost_ValueChanged(object sender, EventArgs e)
+        {
+            GameFile.ProductionFacilities[selector.Value].RefinedMaterialCost = (uint)refinedMaterialCost.Value;
             GameFile.UnsavedData = true;
         }
         private void researchDifficulty_ValueChanged(object sender, EventArgs e)
