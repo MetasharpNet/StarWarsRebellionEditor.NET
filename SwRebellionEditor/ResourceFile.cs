@@ -1,15 +1,20 @@
-﻿using Vestris.ResourceLib;
+﻿using System.Linq;
+using Vestris.ResourceLib;
 
 namespace SwRebellionEditor
 {
+    // RT_RCDATA
+
     public class ResourceFile
     {
         private string _filePath;
+        public Dictionary<string, string> RT_RCDATA;
         public Dictionary<ushort, string> RT_STRING;
 
         public ResourceFile(string filePath)
         {
             _filePath = filePath;
+            RT_RCDATA = new Dictionary<string, string>();
             RT_STRING = new Dictionary<ushort, string>();
             Load();
         }
@@ -19,10 +24,20 @@ namespace SwRebellionEditor
             using (ResourceInfo ri = new ResourceInfo())
             {
                 ri.Load(_filePath);
-                foreach (StringResource sr in ri[Kernel32.ResourceTypes.RT_STRING])
+                if (ri.ResourceTypes.Any(t => t.Name == (((int)Kernel32.ResourceTypes.RT_RCDATA).ToString())))
                 {
-                    foreach (var s in sr.Strings)
-                        RT_STRING.Add(s.Key, s.Value);
+                    foreach (var r in ri[Kernel32.ResourceTypes.RT_RCDATA])
+                    {
+                        RT_RCDATA.Add(r.Name.Name, Tools.ToString(r.WriteAndGetBytes()));
+                    }
+                }
+                if (ri.ResourceTypes.Any(t => t.Name == (((int)Kernel32.ResourceTypes.RT_STRING).ToString())))
+                {
+                    foreach (StringResource sr in ri[Kernel32.ResourceTypes.RT_STRING])
+                    {
+                        foreach (var s in sr.Strings)
+                            RT_STRING.Add(s.Key, s.Value);
+                    }
                 }
             }
         }
@@ -41,37 +56,6 @@ namespace SwRebellionEditor
             sr.LoadFrom(_filePath);
             sr[id] = text;
             sr.SaveTo(_filePath);
-        }
-
-        // deprecated
-        public static void AddToDictionary(Resource resource, Dictionary<ushort, string> dic)
-        {
-            var lines = resource.ToString().Split("\r\n");
-            if (lines.Length > 0 && lines[0] == "STRINGTABLE")
-            {
-                if (lines.Length < 1 || lines[1] != "BEGIN")
-                    return;
-                for (int l = 2; l < lines.Length - 1; ++l)
-                {
-                    lines[l] = lines[l].Trim();
-                    if (lines[l] == "END")
-                        break;
-                    ushort id;
-                    string val = "";
-                    if (lines[l].IndexOf(" ") < 0)
-                        id = Convert.ToUInt16(lines[l]);
-                    else
-                    {
-                        id = Convert.ToUInt16(lines[l].Substring(0, lines[l].IndexOf(" ")));
-                        val = lines[l].Substring(lines[l].IndexOf(" ") + 1);
-                    }
-                    dic.Add(id, val);
-                }
-            }
-            else
-            {
-                //dic.Add(resource.Name.Name, Tools.ToString(resource.WriteAndGetBytes()));
-            }
         }
     }
 }

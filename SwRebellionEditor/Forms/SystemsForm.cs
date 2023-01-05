@@ -44,6 +44,7 @@
             systemId.Value = system.SystemId;
             SystemIdHexLabel.Text = "0x" + system.SystemId.ToString("X");
             textStraDllId.Value = system.TextStraDllId;
+            description.Text = system.Description;
             unknown1.Value = system.Field2_Unknown;
             unknown2.Value = system.Field7_Unknown;
             unknown3.Value = system.Field10_Unknown;
@@ -69,11 +70,14 @@
         protected override void LoadSideInfo()
         {
             foreach (var s in GameFile.Systems)
+            {
                 s.Name = TextStra.GetString(s.TextStraDllId);
+            }
         }
         protected override void SaveSideInfo()
         {
             TextStra.SaveString(Convert.ToUInt16(textStraDllId.Value), name.Text);
+            //EncyText.SaveString(Convert.ToUInt16(xxx.Value), name.Text);
         }
 
         #endregion

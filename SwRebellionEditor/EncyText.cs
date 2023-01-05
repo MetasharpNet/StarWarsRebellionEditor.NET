@@ -3,13 +3,13 @@ using Vestris.ResourceLib;
 
 namespace SwRebellionEditor
 {
-    public static class TextStra
+    public static class EncyText
     {
         private static ResourceFile Resources;
 
-        static TextStra()
+        static EncyText()
         {
-            Resources = new ResourceFile(RegistryKeys.InstalledLocation + "\\TEXTSTRA.DLL");
+            Resources = new ResourceFile(RegistryKeys.InstalledLocation + "\\ENCYTEXT.DLL");
         }
 
         public static string GetRcdata(string id)
