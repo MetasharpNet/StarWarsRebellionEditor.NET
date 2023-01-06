@@ -36,7 +36,8 @@
             textStraDllId.Value = productionFacility.TextStraDllId;
             id.Value = productionFacility.UnitId;
             unitIdHexLabel.Text = "0x" + productionFacility.UnitId.ToString("X");
-            field2_Unknown.Value = productionFacility.Field7_Unknown;
+            field2_Unknown.Value = productionFacility.Field2_Unknown;
+            field7_Unknown.Value = productionFacility.Field7_Unknown;
 
             var edataId = 1 + selectorIndex;
             picture.SizeMode = PictureBoxSizeMode.Zoom;

@@ -183,9 +183,9 @@ namespace SwRebellionEditor
             this.textStraDllIdLabel.Location = new System.Drawing.Point(13, 147);
             this.textStraDllIdLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.textStraDllIdLabel.Name = "textStraDllIdLabel";
-            this.textStraDllIdLabel.Size = new System.Drawing.Size(78, 15);
+            this.textStraDllIdLabel.Size = new System.Drawing.Size(77, 15);
             this.textStraDllIdLabel.TabIndex = 68;
-            this.textStraDllIdLabel.Text = "TextStra.dll ID";
+            this.textStraDllIdLabel.Text = "TextStra.dll Id";
             // 
             // textStraDllId
             // 
@@ -270,9 +270,9 @@ namespace SwRebellionEditor
             this.familyIdLabel.Location = new System.Drawing.Point(13, 122);
             this.familyIdLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.familyIdLabel.Name = "familyIdLabel";
-            this.familyIdLabel.Size = new System.Drawing.Size(56, 15);
+            this.familyIdLabel.Size = new System.Drawing.Size(55, 15);
             this.familyIdLabel.TabIndex = 66;
-            this.familyIdLabel.Text = "Family ID";
+            this.familyIdLabel.Text = "Family Id";
             // 
             // nextProductionFacility
             // 
