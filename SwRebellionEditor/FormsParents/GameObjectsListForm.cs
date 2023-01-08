@@ -175,7 +175,15 @@
         protected void GameObjectsSelector_ValueChanged(object sender, EventArgs e)
         {
             if (TrackBarSelector != null)
+            {
+                if (GameFile.UnsavedData)
+                {
+                    GameFile.Save(GameFilePath);
+                    SaveSideInfo();
+                    GameFile.UnsavedData = false;
+                }
                 DisplaySelectedGameObject(TrackBarSelector.Value);
+            }
             else
                 DisplaySelectedGameObject(-1);
         }

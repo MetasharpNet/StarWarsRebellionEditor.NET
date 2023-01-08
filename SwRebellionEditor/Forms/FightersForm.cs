@@ -26,8 +26,8 @@
             name.Text = fighter.Name;
             familyId.Value = fighter.FamilyId;
             familyIdHexLabel.Text = "0x" + fighter.FamilyId.ToString("X");
-            fighterId.Value = fighter.FighterId;
-            fighterIdHexLabel.Text = "0x" + fighter.FighterId.ToString("X");
+            fighterId.Value = fighter.Id;
+            fighterIdHexLabel.Text = "0x" + fighter.Id.ToString("X");
             hyperdriveBackup.Value = fighter.HyperdriveBackup;
             hyperdrivePrimary.Value = fighter.HyperdrivePrimary;
             ionCannonAft.Value = fighter.IonCannonAft;
@@ -36,8 +36,8 @@
             ionCannonRange.Value = fighter.IonCannonRange;
             ionCannonStar.Value = fighter.IonCannonStarboard;
             ionCannonTotalFirePower.Value = fighter.IonCannonTotalFirePower;
-            isAllianceUnit.Checked = fighter.IsAllianceUnit > 0U;
-            isEmpireUnit.Checked = fighter.IsEmpireUnit > 0U;
+            isAllianceUnit.Checked = fighter.IsAlliance > 0U;
+            isEmpireUnit.Checked = fighter.IsEmpire > 0U;
             laserCannonAft.Value = fighter.LaserCannonAft;
             laserCannonFore.Value = fighter.LaserCannonFore;
             laserCannonPort.Value = fighter.LaserCannonPort;
@@ -63,7 +63,7 @@
             turboLaserRange.Value = fighter.TurbolaserRange;
             turboLaserStar.Value = fighter.TurbolaserStarboard;
             turboLaserTotalFirePower.Value = fighter.TurbolaserTotalFirePower;
-            unknown.Value = fighter.Field7_Unknown;
+            unknown.Value = fighter.Field7_2;
             unknownMoralHp.Value = fighter.UnknownMoralHp;
 
             picture.SizeMode = PictureBoxSizeMode.Zoom;
@@ -160,12 +160,12 @@
         }
         private void isEmpireUnit_CheckStateChanged(object sender, EventArgs e)
         {
-            GameFile.Fighters[selector.Value].IsEmpireUnit = isEmpireUnit.Checked ? 1U : 0U;
+            GameFile.Fighters[selector.Value].IsEmpire = isEmpireUnit.Checked ? 1U : 0U;
             GameFile.UnsavedData = true;
         }
         private void isAllianceUnit_CheckStateChanged(object sender, EventArgs e)
         {
-            GameFile.Fighters[selector.Value].IsAllianceUnit = isAllianceUnit.Checked ? 1U : 0U;
+            GameFile.Fighters[selector.Value].IsAlliance = isAllianceUnit.Checked ? 1U : 0U;
             GameFile.UnsavedData = true;
         }
         private void laserCannonAft_ValueChanged(object sender, EventArgs e)

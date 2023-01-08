@@ -22,14 +22,15 @@
             var defenseFacility = GameFile.DefenseFacilities[selectorIndex];
             attackStrength.Value = defenseFacility.AttackStrength;
             bombardmentDefense.Value = defenseFacility.BombardmentDefense;
+            encyclopediaDescription.Text = defenseFacility.EncyclopediaDescription;
             familyId.Value = defenseFacility.FamilyId;
             familyIdHexLabel.Text = "0x" + defenseFacility.FamilyId.ToString("X");
-            field2_Unknown.Value = defenseFacility.Field2_Unknown;
-            field7_Unknown.Value = defenseFacility.Field7_Unknown;
+            field2_1.Value = defenseFacility.Field2_1;
+            field7_2.Value = defenseFacility.Field7_2;
             id.Value = defenseFacility.Id;
             idHexLabel.Text = "0x" + defenseFacility.Id.ToString("X");
-            isAllianceUnit.Checked = defenseFacility.IsAllianceUnit > 0U;
-            isEmpireUnit.Checked = defenseFacility.IsEmpireUnit > 0U;
+            isAlliance.Checked = defenseFacility.IsAlliance > 0U;
+            isEmpire.Checked = defenseFacility.IsEmpire > 0U;
             maintenanceCost.Value = defenseFacility.MaintenanceCost;
             name.Text = defenseFacility.Name;
             nextProductionFacility.Value = defenseFacility.NextProductionFacility;
@@ -74,19 +75,39 @@
             GameFile.DefenseFacilities[selector.Value].BombardmentDefense = (uint)bombardmentDefense.Value;
             GameFile.UnsavedData = true;
         }
+        private void encyclopediaDescription_TextChanged(object sender, EventArgs e)
+        {
+            GameFile.DefenseFacilities[selector.Value].EncyclopediaDescription = encyclopediaDescription.Text;
+            GameFile.UnsavedData = true;
+        }
         private void familyId_ValueChanged(object sender, EventArgs e)
         {
             GameFile.DefenseFacilities[selector.Value].FamilyId = (uint)familyId.Value;
             GameFile.UnsavedData = true;
         }
-        private void isAllianceUnit_CheckStateChanged(object sender, EventArgs e)
+        private void field2_1_ValueChanged(object sender, EventArgs e)
         {
-            GameFile.DefenseFacilities[selector.Value].IsAllianceUnit = !isAllianceUnit.Checked ? 0U : 1U;
+            GameFile.DefenseFacilities[selector.Value].Field2_1 = (uint)field2_1.Value;
             GameFile.UnsavedData = true;
         }
-        private void isEmpireUnit_CheckStateChanged(object sender, EventArgs e)
+        private void field7_2_ValueChanged(object sender, EventArgs e)
         {
-            GameFile.DefenseFacilities[selector.Value].IsEmpireUnit = !isEmpireUnit.Checked ? 0U : 1U;
+            GameFile.DefenseFacilities[selector.Value].Field7_2 = (ushort)field7_2.Value;
+            GameFile.UnsavedData = true;
+        }
+        private void id_ValueChanged(object sender, EventArgs e)
+        {
+            GameFile.DefenseFacilities[selector.Value].Id = (uint)id.Value;
+            GameFile.UnsavedData = true;
+        }
+        private void isAlliance_CheckStateChanged(object sender, EventArgs e)
+        {
+            GameFile.DefenseFacilities[selector.Value].IsAlliance = !isAlliance.Checked ? 0U : 1U;
+            GameFile.UnsavedData = true;
+        }
+        private void isEmpire_CheckStateChanged(object sender, EventArgs e)
+        {
+            GameFile.DefenseFacilities[selector.Value].IsEmpire = !isEmpire.Checked ? 0U : 1U;
             GameFile.UnsavedData = true;
         }
         private void maintenanceCost_ValueChanged(object sender, EventArgs e)
@@ -127,6 +148,11 @@
         private void shieldStrength_ValueChanged(object sender, EventArgs e)
         {
             GameFile.DefenseFacilities[selector.Value].ShieldStrength = (uint)shieldStrength.Value;
+            GameFile.UnsavedData = true;
+        }
+        private void textStraDllId_ValueChanged(object sender, EventArgs e)
+        {
+            GameFile.DefenseFacilities[selector.Value].TextStraDllId = (ushort)textStraDllId.Value;
             GameFile.UnsavedData = true;
         }
 

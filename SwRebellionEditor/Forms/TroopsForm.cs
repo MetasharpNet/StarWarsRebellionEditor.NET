@@ -26,17 +26,17 @@
             defenseRating.Value = troop.DefenseStrength;
             name.Text = troop.Name;
             familyIdHexLabel.Text = "0x" + troop.FamilyId.ToString("X");
-            isAllianceUnit.Checked = troop.IsAllianceUnit > 0U;
-            isEmpireUnit.Checked = troop.IsEmpireUnit > 0U;
+            isAllianceUnit.Checked = troop.IsAlliance > 0U;
+            isEmpireUnit.Checked = troop.IsEmpire > 0U;
             maintenanceCost.Value = troop.MaintenanceCost;
             nextProductionFacility.Value = troop.NextProductionFacility;
             productionFacility.Value = troop.ProductionFacility;
             researchDifficulty.Value = troop.ResearchDifficulty;
             researchOrder.Value = troop.ResearchOrder;
             textStraDllId.Value = troop.TextStraDllId;
-            troopId.Value = troop.TroopId;
-            troopIdHexLabel.Text = "0x" + troop.TroopId.ToString("X");
-            unknwown2.Value = troop.Field7_Unknown;
+            troopId.Value = troop.Id;
+            troopIdHexLabel.Text = "0x" + troop.Id.ToString("X");
+            unknwown2.Value = troop.Field7_2;
             unknownMoralHp.Value = troop.UnknownMoralHp;
 
             picture.SizeMode = PictureBoxSizeMode.Zoom;
@@ -86,12 +86,12 @@
         }
         private void isAllianceUnit_CheckStateChanged(object sender, EventArgs e)
         {
-            GameFile.Troops[selector.Value].IsAllianceUnit = !isAllianceUnit.Checked ? 0U : 1U;
+            GameFile.Troops[selector.Value].IsAlliance = !isAllianceUnit.Checked ? 0U : 1U;
             GameFile.UnsavedData = true;
         }
         private void isEmpireUnit_CheckStateChanged(object sender, EventArgs e)
         {
-            GameFile.Troops[selector.Value].IsEmpireUnit = !isEmpireUnit.Checked ? 0U : 1U;
+            GameFile.Troops[selector.Value].IsEmpire = !isEmpireUnit.Checked ? 0U : 1U;
             GameFile.UnsavedData = true;
         }
         private void maintenanceCost_ValueChanged(object sender, EventArgs e)

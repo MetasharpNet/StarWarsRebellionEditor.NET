@@ -45,8 +45,8 @@
             facilitiesResearchVariance.Value = majorCharacter.FacilitiesResearchVariance;
             familyId.Value = majorCharacter.FamilyId;
             familyIdHexLabel.Text = "0x" + majorCharacter.FamilyId.ToString("X");
-            isAllianceUnit.Checked = majorCharacter.IsAllianceUnit > 0U;
-            isEmpireUnit.Checked = majorCharacter.IsEmpireUnit > 0U;
+            isAllianceUnit.Checked = majorCharacter.IsAlliance > 0U;
+            isEmpireUnit.Checked = majorCharacter.IsEmpire > 0U;
             isJediTrainer.Checked = majorCharacter.IsJediTrainer > 0U;
             isKnownJedi.Checked = majorCharacter.IsKnownJedi > 0U;
             isUnableToBetray.Checked = majorCharacter.IsUnableToBetray > 0U;
@@ -60,8 +60,8 @@
             textStraDllId.Value = majorCharacter.TextStraDllId;
             troopsResearchBase.Value = majorCharacter.TroopsResearchBase;
             troopsReseachVariance.Value = majorCharacter.TroopsResearchVariance;
-            unitId.Value = majorCharacter.UnitId;
-            unitIdHexLabel.Text = "0x" + majorCharacter.UnitId.ToString("X");
+            unitId.Value = majorCharacter.Id;
+            unitIdHexLabel.Text = "0x" + majorCharacter.Id.ToString("X");
 
             if (majorCharacter.Name == "Leia Organa")
             {
@@ -186,12 +186,12 @@
         }
         private void isAllianceUnit_CheckStateChanged(object sender, EventArgs e)
         {
-            GameFile.MajorCharacters[selector.Value].IsAllianceUnit = isAllianceUnit.Checked ? 1U : 0U;
+            GameFile.MajorCharacters[selector.Value].IsAlliance = isAllianceUnit.Checked ? 1U : 0U;
             GameFile.UnsavedData = true;
         }
         private void isEmpireUnit_CheckStateChanged(object sender, EventArgs e)
         {
-            GameFile.MajorCharacters[selector.Value].IsEmpireUnit = isEmpireUnit.Checked ? 1U : 0U;
+            GameFile.MajorCharacters[selector.Value].IsEmpire = isEmpireUnit.Checked ? 1U : 0U;
             GameFile.UnsavedData = true;
         }
         private void isJediTrainer_CheckStateChanged(object sender, EventArgs e)

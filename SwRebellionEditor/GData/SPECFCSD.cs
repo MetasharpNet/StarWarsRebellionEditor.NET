@@ -11,15 +11,15 @@
     }
     public class SPECFCSD_SpecialForce
     {
-        public uint SpecialForceId;
-        public uint Field2_Unknown;
+        public uint Id;
+        public uint Field2_1;
         public uint ProductionFacility;
         public uint NextProductionFacility;
         public uint FamilyId;
         public ushort TextStraDllId;
-        public ushort Field7_Unknown;
-        public uint IsAllianceUnit;
-        public uint IsEmpireUnit;
+        public ushort Field7_2;
+        public uint IsAlliance;
+        public uint IsEmpire;
         public uint RefinedMaterialCost;
         public uint MaintenanceCost;
         public uint ResearchOrder;
@@ -36,14 +36,14 @@
         public uint FacilitiesResearchVariance;
         public uint CombatBase;
         public uint CombatVariance;
-        public uint UnusedLeadershipBase;
-        public uint UnusedLeadershipVariance;
+        public uint LeadershipBase_Unused;
+        public uint LeadershipVariance_Unused;
         public uint LoyaltyBase;
         public uint LoyaltyVariance;
         public uint MissionId;
         [Ignore]
         public string Name;
         [Ignore]
-        public string Description;
+        public string EncyclopediaDescription;
     }
 }

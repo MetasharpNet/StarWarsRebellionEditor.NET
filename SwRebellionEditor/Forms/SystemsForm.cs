@@ -37,18 +37,18 @@
             name.Text = system.Name;
             familyId.Value = system.FamilyId;
             familyIdHexLabel.Text = "0x" + system.FamilyId.ToString("X");
-            nextProductionFacility.Value = system.NextProductionFacility;
+            nextProductionFacility.Value = system.NextProductionFacility_0;
             pictureId.Value = system.PictureId;
-            productionFacility.Value = system.ProductionFacility;
+            productionFacility.Value = system.ProductionFacility_0;
             sectorId.Value = system.SectorId;
-            systemId.Value = system.SystemId;
-            SystemIdHexLabel.Text = "0x" + system.SystemId.ToString("X");
+            systemId.Value = system.Id;
+            SystemIdHexLabel.Text = "0x" + system.Id.ToString("X");
             textStraDllId.Value = system.TextStraDllId;
-            description.Text = system.Description;
-            unknown1.Value = system.Field2_Unknown;
-            unknown2.Value = system.Field7_Unknown;
-            unknown3.Value = system.Field10_Unknown;
-            unknown4.Value = system.Field13_Unknown;
+            description.Text = system.EncyclopediaDescription;
+            unknown1.Value = system.Field2_1;
+            unknown2.Value = system.Field7_2;
+            unknown3.Value = system.Field10_1;
+            unknown4.Value = system.Field13_0;
             xPosition.Value = system.XPosition;
             yPosition.Value = system.YPosition;
 
@@ -124,7 +124,7 @@
         }
         private void nextProductionFacility_ValueChanged(object sender, EventArgs e)
         {
-            GameFile.Systems[selector.Value].NextProductionFacility = (uint)nextProductionFacility.Value;
+            GameFile.Systems[selector.Value].NextProductionFacility_0 = (uint)nextProductionFacility.Value;
             GameFile.UnsavedData = true;
         }
         private void pictureId_ValueChanged(object sender, EventArgs e)
@@ -134,7 +134,7 @@
         }
         private void productionFacility_ValueChanged(object sender, EventArgs e)
         {
-            GameFile.Systems[selector.Value].ProductionFacility = (uint)productionFacility.Value;
+            GameFile.Systems[selector.Value].ProductionFacility_0 = (uint)productionFacility.Value;
             GameFile.UnsavedData = true;
         }
         private void sectorId_ValueChanged(object sender, EventArgs e)
@@ -144,7 +144,7 @@
         }
         private void systemId_ValueChanged(object sender, EventArgs e)
         {
-            GameFile.Systems[selector.Value].SystemId = (uint)systemId.Value;
+            GameFile.Systems[selector.Value].Id = (uint)systemId.Value;
             GameFile.UnsavedData = true;
         }
         private void textStraDllId_ValueChanged(object sender, EventArgs e)
@@ -154,22 +154,22 @@
         }
         private void unknown1_ValueChanged(object sender, EventArgs e)
         {
-            GameFile.Systems[selector.Value].Field2_Unknown = (uint)unknown1.Value;
+            GameFile.Systems[selector.Value].Field2_1 = (uint)unknown1.Value;
             GameFile.UnsavedData = true;
         }
         private void unknown2_ValueChanged(object sender, EventArgs e)
         {
-            GameFile.Systems[selector.Value].Field7_Unknown = (ushort)unknown2.Value;
+            GameFile.Systems[selector.Value].Field7_2 = (ushort)unknown2.Value;
             GameFile.UnsavedData = true;
         }
         private void unknown3_ValueChanged(object sender, EventArgs e)
         {
-            GameFile.Systems[selector.Value].Field10_Unknown = (uint)unknown3.Value;
+            GameFile.Systems[selector.Value].Field10_1 = (uint)unknown3.Value;
             GameFile.UnsavedData = true;
         }
         private void unknown4_ValueChanged(object sender, EventArgs e)
         {
-            GameFile.Systems[selector.Value].Field13_Unknown = (uint)unknown4.Value;
+            GameFile.Systems[selector.Value].Field13_0 = (uint)unknown4.Value;
             GameFile.UnsavedData = true;
         }
         private void xPosition_ValueChanged(object sender, EventArgs e)

@@ -11,22 +11,22 @@
     }
     public class SYSTEMSD_System
     {
-        public uint SystemId;
-        public uint Field2_Unknown;
-        public uint ProductionFacility;
-        public uint NextProductionFacility;
+        public uint Id;
+        public uint Field2_1;
+        public uint ProductionFacility_0;
+        public uint NextProductionFacility_0;
         public uint FamilyId;
         public ushort TextStraDllId;
-        public ushort Field7_Unknown;
+        public ushort Field7_2;
         public uint SectorId;
         public uint PictureId;
-        public uint Field10_Unknown;
+        public uint Field10_1;
         public ushort XPosition;
         public ushort YPosition;
-        public uint Field13_Unknown;
+        public uint Field13_0;
         [Ignore]
         public string Name;
         [Ignore]
-        public string Description;
+        public string EncyclopediaDescription;
     }
 }

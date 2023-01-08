@@ -16,7 +16,7 @@
         public uint EntryId;
         public uint Percent;
         public ushort TypeId;
-        public byte Unknown;
+        public byte Field5_Unknown;
         public byte FacilityId;
     }
 }

@@ -26,7 +26,7 @@ namespace SwRebellionEditor
             bombardmentDefense.Value = capitalShip.BombardmentDefense;
             capitalShipId.Value = capitalShip.Id;
             capitalShipIdHexLabel.Text = "0x" + capitalShip.Id.ToString("X");
-            description.Text = capitalShip.Description;
+            description.Text = capitalShip.EncyclopediaDescription;
             name.Text = capitalShip.Name;
             fighterCapacity.Value = capitalShip.FighterCapacity;
             damageControl.Value = capitalShip.DamageControl;
@@ -45,8 +45,8 @@ namespace SwRebellionEditor
             ionCannonRange.Value = capitalShip.IonCannonRange;
             ionCannonStarboard.Value = capitalShip.IonCannonStarboard;
             ionCannonTotalFirePower.Value = capitalShip.IonCannonTotalFirePower;
-            isAllianceUnit.Checked = capitalShip.IsAllianceUnit > 0U;
-            isEmpireUnit.Checked = capitalShip.IsEmpireUnit > 0U;
+            isAllianceUnit.Checked = capitalShip.IsAlliance > 0U;
+            isEmpireUnit.Checked = capitalShip.IsEmpire > 0U;
             laserCannonAft.Value = capitalShip.LaserCannonAft;
             laserCannonFore.Value = capitalShip.LaserCannonFore;
             laserCannonPort.Value = capitalShip.LaserCannonPort;
@@ -202,12 +202,12 @@ namespace SwRebellionEditor
         }
         private void isAllianceUnit_CheckedChanged(object sender, EventArgs e)
         {
-            GameFile.CapitalShips[selector.Value].IsAllianceUnit = isAllianceUnit.Checked ? 1U : 0U;
+            GameFile.CapitalShips[selector.Value].IsAlliance = isAllianceUnit.Checked ? 1U : 0U;
             GameFile.UnsavedData = true;
         }
         private void isEmpireUnit_CheckedChanged(object sender, EventArgs e)
         {
-            GameFile.CapitalShips[selector.Value].IsEmpireUnit = isEmpireUnit.Checked ? 1U : 0U;
+            GameFile.CapitalShips[selector.Value].IsEmpire = isEmpireUnit.Checked ? 1U : 0U;
             GameFile.UnsavedData = true;
         }
         private void laserCannonAft_ValueChanged(object sender, EventArgs e)

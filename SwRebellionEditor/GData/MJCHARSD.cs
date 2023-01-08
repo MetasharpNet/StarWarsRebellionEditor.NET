@@ -11,19 +11,19 @@
     }
     public class MJCHARSD_Character
     {
-        public uint UnitId;
-        public uint Field2_Unknown;
+        public uint Id;
+        public uint Field2_1;
         public uint ProductionFacility;
         public uint NextProductionFacility;
         public uint FamilyId;
         public ushort TextStraDllId;
-        public ushort Field7_Unknown;
-        public uint IsAllianceUnit;
-        public uint IsEmpireUnit;
-        public uint UnusedRefinedMaterialCost;
-        public uint UnusedMaintenanceCost;
-        public uint UnusedResearchOrder;
-        public uint UnusedResearchDifficulty;
+        public ushort Field7_2;
+        public uint IsAlliance;
+        public uint IsEmpire;
+        public uint RefinedMaterialCost_Unused;
+        public uint MaintenanceCost_Unused;
+        public uint ResearchOrder_Unused;
+        public uint ResearchDifficulty_Unused;
         public uint DiplomacyBase;
         public uint DiplomacyVariance;
         public uint EspionageBase;
@@ -52,6 +52,6 @@
         [Ignore]
         public string Name;
         [Ignore]
-        public string Description;
+        public string EncyclopediaDescription;
     }
 }

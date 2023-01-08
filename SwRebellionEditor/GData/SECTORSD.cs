@@ -6,18 +6,18 @@
         [ArraySize]
         public uint SectorsCount;
         public uint FamilyId;
-        public uint Fields4_Unknown;
+        public uint Field4_Unknown;
         public SECTORSD_Sector[] Sectors;
     }
     public class SECTORSD_Sector
     {
-        public uint SectorId;
-        public uint Field2_Unknown;
-        public uint ProductionFacility;
-        public uint NextProductionFacility;
+        public uint Id;
+        public uint Field2_1;
+        public uint ProductionFacility_0;
+        public uint NextProductionFacility_0;
         public uint FamilyId;
         public ushort TextStraDllId;
-        public ushort Field7_Unknown;
+        public ushort Field7_2;
         public uint SecImport;
         public uint GalaxySize;
         public ushort XPosition;
@@ -25,6 +25,6 @@
         [Ignore]
         public string Name;
         [Ignore]
-        public string Description;
+        public string EncyclopediaDescription;
     }
 }

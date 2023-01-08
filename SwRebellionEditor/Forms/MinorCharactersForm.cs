@@ -32,7 +32,7 @@
             var previousUnsavedData = GameFile.UnsavedData;
             var minorCharacter = GameFile.MinorCharacters[selectorIndex];
             canBeAdmiral.Checked = minorCharacter.CanBeAdmiral > 0U;
-            canBeCommander.Checked = minorCharacter.canBeCommander > 0U;
+            canBeCommander.Checked = minorCharacter.CanBeCommander > 0U;
             canBeGeneral.Checked = minorCharacter.CanBeGeneral > 0U;
             combatBase.Value = minorCharacter.CombatBase;
             combatVariance.Value = minorCharacter.CombatVariance;
@@ -45,8 +45,8 @@
             facilitiesResearchVariance.Value = minorCharacter.FacilitiesResearchVariance;
             familyId.Value = minorCharacter.FamilyId;
             familyIdHexLabel.Text = "0x" + minorCharacter.FamilyId.ToString("X");
-            isAllianceUnit.Checked = minorCharacter.IsAllianceUnit > 0U;
-            isEmpireUnit.Checked = minorCharacter.IsEmpireUnit > 0U;
+            isAllianceUnit.Checked = minorCharacter.IsAlliance > 0U;
+            isEmpireUnit.Checked = minorCharacter.IsEmpire > 0U;
             isJediTrainer.Checked = minorCharacter.IsJediTrainer > 0U;
             isKnownJedi.Checked = minorCharacter.IsKnownJedi > 0U;
             isUnableToBetray.Checked = minorCharacter.IsUnableToBetray > 0U;
@@ -60,8 +60,8 @@
             textStraDllId.Value = minorCharacter.TextStraDllId;
             troopsResearchBase.Value = minorCharacter.TroopsResearchBase;
             troopsResearchVariance.Value = minorCharacter.TroopsResearchVariance;
-            unitId.Value = minorCharacter.UnitId;
-            unitIdHexLabel.Text = "0x" + minorCharacter.UnitId.ToString("X");
+            unitId.Value = minorCharacter.Id;
+            unitIdHexLabel.Text = "0x" + minorCharacter.Id.ToString("X");
 
             if (minorCharacter.Name == "Leia Organa")
             {
@@ -131,7 +131,7 @@
         }
         private void canBeCommander_CheckStateChanged(object sender, EventArgs e)
         {
-            GameFile.MinorCharacters[selector.Value].canBeCommander = canBeCommander.Checked ? 1U : 0U;
+            GameFile.MinorCharacters[selector.Value].CanBeCommander = canBeCommander.Checked ? 1U : 0U;
             GameFile.UnsavedData = true;
         }
         private void canBeGeneral_CheckStateChanged(object sender, EventArgs e)
@@ -186,12 +186,12 @@
         }
         private void isAllianceUnit_CheckStateChanged(object sender, EventArgs e)
         {
-            GameFile.MinorCharacters[selector.Value].IsAllianceUnit = isAllianceUnit.Checked ? 1U : 0U;
+            GameFile.MinorCharacters[selector.Value].IsAlliance = isAllianceUnit.Checked ? 1U : 0U;
             GameFile.UnsavedData = true;
         }
         private void isEmpireUnit_CheckStateChanged(object sender, EventArgs e)
         {
-            GameFile.MinorCharacters[selector.Value].IsEmpireUnit = isEmpireUnit.Checked ? 1U : 0U;
+            GameFile.MinorCharacters[selector.Value].IsEmpire = isEmpireUnit.Checked ? 1U : 0U;
             GameFile.UnsavedData = true;
         }
         private void isJediTrainer_CheckStateChanged(object sender, EventArgs e)

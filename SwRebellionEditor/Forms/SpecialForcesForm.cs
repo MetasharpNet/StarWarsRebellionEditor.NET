@@ -43,8 +43,8 @@
             facilitiesResearchVariance.Value = specialForce.FacilitiesResearchVariance;
             familyId.Value = specialForce.FamilyId;
             familyIdHexLabel.Text = "0x" + specialForce.FamilyId.ToString("X");
-            isAllianceUnit.Checked = specialForce.IsAllianceUnit > 0U;
-            isEmpireUnit.Checked = specialForce.IsEmpireUnit > 0U;
+            isAllianceUnit.Checked = specialForce.IsAlliance > 0U;
+            isEmpireUnit.Checked = specialForce.IsEmpire > 0U;
             loyaltyBase.Value = specialForce.LoyaltyBase;
             loyaltyVariance.Value = specialForce.LoyaltyVariance;
             maintenanceCost.Value = specialForce.MaintenanceCost;
@@ -55,12 +55,12 @@
             researchOrder.Value = specialForce.ResearchOrder;
             shipsResearchBase.Value = specialForce.ShipsResearchBase;
             shipsResearchVariance.Value = specialForce.ShipsResearchVariance;
-            specialForceId.Value = specialForce.SpecialForceId;
-            specialForceIdHexLabel.Text = "0x" + specialForce.SpecialForceId.ToString("X");
+            specialForceId.Value = specialForce.Id;
+            specialForceIdHexLabel.Text = "0x" + specialForce.Id.ToString("X");
             textStraDllId.Value = specialForce.TextStraDllId;
             troopsResearchBase.Value = specialForce.TroopsResearchBase;
             troopsResearchVariance.Value = specialForce.TroopsResearchVariance;
-            unknown2.Value = specialForce.Field7_Unknown;
+            unknown2.Value = specialForce.Field7_2;
 
             picture.SizeMode = PictureBoxSizeMode.Zoom;
             var edataId = 25 + selectorIndex;
@@ -157,12 +157,12 @@
         }
         private void isAllianceUnit_CheckStateChanged(object sender, EventArgs e)
         {
-            GameFile.SpecialForces[selector.Value].IsAllianceUnit = !isAllianceUnit.Checked ? 0U : 1U;
+            GameFile.SpecialForces[selector.Value].IsAlliance = !isAllianceUnit.Checked ? 0U : 1U;
             GameFile.UnsavedData = true;
         }
         private void isEmpireUnit_CheckStateChanged(object sender, EventArgs e)
         {
-            GameFile.SpecialForces[selector.Value].IsEmpireUnit = !isEmpireUnit.Checked ? 0U : 1U;
+            GameFile.SpecialForces[selector.Value].IsEmpire = !isEmpireUnit.Checked ? 0U : 1U;
             GameFile.UnsavedData = true;
         }
         private void loyaltyBase_ValueChanged(object sender, EventArgs e)

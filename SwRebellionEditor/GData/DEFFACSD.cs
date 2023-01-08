@@ -12,14 +12,14 @@
     public class DEFFACSD_DefenseFacility
     {
         public uint Id;
-        public uint Field2_Unknown;
+        public uint Field2_1;
         public uint ProductionFacility;
         public uint NextProductionFacility;
         public uint FamilyId;
         public ushort TextStraDllId;
-        public ushort Field7_Unknown;
-        public uint IsAllianceUnit;
-        public uint IsEmpireUnit;
+        public ushort Field7_2;
+        public uint IsAlliance;
+        public uint IsEmpire;
         public uint RefinedMaterialCost;
         public uint MaintenanceCost;
         public uint ResearchOrder;
@@ -30,6 +30,6 @@
         [Ignore]
         public string Name;
         [Ignore]
-        public string Description;
+        public string EncyclopediaDescription;
     }
 }

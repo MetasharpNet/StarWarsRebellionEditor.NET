@@ -21,22 +21,24 @@
             var previousUnsavedData = GameFile.UnsavedData;
             var manufacturingFacility = GameFile.ManufacturingFacilities[selectorIndex];
             bombardmentDefense.Value = manufacturingFacility.BombardmentDefense;
-            constructionCost.Value = manufacturingFacility.RefinedMaterialCost;
-            name.Text = manufacturingFacility.Name;
+            encyclopediaDescription.Text = manufacturingFacility.EncyclopediaDescription;
             familyId.Value = manufacturingFacility.FamilyId;
             familyIdHexLabel.Text = "0x" + manufacturingFacility.FamilyId.ToString("X");
-            isAllianceUnit.Checked = manufacturingFacility.IsAllianceUnit > 0U;
-            isEmpireUnit.Checked = manufacturingFacility.IsEmpireUnit > 0U;
+            field2_1.Value = manufacturingFacility.Field2_1;
+            field7_2.Value = manufacturingFacility.Field7_2;
+            id.Value = manufacturingFacility.Id;
+            idHexLabel.Text = "0x" + manufacturingFacility.Id.ToString("X");
+            isAlliance.Checked = manufacturingFacility.IsAlliance > 0U;
+            isEmpire.Checked = manufacturingFacility.IsEmpire > 0U;
             maintenanceCost.Value = manufacturingFacility.MaintenanceCost;
+            name.Text = manufacturingFacility.Name;
             nextProductionFacility.Value = manufacturingFacility.NextProductionFacility;
             productionFacility.Value = manufacturingFacility.ProductionFacility;
             productionRate.Value = manufacturingFacility.ProductionRate;
+            refinedMaterialCost.Value = manufacturingFacility.RefinedMaterialCost;
             researchDifficulty.Value = manufacturingFacility.ResearchDifficulty;
             researchOrder.Value = manufacturingFacility.ResearchOrder;
             textStraDllId.Value = manufacturingFacility.TextStraDllId;
-            unitId.Value = manufacturingFacility.UnitId;
-            unitIdHexLabel.Text = "0x" + manufacturingFacility.UnitId.ToString("X");
-            unknown2.Value = manufacturingFacility.Field7_Unknown;
 
             var edataId = 3 + selectorIndex;
             picture.SizeMode = PictureBoxSizeMode.Zoom;
@@ -48,6 +50,11 @@
             foreach (var mf in GameFile.ManufacturingFacilities)
                 mf.Name = TextStra.GetString(mf.TextStraDllId);
         }
+        protected override void SaveSideInfo()
+        {
+            TextStra.SaveString(Convert.ToUInt16(textStraDllId.Value), name.Text);
+            //EncyText.SaveString(Convert.ToUInt16(xxx.Value), name.Text);
+        }
 
         #endregion
 
@@ -58,9 +65,9 @@
             GameFile.ManufacturingFacilities[selector.Value].BombardmentDefense = (uint)bombardmentDefense.Value;
             GameFile.UnsavedData = true;
         }
-        private void constructionCost_ValueChanged(object sender, EventArgs e)
+        private void encyclopediaText_TextChanged(object sender, EventArgs e)
         {
-            GameFile.ManufacturingFacilities[selector.Value].RefinedMaterialCost = (uint)constructionCost.Value;
+            GameFile.ManufacturingFacilities[selector.Value].EncyclopediaDescription = encyclopediaDescription.Text;
             GameFile.UnsavedData = true;
         }
         private void familyId_ValueChanged(object sender, EventArgs e)
@@ -68,19 +75,39 @@
             GameFile.ManufacturingFacilities[selector.Value].FamilyId = (uint)familyId.Value;
             GameFile.UnsavedData = true;
         }
-        private void isEmpireUnit_CheckStateChanged(object sender, EventArgs e)
+        private void field2_1_ValueChanged(object sender, EventArgs e)
         {
-            GameFile.ManufacturingFacilities[selector.Value].IsEmpireUnit = isEmpireUnit.Checked ? 1U : 0U;
+            GameFile.ManufacturingFacilities[selector.Value].Field2_1 = (uint)field2_1.Value;
             GameFile.UnsavedData = true;
         }
-        private void isAllianceUnit_CheckStateChanged(object sender, EventArgs e)
+        private void field7_2_ValueChanged(object sender, EventArgs e)
         {
-            GameFile.ManufacturingFacilities[selector.Value].IsAllianceUnit = isAllianceUnit.Checked ? 1U : 0U;
+            GameFile.ManufacturingFacilities[selector.Value].Field7_2 = (ushort)field7_2.Value;
+            GameFile.UnsavedData = true;
+        }
+        private void id_ValueChanged(object sender, EventArgs e)
+        {
+            GameFile.ManufacturingFacilities[selector.Value].Id = (uint)id.Value;
+            GameFile.UnsavedData = true;
+        }
+        private void isAlliance_CheckStateChanged(object sender, EventArgs e)
+        {
+            GameFile.ManufacturingFacilities[selector.Value].IsAlliance = isAlliance.Checked ? 1U : 0U;
+            GameFile.UnsavedData = true;
+        }
+        private void isEmpire_CheckStateChanged(object sender, EventArgs e)
+        {
+            GameFile.ManufacturingFacilities[selector.Value].IsEmpire = isEmpire.Checked ? 1U : 0U;
             GameFile.UnsavedData = true;
         }
         private void maintenanceCost_ValueChanged(object sender, EventArgs e)
         {
             GameFile.ManufacturingFacilities[selector.Value].MaintenanceCost = (uint)maintenanceCost.Value;
+            GameFile.UnsavedData = true;
+        }
+        private void name_TextChanged(object sender, EventArgs e)
+        {
+            GameFile.ManufacturingFacilities[selector.Value].Name = name.Text;
             GameFile.UnsavedData = true;
         }
         private void nextProductionFacility_ValueChanged(object sender, EventArgs e)
@@ -98,6 +125,11 @@
             GameFile.ManufacturingFacilities[selector.Value].ProductionRate = (uint)productionRate.Value;
             GameFile.UnsavedData = true;
         }
+        private void refinedMaterialCost_ValueChanged(object sender, EventArgs e)
+        {
+            GameFile.ManufacturingFacilities[selector.Value].RefinedMaterialCost = (uint)refinedMaterialCost.Value;
+            GameFile.UnsavedData = true;
+        }
         private void researchDifficulty_ValueChanged(object sender, EventArgs e)
         {
             GameFile.ManufacturingFacilities[selector.Value].ResearchDifficulty = (uint)researchDifficulty.Value;
@@ -106,6 +138,11 @@
         private void researchOrder_ValueChanged(object sender, EventArgs e)
         {
             GameFile.ManufacturingFacilities[selector.Value].ResearchOrder = (uint)researchOrder.Value;
+            GameFile.UnsavedData = true;
+        }
+        private void textStraDllId_ValueChanged(object sender, EventArgs e)
+        {
+            GameFile.ManufacturingFacilities[selector.Value].TextStraDllId = (ushort)textStraDllId.Value;
             GameFile.UnsavedData = true;
         }
 

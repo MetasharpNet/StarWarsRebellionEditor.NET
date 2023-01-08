@@ -18,8 +18,8 @@
         public uint FamilyId; // 20 for capital ships, 24 for death star
         public ushort TextStraDllId;
         public ushort Field7_2;
-        public uint IsAllianceUnit;
-        public uint IsEmpireUnit;
+        public uint IsAlliance;
+        public uint IsEmpire;
         public uint RefinedMaterialCost;
         public uint MaintenanceCost;
         public uint ResearchOrder;
@@ -65,6 +65,6 @@
         [Ignore]
         public string Name;
         [Ignore]
-        public string Description;
+        public string EncyclopediaDescription;
     }
 }
