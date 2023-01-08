@@ -300,7 +300,7 @@ namespace SwRebellionEditor
             0,
             0,
             0});
-            this.id.ValueChanged += new System.EventHandler(this.sectorId_ValueChanged);
+            this.id.ValueChanged += new System.EventHandler(this.id_ValueChanged);
             // 
             // productionFamilyLabel
             // 
@@ -363,7 +363,7 @@ namespace SwRebellionEditor
             0,
             0,
             0});
-            this.field2_1.ValueChanged += new System.EventHandler(this.unknown1_ValueChanged);
+            this.field2_1.ValueChanged += new System.EventHandler(this.field2_1_ValueChanged);
             // 
             // idLabel
             // 
@@ -412,11 +412,14 @@ namespace SwRebellionEditor
             this.encyclopediaDescription.Enabled = false;
             this.encyclopediaDescription.Location = new System.Drawing.Point(7, 66);
             this.encyclopediaDescription.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.encyclopediaDescription.MaximumSize = new System.Drawing.Size(334, 136);
+            this.encyclopediaDescription.MinimumSize = new System.Drawing.Size(334, 136);
             this.encyclopediaDescription.Name = "encyclopediaDescription";
             this.encyclopediaDescription.Size = new System.Drawing.Size(334, 136);
             this.encyclopediaDescription.TabIndex = 134;
             this.encyclopediaDescription.TabStop = false;
             this.encyclopediaDescription.Text = "Not implemented yet.";
+            this.encyclopediaDescription.TextChanged += new System.EventHandler(this.encyclopediaDescription_TextChanged);
             // 
             // familyCommentLabel
             // 
@@ -502,7 +505,7 @@ namespace SwRebellionEditor
             0,
             0,
             0});
-            this.field7_2.ValueChanged += new System.EventHandler(this.unknown2_ValueChanged);
+            this.field7_2.ValueChanged += new System.EventHandler(this.field7_2_ValueChanged);
             // 
             // field7_2Label
             // 
@@ -652,6 +655,8 @@ namespace SwRebellionEditor
             this.KeyPreview = true;
             this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(666, 367);
+            this.MinimumSize = new System.Drawing.Size(666, 367);
             this.Name = "SectorsForm";
             this.Text = "Sectors (SECTORSD.DAT)";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.GameObjectsListForm_FormClosing);

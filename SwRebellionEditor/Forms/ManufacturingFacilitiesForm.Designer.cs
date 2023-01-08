@@ -742,6 +742,8 @@ namespace SwRebellionEditor
             this.KeyPreview = true;
             this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(777, 376);
+            this.MinimumSize = new System.Drawing.Size(777, 376);
             this.Name = "ManufacturingFacilitiesForm";
             this.Text = "Manufacturing Facilities (MANFACSD.DAT)";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.GameObjectsListForm_FormClosing);
