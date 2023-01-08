@@ -13,8 +13,8 @@
     {
         public uint Id;
         public uint Field2_1;
-        public uint ProductionFacility_0;
-        public uint NextProductionFacility_0;
+        public uint ProductionFamily_0;
+        public uint NextProductionFamily_0;
         public uint FamilyId;
         public ushort TextStraDllId;
         public ushort Field7_2;

@@ -32,8 +32,8 @@
             isEmpire.Checked = productionFacility.IsEmpire > 0U;
             maintenanceCost.Value = productionFacility.MaintenanceCost;
             name.Text = productionFacility.Name;
-            nextProductionFacility.Value = productionFacility.NextProductionFacility;
-            this.productionFacility.Value = productionFacility.ProductionFacility;
+            nextProductionFamily.Value = productionFacility.NextProductionFamily;
+            this.productionFamily.Value = productionFacility.ProductionFamily;
             productionRate.Value = productionFacility.ProductionRate;
             refinedMaterialCost.Value = productionFacility.RefinedMaterialCost;
             researchDifficulty.Value = productionFacility.ResearchDifficulty;
@@ -110,14 +110,14 @@
             GameFile.ProductionFacilities[selector.Value].Name = name.Text;
             GameFile.UnsavedData = true;
         }
-        private void nextProductionFacility_ValueChanged(object sender, EventArgs e)
+        private void nextProductionFamily_ValueChanged(object sender, EventArgs e)
         {
-            GameFile.ProductionFacilities[selector.Value].NextProductionFacility = (uint)nextProductionFacility.Value;
+            GameFile.ProductionFacilities[selector.Value].NextProductionFamily = (uint)nextProductionFamily.Value;
             GameFile.UnsavedData = true;
         }
-        private void productionFacility_ValueChanged(object sender, EventArgs e)
+        private void productionFamily_ValueChanged(object sender, EventArgs e)
         {
-            GameFile.ProductionFacilities[selector.Value].ProductionFacility = (uint)productionFacility.Value;
+            GameFile.ProductionFacilities[selector.Value].ProductionFamily = (uint)productionFamily.Value;
             GameFile.UnsavedData = true;
         }
         private void productionRate_ValueChanged(object sender, EventArgs e)

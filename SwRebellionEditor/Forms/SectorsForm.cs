@@ -24,14 +24,14 @@
             familyId.Value = sector.FamilyId;
             familyIdHexLabel.Text = "0x" + sector.FamilyId.ToString("X");
             galaxySize.Value = sector.GalaxySize;
-            nextProductionFacility.Value = sector.NextProductionFacility_0;
-            productionFacility.Value = sector.ProductionFacility_0;
+            nextProductionFamily_0.Value = sector.NextProductionFamily_0;
+            productionFamily_0.Value = sector.ProductionFamily_0;
             secImport.Value = sector.SecImport;
-            sectorId.Value = sector.Id;
-            sectorIdHexLabel.Text = "0x" + sector.Id.ToString("X");
+            id.Value = sector.Id;
+            idHexLabel.Text = "0x" + sector.Id.ToString("X");
             textStraDllId.Value = sector.TextStraDllId;
-            unknown1.Value = sector.Field2_1;
-            unknown2.Value = sector.Field7_2;
+            field2_1.Value = sector.Field2_1;
+            field7_2.Value = sector.Field7_2;
             xPosition.Value = sector.XPosition;
             yPosition.Value = sector.YPosition;
             GameFile.UnsavedData = previousUnsavedData;
@@ -55,6 +55,11 @@
             GameFile.Sectors[selector.Value].FamilyId = (uint)familyId.Value;
             GameFile.UnsavedData = true;
         }
+        private void encyclopediaDescription_TextChanged(object sender, EventArgs e)
+        {
+            GameFile.Sectors[selector.Value].EncyclopediaDescription = encyclopediaDescription.Text;
+            GameFile.UnsavedData = true;
+        }
         private void galaxySize_ValueChanged(object sender, EventArgs e)
         {
             GameFile.Sectors[selector.Value].GalaxySize = (uint)galaxySize.Value;
@@ -65,19 +70,19 @@
             GameFile.Sectors[selector.Value].Name = name.Text;
             GameFile.UnsavedData = true;
         }
-        private void nextProductionFacility_ValueChanged(object sender, EventArgs e)
+        private void nextProductionFamily_0_ValueChanged(object sender, EventArgs e)
         {
-            GameFile.Sectors[selector.Value].NextProductionFacility_0 = (uint)nextProductionFacility.Value;
+            GameFile.Sectors[selector.Value].NextProductionFamily_0 = (uint)nextProductionFamily_0.Value;
             GameFile.UnsavedData = true;
         }
-        private void productionFacility_ValueChanged(object sender, EventArgs e)
+        private void productionFamily_0_ValueChanged(object sender, EventArgs e)
         {
-            GameFile.Sectors[selector.Value].ProductionFacility_0 = (uint)productionFacility.Value;
+            GameFile.Sectors[selector.Value].ProductionFamily_0 = (uint)productionFamily_0.Value;
             GameFile.UnsavedData = true;
         }
         private void sectorId_ValueChanged(object sender, EventArgs e)
         {
-            GameFile.Sectors[selector.Value].Id = (uint)sectorId.Value;
+            GameFile.Sectors[selector.Value].Id = (uint)id.Value;
             GameFile.UnsavedData = true;
         }
         private void secImport_ValueChanged(object sender, EventArgs e)
@@ -92,12 +97,12 @@
         }
         private void unknown1_ValueChanged(object sender, EventArgs e)
         {
-            GameFile.Sectors[selector.Value].Field2_1 = (uint)unknown1.Value;
+            GameFile.Sectors[selector.Value].Field2_1 = (uint)field2_1.Value;
             GameFile.UnsavedData = true;
         }
         private void unknown2_ValueChanged(object sender, EventArgs e)
         {
-            GameFile.Sectors[selector.Value].Field7_2 = (ushort)unknown2.Value;
+            GameFile.Sectors[selector.Value].Field7_2 = (ushort)field7_2.Value;
             GameFile.UnsavedData = true;
         }
         private void xPosition_ValueChanged(object sender, EventArgs e)
