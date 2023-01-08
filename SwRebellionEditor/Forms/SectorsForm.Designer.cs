@@ -428,9 +428,9 @@ namespace SwRebellionEditor
             this.familyCommentLabel.Location = new System.Drawing.Point(19, 268);
             this.familyCommentLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.familyCommentLabel.Name = "familyCommentLabel";
-            this.familyCommentLabel.Size = new System.Drawing.Size(114, 15);
+            this.familyCommentLabel.Size = new System.Drawing.Size(116, 15);
             this.familyCommentLabel.TabIndex = 158;
-            this.familyCommentLabel.Text = "* 144=core 146=Rim";
+            this.familyCommentLabel.Text = "* 144=Core 146=Rim";
             // 
             // nextProductionFamilyLabel
             // 

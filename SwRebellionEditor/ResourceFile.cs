@@ -42,6 +42,14 @@ namespace SwRebellionEditor
             }
         }
 
+        public ushort GetStringLanguage(ushort stringId)
+        {
+            var sr = new StringResource();
+            sr.Name = new ResourceId(StringResource.GetBlockId(stringId));
+            sr.LoadFrom(_filePath);
+            return sr.Language;
+        }
+
         public void Save()
         {
             foreach (var key in RT_STRING.Keys)
@@ -50,11 +58,13 @@ namespace SwRebellionEditor
 
         public void SaveString(ushort id, string text)
         {
+            var lang = GetStringLanguage(id);
             RT_STRING[id] = text;
             var sr = new StringResource();
             sr.Name = new ResourceId(StringResource.GetBlockId(id));
             sr.LoadFrom(_filePath);
             sr[id] = text;
+            sr.Language = lang;
             sr.SaveTo(_filePath);
         }
     }
