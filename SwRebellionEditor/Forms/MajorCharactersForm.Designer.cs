@@ -181,6 +181,7 @@ namespace SwRebellionEditor
             this.majorCharactersListView = new System.Windows.Forms.ListView();
             this.picture = new System.Windows.Forms.PictureBox();
             this.gameDataGroupBox = new System.Windows.Forms.GroupBox();
+            this.encyclopediaDescriptionLabel = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.leadershipVariance = new System.Windows.Forms.NumericUpDown();
             this.leadershipBase = new System.Windows.Forms.NumericUpDown();
@@ -240,7 +241,7 @@ namespace SwRebellionEditor
             // jediEspionageBase
             // 
             this.jediEspionageBase.Enabled = false;
-            this.jediEspionageBase.Location = new System.Drawing.Point(234, 179);
+            this.jediEspionageBase.Location = new System.Drawing.Point(231, 179);
             this.jediEspionageBase.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.jediEspionageBase.Maximum = new decimal(new int[] {
             999,
@@ -260,7 +261,7 @@ namespace SwRebellionEditor
             // jediDiplomacyBase
             // 
             this.jediDiplomacyBase.Enabled = false;
-            this.jediDiplomacyBase.Location = new System.Drawing.Point(234, 153);
+            this.jediDiplomacyBase.Location = new System.Drawing.Point(231, 153);
             this.jediDiplomacyBase.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.jediDiplomacyBase.Maximum = new decimal(new int[] {
             99999,
@@ -280,7 +281,7 @@ namespace SwRebellionEditor
             // jediCombatBase
             // 
             this.jediCombatBase.Enabled = false;
-            this.jediCombatBase.Location = new System.Drawing.Point(234, 205);
+            this.jediCombatBase.Location = new System.Drawing.Point(231, 205);
             this.jediCombatBase.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.jediCombatBase.Maximum = new decimal(new int[] {
             999,
@@ -300,7 +301,7 @@ namespace SwRebellionEditor
             // jediLeadershipBase
             // 
             this.jediLeadershipBase.Enabled = false;
-            this.jediLeadershipBase.Location = new System.Drawing.Point(234, 231);
+            this.jediLeadershipBase.Location = new System.Drawing.Point(231, 231);
             this.jediLeadershipBase.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.jediLeadershipBase.Maximum = new decimal(new int[] {
             99999,
@@ -883,7 +884,7 @@ namespace SwRebellionEditor
             // 
             // facilityDesignVariance
             // 
-            this.facilityDesignVariance.Location = new System.Drawing.Point(168, 309);
+            this.facilityDesignVariance.Location = new System.Drawing.Point(165, 309);
             this.facilityDesignVariance.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.facilityDesignVariance.Maximum = new decimal(new int[] {
             999,
@@ -903,7 +904,7 @@ namespace SwRebellionEditor
             // 
             // shipDesignVariance
             // 
-            this.shipDesignVariance.Location = new System.Drawing.Point(168, 257);
+            this.shipDesignVariance.Location = new System.Drawing.Point(165, 257);
             this.shipDesignVariance.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.shipDesignVariance.Maximum = new decimal(new int[] {
             99999,
@@ -923,7 +924,7 @@ namespace SwRebellionEditor
             // 
             // troopTrainingVariance
             // 
-            this.troopTrainingVariance.Location = new System.Drawing.Point(168, 283);
+            this.troopTrainingVariance.Location = new System.Drawing.Point(165, 283);
             this.troopTrainingVariance.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.troopTrainingVariance.Maximum = new decimal(new int[] {
             999,
@@ -944,7 +945,7 @@ namespace SwRebellionEditor
             // facilityDesignLabel
             // 
             this.facilityDesignLabel.AutoSize = true;
-            this.facilityDesignLabel.Location = new System.Drawing.Point(15, 311);
+            this.facilityDesignLabel.Location = new System.Drawing.Point(12, 311);
             this.facilityDesignLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.facilityDesignLabel.Name = "facilityDesignLabel";
             this.facilityDesignLabel.Size = new System.Drawing.Size(83, 15);
@@ -953,7 +954,7 @@ namespace SwRebellionEditor
             // 
             // facilityDesignBase
             // 
-            this.facilityDesignBase.Location = new System.Drawing.Point(105, 309);
+            this.facilityDesignBase.Location = new System.Drawing.Point(102, 309);
             this.facilityDesignBase.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.facilityDesignBase.Maximum = new decimal(new int[] {
             999,
@@ -974,7 +975,7 @@ namespace SwRebellionEditor
             // shipDesignLabel
             // 
             this.shipDesignLabel.AutoSize = true;
-            this.shipDesignLabel.Location = new System.Drawing.Point(15, 259);
+            this.shipDesignLabel.Location = new System.Drawing.Point(12, 259);
             this.shipDesignLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.shipDesignLabel.Name = "shipDesignLabel";
             this.shipDesignLabel.Size = new System.Drawing.Size(69, 15);
@@ -983,7 +984,7 @@ namespace SwRebellionEditor
             // 
             // shipDesignBase
             // 
-            this.shipDesignBase.Location = new System.Drawing.Point(105, 257);
+            this.shipDesignBase.Location = new System.Drawing.Point(102, 257);
             this.shipDesignBase.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.shipDesignBase.Maximum = new decimal(new int[] {
             99999,
@@ -1003,7 +1004,7 @@ namespace SwRebellionEditor
             // 
             // troopTrainingBase
             // 
-            this.troopTrainingBase.Location = new System.Drawing.Point(105, 283);
+            this.troopTrainingBase.Location = new System.Drawing.Point(102, 283);
             this.troopTrainingBase.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.troopTrainingBase.Maximum = new decimal(new int[] {
             999,
@@ -1024,7 +1025,7 @@ namespace SwRebellionEditor
             // troopTrainingLabel
             // 
             this.troopTrainingLabel.AutoSize = true;
-            this.troopTrainingLabel.Location = new System.Drawing.Point(15, 285);
+            this.troopTrainingLabel.Location = new System.Drawing.Point(12, 285);
             this.troopTrainingLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.troopTrainingLabel.Name = "troopTrainingLabel";
             this.troopTrainingLabel.Size = new System.Drawing.Size(82, 15);
@@ -1036,7 +1037,7 @@ namespace SwRebellionEditor
             this.varianceLabel.AutoSize = true;
             this.varianceLabel.BackColor = System.Drawing.Color.Silver;
             this.varianceLabel.Enabled = false;
-            this.varianceLabel.Location = new System.Drawing.Point(168, 135);
+            this.varianceLabel.Location = new System.Drawing.Point(165, 135);
             this.varianceLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.varianceLabel.Name = "varianceLabel";
             this.varianceLabel.Size = new System.Drawing.Size(51, 15);
@@ -1045,7 +1046,7 @@ namespace SwRebellionEditor
             // 
             // combatVariance
             // 
-            this.combatVariance.Location = new System.Drawing.Point(168, 205);
+            this.combatVariance.Location = new System.Drawing.Point(165, 205);
             this.combatVariance.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.combatVariance.Maximum = new decimal(new int[] {
             999,
@@ -1065,7 +1066,7 @@ namespace SwRebellionEditor
             // 
             // diplomacyVariance
             // 
-            this.diplomacyVariance.Location = new System.Drawing.Point(168, 153);
+            this.diplomacyVariance.Location = new System.Drawing.Point(165, 153);
             this.diplomacyVariance.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.diplomacyVariance.Maximum = new decimal(new int[] {
             99999,
@@ -1085,7 +1086,7 @@ namespace SwRebellionEditor
             // 
             // espionageVariance
             // 
-            this.espionageVariance.Location = new System.Drawing.Point(168, 179);
+            this.espionageVariance.Location = new System.Drawing.Point(165, 179);
             this.espionageVariance.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.espionageVariance.Maximum = new decimal(new int[] {
             999,
@@ -1144,7 +1145,7 @@ namespace SwRebellionEditor
             this.baseLabel.AutoSize = true;
             this.baseLabel.BackColor = System.Drawing.Color.Silver;
             this.baseLabel.Enabled = false;
-            this.baseLabel.Location = new System.Drawing.Point(105, 135);
+            this.baseLabel.Location = new System.Drawing.Point(102, 135);
             this.baseLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.baseLabel.Name = "baseLabel";
             this.baseLabel.Size = new System.Drawing.Size(31, 15);
@@ -1154,7 +1155,7 @@ namespace SwRebellionEditor
             // combatLabel
             // 
             this.combatLabel.AutoSize = true;
-            this.combatLabel.Location = new System.Drawing.Point(15, 207);
+            this.combatLabel.Location = new System.Drawing.Point(12, 207);
             this.combatLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.combatLabel.Name = "combatLabel";
             this.combatLabel.Size = new System.Drawing.Size(50, 15);
@@ -1163,7 +1164,7 @@ namespace SwRebellionEditor
             // 
             // combatBase
             // 
-            this.combatBase.Location = new System.Drawing.Point(105, 205);
+            this.combatBase.Location = new System.Drawing.Point(102, 205);
             this.combatBase.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.combatBase.Maximum = new decimal(new int[] {
             999,
@@ -1184,7 +1185,7 @@ namespace SwRebellionEditor
             // diplomacyLabel
             // 
             this.diplomacyLabel.AutoSize = true;
-            this.diplomacyLabel.Location = new System.Drawing.Point(15, 155);
+            this.diplomacyLabel.Location = new System.Drawing.Point(12, 155);
             this.diplomacyLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.diplomacyLabel.Name = "diplomacyLabel";
             this.diplomacyLabel.Size = new System.Drawing.Size(64, 15);
@@ -1193,7 +1194,7 @@ namespace SwRebellionEditor
             // 
             // diplomacyBase
             // 
-            this.diplomacyBase.Location = new System.Drawing.Point(105, 153);
+            this.diplomacyBase.Location = new System.Drawing.Point(102, 153);
             this.diplomacyBase.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.diplomacyBase.Maximum = new decimal(new int[] {
             99999,
@@ -1213,7 +1214,7 @@ namespace SwRebellionEditor
             // 
             // espionageBase
             // 
-            this.espionageBase.Location = new System.Drawing.Point(105, 179);
+            this.espionageBase.Location = new System.Drawing.Point(102, 179);
             this.espionageBase.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.espionageBase.Maximum = new decimal(new int[] {
             999,
@@ -1234,7 +1235,7 @@ namespace SwRebellionEditor
             // espionageLabel
             // 
             this.espionageLabel.AutoSize = true;
-            this.espionageLabel.Location = new System.Drawing.Point(15, 181);
+            this.espionageLabel.Location = new System.Drawing.Point(12, 181);
             this.espionageLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.espionageLabel.Name = "espionageLabel";
             this.espionageLabel.Size = new System.Drawing.Size(61, 15);
@@ -1279,7 +1280,7 @@ namespace SwRebellionEditor
             // canBeCommander
             // 
             this.canBeCommander.AutoSize = true;
-            this.canBeCommander.Location = new System.Drawing.Point(255, 301);
+            this.canBeCommander.Location = new System.Drawing.Point(252, 301);
             this.canBeCommander.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.canBeCommander.Name = "canBeCommander";
             this.canBeCommander.Size = new System.Drawing.Size(93, 19);
@@ -1291,7 +1292,7 @@ namespace SwRebellionEditor
             // canBeAdmiral
             // 
             this.canBeAdmiral.AutoSize = true;
-            this.canBeAdmiral.Location = new System.Drawing.Point(255, 267);
+            this.canBeAdmiral.Location = new System.Drawing.Point(252, 267);
             this.canBeAdmiral.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.canBeAdmiral.Name = "canBeAdmiral";
             this.canBeAdmiral.Size = new System.Drawing.Size(68, 19);
@@ -1303,7 +1304,7 @@ namespace SwRebellionEditor
             // canBeGeneral
             // 
             this.canBeGeneral.AutoSize = true;
-            this.canBeGeneral.Location = new System.Drawing.Point(255, 284);
+            this.canBeGeneral.Location = new System.Drawing.Point(252, 284);
             this.canBeGeneral.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.canBeGeneral.Name = "canBeGeneral";
             this.canBeGeneral.Size = new System.Drawing.Size(66, 19);
@@ -1398,6 +1399,7 @@ namespace SwRebellionEditor
             // 
             // gameDataGroupBox
             // 
+            this.gameDataGroupBox.Controls.Add(this.encyclopediaDescriptionLabel);
             this.gameDataGroupBox.Controls.Add(this.label1);
             this.gameDataGroupBox.Controls.Add(this.canBeCommander);
             this.gameDataGroupBox.Controls.Add(this.encyclopediaDescription);
@@ -1443,12 +1445,24 @@ namespace SwRebellionEditor
             this.gameDataGroupBox.TabStop = false;
             this.gameDataGroupBox.Text = "In Game Data";
             // 
+            // encyclopediaDescriptionLabel
+            // 
+            this.encyclopediaDescriptionLabel.AutoSize = true;
+            this.encyclopediaDescriptionLabel.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.encyclopediaDescriptionLabel.ForeColor = System.Drawing.Color.White;
+            this.encyclopediaDescriptionLabel.Location = new System.Drawing.Point(227, 324);
+            this.encyclopediaDescriptionLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.encyclopediaDescriptionLabel.Name = "encyclopediaDescriptionLabel";
+            this.encyclopediaDescriptionLabel.Size = new System.Drawing.Size(140, 15);
+            this.encyclopediaDescriptionLabel.TabIndex = 1127;
+            this.encyclopediaDescriptionLabel.Text = "Encyclopedia Description";
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Silver;
             this.label1.Enabled = false;
-            this.label1.Location = new System.Drawing.Point(235, 135);
+            this.label1.Location = new System.Drawing.Point(232, 135);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(98, 15);
@@ -1457,7 +1471,7 @@ namespace SwRebellionEditor
             // 
             // leadershipVariance
             // 
-            this.leadershipVariance.Location = new System.Drawing.Point(168, 231);
+            this.leadershipVariance.Location = new System.Drawing.Point(165, 231);
             this.leadershipVariance.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.leadershipVariance.Maximum = new decimal(new int[] {
             999,
@@ -1476,7 +1490,7 @@ namespace SwRebellionEditor
             // 
             // leadershipBase
             // 
-            this.leadershipBase.Location = new System.Drawing.Point(105, 231);
+            this.leadershipBase.Location = new System.Drawing.Point(102, 231);
             this.leadershipBase.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.leadershipBase.Maximum = new decimal(new int[] {
             999,
@@ -1496,7 +1510,7 @@ namespace SwRebellionEditor
             // leadershipLabel
             // 
             this.leadershipLabel.AutoSize = true;
-            this.leadershipLabel.Location = new System.Drawing.Point(15, 233);
+            this.leadershipLabel.Location = new System.Drawing.Point(12, 233);
             this.leadershipLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.leadershipLabel.Name = "leadershipLabel";
             this.leadershipLabel.Size = new System.Drawing.Size(64, 15);
@@ -1600,5 +1614,6 @@ namespace SwRebellionEditor
         private NumericUpDown refinedMaterialCost_0;
         private Label refinedMaterialCost_0Label;
         private Label label1;
+        private Label encyclopediaDescriptionLabel;
     }
 }
