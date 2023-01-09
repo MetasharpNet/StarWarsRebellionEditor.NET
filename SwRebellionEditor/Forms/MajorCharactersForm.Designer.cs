@@ -231,7 +231,7 @@ namespace SwRebellionEditor
             // 
             this.leiaForceLabel.AutoSize = true;
             this.leiaForceLabel.ForeColor = System.Drawing.Color.Red;
-            this.leiaForceLabel.Location = new System.Drawing.Point(13, 435);
+            this.leiaForceLabel.Location = new System.Drawing.Point(6, 435);
             this.leiaForceLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.leiaForceLabel.Name = "leiaForceLabel";
             this.leiaForceLabel.Size = new System.Drawing.Size(79, 15);
@@ -360,7 +360,7 @@ namespace SwRebellionEditor
             this.hiddenDataGroupBox.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.hiddenDataGroupBox.Name = "hiddenDataGroupBox";
             this.hiddenDataGroupBox.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.hiddenDataGroupBox.Size = new System.Drawing.Size(270, 464);
+            this.hiddenDataGroupBox.Size = new System.Drawing.Size(264, 464);
             this.hiddenDataGroupBox.TabIndex = 6;
             this.hiddenDataGroupBox.TabStop = false;
             this.hiddenDataGroupBox.Text = "Hidden Data";
@@ -369,7 +369,7 @@ namespace SwRebellionEditor
             // 
             this.researchDifficulty_0.BackColor = System.Drawing.SystemColors.Window;
             this.researchDifficulty_0.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.researchDifficulty_0.Location = new System.Drawing.Point(143, 279);
+            this.researchDifficulty_0.Location = new System.Drawing.Point(136, 279);
             this.researchDifficulty_0.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.researchDifficulty_0.Maximum = new decimal(new int[] {
             9999,
@@ -384,7 +384,7 @@ namespace SwRebellionEditor
             // 
             // loyaltyBase
             // 
-            this.loyaltyBase.Location = new System.Drawing.Point(143, 325);
+            this.loyaltyBase.Location = new System.Drawing.Point(136, 325);
             this.loyaltyBase.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.loyaltyBase.Maximum = new decimal(new int[] {
             999,
@@ -405,7 +405,7 @@ namespace SwRebellionEditor
             // isUnableToBetray
             // 
             this.isUnableToBetray.AutoSize = true;
-            this.isUnableToBetray.Location = new System.Drawing.Point(14, 411);
+            this.isUnableToBetray.Location = new System.Drawing.Point(7, 411);
             this.isUnableToBetray.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.isUnableToBetray.Name = "isUnableToBetray";
             this.isUnableToBetray.Size = new System.Drawing.Size(113, 19);
@@ -418,7 +418,7 @@ namespace SwRebellionEditor
             // 
             this.researchDifficulty_0Label.AutoSize = true;
             this.researchDifficulty_0Label.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.researchDifficulty_0Label.Location = new System.Drawing.Point(14, 281);
+            this.researchDifficulty_0Label.Location = new System.Drawing.Point(7, 281);
             this.researchDifficulty_0Label.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.researchDifficulty_0Label.Name = "researchDifficulty_0Label";
             this.researchDifficulty_0Label.Size = new System.Drawing.Size(105, 15);
@@ -429,7 +429,7 @@ namespace SwRebellionEditor
             // 
             this.researchOrder_0.BackColor = System.Drawing.SystemColors.Window;
             this.researchOrder_0.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.researchOrder_0.Location = new System.Drawing.Point(143, 253);
+            this.researchOrder_0.Location = new System.Drawing.Point(136, 253);
             this.researchOrder_0.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.researchOrder_0.Maximum = new decimal(new int[] {
             9999,
@@ -444,7 +444,7 @@ namespace SwRebellionEditor
             // 
             // loyaltyVariance
             // 
-            this.loyaltyVariance.Location = new System.Drawing.Point(206, 325);
+            this.loyaltyVariance.Location = new System.Drawing.Point(199, 325);
             this.loyaltyVariance.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.loyaltyVariance.Maximum = new decimal(new int[] {
             999,
@@ -466,7 +466,7 @@ namespace SwRebellionEditor
             // 
             this.researchOrder_0Label.AutoSize = true;
             this.researchOrder_0Label.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.researchOrder_0Label.Location = new System.Drawing.Point(14, 255);
+            this.researchOrder_0Label.Location = new System.Drawing.Point(7, 255);
             this.researchOrder_0Label.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.researchOrder_0Label.Name = "researchOrder_0Label";
             this.researchOrder_0Label.Size = new System.Drawing.Size(87, 15);
@@ -477,7 +477,7 @@ namespace SwRebellionEditor
             // 
             this.maintenanceCost_0.BackColor = System.Drawing.SystemColors.Window;
             this.maintenanceCost_0.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.maintenanceCost_0.Location = new System.Drawing.Point(143, 227);
+            this.maintenanceCost_0.Location = new System.Drawing.Point(136, 227);
             this.maintenanceCost_0.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.maintenanceCost_0.Maximum = new decimal(new int[] {
             9999,
@@ -493,7 +493,7 @@ namespace SwRebellionEditor
             // loyaltyLabel
             // 
             this.loyaltyLabel.AutoSize = true;
-            this.loyaltyLabel.Location = new System.Drawing.Point(14, 327);
+            this.loyaltyLabel.Location = new System.Drawing.Point(7, 327);
             this.loyaltyLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.loyaltyLabel.Name = "loyaltyLabel";
             this.loyaltyLabel.Size = new System.Drawing.Size(45, 15);
@@ -504,7 +504,7 @@ namespace SwRebellionEditor
             // 
             this.maintenanceCost_0Label.AutoSize = true;
             this.maintenanceCost_0Label.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.maintenanceCost_0Label.Location = new System.Drawing.Point(14, 229);
+            this.maintenanceCost_0Label.Location = new System.Drawing.Point(7, 229);
             this.maintenanceCost_0Label.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.maintenanceCost_0Label.Name = "maintenanceCost_0Label";
             this.maintenanceCost_0Label.Size = new System.Drawing.Size(103, 15);
@@ -515,7 +515,7 @@ namespace SwRebellionEditor
             // 
             this.refinedMaterialCost_0.BackColor = System.Drawing.SystemColors.Window;
             this.refinedMaterialCost_0.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.refinedMaterialCost_0.Location = new System.Drawing.Point(143, 201);
+            this.refinedMaterialCost_0.Location = new System.Drawing.Point(136, 201);
             this.refinedMaterialCost_0.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.refinedMaterialCost_0.Maximum = new decimal(new int[] {
             9999,
@@ -532,7 +532,7 @@ namespace SwRebellionEditor
             // 
             this.refinedMaterialCost_0Label.AutoSize = true;
             this.refinedMaterialCost_0Label.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.refinedMaterialCost_0Label.Location = new System.Drawing.Point(13, 203);
+            this.refinedMaterialCost_0Label.Location = new System.Drawing.Point(6, 203);
             this.refinedMaterialCost_0Label.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.refinedMaterialCost_0Label.Name = "refinedMaterialCost_0Label";
             this.refinedMaterialCost_0Label.Size = new System.Drawing.Size(120, 15);
@@ -543,7 +543,7 @@ namespace SwRebellionEditor
             // 
             this.field7_2.BackColor = System.Drawing.SystemColors.Window;
             this.field7_2.ForeColor = System.Drawing.Color.Red;
-            this.field7_2.Location = new System.Drawing.Point(143, 175);
+            this.field7_2.Location = new System.Drawing.Point(136, 175);
             this.field7_2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.field7_2.Maximum = new decimal(new int[] {
             9999,
@@ -565,7 +565,7 @@ namespace SwRebellionEditor
             // 
             this.field7_2Label.AutoSize = true;
             this.field7_2Label.ForeColor = System.Drawing.Color.Red;
-            this.field7_2Label.Location = new System.Drawing.Point(13, 177);
+            this.field7_2Label.Location = new System.Drawing.Point(6, 177);
             this.field7_2Label.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.field7_2Label.Name = "field7_2Label";
             this.field7_2Label.Size = new System.Drawing.Size(93, 15);
@@ -576,7 +576,7 @@ namespace SwRebellionEditor
             // 
             this.textStraDllId.BackColor = System.Drawing.SystemColors.Window;
             this.textStraDllId.ForeColor = System.Drawing.Color.Red;
-            this.textStraDllId.Location = new System.Drawing.Point(143, 149);
+            this.textStraDllId.Location = new System.Drawing.Point(136, 149);
             this.textStraDllId.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.textStraDllId.Maximum = new decimal(new int[] {
             99999,
@@ -598,7 +598,7 @@ namespace SwRebellionEditor
             // 
             this.familyIdHexLabel.AutoSize = true;
             this.familyIdHexLabel.ForeColor = System.Drawing.Color.Red;
-            this.familyIdHexLabel.Location = new System.Drawing.Point(204, 128);
+            this.familyIdHexLabel.Location = new System.Drawing.Point(197, 128);
             this.familyIdHexLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.familyIdHexLabel.Name = "familyIdHexLabel";
             this.familyIdHexLabel.Size = new System.Drawing.Size(26, 15);
@@ -609,7 +609,7 @@ namespace SwRebellionEditor
             // 
             this.textStraDllIdLabel.AutoSize = true;
             this.textStraDllIdLabel.ForeColor = System.Drawing.Color.Red;
-            this.textStraDllIdLabel.Location = new System.Drawing.Point(14, 151);
+            this.textStraDllIdLabel.Location = new System.Drawing.Point(7, 151);
             this.textStraDllIdLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.textStraDllIdLabel.Name = "textStraDllIdLabel";
             this.textStraDllIdLabel.Size = new System.Drawing.Size(77, 15);
@@ -620,7 +620,7 @@ namespace SwRebellionEditor
             // 
             this.hiddenVarianceLabel.AutoSize = true;
             this.hiddenVarianceLabel.BackColor = System.Drawing.Color.Silver;
-            this.hiddenVarianceLabel.Location = new System.Drawing.Point(206, 307);
+            this.hiddenVarianceLabel.Location = new System.Drawing.Point(199, 307);
             this.hiddenVarianceLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.hiddenVarianceLabel.Name = "hiddenVarianceLabel";
             this.hiddenVarianceLabel.Size = new System.Drawing.Size(51, 15);
@@ -631,7 +631,7 @@ namespace SwRebellionEditor
             // 
             this.field2_1.BackColor = System.Drawing.SystemColors.Window;
             this.field2_1.ForeColor = System.Drawing.Color.Red;
-            this.field2_1.Location = new System.Drawing.Point(143, 45);
+            this.field2_1.Location = new System.Drawing.Point(136, 45);
             this.field2_1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.field2_1.Maximum = new decimal(new int[] {
             9999,
@@ -653,7 +653,7 @@ namespace SwRebellionEditor
             // 
             this.familyId.BackColor = System.Drawing.SystemColors.Window;
             this.familyId.ForeColor = System.Drawing.Color.Red;
-            this.familyId.Location = new System.Drawing.Point(143, 123);
+            this.familyId.Location = new System.Drawing.Point(136, 123);
             this.familyId.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.familyId.Maximum = new decimal(new int[] {
             9999,
@@ -676,7 +676,7 @@ namespace SwRebellionEditor
             // 
             this.productionFamily.BackColor = System.Drawing.SystemColors.Window;
             this.productionFamily.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.productionFamily.Location = new System.Drawing.Point(143, 71);
+            this.productionFamily.Location = new System.Drawing.Point(136, 71);
             this.productionFamily.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.productionFamily.Maximum = new decimal(new int[] {
             999,
@@ -694,7 +694,7 @@ namespace SwRebellionEditor
             // 
             this.idHexLabel.AutoSize = true;
             this.idHexLabel.ForeColor = System.Drawing.Color.Red;
-            this.idHexLabel.Location = new System.Drawing.Point(204, 21);
+            this.idHexLabel.Location = new System.Drawing.Point(197, 21);
             this.idHexLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.idHexLabel.Name = "idHexLabel";
             this.idHexLabel.Size = new System.Drawing.Size(26, 15);
@@ -705,7 +705,7 @@ namespace SwRebellionEditor
             // 
             this.familyIdLabel.AutoSize = true;
             this.familyIdLabel.ForeColor = System.Drawing.Color.Red;
-            this.familyIdLabel.Location = new System.Drawing.Point(14, 125);
+            this.familyIdLabel.Location = new System.Drawing.Point(7, 125);
             this.familyIdLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.familyIdLabel.Name = "familyIdLabel";
             this.familyIdLabel.Size = new System.Drawing.Size(55, 15);
@@ -716,7 +716,7 @@ namespace SwRebellionEditor
             // 
             this.hiddenBaseLabel.AutoSize = true;
             this.hiddenBaseLabel.BackColor = System.Drawing.Color.Silver;
-            this.hiddenBaseLabel.Location = new System.Drawing.Point(143, 307);
+            this.hiddenBaseLabel.Location = new System.Drawing.Point(136, 307);
             this.hiddenBaseLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.hiddenBaseLabel.Name = "hiddenBaseLabel";
             this.hiddenBaseLabel.Size = new System.Drawing.Size(31, 15);
@@ -727,7 +727,7 @@ namespace SwRebellionEditor
             // 
             this.prodLabel.AutoSize = true;
             this.prodLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.prodLabel.Location = new System.Drawing.Point(13, 73);
+            this.prodLabel.Location = new System.Drawing.Point(6, 73);
             this.prodLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.prodLabel.Name = "prodLabel";
             this.prodLabel.Size = new System.Drawing.Size(104, 15);
@@ -738,7 +738,7 @@ namespace SwRebellionEditor
             // 
             this.id.BackColor = System.Drawing.SystemColors.Window;
             this.id.ForeColor = System.Drawing.Color.Red;
-            this.id.Location = new System.Drawing.Point(143, 19);
+            this.id.Location = new System.Drawing.Point(136, 19);
             this.id.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.id.Maximum = new decimal(new int[] {
             999,
@@ -755,7 +755,7 @@ namespace SwRebellionEditor
             // 
             this.field2_1Label.AutoSize = true;
             this.field2_1Label.ForeColor = System.Drawing.Color.Red;
-            this.field2_1Label.Location = new System.Drawing.Point(13, 47);
+            this.field2_1Label.Location = new System.Drawing.Point(6, 47);
             this.field2_1Label.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.field2_1Label.Name = "field2_1Label";
             this.field2_1Label.Size = new System.Drawing.Size(93, 15);
@@ -766,7 +766,7 @@ namespace SwRebellionEditor
             // 
             this.secProdFacNumlabel.AutoSize = true;
             this.secProdFacNumlabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.secProdFacNumlabel.Location = new System.Drawing.Point(14, 99);
+            this.secProdFacNumlabel.Location = new System.Drawing.Point(7, 99);
             this.secProdFacNumlabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.secProdFacNumlabel.Name = "secProdFacNumlabel";
             this.secProdFacNumlabel.Size = new System.Drawing.Size(121, 15);
@@ -775,7 +775,7 @@ namespace SwRebellionEditor
             // 
             // jediLevelVariance
             // 
-            this.jediLevelVariance.Location = new System.Drawing.Point(206, 377);
+            this.jediLevelVariance.Location = new System.Drawing.Point(199, 377);
             this.jediLevelVariance.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.jediLevelVariance.Maximum = new decimal(new int[] {
             999,
@@ -797,7 +797,7 @@ namespace SwRebellionEditor
             // 
             this.nextProductionFamily.BackColor = System.Drawing.SystemColors.Window;
             this.nextProductionFamily.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.nextProductionFamily.Location = new System.Drawing.Point(143, 97);
+            this.nextProductionFamily.Location = new System.Drawing.Point(136, 97);
             this.nextProductionFamily.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.nextProductionFamily.Maximum = new decimal(new int[] {
             999,
@@ -815,7 +815,7 @@ namespace SwRebellionEditor
             // 
             this.idLabel.AutoSize = true;
             this.idLabel.ForeColor = System.Drawing.Color.Red;
-            this.idLabel.Location = new System.Drawing.Point(14, 21);
+            this.idLabel.Location = new System.Drawing.Point(7, 21);
             this.idLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.idLabel.Name = "idLabel";
             this.idLabel.Size = new System.Drawing.Size(17, 15);
@@ -825,7 +825,7 @@ namespace SwRebellionEditor
             // jediProbabilityLabel
             // 
             this.jediProbabilityLabel.AutoSize = true;
-            this.jediProbabilityLabel.Location = new System.Drawing.Point(14, 353);
+            this.jediProbabilityLabel.Location = new System.Drawing.Point(7, 353);
             this.jediProbabilityLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.jediProbabilityLabel.Name = "jediProbabilityLabel";
             this.jediProbabilityLabel.Size = new System.Drawing.Size(87, 15);
@@ -834,7 +834,7 @@ namespace SwRebellionEditor
             // 
             // jediProbability
             // 
-            this.jediProbability.Location = new System.Drawing.Point(143, 351);
+            this.jediProbability.Location = new System.Drawing.Point(136, 351);
             this.jediProbability.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.jediProbability.Maximum = new decimal(new int[] {
             99999,
@@ -854,7 +854,7 @@ namespace SwRebellionEditor
             // 
             // jediLevelBase
             // 
-            this.jediLevelBase.Location = new System.Drawing.Point(143, 377);
+            this.jediLevelBase.Location = new System.Drawing.Point(136, 377);
             this.jediLevelBase.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.jediLevelBase.Maximum = new decimal(new int[] {
             999,
@@ -875,7 +875,7 @@ namespace SwRebellionEditor
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(14, 380);
+            this.label13.Location = new System.Drawing.Point(7, 380);
             this.label13.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(57, 15);
@@ -1530,7 +1530,7 @@ namespace SwRebellionEditor
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.Cancel;
-            this.ClientSize = new System.Drawing.Size(841, 512);
+            this.ClientSize = new System.Drawing.Size(834, 512);
             this.Controls.Add(this.hiddenDataGroupBox);
             this.Controls.Add(this.gameDataGroupBox);
             this.Controls.Add(this.majorCharactersListView);
@@ -1543,8 +1543,8 @@ namespace SwRebellionEditor
             this.KeyPreview = true;
             this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.MaximizeBox = false;
-            this.MaximumSize = new System.Drawing.Size(857, 551);
-            this.MinimumSize = new System.Drawing.Size(857, 551);
+            this.MaximumSize = new System.Drawing.Size(850, 551);
+            this.MinimumSize = new System.Drawing.Size(850, 551);
             this.Name = "MajorCharactersForm";
             this.Text = "Major Characters (MJCHARSD.DAT)";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.GameObjectsListForm_FormClosing);
