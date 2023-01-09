@@ -234,14 +234,14 @@
             GameFile.MinorCharacters[selector.Value].LoyaltyVariance = (uint)loyaltyVariance.Value;
             GameFile.UnsavedData = true;
         }
-        private void nextProductionFacility_ValueChanged(object sender, EventArgs e)
+        private void nextProductionFamily_ValueChanged(object sender, EventArgs e)
         {
-            GameFile.MinorCharacters[selector.Value].NextProductionFacility = (uint)nextProductionFacility.Value;
+            GameFile.MinorCharacters[selector.Value].NextProductionFamily = (uint)nextProductionFamily.Value;
             GameFile.UnsavedData = true;
         }
-        private void productionFacility_ValueChanged(object sender, EventArgs e)
+        private void productionFamily_ValueChanged(object sender, EventArgs e)
         {
-            GameFile.MinorCharacters[selector.Value].ProductionFacility = (uint)productionFacility.Value;
+            GameFile.MinorCharacters[selector.Value].ProductionFamily = (uint)productionFamily.Value;
             GameFile.UnsavedData = true;
         }
         private void shipResearchBase_ValueChanged(object sender, EventArgs e)

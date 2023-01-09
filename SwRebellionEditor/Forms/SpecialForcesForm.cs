@@ -49,8 +49,8 @@
             loyaltyVariance.Value = specialForce.LoyaltyVariance;
             maintenanceCost.Value = specialForce.MaintenanceCost;
             missionId.Value = specialForce.MissionId;
-            nextProductionFacility.Value = specialForce.NextProductionFacility;
-            productionFacility.Value = specialForce.ProductionFacility;
+            nextProductionFamily.Value = specialForce.NextProductionFamily;
+            productionFamily.Value = specialForce.ProductionFamily;
             researchDifficulty.Value = specialForce.ResearchDifficulty;
             researchOrder.Value = specialForce.ResearchOrder;
             shipsResearchBase.Value = specialForce.ShipsResearchBase;
@@ -180,14 +180,14 @@
             GameFile.SpecialForces[selector.Value].MaintenanceCost = (uint)maintenanceCost.Value;
             GameFile.UnsavedData = true;
         }
-        private void nextProductionFacility_ValueChanged(object sender, EventArgs e)
+        private void nextProductionFamily_ValueChanged(object sender, EventArgs e)
         {
-            GameFile.SpecialForces[selector.Value].NextProductionFacility = (uint)nextProductionFacility.Value;
+            GameFile.SpecialForces[selector.Value].NextProductionFamily = (uint)nextProductionFamily.Value;
             GameFile.UnsavedData = true;
         }
-        private void productionFacility_ValueChanged(object sender, EventArgs e)
+        private void productionFamily_ValueChanged(object sender, EventArgs e)
         {
-            GameFile.SpecialForces[selector.Value].ProductionFacility = (uint)productionFacility.Value;
+            GameFile.SpecialForces[selector.Value].ProductionFamily = (uint)productionFamily.Value;
             GameFile.UnsavedData = true;
         }
         private void researchDifficulty_ValueChanged(object sender, EventArgs e)

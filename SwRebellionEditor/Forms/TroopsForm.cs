@@ -29,8 +29,8 @@
             isAllianceUnit.Checked = troop.IsAlliance > 0U;
             isEmpireUnit.Checked = troop.IsEmpire > 0U;
             maintenanceCost.Value = troop.MaintenanceCost;
-            nextProductionFacility.Value = troop.NextProductionFacility;
-            productionFacility.Value = troop.ProductionFacility;
+            nextProductionFamily.Value = troop.NextProductionFamily;
+            productionFamily.Value = troop.ProductionFamily;
             researchDifficulty.Value = troop.ResearchDifficulty;
             researchOrder.Value = troop.ResearchOrder;
             textStraDllId.Value = troop.TextStraDllId;
@@ -99,14 +99,14 @@
             GameFile.Troops[selector.Value].MaintenanceCost = (uint)maintenanceCost.Value;
             GameFile.UnsavedData = true;
         }
-        private void nextProductionFacility_ValueChanged(object sender, EventArgs e)
+        private void nextProductionFamily_ValueChanged(object sender, EventArgs e)
         {
-            GameFile.Troops[selector.Value].NextProductionFacility = (uint)nextProductionFacility.Value;
+            GameFile.Troops[selector.Value].NextProductionFamily = (uint)nextProductionFamily.Value;
             GameFile.UnsavedData = true;
         }
-        private void productionFacility_ValueChanged(object sender, EventArgs e)
+        private void productionFamily_ValueChanged(object sender, EventArgs e)
         {
-            GameFile.Troops[selector.Value].ProductionFacility = (uint)productionFacility.Value;
+            GameFile.Troops[selector.Value].ProductionFamily = (uint)productionFamily.Value;
             GameFile.UnsavedData = true;
         }
         private void researchDifficulty_ValueChanged(object sender, EventArgs e)

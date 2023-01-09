@@ -72,14 +72,14 @@ namespace SwRebellionEditor
         private GroupBox groupBox1;
         private NumericUpDown unknown2;
         private NumericUpDown textStraDllId;
-        private NumericUpDown productionFacility;
+        private NumericUpDown productionFamily;
         private Label unkown3Label;
         private NumericUpDown familyId;
         private Label prodLabel;
         private Label idLabel;
         private Label familyLabel;
         private Label secProdFacNumlabel;
-        private NumericUpDown nextProductionFacility;
+        private NumericUpDown nextProductionFamily;
         private NumericUpDown missionId;
         private Label label3;
         private Label familyIdHexLabel;
@@ -170,14 +170,14 @@ namespace SwRebellionEditor
             this.label3 = new System.Windows.Forms.Label();
             this.unknown2 = new System.Windows.Forms.NumericUpDown();
             this.textStraDllId = new System.Windows.Forms.NumericUpDown();
-            this.productionFacility = new System.Windows.Forms.NumericUpDown();
+            this.productionFamily = new System.Windows.Forms.NumericUpDown();
             this.unkown3Label = new System.Windows.Forms.Label();
             this.familyId = new System.Windows.Forms.NumericUpDown();
             this.prodLabel = new System.Windows.Forms.Label();
             this.idLabel = new System.Windows.Forms.Label();
             this.familyLabel = new System.Windows.Forms.Label();
             this.secProdFacNumlabel = new System.Windows.Forms.Label();
-            this.nextProductionFacility = new System.Windows.Forms.NumericUpDown();
+            this.nextProductionFamily = new System.Windows.Forms.NumericUpDown();
             this.encyText = new System.Windows.Forms.RichTextBox();
             this.conCostLabel = new System.Windows.Forms.Label();
             this.conCostNum2 = new System.Windows.Forms.NumericUpDown();
@@ -216,9 +216,9 @@ namespace SwRebellionEditor
             ((System.ComponentModel.ISupportInitialize)(this.missionId)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.unknown2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textStraDllId)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.productionFacility)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.productionFamily)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.familyId)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nextProductionFacility)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nextProductionFamily)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.conCostNum2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.maintCostNum2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picture)).BeginInit();
@@ -1002,14 +1002,14 @@ namespace SwRebellionEditor
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.unknown2);
             this.groupBox1.Controls.Add(this.textStraDllId);
-            this.groupBox1.Controls.Add(this.productionFacility);
+            this.groupBox1.Controls.Add(this.productionFamily);
             this.groupBox1.Controls.Add(this.unkown3Label);
             this.groupBox1.Controls.Add(this.familyId);
             this.groupBox1.Controls.Add(this.prodLabel);
             this.groupBox1.Controls.Add(this.idLabel);
             this.groupBox1.Controls.Add(this.familyLabel);
             this.groupBox1.Controls.Add(this.secProdFacNumlabel);
-            this.groupBox1.Controls.Add(this.nextProductionFacility);
+            this.groupBox1.Controls.Add(this.nextProductionFamily);
             this.groupBox1.Location = new System.Drawing.Point(0, 162);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.groupBox1.Name = "groupBox1";
@@ -1126,20 +1126,20 @@ namespace SwRebellionEditor
             // 
             // prodFacNum
             // 
-            this.productionFacility.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.productionFacility.Enabled = false;
-            this.productionFacility.Location = new System.Drawing.Point(138, 27);
-            this.productionFacility.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.productionFacility.Maximum = new decimal(new int[] {
+            this.productionFamily.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.productionFamily.Enabled = false;
+            this.productionFamily.Location = new System.Drawing.Point(138, 27);
+            this.productionFamily.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.productionFamily.Maximum = new decimal(new int[] {
             999,
             0,
             0,
             0});
-            this.productionFacility.Name = "prodFacNum";
-            this.productionFacility.Size = new System.Drawing.Size(59, 23);
-            this.productionFacility.TabIndex = 137;
-            this.productionFacility.TabStop = false;
-            this.productionFacility.ValueChanged += new System.EventHandler(this.productionFacility_ValueChanged);
+            this.productionFamily.Name = "prodFacNum";
+            this.productionFamily.Size = new System.Drawing.Size(59, 23);
+            this.productionFamily.TabIndex = 137;
+            this.productionFamily.TabStop = false;
+            this.productionFamily.ValueChanged += new System.EventHandler(this.productionFamily_ValueChanged);
             // 
             // unkown3Label
             // 
@@ -1178,7 +1178,7 @@ namespace SwRebellionEditor
             this.prodLabel.Name = "prodLabel";
             this.prodLabel.Size = new System.Drawing.Size(106, 15);
             this.prodLabel.TabIndex = 138;
-            this.prodLabel.Text = "Production Facility";
+            this.prodLabel.Text = "Production Family";
             // 
             // idLabel
             // 
@@ -1211,24 +1211,24 @@ namespace SwRebellionEditor
             this.secProdFacNumlabel.Name = "secProdFacNumlabel";
             this.secProdFacNumlabel.Size = new System.Drawing.Size(92, 15);
             this.secProdFacNumlabel.TabIndex = 140;
-            this.secProdFacNumlabel.Text = "Prod Facility + 1";
+            this.secProdFacNumlabel.Text = "Production Family +1";
             // 
             // secProdFacNum
             // 
-            this.nextProductionFacility.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.nextProductionFacility.Enabled = false;
-            this.nextProductionFacility.Location = new System.Drawing.Point(138, 58);
-            this.nextProductionFacility.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.nextProductionFacility.Maximum = new decimal(new int[] {
+            this.nextProductionFamily.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.nextProductionFamily.Enabled = false;
+            this.nextProductionFamily.Location = new System.Drawing.Point(138, 58);
+            this.nextProductionFamily.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.nextProductionFamily.Maximum = new decimal(new int[] {
             999,
             0,
             0,
             0});
-            this.nextProductionFacility.Name = "secProdFacNum";
-            this.nextProductionFacility.Size = new System.Drawing.Size(59, 23);
-            this.nextProductionFacility.TabIndex = 139;
-            this.nextProductionFacility.TabStop = false;
-            this.nextProductionFacility.ValueChanged += new System.EventHandler(this.nextProductionFacility_ValueChanged);
+            this.nextProductionFamily.Name = "secProdFacNum";
+            this.nextProductionFamily.Size = new System.Drawing.Size(59, 23);
+            this.nextProductionFamily.TabIndex = 139;
+            this.nextProductionFamily.TabStop = false;
+            this.nextProductionFamily.ValueChanged += new System.EventHandler(this.nextProductionFamily_ValueChanged);
             // 
             // encyText
             // 
@@ -1353,9 +1353,9 @@ namespace SwRebellionEditor
             ((System.ComponentModel.ISupportInitialize)(this.missionId)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.unknown2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textStraDllId)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.productionFacility)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.productionFamily)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.familyId)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nextProductionFacility)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nextProductionFamily)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.conCostNum2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.maintCostNum2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picture)).EndInit();

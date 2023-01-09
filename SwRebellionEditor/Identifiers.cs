@@ -12,7 +12,7 @@
         AllianceFacilityByte             =       0x20, // In Hexadecimal Editor: 20          - Decimal:            32
         DefenseFacilityByte              =       0x22, // In Hexadecimal Editor: 22          - Decimal:            34
         ManufacturingFacilityByte        =       0x28, // In Hexadecimal Editor: 28          - Decimal:            40
-        ProductionFacilityByte           =       0x2C, // In Hexadecimal Editor: 2C          - Decimal:            44
+        ProductionFamilyByte           =       0x2C, // In Hexadecimal Editor: 2C          - Decimal:            44
         MinPersonnelByte                 =       0x30, // In Hexadecimal Editor: 30          - Decimal:            48
         MaxPersonnelByte                 =       0x38, // In Hexadecimal Editor: 38          - Decimal:            56
         SectorByte                       =       0x80, // In Hexadecimal Editor: 80          - Decimal:           128

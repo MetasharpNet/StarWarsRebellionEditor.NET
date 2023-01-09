@@ -45,8 +45,8 @@
             laserCannonStar.Value = fighter.LaserCannonStarboard;
             laserCannonTotalFirePower.Value = fighter.LaserCannonTotalFirePower;
             maintenanceCost.Value = fighter.MaintenanceCost;
-            nextProductionFacility.Value = fighter.NextProductionFacility;
-            productionFacility.Value = fighter.ProductionFacility;
+            nextProductionFamily.Value = fighter.NextProductionFamily;
+            productionFamily.Value = fighter.ProductionFamily;
             researchDifficulty.Value = fighter.ResearchDifficulty;
             researchOrder.Value = fighter.ResearchOrder;
             shieldsMaxCapacity.Value = fighter.ShieldEnergy;
@@ -202,14 +202,14 @@
             GameFile.Fighters[selector.Value].MaintenanceCost = (uint)maintenanceCost.Value;
             GameFile.UnsavedData = true;
         }
-        private void nextProductionFacility_ValueChanged(object sender, EventArgs e)
+        private void nextProductionFamily_ValueChanged(object sender, EventArgs e)
         {
-            GameFile.Fighters[selector.Value].NextProductionFacility = (uint)nextProductionFacility.Value;
+            GameFile.Fighters[selector.Value].NextProductionFamily = (uint)nextProductionFamily.Value;
             GameFile.UnsavedData = true;
         }
-        private void productionFacility_ValueChanged(object sender, EventArgs e)
+        private void productionFamily_ValueChanged(object sender, EventArgs e)
         {
-            GameFile.Fighters[selector.Value].ProductionFacility = (uint)productionFacility.Value;
+            GameFile.Fighters[selector.Value].ProductionFamily = (uint)productionFamily.Value;
             GameFile.UnsavedData = true;
         }
         private void researchDifficulty_ValueChanged(object sender, EventArgs e)

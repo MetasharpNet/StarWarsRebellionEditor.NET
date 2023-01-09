@@ -13,8 +13,8 @@
     {
         public uint Id;
         public uint Field2_1;
-        public uint ProductionFacility;
-        public uint NextProductionFacility;
+        public uint ProductionFamily;
+        public uint NextProductionFamily;
         public uint FamilyId; // 20 for capital ships, 24 for death star
         public ushort TextStraDllId;
         public ushort Field7_2;

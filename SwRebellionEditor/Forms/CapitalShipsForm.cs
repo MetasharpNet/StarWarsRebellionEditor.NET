@@ -54,9 +54,9 @@ namespace SwRebellionEditor
             laserCannonStarboard.Value = capitalShip.LaserCannonStarboard;
             laserCannonTotalFirePower.Value = capitalShip.LaserCannonTotalFirePower;
             maintenanceCost.Value = capitalShip.MaintenanceCost;
-            nextProductionFacility.Value = capitalShip.NextProductionFacility;
+            nextProductionFamily.Value = capitalShip.NextProductionFamily;
             primaryHyperdrive.Value = capitalShip.PrimaryHyperdrive;
-            productionFacility.Value = capitalShip.ProductionFacility;
+            productionFamily.Value = capitalShip.ProductionFamily;
             refinedMaterialCost.Value = capitalShip.RefinedMaterialCost;
             researchDifficulty.Value = capitalShip.ResearchDifficulty;
             researchOrder.Value = capitalShip.ResearchOrder;
@@ -249,9 +249,9 @@ namespace SwRebellionEditor
             GameFile.CapitalShips[selector.Value].MoraleModifier = (uint)moraleModifier.Value;
             GameFile.UnsavedData = true;
         }
-        private void nextProductionFacility_ValueChanged(object sender, EventArgs e)
+        private void nextProductionFamily_ValueChanged(object sender, EventArgs e)
         {
-            GameFile.CapitalShips[selector.Value].NextProductionFacility = (uint)nextProductionFacility.Value;
+            GameFile.CapitalShips[selector.Value].NextProductionFamily = (uint)nextProductionFamily.Value;
             GameFile.UnsavedData = true;
         }
         private void primaryHyperdrive_ValueChanged(object sender, EventArgs e)
@@ -259,9 +259,9 @@ namespace SwRebellionEditor
             GameFile.CapitalShips[selector.Value].PrimaryHyperdrive = (uint)primaryHyperdrive.Value;
             GameFile.UnsavedData = true;
         }
-        private void productionFacility_ValueChanged(object sender, EventArgs e)
+        private void productionFamily_ValueChanged(object sender, EventArgs e)
         {
-            GameFile.CapitalShips[selector.Value].ProductionFacility = (uint)productionFacility.Value;
+            GameFile.CapitalShips[selector.Value].ProductionFamily = (uint)productionFamily.Value;
             GameFile.UnsavedData = true;
         }
         private void refinedMaterialCost_ValueChanged(object sender, EventArgs e)
