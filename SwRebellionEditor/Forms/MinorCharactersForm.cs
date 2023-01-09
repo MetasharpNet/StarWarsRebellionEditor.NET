@@ -38,30 +38,41 @@
             combatVariance.Value = minorCharacter.CombatVariance;
             diplomacyBase.Value = minorCharacter.DiplomacyBase;
             diplomacyVariance.Value = minorCharacter.DiplomacyVariance;
-            name.Text = minorCharacter.Name;
+            encyclopediaDescription.Text = minorCharacter.EncyclopediaDescription;
             espionageBase.Value = minorCharacter.EspionageBase;
             espionageVariance.Value = minorCharacter.EspionageVariance;
-            facilitiesResearchBase.Value = minorCharacter.FacilitiesResearchBase;
-            facilitiesResearchVariance.Value = minorCharacter.FacilitiesResearchVariance;
+            facilityDesignBase.Value = minorCharacter.FacilityDesignBase;
+            facilityDesignVariance.Value = minorCharacter.FacilityDesignVariance;
             familyId.Value = minorCharacter.FamilyId;
             familyIdHexLabel.Text = "0x" + minorCharacter.FamilyId.ToString("X");
-            isAllianceUnit.Checked = minorCharacter.IsAlliance > 0U;
-            isEmpireUnit.Checked = minorCharacter.IsEmpire > 0U;
+            field2_1.Value = minorCharacter.Field2_1;
+            field7_2.Value = minorCharacter.Field7_2;
+            id.Value = minorCharacter.Id;
+            idHexLabel.Text = "0x" + minorCharacter.Id.ToString("X");
+            isAlliance.Checked = minorCharacter.IsAlliance > 0U;
+            isEmpire.Checked = minorCharacter.IsEmpire > 0U;
             isJediTrainer.Checked = minorCharacter.IsJediTrainer > 0U;
             isKnownJedi.Checked = minorCharacter.IsKnownJedi > 0U;
             isUnableToBetray.Checked = minorCharacter.IsUnableToBetray > 0U;
             jediLevelBase.Value = minorCharacter.JediLevelBase;
             jediLevelVariance.Value = minorCharacter.JediLevelVariance;
-            jediProbabilityBase.Value = minorCharacter.JediProbabilityBase;
+            jediProbability.Value = minorCharacter.JediProbability;
+            leadershipBase.Value = minorCharacter.LeadershipBase;
+            leadershipVariance.Value = minorCharacter.LeadershipVariance;
             loyaltyBase.Value = minorCharacter.LoyaltyBase;
             loyaltyVariance.Value = minorCharacter.LoyaltyVariance;
-            shipResearchBase.Value = minorCharacter.ShipResearchBase;
-            shipResearchVariance.Value = minorCharacter.ShipResearchVariance;
+            maintenanceCost_0.Value = minorCharacter.MaintenanceCost_0;
+            name.Text = minorCharacter.Name;
+            nextProductionFamily.Value = minorCharacter.NextProductionFamily;
+            productionFamily.Value = minorCharacter.ProductionFamily;
+            refinedMaterialCost_0.Value = minorCharacter.RefinedMaterialCost_0;
+            researchDifficulty_0.Value = minorCharacter.ResearchDifficulty_0;
+            researchOrder_0.Value = minorCharacter.ResearchOrder_0;
+            shipDesignBase.Value = minorCharacter.ShipDesignBase;
+            shipDesignVariance.Value = minorCharacter.ShipDesignVariance;
             textStraDllId.Value = minorCharacter.TextStraDllId;
-            troopsResearchBase.Value = minorCharacter.TroopsResearchBase;
-            troopsResearchVariance.Value = minorCharacter.TroopsResearchVariance;
-            unitId.Value = minorCharacter.Id;
-            unitIdHexLabel.Text = "0x" + minorCharacter.Id.ToString("X");
+            troopTrainingBase.Value = minorCharacter.TroopTrainingBase;
+            troopTrainingVariance.Value = minorCharacter.TroopTrainingVariance;
 
             if (minorCharacter.Name == "Leia Organa")
             {
@@ -69,16 +80,15 @@
                 jediCombatBase.Value = minorCharacter.CombatBase;
                 jediDiplomacyBase.Value = minorCharacter.DiplomacyBase;
                 jediEspionageBase.Value = minorCharacter.EspionageBase;
+                jediLeadershipBase.Value = minorCharacter.LeadershipBase;
             }
             else
             {
                 leiaForceLabel.Text = "";
                 jediCombatBase.Value = (int)(minorCharacter.CombatBase + minorCharacter.CombatBase * (double)(minorCharacter.JediLevelBase / 100f));
-                jediCombatVariance.Value = minorCharacter.CombatVariance;
                 jediDiplomacyBase.Value = (int)(minorCharacter.DiplomacyBase + minorCharacter.DiplomacyBase * (double)(minorCharacter.JediLevelBase / 100f));
-                jediDiplomacyVariance.Value = minorCharacter.DiplomacyVariance;
                 jediEspionageBase.Value = (int)(minorCharacter.EspionageBase + minorCharacter.EspionageBase * (double)(minorCharacter.JediLevelBase / 100f));
-                jediEspionageVariance.Value = minorCharacter.EspionageVariance;
+                jediLeadershipBase.Value = (int)(minorCharacter.LeadershipBase + minorCharacter.LeadershipBase * (double)(minorCharacter.JediLevelBase / 100f));
             }
 
             picture.SizeMode = PictureBoxSizeMode.Zoom;
@@ -90,6 +100,11 @@
         {
             foreach (var mc in GameFile.MinorCharacters)
                 mc.Name = TextStra.GetString(mc.TextStraDllId);
+        }
+        protected override void SaveSideInfo()
+        {
+            TextStra.SaveString(Convert.ToUInt16(textStraDllId.Value), name.Text);
+            //EncyText.SaveString(Convert.ToUInt16(xxx.Value), name.Text);
         }
 
         #endregion
@@ -159,6 +174,11 @@
             GameFile.MinorCharacters[selector.Value].DiplomacyVariance = (uint)diplomacyVariance.Value;
             GameFile.UnsavedData = true;
         }
+        private void encyclopediaDescription_TextChanged(object sender, EventArgs e)
+        {
+            GameFile.MinorCharacters[selector.Value].EncyclopediaDescription = encyclopediaDescription.Text;
+            GameFile.UnsavedData = true;
+        }
         private void espionageBase_ValueChanged(object sender, EventArgs e)
         {
             GameFile.MinorCharacters[selector.Value].EspionageBase = (uint)espionageBase.Value;
@@ -169,14 +189,14 @@
             GameFile.MinorCharacters[selector.Value].EspionageVariance = (uint)espionageVariance.Value;
             GameFile.UnsavedData = true;
         }
-        private void facilitiesResearchBase_ValueChanged(object sender, EventArgs e)
+        private void facilityDesignBase_ValueChanged(object sender, EventArgs e)
         {
-            GameFile.MinorCharacters[selector.Value].FacilitiesResearchBase = (uint)facilitiesResearchBase.Value;
+            GameFile.MinorCharacters[selector.Value].FacilityDesignBase = (uint)facilityDesignBase.Value;
             GameFile.UnsavedData = true;
         }
-        private void facilitiesResearchVariance_ValueChanged(object sender, EventArgs e)
+        private void facilityDesignVariance_ValueChanged(object sender, EventArgs e)
         {
-            GameFile.MinorCharacters[selector.Value].FacilitiesResearchVariance = (uint)facilitiesResearchVariance.Value;
+            GameFile.MinorCharacters[selector.Value].FacilityDesignVariance = (uint)facilityDesignVariance.Value;
             GameFile.UnsavedData = true;
         }
         private void familyId_ValueChanged(object sender, EventArgs e)
@@ -184,14 +204,29 @@
             GameFile.MinorCharacters[selector.Value].FamilyId = (uint)familyId.Value;
             GameFile.UnsavedData = true;
         }
-        private void isAllianceUnit_CheckStateChanged(object sender, EventArgs e)
+        private void field2_1_ValueChanged(object sender, EventArgs e)
         {
-            GameFile.MinorCharacters[selector.Value].IsAlliance = isAllianceUnit.Checked ? 1U : 0U;
+            GameFile.MinorCharacters[selector.Value].Field2_1 = (uint)field2_1.Value;
             GameFile.UnsavedData = true;
         }
-        private void isEmpireUnit_CheckStateChanged(object sender, EventArgs e)
+        private void field7_2_ValueChanged(object sender, EventArgs e)
         {
-            GameFile.MinorCharacters[selector.Value].IsEmpire = isEmpireUnit.Checked ? 1U : 0U;
+            GameFile.MinorCharacters[selector.Value].Field7_2 = (ushort)field7_2.Value;
+            GameFile.UnsavedData = true;
+        }
+        private void id_ValueChanged(object sender, EventArgs e)
+        {
+            GameFile.MinorCharacters[selector.Value].Id = (uint)id.Value;
+            GameFile.UnsavedData = true;
+        }
+        private void isAlliance_CheckStateChanged(object sender, EventArgs e)
+        {
+            GameFile.MinorCharacters[selector.Value].IsAlliance = isAlliance.Checked ? 1U : 0U;
+            GameFile.UnsavedData = true;
+        }
+        private void isEmpire_CheckStateChanged(object sender, EventArgs e)
+        {
+            GameFile.MinorCharacters[selector.Value].IsEmpire = isEmpire.Checked ? 1U : 0U;
             GameFile.UnsavedData = true;
         }
         private void isJediTrainer_CheckStateChanged(object sender, EventArgs e)
@@ -219,9 +254,19 @@
             GameFile.MinorCharacters[selector.Value].JediLevelVariance = (uint)jediLevelVariance.Value;
             GameFile.UnsavedData = true;
         }
-        private void jediProbabilityBase_ValueChanged(object sender, EventArgs e)
+        private void jediProbability_ValueChanged(object sender, EventArgs e)
         {
-            GameFile.MinorCharacters[selector.Value].JediProbabilityBase = (uint)jediProbabilityBase.Value;
+            GameFile.MinorCharacters[selector.Value].JediProbability = (uint)jediProbability.Value;
+            GameFile.UnsavedData = true;
+        }
+        private void leadershipBase_ValueChanged(object sender, EventArgs e)
+        {
+            GameFile.MinorCharacters[selector.Value].LeadershipBase = (uint)leadershipBase.Value;
+            GameFile.UnsavedData = true;
+        }
+        private void leadershipVariance_ValueChanged(object sender, EventArgs e)
+        {
+            GameFile.MinorCharacters[selector.Value].LeadershipVariance = (uint)leadershipVariance.Value;
             GameFile.UnsavedData = true;
         }
         private void loyaltyBase_ValueChanged(object sender, EventArgs e)
@@ -234,6 +279,16 @@
             GameFile.MinorCharacters[selector.Value].LoyaltyVariance = (uint)loyaltyVariance.Value;
             GameFile.UnsavedData = true;
         }
+        private void maintenanceCost_0_ValueChanged(object sender, EventArgs e)
+        {
+            GameFile.MinorCharacters[selector.Value].MaintenanceCost_0 = (uint)maintenanceCost_0.Value;
+            GameFile.UnsavedData = true;
+        }
+        private void name_TextChanged(object sender, EventArgs e)
+        {
+            GameFile.MinorCharacters[selector.Value].Name = name.Text;
+            GameFile.UnsavedData = true;
+        }
         private void nextProductionFamily_ValueChanged(object sender, EventArgs e)
         {
             GameFile.MinorCharacters[selector.Value].NextProductionFamily = (uint)nextProductionFamily.Value;
@@ -244,24 +299,44 @@
             GameFile.MinorCharacters[selector.Value].ProductionFamily = (uint)productionFamily.Value;
             GameFile.UnsavedData = true;
         }
-        private void shipResearchBase_ValueChanged(object sender, EventArgs e)
+        private void refinedMaterialCost_0_ValueChanged(object sender, EventArgs e)
         {
-            GameFile.MinorCharacters[selector.Value].ShipResearchBase = (uint)shipResearchBase.Value;
+            GameFile.MinorCharacters[selector.Value].RefinedMaterialCost_0 = (uint)refinedMaterialCost_0.Value;
             GameFile.UnsavedData = true;
         }
-        private void shipResearchVariance_ValueChanged(object sender, EventArgs e)
+        private void researchDifficulty_0_ValueChanged(object sender, EventArgs e)
         {
-            GameFile.MinorCharacters[selector.Value].ShipResearchVariance = (uint)shipResearchVariance.Value;
+            GameFile.MinorCharacters[selector.Value].ResearchDifficulty_0 = (uint)researchDifficulty_0.Value;
             GameFile.UnsavedData = true;
         }
-        private void troopsResearchBase_ValueChanged(object sender, EventArgs e)
+        private void researchOrder_0_ValueChanged(object sender, EventArgs e)
         {
-            GameFile.MinorCharacters[selector.Value].TroopsResearchBase = (uint)troopsResearchBase.Value;
+            GameFile.MinorCharacters[selector.Value].ResearchOrder_0 = (uint)researchOrder_0.Value;
             GameFile.UnsavedData = true;
         }
-        private void troopsResearchVariance_ValueChanged(object sender, EventArgs e)
+        private void shipDesignBase_ValueChanged(object sender, EventArgs e)
         {
-            GameFile.MinorCharacters[selector.Value].TroopsResearchVariance = (uint)troopsResearchVariance.Value;
+            GameFile.MinorCharacters[selector.Value].ShipDesignBase = (uint)shipDesignBase.Value;
+            GameFile.UnsavedData = true;
+        }
+        private void shipDesignVariance_ValueChanged(object sender, EventArgs e)
+        {
+            GameFile.MinorCharacters[selector.Value].ShipDesignVariance = (uint)shipDesignVariance.Value;
+            GameFile.UnsavedData = true;
+        }
+        private void textStraDllId_ValueChanged(object sender, EventArgs e)
+        {
+            GameFile.MinorCharacters[selector.Value].TextStraDllId = (ushort)textStraDllId.Value;
+            GameFile.UnsavedData = true;
+        }
+        private void troopTrainingBase_ValueChanged(object sender, EventArgs e)
+        {
+            GameFile.MinorCharacters[selector.Value].TroopTrainingBase = (uint)troopTrainingBase.Value;
+            GameFile.UnsavedData = true;
+        }
+        private void troopTrainingVariance_ValueChanged(object sender, EventArgs e)
+        {
+            GameFile.MinorCharacters[selector.Value].TroopTrainingVariance = (uint)troopTrainingVariance.Value;
             GameFile.UnsavedData = true;
         }
 
