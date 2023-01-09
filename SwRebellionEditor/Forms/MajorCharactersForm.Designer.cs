@@ -381,6 +381,7 @@ namespace SwRebellionEditor
             this.researchDifficulty_0.TabIndex = 1137;
             this.researchDifficulty_0.TabStop = false;
             this.researchDifficulty_0.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.researchDifficulty_0.ValueChanged += new System.EventHandler(this.researchDifficulty_0_ValueChanged);
             // 
             // loyaltyBase
             // 
@@ -441,6 +442,7 @@ namespace SwRebellionEditor
             this.researchOrder_0.TabIndex = 1135;
             this.researchOrder_0.TabStop = false;
             this.researchOrder_0.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.researchOrder_0.ValueChanged += new System.EventHandler(this.researchOrder_0_ValueChanged);
             // 
             // loyaltyVariance
             // 
@@ -489,6 +491,7 @@ namespace SwRebellionEditor
             this.maintenanceCost_0.TabIndex = 1133;
             this.maintenanceCost_0.TabStop = false;
             this.maintenanceCost_0.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.maintenanceCost_0.ValueChanged += new System.EventHandler(this.maintenanceCost_0_ValueChanged);
             // 
             // loyaltyLabel
             // 
@@ -527,6 +530,7 @@ namespace SwRebellionEditor
             this.refinedMaterialCost_0.TabIndex = 1131;
             this.refinedMaterialCost_0.TabStop = false;
             this.refinedMaterialCost_0.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.refinedMaterialCost_0.ValueChanged += new System.EventHandler(this.refinedMaterialCost_0_ValueChanged);
             // 
             // refinedMaterialCost_0Label
             // 
@@ -560,6 +564,7 @@ namespace SwRebellionEditor
             0,
             0,
             0});
+            this.field7_2.ValueChanged += new System.EventHandler(this.field7_2_ValueChanged);
             // 
             // field7_2Label
             // 
@@ -593,6 +598,7 @@ namespace SwRebellionEditor
             0,
             0,
             0});
+            this.textStraDllId.ValueChanged += new System.EventHandler(this.textStraDllId_ValueChanged);
             // 
             // familyIdHexLabel
             // 
@@ -648,6 +654,7 @@ namespace SwRebellionEditor
             0,
             0,
             0});
+            this.field2_1.ValueChanged += new System.EventHandler(this.field2_1_ValueChanged);
             // 
             // familyId
             // 
@@ -750,6 +757,7 @@ namespace SwRebellionEditor
             this.id.TabIndex = 1125;
             this.id.TabStop = false;
             this.id.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.id.ValueChanged += new System.EventHandler(this.id_ValueChanged);
             // 
             // field2_1Label
             // 
@@ -1115,6 +1123,7 @@ namespace SwRebellionEditor
             this.encyclopediaDescription.TabIndex = 134;
             this.encyclopediaDescription.TabStop = false;
             this.encyclopediaDescription.Text = "Not implemented yet.";
+            this.encyclopediaDescription.TextChanged += new System.EventHandler(this.encyclopediaDescription_TextChanged);
             // 
             // isJediTrainer
             // 
@@ -1487,6 +1496,7 @@ namespace SwRebellionEditor
             0,
             0,
             0});
+            this.leadershipVariance.ValueChanged += new System.EventHandler(this.leadershipVariance_ValueChanged);
             // 
             // leadershipBase
             // 
@@ -1506,6 +1516,7 @@ namespace SwRebellionEditor
             0,
             0,
             0});
+            this.leadershipBase.ValueChanged += new System.EventHandler(this.leadershipBase_ValueChanged);
             // 
             // leadershipLabel
             // 
@@ -1523,6 +1534,7 @@ namespace SwRebellionEditor
             this.name.Name = "name";
             this.name.Size = new System.Drawing.Size(137, 23);
             this.name.TabIndex = 135;
+            this.name.TextChanged += new System.EventHandler(this.name_TextChanged);
             // 
             // MajorCharactersForm
             // 

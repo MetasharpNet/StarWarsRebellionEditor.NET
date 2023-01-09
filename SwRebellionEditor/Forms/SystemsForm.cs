@@ -51,8 +51,16 @@
             textStraDllId.Value = system.TextStraDllId;
             xPosition.Value = system.XPosition;
             yPosition.Value = system.YPosition;
+            LoadSector(system.SectorId);
 
-            var sector = SectorsGameFile.Sectors[system.SectorId - 20U];
+            picture.SizeMode = PictureBoxSizeMode.Zoom;
+            var edataId = 165 + system.PictureId;
+            picture.Image = Image.FromFile(RegistryKeys.InstalledLocation + "\\EData\\EDATA." + edataId.ToString("000"));
+            GameFile.UnsavedData = previousUnsavedData;
+        }
+        private void LoadSector(uint sectorId)
+        {
+            var sector = SectorsGameFile.Sectors[sectorId - 20U];
             sectorName.Text = TextStra.GetString(sector.TextStraDllId);
             sectorFamilyId.Value = sector.FamilyId;
             sectorFamilyIdHexLabel.Text = "0x" + sector.FamilyId.ToString("X");
@@ -61,11 +69,6 @@
             sectorTextStraDllId.Value = sector.TextStraDllId;
             sectorXPosition.Value = sector.XPosition;
             sectorYPosition.Value = sector.YPosition;
-            
-            picture.SizeMode = PictureBoxSizeMode.Zoom;
-            var edataId = 165 + system.PictureId;
-            picture.Image = Image.FromFile(RegistryKeys.InstalledLocation + "\\EData\\EDATA." + edataId.ToString("000"));
-            GameFile.UnsavedData = previousUnsavedData;
         }
         protected override void LoadSideInfo()
         {
@@ -170,6 +173,7 @@
         private void sectorId_ValueChanged(object sender, EventArgs e)
         {
             GameFile.Systems[selector.Value].SectorId = (uint)sectorId.Value;
+            LoadSector(GameFile.Systems[selector.Value].SectorId);
             GameFile.UnsavedData = true;
         }
         private void textStraDllId_ValueChanged(object sender, EventArgs e)

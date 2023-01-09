@@ -214,6 +214,11 @@
             GameFile.MajorCharacters[selector.Value].Field7_2 = (ushort)field7_2.Value;
             GameFile.UnsavedData = true;
         }
+        private void id_ValueChanged(object sender, EventArgs e)
+        {
+            GameFile.MajorCharacters[selector.Value].Id = (uint)id.Value;
+            GameFile.UnsavedData = true;
+        }
         private void isAlliance_CheckStateChanged(object sender, EventArgs e)
         {
             GameFile.MajorCharacters[selector.Value].IsAlliance = isAlliance.Checked ? 1U : 0U;
@@ -317,6 +322,11 @@
         private void shipDesignVariance_ValueChanged(object sender, EventArgs e)
         {
             GameFile.MajorCharacters[selector.Value].ShipDesignVariance = (uint)shipDesignVariance.Value;
+            GameFile.UnsavedData = true;
+        }
+        private void textStraDllId_ValueChanged(object sender, EventArgs e)
+        {
+            GameFile.MajorCharacters[selector.Value].TextStraDllId = (ushort)textStraDllId.Value;
             GameFile.UnsavedData = true;
         }
         private void troopTrainingBase_ValueChanged(object sender, EventArgs e)
