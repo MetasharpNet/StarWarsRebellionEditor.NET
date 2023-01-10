@@ -54,10 +54,10 @@ namespace SwRebellionEditor
         private NumericUpDown productionFamily;
         private Label field2_1Label;
         private NumericUpDown familyId;
-        private Label prodLabel;
+        private Label productionFamilyLabel;
         private Label textStraDllIdLabel;
         private Label familyIdLabel;
-        private Label secProdFacNumlabel;
+        private Label nextProductionFacilityLabel;
         private NumericUpDown nextProductionFamily;
         private Label familyIdHexLabel;
         private Label idHexLabel;
@@ -118,10 +118,10 @@ namespace SwRebellionEditor
             this.idHexLabel = new System.Windows.Forms.Label();
             this.familyIdLabel = new System.Windows.Forms.Label();
             this.hiddenBaseLabel = new System.Windows.Forms.Label();
-            this.prodLabel = new System.Windows.Forms.Label();
+            this.productionFamilyLabel = new System.Windows.Forms.Label();
             this.id = new System.Windows.Forms.NumericUpDown();
             this.field2_1Label = new System.Windows.Forms.Label();
-            this.secProdFacNumlabel = new System.Windows.Forms.Label();
+            this.nextProductionFacilityLabel = new System.Windows.Forms.Label();
             this.nextProductionFamily = new System.Windows.Forms.NumericUpDown();
             this.idLabel = new System.Windows.Forms.Label();
             this.maintenanceCost = new System.Windows.Forms.NumericUpDown();
@@ -222,10 +222,10 @@ namespace SwRebellionEditor
             this.hiddenDataGroupBox.Controls.Add(this.idHexLabel);
             this.hiddenDataGroupBox.Controls.Add(this.familyIdLabel);
             this.hiddenDataGroupBox.Controls.Add(this.hiddenBaseLabel);
-            this.hiddenDataGroupBox.Controls.Add(this.prodLabel);
+            this.hiddenDataGroupBox.Controls.Add(this.productionFamilyLabel);
             this.hiddenDataGroupBox.Controls.Add(this.id);
             this.hiddenDataGroupBox.Controls.Add(this.field2_1Label);
-            this.hiddenDataGroupBox.Controls.Add(this.secProdFacNumlabel);
+            this.hiddenDataGroupBox.Controls.Add(this.nextProductionFacilityLabel);
             this.hiddenDataGroupBox.Controls.Add(this.nextProductionFamily);
             this.hiddenDataGroupBox.Controls.Add(this.idLabel);
             this.hiddenDataGroupBox.Location = new System.Drawing.Point(566, 6);
@@ -695,16 +695,16 @@ namespace SwRebellionEditor
             this.hiddenBaseLabel.TabIndex = 10;
             this.hiddenBaseLabel.Text = "Base";
             // 
-            // prodLabel
+            // productionFamilyLabel
             // 
-            this.prodLabel.AutoSize = true;
-            this.prodLabel.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.prodLabel.Location = new System.Drawing.Point(6, 73);
-            this.prodLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.prodLabel.Name = "prodLabel";
-            this.prodLabel.Size = new System.Drawing.Size(104, 15);
-            this.prodLabel.TabIndex = 140;
-            this.prodLabel.Text = "Production Family";
+            this.productionFamilyLabel.AutoSize = true;
+            this.productionFamilyLabel.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.productionFamilyLabel.Location = new System.Drawing.Point(6, 73);
+            this.productionFamilyLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.productionFamilyLabel.Name = "productionFamilyLabel";
+            this.productionFamilyLabel.Size = new System.Drawing.Size(104, 15);
+            this.productionFamilyLabel.TabIndex = 140;
+            this.productionFamilyLabel.Text = "Production Family";
             // 
             // id
             // 
@@ -740,16 +740,16 @@ namespace SwRebellionEditor
             this.field2_1Label.TabIndex = 145;
             this.field2_1Label.Text = "Field2 (always 1)";
             // 
-            // secProdFacNumlabel
+            // nextProductionFacilityLabel
             // 
-            this.secProdFacNumlabel.AutoSize = true;
-            this.secProdFacNumlabel.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.secProdFacNumlabel.Location = new System.Drawing.Point(7, 99);
-            this.secProdFacNumlabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.secProdFacNumlabel.Name = "secProdFacNumlabel";
-            this.secProdFacNumlabel.Size = new System.Drawing.Size(121, 15);
-            this.secProdFacNumlabel.TabIndex = 142;
-            this.secProdFacNumlabel.Text = "Production Family +1";
+            this.nextProductionFacilityLabel.AutoSize = true;
+            this.nextProductionFacilityLabel.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.nextProductionFacilityLabel.Location = new System.Drawing.Point(7, 99);
+            this.nextProductionFacilityLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.nextProductionFacilityLabel.Name = "nextProductionFacilityLabel";
+            this.nextProductionFacilityLabel.Size = new System.Drawing.Size(121, 15);
+            this.nextProductionFacilityLabel.TabIndex = 142;
+            this.nextProductionFacilityLabel.Text = "Production Family +1";
             // 
             // nextProductionFamily
             // 
@@ -1030,7 +1030,7 @@ namespace SwRebellionEditor
             this.selector.LargeChange = 1;
             this.selector.Location = new System.Drawing.Point(186, 6);
             this.selector.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.selector.Maximum = 8;
+            this.selector.Maximum = 7;
             this.selector.Name = "selector";
             this.selector.Size = new System.Drawing.Size(376, 45);
             this.selector.TabIndex = 1;
