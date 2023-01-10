@@ -46,6 +46,7 @@
         protected override void SaveSideInfo()
         {
             TextStra.SaveString(Convert.ToUInt16(textStraDllId.Value), name.Text);
+            //EncyText.SaveString(Convert.ToUInt16(xxx.Value), name.Text);
         }
 
         #endregion

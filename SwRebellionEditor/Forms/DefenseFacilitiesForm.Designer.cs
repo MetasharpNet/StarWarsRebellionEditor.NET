@@ -383,6 +383,7 @@ namespace SwRebellionEditor
             // 
             this.familyIdHexLabel.AutoSize = true;
             this.familyIdHexLabel.Enabled = false;
+            this.familyIdHexLabel.ForeColor = System.Drawing.Color.Red;
             this.familyIdHexLabel.Location = new System.Drawing.Point(201, 124);
             this.familyIdHexLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.familyIdHexLabel.Name = "familyIdHexLabel";
@@ -394,6 +395,7 @@ namespace SwRebellionEditor
             // 
             this.idHexLabel.AutoSize = true;
             this.idHexLabel.Enabled = false;
+            this.idHexLabel.ForeColor = System.Drawing.Color.Red;
             this.idHexLabel.Location = new System.Drawing.Point(200, 19);
             this.idHexLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.idHexLabel.Name = "idHexLabel";

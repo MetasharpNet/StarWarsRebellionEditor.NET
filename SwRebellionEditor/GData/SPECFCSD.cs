@@ -12,35 +12,35 @@
     public class SPECFCSD_SpecialForce
     {
         public uint Id;
-        public uint Field2_1;
-        public uint ProductionFamily;
-        public uint NextProductionFamily;
-        public uint FamilyId;
+        public uint Field2_1; // 1
+        public uint ProductionFamily; // 41:trainingfacility
+        public uint NextProductionFamily; // 42
+        public uint FamilyId; // 60:specialforce
         public ushort TextStraDllId;
-        public ushort Field7_2;
+        public ushort Field7_2; // 2
         public uint IsAlliance;
         public uint IsEmpire;
         public uint RefinedMaterialCost;
         public uint MaintenanceCost;
-        public uint ResearchOrder_0;
-        public uint ResearchDifficulty_0;
+        public uint ResearchOrder_0; // 0
+        public uint ResearchDifficulty_0; // 0
         public uint DiplomacyBase;
         public uint DiplomacyVariance;
         public uint EspionageBase;
         public uint EspionageVariance;
-        public uint ShipDesignBase_0;
-        public uint ShipDesignVariance_0;
-        public uint TroopTrainingBase_0;
-        public uint TroopTrainingVariance_0;
-        public uint FacilityDesignBase_0;
-        public uint FacilityDesignVariance_0;
+        public uint ShipDesignBase_0; // 0
+        public uint ShipDesignVariance_0; // 0
+        public uint TroopTrainingBase_0; // 0
+        public uint TroopTrainingVariance_0; // 0
+        public uint FacilityDesignBase_0; // 0
+        public uint FacilityDesignVariance_0; // 0
         public uint CombatBase;
         public uint CombatVariance;
         public uint LeadershipBase;
         public uint LeadershipVariance;
         public uint LoyaltyBase;
         public uint LoyaltyVariance;
-        public uint MissionId;
+        public uint MissionId; // 2^n
         [Ignore]
         public string Name;
         [Ignore]

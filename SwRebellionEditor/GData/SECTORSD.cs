@@ -12,14 +12,14 @@
     public class SECTORSD_Sector
     {
         public uint Id;
-        public uint Field2_1;
-        public uint ProductionFamily_0;
-        public uint NextProductionFamily_0;
-        public uint FamilyId;
+        public uint Field2_1; // 1
+        public uint ProductionFamily_0; // 0
+        public uint NextProductionFamily_0; // 0
+        public uint FamilyId; // 128:sector
         public ushort TextStraDllId;
-        public ushort Field7_2;
-        public uint SecImport;
-        public uint GalaxySize;
+        public ushort Field7_2; // 2
+        public uint SecImport; // 1, 2, 3
+        public uint GalaxySize; // 1, 2, 3
         public ushort XPosition;
         public ushort YPosition;
         [Ignore]

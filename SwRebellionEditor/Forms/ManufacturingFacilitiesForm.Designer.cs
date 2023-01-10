@@ -436,7 +436,7 @@ namespace SwRebellionEditor
             this.DetectionLabel.Location = new System.Drawing.Point(8, 258);
             this.DetectionLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.DetectionLabel.Name = "DetectionLabel";
-            this.DetectionLabel.Size = new System.Drawing.Size(92, 15);
+            this.DetectionLabel.Size = new System.Drawing.Size(90, 15);
             this.DetectionLabel.TabIndex = 27;
             this.DetectionLabel.Text = "Processing Rate";
             // 
@@ -511,6 +511,7 @@ namespace SwRebellionEditor
             // 
             this.familyIdHexLabel.AutoSize = true;
             this.familyIdHexLabel.Enabled = false;
+            this.familyIdHexLabel.ForeColor = System.Drawing.Color.Red;
             this.familyIdHexLabel.Location = new System.Drawing.Point(205, 131);
             this.familyIdHexLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.familyIdHexLabel.Name = "familyIdHexLabel";
@@ -522,6 +523,7 @@ namespace SwRebellionEditor
             // 
             this.idHexLabel.AutoSize = true;
             this.idHexLabel.Enabled = false;
+            this.idHexLabel.ForeColor = System.Drawing.Color.Red;
             this.idHexLabel.Location = new System.Drawing.Point(204, 25);
             this.idHexLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.idHexLabel.Name = "idHexLabel";

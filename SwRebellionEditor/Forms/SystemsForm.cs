@@ -74,9 +74,7 @@
         protected override void LoadSideInfo()
         {
             foreach (var s in GameFile.Systems)
-            {
                 s.Name = TextStra.GetString(s.TextStraDllId);
-            }
         }
         protected override void SaveSideInfo()
         {

@@ -12,18 +12,18 @@
     public class MNCHARSD_MinorCharacter
     {
         public uint Id;
-        public uint Field2_1;
-        public uint ProductionFamily_0;
-        public uint NextProductionFamily_0;
-        public uint FamilyId;
+        public uint Field2_1; // 1
+        public uint ProductionFamily_0; // 0
+        public uint NextProductionFamily_0; // 0
+        public uint FamilyId; // 56:minorcharacter
         public ushort TextStraDllId;
-        public ushort Field7_2;
+        public ushort Field7_2; // 2
         public uint IsAlliance;
         public uint IsEmpire;
-        public uint RefinedMaterialCost_0;
+        public uint RefinedMaterialCost_0; // 0
         public uint MaintenanceCost;
-        public uint ResearchOrder_0;
-        public uint ResearchDifficulty_0;
+        public uint ResearchOrder_0; // 0
+        public uint ResearchDifficulty_0; // 0
         public uint DiplomacyBase;
         public uint DiplomacyVariance;
         public uint EspionageBase;

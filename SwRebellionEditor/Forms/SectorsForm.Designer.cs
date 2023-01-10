@@ -180,6 +180,7 @@ namespace SwRebellionEditor
             // 
             // familyId
             // 
+            this.familyId.ForeColor = System.Drawing.Color.Red;
             this.familyId.Location = new System.Drawing.Point(147, 121);
             this.familyId.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.familyId.Maximum = new decimal(new int[] {
@@ -574,6 +575,7 @@ namespace SwRebellionEditor
             // familyIdHexLabel
             // 
             this.familyIdHexLabel.AutoSize = true;
+            this.familyIdHexLabel.ForeColor = System.Drawing.Color.Red;
             this.familyIdHexLabel.Location = new System.Drawing.Point(214, 123);
             this.familyIdHexLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.familyIdHexLabel.Name = "familyIdHexLabel";
@@ -584,6 +586,7 @@ namespace SwRebellionEditor
             // idHexLabel
             // 
             this.idHexLabel.AutoSize = true;
+            this.idHexLabel.ForeColor = System.Drawing.Color.Red;
             this.idHexLabel.Location = new System.Drawing.Point(214, 19);
             this.idHexLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.idHexLabel.Name = "idHexLabel";

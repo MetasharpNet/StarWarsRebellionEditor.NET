@@ -1,6 +1,4 @@
-﻿using Vestris.ResourceLib;
-
-namespace SwRebellionEditor
+﻿namespace SwRebellionEditor
 {
     public partial class CapitalShipsForm : CapitalShipsDesignForm
     {
@@ -23,61 +21,61 @@ namespace SwRebellionEditor
         {
             var previousUnsavedData = GameFile.UnsavedData;
             var capitalShip = GameFile.CapitalShips[selectorIndex];
-            backupHyperdrive.Value = capitalShip.BackupHyperdrive;
-            bombardmentDefense.Value = capitalShip.BombardmentDefense;
-            capitalShipId.Value = capitalShip.Id;
-            capitalShipIdHexLabel.Text = "0x" + capitalShip.Id.ToString("X");
-            description.Text = capitalShip.EncyclopediaDescription;
+            hyperdriveIfDamaged.Value = capitalShip.HyperdriveIfDamaged;
+            bombardmentModifier.Value = capitalShip.BombardmentModifier;
+            id.Value = capitalShip.Id;
+            idHexLabel.Text = "0x" + capitalShip.Id.ToString("X");
+            encyclopediaDescription.Text = capitalShip.EncyclopediaDescription;
             name.Text = capitalShip.Name;
             fighterCapacity.Value = capitalShip.FighterCapacity;
             damageControl.Value = capitalShip.DamageControl;
-            detectionRating.Value = capitalShip.DetectionRating;
+            detection.Value = capitalShip.Detection;
             familyIdHexLabel.Text = "0x" + capitalShip.FamilyId.ToString("x");
             familyId.Value = capitalShip.FamilyId;
             field2_1.Value = capitalShip.Field2_1;
             field7_2.Value = capitalShip.Field7_2;
             field51_0.Value = capitalShip.Field51_0;
-            gravityWellProjectors.Value = capitalShip.GravityWellProjectors;
-            hullStrength.Value = capitalShip.HullStrength;
+            gravityWellProjector.Value = capitalShip.GravityWellProjector;
+            hull.Value = capitalShip.Hull;
+            hyperdrive.Value = capitalShip.Hyperdrive;
             interdictionStrength.Value = capitalShip.InterdictionStrength;
             ionCannonAft.Value = capitalShip.IonCannonAft;
+            ionCannonAttackStrength.Value = capitalShip.IonCannonAttackStrength;
             ionCannonFore.Value = capitalShip.IonCannonFore;
             ionCannonPort.Value = capitalShip.IonCannonPort;
             ionCannonRange.Value = capitalShip.IonCannonRange;
             ionCannonStarboard.Value = capitalShip.IonCannonStarboard;
-            ionCannonTotalFirePower.Value = capitalShip.IonCannonTotalFirePower;
-            isAllianceUnit.Checked = capitalShip.IsAlliance > 0U;
-            isEmpireUnit.Checked = capitalShip.IsEmpire > 0U;
+            isAlliance.Checked = capitalShip.IsAlliance > 0U;
+            isEmpire.Checked = capitalShip.IsEmpire > 0U;
             laserCannonAft.Value = capitalShip.LaserCannonAft;
+            laserCannonAttackStrength.Value = capitalShip.LaserCannonAttackStrength;
             laserCannonFore.Value = capitalShip.LaserCannonFore;
             laserCannonPort.Value = capitalShip.LaserCannonPort;
             laserCannonRange.Value = capitalShip.LaserCannonRange;
             laserCannonStarboard.Value = capitalShip.LaserCannonStarboard;
-            laserCannonTotalFirePower.Value = capitalShip.LaserCannonTotalFirePower;
             maintenanceCost.Value = capitalShip.MaintenanceCost;
+            maneuverability.Value = capitalShip.Maneuverability;
             nextProductionFamily.Value = capitalShip.NextProductionFamily;
-            primaryHyperdrive.Value = capitalShip.PrimaryHyperdrive;
+            overallAttackStrength.Value = capitalShip.OverallAttackStrength;
             productionFamily.Value = capitalShip.ProductionFamily;
             refinedMaterialCost.Value = capitalShip.RefinedMaterialCost;
             researchDifficulty.Value = capitalShip.ResearchDifficulty;
             researchOrder.Value = capitalShip.ResearchOrder;
             shieldStrength.Value = capitalShip.ShieldStrength;
             shieldRechargeRate.Value = capitalShip.ShieldRechargeRate;
-            sublightManoeuvrability.Value = capitalShip.SublightManoeuvrability;
-            sublightSpeed.Value = capitalShip.SublightSpeed;
+            subLightEngine.Value = capitalShip.SubLightEngine;
             textStraDllId.Value = capitalShip.TextStraDllId;
-            totalFirePower.Value = capitalShip.TotalFirePower;
-            tractorBeamStrength.Value = capitalShip.TractorBeamPower;
+            tractorBeamPower.Value = capitalShip.TractorBeamPower;
             tractorBeamRange.Value = capitalShip.TractorBeamRange;
             troopCapacity.Value = capitalShip.TroopCapacity;
             turbolaserAft.Value = capitalShip.TurbolaserAft;
+            turbolaserAttackStrength.Value = capitalShip.TurbolaserAttackStrength;
             turbolaserFore.Value = capitalShip.TurbolaserFore;
             turbolaserPort.Value = capitalShip.TurbolaserPort;
             turbolaserRange.Value = capitalShip.TurbolaserRange;
             turbolaserStarboard.Value = capitalShip.TurbolaserStarboard;
-            turbolaserTotalFirePower.Value = capitalShip.TurbolaserTotalFirePower;
-            moraleModifier.Value = capitalShip.MoraleModifier;
-            weaponsRecharge.Value = capitalShip.WeaponsRecharge;
+            uprisingDefense.Value = capitalShip.UprisingDefense;
+            weaponRechargeRate.Value = capitalShip.WeaponRechargeRate;
 
             picture.SizeMode = PictureBoxSizeMode.Zoom;
             var edataId = 42 + selectorIndex;
@@ -89,37 +87,37 @@ namespace SwRebellionEditor
             foreach (var ship in  GameFile.CapitalShips)
                 ship.Name = TextStra.GetString(ship.TextStraDllId);
         }
+        protected override void SaveSideInfo()
+        {
+            TextStra.SaveString(Convert.ToUInt16(textStraDllId.Value), name.Text);
+            //EncyText.SaveString(Convert.ToUInt16(xxx.Value), name.Text);
+        }
         private void UpdateTotals(int selectorIndex)
         {
             var capitalShip = GameFile.CapitalShips[selectorIndex];
 
-            uint turboLaserTotalFirePowerTmp = capitalShip.TurbolaserFore + capitalShip.TurbolaserAft + capitalShip.TurbolaserPort + capitalShip.TurbolaserStarboard;
-            uint ionCannonTotalFirePowerTmp = capitalShip.IonCannonFore + capitalShip.IonCannonAft + capitalShip.IonCannonPort + capitalShip.IonCannonStarboard;
-            uint laserCannonTotalFirePowerTmp = capitalShip.LaserCannonFore + capitalShip.LaserCannonAft + capitalShip.LaserCannonPort + capitalShip.LaserCannonStarboard;
+            uint turboLaserAttackStrengthTmp = capitalShip.TurbolaserFore + capitalShip.TurbolaserAft + capitalShip.TurbolaserPort + capitalShip.TurbolaserStarboard;
+            uint ionCannonAttackStrengthTmp = capitalShip.IonCannonFore + capitalShip.IonCannonAft + capitalShip.IonCannonPort + capitalShip.IonCannonStarboard;
+            uint laserCannonAttackStrengthTmp = capitalShip.LaserCannonFore + capitalShip.LaserCannonAft + capitalShip.LaserCannonPort + capitalShip.LaserCannonStarboard;
 
-            GameFile.CapitalShips[selector.Value].TurbolaserTotalFirePower = turboLaserTotalFirePowerTmp;
-            GameFile.CapitalShips[selector.Value].IonCannonTotalFirePower = ionCannonTotalFirePowerTmp;
-            GameFile.CapitalShips[selector.Value].LaserCannonTotalFirePower = laserCannonTotalFirePowerTmp;
-            GameFile.CapitalShips[selector.Value].TotalFirePower = turboLaserTotalFirePowerTmp + ionCannonTotalFirePowerTmp + laserCannonTotalFirePowerTmp;
+            GameFile.CapitalShips[selector.Value].TurbolaserAttackStrength = turboLaserAttackStrengthTmp;
+            GameFile.CapitalShips[selector.Value].IonCannonAttackStrength = ionCannonAttackStrengthTmp;
+            GameFile.CapitalShips[selector.Value].LaserCannonAttackStrength = laserCannonAttackStrengthTmp;
+            GameFile.CapitalShips[selector.Value].OverallAttackStrength = turboLaserAttackStrengthTmp + ionCannonAttackStrengthTmp + laserCannonAttackStrengthTmp;
 
-            turbolaserTotalFirePower.Value = capitalShip.TurbolaserTotalFirePower;
-            ionCannonTotalFirePower.Value = capitalShip.IonCannonTotalFirePower;
-            laserCannonTotalFirePower.Value = capitalShip.LaserCannonTotalFirePower;
-            totalFirePower.Value = capitalShip.TotalFirePower;
+            turbolaserAttackStrength.Value = capitalShip.TurbolaserAttackStrength;
+            ionCannonAttackStrength.Value = capitalShip.IonCannonAttackStrength;
+            laserCannonAttackStrength.Value = capitalShip.LaserCannonAttackStrength;
+            overallAttackStrength.Value = capitalShip.OverallAttackStrength;
         }
 
         #endregion
 
         #region Changed events
 
-        private void backupHyperdrive_ValueChanged(object sender, EventArgs e)
+        private void bombardmentModifier_ValueChanged(object sender, EventArgs e)
         {
-            GameFile.CapitalShips[selector.Value].BackupHyperdrive = (uint)backupHyperdrive.Value;
-            GameFile.UnsavedData = true;
-        }
-        private void bombardmentDefense_ValueChanged(object sender, EventArgs e)
-        {
-            GameFile.CapitalShips[selector.Value].BombardmentDefense = (uint)bombardmentDefense.Value;
+            GameFile.CapitalShips[selector.Value].BombardmentModifier = (uint)bombardmentModifier.Value;
             GameFile.UnsavedData = true;
         }
         private void damageControl_ValueChanged(object sender, EventArgs e)
@@ -127,9 +125,14 @@ namespace SwRebellionEditor
             GameFile.CapitalShips[selector.Value].DamageControl = (uint)damageControl.Value;
             GameFile.UnsavedData = true;
         }
-        private void detectionRating_ValueChanged(object sender, EventArgs e)
+        private void detection_ValueChanged(object sender, EventArgs e)
         {
-            GameFile.CapitalShips[selector.Value].DetectionRating = (uint)detectionRating.Value;
+            GameFile.CapitalShips[selector.Value].Detection = (uint)detection.Value;
+            GameFile.UnsavedData = true;
+        }
+        private void encyclopediaDescription_TextChanged(object sender, EventArgs e)
+        {
+            GameFile.CapitalShips[selector.Value].EncyclopediaDescription = encyclopediaDescription.Text;
             GameFile.UnsavedData = true;
         }
         private void familyId_ValueChanged(object sender, EventArgs e)
@@ -142,14 +145,14 @@ namespace SwRebellionEditor
             GameFile.CapitalShips[selector.Value].Field2_1 = (ushort)field2_1.Value;
             GameFile.UnsavedData = true;
         }
-        private void field7_2_ValueChanged(object sender, EventArgs e)
-        {
-            GameFile.CapitalShips[selector.Value].Field7_2 = (ushort)field7_2.Value;
-            GameFile.UnsavedData = true;
-        }
         private void field51_0_ValueChanged(object sender, EventArgs e)
         {
             GameFile.CapitalShips[selector.Value].Field51_0 = (uint)field51_0.Value;
+            GameFile.UnsavedData = true;
+        }
+        private void field7_2_ValueChanged(object sender, EventArgs e)
+        {
+            GameFile.CapitalShips[selector.Value].Field7_2 = (ushort)field7_2.Value;
             GameFile.UnsavedData = true;
         }
         private void fighterCapacity_ValueChanged(object sender, EventArgs e)
@@ -157,14 +160,29 @@ namespace SwRebellionEditor
             GameFile.CapitalShips[selector.Value].FighterCapacity = (uint)fighterCapacity.Value;
             GameFile.UnsavedData = true;
         }
-        private void gravityWellProjectors_ValueChanged(object sender, EventArgs e)
+        private void gravityWellProjector_ValueChanged(object sender, EventArgs e)
         {
-            GameFile.CapitalShips[selector.Value].GravityWellProjectors = (uint)gravityWellProjectors.Value;
+            GameFile.CapitalShips[selector.Value].GravityWellProjector = (uint)gravityWellProjector.Value;
             GameFile.UnsavedData = true;
         }
-        private void hullStrength_ValueChanged(object sender, EventArgs e)
+        private void hull_ValueChanged(object sender, EventArgs e)
         {
-            GameFile.CapitalShips[selector.Value].HullStrength = (uint)hullStrength.Value;
+            GameFile.CapitalShips[selector.Value].Hull = (uint)hull.Value;
+            GameFile.UnsavedData = true;
+        }
+        private void hyperdrive_ValueChanged(object sender, EventArgs e)
+        {
+            GameFile.CapitalShips[selector.Value].Hyperdrive = (uint)hyperdrive.Value;
+            GameFile.UnsavedData = true;
+        }
+        private void hyperdriveIfDamaged_ValueChanged(object sender, EventArgs e)
+        {
+            GameFile.CapitalShips[selector.Value].HyperdriveIfDamaged = (uint)hyperdriveIfDamaged.Value;
+            GameFile.UnsavedData = true;
+        }
+        private void id_ValueChanged(object sender, EventArgs e)
+        {
+            GameFile.CapitalShips[selector.Value].Id = (uint)id.Value;
             GameFile.UnsavedData = true;
         }
         private void interdictionStrength_ValueChanged(object sender, EventArgs e)
@@ -175,6 +193,12 @@ namespace SwRebellionEditor
         private void ionCannonAft_ValueChanged(object sender, EventArgs e)
         {
             GameFile.CapitalShips[selector.Value].IonCannonAft = (uint)ionCannonAft.Value;
+            UpdateTotals(selector.Value);
+            GameFile.UnsavedData = true;
+        }
+        private void ionCannonAttackStrength_ValueChanged(object sender, EventArgs e)
+        {
+            GameFile.CapitalShips[selector.Value].IonCannonAttackStrength = (uint)ionCannonAttackStrength.Value;
             UpdateTotals(selector.Value);
             GameFile.UnsavedData = true;
         }
@@ -201,19 +225,25 @@ namespace SwRebellionEditor
             UpdateTotals(selector.Value);
             GameFile.UnsavedData = true;
         }
-        private void isAllianceUnit_CheckedChanged(object sender, EventArgs e)
+        private void isAlliance_CheckedChanged(object sender, EventArgs e)
         {
-            GameFile.CapitalShips[selector.Value].IsAlliance = isAllianceUnit.Checked ? 1U : 0U;
+            GameFile.CapitalShips[selector.Value].IsAlliance = isAlliance.Checked ? 1U : 0U;
             GameFile.UnsavedData = true;
         }
-        private void isEmpireUnit_CheckedChanged(object sender, EventArgs e)
+        private void isEmpire_CheckedChanged(object sender, EventArgs e)
         {
-            GameFile.CapitalShips[selector.Value].IsEmpire = isEmpireUnit.Checked ? 1U : 0U;
+            GameFile.CapitalShips[selector.Value].IsEmpire = isEmpire.Checked ? 1U : 0U;
             GameFile.UnsavedData = true;
         }
         private void laserCannonAft_ValueChanged(object sender, EventArgs e)
         {
             GameFile.CapitalShips[selector.Value].LaserCannonAft = (uint)laserCannonAft.Value;
+            UpdateTotals(selector.Value);
+            GameFile.UnsavedData = true;
+        }
+        private void laserCannonAttackStrength_ValueChanged(object sender, EventArgs e)
+        {
+            GameFile.CapitalShips[selector.Value].LaserCannonAttackStrength = (uint)laserCannonAttackStrength.Value;
             UpdateTotals(selector.Value);
             GameFile.UnsavedData = true;
         }
@@ -245,9 +275,14 @@ namespace SwRebellionEditor
             GameFile.CapitalShips[selector.Value].MaintenanceCost = (uint)maintenanceCost.Value;
             GameFile.UnsavedData = true;
         }
-        private void moraleModifier_ValueChanged(object sender, EventArgs e)
+        private void maneuverability_ValueChanged(object sender, EventArgs e)
         {
-            GameFile.CapitalShips[selector.Value].MoraleModifier = (uint)moraleModifier.Value;
+            GameFile.CapitalShips[selector.Value].Maneuverability = (uint)maneuverability.Value;
+            GameFile.UnsavedData = true;
+        }
+        private void name_TextChanged(object sender, EventArgs e)
+        {
+            GameFile.CapitalShips[selector.Value].Name = name.Text;
             GameFile.UnsavedData = true;
         }
         private void nextProductionFamily_ValueChanged(object sender, EventArgs e)
@@ -255,9 +290,9 @@ namespace SwRebellionEditor
             GameFile.CapitalShips[selector.Value].NextProductionFamily = (uint)nextProductionFamily.Value;
             GameFile.UnsavedData = true;
         }
-        private void primaryHyperdrive_ValueChanged(object sender, EventArgs e)
+        private void overallAttackStrength_ValueChanged(object sender, EventArgs e)
         {
-            GameFile.CapitalShips[selector.Value].PrimaryHyperdrive = (uint)primaryHyperdrive.Value;
+            GameFile.CapitalShips[selector.Value].OverallAttackStrength = (uint)overallAttackStrength.Value;
             GameFile.UnsavedData = true;
         }
         private void productionFamily_ValueChanged(object sender, EventArgs e)
@@ -290,19 +325,19 @@ namespace SwRebellionEditor
             GameFile.CapitalShips[selector.Value].ShieldStrength = (uint)shieldStrength.Value;
             GameFile.UnsavedData = true;
         }
-        private void sublightManoeuvrability_ValueChanged(object sender, EventArgs e)
+        private void subLightEngine_ValueChanged(object sender, EventArgs e)
         {
-            GameFile.CapitalShips[selector.Value].SublightManoeuvrability = (uint)sublightManoeuvrability.Value;
+            GameFile.CapitalShips[selector.Value].SubLightEngine = (uint)subLightEngine.Value;
             GameFile.UnsavedData = true;
         }
-        private void sublightSpeed_ValueChanged(object sender, EventArgs e)
+        private void textStraDllId_ValueChanged(object sender, EventArgs e)
         {
-            GameFile.CapitalShips[selector.Value].SublightSpeed = (uint)sublightSpeed.Value;
+            GameFile.CapitalShips[selector.Value].TextStraDllId = (ushort)textStraDllId.Value;
             GameFile.UnsavedData = true;
         }
-        private void tractorBeamStrength_ValueChanged(object sender, EventArgs e)
+        private void tractorBeamPower_ValueChanged(object sender, EventArgs e)
         {
-            GameFile.CapitalShips[selector.Value].TractorBeamPower = (uint)tractorBeamStrength.Value;
+            GameFile.CapitalShips[selector.Value].TractorBeamPower = (uint)tractorBeamPower.Value;
             GameFile.UnsavedData = true;
         }
         private void tractorBeamRange_ValueChanged(object sender, EventArgs e)
@@ -318,6 +353,12 @@ namespace SwRebellionEditor
         private void turbolaserAft_ValueChanged(object sender, EventArgs e)
         {
             GameFile.CapitalShips[selector.Value].TurbolaserAft = (uint)turbolaserAft.Value;
+            UpdateTotals(selector.Value);
+            GameFile.UnsavedData = true;
+        }
+        private void turbolaserAttackStrength_ValueChanged(object sender, EventArgs e)
+        {
+            GameFile.CapitalShips[selector.Value].TurbolaserAttackStrength = (uint)turbolaserAttackStrength.Value;
             UpdateTotals(selector.Value);
             GameFile.UnsavedData = true;
         }
@@ -344,9 +385,14 @@ namespace SwRebellionEditor
             UpdateTotals(selector.Value);
             GameFile.UnsavedData = true;
         }
-        private void weaponsRecharge_ValueChanged(object sender, EventArgs e)
+        private void uprisingDefense_ValueChanged(object sender, EventArgs e)
         {
-            GameFile.CapitalShips[selector.Value].WeaponsRecharge = (uint)weaponsRecharge.Value;
+            GameFile.CapitalShips[selector.Value].UprisingDefense = (uint)uprisingDefense.Value;
+            GameFile.UnsavedData = true;
+        }
+        private void weaponRecharge_ValueChanged(object sender, EventArgs e)
+        {
+            GameFile.CapitalShips[selector.Value].WeaponRechargeRate = (uint)weaponRechargeRate.Value;
             GameFile.UnsavedData = true;
         }
 

@@ -12,12 +12,12 @@
     public class DEFFACSD_DefenseFacility
     {
         public uint Id;
-        public uint Field2_1;
-        public uint ProductionFamily;
-        public uint NextProductionFamily;
-        public uint FamilyId;
+        public uint Field2_1; // 1
+        public uint ProductionFamily; // 42:constructionyard
+        public uint NextProductionFamily; // 43
+        public uint FamilyId; // 34:kdy, 35:lnr, 36:gencore, 37:deathstarshield
         public ushort TextStraDllId;
-        public ushort Field7_2;
+        public ushort Field7_2; // 2
         public uint IsAlliance;
         public uint IsEmpire;
         public uint RefinedMaterialCost;

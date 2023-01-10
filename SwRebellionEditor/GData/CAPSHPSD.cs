@@ -12,25 +12,25 @@
     public class CAPSHPSD_CapitalShip
     {
         public uint Id;
-        public uint Field2_1;
-        public uint ProductionFamily;
-        public uint NextProductionFamily;
-        public uint FamilyId; // 20 for capital ships, 24 for death star
+        public uint Field2_1; // 1
+        public uint ProductionFamily; // 40
+        public uint NextProductionFamily; // 41
+        public uint FamilyId; // 20: capitalship, 24: deathstar
         public ushort TextStraDllId;
-        public ushort Field7_2;
+        public ushort Field7_2; // 2
         public uint IsAlliance;
         public uint IsEmpire;
         public uint RefinedMaterialCost;
         public uint MaintenanceCost;
         public uint ResearchOrder;
         public uint ResearchDifficulty;
-        public uint MoraleModifier; // moral modifier : 0.45 x Refined Material Cost
-        public uint DetectionRating;
+        public uint UprisingDefense; // 0.45 x RefinedMaterialCost
+        public uint Detection;
         public uint ShieldStrength;
-        public uint SublightSpeed;
-        public uint SublightManoeuvrability;
-        public uint PrimaryHyperdrive;
-        public uint BackupHyperdrive;
+        public uint SubLightEngine;
+        public uint Maneuverability;
+        public uint Hyperdrive;
+        public uint HyperdriveIfDamaged;
         public uint TurbolaserFore;
         public uint IonCannonFore;
         public uint LaserCannonFore;
@@ -46,22 +46,22 @@
         public uint TurbolaserRange;
         public uint IonCannonRange;
         public uint LaserCannonRange;
-        public uint TurbolaserTotalFirePower;
-        public uint IonCannonTotalFirePower;
-        public uint LaserCannonTotalFirePower;
-        public uint TotalFirePower;
-        public uint HullStrength;
+        public uint TurbolaserAttackStrength;
+        public uint IonCannonAttackStrength;
+        public uint LaserCannonAttackStrength;
+        public uint OverallAttackStrength;
+        public uint Hull;
         public uint TractorBeamPower;
         public uint TractorBeamRange;
-        public uint GravityWellProjectors;
+        public uint GravityWellProjector;
         public uint InterdictionStrength;
-        public uint BombardmentDefense;
+        public uint BombardmentModifier;
         public uint DamageControl;
-        public uint WeaponsRecharge;
+        public uint WeaponRechargeRate;
         public uint ShieldRechargeRate;
         public uint FighterCapacity;
         public uint TroopCapacity;
-        public uint Field51_0;
+        public uint Field51_0; // 0
         [Ignore]
         public string Name;
         [Ignore]

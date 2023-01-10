@@ -12,12 +12,12 @@
     public class FIGHTSD_Fighter
     {
         public uint Id;
-        public uint Field2_1;
-        public uint ProductionFamily;
-        public uint NextProductionFamily;
-        public uint FamilyId;
+        public uint Field2_1; // 1
+        public uint ProductionFamily; // 40:orbitalshipyard
+        public uint NextProductionFamily; // 41
+        public uint FamilyId; // 28:ship
         public ushort TextStraDllId;
-        public ushort Field7_2;
+        public ushort Field7_2; // 2
         public uint IsAlliance;
         public uint IsEmpire;
         public uint RefinedMaterialCost;

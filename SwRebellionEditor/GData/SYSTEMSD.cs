@@ -12,18 +12,18 @@
     public class SYSTEMSD_System
     {
         public uint Id;
-        public uint Field2_1;
-        public uint ProductionFamily_0;
-        public uint NextProductionFamily_0;
-        public uint FamilyId;
+        public uint Field2_1; // 1
+        public uint ProductionFamily_0; // 0
+        public uint NextProductionFamily_0; // 0
+        public uint FamilyId; // 144:core, 146:rim
         public ushort TextStraDllId;
-        public ushort Field7_2;
+        public ushort Field7_2; // 2
         public uint SectorId;
         public uint PictureId;
-        public uint Field10_1;
+        public uint Field10_1; // 1
         public ushort XPosition;
         public ushort YPosition;
-        public uint Field13_0;
+        public uint Field13_0; // 0
         [Ignore]
         public string Name;
         [Ignore]

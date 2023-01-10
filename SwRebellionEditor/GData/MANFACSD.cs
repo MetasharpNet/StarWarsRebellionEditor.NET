@@ -12,12 +12,12 @@
     public class MANFACSD_ManufacturingFacility
     {
         public uint Id;
-        public uint Field2_1;
-        public uint ProductionFamily;
-        public uint NextProductionFamily;
-        public uint FamilyId;
+        public uint Field2_1; // 1
+        public uint ProductionFamily; // 42:constructionyard
+        public uint NextProductionFamily; // 43
+        public uint FamilyId; // 40:orbitalshipyard, 41:trainingfacility, 42:constructionyard
         public ushort TextStraDllId;
-        public ushort Field7_2;
+        public ushort Field7_2; // 2
         public uint IsAlliance;
         public uint IsEmpire;
         public uint RefinedMaterialCost;
