@@ -10,7 +10,7 @@ Direct link : https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/sdk-7
 
 To buy the game or get free fan mods, check : https://swrebellion.net/
 
-Alpha Roadmap :
+Alpha Roadmap (**current**):
 * Revamp Capital Ships & Fighters windows
 
 Beta Roadmap :
