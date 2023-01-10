@@ -1,4 +1,4 @@
-##Star Wars Rebellion Editor .NET
+## Star Wars Rebellion Editor .NET
 
 This C# 11.0 project is built with .NET 7 in Visual Studio 2022 : https://visualstudio.microsoft.com/vs/community/
 
@@ -10,18 +10,18 @@ Direct link : https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/sdk-7
 
 To buy the game or get free fan mods, check : https://swrebellion.net/
 
-**Alpha Roadmap (current):**
+###Alpha Roadmap (current):
 * Revamp Capital Ships & Fighters windows
 
-Beta Roadmap :
+###Beta Roadmap :
 * Cleanup code on rarely used windows
 * Modify characters names when promoted : Admiral, General or Commander
 * Encyclopedia read/write
 * Galaxy Map to move sectors and systems in sectors
 
-Final Roadmap:
+###Final Roadmap:
 * Identify unknown fields usage
 
 --
 
-Meta
+**Meta**
