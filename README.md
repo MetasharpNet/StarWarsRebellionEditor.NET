@@ -10,6 +10,18 @@ Direct link : https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/runti
 
 To buy the game or get free fan mods, check : https://swrebellion.net/
 
+Alpha Roadmap :
+* Revamp Capital Ships & Fighters windows
+
+Beta Roadmap :
+* Cleanup code on rarely used windows
+* Modify characters names when promoted : Admiral, General or Commander
+* Encyclopedia read/write
+* Galaxy Map to move sectors and systems in sectors
+
+Final Roadmap:
+* Identify unknown fields usage
+
 --
 
 Meta
