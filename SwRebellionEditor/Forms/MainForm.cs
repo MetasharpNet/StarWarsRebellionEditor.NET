@@ -44,6 +44,7 @@ namespace SwRebellionEditor
         private void OpenFile(object sender, EventArgs e)
         {
             OpenFileDialog openFileDialog = new OpenFileDialog();
+            openFileDialog.Title = "Please select the folder where your Star Wars Rebellion game is installed.";
             openFileDialog.InitialDirectory = Environment.GetFolderPath(Environment.SpecialFolder.Personal);
             openFileDialog.Filter = "Text Files (*.txt)|*.txt|All Files (*.*)|*.*";
             if (openFileDialog.ShowDialog(this) != DialogResult.OK)
@@ -74,7 +75,7 @@ namespace SwRebellionEditor
         public MainForm()
         {
             InitializeComponent();
-            Text = "Star Wars Rebellion Editor .NET " + GetType().Assembly.GetName().Version.ToString();
+            Text = "Star Wars Rebellion Editor .NET " + GetType().Assembly.GetName().Version.ToString() + " alpha";
         }
 
         #endregion

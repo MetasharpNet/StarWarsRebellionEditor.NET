@@ -31,6 +31,7 @@ public class RegistryKeys
         catch (NullReferenceException ex)
         {
             var openFolderDialog = new FolderBrowserDialog();
+            openFolderDialog.Description = "Please select the folder where your Star Wars Rebellion game is installed.";
             openFolderDialog.InitialDirectory = "C:\\";
             if (openFolderDialog.ShowDialog() == DialogResult.OK)
             {
