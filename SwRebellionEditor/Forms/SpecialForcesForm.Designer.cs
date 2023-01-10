@@ -17,75 +17,52 @@ namespace SwRebellionEditor
         private Button Cancel;
         private Button Ok;
         private TrackBar selector;
-        private ListView specialForcesListView;
-        private PictureBox picture;
-        private GroupBox charLoyalGroup;
-        private CheckBox isAllianceUnit;
-        private CheckBox isEmpireUnit;
-        private Label name;
-        private TabControl tabControl1;
-        private TabPage tabPage1;
-        private GroupBox researchGroup;
-        private Label resVarLabel;
-        private Label resBaseLabel;
-        private NumericUpDown facilitiesResearchVariance;
-        private NumericUpDown shipsResearchVariance;
-        private NumericUpDown troopsResearchVariance;
-        private Label facResLabel;
-        private NumericUpDown facilitiesResearchBase;
-        private Label shipResLabel;
-        private NumericUpDown shipsResearchBase;
-        private NumericUpDown troopsResearchBase;
-        private Label troopResLabel;
-        private GroupBox BasicGroup;
-        private NumericUpDown loyaltyVariance;
-        private NumericUpDown loyaltyBase;
-        private Label loyaltyLabel;
-        private Label statsVarLabel;
-        private Label statsBaseLabel;
+        private CheckBox isAlliance;
+        private CheckBox isEmpire;
         private NumericUpDown combatVariance;
         private NumericUpDown diplomacyVariance;
         private NumericUpDown espionageVariance;
         private Label combatLabel;
         private NumericUpDown combatBase;
-        private Label diploLabel;
+        private Label diplomacyLabel;
         private NumericUpDown diplomacyBase;
         private NumericUpDown espionageBase;
-        private Label espLabel;
-        private TabPage tabPage2;
-        private RichTextBox encyText;
-        private ImageList SpecialForcesImageList;
-        private GroupBox costGroup;
-        private Label label1;
-        private NumericUpDown constructionCost;
-        private Label label2;
-        private NumericUpDown maintenanceCost;
-        private Label conCostLabel;
-        private NumericUpDown conCostNum2;
-        private Label maintCostLabel;
-        private NumericUpDown maintCostNum2;
-        private GroupBox researchBox;
-        private Label researchLabel;
-        private NumericUpDown researchOrder;
-        private Label resDiffLabel;
-        private NumericUpDown researchDifficulty;
-        private GroupBox groupBox1;
-        private NumericUpDown unknown2;
+        private Label espionageLabel;
+        private NumericUpDown facilityDesignVariance_0;
+        private NumericUpDown shipDesignVariance_0;
+        private NumericUpDown troopTrainingVariance_0;
+        private Label facilityDesign_0Label;
+        private NumericUpDown facilityDesignBase_0;
+        private Label shipDesign_0Label;
+        private NumericUpDown shipDesignBase_0;
+        private NumericUpDown troopTrainingBase_0;
+        private Label troopTraining_0Label;
+        private NumericUpDown loyaltyVariance;
+        private NumericUpDown loyaltyBase;
+        private Label loyaltyLabel;
+        private Label varianceLabel;
+        private Label baseLabel;
+        private GroupBox hiddenDataGroupBox;
+        private Label hiddenVarianceLabel;
+        private Label hiddenBaseLabel;
+        private RichTextBox encyclopediaDescription;
+        private PictureBox picture;
+        private ImageList specialForcesImages;
+        private ListView specialForcesListView;
+        private NumericUpDown field2_1;
         private NumericUpDown textStraDllId;
         private NumericUpDown productionFamily;
-        private Label unkown3Label;
+        private Label field2_1Label;
         private NumericUpDown familyId;
         private Label prodLabel;
-        private Label idLabel;
-        private Label familyLabel;
+        private Label textStraDllIdLabel;
+        private Label familyIdLabel;
         private Label secProdFacNumlabel;
         private NumericUpDown nextProductionFamily;
-        private NumericUpDown missionId;
-        private Label label3;
         private Label familyIdHexLabel;
-        private Label specialForceIdHexLabel;
-        private NumericUpDown specialForceId;
-        private Label label4;
+        private Label idHexLabel;
+        private NumericUpDown id;
+        private Label idLabel;
 
         /// <summary>
         /// Clean up any resources being used.
@@ -110,681 +87,218 @@ namespace SwRebellionEditor
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SpecialForcesForm));
-            this.specialForcesListView = new System.Windows.Forms.ListView();
-            this.SpecialForcesImageList = new System.Windows.Forms.ImageList(this.components);
+            this.hiddenDataGroupBox = new System.Windows.Forms.GroupBox();
+            this.missionId = new System.Windows.Forms.NumericUpDown();
+            this.missionIdLabel = new System.Windows.Forms.Label();
+            this.researchDifficulty = new System.Windows.Forms.NumericUpDown();
+            this.loyaltyBase = new System.Windows.Forms.NumericUpDown();
+            this.facilityDesignVariance_0 = new System.Windows.Forms.NumericUpDown();
+            this.researchDifficulty_0Label = new System.Windows.Forms.Label();
+            this.researchOrder_0 = new System.Windows.Forms.NumericUpDown();
+            this.loyaltyVariance = new System.Windows.Forms.NumericUpDown();
+            this.shipDesignVariance_0 = new System.Windows.Forms.NumericUpDown();
+            this.researchOrder_0Label = new System.Windows.Forms.Label();
+            this.loyaltyLabel = new System.Windows.Forms.Label();
+            this.field7_2 = new System.Windows.Forms.NumericUpDown();
+            this.troopTrainingVariance_0 = new System.Windows.Forms.NumericUpDown();
+            this.field7_2Label = new System.Windows.Forms.Label();
+            this.facilityDesign_0Label = new System.Windows.Forms.Label();
+            this.textStraDllId = new System.Windows.Forms.NumericUpDown();
+            this.facilityDesignBase_0 = new System.Windows.Forms.NumericUpDown();
+            this.familyIdHexLabel = new System.Windows.Forms.Label();
+            this.troopTraining_0Label = new System.Windows.Forms.Label();
+            this.textStraDllIdLabel = new System.Windows.Forms.Label();
+            this.shipDesign_0Label = new System.Windows.Forms.Label();
+            this.troopTrainingBase_0 = new System.Windows.Forms.NumericUpDown();
+            this.hiddenVarianceLabel = new System.Windows.Forms.Label();
+            this.shipDesignBase_0 = new System.Windows.Forms.NumericUpDown();
+            this.field2_1 = new System.Windows.Forms.NumericUpDown();
+            this.familyId = new System.Windows.Forms.NumericUpDown();
+            this.productionFamily = new System.Windows.Forms.NumericUpDown();
+            this.idHexLabel = new System.Windows.Forms.Label();
+            this.familyIdLabel = new System.Windows.Forms.Label();
+            this.hiddenBaseLabel = new System.Windows.Forms.Label();
+            this.prodLabel = new System.Windows.Forms.Label();
+            this.id = new System.Windows.Forms.NumericUpDown();
+            this.field2_1Label = new System.Windows.Forms.Label();
+            this.secProdFacNumlabel = new System.Windows.Forms.Label();
+            this.nextProductionFamily = new System.Windows.Forms.NumericUpDown();
+            this.idLabel = new System.Windows.Forms.Label();
+            this.maintenanceCost = new System.Windows.Forms.NumericUpDown();
+            this.maintenanceCostLabel = new System.Windows.Forms.Label();
+            this.refinedMaterialCost = new System.Windows.Forms.NumericUpDown();
+            this.refinedMaterialCostLabel = new System.Windows.Forms.Label();
+            this.varianceLabel = new System.Windows.Forms.Label();
+            this.combatVariance = new System.Windows.Forms.NumericUpDown();
+            this.diplomacyVariance = new System.Windows.Forms.NumericUpDown();
+            this.espionageVariance = new System.Windows.Forms.NumericUpDown();
+            this.encyclopediaDescription = new System.Windows.Forms.RichTextBox();
+            this.baseLabel = new System.Windows.Forms.Label();
+            this.combatLabel = new System.Windows.Forms.Label();
+            this.combatBase = new System.Windows.Forms.NumericUpDown();
+            this.diplomacyLabel = new System.Windows.Forms.Label();
+            this.diplomacyBase = new System.Windows.Forms.NumericUpDown();
+            this.espionageBase = new System.Windows.Forms.NumericUpDown();
+            this.espionageLabel = new System.Windows.Forms.Label();
+            this.selector = new System.Windows.Forms.TrackBar();
+            this.isAlliance = new System.Windows.Forms.CheckBox();
+            this.isEmpire = new System.Windows.Forms.CheckBox();
             this.Open = new System.Windows.Forms.Button();
             this.SaveAs = new System.Windows.Forms.Button();
             this.Cancel = new System.Windows.Forms.Button();
             this.Ok = new System.Windows.Forms.Button();
-            this.charLoyalGroup = new System.Windows.Forms.GroupBox();
-            this.isAllianceUnit = new System.Windows.Forms.CheckBox();
-            this.isEmpireUnit = new System.Windows.Forms.CheckBox();
-            this.name = new System.Windows.Forms.Label();
-            this.selector = new System.Windows.Forms.TrackBar();
-            this.tabControl1 = new System.Windows.Forms.TabControl();
-            this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.researchBox = new System.Windows.Forms.GroupBox();
-            this.researchLabel = new System.Windows.Forms.Label();
-            this.researchOrder = new System.Windows.Forms.NumericUpDown();
-            this.resDiffLabel = new System.Windows.Forms.Label();
-            this.researchDifficulty = new System.Windows.Forms.NumericUpDown();
-            this.costGroup = new System.Windows.Forms.GroupBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.constructionCost = new System.Windows.Forms.NumericUpDown();
-            this.label2 = new System.Windows.Forms.Label();
-            this.maintenanceCost = new System.Windows.Forms.NumericUpDown();
-            this.researchGroup = new System.Windows.Forms.GroupBox();
-            this.resVarLabel = new System.Windows.Forms.Label();
-            this.resBaseLabel = new System.Windows.Forms.Label();
-            this.facilitiesResearchVariance = new System.Windows.Forms.NumericUpDown();
-            this.shipsResearchVariance = new System.Windows.Forms.NumericUpDown();
-            this.troopsResearchVariance = new System.Windows.Forms.NumericUpDown();
-            this.facResLabel = new System.Windows.Forms.Label();
-            this.facilitiesResearchBase = new System.Windows.Forms.NumericUpDown();
-            this.shipResLabel = new System.Windows.Forms.Label();
-            this.shipsResearchBase = new System.Windows.Forms.NumericUpDown();
-            this.troopsResearchBase = new System.Windows.Forms.NumericUpDown();
-            this.troopResLabel = new System.Windows.Forms.Label();
-            this.BasicGroup = new System.Windows.Forms.GroupBox();
-            this.loyaltyVariance = new System.Windows.Forms.NumericUpDown();
-            this.loyaltyBase = new System.Windows.Forms.NumericUpDown();
-            this.loyaltyLabel = new System.Windows.Forms.Label();
-            this.statsVarLabel = new System.Windows.Forms.Label();
-            this.statsBaseLabel = new System.Windows.Forms.Label();
-            this.combatVariance = new System.Windows.Forms.NumericUpDown();
-            this.diplomacyVariance = new System.Windows.Forms.NumericUpDown();
-            this.espionageVariance = new System.Windows.Forms.NumericUpDown();
-            this.combatLabel = new System.Windows.Forms.Label();
-            this.combatBase = new System.Windows.Forms.NumericUpDown();
-            this.diploLabel = new System.Windows.Forms.Label();
-            this.diplomacyBase = new System.Windows.Forms.NumericUpDown();
-            this.espionageBase = new System.Windows.Forms.NumericUpDown();
-            this.espLabel = new System.Windows.Forms.Label();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.familyIdHexLabel = new System.Windows.Forms.Label();
-            this.specialForceIdHexLabel = new System.Windows.Forms.Label();
-            this.specialForceId = new System.Windows.Forms.NumericUpDown();
-            this.label4 = new System.Windows.Forms.Label();
-            this.missionId = new System.Windows.Forms.NumericUpDown();
-            this.label3 = new System.Windows.Forms.Label();
-            this.unknown2 = new System.Windows.Forms.NumericUpDown();
-            this.textStraDllId = new System.Windows.Forms.NumericUpDown();
-            this.productionFamily = new System.Windows.Forms.NumericUpDown();
-            this.unkown3Label = new System.Windows.Forms.Label();
-            this.familyId = new System.Windows.Forms.NumericUpDown();
-            this.prodLabel = new System.Windows.Forms.Label();
-            this.idLabel = new System.Windows.Forms.Label();
-            this.familyLabel = new System.Windows.Forms.Label();
-            this.secProdFacNumlabel = new System.Windows.Forms.Label();
-            this.nextProductionFamily = new System.Windows.Forms.NumericUpDown();
-            this.encyText = new System.Windows.Forms.RichTextBox();
-            this.conCostLabel = new System.Windows.Forms.Label();
-            this.conCostNum2 = new System.Windows.Forms.NumericUpDown();
-            this.maintCostLabel = new System.Windows.Forms.Label();
-            this.maintCostNum2 = new System.Windows.Forms.NumericUpDown();
+            this.specialForcesImages = new System.Windows.Forms.ImageList(this.components);
+            this.specialForcesListView = new System.Windows.Forms.ListView();
             this.picture = new System.Windows.Forms.PictureBox();
-            this.charLoyalGroup.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.selector)).BeginInit();
-            this.tabControl1.SuspendLayout();
-            this.tabPage1.SuspendLayout();
-            this.researchBox.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.researchOrder)).BeginInit();
+            this.gameDataGroupBox = new System.Windows.Forms.GroupBox();
+            this.encyclopediaDescriptionLabel = new System.Windows.Forms.Label();
+            this.leadershipVariance = new System.Windows.Forms.NumericUpDown();
+            this.name = new System.Windows.Forms.TextBox();
+            this.leadershipBase = new System.Windows.Forms.NumericUpDown();
+            this.leadershipLabel = new System.Windows.Forms.Label();
+            this.hiddenDataGroupBox.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.missionId)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.researchDifficulty)).BeginInit();
-            this.costGroup.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.constructionCost)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.maintenanceCost)).BeginInit();
-            this.researchGroup.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.facilitiesResearchVariance)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.shipsResearchVariance)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.troopsResearchVariance)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.facilitiesResearchBase)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.shipsResearchBase)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.troopsResearchBase)).BeginInit();
-            this.BasicGroup.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.loyaltyVariance)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.loyaltyBase)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.facilityDesignVariance_0)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.researchOrder_0)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.loyaltyVariance)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.shipDesignVariance_0)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.field7_2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.troopTrainingVariance_0)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textStraDllId)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.facilityDesignBase_0)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.troopTrainingBase_0)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.shipDesignBase_0)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.field2_1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.familyId)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.productionFamily)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.id)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nextProductionFamily)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.maintenanceCost)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.refinedMaterialCost)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.combatVariance)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.diplomacyVariance)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.espionageVariance)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.combatBase)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.diplomacyBase)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.espionageBase)).BeginInit();
-            this.tabPage2.SuspendLayout();
-            this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.specialForceId)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.missionId)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.unknown2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textStraDllId)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.productionFamily)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.familyId)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nextProductionFamily)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.conCostNum2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.maintCostNum2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.selector)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picture)).BeginInit();
+            this.gameDataGroupBox.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.leadershipVariance)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.leadershipBase)).BeginInit();
             this.SuspendLayout();
             // 
-            // charListView
+            // hiddenDataGroupBox
             // 
-            this.specialForcesListView.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.specialForcesListView.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.specialForcesListView.GridLines = true;
-            this.specialForcesListView.LargeImageList = this.SpecialForcesImageList;
-            this.specialForcesListView.Location = new System.Drawing.Point(0, 110);
-            this.specialForcesListView.Margin = new System.Windows.Forms.Padding(0);
-            this.specialForcesListView.MultiSelect = false;
-            this.specialForcesListView.Name = "charListView";
-            this.specialForcesListView.ShowGroups = false;
-            this.specialForcesListView.Size = new System.Drawing.Size(220, 475);
-            this.specialForcesListView.TabIndex = 148;
-            this.specialForcesListView.TabStop = false;
-            this.specialForcesListView.UseCompatibleStateImageBehavior = false;
-            this.specialForcesListView.Click += new System.EventHandler(this.specialForcesListView_Click);
-            this.specialForcesListView.DoubleClick += new System.EventHandler(this.specialForcesListView_DoubleClick);
+            this.hiddenDataGroupBox.Controls.Add(this.missionId);
+            this.hiddenDataGroupBox.Controls.Add(this.missionIdLabel);
+            this.hiddenDataGroupBox.Controls.Add(this.researchDifficulty);
+            this.hiddenDataGroupBox.Controls.Add(this.loyaltyBase);
+            this.hiddenDataGroupBox.Controls.Add(this.facilityDesignVariance_0);
+            this.hiddenDataGroupBox.Controls.Add(this.researchDifficulty_0Label);
+            this.hiddenDataGroupBox.Controls.Add(this.researchOrder_0);
+            this.hiddenDataGroupBox.Controls.Add(this.loyaltyVariance);
+            this.hiddenDataGroupBox.Controls.Add(this.shipDesignVariance_0);
+            this.hiddenDataGroupBox.Controls.Add(this.researchOrder_0Label);
+            this.hiddenDataGroupBox.Controls.Add(this.loyaltyLabel);
+            this.hiddenDataGroupBox.Controls.Add(this.field7_2);
+            this.hiddenDataGroupBox.Controls.Add(this.troopTrainingVariance_0);
+            this.hiddenDataGroupBox.Controls.Add(this.field7_2Label);
+            this.hiddenDataGroupBox.Controls.Add(this.facilityDesign_0Label);
+            this.hiddenDataGroupBox.Controls.Add(this.textStraDllId);
+            this.hiddenDataGroupBox.Controls.Add(this.facilityDesignBase_0);
+            this.hiddenDataGroupBox.Controls.Add(this.familyIdHexLabel);
+            this.hiddenDataGroupBox.Controls.Add(this.troopTraining_0Label);
+            this.hiddenDataGroupBox.Controls.Add(this.textStraDllIdLabel);
+            this.hiddenDataGroupBox.Controls.Add(this.shipDesign_0Label);
+            this.hiddenDataGroupBox.Controls.Add(this.troopTrainingBase_0);
+            this.hiddenDataGroupBox.Controls.Add(this.hiddenVarianceLabel);
+            this.hiddenDataGroupBox.Controls.Add(this.shipDesignBase_0);
+            this.hiddenDataGroupBox.Controls.Add(this.field2_1);
+            this.hiddenDataGroupBox.Controls.Add(this.familyId);
+            this.hiddenDataGroupBox.Controls.Add(this.productionFamily);
+            this.hiddenDataGroupBox.Controls.Add(this.idHexLabel);
+            this.hiddenDataGroupBox.Controls.Add(this.familyIdLabel);
+            this.hiddenDataGroupBox.Controls.Add(this.hiddenBaseLabel);
+            this.hiddenDataGroupBox.Controls.Add(this.prodLabel);
+            this.hiddenDataGroupBox.Controls.Add(this.id);
+            this.hiddenDataGroupBox.Controls.Add(this.field2_1Label);
+            this.hiddenDataGroupBox.Controls.Add(this.secProdFacNumlabel);
+            this.hiddenDataGroupBox.Controls.Add(this.nextProductionFamily);
+            this.hiddenDataGroupBox.Controls.Add(this.idLabel);
+            this.hiddenDataGroupBox.Location = new System.Drawing.Point(566, 6);
+            this.hiddenDataGroupBox.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.hiddenDataGroupBox.Name = "hiddenDataGroupBox";
+            this.hiddenDataGroupBox.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.hiddenDataGroupBox.Size = new System.Drawing.Size(264, 464);
+            this.hiddenDataGroupBox.TabIndex = 6;
+            this.hiddenDataGroupBox.TabStop = false;
+            this.hiddenDataGroupBox.Text = "Hidden Data";
             // 
-            // SpecOpImageList
+            // missionId
             // 
-            this.SpecialForcesImageList.ColorDepth = System.Windows.Forms.ColorDepth.Depth8Bit;
-            this.SpecialForcesImageList.ImageSize = new System.Drawing.Size(120, 60);
-            this.SpecialForcesImageList.TransparentColor = System.Drawing.Color.Transparent;
-            // 
-            // openNew
-            // 
-            this.Open.Location = new System.Drawing.Point(663, 545);
-            this.Open.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.Open.Name = "openNew";
-            this.Open.Size = new System.Drawing.Size(88, 27);
-            this.Open.TabIndex = 146;
-            this.Open.TabStop = false;
-            this.Open.Text = "Open...";
-            this.Open.UseVisualStyleBackColor = true;
-            this.Open.Click += new System.EventHandler(this.Open_Click);
-            // 
-            // SaveAs
-            // 
-            this.SaveAs.Location = new System.Drawing.Point(568, 545);
-            this.SaveAs.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.SaveAs.Name = "SaveAs";
-            this.SaveAs.Size = new System.Drawing.Size(88, 27);
-            this.SaveAs.TabIndex = 147;
-            this.SaveAs.TabStop = false;
-            this.SaveAs.Text = "&SaveAs...";
-            this.SaveAs.UseVisualStyleBackColor = true;
-            this.SaveAs.Click += new System.EventHandler(this.SaveAs_Click);
-            // 
-            // Cancel
-            // 
-            this.Cancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.Cancel.Location = new System.Drawing.Point(390, 545);
-            this.Cancel.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.Cancel.Name = "Cancel";
-            this.Cancel.Size = new System.Drawing.Size(88, 27);
-            this.Cancel.TabIndex = 154;
-            this.Cancel.Text = "&Cancel";
-            this.Cancel.UseVisualStyleBackColor = true;
-            this.Cancel.Click += new System.EventHandler(this.Cancel_Click);
-            // 
-            // Ok
-            // 
-            this.Ok.Location = new System.Drawing.Point(295, 545);
-            this.Ok.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.Ok.Name = "Ok";
-            this.Ok.Size = new System.Drawing.Size(88, 27);
-            this.Ok.TabIndex = 153;
-            this.Ok.Text = "&Ok";
-            this.Ok.UseVisualStyleBackColor = true;
-            this.Ok.Click += new System.EventHandler(this.Ok_Click);
-            // 
-            // charLoyalGroup
-            // 
-            this.charLoyalGroup.Controls.Add(this.isAllianceUnit);
-            this.charLoyalGroup.Controls.Add(this.isEmpireUnit);
-            this.charLoyalGroup.Location = new System.Drawing.Point(398, 23);
-            this.charLoyalGroup.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.charLoyalGroup.Name = "charLoyalGroup";
-            this.charLoyalGroup.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.charLoyalGroup.Size = new System.Drawing.Size(182, 98);
-            this.charLoyalGroup.TabIndex = 150;
-            this.charLoyalGroup.TabStop = false;
-            this.charLoyalGroup.Text = "Character Loyalty";
-            // 
-            // rebelUnit
-            // 
-            this.isAllianceUnit.AutoSize = true;
-            this.isAllianceUnit.Location = new System.Drawing.Point(7, 22);
-            this.isAllianceUnit.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.isAllianceUnit.Name = "rebelUnit";
-            this.isAllianceUnit.Size = new System.Drawing.Size(68, 19);
-            this.isAllianceUnit.TabIndex = 15;
-            this.isAllianceUnit.Text = "Alliance";
-            this.isAllianceUnit.UseVisualStyleBackColor = true;
-            this.isAllianceUnit.CheckStateChanged += new System.EventHandler(this.isAllianceUnit_CheckStateChanged);
-            // 
-            // empireUnit
-            // 
-            this.isEmpireUnit.AutoSize = true;
-            this.isEmpireUnit.Location = new System.Drawing.Point(7, 48);
-            this.isEmpireUnit.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.isEmpireUnit.Name = "empireUnit";
-            this.isEmpireUnit.Size = new System.Drawing.Size(69, 19);
-            this.isEmpireUnit.TabIndex = 16;
-            this.isEmpireUnit.Text = "Imperial";
-            this.isEmpireUnit.UseVisualStyleBackColor = true;
-            this.isEmpireUnit.CheckStateChanged += new System.EventHandler(this.isEmpireUnit_CheckStateChanged);
-            // 
-            // ItemName
-            // 
-            this.name.AutoSize = true;
-            this.name.Location = new System.Drawing.Point(230, 78);
-            this.name.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.name.Name = "ItemName";
-            this.name.Size = new System.Drawing.Size(116, 15);
-            this.name.TabIndex = 155;
-            this.name.Text = "-- Item name here --";
-            // 
-            // ItemSelect
-            // 
-            this.selector.LargeChange = 4;
-            this.selector.Location = new System.Drawing.Point(233, 23);
-            this.selector.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.selector.Maximum = 8;
-            this.selector.Name = "ItemSelect";
-            this.selector.Size = new System.Drawing.Size(121, 45);
-            this.selector.TabIndex = 149;
-            this.selector.ValueChanged += new System.EventHandler(this.GameObjectsSelector_ValueChanged);
-            // 
-            // tabControl1
-            // 
-            this.tabControl1.Controls.Add(this.tabPage1);
-            this.tabControl1.Controls.Add(this.tabPage2);
-            this.tabControl1.Location = new System.Drawing.Point(233, 128);
-            this.tabControl1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.tabControl1.Name = "tabControl1";
-            this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(561, 410);
-            this.tabControl1.TabIndex = 152;
-            // 
-            // tabPage1
-            // 
-            this.tabPage1.BackColor = System.Drawing.SystemColors.Control;
-            this.tabPage1.Controls.Add(this.researchBox);
-            this.tabPage1.Controls.Add(this.costGroup);
-            this.tabPage1.Controls.Add(this.researchGroup);
-            this.tabPage1.Controls.Add(this.BasicGroup);
-            this.tabPage1.Location = new System.Drawing.Point(4, 24);
-            this.tabPage1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.tabPage1.Size = new System.Drawing.Size(553, 382);
-            this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "Stats";
-            // 
-            // researchBox
-            // 
-            this.researchBox.Controls.Add(this.researchLabel);
-            this.researchBox.Controls.Add(this.researchOrder);
-            this.researchBox.Controls.Add(this.resDiffLabel);
-            this.researchBox.Controls.Add(this.researchDifficulty);
-            this.researchBox.Location = new System.Drawing.Point(273, 192);
-            this.researchBox.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.researchBox.Name = "researchBox";
-            this.researchBox.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.researchBox.Size = new System.Drawing.Size(182, 78);
-            this.researchBox.TabIndex = 6;
-            this.researchBox.TabStop = false;
-            this.researchBox.Text = "Research";
-            // 
-            // researchLabel
-            // 
-            this.researchLabel.AutoSize = true;
-            this.researchLabel.Location = new System.Drawing.Point(7, 18);
-            this.researchLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.researchLabel.Name = "researchLabel";
-            this.researchLabel.Size = new System.Drawing.Size(54, 15);
-            this.researchLabel.TabIndex = 0;
-            this.researchLabel.Text = "Research";
-            // 
-            // researchNum
-            // 
-            this.researchOrder.Location = new System.Drawing.Point(119, 16);
-            this.researchOrder.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.researchOrder.Maximum = new decimal(new int[] {
-            999,
+            this.missionId.BackColor = System.Drawing.SystemColors.Window;
+            this.missionId.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.missionId.Location = new System.Drawing.Point(137, 377);
+            this.missionId.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.missionId.Maximum = new decimal(new int[] {
+            9999,
             0,
             0,
             0});
-            this.researchOrder.Name = "researchNum";
-            this.researchOrder.Size = new System.Drawing.Size(50, 23);
-            this.researchOrder.TabIndex = 6;
-            this.researchOrder.Value = new decimal(new int[] {
-            999,
+            this.missionId.Name = "missionId";
+            this.missionId.Size = new System.Drawing.Size(59, 23);
+            this.missionId.TabIndex = 1139;
+            this.missionId.TabStop = false;
+            this.missionId.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.missionId.Value = new decimal(new int[] {
+            9999,
             0,
             0,
             0});
-            this.researchOrder.ValueChanged += new System.EventHandler(this.researchOrder_ValueChanged);
+            this.missionId.ValueChanged += new System.EventHandler(this.missionId_ValueChanged);
             // 
-            // resDiffLabel
+            // missionIdLabel
             // 
-            this.resDiffLabel.AutoSize = true;
-            this.resDiffLabel.Location = new System.Drawing.Point(7, 43);
-            this.resDiffLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.resDiffLabel.Name = "resDiffLabel";
-            this.resDiffLabel.Size = new System.Drawing.Size(105, 15);
-            this.resDiffLabel.TabIndex = 0;
-            this.resDiffLabel.Text = "Research Difficulty";
+            this.missionIdLabel.AutoSize = true;
+            this.missionIdLabel.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.missionIdLabel.Location = new System.Drawing.Point(6, 379);
+            this.missionIdLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.missionIdLabel.Name = "missionIdLabel";
+            this.missionIdLabel.Size = new System.Drawing.Size(61, 15);
+            this.missionIdLabel.TabIndex = 1138;
+            this.missionIdLabel.Text = "Mission Id";
             // 
-            // resDiffNum
+            // researchDifficulty
             // 
-            this.researchDifficulty.Location = new System.Drawing.Point(119, 43);
+            this.researchDifficulty.BackColor = System.Drawing.SystemColors.Window;
+            this.researchDifficulty.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.researchDifficulty.Location = new System.Drawing.Point(136, 227);
             this.researchDifficulty.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.researchDifficulty.Maximum = new decimal(new int[] {
-            999,
+            9999,
             0,
             0,
             0});
-            this.researchDifficulty.Name = "resDiffNum";
-            this.researchDifficulty.Size = new System.Drawing.Size(50, 23);
-            this.researchDifficulty.TabIndex = 11;
-            this.researchDifficulty.Value = new decimal(new int[] {
-            999,
-            0,
-            0,
-            0});
-            this.researchDifficulty.ValueChanged += new System.EventHandler(this.researchDifficulty_ValueChanged);
+            this.researchDifficulty.Name = "researchDifficulty";
+            this.researchDifficulty.Size = new System.Drawing.Size(59, 23);
+            this.researchDifficulty.TabIndex = 1137;
+            this.researchDifficulty.TabStop = false;
+            this.researchDifficulty.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.researchDifficulty.ValueChanged += new System.EventHandler(this.researchDifficulty_0_ValueChanged);
             // 
-            // costGroup
+            // loyaltyBase
             // 
-            this.costGroup.Controls.Add(this.label1);
-            this.costGroup.Controls.Add(this.constructionCost);
-            this.costGroup.Controls.Add(this.label2);
-            this.costGroup.Controls.Add(this.maintenanceCost);
-            this.costGroup.Location = new System.Drawing.Point(7, 185);
-            this.costGroup.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.costGroup.Name = "costGroup";
-            this.costGroup.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.costGroup.Size = new System.Drawing.Size(182, 85);
-            this.costGroup.TabIndex = 6;
-            this.costGroup.TabStop = false;
-            this.costGroup.Text = "Costs";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(7, 18);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(103, 15);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Construction Cost";
-            // 
-            // conCostNum
-            // 
-            this.constructionCost.Location = new System.Drawing.Point(119, 18);
-            this.constructionCost.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.constructionCost.Maximum = new decimal(new int[] {
-            999,
-            0,
-            0,
-            0});
-            this.constructionCost.Name = "conCostNum";
-            this.constructionCost.Size = new System.Drawing.Size(50, 23);
-            this.constructionCost.TabIndex = 4;
-            this.constructionCost.Value = new decimal(new int[] {
-            999,
-            0,
-            0,
-            0});
-            this.constructionCost.ValueChanged += new System.EventHandler(this.constructionCost_ValueChanged);
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(7, 46);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(103, 15);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "Maintenance Cost";
-            // 
-            // maintCostNum
-            // 
-            this.maintenanceCost.Location = new System.Drawing.Point(119, 48);
-            this.maintenanceCost.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.maintenanceCost.Maximum = new decimal(new int[] {
-            999,
-            0,
-            0,
-            0});
-            this.maintenanceCost.Name = "maintCostNum";
-            this.maintenanceCost.Size = new System.Drawing.Size(50, 23);
-            this.maintenanceCost.TabIndex = 5;
-            this.maintenanceCost.Value = new decimal(new int[] {
-            999,
-            0,
-            0,
-            0});
-            this.maintenanceCost.ValueChanged += new System.EventHandler(this.maintenanceCost_ValueChanged);
-            // 
-            // researchGroup
-            // 
-            this.researchGroup.Controls.Add(this.resVarLabel);
-            this.researchGroup.Controls.Add(this.resBaseLabel);
-            this.researchGroup.Controls.Add(this.facilitiesResearchVariance);
-            this.researchGroup.Controls.Add(this.shipsResearchVariance);
-            this.researchGroup.Controls.Add(this.troopsResearchVariance);
-            this.researchGroup.Controls.Add(this.facResLabel);
-            this.researchGroup.Controls.Add(this.facilitiesResearchBase);
-            this.researchGroup.Controls.Add(this.shipResLabel);
-            this.researchGroup.Controls.Add(this.shipsResearchBase);
-            this.researchGroup.Controls.Add(this.troopsResearchBase);
-            this.researchGroup.Controls.Add(this.troopResLabel);
-            this.researchGroup.Location = new System.Drawing.Point(273, 7);
-            this.researchGroup.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.researchGroup.Name = "researchGroup";
-            this.researchGroup.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.researchGroup.Size = new System.Drawing.Size(262, 171);
-            this.researchGroup.TabIndex = 5;
-            this.researchGroup.TabStop = false;
-            this.researchGroup.Text = "Research Stats";
-            // 
-            // resVarLabel
-            // 
-            this.resVarLabel.AutoSize = true;
-            this.resVarLabel.BackColor = System.Drawing.Color.Silver;
-            this.resVarLabel.Enabled = false;
-            this.resVarLabel.Location = new System.Drawing.Point(182, 17);
-            this.resVarLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.resVarLabel.Name = "resVarLabel";
-            this.resVarLabel.Size = new System.Drawing.Size(51, 15);
-            this.resVarLabel.TabIndex = 11;
-            this.resVarLabel.Text = "Variance";
-            // 
-            // resBaseLabel
-            // 
-            this.resBaseLabel.AutoSize = true;
-            this.resBaseLabel.BackColor = System.Drawing.Color.Silver;
-            this.resBaseLabel.Enabled = false;
-            this.resBaseLabel.Location = new System.Drawing.Point(115, 17);
-            this.resBaseLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.resBaseLabel.Name = "resBaseLabel";
-            this.resBaseLabel.Size = new System.Drawing.Size(31, 15);
-            this.resBaseLabel.TabIndex = 10;
-            this.resBaseLabel.Text = "Base";
-            // 
-            // facResVarNum
-            // 
-            this.facilitiesResearchVariance.Enabled = false;
-            this.facilitiesResearchVariance.Location = new System.Drawing.Point(186, 99);
-            this.facilitiesResearchVariance.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.facilitiesResearchVariance.Maximum = new decimal(new int[] {
-            999,
-            0,
-            0,
-            0});
-            this.facilitiesResearchVariance.Name = "facResVarNum";
-            this.facilitiesResearchVariance.Size = new System.Drawing.Size(59, 23);
-            this.facilitiesResearchVariance.TabIndex = 9;
-            this.facilitiesResearchVariance.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.facilitiesResearchVariance.Value = new decimal(new int[] {
-            999,
-            0,
-            0,
-            0});
-            this.facilitiesResearchVariance.ValueChanged += new System.EventHandler(this.facilitiesResearchVariance_ValueChanged);
-            // 
-            // shipResVarNum
-            // 
-            this.shipsResearchVariance.Enabled = false;
-            this.shipsResearchVariance.Location = new System.Drawing.Point(186, 36);
-            this.shipsResearchVariance.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.shipsResearchVariance.Maximum = new decimal(new int[] {
-            99999,
-            0,
-            0,
-            0});
-            this.shipsResearchVariance.Name = "shipResVarNum";
-            this.shipsResearchVariance.Size = new System.Drawing.Size(59, 23);
-            this.shipsResearchVariance.TabIndex = 5;
-            this.shipsResearchVariance.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.shipsResearchVariance.Value = new decimal(new int[] {
-            999,
-            0,
-            0,
-            0});
-            this.shipsResearchVariance.ValueChanged += new System.EventHandler(this.shipsResearchVariance_ValueChanged);
-            // 
-            // troopResVarNum
-            // 
-            this.troopsResearchVariance.Enabled = false;
-            this.troopsResearchVariance.Location = new System.Drawing.Point(186, 69);
-            this.troopsResearchVariance.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.troopsResearchVariance.Maximum = new decimal(new int[] {
-            999,
-            0,
-            0,
-            0});
-            this.troopsResearchVariance.Name = "troopResVarNum";
-            this.troopsResearchVariance.Size = new System.Drawing.Size(59, 23);
-            this.troopsResearchVariance.TabIndex = 7;
-            this.troopsResearchVariance.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.troopsResearchVariance.Value = new decimal(new int[] {
-            999,
-            0,
-            0,
-            0});
-            this.troopsResearchVariance.ValueChanged += new System.EventHandler(this.troopsResearchVariance_ValueChanged);
-            // 
-            // facResLabel
-            // 
-            this.facResLabel.AutoSize = true;
-            this.facResLabel.Enabled = false;
-            this.facResLabel.Location = new System.Drawing.Point(7, 102);
-            this.facResLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.facResLabel.Name = "facResLabel";
-            this.facResLabel.Size = new System.Drawing.Size(44, 15);
-            this.facResLabel.TabIndex = 0;
-            this.facResLabel.Text = "Facility";
-            // 
-            // facResBaseNum
-            // 
-            this.facilitiesResearchBase.Enabled = false;
-            this.facilitiesResearchBase.Location = new System.Drawing.Point(119, 99);
-            this.facilitiesResearchBase.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.facilitiesResearchBase.Maximum = new decimal(new int[] {
-            999,
-            0,
-            0,
-            0});
-            this.facilitiesResearchBase.Name = "facResBaseNum";
-            this.facilitiesResearchBase.Size = new System.Drawing.Size(59, 23);
-            this.facilitiesResearchBase.TabIndex = 8;
-            this.facilitiesResearchBase.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.facilitiesResearchBase.Value = new decimal(new int[] {
-            999,
-            0,
-            0,
-            0});
-            this.facilitiesResearchBase.ValueChanged += new System.EventHandler(this.facilitiesResearchBase_ValueChanged);
-            // 
-            // shipResLabel
-            // 
-            this.shipResLabel.AutoSize = true;
-            this.shipResLabel.Enabled = false;
-            this.shipResLabel.Location = new System.Drawing.Point(7, 38);
-            this.shipResLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.shipResLabel.Name = "shipResLabel";
-            this.shipResLabel.Size = new System.Drawing.Size(30, 15);
-            this.shipResLabel.TabIndex = 0;
-            this.shipResLabel.Text = "Ship";
-            // 
-            // shipResBaseNum
-            // 
-            this.shipsResearchBase.Enabled = false;
-            this.shipsResearchBase.Location = new System.Drawing.Point(119, 36);
-            this.shipsResearchBase.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.shipsResearchBase.Maximum = new decimal(new int[] {
-            99999,
-            0,
-            0,
-            0});
-            this.shipsResearchBase.Name = "shipResBaseNum";
-            this.shipsResearchBase.Size = new System.Drawing.Size(59, 23);
-            this.shipsResearchBase.TabIndex = 4;
-            this.shipsResearchBase.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.shipsResearchBase.Value = new decimal(new int[] {
-            999,
-            0,
-            0,
-            0});
-            this.shipsResearchBase.ValueChanged += new System.EventHandler(this.shipsResearchBase_ValueChanged);
-            // 
-            // troopResBaseNum
-            // 
-            this.troopsResearchBase.Enabled = false;
-            this.troopsResearchBase.Location = new System.Drawing.Point(119, 69);
-            this.troopsResearchBase.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.troopsResearchBase.Maximum = new decimal(new int[] {
-            999,
-            0,
-            0,
-            0});
-            this.troopsResearchBase.Name = "troopResBaseNum";
-            this.troopsResearchBase.Size = new System.Drawing.Size(59, 23);
-            this.troopsResearchBase.TabIndex = 6;
-            this.troopsResearchBase.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.troopsResearchBase.Value = new decimal(new int[] {
-            999,
-            0,
-            0,
-            0});
-            this.troopsResearchBase.ValueChanged += new System.EventHandler(this.troopsResearchBase_ValueChanged);
-            // 
-            // troopResLabel
-            // 
-            this.troopResLabel.AutoSize = true;
-            this.troopResLabel.Enabled = false;
-            this.troopResLabel.Location = new System.Drawing.Point(7, 72);
-            this.troopResLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.troopResLabel.Name = "troopResLabel";
-            this.troopResLabel.Size = new System.Drawing.Size(37, 15);
-            this.troopResLabel.TabIndex = 0;
-            this.troopResLabel.Text = "Troop";
-            // 
-            // BasicGroup
-            // 
-            this.BasicGroup.Controls.Add(this.loyaltyVariance);
-            this.BasicGroup.Controls.Add(this.loyaltyBase);
-            this.BasicGroup.Controls.Add(this.loyaltyLabel);
-            this.BasicGroup.Controls.Add(this.statsVarLabel);
-            this.BasicGroup.Controls.Add(this.statsBaseLabel);
-            this.BasicGroup.Controls.Add(this.combatVariance);
-            this.BasicGroup.Controls.Add(this.diplomacyVariance);
-            this.BasicGroup.Controls.Add(this.espionageVariance);
-            this.BasicGroup.Controls.Add(this.combatLabel);
-            this.BasicGroup.Controls.Add(this.combatBase);
-            this.BasicGroup.Controls.Add(this.diploLabel);
-            this.BasicGroup.Controls.Add(this.diplomacyBase);
-            this.BasicGroup.Controls.Add(this.espionageBase);
-            this.BasicGroup.Controls.Add(this.espLabel);
-            this.BasicGroup.Location = new System.Drawing.Point(4, 3);
-            this.BasicGroup.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.BasicGroup.Name = "BasicGroup";
-            this.BasicGroup.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.BasicGroup.Size = new System.Drawing.Size(262, 174);
-            this.BasicGroup.TabIndex = 4;
-            this.BasicGroup.TabStop = false;
-            this.BasicGroup.Text = "Basic Stats";
-            // 
-            // loyalVarNum
-            // 
-            this.loyaltyVariance.Location = new System.Drawing.Point(186, 129);
-            this.loyaltyVariance.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.loyaltyVariance.Maximum = new decimal(new int[] {
-            999,
-            0,
-            0,
-            0});
-            this.loyaltyVariance.Name = "loyalVarNum";
-            this.loyaltyVariance.Size = new System.Drawing.Size(59, 23);
-            this.loyaltyVariance.TabIndex = 11;
-            this.loyaltyVariance.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.loyaltyVariance.Value = new decimal(new int[] {
-            999,
-            0,
-            0,
-            0});
-            this.loyaltyVariance.ValueChanged += new System.EventHandler(this.loyaltyVariance_ValueChanged);
-            // 
-            // loyalBaseNum
-            // 
-            this.loyaltyBase.Location = new System.Drawing.Point(119, 129);
+            this.loyaltyBase.Location = new System.Drawing.Point(136, 351);
             this.loyaltyBase.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.loyaltyBase.Maximum = new decimal(new int[] {
             999,
             0,
             0,
             0});
-            this.loyaltyBase.Name = "loyalBaseNum";
+            this.loyaltyBase.Name = "loyaltyBase";
             this.loyaltyBase.Size = new System.Drawing.Size(59, 23);
             this.loyaltyBase.TabIndex = 10;
             this.loyaltyBase.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
@@ -795,50 +309,557 @@ namespace SwRebellionEditor
             0});
             this.loyaltyBase.ValueChanged += new System.EventHandler(this.loyaltyBase_ValueChanged);
             // 
+            // facilityDesignVariance_0
+            // 
+            this.facilityDesignVariance_0.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.facilityDesignVariance_0.Location = new System.Drawing.Point(199, 325);
+            this.facilityDesignVariance_0.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.facilityDesignVariance_0.Maximum = new decimal(new int[] {
+            999,
+            0,
+            0,
+            0});
+            this.facilityDesignVariance_0.Name = "facilityDesignVariance_0";
+            this.facilityDesignVariance_0.Size = new System.Drawing.Size(59, 23);
+            this.facilityDesignVariance_0.TabIndex = 9;
+            this.facilityDesignVariance_0.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.facilityDesignVariance_0.ValueChanged += new System.EventHandler(this.facilityDesignVariance_0_ValueChanged);
+            // 
+            // researchDifficulty_0Label
+            // 
+            this.researchDifficulty_0Label.AutoSize = true;
+            this.researchDifficulty_0Label.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.researchDifficulty_0Label.Location = new System.Drawing.Point(7, 229);
+            this.researchDifficulty_0Label.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.researchDifficulty_0Label.Name = "researchDifficulty_0Label";
+            this.researchDifficulty_0Label.Size = new System.Drawing.Size(105, 15);
+            this.researchDifficulty_0Label.TabIndex = 1136;
+            this.researchDifficulty_0Label.Text = "Research Difficulty";
+            // 
+            // researchOrder_0
+            // 
+            this.researchOrder_0.BackColor = System.Drawing.SystemColors.Window;
+            this.researchOrder_0.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.researchOrder_0.Location = new System.Drawing.Point(136, 201);
+            this.researchOrder_0.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.researchOrder_0.Maximum = new decimal(new int[] {
+            9999,
+            0,
+            0,
+            0});
+            this.researchOrder_0.Name = "researchOrder_0";
+            this.researchOrder_0.Size = new System.Drawing.Size(59, 23);
+            this.researchOrder_0.TabIndex = 1135;
+            this.researchOrder_0.TabStop = false;
+            this.researchOrder_0.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.researchOrder_0.ValueChanged += new System.EventHandler(this.researchOrder_0_ValueChanged);
+            // 
+            // loyaltyVariance
+            // 
+            this.loyaltyVariance.Location = new System.Drawing.Point(199, 351);
+            this.loyaltyVariance.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.loyaltyVariance.Maximum = new decimal(new int[] {
+            999,
+            0,
+            0,
+            0});
+            this.loyaltyVariance.Name = "loyaltyVariance";
+            this.loyaltyVariance.Size = new System.Drawing.Size(59, 23);
+            this.loyaltyVariance.TabIndex = 11;
+            this.loyaltyVariance.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.loyaltyVariance.Value = new decimal(new int[] {
+            999,
+            0,
+            0,
+            0});
+            this.loyaltyVariance.ValueChanged += new System.EventHandler(this.loyaltyVariance_ValueChanged);
+            // 
+            // shipDesignVariance_0
+            // 
+            this.shipDesignVariance_0.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.shipDesignVariance_0.Location = new System.Drawing.Point(199, 273);
+            this.shipDesignVariance_0.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.shipDesignVariance_0.Maximum = new decimal(new int[] {
+            99999,
+            0,
+            0,
+            0});
+            this.shipDesignVariance_0.Name = "shipDesignVariance_0";
+            this.shipDesignVariance_0.Size = new System.Drawing.Size(59, 23);
+            this.shipDesignVariance_0.TabIndex = 5;
+            this.shipDesignVariance_0.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.shipDesignVariance_0.ValueChanged += new System.EventHandler(this.shipDesignVariance_0_ValueChanged);
+            // 
+            // researchOrder_0Label
+            // 
+            this.researchOrder_0Label.AutoSize = true;
+            this.researchOrder_0Label.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.researchOrder_0Label.Location = new System.Drawing.Point(7, 203);
+            this.researchOrder_0Label.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.researchOrder_0Label.Name = "researchOrder_0Label";
+            this.researchOrder_0Label.Size = new System.Drawing.Size(87, 15);
+            this.researchOrder_0Label.TabIndex = 1134;
+            this.researchOrder_0Label.Text = "Research Order";
+            // 
             // loyaltyLabel
             // 
             this.loyaltyLabel.AutoSize = true;
-            this.loyaltyLabel.Location = new System.Drawing.Point(7, 137);
+            this.loyaltyLabel.Location = new System.Drawing.Point(6, 353);
             this.loyaltyLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.loyaltyLabel.Name = "loyaltyLabel";
             this.loyaltyLabel.Size = new System.Drawing.Size(45, 15);
             this.loyaltyLabel.TabIndex = 12;
             this.loyaltyLabel.Text = "Loyalty";
             // 
-            // statsVarLabel
+            // field7_2
             // 
-            this.statsVarLabel.AutoSize = true;
-            this.statsVarLabel.BackColor = System.Drawing.Color.Silver;
-            this.statsVarLabel.Enabled = false;
-            this.statsVarLabel.Location = new System.Drawing.Point(182, 17);
-            this.statsVarLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.statsVarLabel.Name = "statsVarLabel";
-            this.statsVarLabel.Size = new System.Drawing.Size(51, 15);
-            this.statsVarLabel.TabIndex = 11;
-            this.statsVarLabel.Text = "Variance";
+            this.field7_2.BackColor = System.Drawing.SystemColors.Window;
+            this.field7_2.ForeColor = System.Drawing.Color.Red;
+            this.field7_2.Location = new System.Drawing.Point(136, 175);
+            this.field7_2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.field7_2.Maximum = new decimal(new int[] {
+            9999,
+            0,
+            0,
+            0});
+            this.field7_2.Name = "field7_2";
+            this.field7_2.Size = new System.Drawing.Size(59, 23);
+            this.field7_2.TabIndex = 1129;
+            this.field7_2.TabStop = false;
+            this.field7_2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.field7_2.Value = new decimal(new int[] {
+            2,
+            0,
+            0,
+            0});
+            this.field7_2.ValueChanged += new System.EventHandler(this.field7_2_ValueChanged);
             // 
-            // statsBaseLabel
+            // troopTrainingVariance_0
             // 
-            this.statsBaseLabel.AutoSize = true;
-            this.statsBaseLabel.BackColor = System.Drawing.Color.Silver;
-            this.statsBaseLabel.Enabled = false;
-            this.statsBaseLabel.Location = new System.Drawing.Point(115, 17);
-            this.statsBaseLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.statsBaseLabel.Name = "statsBaseLabel";
-            this.statsBaseLabel.Size = new System.Drawing.Size(31, 15);
-            this.statsBaseLabel.TabIndex = 10;
-            this.statsBaseLabel.Text = "Base";
+            this.troopTrainingVariance_0.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.troopTrainingVariance_0.Location = new System.Drawing.Point(199, 299);
+            this.troopTrainingVariance_0.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.troopTrainingVariance_0.Maximum = new decimal(new int[] {
+            999,
+            0,
+            0,
+            0});
+            this.troopTrainingVariance_0.Name = "troopTrainingVariance_0";
+            this.troopTrainingVariance_0.Size = new System.Drawing.Size(59, 23);
+            this.troopTrainingVariance_0.TabIndex = 7;
+            this.troopTrainingVariance_0.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.troopTrainingVariance_0.ValueChanged += new System.EventHandler(this.troopTrainingVariance_0_ValueChanged);
             // 
-            // combatVarNum
+            // field7_2Label
             // 
-            this.combatVariance.Location = new System.Drawing.Point(186, 99);
+            this.field7_2Label.AutoSize = true;
+            this.field7_2Label.ForeColor = System.Drawing.Color.Red;
+            this.field7_2Label.Location = new System.Drawing.Point(6, 177);
+            this.field7_2Label.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.field7_2Label.Name = "field7_2Label";
+            this.field7_2Label.Size = new System.Drawing.Size(93, 15);
+            this.field7_2Label.TabIndex = 1128;
+            this.field7_2Label.Text = "Field7 (always 2)";
+            // 
+            // facilityDesign_0Label
+            // 
+            this.facilityDesign_0Label.AutoSize = true;
+            this.facilityDesign_0Label.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.facilityDesign_0Label.Location = new System.Drawing.Point(7, 327);
+            this.facilityDesign_0Label.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.facilityDesign_0Label.Name = "facilityDesign_0Label";
+            this.facilityDesign_0Label.Size = new System.Drawing.Size(83, 15);
+            this.facilityDesign_0Label.TabIndex = 0;
+            this.facilityDesign_0Label.Text = "Facility Design";
+            // 
+            // textStraDllId
+            // 
+            this.textStraDllId.BackColor = System.Drawing.SystemColors.Window;
+            this.textStraDllId.ForeColor = System.Drawing.Color.Red;
+            this.textStraDllId.Location = new System.Drawing.Point(136, 149);
+            this.textStraDllId.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.textStraDllId.Maximum = new decimal(new int[] {
+            99999,
+            0,
+            0,
+            0});
+            this.textStraDllId.Name = "textStraDllId";
+            this.textStraDllId.Size = new System.Drawing.Size(59, 23);
+            this.textStraDllId.TabIndex = 148;
+            this.textStraDllId.TabStop = false;
+            this.textStraDllId.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.textStraDllId.Value = new decimal(new int[] {
+            99999,
+            0,
+            0,
+            0});
+            this.textStraDllId.ValueChanged += new System.EventHandler(this.textStraDllId_ValueChanged);
+            // 
+            // facilityDesignBase_0
+            // 
+            this.facilityDesignBase_0.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.facilityDesignBase_0.Location = new System.Drawing.Point(136, 325);
+            this.facilityDesignBase_0.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.facilityDesignBase_0.Maximum = new decimal(new int[] {
+            999,
+            0,
+            0,
+            0});
+            this.facilityDesignBase_0.Name = "facilityDesignBase_0";
+            this.facilityDesignBase_0.Size = new System.Drawing.Size(59, 23);
+            this.facilityDesignBase_0.TabIndex = 8;
+            this.facilityDesignBase_0.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.facilityDesignBase_0.ValueChanged += new System.EventHandler(this.facilityDesignBase_0_ValueChanged);
+            // 
+            // familyIdHexLabel
+            // 
+            this.familyIdHexLabel.AutoSize = true;
+            this.familyIdHexLabel.ForeColor = System.Drawing.Color.Red;
+            this.familyIdHexLabel.Location = new System.Drawing.Point(197, 128);
+            this.familyIdHexLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.familyIdHexLabel.Name = "familyIdHexLabel";
+            this.familyIdHexLabel.Size = new System.Drawing.Size(26, 15);
+            this.familyIdHexLabel.TabIndex = 1127;
+            this.familyIdHexLabel.Text = "hex";
+            // 
+            // troopTraining_0Label
+            // 
+            this.troopTraining_0Label.AutoSize = true;
+            this.troopTraining_0Label.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.troopTraining_0Label.Location = new System.Drawing.Point(7, 301);
+            this.troopTraining_0Label.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.troopTraining_0Label.Name = "troopTraining_0Label";
+            this.troopTraining_0Label.Size = new System.Drawing.Size(82, 15);
+            this.troopTraining_0Label.TabIndex = 0;
+            this.troopTraining_0Label.Text = "Troop Training";
+            // 
+            // textStraDllIdLabel
+            // 
+            this.textStraDllIdLabel.AutoSize = true;
+            this.textStraDllIdLabel.ForeColor = System.Drawing.Color.Red;
+            this.textStraDllIdLabel.Location = new System.Drawing.Point(7, 151);
+            this.textStraDllIdLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.textStraDllIdLabel.Name = "textStraDllIdLabel";
+            this.textStraDllIdLabel.Size = new System.Drawing.Size(77, 15);
+            this.textStraDllIdLabel.TabIndex = 144;
+            this.textStraDllIdLabel.Text = "TextStra.dll Id";
+            // 
+            // shipDesign_0Label
+            // 
+            this.shipDesign_0Label.AutoSize = true;
+            this.shipDesign_0Label.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.shipDesign_0Label.Location = new System.Drawing.Point(7, 275);
+            this.shipDesign_0Label.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.shipDesign_0Label.Name = "shipDesign_0Label";
+            this.shipDesign_0Label.Size = new System.Drawing.Size(69, 15);
+            this.shipDesign_0Label.TabIndex = 0;
+            this.shipDesign_0Label.Text = "Ship Design";
+            // 
+            // troopTrainingBase_0
+            // 
+            this.troopTrainingBase_0.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.troopTrainingBase_0.Location = new System.Drawing.Point(136, 299);
+            this.troopTrainingBase_0.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.troopTrainingBase_0.Maximum = new decimal(new int[] {
+            999,
+            0,
+            0,
+            0});
+            this.troopTrainingBase_0.Name = "troopTrainingBase_0";
+            this.troopTrainingBase_0.Size = new System.Drawing.Size(59, 23);
+            this.troopTrainingBase_0.TabIndex = 6;
+            this.troopTrainingBase_0.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.troopTrainingBase_0.ValueChanged += new System.EventHandler(this.troopTrainingBase_0_ValueChanged);
+            // 
+            // hiddenVarianceLabel
+            // 
+            this.hiddenVarianceLabel.AutoSize = true;
+            this.hiddenVarianceLabel.BackColor = System.Drawing.Color.Silver;
+            this.hiddenVarianceLabel.Location = new System.Drawing.Point(199, 255);
+            this.hiddenVarianceLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.hiddenVarianceLabel.Name = "hiddenVarianceLabel";
+            this.hiddenVarianceLabel.Size = new System.Drawing.Size(51, 15);
+            this.hiddenVarianceLabel.TabIndex = 11;
+            this.hiddenVarianceLabel.Text = "Variance";
+            // 
+            // shipDesignBase_0
+            // 
+            this.shipDesignBase_0.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.shipDesignBase_0.Location = new System.Drawing.Point(136, 273);
+            this.shipDesignBase_0.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.shipDesignBase_0.Maximum = new decimal(new int[] {
+            99999,
+            0,
+            0,
+            0});
+            this.shipDesignBase_0.Name = "shipDesignBase_0";
+            this.shipDesignBase_0.Size = new System.Drawing.Size(59, 23);
+            this.shipDesignBase_0.TabIndex = 4;
+            this.shipDesignBase_0.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.shipDesignBase_0.ValueChanged += new System.EventHandler(this.shipDesignBase_0_ValueChanged);
+            // 
+            // field2_1
+            // 
+            this.field2_1.BackColor = System.Drawing.SystemColors.Window;
+            this.field2_1.ForeColor = System.Drawing.Color.Red;
+            this.field2_1.Location = new System.Drawing.Point(136, 45);
+            this.field2_1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.field2_1.Maximum = new decimal(new int[] {
+            9999,
+            0,
+            0,
+            0});
+            this.field2_1.Name = "field2_1";
+            this.field2_1.Size = new System.Drawing.Size(59, 23);
+            this.field2_1.TabIndex = 146;
+            this.field2_1.TabStop = false;
+            this.field2_1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.field2_1.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.field2_1.ValueChanged += new System.EventHandler(this.field2_1_ValueChanged);
+            // 
+            // familyId
+            // 
+            this.familyId.BackColor = System.Drawing.SystemColors.Window;
+            this.familyId.ForeColor = System.Drawing.Color.Red;
+            this.familyId.Location = new System.Drawing.Point(136, 123);
+            this.familyId.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.familyId.Maximum = new decimal(new int[] {
+            9999,
+            0,
+            0,
+            0});
+            this.familyId.Name = "familyId";
+            this.familyId.Size = new System.Drawing.Size(59, 23);
+            this.familyId.TabIndex = 147;
+            this.familyId.TabStop = false;
+            this.familyId.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.familyId.Value = new decimal(new int[] {
+            9999,
+            0,
+            0,
+            0});
+            this.familyId.ValueChanged += new System.EventHandler(this.familyId_ValueChanged);
+            // 
+            // productionFamily
+            // 
+            this.productionFamily.BackColor = System.Drawing.SystemColors.Window;
+            this.productionFamily.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.productionFamily.Location = new System.Drawing.Point(136, 71);
+            this.productionFamily.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.productionFamily.Maximum = new decimal(new int[] {
+            999,
+            0,
+            0,
+            0});
+            this.productionFamily.Name = "productionFamily";
+            this.productionFamily.Size = new System.Drawing.Size(59, 23);
+            this.productionFamily.TabIndex = 138;
+            this.productionFamily.TabStop = false;
+            this.productionFamily.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.productionFamily.ValueChanged += new System.EventHandler(this.productionFamily_ValueChanged);
+            // 
+            // idHexLabel
+            // 
+            this.idHexLabel.AutoSize = true;
+            this.idHexLabel.ForeColor = System.Drawing.Color.Red;
+            this.idHexLabel.Location = new System.Drawing.Point(197, 21);
+            this.idHexLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.idHexLabel.Name = "idHexLabel";
+            this.idHexLabel.Size = new System.Drawing.Size(26, 15);
+            this.idHexLabel.TabIndex = 1126;
+            this.idHexLabel.Text = "hex";
+            // 
+            // familyIdLabel
+            // 
+            this.familyIdLabel.AutoSize = true;
+            this.familyIdLabel.ForeColor = System.Drawing.Color.Red;
+            this.familyIdLabel.Location = new System.Drawing.Point(7, 125);
+            this.familyIdLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.familyIdLabel.Name = "familyIdLabel";
+            this.familyIdLabel.Size = new System.Drawing.Size(55, 15);
+            this.familyIdLabel.TabIndex = 143;
+            this.familyIdLabel.Text = "Family Id";
+            // 
+            // hiddenBaseLabel
+            // 
+            this.hiddenBaseLabel.AutoSize = true;
+            this.hiddenBaseLabel.BackColor = System.Drawing.Color.Silver;
+            this.hiddenBaseLabel.Location = new System.Drawing.Point(136, 255);
+            this.hiddenBaseLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.hiddenBaseLabel.Name = "hiddenBaseLabel";
+            this.hiddenBaseLabel.Size = new System.Drawing.Size(31, 15);
+            this.hiddenBaseLabel.TabIndex = 10;
+            this.hiddenBaseLabel.Text = "Base";
+            // 
+            // prodLabel
+            // 
+            this.prodLabel.AutoSize = true;
+            this.prodLabel.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.prodLabel.Location = new System.Drawing.Point(6, 73);
+            this.prodLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.prodLabel.Name = "prodLabel";
+            this.prodLabel.Size = new System.Drawing.Size(104, 15);
+            this.prodLabel.TabIndex = 140;
+            this.prodLabel.Text = "Production Family";
+            // 
+            // id
+            // 
+            this.id.BackColor = System.Drawing.SystemColors.Window;
+            this.id.ForeColor = System.Drawing.Color.Red;
+            this.id.Location = new System.Drawing.Point(136, 19);
+            this.id.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.id.Maximum = new decimal(new int[] {
+            999,
+            0,
+            0,
+            0});
+            this.id.Name = "id";
+            this.id.Size = new System.Drawing.Size(59, 23);
+            this.id.TabIndex = 1125;
+            this.id.TabStop = false;
+            this.id.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.id.Value = new decimal(new int[] {
+            999,
+            0,
+            0,
+            0});
+            this.id.ValueChanged += new System.EventHandler(this.id_ValueChanged);
+            // 
+            // field2_1Label
+            // 
+            this.field2_1Label.AutoSize = true;
+            this.field2_1Label.ForeColor = System.Drawing.Color.Red;
+            this.field2_1Label.Location = new System.Drawing.Point(6, 47);
+            this.field2_1Label.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.field2_1Label.Name = "field2_1Label";
+            this.field2_1Label.Size = new System.Drawing.Size(93, 15);
+            this.field2_1Label.TabIndex = 145;
+            this.field2_1Label.Text = "Field2 (always 1)";
+            // 
+            // secProdFacNumlabel
+            // 
+            this.secProdFacNumlabel.AutoSize = true;
+            this.secProdFacNumlabel.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.secProdFacNumlabel.Location = new System.Drawing.Point(7, 99);
+            this.secProdFacNumlabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.secProdFacNumlabel.Name = "secProdFacNumlabel";
+            this.secProdFacNumlabel.Size = new System.Drawing.Size(121, 15);
+            this.secProdFacNumlabel.TabIndex = 142;
+            this.secProdFacNumlabel.Text = "Production Family +1";
+            // 
+            // nextProductionFamily
+            // 
+            this.nextProductionFamily.BackColor = System.Drawing.SystemColors.Window;
+            this.nextProductionFamily.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.nextProductionFamily.Location = new System.Drawing.Point(136, 97);
+            this.nextProductionFamily.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.nextProductionFamily.Maximum = new decimal(new int[] {
+            999,
+            0,
+            0,
+            0});
+            this.nextProductionFamily.Name = "nextProductionFamily";
+            this.nextProductionFamily.Size = new System.Drawing.Size(59, 23);
+            this.nextProductionFamily.TabIndex = 141;
+            this.nextProductionFamily.TabStop = false;
+            this.nextProductionFamily.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.nextProductionFamily.ValueChanged += new System.EventHandler(this.nextProductionFamily_ValueChanged);
+            // 
+            // idLabel
+            // 
+            this.idLabel.AutoSize = true;
+            this.idLabel.ForeColor = System.Drawing.Color.Red;
+            this.idLabel.Location = new System.Drawing.Point(7, 21);
+            this.idLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.idLabel.Name = "idLabel";
+            this.idLabel.Size = new System.Drawing.Size(17, 15);
+            this.idLabel.TabIndex = 1124;
+            this.idLabel.Text = "Id";
+            // 
+            // maintenanceCost
+            // 
+            this.maintenanceCost.BackColor = System.Drawing.SystemColors.Window;
+            this.maintenanceCost.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.maintenanceCost.Location = new System.Drawing.Point(148, 164);
+            this.maintenanceCost.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.maintenanceCost.Maximum = new decimal(new int[] {
+            9999,
+            0,
+            0,
+            0});
+            this.maintenanceCost.Name = "maintenanceCost";
+            this.maintenanceCost.Size = new System.Drawing.Size(59, 23);
+            this.maintenanceCost.TabIndex = 1133;
+            this.maintenanceCost.TabStop = false;
+            this.maintenanceCost.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.maintenanceCost.ValueChanged += new System.EventHandler(this.maintenanceCost_ValueChanged);
+            // 
+            // maintenanceCostLabel
+            // 
+            this.maintenanceCostLabel.AutoSize = true;
+            this.maintenanceCostLabel.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.maintenanceCostLabel.Location = new System.Drawing.Point(19, 166);
+            this.maintenanceCostLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.maintenanceCostLabel.Name = "maintenanceCostLabel";
+            this.maintenanceCostLabel.Size = new System.Drawing.Size(103, 15);
+            this.maintenanceCostLabel.TabIndex = 1132;
+            this.maintenanceCostLabel.Text = "Maintenance Cost";
+            // 
+            // refinedMaterialCost
+            // 
+            this.refinedMaterialCost.BackColor = System.Drawing.SystemColors.Window;
+            this.refinedMaterialCost.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.refinedMaterialCost.Location = new System.Drawing.Point(148, 138);
+            this.refinedMaterialCost.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.refinedMaterialCost.Maximum = new decimal(new int[] {
+            9999,
+            0,
+            0,
+            0});
+            this.refinedMaterialCost.Name = "refinedMaterialCost";
+            this.refinedMaterialCost.Size = new System.Drawing.Size(59, 23);
+            this.refinedMaterialCost.TabIndex = 1131;
+            this.refinedMaterialCost.TabStop = false;
+            this.refinedMaterialCost.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.refinedMaterialCost.ValueChanged += new System.EventHandler(this.refinedMaterialCost_ValueChanged);
+            // 
+            // refinedMaterialCostLabel
+            // 
+            this.refinedMaterialCostLabel.AutoSize = true;
+            this.refinedMaterialCostLabel.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.refinedMaterialCostLabel.Location = new System.Drawing.Point(18, 140);
+            this.refinedMaterialCostLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.refinedMaterialCostLabel.Name = "refinedMaterialCostLabel";
+            this.refinedMaterialCostLabel.Size = new System.Drawing.Size(120, 15);
+            this.refinedMaterialCostLabel.TabIndex = 1130;
+            this.refinedMaterialCostLabel.Text = "Refined Material Cost";
+            // 
+            // varianceLabel
+            // 
+            this.varianceLabel.AutoSize = true;
+            this.varianceLabel.BackColor = System.Drawing.Color.Silver;
+            this.varianceLabel.Enabled = false;
+            this.varianceLabel.Location = new System.Drawing.Point(211, 192);
+            this.varianceLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.varianceLabel.Name = "varianceLabel";
+            this.varianceLabel.Size = new System.Drawing.Size(51, 15);
+            this.varianceLabel.TabIndex = 11;
+            this.varianceLabel.Text = "Variance";
+            // 
+            // combatVariance
+            // 
+            this.combatVariance.Location = new System.Drawing.Point(211, 262);
             this.combatVariance.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.combatVariance.Maximum = new decimal(new int[] {
             999,
             0,
             0,
             0});
-            this.combatVariance.Name = "combatVarNum";
+            this.combatVariance.Name = "combatVariance";
             this.combatVariance.Size = new System.Drawing.Size(59, 23);
             this.combatVariance.TabIndex = 9;
             this.combatVariance.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
@@ -849,16 +870,16 @@ namespace SwRebellionEditor
             0});
             this.combatVariance.ValueChanged += new System.EventHandler(this.combatVariance_ValueChanged);
             // 
-            // dipVarNum
+            // diplomacyVariance
             // 
-            this.diplomacyVariance.Location = new System.Drawing.Point(186, 36);
+            this.diplomacyVariance.Location = new System.Drawing.Point(211, 210);
             this.diplomacyVariance.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.diplomacyVariance.Maximum = new decimal(new int[] {
             99999,
             0,
             0,
             0});
-            this.diplomacyVariance.Name = "dipVarNum";
+            this.diplomacyVariance.Name = "diplomacyVariance";
             this.diplomacyVariance.Size = new System.Drawing.Size(59, 23);
             this.diplomacyVariance.TabIndex = 5;
             this.diplomacyVariance.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
@@ -869,16 +890,16 @@ namespace SwRebellionEditor
             0});
             this.diplomacyVariance.ValueChanged += new System.EventHandler(this.diplomacyVariance_ValueChanged);
             // 
-            // espVarNum
+            // espionageVariance
             // 
-            this.espionageVariance.Location = new System.Drawing.Point(186, 69);
+            this.espionageVariance.Location = new System.Drawing.Point(211, 236);
             this.espionageVariance.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.espionageVariance.Maximum = new decimal(new int[] {
             999,
             0,
             0,
             0});
-            this.espionageVariance.Name = "espVarNum";
+            this.espionageVariance.Name = "espionageVariance";
             this.espionageVariance.Size = new System.Drawing.Size(59, 23);
             this.espionageVariance.TabIndex = 7;
             this.espionageVariance.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
@@ -889,26 +910,51 @@ namespace SwRebellionEditor
             0});
             this.espionageVariance.ValueChanged += new System.EventHandler(this.espionageVariance_ValueChanged);
             // 
+            // encyclopediaDescription
+            // 
+            this.encyclopediaDescription.Cursor = System.Windows.Forms.Cursors.No;
+            this.encyclopediaDescription.Enabled = false;
+            this.encyclopediaDescription.Location = new System.Drawing.Point(7, 338);
+            this.encyclopediaDescription.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.encyclopediaDescription.Name = "encyclopediaDescription";
+            this.encyclopediaDescription.Size = new System.Drawing.Size(364, 82);
+            this.encyclopediaDescription.TabIndex = 134;
+            this.encyclopediaDescription.TabStop = false;
+            this.encyclopediaDescription.Text = "Not implemented yet.";
+            this.encyclopediaDescription.TextChanged += new System.EventHandler(this.encyclopediaDescription_TextChanged);
+            // 
+            // baseLabel
+            // 
+            this.baseLabel.AutoSize = true;
+            this.baseLabel.BackColor = System.Drawing.Color.Silver;
+            this.baseLabel.Enabled = false;
+            this.baseLabel.Location = new System.Drawing.Point(148, 192);
+            this.baseLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.baseLabel.Name = "baseLabel";
+            this.baseLabel.Size = new System.Drawing.Size(31, 15);
+            this.baseLabel.TabIndex = 10;
+            this.baseLabel.Text = "Base";
+            // 
             // combatLabel
             // 
             this.combatLabel.AutoSize = true;
-            this.combatLabel.Location = new System.Drawing.Point(7, 102);
+            this.combatLabel.Location = new System.Drawing.Point(18, 264);
             this.combatLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.combatLabel.Name = "combatLabel";
             this.combatLabel.Size = new System.Drawing.Size(50, 15);
             this.combatLabel.TabIndex = 0;
             this.combatLabel.Text = "Combat";
             // 
-            // combatBaseNum
+            // combatBase
             // 
-            this.combatBase.Location = new System.Drawing.Point(119, 99);
+            this.combatBase.Location = new System.Drawing.Point(148, 262);
             this.combatBase.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.combatBase.Maximum = new decimal(new int[] {
             999,
             0,
             0,
             0});
-            this.combatBase.Name = "combatBaseNum";
+            this.combatBase.Name = "combatBase";
             this.combatBase.Size = new System.Drawing.Size(59, 23);
             this.combatBase.TabIndex = 8;
             this.combatBase.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
@@ -919,26 +965,26 @@ namespace SwRebellionEditor
             0});
             this.combatBase.ValueChanged += new System.EventHandler(this.combatBase_ValueChanged);
             // 
-            // diploLabel
+            // diplomacyLabel
             // 
-            this.diploLabel.AutoSize = true;
-            this.diploLabel.Location = new System.Drawing.Point(7, 38);
-            this.diploLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.diploLabel.Name = "diploLabel";
-            this.diploLabel.Size = new System.Drawing.Size(64, 15);
-            this.diploLabel.TabIndex = 0;
-            this.diploLabel.Text = "Diplomacy";
+            this.diplomacyLabel.AutoSize = true;
+            this.diplomacyLabel.Location = new System.Drawing.Point(18, 212);
+            this.diplomacyLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.diplomacyLabel.Name = "diplomacyLabel";
+            this.diplomacyLabel.Size = new System.Drawing.Size(64, 15);
+            this.diplomacyLabel.TabIndex = 0;
+            this.diplomacyLabel.Text = "Diplomacy";
             // 
-            // dipBaseNum
+            // diplomacyBase
             // 
-            this.diplomacyBase.Location = new System.Drawing.Point(119, 36);
+            this.diplomacyBase.Location = new System.Drawing.Point(148, 210);
             this.diplomacyBase.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.diplomacyBase.Maximum = new decimal(new int[] {
             99999,
             0,
             0,
             0});
-            this.diplomacyBase.Name = "dipBaseNum";
+            this.diplomacyBase.Name = "diplomacyBase";
             this.diplomacyBase.Size = new System.Drawing.Size(59, 23);
             this.diplomacyBase.TabIndex = 4;
             this.diplomacyBase.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
@@ -949,16 +995,16 @@ namespace SwRebellionEditor
             0});
             this.diplomacyBase.ValueChanged += new System.EventHandler(this.diplomacyBase_ValueChanged);
             // 
-            // espBaseNum
+            // espionageBase
             // 
-            this.espionageBase.Location = new System.Drawing.Point(119, 69);
+            this.espionageBase.Location = new System.Drawing.Point(148, 236);
             this.espionageBase.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.espionageBase.Maximum = new decimal(new int[] {
             999,
             0,
             0,
             0});
-            this.espionageBase.Name = "espBaseNum";
+            this.espionageBase.Name = "espionageBase";
             this.espionageBase.Size = new System.Drawing.Size(59, 23);
             this.espionageBase.TabIndex = 6;
             this.espionageBase.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
@@ -969,323 +1015,237 @@ namespace SwRebellionEditor
             0});
             this.espionageBase.ValueChanged += new System.EventHandler(this.espionageBase_ValueChanged);
             // 
-            // espLabel
+            // espionageLabel
             // 
-            this.espLabel.AutoSize = true;
-            this.espLabel.Location = new System.Drawing.Point(7, 72);
-            this.espLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.espLabel.Name = "espLabel";
-            this.espLabel.Size = new System.Drawing.Size(61, 15);
-            this.espLabel.TabIndex = 0;
-            this.espLabel.Text = "Espionage";
+            this.espionageLabel.AutoSize = true;
+            this.espionageLabel.Location = new System.Drawing.Point(18, 238);
+            this.espionageLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.espionageLabel.Name = "espionageLabel";
+            this.espionageLabel.Size = new System.Drawing.Size(61, 15);
+            this.espionageLabel.TabIndex = 0;
+            this.espionageLabel.Text = "Espionage";
             // 
-            // tabPage2
+            // selector
             // 
-            this.tabPage2.BackColor = System.Drawing.SystemColors.Control;
-            this.tabPage2.Controls.Add(this.groupBox1);
-            this.tabPage2.Controls.Add(this.encyText);
-            this.tabPage2.Location = new System.Drawing.Point(4, 24);
-            this.tabPage2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.tabPage2.Size = new System.Drawing.Size(553, 382);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "Ency";
+            this.selector.LargeChange = 4;
+            this.selector.Location = new System.Drawing.Point(186, 6);
+            this.selector.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.selector.Maximum = 8;
+            this.selector.Name = "selector";
+            this.selector.Size = new System.Drawing.Size(376, 45);
+            this.selector.TabIndex = 1;
+            this.selector.ValueChanged += new System.EventHandler(this.GameObjectsSelector_ValueChanged);
             // 
-            // groupBox1
+            // isAlliance
             // 
-            this.groupBox1.Controls.Add(this.familyIdHexLabel);
-            this.groupBox1.Controls.Add(this.specialForceIdHexLabel);
-            this.groupBox1.Controls.Add(this.specialForceId);
-            this.groupBox1.Controls.Add(this.label4);
-            this.groupBox1.Controls.Add(this.missionId);
-            this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.unknown2);
-            this.groupBox1.Controls.Add(this.textStraDllId);
-            this.groupBox1.Controls.Add(this.productionFamily);
-            this.groupBox1.Controls.Add(this.unkown3Label);
-            this.groupBox1.Controls.Add(this.familyId);
-            this.groupBox1.Controls.Add(this.prodLabel);
-            this.groupBox1.Controls.Add(this.idLabel);
-            this.groupBox1.Controls.Add(this.familyLabel);
-            this.groupBox1.Controls.Add(this.secProdFacNumlabel);
-            this.groupBox1.Controls.Add(this.nextProductionFamily);
-            this.groupBox1.Location = new System.Drawing.Point(0, 162);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.groupBox1.Size = new System.Drawing.Size(545, 211);
-            this.groupBox1.TabIndex = 135;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "DAT misc";
+            this.isAlliance.AutoSize = true;
+            this.isAlliance.Location = new System.Drawing.Point(247, 47);
+            this.isAlliance.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.isAlliance.Name = "isAlliance";
+            this.isAlliance.Size = new System.Drawing.Size(68, 19);
+            this.isAlliance.TabIndex = 15;
+            this.isAlliance.Text = "Alliance";
+            this.isAlliance.UseVisualStyleBackColor = true;
+            this.isAlliance.CheckStateChanged += new System.EventHandler(this.isAlliance_CheckStateChanged);
             // 
-            // famHexLabel
+            // isEmpire
             // 
-            this.familyIdHexLabel.AutoSize = true;
-            this.familyIdHexLabel.Enabled = false;
-            this.familyIdHexLabel.Location = new System.Drawing.Point(198, 92);
-            this.familyIdHexLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.familyIdHexLabel.Name = "famHexLabel";
-            this.familyIdHexLabel.Size = new System.Drawing.Size(26, 15);
-            this.familyIdHexLabel.TabIndex = 1139;
-            this.familyIdHexLabel.Text = "hex";
+            this.isEmpire.AutoSize = true;
+            this.isEmpire.Location = new System.Drawing.Point(247, 64);
+            this.isEmpire.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.isEmpire.Name = "isEmpire";
+            this.isEmpire.Size = new System.Drawing.Size(63, 19);
+            this.isEmpire.TabIndex = 16;
+            this.isEmpire.Text = "Empire";
+            this.isEmpire.UseVisualStyleBackColor = true;
+            this.isEmpire.CheckStateChanged += new System.EventHandler(this.isEmpire_CheckStateChanged);
             // 
-            // unitHexLabel
+            // Open
             // 
-            this.specialForceIdHexLabel.AutoSize = true;
-            this.specialForceIdHexLabel.Enabled = false;
-            this.specialForceIdHexLabel.Location = new System.Drawing.Point(198, 180);
-            this.specialForceIdHexLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.specialForceIdHexLabel.Name = "unitHexLabel";
-            this.specialForceIdHexLabel.Size = new System.Drawing.Size(26, 15);
-            this.specialForceIdHexLabel.TabIndex = 1138;
-            this.specialForceIdHexLabel.Text = "hex";
+            this.Open.Location = new System.Drawing.Point(459, 481);
+            this.Open.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.Open.Name = "Open";
+            this.Open.Size = new System.Drawing.Size(88, 27);
+            this.Open.TabIndex = 0;
+            this.Open.TabStop = false;
+            this.Open.Text = "Open...";
+            this.Open.UseVisualStyleBackColor = true;
+            this.Open.Click += new System.EventHandler(this.Open_Click);
             // 
-            // unitNum
+            // SaveAs
             // 
-            this.specialForceId.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.specialForceId.Enabled = false;
-            this.specialForceId.Location = new System.Drawing.Point(138, 178);
-            this.specialForceId.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.specialForceId.Maximum = new decimal(new int[] {
-            999,
-            0,
-            0,
-            0});
-            this.specialForceId.Name = "unitNum";
-            this.specialForceId.Size = new System.Drawing.Size(59, 23);
-            this.specialForceId.TabIndex = 1137;
-            this.specialForceId.TabStop = false;
+            this.SaveAs.Location = new System.Drawing.Point(364, 481);
+            this.SaveAs.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.SaveAs.Name = "SaveAs";
+            this.SaveAs.Size = new System.Drawing.Size(88, 27);
+            this.SaveAs.TabIndex = 0;
+            this.SaveAs.TabStop = false;
+            this.SaveAs.Text = "&SaveAs...";
+            this.SaveAs.UseVisualStyleBackColor = true;
+            this.SaveAs.Click += new System.EventHandler(this.SaveAs_Click);
             // 
-            // label4
+            // Cancel
             // 
-            this.label4.AutoSize = true;
-            this.label4.Enabled = false;
-            this.label4.Location = new System.Drawing.Point(26, 180);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(43, 15);
-            this.label4.TabIndex = 1136;
-            this.label4.Text = "Unit ID";
+            this.Cancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.Cancel.Location = new System.Drawing.Point(186, 481);
+            this.Cancel.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.Cancel.Name = "Cancel";
+            this.Cancel.Size = new System.Drawing.Size(88, 27);
+            this.Cancel.TabIndex = 8;
+            this.Cancel.Text = "&Cancel";
+            this.Cancel.UseVisualStyleBackColor = true;
+            this.Cancel.Click += new System.EventHandler(this.Cancel_Click);
             // 
-            // missionIdNum
+            // Ok
             // 
-            this.missionId.Enabled = false;
-            this.missionId.Location = new System.Drawing.Point(392, 32);
-            this.missionId.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.missionId.Maximum = new decimal(new int[] {
-            9999,
-            0,
-            0,
-            0});
-            this.missionId.Name = "missionIdNum";
-            this.missionId.Size = new System.Drawing.Size(59, 23);
-            this.missionId.TabIndex = 148;
-            this.missionId.TabStop = false;
+            this.Ok.Location = new System.Drawing.Point(91, 481);
+            this.Ok.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.Ok.Name = "Ok";
+            this.Ok.Size = new System.Drawing.Size(88, 27);
+            this.Ok.TabIndex = 7;
+            this.Ok.Text = "&Ok";
+            this.Ok.UseVisualStyleBackColor = true;
+            this.Ok.Click += new System.EventHandler(this.Ok_Click);
             // 
-            // label3
+            // specialForcesImages
             // 
-            this.label3.AutoSize = true;
-            this.label3.Enabled = false;
-            this.label3.Location = new System.Drawing.Point(280, 35);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(62, 15);
-            this.label3.TabIndex = 147;
-            this.label3.Text = "Mission ID";
+            this.specialForcesImages.ColorDepth = System.Windows.Forms.ColorDepth.Depth24Bit;
+            this.specialForcesImages.ImageSize = new System.Drawing.Size(120, 60);
+            this.specialForcesImages.TransparentColor = System.Drawing.Color.Transparent;
             // 
-            // unknown3Num
+            // specialForcesListView
             // 
-            this.unknown2.Enabled = false;
-            this.unknown2.Location = new System.Drawing.Point(138, 118);
-            this.unknown2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.unknown2.Maximum = new decimal(new int[] {
-            9999,
-            0,
-            0,
-            0});
-            this.unknown2.Name = "unknown3Num";
-            this.unknown2.Size = new System.Drawing.Size(59, 23);
-            this.unknown2.TabIndex = 144;
-            this.unknown2.TabStop = false;
+            this.specialForcesListView.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.specialForcesListView.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.specialForcesListView.GridLines = true;
+            this.specialForcesListView.LargeImageList = this.specialForcesImages;
+            this.specialForcesListView.Location = new System.Drawing.Point(0, 0);
+            this.specialForcesListView.Margin = new System.Windows.Forms.Padding(0);
+            this.specialForcesListView.MultiSelect = false;
+            this.specialForcesListView.Name = "specialForcesListView";
+            this.specialForcesListView.ShowGroups = false;
+            this.specialForcesListView.Size = new System.Drawing.Size(179, 476);
+            this.specialForcesListView.TabIndex = 0;
+            this.specialForcesListView.TabStop = false;
+            this.specialForcesListView.UseCompatibleStateImageBehavior = false;
+            this.specialForcesListView.Click += new System.EventHandler(this.specialForcesListView_Click);
+            this.specialForcesListView.DoubleClick += new System.EventHandler(this.specialForcesListView_DoubleClick);
             // 
-            // idNum
-            // 
-            this.textStraDllId.Enabled = false;
-            this.textStraDllId.Location = new System.Drawing.Point(138, 148);
-            this.textStraDllId.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.textStraDllId.Maximum = new decimal(new int[] {
-            99999,
-            0,
-            0,
-            0});
-            this.textStraDllId.Name = "idNum";
-            this.textStraDllId.Size = new System.Drawing.Size(59, 23);
-            this.textStraDllId.TabIndex = 146;
-            this.textStraDllId.TabStop = false;
-            // 
-            // prodFacNum
-            // 
-            this.productionFamily.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.productionFamily.Enabled = false;
-            this.productionFamily.Location = new System.Drawing.Point(138, 27);
-            this.productionFamily.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.productionFamily.Maximum = new decimal(new int[] {
-            999,
-            0,
-            0,
-            0});
-            this.productionFamily.Name = "prodFacNum";
-            this.productionFamily.Size = new System.Drawing.Size(59, 23);
-            this.productionFamily.TabIndex = 137;
-            this.productionFamily.TabStop = false;
-            this.productionFamily.ValueChanged += new System.EventHandler(this.productionFamily_ValueChanged);
-            // 
-            // unkown3Label
-            // 
-            this.unkown3Label.AutoSize = true;
-            this.unkown3Label.Enabled = false;
-            this.unkown3Label.Location = new System.Drawing.Point(26, 120);
-            this.unkown3Label.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.unkown3Label.Name = "unkown3Label";
-            this.unkown3Label.Size = new System.Drawing.Size(58, 15);
-            this.unkown3Label.TabIndex = 143;
-            this.unkown3Label.Text = "Unknown";
-            // 
-            // familyIdNum
-            // 
-            this.familyId.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.familyId.Enabled = false;
-            this.familyId.Location = new System.Drawing.Point(138, 88);
-            this.familyId.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.familyId.Maximum = new decimal(new int[] {
-            999,
-            0,
-            0,
-            0});
-            this.familyId.Name = "familyIdNum";
-            this.familyId.Size = new System.Drawing.Size(59, 23);
-            this.familyId.TabIndex = 145;
-            this.familyId.TabStop = false;
-            this.familyId.ValueChanged += new System.EventHandler(this.familyId_ValueChanged);
-            // 
-            // prodLabel
-            // 
-            this.prodLabel.AutoSize = true;
-            this.prodLabel.Enabled = false;
-            this.prodLabel.Location = new System.Drawing.Point(26, 29);
-            this.prodLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.prodLabel.Name = "prodLabel";
-            this.prodLabel.Size = new System.Drawing.Size(106, 15);
-            this.prodLabel.TabIndex = 138;
-            this.prodLabel.Text = "Production Family";
-            // 
-            // idLabel
-            // 
-            this.idLabel.AutoSize = true;
-            this.idLabel.Enabled = false;
-            this.idLabel.Location = new System.Drawing.Point(26, 150);
-            this.idLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.idLabel.Name = "idLabel";
-            this.idLabel.Size = new System.Drawing.Size(85, 15);
-            this.idLabel.TabIndex = 142;
-            this.idLabel.Text = "TextStra.DLL ID";
-            // 
-            // familyLabel
-            // 
-            this.familyLabel.AutoSize = true;
-            this.familyLabel.Enabled = false;
-            this.familyLabel.Location = new System.Drawing.Point(26, 85);
-            this.familyLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.familyLabel.Name = "familyLabel";
-            this.familyLabel.Size = new System.Drawing.Size(56, 15);
-            this.familyLabel.TabIndex = 141;
-            this.familyLabel.Text = "Family ID";
-            // 
-            // secProdFacNumlabel
-            // 
-            this.secProdFacNumlabel.AutoSize = true;
-            this.secProdFacNumlabel.Enabled = false;
-            this.secProdFacNumlabel.Location = new System.Drawing.Point(26, 58);
-            this.secProdFacNumlabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.secProdFacNumlabel.Name = "secProdFacNumlabel";
-            this.secProdFacNumlabel.Size = new System.Drawing.Size(92, 15);
-            this.secProdFacNumlabel.TabIndex = 140;
-            this.secProdFacNumlabel.Text = "Production Family +1";
-            // 
-            // secProdFacNum
-            // 
-            this.nextProductionFamily.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.nextProductionFamily.Enabled = false;
-            this.nextProductionFamily.Location = new System.Drawing.Point(138, 58);
-            this.nextProductionFamily.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.nextProductionFamily.Maximum = new decimal(new int[] {
-            999,
-            0,
-            0,
-            0});
-            this.nextProductionFamily.Name = "secProdFacNum";
-            this.nextProductionFamily.Size = new System.Drawing.Size(59, 23);
-            this.nextProductionFamily.TabIndex = 139;
-            this.nextProductionFamily.TabStop = false;
-            this.nextProductionFamily.ValueChanged += new System.EventHandler(this.nextProductionFamily_ValueChanged);
-            // 
-            // encyText
-            // 
-            this.encyText.Cursor = System.Windows.Forms.Cursors.No;
-            this.encyText.Enabled = false;
-            this.encyText.Location = new System.Drawing.Point(0, 0);
-            this.encyText.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.encyText.Name = "encyText";
-            this.encyText.Size = new System.Drawing.Size(551, 154);
-            this.encyText.TabIndex = 134;
-            this.encyText.TabStop = false;
-            this.encyText.Text = "Not Implemented yet....Encylopedia Data...Will add .Someday";
-            // 
-            // conCostLabel
-            // 
-            this.conCostLabel.AutoSize = true;
-            this.conCostLabel.Location = new System.Drawing.Point(6, 16);
-            this.conCostLabel.Name = "conCostLabel";
-            this.conCostLabel.Size = new System.Drawing.Size(90, 13);
-            this.conCostLabel.TabIndex = 0;
-            this.conCostLabel.Text = "Construction Cost";
-            // 
-            // conCostNum2
-            // 
-            this.conCostNum2.Location = new System.Drawing.Point(0, 0);
-            this.conCostNum2.Name = "conCostNum2";
-            this.conCostNum2.Size = new System.Drawing.Size(100, 23);
-            this.conCostNum2.TabIndex = 4;
-            // 
-            // maintCostLabel
-            // 
-            this.maintCostLabel.AutoSize = true;
-            this.maintCostLabel.Location = new System.Drawing.Point(6, 40);
-            this.maintCostLabel.Name = "maintCostLabel";
-            this.maintCostLabel.Size = new System.Drawing.Size(93, 13);
-            this.maintCostLabel.TabIndex = 0;
-            this.maintCostLabel.Text = "Maintenance Cost";
-            // 
-            // maintCostNum2
-            // 
-            this.maintCostNum2.Location = new System.Drawing.Point(102, 42);
-            this.maintCostNum2.Name = "maintCostNum2";
-            this.maintCostNum2.Size = new System.Drawing.Size(43, 23);
-            this.maintCostNum2.TabIndex = 5;
-            // 
-            // ItemPicture
+            // picture
             // 
             this.picture.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.picture.InitialImage = null;
-            this.picture.Location = new System.Drawing.Point(0, 0);
+            this.picture.Location = new System.Drawing.Point(7, 22);
             this.picture.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.picture.Name = "ItemPicture";
+            this.picture.Name = "picture";
             this.picture.Size = new System.Drawing.Size(220, 110);
             this.picture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picture.TabIndex = 156;
+            this.picture.TabIndex = 134;
             this.picture.TabStop = false;
             this.picture.Click += new System.EventHandler(this.picture_Click);
+            // 
+            // gameDataGroupBox
+            // 
+            this.gameDataGroupBox.Controls.Add(this.encyclopediaDescriptionLabel);
+            this.gameDataGroupBox.Controls.Add(this.encyclopediaDescription);
+            this.gameDataGroupBox.Controls.Add(this.leadershipVariance);
+            this.gameDataGroupBox.Controls.Add(this.name);
+            this.gameDataGroupBox.Controls.Add(this.isAlliance);
+            this.gameDataGroupBox.Controls.Add(this.leadershipBase);
+            this.gameDataGroupBox.Controls.Add(this.isEmpire);
+            this.gameDataGroupBox.Controls.Add(this.picture);
+            this.gameDataGroupBox.Controls.Add(this.refinedMaterialCostLabel);
+            this.gameDataGroupBox.Controls.Add(this.refinedMaterialCost);
+            this.gameDataGroupBox.Controls.Add(this.leadershipLabel);
+            this.gameDataGroupBox.Controls.Add(this.maintenanceCost);
+            this.gameDataGroupBox.Controls.Add(this.maintenanceCostLabel);
+            this.gameDataGroupBox.Controls.Add(this.baseLabel);
+            this.gameDataGroupBox.Controls.Add(this.diplomacyBase);
+            this.gameDataGroupBox.Controls.Add(this.varianceLabel);
+            this.gameDataGroupBox.Controls.Add(this.espionageVariance);
+            this.gameDataGroupBox.Controls.Add(this.espionageLabel);
+            this.gameDataGroupBox.Controls.Add(this.combatLabel);
+            this.gameDataGroupBox.Controls.Add(this.diplomacyVariance);
+            this.gameDataGroupBox.Controls.Add(this.diplomacyLabel);
+            this.gameDataGroupBox.Controls.Add(this.espionageBase);
+            this.gameDataGroupBox.Controls.Add(this.combatVariance);
+            this.gameDataGroupBox.Controls.Add(this.combatBase);
+            this.gameDataGroupBox.Location = new System.Drawing.Point(186, 43);
+            this.gameDataGroupBox.Name = "gameDataGroupBox";
+            this.gameDataGroupBox.Size = new System.Drawing.Size(376, 427);
+            this.gameDataGroupBox.TabIndex = 135;
+            this.gameDataGroupBox.TabStop = false;
+            this.gameDataGroupBox.Text = "In Game Data";
+            // 
+            // encyclopediaDescriptionLabel
+            // 
+            this.encyclopediaDescriptionLabel.AutoSize = true;
+            this.encyclopediaDescriptionLabel.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.encyclopediaDescriptionLabel.ForeColor = System.Drawing.Color.White;
+            this.encyclopediaDescriptionLabel.Location = new System.Drawing.Point(227, 324);
+            this.encyclopediaDescriptionLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.encyclopediaDescriptionLabel.Name = "encyclopediaDescriptionLabel";
+            this.encyclopediaDescriptionLabel.Size = new System.Drawing.Size(140, 15);
+            this.encyclopediaDescriptionLabel.TabIndex = 1127;
+            this.encyclopediaDescriptionLabel.Text = "Encyclopedia Description";
+            // 
+            // leadershipVariance
+            // 
+            this.leadershipVariance.Location = new System.Drawing.Point(211, 288);
+            this.leadershipVariance.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.leadershipVariance.Maximum = new decimal(new int[] {
+            999,
+            0,
+            0,
+            0});
+            this.leadershipVariance.Name = "leadershipVariance";
+            this.leadershipVariance.Size = new System.Drawing.Size(59, 23);
+            this.leadershipVariance.TabIndex = 138;
+            this.leadershipVariance.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.leadershipVariance.Value = new decimal(new int[] {
+            999,
+            0,
+            0,
+            0});
+            this.leadershipVariance.ValueChanged += new System.EventHandler(this.leadershipVariance_ValueChanged);
+            // 
+            // name
+            // 
+            this.name.Location = new System.Drawing.Point(234, 22);
+            this.name.Name = "name";
+            this.name.Size = new System.Drawing.Size(137, 23);
+            this.name.TabIndex = 135;
+            this.name.TextChanged += new System.EventHandler(this.name_TextChanged);
+            // 
+            // leadershipBase
+            // 
+            this.leadershipBase.Location = new System.Drawing.Point(148, 288);
+            this.leadershipBase.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.leadershipBase.Maximum = new decimal(new int[] {
+            999,
+            0,
+            0,
+            0});
+            this.leadershipBase.Name = "leadershipBase";
+            this.leadershipBase.Size = new System.Drawing.Size(59, 23);
+            this.leadershipBase.TabIndex = 137;
+            this.leadershipBase.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.leadershipBase.Value = new decimal(new int[] {
+            999,
+            0,
+            0,
+            0});
+            this.leadershipBase.ValueChanged += new System.EventHandler(this.leadershipBase_ValueChanged);
+            // 
+            // leadershipLabel
+            // 
+            this.leadershipLabel.AutoSize = true;
+            this.leadershipLabel.Location = new System.Drawing.Point(18, 290);
+            this.leadershipLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.leadershipLabel.Name = "leadershipLabel";
+            this.leadershipLabel.Size = new System.Drawing.Size(64, 15);
+            this.leadershipLabel.TabIndex = 136;
+            this.leadershipLabel.Text = "Leadership";
             // 
             // SpecialForcesForm
             // 
@@ -1293,77 +1253,84 @@ namespace SwRebellionEditor
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.Cancel;
-            this.ClientSize = new System.Drawing.Size(810, 578);
+            this.ClientSize = new System.Drawing.Size(834, 512);
+            this.Controls.Add(this.hiddenDataGroupBox);
+            this.Controls.Add(this.gameDataGroupBox);
             this.Controls.Add(this.specialForcesListView);
-            this.Controls.Add(this.picture);
             this.Controls.Add(this.Open);
             this.Controls.Add(this.SaveAs);
             this.Controls.Add(this.Cancel);
             this.Controls.Add(this.Ok);
-            this.Controls.Add(this.charLoyalGroup);
-            this.Controls.Add(this.name);
             this.Controls.Add(this.selector);
-            this.Controls.Add(this.tabControl1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.KeyPreview = true;
             this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.MaximizeBox = false;
-            this.MaximumSize = new System.Drawing.Size(826, 617);
-            this.MinimumSize = new System.Drawing.Size(826, 617);
+            this.MinimumSize = new System.Drawing.Size(850, 551);
             this.Name = "SpecialForcesForm";
             this.Text = "Special Forces (SPECFCSD.DAT)";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.GameObjectsListForm_FormClosing);
             this.Load += new System.EventHandler(this.GameObjectsListForm_Load);
+            this.Enter += new System.EventHandler(this.GameObjectsSelector_ValueChanged);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.GameObjectsListForm_KeyDown);
-            this.charLoyalGroup.ResumeLayout(false);
-            this.charLoyalGroup.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.selector)).EndInit();
-            this.tabControl1.ResumeLayout(false);
-            this.tabPage1.ResumeLayout(false);
-            this.researchBox.ResumeLayout(false);
-            this.researchBox.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.researchOrder)).EndInit();
+            this.hiddenDataGroupBox.ResumeLayout(false);
+            this.hiddenDataGroupBox.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.missionId)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.researchDifficulty)).EndInit();
-            this.costGroup.ResumeLayout(false);
-            this.costGroup.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.constructionCost)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.maintenanceCost)).EndInit();
-            this.researchGroup.ResumeLayout(false);
-            this.researchGroup.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.facilitiesResearchVariance)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.shipsResearchVariance)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.troopsResearchVariance)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.facilitiesResearchBase)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.shipsResearchBase)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.troopsResearchBase)).EndInit();
-            this.BasicGroup.ResumeLayout(false);
-            this.BasicGroup.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.loyaltyVariance)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.loyaltyBase)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.facilityDesignVariance_0)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.researchOrder_0)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.loyaltyVariance)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.shipDesignVariance_0)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.field7_2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.troopTrainingVariance_0)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textStraDllId)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.facilityDesignBase_0)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.troopTrainingBase_0)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.shipDesignBase_0)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.field2_1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.familyId)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.productionFamily)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.id)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nextProductionFamily)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.maintenanceCost)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.refinedMaterialCost)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.combatVariance)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.diplomacyVariance)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.espionageVariance)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.combatBase)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.diplomacyBase)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.espionageBase)).EndInit();
-            this.tabPage2.ResumeLayout(false);
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.specialForceId)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.missionId)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.unknown2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textStraDllId)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.productionFamily)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.familyId)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nextProductionFamily)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.conCostNum2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.maintCostNum2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.selector)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picture)).EndInit();
+            this.gameDataGroupBox.ResumeLayout(false);
+            this.gameDataGroupBox.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.leadershipVariance)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.leadershipBase)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
+
+        private GroupBox gameDataGroupBox;
+        private TextBox name;
+        private NumericUpDown leadershipVariance;
+        private NumericUpDown leadershipBase;
+        private Label leadershipLabel;
+        private NumericUpDown field7_2;
+        private Label field7_2Label;
+        private NumericUpDown researchDifficulty;
+        private Label researchDifficulty_0Label;
+        private NumericUpDown researchOrder_0;
+        private Label researchOrder_0Label;
+        private NumericUpDown maintenanceCost;
+        private Label maintenanceCostLabel;
+        private NumericUpDown refinedMaterialCost;
+        private Label refinedMaterialCostLabel;
+        private Label encyclopediaDescriptionLabel;
+        private NumericUpDown missionId;
+        private Label missionIdLabel;
     }
 }

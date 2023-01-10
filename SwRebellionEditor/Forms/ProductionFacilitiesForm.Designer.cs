@@ -252,7 +252,7 @@ namespace SwRebellionEditor
             this.field2_1.TabStop = false;
             this.field2_1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.field2_1.Value = new decimal(new int[] {
-            9999,
+            1,
             0,
             0,
             0});
@@ -388,7 +388,7 @@ namespace SwRebellionEditor
             // 
             // researchDifficulty
             // 
-            this.researchDifficulty.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.researchDifficulty.ForeColor = System.Drawing.SystemColors.WindowText;
             this.researchDifficulty.Location = new System.Drawing.Point(145, 230);
             this.researchDifficulty.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.researchDifficulty.Maximum = new decimal(new int[] {
@@ -410,7 +410,7 @@ namespace SwRebellionEditor
             // researchDifficultyLabel
             // 
             this.researchDifficultyLabel.AutoSize = true;
-            this.researchDifficultyLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.researchDifficultyLabel.ForeColor = System.Drawing.SystemColors.WindowText;
             this.researchDifficultyLabel.Location = new System.Drawing.Point(14, 232);
             this.researchDifficultyLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.researchDifficultyLabel.Name = "researchDifficultyLabel";
@@ -486,7 +486,7 @@ namespace SwRebellionEditor
             // researchOrderLabel
             // 
             this.researchOrderLabel.AutoSize = true;
-            this.researchOrderLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.researchOrderLabel.ForeColor = System.Drawing.SystemColors.WindowText;
             this.researchOrderLabel.Location = new System.Drawing.Point(14, 206);
             this.researchOrderLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.researchOrderLabel.Name = "researchOrderLabel";
@@ -496,7 +496,7 @@ namespace SwRebellionEditor
             // 
             // researchOrder
             // 
-            this.researchOrder.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.researchOrder.ForeColor = System.Drawing.SystemColors.WindowText;
             this.researchOrder.Location = new System.Drawing.Point(145, 204);
             this.researchOrder.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.researchOrder.Maximum = new decimal(new int[] {
@@ -636,7 +636,7 @@ namespace SwRebellionEditor
             this.field7_2.TabStop = false;
             this.field7_2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.field7_2.Value = new decimal(new int[] {
-            9999,
+            2,
             0,
             0,
             0});
@@ -669,6 +669,11 @@ namespace SwRebellionEditor
             this.id.TabIndex = 1133;
             this.id.TabStop = false;
             this.id.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.id.Value = new decimal(new int[] {
+            999,
+            0,
+            0,
+            0});
             this.id.ValueChanged += new System.EventHandler(this.id_ValueChanged);
             // 
             // idLabel

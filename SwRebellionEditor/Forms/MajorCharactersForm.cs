@@ -10,6 +10,7 @@
             GameFile = DatFile.Load<MJCHARSD>(GameFilePath);
             InitializeComponent();
             InitializeBaseComponent(selector);
+            selector.Maximum = (int)GameFile.MajorCharactersCount - 1;
         }
 
         #endregion
@@ -61,10 +62,10 @@
             leadershipVariance.Value = majorCharacter.LeadershipVariance;
             loyaltyBase.Value = majorCharacter.LoyaltyBase;
             loyaltyVariance.Value = majorCharacter.LoyaltyVariance;
-            maintenanceCost_0.Value = majorCharacter.MaintenanceCost_0;
+            maintenanceCost.Value = majorCharacter.MaintenanceCost;
             name.Text = majorCharacter.Name;
-            nextProductionFamily.Value = majorCharacter.NextProductionFamily;
-            productionFamily.Value = majorCharacter.ProductionFamily;
+            nextProductionFamily_0.Value = majorCharacter.NextProductionFamily_0;
+            productionFamily_0.Value = majorCharacter.ProductionFamily_0;
             refinedMaterialCost_0.Value = majorCharacter.RefinedMaterialCost_0;
             researchDifficulty_0.Value = majorCharacter.ResearchDifficulty_0;
             researchOrder_0.Value = majorCharacter.ResearchOrder_0;
@@ -279,9 +280,9 @@
             GameFile.MajorCharacters[selector.Value].LoyaltyVariance = (uint)loyaltyVariance.Value;
             GameFile.UnsavedData = true;
         }
-        private void maintenanceCost_0_ValueChanged(object sender, EventArgs e)
+        private void maintenanceCost_ValueChanged(object sender, EventArgs e)
         {
-            GameFile.MajorCharacters[selector.Value].MaintenanceCost_0 = (uint)maintenanceCost_0.Value;
+            GameFile.MajorCharacters[selector.Value].MaintenanceCost = (uint)maintenanceCost.Value;
             GameFile.UnsavedData = true;
         }
         private void name_TextChanged(object sender, EventArgs e)
@@ -289,14 +290,14 @@
             GameFile.MajorCharacters[selector.Value].Name = name.Text;
             GameFile.UnsavedData = true;
         }
-        private void nextProductionFamily_ValueChanged(object sender, EventArgs e)
+        private void nextProductionFamily_0_ValueChanged(object sender, EventArgs e)
         {
-            GameFile.MajorCharacters[selector.Value].NextProductionFamily = (uint)nextProductionFamily.Value;
+            GameFile.MajorCharacters[selector.Value].NextProductionFamily_0 = (uint)nextProductionFamily_0.Value;
             GameFile.UnsavedData = true;
         }
-        private void productionFamily_ValueChanged(object sender, EventArgs e)
+        private void productionFamily_0_ValueChanged(object sender, EventArgs e)
         {
-            GameFile.MajorCharacters[selector.Value].ProductionFamily = (uint)productionFamily.Value;
+            GameFile.MajorCharacters[selector.Value].ProductionFamily_0 = (uint)productionFamily_0.Value;
             GameFile.UnsavedData = true;
         }
         private void refinedMaterialCost_0_ValueChanged(object sender, EventArgs e)

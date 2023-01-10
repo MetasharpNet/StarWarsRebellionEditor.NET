@@ -10,6 +10,7 @@
             GameFile = DatFile.Load<DEFFACSD>(GameFilePath);
             InitializeComponent();
             InitializeBaseComponent(selector);
+            selector.Maximum = (int)GameFile.DefenseFacilitiesCount - 1;
         }
 
         #endregion

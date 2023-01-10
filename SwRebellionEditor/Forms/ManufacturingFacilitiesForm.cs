@@ -10,6 +10,7 @@
             GameFile = DatFile.Load<MANFACSD>(GameFilePath);
             InitializeComponent();
             InitializeBaseComponent(selector);
+            selector.Maximum = (int)GameFile.ManufacturingFacilitiesCount - 1;
         }
 
         #endregion

@@ -13,15 +13,15 @@
     {
         public uint Id;
         public uint Field2_1;
-        public uint ProductionFamily;
-        public uint NextProductionFamily;
+        public uint ProductionFamily_0;
+        public uint NextProductionFamily_0;
         public uint FamilyId;
         public ushort TextStraDllId;
         public ushort Field7_2;
         public uint IsAlliance;
         public uint IsEmpire;
         public uint RefinedMaterialCost_0;
-        public uint MaintenanceCost_0;
+        public uint MaintenanceCost;
         public uint ResearchOrder_0;
         public uint ResearchDifficulty_0;
         public uint DiplomacyBase;

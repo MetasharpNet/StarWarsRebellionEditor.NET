@@ -10,6 +10,7 @@
             GameFile = DatFile.Load<SECTORSD>(GameFilePath);
             InitializeComponent();
             InitializeBaseComponent(selector);
+            selector.Maximum = (int)GameFile.SectorsCount - 1;
         }
 
         #endregion

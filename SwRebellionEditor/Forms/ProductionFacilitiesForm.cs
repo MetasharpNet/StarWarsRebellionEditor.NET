@@ -10,6 +10,7 @@
             GameFile = DatFile.Load<PROFACSD>(GameFilePath);
             InitializeComponent();
             InitializeBaseComponent(selector);
+            selector.Maximum = (int)GameFile.ProductionFacilitiesCount - 1;
         }
 
         #endregion

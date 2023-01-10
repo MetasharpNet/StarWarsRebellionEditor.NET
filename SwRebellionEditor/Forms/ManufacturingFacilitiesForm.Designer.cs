@@ -490,7 +490,7 @@ namespace SwRebellionEditor
             this.field7_2.TabStop = false;
             this.field7_2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.field7_2.Value = new decimal(new int[] {
-            9999,
+            2,
             0,
             0,
             0});
@@ -545,6 +545,11 @@ namespace SwRebellionEditor
             this.id.TabIndex = 1141;
             this.id.TabStop = false;
             this.id.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.id.Value = new decimal(new int[] {
+            999,
+            0,
+            0,
+            0});
             this.id.ValueChanged += new System.EventHandler(this.id_ValueChanged);
             // 
             // idLabel
@@ -684,7 +689,7 @@ namespace SwRebellionEditor
             this.field2_1.TabStop = false;
             this.field2_1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.field2_1.Value = new decimal(new int[] {
-            9999,
+            1,
             0,
             0,
             0});

@@ -50,7 +50,7 @@ namespace SwRebellionEditor
         private Label jediProbabilityLabel;
         private NumericUpDown jediProbability;
         private NumericUpDown jediLevelBase;
-        private Label label13;
+        private Label jediLevelLabel;
         private CheckBox canBeCommander;
         private CheckBox canBeAdmiral;
         private CheckBox canBeGeneral;
@@ -67,14 +67,14 @@ namespace SwRebellionEditor
         private ListView majorCharactersListView;
         private NumericUpDown field2_1;
         private NumericUpDown textStraDllId;
-        private NumericUpDown productionFamily;
+        private NumericUpDown productionFamily_0;
         private Label field2_1Label;
         private NumericUpDown familyId;
-        private Label prodLabel;
+        private Label productionFamily_0Label;
         private Label textStraDllIdLabel;
         private Label familyIdLabel;
-        private Label secProdFacNumlabel;
-        private NumericUpDown nextProductionFamily;
+        private Label nextProductionFamily_0Label;
+        private NumericUpDown nextProductionFamily_0;
         private Label familyIdHexLabel;
         private Label idHexLabel;
         private NumericUpDown id;
@@ -116,9 +116,9 @@ namespace SwRebellionEditor
             this.researchOrder_0 = new System.Windows.Forms.NumericUpDown();
             this.loyaltyVariance = new System.Windows.Forms.NumericUpDown();
             this.researchOrder_0Label = new System.Windows.Forms.Label();
-            this.maintenanceCost_0 = new System.Windows.Forms.NumericUpDown();
+            this.maintenanceCost = new System.Windows.Forms.NumericUpDown();
             this.loyaltyLabel = new System.Windows.Forms.Label();
-            this.maintenanceCost_0Label = new System.Windows.Forms.Label();
+            this.maintenanceCostLabel = new System.Windows.Forms.Label();
             this.refinedMaterialCost_0 = new System.Windows.Forms.NumericUpDown();
             this.refinedMaterialCost_0Label = new System.Windows.Forms.Label();
             this.field7_2 = new System.Windows.Forms.NumericUpDown();
@@ -129,21 +129,21 @@ namespace SwRebellionEditor
             this.hiddenVarianceLabel = new System.Windows.Forms.Label();
             this.field2_1 = new System.Windows.Forms.NumericUpDown();
             this.familyId = new System.Windows.Forms.NumericUpDown();
-            this.productionFamily = new System.Windows.Forms.NumericUpDown();
+            this.productionFamily_0 = new System.Windows.Forms.NumericUpDown();
             this.idHexLabel = new System.Windows.Forms.Label();
             this.familyIdLabel = new System.Windows.Forms.Label();
             this.hiddenBaseLabel = new System.Windows.Forms.Label();
-            this.prodLabel = new System.Windows.Forms.Label();
+            this.productionFamily_0Label = new System.Windows.Forms.Label();
             this.id = new System.Windows.Forms.NumericUpDown();
             this.field2_1Label = new System.Windows.Forms.Label();
-            this.secProdFacNumlabel = new System.Windows.Forms.Label();
+            this.nextProductionFamily_0Label = new System.Windows.Forms.Label();
             this.jediLevelVariance = new System.Windows.Forms.NumericUpDown();
-            this.nextProductionFamily = new System.Windows.Forms.NumericUpDown();
+            this.nextProductionFamily_0 = new System.Windows.Forms.NumericUpDown();
             this.idLabel = new System.Windows.Forms.Label();
             this.jediProbabilityLabel = new System.Windows.Forms.Label();
             this.jediProbability = new System.Windows.Forms.NumericUpDown();
             this.jediLevelBase = new System.Windows.Forms.NumericUpDown();
-            this.label13 = new System.Windows.Forms.Label();
+            this.jediLevelLabel = new System.Windows.Forms.Label();
             this.facilityDesignVariance = new System.Windows.Forms.NumericUpDown();
             this.shipDesignVariance = new System.Windows.Forms.NumericUpDown();
             this.troopTrainingVariance = new System.Windows.Forms.NumericUpDown();
@@ -182,7 +182,7 @@ namespace SwRebellionEditor
             this.picture = new System.Windows.Forms.PictureBox();
             this.gameDataGroupBox = new System.Windows.Forms.GroupBox();
             this.encyclopediaDescriptionLabel = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
+            this.baseJediModsLabel = new System.Windows.Forms.Label();
             this.leadershipVariance = new System.Windows.Forms.NumericUpDown();
             this.leadershipBase = new System.Windows.Forms.NumericUpDown();
             this.leadershipLabel = new System.Windows.Forms.Label();
@@ -196,16 +196,16 @@ namespace SwRebellionEditor
             ((System.ComponentModel.ISupportInitialize)(this.loyaltyBase)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.researchOrder_0)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.loyaltyVariance)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.maintenanceCost_0)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.maintenanceCost)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.refinedMaterialCost_0)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.field7_2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textStraDllId)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.field2_1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.familyId)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.productionFamily)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.productionFamily_0)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.id)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.jediLevelVariance)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nextProductionFamily)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nextProductionFamily_0)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.jediProbability)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.jediLevelBase)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.facilityDesignVariance)).BeginInit();
@@ -328,9 +328,9 @@ namespace SwRebellionEditor
             this.hiddenDataGroupBox.Controls.Add(this.researchOrder_0);
             this.hiddenDataGroupBox.Controls.Add(this.loyaltyVariance);
             this.hiddenDataGroupBox.Controls.Add(this.researchOrder_0Label);
-            this.hiddenDataGroupBox.Controls.Add(this.maintenanceCost_0);
+            this.hiddenDataGroupBox.Controls.Add(this.maintenanceCost);
             this.hiddenDataGroupBox.Controls.Add(this.loyaltyLabel);
-            this.hiddenDataGroupBox.Controls.Add(this.maintenanceCost_0Label);
+            this.hiddenDataGroupBox.Controls.Add(this.maintenanceCostLabel);
             this.hiddenDataGroupBox.Controls.Add(this.refinedMaterialCost_0);
             this.hiddenDataGroupBox.Controls.Add(this.refinedMaterialCost_0Label);
             this.hiddenDataGroupBox.Controls.Add(this.field7_2);
@@ -341,21 +341,21 @@ namespace SwRebellionEditor
             this.hiddenDataGroupBox.Controls.Add(this.hiddenVarianceLabel);
             this.hiddenDataGroupBox.Controls.Add(this.field2_1);
             this.hiddenDataGroupBox.Controls.Add(this.familyId);
-            this.hiddenDataGroupBox.Controls.Add(this.productionFamily);
+            this.hiddenDataGroupBox.Controls.Add(this.productionFamily_0);
             this.hiddenDataGroupBox.Controls.Add(this.idHexLabel);
             this.hiddenDataGroupBox.Controls.Add(this.familyIdLabel);
             this.hiddenDataGroupBox.Controls.Add(this.hiddenBaseLabel);
-            this.hiddenDataGroupBox.Controls.Add(this.prodLabel);
+            this.hiddenDataGroupBox.Controls.Add(this.productionFamily_0Label);
             this.hiddenDataGroupBox.Controls.Add(this.id);
             this.hiddenDataGroupBox.Controls.Add(this.field2_1Label);
-            this.hiddenDataGroupBox.Controls.Add(this.secProdFacNumlabel);
+            this.hiddenDataGroupBox.Controls.Add(this.nextProductionFamily_0Label);
             this.hiddenDataGroupBox.Controls.Add(this.jediLevelVariance);
-            this.hiddenDataGroupBox.Controls.Add(this.nextProductionFamily);
+            this.hiddenDataGroupBox.Controls.Add(this.nextProductionFamily_0);
             this.hiddenDataGroupBox.Controls.Add(this.idLabel);
             this.hiddenDataGroupBox.Controls.Add(this.jediProbabilityLabel);
             this.hiddenDataGroupBox.Controls.Add(this.jediProbability);
             this.hiddenDataGroupBox.Controls.Add(this.jediLevelBase);
-            this.hiddenDataGroupBox.Controls.Add(this.label13);
+            this.hiddenDataGroupBox.Controls.Add(this.jediLevelLabel);
             this.hiddenDataGroupBox.Location = new System.Drawing.Point(566, 6);
             this.hiddenDataGroupBox.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.hiddenDataGroupBox.Name = "hiddenDataGroupBox";
@@ -475,23 +475,28 @@ namespace SwRebellionEditor
             this.researchOrder_0Label.TabIndex = 1134;
             this.researchOrder_0Label.Text = "Research Order";
             // 
-            // maintenanceCost_0
+            // maintenanceCost
             // 
-            this.maintenanceCost_0.BackColor = System.Drawing.SystemColors.Window;
-            this.maintenanceCost_0.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.maintenanceCost_0.Location = new System.Drawing.Point(136, 227);
-            this.maintenanceCost_0.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.maintenanceCost_0.Maximum = new decimal(new int[] {
+            this.maintenanceCost.BackColor = System.Drawing.SystemColors.Window;
+            this.maintenanceCost.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.maintenanceCost.Location = new System.Drawing.Point(136, 227);
+            this.maintenanceCost.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.maintenanceCost.Maximum = new decimal(new int[] {
             9999,
             0,
             0,
             0});
-            this.maintenanceCost_0.Name = "maintenanceCost_0";
-            this.maintenanceCost_0.Size = new System.Drawing.Size(59, 23);
-            this.maintenanceCost_0.TabIndex = 1133;
-            this.maintenanceCost_0.TabStop = false;
-            this.maintenanceCost_0.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.maintenanceCost_0.ValueChanged += new System.EventHandler(this.maintenanceCost_0_ValueChanged);
+            this.maintenanceCost.Name = "maintenanceCost";
+            this.maintenanceCost.Size = new System.Drawing.Size(59, 23);
+            this.maintenanceCost.TabIndex = 1133;
+            this.maintenanceCost.TabStop = false;
+            this.maintenanceCost.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.maintenanceCost.Value = new decimal(new int[] {
+            9999,
+            0,
+            0,
+            0});
+            this.maintenanceCost.ValueChanged += new System.EventHandler(this.maintenanceCost_ValueChanged);
             // 
             // loyaltyLabel
             // 
@@ -503,16 +508,16 @@ namespace SwRebellionEditor
             this.loyaltyLabel.TabIndex = 12;
             this.loyaltyLabel.Text = "Loyalty";
             // 
-            // maintenanceCost_0Label
+            // maintenanceCostLabel
             // 
-            this.maintenanceCost_0Label.AutoSize = true;
-            this.maintenanceCost_0Label.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.maintenanceCost_0Label.Location = new System.Drawing.Point(7, 229);
-            this.maintenanceCost_0Label.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.maintenanceCost_0Label.Name = "maintenanceCost_0Label";
-            this.maintenanceCost_0Label.Size = new System.Drawing.Size(103, 15);
-            this.maintenanceCost_0Label.TabIndex = 1132;
-            this.maintenanceCost_0Label.Text = "Maintenance Cost";
+            this.maintenanceCostLabel.AutoSize = true;
+            this.maintenanceCostLabel.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.maintenanceCostLabel.Location = new System.Drawing.Point(7, 229);
+            this.maintenanceCostLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.maintenanceCostLabel.Name = "maintenanceCostLabel";
+            this.maintenanceCostLabel.Size = new System.Drawing.Size(103, 15);
+            this.maintenanceCostLabel.TabIndex = 1132;
+            this.maintenanceCostLabel.Text = "Maintenance Cost";
             // 
             // refinedMaterialCost_0
             // 
@@ -679,23 +684,23 @@ namespace SwRebellionEditor
             0});
             this.familyId.ValueChanged += new System.EventHandler(this.familyId_ValueChanged);
             // 
-            // productionFamily
+            // productionFamily_0
             // 
-            this.productionFamily.BackColor = System.Drawing.SystemColors.Window;
-            this.productionFamily.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.productionFamily.Location = new System.Drawing.Point(136, 71);
-            this.productionFamily.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.productionFamily.Maximum = new decimal(new int[] {
+            this.productionFamily_0.BackColor = System.Drawing.SystemColors.Window;
+            this.productionFamily_0.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.productionFamily_0.Location = new System.Drawing.Point(136, 71);
+            this.productionFamily_0.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.productionFamily_0.Maximum = new decimal(new int[] {
             999,
             0,
             0,
             0});
-            this.productionFamily.Name = "productionFamily";
-            this.productionFamily.Size = new System.Drawing.Size(59, 23);
-            this.productionFamily.TabIndex = 138;
-            this.productionFamily.TabStop = false;
-            this.productionFamily.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.productionFamily.ValueChanged += new System.EventHandler(this.productionFamily_ValueChanged);
+            this.productionFamily_0.Name = "productionFamily_0";
+            this.productionFamily_0.Size = new System.Drawing.Size(59, 23);
+            this.productionFamily_0.TabIndex = 138;
+            this.productionFamily_0.TabStop = false;
+            this.productionFamily_0.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.productionFamily_0.ValueChanged += new System.EventHandler(this.productionFamily_0_ValueChanged);
             // 
             // idHexLabel
             // 
@@ -730,16 +735,16 @@ namespace SwRebellionEditor
             this.hiddenBaseLabel.TabIndex = 10;
             this.hiddenBaseLabel.Text = "Base";
             // 
-            // prodLabel
+            // productionFamily_0Label
             // 
-            this.prodLabel.AutoSize = true;
-            this.prodLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.prodLabel.Location = new System.Drawing.Point(6, 73);
-            this.prodLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.prodLabel.Name = "prodLabel";
-            this.prodLabel.Size = new System.Drawing.Size(104, 15);
-            this.prodLabel.TabIndex = 140;
-            this.prodLabel.Text = "Production Family";
+            this.productionFamily_0Label.AutoSize = true;
+            this.productionFamily_0Label.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.productionFamily_0Label.Location = new System.Drawing.Point(6, 73);
+            this.productionFamily_0Label.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.productionFamily_0Label.Name = "productionFamily_0Label";
+            this.productionFamily_0Label.Size = new System.Drawing.Size(104, 15);
+            this.productionFamily_0Label.TabIndex = 140;
+            this.productionFamily_0Label.Text = "Production Family";
             // 
             // id
             // 
@@ -757,6 +762,11 @@ namespace SwRebellionEditor
             this.id.TabIndex = 1125;
             this.id.TabStop = false;
             this.id.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.id.Value = new decimal(new int[] {
+            999,
+            0,
+            0,
+            0});
             this.id.ValueChanged += new System.EventHandler(this.id_ValueChanged);
             // 
             // field2_1Label
@@ -770,16 +780,16 @@ namespace SwRebellionEditor
             this.field2_1Label.TabIndex = 145;
             this.field2_1Label.Text = "Field2 (always 1)";
             // 
-            // secProdFacNumlabel
+            // nextProductionFamily_0Label
             // 
-            this.secProdFacNumlabel.AutoSize = true;
-            this.secProdFacNumlabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.secProdFacNumlabel.Location = new System.Drawing.Point(7, 99);
-            this.secProdFacNumlabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.secProdFacNumlabel.Name = "secProdFacNumlabel";
-            this.secProdFacNumlabel.Size = new System.Drawing.Size(121, 15);
-            this.secProdFacNumlabel.TabIndex = 142;
-            this.secProdFacNumlabel.Text = "Production Family +1";
+            this.nextProductionFamily_0Label.AutoSize = true;
+            this.nextProductionFamily_0Label.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.nextProductionFamily_0Label.Location = new System.Drawing.Point(7, 99);
+            this.nextProductionFamily_0Label.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.nextProductionFamily_0Label.Name = "nextProductionFamily_0Label";
+            this.nextProductionFamily_0Label.Size = new System.Drawing.Size(121, 15);
+            this.nextProductionFamily_0Label.TabIndex = 142;
+            this.nextProductionFamily_0Label.Text = "Production Family +1";
             // 
             // jediLevelVariance
             // 
@@ -801,23 +811,23 @@ namespace SwRebellionEditor
             0});
             this.jediLevelVariance.ValueChanged += new System.EventHandler(this.jediLevelVariance_ValueChanged);
             // 
-            // nextProductionFamily
+            // nextProductionFamily_0
             // 
-            this.nextProductionFamily.BackColor = System.Drawing.SystemColors.Window;
-            this.nextProductionFamily.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.nextProductionFamily.Location = new System.Drawing.Point(136, 97);
-            this.nextProductionFamily.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.nextProductionFamily.Maximum = new decimal(new int[] {
+            this.nextProductionFamily_0.BackColor = System.Drawing.SystemColors.Window;
+            this.nextProductionFamily_0.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.nextProductionFamily_0.Location = new System.Drawing.Point(136, 97);
+            this.nextProductionFamily_0.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.nextProductionFamily_0.Maximum = new decimal(new int[] {
             999,
             0,
             0,
             0});
-            this.nextProductionFamily.Name = "nextProductionFamily";
-            this.nextProductionFamily.Size = new System.Drawing.Size(59, 23);
-            this.nextProductionFamily.TabIndex = 141;
-            this.nextProductionFamily.TabStop = false;
-            this.nextProductionFamily.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.nextProductionFamily.ValueChanged += new System.EventHandler(this.nextProductionFamily_ValueChanged);
+            this.nextProductionFamily_0.Name = "nextProductionFamily_0";
+            this.nextProductionFamily_0.Size = new System.Drawing.Size(59, 23);
+            this.nextProductionFamily_0.TabIndex = 141;
+            this.nextProductionFamily_0.TabStop = false;
+            this.nextProductionFamily_0.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.nextProductionFamily_0.ValueChanged += new System.EventHandler(this.nextProductionFamily_0_ValueChanged);
             // 
             // idLabel
             // 
@@ -880,15 +890,15 @@ namespace SwRebellionEditor
             0});
             this.jediLevelBase.ValueChanged += new System.EventHandler(this.jediLevelBase_ValueChanged);
             // 
-            // label13
+            // jediLevelLabel
             // 
-            this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(7, 380);
-            this.label13.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(57, 15);
-            this.label13.TabIndex = 0;
-            this.label13.Text = "Jedi Level";
+            this.jediLevelLabel.AutoSize = true;
+            this.jediLevelLabel.Location = new System.Drawing.Point(7, 380);
+            this.jediLevelLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.jediLevelLabel.Name = "jediLevelLabel";
+            this.jediLevelLabel.Size = new System.Drawing.Size(57, 15);
+            this.jediLevelLabel.TabIndex = 0;
+            this.jediLevelLabel.Text = "Jedi Level";
             // 
             // facilityDesignVariance
             // 
@@ -1409,7 +1419,7 @@ namespace SwRebellionEditor
             // gameDataGroupBox
             // 
             this.gameDataGroupBox.Controls.Add(this.encyclopediaDescriptionLabel);
-            this.gameDataGroupBox.Controls.Add(this.label1);
+            this.gameDataGroupBox.Controls.Add(this.baseJediModsLabel);
             this.gameDataGroupBox.Controls.Add(this.canBeCommander);
             this.gameDataGroupBox.Controls.Add(this.encyclopediaDescription);
             this.gameDataGroupBox.Controls.Add(this.leadershipVariance);
@@ -1466,17 +1476,17 @@ namespace SwRebellionEditor
             this.encyclopediaDescriptionLabel.TabIndex = 1127;
             this.encyclopediaDescriptionLabel.Text = "Encyclopedia Description";
             // 
-            // label1
+            // baseJediModsLabel
             // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Silver;
-            this.label1.Enabled = false;
-            this.label1.Location = new System.Drawing.Point(232, 135);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(98, 15);
-            this.label1.TabIndex = 139;
-            this.label1.Text = "Base + Jedi mods";
+            this.baseJediModsLabel.AutoSize = true;
+            this.baseJediModsLabel.BackColor = System.Drawing.Color.Silver;
+            this.baseJediModsLabel.Enabled = false;
+            this.baseJediModsLabel.Location = new System.Drawing.Point(232, 135);
+            this.baseJediModsLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.baseJediModsLabel.Name = "baseJediModsLabel";
+            this.baseJediModsLabel.Size = new System.Drawing.Size(98, 15);
+            this.baseJediModsLabel.TabIndex = 139;
+            this.baseJediModsLabel.Text = "Base + Jedi mods";
             // 
             // leadershipVariance
             // 
@@ -1573,16 +1583,16 @@ namespace SwRebellionEditor
             ((System.ComponentModel.ISupportInitialize)(this.loyaltyBase)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.researchOrder_0)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.loyaltyVariance)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.maintenanceCost_0)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.maintenanceCost)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.refinedMaterialCost_0)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.field7_2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textStraDllId)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.field2_1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.familyId)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.productionFamily)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.productionFamily_0)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.id)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.jediLevelVariance)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nextProductionFamily)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nextProductionFamily_0)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.jediProbability)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.jediLevelBase)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.facilityDesignVariance)).EndInit();
@@ -1621,11 +1631,11 @@ namespace SwRebellionEditor
         private Label researchDifficulty_0Label;
         private NumericUpDown researchOrder_0;
         private Label researchOrder_0Label;
-        private NumericUpDown maintenanceCost_0;
-        private Label maintenanceCost_0Label;
+        private NumericUpDown maintenanceCost;
+        private Label maintenanceCostLabel;
         private NumericUpDown refinedMaterialCost_0;
         private Label refinedMaterialCost_0Label;
-        private Label label1;
+        private Label baseJediModsLabel;
         private Label encyclopediaDescriptionLabel;
     }
 }

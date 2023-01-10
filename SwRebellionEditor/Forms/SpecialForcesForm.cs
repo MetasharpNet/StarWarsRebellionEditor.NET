@@ -10,6 +10,7 @@
             GameFile = DatFile.Load<SPECFCSD>(GameFilePath);
             InitializeComponent();
             InitializeBaseComponent(selector);
+            selector.Maximum = (int)GameFile.SpecialForcesCount - 1;
         }
 
         #endregion
@@ -19,11 +20,11 @@
         protected override void DisplayGameItemsImages()
         {
             specialForcesListView.Sorting = SortOrder.None;
-            SpecialForcesImageList.Images.Clear();
+            specialForcesImages.Images.Clear();
             for (int selectorIndex = 0; selectorIndex < GameFile.SpecialForcesCount; ++selectorIndex)
             {
                 var edataId = 25 + selectorIndex;
-                SpecialForcesImageList.Images.Add(Image.FromFile(RegistryKeys.InstalledLocation + "\\EData\\EDATA." + edataId.ToString("000")));
+                specialForcesImages.Images.Add(Image.FromFile(RegistryKeys.InstalledLocation + "\\EData\\EDATA." + edataId.ToString("000")));
                 specialForcesListView.Items.Add(GameFile.SpecialForces[selectorIndex].Name, selectorIndex);
             }
         }
@@ -33,34 +34,38 @@
             var specialForce = GameFile.SpecialForces[selectorIndex];
             combatBase.Value = specialForce.CombatBase;
             combatVariance.Value = specialForce.CombatVariance;
-            constructionCost.Value = specialForce.RefinedMaterialCost;
             diplomacyBase.Value = specialForce.DiplomacyBase;
             diplomacyVariance.Value = specialForce.DiplomacyVariance;
-            name.Text = specialForce.Name;
+            encyclopediaDescription.Text = specialForce.EncyclopediaDescription;
             espionageBase.Value = specialForce.EspionageBase;
             espionageVariance.Value = specialForce.EspionageVariance;
-            facilitiesResearchBase.Value = specialForce.FacilitiesResearchBase;
-            facilitiesResearchVariance.Value = specialForce.FacilitiesResearchVariance;
+            facilityDesignBase_0.Value = specialForce.FacilityDesignBase_0;
+            facilityDesignVariance_0.Value = specialForce.FacilityDesignVariance_0;
             familyId.Value = specialForce.FamilyId;
             familyIdHexLabel.Text = "0x" + specialForce.FamilyId.ToString("X");
-            isAllianceUnit.Checked = specialForce.IsAlliance > 0U;
-            isEmpireUnit.Checked = specialForce.IsEmpire > 0U;
+            field2_1.Value = specialForce.Field2_1;
+            field7_2.Value = specialForce.Field7_2;
+            id.Value = specialForce.Id;
+            idHexLabel.Text = "0x" + specialForce.Id.ToString("X");
+            isAlliance.Checked = specialForce.IsAlliance > 0U;
+            isEmpire.Checked = specialForce.IsEmpire > 0U;
+            leadershipBase.Value = specialForce.LeadershipBase;
+            leadershipVariance.Value = specialForce.LeadershipVariance;
             loyaltyBase.Value = specialForce.LoyaltyBase;
             loyaltyVariance.Value = specialForce.LoyaltyVariance;
             maintenanceCost.Value = specialForce.MaintenanceCost;
             missionId.Value = specialForce.MissionId;
+            name.Text = specialForce.Name;
             nextProductionFamily.Value = specialForce.NextProductionFamily;
             productionFamily.Value = specialForce.ProductionFamily;
-            researchDifficulty.Value = specialForce.ResearchDifficulty;
-            researchOrder.Value = specialForce.ResearchOrder;
-            shipsResearchBase.Value = specialForce.ShipsResearchBase;
-            shipsResearchVariance.Value = specialForce.ShipsResearchVariance;
-            specialForceId.Value = specialForce.Id;
-            specialForceIdHexLabel.Text = "0x" + specialForce.Id.ToString("X");
+            refinedMaterialCost.Value = specialForce.RefinedMaterialCost;
+            researchDifficulty.Value = specialForce.ResearchDifficulty_0;
+            researchOrder_0.Value = specialForce.ResearchOrder_0;
+            shipDesignBase_0.Value = specialForce.ShipDesignBase_0;
+            shipDesignVariance_0.Value = specialForce.ShipDesignVariance_0;
             textStraDllId.Value = specialForce.TextStraDllId;
-            troopsResearchBase.Value = specialForce.TroopsResearchBase;
-            troopsResearchVariance.Value = specialForce.TroopsResearchVariance;
-            unknown2.Value = specialForce.Field7_2;
+            troopTrainingBase_0.Value = specialForce.TroopTrainingBase_0;
+            troopTrainingVariance_0.Value = specialForce.TroopTrainingVariance_0;
 
             picture.SizeMode = PictureBoxSizeMode.Zoom;
             var edataId = 25 + selectorIndex;
@@ -69,25 +74,19 @@
         }
         protected override void LoadSideInfo()
         {
-            foreach (var sf in GameFile.SpecialForces)
-                sf.Name = TextStra.GetString(sf.TextStraDllId);
+            foreach (var mc in GameFile.SpecialForces)
+                mc.Name = TextStra.GetString(mc.TextStraDllId);
+        }
+        protected override void SaveSideInfo()
+        {
+            TextStra.SaveString(Convert.ToUInt16(textStraDllId.Value), name.Text);
+            //EncyText.SaveString(Convert.ToUInt16(xxx.Value), name.Text);
         }
 
         #endregion
 
         #region Control events
 
-        private void picture_Click(object sender, EventArgs e)
-        {
-            if (specialForcesListView.Items.Count > selector.Value + 1 && selector.Value - 1 >= 0)
-            {
-                specialForcesListView.Items[selector.Value + 1].EnsureVisible();
-                specialForcesListView.Items[selector.Value - 1].EnsureVisible();
-            }
-            else
-                specialForcesListView.Items[selector.Value].EnsureVisible();
-            selector.Select();
-        }
         private void specialForcesListView_DoubleClick(object sender, EventArgs e)
         {
             selector.Value = specialForcesListView.Items.IndexOf(specialForcesListView.FocusedItem);
@@ -98,6 +97,17 @@
         {
             selector.Value = specialForcesListView.Items.IndexOf(specialForcesListView.FocusedItem);
             DisplaySelectedGameObject(selector.Value);
+            selector.Select();
+        }
+        private void picture_Click(object sender, EventArgs e)
+        {
+            if (specialForcesListView.Items.Count > selector.Value + 1 && selector.Value - 1 >= 0)
+            {
+                specialForcesListView.Items[selector.Value + 1].EnsureVisible();
+                specialForcesListView.Items[selector.Value - 1].EnsureVisible();
+            }
+            else
+                specialForcesListView.Items[selector.Value].EnsureVisible();
             selector.Select();
         }
 
@@ -115,11 +125,6 @@
             GameFile.SpecialForces[selector.Value].CombatVariance = (uint)combatVariance.Value;
             GameFile.UnsavedData = true;
         }
-        private void constructionCost_ValueChanged(object sender, EventArgs e)
-        {
-            GameFile.SpecialForces[selector.Value].RefinedMaterialCost = (uint)constructionCost.Value;
-            GameFile.UnsavedData = true;
-        }
         private void diplomacyBase_ValueChanged(object sender, EventArgs e)
         {
             GameFile.SpecialForces[selector.Value].DiplomacyBase = (uint)diplomacyBase.Value;
@@ -128,6 +133,11 @@
         private void diplomacyVariance_ValueChanged(object sender, EventArgs e)
         {
             GameFile.SpecialForces[selector.Value].DiplomacyVariance = (uint)diplomacyVariance.Value;
+            GameFile.UnsavedData = true;
+        }
+        private void encyclopediaDescription_TextChanged(object sender, EventArgs e)
+        {
+            GameFile.SpecialForces[selector.Value].EncyclopediaDescription = encyclopediaDescription.Text;
             GameFile.UnsavedData = true;
         }
         private void espionageBase_ValueChanged(object sender, EventArgs e)
@@ -140,14 +150,14 @@
             GameFile.SpecialForces[selector.Value].EspionageVariance = (uint)espionageVariance.Value;
             GameFile.UnsavedData = true;
         }
-        private void facilitiesResearchBase_ValueChanged(object sender, EventArgs e)
+        private void facilityDesignBase_0_ValueChanged(object sender, EventArgs e)
         {
-            GameFile.SpecialForces[selector.Value].FacilitiesResearchBase = (uint)facilitiesResearchBase.Value;
+            GameFile.SpecialForces[selector.Value].FacilityDesignBase_0 = (uint)facilityDesignBase_0.Value;
             GameFile.UnsavedData = true;
         }
-        private void facilitiesResearchVariance_ValueChanged(object sender, EventArgs e)
+        private void facilityDesignVariance_0_ValueChanged(object sender, EventArgs e)
         {
-            GameFile.SpecialForces[selector.Value].FacilitiesResearchVariance = (uint)facilitiesResearchVariance.Value;
+            GameFile.SpecialForces[selector.Value].FacilityDesignVariance_0 = (uint)facilityDesignVariance_0.Value;
             GameFile.UnsavedData = true;
         }
         private void familyId_ValueChanged(object sender, EventArgs e)
@@ -155,14 +165,39 @@
             GameFile.SpecialForces[selector.Value].FamilyId = (uint)familyId.Value;
             GameFile.UnsavedData = true;
         }
-        private void isAllianceUnit_CheckStateChanged(object sender, EventArgs e)
+        private void field2_1_ValueChanged(object sender, EventArgs e)
         {
-            GameFile.SpecialForces[selector.Value].IsAlliance = !isAllianceUnit.Checked ? 0U : 1U;
+            GameFile.SpecialForces[selector.Value].Field2_1 = (uint)field2_1.Value;
             GameFile.UnsavedData = true;
         }
-        private void isEmpireUnit_CheckStateChanged(object sender, EventArgs e)
+        private void field7_2_ValueChanged(object sender, EventArgs e)
         {
-            GameFile.SpecialForces[selector.Value].IsEmpire = !isEmpireUnit.Checked ? 0U : 1U;
+            GameFile.SpecialForces[selector.Value].Field7_2 = (ushort)field7_2.Value;
+            GameFile.UnsavedData = true;
+        }
+        private void id_ValueChanged(object sender, EventArgs e)
+        {
+            GameFile.SpecialForces[selector.Value].Id = (uint)id.Value;
+            GameFile.UnsavedData = true;
+        }
+        private void isAlliance_CheckStateChanged(object sender, EventArgs e)
+        {
+            GameFile.SpecialForces[selector.Value].IsAlliance = isAlliance.Checked ? 1U : 0U;
+            GameFile.UnsavedData = true;
+        }
+        private void isEmpire_CheckStateChanged(object sender, EventArgs e)
+        {
+            GameFile.SpecialForces[selector.Value].IsEmpire = isEmpire.Checked ? 1U : 0U;
+            GameFile.UnsavedData = true;
+        }
+        private void leadershipBase_ValueChanged(object sender, EventArgs e)
+        {
+            GameFile.SpecialForces[selector.Value].LeadershipBase = (uint)leadershipBase.Value;
+            GameFile.UnsavedData = true;
+        }
+        private void leadershipVariance_ValueChanged(object sender, EventArgs e)
+        {
+            GameFile.SpecialForces[selector.Value].LeadershipVariance = (uint)leadershipVariance.Value;
             GameFile.UnsavedData = true;
         }
         private void loyaltyBase_ValueChanged(object sender, EventArgs e)
@@ -180,6 +215,16 @@
             GameFile.SpecialForces[selector.Value].MaintenanceCost = (uint)maintenanceCost.Value;
             GameFile.UnsavedData = true;
         }
+        private void missionId_ValueChanged(object sender, EventArgs e)
+        {
+            GameFile.SpecialForces[selector.Value].MissionId = (uint)missionId.Value;
+            GameFile.UnsavedData = true;
+        }
+        private void name_TextChanged(object sender, EventArgs e)
+        {
+            GameFile.SpecialForces[selector.Value].Name = name.Text;
+            GameFile.UnsavedData = true;
+        }
         private void nextProductionFamily_ValueChanged(object sender, EventArgs e)
         {
             GameFile.SpecialForces[selector.Value].NextProductionFamily = (uint)nextProductionFamily.Value;
@@ -190,34 +235,44 @@
             GameFile.SpecialForces[selector.Value].ProductionFamily = (uint)productionFamily.Value;
             GameFile.UnsavedData = true;
         }
-        private void researchDifficulty_ValueChanged(object sender, EventArgs e)
+        private void refinedMaterialCost_ValueChanged(object sender, EventArgs e)
         {
-            GameFile.SpecialForces[selector.Value].ResearchDifficulty = (uint)researchDifficulty.Value;
+            GameFile.SpecialForces[selector.Value].RefinedMaterialCost = (uint)refinedMaterialCost.Value;
             GameFile.UnsavedData = true;
         }
-        private void researchOrder_ValueChanged(object sender, EventArgs e)
+        private void researchDifficulty_0_ValueChanged(object sender, EventArgs e)
         {
-            GameFile.SpecialForces[selector.Value].ResearchOrder = (uint)researchOrder.Value;
+            GameFile.SpecialForces[selector.Value].ResearchDifficulty_0 = (uint)researchDifficulty.Value;
             GameFile.UnsavedData = true;
         }
-        private void shipsResearchBase_ValueChanged(object sender, EventArgs e)
+        private void researchOrder_0_ValueChanged(object sender, EventArgs e)
         {
-            GameFile.SpecialForces[selector.Value].ShipsResearchBase = (uint)shipsResearchBase.Value;
+            GameFile.SpecialForces[selector.Value].ResearchOrder_0 = (uint)researchOrder_0.Value;
             GameFile.UnsavedData = true;
         }
-        private void shipsResearchVariance_ValueChanged(object sender, EventArgs e)
+        private void shipDesignBase_0_ValueChanged(object sender, EventArgs e)
         {
-            GameFile.SpecialForces[selector.Value].ShipsResearchVariance = (uint)shipsResearchVariance.Value;
+            GameFile.SpecialForces[selector.Value].ShipDesignBase_0 = (uint)shipDesignBase_0.Value;
             GameFile.UnsavedData = true;
         }
-        private void troopsResearchBase_ValueChanged(object sender, EventArgs e)
+        private void shipDesignVariance_0_ValueChanged(object sender, EventArgs e)
         {
-            GameFile.SpecialForces[selector.Value].TroopsResearchBase = (uint)troopsResearchBase.Value;
+            GameFile.SpecialForces[selector.Value].ShipDesignVariance_0 = (uint)shipDesignVariance_0.Value;
             GameFile.UnsavedData = true;
         }
-        private void troopsResearchVariance_ValueChanged(object sender, EventArgs e)
+        private void textStraDllId_ValueChanged(object sender, EventArgs e)
         {
-            GameFile.SpecialForces[selector.Value].TroopsResearchVariance = (uint)troopsResearchVariance.Value;
+            GameFile.SpecialForces[selector.Value].TextStraDllId = (ushort)textStraDllId.Value;
+            GameFile.UnsavedData = true;
+        }
+        private void troopTrainingBase_0_ValueChanged(object sender, EventArgs e)
+        {
+            GameFile.SpecialForces[selector.Value].TroopTrainingBase_0 = (uint)troopTrainingBase_0.Value;
+            GameFile.UnsavedData = true;
+        }
+        private void troopTrainingVariance_0_ValueChanged(object sender, EventArgs e)
+        {
+            GameFile.SpecialForces[selector.Value].TroopTrainingVariance_0 = (uint)troopTrainingVariance_0.Value;
             GameFile.UnsavedData = true;
         }
 

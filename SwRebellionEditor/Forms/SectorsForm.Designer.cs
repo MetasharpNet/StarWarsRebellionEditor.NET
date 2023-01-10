@@ -17,13 +17,13 @@ namespace SwRebellionEditor
         private Button Cancel;
         private Button Ok;
         private GroupBox inGameDataGroupBox;
-        private Label productionFamilyLabel;
+        private Label productionFamily_0Label;
         private Label field2_1Label;
         private Label idLabel;
         private Label positionLabel;
         private Label galaxySizeLabel;
         private Label familyCommentLabel;
-        private Label nextProductionFamilyLabel;
+        private Label nextProductionFamily_0Label;
         private Label familyIdLabel;
         private Label textStraDllIdLabel;
         private Label field7_2Label;
@@ -80,7 +80,7 @@ namespace SwRebellionEditor
             this.nextProductionFamily_0 = new System.Windows.Forms.NumericUpDown();
             this.productionFamily_0 = new System.Windows.Forms.NumericUpDown();
             this.id = new System.Windows.Forms.NumericUpDown();
-            this.productionFamilyLabel = new System.Windows.Forms.Label();
+            this.productionFamily_0Label = new System.Windows.Forms.Label();
             this.yPosition = new System.Windows.Forms.NumericUpDown();
             this.field2_1Label = new System.Windows.Forms.Label();
             this.field2_1 = new System.Windows.Forms.NumericUpDown();
@@ -89,7 +89,7 @@ namespace SwRebellionEditor
             this.positionLabel = new System.Windows.Forms.Label();
             this.encyclopediaDescription = new System.Windows.Forms.RichTextBox();
             this.familyCommentLabel = new System.Windows.Forms.Label();
-            this.nextProductionFamilyLabel = new System.Windows.Forms.Label();
+            this.nextProductionFamily_0Label = new System.Windows.Forms.Label();
             this.familyIdLabel = new System.Windows.Forms.Label();
             this.textStraDllIdLabel = new System.Windows.Forms.Label();
             this.textStraDllId = new System.Windows.Forms.NumericUpDown();
@@ -302,16 +302,16 @@ namespace SwRebellionEditor
             0});
             this.id.ValueChanged += new System.EventHandler(this.id_ValueChanged);
             // 
-            // productionFamilyLabel
+            // productionFamily_0Label
             // 
-            this.productionFamilyLabel.AutoSize = true;
-            this.productionFamilyLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.productionFamilyLabel.Location = new System.Drawing.Point(10, 71);
-            this.productionFamilyLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.productionFamilyLabel.Name = "productionFamilyLabel";
-            this.productionFamilyLabel.Size = new System.Drawing.Size(104, 15);
-            this.productionFamilyLabel.TabIndex = 12;
-            this.productionFamilyLabel.Text = "Production Family";
+            this.productionFamily_0Label.AutoSize = true;
+            this.productionFamily_0Label.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.productionFamily_0Label.Location = new System.Drawing.Point(10, 71);
+            this.productionFamily_0Label.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.productionFamily_0Label.Name = "productionFamily_0Label";
+            this.productionFamily_0Label.Size = new System.Drawing.Size(104, 15);
+            this.productionFamily_0Label.TabIndex = 12;
+            this.productionFamily_0Label.Text = "Production Family";
             // 
             // yPosition
             // 
@@ -432,16 +432,16 @@ namespace SwRebellionEditor
             this.familyCommentLabel.TabIndex = 158;
             this.familyCommentLabel.Text = "* 144=Core 146=Rim";
             // 
-            // nextProductionFamilyLabel
+            // nextProductionFamily_0Label
             // 
-            this.nextProductionFamilyLabel.AutoSize = true;
-            this.nextProductionFamilyLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.nextProductionFamilyLabel.Location = new System.Drawing.Point(10, 97);
-            this.nextProductionFamilyLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.nextProductionFamilyLabel.Name = "nextProductionFamilyLabel";
-            this.nextProductionFamilyLabel.Size = new System.Drawing.Size(121, 15);
-            this.nextProductionFamilyLabel.TabIndex = 160;
-            this.nextProductionFamilyLabel.Text = "Production Family +1";
+            this.nextProductionFamily_0Label.AutoSize = true;
+            this.nextProductionFamily_0Label.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.nextProductionFamily_0Label.Location = new System.Drawing.Point(10, 97);
+            this.nextProductionFamily_0Label.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.nextProductionFamily_0Label.Name = "nextProductionFamily_0Label";
+            this.nextProductionFamily_0Label.Size = new System.Drawing.Size(121, 15);
+            this.nextProductionFamily_0Label.TabIndex = 160;
+            this.nextProductionFamily_0Label.Text = "Production Family +1";
             // 
             // familyIdLabel
             // 
@@ -605,10 +605,10 @@ namespace SwRebellionEditor
             this.hiddenDataGroupBox.Controls.Add(this.galaxySizeLabel);
             this.hiddenDataGroupBox.Controls.Add(this.field2_1);
             this.hiddenDataGroupBox.Controls.Add(this.secImport);
-            this.hiddenDataGroupBox.Controls.Add(this.nextProductionFamilyLabel);
+            this.hiddenDataGroupBox.Controls.Add(this.nextProductionFamily_0Label);
             this.hiddenDataGroupBox.Controls.Add(this.textStraDllIdLabel);
             this.hiddenDataGroupBox.Controls.Add(this.yPosition);
-            this.hiddenDataGroupBox.Controls.Add(this.productionFamilyLabel);
+            this.hiddenDataGroupBox.Controls.Add(this.productionFamily_0Label);
             this.hiddenDataGroupBox.Controls.Add(this.textStraDllId);
             this.hiddenDataGroupBox.Controls.Add(this.nextProductionFamily_0);
             this.hiddenDataGroupBox.Controls.Add(this.familyIdLabel);

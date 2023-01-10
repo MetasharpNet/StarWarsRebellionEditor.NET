@@ -12,6 +12,7 @@ namespace SwRebellionEditor
             GameFile = DatFile.Load<CAPSHPSD>(GameFilePath);
             InitializeComponent();
             InitializeBaseComponent(selector);
+            selector.Maximum = (int)GameFile.CapitalShipsCount - 1;
         }
 
         #endregion

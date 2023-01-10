@@ -10,6 +10,7 @@
             GameFile = DatFile.Load<FIGHTSD>(GameFilePath);
             InitializeComponent();
             InitializeBaseComponent(selector);
+            selector.Maximum = (int)GameFile.FightersCount - 1;
         }
 
         #endregion

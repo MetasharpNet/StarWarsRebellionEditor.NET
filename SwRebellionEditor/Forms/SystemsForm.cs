@@ -13,6 +13,7 @@
             GameFile = DatFile.Load<SYSTEMSD>(GameFilePath);
             InitializeComponent();
             InitializeBaseComponent(selector);
+            selector.Maximum = (int)GameFile.SystemsCount - 1;
         }
 
         #endregion
@@ -44,9 +45,9 @@
             id.Value = system.Id;
             idHexLabel.Text = "0x" + system.Id.ToString("X");
             name.Text = system.Name;
-            nextProductionFamily.Value = system.NextProductionFamily_0;
+            nextProductionFamily_0.Value = system.NextProductionFamily_0;
             pictureId.Value = system.PictureId;
-            productionFamily.Value = system.ProductionFamily_0;
+            productionFamily_0.Value = system.ProductionFamily_0;
             sectorId.Value = system.SectorId;
             textStraDllId.Value = system.TextStraDllId;
             xPosition.Value = system.XPosition;
@@ -155,9 +156,9 @@
             GameFile.Systems[selector.Value].Name = name.Text;
             GameFile.UnsavedData = true;
         }
-        private void nextProductionFamily_ValueChanged(object sender, EventArgs e)
+        private void nextProductionFamily_0_ValueChanged(object sender, EventArgs e)
         {
-            GameFile.Systems[selector.Value].NextProductionFamily_0 = (uint)nextProductionFamily.Value;
+            GameFile.Systems[selector.Value].NextProductionFamily_0 = (uint)nextProductionFamily_0.Value;
             GameFile.UnsavedData = true;
         }
         private void pictureId_ValueChanged(object sender, EventArgs e)
@@ -165,9 +166,9 @@
             GameFile.Systems[selector.Value].PictureId = (uint)pictureId.Value;
             GameFile.UnsavedData = true;
         }
-        private void productionFamily_ValueChanged(object sender, EventArgs e)
+        private void productionFamily_0_ValueChanged(object sender, EventArgs e)
         {
-            GameFile.Systems[selector.Value].ProductionFamily_0 = (uint)productionFamily.Value;
+            GameFile.Systems[selector.Value].ProductionFamily_0 = (uint)productionFamily_0.Value;
             GameFile.UnsavedData = true;
         }
         private void sectorId_ValueChanged(object sender, EventArgs e)

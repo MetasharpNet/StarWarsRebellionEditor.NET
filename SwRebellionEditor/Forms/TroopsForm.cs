@@ -10,6 +10,7 @@
             GameFile = DatFile.Load<TROOPSD>(GameFilePath);
             InitializeComponent();
             InitializeBaseComponent(selector);
+            selector.Maximum = (int)GameFile.TroopsCount - 1;
         }
 
         #endregion
