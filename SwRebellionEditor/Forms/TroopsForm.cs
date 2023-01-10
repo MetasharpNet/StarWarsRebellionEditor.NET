@@ -38,7 +38,7 @@
             troopId.Value = troop.Id;
             troopIdHexLabel.Text = "0x" + troop.Id.ToString("X");
             unknwown2.Value = troop.Field7_2;
-            unknownMoralHp.Value = troop.UnknownMoralHp;
+            unknownMoralHp.Value = troop.UprisingDefense;
 
             picture.SizeMode = PictureBoxSizeMode.Zoom;
             var edataId = 15 + selectorIndex;
@@ -122,7 +122,7 @@
         }
         private void unknownMoralHp_ValueChanged(object sender, EventArgs e)
         {
-            GameFile.Troops[selector.Value].UnknownMoralHp = (uint)unknownMoralHp.Value;
+            GameFile.Troops[selector.Value].UprisingDefense = (uint)unknownMoralHp.Value;
             GameFile.UnsavedData = true;
         }
 

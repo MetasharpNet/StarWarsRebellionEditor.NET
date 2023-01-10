@@ -24,7 +24,7 @@
         public uint MaintenanceCost;
         public uint ResearchOrder;
         public uint ResearchDifficulty;
-        public uint UnknownMoralHp;
+        public uint UprisingDefense;
         public uint Detection;
         public uint BombardmentDefense;
         public uint AttackStrength;
