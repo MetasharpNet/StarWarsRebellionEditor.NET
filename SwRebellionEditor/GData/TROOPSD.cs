@@ -25,7 +25,7 @@
         public uint ResearchOrder;
         public uint ResearchDifficulty;
         public uint UnknownMoralHp;
-        public uint DetectionRating;
+        public uint Detection;
         public uint BombardmentDefense;
         public uint AttackStrength;
         public uint DefenseStrength;

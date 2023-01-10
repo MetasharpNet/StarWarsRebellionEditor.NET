@@ -77,7 +77,7 @@
         }
         private void detectionRating_ValueChanged(object sender, EventArgs e)
         {
-            GameFile.Troops[selector.Value].DetectionRating = (uint)detectionRating.Value;
+            GameFile.Troops[selector.Value].Detection = (uint)detectionRating.Value;
             GameFile.UnsavedData = true;
         }
         private void familyId_ValueChanged(object sender, EventArgs e)

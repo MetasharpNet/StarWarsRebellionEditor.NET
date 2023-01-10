@@ -25,7 +25,7 @@
         public uint ResearchOrder;
         public uint ResearchDifficulty;
         public uint BombardmentDefense;
-        public uint ProductionRate;
+        public uint ProcessingRate;
         [Ignore]
         public string Name;
         [Ignore]

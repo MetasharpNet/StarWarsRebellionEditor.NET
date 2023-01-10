@@ -241,7 +241,7 @@ namespace SwRebellionEditor
             // 
             this.missionId.BackColor = System.Drawing.SystemColors.Window;
             this.missionId.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.missionId.Location = new System.Drawing.Point(137, 377);
+            this.missionId.Location = new System.Drawing.Point(136, 377);
             this.missionId.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.missionId.Maximum = new decimal(new int[] {
             9999,
@@ -1027,7 +1027,7 @@ namespace SwRebellionEditor
             // 
             // selector
             // 
-            this.selector.LargeChange = 4;
+            this.selector.LargeChange = 1;
             this.selector.Location = new System.Drawing.Point(186, 6);
             this.selector.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.selector.Maximum = 8;

@@ -576,7 +576,7 @@ namespace SwRebellionEditor
             // 
             // selector
             // 
-            this.selector.LargeChange = 15;
+            this.selector.LargeChange = 1;
             this.selector.Location = new System.Drawing.Point(220, 66);
             this.selector.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.selector.Maximum = 29;

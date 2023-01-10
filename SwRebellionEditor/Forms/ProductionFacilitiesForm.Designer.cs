@@ -34,8 +34,8 @@ namespace SwRebellionEditor
         private Label researchDifficultyLabel;
         private CheckBox isEmpire;
         private CheckBox isAlliance;
-        private Label productionRateLabel;
-        private NumericUpDown productionRate;
+        private Label processingRateLabel;
+        private NumericUpDown processingRate;
         private Label researchOrderLabel;
         private NumericUpDown researchOrder;
         private PictureBox picture;
@@ -93,8 +93,8 @@ namespace SwRebellionEditor
             this.isEmpire = new System.Windows.Forms.CheckBox();
             this.isAlliance = new System.Windows.Forms.CheckBox();
             this.selector = new System.Windows.Forms.TrackBar();
-            this.productionRateLabel = new System.Windows.Forms.Label();
-            this.productionRate = new System.Windows.Forms.NumericUpDown();
+            this.processingRateLabel = new System.Windows.Forms.Label();
+            this.processingRate = new System.Windows.Forms.NumericUpDown();
             this.researchOrderLabel = new System.Windows.Forms.Label();
             this.researchOrder = new System.Windows.Forms.NumericUpDown();
             this.maintenanceCost = new System.Windows.Forms.NumericUpDown();
@@ -120,7 +120,7 @@ namespace SwRebellionEditor
             ((System.ComponentModel.ISupportInitialize)(this.bombardmentDefense)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.researchDifficulty)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.selector)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.productionRate)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.processingRate)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.researchOrder)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.maintenanceCost)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.refinedMaterialCost)).BeginInit();
@@ -453,35 +453,35 @@ namespace SwRebellionEditor
             this.selector.TabIndex = 75;
             this.selector.ValueChanged += new System.EventHandler(this.GameObjectsSelector_ValueChanged);
             // 
-            // productionRateLabel
+            // processingRateLabel
             // 
-            this.productionRateLabel.AutoSize = true;
-            this.productionRateLabel.Location = new System.Drawing.Point(14, 258);
-            this.productionRateLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.productionRateLabel.Name = "productionRateLabel";
-            this.productionRateLabel.Size = new System.Drawing.Size(92, 15);
-            this.productionRateLabel.TabIndex = 65;
-            this.productionRateLabel.Text = "Production Rate";
+            this.processingRateLabel.AutoSize = true;
+            this.processingRateLabel.Location = new System.Drawing.Point(14, 258);
+            this.processingRateLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.processingRateLabel.Name = "processingRateLabel";
+            this.processingRateLabel.Size = new System.Drawing.Size(92, 15);
+            this.processingRateLabel.TabIndex = 65;
+            this.processingRateLabel.Text = "Processing Rate";
             // 
-            // productionRate
+            // processingRate
             // 
-            this.productionRate.Location = new System.Drawing.Point(145, 256);
-            this.productionRate.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.productionRate.Maximum = new decimal(new int[] {
+            this.processingRate.Location = new System.Drawing.Point(145, 256);
+            this.processingRate.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.processingRate.Maximum = new decimal(new int[] {
             9999,
             0,
             0,
             0});
-            this.productionRate.Name = "productionRate";
-            this.productionRate.Size = new System.Drawing.Size(58, 23);
-            this.productionRate.TabIndex = 85;
-            this.productionRate.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.productionRate.Value = new decimal(new int[] {
+            this.processingRate.Name = "processingRate";
+            this.processingRate.Size = new System.Drawing.Size(58, 23);
+            this.processingRate.TabIndex = 85;
+            this.processingRate.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.processingRate.Value = new decimal(new int[] {
             9999,
             0,
             0,
             0});
-            this.productionRate.ValueChanged += new System.EventHandler(this.productionRate_ValueChanged);
+            this.processingRate.ValueChanged += new System.EventHandler(this.processingRate_ValueChanged);
             // 
             // researchOrderLabel
             // 
@@ -579,8 +579,8 @@ namespace SwRebellionEditor
             // 
             this.hiddenDataGroupBox.Controls.Add(this.field7_2Label);
             this.hiddenDataGroupBox.Controls.Add(this.field7_2);
-            this.hiddenDataGroupBox.Controls.Add(this.productionRateLabel);
-            this.hiddenDataGroupBox.Controls.Add(this.productionRate);
+            this.hiddenDataGroupBox.Controls.Add(this.processingRateLabel);
+            this.hiddenDataGroupBox.Controls.Add(this.processingRate);
             this.hiddenDataGroupBox.Controls.Add(this.familyIdHexLabel);
             this.hiddenDataGroupBox.Controls.Add(this.researchOrderLabel);
             this.hiddenDataGroupBox.Controls.Add(this.id);
@@ -785,7 +785,7 @@ namespace SwRebellionEditor
             ((System.ComponentModel.ISupportInitialize)(this.bombardmentDefense)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.researchDifficulty)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.selector)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.productionRate)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.processingRate)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.researchOrder)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.maintenanceCost)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.refinedMaterialCost)).EndInit();

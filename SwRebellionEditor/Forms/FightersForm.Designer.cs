@@ -1819,7 +1819,7 @@ namespace SwRebellionEditor
             // 
             // selector
             // 
-            this.selector.LargeChange = 4;
+            this.selector.LargeChange = 1;
             this.selector.Location = new System.Drawing.Point(246, 27);
             this.selector.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.selector.Maximum = 7;

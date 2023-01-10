@@ -35,7 +35,7 @@
             name.Text = productionFacility.Name;
             nextProductionFamily.Value = productionFacility.NextProductionFamily;
             this.productionFamily.Value = productionFacility.ProductionFamily;
-            productionRate.Value = productionFacility.ProductionRate;
+            processingRate.Value = productionFacility.ProcessingRate;
             refinedMaterialCost.Value = productionFacility.RefinedMaterialCost;
             researchDifficulty.Value = productionFacility.ResearchDifficulty;
             researchOrder.Value = productionFacility.ResearchOrder;
@@ -121,9 +121,9 @@
             GameFile.ProductionFacilities[selector.Value].ProductionFamily = (uint)productionFamily.Value;
             GameFile.UnsavedData = true;
         }
-        private void productionRate_ValueChanged(object sender, EventArgs e)
+        private void processingRate_ValueChanged(object sender, EventArgs e)
         {
-            GameFile.ProductionFacilities[selector.Value].ProductionRate = (uint)productionRate.Value;
+            GameFile.ProductionFacilities[selector.Value].ProcessingRate = (uint)processingRate.Value;
             GameFile.UnsavedData = true;
         }
         private void refinedMaterialCost_ValueChanged(object sender, EventArgs e)

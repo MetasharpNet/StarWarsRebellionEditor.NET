@@ -73,7 +73,7 @@ namespace SwRebellionEditor
             this.researchDifficultyLabel = new System.Windows.Forms.Label();
             this.researchOrderLabel = new System.Windows.Forms.Label();
             this.researchOrder = new System.Windows.Forms.NumericUpDown();
-            this.productionRate = new System.Windows.Forms.NumericUpDown();
+            this.processingRate = new System.Windows.Forms.NumericUpDown();
             this.DetectionLabel = new System.Windows.Forms.Label();
             this.hiddenDataGroupBox = new System.Windows.Forms.GroupBox();
             this.field7_2 = new System.Windows.Forms.NumericUpDown();
@@ -100,7 +100,7 @@ namespace SwRebellionEditor
             ((System.ComponentModel.ISupportInitialize)(this.picture)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.researchDifficulty)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.researchOrder)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.productionRate)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.processingRate)).BeginInit();
             this.hiddenDataGroupBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.field7_2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.id)).BeginInit();
@@ -226,7 +226,7 @@ namespace SwRebellionEditor
             // 
             // selector
             // 
-            this.selector.LargeChange = 3;
+            this.selector.LargeChange = 1;
             this.selector.Location = new System.Drawing.Point(13, 12);
             this.selector.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.selector.Maximum = 5;
@@ -410,25 +410,25 @@ namespace SwRebellionEditor
             0});
             this.researchOrder.ValueChanged += new System.EventHandler(this.researchOrder_ValueChanged);
             // 
-            // productionRate
+            // processingRate
             // 
-            this.productionRate.Location = new System.Drawing.Point(143, 256);
-            this.productionRate.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.productionRate.Maximum = new decimal(new int[] {
+            this.processingRate.Location = new System.Drawing.Point(143, 256);
+            this.processingRate.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.processingRate.Maximum = new decimal(new int[] {
             9999,
             0,
             0,
             0});
-            this.productionRate.Name = "productionRate";
-            this.productionRate.Size = new System.Drawing.Size(58, 23);
-            this.productionRate.TabIndex = 47;
-            this.productionRate.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.productionRate.Value = new decimal(new int[] {
+            this.processingRate.Name = "processingRate";
+            this.processingRate.Size = new System.Drawing.Size(58, 23);
+            this.processingRate.TabIndex = 47;
+            this.processingRate.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.processingRate.Value = new decimal(new int[] {
             9999,
             0,
             0,
             0});
-            this.productionRate.ValueChanged += new System.EventHandler(this.productionRate_ValueChanged);
+            this.processingRate.ValueChanged += new System.EventHandler(this.processingRate_ValueChanged);
             // 
             // DetectionLabel
             // 
@@ -438,7 +438,7 @@ namespace SwRebellionEditor
             this.DetectionLabel.Name = "DetectionLabel";
             this.DetectionLabel.Size = new System.Drawing.Size(92, 15);
             this.DetectionLabel.TabIndex = 27;
-            this.DetectionLabel.Text = "Production Rate";
+            this.DetectionLabel.Text = "Processing Rate";
             // 
             // hiddenDataGroupBox
             // 
@@ -446,7 +446,7 @@ namespace SwRebellionEditor
             this.hiddenDataGroupBox.Controls.Add(this.field7_2Label);
             this.hiddenDataGroupBox.Controls.Add(this.DetectionLabel);
             this.hiddenDataGroupBox.Controls.Add(this.researchOrder);
-            this.hiddenDataGroupBox.Controls.Add(this.productionRate);
+            this.hiddenDataGroupBox.Controls.Add(this.processingRate);
             this.hiddenDataGroupBox.Controls.Add(this.familyIdHexLabel);
             this.hiddenDataGroupBox.Controls.Add(this.researchOrderLabel);
             this.hiddenDataGroupBox.Controls.Add(this.idHexLabel);
@@ -764,7 +764,7 @@ namespace SwRebellionEditor
             ((System.ComponentModel.ISupportInitialize)(this.picture)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.researchDifficulty)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.researchOrder)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.productionRate)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.processingRate)).EndInit();
             this.hiddenDataGroupBox.ResumeLayout(false);
             this.hiddenDataGroupBox.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.field7_2)).EndInit();
@@ -785,7 +785,7 @@ namespace SwRebellionEditor
         private Label researchDifficultyLabel;
         private Label researchOrderLabel;
         private NumericUpDown researchOrder;
-        private NumericUpDown productionRate;
+        private NumericUpDown processingRate;
         private Label DetectionLabel;
         private GroupBox hiddenDataGroupBox;
         private NumericUpDown field7_2;
