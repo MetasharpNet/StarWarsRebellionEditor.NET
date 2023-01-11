@@ -52,6 +52,12 @@
         [Ignore]
         public string Name;
         [Ignore]
+        public string AdmiralName;
+        [Ignore]
+        public string CommanderName;
+        [Ignore]
+        public string GeneralName;
+        [Ignore]
         public string EncyclopediaDescription;
     }
 }
