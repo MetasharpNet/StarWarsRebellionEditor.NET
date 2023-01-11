@@ -1,9 +1,8 @@
-﻿namespace SwRebellionEditor
+﻿namespace SwRebellionEditor;
+
+public class ProductionFacilitiesDesignForm : GameObjectsListForm<PROFACSD>
 {
-    public class ProductionFacilitiesDesignForm : GameObjectsListForm<PROFACSD>
+    public ProductionFacilitiesDesignForm()
     {
-        public ProductionFacilitiesDesignForm()
-        {
-        }
     }
 }

@@ -1,9 +1,8 @@
-﻿namespace SwRebellionEditor
+﻿namespace SwRebellionEditor;
+
+public class GeneralParametersTablesDesignForm : GameObjectsListForm<GNPRTB>
 {
-    public class GeneralParametersTablesDesignForm : GameObjectsListForm<GNPRTB>
+    public GeneralParametersTablesDesignForm()
     {
-        public GeneralParametersTablesDesignForm()
-        {
-        }
     }
 }

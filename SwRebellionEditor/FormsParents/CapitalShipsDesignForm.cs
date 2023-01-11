@@ -1,9 +1,8 @@
-﻿namespace SwRebellionEditor
+﻿namespace SwRebellionEditor;
+
+public class CapitalShipsDesignForm : GameObjectsListForm<CAPSHPSD>
 {
-    public class CapitalShipsDesignForm : GameObjectsListForm<CAPSHPSD>
+    public CapitalShipsDesignForm()
     {
-        public CapitalShipsDesignForm()
-        {
-        }
     }
 }

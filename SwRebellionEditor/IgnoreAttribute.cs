@@ -1,6 +1,5 @@
-﻿namespace SwRebellionEditor
+﻿namespace SwRebellionEditor;
+
+public class IgnoreAttribute : Attribute
 {
-    public class IgnoreAttribute : Attribute
-    {
-    }
 }

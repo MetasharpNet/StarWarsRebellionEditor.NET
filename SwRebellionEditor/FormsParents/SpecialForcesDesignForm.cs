@@ -1,9 +1,8 @@
-﻿namespace SwRebellionEditor
+﻿namespace SwRebellionEditor;
+
+public class SpecialForcesDesignForm : GameObjectsListForm<SPECFCSD>
 {
-    public class SpecialForcesDesignForm : GameObjectsListForm<SPECFCSD>
+    public SpecialForcesDesignForm()
     {
-        public SpecialForcesDesignForm()
-        {
-        }
     }
 }

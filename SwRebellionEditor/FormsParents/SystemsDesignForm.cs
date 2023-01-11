@@ -1,9 +1,8 @@
-﻿namespace SwRebellionEditor
+﻿namespace SwRebellionEditor;
+
+public class SystemsDesignForm : GameObjectsListForm<SYSTEMSD>
 {
-    public class SystemsDesignForm : GameObjectsListForm<SYSTEMSD>
+    public SystemsDesignForm()
     {
-        public SystemsDesignForm()
-        {
-        }
     }
 }

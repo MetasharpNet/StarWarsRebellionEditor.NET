@@ -169,6 +169,26 @@ namespace SwRebellionEditor {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap galaxy_16x16_bmp {
+            get {
+                object obj = ResourceManager.GetObject("galaxy_16x16_bmp", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Icon semblable à (Icône).
+        /// </summary>
+        internal static System.Drawing.Icon galaxy_16x16_ico {
+            get {
+                object obj = ResourceManager.GetObject("galaxy_16x16_ico", resourceCulture);
+                return ((System.Drawing.Icon)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap galaxy_640x480_bmp {
             get {
                 object obj = ResourceManager.GetObject("galaxy_640x480_bmp", resourceCulture);

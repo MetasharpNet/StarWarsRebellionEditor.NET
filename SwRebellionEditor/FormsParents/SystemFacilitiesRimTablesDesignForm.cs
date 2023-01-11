@@ -1,9 +1,8 @@
-﻿namespace SwRebellionEditor
+﻿namespace SwRebellionEditor;
+
+public class SystemFacilitiesRimTablesDesignForm : GameObjectsListForm<SYFCRMTB>
 {
-    public class SystemFacilitiesRimTablesDesignForm : GameObjectsListForm<SYFCRMTB>
+    public SystemFacilitiesRimTablesDesignForm()
     {
-        public SystemFacilitiesRimTablesDesignForm()
-        {
-        }
     }
 }

@@ -215,7 +215,7 @@ namespace SwRebellionEditor
             // Exit_ToolStripMenuItem
             // 
             this.Exit_ToolStripMenuItem.Name = "Exit_ToolStripMenuItem";
-            this.Exit_ToolStripMenuItem.Size = new System.Drawing.Size(93, 22);
+            this.Exit_ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.Exit_ToolStripMenuItem.Text = "Exit";
             this.Exit_ToolStripMenuItem.Click += new System.EventHandler(this.Exit_ToolsStripMenuItem_Click);
             // 
@@ -237,7 +237,7 @@ namespace SwRebellionEditor
             this.DisplayToolBar_ToolStripMenuItem.CheckOnClick = true;
             this.DisplayToolBar_ToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Checked;
             this.DisplayToolBar_ToolStripMenuItem.Name = "DisplayToolBar_ToolStripMenuItem";
-            this.DisplayToolBar_ToolStripMenuItem.Size = new System.Drawing.Size(167, 22);
+            this.DisplayToolBar_ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.DisplayToolBar_ToolStripMenuItem.Text = "Display Toolbar";
             this.DisplayToolBar_ToolStripMenuItem.Click += new System.EventHandler(this.DisplayToolBar_ToolStripMenuItem_Click);
             // 
@@ -247,21 +247,21 @@ namespace SwRebellionEditor
             this.DisplayStatusBar_ToolStripMenuItem.CheckOnClick = true;
             this.DisplayStatusBar_ToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Checked;
             this.DisplayStatusBar_ToolStripMenuItem.Name = "DisplayStatusBar_ToolStripMenuItem";
-            this.DisplayStatusBar_ToolStripMenuItem.Size = new System.Drawing.Size(167, 22);
+            this.DisplayStatusBar_ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.DisplayStatusBar_ToolStripMenuItem.Text = "Display Status Bar";
             this.DisplayStatusBar_ToolStripMenuItem.Click += new System.EventHandler(this.DisplayStatusBar_ToolStripMenuItem_Click);
             // 
             // PlayMusic_ToolStripMenuItem
             // 
             this.PlayMusic_ToolStripMenuItem.Name = "PlayMusic_ToolStripMenuItem";
-            this.PlayMusic_ToolStripMenuItem.Size = new System.Drawing.Size(167, 22);
+            this.PlayMusic_ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.PlayMusic_ToolStripMenuItem.Text = "Play Music";
             this.PlayMusic_ToolStripMenuItem.Click += new System.EventHandler(this.PlayMusic_ToolStripMenuItem_Click);
             // 
             // PlaySounds_ToolStripMenuItem
             // 
             this.PlaySounds_ToolStripMenuItem.Name = "PlaySounds_ToolStripMenuItem";
-            this.PlaySounds_ToolStripMenuItem.Size = new System.Drawing.Size(167, 22);
+            this.PlaySounds_ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.PlaySounds_ToolStripMenuItem.Text = "Play Sounds";
             this.PlaySounds_ToolStripMenuItem.Click += new System.EventHandler(this.PlaySounds_ToolStripMenuItem_Click);
             // 
@@ -283,14 +283,14 @@ namespace SwRebellionEditor
             this.mapToolStripMenuItem,
             this.Sectors_ToolStripMenuItem,
             this.Systems_ToolStripMenuItem});
-            this.Galaxy_ToolStripMenuItem.Image = global::SwRebellionEditor.Resources.sector_16x16_bmp;
+            this.Galaxy_ToolStripMenuItem.Image = global::SwRebellionEditor.Resources.galaxy_16x16_bmp;
             this.Galaxy_ToolStripMenuItem.Name = "Galaxy_ToolStripMenuItem";
             this.Galaxy_ToolStripMenuItem.Size = new System.Drawing.Size(191, 22);
             this.Galaxy_ToolStripMenuItem.Text = "Galaxy";
             // 
             // mapToolStripMenuItem
             // 
-            this.mapToolStripMenuItem.Image = global::SwRebellionEditor.Resources.sector_16x16_bmp;
+            this.mapToolStripMenuItem.Image = global::SwRebellionEditor.Resources.galaxy_16x16_bmp;
             this.mapToolStripMenuItem.Name = "mapToolStripMenuItem";
             this.mapToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.mapToolStripMenuItem.Text = "Map";
@@ -517,35 +517,35 @@ namespace SwRebellionEditor
             // Cascade_ToolStripMenuItem
             // 
             this.Cascade_ToolStripMenuItem.Name = "Cascade_ToolStripMenuItem";
-            this.Cascade_ToolStripMenuItem.Size = new System.Drawing.Size(150, 22);
+            this.Cascade_ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.Cascade_ToolStripMenuItem.Text = "Cascade";
             this.Cascade_ToolStripMenuItem.Click += new System.EventHandler(this.Cascade_ToolStripMenuItem_Click);
             // 
             // TileVertical_ToolStripMenuItem
             // 
             this.TileVertical_ToolStripMenuItem.Name = "TileVertical_ToolStripMenuItem";
-            this.TileVertical_ToolStripMenuItem.Size = new System.Drawing.Size(150, 22);
+            this.TileVertical_ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.TileVertical_ToolStripMenuItem.Text = "Tile Vertical";
             this.TileVertical_ToolStripMenuItem.Click += new System.EventHandler(this.TileVertical_ToolStripMenuItem_Click);
             // 
             // TileHorizontal_ToolStripMenuItem
             // 
             this.TileHorizontal_ToolStripMenuItem.Name = "TileHorizontal_ToolStripMenuItem";
-            this.TileHorizontal_ToolStripMenuItem.Size = new System.Drawing.Size(150, 22);
+            this.TileHorizontal_ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.TileHorizontal_ToolStripMenuItem.Text = "Tile Horizontal";
             this.TileHorizontal_ToolStripMenuItem.Click += new System.EventHandler(this.TileHorizontal_ToolStripMenuItem_Click);
             // 
             // CloseAll_ToolStripMenuItem
             // 
             this.CloseAll_ToolStripMenuItem.Name = "CloseAll_ToolStripMenuItem";
-            this.CloseAll_ToolStripMenuItem.Size = new System.Drawing.Size(150, 22);
+            this.CloseAll_ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.CloseAll_ToolStripMenuItem.Text = "Close All";
             this.CloseAll_ToolStripMenuItem.Click += new System.EventHandler(this.CloseAll_ToolStripMenuItem_Click);
             // 
             // ArrangeIcons_ToolStripMenuItem
             // 
             this.ArrangeIcons_ToolStripMenuItem.Name = "ArrangeIcons_ToolStripMenuItem";
-            this.ArrangeIcons_ToolStripMenuItem.Size = new System.Drawing.Size(150, 22);
+            this.ArrangeIcons_ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.ArrangeIcons_ToolStripMenuItem.Text = "Arrange Icons";
             this.ArrangeIcons_ToolStripMenuItem.Click += new System.EventHandler(this.ArrangeIcons_ToolStripMenuItem_Click);
             // 
@@ -559,7 +559,7 @@ namespace SwRebellionEditor
             this.RestoreDefaults_ToolStripMenuItem,
             this.RestorePreviousSave_ToolStripMenuItem});
             this.Options_ToolStripMenuItem.Name = "Options_ToolStripMenuItem";
-            this.Options_ToolStripMenuItem.Size = new System.Drawing.Size(150, 22);
+            this.Options_ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.Options_ToolStripMenuItem.Text = "Options";
             // 
             // Size1280x1024_ToolStripMenuItem
@@ -840,7 +840,7 @@ namespace SwRebellionEditor
             // galaxyMapButton
             // 
             this.galaxyMapButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.galaxyMapButton.Image = global::SwRebellionEditor.Resources.sector_16x16_bmp;
+            this.galaxyMapButton.Image = global::SwRebellionEditor.Resources.galaxy_16x16_bmp;
             this.galaxyMapButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.galaxyMapButton.Name = "galaxyMapButton";
             this.galaxyMapButton.Size = new System.Drawing.Size(23, 22);

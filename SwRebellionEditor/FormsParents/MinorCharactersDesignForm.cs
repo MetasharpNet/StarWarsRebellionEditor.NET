@@ -1,9 +1,8 @@
-﻿namespace SwRebellionEditor
+﻿namespace SwRebellionEditor;
+
+public class MinorCharactersDesignForm : GameObjectsListForm<MNCHARSD>
 {
-    public class MinorCharactersDesignForm : GameObjectsListForm<MNCHARSD>
+    public MinorCharactersDesignForm()
     {
-        public MinorCharactersDesignForm()
-        {
-        }
     }
 }

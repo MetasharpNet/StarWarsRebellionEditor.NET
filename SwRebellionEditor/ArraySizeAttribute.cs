@@ -1,12 +1,11 @@
-﻿namespace SwRebellionEditor
-{
-    public class ArraySizeAttribute : Attribute
-    {
-        public int Id;
+﻿namespace SwRebellionEditor;
 
-        public ArraySizeAttribute(int id = 0)
-        {
-            Id = id;
-        }
+public class ArraySizeAttribute : Attribute
+{
+    public int Id;
+
+    public ArraySizeAttribute(int id = 0)
+    {
+        Id = id;
     }
 }

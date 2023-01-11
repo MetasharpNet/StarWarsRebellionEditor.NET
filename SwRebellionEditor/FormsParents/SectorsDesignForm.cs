@@ -1,9 +1,8 @@
-﻿namespace SwRebellionEditor
+﻿namespace SwRebellionEditor;
+
+public class SectorsDesignForm : GameObjectsListForm<SECTORSD>
 {
-    public class SectorsDesignForm : GameObjectsListForm<SECTORSD>
+    public SectorsDesignForm()
     {
-        public SectorsDesignForm()
-        {
-        }
     }
 }

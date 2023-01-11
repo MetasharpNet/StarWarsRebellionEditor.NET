@@ -1,9 +1,8 @@
-﻿namespace SwRebellionEditor
+﻿namespace SwRebellionEditor;
+
+public class ManufacturingFacilitiesDesignForm : GameObjectsListForm<MANFACSD>
 {
-    public class ManufacturingFacilitiesDesignForm : GameObjectsListForm<MANFACSD>
+    public ManufacturingFacilitiesDesignForm()
     {
-        public ManufacturingFacilitiesDesignForm()
-        {
-        }
     }
 }

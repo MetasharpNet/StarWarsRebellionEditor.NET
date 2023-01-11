@@ -1,9 +1,8 @@
-﻿namespace SwRebellionEditor
+﻿namespace SwRebellionEditor;
+
+public class SystemFacilitiesCoreTablesDesignForm : GameObjectsListForm<SYFCCRTB>
 {
-    public class SystemFacilitiesCoreTablesDesignForm : GameObjectsListForm<SYFCCRTB>
+    public SystemFacilitiesCoreTablesDesignForm()
     {
-        public SystemFacilitiesCoreTablesDesignForm()
-        {
-        }
     }
 }

@@ -1,9 +1,8 @@
-﻿namespace SwRebellionEditor
+﻿namespace SwRebellionEditor;
+
+public class MajorCharactersDesignForm : GameObjectsListForm<MJCHARSD>
 {
-    public class MajorCharactersDesignForm : GameObjectsListForm<MJCHARSD>
+    public MajorCharactersDesignForm()
     {
-        public MajorCharactersDesignForm()
-        {
-        }
     }
 }

@@ -1,9 +1,8 @@
-﻿namespace SwRebellionEditor
+﻿namespace SwRebellionEditor;
+
+public class DefenseFacilitiesDesignForm : GameObjectsListForm<DEFFACSD>
 {
-    public class DefenseFacilitiesDesignForm : GameObjectsListForm<DEFFACSD>
+    public DefenseFacilitiesDesignForm()
     {
-        public DefenseFacilitiesDesignForm()
-        {
-        }
     }
 }

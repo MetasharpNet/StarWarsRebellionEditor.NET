@@ -12,8 +12,6 @@ namespace SwRebellionEditor
         /// Required designer variable.
         /// </summary>
         private System.ComponentModel.IContainer components = null;
-        private Button openNew;
-        private Button SaveAs;
         private Button Cancel;
         private Button Ok;
         private SaveFileDialog saveFileDialog;
@@ -39,8 +37,7 @@ namespace SwRebellionEditor
         /// </summary>
         private void InitializeComponent()
         {
-            this.openNew = new System.Windows.Forms.Button();
-            this.SaveAs = new System.Windows.Forms.Button();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GalaxyMapForm));
             this.Cancel = new System.Windows.Forms.Button();
             this.Ok = new System.Windows.Forms.Button();
             this.saveFileDialog = new System.Windows.Forms.SaveFileDialog();
@@ -51,28 +48,6 @@ namespace SwRebellionEditor
             this.x = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.background)).BeginInit();
             this.SuspendLayout();
-            // 
-            // openNew
-            // 
-            this.openNew.Location = new System.Drawing.Point(316, 794);
-            this.openNew.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.openNew.Name = "openNew";
-            this.openNew.Size = new System.Drawing.Size(88, 27);
-            this.openNew.TabIndex = 22;
-            this.openNew.Text = "Open...";
-            this.openNew.UseVisualStyleBackColor = true;
-            this.openNew.Click += new System.EventHandler(this.Open_Click);
-            // 
-            // SaveAs
-            // 
-            this.SaveAs.Location = new System.Drawing.Point(222, 794);
-            this.SaveAs.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.SaveAs.Name = "SaveAs";
-            this.SaveAs.Size = new System.Drawing.Size(88, 27);
-            this.SaveAs.TabIndex = 21;
-            this.SaveAs.Text = "&SaveAs...";
-            this.SaveAs.UseVisualStyleBackColor = true;
-            this.SaveAs.Click += new System.EventHandler(this.SaveAs_Click);
             // 
             // Cancel
             // 
@@ -160,10 +135,9 @@ namespace SwRebellionEditor
             this.Controls.Add(this.yLabel);
             this.Controls.Add(this.xLabel);
             this.Controls.Add(this.background);
-            this.Controls.Add(this.openNew);
-            this.Controls.Add(this.SaveAs);
             this.Controls.Add(this.Cancel);
             this.Controls.Add(this.Ok);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Name = "GalaxyMapForm";
             this.Text = "Galaxy Map";

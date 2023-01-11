@@ -1,9 +1,8 @@
-﻿namespace SwRebellionEditor
+﻿namespace SwRebellionEditor;
+
+public class FightersDesignForm : GameObjectsListForm<FIGHTSD>
 {
-    public class FightersDesignForm : GameObjectsListForm<FIGHTSD>
+    public FightersDesignForm()
     {
-        public FightersDesignForm()
-        {
-        }
     }
 }

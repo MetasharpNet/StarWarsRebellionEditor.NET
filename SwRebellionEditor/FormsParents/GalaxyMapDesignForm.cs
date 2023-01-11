@@ -1,9 +1,8 @@
-﻿namespace SwRebellionEditor
+﻿namespace SwRebellionEditor;
+
+public class GalaxyMapDesignForm : GameObjectsListForm<SECTORSD>
 {
-    public class GalaxyMapDesignForm : GameObjectsListForm<SECTORSD>
+    public GalaxyMapDesignForm()
     {
-        public GalaxyMapDesignForm()
-        {
-        }
     }
 }

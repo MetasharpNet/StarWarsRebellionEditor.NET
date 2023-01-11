@@ -1,9 +1,8 @@
-﻿namespace SwRebellionEditor
+﻿namespace SwRebellionEditor;
+
+public class TroopsDesignForm : GameObjectsListForm<TROOPSD>
 {
-    public class TroopsDesignForm : GameObjectsListForm<TROOPSD>
+    public TroopsDesignForm()
     {
-        public TroopsDesignForm()
-        {
-        }
     }
 }

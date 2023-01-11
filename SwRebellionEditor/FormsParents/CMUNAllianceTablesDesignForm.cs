@@ -1,9 +1,8 @@
-﻿namespace SwRebellionEditor
+﻿namespace SwRebellionEditor;
+
+public class CMUNAllianceTablesDesignForm : GameObjectsListForm<CMUNALTB>
 {
-    public class CMUNAllianceTablesDesignForm : GameObjectsListForm<CMUNALTB>
+    public CMUNAllianceTablesDesignForm()
     {
-        public CMUNAllianceTablesDesignForm()
-        {
-        }
     }
 }

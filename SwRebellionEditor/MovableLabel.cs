@@ -1,8 +1,4 @@
-﻿using System.Windows.Forms;
-using static System.Windows.Forms.AxHost;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement;
-
-namespace SwRebellionEditor;
+﻿namespace SwRebellionEditor;
 
 public class MovableLabel : Label
 {
@@ -33,7 +29,7 @@ public class MovableLabel : Label
         MouseMove += MovableLabel_MouseMove;
         MouseUp += MovableLabel_MouseUp;
     }
-    private void MovableLabel_MouseDown(object sender, MouseEventArgs e)
+    public void MovableLabel_MouseDown(object sender, MouseEventArgs e)
     {
         if (e.Button == MouseButtons.Left)
         {
@@ -49,7 +45,7 @@ public class MovableLabel : Label
             _yLabel.Text = (base.Location.Y - _hostingPictureBox.Location.Y + _originY).ToString();
         }
     }
-    private void MovableLabel_MouseMove(object sender, MouseEventArgs e)
+    public void MovableLabel_MouseMove(object sender, MouseEventArgs e)
     {
         if (_moving)
         {
@@ -71,10 +67,9 @@ public class MovableLabel : Label
             _yLabel.Text = (base.Location.Y - _hostingPictureBox.Location.Y + _originY).ToString();
         }
     }
-    private void MovableLabel_MouseUp(object? sender, MouseEventArgs e)
+    public void MovableLabel_MouseUp(object? sender, MouseEventArgs e)
     {
         _moving = false;
         base.Cursor = _currentCursor;
     }
-
 }
