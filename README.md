@@ -12,9 +12,8 @@ To buy the game or get free fan mods, check : https://swrebellion.net/
 
 ### Beta Roadmap (current) :
 * Cleanup code on rarely used windows
-* Modify characters names when promoted : Admiral, General or Commander
 * Encyclopedia read/write
-* Galaxy Map to move sectors and systems in sectors
+* Galaxy Map to move sectors and systems in sectors (in progress)
 
 ### Final Roadmap:
 * Identify unknown fields usage
