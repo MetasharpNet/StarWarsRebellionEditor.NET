@@ -177,6 +177,16 @@ namespace SwRebellionEditor {
         }
         
         /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap galaxy_768x788_bmp {
+            get {
+                object obj = ResourceManager.GetObject("galaxy_768x788_bmp", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
         ///   Recherche une ressource localisée de type System.IO.UnmanagedMemoryStream semblable à System.IO.MemoryStream.
         /// </summary>
         internal static System.IO.UnmanagedMemoryStream how_can_i_assist_you_wav {

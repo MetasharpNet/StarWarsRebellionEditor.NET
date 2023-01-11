@@ -633,9 +633,9 @@ namespace SwRebellionEditor
             this.label1.Location = new System.Drawing.Point(182, 268);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(171, 15);
+            this.label1.Size = new System.Drawing.Size(173, 15);
             this.label1.TabIndex = 171;
-            this.label1.Text = "** 1=Small 2=Medium 3=Large";
+            this.label1.Text = "** 1=Standard 2=Large 3=Huge";
             // 
             // SectorsForm
             // 

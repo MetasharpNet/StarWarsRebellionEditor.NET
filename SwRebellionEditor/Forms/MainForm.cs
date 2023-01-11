@@ -215,6 +215,15 @@ namespace SwRebellionEditor
             }
         }
 
+        // Editor - Galaxy Map
+        private void Map_ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Show<GalaxyMapForm>();
+        }
+        private void Map_Button_Click(object sender, EventArgs e)
+        {
+            Show<GalaxyMapForm>();
+        }
         // Editor - Galaxy - Sectors
         private void Sectors_ToolStripMenuItem_Click(object sender, EventArgs e)
         {

@@ -31,6 +31,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Compile Update="FormsParents\GalaxyMapDesignForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\GalaxyMapForm.cs" />
     <Compile Update="Forms\SectorsForm.cs">
       <SubType>Form</SubType>
     </Compile>

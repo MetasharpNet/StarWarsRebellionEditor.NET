@@ -116,6 +116,7 @@ namespace SwRebellionEditor
             this.PlaySounds_ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.Editor_Menu = new System.Windows.Forms.ToolStripMenuItem();
             this.Galaxy_ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.mapToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.Sectors_ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.Systems_ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.CharactersAndTroops_ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -180,6 +181,7 @@ namespace SwRebellionEditor
             this.ManufacturingFacilities_Button = new System.Windows.Forms.ToolStripButton();
             this.ProductionFacilities_Button = new System.Windows.Forms.ToolStripButton();
             this.toolStrip = new System.Windows.Forms.ToolStrip();
+            this.galaxyMapButton = new System.Windows.Forms.ToolStripButton();
             this.menuStrip.SuspendLayout();
             this.statusStrip.SuspendLayout();
             this.toolStrip.SuspendLayout();
@@ -278,6 +280,7 @@ namespace SwRebellionEditor
             // Galaxy_ToolStripMenuItem
             // 
             this.Galaxy_ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.mapToolStripMenuItem,
             this.Sectors_ToolStripMenuItem,
             this.Systems_ToolStripMenuItem});
             this.Galaxy_ToolStripMenuItem.Image = global::SwRebellionEditor.Resources.sector_16x16_bmp;
@@ -285,11 +288,19 @@ namespace SwRebellionEditor
             this.Galaxy_ToolStripMenuItem.Size = new System.Drawing.Size(191, 22);
             this.Galaxy_ToolStripMenuItem.Text = "Galaxy";
             // 
+            // mapToolStripMenuItem
+            // 
+            this.mapToolStripMenuItem.Image = global::SwRebellionEditor.Resources.sector_16x16_bmp;
+            this.mapToolStripMenuItem.Name = "mapToolStripMenuItem";
+            this.mapToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.mapToolStripMenuItem.Text = "Map";
+            this.mapToolStripMenuItem.Click += new System.EventHandler(this.Map_ToolStripMenuItem_Click);
+            // 
             // Sectors_ToolStripMenuItem
             // 
             this.Sectors_ToolStripMenuItem.Image = global::SwRebellionEditor.Resources.sector_16x16_bmp;
             this.Sectors_ToolStripMenuItem.Name = "Sectors_ToolStripMenuItem";
-            this.Sectors_ToolStripMenuItem.Size = new System.Drawing.Size(117, 22);
+            this.Sectors_ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.Sectors_ToolStripMenuItem.Text = "Sectors";
             this.Sectors_ToolStripMenuItem.Click += new System.EventHandler(this.Sectors_ToolStripMenuItem_Click);
             // 
@@ -297,7 +308,7 @@ namespace SwRebellionEditor
             // 
             this.Systems_ToolStripMenuItem.Image = global::SwRebellionEditor.Resources.planet_37x37_bmp;
             this.Systems_ToolStripMenuItem.Name = "Systems_ToolStripMenuItem";
-            this.Systems_ToolStripMenuItem.Size = new System.Drawing.Size(117, 22);
+            this.Systems_ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.Systems_ToolStripMenuItem.Text = "Systems";
             this.Systems_ToolStripMenuItem.Click += new System.EventHandler(this.Systems_ToolStripMenuItem_Click);
             // 
@@ -419,7 +430,7 @@ namespace SwRebellionEditor
             // GeneralParametersTables_ToolStripMenuItem
             // 
             this.GeneralParametersTables_ToolStripMenuItem.Name = "GeneralParametersTables_ToolStripMenuItem";
-            this.GeneralParametersTables_ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.GeneralParametersTables_ToolStripMenuItem.Size = new System.Drawing.Size(177, 22);
             this.GeneralParametersTables_ToolStripMenuItem.Text = "HyperSpace Speeds";
             this.GeneralParametersTables_ToolStripMenuItem.Click += new System.EventHandler(this.GeneralParametersTables_ToolStripMenuItem_Click);
             // 
@@ -429,7 +440,7 @@ namespace SwRebellionEditor
             this.SystemFacilitiesCoreTables_ToolStripMenuItem,
             this.SystemFacilitiesRimTables_ToolStripMenuItem});
             this.ProbabilityTables_ToolStripMenuItem.Name = "ProbabilityTables_ToolStripMenuItem";
-            this.ProbabilityTables_ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.ProbabilityTables_ToolStripMenuItem.Size = new System.Drawing.Size(177, 22);
             this.ProbabilityTables_ToolStripMenuItem.Text = "Probability Tables";
             // 
             // SystemFacilitiesCoreTables_ToolStripMenuItem
@@ -454,14 +465,14 @@ namespace SwRebellionEditor
             this.AllianceHq_ToolStripMenuItem,
             this.CMUNAllianceTables_ToolStripMenuItem});
             this.StartingArmies_ToolStripMenuItem.Name = "StartingArmies_ToolStripMenuItem";
-            this.StartingArmies_ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.StartingArmies_ToolStripMenuItem.Size = new System.Drawing.Size(177, 22);
             this.StartingArmies_ToolStripMenuItem.Text = "Starting Armies";
             // 
             // EmpireHq_ToolStripMenuItem
             // 
             this.EmpireHq_ToolStripMenuItem.Enabled = false;
             this.EmpireHq_ToolStripMenuItem.Name = "EmpireHq_ToolStripMenuItem";
-            this.EmpireHq_ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.EmpireHq_ToolStripMenuItem.Size = new System.Drawing.Size(160, 22);
             this.EmpireHq_ToolStripMenuItem.Text = "Empire HQ Fleet";
             this.EmpireHq_ToolStripMenuItem.ToolTipText = "Starting Fleet on Coruscant";
             // 
@@ -469,7 +480,7 @@ namespace SwRebellionEditor
             // 
             this.CMUNEmpireTables_ToolStripMenuItem.Enabled = false;
             this.CMUNEmpireTables_ToolStripMenuItem.Name = "CMUNEmpireTables_ToolStripMenuItem";
-            this.CMUNEmpireTables_ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.CMUNEmpireTables_ToolStripMenuItem.Size = new System.Drawing.Size(160, 22);
             this.CMUNEmpireTables_ToolStripMenuItem.Text = "Empire Random";
             this.CMUNEmpireTables_ToolStripMenuItem.ToolTipText = "Randomly Generated Empiral Starting Fleet";
             this.CMUNEmpireTables_ToolStripMenuItem.Click += new System.EventHandler(this.CMUNEmpireTables_ToolStripMenuItem_Click);
@@ -478,14 +489,14 @@ namespace SwRebellionEditor
             // 
             this.AllianceHq_ToolStripMenuItem.Enabled = false;
             this.AllianceHq_ToolStripMenuItem.Name = "AllianceHq_ToolStripMenuItem";
-            this.AllianceHq_ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.AllianceHq_ToolStripMenuItem.Size = new System.Drawing.Size(160, 22);
             this.AllianceHq_ToolStripMenuItem.Text = "Rebel HQ";
             this.AllianceHq_ToolStripMenuItem.ToolTipText = "Starting Fleet with Rebel Headquarters";
             // 
             // CMUNAllianceTables_ToolStripMenuItem
             // 
             this.CMUNAllianceTables_ToolStripMenuItem.Name = "CMUNAllianceTables_ToolStripMenuItem";
-            this.CMUNAllianceTables_ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.CMUNAllianceTables_ToolStripMenuItem.Size = new System.Drawing.Size(160, 22);
             this.CMUNAllianceTables_ToolStripMenuItem.Text = "Rebel Random";
             this.CMUNAllianceTables_ToolStripMenuItem.ToolTipText = "Randomly Generated Rebel Starting Fleet";
             this.CMUNAllianceTables_ToolStripMenuItem.Click += new System.EventHandler(this.CMUNAllianceTables_ToolStripMenuItem_Click);
@@ -805,6 +816,7 @@ namespace SwRebellionEditor
             // toolStrip
             // 
             this.toolStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.galaxyMapButton,
             this.Sectors_Button,
             this.Systems_Button,
             this.toolStripSeparator1,
@@ -824,6 +836,15 @@ namespace SwRebellionEditor
             this.toolStrip.Size = new System.Drawing.Size(1008, 25);
             this.toolStrip.TabIndex = 1;
             this.toolStrip.Text = "ToolStrip";
+            // 
+            // galaxyMapButton
+            // 
+            this.galaxyMapButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.galaxyMapButton.Image = global::SwRebellionEditor.Resources.sector_16x16_bmp;
+            this.galaxyMapButton.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.galaxyMapButton.Name = "galaxyMapButton";
+            this.galaxyMapButton.Size = new System.Drawing.Size(23, 22);
+            this.galaxyMapButton.Click += new System.EventHandler(this.Map_Button_Click);
             // 
             // MainForm
             // 
@@ -856,6 +877,9 @@ namespace SwRebellionEditor
             this.PerformLayout();
 
         }
+
+        private ToolStripButton galaxyMapButton;
+        private ToolStripMenuItem mapToolStripMenuItem;
     }
 }
 #endregion
