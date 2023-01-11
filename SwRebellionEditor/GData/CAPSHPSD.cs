@@ -13,9 +13,9 @@
     {
         public uint Id;
         public uint Field2_1; // 1
-        public uint ProductionFamily; // 40
+        public uint ProductionFamily; // 40:orbitalshipyard
         public uint NextProductionFamily; // 41
-        public uint FamilyId; // 20: capitalship, 24: deathstar
+        public uint FamilyId; // 20:capitalship, 24:deathstar
         public ushort TextStraDllId;
         public ushort Field7_2; // 2
         public uint IsAlliance;

@@ -75,7 +75,7 @@ namespace SwRebellionEditor
         public MainForm()
         {
             InitializeComponent();
-            Text = "Star Wars Rebellion Editor .NET " + GetType().Assembly.GetName().Version.ToString() + " alpha";
+            Text = "Star Wars Rebellion Editor .NET " + GetType().Assembly.GetName().Version.ToString() + " beta";
         }
 
         #endregion

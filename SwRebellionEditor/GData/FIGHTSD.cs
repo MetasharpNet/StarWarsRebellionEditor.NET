@@ -24,13 +24,13 @@
         public uint MaintenanceCost;
         public uint ResearchOrder;
         public uint ResearchDifficulty;
-        public uint UnknownMoralHp;
-        public uint DetectionRating;
-        public uint ShieldEnergy;
-        public uint SublightSpeed;
-        public uint SublightManoeuvrability;
-        public uint HyperdrivePrimary;
-        public uint HyperdriveBackup;
+        public uint UprisingDefense; // 0.45 x RefinedMaterialCost
+        public uint Detection;
+        public uint ShieldStrength;
+        public uint SubLightEngine;
+        public uint Maneuverability;
+        public uint Hyperdrive;
+        public uint HyperdriveIfDamaged;
         public uint TurbolaserFore;
         public uint IonCannonFore;
         public uint LaserCannonFore;
@@ -46,12 +46,12 @@
         public uint TurbolaserRange;
         public uint IonCannonRange;
         public uint LaserCannonRange;
-        public uint TurbolaserTotalFirePower;
-        public uint IonCannonTotalFirePower;
-        public uint LaserCannonTotalFirePower;
-        public uint TotalFirePower;
-        public uint TorpedoFore;
-        public uint TorpedoRange;
+        public uint TurbolaserAttackStrength;
+        public uint IonCannonAttackStrength;
+        public uint LaserCannonAttackStrength;
+        public uint OverallAttackStrength;
+        public uint Torpedoes;
+        public uint TorpedoesRange;
         public uint SquadronSize;
         public uint BombardmentDefense;
         [Ignore]

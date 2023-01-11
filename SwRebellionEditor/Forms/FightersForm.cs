@@ -21,51 +21,53 @@
         {
             var previousUnsavedData = GameFile.UnsavedData;
             var fighter = GameFile.Fighters[selectorIndex];
-            bombardmentMod.Value = fighter.BombardmentDefense;
-            constructionCost.Value = fighter.RefinedMaterialCost;
-            detectionRating.Value = fighter.DetectionRating;
-            name.Text = fighter.Name;
+            bombardmentDefense.Value = fighter.BombardmentDefense;
+            detection.Value = fighter.Detection;
+            encyclopediaDescription.Text = fighter.EncyclopediaDescription;
             familyId.Value = fighter.FamilyId;
-            familyIdHexLabel.Text = "0x" + fighter.FamilyId.ToString("X");
-            fighterId.Value = fighter.Id;
-            fighterIdHexLabel.Text = "0x" + fighter.Id.ToString("X");
-            hyperdriveBackup.Value = fighter.HyperdriveBackup;
-            hyperdrivePrimary.Value = fighter.HyperdrivePrimary;
+            familyIdHexLabel.Text = "0x" + fighter.FamilyId.ToString("x");
+            field2_1.Value = fighter.Field2_1;
+            field7_2.Value = fighter.Field7_2;
+            hyperdrive.Value = fighter.Hyperdrive;
+            hyperdriveIfDamaged.Value = fighter.HyperdriveIfDamaged;
+            id.Value = fighter.Id;
+            idHexLabel.Text = "0x" + fighter.Id.ToString("X");
             ionCannonAft.Value = fighter.IonCannonAft;
+            ionCannonAttackStrength.Value = fighter.IonCannonAttackStrength;
             ionCannonFore.Value = fighter.IonCannonFore;
             ionCannonPort.Value = fighter.IonCannonPort;
             ionCannonRange.Value = fighter.IonCannonRange;
-            ionCannonStar.Value = fighter.IonCannonStarboard;
-            ionCannonTotalFirePower.Value = fighter.IonCannonTotalFirePower;
-            isAllianceUnit.Checked = fighter.IsAlliance > 0U;
-            isEmpireUnit.Checked = fighter.IsEmpire > 0U;
+            ionCannonStarboard.Value = fighter.IonCannonStarboard;
+            isAlliance.Checked = fighter.IsAlliance > 0U;
+            isEmpire.Checked = fighter.IsEmpire > 0U;
             laserCannonAft.Value = fighter.LaserCannonAft;
+            laserCannonAttackStrength.Value = fighter.LaserCannonAttackStrength;
             laserCannonFore.Value = fighter.LaserCannonFore;
             laserCannonPort.Value = fighter.LaserCannonPort;
             laserCannonRange.Value = fighter.LaserCannonRange;
-            laserCannonStar.Value = fighter.LaserCannonStarboard;
-            laserCannonTotalFirePower.Value = fighter.LaserCannonTotalFirePower;
+            laserCannonStarboard.Value = fighter.LaserCannonStarboard;
             maintenanceCost.Value = fighter.MaintenanceCost;
+            maneuverability.Value = fighter.Maneuverability;
+            name.Text = fighter.Name;
             nextProductionFamily.Value = fighter.NextProductionFamily;
+            overallAttackStrength.Value = fighter.OverallAttackStrength;
             productionFamily.Value = fighter.ProductionFamily;
+            refinedMaterialCost.Value = fighter.RefinedMaterialCost;
             researchDifficulty.Value = fighter.ResearchDifficulty;
             researchOrder.Value = fighter.ResearchOrder;
-            shieldsMaxCapacity.Value = fighter.ShieldEnergy;
+            shieldStrength.Value = fighter.ShieldStrength;
             squadronSize.Value = fighter.SquadronSize;
-            sublightManoeuvrability.Value = fighter.SublightManoeuvrability;
-            sublightSpeed.Value = fighter.SublightSpeed;
+            subLightEngine.Value = fighter.SubLightEngine;
             textStraDllId.Value = fighter.TextStraDllId;
-            torpedoFore.Value = fighter.TorpedoFore;
-            torpedoRange.Value = fighter.TorpedoRange;
-            totalFirePower.Value = fighter.TotalFirePower;
-            turboLaserAft.Value = fighter.TurbolaserAft;
-            turboLaserFore.Value = fighter.TurbolaserFore;
-            turboLaserPort.Value = fighter.TurbolaserPort;
-            turboLaserRange.Value = fighter.TurbolaserRange;
-            turboLaserStar.Value = fighter.TurbolaserStarboard;
-            turboLaserTotalFirePower.Value = fighter.TurbolaserTotalFirePower;
-            unknown.Value = fighter.Field7_2;
-            unknownMoralHp.Value = fighter.UnknownMoralHp;
+            torpedoes.Value = fighter.Torpedoes;
+            torpedoesRange.Value = fighter.TorpedoesRange;
+            turbolaserAft.Value = fighter.TurbolaserAft;
+            turbolaserAttackStrength.Value = fighter.TurbolaserAttackStrength;
+            turbolaserFore.Value = fighter.TurbolaserFore;
+            turbolaserPort.Value = fighter.TurbolaserPort;
+            turbolaserRange.Value = fighter.TurbolaserRange;
+            turbolaserStarboard.Value = fighter.TurbolaserStarboard;
+            uprisingDefense.Value = fighter.UprisingDefense;
 
             picture.SizeMode = PictureBoxSizeMode.Zoom;
             var edataId = 34 + selectorIndex;
@@ -74,45 +76,51 @@
         }
         protected override void LoadSideInfo()
         {
-            foreach (var f in GameFile.Fighters)
-                f.Name = TextStra.GetString(f.TextStraDllId);
+            foreach (var ship in GameFile.Fighters)
+                ship.Name = TextStra.GetString(ship.TextStraDllId);
+        }
+        protected override void SaveSideInfo()
+        {
+            TextStra.SaveString(Convert.ToUInt16(textStraDllId.Value), name.Text);
+            //EncyText.SaveString(Convert.ToUInt16(xxx.Value), name.Text);
         }
         private void UpdateTotals(int selectorIndex)
         {
             var fighter = GameFile.Fighters[selectorIndex];
 
-            uint turboLaserTotalFirePowerTmp = fighter.TurbolaserFore + fighter.TurbolaserAft + fighter.TurbolaserPort + fighter.TurbolaserStarboard;
-            uint ionCannonTotalFirePowerTmp = fighter.IonCannonFore + fighter.IonCannonAft + fighter.IonCannonPort + fighter.IonCannonStarboard;
-            uint laserCannonTotalFirePowerTmp = fighter.LaserCannonFore + fighter.LaserCannonAft + fighter.LaserCannonPort + fighter.LaserCannonStarboard;
+            uint turboLaserAttackStrengthTmp = fighter.TurbolaserFore + fighter.TurbolaserAft + fighter.TurbolaserPort + fighter.TurbolaserStarboard;
+            uint ionCannonAttackStrengthTmp = fighter.IonCannonFore + fighter.IonCannonAft + fighter.IonCannonPort + fighter.IonCannonStarboard;
+            uint laserCannonAttackStrengthTmp = fighter.LaserCannonFore + fighter.LaserCannonAft + fighter.LaserCannonPort + fighter.LaserCannonStarboard;
 
-            GameFile.Fighters[selector.Value].TurbolaserTotalFirePower = turboLaserTotalFirePowerTmp;
-            GameFile.Fighters[selector.Value].IonCannonTotalFirePower = ionCannonTotalFirePowerTmp;
-            GameFile.Fighters[selector.Value].LaserCannonTotalFirePower = laserCannonTotalFirePowerTmp;
-            GameFile.Fighters[selector.Value].TotalFirePower = turboLaserTotalFirePowerTmp + ionCannonTotalFirePowerTmp + laserCannonTotalFirePowerTmp;
+            GameFile.Fighters[selector.Value].TurbolaserAttackStrength = turboLaserAttackStrengthTmp;
+            GameFile.Fighters[selector.Value].IonCannonAttackStrength = ionCannonAttackStrengthTmp;
+            GameFile.Fighters[selector.Value].LaserCannonAttackStrength = laserCannonAttackStrengthTmp;
+            GameFile.Fighters[selector.Value].OverallAttackStrength = turboLaserAttackStrengthTmp + ionCannonAttackStrengthTmp + laserCannonAttackStrengthTmp;
 
-            turboLaserTotalFirePower.Value = fighter.TurbolaserTotalFirePower;
-            ionCannonTotalFirePower.Value = fighter.IonCannonTotalFirePower;
-            laserCannonTotalFirePower.Value = fighter.LaserCannonTotalFirePower;
-            totalFirePower.Value = fighter.TotalFirePower;
+            turbolaserAttackStrength.Value = fighter.TurbolaserAttackStrength;
+            ionCannonAttackStrength.Value = fighter.IonCannonAttackStrength;
+            laserCannonAttackStrength.Value = fighter.LaserCannonAttackStrength;
+            //torpedoesAttackStrength.Value = fighter.Torpedoes;
+            overallAttackStrength.Value = fighter.OverallAttackStrength;
         }
 
         #endregion
 
         #region Changed events
 
-        private void bombardmentMod_ValueChanged(object sender, EventArgs e)
+        private void bombardmentDefense_ValueChanged(object sender, EventArgs e)
         {
-            GameFile.Fighters[selector.Value].BombardmentDefense = (uint)bombardmentMod.Value;
+            GameFile.Fighters[selector.Value].BombardmentDefense = (uint)bombardmentDefense.Value;
             GameFile.UnsavedData = true;
         }
-        private void constructionCost_ValueChanged(object sender, EventArgs e)
+        private void detection_ValueChanged(object sender, EventArgs e)
         {
-            GameFile.Fighters[selector.Value].RefinedMaterialCost = (uint)constructionCost.Value;
+            GameFile.Fighters[selector.Value].Detection = (uint)detection.Value;
             GameFile.UnsavedData = true;
         }
-        private void detectionRating_ValueChanged(object sender, EventArgs e)
+        private void encyclopediaDescription_TextChanged(object sender, EventArgs e)
         {
-            GameFile.Fighters[selector.Value].DetectionRating = (uint)detectionRating.Value;
+            GameFile.Fighters[selector.Value].EncyclopediaDescription = encyclopediaDescription.Text;
             GameFile.UnsavedData = true;
         }
         private void familyId_ValueChanged(object sender, EventArgs e)
@@ -120,19 +128,40 @@
             GameFile.Fighters[selector.Value].FamilyId = (uint)familyId.Value;
             GameFile.UnsavedData = true;
         }
-        private void hyperdriveBackup_ValueChanged(object sender, EventArgs e)
+        private void field2_1_ValueChanged(object sender, EventArgs e)
         {
-            GameFile.Fighters[selector.Value].HyperdriveBackup = (uint)hyperdriveBackup.Value;
+            GameFile.Fighters[selector.Value].Field2_1 = (ushort)field2_1.Value;
             GameFile.UnsavedData = true;
         }
-        private void hyperdrivePrimary_ValueChanged(object sender, EventArgs e)
+        private void field7_2_ValueChanged(object sender, EventArgs e)
         {
-            GameFile.Fighters[selector.Value].HyperdrivePrimary = (uint)hyperdrivePrimary.Value;
+            GameFile.Fighters[selector.Value].Field7_2 = (ushort)field7_2.Value;
+            GameFile.UnsavedData = true;
+        }
+        private void hyperdrive_ValueChanged(object sender, EventArgs e)
+        {
+            GameFile.Fighters[selector.Value].Hyperdrive = (uint)hyperdrive.Value;
+            GameFile.UnsavedData = true;
+        }
+        private void hyperdriveIfDamaged_ValueChanged(object sender, EventArgs e)
+        {
+            GameFile.Fighters[selector.Value].HyperdriveIfDamaged = (uint)hyperdriveIfDamaged.Value;
+            GameFile.UnsavedData = true;
+        }
+        private void id_ValueChanged(object sender, EventArgs e)
+        {
+            GameFile.Fighters[selector.Value].Id = (uint)id.Value;
             GameFile.UnsavedData = true;
         }
         private void ionCannonAft_ValueChanged(object sender, EventArgs e)
         {
             GameFile.Fighters[selector.Value].IonCannonAft = (uint)ionCannonAft.Value;
+            UpdateTotals(selector.Value);
+            GameFile.UnsavedData = true;
+        }
+        private void ionCannonAttackStrength_ValueChanged(object sender, EventArgs e)
+        {
+            GameFile.Fighters[selector.Value].IonCannonAttackStrength = (uint)ionCannonAttackStrength.Value;
             UpdateTotals(selector.Value);
             GameFile.UnsavedData = true;
         }
@@ -153,25 +182,31 @@
             GameFile.Fighters[selector.Value].IonCannonRange = (uint)ionCannonRange.Value;
             GameFile.UnsavedData = true;
         }
-        private void ionCannonStar_ValueChanged(object sender, EventArgs e)
+        private void ionCannonStarboard_ValueChanged(object sender, EventArgs e)
         {
-            GameFile.Fighters[selector.Value].IonCannonStarboard = (uint)ionCannonStar.Value;
+            GameFile.Fighters[selector.Value].IonCannonStarboard = (uint)ionCannonStarboard.Value;
             UpdateTotals(selector.Value);
             GameFile.UnsavedData = true;
         }
-        private void isEmpireUnit_CheckStateChanged(object sender, EventArgs e)
+        private void isAlliance_CheckedChanged(object sender, EventArgs e)
         {
-            GameFile.Fighters[selector.Value].IsEmpire = isEmpireUnit.Checked ? 1U : 0U;
+            GameFile.Fighters[selector.Value].IsAlliance = isAlliance.Checked ? 1U : 0U;
             GameFile.UnsavedData = true;
         }
-        private void isAllianceUnit_CheckStateChanged(object sender, EventArgs e)
+        private void isEmpire_CheckedChanged(object sender, EventArgs e)
         {
-            GameFile.Fighters[selector.Value].IsAlliance = isAllianceUnit.Checked ? 1U : 0U;
+            GameFile.Fighters[selector.Value].IsEmpire = isEmpire.Checked ? 1U : 0U;
             GameFile.UnsavedData = true;
         }
         private void laserCannonAft_ValueChanged(object sender, EventArgs e)
         {
             GameFile.Fighters[selector.Value].LaserCannonAft = (uint)laserCannonAft.Value;
+            UpdateTotals(selector.Value);
+            GameFile.UnsavedData = true;
+        }
+        private void laserCannonAttackStrength_ValueChanged(object sender, EventArgs e)
+        {
+            GameFile.Fighters[selector.Value].LaserCannonAttackStrength = (uint)laserCannonAttackStrength.Value;
             UpdateTotals(selector.Value);
             GameFile.UnsavedData = true;
         }
@@ -192,9 +227,9 @@
             GameFile.Fighters[selector.Value].LaserCannonRange = (uint)laserCannonRange.Value;
             GameFile.UnsavedData = true;
         }
-        private void laserCannonStar_ValueChanged(object sender, EventArgs e)
+        private void laserCannonStarboard_ValueChanged(object sender, EventArgs e)
         {
-            GameFile.Fighters[selector.Value].LaserCannonStarboard = (uint)laserCannonStar.Value;
+            GameFile.Fighters[selector.Value].LaserCannonStarboard = (uint)laserCannonStarboard.Value;
             UpdateTotals(selector.Value);
             GameFile.UnsavedData = true;
         }
@@ -203,14 +238,34 @@
             GameFile.Fighters[selector.Value].MaintenanceCost = (uint)maintenanceCost.Value;
             GameFile.UnsavedData = true;
         }
+        private void maneuverability_ValueChanged(object sender, EventArgs e)
+        {
+            GameFile.Fighters[selector.Value].Maneuverability = (uint)maneuverability.Value;
+            GameFile.UnsavedData = true;
+        }
+        private void name_TextChanged(object sender, EventArgs e)
+        {
+            GameFile.Fighters[selector.Value].Name = name.Text;
+            GameFile.UnsavedData = true;
+        }
         private void nextProductionFamily_ValueChanged(object sender, EventArgs e)
         {
             GameFile.Fighters[selector.Value].NextProductionFamily = (uint)nextProductionFamily.Value;
             GameFile.UnsavedData = true;
         }
+        private void overallAttackStrength_ValueChanged(object sender, EventArgs e)
+        {
+            GameFile.Fighters[selector.Value].OverallAttackStrength = (uint)overallAttackStrength.Value;
+            GameFile.UnsavedData = true;
+        }
         private void productionFamily_ValueChanged(object sender, EventArgs e)
         {
             GameFile.Fighters[selector.Value].ProductionFamily = (uint)productionFamily.Value;
+            GameFile.UnsavedData = true;
+        }
+        private void refinedMaterialCost_ValueChanged(object sender, EventArgs e)
+        {
+            GameFile.Fighters[selector.Value].RefinedMaterialCost = (uint)refinedMaterialCost.Value;
             GameFile.UnsavedData = true;
         }
         private void researchDifficulty_ValueChanged(object sender, EventArgs e)
@@ -223,9 +278,9 @@
             GameFile.Fighters[selector.Value].ResearchOrder = (uint)researchOrder.Value;
             GameFile.UnsavedData = true;
         }
-        private void shieldsMaxCapacity_ValueChanged(object sender, EventArgs e)
+        private void shieldStrength_ValueChanged(object sender, EventArgs e)
         {
-            GameFile.Fighters[selector.Value].ShieldEnergy = (uint)shieldsMaxCapacity.Value;
+            GameFile.Fighters[selector.Value].ShieldStrength = (uint)shieldStrength.Value;
             GameFile.UnsavedData = true;
         }
         private void squadronSize_ValueChanged(object sender, EventArgs e)
@@ -233,58 +288,66 @@
             GameFile.Fighters[selector.Value].SquadronSize = (uint)squadronSize.Value;
             GameFile.UnsavedData = true;
         }
-        private void sublightManoeuvrability_ValueChanged(object sender, EventArgs e)
+        private void subLightEngine_ValueChanged(object sender, EventArgs e)
         {
-            GameFile.Fighters[selector.Value].SublightManoeuvrability = (uint)sublightManoeuvrability.Value;
+            GameFile.Fighters[selector.Value].SubLightEngine = (uint)subLightEngine.Value;
             GameFile.UnsavedData = true;
         }
-        private void sublightSpeed_ValueChanged(object sender, EventArgs e)
+        private void textStraDllId_ValueChanged(object sender, EventArgs e)
         {
-            GameFile.Fighters[selector.Value].SublightSpeed = (uint)sublightSpeed.Value;
+            GameFile.Fighters[selector.Value].TextStraDllId = (ushort)textStraDllId.Value;
             GameFile.UnsavedData = true;
         }
-        private void torpedoFore_ValueChanged(object sender, EventArgs e)
+        private void torpedoes_ValueChanged(object sender, EventArgs e)
         {
-            GameFile.Fighters[selector.Value].TorpedoFore = (uint)torpedoFore.Value;
-            GameFile.UnsavedData = true;
-        }
-        private void torpedoRange_ValueChanged(object sender, EventArgs e)
-        {
-            GameFile.Fighters[selector.Value].TorpedoRange = (uint)torpedoRange.Value;
-            GameFile.UnsavedData = true;
-        }
-        private void turboLaserAft_ValueChanged(object sender, EventArgs e)
-        {
-            GameFile.Fighters[selector.Value].TurbolaserAft = (uint)turboLaserAft.Value;
+            GameFile.Fighters[selector.Value].Torpedoes = (uint)torpedoes.Value;
             UpdateTotals(selector.Value);
             GameFile.UnsavedData = true;
         }
-        private void turboLaserFore_ValueChanged(object sender, EventArgs e)
+        private void torpedoesRange_ValueChanged(object sender, EventArgs e)
         {
-            GameFile.Fighters[selector.Value].TurbolaserFore = (uint)turboLaserFore.Value;
+            GameFile.Fighters[selector.Value].TorpedoesRange = (uint)torpedoesRange.Value;
             UpdateTotals(selector.Value);
             GameFile.UnsavedData = true;
         }
-        private void turboLaserPort_ValueChanged(object sender, EventArgs e)
+        private void turbolaserAft_ValueChanged(object sender, EventArgs e)
         {
-            GameFile.Fighters[selector.Value].TurbolaserPort = (uint)turboLaserPort.Value;
+            GameFile.Fighters[selector.Value].TurbolaserAft = (uint)turbolaserAft.Value;
             UpdateTotals(selector.Value);
             GameFile.UnsavedData = true;
         }
-        private void turboLaserRange_ValueChanged(object sender, EventArgs e)
+        private void turbolaserAttackStrength_ValueChanged(object sender, EventArgs e)
         {
-            GameFile.Fighters[selector.Value].TurbolaserRange = (uint)turboLaserRange.Value;
-            GameFile.UnsavedData = true;
-        }
-        private void turboLaserStar_ValueChanged(object sender, EventArgs e)
-        {
-            GameFile.Fighters[selector.Value].TurbolaserStarboard = (uint)turboLaserStar.Value;
+            GameFile.Fighters[selector.Value].TurbolaserAttackStrength = (uint)turbolaserAttackStrength.Value;
             UpdateTotals(selector.Value);
             GameFile.UnsavedData = true;
         }
-        private void unknownMoralHp_ValueChanged(object sender, EventArgs e)
+        private void turbolaserFore_ValueChanged(object sender, EventArgs e)
         {
-            GameFile.Fighters[selector.Value].UnknownMoralHp = (uint)unknownMoralHp.Value;
+            GameFile.Fighters[selector.Value].TurbolaserFore = (uint)turbolaserFore.Value;
+            UpdateTotals(selector.Value);
+            GameFile.UnsavedData = true;
+        }
+        private void turbolaserPort_ValueChanged(object sender, EventArgs e)
+        {
+            GameFile.Fighters[selector.Value].TurbolaserPort = (uint)turbolaserPort.Value;
+            UpdateTotals(selector.Value);
+            GameFile.UnsavedData = true;
+        }
+        private void turbolaserRange_ValueChanged(object sender, EventArgs e)
+        {
+            GameFile.Fighters[selector.Value].TurbolaserRange = (uint)turbolaserRange.Value;
+            GameFile.UnsavedData = true;
+        }
+        private void turbolaserStarboard_ValueChanged(object sender, EventArgs e)
+        {
+            GameFile.Fighters[selector.Value].TurbolaserStarboard = (uint)turbolaserStarboard.Value;
+            UpdateTotals(selector.Value);
+            GameFile.UnsavedData = true;
+        }
+        private void uprisingDefense_ValueChanged(object sender, EventArgs e)
+        {
+            GameFile.Fighters[selector.Value].UprisingDefense = (uint)uprisingDefense.Value;
             GameFile.UnsavedData = true;
         }
 

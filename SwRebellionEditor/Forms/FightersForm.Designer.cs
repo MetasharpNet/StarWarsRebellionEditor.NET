@@ -9,110 +9,85 @@ namespace SwRebellionEditor
     partial class FightersForm
     {
         /// <summary>
-        /// Required designer variable.
+        /////// Required designer variable.
         /// </summary>
-        private IContainer components = null;
+        private System.ComponentModel.IContainer components = null;
+        private TrackBar selector;
         private Button Open;
         private Button SaveAs;
         private Button Cancel;
         private Button Ok;
-        private TrackBar selector;
-        private GroupBox hyperdriveGroup;
-        private NumericUpDown hyperdriveBackup;
-        private Label hyperLabel;
-        private Label hyper2Label;
-        private NumericUpDown hyperdrivePrimary;
-        private GroupBox sublightGroup;
-        private Label manuverLabel;
-        private NumericUpDown sublightManoeuvrability;
-        private Label sublightLabel;
-        private NumericUpDown sublightSpeed;
-        private GroupBox BasicGroup;
-        private NumericUpDown detectionRating;
-        private Label DetectionLabel;
-        private GroupBox shieldGroup;
-        private NumericUpDown shieldsMaxCapacity;
-        private Label shieldLabel;
-        private GroupBox buildByGroup;
-        private CheckBox isAllianceUnit;
-        private CheckBox isEmpireUnit;
-        private GroupBox costsGroup;
-        private Label conCostLabel;
-        private NumericUpDown constructionCost;
-        private Label maintCostLabel;
-        private NumericUpDown maintenanceCost;
-        private GroupBox researchGroup;
-        private NumericUpDown researchOrder;
-        private Label researchLabel;
-        private Label resDiffLabel;
+        private RichTextBox encyclopediaDescription;
+        private Label textStraDllIdLabel;
+        private NumericUpDown textStraDllId;
+        private Label field7_2Label;
+        private NumericUpDown field7_2;
+        private NumericUpDown familyId;
+        private Label familyIdLabel;
+        private NumericUpDown nextProductionFamily;
+        private Label nextProductionFamilyLabel;
+        private Label productionFamilyLabel;
+        private NumericUpDown productionFamily;
+        private NumericUpDown uprisingDefense;
+        private Label UprisingDefenseLabel;
         private NumericUpDown researchDifficulty;
-        private TabControl tabControl1;
-        private TabPage tabPage1;
-        private NumericUpDown bombardmentMod;
-        private Label bombardLabel;
-        private GroupBox wepFPGroup;
-        private NumericUpDown laserCannonRange;
-        private NumericUpDown laserCannonStar;
-        private NumericUpDown laserCannonPort;
-        private NumericUpDown laserCannonAft;
+        private Label researchDifficultyLabel;
+        private CheckBox isEmpire;
+        private CheckBox isAlliance;
+        private Label detectionLabel;
+        private NumericUpDown detection;
+        private Label researchOrderLabel;
+        private NumericUpDown researchOrder;
+        private NumericUpDown maintenanceCost;
+        private Label maintenanceCostLabel;
+        private PictureBox picture;
+        private NumericUpDown refinedMaterialCost;
+        private Label refinedMaterialCostLabel;
+        private GroupBox attackStrengthGroupBox;
+        private Label foreLabel;
+        private Label turbolaserRangeLabel;
+        private Label starboardLabel;
+        private Label portLabel;
+        private Label aftLabel;
+        private NumericUpDown turbolaserStarboard;
+        private NumericUpDown turbolaserPort;
+        private NumericUpDown turbolaserAft;
+        private NumericUpDown turbolaserFore;
+        private Label turboLaserLabel;
         private NumericUpDown ionCannonRange;
-        private NumericUpDown ionCannonStar;
+        private NumericUpDown ionCannonStarboard;
         private NumericUpDown ionCannonPort;
         private NumericUpDown ionCannonAft;
-        private NumericUpDown turboLaserRange;
+        private NumericUpDown turbolaserRange;
         private NumericUpDown ionCannonFore;
         private NumericUpDown laserCannonFore;
-        private Label wepLaserLabel;
-        private Label wepIonLabel;
-        private Label wepTurboLabel;
-        private NumericUpDown turboLaserStar;
-        private NumericUpDown turboLaserPort;
-        private NumericUpDown turboLaserAft;
-        private NumericUpDown turboLaserFore;
-        private Label wepRanLabel;
-        private Label wepStarLabel;
-        private Label wepPortLabel;
-        private Label wepAftLabel;
-        private Label wepForeLabel;
-        private Label wepTypeLabel;
-        private TabPage tabPage2;
-        private RichTextBox encyText;
-        private TabPage tabPage3;
-        private Label label31;
-        private GroupBox groupBox13;
-        private NumericUpDown totalFirePower;
-        private Label label16;
-        private Label label30;
-        private NumericUpDown ionCannonTotalFirePower;
-        private Label label29;
-        private NumericUpDown laserCannonTotalFirePower;
-        private NumericUpDown turboLaserTotalFirePower;
-        private Label label26;
-        private Label label28;
-        private Label label27;
-        private Label UnkownMoralHPlabel;
-        private NumericUpDown unknownMoralHp;
-        private NumericUpDown unknown;
-        private NumericUpDown textStraDllId;
-        private NumericUpDown productionFamily;
-        private Label unkown3Label;
-        private NumericUpDown familyId;
-        private Label prodLabel;
+        private Label laserCannonLabel;
+        private Label ionCannonLabel;
+        private NumericUpDown laserCannonRange;
+        private NumericUpDown laserCannonStarboard;
+        private NumericUpDown laserCannonPort;
+        private NumericUpDown laserCannonAft;
+        private NumericUpDown bombardmentDefense;
+        private Label bombardmentDefenseLabel;
+        private GroupBox inGameDataGroupBox;
+        private NumericUpDown shieldStrength;
+        private Label shieldStrengthLabel;
+        private NumericUpDown hyperdrive;
+        private Label maneuverabilityLabel;
+        private NumericUpDown maneuverability;
+        private Label subLightEngineLabel;
+        private NumericUpDown subLightEngine;
+        private Label hyperdriveIfDamagedLabel;
+        private NumericUpDown hyperdriveIfDamaged;
+        private NumericUpDown ionCannonAttackStrength;
+        private NumericUpDown laserCannonAttackStrength;
+        private NumericUpDown turbolaserAttackStrength;
+        private NumericUpDown overallAttackStrength;
+        private NumericUpDown id;
         private Label idLabel;
-        private Label familyLabel;
-        private Label secProdFacNumlabel;
-        private NumericUpDown nextProductionFamily;
-        private Label name;
-        private PictureBox picture;
-        private NumericUpDown torpedoRange;
-        private NumericUpDown torpedoFore;
-        private Label wepTorpLabel;
-        private NumericUpDown squadronSize;
-        private Label squadSizeLabel;
         private Label familyIdHexLabel;
-        private Label fighterIdHexLabel;
-        private NumericUpDown fighterId;
-        private Label label1;
+        private Label idHexLabel;
+
 
         /// <summary>
         /// Clean up any resources being used.
@@ -136,470 +111,528 @@ namespace SwRebellionEditor
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FightersForm));
-            this.hyperdriveGroup = new System.Windows.Forms.GroupBox();
-            this.hyperdriveBackup = new System.Windows.Forms.NumericUpDown();
-            this.hyperLabel = new System.Windows.Forms.Label();
-            this.hyper2Label = new System.Windows.Forms.Label();
-            this.hyperdrivePrimary = new System.Windows.Forms.NumericUpDown();
-            this.sublightGroup = new System.Windows.Forms.GroupBox();
-            this.manuverLabel = new System.Windows.Forms.Label();
-            this.sublightManoeuvrability = new System.Windows.Forms.NumericUpDown();
-            this.sublightLabel = new System.Windows.Forms.Label();
-            this.sublightSpeed = new System.Windows.Forms.NumericUpDown();
-            this.BasicGroup = new System.Windows.Forms.GroupBox();
-            this.detectionRating = new System.Windows.Forms.NumericUpDown();
-            this.DetectionLabel = new System.Windows.Forms.Label();
-            this.shieldGroup = new System.Windows.Forms.GroupBox();
-            this.shieldsMaxCapacity = new System.Windows.Forms.NumericUpDown();
-            this.shieldLabel = new System.Windows.Forms.Label();
-            this.buildByGroup = new System.Windows.Forms.GroupBox();
-            this.isAllianceUnit = new System.Windows.Forms.CheckBox();
-            this.isEmpireUnit = new System.Windows.Forms.CheckBox();
-            this.costsGroup = new System.Windows.Forms.GroupBox();
-            this.conCostLabel = new System.Windows.Forms.Label();
-            this.constructionCost = new System.Windows.Forms.NumericUpDown();
-            this.maintCostLabel = new System.Windows.Forms.Label();
-            this.maintenanceCost = new System.Windows.Forms.NumericUpDown();
-            this.researchGroup = new System.Windows.Forms.GroupBox();
-            this.researchOrder = new System.Windows.Forms.NumericUpDown();
-            this.researchLabel = new System.Windows.Forms.Label();
-            this.resDiffLabel = new System.Windows.Forms.Label();
-            this.researchDifficulty = new System.Windows.Forms.NumericUpDown();
-            this.tabControl1 = new System.Windows.Forms.TabControl();
-            this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.squadronSize = new System.Windows.Forms.NumericUpDown();
-            this.wepFPGroup = new System.Windows.Forms.GroupBox();
-            this.torpedoRange = new System.Windows.Forms.NumericUpDown();
-            this.torpedoFore = new System.Windows.Forms.NumericUpDown();
-            this.wepTorpLabel = new System.Windows.Forms.Label();
-            this.bombardmentMod = new System.Windows.Forms.NumericUpDown();
-            this.laserCannonRange = new System.Windows.Forms.NumericUpDown();
-            this.laserCannonStar = new System.Windows.Forms.NumericUpDown();
-            this.bombardLabel = new System.Windows.Forms.Label();
-            this.laserCannonPort = new System.Windows.Forms.NumericUpDown();
-            this.laserCannonAft = new System.Windows.Forms.NumericUpDown();
-            this.ionCannonRange = new System.Windows.Forms.NumericUpDown();
-            this.ionCannonStar = new System.Windows.Forms.NumericUpDown();
-            this.ionCannonPort = new System.Windows.Forms.NumericUpDown();
-            this.ionCannonAft = new System.Windows.Forms.NumericUpDown();
-            this.turboLaserRange = new System.Windows.Forms.NumericUpDown();
-            this.ionCannonFore = new System.Windows.Forms.NumericUpDown();
-            this.laserCannonFore = new System.Windows.Forms.NumericUpDown();
-            this.wepLaserLabel = new System.Windows.Forms.Label();
-            this.wepIonLabel = new System.Windows.Forms.Label();
-            this.wepTurboLabel = new System.Windows.Forms.Label();
-            this.turboLaserStar = new System.Windows.Forms.NumericUpDown();
-            this.turboLaserPort = new System.Windows.Forms.NumericUpDown();
-            this.turboLaserAft = new System.Windows.Forms.NumericUpDown();
-            this.turboLaserFore = new System.Windows.Forms.NumericUpDown();
-            this.wepRanLabel = new System.Windows.Forms.Label();
-            this.wepStarLabel = new System.Windows.Forms.Label();
-            this.wepPortLabel = new System.Windows.Forms.Label();
-            this.wepAftLabel = new System.Windows.Forms.Label();
-            this.wepForeLabel = new System.Windows.Forms.Label();
-            this.wepTypeLabel = new System.Windows.Forms.Label();
-            this.squadSizeLabel = new System.Windows.Forms.Label();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.encyText = new System.Windows.Forms.RichTextBox();
-            this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.familyIdHexLabel = new System.Windows.Forms.Label();
-            this.fighterIdHexLabel = new System.Windows.Forms.Label();
-            this.fighterId = new System.Windows.Forms.NumericUpDown();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label31 = new System.Windows.Forms.Label();
-            this.groupBox13 = new System.Windows.Forms.GroupBox();
-            this.totalFirePower = new System.Windows.Forms.NumericUpDown();
-            this.label16 = new System.Windows.Forms.Label();
-            this.label30 = new System.Windows.Forms.Label();
-            this.ionCannonTotalFirePower = new System.Windows.Forms.NumericUpDown();
-            this.label29 = new System.Windows.Forms.Label();
-            this.laserCannonTotalFirePower = new System.Windows.Forms.NumericUpDown();
-            this.turboLaserTotalFirePower = new System.Windows.Forms.NumericUpDown();
-            this.label26 = new System.Windows.Forms.Label();
-            this.label28 = new System.Windows.Forms.Label();
-            this.label27 = new System.Windows.Forms.Label();
-            this.UnkownMoralHPlabel = new System.Windows.Forms.Label();
-            this.unknownMoralHp = new System.Windows.Forms.NumericUpDown();
-            this.unknown = new System.Windows.Forms.NumericUpDown();
-            this.textStraDllId = new System.Windows.Forms.NumericUpDown();
-            this.productionFamily = new System.Windows.Forms.NumericUpDown();
-            this.unkown3Label = new System.Windows.Forms.Label();
-            this.familyId = new System.Windows.Forms.NumericUpDown();
-            this.prodLabel = new System.Windows.Forms.Label();
-            this.idLabel = new System.Windows.Forms.Label();
-            this.familyLabel = new System.Windows.Forms.Label();
-            this.secProdFacNumlabel = new System.Windows.Forms.Label();
-            this.nextProductionFamily = new System.Windows.Forms.NumericUpDown();
             this.Open = new System.Windows.Forms.Button();
             this.SaveAs = new System.Windows.Forms.Button();
             this.Cancel = new System.Windows.Forms.Button();
             this.Ok = new System.Windows.Forms.Button();
-            this.name = new System.Windows.Forms.Label();
+            this.encyclopediaDescription = new System.Windows.Forms.RichTextBox();
+            this.textStraDllIdLabel = new System.Windows.Forms.Label();
+            this.textStraDllId = new System.Windows.Forms.NumericUpDown();
+            this.field7_2Label = new System.Windows.Forms.Label();
+            this.field7_2 = new System.Windows.Forms.NumericUpDown();
+            this.familyId = new System.Windows.Forms.NumericUpDown();
+            this.familyIdLabel = new System.Windows.Forms.Label();
+            this.nextProductionFamily = new System.Windows.Forms.NumericUpDown();
+            this.nextProductionFamilyLabel = new System.Windows.Forms.Label();
+            this.productionFamilyLabel = new System.Windows.Forms.Label();
+            this.productionFamily = new System.Windows.Forms.NumericUpDown();
+            this.uprisingDefense = new System.Windows.Forms.NumericUpDown();
+            this.UprisingDefenseLabel = new System.Windows.Forms.Label();
+            this.researchDifficulty = new System.Windows.Forms.NumericUpDown();
+            this.researchDifficultyLabel = new System.Windows.Forms.Label();
+            this.isEmpire = new System.Windows.Forms.CheckBox();
+            this.isAlliance = new System.Windows.Forms.CheckBox();
             this.selector = new System.Windows.Forms.TrackBar();
+            this.detectionLabel = new System.Windows.Forms.Label();
+            this.detection = new System.Windows.Forms.NumericUpDown();
+            this.researchOrderLabel = new System.Windows.Forms.Label();
+            this.researchOrder = new System.Windows.Forms.NumericUpDown();
+            this.maintenanceCost = new System.Windows.Forms.NumericUpDown();
+            this.maintenanceCostLabel = new System.Windows.Forms.Label();
+            this.refinedMaterialCost = new System.Windows.Forms.NumericUpDown();
+            this.refinedMaterialCostLabel = new System.Windows.Forms.Label();
+            this.bombardmentDefense = new System.Windows.Forms.NumericUpDown();
+            this.bombardmentDefenseLabel = new System.Windows.Forms.Label();
+            this.attackStrengthGroupBox = new System.Windows.Forms.GroupBox();
+            this.torpedoes = new System.Windows.Forms.NumericUpDown();
+            this.torpedoesLabel = new System.Windows.Forms.Label();
+            this.laserCannonStarboard = new System.Windows.Forms.NumericUpDown();
+            this.laserCannonPort = new System.Windows.Forms.NumericUpDown();
+            this.laserCannonAft = new System.Windows.Forms.NumericUpDown();
+            this.ionCannonStarboard = new System.Windows.Forms.NumericUpDown();
+            this.overallAttackStrength = new System.Windows.Forms.NumericUpDown();
+            this.ionCannonPort = new System.Windows.Forms.NumericUpDown();
+            this.overallLabel = new System.Windows.Forms.Label();
+            this.ionCannonAft = new System.Windows.Forms.NumericUpDown();
+            this.ionCannonFore = new System.Windows.Forms.NumericUpDown();
+            this.laserCannonFore = new System.Windows.Forms.NumericUpDown();
+            this.laserCannonLabel = new System.Windows.Forms.Label();
+            this.ionCannonLabel = new System.Windows.Forms.Label();
+            this.turboLaserLabel = new System.Windows.Forms.Label();
+            this.turbolaserStarboard = new System.Windows.Forms.NumericUpDown();
+            this.turbolaserPort = new System.Windows.Forms.NumericUpDown();
+            this.turbolaserAft = new System.Windows.Forms.NumericUpDown();
+            this.turbolaserFore = new System.Windows.Forms.NumericUpDown();
+            this.starboardLabel = new System.Windows.Forms.Label();
+            this.portLabel = new System.Windows.Forms.Label();
+            this.totalAttackLabel = new System.Windows.Forms.Label();
+            this.ionCannonAttackStrength = new System.Windows.Forms.NumericUpDown();
+            this.aftLabel = new System.Windows.Forms.Label();
+            this.laserCannonAttackStrength = new System.Windows.Forms.NumericUpDown();
+            this.foreLabel = new System.Windows.Forms.Label();
+            this.turbolaserAttackStrength = new System.Windows.Forms.NumericUpDown();
+            this.laserCannonRange = new System.Windows.Forms.NumericUpDown();
+            this.ionCannonRange = new System.Windows.Forms.NumericUpDown();
+            this.turbolaserRange = new System.Windows.Forms.NumericUpDown();
+            this.turbolaserRangeLabel = new System.Windows.Forms.Label();
+            this.familyIdHexLabel = new System.Windows.Forms.Label();
+            this.idHexLabel = new System.Windows.Forms.Label();
+            this.id = new System.Windows.Forms.NumericUpDown();
+            this.idLabel = new System.Windows.Forms.Label();
+            this.inGameDataGroupBox = new System.Windows.Forms.GroupBox();
+            this.squadronSizeLabel = new System.Windows.Forms.Label();
+            this.squadronSize = new System.Windows.Forms.NumericUpDown();
+            this.name = new System.Windows.Forms.TextBox();
+            this.encyclopediaDescriptionLabel = new System.Windows.Forms.Label();
+            this.shieldStrengthLabel = new System.Windows.Forms.Label();
+            this.shieldStrength = new System.Windows.Forms.NumericUpDown();
             this.picture = new System.Windows.Forms.PictureBox();
-            this.hyperdriveGroup.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.hyperdriveBackup)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.hyperdrivePrimary)).BeginInit();
-            this.sublightGroup.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.sublightManoeuvrability)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.sublightSpeed)).BeginInit();
-            this.BasicGroup.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.detectionRating)).BeginInit();
-            this.shieldGroup.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.shieldsMaxCapacity)).BeginInit();
-            this.buildByGroup.SuspendLayout();
-            this.costsGroup.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.constructionCost)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.maintenanceCost)).BeginInit();
-            this.researchGroup.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.researchOrder)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.researchDifficulty)).BeginInit();
-            this.tabControl1.SuspendLayout();
-            this.tabPage1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.squadronSize)).BeginInit();
-            this.wepFPGroup.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.torpedoRange)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.torpedoFore)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bombardmentMod)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.laserCannonRange)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.laserCannonStar)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.laserCannonPort)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.laserCannonAft)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ionCannonRange)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ionCannonStar)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ionCannonPort)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ionCannonAft)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.turboLaserRange)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ionCannonFore)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.laserCannonFore)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.turboLaserStar)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.turboLaserPort)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.turboLaserAft)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.turboLaserFore)).BeginInit();
-            this.tabPage2.SuspendLayout();
-            this.tabPage3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.fighterId)).BeginInit();
-            this.groupBox13.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.totalFirePower)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ionCannonTotalFirePower)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.laserCannonTotalFirePower)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.turboLaserTotalFirePower)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.unknownMoralHp)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.unknown)).BeginInit();
+            this.maneuverabilityLabel = new System.Windows.Forms.Label();
+            this.hyperdriveLabel = new System.Windows.Forms.Label();
+            this.subLightEngineLabel = new System.Windows.Forms.Label();
+            this.subLightEngine = new System.Windows.Forms.NumericUpDown();
+            this.maneuverability = new System.Windows.Forms.NumericUpDown();
+            this.hyperdrive = new System.Windows.Forms.NumericUpDown();
+            this.hyperdriveIfDamagedLabel = new System.Windows.Forms.Label();
+            this.hyperdriveIfDamaged = new System.Windows.Forms.NumericUpDown();
+            this.field2_1 = new System.Windows.Forms.NumericUpDown();
+            this.field2_1Label = new System.Windows.Forms.Label();
+            this.hiddenDataGroupBox = new System.Windows.Forms.GroupBox();
+            this.torpedoesRangeLabel = new System.Windows.Forms.Label();
+            this.torpedoesRange = new System.Windows.Forms.NumericUpDown();
+            this.laserCannonRangeLabel = new System.Windows.Forms.Label();
+            this.ionCannonRangeLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.textStraDllId)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.productionFamily)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.field7_2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.familyId)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nextProductionFamily)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.productionFamily)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.uprisingDefense)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.researchDifficulty)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.selector)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.detection)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.researchOrder)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.maintenanceCost)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.refinedMaterialCost)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bombardmentDefense)).BeginInit();
+            this.attackStrengthGroupBox.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.torpedoes)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.laserCannonStarboard)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.laserCannonPort)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.laserCannonAft)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ionCannonStarboard)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.overallAttackStrength)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ionCannonPort)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ionCannonAft)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ionCannonFore)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.laserCannonFore)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.turbolaserStarboard)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.turbolaserPort)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.turbolaserAft)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.turbolaserFore)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ionCannonAttackStrength)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.laserCannonAttackStrength)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.turbolaserAttackStrength)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.laserCannonRange)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ionCannonRange)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.turbolaserRange)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.id)).BeginInit();
+            this.inGameDataGroupBox.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.squadronSize)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.shieldStrength)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picture)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.subLightEngine)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.maneuverability)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.hyperdrive)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.hyperdriveIfDamaged)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.field2_1)).BeginInit();
+            this.hiddenDataGroupBox.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.torpedoesRange)).BeginInit();
             this.SuspendLayout();
             // 
-            // hyperdriveGroup
+            // Open
             // 
-            this.hyperdriveGroup.Controls.Add(this.hyperdriveBackup);
-            this.hyperdriveGroup.Controls.Add(this.hyperLabel);
-            this.hyperdriveGroup.Controls.Add(this.hyper2Label);
-            this.hyperdriveGroup.Controls.Add(this.hyperdrivePrimary);
-            this.hyperdriveGroup.Location = new System.Drawing.Point(246, 197);
-            this.hyperdriveGroup.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.hyperdriveGroup.Name = "hyperdriveGroup";
-            this.hyperdriveGroup.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.hyperdriveGroup.Size = new System.Drawing.Size(212, 76);
-            this.hyperdriveGroup.TabIndex = 124;
-            this.hyperdriveGroup.TabStop = false;
-            this.hyperdriveGroup.Text = "HyperDrive";
+            this.Open.Location = new System.Drawing.Point(362, 517);
+            this.Open.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.Open.Name = "Open";
+            this.Open.Size = new System.Drawing.Size(88, 27);
+            this.Open.TabIndex = 0;
+            this.Open.TabStop = false;
+            this.Open.Text = "Open...";
+            this.Open.UseVisualStyleBackColor = true;
+            this.Open.Click += new System.EventHandler(this.Open_Click);
             // 
-            // hyperdriveBackup
+            // SaveAs
             // 
-            this.hyperdriveBackup.Location = new System.Drawing.Point(125, 46);
-            this.hyperdriveBackup.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.hyperdriveBackup.Maximum = new decimal(new int[] {
+            this.SaveAs.Location = new System.Drawing.Point(270, 517);
+            this.SaveAs.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.SaveAs.Name = "SaveAs";
+            this.SaveAs.Size = new System.Drawing.Size(88, 27);
+            this.SaveAs.TabIndex = 0;
+            this.SaveAs.TabStop = false;
+            this.SaveAs.Text = "&SaveAs...";
+            this.SaveAs.UseVisualStyleBackColor = true;
+            this.SaveAs.Click += new System.EventHandler(this.SaveAs_Click);
+            // 
+            // Cancel
+            // 
+            this.Cancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.Cancel.Location = new System.Drawing.Point(179, 517);
+            this.Cancel.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.Cancel.Name = "Cancel";
+            this.Cancel.Size = new System.Drawing.Size(88, 27);
+            this.Cancel.TabIndex = 39;
+            this.Cancel.Text = "&Cancel";
+            this.Cancel.UseVisualStyleBackColor = true;
+            this.Cancel.Click += new System.EventHandler(this.Cancel_Click);
+            // 
+            // Ok
+            // 
+            this.Ok.Location = new System.Drawing.Point(88, 517);
+            this.Ok.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.Ok.Name = "Ok";
+            this.Ok.Size = new System.Drawing.Size(88, 27);
+            this.Ok.TabIndex = 38;
+            this.Ok.Text = "&Ok";
+            this.Ok.UseVisualStyleBackColor = true;
+            this.Ok.Click += new System.EventHandler(this.Ok_Click);
+            // 
+            // encyclopediaDescription
+            // 
+            this.encyclopediaDescription.Cursor = System.Windows.Forms.Cursors.No;
+            this.encyclopediaDescription.Location = new System.Drawing.Point(5, 402);
+            this.encyclopediaDescription.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.encyclopediaDescription.Name = "encyclopediaDescription";
+            this.encyclopediaDescription.Size = new System.Drawing.Size(428, 66);
+            this.encyclopediaDescription.TabIndex = 0;
+            this.encyclopediaDescription.TabStop = false;
+            this.encyclopediaDescription.Text = "Not implemented yet.";
+            this.encyclopediaDescription.TextChanged += new System.EventHandler(this.encyclopediaDescription_TextChanged);
+            // 
+            // textStraDllIdLabel
+            // 
+            this.textStraDllIdLabel.AutoSize = true;
+            this.textStraDllIdLabel.ForeColor = System.Drawing.Color.Red;
+            this.textStraDllIdLabel.Location = new System.Drawing.Point(7, 148);
+            this.textStraDllIdLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.textStraDllIdLabel.Name = "textStraDllIdLabel";
+            this.textStraDllIdLabel.Size = new System.Drawing.Size(77, 15);
+            this.textStraDllIdLabel.TabIndex = 106;
+            this.textStraDllIdLabel.Text = "TextStra.dll Id";
+            // 
+            // textStraDllId
+            // 
+            this.textStraDllId.ForeColor = System.Drawing.Color.Red;
+            this.textStraDllId.Location = new System.Drawing.Point(141, 146);
+            this.textStraDllId.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.textStraDllId.Maximum = new decimal(new int[] {
+            99999,
+            0,
+            0,
+            0});
+            this.textStraDllId.Name = "textStraDllId";
+            this.textStraDllId.Size = new System.Drawing.Size(59, 23);
+            this.textStraDllId.TabIndex = 112;
+            this.textStraDllId.TabStop = false;
+            this.textStraDllId.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.textStraDllId.Value = new decimal(new int[] {
+            99999,
+            0,
+            0,
+            0});
+            this.textStraDllId.ValueChanged += new System.EventHandler(this.textStraDllId_ValueChanged);
+            // 
+            // field7_2Label
+            // 
+            this.field7_2Label.AutoSize = true;
+            this.field7_2Label.ForeColor = System.Drawing.Color.Red;
+            this.field7_2Label.Location = new System.Drawing.Point(7, 173);
+            this.field7_2Label.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.field7_2Label.Name = "field7_2Label";
+            this.field7_2Label.Size = new System.Drawing.Size(93, 15);
+            this.field7_2Label.TabIndex = 109;
+            this.field7_2Label.Text = "Field7 (always 2)";
+            // 
+            // field7_2
+            // 
+            this.field7_2.ForeColor = System.Drawing.Color.Red;
+            this.field7_2.Location = new System.Drawing.Point(141, 171);
+            this.field7_2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.field7_2.Maximum = new decimal(new int[] {
+            9999,
+            0,
+            0,
+            0});
+            this.field7_2.Name = "field7_2";
+            this.field7_2.Size = new System.Drawing.Size(59, 23);
+            this.field7_2.TabIndex = 110;
+            this.field7_2.TabStop = false;
+            this.field7_2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.field7_2.Value = new decimal(new int[] {
+            2,
+            0,
+            0,
+            0});
+            this.field7_2.ValueChanged += new System.EventHandler(this.field7_2_ValueChanged);
+            // 
+            // familyId
+            // 
+            this.familyId.BackColor = System.Drawing.SystemColors.Window;
+            this.familyId.ForeColor = System.Drawing.Color.Red;
+            this.familyId.Location = new System.Drawing.Point(141, 121);
+            this.familyId.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.familyId.Maximum = new decimal(new int[] {
             999,
             0,
             0,
             0});
-            this.hyperdriveBackup.Name = "hyperdriveBackup";
-            this.hyperdriveBackup.Size = new System.Drawing.Size(59, 23);
-            this.hyperdriveBackup.TabIndex = 12;
-            this.hyperdriveBackup.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.hyperdriveBackup.ValueChanged += new System.EventHandler(this.hyperdriveBackup_ValueChanged);
-            // 
-            // hyperLabel
-            // 
-            this.hyperLabel.AutoSize = true;
-            this.hyperLabel.Location = new System.Drawing.Point(7, 18);
-            this.hyperLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.hyperLabel.Name = "hyperLabel";
-            this.hyperLabel.Size = new System.Drawing.Size(48, 15);
-            this.hyperLabel.TabIndex = 0;
-            this.hyperLabel.Text = "Primary\r\n";
-            // 
-            // hyper2Label
-            // 
-            this.hyper2Label.AutoSize = true;
-            this.hyper2Label.Location = new System.Drawing.Point(7, 48);
-            this.hyper2Label.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.hyper2Label.Name = "hyper2Label";
-            this.hyper2Label.Size = new System.Drawing.Size(46, 15);
-            this.hyper2Label.TabIndex = 0;
-            this.hyper2Label.Text = "Backup";
-            // 
-            // hyperdrivePrimary
-            // 
-            this.hyperdrivePrimary.Location = new System.Drawing.Point(125, 16);
-            this.hyperdrivePrimary.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.hyperdrivePrimary.Maximum = new decimal(new int[] {
+            this.familyId.Name = "familyId";
+            this.familyId.Size = new System.Drawing.Size(59, 23);
+            this.familyId.TabIndex = 111;
+            this.familyId.TabStop = false;
+            this.familyId.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.familyId.Value = new decimal(new int[] {
             999,
             0,
             0,
             0});
-            this.hyperdrivePrimary.Name = "hyperdrivePrimary";
-            this.hyperdrivePrimary.Size = new System.Drawing.Size(59, 23);
-            this.hyperdrivePrimary.TabIndex = 11;
-            this.hyperdrivePrimary.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.hyperdrivePrimary.ValueChanged += new System.EventHandler(this.hyperdrivePrimary_ValueChanged);
+            this.familyId.ValueChanged += new System.EventHandler(this.familyId_ValueChanged);
             // 
-            // sublightGroup
+            // familyIdLabel
             // 
-            this.sublightGroup.Controls.Add(this.manuverLabel);
-            this.sublightGroup.Controls.Add(this.sublightManoeuvrability);
-            this.sublightGroup.Controls.Add(this.sublightLabel);
-            this.sublightGroup.Controls.Add(this.sublightSpeed);
-            this.sublightGroup.Location = new System.Drawing.Point(246, 110);
-            this.sublightGroup.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.sublightGroup.Name = "sublightGroup";
-            this.sublightGroup.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.sublightGroup.Size = new System.Drawing.Size(212, 81);
-            this.sublightGroup.TabIndex = 123;
-            this.sublightGroup.TabStop = false;
-            this.sublightGroup.Text = "Sublight Engines";
+            this.familyIdLabel.AutoSize = true;
+            this.familyIdLabel.ForeColor = System.Drawing.Color.Red;
+            this.familyIdLabel.Location = new System.Drawing.Point(7, 123);
+            this.familyIdLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.familyIdLabel.Name = "familyIdLabel";
+            this.familyIdLabel.Size = new System.Drawing.Size(55, 15);
+            this.familyIdLabel.TabIndex = 104;
+            this.familyIdLabel.Text = "Family Id";
             // 
-            // manuverLabel
+            // nextProductionFamily
             // 
-            this.manuverLabel.AutoSize = true;
-            this.manuverLabel.Location = new System.Drawing.Point(7, 50);
-            this.manuverLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.manuverLabel.Name = "manuverLabel";
-            this.manuverLabel.Size = new System.Drawing.Size(83, 15);
-            this.manuverLabel.TabIndex = 0;
-            this.manuverLabel.Text = "Manuverablity";
-            // 
-            // sublightManoeuvrability
-            // 
-            this.sublightManoeuvrability.Location = new System.Drawing.Point(125, 46);
-            this.sublightManoeuvrability.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.sublightManoeuvrability.Maximum = new decimal(new int[] {
-            9999,
-            0,
-            0,
-            0});
-            this.sublightManoeuvrability.Name = "sublightManoeuvrability";
-            this.sublightManoeuvrability.Size = new System.Drawing.Size(59, 23);
-            this.sublightManoeuvrability.TabIndex = 10;
-            this.sublightManoeuvrability.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.sublightManoeuvrability.ValueChanged += new System.EventHandler(this.sublightManoeuvrability_ValueChanged);
-            // 
-            // sublightLabel
-            // 
-            this.sublightLabel.AutoSize = true;
-            this.sublightLabel.Location = new System.Drawing.Point(7, 21);
-            this.sublightLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.sublightLabel.Name = "sublightLabel";
-            this.sublightLabel.Size = new System.Drawing.Size(86, 15);
-            this.sublightLabel.TabIndex = 0;
-            this.sublightLabel.Text = "Sublight Speed";
-            // 
-            // sublightSpeed
-            // 
-            this.sublightSpeed.Location = new System.Drawing.Point(125, 16);
-            this.sublightSpeed.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.sublightSpeed.Maximum = new decimal(new int[] {
-            9999,
-            0,
-            0,
-            0});
-            this.sublightSpeed.Name = "sublightSpeed";
-            this.sublightSpeed.Size = new System.Drawing.Size(59, 23);
-            this.sublightSpeed.TabIndex = 9;
-            this.sublightSpeed.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.sublightSpeed.ValueChanged += new System.EventHandler(this.sublightSpeed_ValueChanged);
-            // 
-            // BasicGroup
-            // 
-            this.BasicGroup.Controls.Add(this.detectionRating);
-            this.BasicGroup.Controls.Add(this.DetectionLabel);
-            this.BasicGroup.Location = new System.Drawing.Point(12, 197);
-            this.BasicGroup.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.BasicGroup.Name = "BasicGroup";
-            this.BasicGroup.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.BasicGroup.Size = new System.Drawing.Size(214, 115);
-            this.BasicGroup.TabIndex = 121;
-            this.BasicGroup.TabStop = false;
-            this.BasicGroup.Text = "Basic Info";
-            // 
-            // detectionRating
-            // 
-            this.detectionRating.Location = new System.Drawing.Point(121, 50);
-            this.detectionRating.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.detectionRating.Maximum = new decimal(new int[] {
+            this.nextProductionFamily.BackColor = System.Drawing.SystemColors.Window;
+            this.nextProductionFamily.Location = new System.Drawing.Point(141, 96);
+            this.nextProductionFamily.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.nextProductionFamily.Maximum = new decimal(new int[] {
             999,
             0,
             0,
             0});
-            this.detectionRating.Name = "detectionRating";
-            this.detectionRating.Size = new System.Drawing.Size(59, 23);
-            this.detectionRating.TabIndex = 5;
-            this.detectionRating.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.detectionRating.Value = new decimal(new int[] {
+            this.nextProductionFamily.Name = "nextProductionFamily";
+            this.nextProductionFamily.Size = new System.Drawing.Size(59, 23);
+            this.nextProductionFamily.TabIndex = 96;
+            this.nextProductionFamily.TabStop = false;
+            this.nextProductionFamily.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.nextProductionFamily.Value = new decimal(new int[] {
             999,
             0,
             0,
             0});
-            this.detectionRating.ValueChanged += new System.EventHandler(this.detectionRating_ValueChanged);
+            this.nextProductionFamily.ValueChanged += new System.EventHandler(this.nextProductionFamily_ValueChanged);
             // 
-            // DetectionLabel
+            // nextProductionFamilyLabel
             // 
-            this.DetectionLabel.AutoSize = true;
-            this.DetectionLabel.Location = new System.Drawing.Point(9, 52);
-            this.DetectionLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.DetectionLabel.Name = "DetectionLabel";
-            this.DetectionLabel.Size = new System.Drawing.Size(98, 15);
-            this.DetectionLabel.TabIndex = 0;
-            this.DetectionLabel.Text = "Detection Rating ";
+            this.nextProductionFamilyLabel.AutoSize = true;
+            this.nextProductionFamilyLabel.Location = new System.Drawing.Point(7, 98);
+            this.nextProductionFamilyLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.nextProductionFamilyLabel.Name = "nextProductionFamilyLabel";
+            this.nextProductionFamilyLabel.Size = new System.Drawing.Size(121, 15);
+            this.nextProductionFamilyLabel.TabIndex = 97;
+            this.nextProductionFamilyLabel.Text = "Production Family +1";
             // 
-            // shieldGroup
+            // productionFamilyLabel
             // 
-            this.shieldGroup.Controls.Add(this.shieldsMaxCapacity);
-            this.shieldGroup.Controls.Add(this.shieldLabel);
-            this.shieldGroup.Location = new System.Drawing.Point(246, 295);
-            this.shieldGroup.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.shieldGroup.Name = "shieldGroup";
-            this.shieldGroup.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.shieldGroup.Size = new System.Drawing.Size(212, 118);
-            this.shieldGroup.TabIndex = 125;
-            this.shieldGroup.TabStop = false;
-            this.shieldGroup.Text = "Shields";
+            this.productionFamilyLabel.AutoSize = true;
+            this.productionFamilyLabel.Location = new System.Drawing.Point(7, 73);
+            this.productionFamilyLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.productionFamilyLabel.Name = "productionFamilyLabel";
+            this.productionFamilyLabel.Size = new System.Drawing.Size(104, 15);
+            this.productionFamilyLabel.TabIndex = 95;
+            this.productionFamilyLabel.Text = "Production Family";
             // 
-            // shieldsMaxCapacity
+            // productionFamily
             // 
-            this.shieldsMaxCapacity.Location = new System.Drawing.Point(125, 37);
-            this.shieldsMaxCapacity.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.shieldsMaxCapacity.Maximum = new decimal(new int[] {
+            this.productionFamily.BackColor = System.Drawing.SystemColors.Window;
+            this.productionFamily.Location = new System.Drawing.Point(141, 71);
+            this.productionFamily.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.productionFamily.Maximum = new decimal(new int[] {
+            999,
+            0,
+            0,
+            0});
+            this.productionFamily.Name = "productionFamily";
+            this.productionFamily.Size = new System.Drawing.Size(59, 23);
+            this.productionFamily.TabIndex = 93;
+            this.productionFamily.TabStop = false;
+            this.productionFamily.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.productionFamily.Value = new decimal(new int[] {
+            999,
+            0,
+            0,
+            0});
+            this.productionFamily.ValueChanged += new System.EventHandler(this.productionFamily_ValueChanged);
+            // 
+            // uprisingDefense
+            // 
+            this.uprisingDefense.BackColor = System.Drawing.SystemColors.Window;
+            this.uprisingDefense.Location = new System.Drawing.Point(141, 246);
+            this.uprisingDefense.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.uprisingDefense.Maximum = new decimal(new int[] {
+            99999,
+            0,
+            0,
+            0});
+            this.uprisingDefense.Name = "uprisingDefense";
+            this.uprisingDefense.Size = new System.Drawing.Size(59, 23);
+            this.uprisingDefense.TabIndex = 125;
+            this.uprisingDefense.TabStop = false;
+            this.uprisingDefense.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.uprisingDefense.Value = new decimal(new int[] {
+            99999,
+            0,
+            0,
+            0});
+            this.uprisingDefense.ValueChanged += new System.EventHandler(this.uprisingDefense_ValueChanged);
+            // 
+            // UprisingDefenseLabel
+            // 
+            this.UprisingDefenseLabel.AutoSize = true;
+            this.UprisingDefenseLabel.Location = new System.Drawing.Point(7, 248);
+            this.UprisingDefenseLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.UprisingDefenseLabel.Name = "UprisingDefenseLabel";
+            this.UprisingDefenseLabel.Size = new System.Drawing.Size(96, 15);
+            this.UprisingDefenseLabel.TabIndex = 94;
+            this.UprisingDefenseLabel.Text = "Uprising Defense";
+            // 
+            // researchDifficulty
+            // 
+            this.researchDifficulty.Location = new System.Drawing.Point(141, 221);
+            this.researchDifficulty.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.researchDifficulty.Maximum = new decimal(new int[] {
             9999,
             0,
             0,
             0});
-            this.shieldsMaxCapacity.Name = "shieldsMaxCapacity";
-            this.shieldsMaxCapacity.Size = new System.Drawing.Size(59, 23);
-            this.shieldsMaxCapacity.TabIndex = 13;
-            this.shieldsMaxCapacity.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.shieldsMaxCapacity.ValueChanged += new System.EventHandler(this.shieldsMaxCapacity_ValueChanged);
-            // 
-            // shieldLabel
-            // 
-            this.shieldLabel.AutoSize = true;
-            this.shieldLabel.Location = new System.Drawing.Point(7, 39);
-            this.shieldLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.shieldLabel.Name = "shieldLabel";
-            this.shieldLabel.Size = new System.Drawing.Size(79, 15);
-            this.shieldLabel.TabIndex = 0;
-            this.shieldLabel.Text = "Max Capacity";
-            // 
-            // buildByGroup
-            // 
-            this.buildByGroup.Controls.Add(this.isAllianceUnit);
-            this.buildByGroup.Controls.Add(this.isEmpireUnit);
-            this.buildByGroup.Location = new System.Drawing.Point(470, 21);
-            this.buildByGroup.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.buildByGroup.Name = "buildByGroup";
-            this.buildByGroup.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.buildByGroup.Size = new System.Drawing.Size(182, 84);
-            this.buildByGroup.TabIndex = 126;
-            this.buildByGroup.TabStop = false;
-            this.buildByGroup.Text = "Build by";
-            // 
-            // isAllianceUnit
-            // 
-            this.isAllianceUnit.AutoSize = true;
-            this.isAllianceUnit.Location = new System.Drawing.Point(7, 22);
-            this.isAllianceUnit.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.isAllianceUnit.Name = "isAllianceUnit";
-            this.isAllianceUnit.Size = new System.Drawing.Size(93, 19);
-            this.isAllianceUnit.TabIndex = 15;
-            this.isAllianceUnit.Text = "Alliance Unit";
-            this.isAllianceUnit.UseVisualStyleBackColor = true;
-            this.isAllianceUnit.CheckStateChanged += new System.EventHandler(this.isAllianceUnit_CheckStateChanged);
-            // 
-            // isEmpireUnit
-            // 
-            this.isEmpireUnit.AutoSize = true;
-            this.isEmpireUnit.Location = new System.Drawing.Point(7, 48);
-            this.isEmpireUnit.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.isEmpireUnit.Name = "isEmpireUnit";
-            this.isEmpireUnit.Size = new System.Drawing.Size(94, 19);
-            this.isEmpireUnit.TabIndex = 16;
-            this.isEmpireUnit.Text = "Imperial Unit";
-            this.isEmpireUnit.UseVisualStyleBackColor = true;
-            this.isEmpireUnit.CheckStateChanged += new System.EventHandler(this.isEmpireUnit_CheckStateChanged);
-            // 
-            // costsGroup
-            // 
-            this.costsGroup.Controls.Add(this.conCostLabel);
-            this.costsGroup.Controls.Add(this.constructionCost);
-            this.costsGroup.Controls.Add(this.maintCostLabel);
-            this.costsGroup.Controls.Add(this.maintenanceCost);
-            this.costsGroup.Location = new System.Drawing.Point(12, 110);
-            this.costsGroup.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.costsGroup.Name = "costsGroup";
-            this.costsGroup.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.costsGroup.Size = new System.Drawing.Size(212, 81);
-            this.costsGroup.TabIndex = 120;
-            this.costsGroup.TabStop = false;
-            this.costsGroup.Text = "Costs";
-            // 
-            // conCostLabel
-            // 
-            this.conCostLabel.AutoSize = true;
-            this.conCostLabel.Location = new System.Drawing.Point(7, 18);
-            this.conCostLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.conCostLabel.Name = "conCostLabel";
-            this.conCostLabel.Size = new System.Drawing.Size(76, 15);
-            this.conCostLabel.TabIndex = 0;
-            this.conCostLabel.Text = "Construction";
-            // 
-            // constructionCost
-            // 
-            this.constructionCost.Location = new System.Drawing.Point(121, 17);
-            this.constructionCost.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.constructionCost.Maximum = new decimal(new int[] {
+            this.researchDifficulty.Name = "researchDifficulty";
+            this.researchDifficulty.Size = new System.Drawing.Size(59, 23);
+            this.researchDifficulty.TabIndex = 8;
+            this.researchDifficulty.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.researchDifficulty.Value = new decimal(new int[] {
             9999,
             0,
             0,
             0});
-            this.constructionCost.Name = "constructionCost";
-            this.constructionCost.Size = new System.Drawing.Size(59, 23);
-            this.constructionCost.TabIndex = 2;
-            this.constructionCost.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.constructionCost.Value = new decimal(new int[] {
-            9999,
+            this.researchDifficulty.ValueChanged += new System.EventHandler(this.researchDifficulty_ValueChanged);
+            // 
+            // researchDifficultyLabel
+            // 
+            this.researchDifficultyLabel.AutoSize = true;
+            this.researchDifficultyLabel.Location = new System.Drawing.Point(7, 223);
+            this.researchDifficultyLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.researchDifficultyLabel.Name = "researchDifficultyLabel";
+            this.researchDifficultyLabel.Size = new System.Drawing.Size(105, 15);
+            this.researchDifficultyLabel.TabIndex = 0;
+            this.researchDifficultyLabel.Text = "Research Difficulty";
+            // 
+            // isEmpire
+            // 
+            this.isEmpire.AutoSize = true;
+            this.isEmpire.Location = new System.Drawing.Point(242, 74);
+            this.isEmpire.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.isEmpire.Name = "isEmpire";
+            this.isEmpire.Size = new System.Drawing.Size(63, 19);
+            this.isEmpire.TabIndex = 16;
+            this.isEmpire.Text = "Empire";
+            this.isEmpire.UseVisualStyleBackColor = true;
+            this.isEmpire.CheckedChanged += new System.EventHandler(this.isEmpire_CheckedChanged);
+            // 
+            // isAlliance
+            // 
+            this.isAlliance.AutoSize = true;
+            this.isAlliance.Location = new System.Drawing.Point(242, 53);
+            this.isAlliance.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.isAlliance.Name = "isAlliance";
+            this.isAlliance.Size = new System.Drawing.Size(68, 19);
+            this.isAlliance.TabIndex = 15;
+            this.isAlliance.Text = "Alliance";
+            this.isAlliance.UseVisualStyleBackColor = true;
+            this.isAlliance.CheckedChanged += new System.EventHandler(this.isAlliance_CheckedChanged);
+            // 
+            // selector
+            // 
+            this.selector.LargeChange = 1;
+            this.selector.Location = new System.Drawing.Point(7, 5);
+            this.selector.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.selector.Maximum = 7;
+            this.selector.Name = "selector";
+            this.selector.Size = new System.Drawing.Size(443, 45);
+            this.selector.TabIndex = 1;
+            this.selector.ValueChanged += new System.EventHandler(this.GameObjectsSelector_ValueChanged);
+            // 
+            // detectionLabel
+            // 
+            this.detectionLabel.AutoSize = true;
+            this.detectionLabel.Location = new System.Drawing.Point(228, 178);
+            this.detectionLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.detectionLabel.Name = "detectionLabel";
+            this.detectionLabel.Size = new System.Drawing.Size(58, 15);
+            this.detectionLabel.TabIndex = 0;
+            this.detectionLabel.Text = "Detection";
+            // 
+            // detection
+            // 
+            this.detection.Location = new System.Drawing.Point(365, 176);
+            this.detection.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.detection.Maximum = new decimal(new int[] {
+            999,
             0,
             0,
             0});
-            this.constructionCost.ValueChanged += new System.EventHandler(this.constructionCost_ValueChanged);
+            this.detection.Name = "detection";
+            this.detection.Size = new System.Drawing.Size(59, 23);
+            this.detection.TabIndex = 5;
+            this.detection.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.detection.Value = new decimal(new int[] {
+            999,
+            0,
+            0,
+            0});
+            this.detection.ValueChanged += new System.EventHandler(this.detection_ValueChanged);
             // 
-            // maintCostLabel
+            // researchOrderLabel
             // 
-            this.maintCostLabel.AutoSize = true;
-            this.maintCostLabel.Location = new System.Drawing.Point(7, 45);
-            this.maintCostLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.maintCostLabel.Name = "maintCostLabel";
-            this.maintCostLabel.Size = new System.Drawing.Size(76, 15);
-            this.maintCostLabel.TabIndex = 0;
-            this.maintCostLabel.Text = "Maintenance";
+            this.researchOrderLabel.AutoSize = true;
+            this.researchOrderLabel.Location = new System.Drawing.Point(7, 198);
+            this.researchOrderLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.researchOrderLabel.Name = "researchOrderLabel";
+            this.researchOrderLabel.Size = new System.Drawing.Size(87, 15);
+            this.researchOrderLabel.TabIndex = 0;
+            this.researchOrderLabel.Text = "Research Order";
+            // 
+            // researchOrder
+            // 
+            this.researchOrder.Location = new System.Drawing.Point(141, 196);
+            this.researchOrder.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.researchOrder.Maximum = new decimal(new int[] {
+            999,
+            0,
+            0,
+            0});
+            this.researchOrder.Name = "researchOrder";
+            this.researchOrder.Size = new System.Drawing.Size(59, 23);
+            this.researchOrder.TabIndex = 7;
+            this.researchOrder.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.researchOrder.Value = new decimal(new int[] {
+            999,
+            0,
+            0,
+            0});
+            this.researchOrder.ValueChanged += new System.EventHandler(this.researchOrder_ValueChanged);
             // 
             // maintenanceCost
             // 
-            this.maintenanceCost.Location = new System.Drawing.Point(121, 47);
+            this.maintenanceCost.Location = new System.Drawing.Point(146, 151);
             this.maintenanceCost.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.maintenanceCost.Maximum = new decimal(new int[] {
             9999,
@@ -617,285 +650,173 @@ namespace SwRebellionEditor
             0});
             this.maintenanceCost.ValueChanged += new System.EventHandler(this.maintenanceCost_ValueChanged);
             // 
-            // researchGroup
+            // maintenanceCostLabel
             // 
-            this.researchGroup.Controls.Add(this.researchOrder);
-            this.researchGroup.Controls.Add(this.researchLabel);
-            this.researchGroup.Controls.Add(this.resDiffLabel);
-            this.researchGroup.Controls.Add(this.researchDifficulty);
-            this.researchGroup.Location = new System.Drawing.Point(12, 320);
-            this.researchGroup.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.researchGroup.Name = "researchGroup";
-            this.researchGroup.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.researchGroup.Size = new System.Drawing.Size(212, 93);
-            this.researchGroup.TabIndex = 122;
-            this.researchGroup.TabStop = false;
-            this.researchGroup.Text = "Research";
+            this.maintenanceCostLabel.AutoSize = true;
+            this.maintenanceCostLabel.Location = new System.Drawing.Point(13, 155);
+            this.maintenanceCostLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.maintenanceCostLabel.Name = "maintenanceCostLabel";
+            this.maintenanceCostLabel.Size = new System.Drawing.Size(103, 15);
+            this.maintenanceCostLabel.TabIndex = 0;
+            this.maintenanceCostLabel.Text = "Maintenance Cost";
             // 
-            // researchOrder
+            // refinedMaterialCost
             // 
-            this.researchOrder.Location = new System.Drawing.Point(121, 22);
-            this.researchOrder.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.researchOrder.Name = "researchOrder";
-            this.researchOrder.Size = new System.Drawing.Size(59, 23);
-            this.researchOrder.TabIndex = 7;
-            this.researchOrder.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.researchOrder.ValueChanged += new System.EventHandler(this.researchOrder_ValueChanged);
-            // 
-            // researchLabel
-            // 
-            this.researchLabel.AutoSize = true;
-            this.researchLabel.Location = new System.Drawing.Point(9, 24);
-            this.researchLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.researchLabel.Name = "researchLabel";
-            this.researchLabel.Size = new System.Drawing.Size(37, 15);
-            this.researchLabel.TabIndex = 0;
-            this.researchLabel.Text = "Order";
-            // 
-            // resDiffLabel
-            // 
-            this.resDiffLabel.AutoSize = true;
-            this.resDiffLabel.Location = new System.Drawing.Point(9, 55);
-            this.resDiffLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.resDiffLabel.Name = "resDiffLabel";
-            this.resDiffLabel.Size = new System.Drawing.Size(55, 15);
-            this.resDiffLabel.TabIndex = 0;
-            this.resDiffLabel.Text = "Difficulty";
-            // 
-            // researchDifficulty
-            // 
-            this.researchDifficulty.Location = new System.Drawing.Point(121, 55);
-            this.researchDifficulty.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.researchDifficulty.Maximum = new decimal(new int[] {
+            this.refinedMaterialCost.Location = new System.Drawing.Point(146, 126);
+            this.refinedMaterialCost.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.refinedMaterialCost.Maximum = new decimal(new int[] {
             9999,
             0,
             0,
             0});
-            this.researchDifficulty.Name = "researchDifficulty";
-            this.researchDifficulty.Size = new System.Drawing.Size(59, 23);
-            this.researchDifficulty.TabIndex = 8;
-            this.researchDifficulty.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.researchDifficulty.ValueChanged += new System.EventHandler(this.researchDifficulty_ValueChanged);
-            // 
-            // tabControl1
-            // 
-            this.tabControl1.Controls.Add(this.tabPage1);
-            this.tabControl1.Controls.Add(this.tabPage2);
-            this.tabControl1.Controls.Add(this.tabPage3);
-            this.tabControl1.Location = new System.Drawing.Point(465, 111);
-            this.tabControl1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.tabControl1.Name = "tabControl1";
-            this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(460, 362);
-            this.tabControl1.TabIndex = 128;
-            // 
-            // tabPage1
-            // 
-            this.tabPage1.BackColor = System.Drawing.SystemColors.Control;
-            this.tabPage1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.tabPage1.Controls.Add(this.squadronSize);
-            this.tabPage1.Controls.Add(this.wepFPGroup);
-            this.tabPage1.Controls.Add(this.squadSizeLabel);
-            this.tabPage1.Location = new System.Drawing.Point(4, 24);
-            this.tabPage1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.tabPage1.Size = new System.Drawing.Size(452, 334);
-            this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "Weapons";
-            // 
-            // squadronSize
-            // 
-            this.squadronSize.Location = new System.Drawing.Point(248, 279);
-            this.squadronSize.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.squadronSize.Maximum = new decimal(new int[] {
+            this.refinedMaterialCost.Name = "refinedMaterialCost";
+            this.refinedMaterialCost.Size = new System.Drawing.Size(59, 23);
+            this.refinedMaterialCost.TabIndex = 2;
+            this.refinedMaterialCost.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.refinedMaterialCost.Value = new decimal(new int[] {
             9999,
             0,
             0,
             0});
-            this.squadronSize.Name = "squadronSize";
-            this.squadronSize.Size = new System.Drawing.Size(59, 23);
-            this.squadronSize.TabIndex = 44;
-            this.squadronSize.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.squadronSize.Value = new decimal(new int[] {
+            this.refinedMaterialCost.ValueChanged += new System.EventHandler(this.refinedMaterialCost_ValueChanged);
+            // 
+            // refinedMaterialCostLabel
+            // 
+            this.refinedMaterialCostLabel.AutoSize = true;
+            this.refinedMaterialCostLabel.Location = new System.Drawing.Point(13, 130);
+            this.refinedMaterialCostLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.refinedMaterialCostLabel.Name = "refinedMaterialCostLabel";
+            this.refinedMaterialCostLabel.Size = new System.Drawing.Size(120, 15);
+            this.refinedMaterialCostLabel.TabIndex = 0;
+            this.refinedMaterialCostLabel.Text = "Refined Material Cost";
+            // 
+            // bombardmentDefense
+            // 
+            this.bombardmentDefense.Location = new System.Drawing.Point(365, 201);
+            this.bombardmentDefense.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.bombardmentDefense.Maximum = new decimal(new int[] {
             9999,
             0,
             0,
             0});
-            this.squadronSize.ValueChanged += new System.EventHandler(this.squadronSize_ValueChanged);
-            // 
-            // wepFPGroup
-            // 
-            this.wepFPGroup.Controls.Add(this.torpedoRange);
-            this.wepFPGroup.Controls.Add(this.torpedoFore);
-            this.wepFPGroup.Controls.Add(this.wepTorpLabel);
-            this.wepFPGroup.Controls.Add(this.bombardmentMod);
-            this.wepFPGroup.Controls.Add(this.laserCannonRange);
-            this.wepFPGroup.Controls.Add(this.laserCannonStar);
-            this.wepFPGroup.Controls.Add(this.bombardLabel);
-            this.wepFPGroup.Controls.Add(this.laserCannonPort);
-            this.wepFPGroup.Controls.Add(this.laserCannonAft);
-            this.wepFPGroup.Controls.Add(this.ionCannonRange);
-            this.wepFPGroup.Controls.Add(this.ionCannonStar);
-            this.wepFPGroup.Controls.Add(this.ionCannonPort);
-            this.wepFPGroup.Controls.Add(this.ionCannonAft);
-            this.wepFPGroup.Controls.Add(this.turboLaserRange);
-            this.wepFPGroup.Controls.Add(this.ionCannonFore);
-            this.wepFPGroup.Controls.Add(this.laserCannonFore);
-            this.wepFPGroup.Controls.Add(this.wepLaserLabel);
-            this.wepFPGroup.Controls.Add(this.wepIonLabel);
-            this.wepFPGroup.Controls.Add(this.wepTurboLabel);
-            this.wepFPGroup.Controls.Add(this.turboLaserStar);
-            this.wepFPGroup.Controls.Add(this.turboLaserPort);
-            this.wepFPGroup.Controls.Add(this.turboLaserAft);
-            this.wepFPGroup.Controls.Add(this.turboLaserFore);
-            this.wepFPGroup.Controls.Add(this.wepRanLabel);
-            this.wepFPGroup.Controls.Add(this.wepStarLabel);
-            this.wepFPGroup.Controls.Add(this.wepPortLabel);
-            this.wepFPGroup.Controls.Add(this.wepAftLabel);
-            this.wepFPGroup.Controls.Add(this.wepForeLabel);
-            this.wepFPGroup.Controls.Add(this.wepTypeLabel);
-            this.wepFPGroup.Location = new System.Drawing.Point(7, 7);
-            this.wepFPGroup.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.wepFPGroup.Name = "wepFPGroup";
-            this.wepFPGroup.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.wepFPGroup.Size = new System.Drawing.Size(430, 235);
-            this.wepFPGroup.TabIndex = 10;
-            this.wepFPGroup.TabStop = false;
-            this.wepFPGroup.Text = "Weapons FirePower";
-            // 
-            // torpedoRange
-            // 
-            this.torpedoRange.Location = new System.Drawing.Point(365, 135);
-            this.torpedoRange.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.torpedoRange.Maximum = new decimal(new int[] {
+            this.bombardmentDefense.Name = "bombardmentDefense";
+            this.bombardmentDefense.Size = new System.Drawing.Size(59, 23);
+            this.bombardmentDefense.TabIndex = 37;
+            this.bombardmentDefense.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.bombardmentDefense.Value = new decimal(new int[] {
             9999,
             0,
             0,
             0});
-            this.torpedoRange.Name = "torpedoRange";
-            this.torpedoRange.Size = new System.Drawing.Size(59, 23);
-            this.torpedoRange.TabIndex = 34;
-            this.torpedoRange.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.torpedoRange.Value = new decimal(new int[] {
+            this.bombardmentDefense.ValueChanged += new System.EventHandler(this.bombardmentDefense_ValueChanged);
+            // 
+            // bombardmentDefenseLabel
+            // 
+            this.bombardmentDefenseLabel.AutoSize = true;
+            this.bombardmentDefenseLabel.BackColor = System.Drawing.SystemColors.Control;
+            this.bombardmentDefenseLabel.Location = new System.Drawing.Point(228, 203);
+            this.bombardmentDefenseLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.bombardmentDefenseLabel.Name = "bombardmentDefenseLabel";
+            this.bombardmentDefenseLabel.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.bombardmentDefenseLabel.Size = new System.Drawing.Size(129, 15);
+            this.bombardmentDefenseLabel.TabIndex = 0;
+            this.bombardmentDefenseLabel.Text = "Bombardment Defense";
+            this.bombardmentDefenseLabel.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // attackStrengthGroupBox
+            // 
+            this.attackStrengthGroupBox.Controls.Add(this.torpedoes);
+            this.attackStrengthGroupBox.Controls.Add(this.torpedoesLabel);
+            this.attackStrengthGroupBox.Controls.Add(this.laserCannonStarboard);
+            this.attackStrengthGroupBox.Controls.Add(this.laserCannonPort);
+            this.attackStrengthGroupBox.Controls.Add(this.laserCannonAft);
+            this.attackStrengthGroupBox.Controls.Add(this.ionCannonStarboard);
+            this.attackStrengthGroupBox.Controls.Add(this.overallAttackStrength);
+            this.attackStrengthGroupBox.Controls.Add(this.ionCannonPort);
+            this.attackStrengthGroupBox.Controls.Add(this.overallLabel);
+            this.attackStrengthGroupBox.Controls.Add(this.ionCannonAft);
+            this.attackStrengthGroupBox.Controls.Add(this.ionCannonFore);
+            this.attackStrengthGroupBox.Controls.Add(this.laserCannonFore);
+            this.attackStrengthGroupBox.Controls.Add(this.laserCannonLabel);
+            this.attackStrengthGroupBox.Controls.Add(this.ionCannonLabel);
+            this.attackStrengthGroupBox.Controls.Add(this.turboLaserLabel);
+            this.attackStrengthGroupBox.Controls.Add(this.turbolaserStarboard);
+            this.attackStrengthGroupBox.Controls.Add(this.turbolaserPort);
+            this.attackStrengthGroupBox.Controls.Add(this.turbolaserAft);
+            this.attackStrengthGroupBox.Controls.Add(this.turbolaserFore);
+            this.attackStrengthGroupBox.Controls.Add(this.starboardLabel);
+            this.attackStrengthGroupBox.Controls.Add(this.portLabel);
+            this.attackStrengthGroupBox.Controls.Add(this.totalAttackLabel);
+            this.attackStrengthGroupBox.Controls.Add(this.ionCannonAttackStrength);
+            this.attackStrengthGroupBox.Controls.Add(this.aftLabel);
+            this.attackStrengthGroupBox.Controls.Add(this.laserCannonAttackStrength);
+            this.attackStrengthGroupBox.Controls.Add(this.foreLabel);
+            this.attackStrengthGroupBox.Controls.Add(this.turbolaserAttackStrength);
+            this.attackStrengthGroupBox.Location = new System.Drawing.Point(5, 225);
+            this.attackStrengthGroupBox.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.attackStrengthGroupBox.Name = "attackStrengthGroupBox";
+            this.attackStrengthGroupBox.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.attackStrengthGroupBox.Size = new System.Drawing.Size(428, 162);
+            this.attackStrengthGroupBox.TabIndex = 10;
+            this.attackStrengthGroupBox.TabStop = false;
+            this.attackStrengthGroupBox.Text = "Attack Strength";
+            // 
+            // torpedoes
+            // 
+            this.torpedoes.Location = new System.Drawing.Point(91, 133);
+            this.torpedoes.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.torpedoes.Maximum = new decimal(new int[] {
             9999,
             0,
             0,
             0});
-            this.torpedoRange.ValueChanged += new System.EventHandler(this.torpedoRange_ValueChanged);
-            // 
-            // torpedoFore
-            // 
-            this.torpedoFore.Location = new System.Drawing.Point(99, 135);
-            this.torpedoFore.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.torpedoFore.Maximum = new decimal(new int[] {
+            this.torpedoes.Name = "torpedoes";
+            this.torpedoes.Size = new System.Drawing.Size(59, 23);
+            this.torpedoes.TabIndex = 156;
+            this.torpedoes.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.torpedoes.Value = new decimal(new int[] {
             9999,
             0,
             0,
             0});
-            this.torpedoFore.Name = "torpedoFore";
-            this.torpedoFore.Size = new System.Drawing.Size(59, 23);
-            this.torpedoFore.TabIndex = 22;
-            this.torpedoFore.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.torpedoFore.Value = new decimal(new int[] {
+            this.torpedoes.ValueChanged += new System.EventHandler(this.torpedoes_ValueChanged);
+            // 
+            // torpedoesLabel
+            // 
+            this.torpedoesLabel.AutoSize = true;
+            this.torpedoesLabel.BackColor = System.Drawing.SystemColors.Control;
+            this.torpedoesLabel.Location = new System.Drawing.Point(8, 135);
+            this.torpedoesLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.torpedoesLabel.Name = "torpedoesLabel";
+            this.torpedoesLabel.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.torpedoesLabel.Size = new System.Drawing.Size(61, 15);
+            this.torpedoesLabel.TabIndex = 155;
+            this.torpedoesLabel.Text = "Torpedoes";
+            this.torpedoesLabel.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // laserCannonStarboard
+            // 
+            this.laserCannonStarboard.Location = new System.Drawing.Point(291, 108);
+            this.laserCannonStarboard.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.laserCannonStarboard.Maximum = new decimal(new int[] {
             9999,
             0,
             0,
             0});
-            this.torpedoFore.ValueChanged += new System.EventHandler(this.torpedoFore_ValueChanged);
-            // 
-            // wepTorpLabel
-            // 
-            this.wepTorpLabel.AutoSize = true;
-            this.wepTorpLabel.BackColor = System.Drawing.Color.LightGray;
-            this.wepTorpLabel.Location = new System.Drawing.Point(7, 137);
-            this.wepTorpLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.wepTorpLabel.Name = "wepTorpLabel";
-            this.wepTorpLabel.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.wepTorpLabel.Size = new System.Drawing.Size(50, 15);
-            this.wepTorpLabel.TabIndex = 38;
-            this.wepTorpLabel.Text = "Torpedo";
-            this.wepTorpLabel.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // bombardmentMod
-            // 
-            this.bombardmentMod.Location = new System.Drawing.Point(241, 182);
-            this.bombardmentMod.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.bombardmentMod.Maximum = new decimal(new int[] {
+            this.laserCannonStarboard.Name = "laserCannonStarboard";
+            this.laserCannonStarboard.Size = new System.Drawing.Size(59, 23);
+            this.laserCannonStarboard.TabIndex = 30;
+            this.laserCannonStarboard.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.laserCannonStarboard.Value = new decimal(new int[] {
             9999,
             0,
             0,
             0});
-            this.bombardmentMod.Name = "bombardmentMod";
-            this.bombardmentMod.Size = new System.Drawing.Size(59, 23);
-            this.bombardmentMod.TabIndex = 35;
-            this.bombardmentMod.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.bombardmentMod.Value = new decimal(new int[] {
-            9999,
-            0,
-            0,
-            0});
-            this.bombardmentMod.ValueChanged += new System.EventHandler(this.bombardmentMod_ValueChanged);
-            // 
-            // laserCannonRange
-            // 
-            this.laserCannonRange.Location = new System.Drawing.Point(365, 106);
-            this.laserCannonRange.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.laserCannonRange.Maximum = new decimal(new int[] {
-            9999,
-            0,
-            0,
-            0});
-            this.laserCannonRange.Name = "laserCannonRange";
-            this.laserCannonRange.Size = new System.Drawing.Size(59, 23);
-            this.laserCannonRange.TabIndex = 33;
-            this.laserCannonRange.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.laserCannonRange.Value = new decimal(new int[] {
-            9999,
-            0,
-            0,
-            0});
-            this.laserCannonRange.ValueChanged += new System.EventHandler(this.laserCannonRange_ValueChanged);
-            // 
-            // laserCannonStar
-            // 
-            this.laserCannonStar.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.laserCannonStar.Location = new System.Drawing.Point(299, 106);
-            this.laserCannonStar.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.laserCannonStar.Maximum = new decimal(new int[] {
-            9999,
-            0,
-            0,
-            0});
-            this.laserCannonStar.Name = "laserCannonStar";
-            this.laserCannonStar.Size = new System.Drawing.Size(59, 23);
-            this.laserCannonStar.TabIndex = 30;
-            this.laserCannonStar.TabStop = false;
-            this.laserCannonStar.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.laserCannonStar.Value = new decimal(new int[] {
-            9999,
-            0,
-            0,
-            0});
-            this.laserCannonStar.ValueChanged += new System.EventHandler(this.laserCannonStar_ValueChanged);
-            // 
-            // bombardLabel
-            // 
-            this.bombardLabel.AutoSize = true;
-            this.bombardLabel.BackColor = System.Drawing.Color.LightGray;
-            this.bombardLabel.Location = new System.Drawing.Point(217, 164);
-            this.bombardLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.bombardLabel.Name = "bombardLabel";
-            this.bombardLabel.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bombardLabel.Size = new System.Drawing.Size(112, 15);
-            this.bombardLabel.TabIndex = 0;
-            this.bombardLabel.Text = "Bombardment Mod";
-            this.bombardLabel.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.laserCannonStarboard.ValueChanged += new System.EventHandler(this.laserCannonStarboard_ValueChanged);
             // 
             // laserCannonPort
             // 
-            this.laserCannonPort.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.laserCannonPort.Location = new System.Drawing.Point(232, 106);
+            this.laserCannonPort.Location = new System.Drawing.Point(224, 108);
             this.laserCannonPort.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.laserCannonPort.Maximum = new decimal(new int[] {
             9999,
@@ -905,7 +826,6 @@ namespace SwRebellionEditor
             this.laserCannonPort.Name = "laserCannonPort";
             this.laserCannonPort.Size = new System.Drawing.Size(59, 23);
             this.laserCannonPort.TabIndex = 27;
-            this.laserCannonPort.TabStop = false;
             this.laserCannonPort.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.laserCannonPort.Value = new decimal(new int[] {
             9999,
@@ -916,8 +836,7 @@ namespace SwRebellionEditor
             // 
             // laserCannonAft
             // 
-            this.laserCannonAft.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.laserCannonAft.Location = new System.Drawing.Point(166, 106);
+            this.laserCannonAft.Location = new System.Drawing.Point(158, 108);
             this.laserCannonAft.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.laserCannonAft.Maximum = new decimal(new int[] {
             9999,
@@ -927,7 +846,6 @@ namespace SwRebellionEditor
             this.laserCannonAft.Name = "laserCannonAft";
             this.laserCannonAft.Size = new System.Drawing.Size(59, 23);
             this.laserCannonAft.TabIndex = 24;
-            this.laserCannonAft.TabStop = false;
             this.laserCannonAft.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.laserCannonAft.Value = new decimal(new int[] {
             9999,
@@ -936,52 +854,52 @@ namespace SwRebellionEditor
             0});
             this.laserCannonAft.ValueChanged += new System.EventHandler(this.laserCannonAft_ValueChanged);
             // 
-            // ionCannonRange
+            // ionCannonStarboard
             // 
-            this.ionCannonRange.Location = new System.Drawing.Point(365, 76);
-            this.ionCannonRange.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.ionCannonRange.Maximum = new decimal(new int[] {
+            this.ionCannonStarboard.Location = new System.Drawing.Point(291, 83);
+            this.ionCannonStarboard.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.ionCannonStarboard.Maximum = new decimal(new int[] {
             9999,
             0,
             0,
             0});
-            this.ionCannonRange.Name = "ionCannonRange";
-            this.ionCannonRange.Size = new System.Drawing.Size(59, 23);
-            this.ionCannonRange.TabIndex = 32;
-            this.ionCannonRange.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.ionCannonRange.Value = new decimal(new int[] {
+            this.ionCannonStarboard.Name = "ionCannonStarboard";
+            this.ionCannonStarboard.Size = new System.Drawing.Size(59, 23);
+            this.ionCannonStarboard.TabIndex = 29;
+            this.ionCannonStarboard.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.ionCannonStarboard.Value = new decimal(new int[] {
             9999,
             0,
             0,
             0});
-            this.ionCannonRange.ValueChanged += new System.EventHandler(this.ionCannonRange_ValueChanged);
+            this.ionCannonStarboard.ValueChanged += new System.EventHandler(this.ionCannonStarboard_ValueChanged);
             // 
-            // ionCannonStar
+            // overallAttackStrength
             // 
-            this.ionCannonStar.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.ionCannonStar.Location = new System.Drawing.Point(299, 76);
-            this.ionCannonStar.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.ionCannonStar.Maximum = new decimal(new int[] {
+            this.overallAttackStrength.BackColor = System.Drawing.SystemColors.Menu;
+            this.overallAttackStrength.Enabled = false;
+            this.overallAttackStrength.Location = new System.Drawing.Point(360, 15);
+            this.overallAttackStrength.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.overallAttackStrength.Maximum = new decimal(new int[] {
             9999,
             0,
             0,
             0});
-            this.ionCannonStar.Name = "ionCannonStar";
-            this.ionCannonStar.Size = new System.Drawing.Size(59, 23);
-            this.ionCannonStar.TabIndex = 29;
-            this.ionCannonStar.TabStop = false;
-            this.ionCannonStar.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.ionCannonStar.Value = new decimal(new int[] {
+            this.overallAttackStrength.Name = "overallAttackStrength";
+            this.overallAttackStrength.Size = new System.Drawing.Size(59, 23);
+            this.overallAttackStrength.TabIndex = 152;
+            this.overallAttackStrength.TabStop = false;
+            this.overallAttackStrength.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.overallAttackStrength.Value = new decimal(new int[] {
             9999,
             0,
             0,
             0});
-            this.ionCannonStar.ValueChanged += new System.EventHandler(this.ionCannonStar_ValueChanged);
+            this.overallAttackStrength.ValueChanged += new System.EventHandler(this.overallAttackStrength_ValueChanged);
             // 
             // ionCannonPort
             // 
-            this.ionCannonPort.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.ionCannonPort.Location = new System.Drawing.Point(232, 76);
+            this.ionCannonPort.Location = new System.Drawing.Point(224, 83);
             this.ionCannonPort.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.ionCannonPort.Maximum = new decimal(new int[] {
             9999,
@@ -991,7 +909,6 @@ namespace SwRebellionEditor
             this.ionCannonPort.Name = "ionCannonPort";
             this.ionCannonPort.Size = new System.Drawing.Size(59, 23);
             this.ionCannonPort.TabIndex = 26;
-            this.ionCannonPort.TabStop = false;
             this.ionCannonPort.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.ionCannonPort.Value = new decimal(new int[] {
             9999,
@@ -1000,10 +917,22 @@ namespace SwRebellionEditor
             0});
             this.ionCannonPort.ValueChanged += new System.EventHandler(this.ionCannonPort_ValueChanged);
             // 
+            // overallLabel
+            // 
+            this.overallLabel.AutoSize = true;
+            this.overallLabel.BackColor = System.Drawing.SystemColors.Control;
+            this.overallLabel.Location = new System.Drawing.Point(308, 19);
+            this.overallLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.overallLabel.Name = "overallLabel";
+            this.overallLabel.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.overallLabel.Size = new System.Drawing.Size(44, 15);
+            this.overallLabel.TabIndex = 154;
+            this.overallLabel.Text = "Overall";
+            this.overallLabel.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
             // ionCannonAft
             // 
-            this.ionCannonAft.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.ionCannonAft.Location = new System.Drawing.Point(166, 76);
+            this.ionCannonAft.Location = new System.Drawing.Point(158, 83);
             this.ionCannonAft.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.ionCannonAft.Maximum = new decimal(new int[] {
             9999,
@@ -1013,7 +942,6 @@ namespace SwRebellionEditor
             this.ionCannonAft.Name = "ionCannonAft";
             this.ionCannonAft.Size = new System.Drawing.Size(59, 23);
             this.ionCannonAft.TabIndex = 23;
-            this.ionCannonAft.TabStop = false;
             this.ionCannonAft.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.ionCannonAft.Value = new decimal(new int[] {
             9999,
@@ -1022,31 +950,9 @@ namespace SwRebellionEditor
             0});
             this.ionCannonAft.ValueChanged += new System.EventHandler(this.ionCannonAft_ValueChanged);
             // 
-            // turboLaserRange
-            // 
-            this.turboLaserRange.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.turboLaserRange.Location = new System.Drawing.Point(365, 46);
-            this.turboLaserRange.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.turboLaserRange.Maximum = new decimal(new int[] {
-            9999,
-            0,
-            0,
-            0});
-            this.turboLaserRange.Name = "turboLaserRange";
-            this.turboLaserRange.Size = new System.Drawing.Size(59, 23);
-            this.turboLaserRange.TabIndex = 31;
-            this.turboLaserRange.TabStop = false;
-            this.turboLaserRange.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.turboLaserRange.Value = new decimal(new int[] {
-            9999,
-            0,
-            0,
-            0});
-            this.turboLaserRange.ValueChanged += new System.EventHandler(this.turboLaserRange_ValueChanged);
-            // 
             // ionCannonFore
             // 
-            this.ionCannonFore.Location = new System.Drawing.Point(99, 76);
+            this.ionCannonFore.Location = new System.Drawing.Point(91, 83);
             this.ionCannonFore.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.ionCannonFore.Maximum = new decimal(new int[] {
             9999,
@@ -1066,7 +972,7 @@ namespace SwRebellionEditor
             // 
             // laserCannonFore
             // 
-            this.laserCannonFore.Location = new System.Drawing.Point(99, 106);
+            this.laserCannonFore.Location = new System.Drawing.Point(91, 108);
             this.laserCannonFore.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.laserCannonFore.Maximum = new decimal(new int[] {
             9999,
@@ -1084,761 +990,770 @@ namespace SwRebellionEditor
             0});
             this.laserCannonFore.ValueChanged += new System.EventHandler(this.laserCannonFore_ValueChanged);
             // 
-            // wepLaserLabel
+            // laserCannonLabel
             // 
-            this.wepLaserLabel.AutoSize = true;
-            this.wepLaserLabel.BackColor = System.Drawing.Color.LightGray;
-            this.wepLaserLabel.Location = new System.Drawing.Point(7, 112);
-            this.wepLaserLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.wepLaserLabel.Name = "wepLaserLabel";
-            this.wepLaserLabel.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.wepLaserLabel.Size = new System.Drawing.Size(79, 15);
-            this.wepLaserLabel.TabIndex = 0;
-            this.wepLaserLabel.Text = "Laser Cannon";
-            this.wepLaserLabel.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.laserCannonLabel.AutoSize = true;
+            this.laserCannonLabel.BackColor = System.Drawing.SystemColors.Control;
+            this.laserCannonLabel.Location = new System.Drawing.Point(7, 110);
+            this.laserCannonLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.laserCannonLabel.Name = "laserCannonLabel";
+            this.laserCannonLabel.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.laserCannonLabel.Size = new System.Drawing.Size(79, 15);
+            this.laserCannonLabel.TabIndex = 0;
+            this.laserCannonLabel.Text = "Laser Cannon";
+            this.laserCannonLabel.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // wepIonLabel
+            // ionCannonLabel
             // 
-            this.wepIonLabel.AutoSize = true;
-            this.wepIonLabel.BackColor = System.Drawing.Color.LightGray;
-            this.wepIonLabel.Location = new System.Drawing.Point(7, 78);
-            this.wepIonLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.wepIonLabel.Name = "wepIonLabel";
-            this.wepIonLabel.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.wepIonLabel.Size = new System.Drawing.Size(69, 15);
-            this.wepIonLabel.TabIndex = 0;
-            this.wepIonLabel.Text = "Ion Cannon";
-            this.wepIonLabel.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.ionCannonLabel.AutoSize = true;
+            this.ionCannonLabel.BackColor = System.Drawing.SystemColors.Control;
+            this.ionCannonLabel.Location = new System.Drawing.Point(7, 85);
+            this.ionCannonLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.ionCannonLabel.Name = "ionCannonLabel";
+            this.ionCannonLabel.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.ionCannonLabel.Size = new System.Drawing.Size(69, 15);
+            this.ionCannonLabel.TabIndex = 0;
+            this.ionCannonLabel.Text = "Ion Cannon";
+            this.ionCannonLabel.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // wepTurboLabel
+            // turboLaserLabel
             // 
-            this.wepTurboLabel.AutoSize = true;
-            this.wepTurboLabel.BackColor = System.Drawing.Color.LightGray;
-            this.wepTurboLabel.Location = new System.Drawing.Point(7, 50);
-            this.wepTurboLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.wepTurboLabel.Name = "wepTurboLabel";
-            this.wepTurboLabel.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.wepTurboLabel.Size = new System.Drawing.Size(62, 15);
-            this.wepTurboLabel.TabIndex = 0;
-            this.wepTurboLabel.Text = "Turbolaser";
-            this.wepTurboLabel.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.turboLaserLabel.AutoSize = true;
+            this.turboLaserLabel.BackColor = System.Drawing.SystemColors.Control;
+            this.turboLaserLabel.Location = new System.Drawing.Point(6, 60);
+            this.turboLaserLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.turboLaserLabel.Name = "turboLaserLabel";
+            this.turboLaserLabel.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.turboLaserLabel.Size = new System.Drawing.Size(62, 15);
+            this.turboLaserLabel.TabIndex = 0;
+            this.turboLaserLabel.Text = "Turbolaser";
+            this.turboLaserLabel.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // turboLaserStar
+            // turbolaserStarboard
             // 
-            this.turboLaserStar.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.turboLaserStar.Location = new System.Drawing.Point(299, 46);
-            this.turboLaserStar.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.turboLaserStar.Maximum = new decimal(new int[] {
+            this.turbolaserStarboard.Location = new System.Drawing.Point(291, 58);
+            this.turbolaserStarboard.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.turbolaserStarboard.Maximum = new decimal(new int[] {
             9999,
             0,
             0,
             0});
-            this.turboLaserStar.Name = "turboLaserStar";
-            this.turboLaserStar.Size = new System.Drawing.Size(59, 23);
-            this.turboLaserStar.TabIndex = 28;
-            this.turboLaserStar.TabStop = false;
-            this.turboLaserStar.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.turboLaserStar.Value = new decimal(new int[] {
+            this.turbolaserStarboard.Name = "turbolaserStarboard";
+            this.turbolaserStarboard.Size = new System.Drawing.Size(59, 23);
+            this.turbolaserStarboard.TabIndex = 28;
+            this.turbolaserStarboard.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.turbolaserStarboard.Value = new decimal(new int[] {
             9999,
             0,
             0,
             0});
-            this.turboLaserStar.ValueChanged += new System.EventHandler(this.turboLaserStar_ValueChanged);
+            this.turbolaserStarboard.ValueChanged += new System.EventHandler(this.turbolaserStarboard_ValueChanged);
             // 
-            // turboLaserPort
+            // turbolaserPort
             // 
-            this.turboLaserPort.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.turboLaserPort.Location = new System.Drawing.Point(232, 46);
-            this.turboLaserPort.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.turboLaserPort.Maximum = new decimal(new int[] {
+            this.turbolaserPort.Location = new System.Drawing.Point(224, 58);
+            this.turbolaserPort.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.turbolaserPort.Maximum = new decimal(new int[] {
             9999,
             0,
             0,
             0});
-            this.turboLaserPort.Name = "turboLaserPort";
-            this.turboLaserPort.Size = new System.Drawing.Size(59, 23);
-            this.turboLaserPort.TabIndex = 25;
-            this.turboLaserPort.TabStop = false;
-            this.turboLaserPort.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.turboLaserPort.Value = new decimal(new int[] {
+            this.turbolaserPort.Name = "turbolaserPort";
+            this.turbolaserPort.Size = new System.Drawing.Size(59, 23);
+            this.turbolaserPort.TabIndex = 25;
+            this.turbolaserPort.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.turbolaserPort.Value = new decimal(new int[] {
             9999,
             0,
             0,
             0});
-            this.turboLaserPort.ValueChanged += new System.EventHandler(this.turboLaserPort_ValueChanged);
+            this.turbolaserPort.ValueChanged += new System.EventHandler(this.turbolaserPort_ValueChanged);
             // 
-            // turboLaserAft
+            // turbolaserAft
             // 
-            this.turboLaserAft.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.turboLaserAft.Location = new System.Drawing.Point(166, 46);
-            this.turboLaserAft.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.turboLaserAft.Maximum = new decimal(new int[] {
+            this.turbolaserAft.Location = new System.Drawing.Point(158, 58);
+            this.turbolaserAft.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.turbolaserAft.Maximum = new decimal(new int[] {
             9999,
             0,
             0,
             0});
-            this.turboLaserAft.Name = "turboLaserAft";
-            this.turboLaserAft.Size = new System.Drawing.Size(59, 23);
-            this.turboLaserAft.TabIndex = 22;
-            this.turboLaserAft.TabStop = false;
-            this.turboLaserAft.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.turboLaserAft.Value = new decimal(new int[] {
+            this.turbolaserAft.Name = "turbolaserAft";
+            this.turbolaserAft.Size = new System.Drawing.Size(59, 23);
+            this.turbolaserAft.TabIndex = 22;
+            this.turbolaserAft.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.turbolaserAft.Value = new decimal(new int[] {
             9999,
             0,
             0,
             0});
-            this.turboLaserAft.ValueChanged += new System.EventHandler(this.turboLaserAft_ValueChanged);
+            this.turbolaserAft.ValueChanged += new System.EventHandler(this.turbolaserAft_ValueChanged);
             // 
-            // turboLaserFore
+            // turbolaserFore
             // 
-            this.turboLaserFore.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.turboLaserFore.Location = new System.Drawing.Point(99, 46);
-            this.turboLaserFore.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.turboLaserFore.Maximum = new decimal(new int[] {
+            this.turbolaserFore.Location = new System.Drawing.Point(91, 58);
+            this.turbolaserFore.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.turbolaserFore.Maximum = new decimal(new int[] {
             9999,
             0,
             0,
             0});
-            this.turboLaserFore.Name = "turboLaserFore";
-            this.turboLaserFore.Size = new System.Drawing.Size(59, 23);
-            this.turboLaserFore.TabIndex = 19;
-            this.turboLaserFore.TabStop = false;
-            this.turboLaserFore.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.turboLaserFore.Value = new decimal(new int[] {
+            this.turbolaserFore.Name = "turbolaserFore";
+            this.turbolaserFore.Size = new System.Drawing.Size(59, 23);
+            this.turbolaserFore.TabIndex = 19;
+            this.turbolaserFore.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.turbolaserFore.Value = new decimal(new int[] {
             9999,
             0,
             0,
             0});
-            this.turboLaserFore.ValueChanged += new System.EventHandler(this.turboLaserFore_ValueChanged);
+            this.turbolaserFore.ValueChanged += new System.EventHandler(this.turbolaserFore_ValueChanged);
             // 
-            // wepRanLabel
+            // starboardLabel
             // 
-            this.wepRanLabel.AutoSize = true;
-            this.wepRanLabel.BackColor = System.Drawing.Color.Silver;
-            this.wepRanLabel.Location = new System.Drawing.Point(365, 25);
-            this.wepRanLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.wepRanLabel.Name = "wepRanLabel";
-            this.wepRanLabel.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.wepRanLabel.Size = new System.Drawing.Size(40, 15);
-            this.wepRanLabel.TabIndex = 0;
-            this.wepRanLabel.Text = "Range";
-            this.wepRanLabel.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.starboardLabel.AutoSize = true;
+            this.starboardLabel.BackColor = System.Drawing.SystemColors.Control;
+            this.starboardLabel.Location = new System.Drawing.Point(291, 41);
+            this.starboardLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.starboardLabel.Name = "starboardLabel";
+            this.starboardLabel.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.starboardLabel.Size = new System.Drawing.Size(58, 15);
+            this.starboardLabel.TabIndex = 0;
+            this.starboardLabel.Text = "Starboard";
+            this.starboardLabel.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // wepStarLabel
+            // portLabel
             // 
-            this.wepStarLabel.AutoSize = true;
-            this.wepStarLabel.BackColor = System.Drawing.Color.Silver;
-            this.wepStarLabel.Location = new System.Drawing.Point(299, 25);
-            this.wepStarLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.wepStarLabel.Name = "wepStarLabel";
-            this.wepStarLabel.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.wepStarLabel.Size = new System.Drawing.Size(27, 15);
-            this.wepStarLabel.TabIndex = 0;
-            this.wepStarLabel.Text = "Star";
-            this.wepStarLabel.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.portLabel.AutoSize = true;
+            this.portLabel.BackColor = System.Drawing.SystemColors.Control;
+            this.portLabel.Location = new System.Drawing.Point(224, 41);
+            this.portLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.portLabel.Name = "portLabel";
+            this.portLabel.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.portLabel.Size = new System.Drawing.Size(29, 15);
+            this.portLabel.TabIndex = 0;
+            this.portLabel.Text = "Port";
+            this.portLabel.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // wepPortLabel
+            // totalAttackLabel
             // 
-            this.wepPortLabel.AutoSize = true;
-            this.wepPortLabel.BackColor = System.Drawing.Color.Silver;
-            this.wepPortLabel.Location = new System.Drawing.Point(232, 25);
-            this.wepPortLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.wepPortLabel.Name = "wepPortLabel";
-            this.wepPortLabel.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.wepPortLabel.Size = new System.Drawing.Size(29, 15);
-            this.wepPortLabel.TabIndex = 0;
-            this.wepPortLabel.Text = "Port";
-            this.wepPortLabel.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.totalAttackLabel.AutoSize = true;
+            this.totalAttackLabel.BackColor = System.Drawing.SystemColors.Control;
+            this.totalAttackLabel.Location = new System.Drawing.Point(355, 41);
+            this.totalAttackLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.totalAttackLabel.Name = "totalAttackLabel";
+            this.totalAttackLabel.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.totalAttackLabel.Size = new System.Drawing.Size(69, 15);
+            this.totalAttackLabel.TabIndex = 153;
+            this.totalAttackLabel.Text = "Total Attack";
+            this.totalAttackLabel.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // wepAftLabel
+            // ionCannonAttackStrength
             // 
-            this.wepAftLabel.AutoSize = true;
-            this.wepAftLabel.BackColor = System.Drawing.Color.Silver;
-            this.wepAftLabel.Location = new System.Drawing.Point(166, 25);
-            this.wepAftLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.wepAftLabel.Name = "wepAftLabel";
-            this.wepAftLabel.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.wepAftLabel.Size = new System.Drawing.Size(23, 15);
-            this.wepAftLabel.TabIndex = 0;
-            this.wepAftLabel.Text = "Aft";
-            this.wepAftLabel.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.ionCannonAttackStrength.BackColor = System.Drawing.SystemColors.Menu;
+            this.ionCannonAttackStrength.Enabled = false;
+            this.ionCannonAttackStrength.Location = new System.Drawing.Point(360, 83);
+            this.ionCannonAttackStrength.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.ionCannonAttackStrength.Maximum = new decimal(new int[] {
+            9999,
+            0,
+            0,
+            0});
+            this.ionCannonAttackStrength.Name = "ionCannonAttackStrength";
+            this.ionCannonAttackStrength.Size = new System.Drawing.Size(59, 23);
+            this.ionCannonAttackStrength.TabIndex = 150;
+            this.ionCannonAttackStrength.TabStop = false;
+            this.ionCannonAttackStrength.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.ionCannonAttackStrength.Value = new decimal(new int[] {
+            9999,
+            0,
+            0,
+            0});
+            this.ionCannonAttackStrength.ValueChanged += new System.EventHandler(this.ionCannonAttackStrength_ValueChanged);
             // 
-            // wepForeLabel
+            // aftLabel
             // 
-            this.wepForeLabel.AutoSize = true;
-            this.wepForeLabel.BackColor = System.Drawing.Color.Silver;
-            this.wepForeLabel.Location = new System.Drawing.Point(99, 25);
-            this.wepForeLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.wepForeLabel.Name = "wepForeLabel";
-            this.wepForeLabel.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.wepForeLabel.Size = new System.Drawing.Size(30, 15);
-            this.wepForeLabel.TabIndex = 0;
-            this.wepForeLabel.Text = "Fore";
-            this.wepForeLabel.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.aftLabel.AutoSize = true;
+            this.aftLabel.BackColor = System.Drawing.SystemColors.Control;
+            this.aftLabel.Location = new System.Drawing.Point(158, 41);
+            this.aftLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.aftLabel.Name = "aftLabel";
+            this.aftLabel.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.aftLabel.Size = new System.Drawing.Size(23, 15);
+            this.aftLabel.TabIndex = 0;
+            this.aftLabel.Text = "Aft";
+            this.aftLabel.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // wepTypeLabel
+            // laserCannonAttackStrength
             // 
-            this.wepTypeLabel.AutoSize = true;
-            this.wepTypeLabel.BackColor = System.Drawing.Color.Silver;
-            this.wepTypeLabel.Location = new System.Drawing.Point(7, 25);
-            this.wepTypeLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.wepTypeLabel.Name = "wepTypeLabel";
-            this.wepTypeLabel.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.wepTypeLabel.Size = new System.Drawing.Size(31, 15);
-            this.wepTypeLabel.TabIndex = 0;
-            this.wepTypeLabel.Text = "Type";
-            this.wepTypeLabel.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.laserCannonAttackStrength.BackColor = System.Drawing.SystemColors.Menu;
+            this.laserCannonAttackStrength.Enabled = false;
+            this.laserCannonAttackStrength.Location = new System.Drawing.Point(360, 108);
+            this.laserCannonAttackStrength.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.laserCannonAttackStrength.Maximum = new decimal(new int[] {
+            9999,
+            0,
+            0,
+            0});
+            this.laserCannonAttackStrength.Name = "laserCannonAttackStrength";
+            this.laserCannonAttackStrength.Size = new System.Drawing.Size(59, 23);
+            this.laserCannonAttackStrength.TabIndex = 149;
+            this.laserCannonAttackStrength.TabStop = false;
+            this.laserCannonAttackStrength.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.laserCannonAttackStrength.Value = new decimal(new int[] {
+            9999,
+            0,
+            0,
+            0});
+            this.laserCannonAttackStrength.ValueChanged += new System.EventHandler(this.laserCannonAttackStrength_ValueChanged);
             // 
-            // squadSizeLabel
+            // foreLabel
             // 
-            this.squadSizeLabel.AutoSize = true;
-            this.squadSizeLabel.BackColor = System.Drawing.Color.LightGray;
-            this.squadSizeLabel.Location = new System.Drawing.Point(224, 261);
-            this.squadSizeLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.squadSizeLabel.Name = "squadSizeLabel";
-            this.squadSizeLabel.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.squadSizeLabel.Size = new System.Drawing.Size(81, 15);
-            this.squadSizeLabel.TabIndex = 43;
-            this.squadSizeLabel.Text = "Squadron Size";
-            this.squadSizeLabel.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.foreLabel.AutoSize = true;
+            this.foreLabel.BackColor = System.Drawing.SystemColors.Control;
+            this.foreLabel.Location = new System.Drawing.Point(91, 41);
+            this.foreLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.foreLabel.Name = "foreLabel";
+            this.foreLabel.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.foreLabel.Size = new System.Drawing.Size(30, 15);
+            this.foreLabel.TabIndex = 0;
+            this.foreLabel.Text = "Fore";
+            this.foreLabel.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // tabPage2
+            // turbolaserAttackStrength
             // 
-            this.tabPage2.BackColor = System.Drawing.SystemColors.Control;
-            this.tabPage2.Controls.Add(this.encyText);
-            this.tabPage2.Location = new System.Drawing.Point(4, 24);
-            this.tabPage2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.tabPage2.Size = new System.Drawing.Size(452, 334);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "Ency Text";
+            this.turbolaserAttackStrength.BackColor = System.Drawing.SystemColors.Menu;
+            this.turbolaserAttackStrength.Enabled = false;
+            this.turbolaserAttackStrength.Location = new System.Drawing.Point(360, 58);
+            this.turbolaserAttackStrength.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.turbolaserAttackStrength.Maximum = new decimal(new int[] {
+            9999,
+            0,
+            0,
+            0});
+            this.turbolaserAttackStrength.Name = "turbolaserAttackStrength";
+            this.turbolaserAttackStrength.Size = new System.Drawing.Size(59, 23);
+            this.turbolaserAttackStrength.TabIndex = 145;
+            this.turbolaserAttackStrength.TabStop = false;
+            this.turbolaserAttackStrength.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.turbolaserAttackStrength.Value = new decimal(new int[] {
+            9999,
+            0,
+            0,
+            0});
+            this.turbolaserAttackStrength.ValueChanged += new System.EventHandler(this.turbolaserAttackStrength_ValueChanged);
             // 
-            // encyText
+            // laserCannonRange
             // 
-            this.encyText.Cursor = System.Windows.Forms.Cursors.No;
-            this.encyText.Enabled = false;
-            this.encyText.Location = new System.Drawing.Point(0, 0);
-            this.encyText.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.encyText.Name = "encyText";
-            this.encyText.Size = new System.Drawing.Size(448, 176);
-            this.encyText.TabIndex = 0;
-            this.encyText.TabStop = false;
-            this.encyText.Text = "Not Implemented yet....Encylopedia Data...Will add .Someday";
+            this.laserCannonRange.Location = new System.Drawing.Point(7, 371);
+            this.laserCannonRange.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.laserCannonRange.Maximum = new decimal(new int[] {
+            9999,
+            0,
+            0,
+            0});
+            this.laserCannonRange.Name = "laserCannonRange";
+            this.laserCannonRange.Size = new System.Drawing.Size(59, 23);
+            this.laserCannonRange.TabIndex = 33;
+            this.laserCannonRange.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.laserCannonRange.Value = new decimal(new int[] {
+            9999,
+            0,
+            0,
+            0});
+            this.laserCannonRange.ValueChanged += new System.EventHandler(this.laserCannonRange_ValueChanged);
             // 
-            // tabPage3
+            // ionCannonRange
             // 
-            this.tabPage3.BackColor = System.Drawing.SystemColors.Control;
-            this.tabPage3.Controls.Add(this.familyIdHexLabel);
-            this.tabPage3.Controls.Add(this.fighterIdHexLabel);
-            this.tabPage3.Controls.Add(this.fighterId);
-            this.tabPage3.Controls.Add(this.label1);
-            this.tabPage3.Controls.Add(this.label31);
-            this.tabPage3.Controls.Add(this.groupBox13);
-            this.tabPage3.Controls.Add(this.UnkownMoralHPlabel);
-            this.tabPage3.Controls.Add(this.unknownMoralHp);
-            this.tabPage3.Controls.Add(this.unknown);
-            this.tabPage3.Controls.Add(this.textStraDllId);
-            this.tabPage3.Controls.Add(this.productionFamily);
-            this.tabPage3.Controls.Add(this.unkown3Label);
-            this.tabPage3.Controls.Add(this.familyId);
-            this.tabPage3.Controls.Add(this.prodLabel);
-            this.tabPage3.Controls.Add(this.idLabel);
-            this.tabPage3.Controls.Add(this.familyLabel);
-            this.tabPage3.Controls.Add(this.secProdFacNumlabel);
-            this.tabPage3.Controls.Add(this.nextProductionFamily);
-            this.tabPage3.Location = new System.Drawing.Point(4, 24);
-            this.tabPage3.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.tabPage3.Size = new System.Drawing.Size(452, 334);
-            this.tabPage3.TabIndex = 2;
-            this.tabPage3.Text = "DAT Misc";
+            this.ionCannonRange.Location = new System.Drawing.Point(7, 346);
+            this.ionCannonRange.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.ionCannonRange.Maximum = new decimal(new int[] {
+            9999,
+            0,
+            0,
+            0});
+            this.ionCannonRange.Name = "ionCannonRange";
+            this.ionCannonRange.Size = new System.Drawing.Size(59, 23);
+            this.ionCannonRange.TabIndex = 32;
+            this.ionCannonRange.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.ionCannonRange.Value = new decimal(new int[] {
+            9999,
+            0,
+            0,
+            0});
+            this.ionCannonRange.ValueChanged += new System.EventHandler(this.ionCannonRange_ValueChanged);
+            // 
+            // turbolaserRange
+            // 
+            this.turbolaserRange.Location = new System.Drawing.Point(7, 321);
+            this.turbolaserRange.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.turbolaserRange.Maximum = new decimal(new int[] {
+            9999,
+            0,
+            0,
+            0});
+            this.turbolaserRange.Name = "turbolaserRange";
+            this.turbolaserRange.Size = new System.Drawing.Size(59, 23);
+            this.turbolaserRange.TabIndex = 31;
+            this.turbolaserRange.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.turbolaserRange.Value = new decimal(new int[] {
+            9999,
+            0,
+            0,
+            0});
+            this.turbolaserRange.ValueChanged += new System.EventHandler(this.turbolaserRange_ValueChanged);
+            // 
+            // turbolaserRangeLabel
+            // 
+            this.turbolaserRangeLabel.AutoSize = true;
+            this.turbolaserRangeLabel.BackColor = System.Drawing.SystemColors.Control;
+            this.turbolaserRangeLabel.Location = new System.Drawing.Point(70, 323);
+            this.turbolaserRangeLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.turbolaserRangeLabel.Name = "turbolaserRangeLabel";
+            this.turbolaserRangeLabel.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.turbolaserRangeLabel.Size = new System.Drawing.Size(98, 15);
+            this.turbolaserRangeLabel.TabIndex = 0;
+            this.turbolaserRangeLabel.Text = "Turbolaser Range";
+            this.turbolaserRangeLabel.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // familyIdHexLabel
             // 
             this.familyIdHexLabel.AutoSize = true;
             this.familyIdHexLabel.Enabled = false;
-            this.familyIdHexLabel.Location = new System.Drawing.Point(412, 117);
+            this.familyIdHexLabel.ForeColor = System.Drawing.Color.Red;
+            this.familyIdHexLabel.Location = new System.Drawing.Point(201, 123);
             this.familyIdHexLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.familyIdHexLabel.Name = "familyIdHexLabel";
             this.familyIdHexLabel.Size = new System.Drawing.Size(26, 15);
-            this.familyIdHexLabel.TabIndex = 1119;
+            this.familyIdHexLabel.TabIndex = 1115;
             this.familyIdHexLabel.Text = "hex";
             // 
-            // fighterIdHexLabel
+            // idHexLabel
             // 
-            this.fighterIdHexLabel.AutoSize = true;
-            this.fighterIdHexLabel.Enabled = false;
-            this.fighterIdHexLabel.Location = new System.Drawing.Point(412, 204);
-            this.fighterIdHexLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.fighterIdHexLabel.Name = "fighterIdHexLabel";
-            this.fighterIdHexLabel.Size = new System.Drawing.Size(26, 15);
-            this.fighterIdHexLabel.TabIndex = 1118;
-            this.fighterIdHexLabel.Text = "hex";
+            this.idHexLabel.AutoSize = true;
+            this.idHexLabel.Enabled = false;
+            this.idHexLabel.ForeColor = System.Drawing.Color.Red;
+            this.idHexLabel.Location = new System.Drawing.Point(201, 23);
+            this.idHexLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.idHexLabel.Name = "idHexLabel";
+            this.idHexLabel.Size = new System.Drawing.Size(26, 15);
+            this.idHexLabel.TabIndex = 1114;
+            this.idHexLabel.Text = "hex";
             // 
-            // fighterId
+            // id
             // 
-            this.fighterId.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.fighterId.Enabled = false;
-            this.fighterId.Location = new System.Drawing.Point(351, 202);
-            this.fighterId.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.fighterId.Maximum = new decimal(new int[] {
+            this.id.BackColor = System.Drawing.SystemColors.Window;
+            this.id.ForeColor = System.Drawing.Color.Red;
+            this.id.Location = new System.Drawing.Point(141, 21);
+            this.id.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.id.Maximum = new decimal(new int[] {
             999,
             0,
             0,
             0});
-            this.fighterId.Name = "fighterId";
-            this.fighterId.Size = new System.Drawing.Size(59, 23);
-            this.fighterId.TabIndex = 1117;
-            this.fighterId.TabStop = false;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Enabled = false;
-            this.label1.Location = new System.Drawing.Point(240, 204);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(57, 15);
-            this.label1.TabIndex = 1116;
-            this.label1.Text = "Fighter Id";
-            // 
-            // label31
-            // 
-            this.label31.AutoSize = true;
-            this.label31.Enabled = false;
-            this.label31.Location = new System.Drawing.Point(79, 313);
-            this.label31.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(249, 15);
-            this.label31.TabIndex = 152;
-            this.label31.Text = "Welcome to the the island of misfit data fields";
-            // 
-            // groupBox13
-            // 
-            this.groupBox13.Controls.Add(this.totalFirePower);
-            this.groupBox13.Controls.Add(this.label16);
-            this.groupBox13.Controls.Add(this.label30);
-            this.groupBox13.Controls.Add(this.ionCannonTotalFirePower);
-            this.groupBox13.Controls.Add(this.label29);
-            this.groupBox13.Controls.Add(this.laserCannonTotalFirePower);
-            this.groupBox13.Controls.Add(this.turboLaserTotalFirePower);
-            this.groupBox13.Controls.Add(this.label26);
-            this.groupBox13.Controls.Add(this.label28);
-            this.groupBox13.Controls.Add(this.label27);
-            this.groupBox13.Location = new System.Drawing.Point(8, 6);
-            this.groupBox13.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.groupBox13.Name = "groupBox13";
-            this.groupBox13.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.groupBox13.Size = new System.Drawing.Size(195, 183);
-            this.groupBox13.TabIndex = 1111;
-            this.groupBox13.TabStop = false;
-            this.groupBox13.Text = "Weapons Total FirePower";
-            // 
-            // totalFirePower
-            // 
-            this.totalFirePower.Enabled = false;
-            this.totalFirePower.Location = new System.Drawing.Point(99, 138);
-            this.totalFirePower.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.totalFirePower.Maximum = new decimal(new int[] {
-            9999,
-            0,
-            0,
-            0});
-            this.totalFirePower.Name = "totalFirePower";
-            this.totalFirePower.Size = new System.Drawing.Size(59, 23);
-            this.totalFirePower.TabIndex = 152;
-            this.totalFirePower.TabStop = false;
-            this.totalFirePower.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.totalFirePower.Value = new decimal(new int[] {
-            9999,
-            0,
-            0,
-            0});
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.BackColor = System.Drawing.Color.LightGray;
-            this.label16.Location = new System.Drawing.Point(7, 144);
-            this.label16.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label16.Name = "label16";
-            this.label16.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.label16.Size = new System.Drawing.Size(48, 15);
-            this.label16.TabIndex = 151;
-            this.label16.Text = "Total FP";
-            this.label16.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // label30
-            // 
-            this.label30.AutoSize = true;
-            this.label30.BackColor = System.Drawing.Color.Silver;
-            this.label30.Location = new System.Drawing.Point(7, 28);
-            this.label30.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label30.Name = "label30";
-            this.label30.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.label30.Size = new System.Drawing.Size(31, 15);
-            this.label30.TabIndex = 143;
-            this.label30.Text = "Type";
-            this.label30.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // ionCannonTotalFirePower
-            // 
-            this.ionCannonTotalFirePower.Enabled = false;
-            this.ionCannonTotalFirePower.Location = new System.Drawing.Point(99, 78);
-            this.ionCannonTotalFirePower.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.ionCannonTotalFirePower.Maximum = new decimal(new int[] {
-            9999,
-            0,
-            0,
-            0});
-            this.ionCannonTotalFirePower.Name = "ionCannonTotalFirePower";
-            this.ionCannonTotalFirePower.Size = new System.Drawing.Size(59, 23);
-            this.ionCannonTotalFirePower.TabIndex = 150;
-            this.ionCannonTotalFirePower.TabStop = false;
-            this.ionCannonTotalFirePower.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.ionCannonTotalFirePower.Value = new decimal(new int[] {
-            9999,
-            0,
-            0,
-            0});
-            // 
-            // label29
-            // 
-            this.label29.AutoSize = true;
-            this.label29.BackColor = System.Drawing.Color.Silver;
-            this.label29.Location = new System.Drawing.Point(99, 28);
-            this.label29.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label29.Name = "label29";
-            this.label29.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.label29.Size = new System.Drawing.Size(48, 15);
-            this.label29.TabIndex = 144;
-            this.label29.Text = "FP Total";
-            this.label29.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // laserCannonTotalFirePower
-            // 
-            this.laserCannonTotalFirePower.Enabled = false;
-            this.laserCannonTotalFirePower.Location = new System.Drawing.Point(99, 108);
-            this.laserCannonTotalFirePower.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.laserCannonTotalFirePower.Maximum = new decimal(new int[] {
-            9999,
-            0,
-            0,
-            0});
-            this.laserCannonTotalFirePower.Name = "laserCannonTotalFirePower";
-            this.laserCannonTotalFirePower.Size = new System.Drawing.Size(59, 23);
-            this.laserCannonTotalFirePower.TabIndex = 149;
-            this.laserCannonTotalFirePower.TabStop = false;
-            this.laserCannonTotalFirePower.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.laserCannonTotalFirePower.Value = new decimal(new int[] {
-            9999,
-            0,
-            0,
-            0});
-            // 
-            // turboLaserTotalFirePower
-            // 
-            this.turboLaserTotalFirePower.Enabled = false;
-            this.turboLaserTotalFirePower.Location = new System.Drawing.Point(99, 48);
-            this.turboLaserTotalFirePower.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.turboLaserTotalFirePower.Maximum = new decimal(new int[] {
-            9999,
-            0,
-            0,
-            0});
-            this.turboLaserTotalFirePower.Name = "turboLaserTotalFirePower";
-            this.turboLaserTotalFirePower.Size = new System.Drawing.Size(59, 23);
-            this.turboLaserTotalFirePower.TabIndex = 145;
-            this.turboLaserTotalFirePower.TabStop = false;
-            this.turboLaserTotalFirePower.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.turboLaserTotalFirePower.Value = new decimal(new int[] {
-            9999,
-            0,
-            0,
-            0});
-            // 
-            // label26
-            // 
-            this.label26.AutoSize = true;
-            this.label26.BackColor = System.Drawing.Color.LightGray;
-            this.label26.Location = new System.Drawing.Point(7, 114);
-            this.label26.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label26.Name = "label26";
-            this.label26.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.label26.Size = new System.Drawing.Size(79, 15);
-            this.label26.TabIndex = 148;
-            this.label26.Text = "Laser Cannon";
-            this.label26.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // label28
-            // 
-            this.label28.AutoSize = true;
-            this.label28.BackColor = System.Drawing.Color.LightGray;
-            this.label28.Location = new System.Drawing.Point(7, 52);
-            this.label28.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label28.Name = "label28";
-            this.label28.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.label28.Size = new System.Drawing.Size(62, 15);
-            this.label28.TabIndex = 146;
-            this.label28.Text = "Turbolaser";
-            this.label28.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // label27
-            // 
-            this.label27.AutoSize = true;
-            this.label27.BackColor = System.Drawing.Color.LightGray;
-            this.label27.Location = new System.Drawing.Point(7, 81);
-            this.label27.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label27.Name = "label27";
-            this.label27.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.label27.Size = new System.Drawing.Size(69, 15);
-            this.label27.TabIndex = 147;
-            this.label27.Text = "Ion Cannon";
-            this.label27.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // UnkownMoralHPlabel
-            // 
-            this.UnkownMoralHPlabel.AutoSize = true;
-            this.UnkownMoralHPlabel.Location = new System.Drawing.Point(239, 18);
-            this.UnkownMoralHPlabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.UnkownMoralHPlabel.Name = "UnkownMoralHPlabel";
-            this.UnkownMoralHPlabel.Size = new System.Drawing.Size(95, 15);
-            this.UnkownMoralHPlabel.TabIndex = 94;
-            this.UnkownMoralHPlabel.Text = "Unknown - ?HP?";
-            // 
-            // unknownMoralHp
-            // 
-            this.unknownMoralHp.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.unknownMoralHp.Location = new System.Drawing.Point(351, 21);
-            this.unknownMoralHp.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.unknownMoralHp.Maximum = new decimal(new int[] {
-            99999,
-            0,
-            0,
-            0});
-            this.unknownMoralHp.Name = "unknownMoralHp";
-            this.unknownMoralHp.Size = new System.Drawing.Size(59, 23);
-            this.unknownMoralHp.TabIndex = 125;
-            this.unknownMoralHp.TabStop = false;
-            this.unknownMoralHp.ValueChanged += new System.EventHandler(this.unknownMoralHp_ValueChanged);
-            // 
-            // unknown3Num
-            // 
-            this.unknown.Enabled = false;
-            this.unknown.Location = new System.Drawing.Point(351, 142);
-            this.unknown.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.unknown.Maximum = new decimal(new int[] {
-            9999,
-            0,
-            0,
-            0});
-            this.unknown.Name = "unknown3Num";
-            this.unknown.Size = new System.Drawing.Size(59, 23);
-            this.unknown.TabIndex = 110;
-            this.unknown.TabStop = false;
-            // 
-            // textStraDllId
-            // 
-            this.textStraDllId.Enabled = false;
-            this.textStraDllId.Location = new System.Drawing.Point(351, 172);
-            this.textStraDllId.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.textStraDllId.Maximum = new decimal(new int[] {
-            99999,
-            0,
-            0,
-            0});
-            this.textStraDllId.Name = "textStraDllId";
-            this.textStraDllId.Size = new System.Drawing.Size(59, 23);
-            this.textStraDllId.TabIndex = 112;
-            this.textStraDllId.TabStop = false;
-            // 
-            // productionFamily
-            // 
-            this.productionFamily.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.productionFamily.Enabled = false;
-            this.productionFamily.Location = new System.Drawing.Point(351, 51);
-            this.productionFamily.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.productionFamily.Maximum = new decimal(new int[] {
+            this.id.Name = "id";
+            this.id.Size = new System.Drawing.Size(59, 23);
+            this.id.TabIndex = 1113;
+            this.id.TabStop = false;
+            this.id.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.id.Value = new decimal(new int[] {
             999,
             0,
             0,
             0});
-            this.productionFamily.Name = "productionFamily";
-            this.productionFamily.Size = new System.Drawing.Size(59, 23);
-            this.productionFamily.TabIndex = 93;
-            this.productionFamily.TabStop = false;
-            this.productionFamily.ValueChanged += new System.EventHandler(this.productionFamily_ValueChanged);
-            // 
-            // unkown3Label
-            // 
-            this.unkown3Label.AutoSize = true;
-            this.unkown3Label.Enabled = false;
-            this.unkown3Label.Location = new System.Drawing.Point(239, 144);
-            this.unkown3Label.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.unkown3Label.Name = "unkown3Label";
-            this.unkown3Label.Size = new System.Drawing.Size(58, 15);
-            this.unkown3Label.TabIndex = 109;
-            this.unkown3Label.Text = "Unknown";
-            // 
-            // familyId
-            // 
-            this.familyId.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.familyId.Enabled = false;
-            this.familyId.Location = new System.Drawing.Point(351, 112);
-            this.familyId.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.familyId.Maximum = new decimal(new int[] {
-            999,
-            0,
-            0,
-            0});
-            this.familyId.Name = "familyId";
-            this.familyId.Size = new System.Drawing.Size(59, 23);
-            this.familyId.TabIndex = 111;
-            this.familyId.TabStop = false;
-            this.familyId.ValueChanged += new System.EventHandler(this.familyId_ValueChanged);
-            // 
-            // prodLabel
-            // 
-            this.prodLabel.AutoSize = true;
-            this.prodLabel.Enabled = false;
-            this.prodLabel.Location = new System.Drawing.Point(239, 53);
-            this.prodLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.prodLabel.Name = "prodLabel";
-            this.prodLabel.Size = new System.Drawing.Size(106, 15);
-            this.prodLabel.TabIndex = 95;
-            this.prodLabel.Text = "Production Family";
+            this.id.ValueChanged += new System.EventHandler(this.id_ValueChanged);
             // 
             // idLabel
             // 
             this.idLabel.AutoSize = true;
-            this.idLabel.Enabled = false;
-            this.idLabel.Location = new System.Drawing.Point(239, 174);
+            this.idLabel.ForeColor = System.Drawing.Color.Red;
+            this.idLabel.Location = new System.Drawing.Point(7, 23);
             this.idLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.idLabel.Name = "idLabel";
-            this.idLabel.Size = new System.Drawing.Size(85, 15);
-            this.idLabel.TabIndex = 106;
-            this.idLabel.Text = "TextStra.DLL ID";
+            this.idLabel.Size = new System.Drawing.Size(17, 15);
+            this.idLabel.TabIndex = 1112;
+            this.idLabel.Text = "Id";
             // 
-            // familyLabel
+            // inGameDataGroupBox
             // 
-            this.familyLabel.AutoSize = true;
-            this.familyLabel.Enabled = false;
-            this.familyLabel.Location = new System.Drawing.Point(239, 110);
-            this.familyLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.familyLabel.Name = "familyLabel";
-            this.familyLabel.Size = new System.Drawing.Size(56, 15);
-            this.familyLabel.TabIndex = 104;
-            this.familyLabel.Text = "Family ID";
+            this.inGameDataGroupBox.Controls.Add(this.squadronSizeLabel);
+            this.inGameDataGroupBox.Controls.Add(this.squadronSize);
+            this.inGameDataGroupBox.Controls.Add(this.name);
+            this.inGameDataGroupBox.Controls.Add(this.encyclopediaDescriptionLabel);
+            this.inGameDataGroupBox.Controls.Add(this.bombardmentDefense);
+            this.inGameDataGroupBox.Controls.Add(this.shieldStrengthLabel);
+            this.inGameDataGroupBox.Controls.Add(this.bombardmentDefenseLabel);
+            this.inGameDataGroupBox.Controls.Add(this.attackStrengthGroupBox);
+            this.inGameDataGroupBox.Controls.Add(this.shieldStrength);
+            this.inGameDataGroupBox.Controls.Add(this.maintenanceCost);
+            this.inGameDataGroupBox.Controls.Add(this.refinedMaterialCostLabel);
+            this.inGameDataGroupBox.Controls.Add(this.maintenanceCostLabel);
+            this.inGameDataGroupBox.Controls.Add(this.refinedMaterialCost);
+            this.inGameDataGroupBox.Controls.Add(this.encyclopediaDescription);
+            this.inGameDataGroupBox.Controls.Add(this.picture);
+            this.inGameDataGroupBox.Controls.Add(this.isEmpire);
+            this.inGameDataGroupBox.Controls.Add(this.isAlliance);
+            this.inGameDataGroupBox.Controls.Add(this.maneuverabilityLabel);
+            this.inGameDataGroupBox.Controls.Add(this.hyperdriveLabel);
+            this.inGameDataGroupBox.Controls.Add(this.subLightEngineLabel);
+            this.inGameDataGroupBox.Controls.Add(this.subLightEngine);
+            this.inGameDataGroupBox.Controls.Add(this.detection);
+            this.inGameDataGroupBox.Controls.Add(this.detectionLabel);
+            this.inGameDataGroupBox.Controls.Add(this.maneuverability);
+            this.inGameDataGroupBox.Controls.Add(this.hyperdrive);
+            this.inGameDataGroupBox.Location = new System.Drawing.Point(7, 40);
+            this.inGameDataGroupBox.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.inGameDataGroupBox.Name = "inGameDataGroupBox";
+            this.inGameDataGroupBox.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.inGameDataGroupBox.Size = new System.Drawing.Size(439, 474);
+            this.inGameDataGroupBox.TabIndex = 2;
+            this.inGameDataGroupBox.TabStop = false;
+            this.inGameDataGroupBox.Text = "In Game Data";
             // 
-            // secProdFacNumlabel
+            // squadronSizeLabel
             // 
-            this.secProdFacNumlabel.AutoSize = true;
-            this.secProdFacNumlabel.Enabled = false;
-            this.secProdFacNumlabel.Location = new System.Drawing.Point(239, 82);
-            this.secProdFacNumlabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.secProdFacNumlabel.Name = "secProdFacNumlabel";
-            this.secProdFacNumlabel.Size = new System.Drawing.Size(92, 15);
-            this.secProdFacNumlabel.TabIndex = 97;
-            this.secProdFacNumlabel.Text = "Production Family +1";
+            this.squadronSizeLabel.AutoSize = true;
+            this.squadronSizeLabel.Location = new System.Drawing.Point(229, 103);
+            this.squadronSizeLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.squadronSizeLabel.Name = "squadronSizeLabel";
+            this.squadronSizeLabel.Size = new System.Drawing.Size(81, 15);
+            this.squadronSizeLabel.TabIndex = 1118;
+            this.squadronSizeLabel.Text = "Squadron Size";
             // 
-            // secProdFacNum
+            // squadronSize
             // 
-            this.nextProductionFamily.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.nextProductionFamily.Enabled = false;
-            this.nextProductionFamily.Location = new System.Drawing.Point(351, 82);
-            this.nextProductionFamily.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.nextProductionFamily.Maximum = new decimal(new int[] {
-            999,
+            this.squadronSize.Location = new System.Drawing.Point(364, 101);
+            this.squadronSize.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.squadronSize.Maximum = new decimal(new int[] {
+            9999,
             0,
             0,
             0});
-            this.nextProductionFamily.Name = "secProdFacNum";
-            this.nextProductionFamily.Size = new System.Drawing.Size(59, 23);
-            this.nextProductionFamily.TabIndex = 96;
-            this.nextProductionFamily.TabStop = false;
-            this.nextProductionFamily.ValueChanged += new System.EventHandler(this.nextProductionFamily_ValueChanged);
-            // 
-            // Open
-            // 
-            this.Open.Location = new System.Drawing.Point(371, 443);
-            this.Open.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.Open.Name = "Open";
-            this.Open.Size = new System.Drawing.Size(88, 27);
-            this.Open.TabIndex = 116;
-            this.Open.TabStop = false;
-            this.Open.Text = "Open...";
-            this.Open.UseVisualStyleBackColor = true;
-            this.Open.Click += new System.EventHandler(this.Open_Click);
-            // 
-            // SaveAs
-            // 
-            this.SaveAs.Location = new System.Drawing.Point(276, 443);
-            this.SaveAs.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.SaveAs.Name = "SaveAs";
-            this.SaveAs.Size = new System.Drawing.Size(88, 27);
-            this.SaveAs.TabIndex = 115;
-            this.SaveAs.TabStop = false;
-            this.SaveAs.Text = "&SaveAs...";
-            this.SaveAs.UseVisualStyleBackColor = true;
-            this.SaveAs.Click += new System.EventHandler(this.SaveAs_Click);
-            // 
-            // Cancel
-            // 
-            this.Cancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.Cancel.Location = new System.Drawing.Point(106, 443);
-            this.Cancel.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.Cancel.Name = "Cancel";
-            this.Cancel.Size = new System.Drawing.Size(88, 27);
-            this.Cancel.TabIndex = 130;
-            this.Cancel.Text = "&Cancel";
-            this.Cancel.UseVisualStyleBackColor = true;
-            this.Cancel.Click += new System.EventHandler(this.Cancel_Click);
-            // 
-            // Ok
-            // 
-            this.Ok.Location = new System.Drawing.Point(12, 443);
-            this.Ok.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.Ok.Name = "Ok";
-            this.Ok.Size = new System.Drawing.Size(88, 27);
-            this.Ok.TabIndex = 129;
-            this.Ok.Text = "&Ok";
-            this.Ok.UseVisualStyleBackColor = true;
-            this.Ok.Click += new System.EventHandler(this.Ok_Click);
+            this.squadronSize.Name = "squadronSize";
+            this.squadronSize.Size = new System.Drawing.Size(59, 23);
+            this.squadronSize.TabIndex = 1119;
+            this.squadronSize.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.squadronSize.Value = new decimal(new int[] {
+            9999,
+            0,
+            0,
+            0});
+            this.squadronSize.ValueChanged += new System.EventHandler(this.squadronSize_ValueChanged);
             // 
             // name
             // 
-            this.name.AutoSize = true;
-            this.name.Location = new System.Drawing.Point(243, 82);
-            this.name.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.name.Location = new System.Drawing.Point(220, 20);
             this.name.Name = "name";
-            this.name.Size = new System.Drawing.Size(116, 15);
-            this.name.TabIndex = 118;
-            this.name.Text = "-- Item name here --";
+            this.name.Size = new System.Drawing.Size(213, 23);
+            this.name.TabIndex = 1117;
+            this.name.TextChanged += new System.EventHandler(this.name_TextChanged);
             // 
-            // selector
+            // encyclopediaDescriptionLabel
             // 
-            this.selector.LargeChange = 1;
-            this.selector.Location = new System.Drawing.Point(246, 27);
-            this.selector.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.selector.Maximum = 7;
-            this.selector.Name = "selector";
-            this.selector.Size = new System.Drawing.Size(121, 45);
-            this.selector.TabIndex = 119;
-            this.selector.ValueChanged += new System.EventHandler(this.GameObjectsSelector_ValueChanged);
+            this.encyclopediaDescriptionLabel.AutoSize = true;
+            this.encyclopediaDescriptionLabel.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.encyclopediaDescriptionLabel.ForeColor = System.Drawing.Color.White;
+            this.encyclopediaDescriptionLabel.Location = new System.Drawing.Point(288, 389);
+            this.encyclopediaDescriptionLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.encyclopediaDescriptionLabel.Name = "encyclopediaDescriptionLabel";
+            this.encyclopediaDescriptionLabel.Size = new System.Drawing.Size(140, 15);
+            this.encyclopediaDescriptionLabel.TabIndex = 19;
+            this.encyclopediaDescriptionLabel.Text = "Encyclopedia Description";
+            // 
+            // shieldStrengthLabel
+            // 
+            this.shieldStrengthLabel.AutoSize = true;
+            this.shieldStrengthLabel.Location = new System.Drawing.Point(13, 178);
+            this.shieldStrengthLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.shieldStrengthLabel.Name = "shieldStrengthLabel";
+            this.shieldStrengthLabel.Size = new System.Drawing.Size(87, 15);
+            this.shieldStrengthLabel.TabIndex = 0;
+            this.shieldStrengthLabel.Text = "Shield Strength";
+            // 
+            // shieldStrength
+            // 
+            this.shieldStrength.Location = new System.Drawing.Point(146, 176);
+            this.shieldStrength.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.shieldStrength.Maximum = new decimal(new int[] {
+            9999,
+            0,
+            0,
+            0});
+            this.shieldStrength.Name = "shieldStrength";
+            this.shieldStrength.Size = new System.Drawing.Size(59, 23);
+            this.shieldStrength.TabIndex = 13;
+            this.shieldStrength.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.shieldStrength.Value = new decimal(new int[] {
+            9999,
+            0,
+            0,
+            0});
+            this.shieldStrength.ValueChanged += new System.EventHandler(this.shieldStrength_ValueChanged);
             // 
             // picture
             // 
             this.picture.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.picture.InitialImage = null;
-            this.picture.Location = new System.Drawing.Point(12, 7);
+            this.picture.Location = new System.Drawing.Point(8, 20);
             this.picture.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.picture.Name = "picture";
             this.picture.Size = new System.Drawing.Size(205, 104);
             this.picture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picture.TabIndex = 130;
+            this.picture.TabIndex = 114;
             this.picture.TabStop = false;
+            // 
+            // maneuverabilityLabel
+            // 
+            this.maneuverabilityLabel.AutoSize = true;
+            this.maneuverabilityLabel.Location = new System.Drawing.Point(228, 153);
+            this.maneuverabilityLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.maneuverabilityLabel.Name = "maneuverabilityLabel";
+            this.maneuverabilityLabel.Size = new System.Drawing.Size(92, 15);
+            this.maneuverabilityLabel.TabIndex = 0;
+            this.maneuverabilityLabel.Text = "Maneuverability";
+            // 
+            // hyperdriveLabel
+            // 
+            this.hyperdriveLabel.AutoSize = true;
+            this.hyperdriveLabel.Location = new System.Drawing.Point(13, 204);
+            this.hyperdriveLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.hyperdriveLabel.Name = "hyperdriveLabel";
+            this.hyperdriveLabel.Size = new System.Drawing.Size(132, 15);
+            this.hyperdriveLabel.TabIndex = 115;
+            this.hyperdriveLabel.Text = "Hyperdrive (low=faster)";
+            // 
+            // subLightEngineLabel
+            // 
+            this.subLightEngineLabel.AutoSize = true;
+            this.subLightEngineLabel.Location = new System.Drawing.Point(229, 128);
+            this.subLightEngineLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.subLightEngineLabel.Name = "subLightEngineLabel";
+            this.subLightEngineLabel.Size = new System.Drawing.Size(98, 15);
+            this.subLightEngineLabel.TabIndex = 0;
+            this.subLightEngineLabel.Text = "Sub-Light Engine";
+            // 
+            // subLightEngine
+            // 
+            this.subLightEngine.Location = new System.Drawing.Point(365, 126);
+            this.subLightEngine.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.subLightEngine.Maximum = new decimal(new int[] {
+            9999,
+            0,
+            0,
+            0});
+            this.subLightEngine.Name = "subLightEngine";
+            this.subLightEngine.Size = new System.Drawing.Size(59, 23);
+            this.subLightEngine.TabIndex = 9;
+            this.subLightEngine.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.subLightEngine.Value = new decimal(new int[] {
+            9999,
+            0,
+            0,
+            0});
+            this.subLightEngine.ValueChanged += new System.EventHandler(this.subLightEngine_ValueChanged);
+            // 
+            // maneuverability
+            // 
+            this.maneuverability.Location = new System.Drawing.Point(365, 151);
+            this.maneuverability.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.maneuverability.Maximum = new decimal(new int[] {
+            9999,
+            0,
+            0,
+            0});
+            this.maneuverability.Name = "maneuverability";
+            this.maneuverability.Size = new System.Drawing.Size(59, 23);
+            this.maneuverability.TabIndex = 10;
+            this.maneuverability.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.maneuverability.Value = new decimal(new int[] {
+            9999,
+            0,
+            0,
+            0});
+            this.maneuverability.ValueChanged += new System.EventHandler(this.maneuverability_ValueChanged);
+            // 
+            // hyperdrive
+            // 
+            this.hyperdrive.Location = new System.Drawing.Point(146, 201);
+            this.hyperdrive.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.hyperdrive.Maximum = new decimal(new int[] {
+            999,
+            0,
+            0,
+            0});
+            this.hyperdrive.Name = "hyperdrive";
+            this.hyperdrive.Size = new System.Drawing.Size(59, 23);
+            this.hyperdrive.TabIndex = 11;
+            this.hyperdrive.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.hyperdrive.Value = new decimal(new int[] {
+            999,
+            0,
+            0,
+            0});
+            this.hyperdrive.ValueChanged += new System.EventHandler(this.hyperdrive_ValueChanged);
+            // 
+            // hyperdriveIfDamagedLabel
+            // 
+            this.hyperdriveIfDamagedLabel.AutoSize = true;
+            this.hyperdriveIfDamagedLabel.Location = new System.Drawing.Point(7, 273);
+            this.hyperdriveIfDamagedLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.hyperdriveIfDamagedLabel.Name = "hyperdriveIfDamagedLabel";
+            this.hyperdriveIfDamagedLabel.Size = new System.Drawing.Size(129, 15);
+            this.hyperdriveIfDamagedLabel.TabIndex = 0;
+            this.hyperdriveIfDamagedLabel.Text = "Hyperdrive if Damaged";
+            // 
+            // hyperdriveIfDamaged
+            // 
+            this.hyperdriveIfDamaged.Location = new System.Drawing.Point(141, 271);
+            this.hyperdriveIfDamaged.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.hyperdriveIfDamaged.Maximum = new decimal(new int[] {
+            999,
+            0,
+            0,
+            0});
+            this.hyperdriveIfDamaged.Name = "hyperdriveIfDamaged";
+            this.hyperdriveIfDamaged.Size = new System.Drawing.Size(59, 23);
+            this.hyperdriveIfDamaged.TabIndex = 12;
+            this.hyperdriveIfDamaged.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.hyperdriveIfDamaged.Value = new decimal(new int[] {
+            999,
+            0,
+            0,
+            0});
+            this.hyperdriveIfDamaged.ValueChanged += new System.EventHandler(this.hyperdriveIfDamaged_ValueChanged);
+            // 
+            // field2_1
+            // 
+            this.field2_1.ForeColor = System.Drawing.Color.Red;
+            this.field2_1.Location = new System.Drawing.Point(141, 46);
+            this.field2_1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.field2_1.Maximum = new decimal(new int[] {
+            9999,
+            0,
+            0,
+            0});
+            this.field2_1.Name = "field2_1";
+            this.field2_1.Size = new System.Drawing.Size(59, 23);
+            this.field2_1.TabIndex = 1121;
+            this.field2_1.TabStop = false;
+            this.field2_1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.field2_1.Value = new decimal(new int[] {
+            2,
+            0,
+            0,
+            0});
+            this.field2_1.ValueChanged += new System.EventHandler(this.field2_1_ValueChanged);
+            // 
+            // field2_1Label
+            // 
+            this.field2_1Label.AutoSize = true;
+            this.field2_1Label.ForeColor = System.Drawing.Color.Red;
+            this.field2_1Label.Location = new System.Drawing.Point(7, 48);
+            this.field2_1Label.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.field2_1Label.Name = "field2_1Label";
+            this.field2_1Label.Size = new System.Drawing.Size(93, 15);
+            this.field2_1Label.TabIndex = 1120;
+            this.field2_1Label.Text = "Field2 (always 1)";
+            // 
+            // hiddenDataGroupBox
+            // 
+            this.hiddenDataGroupBox.Controls.Add(this.torpedoesRangeLabel);
+            this.hiddenDataGroupBox.Controls.Add(this.torpedoesRange);
+            this.hiddenDataGroupBox.Controls.Add(this.laserCannonRangeLabel);
+            this.hiddenDataGroupBox.Controls.Add(this.nextProductionFamilyLabel);
+            this.hiddenDataGroupBox.Controls.Add(this.turbolaserRange);
+            this.hiddenDataGroupBox.Controls.Add(this.ionCannonRangeLabel);
+            this.hiddenDataGroupBox.Controls.Add(this.field2_1);
+            this.hiddenDataGroupBox.Controls.Add(this.ionCannonRange);
+            this.hiddenDataGroupBox.Controls.Add(this.turbolaserRangeLabel);
+            this.hiddenDataGroupBox.Controls.Add(this.laserCannonRange);
+            this.hiddenDataGroupBox.Controls.Add(this.field2_1Label);
+            this.hiddenDataGroupBox.Controls.Add(this.idLabel);
+            this.hiddenDataGroupBox.Controls.Add(this.researchDifficultyLabel);
+            this.hiddenDataGroupBox.Controls.Add(this.nextProductionFamily);
+            this.hiddenDataGroupBox.Controls.Add(this.textStraDllId);
+            this.hiddenDataGroupBox.Controls.Add(this.textStraDllIdLabel);
+            this.hiddenDataGroupBox.Controls.Add(this.productionFamilyLabel);
+            this.hiddenDataGroupBox.Controls.Add(this.field7_2Label);
+            this.hiddenDataGroupBox.Controls.Add(this.familyId);
+            this.hiddenDataGroupBox.Controls.Add(this.productionFamily);
+            this.hiddenDataGroupBox.Controls.Add(this.researchOrderLabel);
+            this.hiddenDataGroupBox.Controls.Add(this.familyIdLabel);
+            this.hiddenDataGroupBox.Controls.Add(this.researchDifficulty);
+            this.hiddenDataGroupBox.Controls.Add(this.idHexLabel);
+            this.hiddenDataGroupBox.Controls.Add(this.hyperdriveIfDamaged);
+            this.hiddenDataGroupBox.Controls.Add(this.familyIdHexLabel);
+            this.hiddenDataGroupBox.Controls.Add(this.field7_2);
+            this.hiddenDataGroupBox.Controls.Add(this.researchOrder);
+            this.hiddenDataGroupBox.Controls.Add(this.UprisingDefenseLabel);
+            this.hiddenDataGroupBox.Controls.Add(this.id);
+            this.hiddenDataGroupBox.Controls.Add(this.uprisingDefense);
+            this.hiddenDataGroupBox.Controls.Add(this.hyperdriveIfDamagedLabel);
+            this.hiddenDataGroupBox.Location = new System.Drawing.Point(448, 2);
+            this.hiddenDataGroupBox.Name = "hiddenDataGroupBox";
+            this.hiddenDataGroupBox.Size = new System.Drawing.Size(233, 425);
+            this.hiddenDataGroupBox.TabIndex = 1122;
+            this.hiddenDataGroupBox.TabStop = false;
+            this.hiddenDataGroupBox.Text = "Hidden Data";
+            // 
+            // torpedoesRangeLabel
+            // 
+            this.torpedoesRangeLabel.AutoSize = true;
+            this.torpedoesRangeLabel.BackColor = System.Drawing.SystemColors.Control;
+            this.torpedoesRangeLabel.Location = new System.Drawing.Point(70, 398);
+            this.torpedoesRangeLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.torpedoesRangeLabel.Name = "torpedoesRangeLabel";
+            this.torpedoesRangeLabel.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.torpedoesRangeLabel.Size = new System.Drawing.Size(97, 15);
+            this.torpedoesRangeLabel.TabIndex = 1125;
+            this.torpedoesRangeLabel.Text = "Torpedoes Range";
+            this.torpedoesRangeLabel.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // torpedoesRange
+            // 
+            this.torpedoesRange.Location = new System.Drawing.Point(7, 396);
+            this.torpedoesRange.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.torpedoesRange.Maximum = new decimal(new int[] {
+            9999,
+            0,
+            0,
+            0});
+            this.torpedoesRange.Name = "torpedoesRange";
+            this.torpedoesRange.Size = new System.Drawing.Size(59, 23);
+            this.torpedoesRange.TabIndex = 1124;
+            this.torpedoesRange.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.torpedoesRange.Value = new decimal(new int[] {
+            9999,
+            0,
+            0,
+            0});
+            this.torpedoesRange.ValueChanged += new System.EventHandler(this.torpedoes_ValueChanged);
+            // 
+            // laserCannonRangeLabel
+            // 
+            this.laserCannonRangeLabel.AutoSize = true;
+            this.laserCannonRangeLabel.BackColor = System.Drawing.SystemColors.Control;
+            this.laserCannonRangeLabel.Location = new System.Drawing.Point(70, 373);
+            this.laserCannonRangeLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.laserCannonRangeLabel.Name = "laserCannonRangeLabel";
+            this.laserCannonRangeLabel.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.laserCannonRangeLabel.Size = new System.Drawing.Size(115, 15);
+            this.laserCannonRangeLabel.TabIndex = 1123;
+            this.laserCannonRangeLabel.Text = "Laser Cannon Range";
+            this.laserCannonRangeLabel.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // ionCannonRangeLabel
+            // 
+            this.ionCannonRangeLabel.AutoSize = true;
+            this.ionCannonRangeLabel.BackColor = System.Drawing.SystemColors.Control;
+            this.ionCannonRangeLabel.Location = new System.Drawing.Point(70, 348);
+            this.ionCannonRangeLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.ionCannonRangeLabel.Name = "ionCannonRangeLabel";
+            this.ionCannonRangeLabel.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.ionCannonRangeLabel.Size = new System.Drawing.Size(105, 15);
+            this.ionCannonRangeLabel.TabIndex = 1122;
+            this.ionCannonRangeLabel.Text = "Ion Cannon Range";
+            this.ionCannonRangeLabel.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // FightersForm
             // 
@@ -1846,105 +1761,97 @@ namespace SwRebellionEditor
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.Cancel;
-            this.ClientSize = new System.Drawing.Size(926, 474);
-            this.Controls.Add(this.hyperdriveGroup);
-            this.Controls.Add(this.sublightGroup);
-            this.Controls.Add(this.BasicGroup);
-            this.Controls.Add(this.shieldGroup);
-            this.Controls.Add(this.buildByGroup);
-            this.Controls.Add(this.costsGroup);
-            this.Controls.Add(this.researchGroup);
-            this.Controls.Add(this.tabControl1);
+            this.ClientSize = new System.Drawing.Size(686, 548);
+            this.Controls.Add(this.hiddenDataGroupBox);
+            this.Controls.Add(this.inGameDataGroupBox);
             this.Controls.Add(this.Open);
             this.Controls.Add(this.SaveAs);
             this.Controls.Add(this.Cancel);
             this.Controls.Add(this.Ok);
-            this.Controls.Add(this.name);
             this.Controls.Add(this.selector);
-            this.Controls.Add(this.picture);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.KeyPreview = true;
             this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.MaximizeBox = false;
-            this.MaximumSize = new System.Drawing.Size(942, 513);
-            this.MinimumSize = new System.Drawing.Size(942, 513);
+            this.MaximumSize = new System.Drawing.Size(702, 587);
+            this.MinimumSize = new System.Drawing.Size(702, 587);
             this.Name = "FightersForm";
             this.Text = "Fighters (FIGHTSD.DAT)";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.GameObjectsListForm_FormClosing);
             this.Load += new System.EventHandler(this.GameObjectsListForm_Load);
             this.Enter += new System.EventHandler(this.GameObjectsSelector_ValueChanged);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.GameObjectsListForm_KeyDown);
-            this.hyperdriveGroup.ResumeLayout(false);
-            this.hyperdriveGroup.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.hyperdriveBackup)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.hyperdrivePrimary)).EndInit();
-            this.sublightGroup.ResumeLayout(false);
-            this.sublightGroup.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.sublightManoeuvrability)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.sublightSpeed)).EndInit();
-            this.BasicGroup.ResumeLayout(false);
-            this.BasicGroup.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.detectionRating)).EndInit();
-            this.shieldGroup.ResumeLayout(false);
-            this.shieldGroup.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.shieldsMaxCapacity)).EndInit();
-            this.buildByGroup.ResumeLayout(false);
-            this.buildByGroup.PerformLayout();
-            this.costsGroup.ResumeLayout(false);
-            this.costsGroup.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.constructionCost)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.maintenanceCost)).EndInit();
-            this.researchGroup.ResumeLayout(false);
-            this.researchGroup.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.researchOrder)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.researchDifficulty)).EndInit();
-            this.tabControl1.ResumeLayout(false);
-            this.tabPage1.ResumeLayout(false);
-            this.tabPage1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.squadronSize)).EndInit();
-            this.wepFPGroup.ResumeLayout(false);
-            this.wepFPGroup.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.torpedoRange)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.torpedoFore)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bombardmentMod)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.laserCannonRange)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.laserCannonStar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.laserCannonPort)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.laserCannonAft)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ionCannonRange)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ionCannonStar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ionCannonPort)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ionCannonAft)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.turboLaserRange)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ionCannonFore)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.laserCannonFore)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.turboLaserStar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.turboLaserPort)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.turboLaserAft)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.turboLaserFore)).EndInit();
-            this.tabPage2.ResumeLayout(false);
-            this.tabPage3.ResumeLayout(false);
-            this.tabPage3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.fighterId)).EndInit();
-            this.groupBox13.ResumeLayout(false);
-            this.groupBox13.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.totalFirePower)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ionCannonTotalFirePower)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.laserCannonTotalFirePower)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.turboLaserTotalFirePower)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.unknownMoralHp)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.unknown)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textStraDllId)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.productionFamily)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.field7_2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.familyId)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nextProductionFamily)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.productionFamily)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.uprisingDefense)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.researchDifficulty)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.selector)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.detection)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.researchOrder)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.maintenanceCost)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.refinedMaterialCost)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bombardmentDefense)).EndInit();
+            this.attackStrengthGroupBox.ResumeLayout(false);
+            this.attackStrengthGroupBox.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.torpedoes)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.laserCannonStarboard)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.laserCannonPort)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.laserCannonAft)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ionCannonStarboard)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.overallAttackStrength)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ionCannonPort)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ionCannonAft)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ionCannonFore)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.laserCannonFore)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.turbolaserStarboard)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.turbolaserPort)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.turbolaserAft)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.turbolaserFore)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ionCannonAttackStrength)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.laserCannonAttackStrength)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.turbolaserAttackStrength)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.laserCannonRange)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ionCannonRange)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.turbolaserRange)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.id)).EndInit();
+            this.inGameDataGroupBox.ResumeLayout(false);
+            this.inGameDataGroupBox.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.squadronSize)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.shieldStrength)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picture)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.subLightEngine)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.maneuverability)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.hyperdrive)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.hyperdriveIfDamaged)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.field2_1)).EndInit();
+            this.hiddenDataGroupBox.ResumeLayout(false);
+            this.hiddenDataGroupBox.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.torpedoesRange)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
+
+        private Label encyclopediaDescriptionLabel;
+        private Label hyperdriveLabel;
+        private Label totalAttackLabel;
+        private Label overallLabel;
+        private NumericUpDown field2_1;
+        private Label field2_1Label;
+        private GroupBox hiddenDataGroupBox;
+        private TextBox name;
+        private Label laserCannonRangeLabel;
+        private Label ionCannonRangeLabel;
+        private NumericUpDown torpedoes;
+        private Label torpedoesLabel;
+        private Label squadronSizeLabel;
+        private NumericUpDown squadronSize;
+        private Label torpedoesRangeLabel;
+        private NumericUpDown torpedoesRange;
     }
 }
