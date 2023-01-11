@@ -72,7 +72,6 @@ namespace SwRebellionEditor
             this.SaveAs.TabIndex = 21;
             this.SaveAs.Text = "&SaveAs...";
             this.SaveAs.UseVisualStyleBackColor = true;
-            this.SaveAs.Visible = false;
             this.SaveAs.Click += new System.EventHandler(this.SaveAs_Click);
             // 
             // Cancel
@@ -149,15 +148,6 @@ namespace SwRebellionEditor
             this.x.TabIndex = 27;
             this.x.Text = "-";
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(134, 328);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(38, 15);
-            this.label1.TabIndex = 24;
-            this.label1.Text = "label1";
-            // 
             // GalaxyMapForm
             // 
             this.AcceptButton = this.Ok;
@@ -169,7 +159,6 @@ namespace SwRebellionEditor
             this.Controls.Add(this.x);
             this.Controls.Add(this.yLabel);
             this.Controls.Add(this.xLabel);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.background);
             this.Controls.Add(this.openNew);
             this.Controls.Add(this.SaveAs);
@@ -189,7 +178,6 @@ namespace SwRebellionEditor
         #endregion
 
         private PictureBox background;
-        private MovableLabel label1;
         private Label xLabel;
         private Label yLabel;
         private Label y;

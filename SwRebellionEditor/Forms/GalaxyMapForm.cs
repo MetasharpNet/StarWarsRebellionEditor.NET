@@ -21,9 +21,16 @@ namespace SwRebellionEditor
         protected override void DisplaySelectedGameObject(int selectorIndex)
         {
             var previousUnsavedData = GameFile.UnsavedData;
-            //var sector = GameFile.Sectors[selectorIndex];
-            //xPosition.Value = sector.XPosition;
-            //yPosition.Value = sector.YPosition;
+            foreach (var sector in GameFile.Sectors)
+            {
+                var label = new MovableLabel(background, 97, 57, x, y);
+                Controls.Add(label);
+                label.Width = 79;
+                label.Height = 102;
+                label.Location = new Point(background.Location.X + sector.XPosition - 97, background.Location.Y + sector.YPosition - 57);
+                label.Text = sector.Name;
+                label.BringToFront();
+            }
             GameFile.UnsavedData = previousUnsavedData;
         }
         protected override void LoadSideInfo()

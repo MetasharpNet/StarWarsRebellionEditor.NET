@@ -45,6 +45,8 @@ public class MovableLabel : Label
             _cursorOffset = e.Location;
             // Set the mode flag to signal the MouseMove event handler that it needs to now calculate new positions for our control
             _moving = true;
+            _xLabel.Text = (base.Location.X - _hostingPictureBox.Location.X + _originX).ToString();
+            _yLabel.Text = (base.Location.Y - _hostingPictureBox.Location.Y + _originY).ToString();
         }
     }
     private void MovableLabel_MouseMove(object sender, MouseEventArgs e)
