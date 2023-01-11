@@ -27,7 +27,7 @@ public partial class GalaxyMapForm : GalaxyMapDesignForm
             label.Location = new Point(background.Location.X + sector.XPosition - 97, background.Location.Y + sector.YPosition - 57);
             label.Text = sector.Name;
             label.BringToFront();
-            label.MovableLabel_MouseMove += sectorsPositions_ValueChanged;
+            label.MouseMove += sectorsPositions_ValueChanged;
         }
         GameFile.UnsavedData = previousUnsavedData;
     }
