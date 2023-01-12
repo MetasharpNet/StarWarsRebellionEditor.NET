@@ -9,13 +9,15 @@ public class MovableLabel : Label
     private Label _xLabel;
     public int _yDiff;
     private Label _yLabel;
+    public int X { get { return base.Location.X - _hostingPictureBox.Location.X + _originX; } }
+    public int Y { get { return base.Location.Y - _hostingPictureBox.Location.Y + _originY; } }
 
     // Used to store the current cursor shape when we start to move the control
     private Cursor _currentCursor;
     // Holds the mouse position relative to the inside of our control when the mouse button goes down
     private Point _cursorOffset;
     // Used by the MoveMove event handler to show that the setup to move the control has completed
-    private bool _moving;
+    public bool IsMoving;
 
     public MovableLabel(PictureBox hostingPictureBox, int originX = 0, int originY = 0, Label xLabel = null, Label yLabel = null)
     {
@@ -40,14 +42,14 @@ public class MovableLabel : Label
             // Save the location of the mouse pointer relative to the top-left corner of our control
             _cursorOffset = e.Location;
             // Set the mode flag to signal the MouseMove event handler that it needs to now calculate new positions for our control
-            _moving = true;
-            _xLabel.Text = (base.Location.X - _hostingPictureBox.Location.X + _originX).ToString();
-            _yLabel.Text = (base.Location.Y - _hostingPictureBox.Location.Y + _originY).ToString();
+            IsMoving = true;
+            _xLabel.Text = X.ToString();
+            _yLabel.Text = Y.ToString();
         }
     }
     public void MovableLabel_MouseMove(object sender, MouseEventArgs e)
     {
-        if (_moving)
+        if (IsMoving)
         {
             // get the screen position of the mouse pointer and map it to the position relative to the top-left corner of our parent container
             var clientPosition = base.Parent.PointToClient(Cursor.Position);
@@ -63,13 +65,13 @@ public class MovableLabel : Label
                 base.Left = _hostingPictureBox.Right - base.Width;
             if (base.Bottom > _hostingPictureBox.Bottom)
                 base.Top = _hostingPictureBox.Bottom - base.Height;
-            _xLabel.Text = (base.Location.X - _hostingPictureBox.Location.X + _originX).ToString();
-            _yLabel.Text = (base.Location.Y - _hostingPictureBox.Location.Y + _originY).ToString();
+            _xLabel.Text = X.ToString();
+            _yLabel.Text = Y.ToString();
         }
     }
     public void MovableLabel_MouseUp(object? sender, MouseEventArgs e)
     {
-        _moving = false;
+        IsMoving = false;
         base.Cursor = _currentCursor;
     }
 }
