@@ -4,80 +4,138 @@ public partial class GalaxyMapForm : GalaxyMapDesignForm
 {
     #region .ctor
 
-    protected HashSet<MovableLabel> movedSectorsLabels;
-    protected Dictionary<MovableLabel, SECTORSD_Sector> sectorsDic;
+    public Dictionary<MovableLabel, SECTORSD_Sector> SectorsDic;
+    public Dictionary<MovableLabel, SYSTEMSD_System> SystemsDic;
+    public List<MovableLabel> SystemsSprites;
+    public SYSTEMSD SystemsGameFile;
+    public string SystemsGameFilePath;
 
     public GalaxyMapForm()
     {
         GameFilePath = RegistryKeys.InstalledLocation + "\\GData\\SECTORSD.DAT";
         GameFile = DatFile.Load<SECTORSD>(GameFilePath);
+        SystemsGameFilePath = RegistryKeys.InstalledLocation + "\\GData\\SYSTEMSD.DAT";
+        SystemsGameFile = DatFile.Load<SYSTEMSD>(SystemsGameFilePath);
         InitializeComponent();
-        movedSectorsLabels = new HashSet<MovableLabel>();
-        sectorsDic = new Dictionary<MovableLabel, SECTORSD_Sector>();
+        SectorsDic = new Dictionary<MovableLabel, SECTORSD_Sector>();
+        SystemsDic = new Dictionary<MovableLabel, SYSTEMSD_System>();
+        SystemsSprites= new List<MovableLabel>();
     }
 
     #endregion
 
     #region Business Layer
 
-
     protected override void DisplaySelectedGameObject(int selectorIndex)
     {
-        var previousUnsavedData = GameFile.UnsavedData;
         foreach (var sector in GameFile.Sectors)
         {
-            var label = new MovableLabel(background, 97, 57, x, y);
-            Controls.Add(label);
-            label.Width = 79;
-            label.Height = 102;
-            label.Location = new Point(background.Location.X + sector.XPosition - 97, background.Location.Y + sector.YPosition - 57);
-            label.Text = sector.Name;
-            label.TextAlign = ContentAlignment.MiddleCenter;
-            label.BringToFront();
-            label.MouseMove += sectorsPositions_ValueChanged;
-            sectorsDic.Add(label, sector);
+            var sectorSprite = new MovableLabel(galaxyMap, 97, 57, sectorX, sectorY)
+                {
+                    Width = 79,
+                    Height = 102,
+                    Location = new Point(galaxyMap.Location.X + sector.XPosition - 97, galaxyMap.Location.Y + sector.YPosition - 57),
+                    Text = sector.Name,
+                    TextAlign = ContentAlignment.MiddleCenter
+                };
+            sectorSprite.MouseDown += sector_MouseDown;
+            sectorSprite.MouseMove += sector_PositionChanged;
+            Controls.Add(sectorSprite);
+            sectorSprite.BringToFront();
+            SectorsDic.Add(sectorSprite, sector);
         }
-        GameFile.UnsavedData = previousUnsavedData;
     }
     protected override void LoadSideInfo()
     {
         foreach (var s in GameFile.Sectors)
             s.Name = TextStra.GetString(s.TextStraDllId);
+        foreach (var s in SystemsGameFile.Systems)
+            s.Name = TextStra.GetString(s.TextStraDllId);
     }
     protected override void SaveSideInfo()
     {
-        var systemsGamefile = DatFile.Load<SYSTEMSD>(RegistryKeys.InstalledLocation + "\\GData\\SYSTEMSD.DAT");
-        foreach (var sectorLabel in movedSectorsLabels)
-        {
-            var sector = sectorsDic[sectorLabel];
-            var xDiff = sector.XPosition - sectorLabel.X;
-            var yDiff = sector.YPosition - sectorLabel.Y;
-            foreach (var sys in systemsGamefile.Systems.Where(s => s.SectorId == sector.Id))
-            {
-                sys.XPosition -= (ushort)xDiff;
-                sys.YPosition -= (ushort)yDiff;
-            }
-        }
-        systemsGamefile.Save(RegistryKeys.InstalledLocation + "\\GData\\SYSTEMSD.DAT");
+        GameFile.Save(GameFilePath);
+        SystemsGameFile.Save(SystemsGameFilePath);
     }
 
     #endregion
 
     #region Changed events
 
-    private void sectorsPositions_ValueChanged(object sender, MouseEventArgs e)
+    private void sector_MouseDown(object sender, MouseEventArgs e)
     {
-        var label = (MovableLabel)sender;
-        if (label.IsMoving)
+        var sector = SectorsDic[(MovableLabel)sender];
+        sectorName.Text = sector.Name;
+        systemName.Text = "-";
+        systemX.Text = "-";
+        systemY.Text = "-";
+        var sectorSystems = SystemsGameFile.Systems.Where(s => s.SectorId == sector.Id).ToList();
+
+        foreach (var systemSprite in SystemsSprites)
         {
-            if (!movedSectorsLabels.Contains(label))
-                movedSectorsLabels.Add(label);
-            var sec = GameFile.Sectors.First(s => s == sectorsDic[label]);
-            sec.XPosition = (ushort)label.X;
-            sec.YPosition = (ushort)label.Y;
-            GameFile.UnsavedData = true;
+            Controls.Remove(systemSprite);
+            systemSprite.Dispose();
+        }
+        SystemsSprites.Clear();
+        SystemsDic.Clear();
+
+        foreach (var system in sectorSystems)
+        {
+            var systemSprite = new MovableLabel(sectorMap, sector.XPosition, sector.YPosition, systemX, systemY)
+                {
+                    Width = 19,
+                    Height = 18,
+                    Location = new Point(sectorMap.Location.X + system.XPosition - sector.XPosition, sectorMap.Location.Y + system.YPosition - sector.YPosition),
+                    Text = system.Name[0].ToString(),
+                    TextAlign = ContentAlignment.MiddleCenter,
+                };
+            systemSprite.MouseMove += system_PositionChanged;
+            systemSprite.MouseDown += system_MouseDown;
+            Controls.Add(systemSprite);
+            systemSprite.BringToFront();
+            SystemsSprites.Add(systemSprite);
+            SystemsDic.Add(systemSprite, system);
         }
     }
 
+    private void sector_PositionChanged(object sender, MouseEventArgs e)
+    {
+        var sectorSprite = (MovableLabel)sender;
+        if (sectorSprite.IsMoving)
+        {
+            var sector = SectorsDic[sectorSprite];
+            var xDiff = sector.XPosition - sectorSprite.X;
+            var yDiff = sector.YPosition - sectorSprite.Y;
+            sector.XPosition = sectorSprite.X;
+            sector.YPosition = sectorSprite.Y;
+            var sectorSystems = SystemsGameFile.Systems.Where(s => s.SectorId == sector.Id).ToList();
+            foreach (var system in sectorSystems)
+            {
+                system.XPosition -= (ushort)xDiff;
+                system.YPosition -= (ushort)yDiff;
+            }
+            GameFile.UnsavedData = true;
+        }
+    }
+    private void system_MouseDown(object sender, MouseEventArgs e)
+    {
+        var systemSprite = (MovableLabel)sender;
+        var system = SystemsDic[systemSprite];
+        systemName.Text = system.Name;
+        systemX.Text = system.XPosition.ToString();
+        systemY.Text = system.YPosition.ToString();
+    }
+    private void system_PositionChanged(object sender, MouseEventArgs e)
+    {
+        var systemSprite = (MovableLabel)sender;
+        if (systemSprite.IsMoving)
+        {
+            var system = SystemsDic[systemSprite];
+            var sector = GameFile.Sectors.First(s => s.Id == system.SectorId);
+            system.XPosition = systemSprite.X;
+            system.YPosition = systemSprite.Y;
+            GameFile.UnsavedData = true;
+        }
+    }
     #endregion
 }

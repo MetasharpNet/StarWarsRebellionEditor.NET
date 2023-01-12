@@ -325,6 +325,16 @@ namespace SwRebellionEditor {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap sector_79x102_bmp {
+            get {
+                object obj = ResourceManager.GetObject("sector_79x102_bmp", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap shipyard_16x16_bmp {
             get {
                 object obj = ResourceManager.GetObject("shipyard_16x16_bmp", resourceCulture);

@@ -9,8 +9,8 @@ public class MovableLabel : Label
     private Label _xLabel;
     public int _yDiff;
     private Label _yLabel;
-    public int X { get { return base.Location.X - _hostingPictureBox.Location.X + _originX; } }
-    public int Y { get { return base.Location.Y - _hostingPictureBox.Location.Y + _originY; } }
+    public ushort X { get { return (ushort)(base.Location.X - _hostingPictureBox.Location.X + _originX); } }
+    public ushort Y { get { return (ushort)(base.Location.Y - _hostingPictureBox.Location.Y + _originY); } }
 
     // Used to store the current cursor shape when we start to move the control
     private Cursor _currentCursor;
@@ -18,6 +18,11 @@ public class MovableLabel : Label
     private Point _cursorOffset;
     // Used by the MoveMove event handler to show that the setup to move the control has completed
     public bool IsMoving;
+
+    public override string ToString()
+    {
+        return Text + " [" + X + "," + Y + "]";
+    }
 
     public MovableLabel(PictureBox hostingPictureBox, int originX = 0, int originY = 0, Label xLabel = null, Label yLabel = null)
     {
