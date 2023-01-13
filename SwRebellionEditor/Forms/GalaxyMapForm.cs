@@ -37,7 +37,9 @@ public partial class GalaxyMapForm : GalaxyMapDesignForm
                     Height = 102,
                     Location = new Point(galaxyMap.Location.X + sector.XPosition - 97, galaxyMap.Location.Y + sector.YPosition - 57),
                     Text = sector.Name,
-                    TextAlign = ContentAlignment.MiddleCenter
+                    TextAlign = ContentAlignment.MiddleCenter,
+                    ForeColor = Color.Black,
+                    BackColor = Color.LightBlue
                 };
             sectorSprite.MouseDown += sector_MouseDown;
             sectorSprite.MouseMove += sector_PositionChanged;
@@ -90,6 +92,8 @@ public partial class GalaxyMapForm : GalaxyMapDesignForm
                     Location = new Point(sectorMap.Location.X + system.XPosition - sector.XPosition, sectorMap.Location.Y + system.YPosition - sector.YPosition),
                     Text = system.Name[0].ToString(),
                     TextAlign = ContentAlignment.MiddleCenter,
+                    ForeColor = Color.Black,
+                    BackColor = Color.LightBlue
                 };
             systemSprite.MouseMove += system_PositionChanged;
             systemSprite.MouseDown += system_MouseDown;

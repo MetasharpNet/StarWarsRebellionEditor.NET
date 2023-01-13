@@ -68,10 +68,10 @@ public class MovableLabel : Label
                 base.Left = _hostingPictureBox.Left;
             if (base.Top < _hostingPictureBox.Top)
                 base.Top = _hostingPictureBox.Top;
-            if (base.Right > _hostingPictureBox.Right)
-                base.Left = _hostingPictureBox.Right - base.Width;
-            if (base.Bottom > _hostingPictureBox.Bottom)
-                base.Top = _hostingPictureBox.Bottom - base.Height;
+            if (base.Right > _hostingPictureBox.Right + base.Width - 2)
+                base.Left = _hostingPictureBox.Right - base.Width + base.Width - 2;
+            if (base.Bottom > _hostingPictureBox.Bottom + base.Height - 2)
+                base.Top = _hostingPictureBox.Bottom - base.Height + base.Height - 2;
             if (_xLabel != null)
                 _xLabel.Text = X.ToString();
             if (_yLabel != null)
