@@ -93,7 +93,7 @@ public partial class CapitalShipsForm : CapitalShipsDesignForm
     protected override void SaveSideInfo()
     {
         TextStra.SaveString(Convert.ToUInt16(textStraDllId.Value), name.Text);
-        //EncyText.SaveString(Convert.ToUInt16(xxx.Value), name.Text);
+        EncyText.SaveRcdata((textStraDllId.Value - 4096).ToString(), encyclopediaDescription.Text);
     }
     private void UpdateTotals(int selectorIndex)
     {

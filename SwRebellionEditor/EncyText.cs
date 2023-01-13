@@ -19,6 +19,10 @@ public static class EncyText
         return Resources.RT_STRING[id];
     }
 
+    public static void SaveRcdata(string id, string text)
+    {
+        Resources.SaveRcdata(id, text);
+    }
     public static void SaveString(ushort id, string text)
     {
         Resources.SaveString(id, text);
