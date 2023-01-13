@@ -13,6 +13,7 @@ To buy the game or get free fan mods, check : https://swrebellion.net/
 ### Beta Roadmap (current) :
 * Cleanup code on rarely used windows
 * Encyclopedia write (in progress)
+* Ability to Add/Change System pictures
 
 ### Final Roadmap:
 * Identify unknown fields usage
