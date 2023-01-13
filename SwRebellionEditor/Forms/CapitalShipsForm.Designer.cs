@@ -341,14 +341,13 @@ namespace SwRebellionEditor
             // 
             // encyclopediaDescription
             // 
-            this.encyclopediaDescription.Cursor = System.Windows.Forms.Cursors.No;
             this.encyclopediaDescription.Location = new System.Drawing.Point(5, 453);
             this.encyclopediaDescription.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.encyclopediaDescription.Name = "encyclopediaDescription";
             this.encyclopediaDescription.Size = new System.Drawing.Size(428, 66);
             this.encyclopediaDescription.TabIndex = 0;
             this.encyclopediaDescription.TabStop = false;
-            this.encyclopediaDescription.Text = "Not implemented yet.";
+            this.encyclopediaDescription.Text = "";
             this.encyclopediaDescription.TextChanged += new System.EventHandler(this.encyclopediaDescription_TextChanged);
             // 
             // textStraDllIdLabel

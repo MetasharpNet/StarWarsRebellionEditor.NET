@@ -174,7 +174,7 @@ namespace SwRebellionEditor
             this.encyclopediaDescription.Size = new System.Drawing.Size(270, 125);
             this.encyclopediaDescription.TabIndex = 67;
             this.encyclopediaDescription.TabStop = false;
-            this.encyclopediaDescription.Text = "Not implemented yet.";
+            this.encyclopediaDescription.Text = "";
             this.encyclopediaDescription.TextChanged += new System.EventHandler(this.encyclopediaDescription_TextChanged);
             // 
             // textStraDllIdLabel
