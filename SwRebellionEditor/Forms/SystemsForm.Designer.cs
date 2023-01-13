@@ -963,7 +963,6 @@ namespace SwRebellionEditor
             // encyclopediaDescription
             // 
             this.encyclopediaDescription.Cursor = System.Windows.Forms.Cursors.No;
-            this.encyclopediaDescription.Enabled = false;
             this.encyclopediaDescription.Location = new System.Drawing.Point(7, 138);
             this.encyclopediaDescription.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.encyclopediaDescription.Name = "encyclopediaDescription";

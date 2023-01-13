@@ -1,4 +1,5 @@
 ﻿using System.Linq;
+using System.Text;
 using Vestris.ResourceLib;
 
 namespace SwRebellionEditor;
@@ -29,7 +30,7 @@ public class ResourceFile
             {
                 foreach (var r in ri[Kernel32.ResourceTypes.RT_RCDATA])
                 {
-                    RT_RCDATA.Add(r.Name.Name, Tools.ToString(r.WriteAndGetBytes()));
+                    RT_RCDATA.Add(r.Name.Name, Encoding.Latin1.GetString(r.WriteAndGetBytes()));
                 }
             }
             if (ri.ResourceTypes.Any(t => t.Name == (((int)Kernel32.ResourceTypes.RT_STRING).ToString())))

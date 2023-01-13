@@ -74,8 +74,11 @@ public partial class SpecialForcesForm : SpecialForcesDesignForm
     }
     protected override void LoadSideInfo()
     {
-        foreach (var mc in GameFile.SpecialForces)
-            mc.Name = TextStra.GetString(mc.TextStraDllId);
+        foreach (var sf in GameFile.SpecialForces)
+        {
+            sf.Name = TextStra.GetString(sf.TextStraDllId);
+            sf.EncyclopediaDescription = EncyText.GetRcdata((sf.TextStraDllId - 4096).ToString());
+        }
     }
     protected override void SaveSideInfo()
     {

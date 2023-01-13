@@ -100,7 +100,10 @@ public partial class MajorCharactersForm : MajorCharactersDesignForm
     protected override void LoadSideInfo()
     {
         foreach (var mc in GameFile.MajorCharacters)
+        {
             mc.Name = TextStra.GetString(mc.TextStraDllId);
+            mc.EncyclopediaDescription = EncyText.GetRcdata((mc.TextStraDllId - 4096).ToString());
+        }
     }
     protected override void SaveSideInfo()
     {

@@ -54,7 +54,10 @@ public partial class DefenseFacilitiesForm : DefenseFacilitiesDesignForm
     protected override void LoadSideInfo()
     {
         foreach (var df in GameFile.DefenseFacilities)
+        {
             df.Name = TextStra.GetString(df.TextStraDllId);
+            df.EncyclopediaDescription = EncyText.GetRcdata((df.TextStraDllId - 4096).ToString());
+        }
     }
     protected override void SaveSideInfo()
     {

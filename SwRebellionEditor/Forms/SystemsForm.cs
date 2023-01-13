@@ -1,4 +1,6 @@
-﻿namespace SwRebellionEditor;
+﻿using System.Text;
+
+namespace SwRebellionEditor;
 
 public partial class SystemsForm : SystemsDesignForm
 {
@@ -31,6 +33,7 @@ public partial class SystemsForm : SystemsDesignForm
             systemsListView.Items.Add(GameFile.Systems[selectorIndex].Name, selectorIndex);
         }
     }
+
     protected override void DisplaySelectedGameObject(int selectorIndex)
     {
         var previousUnsavedData = GameFile.UnsavedData;
@@ -74,7 +77,10 @@ public partial class SystemsForm : SystemsDesignForm
     protected override void LoadSideInfo()
     {
         foreach (var s in GameFile.Systems)
+        {
             s.Name = TextStra.GetString(s.TextStraDllId);
+            s.EncyclopediaDescription = EncyText.GetRcdata((s.TextStraDllId - 4096).ToString());
+        }
     }
     protected override void SaveSideInfo()
     {

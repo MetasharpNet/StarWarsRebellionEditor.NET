@@ -84,8 +84,11 @@ public partial class CapitalShipsForm : CapitalShipsDesignForm
     }
     protected override void LoadSideInfo()
     {
-        foreach (var ship in  GameFile.CapitalShips)
-            ship.Name = TextStra.GetString(ship.TextStraDllId);
+        foreach (var cs in  GameFile.CapitalShips)
+        {
+            cs.Name = TextStra.GetString(cs.TextStraDllId);
+            cs.EncyclopediaDescription = EncyText.GetRcdata((cs.TextStraDllId - 4096).ToString());
+        }
     }
     protected override void SaveSideInfo()
     {

@@ -100,7 +100,10 @@ public partial class MinorCharactersForm : MinorCharactersDesignForm
     protected override void LoadSideInfo()
     {
         foreach (var mc in GameFile.MinorCharacters)
+        {
             mc.Name = TextStra.GetString(mc.TextStraDllId);
+            mc.EncyclopediaDescription = EncyText.GetRcdata((mc.TextStraDllId - 4096).ToString());
+        }
     }
     protected override void SaveSideInfo()
     {

@@ -42,7 +42,6 @@ namespace SwRebellionEditor
         private NumericUpDown galaxySize;
         private NumericUpDown textStraDllId;
         private NumericUpDown field7_2;
-        private RichTextBox encyclopediaDescription;
         private TextBox name;
         private TrackBar selector;
 
@@ -87,7 +86,6 @@ namespace SwRebellionEditor
             this.idLabel = new System.Windows.Forms.Label();
             this.xPosition = new System.Windows.Forms.NumericUpDown();
             this.positionLabel = new System.Windows.Forms.Label();
-            this.encyclopediaDescription = new System.Windows.Forms.RichTextBox();
             this.familyCommentLabel = new System.Windows.Forms.Label();
             this.nextProductionFamily_0Label = new System.Windows.Forms.Label();
             this.familyIdLabel = new System.Windows.Forms.Label();
@@ -97,7 +95,6 @@ namespace SwRebellionEditor
             this.field7_2Label = new System.Windows.Forms.Label();
             this.secImportLabel = new System.Windows.Forms.Label();
             this.inGameDataGroupBox = new System.Windows.Forms.GroupBox();
-            this.encyclopediaDescriptionLabel = new System.Windows.Forms.Label();
             this.name = new System.Windows.Forms.TextBox();
             this.nameLabel = new System.Windows.Forms.Label();
             this.familyIdHexLabel = new System.Windows.Forms.Label();
@@ -407,26 +404,11 @@ namespace SwRebellionEditor
             this.positionLabel.TabIndex = 0;
             this.positionLabel.Text = "Position (X, Y)";
             // 
-            // encyclopediaDescription
-            // 
-            this.encyclopediaDescription.Cursor = System.Windows.Forms.Cursors.No;
-            this.encyclopediaDescription.Enabled = false;
-            this.encyclopediaDescription.Location = new System.Drawing.Point(7, 66);
-            this.encyclopediaDescription.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.encyclopediaDescription.MaximumSize = new System.Drawing.Size(334, 136);
-            this.encyclopediaDescription.MinimumSize = new System.Drawing.Size(334, 136);
-            this.encyclopediaDescription.Name = "encyclopediaDescription";
-            this.encyclopediaDescription.Size = new System.Drawing.Size(334, 136);
-            this.encyclopediaDescription.TabIndex = 134;
-            this.encyclopediaDescription.TabStop = false;
-            this.encyclopediaDescription.Text = "Not implemented yet.";
-            this.encyclopediaDescription.TextChanged += new System.EventHandler(this.encyclopediaDescription_TextChanged);
-            // 
             // familyCommentLabel
             // 
             this.familyCommentLabel.AutoSize = true;
             this.familyCommentLabel.ForeColor = System.Drawing.Color.Blue;
-            this.familyCommentLabel.Location = new System.Drawing.Point(19, 268);
+            this.familyCommentLabel.Location = new System.Drawing.Point(237, 135);
             this.familyCommentLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.familyCommentLabel.Name = "familyCommentLabel";
             this.familyCommentLabel.Size = new System.Drawing.Size(116, 15);
@@ -531,28 +513,14 @@ namespace SwRebellionEditor
             // 
             // inGameDataGroupBox
             // 
-            this.inGameDataGroupBox.Controls.Add(this.encyclopediaDescriptionLabel);
             this.inGameDataGroupBox.Controls.Add(this.name);
             this.inGameDataGroupBox.Controls.Add(this.nameLabel);
-            this.inGameDataGroupBox.Controls.Add(this.encyclopediaDescription);
             this.inGameDataGroupBox.Location = new System.Drawing.Point(12, 52);
             this.inGameDataGroupBox.Name = "inGameDataGroupBox";
-            this.inGameDataGroupBox.Size = new System.Drawing.Size(347, 208);
+            this.inGameDataGroupBox.Size = new System.Drawing.Size(347, 52);
             this.inGameDataGroupBox.TabIndex = 167;
             this.inGameDataGroupBox.TabStop = false;
             this.inGameDataGroupBox.Text = "In Game Data";
-            // 
-            // encyclopediaDescriptionLabel
-            // 
-            this.encyclopediaDescriptionLabel.AutoSize = true;
-            this.encyclopediaDescriptionLabel.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.encyclopediaDescriptionLabel.ForeColor = System.Drawing.Color.White;
-            this.encyclopediaDescriptionLabel.Location = new System.Drawing.Point(191, 52);
-            this.encyclopediaDescriptionLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.encyclopediaDescriptionLabel.Name = "encyclopediaDescriptionLabel";
-            this.encyclopediaDescriptionLabel.Size = new System.Drawing.Size(140, 15);
-            this.encyclopediaDescriptionLabel.TabIndex = 1128;
-            this.encyclopediaDescriptionLabel.Text = "Encyclopedia Description";
             // 
             // name
             // 
@@ -630,7 +598,7 @@ namespace SwRebellionEditor
             // 
             this.label1.AutoSize = true;
             this.label1.ForeColor = System.Drawing.Color.Green;
-            this.label1.Location = new System.Drawing.Point(182, 268);
+            this.label1.Location = new System.Drawing.Point(180, 239);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(173, 15);
@@ -687,8 +655,6 @@ namespace SwRebellionEditor
         }
 
         #endregion
-
-        private Label encyclopediaDescriptionLabel;
         private GroupBox hiddenDataGroupBox;
         private Label label1;
     }

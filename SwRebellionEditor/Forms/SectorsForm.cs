@@ -21,7 +21,6 @@ public partial class SectorsForm : SectorsDesignForm
     {
         var previousUnsavedData = GameFile.UnsavedData;
         var sector = GameFile.Sectors[selectorIndex];
-        encyclopediaDescription.Text = sector.EncyclopediaDescription;
         familyId.Value = sector.FamilyId;
         familyIdHexLabel.Text = "0x" + sector.FamilyId.ToString("X");
         field2_1.Value = sector.Field2_1;
@@ -41,23 +40,19 @@ public partial class SectorsForm : SectorsDesignForm
     protected override void LoadSideInfo()
     {
         foreach (var s in GameFile.Sectors)
+        {
             s.Name = TextStra.GetString(s.TextStraDllId);
+        }
     }
     protected override void SaveSideInfo()
     {
         TextStra.SaveString(Convert.ToUInt16(textStraDllId.Value), name.Text);
-        //EncyText.SaveString(Convert.ToUInt16(xxx.Value), name.Text);
     }
 
     #endregion
 
     #region Changed events
 
-    private void encyclopediaDescription_TextChanged(object sender, EventArgs e)
-    {
-        GameFile.Sectors[selector.Value].EncyclopediaDescription = encyclopediaDescription.Text;
-        GameFile.UnsavedData = true;
-    }
     private void familyId_ValueChanged(object sender, EventArgs e)
     {
         GameFile.Sectors[selector.Value].FamilyId = (uint)familyId.Value;

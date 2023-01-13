@@ -49,7 +49,10 @@ public partial class ManufacturingFacilitiesForm : ManufacturingFacilitiesDesign
     protected override void LoadSideInfo()
     {
         foreach (var mf in GameFile.ManufacturingFacilities)
+        {
             mf.Name = TextStra.GetString(mf.TextStraDllId);
+            mf.EncyclopediaDescription = EncyText.GetRcdata((mf.TextStraDllId - 4096).ToString());
+        }
     }
     protected override void SaveSideInfo()
     {

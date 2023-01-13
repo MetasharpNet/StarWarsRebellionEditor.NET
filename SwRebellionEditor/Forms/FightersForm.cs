@@ -76,8 +76,11 @@ public partial class FightersForm : FightersDesignForm
     }
     protected override void LoadSideInfo()
     {
-        foreach (var ship in GameFile.Fighters)
-            ship.Name = TextStra.GetString(ship.TextStraDllId);
+        foreach (var f in GameFile.Fighters)
+        {
+            f.Name = TextStra.GetString(f.TextStraDllId);
+            f.EncyclopediaDescription = EncyText.GetRcdata((f.TextStraDllId - 4096).ToString());
+        }
     }
     protected override void SaveSideInfo()
     {

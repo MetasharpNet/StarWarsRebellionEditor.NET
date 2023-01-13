@@ -62,8 +62,11 @@ public partial class TroopsForm : TroopsDesignForm
     }
     protected override void LoadSideInfo()
     {
-        foreach (var mc in GameFile.Troops)
-            mc.Name = TextStra.GetString(mc.TextStraDllId);
+        foreach (var t in GameFile.Troops)
+        {
+            t.Name = TextStra.GetString(t.TextStraDllId);
+            t.EncyclopediaDescription = EncyText.GetRcdata((t.TextStraDllId - 4096).ToString());
+        }
     }
     protected override void SaveSideInfo()
     {
