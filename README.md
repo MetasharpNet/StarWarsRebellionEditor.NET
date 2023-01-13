@@ -12,7 +12,7 @@ To buy the game or get free fan mods, check : https://swrebellion.net/
 
 ### Beta Roadmap (current) :
 * Cleanup code on rarely used windows
-* Encyclopedia read/write
+* Encyclopedia write (in progress)
 
 ### Final Roadmap:
 * Identify unknown fields usage
