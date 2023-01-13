@@ -9,6 +9,7 @@ public partial class GalaxyMapForm : GalaxyMapDesignForm
     public List<MovableLabel> SystemsSprites;
     public SYSTEMSD SystemsGameFile;
     public string SystemsGameFilePath;
+    public MovableLabel CurrentSectorSprite;
 
     public GalaxyMapForm()
     {
@@ -64,7 +65,8 @@ public partial class GalaxyMapForm : GalaxyMapDesignForm
 
     private void sector_MouseDown(object sender, MouseEventArgs e)
     {
-        var sector = SectorsDic[(MovableLabel)sender];
+        CurrentSectorSprite = (MovableLabel)sender;
+        var sector = SectorsDic[CurrentSectorSprite];
         sectorName.Text = sector.Name;
         systemName.Text = "-";
         systemX.Text = "-";
@@ -81,7 +83,7 @@ public partial class GalaxyMapForm : GalaxyMapDesignForm
 
         foreach (var system in sectorSystems)
         {
-            var systemSprite = new MovableLabel(sectorMap, sector.XPosition, sector.YPosition, systemX, systemY)
+            var systemSprite = new MovableLabel(sectorMap)
                 {
                     Width = 19,
                     Height = 18,
@@ -132,8 +134,10 @@ public partial class GalaxyMapForm : GalaxyMapDesignForm
         {
             var system = SystemsDic[systemSprite];
             var sector = GameFile.Sectors.First(s => s.Id == system.SectorId);
-            system.XPosition = systemSprite.X;
-            system.YPosition = systemSprite.Y;
+            system.XPosition = (ushort)(systemSprite.Location.X - sectorMap.Location.X + CurrentSectorSprite.X);
+            system.YPosition = (ushort)(systemSprite.Location.Y - sectorMap.Location.Y + CurrentSectorSprite.Y);
+            systemX.Text = system.XPosition.ToString();
+            systemY.Text = system.YPosition.ToString();
             GameFile.UnsavedData = true;
         }
     }

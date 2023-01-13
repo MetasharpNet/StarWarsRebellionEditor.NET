@@ -48,8 +48,10 @@ public class MovableLabel : Label
             _cursorOffset = e.Location;
             // Set the mode flag to signal the MouseMove event handler that it needs to now calculate new positions for our control
             IsMoving = true;
-            _xLabel.Text = X.ToString();
-            _yLabel.Text = Y.ToString();
+            if (_xLabel!= null)
+                _xLabel.Text = X.ToString();
+            if (_yLabel != null)
+                _yLabel.Text = Y.ToString();
         }
     }
     public void MovableLabel_MouseMove(object sender, MouseEventArgs e)
@@ -70,8 +72,10 @@ public class MovableLabel : Label
                 base.Left = _hostingPictureBox.Right - base.Width;
             if (base.Bottom > _hostingPictureBox.Bottom)
                 base.Top = _hostingPictureBox.Bottom - base.Height;
-            _xLabel.Text = X.ToString();
-            _yLabel.Text = Y.ToString();
+            if (_xLabel != null)
+                _xLabel.Text = X.ToString();
+            if (_yLabel != null)
+                _yLabel.Text = Y.ToString();
         }
     }
     public void MovableLabel_MouseUp(object? sender, MouseEventArgs e)
