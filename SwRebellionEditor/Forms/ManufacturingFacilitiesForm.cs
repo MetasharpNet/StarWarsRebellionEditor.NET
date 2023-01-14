@@ -43,7 +43,11 @@ public partial class ManufacturingFacilitiesForm : ManufacturingFacilitiesDesign
 
         var edataId = 3 + selectorIndex;
         picture.SizeMode = PictureBoxSizeMode.Zoom;
-        picture.Image = Image.FromFile(RegistryKeys.InstalledLocation + "\\EData\\EDATA." + edataId.ToString("000"));
+        var filepath = RegistryKeys.InstalledLocation + "\\EData\\EDATA." + edataId.ToString("000");
+        if (File.Exists(filepath))
+            picture.Image = Image.FromFile(filepath);
+        else
+            picture.Image = null;
         GameFile.UnsavedData = previousUnsavedData;
     }
     protected override void LoadSideInfo()

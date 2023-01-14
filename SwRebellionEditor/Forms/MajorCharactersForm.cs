@@ -24,7 +24,9 @@ public partial class MajorCharactersForm : MajorCharactersDesignForm
         for (int selectorIndex = 0; selectorIndex < GameFile.MajorCharactersCount; ++selectorIndex)
         {
             var edataId = 72 + selectorIndex;
-            majorCharactersImages.Images.Add(Image.FromFile(RegistryKeys.InstalledLocation + "\\EData\\EDATA." + edataId.ToString("000")));
+            var filepath = RegistryKeys.InstalledLocation + "\\EData\\EDATA." + edataId.ToString("000");
+            if (File.Exists(filepath))
+                majorCharactersImages.Images.Add(Image.FromFile(filepath));
             majorCharactersListView.Items.Add(GameFile.MajorCharacters[selectorIndex].Name, selectorIndex);
         }
     }
@@ -94,7 +96,11 @@ public partial class MajorCharactersForm : MajorCharactersDesignForm
 
         picture.SizeMode = PictureBoxSizeMode.Zoom;
         var edataId = 72 + selectorIndex;
-        picture.Image = Image.FromFile(RegistryKeys.InstalledLocation + "\\EData\\EDATA." + edataId.ToString("000"));
+        var filepath = RegistryKeys.InstalledLocation + "\\EData\\EDATA." + edataId.ToString("000");
+        if (File.Exists(filepath))
+            picture.Image = Image.FromFile(filepath);
+        else
+            picture.Image = null;
         GameFile.UnsavedData = previousUnsavedData;
     }
     protected override void LoadSideInfo()

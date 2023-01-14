@@ -746,7 +746,7 @@ namespace SwRebellionEditor
             this.pictureId.Location = new System.Drawing.Point(153, 230);
             this.pictureId.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.pictureId.Maximum = new decimal(new int[] {
-            999,
+            9999,
             0,
             0,
             0});
@@ -755,7 +755,7 @@ namespace SwRebellionEditor
             this.pictureId.TabIndex = 11;
             this.pictureId.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.pictureId.Value = new decimal(new int[] {
-            999,
+            9999,
             0,
             0,
             0});

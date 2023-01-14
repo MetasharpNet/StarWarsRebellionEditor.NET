@@ -1,4 +1,5 @@
 ﻿using System.Text;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace SwRebellionEditor;
 
@@ -29,7 +30,9 @@ public partial class SystemsForm : SystemsDesignForm
         for (int selectorIndex = 0; selectorIndex < GameFile.SystemsCount; ++selectorIndex)
         {
             var edataId = 165 + GameFile.Systems[selectorIndex].PictureId;
-            systemsImageList.Images.Add(Image.FromFile(RegistryKeys.InstalledLocation + "\\EData\\EDATA." + edataId.ToString("000")));
+            var filepath = RegistryKeys.InstalledLocation + "\\EData\\EDATA." + edataId.ToString("000");
+            if (File.Exists(filepath))
+                systemsImageList.Images.Add(Image.FromFile(filepath));
             systemsListView.Items.Add(GameFile.Systems[selectorIndex].Name, selectorIndex);
         }
     }
@@ -59,7 +62,11 @@ public partial class SystemsForm : SystemsDesignForm
 
         picture.SizeMode = PictureBoxSizeMode.Zoom;
         var edataId = 165 + system.PictureId;
-        picture.Image = Image.FromFile(RegistryKeys.InstalledLocation + "\\EData\\EDATA." + edataId.ToString("000"));
+        var filepath = RegistryKeys.InstalledLocation + "\\EData\\EDATA." + edataId.ToString("000");
+        if (File.Exists(filepath))
+            picture.Image = Image.FromFile(filepath);
+        else
+            picture.Image = null;
         GameFile.UnsavedData = previousUnsavedData;
     }
     private void LoadSector(uint sectorId)

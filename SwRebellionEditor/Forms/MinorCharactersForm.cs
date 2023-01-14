@@ -24,7 +24,9 @@ public partial class MinorCharactersForm : MinorCharactersDesignForm
         for (int selectorIndex = 0; selectorIndex < GameFile.MinorCharactersCount; ++selectorIndex)
         {
             var edataId = 78 + selectorIndex;
-            minorCharactersImages.Images.Add(Image.FromFile(RegistryKeys.InstalledLocation + "\\EData\\EDATA." + edataId.ToString("000")));
+            var filepath = RegistryKeys.InstalledLocation + "\\EData\\EDATA." + edataId.ToString("000");
+            if (File.Exists(filepath))
+                minorCharactersImages.Images.Add(Image.FromFile(filepath));
             minorCharactersListView.Items.Add(GameFile.MinorCharacters[selectorIndex].Name, selectorIndex);
         }
     }
