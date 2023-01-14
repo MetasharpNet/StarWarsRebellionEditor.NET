@@ -11,11 +11,13 @@ Direct link : https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/sdk-7
 To buy the game or get free fan mods, check : https://swrebellion.net/
 
 ### Beta Roadmap (current) :
-* Cleanup code on rarely used windows
 * Ability to Add/Change System pictures
 
-### Final Roadmap:
+### Final Roadmap (low chance i'll invest time on it):
+* Cleanup code on rarely used windows
 * Identify unknown fields usage
+* Other features from RebEd
+* etc.
 
 --
 
