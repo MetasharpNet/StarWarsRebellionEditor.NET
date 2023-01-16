@@ -76,7 +76,7 @@ public partial class SystemsForm : SystemsDesignForm
         sectorFamilyId.Value = sector.FamilyId;
         sectorFamilyIdHexLabel.Text = "0x" + sector.FamilyId.ToString("X");
         sectorGalaxySize.Value = sector.GalaxySize;
-        sectorSecImport.Value = sector.SecImport;
+        sectorSecImport.Value = sector.Importance;
         sectorTextStraDllId.Value = sector.TextStraDllId;
         sectorXPosition.Value = sector.XPosition;
         sectorYPosition.Value = sector.YPosition;
@@ -205,4 +205,12 @@ public partial class SystemsForm : SystemsDesignForm
     }
 
     #endregion
+
+    private void export_Click(object sender, EventArgs e)
+    {
+        string export = "";
+        foreach (var s in GameFile.Systems)
+            export = export + s.Name + ";" + (s.FamilyId == 144 ? "Core":"Rim") + ";\"" + s.EncyclopediaDescription + "\"" + Environment.NewLine;
+        File.WriteAllText("systems.csv", export);
+    }
 }

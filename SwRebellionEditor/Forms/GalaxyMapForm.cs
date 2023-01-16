@@ -83,17 +83,20 @@ public partial class GalaxyMapForm : GalaxyMapDesignForm
         SystemsSprites.Clear();
         SystemsDic.Clear();
 
+        var colors = new List<Color> { Color.LightBlue, Color.LightCoral, Color.LightCyan, Color.LightGoldenrodYellow, Color.LightGray,
+                                       Color.LightGreen, Color.LightPink, Color.LightSalmon, Color.LightSeaGreen, Color.LightYellow };
+        int c = 0;
         foreach (var system in sectorSystems)
         {
             var systemSprite = new MovableLabel(sectorMap)
                 {
                     Width = 19,
                     Height = 18,
-                    Location = new Point(sectorMap.Location.X + system.XPosition - sector.XPosition, sectorMap.Location.Y + system.YPosition - sector.YPosition),
+                    Location = new Point(sectorMap.Location.X + system.XPosition - sector.XPosition - 4, sectorMap.Location.Y + system.YPosition - sector.YPosition - 1),
                     Text = system.Name[0].ToString(),
                     TextAlign = ContentAlignment.MiddleCenter,
                     ForeColor = Color.Black,
-                    BackColor = Color.LightBlue
+                    BackColor = colors[c++]
                 };
             systemSprite.MouseMove += system_PositionChanged;
             systemSprite.MouseDown += system_MouseDown;
@@ -138,8 +141,8 @@ public partial class GalaxyMapForm : GalaxyMapDesignForm
         {
             var system = SystemsDic[systemSprite];
             var sector = GameFile.Sectors.First(s => s.Id == system.SectorId);
-            system.XPosition = (ushort)(systemSprite.Location.X - sectorMap.Location.X + CurrentSectorSprite.X);
-            system.YPosition = (ushort)(systemSprite.Location.Y - sectorMap.Location.Y + CurrentSectorSprite.Y);
+            system.XPosition = (ushort)(systemSprite.Location.X - sectorMap.Location.X + CurrentSectorSprite.X + 4);
+            system.YPosition = (ushort)(systemSprite.Location.Y - sectorMap.Location.Y + CurrentSectorSprite.Y + 1);
             systemX.Text = system.XPosition.ToString();
             systemY.Text = system.YPosition.ToString();
             GameFile.UnsavedData = true;

@@ -55,6 +55,9 @@ namespace SwRebellionEditor
             this.systemX = new System.Windows.Forms.Label();
             this.systemYLabel = new System.Windows.Forms.Label();
             this.systemXLabel = new System.Windows.Forms.Label();
+            this.systemInfo1Label = new System.Windows.Forms.Label();
+            this.systemInfo2Label = new System.Windows.Forms.Label();
+            this.systemInfo3Label = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.galaxyMap)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.sectorMap)).BeginInit();
             this.SuspendLayout();
@@ -92,6 +95,7 @@ namespace SwRebellionEditor
             this.galaxyMap.BackColor = System.Drawing.Color.Black;
             this.galaxyMap.Image = global::SwRebellionEditor.Resources.galaxy_768x788_bmp;
             this.galaxyMap.Location = new System.Drawing.Point(3, 3);
+            this.galaxyMap.Margin = new System.Windows.Forms.Padding(0);
             this.galaxyMap.Name = "galaxyMap";
             this.galaxyMap.Size = new System.Drawing.Size(768, 788);
             this.galaxyMap.TabIndex = 23;
@@ -137,7 +141,7 @@ namespace SwRebellionEditor
             // 
             this.sectorMap.BackColor = System.Drawing.Color.Black;
             this.sectorMap.Image = global::SwRebellionEditor.Resources.sector_79x102_bmp;
-            this.sectorMap.Location = new System.Drawing.Point(785, 127);
+            this.sectorMap.Location = new System.Drawing.Point(785, 133);
             this.sectorMap.Name = "sectorMap";
             this.sectorMap.Size = new System.Drawing.Size(79, 102);
             this.sectorMap.TabIndex = 29;
@@ -166,7 +170,7 @@ namespace SwRebellionEditor
             // 
             this.systemName.AutoSize = true;
             this.systemName.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.systemName.Location = new System.Drawing.Point(828, 261);
+            this.systemName.Location = new System.Drawing.Point(828, 291);
             this.systemName.Name = "systemName";
             this.systemName.Size = new System.Drawing.Size(40, 15);
             this.systemName.TabIndex = 37;
@@ -175,7 +179,7 @@ namespace SwRebellionEditor
             // systemLabel
             // 
             this.systemLabel.AutoSize = true;
-            this.systemLabel.Location = new System.Drawing.Point(785, 261);
+            this.systemLabel.Location = new System.Drawing.Point(785, 291);
             this.systemLabel.Name = "systemLabel";
             this.systemLabel.Size = new System.Drawing.Size(45, 15);
             this.systemLabel.TabIndex = 36;
@@ -184,7 +188,7 @@ namespace SwRebellionEditor
             // systemY
             // 
             this.systemY.AutoSize = true;
-            this.systemY.Location = new System.Drawing.Point(828, 309);
+            this.systemY.Location = new System.Drawing.Point(828, 339);
             this.systemY.Name = "systemY";
             this.systemY.Size = new System.Drawing.Size(12, 15);
             this.systemY.TabIndex = 35;
@@ -193,7 +197,7 @@ namespace SwRebellionEditor
             // systemX
             // 
             this.systemX.AutoSize = true;
-            this.systemX.Location = new System.Drawing.Point(828, 285);
+            this.systemX.Location = new System.Drawing.Point(828, 315);
             this.systemX.Name = "systemX";
             this.systemX.Size = new System.Drawing.Size(12, 15);
             this.systemX.TabIndex = 34;
@@ -202,7 +206,7 @@ namespace SwRebellionEditor
             // systemYLabel
             // 
             this.systemYLabel.AutoSize = true;
-            this.systemYLabel.Location = new System.Drawing.Point(804, 309);
+            this.systemYLabel.Location = new System.Drawing.Point(804, 339);
             this.systemYLabel.Name = "systemYLabel";
             this.systemYLabel.Size = new System.Drawing.Size(22, 15);
             this.systemYLabel.TabIndex = 33;
@@ -211,11 +215,44 @@ namespace SwRebellionEditor
             // systemXLabel
             // 
             this.systemXLabel.AutoSize = true;
-            this.systemXLabel.Location = new System.Drawing.Point(804, 285);
+            this.systemXLabel.Location = new System.Drawing.Point(804, 315);
             this.systemXLabel.Name = "systemXLabel";
             this.systemXLabel.Size = new System.Drawing.Size(22, 15);
             this.systemXLabel.TabIndex = 32;
             this.systemXLabel.Text = "X=";
+            // 
+            // systemInfo1Label
+            // 
+            this.systemInfo1Label.AutoSize = true;
+            this.systemInfo1Label.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
+            this.systemInfo1Label.ForeColor = System.Drawing.Color.Maroon;
+            this.systemInfo1Label.Location = new System.Drawing.Point(785, 237);
+            this.systemInfo1Label.Name = "systemInfo1Label";
+            this.systemInfo1Label.Size = new System.Drawing.Size(127, 15);
+            this.systemInfo1Label.TabIndex = 38;
+            this.systemInfo1Label.Text = "System rectangle has 4";
+            // 
+            // systemInfo2Label
+            // 
+            this.systemInfo2Label.AutoSize = true;
+            this.systemInfo2Label.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
+            this.systemInfo2Label.ForeColor = System.Drawing.Color.Maroon;
+            this.systemInfo2Label.Location = new System.Drawing.Point(785, 252);
+            this.systemInfo2Label.Name = "systemInfo2Label";
+            this.systemInfo2Label.Size = new System.Drawing.Size(133, 15);
+            this.systemInfo2Label.TabIndex = 39;
+            this.systemInfo2Label.Text = "pixels of X margin and 1";
+            // 
+            // systemInfo3Label
+            // 
+            this.systemInfo3Label.AutoSize = true;
+            this.systemInfo3Label.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
+            this.systemInfo3Label.ForeColor = System.Drawing.Color.Maroon;
+            this.systemInfo3Label.Location = new System.Drawing.Point(785, 267);
+            this.systemInfo3Label.Name = "systemInfo3Label";
+            this.systemInfo3Label.Size = new System.Drawing.Size(132, 15);
+            this.systemInfo3Label.TabIndex = 40;
+            this.systemInfo3Label.Text = "pixel of Y margin inside.";
             // 
             // GalaxyMapForm
             // 
@@ -224,6 +261,9 @@ namespace SwRebellionEditor
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.Cancel;
             this.ClientSize = new System.Drawing.Size(940, 826);
+            this.Controls.Add(this.systemInfo3Label);
+            this.Controls.Add(this.systemInfo2Label);
+            this.Controls.Add(this.systemInfo1Label);
             this.Controls.Add(this.systemName);
             this.Controls.Add(this.systemLabel);
             this.Controls.Add(this.systemY);
@@ -271,5 +311,8 @@ namespace SwRebellionEditor
         private Label systemX;
         private Label systemYLabel;
         private Label systemXLabel;
+        private Label systemInfo1Label;
+        private Label systemInfo2Label;
+        private Label systemInfo3Label;
     }
 }

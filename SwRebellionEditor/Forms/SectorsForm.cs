@@ -31,7 +31,7 @@ public partial class SectorsForm : SectorsDesignForm
         name.Text = sector.Name;
         nextProductionFamily_0.Value = sector.NextProductionFamily_0;
         productionFamily_0.Value = sector.ProductionFamily_0;
-        secImport.Value = sector.SecImport;
+        importance.Value = sector.Importance;
         textStraDllId.Value = sector.TextStraDllId;
         xPosition.Value = sector.XPosition;
         yPosition.Value = sector.YPosition;
@@ -95,7 +95,7 @@ public partial class SectorsForm : SectorsDesignForm
     }
     private void secImport_ValueChanged(object sender, EventArgs e)
     {
-        GameFile.Sectors[selector.Value].SecImport = (uint)secImport.Value;
+        GameFile.Sectors[selector.Value].Importance = (uint)importance.Value;
         GameFile.UnsavedData = true;
     }
     private void textStraDllId_ValueChanged(object sender, EventArgs e)
