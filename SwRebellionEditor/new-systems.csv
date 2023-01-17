@@ -1,0 +1,201 @@
+Planet;New game sector;Game Left X;Game Top Y;Core (colonized) / Rim
+Ansion;Celanon Spur;415;268;Rim
+Borosk;Celanon Spur;435;220;Rim
+Earth;Celanon Spur;443;252;Rim
+Glee Anselm;Celanon Spur;420;286;Rim
+Iridonia;Celanon Spur;431;270;Rim
+Ithor;Celanon Spur;473;261;Core (colonized)
+Keitum;Celanon Spur;423;261;Rim
+Mygeeto;Celanon Spur;443;209;Rim
+Ord Mantell;Celanon Spur;453;281;Rim
+Yaga Minor;Celanon Spur;435;214;Core (colonized)
+Alderaan;Colonies;525;381;Core (colonized)
+Balmorra;Colonies;537;400;Core (colonized)
+Carida;Colonies;529;353;Core (colonized)
+Esseles;Colonies;512;361;Rim
+Hapes;Colonies;570;356;Core (colonized)
+Kuat;Colonies;536;403;Core (colonized)
+Neimoidia;Colonies;537;405;Core (colonized)
+Taanab;Colonies;570;332;Core (colonized)
+Tepasi;Colonies;516;371;Rim
+Tirahnn;Colonies;552;328;Rim
+Anaxes;Core Worlds;492;367;Core (colonized)
+Brentaal IV;Core Worlds;499;361;Rim
+Chandrila;Core Worlds;496;364;Core (colonized)
+Coruscant;Core Worlds;478;379;Core (colonized)
+Empress Teta;Core Worlds;479;404;Core (colonized)
+N'Zoth;Core Worlds;446;408;Rim
+Palanhi;Core Worlds;456;331;Core (colonized)
+Sissubo;Core Worlds;497;369;Rim
+Skako Minor;Core Worlds;504;374;Rim
+Wor Tandell;Core Worlds;456;363;Rim
+Boz Pity;Crossroads;679;362;Rim
+Kashyyyk;Crossroads;641;373;Core (colonized)
+Kijimi;Crossroads;669;333;Rim
+Onderon;Crossroads;624;372;Core (colonized)
+Randon;Crossroads;649;386;Rim
+Ruusan;Crossroads;643;405;Rim
+Trandosha;Crossroads;640;374;Rim
+Umbara;Crossroads;630;382;Rim
+Wobani;Crossroads;673;328;Rim
+Zeltros;Crossroads;621;395;Rim
+Bescane;Entralla's End;449;160;Rim
+Dantooine;Entralla's End;471;178;Core (colonized)
+Dubrillion;Entralla's End;462;155;Rim
+Jaemus;Entralla's End;450;168;Rim
+Kalee;Entralla's End;430;173;Rim
+Lah'Mu;Entralla's End;475;165;Rim
+Mortis;Entralla's End;457;117;Rim
+Muunilinst;Entralla's End;451;181;Core (colonized)
+Ord Trasi;Entralla's End;474;194;Rim
+Sernpidal;Entralla's End;488;133;Core (colonized)
+Agamar;Greater Mandalore;544;220;Core (colonized)
+Ajan Kloss (Moon);Greater Mandalore;527;226;Rim
+Celanon;Greater Mandalore;585;230;Rim
+Concord Dawn;Greater Mandalore;582;276;Rim
+Corsin;Greater Mandalore;552;282;Core (colonized)
+Dathomir;Greater Mandalore;575;239;Core (colonized)
+Mandalore;Greater Mandalore;584;269;Core (colonized)
+Shili;Greater Mandalore;530;296;Rim
+Taris;Greater Mandalore;567;263;Core (colonized)
+Vinsoth;Greater Mandalore;569;223;Core (colonized)
+Circumtore;Hutt Space;724;450;Rim
+Eadu;Hutt Space;773;384;Rim
+Formos;Hutt Space;769;378;Rim
+Honoghr;Hutt Space;758;379;Core (colonized)
+Kessel;Hutt Space;755;373;Rim
+Nal Hutta;Hutt Space;723;437;Rim
+Nar Shaddaa (Moon);Hutt Space;725;436;Rim
+Quesh;Hutt Space;742;389;Rim
+Sleheyron;Hutt Space;739;378;Rim
+Toydaria;Hutt Space;715;426;Rim
+Cato Neimoidia;Inner Rim;565;449;Core (colonized)
+Commenor;Inner Rim;568;441;Core (colonized)
+Exodeen;Inner Rim;562;465;Rim
+Gamor;Inner Rim;588;515;Rim
+Manaan;Inner Rim;582;451;Rim
+Milagro;Inner Rim;589;517;Rim
+Mimban;Inner Rim;591;464;Rim
+Nexus Ortai;Inner Rim;620;518;Rim
+Pasaana;Inner Rim;596;484;Rim
+Vandor-1;Inner Rim;600;516;Rim
+Belderone;Outer Rim East;708;265;Core (colonized)
+Boonta;Outer Rim East;721;320;Rim
+Dennogra;Outer Rim East;727;306;Rim
+Iego;Outer Rim East;736;287;Rim
+Ossus;Outer Rim East;712;264;Core (colonized)
+Saleucami;Outer Rim East;719;314;Rim
+Sriluur;Outer Rim East;727;332;Rim
+Sy Myrth;Outer Rim East;712;286;Rim
+Tund;Outer Rim East;766;320;Rim
+Voss;Outer Rim East;718;255;Rim
+Bakura;Outer Rim South;395;618;Rim
+Belsavis;Outer Rim South;442;669;Rim
+Cyphar;Outer Rim South;439;644;Rim
+Dolla;Outer Rim South;441;678;Rim
+Endor;Outer Rim South;405;622;Rim
+Karfeddion;Outer Rim South;442;665;Rim
+Kef Bir (Moon);Outer Rim South;404;626;Rim
+Rattatak;Outer Rim South;404;602;Rim
+Sullust;Outer Rim South;453;657;Core (colonized)
+Takodana;Outer Rim South;419;605;Rim
+Bonadan;Perlimian's End;731;178;Rim
+Cantonica;Perlimian's End;730;182;Rim
+Dellalt;Perlimian's End;753;247;Rim
+Florn;Perlimian's End;749;217;Rim
+Lothal;Perlimian's End;780;255;Rim
+Mon Cala;Perlimian's End;773;244;Core (colonized)
+Pakuuni;Perlimian's End;759;230;Rim
+Quermia;Perlimian's End;736;212;Rim
+Raxus;Perlimian's End;738;224;Core (colonized)
+Zygerria;Perlimian's End;722;191;Rim
+Bith;Rimma's End;531;694;Rim
+Dagobah;Rimma's End;534;714;Rim
+Eriadu;Rimma's End;531;681;Core (colonized)
+Kabal;Rimma's End;558;688;Rim
+Kaller;Rimma's End;501;736;Rim
+Nevarro;Rimma's End;549;737;Rim
+Sluis Van;Rimma's End;533;705;Core (colonized)
+Sorgan;Rimma's End;520;758;Rim
+Triton;Rimma's End;533;697;Rim
+Utapau;Rimma's End;549;723;Rim
+Chardaan;Shipwright's Trace;556;509;Rim
+Corellia;Shipwright's Trace;503;437;Core (colonized)
+Denon;Shipwright's Trace;553;483;Core (colonized)
+Devaron;Shipwright's Trace;498;503;Rim
+Duro;Shipwright's Trace;499;441;Core (colonized)
+Hosnian Prime;Shipwright's Trace;513;470;Rim
+Nubia;Shipwright's Trace;503;440;Core (colonized)
+Quarzite;Shipwright's Trace;533;500;Rim
+Talus;Shipwright's Trace;504;433;Core (colonized)
+Tralus;Shipwright's Trace;507;436;Core (colonized)
+Dromund Kaas;Sith Worlds;689;204;Core (colonized)
+Felucia;Sith Worlds;701;241;Core (colonized)
+Korriban;Sith Worlds;685;210;Rim
+Maridun;Sith Worlds;658;250;Rim
+Mirial;Sith Worlds;671;175;Rim
+Rhen Var;Sith Worlds;697;250;Rim
+Telos IV;Sith Worlds;667;173;Rim
+Yavin 4 (Moon);Sith Worlds;643;231;Core (colonized)
+Yavin Prime;Sith Worlds;644;234;Core (colonized)
+Ziost;Sith Worlds;685;192;Rim
+Christophsis;Spice Triangle;673;618;Rim
+Geonosis;Spice Triangle;704;617;Core (colonized)
+Lok;Spice Triangle;661;643;Rim
+Mon Gazza;Spice Triangle;646;588;Rim
+Nelvaan;Spice Triangle;677;630;Rim
+Rodia;Spice Triangle;682;613;Core (colonized)
+Savareen;Spice Triangle;680;624;Rim
+Socorro;Spice Triangle;646;664;Rim
+Tatooine;Spice Triangle;700;617;Rim
+Trask (moon);Spice Triangle;692;639;Rim
+Bothawui;Spies' Rest;700;541;Core (colonized)
+Daalang;Spies' Rest;691;520;Rim
+Gamorr;Spies' Rest;741;538;Rim
+Kamino;Spies' Rest;714;553;Core (colonized)
+Makeb;Spies' Rest;690;526;Rim
+Rishi;Spies' Rest;716;552;Rim
+Ryloth;Spies' Rest;708;583;Core (colonized)
+Scarif;Spies' Rest;719;555;Rim
+Smuggler's Run;Spies' Rest;718;589;Rim
+Teth;Spies' Rest;748;512;Rim
+Abregado-rae;The Interior;460;481;Rim
+Byss;The Interior;455;457;Core (colonized)
+Fondor;The Interior;463;490;Core (colonized)
+Ghorman;The Interior;463;495;Core (colonized)
+Jakku;The Interior;430;481;Rim
+Jedha (Moon);The Interior;423;425;Rim
+Rakata Prime;The Interior;410;457;Rim
+Thyferra;The Interior;468;502;Core (colonized)
+Tython;The Interior;460;438;Rim
+Wellspring of Life;The Interior;461;450;Rim
+Bestine IV;Trailing Sector;529;572;Core (colonized)
+Crait;Trailing Sector;555;637;Rim
+D'Qar;Trailing Sector;571;645;Rim
+Farstine;Trailing Sector;584;630;Rim
+Malastare;Trailing Sector;548;625;Core (colonized)
+Naboo;Trailing Sector;571;630;Core (colonized)
+Pax;Trailing Sector;550;613;Rim
+Shadda-Bi-Boran;Trailing Sector;569;649;Rim
+Wroona;Trailing Sector;528;592;Rim
+Yag'Dhul;Trailing Sector;526;587;Core (colonized)
+Ahch-to;Unknown Regions;265;429;Rim
+Csilla;Unknown Regions;271;390;Rim
+Exegol;Unknown Regions;270;381;Core (colonized)
+Ilum;Unknown Regions;287;381;Rim
+Lwhekk;Unknown Regions;251;449;Rim
+Nagi;Unknown Regions;237;435;Rim
+Parnassos;Unknown Regions;290;373;Rim
+The Redoubt;Unknown Regions;295;383;Rim
+Zakuul;Unknown Regions;257;427;Rim
+Zonama Sekot;Unknown Regions;278;427;Rim
+Anoat;Western Reaches;443;685;Rim
+Bespin;Western Reaches;444;683;Core (colonized)
+Gerrenthum;Western Reaches;445;681;Rim
+Hoth;Western Reaches;444;687;Core (colonized)
+Isde Naha;Western Reaches;447;693;Rim
+Lotho Minor;Western Reaches;414;667;Rim
+Lutrillia;Western Reaches;440;681;Rim
+Mustafar;Western Reaches;472;716;Core (colonized)
+Polis Massa;Western Reaches;460;739;Rim
+Terminus;Western Reaches;449;744;Rim

@@ -137,6 +137,7 @@ namespace SwRebellionEditor
             this.encyclopediaDescription = new System.Windows.Forms.RichTextBox();
             this.hiddenDataGroupBox = new System.Windows.Forms.GroupBox();
             this.export = new System.Windows.Forms.Button();
+            this.import = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.selector)).BeginInit();
             this.sectorGroupBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.sectorFamilyId)).BeginInit();
@@ -1016,6 +1017,16 @@ namespace SwRebellionEditor
             this.export.UseVisualStyleBackColor = true;
             this.export.Click += new System.EventHandler(this.export_Click);
             // 
+            // import
+            // 
+            this.import.Location = new System.Drawing.Point(787, 453);
+            this.import.Name = "import";
+            this.import.Size = new System.Drawing.Size(75, 23);
+            this.import.TabIndex = 1155;
+            this.import.Text = "Import";
+            this.import.UseVisualStyleBackColor = true;
+            this.import.Click += new System.EventHandler(this.import_Click);
+            // 
             // SystemsForm
             // 
             this.AcceptButton = this.Ok;
@@ -1023,6 +1034,7 @@ namespace SwRebellionEditor
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.Cancel;
             this.ClientSize = new System.Drawing.Size(949, 481);
+            this.Controls.Add(this.import);
             this.Controls.Add(this.export);
             this.Controls.Add(this.hiddenDataGroupBox);
             this.Controls.Add(this.inGameDataGroupBox);
@@ -1094,5 +1106,6 @@ namespace SwRebellionEditor
         private Label encyclopediaDescriptionLabel;
         private GroupBox hiddenDataGroupBox;
         private Button export;
+        private Button import;
     }
 }
