@@ -254,8 +254,12 @@ public partial class SystemsForm : SystemsDesignForm
         var newSystemsAsString = File.ReadAllText("new-systems.csv");
         var newSystemsLines = newSystemsAsString.Split(Environment.NewLine);
         i = -1;
+        var coruscantIndex = prevSystems.FindIndex(s => s.Name.ToLowerInvariant().Contains("coruscant"));
+        var yavinIndex = prevSystems.FindIndex(s => s.Name.ToLowerInvariant().Contains("yavin"));
+        bool coruscantOrYavin = false;
         foreach (var newSystemsLine in newSystemsLines)
         {
+            int j = -1;
             if (newSystemsLine.Length <= 0) continue;
             if (i == -1)
             {
@@ -263,16 +267,31 @@ public partial class SystemsForm : SystemsDesignForm
                 continue;
             }
             var systemColumns = newSystemsLine.Split(';');
+            if ((i == coruscantIndex && systemColumns[0].ToLowerInvariant() != "coruscant") ||
+                (i == yavinIndex && systemColumns[0].ToLowerInvariant() != "yavin 4 (moon)"))
+                ++i;
+            if (systemColumns[0].ToLowerInvariant() == "coruscant")
+            {
+                coruscantOrYavin = true;
+                j = i - 1;
+                i = coruscantIndex;
+            }
+            if (systemColumns[0].ToLowerInvariant() == "yavin 4 (moon)")
+            {
+                coruscantOrYavin = true;
+                j = i - 1;
+                i = yavinIndex;
+            }
             var syst = new SYSTEMSD_System();
-            syst.Id = GameFile.Systems[i].Id;
-            syst.Field2_1 = GameFile.Systems[i].Field2_1;
-            syst.ProductionFamily_0 = GameFile.Systems[i].ProductionFamily_0;
-            syst.NextProductionFamily_0 = GameFile.Systems[i].NextProductionFamily_0;
-            syst.TextStraDllId = GameFile.Systems[i].TextStraDllId;
-            syst.Field7_2 = GameFile.Systems[i].Field7_2;
-            syst.PictureId = GameFile.Systems[i].PictureId;
-            syst.Field10_1 = GameFile.Systems[i].Field10_1;
-            syst.Field13_0 = GameFile.Systems[i].Field13_0;
+            syst.Id = prevSystems[i].Id;
+            syst.Field2_1 = prevSystems[i].Field2_1;
+            syst.ProductionFamily_0 = prevSystems[i].ProductionFamily_0;
+            syst.NextProductionFamily_0 = prevSystems[i].NextProductionFamily_0;
+            syst.TextStraDllId = prevSystems[i].TextStraDllId;
+            syst.Field7_2 = prevSystems[i].Field7_2;
+            syst.PictureId = prevSystems[i].PictureId;
+            syst.Field10_1 = prevSystems[i].Field10_1;
+            syst.Field13_0 = prevSystems[i].Field13_0;
             syst.Name = systemColumns[0];
             syst.SectorId = sectors.First(s => s.Name == systemColumns[1]).Id;
             syst.XPosition = Convert.ToUInt16(systemColumns[2]);
@@ -287,8 +306,35 @@ public partial class SystemsForm : SystemsDesignForm
             else
                 syst.EncyclopediaDescription = "Missing description.";
             GameFile.Systems[i] = syst;
-            ++i;
+            if (coruscantOrYavin)
+            {
+                i = j;
+                coruscantOrYavin = false;
+            }
+            else
+                ++i;
         }
+        // Coruscant sector should be 36
+        var coruscant = GameFile.Systems.First(s => s.Name.ToLowerInvariant().Contains("coruscant"));
+        var oldCoruscantSectorId = coruscant.SectorId;
+        if (oldCoruscantSectorId != 36)
+        {
+            var oldCoruscantSectorSystems = GameFile.Systems.Where(s => s.SectorId == oldCoruscantSectorId).ToList();
+            var old36CoruscantSectorSystems = GameFile.Systems.Where(s => s.SectorId == 36).ToList();
+
+            foreach (var system in oldCoruscantSectorSystems)
+                system.SectorId = 36;
+            foreach (var system in old36CoruscantSectorSystems)
+                system.SectorId = oldCoruscantSectorId;
+
+            var oldsector = SectorsGameFile.Sectors.First(s => s.Id == oldCoruscantSectorId);
+            var old36sector = SectorsGameFile.Sectors.First(s => s.Id == 36);
+            oldsector.Id = 36;
+            old36sector.Id = oldCoruscantSectorId;
+            SectorsGameFile.Sectors = SectorsGameFile.Sectors.OrderBy(s => s.Id).ToArray();
+        }
+
+        // save
         SectorsGameFile.Save(SectorsGameFilePath);
         foreach (var sector in SectorsGameFile.Sectors)
             TextStra.SaveString(Convert.ToUInt16(sector.TextStraDllId), sector.Name);
@@ -299,5 +345,6 @@ public partial class SystemsForm : SystemsDesignForm
             EncyText.SaveRcdata((system.TextStraDllId - 4096).ToString(), system.EncyclopediaDescription);
         }
         SaveSideInfo();
+        MessageBox.Show("Import Done");
     }
 }
