@@ -27,7 +27,7 @@ namespace SwRebellionEditor
         private Label familyIdLabel;
         private Label textStraDllIdLabel;
         private Label field7_2Label;
-        private Label importanceLabel;
+        private Label groupLabel;
         private Label nameLabel;
         private Label familyIdHexLabel;
         private Label idHexLabel;
@@ -36,7 +36,7 @@ namespace SwRebellionEditor
         private NumericUpDown yPosition;
         private NumericUpDown field2_1;
         private NumericUpDown xPosition;
-        private NumericUpDown importance;
+        private NumericUpDown group;
         private NumericUpDown nextProductionFamily_0;
         private NumericUpDown familyId;
         private NumericUpDown galaxySize;
@@ -75,7 +75,7 @@ namespace SwRebellionEditor
             this.familyId = new System.Windows.Forms.NumericUpDown();
             this.galaxySize = new System.Windows.Forms.NumericUpDown();
             this.galaxySizeLabel = new System.Windows.Forms.Label();
-            this.importance = new System.Windows.Forms.NumericUpDown();
+            this.group = new System.Windows.Forms.NumericUpDown();
             this.nextProductionFamily_0 = new System.Windows.Forms.NumericUpDown();
             this.productionFamily_0 = new System.Windows.Forms.NumericUpDown();
             this.id = new System.Windows.Forms.NumericUpDown();
@@ -93,7 +93,7 @@ namespace SwRebellionEditor
             this.textStraDllId = new System.Windows.Forms.NumericUpDown();
             this.field7_2 = new System.Windows.Forms.NumericUpDown();
             this.field7_2Label = new System.Windows.Forms.Label();
-            this.importanceLabel = new System.Windows.Forms.Label();
+            this.groupLabel = new System.Windows.Forms.Label();
             this.inGameDataGroupBox = new System.Windows.Forms.GroupBox();
             this.name = new System.Windows.Forms.TextBox();
             this.nameLabel = new System.Windows.Forms.Label();
@@ -104,7 +104,7 @@ namespace SwRebellionEditor
             ((System.ComponentModel.ISupportInitialize)(this.selector)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.familyId)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.galaxySize)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.importance)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.group)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nextProductionFamily_0)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.productionFamily_0)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.id)).BeginInit();
@@ -227,25 +227,25 @@ namespace SwRebellionEditor
             this.galaxySizeLabel.TabIndex = 12;
             this.galaxySizeLabel.Text = "Galaxy Size **";
             // 
-            // importance
+            // group
             // 
-            this.importance.Location = new System.Drawing.Point(147, 199);
-            this.importance.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.importance.Maximum = new decimal(new int[] {
+            this.group.Location = new System.Drawing.Point(147, 199);
+            this.group.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.group.Maximum = new decimal(new int[] {
             9,
             0,
             0,
             0});
-            this.importance.Name = "importance";
-            this.importance.Size = new System.Drawing.Size(59, 23);
-            this.importance.TabIndex = 7;
-            this.importance.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.importance.Value = new decimal(new int[] {
+            this.group.Name = "group";
+            this.group.Size = new System.Drawing.Size(59, 23);
+            this.group.TabIndex = 7;
+            this.group.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.group.Value = new decimal(new int[] {
             9,
             0,
             0,
             0});
-            this.importance.ValueChanged += new System.EventHandler(this.secImport_ValueChanged);
+            this.group.ValueChanged += new System.EventHandler(this.group_ValueChanged);
             // 
             // nextProductionFamily_0
             // 
@@ -408,12 +408,12 @@ namespace SwRebellionEditor
             // 
             this.familyCommentLabel.AutoSize = true;
             this.familyCommentLabel.ForeColor = System.Drawing.Color.Blue;
-            this.familyCommentLabel.Location = new System.Drawing.Point(197, 213);
+            this.familyCommentLabel.Location = new System.Drawing.Point(148, 213);
             this.familyCommentLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.familyCommentLabel.Name = "familyCommentLabel";
-            this.familyCommentLabel.Size = new System.Drawing.Size(156, 15);
+            this.familyCommentLabel.Size = new System.Drawing.Size(207, 15);
             this.familyCommentLabel.TabIndex = 158;
-            this.familyCommentLabel.Text = "* 1=High 2=Medium 3=Low";
+            this.familyCommentLabel.Text = "* 1=Core 2=Rim (inner) 3=Rim (outer)";
             // 
             // nextProductionFamily_0Label
             // 
@@ -501,16 +501,16 @@ namespace SwRebellionEditor
             this.field7_2Label.TabIndex = 164;
             this.field7_2Label.Text = "Field7 (always 2)";
             // 
-            // importanceLabel
+            // groupLabel
             // 
-            this.importanceLabel.AutoSize = true;
-            this.importanceLabel.ForeColor = System.Drawing.Color.Blue;
-            this.importanceLabel.Location = new System.Drawing.Point(10, 201);
-            this.importanceLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.importanceLabel.Name = "importanceLabel";
-            this.importanceLabel.Size = new System.Drawing.Size(73, 15);
-            this.importanceLabel.TabIndex = 166;
-            this.importanceLabel.Text = "Importance*";
+            this.groupLabel.AutoSize = true;
+            this.groupLabel.ForeColor = System.Drawing.Color.Blue;
+            this.groupLabel.Location = new System.Drawing.Point(10, 201);
+            this.groupLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.groupLabel.Name = "groupLabel";
+            this.groupLabel.Size = new System.Drawing.Size(45, 15);
+            this.groupLabel.TabIndex = 166;
+            this.groupLabel.Text = "Group*";
             // 
             // inGameDataGroupBox
             // 
@@ -567,7 +567,7 @@ namespace SwRebellionEditor
             // 
             this.hiddenDataGroupBox.Controls.Add(this.idLabel);
             this.hiddenDataGroupBox.Controls.Add(this.familyIdHexLabel);
-            this.hiddenDataGroupBox.Controls.Add(this.importanceLabel);
+            this.hiddenDataGroupBox.Controls.Add(this.groupLabel);
             this.hiddenDataGroupBox.Controls.Add(this.idHexLabel);
             this.hiddenDataGroupBox.Controls.Add(this.field7_2);
             this.hiddenDataGroupBox.Controls.Add(this.id);
@@ -576,7 +576,7 @@ namespace SwRebellionEditor
             this.hiddenDataGroupBox.Controls.Add(this.field2_1Label);
             this.hiddenDataGroupBox.Controls.Add(this.galaxySizeLabel);
             this.hiddenDataGroupBox.Controls.Add(this.field2_1);
-            this.hiddenDataGroupBox.Controls.Add(this.importance);
+            this.hiddenDataGroupBox.Controls.Add(this.group);
             this.hiddenDataGroupBox.Controls.Add(this.nextProductionFamily_0Label);
             this.hiddenDataGroupBox.Controls.Add(this.textStraDllIdLabel);
             this.hiddenDataGroupBox.Controls.Add(this.yPosition);
@@ -637,7 +637,7 @@ namespace SwRebellionEditor
             ((System.ComponentModel.ISupportInitialize)(this.selector)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.familyId)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.galaxySize)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.importance)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.group)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.nextProductionFamily_0)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.productionFamily_0)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.id)).EndInit();

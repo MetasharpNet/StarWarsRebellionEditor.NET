@@ -26,12 +26,12 @@ public partial class SectorsForm : SectorsDesignForm
         field2_1.Value = sector.Field2_1;
         field7_2.Value = sector.Field7_2;
         galaxySize.Value = sector.GalaxySize;
+        group.Value = sector.Group;
         id.Value = sector.Id;
         idHexLabel.Text = "0x" + sector.Id.ToString("X");
         name.Text = sector.Name;
         nextProductionFamily_0.Value = sector.NextProductionFamily_0;
         productionFamily_0.Value = sector.ProductionFamily_0;
-        importance.Value = sector.Importance;
         textStraDllId.Value = sector.TextStraDllId;
         xPosition.Value = sector.XPosition;
         yPosition.Value = sector.YPosition;
@@ -73,6 +73,11 @@ public partial class SectorsForm : SectorsDesignForm
         GameFile.Sectors[selector.Value].GalaxySize = (uint)galaxySize.Value;
         GameFile.UnsavedData = true;
     }
+    private void group_ValueChanged(object sender, EventArgs e)
+    {
+        GameFile.Sectors[selector.Value].Group = (uint)group.Value;
+        GameFile.UnsavedData = true;
+    }
     private void id_ValueChanged(object sender, EventArgs e)
     {
         GameFile.Sectors[selector.Value].Id = (uint)id.Value;
@@ -91,11 +96,6 @@ public partial class SectorsForm : SectorsDesignForm
     private void productionFamily_0_ValueChanged(object sender, EventArgs e)
     {
         GameFile.Sectors[selector.Value].ProductionFamily_0 = (uint)productionFamily_0.Value;
-        GameFile.UnsavedData = true;
-    }
-    private void secImport_ValueChanged(object sender, EventArgs e)
-    {
-        GameFile.Sectors[selector.Value].Importance = (uint)importance.Value;
         GameFile.UnsavedData = true;
     }
     private void textStraDllId_ValueChanged(object sender, EventArgs e)

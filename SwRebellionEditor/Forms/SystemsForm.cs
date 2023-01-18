@@ -1,4 +1,5 @@
-﻿using System.Text;
+﻿using System.Runtime.InteropServices;
+using System.Text;
 using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace SwRebellionEditor;
@@ -78,7 +79,7 @@ public partial class SystemsForm : SystemsDesignForm
         sectorFamilyId.Value = sector.FamilyId;
         sectorFamilyIdHexLabel.Text = "0x" + sector.FamilyId.ToString("X");
         sectorGalaxySize.Value = sector.GalaxySize;
-        sectorSecImport.Value = sector.Importance;
+        sectorSecImport.Value = sector.Group;
         sectorTextStraDllId.Value = sector.TextStraDllId;
         sectorXPosition.Value = sector.XPosition;
         sectorYPosition.Value = sector.YPosition;
@@ -210,16 +211,34 @@ public partial class SystemsForm : SystemsDesignForm
 
     private void export_Click(object sender, EventArgs e)
     {
-        string export = "";
+        string export = "Name;Id;TextStraDllId;X;Y;FamilyId;SectorId;EncyclopediaDescription" + Environment.NewLine;
         foreach (var s in GameFile.Systems)
-            export = export + s.Name + ";" + (s.FamilyId == 144 ? "Core" : "Rim") + ";\"" + s.EncyclopediaDescription + "\"" + Environment.NewLine;
+            export = export + s.Name + ";"
+                            + s.Id + ";"
+                            + s.TextStraDllId + ";"
+                            + s.XPosition + ";"
+                            + s.YPosition + ";"
+                            + (s.FamilyId == 144 ? "Core" : "Rim") + ";"
+                            + s.SectorId + ";\""
+                            + s.EncyclopediaDescription + "\""
+                            + Environment.NewLine;
         File.WriteAllText("systems.csv", export);
     }
 
     private void import_Click(object sender, EventArgs e)
     {
+        this.Enabled = false;
+        // MANDATORY EXPECTATIONS
+
+        // systems
+        // id = 265, sectorid = 36   (Coruscant)
+        // id = 289, sectorid = 38   (Yavin)
+
         // sectors
-        var sectors = SectorsGameFile.Sectors;
+        // id = 36, galaxysize = 1, importance = 1
+        // id = 38, galaxysize = 1
+
+        // sectors
         var newSectorsAsString = File.ReadAllText("new-sectors.csv");
         var newSectorsLines = newSectorsAsString.Split(Environment.NewLine);
         int i = -1;
@@ -227,112 +246,60 @@ public partial class SystemsForm : SystemsDesignForm
         {
             if (newSectorsLine.Length <= 0) continue;
             if (i == -1)
-            {
+            { // skip header line
                 i = 0;
                 continue;
             }
             var sectorColumns = newSectorsLine.Split(';');
-            sectors[i].Name = sectorColumns[0];
-            sectors[i].XPosition = Convert.ToUInt16(sectorColumns[1]);
-            sectors[i].YPosition = Convert.ToUInt16(sectorColumns[2]);
-            if (sectorColumns[3] == "High")
-                sectors[i].Importance = 1;
-            if (sectorColumns[3] == "Medium")
-                sectors[i].Importance = 2;
-            if (sectorColumns[3] == "Low")
-                sectors[i].Importance = 3;
-            if (sectorColumns[4] == "Standard")
-                sectors[i].GalaxySize = 1;
-            if (sectorColumns[4] == "Large")
-                sectors[i].GalaxySize = 2;
-            if (sectorColumns[4] == "Huge")
-                sectors[i].GalaxySize = 3;
+            SectorsGameFile.Sectors[i].Name = sectorColumns[0];
+            SectorsGameFile.Sectors[i].Id = Convert.ToUInt32(sectorColumns[1]);
+            SectorsGameFile.Sectors[i].XPosition = Convert.ToUInt16(TrimDecimal(sectorColumns[2]));
+            SectorsGameFile.Sectors[i].YPosition = Convert.ToUInt16(TrimDecimal(sectorColumns[3]));
+            if (sectorColumns[4] == "Core")
+                SectorsGameFile.Sectors[i].Group = 1;
+            if (sectorColumns[4] == "Rim (inner)")
+                SectorsGameFile.Sectors[i].Group = 2;
+            if (sectorColumns[4] == "Rim (outer)")
+                SectorsGameFile.Sectors[i].Group = 3;
+            if (sectorColumns[5] == "Standard")
+                SectorsGameFile.Sectors[i].GalaxySize = 1;
+            if (sectorColumns[5] == "Large")
+                SectorsGameFile.Sectors[i].GalaxySize = 2;
+            if (sectorColumns[5] == "Huge")
+                SectorsGameFile.Sectors[i].GalaxySize = 3;
             ++i;
         }
+        //SectorsGameFile.Sectors = SectorsGameFile.Sectors.OrderBy(s => s.Id).ToArray();
         // systems
-        var prevSystems = new List<SYSTEMSD_System>(GameFile.Systems);
+        var descDic = new Dictionary<string, string>();
+        foreach (var system in GameFile.Systems)
+            descDic.Add(system.Name.ToLowerInvariant(), system.EncyclopediaDescription);
         var newSystemsAsString = File.ReadAllText("new-systems.csv");
         var newSystemsLines = newSystemsAsString.Split(Environment.NewLine);
         i = -1;
-        var coruscantIndex = prevSystems.FindIndex(s => s.Name.ToLowerInvariant().Contains("coruscant"));
-        var yavinIndex = prevSystems.FindIndex(s => s.Name.ToLowerInvariant().Contains("yavin"));
-        bool coruscantOrYavin = false;
         foreach (var newSystemsLine in newSystemsLines)
         {
-            int j = -1;
             if (newSystemsLine.Length <= 0) continue;
             if (i == -1)
-            {
+            { // skip header line
                 i = 0;
                 continue;
             }
             var systemColumns = newSystemsLine.Split(';');
-            if ((i == coruscantIndex && systemColumns[0].ToLowerInvariant() != "coruscant") ||
-                (i == yavinIndex && systemColumns[0].ToLowerInvariant() != "yavin 4 (moon)"))
-                ++i;
-            if (systemColumns[0].ToLowerInvariant() == "coruscant")
-            {
-                coruscantOrYavin = true;
-                j = i - 1;
-                i = coruscantIndex;
-            }
-            if (systemColumns[0].ToLowerInvariant() == "yavin 4 (moon)")
-            {
-                coruscantOrYavin = true;
-                j = i - 1;
-                i = yavinIndex;
-            }
-            var syst = new SYSTEMSD_System();
-            syst.Id = prevSystems[i].Id;
-            syst.Field2_1 = prevSystems[i].Field2_1;
-            syst.ProductionFamily_0 = prevSystems[i].ProductionFamily_0;
-            syst.NextProductionFamily_0 = prevSystems[i].NextProductionFamily_0;
-            syst.TextStraDllId = prevSystems[i].TextStraDllId;
-            syst.Field7_2 = prevSystems[i].Field7_2;
-            syst.PictureId = prevSystems[i].PictureId;
-            syst.Field10_1 = prevSystems[i].Field10_1;
-            syst.Field13_0 = prevSystems[i].Field13_0;
-            syst.Name = systemColumns[0];
-            syst.SectorId = sectors.First(s => s.Name == systemColumns[1]).Id;
-            syst.XPosition = Convert.ToUInt16(systemColumns[2]);
-            syst.YPosition = Convert.ToUInt16(systemColumns[3]);
-            syst.FamilyId = (uint)(systemColumns[4] == "Rim" ? 146 : 144);
-            var existingSystem = prevSystems.FirstOrDefault(s => s.Name == syst.Name);
-            if (existingSystem != null)
-            {
-                syst.EncyclopediaDescription = EncyText.GetRcdata((existingSystem.TextStraDllId - 4096).ToString());
-                syst.PictureId = existingSystem.PictureId;
-            }
+            GameFile.Systems[i].Name = systemColumns[0];
+            GameFile.Systems[i].Id = Convert.ToUInt32(systemColumns[1]);
+            GameFile.Systems[i].TextStraDllId = Convert.ToUInt16(systemColumns[2]);
+            GameFile.Systems[i].SectorId = SectorsGameFile.Sectors.First(s => s.Name == systemColumns[3]).Id;
+            GameFile.Systems[i].XPosition = Convert.ToUInt16(TrimDecimal(systemColumns[4]));
+            GameFile.Systems[i].YPosition = Convert.ToUInt16(TrimDecimal(systemColumns[5]));
+            GameFile.Systems[i].FamilyId = (uint)(systemColumns[6] == "Rim" ? 146 : 144);
+            if (descDic.ContainsKey(GameFile.Systems[i].Name.ToLowerInvariant()))
+                GameFile.Systems[i].EncyclopediaDescription = descDic[GameFile.Systems[i].Name.ToLowerInvariant()];
             else
-                syst.EncyclopediaDescription = "Missing description.";
-            GameFile.Systems[i] = syst;
-            if (coruscantOrYavin)
-            {
-                i = j;
-                coruscantOrYavin = false;
-            }
-            else
-                ++i;
+                GameFile.Systems[i].EncyclopediaDescription = "Missing description.";
+            ++i;
         }
-        // Coruscant sector should be 36
-        var coruscant = GameFile.Systems.First(s => s.Name.ToLowerInvariant().Contains("coruscant"));
-        var oldCoruscantSectorId = coruscant.SectorId;
-        if (oldCoruscantSectorId != 36)
-        {
-            var oldCoruscantSectorSystems = GameFile.Systems.Where(s => s.SectorId == oldCoruscantSectorId).ToList();
-            var old36CoruscantSectorSystems = GameFile.Systems.Where(s => s.SectorId == 36).ToList();
-
-            foreach (var system in oldCoruscantSectorSystems)
-                system.SectorId = 36;
-            foreach (var system in old36CoruscantSectorSystems)
-                system.SectorId = oldCoruscantSectorId;
-
-            var oldsector = SectorsGameFile.Sectors.First(s => s.Id == oldCoruscantSectorId);
-            var old36sector = SectorsGameFile.Sectors.First(s => s.Id == 36);
-            oldsector.Id = 36;
-            old36sector.Id = oldCoruscantSectorId;
-            SectorsGameFile.Sectors = SectorsGameFile.Sectors.OrderBy(s => s.Id).ToArray();
-        }
+        //GameFile.Systems = GameFile.Systems.OrderBy(s => s.Id).ToArray();
 
         // save
         SectorsGameFile.Save(SectorsGameFilePath);
@@ -345,6 +312,17 @@ public partial class SystemsForm : SystemsDesignForm
             EncyText.SaveRcdata((system.TextStraDllId - 4096).ToString(), system.EncyclopediaDescription);
         }
         SaveSideInfo();
-        MessageBox.Show("Import Done");
+        this.Close();
+    }
+
+    public string TrimDecimal(string s)
+    {
+        if (s.IndexOf(',') > -1)
+            s = s.Substring(0, s.IndexOf(","));
+        if (s.IndexOf('.') > -1)
+            s = s.Substring(0, s.IndexOf("."));
+        if (s.Length < 1)
+            s = "0";
+        return s;
     }
 }

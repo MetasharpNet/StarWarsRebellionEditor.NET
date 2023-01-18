@@ -18,7 +18,7 @@ public class SECTORSD_Sector
     public uint FamilyId; // 128:sector
     public ushort TextStraDllId;
     public ushort Field7_2; // 2
-    public uint Importance; // 1:high, 2:medium, 3:low
+    public uint Group; // 1:high, 2:medium, 3:low
     public uint GalaxySize; // 1:standard, 2:large, 3:huge, +4:inative
     public ushort XPosition;
     public ushort YPosition;

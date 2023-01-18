@@ -869,9 +869,9 @@ namespace SwRebellionEditor
             this.familyIdInfoLabel.Location = new System.Drawing.Point(724, 345);
             this.familyIdInfoLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.familyIdInfoLabel.Name = "familyIdInfoLabel";
-            this.familyIdInfoLabel.Size = new System.Drawing.Size(178, 15);
+            this.familyIdInfoLabel.Size = new System.Drawing.Size(116, 15);
             this.familyIdInfoLabel.TabIndex = 0;
-            this.familyIdInfoLabel.Text = "* 144=Core (colonized) 146=Rim";
+            this.familyIdInfoLabel.Text = "* 144=Core 146=Rim";
             // 
             // pictureIdLabel
             // 
