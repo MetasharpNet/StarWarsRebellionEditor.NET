@@ -24,6 +24,4 @@ public class SECTORSD_Sector
     public ushort YPosition;
     [Ignore]
     public string Name;
-    [Ignore]
-    public string EncyclopediaDescription;
 }

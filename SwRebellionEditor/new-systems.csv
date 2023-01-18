@@ -65,7 +65,7 @@ Cyphar;162;11874;Outer Rim South;356;658;Rim
 Dolla;163;11875;Outer Rim South;337;698;Rim
 Endor;164;11876;Outer Rim South;327;649;Rim
 Karfeddion;165;11877;Outer Rim South;337;680;Rim
-Kef Bir (Moon);166;11878;Outer Rim South;308;657;Rim
+Kef Bir;166;11878;Outer Rim South;308;657;Rim
 Rattatak;167;11879;Outer Rim South;312;621;Rim
 Sullust;168;11880;Outer Rim South;362;676;Rim
 Takodana;169;11881;Outer Rim South;331;624;Rim
@@ -114,13 +114,13 @@ Byss;211;12049;The Interior;381;459;Rim
 Fondor;212;12050;The Interior;398;493;Rim
 Ghorman;213;12051;The Interior;388;511;Rim
 Jakku;214;12052;The Interior;354;494;Rim
-Jedha (Moon);215;12053;The Interior;363;438;Rim
+Jedha;215;12053;The Interior;363;438;Rim
 Rakata Prime;216;12054;The Interior;352;471;Rim
 Thyferra;217;12055;The Interior;407;515;Rim
 Tython;218;12056;The Interior;399;441;Rim
 Wellspring of Life;219;12057;The Interior;400;465;Rim
 Agamar;220;12064;Greater Mandalore;531;197;Rim
-Ajan Kloss (Moon);221;12065;Greater Mandalore;512;203;Rim
+Ajan Kloss;221;12065;Greater Mandalore;512;203;Rim
 Celanon;222;12066;Greater Mandalore;570;207;Rim
 Concord Dawn;223;12067;Greater Mandalore;563;263;Rim
 Corsin;224;12068;Greater Mandalore;537;259;Rim
@@ -145,7 +145,7 @@ Formos;242;12098;Hutt Space;825;381;Rim
 Honoghr;243;12099;Hutt Space;809;399;Rim
 Kessel;244;12100;Hutt Space;802;378;Rim
 Nal Hutta;245;12101;Hutt Space;788;436;Rim
-Nar Shaddaa (Moon);246;12102;Hutt Space;807;440;Rim
+Nar Shaddaa;246;12102;Hutt Space;807;440;Rim
 Quesh;247;12103;Hutt Space;795;417;Rim
 Sleheyron;248;12104;Hutt Space;790;396;Rim
 Toydaria;249;12105;Hutt Space;770;430;Rim
@@ -178,7 +178,7 @@ Rodia;275;12149;Spice Triangle;706;649;Core
 Savareen;276;12150;Spice Triangle;702;667;Core
 Socorro;277;12151;Spice Triangle;667;719;Core
 Tatooine;278;12152;Spice Triangle;721;682;Core
-Trask (moon);279;12153;Spice Triangle;715;703;Core
+Trask;279;12153;Spice Triangle;715;703;Core
 Dromund Kaas;280;12160;Sith Worlds;718;170;Rim
 Felucia;281;12161;Sith Worlds;723;195;Rim
 Korriban;282;12162;Sith Worlds;697;178;Rim
@@ -188,7 +188,7 @@ Rhen Var;285;12165;Sith Worlds;709;213;Rim
 Telos IV;286;12166;Sith Worlds;681;136;Rim
 Yavin Prime;287;12167;Sith Worlds;667;195;Rim
 Ziost;288;12168;Sith Worlds;698;155;Rim
-Yavin 4 (Moon);289;12169;Sith Worlds;666;177;Rim
+Yavin 4;289;12169;Sith Worlds;666;177;Rim
 Bothawui;290;12176;Spies' Rest;746;564;Rim
 Daalang;291;12177;Spies' Rest;760;535;Rim
 Gamorr;292;12178;Spies' Rest;795;558;Rim
