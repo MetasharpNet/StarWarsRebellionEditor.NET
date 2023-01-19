@@ -272,12 +272,8 @@ public partial class SystemsForm : SystemsDesignForm
         //SectorsGameFile.Sectors = SectorsGameFile.Sectors.OrderBy(s => s.Id).ToArray();
         // systems
         var descDic = new Dictionary<string, string>();
-        var pictDic = new Dictionary<string, uint>();
         foreach (var system in GameFile.Systems)
-        {
             descDic.Add(system.Name.ToLowerInvariant(), system.EncyclopediaDescription);
-            pictDic.Add(system.Name.ToLowerInvariant(), system.PictureId);
-        }
         var newSystemsAsString = File.ReadAllText("new-systems.csv");
         var newSystemsLines = newSystemsAsString.Split(Environment.NewLine);
         i = -1;
@@ -297,10 +293,10 @@ public partial class SystemsForm : SystemsDesignForm
             GameFile.Systems[i].XPosition = Convert.ToUInt16(TrimDecimal(systemColumns[4]));
             GameFile.Systems[i].YPosition = Convert.ToUInt16(TrimDecimal(systemColumns[5]));
             GameFile.Systems[i].FamilyId = (uint)(systemColumns[6] == "Rim" ? 146 : 144);
+            GameFile.Systems[i].PictureId = Convert.ToUInt32(TrimDecimal(systemColumns[7]));
             if (descDic.ContainsKey(GameFile.Systems[i].Name.ToLowerInvariant()))
             {
                 GameFile.Systems[i].EncyclopediaDescription = descDic[GameFile.Systems[i].Name.ToLowerInvariant()];
-                GameFile.Systems[i].PictureId = pictDic[GameFile.Systems[i].Name.ToLowerInvariant()];
             }
             else
                 GameFile.Systems[i].EncyclopediaDescription = "Missing description.";
