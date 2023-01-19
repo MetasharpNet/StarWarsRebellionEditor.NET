@@ -209,6 +209,8 @@ public partial class SystemsForm : SystemsDesignForm
 
     #endregion
 
+    #region Export/Import events
+
     private void export_Click(object sender, EventArgs e)
     {
         string export = "Name;Id;TextStraDllId;X;Y;FamilyId;SectorId;EncyclopediaDescription" + Environment.NewLine;
@@ -327,4 +329,6 @@ public partial class SystemsForm : SystemsDesignForm
             s = "0";
         return s;
     }
+
+    #endregion
 }
