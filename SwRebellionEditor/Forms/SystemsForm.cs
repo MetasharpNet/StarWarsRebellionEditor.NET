@@ -242,7 +242,7 @@ public partial class SystemsForm : SystemsDesignForm
 
         // planets-sprites
         var t = new ResourceFile(RegistryKeys.InstalledLocation + "STRATEGY.DLL");
-        foreach (var filesPath in Directory.GetFiles("new-planets-sprites"))
+        foreach (var filesPath in Directory.GetFiles("new-systems-sprites"))
         {
             var id = Path.GetFileNameWithoutExtension(filesPath).Split('-')[0];
             t.SaveBitmap(id, filesPath);
