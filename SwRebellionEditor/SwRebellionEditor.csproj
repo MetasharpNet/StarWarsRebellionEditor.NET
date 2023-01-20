@@ -127,13 +127,13 @@
     <None Update="new-systems-sprites\10234-23-taanab.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="new-systems-sprites\10237-26-yavin.bmp">
+    <None Update="new-systems-sprites\10238-26-yavin.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="new-systems-sprites\10238-24-tatooine.bmp">
+    <None Update="new-systems-sprites\10239-24-tatooine.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="new-systems-sprites\10239-25-teth.bmp">
+    <None Update="new-systems-sprites\10237-25-teth.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="new-sectors.csv">
@@ -154,10 +154,6 @@
       <Pack>True</Pack>
       <PackagePath>\</PackagePath>
     </None>
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="new-systems-sprites\" />
   </ItemGroup>
 
 </Project>
