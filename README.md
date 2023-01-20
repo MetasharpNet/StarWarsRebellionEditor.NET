@@ -12,7 +12,7 @@ To buy the game or get free fan mods, check : https://swrebellion.net/
 
 ### Current Features :
 * Galaxy Map editor : can drag&drop sectors and systems
-* Editor for : Sectors, Systems, Characters, Units, Building (Unlimited Names and Encyclopedia description lengths)
+* Editor for : Sectors, Systems, Characters, Units, Building (unlimited names and encyclopedia descriptions lengths)
 * Import : Sectors, Systems, Systems sprites
 
 ### Beta Roadmap (current) :
