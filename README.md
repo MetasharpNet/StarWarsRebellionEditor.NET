@@ -11,7 +11,7 @@ Direct link : https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/sdk-7
 To buy the game or get free fan mods, check : https://swrebellion.net/
 
 ### Beta Roadmap (current) :
-* Ability to Add/Change System pictures
+* Ability to change System pictures in a view
 
 ### Final Roadmap (low chance i'll invest time on it):
 * Cleanup code on rarely used windows
