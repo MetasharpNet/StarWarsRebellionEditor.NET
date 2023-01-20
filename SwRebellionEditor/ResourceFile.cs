@@ -1,14 +1,7 @@
-﻿using System;
-using System.ComponentModel;
-using System.Linq;
-using System.Reflection.Metadata;
-using System.Resources;
+﻿using System.ComponentModel;
 using System.Runtime.InteropServices;
 using System.Text;
-using System.Windows.Forms;
-using System.Xml.Linq;
 using Vestris.ResourceLib;
-using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace SwRebellionEditor;
 
@@ -51,19 +44,26 @@ public class ResourceFile
     internal static extern bool EndUpdateResource(IntPtr hUpdate, bool fDiscard);
     #endregion
 
+    #region variables
     private string _filePath;
     private ushort _language;
+    public Dictionary<string, BitmapResource> RT_BITMAP;
     public Dictionary<string, string> RT_RCDATA;
     public Dictionary<ushort, string> RT_STRING;
+    #endregion
 
+    #region .ctor
     public ResourceFile(string filePath)
     {
         _filePath = filePath;
+        RT_BITMAP = new Dictionary<string, BitmapResource>();
         RT_RCDATA = new Dictionary<string, string>();
         RT_STRING = new Dictionary<ushort, string>();
         Load();
     }
+    #endregion
 
+    #region Load (RT_RCDATA, RT_BITMAP, RT_STRING)
     public void Load()
     {
         using (ResourceInfo ri = new ResourceInfo())
@@ -73,7 +73,16 @@ public class ResourceFile
             {
                 foreach (var r in ri[Kernel32.ResourceTypes.RT_RCDATA])
                 {
+                    _language = r.Language;
                     RT_RCDATA.Add(r.Name.Name, Encoding.Latin1.GetString(r.WriteAndGetBytes()));
+                }
+            }
+            if (ri.ResourceTypes.Any(t => t.Name == (((int)Kernel32.ResourceTypes.RT_BITMAP).ToString())))
+            {
+                foreach (BitmapResource br in ri[Kernel32.ResourceTypes.RT_BITMAP])
+                {
+                    _language = br.Language;
+                    RT_BITMAP.Add(br.Name.Name, br);
                 }
             }
             if (ri.ResourceTypes.Any(t => t.Name == (((int)Kernel32.ResourceTypes.RT_STRING).ToString())))
@@ -89,7 +98,41 @@ public class ResourceFile
             }
         }
     }
+    #endregion
 
+    #region GetXXXXXXXXLanguage
+    public ushort GetBitmapLanguage(string bitmapId)
+    {
+        using (ResourceInfo ri = new ResourceInfo())
+        {
+            ri.Load(_filePath);
+            if (ri.ResourceTypes.Any(t => t.Name == (((int)Kernel32.ResourceTypes.RT_BITMAP).ToString())))
+            {
+                foreach (BitmapResource br in ri[Kernel32.ResourceTypes.RT_BITMAP])
+                {
+                    if (br.Name.Name == bitmapId)
+                        return br.Language;
+                }
+            }
+        }
+        return 0;
+    }
+    public ushort GetRcdataLanguage(ushort rcdataId)
+    {
+        using (ResourceInfo ri = new ResourceInfo())
+        {
+            ri.Load(_filePath);
+            if (ri.ResourceTypes.Any(t => t.Name == (((int)Kernel32.ResourceTypes.RT_RCDATA).ToString())))
+            {
+                foreach (Resource r in ri[Kernel32.ResourceTypes.RT_RCDATA])
+                {
+                    if (r.Name.Name == rcdataId.ToString())
+                        return r.Language;
+                }
+            }
+        }
+        return 0;
+    }
     public ushort GetStringLanguage(ushort stringId)
     {
         using (ResourceInfo ri = new ResourceInfo())
@@ -97,25 +140,39 @@ public class ResourceFile
             ri.Load(_filePath);
             if (ri.ResourceTypes.Any(t => t.Name == (((int)Kernel32.ResourceTypes.RT_STRING).ToString())))
             {
+                var blockId = new ResourceId(StringResource.GetBlockId(stringId));
                 foreach (StringResource sr in ri[Kernel32.ResourceTypes.RT_STRING])
                 {
-                    sr.Name = new ResourceId(StringResource.GetBlockId(stringId));
-                    sr.LoadFrom(_filePath);
-                    return sr.Language;
+                    if (sr.Name.Name == blockId.Name)
+                        return sr.Language;
                 }
             }
         }
         return 0;
     }
+    #endregion
 
+    #region SaveXXXXXXXX
     public void Save()
     {
         foreach (var key in RT_STRING.Keys)
             SaveString(key, RT_STRING[key]);
         foreach (var key in RT_RCDATA.Keys)
             SaveRcdata(key, RT_RCDATA[key]);
+        foreach (var key in RT_BITMAP.Keys)
+            SaveBitmap(key, RT_BITMAP[key]);
     }
-
+    public void SaveBitmap(string id, string bitmapFilePath)
+    {
+        var br = RT_BITMAP[id];
+        br.Bitmap = new BitmapFile(bitmapFilePath).Bitmap;
+        SaveBitmap(id, br);
+    }
+    public void SaveBitmap(string id, BitmapResource bitmapResource)
+    {
+        RT_BITMAP[id] = bitmapResource;
+        bitmapResource.SaveTo(_filePath);
+    }
     public void SaveRcdata(string id, string text)
     {
         using (ResourceInfo ri = new ResourceInfo())
@@ -143,7 +200,6 @@ public class ResourceFile
             }
         }
     }
-
     public void SaveString(ushort id, string text)
     {
         var lang = GetStringLanguage(id);
@@ -155,4 +211,5 @@ public class ResourceFile
         sr.Language = lang;
         sr.SaveTo(_filePath);
     }
+    #endregion
 }

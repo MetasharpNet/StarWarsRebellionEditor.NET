@@ -240,6 +240,14 @@ public partial class SystemsForm : SystemsDesignForm
         // id = 36, galaxysize = 1, importance = 1
         // id = 38, galaxysize = 1
 
+        // planets-sprites
+        var t = new ResourceFile(RegistryKeys.InstalledLocation + "STRATEGY.DLL");
+        foreach (var filesPath in Directory.GetFiles("new-planets-sprites"))
+        {
+            var id = Path.GetFileNameWithoutExtension(filesPath).Split('-')[0];
+            t.SaveBitmap(id, filesPath);
+        }
+
         // sectors
         var newSectorsAsString = File.ReadAllText("new-sectors.csv");
         var newSectorsLines = newSectorsAsString.Split(Environment.NewLine);
