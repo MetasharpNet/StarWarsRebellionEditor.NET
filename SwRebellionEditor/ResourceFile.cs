@@ -164,6 +164,8 @@ public class ResourceFile
     }
     public void SaveBitmap(string id, string bitmapFilePath)
     {
+        if (!RT_BITMAP.ContainsKey(id))
+            SaveNewBitmap(id, bitmapFilePath);
         var br = RT_BITMAP[id];
         br.Bitmap = new BitmapFile(bitmapFilePath).Bitmap;
         SaveBitmap(id, br);
@@ -172,6 +174,38 @@ public class ResourceFile
     {
         RT_BITMAP[id] = bitmapResource;
         bitmapResource.SaveTo(_filePath);
+    }
+    public void SaveNewBitmap(string id, string bitmapFilePath)
+    {
+        var bitmapFile = new BitmapFile(bitmapFilePath);
+        using (ResourceInfo ri = new ResourceInfo())
+        {
+            ri.Load(_filePath);
+            if (ri.ResourceTypes.Any(t => t.Name == (((int)Kernel32.ResourceTypes.RT_BITMAP).ToString())))
+            {
+                var r = ri[Kernel32.ResourceTypes.RT_BITMAP].FirstOrDefault(x => x?.Name?.Name == id);
+                if (r == null)
+                {
+                    IntPtr h = BeginUpdateResource(_filePath, false);
+                    if (h == IntPtr.Zero)
+                        throw new Win32Exception(Marshal.GetLastWin32Error());
+                    var bytes = bitmapFile.Bitmap.Data;
+                    Array.Resize(ref bytes, bytes.Length + 1);
+                    if (bytes != null && bytes.Length == 0)
+                        bytes = null;
+                    if (!UpdateResource(h, 2, Convert.ToInt32(id), _language, bytes, (bytes == null ? 0 : (uint)bytes.Length)))
+                        throw new Win32Exception(Marshal.GetLastWin32Error());
+                    ri.Dispose();
+                    if (!EndUpdateResource(h, false))
+                        throw new Win32Exception(Marshal.GetLastWin32Error());
+                    // add in dictionary
+                    ri.Load(_filePath);
+                    foreach (BitmapResource br in ri[Kernel32.ResourceTypes.RT_BITMAP])
+                        if (br.Name.Name == id)
+                            RT_BITMAP.Add(id, br);
+                }
+            }
+        }
     }
     public void SaveRcdata(string id, string text)
     {
