@@ -325,6 +325,16 @@ public partial class MainForm : Form
         Show<ProductionFacilitiesForm>();
     }
 
+    // Editor - Patch
+    private void Patch_ToolStripMenuItem_Click(object sender, EventArgs e)
+    {
+        Show<PatchForm>();
+    }
+    private void Patch_Button_Click(object sender, EventArgs e)
+    {
+        Show<PatchForm>();
+    }
+
     // Editor - Test Code - General Parameters Tables
     private void GeneralParametersTables_ToolStripMenuItem_Click(object sender, EventArgs e)
     {

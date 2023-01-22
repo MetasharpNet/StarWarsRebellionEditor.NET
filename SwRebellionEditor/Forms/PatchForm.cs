@@ -1,0 +1,176 @@
+﻿using System.Globalization;
+
+namespace SwRebellionEditor;
+
+public partial class PatchForm : PatchDesignForm
+{
+    #region .ctor
+
+    private string SectorsGameFilePath;
+    private SECTORSD SectorsGameFile;
+
+    public PatchForm()
+    {
+        SectorsGameFilePath = RegistryKeys.InstalledLocation + "\\GData\\SECTORSD.DAT";
+        SectorsGameFile = DatFile.Load<SECTORSD>(SectorsGameFilePath);
+        GameFilePath = RegistryKeys.InstalledLocation + "\\GData\\SYSTEMSD.DAT";
+        GameFile = DatFile.Load<SYSTEMSD>(GameFilePath);
+        InitializeComponent();
+    }
+
+    #endregion
+
+    #region Events
+    protected override void LoadSideInfo()
+    {
+        foreach (var s in GameFile.Systems)
+        {
+            s.Name = TextStra.GetString(s.TextStraDllId);
+            s.EncyclopediaDescription = EncyText.GetRcdata((s.TextStraDllId - 4096).ToString());
+        }
+    }
+    private void cancel_Click(object sender, EventArgs e)
+    {
+        Close();
+    }
+    private void patch_Click(object sender, EventArgs e)
+    {
+        this.Enabled = false;
+        // MANDATORY EXPECTATIONS
+
+        // systems
+        // id = 265, sectorid = 36   (Coruscant)
+        // id = 289, sectorid = 38   (Yavin)
+
+        // sectors
+        // id = 36, galaxysize = 1, importance = 1
+        // id = 38, galaxysize = 1
+
+        // patching rebexe.exe
+        using (var stream = new FileStream(RegistryKeys.InstalledLocation + "REBEXE.EXE", FileMode.Open, FileAccess.ReadWrite))
+        {
+            // to use 13001+ ids for planet sprites
+            stream.Position = int.Parse("5B1E4", NumberStyles.HexNumber);
+            stream.WriteByte(0x05); // add eax, 13000
+            stream.WriteByte(0xC8);
+            stream.WriteByte(0x32);
+            stream.WriteByte(0x00);
+            stream.WriteByte(0x00); 
+            stream.WriteByte(0xC3); // retn
+            // to use 13001+ ids for encyclopedia edata planets pictures
+            stream.Position = int.Parse("5DED6", NumberStyles.HexNumber);
+            stream.WriteByte(0x89); // move eax, ecx
+            stream.WriteByte(0xC8);
+            stream.WriteByte(0x05); // add eax, 13000
+            stream.WriteByte(0xC8);
+            stream.WriteByte(0x32);
+            stream.WriteByte(0x00);
+            stream.WriteByte(0x00);
+            stream.WriteByte(0xC2); // retn 4
+            stream.WriteByte(0x04);
+        }
+
+        // new encybmap ids for encyclopedia pictures EDATA.13001 to 13200
+        for (ushort ebId = 13001; ebId <= 13200; ++ebId)
+            EncyBmap.SaveString(ebId, "EDATA." + ebId);
+
+        // planets-sprites
+        var t = new ResourceFile(RegistryKeys.InstalledLocation + "STRATEGY.DLL");
+        foreach (var filesPath in Directory.GetFiles("new-systems-sprites"))
+        {
+            var id = Path.GetFileNameWithoutExtension(filesPath).Split('-')[0];
+            t.SaveBitmap(id, filesPath);
+        }
+
+        // sectors
+        var newSectorsAsString = File.ReadAllText("new-sectors.csv");
+        var newSectorsLines = newSectorsAsString.Split(Environment.NewLine);
+        int i = -1;
+        foreach (var newSectorsLine in newSectorsLines)
+        {
+            if (newSectorsLine.Length <= 0) continue;
+            if (i == -1)
+            { // skip header line
+                i = 0;
+                continue;
+            }
+            var sectorColumns = newSectorsLine.Split(';');
+            SectorsGameFile.Sectors[i].Name = sectorColumns[0];
+            SectorsGameFile.Sectors[i].Id = Convert.ToUInt32(sectorColumns[1]);
+            SectorsGameFile.Sectors[i].XPosition = Convert.ToUInt16(TrimDecimal(sectorColumns[2]));
+            SectorsGameFile.Sectors[i].YPosition = Convert.ToUInt16(TrimDecimal(sectorColumns[3]));
+            if (sectorColumns[4] == "Core")
+                SectorsGameFile.Sectors[i].Group = 1;
+            if (sectorColumns[4] == "Rim (inner)")
+                SectorsGameFile.Sectors[i].Group = 2;
+            if (sectorColumns[4] == "Rim (outer)")
+                SectorsGameFile.Sectors[i].Group = 3;
+            if (sectorColumns[5] == "Standard")
+                SectorsGameFile.Sectors[i].GalaxySize = 1;
+            if (sectorColumns[5] == "Large")
+                SectorsGameFile.Sectors[i].GalaxySize = 2;
+            if (sectorColumns[5] == "Huge")
+                SectorsGameFile.Sectors[i].GalaxySize = 3;
+            ++i;
+        }
+        //SectorsGameFile.Sectors = SectorsGameFile.Sectors.OrderBy(s => s.Id).ToArray();
+        // systems
+        var descDic = new Dictionary<string, string>();
+        foreach (var system in GameFile.Systems)
+            descDic.Add(system.Name.ToLowerInvariant(), system.EncyclopediaDescription);
+        var newSystemsAsString = File.ReadAllText("new-systems.csv");
+        var newSystemsLines = newSystemsAsString.Split(Environment.NewLine);
+        i = -1;
+        foreach (var newSystemsLine in newSystemsLines)
+        {
+            if (newSystemsLine.Length <= 0) continue;
+            if (i == -1)
+            { // skip header line
+                i = 0;
+                continue;
+            }
+            var systemColumns = newSystemsLine.Split(';');
+            GameFile.Systems[i].Name = systemColumns[0];
+            GameFile.Systems[i].Id = Convert.ToUInt32(systemColumns[1]);
+            GameFile.Systems[i].TextStraDllId = Convert.ToUInt16(systemColumns[2]);
+            GameFile.Systems[i].SectorId = SectorsGameFile.Sectors.First(s => s.Name == systemColumns[3]).Id;
+            GameFile.Systems[i].XPosition = Convert.ToUInt16(TrimDecimal(systemColumns[4]));
+            GameFile.Systems[i].YPosition = Convert.ToUInt16(TrimDecimal(systemColumns[5]));
+            GameFile.Systems[i].FamilyId = (uint)(systemColumns[6] == "Rim" ? 146 : 144);
+            GameFile.Systems[i].PictureId = Convert.ToUInt32(TrimDecimal(systemColumns[7]));
+            if (descDic.ContainsKey(GameFile.Systems[i].Name.ToLowerInvariant()))
+            {
+                GameFile.Systems[i].EncyclopediaDescription = descDic[GameFile.Systems[i].Name.ToLowerInvariant()];
+            }
+            else
+                GameFile.Systems[i].EncyclopediaDescription = "Missing description.";
+            ++i;
+        }
+        //GameFile.Systems = GameFile.Systems.OrderBy(s => s.Id).ToArray();
+
+        // save
+        SectorsGameFile.Save(SectorsGameFilePath);
+        foreach (var sector in SectorsGameFile.Sectors)
+            TextStra.SaveString(Convert.ToUInt16(sector.TextStraDllId), sector.Name);
+        GameFile.Save(GameFilePath);
+        foreach (var system in GameFile.Systems)
+        {
+            TextStra.SaveString(Convert.ToUInt16(system.TextStraDllId), system.Name);
+            EncyText.SaveRcdata((system.TextStraDllId - 4096).ToString(), system.EncyclopediaDescription);
+        }
+        this.Close();
+    }
+
+    public string TrimDecimal(string s)
+    {
+        if (s.IndexOf(',') > -1)
+            s = s.Substring(0, s.IndexOf(","));
+        if (s.IndexOf('.') > -1)
+            s = s.Substring(0, s.IndexOf("."));
+        if (s.Length < 1)
+            s = "0";
+        return s;
+    }
+
+    #endregion
+}

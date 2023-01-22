@@ -129,6 +129,26 @@ namespace SwRebellionEditor {
         }
         
         /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Icon semblable à (Icône).
+        /// </summary>
+        internal static System.Drawing.Icon death_star_16x16_ico {
+            get {
+                object obj = ResourceManager.GetObject("death_star_16x16_ico", resourceCulture);
+                return ((System.Drawing.Icon)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap death_star_16x16xbmp {
+            get {
+                object obj = ResourceManager.GetObject("death_star_16x16xbmp", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap defense_facility_16x16_bmp {

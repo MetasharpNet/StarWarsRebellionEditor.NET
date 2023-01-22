@@ -1,5 +1,6 @@
 ﻿using System.ComponentModel;
 using System.Runtime.InteropServices;
+using System.Security.AccessControl;
 using System.Text;
 using Vestris.ResourceLib;
 
@@ -158,7 +159,7 @@ public class ResourceFile
         foreach (var key in RT_STRING.Keys)
             SaveString(key, RT_STRING[key]);
         foreach (var key in RT_RCDATA.Keys)
-            SaveRcdata(key, RT_RCDATA[key]);
+            UpdateRcdata(key, RT_RCDATA[key]);
         foreach (var key in RT_BITMAP.Keys)
             SaveBitmap(key, RT_BITMAP[key]);
     }
@@ -207,7 +208,7 @@ public class ResourceFile
             }
         }
     }
-    public void SaveRcdata(string id, string text)
+    public void UpdateRcdata(string id, string text)
     {
         using (ResourceInfo ri = new ResourceInfo())
         {
@@ -224,7 +225,7 @@ public class ResourceFile
                     Array.Resize(ref bytes, bytes.Length + 1);
                     if (bytes != null && bytes.Length == 0)
                         bytes = null;
-                    if (!UpdateResource(h, r.Type.Id, r.Name.Id, r.Language, bytes, (bytes == null ? 0 : (uint)bytes.Length)))
+                    if (!UpdateResource(h, 10, r.Name.Id, r.Language, bytes, (bytes == null ? 0 : (uint)bytes.Length)))
                         throw new Win32Exception(Marshal.GetLastWin32Error());
                     ri.Dispose();
                     if (!EndUpdateResource(h, false))
@@ -236,13 +237,19 @@ public class ResourceFile
     }
     public void SaveString(ushort id, string text)
     {
-        var lang = GetStringLanguage(id);
-        RT_STRING[id] = text;
         var sr = new StringResource();
         sr.Name = new ResourceId(StringResource.GetBlockId(id));
-        sr.LoadFrom(_filePath);
-        sr[id] = text;
-        sr.Language = lang;
+        sr.Language = _language;
+        try
+        {
+            sr.LoadFrom(_filePath);
+        }
+        catch { }
+        if (!RT_STRING.ContainsKey(id))
+            sr.Strings.Add(id, text);
+        else
+            sr[id] = text;
+        RT_STRING[id] = text;
         sr.SaveTo(_filePath);
     }
     #endregion

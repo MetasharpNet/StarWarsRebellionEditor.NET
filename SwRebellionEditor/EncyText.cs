@@ -21,7 +21,7 @@ public static class EncyText
 
     public static void SaveRcdata(string id, string text)
     {
-        Resources.SaveRcdata(id, text);
+        Resources.UpdateRcdata(id, text);
     }
     public static void SaveString(ushort id, string text)
     {
