@@ -47,6 +47,16 @@ public partial class SystemsForm : SystemsDesignForm
 
     #region Business Layer
 
+    private uint GetStrategyId(uint pictureId)
+    {
+        if (HasPatchedRebexeForEncyclopedia)
+            return 13000 + pictureId;
+        if (pictureId < 24)
+            return 10211 + pictureId;
+        if (pictureId > 24)
+            return 10211 + pictureId + 1;
+        return 10211 + pictureId + 4;
+    }
     private uint GetEncybmapId(uint pictureId)
     {
         if (HasPatchedRebexeForEncyclopedia)
@@ -65,7 +75,7 @@ public partial class SystemsForm : SystemsDesignForm
         for (int selectorIndex = 0; selectorIndex < GameFile.SystemsCount; ++selectorIndex)
         {
             ushort encybmapId = (ushort)GetEncybmapId(GameFile.Systems[selectorIndex].PictureId);
-            var filepath = RegistryKeys.InstalledLocation + "\\EData\\" + EncyBmap.GetString(encybmapId);
+            var filepath = RegistryKeys.InstalledLocation + "\\EData\\" + EncyBmap.Resources.GetString(encybmapId);
             if (File.Exists(filepath))
                 systemsImageList.Images.Add(Image.FromFile(filepath));
             systemsListView.Items.Add(GameFile.Systems[selectorIndex].Name, selectorIndex);
@@ -97,17 +107,19 @@ public partial class SystemsForm : SystemsDesignForm
 
         picture.SizeMode = PictureBoxSizeMode.Zoom;
         ushort encybmapId = (ushort)GetEncybmapId(GameFile.Systems[selectorIndex].PictureId);
-        var filepath = RegistryKeys.InstalledLocation + "\\EData\\" + EncyBmap.GetString(encybmapId);
+        var filepath = RegistryKeys.InstalledLocation + "\\EData\\" + EncyBmap.Resources.GetString(encybmapId);
         if (File.Exists(filepath))
             picture.Image = Image.FromFile(filepath);
         else
             picture.Image = null;
+        var strategyId = GetStrategyId(GameFile.Systems[selectorIndex].PictureId).ToString();
+        sprite.Image = Strategy.Resources.GetBitmap(strategyId).Bitmap.Image;
         GameFile.UnsavedData = previousUnsavedData;
     }
     private void LoadSector(uint sectorId)
     {
         var sector = SectorsGameFile.Sectors[sectorId - 20U];
-        sectorName.Text = TextStra.GetString(sector.TextStraDllId);
+        sectorName.Text = TextStra.Resources.GetString(sector.TextStraDllId);
         sectorFamilyId.Value = sector.FamilyId;
         sectorFamilyIdHexLabel.Text = "0x" + sector.FamilyId.ToString("X");
         sectorGalaxySize.Value = sector.GalaxySize;
@@ -120,14 +132,14 @@ public partial class SystemsForm : SystemsDesignForm
     {
         foreach (var s in GameFile.Systems)
         {
-            s.Name = TextStra.GetString(s.TextStraDllId);
-            s.EncyclopediaDescription = EncyText.GetRcdata((s.TextStraDllId - 4096).ToString());
+            s.Name = TextStra.Resources.GetString(s.TextStraDllId);
+            s.EncyclopediaDescription = EncyText.Resources.GetRcdata((s.TextStraDllId - 4096).ToString());
         }
     }
     protected override void SaveSideInfo()
     {
-        TextStra.SaveString(Convert.ToUInt16(textStraDllId.Value), name.Text);
-        EncyText.SaveRcdata((textStraDllId.Value - 4096).ToString(), encyclopediaDescription.Text);
+        TextStra.Resources.SaveString(Convert.ToUInt16(textStraDllId.Value), name.Text);
+        EncyText.Resources.UpdateRcdata((textStraDllId.Value - 4096).ToString(), encyclopediaDescription.Text);
     }
 
     #endregion

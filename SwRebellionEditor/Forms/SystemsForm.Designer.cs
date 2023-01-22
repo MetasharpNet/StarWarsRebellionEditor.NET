@@ -137,6 +137,7 @@ namespace SwRebellionEditor
             this.encyclopediaDescription = new System.Windows.Forms.RichTextBox();
             this.hiddenDataGroupBox = new System.Windows.Forms.GroupBox();
             this.export = new System.Windows.Forms.Button();
+            this.sprite = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.selector)).BeginInit();
             this.sectorGroupBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.sectorFamilyId)).BeginInit();
@@ -161,6 +162,7 @@ namespace SwRebellionEditor
             ((System.ComponentModel.ISupportInitialize)(this.field2_1)).BeginInit();
             this.inGameDataGroupBox.SuspendLayout();
             this.hiddenDataGroupBox.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.sprite)).BeginInit();
             this.SuspendLayout();
             // 
             // systemsListView
@@ -917,6 +919,7 @@ namespace SwRebellionEditor
             // 
             // inGameDataGroupBox
             // 
+            this.inGameDataGroupBox.Controls.Add(this.sprite);
             this.inGameDataGroupBox.Controls.Add(this.encyclopediaDescriptionLabel);
             this.inGameDataGroupBox.Controls.Add(this.name);
             this.inGameDataGroupBox.Controls.Add(this.nameLabel);
@@ -1016,6 +1019,18 @@ namespace SwRebellionEditor
             this.export.UseVisualStyleBackColor = true;
             this.export.Click += new System.EventHandler(this.export_Click);
             // 
+            // sprite
+            // 
+            this.sprite.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.sprite.InitialImage = null;
+            this.sprite.Location = new System.Drawing.Point(238, 86);
+            this.sprite.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.sprite.Name = "sprite";
+            this.sprite.Size = new System.Drawing.Size(37, 37);
+            this.sprite.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.sprite.TabIndex = 169;
+            this.sprite.TabStop = false;
+            // 
             // SystemsForm
             // 
             this.AcceptButton = this.Ok;
@@ -1072,6 +1087,7 @@ namespace SwRebellionEditor
             this.inGameDataGroupBox.PerformLayout();
             this.hiddenDataGroupBox.ResumeLayout(false);
             this.hiddenDataGroupBox.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.sprite)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1094,5 +1110,6 @@ namespace SwRebellionEditor
         private Label encyclopediaDescriptionLabel;
         private GroupBox hiddenDataGroupBox;
         private Button export;
+        private PictureBox sprite;
     }
 }

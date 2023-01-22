@@ -51,9 +51,9 @@ public partial class GalaxyMapForm : GalaxyMapDesignForm
     protected override void LoadSideInfo()
     {
         foreach (var s in GameFile.Sectors)
-            s.Name = TextStra.GetString(s.TextStraDllId);
+            s.Name = TextStra.Resources.GetString(s.TextStraDllId);
         foreach (var s in SystemsGameFile.Systems)
-            s.Name = TextStra.GetString(s.TextStraDllId);
+            s.Name = TextStra.Resources.GetString(s.TextStraDllId);
     }
     protected override void SaveSideInfo()
     {

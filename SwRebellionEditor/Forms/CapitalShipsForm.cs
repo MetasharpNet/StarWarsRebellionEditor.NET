@@ -90,14 +90,14 @@ public partial class CapitalShipsForm : CapitalShipsDesignForm
     {
         foreach (var cs in  GameFile.CapitalShips)
         {
-            cs.Name = TextStra.GetString(cs.TextStraDllId);
-            cs.EncyclopediaDescription = EncyText.GetRcdata((cs.TextStraDllId - 4096).ToString());
+            cs.Name = TextStra.Resources.GetString(cs.TextStraDllId);
+            cs.EncyclopediaDescription = EncyText.Resources.GetRcdata((cs.TextStraDllId - 4096).ToString());
         }
     }
     protected override void SaveSideInfo()
     {
-        TextStra.SaveString(Convert.ToUInt16(textStraDllId.Value), name.Text);
-        EncyText.SaveRcdata((textStraDllId.Value - 4096).ToString(), encyclopediaDescription.Text);
+        TextStra.Resources.SaveString(Convert.ToUInt16(textStraDllId.Value), name.Text);
+        EncyText.Resources.UpdateRcdata((textStraDllId.Value - 4096).ToString(), encyclopediaDescription.Text);
     }
     private void UpdateTotals(int selectorIndex)
     {

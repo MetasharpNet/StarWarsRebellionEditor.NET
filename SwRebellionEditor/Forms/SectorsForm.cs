@@ -41,12 +41,12 @@ public partial class SectorsForm : SectorsDesignForm
     {
         foreach (var s in GameFile.Sectors)
         {
-            s.Name = TextStra.GetString(s.TextStraDllId);
+            s.Name = TextStra.Resources.GetString(s.TextStraDllId);
         }
     }
     protected override void SaveSideInfo()
     {
-        TextStra.SaveString(Convert.ToUInt16(textStraDllId.Value), name.Text);
+        TextStra.Resources.SaveString(Convert.ToUInt16(textStraDllId.Value), name.Text);
     }
 
     #endregion

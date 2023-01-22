@@ -25,8 +25,8 @@ public partial class PatchForm : PatchDesignForm
     {
         foreach (var s in GameFile.Systems)
         {
-            s.Name = TextStra.GetString(s.TextStraDllId);
-            s.EncyclopediaDescription = EncyText.GetRcdata((s.TextStraDllId - 4096).ToString());
+            s.Name = TextStra.Resources.GetString(s.TextStraDllId);
+            s.EncyclopediaDescription = EncyText.Resources.GetRcdata((s.TextStraDllId - 4096).ToString());
         }
     }
     private void cancel_Click(object sender, EventArgs e)
@@ -72,7 +72,7 @@ public partial class PatchForm : PatchDesignForm
 
         // new encybmap ids for encyclopedia pictures EDATA.13001 to 13200
         for (ushort ebId = 13001; ebId <= 13200; ++ebId)
-            EncyBmap.SaveString(ebId, "EDATA." + ebId);
+            EncyBmap.Resources.SaveString(ebId, "EDATA." + ebId);
 
         // planets-sprites
         var t = new ResourceFile(RegistryKeys.InstalledLocation + "STRATEGY.DLL");
@@ -151,12 +151,12 @@ public partial class PatchForm : PatchDesignForm
         // save
         SectorsGameFile.Save(SectorsGameFilePath);
         foreach (var sector in SectorsGameFile.Sectors)
-            TextStra.SaveString(Convert.ToUInt16(sector.TextStraDllId), sector.Name);
+            TextStra.Resources.SaveString(Convert.ToUInt16(sector.TextStraDllId), sector.Name);
         GameFile.Save(GameFilePath);
         foreach (var system in GameFile.Systems)
         {
-            TextStra.SaveString(Convert.ToUInt16(system.TextStraDllId), system.Name);
-            EncyText.SaveRcdata((system.TextStraDllId - 4096).ToString(), system.EncyclopediaDescription);
+            TextStra.Resources.SaveString(Convert.ToUInt16(system.TextStraDllId), system.Name);
+            EncyText.Resources.UpdateRcdata((system.TextStraDllId - 4096).ToString(), system.EncyclopediaDescription);
         }
         this.Close();
     }

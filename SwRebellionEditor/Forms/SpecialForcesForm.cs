@@ -82,14 +82,14 @@ public partial class SpecialForcesForm : SpecialForcesDesignForm
     {
         foreach (var sf in GameFile.SpecialForces)
         {
-            sf.Name = TextStra.GetString(sf.TextStraDllId);
-            sf.EncyclopediaDescription = EncyText.GetRcdata((sf.TextStraDllId - 4096).ToString());
+            sf.Name = TextStra.Resources.GetString(sf.TextStraDllId);
+            sf.EncyclopediaDescription = EncyText.Resources.GetRcdata((sf.TextStraDllId - 4096).ToString());
         }
     }
     protected override void SaveSideInfo()
     {
-        TextStra.SaveString(Convert.ToUInt16(textStraDllId.Value), name.Text);
-        EncyText.SaveRcdata((textStraDllId.Value - 4096).ToString(), encyclopediaDescription.Text);
+        TextStra.Resources.SaveString(Convert.ToUInt16(textStraDllId.Value), name.Text);
+        EncyText.Resources.UpdateRcdata((textStraDllId.Value - 4096).ToString(), encyclopediaDescription.Text);
     }
 
     #endregion

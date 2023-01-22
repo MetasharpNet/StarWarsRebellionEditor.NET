@@ -64,14 +64,14 @@ public partial class TroopsForm : TroopsDesignForm
     {
         foreach (var t in GameFile.Troops)
         {
-            t.Name = TextStra.GetString(t.TextStraDllId);
-            t.EncyclopediaDescription = EncyText.GetRcdata((t.TextStraDllId - 4096).ToString());
+            t.Name = TextStra.Resources.GetString(t.TextStraDllId);
+            t.EncyclopediaDescription = EncyText.Resources.GetRcdata((t.TextStraDllId - 4096).ToString());
         }
     }
     protected override void SaveSideInfo()
     {
-        TextStra.SaveString(Convert.ToUInt16(textStraDllId.Value), name.Text);
-        EncyText.SaveRcdata((textStraDllId.Value - 4096).ToString(), encyclopediaDescription.Text);
+        TextStra.Resources.SaveString(Convert.ToUInt16(textStraDllId.Value), name.Text);
+        EncyText.Resources.UpdateRcdata((textStraDllId.Value - 4096).ToString(), encyclopediaDescription.Text);
     }
 
     #endregion
