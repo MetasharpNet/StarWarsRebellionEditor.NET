@@ -1,7 +1,9 @@
-﻿using System.Globalization;
+﻿using System.Drawing.Imaging;
+using System.Globalization;
+using System.Reflection;
 using System.Runtime.InteropServices;
-using System.Text;
-using static System.Runtime.InteropServices.JavaScript.JSType;
+using Vestris.ResourceLib;
+using static Vestris.ResourceLib.Gdi32;
 
 namespace SwRebellionEditor;
 
@@ -112,8 +114,11 @@ public partial class SystemsForm : SystemsDesignForm
             picture.Image = Image.FromFile(filepath);
         else
             picture.Image = null;
+
+        sprite.SizeMode = PictureBoxSizeMode.Zoom;
         var strategyId = GetStrategyId(GameFile.Systems[selectorIndex].PictureId).ToString();
-        sprite.Image = Strategy.Resources.GetBitmap(strategyId).Bitmap.Image;
+        sprite.Image = DIB.ToDDB(Strategy.Resources.GetBitmap(strategyId));
+
         GameFile.UnsavedData = previousUnsavedData;
     }
     private void LoadSector(uint sectorId)

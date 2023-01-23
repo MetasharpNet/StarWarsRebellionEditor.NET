@@ -131,13 +131,13 @@ namespace SwRebellionEditor
             this.field2_1 = new System.Windows.Forms.NumericUpDown();
             this.field2_1Label = new System.Windows.Forms.Label();
             this.inGameDataGroupBox = new System.Windows.Forms.GroupBox();
+            this.sprite = new System.Windows.Forms.PictureBox();
             this.encyclopediaDescriptionLabel = new System.Windows.Forms.Label();
             this.name = new System.Windows.Forms.TextBox();
             this.nameLabel = new System.Windows.Forms.Label();
             this.encyclopediaDescription = new System.Windows.Forms.RichTextBox();
             this.hiddenDataGroupBox = new System.Windows.Forms.GroupBox();
             this.export = new System.Windows.Forms.Button();
-            this.sprite = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.selector)).BeginInit();
             this.sectorGroupBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.sectorFamilyId)).BeginInit();
@@ -161,8 +161,8 @@ namespace SwRebellionEditor
             ((System.ComponentModel.ISupportInitialize)(this.picture)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.field2_1)).BeginInit();
             this.inGameDataGroupBox.SuspendLayout();
-            this.hiddenDataGroupBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.sprite)).BeginInit();
+            this.hiddenDataGroupBox.SuspendLayout();
             this.SuspendLayout();
             // 
             // systemsListView
@@ -932,6 +932,14 @@ namespace SwRebellionEditor
             this.inGameDataGroupBox.TabStop = false;
             this.inGameDataGroupBox.Text = "In Game Data";
             // 
+            // sprite
+            // 
+            this.sprite.Location = new System.Drawing.Point(238, 86);
+            this.sprite.Name = "sprite";
+            this.sprite.Size = new System.Drawing.Size(37, 37);
+            this.sprite.TabIndex = 169;
+            this.sprite.TabStop = false;
+            // 
             // encyclopediaDescriptionLabel
             // 
             this.encyclopediaDescriptionLabel.AutoSize = true;
@@ -1019,18 +1027,6 @@ namespace SwRebellionEditor
             this.export.UseVisualStyleBackColor = true;
             this.export.Click += new System.EventHandler(this.export_Click);
             // 
-            // sprite
-            // 
-            this.sprite.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.sprite.InitialImage = null;
-            this.sprite.Location = new System.Drawing.Point(238, 86);
-            this.sprite.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.sprite.Name = "sprite";
-            this.sprite.Size = new System.Drawing.Size(37, 37);
-            this.sprite.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.sprite.TabIndex = 169;
-            this.sprite.TabStop = false;
-            // 
             // SystemsForm
             // 
             this.AcceptButton = this.Ok;
@@ -1085,9 +1081,9 @@ namespace SwRebellionEditor
             ((System.ComponentModel.ISupportInitialize)(this.field2_1)).EndInit();
             this.inGameDataGroupBox.ResumeLayout(false);
             this.inGameDataGroupBox.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.sprite)).EndInit();
             this.hiddenDataGroupBox.ResumeLayout(false);
             this.hiddenDataGroupBox.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.sprite)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
