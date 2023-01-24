@@ -6,10 +6,13 @@ using Vestris.ResourceLib;
 
 namespace SwRebellionEditor;
 
-//https://www.codeguru.com/multimedia/converting-dib-to-ddb/
-//http://vb-helper.com/howto_make_8bit_dib.html
-//https://github.com/ArashPartow/bitmap/blob/master/bitmap_image.hpp
-//https://bytes.com/topic/visual-basic-net/answers/678944-how-display-dib-draw-into-bitmap
+// https://learn.microsoft.com/en-us/windows/win32/gdi/device-independent-bitmaps?redirectedfrom=MSDN
+// http://www.herdsoft.com/ti/davincie/imex3j8i.htm#:~:text=DIB%2C%20or%20Device%20Independent%20Bitmap,pixels%2Dper%2Dinch).
+// https://www-user.tu-chemnitz.de/~heha/petzold/ch15b.htm
+// https://www.codeguru.com/multimedia/converting-dib-to-ddb/
+// http://vb-helper.com/howto_make_8bit_dib.html
+// https://github.com/ArashPartow/bitmap/blob/master/bitmap_image.hpp
+// https://bytes.com/topic/visual-basic-net/answers/678944-how-display-dib-draw-into-bitmap
 //is the 1078 byte marker related to the bitmaps from strategy.dll?
 
 static public class DIB
@@ -48,144 +51,94 @@ static public class DIB
         }
     }
 
-    public static Bitmap ToDDB(BitmapResource br)
+    public static Bitmap ToDDB(DeviceIndependentBitmap dib)
     {
-        var dib = br.Bitmap.Image;
-        // get byte array of device independent bitmap
-        var dibBytes = br.Bitmap.Data;
-
-        // get the handle for the byte array and "pin" that memory (i.e. prevent garbage collector from gobbling it up right away)...
-        var gcHandle = GCHandle.Alloc(dibBytes, GCHandleType.Pinned);
-
-        // marshal our data into a BITMAPINFOHEADER struct per Win32 definition of BITMAPINFOHEADER
+        // get the handle for the byte array and "pin" that memory (i.e. prevent immediate garbage collecttion)
+        var gcHandle = GCHandle.Alloc(dib.Data, GCHandleType.Pinned);
         var dibInfoHeader = (BITMAPINFOHEADER)Marshal.PtrToStructure(gcHandle.AddrOfPinnedObject(), typeof(BITMAPINFOHEADER));
 
-        bool is555 = true;
+        if (dibInfoHeader.biPlanes != 1)
+            throw new ArgumentException("Invalid DIB header. biPlanes=1 expected. biPlanes=" + dibInfoHeader.biPlanes + " found.", "dib");
 
+        bool isFormat16bppRgb555 = true;
         Bitmap ddb = null;
-
         if (dibInfoHeader.biBitCount == 8)
         {
-            var dibPointer = gcHandle.AddrOfPinnedObject().ToInt64();
-            var dibPointerAfterHeader = dibPointer + dibInfoHeader.biSize;
+            var dibStartPointer = gcHandle.AddrOfPinnedObject();
+            var dibAfterHeaderPointer = dibStartPointer + dibInfoHeader.biSize;
             ddb = new Bitmap(dibInfoHeader.biWidth, dibInfoHeader.biHeight, PixelFormat.Format8bppIndexed);
 
-            // this was uncommented in the original code, but would throw exceptions on some images. commenting it out resulted in "successful" resulting image and no exception.
+            // set resolution if used
             if (dibInfoHeader.biXPelsPerMeter > 0 && dibInfoHeader.biYPelsPerMeter > 0)
                 ddb.SetResolution((100f * (float)dibInfoHeader.biXPelsPerMeter) / 2.54f, (100f * (float)dibInfoHeader.biYPelsPerMeter) / 2.54f);
 
-            // use a temporary Palette object, else the changes won't applied
-            var ddbPalette = ddb.Palette;
-
-            var dibPalettePointer = new IntPtr(dibPointerAfterHeader);
-            for (int e = 0; e < ddbPalette.Entries.Count(); ++e)
+            // set the palette through temporary object, else the changes won't applied
+            var ddbTmpPalette = ddb.Palette;
+            var dibPointer = new IntPtr(dibAfterHeaderPointer);
+            for (int e = 0; e < ddbTmpPalette.Entries.Count(); ++e)
             {
-                uint dibColor = (uint)Marshal.ReadInt32(dibPalettePointer);
-                int a = (int)((dibColor & 0xFF000000) >> 24);
+                uint dibColor = (uint)Marshal.ReadInt32(dibPointer);
+                //int a = (int)((dibColor & 0xFF000000) >> 24);
                 int r = (int)((dibColor & 0xFF0000) >> 16);
                 int g = (int)((dibColor & 0xFF00) >> 8);
                 int b = (int)((dibColor & 0xFF));
-                ddbPalette.Entries[e] = Color.FromArgb(r, g, b);
-                dibPalettePointer += 4;
+                ddbTmpPalette.Entries[e] = Color.FromArgb(r, g, b);
+                dibPointer += 4;
             }
-            // apply the new palette
-            ddb.Palette = ddbPalette;
+            ddb.Palette = ddbTmpPalette;
 
             // now write the remaining bmp data to our bitmap
             var ddbBitmapData = ddb.LockBits(new Rectangle(0, 0, ddb.Width, ddb.Height), ImageLockMode.WriteOnly, PixelFormat.Format8bppIndexed);
-
-            dibPalettePointer -= gcHandle.AddrOfPinnedObject();
-
-            Marshal.Copy(dibBytes, (int)dibPalettePointer, ddbBitmapData.Scan0, ddbBitmapData.Stride * ddbBitmapData.Height);
-
+            var dibAfterPaletteOffset = (IntPtr)(dibInfoHeader.biSize + ddbTmpPalette.Entries.Count() * 4);
+            Marshal.Copy(dib.Data, (int)dibAfterPaletteOffset, ddbBitmapData.Scan0, ddbBitmapData.Stride * ddbBitmapData.Height);
             ddb.UnlockBits(ddbBitmapData);
         }
-
-        else if ((dibInfoHeader.biBitCount == 16) && (dibInfoHeader.biCompression == BitmapCompressionMode.BI_BITFIELDS))
+        else if (dibInfoHeader.biBitCount == 16 && dibInfoHeader.biCompression == BitmapCompressionMode.BI_BITFIELDS)
         {
-            Int64 jumpTo = (Int64)(dibInfoHeader.biClrUsed * (uint)4 + dibInfoHeader.biSize);
-            IntPtr ptr = new IntPtr(gcHandle.AddrOfPinnedObject().ToInt64() + jumpTo);
-            ushort redMask = (ushort)Marshal.ReadInt16(ptr);
-            ptr = new IntPtr(ptr.ToInt64() + (2 * Marshal.SizeOf(typeof(UInt16))));
-            ushort greenMask = (ushort)Marshal.ReadInt16(ptr);
-            ptr = new IntPtr(ptr.ToInt64() + (2 * Marshal.SizeOf(typeof(UInt16))));
-            ushort blueMask = (ushort)Marshal.ReadInt16(ptr);
-
-            is555 = ((redMask == 0x7C00) && (greenMask == 0x03E0) && (blueMask == 0x001F));
+            var dibAfterPaletteOffset = dibInfoHeader.biSize + dibInfoHeader.biClrUsed * 4;
+            var dibPointer = new IntPtr(gcHandle.AddrOfPinnedObject() + dibAfterPaletteOffset);
+            var redMask = (ushort)Marshal.ReadInt16(dibPointer);
+            dibPointer = new IntPtr(dibPointer.ToInt64() + (2 * Marshal.SizeOf(typeof(UInt16))));
+            var greenMask = (ushort)Marshal.ReadInt16(dibPointer);
+            dibPointer = new IntPtr(dibPointer.ToInt64() + (2 * Marshal.SizeOf(typeof(UInt16))));
+            var blueMask = (ushort)Marshal.ReadInt16(dibPointer);
+            isFormat16bppRgb555 = ((redMask == 0x7C00) && (greenMask == 0x03E0) && (blueMask == 0x001F));
         }
-
-        // go ahead and release the "pin" from our handle on that memory
+        // release the "pin"
         gcHandle.Free();
 
-        // If the target device does not have one plane, or we're working with a bitmap other
-        // than a non-compressed (BI_RGB) bitmap, we're not gonna work woith it
-        if (dibInfoHeader.biPlanes != 1 || (dibInfoHeader.biCompression != 0 && dibInfoHeader.biCompression != BitmapCompressionMode.BI_BITFIELDS)) return null;
+        if (dibInfoHeader.biCompression != BitmapCompressionMode.BI_RGB && dibInfoHeader.biCompression != BitmapCompressionMode.BI_BITFIELDS)
+            throw new ArgumentException("Unsupported BitmapCompressionMode=" + dibInfoHeader.biCompression, "dib");
 
         if (ddb == null)
         {
-
             // we need to know beforehand the pixel-depth of our bitmap
-
-            PixelFormat fmt = PixelFormat.Format24bppRgb;
-
+            var pixelFormat = PixelFormat.Format24bppRgb;
             switch (dibInfoHeader.biBitCount)
-
             {
-
                 case 32:
-
-                    fmt = PixelFormat.Format32bppRgb;
-
+                    pixelFormat = PixelFormat.Format32bppRgb;
                     break;
-
                 case 24:
-
-                    fmt = PixelFormat.Format24bppRgb;
-
+                    pixelFormat = PixelFormat.Format24bppRgb;
                     break;
-
                 case 16:
-
-                    fmt = (is555) ? PixelFormat.Format16bppRgb555 :
-
-                    PixelFormat.Format16bppRgb565;
-
+                    pixelFormat = (isFormat16bppRgb555) ? PixelFormat.Format16bppRgb555 : PixelFormat.Format16bppRgb565;
                     break;
-
                 default:
-
                     return null;
-
             }
-
             // prepare for our output bitmap
-
-            ddb = new Bitmap(dibInfoHeader.biWidth, dibInfoHeader.biHeight, fmt);
-
-            // load our "empty" bitmap into memory and lock it for
-
-            // writing in the format we specified
-
-            BitmapData bd = ddb.LockBits(new Rectangle(0, 0, ddb.Width, ddb.Height), ImageLockMode.WriteOnly, fmt);
-
+            ddb = new Bitmap(dibInfoHeader.biWidth, dibInfoHeader.biHeight, pixelFormat);
+            // load our "empty" bitmap into memory and lock it for writing in the format we specified
+            var ddbBitmapData = ddb.LockBits(new Rectangle(0, 0, ddb.Width, ddb.Height), ImageLockMode.WriteOnly, pixelFormat);
             // marshal our device independent bitmap data over to our output bitmap
-
-            Marshal.Copy(dibBytes, Marshal.SizeOf(dibInfoHeader), bd.Scan0, bd.Stride * bd.Height);
-
+            Marshal.Copy(dib.Data, Marshal.SizeOf(dibInfoHeader), ddbBitmapData.Scan0, ddbBitmapData.Stride * ddbBitmapData.Height);
             // we're done marshalling, so release our bitmapdata lock
-
-            ddb.UnlockBits(bd);
-
+            ddb.UnlockBits(ddbBitmapData);
         }
-
-        if (dibInfoHeader.biHeight > 0)
-        {
-            // DIB data is upside-down for some reason, so flip it
+        if (dibInfoHeader.biHeight > 0) // as explained in DIB specs, flip if height>0
             ddb.RotateFlip(RotateFlipType.RotateNoneFlipY);
-        }
-
-        // return our bitmap
         return ddb;
-
     }
 }

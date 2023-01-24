@@ -117,7 +117,7 @@ public partial class SystemsForm : SystemsDesignForm
 
         sprite.SizeMode = PictureBoxSizeMode.Zoom;
         var strategyId = GetStrategyId(GameFile.Systems[selectorIndex].PictureId).ToString();
-        sprite.Image = DIB.ToDDB(Strategy.Resources.GetBitmap(strategyId));
+        sprite.Image = DIB.ToDDB(Strategy.Resources.GetBitmap(strategyId).Bitmap);
 
         GameFile.UnsavedData = previousUnsavedData;
     }
