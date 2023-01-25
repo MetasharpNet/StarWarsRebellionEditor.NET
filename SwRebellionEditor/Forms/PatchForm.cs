@@ -85,6 +85,14 @@ public partial class PatchForm : PatchDesignForm
 
         // planets-sprites
         var t = new ResourceFile(RegistryKeys.InstalledLocation + "STRATEGY.DLL");
+        // pre-init resource slots with a specific sprite to avoid sprite being displayed on top of the names
+        var f = Directory.GetFiles("new-systems-sprites").First(f => f.Contains("10240-debris.bmp"));
+        for (int p = 0; p <= 200; ++p)
+        {
+            var key = (13000 + p).ToString();
+            if (!t.RT_BITMAP.ContainsKey(key))
+                t.SaveBitmap(key, f);
+        }
         foreach (var filesPath in Directory.GetFiles("new-systems-sprites"))
         {
             var id = Path.GetFileNameWithoutExtension(filesPath).Split('-')[0];
