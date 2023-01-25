@@ -78,9 +78,13 @@ public partial class SystemsForm : SystemsDesignForm
         for (int selectorIndex = 0; selectorIndex < GameFile.SystemsCount; ++selectorIndex)
         {
             ushort encybmapId = (ushort)GetEncybmapId(GameFile.Systems[selectorIndex].PictureId);
-            var filepath = RegistryKeys.InstalledLocation + "\\EData\\" + EncyBmap.Resources.GetString(encybmapId);
-            if (File.Exists(filepath))
-                systemsImageList.Images.Add(Image.FromFile(filepath));
+            try
+            {
+                var filepath = RegistryKeys.InstalledLocation + "\\EData\\" + EncyBmap.Resources.GetString(encybmapId);
+                if (File.Exists(filepath))
+                    systemsImageList.Images.Add(Image.FromFile(filepath));
+            }
+            catch { }
             systemsListView.Items.Add(GameFile.Systems[selectorIndex].Name, selectorIndex);
         }
     }
@@ -110,15 +114,23 @@ public partial class SystemsForm : SystemsDesignForm
 
         picture.SizeMode = PictureBoxSizeMode.Zoom;
         ushort encybmapId = (ushort)GetEncybmapId(GameFile.Systems[selectorIndex].PictureId);
-        var filepath = RegistryKeys.InstalledLocation + "\\EData\\" + EncyBmap.Resources.GetString(encybmapId);
-        if (File.Exists(filepath))
-            picture.Image = Image.FromFile(filepath);
-        else
-            picture.Image = null;
+        try
+        {
+            var filepath = RegistryKeys.InstalledLocation + "\\EData\\" + EncyBmap.Resources.GetString(encybmapId);
+            if (File.Exists(filepath))
+                picture.Image = Image.FromFile(filepath);
+            else
+                picture.Image = null;
+        }
+        catch { picture.Image = null; }
 
         sprite.SizeMode = PictureBoxSizeMode.Zoom;
         var strategyId = GetStrategyId(GameFile.Systems[selectorIndex].PictureId).ToString();
-        sprite.Image = DIB.ToDDB(Strategy.Resources.GetBitmap(strategyId).Bitmap);
+        try
+        {
+            sprite.Image = DIB.ToDDB(Strategy.Resources.GetBitmap(strategyId).Bitmap);
+        }
+        catch { sprite.Image = null; }
 
         GameFile.UnsavedData = previousUnsavedData;
     }
