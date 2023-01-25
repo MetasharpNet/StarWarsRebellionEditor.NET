@@ -583,6 +583,9 @@
     <None Update="new-systems-sprites\10240-debris.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="new-systems-sprites\13000-debris.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="new-systems-sprites\13001-01-alderaan.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>

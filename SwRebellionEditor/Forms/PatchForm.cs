@@ -147,6 +147,8 @@ public partial class PatchForm : PatchDesignForm
             GameFile.Systems[i].YPosition = Convert.ToUInt16(TrimDecimal(systemColumns[5]));
             GameFile.Systems[i].FamilyId = (uint)(systemColumns[6] == "Rim" ? 146 : 144);
             GameFile.Systems[i].PictureId = Convert.ToUInt32(TrimDecimal(systemColumns[7]));
+            if (!Strategy.Resources.RT_BITMAP.ContainsKey((13000+Convert.ToInt32(systemColumns[7])).ToString()))
+                GameFile.Systems[i].PictureId = 0;
             if (systemColumns[8]?.Length > 0)
                 GameFile.Systems[i].EncyclopediaDescription = systemColumns[8].TrimStart('"').TrimEnd('"');
             else if (descDic.ContainsKey(GameFile.Systems[i].Name.ToLowerInvariant()))
