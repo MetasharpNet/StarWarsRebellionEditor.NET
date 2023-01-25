@@ -934,11 +934,14 @@ namespace SwRebellionEditor
             // 
             // sprite
             // 
+            this.sprite.AllowDrop = true;
             this.sprite.Location = new System.Drawing.Point(238, 86);
             this.sprite.Name = "sprite";
             this.sprite.Size = new System.Drawing.Size(37, 37);
             this.sprite.TabIndex = 169;
             this.sprite.TabStop = false;
+            this.sprite.DragDrop += new System.Windows.Forms.DragEventHandler(this.sprite_DragDrop);
+            this.sprite.DragEnter += new System.Windows.Forms.DragEventHandler(this.sprite_DragEnter);
             // 
             // encyclopediaDescriptionLabel
             // 

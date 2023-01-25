@@ -2,6 +2,7 @@
 using System.Globalization;
 using System.Reflection;
 using System.Runtime.InteropServices;
+using System.Windows.Forms;
 using Vestris.ResourceLib;
 using static Vestris.ResourceLib.Gdi32;
 
@@ -276,5 +277,32 @@ public partial class SystemsForm : SystemsDesignForm
         File.WriteAllText("systems.csv", export);
     }
 
+    #endregion
+
+    #region Drag&Drop events
+    private void sprite_DragDrop(object sender, DragEventArgs e)
+    {
+        string[] files = (string[])e.Data.GetData(DataFormats.FileDrop);
+        if (files.Length > 0)
+        {
+            string file = files[0];
+            if (File.Exists(file) && Path.GetExtension(file).ToLowerInvariant() == ".bmp")
+            {
+                sprite.Image = Image.FromFile(file);
+                Strategy.Resources.SaveBitmap(GetStrategyId(Convert.ToUInt32(pictureId.Value)).ToString(), file);
+            }
+        }
+    }
+    private void sprite_DragEnter(object sender, DragEventArgs e)
+    {
+        if (e.Data.GetDataPresent(DataFormats.FileDrop))
+        {
+            e.Effect = DragDropEffects.Copy;
+        }
+        else
+        {
+            e.Effect = DragDropEffects.None;
+        }
+    }
     #endregion
 }
