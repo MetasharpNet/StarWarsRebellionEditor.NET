@@ -71,8 +71,12 @@ public partial class PatchForm : PatchDesignForm
         }
 
         // new encybmap ids for encyclopedia pictures EDATA.13001 to 13200
-        for (ushort ebId = 13001; ebId <= 13200; ++ebId)
-            EncyBmap.Resources.SaveString(ebId, "EDATA." + ebId);
+        foreach (var filesPath in Directory.GetFiles("new-systems-encyclopedia-pictures"))
+        {
+            var ebId = Path.GetFileNameWithoutExtension(filesPath).Split('.')[1];
+            EncyBmap.Resources.SaveString(Convert.ToUInt16(ebId), "EDATA." + ebId);
+            File.Copy(filesPath, Path.Combine(RegistryKeys.InstalledLocation, "EData\\EDATA." + ebId), true);
+        }
 
         // planets-sprites
         var t = new ResourceFile(RegistryKeys.InstalledLocation + "STRATEGY.DLL");
