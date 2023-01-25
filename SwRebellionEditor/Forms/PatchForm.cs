@@ -76,9 +76,10 @@ public partial class PatchForm : PatchDesignForm
             var ebId = Path.GetFileNameWithoutExtension(filesPath);
             if (ebId.Contains("-"))
                 ebId = ebId.Split('-')[0];
-            else if (ebId.Contains("."))
+            else if (ebId.StartsWith("EDATA."))
                 ebId = ebId.Split('.')[1];
-            EncyBmap.Resources.SaveString(Convert.ToUInt16(ebId), "EDATA." + ebId);
+            if (Convert.ToInt32(ebId) < 166 || Convert.ToInt32(ebId) > 191)
+                EncyBmap.Resources.SaveString(Convert.ToUInt16(ebId), "EDATA." + ebId);
             File.Copy(filesPath, Path.Combine(RegistryKeys.InstalledLocation, "EData\\EDATA." + ebId), true);
         }
 
@@ -121,7 +122,7 @@ public partial class PatchForm : PatchDesignForm
                 SectorsGameFile.Sectors[i].GalaxySize = 3;
             ++i;
         }
-        //SectorsGameFile.Sectors = SectorsGameFile.Sectors.OrderBy(s => s.Id).ToArray();
+
         // systems
         var descDic = new Dictionary<string, string>();
         foreach (var system in GameFile.Systems)
@@ -146,15 +147,14 @@ public partial class PatchForm : PatchDesignForm
             GameFile.Systems[i].YPosition = Convert.ToUInt16(TrimDecimal(systemColumns[5]));
             GameFile.Systems[i].FamilyId = (uint)(systemColumns[6] == "Rim" ? 146 : 144);
             GameFile.Systems[i].PictureId = Convert.ToUInt32(TrimDecimal(systemColumns[7]));
-            if (descDic.ContainsKey(GameFile.Systems[i].Name.ToLowerInvariant()))
-            {
+            if (systemColumns[8]?.Length > 0)
+                GameFile.Systems[i].EncyclopediaDescription = systemColumns[8];
+            else if (descDic.ContainsKey(GameFile.Systems[i].Name.ToLowerInvariant()))
                 GameFile.Systems[i].EncyclopediaDescription = descDic[GameFile.Systems[i].Name.ToLowerInvariant()];
-            }
             else
-                GameFile.Systems[i].EncyclopediaDescription = "Missing description.";
+                GameFile.Systems[i].EncyclopediaDescription = "";
             ++i;
         }
-        //GameFile.Systems = GameFile.Systems.OrderBy(s => s.Id).ToArray();
 
         // save
         SectorsGameFile.Save(SectorsGameFilePath);
