@@ -13,12 +13,12 @@ To buy the game or get free fan mods, check : https://swrebellion.net/
 ### Current Features :
 * Galaxy Map editor : can drag&drop sectors and systems
 * Editor for : Sectors, Systems, Characters, Units, Building (all fields can be modified, unlimited names and encyclopedia descriptions lengths)
-* Import : Sectors, Systems, Systems sprites
 * Export : Systems
 * Other features in testing accessible in menus only
+* Patch : Star Wars Rebellion 25th Anniversary patch beta (work in progress) : 200 individual systems sprites, new galaxy map, systems & sector names
 
 ### Beta Roadmap (current) :
-* Ability to change System pictures in a view
+* Ability to change System sprites in a view
 
 ### Final Roadmap (low chance i'll invest time on it):
 * Cleanup code on rarely used windows
