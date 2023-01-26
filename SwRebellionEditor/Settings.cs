@@ -34,7 +34,14 @@ public class Settings
     static Settings()
     {
         SettingsXmlFilepath = Path.Combine(Directory.GetCurrentDirectory(), SettingsXmlFilename);
-        Current = Deserialize(SettingsXmlFilepath);
+        if (File.Exists(SettingsXmlFilepath))
+            Current = Deserialize(SettingsXmlFilepath);
+        else
+        {
+            Current = new Settings();
+            Current.SetDefaultValues();
+            Current.Serialize();
+        }
     }
 
     #endregion
