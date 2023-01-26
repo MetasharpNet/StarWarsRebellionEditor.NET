@@ -11,12 +11,12 @@ public class Settings
     [NonSerialized]
     public bool UnsavedData = false;
 
-    public string EDataFolder => Path.Combine(GameFolder + "EData");
-    public string REBEXEFilePath => Path.Combine(GameFolder + "REBEXE.EXE");
-    public string GDataFolder => Path.Combine(GameFolder + "GData");
+    public string EDataFolder => Path.Combine(GameFolder, "EData");
+    public string REBEXEFilePath => Path.Combine(GameFolder, "REBEXE.EXE");
+    public string GDataFolder => Path.Combine(GameFolder, "GData");
     public bool IsRebellionCdLoaded => Directory.Exists(MDATAFolder);
-    public string MDATAFolder => Path.Combine(GameFolder + "MDATA");
-    public string SaveGameFolder => Path.Combine(GameFolder + "SaveGame");
+    public string MDATAFolder => Path.Combine(GameFolder, "MDATA");
+    public string SaveGameFolder => Path.Combine(GameFolder, "SaveGame");
 
     #region consts
 

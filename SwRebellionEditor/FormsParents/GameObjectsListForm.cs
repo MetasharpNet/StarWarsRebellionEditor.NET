@@ -6,7 +6,7 @@
 /// - override void DisplaySelectedGameObject(int selectorIndex)
 /// - Create a TrackBar object (named selector in code below) in WinForms designer in your Form, then assign to ValueChanged event : GameObjectsSelector_ValueChanged
 /// - In the constructor call in this order :
-///         GameFilePath = RegistryKeys.InstalledLocation + "\\GData\\YOURDATFILE.DAT";
+///         GameFilePath = Path.Combine(Settings.Current.GDataFolder, "YOURDATFILE.DAT");
 ///         GameFile = DatFile.Load<YOURDATFILECLASS>(GameFilePath);
 ///         InitializeComponent();
 ///         InitializeBaseComponent(selector);
