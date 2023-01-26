@@ -1,78 +1,106 @@
-﻿using System.CodeDom.Compiler;
-using System.ComponentModel;
-using System.Configuration;
+﻿using System.Configuration;
 using System.Diagnostics;
-using System.Runtime.CompilerServices;
+using System.Diagnostics.Eventing.Reader;
+using System.Xml.Serialization;
 
 namespace SwRebellionEditor;
 
-[CompilerGenerated]
-[GeneratedCode("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "9.0.0.0")]
-internal sealed class Settings : ApplicationSettingsBase
+[Serializable]
+public class Settings
 {
-    private static Settings defaultInstance = (Settings)SettingsBase.Synchronized((SettingsBase)new Settings());
+    [NonSerialized]
+    public bool UnsavedData = false;
 
-    public static Settings Default => Settings.defaultInstance;
+    public string EDataFolder => Path.Combine(GameFolder + "EData");
+    public string REBEXEFilePath => Path.Combine(GameFolder + "REBEXE.EXE");
+    public string GDataFolder => Path.Combine(GameFolder + "GData");
+    public bool IsRebellionCdLoaded => Directory.Exists(MDATAFolder);
+    public string MDATAFolder => Path.Combine(GameFolder + "MDATA");
+    public string SaveGameFolder => Path.Combine(GameFolder + "SaveGame");
 
-    [DefaultSettingValue("1024, 768")]
-    [UserScopedSetting]
-    [DebuggerNonUserCode]
-    public Size BackgroundSize
+    #region consts
+
+    public const string SettingsXmlFilename = "SwRebellionEditor.xml";
+
+    #endregion
+
+    #region static Current
+
+    private static string SettingsXmlFilepath;
+
+    [NonSerialized]
+    public static Settings Current;
+
+    static Settings()
     {
-        get => (Size)this[nameof(BackgroundSize)];
-        set => this[nameof(BackgroundSize)] = (object)value;
+        SettingsXmlFilepath = Path.Combine(Directory.GetCurrentDirectory(), SettingsXmlFilename);
+        Current = Deserialize(SettingsXmlFilepath);
     }
 
-    [DefaultSettingValue("0, 0")]
-    [DebuggerNonUserCode]
-    [UserScopedSetting]
-    public Point MainWindowTopLeftCornerPosition
+    #endregion
+
+    public Size BackgroundSize;
+    public string GameFolder;
+    public bool IsFirstStartup;
+    public Point MainWindowTopLeftCornerPosition;
+    public bool PlaySounds;
+    public bool PlayMusic;
+
+    public void SetDefaultValues()
     {
-        get => (Point)this[nameof(MainWindowTopLeftCornerPosition)];
-        set => this[nameof(MainWindowTopLeftCornerPosition)] = (object)value;
+        BackgroundSize = new Size(1024, 768);
+        GameFolder = RegistryKeys.InstalledLocation;
+        IsFirstStartup = true;
+        MainWindowTopLeftCornerPosition = new Point(0, 0);
+        PlayMusic = false;
+        PlaySounds = false;
     }
 
-    [DefaultSettingValue("False")]
-    [UserScopedSetting]
-    [DebuggerNonUserCode]
-    public bool PlaySoundEffects
+    #region CreateDefaultIfMissing, Deserialize, Serialize
+
+    private static void CreateDefaultIfMissing(string filePath)
     {
-        get => (bool)this[nameof(PlaySoundEffects)];
-        set => this[nameof(PlaySoundEffects)] = (object)value;
+        if (File.Exists(filePath) == false)
+        {
+            var s = new Settings();
+            s.SetDefaultValues();
+            Serialize(s, filePath);
+        }
     }
 
-    [DefaultSettingValue("False")]
-    [UserScopedSetting]
-    [DebuggerNonUserCode]
-    public bool PlayMusic
+    public static Settings Deserialize()
     {
-        get => (bool)this[nameof(PlayMusic)];
-        set => this[nameof(PlayMusic)] = (object)value;
+        return Deserialize(SettingsXmlFilepath);
+    }
+    public static Settings Deserialize(string filePath)
+    {
+        CreateDefaultIfMissing(filePath);
+        var deserializer = new XmlSerializer(typeof(Settings));
+        TextReader textReader = new StreamReader(filePath);
+        var settings = (Settings)deserializer.Deserialize(textReader);
+        textReader.Close();
+        return settings;
     }
 
-    [UserScopedSetting]
-    [DefaultSettingValue("False")]
-    [DebuggerNonUserCode]
-    public bool appPlaySounds
+    public void Serialize()
     {
-        get => (bool)this[nameof(appPlaySounds)];
-        set => this[nameof(appPlaySounds)] = (object)value;
+        Serialize(this, SettingsXmlFilepath);
+    }
+    public static void Serialize(Settings settings)
+    {
+        Serialize(settings, SettingsXmlFilepath);
+    }
+    public void Serialize(string filePath)
+    {
+        Serialize(this, filePath);
+    }
+    public static void Serialize(Settings settings, string filePath)
+    {
+        var serializer = new XmlSerializer(typeof(Settings));
+        TextWriter textWriter = new StreamWriter(filePath);
+        serializer.Serialize(textWriter, settings);
+        textWriter.Close();
     }
 
-    [UserScopedSetting]
-    [DefaultSettingValue("True")]
-    [DebuggerNonUserCode]
-    public bool IsFirstStartup
-    {
-        get => (bool)this[nameof(IsFirstStartup)];
-        set => this[nameof(IsFirstStartup)] = (object)value;
-    }
-
-    private void SettingChangingEventHandler(object sender, SettingChangingEventArgs e)
-    {
-    }
-
-    private void SettingsSavingEventHandler(object sender, CancelEventArgs e)
-    {
-    }
+    #endregion
 }

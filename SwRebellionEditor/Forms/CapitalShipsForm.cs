@@ -6,7 +6,7 @@ public partial class CapitalShipsForm : CapitalShipsDesignForm
 
     public CapitalShipsForm()
     {
-        GameFilePath = RegistryKeys.InstalledLocation + "\\GData\\CAPSHPSD.DAT";
+        GameFilePath = Path.Combine(Settings.Current.GDataFolder, "CAPSHPSD.DAT");
         GameFile = DatFile.Load<CAPSHPSD>(GameFilePath);
         InitializeComponent();
         InitializeBaseComponent(selector);
@@ -79,7 +79,7 @@ public partial class CapitalShipsForm : CapitalShipsDesignForm
 
         picture.SizeMode = PictureBoxSizeMode.Zoom;
         var edataId = 42 + selectorIndex;
-        var filepath = RegistryKeys.InstalledLocation + "\\EData\\EDATA." + edataId.ToString("000");
+        var filepath = Path.Combine(Settings.Current.EDataFolder, "EDATA." + edataId.ToString("000"));
         if (File.Exists(filepath))
             picture.Image = Image.FromFile(filepath);
         else

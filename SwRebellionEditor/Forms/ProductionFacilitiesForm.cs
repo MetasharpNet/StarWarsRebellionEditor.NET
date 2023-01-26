@@ -6,7 +6,7 @@ public partial class ProductionFacilitiesForm : ProductionFacilitiesDesignForm
 
     public ProductionFacilitiesForm()
     {
-        GameFilePath = RegistryKeys.InstalledLocation + "\\GData\\PROFACSD.DAT";
+        GameFilePath = Path.Combine(Settings.Current.GDataFolder, "PROFACSD.DAT");
         GameFile = DatFile.Load<PROFACSD>(GameFilePath);
         InitializeComponent();
         InitializeBaseComponent(selector);
@@ -43,7 +43,7 @@ public partial class ProductionFacilitiesForm : ProductionFacilitiesDesignForm
 
         var edataId = 1 + selectorIndex;
         picture.SizeMode = PictureBoxSizeMode.Zoom;
-        var filepath = RegistryKeys.InstalledLocation + "\\EData\\EDATA." + edataId.ToString("000");
+        var filepath = Path.Combine(Settings.Current.EDataFolder, "EDATA." + edataId.ToString("000"));
         if (File.Exists(filepath))
             picture.Image = Image.FromFile(filepath);
         else

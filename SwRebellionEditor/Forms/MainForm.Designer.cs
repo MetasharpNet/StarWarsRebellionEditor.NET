@@ -53,7 +53,6 @@ namespace SwRebellionEditor
         private ToolStripMenuItem Size800x600_ToolStripMenuItem;
         private ToolStripMenuItem Size640x480_ToolStripMenuItem;
         private ToolStripMenuItem RestoreDefaults_ToolStripMenuItem;
-        private ToolStripMenuItem RestorePreviousSave_ToolStripMenuItem;
         private ToolStripMenuItem TestCode_ToolStripMenuItem;
         private ToolStripMenuItem GeneralParametersTables_ToolStripMenuItem;
         private ToolStripMenuItem ProbabilityTables_ToolStripMenuItem;
@@ -154,7 +153,6 @@ namespace SwRebellionEditor
             this.Size800x600_ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.Size640x480_ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.RestoreDefaults_ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.RestorePreviousSave_ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.Help_Menu = new System.Windows.Forms.ToolStripMenuItem();
             this.About_ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.statusStrip = new System.Windows.Forms.StatusStrip();
@@ -240,7 +238,7 @@ namespace SwRebellionEditor
             this.DisplayToolBar_ToolStripMenuItem.CheckOnClick = true;
             this.DisplayToolBar_ToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Checked;
             this.DisplayToolBar_ToolStripMenuItem.Name = "DisplayToolBar_ToolStripMenuItem";
-            this.DisplayToolBar_ToolStripMenuItem.Size = new System.Drawing.Size(167, 22);
+            this.DisplayToolBar_ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.DisplayToolBar_ToolStripMenuItem.Text = "Display Toolbar";
             this.DisplayToolBar_ToolStripMenuItem.Click += new System.EventHandler(this.DisplayToolBar_ToolStripMenuItem_Click);
             // 
@@ -250,21 +248,21 @@ namespace SwRebellionEditor
             this.DisplayStatusBar_ToolStripMenuItem.CheckOnClick = true;
             this.DisplayStatusBar_ToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Checked;
             this.DisplayStatusBar_ToolStripMenuItem.Name = "DisplayStatusBar_ToolStripMenuItem";
-            this.DisplayStatusBar_ToolStripMenuItem.Size = new System.Drawing.Size(167, 22);
+            this.DisplayStatusBar_ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.DisplayStatusBar_ToolStripMenuItem.Text = "Display Status Bar";
             this.DisplayStatusBar_ToolStripMenuItem.Click += new System.EventHandler(this.DisplayStatusBar_ToolStripMenuItem_Click);
             // 
             // PlayMusic_ToolStripMenuItem
             // 
             this.PlayMusic_ToolStripMenuItem.Name = "PlayMusic_ToolStripMenuItem";
-            this.PlayMusic_ToolStripMenuItem.Size = new System.Drawing.Size(167, 22);
+            this.PlayMusic_ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.PlayMusic_ToolStripMenuItem.Text = "Play Music";
             this.PlayMusic_ToolStripMenuItem.Click += new System.EventHandler(this.PlayMusic_ToolStripMenuItem_Click);
             // 
             // PlaySounds_ToolStripMenuItem
             // 
             this.PlaySounds_ToolStripMenuItem.Name = "PlaySounds_ToolStripMenuItem";
-            this.PlaySounds_ToolStripMenuItem.Size = new System.Drawing.Size(167, 22);
+            this.PlaySounds_ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.PlaySounds_ToolStripMenuItem.Text = "Play Sounds";
             this.PlaySounds_ToolStripMenuItem.Click += new System.EventHandler(this.PlaySounds_ToolStripMenuItem_Click);
             // 
@@ -529,35 +527,35 @@ namespace SwRebellionEditor
             // Cascade_ToolStripMenuItem
             // 
             this.Cascade_ToolStripMenuItem.Name = "Cascade_ToolStripMenuItem";
-            this.Cascade_ToolStripMenuItem.Size = new System.Drawing.Size(150, 22);
+            this.Cascade_ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.Cascade_ToolStripMenuItem.Text = "Cascade";
             this.Cascade_ToolStripMenuItem.Click += new System.EventHandler(this.Cascade_ToolStripMenuItem_Click);
             // 
             // TileVertical_ToolStripMenuItem
             // 
             this.TileVertical_ToolStripMenuItem.Name = "TileVertical_ToolStripMenuItem";
-            this.TileVertical_ToolStripMenuItem.Size = new System.Drawing.Size(150, 22);
+            this.TileVertical_ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.TileVertical_ToolStripMenuItem.Text = "Tile Vertical";
             this.TileVertical_ToolStripMenuItem.Click += new System.EventHandler(this.TileVertical_ToolStripMenuItem_Click);
             // 
             // TileHorizontal_ToolStripMenuItem
             // 
             this.TileHorizontal_ToolStripMenuItem.Name = "TileHorizontal_ToolStripMenuItem";
-            this.TileHorizontal_ToolStripMenuItem.Size = new System.Drawing.Size(150, 22);
+            this.TileHorizontal_ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.TileHorizontal_ToolStripMenuItem.Text = "Tile Horizontal";
             this.TileHorizontal_ToolStripMenuItem.Click += new System.EventHandler(this.TileHorizontal_ToolStripMenuItem_Click);
             // 
             // CloseAll_ToolStripMenuItem
             // 
             this.CloseAll_ToolStripMenuItem.Name = "CloseAll_ToolStripMenuItem";
-            this.CloseAll_ToolStripMenuItem.Size = new System.Drawing.Size(150, 22);
+            this.CloseAll_ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.CloseAll_ToolStripMenuItem.Text = "Close All";
             this.CloseAll_ToolStripMenuItem.Click += new System.EventHandler(this.CloseAll_ToolStripMenuItem_Click);
             // 
             // ArrangeIcons_ToolStripMenuItem
             // 
             this.ArrangeIcons_ToolStripMenuItem.Name = "ArrangeIcons_ToolStripMenuItem";
-            this.ArrangeIcons_ToolStripMenuItem.Size = new System.Drawing.Size(150, 22);
+            this.ArrangeIcons_ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.ArrangeIcons_ToolStripMenuItem.Text = "Arrange Icons";
             this.ArrangeIcons_ToolStripMenuItem.Click += new System.EventHandler(this.ArrangeIcons_ToolStripMenuItem_Click);
             // 
@@ -568,53 +566,45 @@ namespace SwRebellionEditor
             this.Size1024x768_ToolStripMenuItem,
             this.Size800x600_ToolStripMenuItem,
             this.Size640x480_ToolStripMenuItem,
-            this.RestoreDefaults_ToolStripMenuItem,
-            this.RestorePreviousSave_ToolStripMenuItem});
+            this.RestoreDefaults_ToolStripMenuItem});
             this.Options_ToolStripMenuItem.Name = "Options_ToolStripMenuItem";
-            this.Options_ToolStripMenuItem.Size = new System.Drawing.Size(150, 22);
+            this.Options_ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.Options_ToolStripMenuItem.Text = "Options";
             // 
             // Size1280x1024_ToolStripMenuItem
             // 
             this.Size1280x1024_ToolStripMenuItem.Name = "Size1280x1024_ToolStripMenuItem";
-            this.Size1280x1024_ToolStripMenuItem.Size = new System.Drawing.Size(188, 22);
+            this.Size1280x1024_ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.Size1280x1024_ToolStripMenuItem.Text = "Size 1280x1024";
             this.Size1280x1024_ToolStripMenuItem.Click += new System.EventHandler(this.Size1280x1024_ToolStripMenuItem_Click);
             // 
             // Size1024x768_ToolStripMenuItem
             // 
             this.Size1024x768_ToolStripMenuItem.Name = "Size1024x768_ToolStripMenuItem";
-            this.Size1024x768_ToolStripMenuItem.Size = new System.Drawing.Size(188, 22);
+            this.Size1024x768_ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.Size1024x768_ToolStripMenuItem.Text = "Size 1024x768";
             this.Size1024x768_ToolStripMenuItem.Click += new System.EventHandler(this.Size1024x768_ToolStripMenuItem_Click);
             // 
             // Size800x600_ToolStripMenuItem
             // 
             this.Size800x600_ToolStripMenuItem.Name = "Size800x600_ToolStripMenuItem";
-            this.Size800x600_ToolStripMenuItem.Size = new System.Drawing.Size(188, 22);
+            this.Size800x600_ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.Size800x600_ToolStripMenuItem.Text = "Size 800x600";
             this.Size800x600_ToolStripMenuItem.Click += new System.EventHandler(this.Size800x600_ToolStripMenuItem_Click);
             // 
             // Size640x480_ToolStripMenuItem
             // 
             this.Size640x480_ToolStripMenuItem.Name = "Size640x480_ToolStripMenuItem";
-            this.Size640x480_ToolStripMenuItem.Size = new System.Drawing.Size(188, 22);
+            this.Size640x480_ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.Size640x480_ToolStripMenuItem.Text = "Size 640x480";
             this.Size640x480_ToolStripMenuItem.Click += new System.EventHandler(this.Size640x480_ToolStripMenuItem_Click);
             // 
             // RestoreDefaults_ToolStripMenuItem
             // 
             this.RestoreDefaults_ToolStripMenuItem.Name = "RestoreDefaults_ToolStripMenuItem";
-            this.RestoreDefaults_ToolStripMenuItem.Size = new System.Drawing.Size(188, 22);
+            this.RestoreDefaults_ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.RestoreDefaults_ToolStripMenuItem.Text = "Restore Defaults";
             this.RestoreDefaults_ToolStripMenuItem.Click += new System.EventHandler(this.RestoreDefaults_ToolStripMenuItem_Click);
-            // 
-            // RestorePreviousSave_ToolStripMenuItem
-            // 
-            this.RestorePreviousSave_ToolStripMenuItem.Name = "RestorePreviousSave_ToolStripMenuItem";
-            this.RestorePreviousSave_ToolStripMenuItem.Size = new System.Drawing.Size(188, 22);
-            this.RestorePreviousSave_ToolStripMenuItem.Text = "Restore Previous Save";
-            this.RestorePreviousSave_ToolStripMenuItem.Click += new System.EventHandler(this.RestorePreviousSave_ToolStripMenuItem_Click);
             // 
             // Help_Menu
             // 
@@ -627,7 +617,7 @@ namespace SwRebellionEditor
             // About_ToolStripMenuItem
             // 
             this.About_ToolStripMenuItem.Name = "About_ToolStripMenuItem";
-            this.About_ToolStripMenuItem.Size = new System.Drawing.Size(107, 22);
+            this.About_ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.About_ToolStripMenuItem.Text = "&About";
             this.About_ToolStripMenuItem.Click += new System.EventHandler(this.About_ToolStripMenuItem_Click);
             // 

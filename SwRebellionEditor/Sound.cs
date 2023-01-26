@@ -39,8 +39,8 @@ public static class Sound
 
     public static void PlayRandomMusic()
     {
-        if (!RegistryKeys.IsRebellionCdLoaded)
+        if (!Settings.Current.IsRebellionCdLoaded)
             return;
-        PlayMusic(RegistryKeys.DllLocation + "\\MDATA\\MDATA." + _random.Next(300, 315));
+        PlayMusic(Settings.Current.GameFolder + "MDATA\\MDATA." + _random.Next(300, 315));
     }
 }

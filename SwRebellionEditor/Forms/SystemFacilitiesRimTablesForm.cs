@@ -6,7 +6,7 @@ public partial class SystemFacilitiesRimTablesForm : SystemFacilitiesRimTablesDe
 
     public SystemFacilitiesRimTablesForm()
     {
-        GameFilePath = RegistryKeys.InstalledLocation + "\\GData\\SYFCRMTB.DAT";
+        GameFilePath = Path.Combine(Settings.Current.GDataFolder, "SYFCRMTB.DAT");
         GameFile = DatFile.Load<SYFCRMTB>(GameFilePath);
         InitializeComponent();
     }

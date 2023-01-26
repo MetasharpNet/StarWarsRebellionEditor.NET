@@ -6,6 +6,6 @@ public static class EncyBmap
 
     static EncyBmap()
     {
-        Resources = new ResourceFile(RegistryKeys.InstalledLocation + "ENCYBMAP.DLL");
+        Resources = new ResourceFile(Path.Combine(Settings.Current.GameFolder, "ENCYBMAP.DLL"));
     }
 }

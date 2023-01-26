@@ -55,9 +55,9 @@ public abstract class GameObjectsListForm<TDatFile> : Form
 
     protected void GameObjectsListForm_FormClosing(object sender, FormClosingEventArgs e)
     {
-        if (RegistryKeys.PlaySounds)
+        if (Settings.Current.PlaySounds)
             Sound.Play(Resources.close_wav);
-        if (!RegistryKeys.PlayMusic)
+        if (!Settings.Current.PlayMusic)
             return;
         Sound.PlayRandomMusic();
     }
@@ -102,9 +102,9 @@ public abstract class GameObjectsListForm<TDatFile> : Form
     }
     protected void GameObjectsListForm_Load(object sender, EventArgs e)
     {
-        if (RegistryKeys.PlaySounds)
+        if (Settings.Current.PlaySounds)
             Sound.Play(Resources.open_wav);
-        if (RegistryKeys.PlayMusic)
+        if (Settings.Current.PlayMusic)
             Sound.PlayRandomMusic();
         LoadSideInfo();
         if (TrackBarSelector != null)
@@ -156,7 +156,7 @@ public abstract class GameObjectsListForm<TDatFile> : Form
     protected void SaveAs_Click(object sender, EventArgs e)
     {
         var saveFileDialog = new SaveFileDialog();
-        saveFileDialog.InitialDirectory = RegistryKeys.InstalledLocation + "\\GData";
+        saveFileDialog.InitialDirectory = Settings.Current.GDataFolder;
         saveFileDialog.Filter = "Data Files (*.dat)| *.dat";
         if (saveFileDialog.ShowDialog(this) == DialogResult.OK)
         {

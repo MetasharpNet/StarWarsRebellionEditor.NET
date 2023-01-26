@@ -6,7 +6,7 @@ public partial class CMUNAllianceTablesForm : CMUNAllianceTablesDesignForm
 
     public CMUNAllianceTablesForm()
     {
-        GameFilePath = RegistryKeys.InstalledLocation + "\\GData\\CMUNALTB.DAT";
+        GameFilePath = Path.Combine(Settings.Current.GDataFolder, "CMUNALTB.DAT");
         GameFile = DatFile.Load<CMUNALTB>(GameFilePath);
         InitializeComponent();
     }

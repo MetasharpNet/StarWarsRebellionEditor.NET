@@ -13,9 +13,9 @@ public partial class GalaxyMapForm : GalaxyMapDesignForm
 
     public GalaxyMapForm()
     {
-        GameFilePath = RegistryKeys.InstalledLocation + "\\GData\\SECTORSD.DAT";
+        GameFilePath = Path.Combine(Settings.Current.GDataFolder, "SECTORSD.DAT");
         GameFile = DatFile.Load<SECTORSD>(GameFilePath);
-        SystemsGameFilePath = RegistryKeys.InstalledLocation + "\\GData\\SYSTEMSD.DAT";
+        SystemsGameFilePath = Path.Combine(Settings.Current.GDataFolder, "SYSTEMSD.DAT");
         SystemsGameFile = DatFile.Load<SYSTEMSD>(SystemsGameFilePath);
         InitializeComponent();
         SectorsDic = new Dictionary<MovableLabel, SECTORSD_Sector>();

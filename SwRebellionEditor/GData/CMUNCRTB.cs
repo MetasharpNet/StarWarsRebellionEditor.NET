@@ -26,7 +26,7 @@ public class CMUNCRTB
 
     private static string SetInitialFileName()
     {
-        if (RegistryKeys.InstalledLocation == null)
+        if (Settings.Current.GameFolder == null)
         {
             openFileDialog = new OpenFileDialog();
             if (openFileDialog.ShowDialog() != DialogResult.OK)
@@ -37,7 +37,7 @@ public class CMUNCRTB
             SetCorHQPath(openFileDialog.FileName);
             return GetCorHQPath();
         }
-        SetCorHQPath(RegistryKeys.InstalledLocation + "\\GData\\CMUNCRTB.dat");
+        SetCorHQPath(Path.Combine(Settings.Current.GDataFolder, "CMUNCRTB.dat"));
         return GetCorHQPath();
     }
 

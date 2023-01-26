@@ -22,7 +22,7 @@ public class SAVEGAME
 
     private static string SetInitialFileName()
     {
-        if (RegistryKeys.InstalledLocation == null)
+        if (Settings.Current.GameFolder == null)
         {
             openFileDialog = new OpenFileDialog();
             if (openFileDialog.ShowDialog() != DialogResult.OK)
@@ -33,7 +33,7 @@ public class SAVEGAME
             SetSaveGamePath(openFileDialog.FileName);
             return GetSaveGamePath();
         }
-        SetSaveGamePath(RegistryKeys.InstalledLocation + "\\SaveGame\\SAVEGAME.003");
+        SetSaveGamePath(Path.Combine(Settings.Current.SaveGameFolder, "SAVEGAME.003"));
         return GetSaveGamePath();
     }
 

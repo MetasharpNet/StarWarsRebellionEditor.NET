@@ -6,7 +6,7 @@ public partial class TroopsForm : TroopsDesignForm
 
     public TroopsForm()
     {
-        GameFilePath = RegistryKeys.InstalledLocation + "\\GData\\TROOPSD.DAT";
+        GameFilePath = Path.Combine(Settings.Current.GDataFolder, "TROOPSD.DAT");
         GameFile = DatFile.Load<TROOPSD>(GameFilePath);
         InitializeComponent();
         InitializeBaseComponent(selector);
@@ -24,7 +24,7 @@ public partial class TroopsForm : TroopsDesignForm
         for (int selectorIndex = 0; selectorIndex < GameFile.TroopsCount; ++selectorIndex)
         {
             var edataId = 15 + selectorIndex;
-            troopsImages.Images.Add(Image.FromFile(RegistryKeys.InstalledLocation + "\\EData\\EDATA." + edataId.ToString("000")));
+            troopsImages.Images.Add(Image.FromFile(Path.Combine(Settings.Current.EDataFolder, "EDATA." + edataId.ToString("000"))));
             troopsListView.Items.Add(GameFile.Troops[selectorIndex].Name, selectorIndex);
         }
     }
@@ -57,7 +57,7 @@ public partial class TroopsForm : TroopsDesignForm
 
         picture.SizeMode = PictureBoxSizeMode.Zoom;
         var edataId = 15 + selectorIndex;
-        picture.Image = Image.FromFile(RegistryKeys.InstalledLocation + "\\EData\\EDATA." + edataId.ToString("000"));
+        picture.Image = Image.FromFile(Path.Combine(Settings.Current.EDataFolder, "EDATA." + edataId.ToString("000")));
         GameFile.UnsavedData = previousUnsavedData;
     }
     protected override void LoadSideInfo()

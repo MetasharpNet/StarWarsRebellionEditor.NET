@@ -4,39 +4,22 @@ public partial class MainForm : Form
 {
     #region Business Layer
 
-    private Settings appSettings = new Settings();
-
     private void LoadSettings()
     {
-        Size = appSettings.BackgroundSize;
-        Location = appSettings.MainWindowTopLeftCornerPosition;
-        RegistryKeys.IsFirstStart = appSettings.IsFirstStartup;
-        if (appSettings.PlayMusic)
-        {
+        Size = Settings.Current.BackgroundSize;
+        Location = Settings.Current.MainWindowTopLeftCornerPosition;
+        if (Settings.Current.PlayMusic)
             PlayMusic_ToolStripMenuItem.Checked = true;
-            RegistryKeys.PlayMusic = true;
-        }
         else
-        {
             PlayMusic_ToolStripMenuItem.Checked = false;
-            RegistryKeys.PlayMusic = false;
-        }
-        if (appSettings.appPlaySounds)
-        {
+        if (Settings.Current.PlaySounds)
             PlaySounds_ToolStripMenuItem.Checked = true;
-            RegistryKeys.PlaySounds = true;
-        }
         else
-        {
             PlaySounds_ToolStripMenuItem.Checked = false;
-            RegistryKeys.PlaySounds = false;
-        }
-        if (!appSettings.IsFirstStartup)
-        {
+        if (!Settings.Current.IsFirstStartup)
             return;
-        }
-        appSettings.IsFirstStartup = false;
-        appSettings.Save();
+        Settings.Current.IsFirstStartup = false;
+        Settings.Current.Serialize();
     }
 
     private void OpenFile(object sender, EventArgs e)
@@ -83,10 +66,10 @@ public partial class MainForm : Form
     private void MainForm_Load(object sender, EventArgs e)
     {
         LoadSettings();
-        if (RegistryKeys.PlaySounds)
+        if (Settings.Current.PlaySounds)
             Sound.Play(Resources.droid_ding_wav);
 
-        if (RegistryKeys.PlayMusic)
+        if (Settings.Current.PlayMusic)
             Sound.PlayRandomMusic();
 
         roopDataStatus.Text = "";
@@ -102,15 +85,12 @@ public partial class MainForm : Form
         if (WindowState == FormWindowState.Minimized)
             WindowState = FormWindowState.Normal;
 
-        appSettings.BackgroundSize = Size;
-        appSettings.MainWindowTopLeftCornerPosition = Location;
-        appSettings.PlaySoundEffects = RegistryKeys.PlayAudio;
-        appSettings.PlayMusic = RegistryKeys.PlayMusic;
-        appSettings.appPlaySounds = RegistryKeys.PlaySounds;
-        appSettings.Save();
+        Settings.Current.BackgroundSize = Size;
+        Settings.Current.MainWindowTopLeftCornerPosition = Location;
+        Settings.Current.Serialize();
         Sound.StopMusic();
 
-        if (RegistryKeys.PlaySounds)
+        if (Settings.Current.PlaySounds)
             Sound.Play(Resources.door_opening_wav);
     }
 
@@ -156,7 +136,8 @@ public partial class MainForm : Form
             if (keyEventArgs.KeyCode != Keys.F11)
                 return;
 
-            RegistryKeys.PlayMusic = true;
+            Settings.Current.PlayMusic = true;
+            Settings.Current.Serialize();
             PlayMusic_ToolStripMenuItem.Checked = true;
             Sound.PlayRandomMusic();
         }
@@ -188,14 +169,15 @@ public partial class MainForm : Form
         PlayMusic_ToolStripMenuItem.Checked = !PlayMusic_ToolStripMenuItem.Checked;
         if (PlayMusic_ToolStripMenuItem.Checked)
         {
-            RegistryKeys.PlayMusic = true;
+            Settings.Current.PlayMusic = true;
             Sound.PlayRandomMusic();
         }
         else
         {
-            RegistryKeys.PlayMusic = false;
+            Settings.Current.PlayMusic = false;
             Sound.StopMusic();
         }
+        Settings.Current.Serialize();
     }
     // Options - Play Sounds
     private void PlaySounds_ToolStripMenuItem_Click(object sender, EventArgs e)
@@ -203,14 +185,15 @@ public partial class MainForm : Form
         PlaySounds_ToolStripMenuItem.Checked = !PlaySounds_ToolStripMenuItem.Checked;
         if (PlaySounds_ToolStripMenuItem.Checked)
         {
-            RegistryKeys.PlaySounds = true;
+            Settings.Current.PlaySounds = true;
             PlaySounds_ToolStripMenuItem.Checked = true;
         }
         else
         {
-            RegistryKeys.PlaySounds = false;
+            Settings.Current.PlaySounds = false;
             PlaySounds_ToolStripMenuItem.Checked = false;
         }
+        Settings.Current.Serialize();
     }
 
     // Editor - Galaxy Map
@@ -420,36 +403,17 @@ public partial class MainForm : Form
             return;
 
         Sound.StopMusic();
-        appSettings.Reset();
-        Location = appSettings.MainWindowTopLeftCornerPosition;
-        Size = appSettings.BackgroundSize;
-        if (appSettings.PlayMusic)
-        {
+        Settings.Current.SetDefaultValues();
+        Location = Settings.Current.MainWindowTopLeftCornerPosition;
+        Size = Settings.Current.BackgroundSize;
+        if (Settings.Current.PlayMusic)
             PlayMusic_ToolStripMenuItem.Checked = true;
-            RegistryKeys.PlayMusic = true;
-        }
         else
-        {
             PlayMusic_ToolStripMenuItem.Checked = false;
-            RegistryKeys.PlayMusic = false;
-        }
-        if (appSettings.appPlaySounds)
-        {
+        if (Settings.Current.PlaySounds)
             PlaySounds_ToolStripMenuItem.Checked = true;
-            RegistryKeys.PlaySounds = true;
-        }
         else
-        {
             PlaySounds_ToolStripMenuItem.Checked = false;
-            RegistryKeys.PlaySounds = false;
-        }
-    }
-    // Windows - Options - Restore Previous Save
-    private void RestorePreviousSave_ToolStripMenuItem_Click(object sender, EventArgs e)
-    {
-        appSettings.Reload();
-        Location = appSettings.MainWindowTopLeftCornerPosition;
-        Size = appSettings.BackgroundSize;
     }
 
     // Help - About

@@ -6,7 +6,7 @@ public partial class SectorsForm : SectorsDesignForm
 
     public SectorsForm()
     {
-        GameFilePath = RegistryKeys.InstalledLocation + "\\GData\\SECTORSD.DAT";
+        GameFilePath = Path.Combine(Settings.Current.GDataFolder, "SECTORSD.DAT");
         GameFile = DatFile.Load<SECTORSD>(GameFilePath);
         InitializeComponent();
         InitializeBaseComponent(selector);

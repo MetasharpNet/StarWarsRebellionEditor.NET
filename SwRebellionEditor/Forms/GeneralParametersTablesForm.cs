@@ -6,7 +6,7 @@ public partial class GeneralParametersTablesForm : GeneralParametersTablesDesign
 
     public GeneralParametersTablesForm()
     {
-        GameFilePath = RegistryKeys.InstalledLocation + "\\GData\\GNPRTB.DAT";
+        GameFilePath = Path.Combine(Settings.Current.GDataFolder, "GNPRTB.DAT");
         GameFile = DatFile.Load<GNPRTB>(GameFilePath);
         InitializeComponent();
     }

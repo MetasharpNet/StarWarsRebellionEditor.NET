@@ -6,6 +6,6 @@ public static class Strategy
 
     static Strategy()
     {
-        Resources = new ResourceFile(RegistryKeys.InstalledLocation + "STRATEGY.DLL");
+        Resources = new ResourceFile(Path.Combine(Settings.Current.GameFolder, "STRATEGY.DLL"));
     }
 }

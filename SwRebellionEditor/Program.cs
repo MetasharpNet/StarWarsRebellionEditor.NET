@@ -38,7 +38,7 @@ internal static class Program
         //t14.Save("E:\\star wars rebellion\\GData\\SYFCRMTB2.DAT");
         //var t15 = DatFile.Load<CMUNALTB>("E:\\star wars rebellion\\GData\\CMUNALTB.DAT");
         //t15.Save("E:\\star wars rebellion\\GData\\CMUNALTB2.DAT");
-
+        
         // To customize application configuration such as set high DPI settings or default font,
         // see https://aka.ms/applicationconfiguration.
         ApplicationConfiguration.Initialize();

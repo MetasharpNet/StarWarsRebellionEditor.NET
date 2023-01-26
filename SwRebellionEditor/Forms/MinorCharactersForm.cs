@@ -6,7 +6,7 @@ public partial class MinorCharactersForm : MinorCharactersDesignForm
 
     public MinorCharactersForm()
     {
-        GameFilePath = RegistryKeys.InstalledLocation + "\\GData\\MNCHARSD.DAT";
+        GameFilePath = Path.Combine(Settings.Current.GDataFolder, "MNCHARSD.DAT");
         GameFile = DatFile.Load<MNCHARSD>(GameFilePath);
         InitializeComponent();
         InitializeBaseComponent(selector);
@@ -24,7 +24,7 @@ public partial class MinorCharactersForm : MinorCharactersDesignForm
         for (int selectorIndex = 0; selectorIndex < GameFile.MinorCharactersCount; ++selectorIndex)
         {
             var edataId = 78 + selectorIndex;
-            var filepath = RegistryKeys.InstalledLocation + "\\EData\\EDATA." + edataId.ToString("000");
+            var filepath = Path.Combine(Settings.Current.EDataFolder, "EDATA." + edataId.ToString("000"));
             if (File.Exists(filepath))
                 minorCharactersImages.Images.Add(Image.FromFile(filepath));
             minorCharactersListView.Items.Add(GameFile.MinorCharacters[selectorIndex].Name, selectorIndex);
@@ -96,7 +96,7 @@ public partial class MinorCharactersForm : MinorCharactersDesignForm
 
         picture.SizeMode = PictureBoxSizeMode.Zoom;
         var edataId = 78 + selectorIndex;
-        picture.Image = Image.FromFile(RegistryKeys.InstalledLocation + "\\EData\\EDATA." + edataId.ToString("000"));
+        picture.Image = Image.FromFile(Path.Combine(Settings.Current.EDataFolder, "EDATA." + edataId.ToString("000")));
         GameFile.UnsavedData = previousUnsavedData;
     }
     protected override void LoadSideInfo()

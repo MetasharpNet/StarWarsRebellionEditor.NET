@@ -6,7 +6,7 @@ public partial class SystemFacilitiesCoreTablesForm : SystemFacilitiesCoreTables
 
     public SystemFacilitiesCoreTablesForm()
     {
-        GameFilePath = RegistryKeys.InstalledLocation + "\\GData\\SYFCCRTB.DAT";
+        GameFilePath = Path.Combine(Settings.Current.GDataFolder, "SYFCCRTB.DAT");
         GameFile = DatFile.Load<SYFCCRTB>(GameFilePath);
         InitializeComponent();
     }

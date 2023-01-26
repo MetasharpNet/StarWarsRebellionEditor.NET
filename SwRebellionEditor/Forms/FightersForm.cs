@@ -6,7 +6,7 @@ public partial class FightersForm : FightersDesignForm
 
     public FightersForm()
     {
-        GameFilePath = RegistryKeys.InstalledLocation + "\\GData\\FIGHTSD.DAT";
+        GameFilePath = Path.Combine(Settings.Current.GDataFolder, "FIGHTSD.DAT");
         GameFile = DatFile.Load<FIGHTSD>(GameFilePath);
         InitializeComponent();
         InitializeBaseComponent(selector);
@@ -71,7 +71,7 @@ public partial class FightersForm : FightersDesignForm
 
         picture.SizeMode = PictureBoxSizeMode.Zoom;
         var edataId = 34 + selectorIndex;
-        var filepath = RegistryKeys.InstalledLocation + "\\EData\\EDATA." + edataId.ToString("000");
+        var filepath = Path.Combine(Settings.Current.EDataFolder, "EDATA." + edataId.ToString("000"));
         if (File.Exists(filepath))
             picture.Image = Image.FromFile(filepath);
         else

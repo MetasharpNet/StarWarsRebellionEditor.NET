@@ -6,7 +6,7 @@ public partial class ManufacturingFacilitiesForm : ManufacturingFacilitiesDesign
 
     public ManufacturingFacilitiesForm()
     {
-        GameFilePath = RegistryKeys.InstalledLocation + "\\GData\\MANFACSD.DAT";
+        GameFilePath = Path.Combine(Settings.Current.GDataFolder, "MANFACSD.DAT");
         GameFile = DatFile.Load<MANFACSD>(GameFilePath);
         InitializeComponent();
         InitializeBaseComponent(selector);
@@ -43,7 +43,7 @@ public partial class ManufacturingFacilitiesForm : ManufacturingFacilitiesDesign
 
         var edataId = 3 + selectorIndex;
         picture.SizeMode = PictureBoxSizeMode.Zoom;
-        var filepath = RegistryKeys.InstalledLocation + "\\EData\\EDATA." + edataId.ToString("000");
+        var filepath = Path.Combine(Settings.Current.EDataFolder, "EDATA." + edataId.ToString("000"));
         if (File.Exists(filepath))
             picture.Image = Image.FromFile(filepath);
         else

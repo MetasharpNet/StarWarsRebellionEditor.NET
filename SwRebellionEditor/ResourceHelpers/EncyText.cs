@@ -6,6 +6,6 @@ public static class EncyText
 
     static EncyText()
     {
-        Resources = new ResourceFile(RegistryKeys.InstalledLocation + "ENCYTEXT.DLL");
+        Resources = new ResourceFile(Path.Combine(Settings.Current.GameFolder, "ENCYTEXT.DLL"));
     }
 }

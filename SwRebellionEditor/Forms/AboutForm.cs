@@ -34,18 +34,18 @@ public partial class AboutForm : Form
 
     private void AboutForm_FormClosing(object sender, FormClosingEventArgs e)
     {
-        if (RegistryKeys.PlaySounds)
+        if (Settings.Current.PlaySounds)
             Sound.Play(Resources.well_if_you_will_not_be_needing_me_wav);
-        if (!RegistryKeys.PlayMusic)
+        if (!Settings.Current.PlayMusic)
             return;
         Sound.PlayRandomMusic();
     }
 
     private void AboutForm_Load(object sender, EventArgs e)
     {
-        if (!RegistryKeys.IsFirstStart && RegistryKeys.PlaySounds)
+        if (!Settings.Current.IsFirstStartup && Settings.Current.PlaySounds)
             Sound.Play(Resources.how_can_i_assist_you_wav);
-        if (!RegistryKeys.PlayMusic)
+        if (!Settings.Current.PlayMusic)
             return;
         Sound.PlayRandomMusic();
     }

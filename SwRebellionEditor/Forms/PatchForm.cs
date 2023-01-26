@@ -11,9 +11,9 @@ public partial class PatchForm : PatchDesignForm
 
     public PatchForm()
     {
-        SectorsGameFilePath = RegistryKeys.InstalledLocation + "\\GData\\SECTORSD.DAT";
+        SectorsGameFilePath = Path.Combine(Settings.Current.GDataFolder, "SECTORSD.DAT");
         SectorsGameFile = DatFile.Load<SECTORSD>(SectorsGameFilePath);
-        GameFilePath = RegistryKeys.InstalledLocation + "\\GData\\SYSTEMSD.DAT";
+        GameFilePath = Path.Combine(Settings.Current.GDataFolder , "SYSTEMSD.DAT");
         GameFile = DatFile.Load<SYSTEMSD>(GameFilePath);
         InitializeComponent();
     }
@@ -47,7 +47,7 @@ public partial class PatchForm : PatchDesignForm
         // id = 38, galaxysize = 1
 
         // patching rebexe.exe
-        using (var stream = new FileStream(RegistryKeys.InstalledLocation + "REBEXE.EXE", FileMode.Open, FileAccess.ReadWrite))
+        using (var stream = new FileStream(Settings.Current.REBEXEFilePath, FileMode.Open, FileAccess.ReadWrite))
         {
             // to use 13001+ ids for planet sprites
             stream.Position = int.Parse("5B1E4", NumberStyles.HexNumber);
@@ -80,11 +80,11 @@ public partial class PatchForm : PatchDesignForm
                 ebId = ebId.Split('.')[1];
             if (Convert.ToInt32(ebId) < 166 || Convert.ToInt32(ebId) > 191)
                 EncyBmap.Resources.SaveString(Convert.ToUInt16(ebId), "EDATA." + ebId);
-            File.Copy(filesPath, Path.Combine(RegistryKeys.InstalledLocation, "EData\\EDATA." + ebId), true);
+            File.Copy(filesPath, Path.Combine(Settings.Current.EDataFolder, "EDATA." + ebId), true);
         }
 
         // planets-sprites
-        var t = new ResourceFile(RegistryKeys.InstalledLocation + "STRATEGY.DLL");
+        var t = new ResourceFile(Path.Combine(Settings.Current.GameFolder, "STRATEGY.DLL"));
         // pre-init resource slots with a specific sprite to avoid sprite being displayed on top of the names
         var f = Directory.GetFiles("new-systems-sprites").First(f => f.Contains("10240-debris.bmp"));
         for (int p = 0; p <= 200; ++p)

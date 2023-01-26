@@ -6,7 +6,7 @@ public partial class DefenseFacilitiesForm : DefenseFacilitiesDesignForm
 
     public DefenseFacilitiesForm()
     {
-        GameFilePath = RegistryKeys.InstalledLocation + "\\GData\\DEFFACSD.DAT";
+        GameFilePath = Path.Combine(Settings.Current.GDataFolder, "DEFFACSD.DAT");
         GameFile = DatFile.Load<DEFFACSD>(GameFilePath);
         InitializeComponent();
         InitializeBaseComponent(selector);
@@ -48,7 +48,7 @@ public partial class DefenseFacilitiesForm : DefenseFacilitiesDesignForm
             edataId = 14;
         else if (edataId > 12)
             --edataId;
-        var filepath = RegistryKeys.InstalledLocation + "\\EData\\EDATA." + edataId.ToString("000");
+        var filepath = Path.Combine(Settings.Current.EDataFolder, "EDATA." + edataId.ToString("000"));
         if (File.Exists(filepath))
             picture.Image = Image.FromFile(filepath);
         else

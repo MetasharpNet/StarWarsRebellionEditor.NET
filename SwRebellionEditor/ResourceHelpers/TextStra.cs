@@ -17,7 +17,7 @@ public static class TextStra
 
     static TextStra()
     {
-        Resources = new ResourceFile(RegistryKeys.InstalledLocation + "TEXTSTRA.DLL");
+        Resources = new ResourceFile(Path.Combine(Settings.Current.GameFolder, "TEXTSTRA.DLL"));
         LocalizedAdmiral = Resources.GetString(LocalizedAdmiralId);
         LocalizedCommander = Resources.GetString(LocalizedCommanderId);
         LocalizedGeneral = Resources.GetString(LocalizedGeneralId);

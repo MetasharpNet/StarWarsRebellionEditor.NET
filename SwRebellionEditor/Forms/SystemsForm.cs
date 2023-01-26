@@ -19,15 +19,15 @@ public partial class SystemsForm : SystemsDesignForm
 
     public SystemsForm()
     {
-        SectorsGameFilePath = RegistryKeys.InstalledLocation + "\\GData\\SECTORSD.DAT";
+        SectorsGameFilePath = Path.Combine(Settings.Current.GDataFolder, "SECTORSD.DAT");
         SectorsGameFile = DatFile.Load<SECTORSD>(SectorsGameFilePath);
-        GameFilePath = RegistryKeys.InstalledLocation + "\\GData\\SYSTEMSD.DAT";
+        GameFilePath = Path.Combine(Settings.Current.GDataFolder, "SYSTEMSD.DAT");
         GameFile = DatFile.Load<SYSTEMSD>(GameFilePath);
         InitializeComponent();
         InitializeBaseComponent(selector);
         selector.Maximum = (int)GameFile.SystemsCount - 1;
         // checking if patched rebexe.exe
-        using (var stream = new FileStream(RegistryKeys.InstalledLocation + "REBEXE.EXE", FileMode.Open, FileAccess.ReadWrite))
+        using (var stream = new FileStream(Settings.Current.REBEXEFilePath, FileMode.Open, FileAccess.ReadWrite))
         {
             // to use 13001+ ids for planet sprites
             stream.Position = int.Parse("5B1E5", NumberStyles.HexNumber);
@@ -80,7 +80,7 @@ public partial class SystemsForm : SystemsDesignForm
             ushort encybmapId = (ushort)GetEncybmapId(GameFile.Systems[selectorIndex].PictureId);
             try
             {
-                var filepath = RegistryKeys.InstalledLocation + "\\EData\\" + EncyBmap.Resources.GetString(encybmapId);
+                var filepath = Path.Combine(Settings.Current.EDataFolder, EncyBmap.Resources.GetString(encybmapId));
                 if (File.Exists(filepath))
                     systemsImageList.Images.Add(Image.FromFile(filepath));
             }
@@ -116,7 +116,7 @@ public partial class SystemsForm : SystemsDesignForm
         ushort encybmapId = (ushort)GetEncybmapId(GameFile.Systems[selectorIndex].PictureId);
         try
         {
-            var filepath = RegistryKeys.InstalledLocation + "\\EData\\" + EncyBmap.Resources.GetString(encybmapId);
+            var filepath = Path.Combine(Settings.Current.EDataFolder, EncyBmap.Resources.GetString(encybmapId));
             if (File.Exists(filepath))
                 picture.Image = Image.FromFile(filepath);
             else
