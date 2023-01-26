@@ -3,7 +3,7 @@
 public class RegistryKeys
 {
     private static RegistryKey? _registrykey;
-    public static readonly string InstalledLocation;
+    public static string InstalledLocation = "";
 
     static RegistryKeys()
     {
@@ -14,7 +14,7 @@ public class RegistryKeys
                 _registrykey = Registry.LocalMachine.OpenSubKey("SOFTWARE\\LucasArts Entertainment Company LLC\\Star Wars Rebellion");
                 InstalledLocation = GetValue<string>("InstalledLocation");
             }
-            catch (NullReferenceException ex)
+            catch (Exception ex)
             {
                 var openFolderDialog = new FolderBrowserDialog();
                 openFolderDialog.Description = "Please select the folder where your Star Wars Rebellion game is installed.";
