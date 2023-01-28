@@ -302,6 +302,11 @@ namespace SwRebellionEditor
             // 
             this.facilityPercent1.Location = new System.Drawing.Point(219, 72);
             this.facilityPercent1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.facilityPercent1.Maximum = new decimal(new int[] {
+            -1,
+            0,
+            0,
+            0});
             this.facilityPercent1.Name = "facilityPercent1";
             this.facilityPercent1.Size = new System.Drawing.Size(59, 23);
             this.facilityPercent1.TabIndex = 34;
@@ -361,6 +366,11 @@ namespace SwRebellionEditor
             // 
             this.facilityPercent2.Location = new System.Drawing.Point(219, 103);
             this.facilityPercent2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.facilityPercent2.Maximum = new decimal(new int[] {
+            -1,
+            0,
+            0,
+            0});
             this.facilityPercent2.Name = "facilityPercent2";
             this.facilityPercent2.Size = new System.Drawing.Size(59, 23);
             this.facilityPercent2.TabIndex = 37;
@@ -420,6 +430,11 @@ namespace SwRebellionEditor
             // 
             this.facilityPercent3.Location = new System.Drawing.Point(219, 134);
             this.facilityPercent3.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.facilityPercent3.Maximum = new decimal(new int[] {
+            -1,
+            0,
+            0,
+            0});
             this.facilityPercent3.Name = "facilityPercent3";
             this.facilityPercent3.Size = new System.Drawing.Size(59, 23);
             this.facilityPercent3.TabIndex = 40;
@@ -479,6 +494,11 @@ namespace SwRebellionEditor
             // 
             this.facilityPercent4.Location = new System.Drawing.Point(219, 165);
             this.facilityPercent4.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.facilityPercent4.Maximum = new decimal(new int[] {
+            -1,
+            0,
+            0,
+            0});
             this.facilityPercent4.Name = "facilityPercent4";
             this.facilityPercent4.Size = new System.Drawing.Size(59, 23);
             this.facilityPercent4.TabIndex = 43;
@@ -538,6 +558,11 @@ namespace SwRebellionEditor
             // 
             this.facilityPercent5.Location = new System.Drawing.Point(219, 196);
             this.facilityPercent5.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.facilityPercent5.Maximum = new decimal(new int[] {
+            -1,
+            0,
+            0,
+            0});
             this.facilityPercent5.Name = "facilityPercent5";
             this.facilityPercent5.Size = new System.Drawing.Size(59, 23);
             this.facilityPercent5.TabIndex = 46;
@@ -597,6 +622,11 @@ namespace SwRebellionEditor
             // 
             this.facilityPercent6.Location = new System.Drawing.Point(219, 227);
             this.facilityPercent6.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.facilityPercent6.Maximum = new decimal(new int[] {
+            -1,
+            0,
+            0,
+            0});
             this.facilityPercent6.Name = "facilityPercent6";
             this.facilityPercent6.Size = new System.Drawing.Size(59, 23);
             this.facilityPercent6.TabIndex = 49;
@@ -656,6 +686,11 @@ namespace SwRebellionEditor
             // 
             this.facilityPercent7.Location = new System.Drawing.Point(219, 258);
             this.facilityPercent7.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.facilityPercent7.Maximum = new decimal(new int[] {
+            -1,
+            0,
+            0,
+            0});
             this.facilityPercent7.Name = "facilityPercent7";
             this.facilityPercent7.Size = new System.Drawing.Size(59, 23);
             this.facilityPercent7.TabIndex = 52;
@@ -671,6 +706,11 @@ namespace SwRebellionEditor
             // 
             this.facilityPercent0.Location = new System.Drawing.Point(219, 42);
             this.facilityPercent0.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.facilityPercent0.Maximum = new decimal(new int[] {
+            -1,
+            0,
+            0,
+            0});
             this.facilityPercent0.Name = "facilityPercent0";
             this.facilityPercent0.Size = new System.Drawing.Size(59, 23);
             this.facilityPercent0.TabIndex = 55;

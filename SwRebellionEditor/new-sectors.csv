@@ -1,21 +1,21 @@
-Sector;Id;Rescaled X;Rescaled Y;Group;Galaxy Size
-Crossroads;20;635;317;Rim (inner);Large
-Unknown Regions;21;107;369;Rim (outer);Huge
-Celanon Spur;22;351;178;Rim (inner);Huge
-Shipwright's Trace;23;464;441;Core;Standard
-Entralla's End;24;372;67;Rim (inner);Large
+Sector;Id;Manual X;Manual Y;Group;Galaxy Size
+Core Worlds South;20;464;441;Rim (inner);Large
+Western Reaches;21;354;727;Rim (outer);Huge
+Bothan Space;22;736;524;Rim (inner);Huge
+Outer Rim North;23;372;67;Core;Standard
+Crossroads;24;635;317;Rim (inner);Large
 Colonies;25;485;317;Core;Huge
-Outer Rim South;26;299;614;Rim (inner);Standard
-Trailing Sector;27;504;606;Core;Large
+Mid Rim North;26;351;178;Rim (inner);Standard
+Unknown Regions;27;107;369;Core;Large
 Inner Rim;28;557;451;Core;Huge
-Sith Worlds;29;660;129;Rim (inner);Standard
-Outer Rim East;30;748;242;Rim (outer);Large
-The Interior;31;344;431;Rim (inner);Standard
-Greater Mandalore;32;507;190;Rim (inner);Standard
-Western Reaches;33;354;727;Rim (outer);Standard
+Outer Rim West;29;299;614;Rim (inner);Standard
+Mandalorian Space;30;507;190;Rim (outer);Large
+Tingel Arm;31;775;131;Rim (inner);Standard
+Deep Core;32;344;431;Rim (inner);Standard
+Wild Space;33;662;635;Rim (outer);Standard
 Hutt Space;34;765;370;Rim (outer);Standard
-Rimma's End;35;469;736;Rim (outer);Large
-Core Worlds;36;394;320;Core;Standard
-Spice Triangle;37;662;635;Core;Standard
-Perlimian's End;38;775;131;Rim (outer);Huge
-Spies' Rest;39;736;524;Rim (outer);Standard
+Outer Rim East;35;748;242;Rim (outer);Large
+Core Worlds North;36;394;320;Core;Standard
+Outher Rim South;37;469;736;Core;Standard
+Mid Rim South;38;504;606;Rim (outer);Huge
+Sith Worlds;39;660;129;Rim (outer);Standard

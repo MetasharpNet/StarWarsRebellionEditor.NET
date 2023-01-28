@@ -49,7 +49,7 @@ public partial class PatchForm : PatchDesignForm
         // patching rebexe.exe
         using (var stream = new FileStream(Settings.Current.REBEXEFilePath, FileMode.Open, FileAccess.ReadWrite))
         {
-            // to use 13001+ ids for planet sprites
+            // to use 13001+ ids for galaxy map planet sprites
             stream.Position = int.Parse("5B1E4", NumberStyles.HexNumber);
             stream.WriteByte(0x05); // add eax, 13000
             stream.WriteByte(0xC8);

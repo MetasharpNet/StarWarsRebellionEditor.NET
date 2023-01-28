@@ -206,7 +206,7 @@ namespace SwRebellionEditor
             this.falconUnknown5.Location = new System.Drawing.Point(116, 329);
             this.falconUnknown5.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.falconUnknown5.Maximum = new decimal(new int[] {
-            9999,
+            -1,
             0,
             0,
             0});
@@ -219,7 +219,7 @@ namespace SwRebellionEditor
             this.falconUnknown5.Size = new System.Drawing.Size(59, 23);
             this.falconUnknown5.TabIndex = 14;
             this.falconUnknown5.Value = new decimal(new int[] {
-            9999,
+            -1,
             0,
             0,
             0});
@@ -240,7 +240,7 @@ namespace SwRebellionEditor
             this.falconUnknown4.Location = new System.Drawing.Point(116, 302);
             this.falconUnknown4.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.falconUnknown4.Maximum = new decimal(new int[] {
-            9999,
+            -1,
             0,
             0,
             0});
@@ -253,7 +253,7 @@ namespace SwRebellionEditor
             this.falconUnknown4.Size = new System.Drawing.Size(59, 23);
             this.falconUnknown4.TabIndex = 12;
             this.falconUnknown4.Value = new decimal(new int[] {
-            9999,
+            -1,
             0,
             0,
             0});
@@ -274,7 +274,7 @@ namespace SwRebellionEditor
             this.falconUnknown3.Location = new System.Drawing.Point(116, 272);
             this.falconUnknown3.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.falconUnknown3.Maximum = new decimal(new int[] {
-            9999,
+            -1,
             0,
             0,
             0});
@@ -287,7 +287,7 @@ namespace SwRebellionEditor
             this.falconUnknown3.Size = new System.Drawing.Size(59, 23);
             this.falconUnknown3.TabIndex = 10;
             this.falconUnknown3.Value = new decimal(new int[] {
-            9999,
+            -1,
             0,
             0,
             0});
@@ -308,7 +308,7 @@ namespace SwRebellionEditor
             this.falconUnknown2.Location = new System.Drawing.Point(116, 242);
             this.falconUnknown2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.falconUnknown2.Maximum = new decimal(new int[] {
-            9999,
+            -1,
             0,
             0,
             0});
@@ -321,7 +321,7 @@ namespace SwRebellionEditor
             this.falconUnknown2.Size = new System.Drawing.Size(59, 23);
             this.falconUnknown2.TabIndex = 8;
             this.falconUnknown2.Value = new decimal(new int[] {
-            9999,
+            -1,
             0,
             0,
             0});
@@ -342,7 +342,7 @@ namespace SwRebellionEditor
             this.falconUnknown1.Location = new System.Drawing.Point(116, 212);
             this.falconUnknown1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.falconUnknown1.Maximum = new decimal(new int[] {
-            9999,
+            -1,
             0,
             0,
             0});
@@ -355,7 +355,7 @@ namespace SwRebellionEditor
             this.falconUnknown1.Size = new System.Drawing.Size(59, 23);
             this.falconUnknown1.TabIndex = 6;
             this.falconUnknown1.Value = new decimal(new int[] {
-            9999,
+            -1,
             0,
             0,
             0});
@@ -386,7 +386,7 @@ namespace SwRebellionEditor
             this.empireUnknown.Location = new System.Drawing.Point(116, 20);
             this.empireUnknown.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.empireUnknown.Maximum = new decimal(new int[] {
-            9999,
+            -1,
             0,
             0,
             0});
@@ -399,7 +399,7 @@ namespace SwRebellionEditor
             this.empireUnknown.Size = new System.Drawing.Size(59, 23);
             this.empireUnknown.TabIndex = 4;
             this.empireUnknown.Value = new decimal(new int[] {
-            9999,
+            -1,
             0,
             0,
             0});
@@ -420,7 +420,7 @@ namespace SwRebellionEditor
             this.allianceUnknown.Location = new System.Drawing.Point(116, 140);
             this.allianceUnknown.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.allianceUnknown.Maximum = new decimal(new int[] {
-            9999,
+            -1,
             0,
             0,
             0});
@@ -433,7 +433,7 @@ namespace SwRebellionEditor
             this.allianceUnknown.Size = new System.Drawing.Size(59, 23);
             this.allianceUnknown.TabIndex = 5;
             this.allianceUnknown.Value = new decimal(new int[] {
-            9999,
+            -1,
             0,
             0,
             0});
@@ -461,7 +461,7 @@ namespace SwRebellionEditor
             this.falconExpertHyperspaceSpeedMod.Location = new System.Drawing.Point(110, 80);
             this.falconExpertHyperspaceSpeedMod.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.falconExpertHyperspaceSpeedMod.Maximum = new decimal(new int[] {
-            9999,
+            -1,
             0,
             0,
             0});
@@ -474,7 +474,7 @@ namespace SwRebellionEditor
             this.falconExpertHyperspaceSpeedMod.Size = new System.Drawing.Size(59, 23);
             this.falconExpertHyperspaceSpeedMod.TabIndex = 6;
             this.falconExpertHyperspaceSpeedMod.Value = new decimal(new int[] {
-            9999,
+            -1,
             0,
             0,
             0});
@@ -505,7 +505,7 @@ namespace SwRebellionEditor
             this.falconNoviceHyperspaceSpeedMod.Location = new System.Drawing.Point(110, 20);
             this.falconNoviceHyperspaceSpeedMod.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.falconNoviceHyperspaceSpeedMod.Maximum = new decimal(new int[] {
-            9999,
+            -1,
             0,
             0,
             0});
@@ -518,7 +518,7 @@ namespace SwRebellionEditor
             this.falconNoviceHyperspaceSpeedMod.Size = new System.Drawing.Size(59, 23);
             this.falconNoviceHyperspaceSpeedMod.TabIndex = 4;
             this.falconNoviceHyperspaceSpeedMod.Value = new decimal(new int[] {
-            9999,
+            -1,
             0,
             0,
             0});
@@ -539,7 +539,7 @@ namespace SwRebellionEditor
             this.falconIntermediateHyperspaceSpeedMod.Location = new System.Drawing.Point(110, 50);
             this.falconIntermediateHyperspaceSpeedMod.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.falconIntermediateHyperspaceSpeedMod.Maximum = new decimal(new int[] {
-            9999,
+            -1,
             0,
             0,
             0});
@@ -552,7 +552,7 @@ namespace SwRebellionEditor
             this.falconIntermediateHyperspaceSpeedMod.Size = new System.Drawing.Size(59, 23);
             this.falconIntermediateHyperspaceSpeedMod.TabIndex = 5;
             this.falconIntermediateHyperspaceSpeedMod.Value = new decimal(new int[] {
-            9999,
+            -1,
             0,
             0,
             0});
@@ -580,7 +580,7 @@ namespace SwRebellionEditor
             this.allianceExpertHyperspaceSpeedMod.Location = new System.Drawing.Point(110, 80);
             this.allianceExpertHyperspaceSpeedMod.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.allianceExpertHyperspaceSpeedMod.Maximum = new decimal(new int[] {
-            9999,
+            -1,
             0,
             0,
             0});
@@ -593,7 +593,7 @@ namespace SwRebellionEditor
             this.allianceExpertHyperspaceSpeedMod.Size = new System.Drawing.Size(59, 23);
             this.allianceExpertHyperspaceSpeedMod.TabIndex = 6;
             this.allianceExpertHyperspaceSpeedMod.Value = new decimal(new int[] {
-            9999,
+            -1,
             0,
             0,
             0});
@@ -624,7 +624,7 @@ namespace SwRebellionEditor
             this.allianceNoviceHyperspaceSpeedMod.Location = new System.Drawing.Point(110, 20);
             this.allianceNoviceHyperspaceSpeedMod.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.allianceNoviceHyperspaceSpeedMod.Maximum = new decimal(new int[] {
-            9999,
+            -1,
             0,
             0,
             0});
@@ -637,7 +637,7 @@ namespace SwRebellionEditor
             this.allianceNoviceHyperspaceSpeedMod.Size = new System.Drawing.Size(59, 23);
             this.allianceNoviceHyperspaceSpeedMod.TabIndex = 4;
             this.allianceNoviceHyperspaceSpeedMod.Value = new decimal(new int[] {
-            9999,
+            -1,
             0,
             0,
             0});
@@ -658,7 +658,7 @@ namespace SwRebellionEditor
             this.allianceIntermediateHyperspaceSpeedMod.Location = new System.Drawing.Point(110, 50);
             this.allianceIntermediateHyperspaceSpeedMod.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.allianceIntermediateHyperspaceSpeedMod.Maximum = new decimal(new int[] {
-            9999,
+            -1,
             0,
             0,
             0});
@@ -671,7 +671,7 @@ namespace SwRebellionEditor
             this.allianceIntermediateHyperspaceSpeedMod.Size = new System.Drawing.Size(59, 23);
             this.allianceIntermediateHyperspaceSpeedMod.TabIndex = 5;
             this.allianceIntermediateHyperspaceSpeedMod.Value = new decimal(new int[] {
-            9999,
+            -1,
             0,
             0,
             0});
@@ -699,7 +699,7 @@ namespace SwRebellionEditor
             this.empireExpertHyperspaceSpeedMod.Location = new System.Drawing.Point(110, 80);
             this.empireExpertHyperspaceSpeedMod.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.empireExpertHyperspaceSpeedMod.Maximum = new decimal(new int[] {
-            9999,
+            -1,
             0,
             0,
             0});
@@ -712,7 +712,7 @@ namespace SwRebellionEditor
             this.empireExpertHyperspaceSpeedMod.Size = new System.Drawing.Size(59, 23);
             this.empireExpertHyperspaceSpeedMod.TabIndex = 6;
             this.empireExpertHyperspaceSpeedMod.Value = new decimal(new int[] {
-            9999,
+            -1,
             0,
             0,
             0});
@@ -743,7 +743,7 @@ namespace SwRebellionEditor
             this.empireNoviceHyperspaceSpeedMod.Location = new System.Drawing.Point(110, 20);
             this.empireNoviceHyperspaceSpeedMod.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.empireNoviceHyperspaceSpeedMod.Maximum = new decimal(new int[] {
-            9999,
+            -1,
             0,
             0,
             0});
@@ -756,7 +756,7 @@ namespace SwRebellionEditor
             this.empireNoviceHyperspaceSpeedMod.Size = new System.Drawing.Size(59, 23);
             this.empireNoviceHyperspaceSpeedMod.TabIndex = 4;
             this.empireNoviceHyperspaceSpeedMod.Value = new decimal(new int[] {
-            9999,
+            -1,
             0,
             0,
             0});
@@ -777,7 +777,7 @@ namespace SwRebellionEditor
             this.empireIntermediateHyperspaceSpeedMod.Location = new System.Drawing.Point(110, 50);
             this.empireIntermediateHyperspaceSpeedMod.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.empireIntermediateHyperspaceSpeedMod.Maximum = new decimal(new int[] {
-            9999,
+            -1,
             0,
             0,
             0});
@@ -790,7 +790,7 @@ namespace SwRebellionEditor
             this.empireIntermediateHyperspaceSpeedMod.Size = new System.Drawing.Size(59, 23);
             this.empireIntermediateHyperspaceSpeedMod.TabIndex = 5;
             this.empireIntermediateHyperspaceSpeedMod.Value = new decimal(new int[] {
-            9999,
+            -1,
             0,
             0,
             0});

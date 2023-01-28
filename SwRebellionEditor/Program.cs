@@ -1,3 +1,5 @@
+using System.Drawing.Imaging;
+
 namespace SwRebellionEditor;
 
 internal static class Program

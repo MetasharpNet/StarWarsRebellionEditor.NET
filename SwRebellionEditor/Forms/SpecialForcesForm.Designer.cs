@@ -244,7 +244,7 @@ namespace SwRebellionEditor
             this.missionId.Location = new System.Drawing.Point(136, 377);
             this.missionId.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.missionId.Maximum = new decimal(new int[] {
-            9999,
+            -1,
             0,
             0,
             0});
@@ -254,7 +254,7 @@ namespace SwRebellionEditor
             this.missionId.TabStop = false;
             this.missionId.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.missionId.Value = new decimal(new int[] {
-            9999,
+            -1,
             0,
             0,
             0});
@@ -278,7 +278,7 @@ namespace SwRebellionEditor
             this.researchDifficulty.Location = new System.Drawing.Point(136, 227);
             this.researchDifficulty.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.researchDifficulty.Maximum = new decimal(new int[] {
-            9999,
+            -1,
             0,
             0,
             0});
@@ -294,7 +294,7 @@ namespace SwRebellionEditor
             this.loyaltyBase.Location = new System.Drawing.Point(136, 351);
             this.loyaltyBase.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.loyaltyBase.Maximum = new decimal(new int[] {
-            999,
+            -1,
             0,
             0,
             0});
@@ -303,7 +303,7 @@ namespace SwRebellionEditor
             this.loyaltyBase.TabIndex = 10;
             this.loyaltyBase.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.loyaltyBase.Value = new decimal(new int[] {
-            999,
+            -1,
             0,
             0,
             0});
@@ -315,7 +315,7 @@ namespace SwRebellionEditor
             this.facilityDesignVariance_0.Location = new System.Drawing.Point(199, 325);
             this.facilityDesignVariance_0.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.facilityDesignVariance_0.Maximum = new decimal(new int[] {
-            999,
+            -1,
             0,
             0,
             0});
@@ -343,7 +343,7 @@ namespace SwRebellionEditor
             this.researchOrder_0.Location = new System.Drawing.Point(136, 201);
             this.researchOrder_0.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.researchOrder_0.Maximum = new decimal(new int[] {
-            9999,
+            -1,
             0,
             0,
             0});
@@ -359,7 +359,7 @@ namespace SwRebellionEditor
             this.loyaltyVariance.Location = new System.Drawing.Point(199, 351);
             this.loyaltyVariance.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.loyaltyVariance.Maximum = new decimal(new int[] {
-            999,
+            -1,
             0,
             0,
             0});
@@ -368,7 +368,7 @@ namespace SwRebellionEditor
             this.loyaltyVariance.TabIndex = 11;
             this.loyaltyVariance.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.loyaltyVariance.Value = new decimal(new int[] {
-            999,
+            -1,
             0,
             0,
             0});
@@ -380,7 +380,7 @@ namespace SwRebellionEditor
             this.shipDesignVariance_0.Location = new System.Drawing.Point(199, 273);
             this.shipDesignVariance_0.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.shipDesignVariance_0.Maximum = new decimal(new int[] {
-            99999,
+            -1,
             0,
             0,
             0});
@@ -418,7 +418,7 @@ namespace SwRebellionEditor
             this.field7_2.Location = new System.Drawing.Point(136, 175);
             this.field7_2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.field7_2.Maximum = new decimal(new int[] {
-            9999,
+            65535,
             0,
             0,
             0});
@@ -440,7 +440,7 @@ namespace SwRebellionEditor
             this.troopTrainingVariance_0.Location = new System.Drawing.Point(199, 299);
             this.troopTrainingVariance_0.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.troopTrainingVariance_0.Maximum = new decimal(new int[] {
-            999,
+            -1,
             0,
             0,
             0});
@@ -479,7 +479,7 @@ namespace SwRebellionEditor
             this.textStraDllId.Location = new System.Drawing.Point(136, 149);
             this.textStraDllId.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.textStraDllId.Maximum = new decimal(new int[] {
-            99999,
+            65535,
             0,
             0,
             0});
@@ -489,7 +489,7 @@ namespace SwRebellionEditor
             this.textStraDllId.TabStop = false;
             this.textStraDllId.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.textStraDllId.Value = new decimal(new int[] {
-            99999,
+            65535,
             0,
             0,
             0});
@@ -501,7 +501,7 @@ namespace SwRebellionEditor
             this.facilityDesignBase_0.Location = new System.Drawing.Point(136, 325);
             this.facilityDesignBase_0.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.facilityDesignBase_0.Maximum = new decimal(new int[] {
-            999,
+            -1,
             0,
             0,
             0});
@@ -561,7 +561,7 @@ namespace SwRebellionEditor
             this.troopTrainingBase_0.Location = new System.Drawing.Point(136, 299);
             this.troopTrainingBase_0.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.troopTrainingBase_0.Maximum = new decimal(new int[] {
-            999,
+            -1,
             0,
             0,
             0});
@@ -588,7 +588,7 @@ namespace SwRebellionEditor
             this.shipDesignBase_0.Location = new System.Drawing.Point(136, 273);
             this.shipDesignBase_0.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.shipDesignBase_0.Maximum = new decimal(new int[] {
-            99999,
+            -1,
             0,
             0,
             0});
@@ -605,7 +605,7 @@ namespace SwRebellionEditor
             this.field2_1.Location = new System.Drawing.Point(136, 45);
             this.field2_1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.field2_1.Maximum = new decimal(new int[] {
-            9999,
+            -1,
             0,
             0,
             0});
@@ -615,7 +615,7 @@ namespace SwRebellionEditor
             this.field2_1.TabStop = false;
             this.field2_1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.field2_1.Value = new decimal(new int[] {
-            1,
+            -1,
             0,
             0,
             0});
@@ -628,7 +628,7 @@ namespace SwRebellionEditor
             this.familyId.Location = new System.Drawing.Point(136, 123);
             this.familyId.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.familyId.Maximum = new decimal(new int[] {
-            9999,
+            -1,
             0,
             0,
             0});
@@ -638,7 +638,7 @@ namespace SwRebellionEditor
             this.familyId.TabStop = false;
             this.familyId.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.familyId.Value = new decimal(new int[] {
-            9999,
+            -1,
             0,
             0,
             0});
@@ -651,7 +651,7 @@ namespace SwRebellionEditor
             this.productionFamily.Location = new System.Drawing.Point(136, 71);
             this.productionFamily.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.productionFamily.Maximum = new decimal(new int[] {
-            999,
+            -1,
             0,
             0,
             0});
@@ -713,7 +713,7 @@ namespace SwRebellionEditor
             this.id.Location = new System.Drawing.Point(136, 19);
             this.id.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.id.Maximum = new decimal(new int[] {
-            999,
+            -1,
             0,
             0,
             0});
@@ -723,7 +723,7 @@ namespace SwRebellionEditor
             this.id.TabStop = false;
             this.id.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.id.Value = new decimal(new int[] {
-            999,
+            -1,
             0,
             0,
             0});
@@ -758,7 +758,7 @@ namespace SwRebellionEditor
             this.nextProductionFamily.Location = new System.Drawing.Point(136, 97);
             this.nextProductionFamily.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.nextProductionFamily.Maximum = new decimal(new int[] {
-            999,
+            -1,
             0,
             0,
             0});
@@ -787,7 +787,7 @@ namespace SwRebellionEditor
             this.maintenanceCost.Location = new System.Drawing.Point(148, 164);
             this.maintenanceCost.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.maintenanceCost.Maximum = new decimal(new int[] {
-            9999,
+            -1,
             0,
             0,
             0});
@@ -796,6 +796,11 @@ namespace SwRebellionEditor
             this.maintenanceCost.TabIndex = 1133;
             this.maintenanceCost.TabStop = false;
             this.maintenanceCost.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.maintenanceCost.Value = new decimal(new int[] {
+            -1,
+            0,
+            0,
+            0});
             this.maintenanceCost.ValueChanged += new System.EventHandler(this.maintenanceCost_ValueChanged);
             // 
             // maintenanceCostLabel
@@ -816,7 +821,7 @@ namespace SwRebellionEditor
             this.refinedMaterialCost.Location = new System.Drawing.Point(148, 138);
             this.refinedMaterialCost.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.refinedMaterialCost.Maximum = new decimal(new int[] {
-            9999,
+            -1,
             0,
             0,
             0});
@@ -825,6 +830,11 @@ namespace SwRebellionEditor
             this.refinedMaterialCost.TabIndex = 1131;
             this.refinedMaterialCost.TabStop = false;
             this.refinedMaterialCost.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.refinedMaterialCost.Value = new decimal(new int[] {
+            -1,
+            0,
+            0,
+            0});
             this.refinedMaterialCost.ValueChanged += new System.EventHandler(this.refinedMaterialCost_ValueChanged);
             // 
             // refinedMaterialCostLabel
@@ -855,7 +865,7 @@ namespace SwRebellionEditor
             this.combatVariance.Location = new System.Drawing.Point(211, 262);
             this.combatVariance.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.combatVariance.Maximum = new decimal(new int[] {
-            999,
+            -1,
             0,
             0,
             0});
@@ -864,7 +874,7 @@ namespace SwRebellionEditor
             this.combatVariance.TabIndex = 9;
             this.combatVariance.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.combatVariance.Value = new decimal(new int[] {
-            999,
+            -1,
             0,
             0,
             0});
@@ -875,7 +885,7 @@ namespace SwRebellionEditor
             this.diplomacyVariance.Location = new System.Drawing.Point(211, 210);
             this.diplomacyVariance.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.diplomacyVariance.Maximum = new decimal(new int[] {
-            99999,
+            -1,
             0,
             0,
             0});
@@ -884,7 +894,7 @@ namespace SwRebellionEditor
             this.diplomacyVariance.TabIndex = 5;
             this.diplomacyVariance.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.diplomacyVariance.Value = new decimal(new int[] {
-            999,
+            -1,
             0,
             0,
             0});
@@ -895,7 +905,7 @@ namespace SwRebellionEditor
             this.espionageVariance.Location = new System.Drawing.Point(211, 236);
             this.espionageVariance.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.espionageVariance.Maximum = new decimal(new int[] {
-            999,
+            -1,
             0,
             0,
             0});
@@ -904,7 +914,7 @@ namespace SwRebellionEditor
             this.espionageVariance.TabIndex = 7;
             this.espionageVariance.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.espionageVariance.Value = new decimal(new int[] {
-            999,
+            -1,
             0,
             0,
             0});
@@ -948,7 +958,7 @@ namespace SwRebellionEditor
             this.combatBase.Location = new System.Drawing.Point(148, 262);
             this.combatBase.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.combatBase.Maximum = new decimal(new int[] {
-            999,
+            -1,
             0,
             0,
             0});
@@ -957,7 +967,7 @@ namespace SwRebellionEditor
             this.combatBase.TabIndex = 8;
             this.combatBase.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.combatBase.Value = new decimal(new int[] {
-            999,
+            -1,
             0,
             0,
             0});
@@ -978,7 +988,7 @@ namespace SwRebellionEditor
             this.diplomacyBase.Location = new System.Drawing.Point(148, 210);
             this.diplomacyBase.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.diplomacyBase.Maximum = new decimal(new int[] {
-            99999,
+            -1,
             0,
             0,
             0});
@@ -987,7 +997,7 @@ namespace SwRebellionEditor
             this.diplomacyBase.TabIndex = 4;
             this.diplomacyBase.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.diplomacyBase.Value = new decimal(new int[] {
-            999,
+            -1,
             0,
             0,
             0});
@@ -998,7 +1008,7 @@ namespace SwRebellionEditor
             this.espionageBase.Location = new System.Drawing.Point(148, 236);
             this.espionageBase.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.espionageBase.Maximum = new decimal(new int[] {
-            999,
+            -1,
             0,
             0,
             0});
@@ -1007,7 +1017,7 @@ namespace SwRebellionEditor
             this.espionageBase.TabIndex = 6;
             this.espionageBase.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.espionageBase.Value = new decimal(new int[] {
-            999,
+            -1,
             0,
             0,
             0});
@@ -1192,7 +1202,7 @@ namespace SwRebellionEditor
             this.leadershipVariance.Location = new System.Drawing.Point(211, 288);
             this.leadershipVariance.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.leadershipVariance.Maximum = new decimal(new int[] {
-            999,
+            -1,
             0,
             0,
             0});
@@ -1201,7 +1211,7 @@ namespace SwRebellionEditor
             this.leadershipVariance.TabIndex = 138;
             this.leadershipVariance.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.leadershipVariance.Value = new decimal(new int[] {
-            999,
+            -1,
             0,
             0,
             0});
@@ -1220,7 +1230,7 @@ namespace SwRebellionEditor
             this.leadershipBase.Location = new System.Drawing.Point(148, 288);
             this.leadershipBase.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.leadershipBase.Maximum = new decimal(new int[] {
-            999,
+            -1,
             0,
             0,
             0});
@@ -1229,7 +1239,7 @@ namespace SwRebellionEditor
             this.leadershipBase.TabIndex = 137;
             this.leadershipBase.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.leadershipBase.Value = new decimal(new int[] {
-            999,
+            -1,
             0,
             0,
             0});
