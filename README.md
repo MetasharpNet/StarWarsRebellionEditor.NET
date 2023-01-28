@@ -19,6 +19,7 @@ To buy the game or get free fan mods, check : https://swrebellion.net/
 * Patch : Star Wars Rebellion 25th Anniversary patch beta (work in progress) : 200 individual systems sprites, new galaxy map, systems & sector names
 
 ### Beta Roadmap (current) :
+* Known bug: tactical battle crash is fixed when restoring initial GData/SYSTEMSD.DAT file (investagation required)
 * 200 system sprites (93/200 done)
 * 200 encyclopedia sprites (93/200 done)
 * 200 encyclopedia descriptions (~20/200 done)
