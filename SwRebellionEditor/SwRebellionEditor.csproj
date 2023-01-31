@@ -337,6 +337,9 @@
     <None Update="new-systems-encyclopedia-pictures\13194-yavin 4-%28moon%29-atlas-ok.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="new-systems-encyclopedia-pictures\13195-yavin prime-%28giant%29-internet-ok.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="new-systems-encyclopedia-pictures\13196-zakuul-internet-ok.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
@@ -938,6 +941,9 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="new-systems-sprites\13194-yavin 4-%28moon%29-atlas-ok.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-systems-sprites\13195-yavin prime-%28giant%29-internet-ok.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="new-systems-sprites\13196-zakuul-internet-ok.bmp">

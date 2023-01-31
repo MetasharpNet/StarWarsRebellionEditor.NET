@@ -285,6 +285,16 @@ namespace SwRebellionEditor {
         }
         
         /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap missing_encyclopedia_picture_400x200_bmp {
+            get {
+                object obj = ResourceManager.GetObject("missing_encyclopedia_picture_400x200_bmp", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
         ///   Recherche une ressource localisée de type System.IO.UnmanagedMemoryStream semblable à System.IO.MemoryStream.
         /// </summary>
         internal static System.IO.UnmanagedMemoryStream obiwan_has_tought_you_well_wav {

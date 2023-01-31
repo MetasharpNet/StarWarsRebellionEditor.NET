@@ -84,7 +84,7 @@ public partial class SystemsForm : SystemsDesignForm
                 if (File.Exists(filepath))
                     systemsImageList.Images.Add(Image.FromFile(filepath));
             }
-            catch { }
+            catch { systemsImageList.Images.Add(Resources.missing_encyclopedia_picture_400x200_bmp); }
             systemsListView.Items.Add(GameFile.Systems[selectorIndex].Name, selectorIndex);
         }
     }
@@ -120,9 +120,9 @@ public partial class SystemsForm : SystemsDesignForm
             if (File.Exists(filepath))
                 picture.Image = Image.FromFile(filepath);
             else
-                picture.Image = null;
+                picture.Image = Resources.missing_encyclopedia_picture_400x200_bmp;
         }
-        catch { picture.Image = null; }
+        catch { picture.Image = Resources.missing_encyclopedia_picture_400x200_bmp; }
 
         sprite.SizeMode = PictureBoxSizeMode.Zoom;
         var strategyId = GetStrategyId(GameFile.Systems[selectorIndex].PictureId).ToString();
@@ -131,7 +131,6 @@ public partial class SystemsForm : SystemsDesignForm
             sprite.Image = DIB.ToDDB(Strategy.Resources.GetBitmap(strategyId).Bitmap);
         }
         catch { sprite.Image = null; }
-
         GameFile.UnsavedData = previousUnsavedData;
     }
     private void LoadSector(uint sectorId)
