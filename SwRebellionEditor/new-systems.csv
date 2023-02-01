@@ -53,12 +53,13 @@ Ruusan;105;11781;Crossroads;659;401;Rim;146;"[CANON] Sector: Crossroads
 Coordinates: P-11, Hyperspace routes: -
 
 Geology: Planet, Temperate, Varried
-Species: Bouncer; Ruusanian
-Exports: Ore
+Species: Bouncer 
+Exports: 
 
-History: Ruusan was the site of the final defeat of the Sith at the end of the Jedi-Sith War. It was host to a number of ancient relics, strewn across its many historical battlefields. The planet lent its name to the Ruusan Reformations.
+History: 
 
-Appearances: Clone Wars, Atlas"
+Appearances: Clone Wars, Atlas
+"
 Trandosha;106;11782;Crossroads;659;362;Rim;178;"[CANON] Sector: Crossroads
 Coordinates: P-9, Hyperspace routes: 6
 
@@ -104,7 +105,7 @@ Coordinates: E-13, Hyperspace routes: -
 
 Geology: Planet, Temperate, Ocean, Archipelago 
 Species: Lanai
-Exports: -
+Economy: Primary, No exports
 
 History: Ahch-To, known by many names in ancient legends, was a planet mostly covered in water, with numerous rocky islands blanketed with green trees located in the Unknown Regions. It was the birthplace of the Jedi Order and held the ancient Jedi texts.
 
@@ -139,16 +140,17 @@ Exports: Kyber Crystals
 History: Hidden beneath Ilum's frigid surface was what came to be known as the Crystal Cave. Within the maze-like caves grew kyber crystals, which brought the Jedi Order to Ilum so they could harvest the crystals in a rite of passage known as the Gathering. The Empire has strip mined the planet for Kyber Crystals. Leaving deep scars in the planets surface that are clearly visible from space.
 
 Appearances: Episode 7, Clone Wars, Rebels, SWTOR, BattleField 2, Atlas"
-Lwhekk;114;11796;Unknown Regions;126;453;Rim;101;"[CANON] Sector: Unknown Regions
+Lwhekk;114;11796;Unknown Regions;126;453;Rim;101;"[CANON] Sector: 
 Coordinates: C-16, Hyperspace routes: -
 
-Geology: Planet, Hot, Jungle, Oceans, Volcanoes
-Species: -
-Exports: Ksaa and Fft
+Geology: Planet
+Species: 
+Exports: 
 
-History: Lwhekk was the capital planet of the Ssi-ruuvi Imperium. Lwhekk is a humid, jungle-covered planet located within the remote Ssi-ruuk Star Cluster beyond the known galaxy. The jungles of Lwhekk were broken by spired cities which appeared to be quite fragile against the local flora. The planet also had volcanoes and a large part of it appeared to be covered by oceans.
+History: 
 
-Appearances: -"
+Appearances: 
+"
 Nagi;115;11797;Unknown Regions;112;435;Rim;117;"[LEGENDS] Sector: Unknown Regions
 Coordinates: -, Hyperspace routes: -
 
@@ -192,19 +194,73 @@ Appearances: SWTOR"
 Zonama Sekot;119;11801;Unknown Regions;167;441;Rim;199;"[LEGENDS] Sector: Unknown Regions
 Coordinates: F-13, Hyperspace routes: -
 
-Geology: Planet, -
+Geology: Planet
 Species: -
 Exports: -
 
 History: Zonama Sekot was an astronomical object located in the Unknown Regions. It was situated in an otherwise empty and unexplored area, in the neighborhood of the planets Ahch-To and Rakata Prime.
 
 Appearances: Atlas"
-Ansion;120;11808;Mid Rim North;356;244;Rim;8;
-Borosk;121;11809;Mid Rim North;383;206;Rim;19;
-Earth;122;11810;Mid Rim North;389;226;Rim;54;
-Glee Anselm;123;11811;Mid Rim North;361;262;Rim;71;
-Iridonia;124;11812;Mid Rim North;379;244;Rim;78;
-Ithor;125;11813;Mid Rim North;414;237;Rim;80;"[CANON] Sector: Celanon Spur
+Ansion;120;11808;Mid Rim North;356;244;Rim;8;"[CANON] Sector: Mid Rim North
+Coordinates: I-6, Hyperspace routes: 4
+
+Geology: Planet, [Legends] Temperate, Plains, Hills
+Species: Ansionian
+Economy: [Legends] Primary, Foodstuffs 
+
+History: Ansion was a planet located in the Mid Rim. A border dispute occurred on Ansion during the Separatist Crisis, which, along with turmoil on the planet Ando, was enough to stagger the galaxy.
+
+[Legends] Shortly after Battle of Yavin, the Galactic Empire prepared a massive attack on Ansion, a civilian target. The Empire suspected the planet's population of harboring Alliance assets or at least Rebel sympathizers.
+
+[Legends] Ansion was a world of rolling plains, grassy fields, and wide valleys. Due to the high winds that swept the planet's surface, the extensive animal life on the world adapted to ride the winds or withstand it on the ground.
+
+Appearances: Atlas
+"
+Borosk;121;11809;Mid Rim North;383;206;Rim;19;"[CANON] Sector: Mid Rim North
+Coordinates: K-5, Hyperspace routes: 4
+
+Geology: Planet
+Species: Humans
+Economy: None
+
+History: Borosk is a planet in the Outer Rim, along the frontier of Imperial Space. A relatively small world, it is located near Yaga Minor. 
+
+Appearances: 
+"
+Earth;122;11810;Mid Rim North;389;226;Rim;54;"[CANON] Sector: Mid Rim North
+Coordinates: K-6, Hyperspace routes: -
+
+Geology: Planet
+Species: 
+Exports: 
+
+History: 
+
+Appearances: 
+"
+Glee Anselm;123;11811;Mid Rim North;361;262;Rim;71;"[CANON] Sector: Mid Rim North
+Coordinates: J-7, Hyperspace routes: 2
+
+Geology: Planet
+Species: 
+Exports: 
+
+History: 
+
+Appearances: Clone Wars
+"
+Iridonia;124;11812;Mid Rim North;379;244;Rim;78;"[CANON] Sector: Mid Rim North
+Coordinates: J-17, Hyperspace routes:- 
+
+Geology: 
+Species: 
+Exports: 
+
+History: 
+
+Appearances: 
+"
+Ithor;125;11813;Mid Rim North;414;237;Rim;80;"[CANON] Sector: Mid Rim North
 Coordinates: M-6, Hyperspace routes: 2
 
 Geology: Planet, 
@@ -214,21 +270,61 @@ Exports:
 History: Ithor is a beautiful forest planet.  The planet is inhabited by beings called Ithorians, who live in great floating cities.  The Ithorians rarely if ever set foot in the forests below their cities and consider these forests sacred.
 
 Appearances: Atlas"
-Keitum;126;11814;Mid Rim North;364;226;Rim;91;
-Mygeeto;127;11815;Mid Rim North;391;185;Rim;115;
-Ord Mantell;128;11816;Mid Rim North;399;258;Rim;127;
-Yaga Minor;129;11817;Mid Rim North;371;188;Rim;192;"[CANON] Sector: Celanon Spur
-Coordinates: K-5, Hyperspace routes: 2
+Keitum;126;11814;Mid Rim North;364;226;Rim;91;"[CANON] Sector: Mid Rim North
+Coordinates: J-6, Hyperspace routes: 1
 
-Geology: Planet, 
+Geology: Planet
 Species: 
 Exports: 
 
-History: Yaga Minor  is a  planet which is known throughout the galaxy for its major shipbuilding facilities. 
+History: 
+
+Appearances: Rebels
+"
+Mygeeto;127;11815;Mid Rim North;391;185;Rim;115;"[CANON] Sector: Mid Rim North
+Coordinates: K-5, Hyperspace routes: 2
+
+Geology: Planet
+Species: 
+Exports: 
+
+History: 
+
+Appearances: Episode 3, Rebels, Atlas
+"
+Ord Mantell;128;11816;Mid Rim North;399;258;Rim;127;"[CANON] Sector: Mid Rim North
+Coordinates: L-7, Hyperspace routes: 3
+
+Geology: Planet
+Species: 
+Exports: 
+
+History: 
+
+Appearances: Clone Wars, SWG, SWTOR
+"
+Yaga Minor;129;11817;Mid Rim North;371;188;Rim;192;"[CANON] Sector: Mid Rim North
+Coordinates: K-5, Hyperspace routes: 2
+
+Geology: Planet
+Species: 
+Exports: 
+
+History: 
 
 Appearances: -"
-Chardaan;130;11824;Core Worlds South;527;524;Core;29;
-Corellia;131;11825;Core Worlds South;488;448;Core;34;"[CANON] Sector: Shipwright's Trace
+Chardaan;130;11824;Core Worlds South;527;524;Core;29;"[CANON] Sector: Core Worlds South
+Coordinates: N-13, Hyperspace routes: 4
+
+Geology: Planet
+Species: 
+Exports: 
+
+History: 
+
+Appearances: 
+"
+Corellia;131;11825;Core Worlds South;488;448;Core;34;"[CANON] Sector: Core Worlds South
 Coordinates: M-11, Hyperspace routes: 3
 
 Geology: Planet, 
@@ -238,13 +334,73 @@ Exports:
 History: Corellia has a rich history dating back before the time of the Old Republic.  It is suspected that Corellia and its four sister planets were not always in the system, but were moved there by some unknown race.  Huge repulsorlifts and hyperdrives beneath the surface of the planets lend substance to this theory.  Corellia is best known for her vast shipyards and excellent pilots.
 
 Appearances: Clone Wars, Rebels, SWG, SWTOR, Atlas"
-Denon;132;11826;Core Worlds South;524;498;Core;46;
-Devaron;133;11827;Core Worlds South;469;518;Core;47;
-Duro;134;11828;Core Worlds South;469;451;Core;52;
-Hosnian Prime;135;11829;Core Worlds South;498;492;Core;74;
-Nubia;136;11830;Core Worlds South;474;469;Core;124;
-Quarzite;137;11831;Core Worlds South;504;515;Core;136;
-Talus;138;11832;Core Worlds South;492;466;Core;166;"[CANON] Sector: Shipwright's Trace
+Denon;132;11826;Core Worlds South;524;498;Core;46;"[CANON] Sector: Core Worlds South
+Coordinates: N-13, Hyperspace routes: 4
+
+Geology: Planet
+Species: 
+Exports: 
+
+History: 
+
+Appearances: 
+"
+Devaron;133;11827;Core Worlds South;469;518;Core;47;"[CANON] Sector: Core Worlds South
+Coordinates: M-13, Hyperspace routes: -
+
+Geology: Planet
+Species: 
+Exports: 
+
+History: 
+
+Appearances: Clone Wars
+"
+Duro;134;11828;Core Worlds South;469;451;Core;52;"[CANON] Sector: Core Worlds South
+Coordinates: M-11, Hyperspace routes: 3
+
+Geology: Planet
+Species: 
+Exports: 
+
+History: 
+
+Appearances: Atlas
+"
+Hosnian Prime;135;11829;Core Worlds South;498;492;Core;74;"[CANON] Sector: Core Worlds South
+Coordinates: M-12, Hyperspace routes: 2
+
+Geology: Planet
+Species: 
+Exports: 
+
+History: 
+
+Appearances: Episode 7
+"
+Nubia;136;11830;Core Worlds South;474;469;Core;124;"[LEGENDS] Sector: Core Worlds South
+Coordinates: M-11, Hyperspace routes: 4
+
+Geology: Planet
+Species: 
+Exports: 
+
+History: 
+
+Appearances: Atlas
+"
+Quarzite;137;11831;Core Worlds South;504;515;Core;136;"[CANON] Sector: Core Worlds South
+Coordinates: M-13, Hyperspace routes: -
+
+Geology: Planet
+Species: 
+Exports: 
+
+History: 
+
+Appearances: Clone Wars, Rebels
+"
+Talus;138;11832;Core Worlds South;492;466;Core;166;"[CANON] Sector: Core Worlds South
 Coordinates: M-11, Hyperspace routes: 3
 
 Geology: Planet, 
@@ -254,7 +410,7 @@ Exports:
 History: Talus shares its orbit with its sister planet Tralus, they both have the same center of gravity.  Talus has a myriad of climates throughout its atmosphere that would be hospitable to a great many galactic citizens.
 
 Appearances: SWG"
-Tralus;139;11833;Core Worlds South;507;448;Core;177;"[CANON] Sector: Shipwright's Trace
+Tralus;139;11833;Core Worlds South;507;448;Core;177;"[CANON] Sector: Core Worlds South
 Coordinates: M-11, Hyperspace routes: 3
 
 Geology: Planet, 
@@ -264,110 +420,765 @@ Exports:
 History: Tralus shares its orbit with its sister planet Talus, they both have the same center of gravity.  Talus is quite hospitable to most sentient beings of the galaxy due to its many climates.
 
 Appearances: -"
-Bescane;140;11840;Outer Rim North;389;107;Rim;13;
-Dantooine;141;11841;Outer Rim North;418;131;Rim;42;"[CANON] Sector: Entralla's End
+Bescane;140;11840;Outer Rim North;389;107;Rim;13;"[CANON] Sector: Outer Rim North
+Coordinates: K-3, Hyperspace routes: 3
+
+Geology: Planet, Temperate, Urban
+Species: Humans
+Economy: Secondary, [Legends] Heavy metals, Mass produced goods and materials, Chemicals
+
+History: [Legends] Bescane is a planet near Dantooine, run by Galentro Heavy Works. A cool, temperate world, it was overpopulated and covered in factories, its natural environment destroyed. 
+
+Appearances: 
+"
+Dantooine;141;11841;Outer Rim North;418;131;Rim;42;"[CANON] Sector: Outer Rim North
 Coordinates: L-4, Hyperspace routes: 4
 
-Geology: Planet, 
+Geology: Planet
 Species: 
 Exports: 
 
-History: Dantooine is a lovely blue and brown colored planet with no industrial settlements or advanced technology far removed from most galactic traffic. Its surface is covered with savannas of lavender grasses and blba trees. Four thousand years ago, the Jedi Master Vodo-Siosk Baas established a Jedi training center among Dantooine's ruins.  Many centuries later, Dantooine for awhile served as an Alliance base, but was evacuated sometime after the Death Star became operational.
+History: 
 
-Appearances: Episode 4, Clone Wars, Rebels, SWG, KOTOR 1, KOTOR 2, Atlas"
-Dubrillion;142;11842;Outer Rim North;410;104;Rim;51;
-Jaemus;143;11843;Outer Rim North;397;127;Rim;81;
-Kalee;144;11844;Outer Rim North;377;127;Rim;85;
-Lah'Mu;145;11845;Outer Rim North;430;111;Rim;96;
-Mortis;146;11846;Outer Rim North;404;74;Rim;112;
-Muunilinst;147;11847;Outer Rim North;397;147;Rim;114;
-Ord Trasi;148;11848;Outer Rim North;421;150;Rim;128;
-Sernpidal;149;11849;Outer Rim North;435;89;Rim;151;
-Alderaan;150;11856;Colonies;509;377;Core;5;
-Balmorra;151;11857;Colonies;528;381;Core;10;
+Appearances: Episode 4, Clone Wars, Rebels, Star Wars Galaxies, Kotor 1, Kotor 2, Attlas
+"
+Dubrillion;142;11842;Outer Rim North;410;104;Rim;51;"[CANON] Sector: Outer Rim North
+Coordinates: K-3, Hyperspace routes: 4
+
+Geology: 
+Species: 
+Exports: 
+
+History: 
+
+Appearances: 
+"
+Jaemus;143;11843;Outer Rim North;397;127;Rim;81;"[CANON] Sector: Outer Rim North
+Coordinates: K-4, , Hyperspace routes: 4
+
+Geology: Planet
+Species: 
+Exports: 
+
+History: 
+
+Appearances: 
+"
+Kalee;144;11844;Outer Rim North;377;127;Rim;85;"[CANON] Sector: Outer Rim North
+Coordinates: J-4, , Hyperspace routes: 0
+
+Geology: Planet
+Species: 
+Exports: 
+
+History: 
+
+Appearances: Atlas
+"
+Lah'Mu;145;11845;Outer Rim North;430;111;Rim;96;"[CANON] Sector: Outer Rim North
+Coordinates: L-3, Hyperspace routes: -
+
+Geology: Planet
+Species: 
+Exports: 
+
+History: 
+
+Appearances: Rouge One
+"
+Mortis;146;11846;Outer Rim North;404;74;Rim;112;"[CANON] Sector: Outer Rim North
+Coordinates: K-2, Hyperspace routes: -
+
+Geology: Planet
+Species: 
+Exports: 
+
+History: 
+
+Appearances: Clone Wars
+"
+Muunilinst;147;11847;Outer Rim North;397;147;Rim;114;"[CANON] Sector: Outer Rim North
+Coordinates: K-4, Hyperspace routes: 3
+
+Geology: Planet
+Species: 
+Exports: 
+
+History: 
+
+Appearances: Clone Wars
+"
+Ord Trasi;148;11848;Outer Rim North;421;150;Rim;128;"[CANON] Sector: Outer Rim North
+Coordinates: L-4, Hyperspace routes: 4
+
+Geology: Planet
+Species: 
+Exports: 
+
+History: 
+
+Appearances: 
+"
+Sernpidal;149;11849;Outer Rim North;435;89;Rim;151;"[CANON] Sector: Outer Rim North
+Coordinates: L-3, Hyperspace routes: 3
+
+Geology: Planet
+Species: 
+Exports: 
+
+History: 
+
+Appearances: Atlas
+"
+Alderaan;150;11856;Colonies;509;377;Core;5;"[CANON] Sector: Colonies
+Coordinates: M-10, Hyperspace routes: 2
+
+Geology: Debris field
+Species: None
+Economy: None 
+
+History: Alderaan, located in the Core Worlds, was a terrestrial planet covered with mountains. During the waning decades of the Galactic Republic, it was ruled by Queen Breha Organa and represented in the Galactic Senate by her husband, Senator Bail Prestor Organa. Alderaan was regarded for its natural beauty, its tranquility, and the sophistication of its arts and culture. 
+
+Alderaan played a pivotal role in the establishment of the Rebel Alliance, a movement that sought to restore the Old Republic's values, and was one of it's earliest supporters. Because of its ties with the Alliance, the planet was destroyed when Grand Moff Wilhuff Tarkin decided to test the superlaser of the Death Star,
+
+Appearances: Episode 3, Episode 4, Atlas
+"
+Balmorra;151;11857;Colonies;528;381;Core;10;"[CANON] Sector: Colonies
+Coordinates: M-10, Hyperspace routes: -
+
+Geology: Planet, Temperate, Plains, Mountains, Industrial
+Species: Mixed
+Economy: Secondary, Manufacturing, Starships, Starship parts, Weapons and droids
+
+History: Balmorra is a factory world located in the galaxy's Colonies region. Despite being close to the Core Worlds, the planet has a strong sense of independence and was slow to join the Galactic Republic. During the Clone Wars, Balmorra left the Republic and joined the Confederacy of Independent Systems. After the war the Galactic Empire made use of its foundries, using them to build many of its All Terrain Armored Transports.
+
+The world shares its name with Balmorran Arms, a droid manufacturer, and Balmorran Heavyworks, a starship manufacturer that notably produced hauler models.
+
+Appearances: Swtor
+"
 Carida;152;11858;Colonies;511;346;Core;25;"[CANON] Sector: Colonies
 Coordinates: M-9, Hyperspace routes: -
 
-Geology: Planet, 
-Species: 
-Exports: 
+Geology: Planet, Temperate, Baren, Mountainous, Urban
+Species: Human
+Economy: Tertiary, Millitary training, Technology, Mixed industry
 
-History: Carida is a large, high-gravity world with a wide variety of terrain. Carida is the location of the most important Imperial military training center. Stormtrooper candidates undergo harsh training in the varied environments to prepare themselves for action on a variety of worlds. Admiral Daala attended the Caridan academy before her appointment to Tarkin's staff.
+History: Carida is a mountainous planet located within the Colonies region of the galaxy. During the Clone Wars, the Valor space station orbited the planet. Now it is home to a major imperial academy and naval dock. 
 
 Appearances: Clone Wars, Rebels"
-Esseles;153;11859;Colonies;492;352;Core;58;
-Hapes;154;11860;Colonies;548;351;Core;72;
-Kuat;155;11861;Colonies;514;399;Core;95;
-Neimoidia;156;11862;Colonies;533;401;Core;120;
-Taanab;157;11863;Colonies;548;328;Core;164;
-Tepasi;158;11864;Colonies;490;373;Core;170;
-Tirahnn;159;11865;Colonies;529;324;Core;175;
-Bakura;160;11872;Outer Rim West;304;639;Rim;9;"[CANON] Sector: Outer Rim South
-Coordinates: G-16, Hyperspace routes: 1
+Esseles;153;11859;Colonies;492;352;Core;58;"[CANON] Sector: Colonies
+Coordinates: L-9, Hyperspace routes: -
 
-Geology: Planet, Hot, Dry, Desert, Plains
-Species: -
-Exports: -
+Geology: Planet, [Legends] Temperate, Volcanic, Dense atmosphere
+Species: Human
+Economy: Secondary, Manufacturing, Shipbuilding [Legends] Foodstuffs, Raw Materials 
 
-History: Bakura is a rich, green and blue planet with several moons located on the isolated edge of the Rim Systems. Bakura's primary exports include strategic metals, repulsorlift components, and an addictive fruit called namana. The planet's inhabitants tend to be prejudiced against non-human species and especially dislike droids.
+History: Esseles is a planet in the galaxy that had been contested territory throughout the early years of the Empire and is home to a secret Imperial listening post concealed in its icy rings. The Carrack-class light cruiser was designed and manufactured by the Damorian Manufacturing Corporation based on Esseles.
 
-Appearances: Atlas"
-Belsavis;161;11873;Outer Rim West;356;694;Rim;12;
-Cyphar;162;11874;Outer Rim West;356;658;Rim;39;
-Dolla;163;11875;Outer Rim West;337;698;Rim;48;
-Endor;164;11876;Outer Rim West;327;649;Rim;56;"[CANON] Sector: Outer Rim South
-Coordinates: H-16, Hyperspace routes: 4
+Appearances: Squadrons
+"
+Hapes;154;11860;Colonies;548;351;Core;72;"[CANON] Sector: Colonies
+Coordinates: O-9, Hyperspace routes: 3
 
-Geology: Moon, 
+Geology: Planet, Temperate, Forests, Mountains, Varied
+Species: Hapan, Human
+Economy: [Legends] Tertiary, Art, Administration 
+
+History: [Legends]: Hapes is the homeworld of the Hapans, a near-Human race known for their beauty, and the administrative capital of the Hapes Consortium. Surrounded by shimmering nebulae, and with seven moons in the sky after sunset, Hapes never knew the darkness of true night, and the Hapan people had relatively poor night-vision.
+
+Only a few small, neat cities were necessary to cater for the needs of the state bureaucracy and the Consortium's commercial and legal institutions, and much of the planet was an unspoiled wilderness of broad oceans, snow-peaked mountains and lush primeval forest, where tightly-controlled commercial fisheries and game-preserves were the major focus of Hapan activity. 
+
+Hapes was first settled by the Lorell Raiders, a group of pirates who had found routes through the Transitory Mists and used the Hapes Cluster as their base.
+
+Appearances: Atlas
+"
+Kuat;155;11861;Colonies;514;399;Core;95;"[CANON] Sector: Colonies
+Coordinates: M-10, Hyperspace routes: 2
+
+Geology: Planet, Temperate, Varied
+Species: Human
+Economy: Secondary, Starships, Manufacturing
+
+History: Kuat is a vital shipbuilding and industrial planet located in the Kuat system of the galaxy's Core Worlds region. Known for the prestigious Kuat Drive Yards corporation and its large shipyards, the planet notably produced warships for the Galactic Republic. Now the shipyards are used to produce and maintain the massive Imperial-class Star Destroyers of the Galactic Empire. 
+
+Kuat is a standard terrestrial planet of clouds, water, and land. However, unlike most other planets in the galaxy, a single, large man-made ring circled its equator. Serving as Kuat Drive Yards' legendary shipyards.
+
+Appearances: Atlas
+"
+Neimoidia;156;11862;Colonies;533;401;Core;120;"[CANON] Sector: Colonies
+Coordinates: M-10, Hyperspace routes: 2
+
+Geology: Planet, Hot, Humid, Rainforests, Desert
+Species: Nemoidian, Duros
+Economy: Primary, Agriculture
+
+History: Neimoidia, also known as Pure Neimoidia, id a planet centrally located in the galaxy's Colonies region. It is the homeworld of the Neimoidian species, and was near a string of wealthy worlds. 
+
+the planet was discovered by Duros explorers from the planet Duro during their travels throughout the galaxy. After its colonization, Neimoidia became allied with but separate from the Duros homeworld. The Duros colonists eventually evolved into a distinctly different species. These became the species known as Neimoidians 
+
+Appearances: Atlas
+"
+Taanab;157;11863;Colonies;548;328;Core;164;"[CANON] Sector: Colonies
+Coordinates: O-8, Hyperspace routes: 3
+
+Geology: Planet
 Species: 
 Exports: 
 
-History: The forest moon of Endor, called the Sanctuary Moon, is a temperate, densely forested world. The moon's low axial tilt and the regular orbit of its gas giant primary helps ensure a comfortable climate. Endor is the home to many native species which include the primitive Ewoks.
+History: 
 
-Appearances: Episode 6, Episode 9, SWG, BattleField 1, BattleField 2, Atlas"
-Karfeddion;165;11877;Outer Rim West;337;680;Rim;88;
-Kef Bir;166;11878;Outer Rim West;308;657;Rim;90;
-Rattatak;167;11879;Outer Rim West;312;621;Rim;141;
-Sullust;168;11880;Outer Rim West;362;676;Rim;162;
-Takodana;169;11881;Outer Rim West;331;624;Rim;165;
-Bestine IV;170;11888;Mid Rim South;528;613;Core;15;
-Crait;171;11889;Mid Rim South;528;678;Core;37;
-D'Qar;172;11890;Mid Rim South;548;671;Core;49;
-Farstine;173;11891;Mid Rim South;567;671;Core;61;
-Malastare;174;11892;Mid Rim South;509;668;Core;103;
-Naboo;175;11893;Mid Rim South;563;653;Core;116;
-Pax;176;11894;Mid Rim South;528;654;Core;134;
-Shadda-Bi-Boran;177;11895;Mid Rim South;561;689;Core;152;
-Wroona;178;11896;Mid Rim South;528;631;Core;191;
-Yag'Dhul;179;11897;Mid Rim South;509;628;Core;193;
-Cato Neimoidia;180;11904;Inner Rim;567;476;Core;26;
-Commenor;181;11905;Inner Rim;576;458;Core;32;
-Exodeen;182;11906;Inner Rim;564;494;Core;60;
-Gamor;183;11907;Inner Rim;575;517;Core;66;
-Manaan;184;11908;Inner Rim;595;468;Core;104;
-Milagro;185;11909;Inner Rim;580;535;Core;107;
-Mimban;186;11910;Inner Rim;599;486;Core;108;
-Nexus Ortai;187;11911;Inner Rim;618;535;Core;123;
-Pasaana;188;11912;Inner Rim;604;504;Core;133;
-Vandor-1;189;11913;Inner Rim;599;531;Core;185;
-Bonadan;190;11920;Tingel Arm;807;138;Rim;17;
-Cantonica;191;11921;Tingel Arm;788;148;Rim;24;
-Dellalt;192;11922;Tingel Arm;815;204;Rim;44;
-Florn;193;11923;Tingel Arm;824;161;Rim;63;
-Lothal;194;11924;Tingel Arm;838;215;Rim;98;
-Mon Cala;195;11925;Tingel Arm;834;197;Rim;110;
-Pakuuni;196;11926;Tingel Arm;828;179;Rim;130;
-Quermia;197;11927;Tingel Arm;805;178;Rim;137;
-Raxus;198;11928;Tingel Arm;796;196;Rim;142;
-Zygerria;199;11929;Tingel Arm;780;166;Rim;200;
-Belderone;200;12032;Outer Rim East;753;269;Rim;11;
-Boonta;201;12033;Outer Rim East;772;308;Rim;18;
-Dennogra;202;12034;Outer Rim East;791;295;Rim;45;
-Iego;203;12035;Outer Rim East;805;277;Rim;76;
-Ossus;204;12036;Outer Rim East;758;251;Rim;129;
-Saleucami;205;12037;Outer Rim East;753;308;Rim;148;
-Sriluur;206;12038;Outer Rim East;786;326;Rim;161;
-Sy Myrth;207;12039;Outer Rim East;765;287;Rim;163;
+Appearances: Episode 6, The Mandalorian, SWG, Atlas
+"
+Tepasi;158;11864;Colonies;490;373;Core;170;"[CANON] Sector: Colonies
+Coordinates: L-9, Hyperspace routes: 5
+
+Geology: Planet
+Species: 
+Exports: 
+
+History: 
+
+Appearances: 
+"
+Tirahnn;159;11865;Colonies;529;324;Core;175;"[CANON] Sector: Colonies
+Coordinates: N-8, Hyperspace routes: 2
+
+Geology: 
+Species: 
+Exports: 
+
+History: 
+
+Appearances: Rebels
+"
+Bakura;160;11872;Outer Rim West;304;639;Rim;9;"[CANON] Sector: Outer Rim West
+Coordinates: G-16, Hyperspace routes: 1
+
+Geology: Planet, Temperate, Varied
+Species: -
+Economys: Secondary, Manufactured goods, Repulsorlift coils, Metal extraction
+
+History: [Legends] Bakura, is a rich, green and blue planet, located on the isolated edge of Wild Space, and was the homeworld of the indigenous Kurtzen and isolated humans colonisers known as Bakurans.
+
+[Legends] Bakura's primary industry was the manufacture of repulsorlift coils"
+Belsavis;161;11873;Outer Rim West;356;694;Rim;12;"[CANON] Sector: Outer Rim West
+Coordinates: L-18, Hyperspace routes: 3
+
+Geology: Planet, Cold, Frozen, Tropical rift valleys
+Species: None
+Economy: None 
+
+History: Belsavis was connected via hyperspace route to Karfeddion, and was located near the Thull's Shroud, a location where the marauder group of the Nihil operated during the High Republic Era. It has been used as a Prison world due to the hard conditions on the planet. 
+[Legends] The planet is Ice-covered and its average temperature is -50.
+
+Appearances: Swtor
+"
+Cyphar;162;11874;Outer Rim West;356;658;Rim;39;"[CANON] Sector: Outer Rim West
+Coordinates: L-17, Hyperspace routes: 2
+
+Geology: Planet
+Species: 
+Exports: 
+
+History: 
+
+Appearances: Rebels
+"
+Dolla;163;11875;Outer Rim West;337;698;Rim;48;"[CANON] Sector: Outer Rim West
+Coordinates: L-18, , Hyperspace routes: 4
+
+Geology: Planet
+Species: 
+Exports: 
+
+History: 
+
+Appearances: 
+"
+Endor;164;11876;Outer Rim West;327;649;Rim;56;"[CANON] Sector: Outer Rim West
+Coordinates: H-16, Hyperspace routes: 4
+
+Geology: Moon
+Species: 
+Exports: 
+
+History: 
+
+Appearances: 
+"
+Karfeddion;165;11877;Outer Rim West;337;680;Rim;88;"[CANON] Sector: Outer Rim West
+Coordinates: L-18, Hyperspace routes: 6
+
+Geology: Planet
+Species: 
+Exports: 
+
+History: 
+
+Appearances: 
+"
+Kef Bir;166;11878;Outer Rim West;308;657;Rim;90;"[CANON] Sector: Outer Rim West
+Coordinates: H-16, Hyperspace routes: -
+
+Geology: Moon
+Species: 
+Exports: 
+
+History: 
+
+Appearances: 
+"
+Rattatak;167;11879;Outer Rim West;312;621;Rim;141;"[CANON] Sector: Outer Rim West
+Coordinates: H-16, Hyperspace routes: 0
+
+Geology: Planet
+Species: 
+Exports: 
+
+History: 
+
+Appearances: Clone Wars, Atlas
+"
+Sullust;168;11880;Outer Rim West;362;676;Rim;162;"[CANON] Sector: Outer Rim West
+Coordinates: M-17, Hyperspace routes: 2
+
+Geology: Planet
+Species: 
+Exports: 
+
+History: 
+
+Appearances: Clone Wars, Rebels, Battlefront 1, Atlas
+"
+Takodana;169;11881;Outer Rim West;331;624;Rim;165;"[CANON] Sector: Outer Rim West
+Coordinates: J-16, Hyperspace routes: 2
+
+Geology: Planet
+Species: 
+Exports: 
+
+History: 
+
+Appearances: Episode 7, Rebels, Battlefront 2
+"
+Bestine IV;170;11888;Mid Rim South;528;613;Core;15;"[CANON] Sector: Mid Rim South
+Coordinates: M-14, Hyperspace routes: 2
+
+Geology: Planet, Temperate, Ocean, Islands
+Species: Human
+Economy: Secondary, Agriculture, Shipbuilding
+
+History: Bestine IV is a water-covered planet located in the Inner Rim. One of forty-two key member worlds of the Galactic Republic by the time of the High Republic Era, it served primarily as an agricultural world under the Republic, having some ship building facilities as well.
+
+Bestine IV remained loyal to the Republic during the Clone Wars against the Separatists, hosting a Republic Navy fleet.
+
+Appearances: Episode 4, The Clone Wars
+"
+Crait;171;11889;Mid Rim South;528;678;Core;37;"[CANON] Sector: Mid Rim South
+Coordinates: N-17, Hyperspace routes: -
+
+Geology: Planet, Hot, Dry, Salt Flats
+Species: 
+Exports: 
+
+History: 
+
+Appearances: Episode 8, Battlefront 2
+"
+D'Qar;172;11890;Mid Rim South;548;671;Core;49;"[CANON] Sector: Mid Rim South
+Coordinates: O-17, Hyperspace routes: -
+
+Geology: Planet
+Species: 
+Exports: 
+
+History: 
+
+Appearances: Episode 7, Episode 8, Battlefront 2
+"
+Farstine;173;11891;Mid Rim South;567;671;Core;61;"[CANON] Sector: Mid Rim South
+Coordinates: P-17, Hyperspace routes: 3
+
+Geology: Planet
+Species: 
+Exports: 
+
+History: 
+
+Appearances: 
+"
+Malastare;174;11892;Mid Rim South;509;668;Core;103;"[CANON] Sector: Mid Rim South
+Coordinates: N-16, Hyperspace routes: 2
+
+Geology: Planet
+Species: 
+Exports: 
+
+History: 
+
+Appearances: Clone Wars, Atlas
+"
+Naboo;175;11893;Mid Rim South;563;653;Core;116;"[CANON] Sector: Mid Rim South
+Coordinates: O-17, Hyperspace routes: 2
+
+Geology: Planet
+Species: 
+Exports: 
+
+History: 
+
+Appearances: Episode 1, 2, 3, 6, Clone Wars, Rebels, SWG, Battlefront 1, 2, Atlas
+"
+Pax;176;11894;Mid Rim South;528;654;Core;134;"[CANON] Sector: Mid Rim South
+Coordinates: N-16, Hyperspace routes: 4
+
+Geology: Planet
+Species: 
+Exports: 
+
+History: 
+
+Appearances: 
+"
+Shadda-Bi-Boran;177;11895;Mid Rim South;561;689;Core;152;"[CANON] Sector: Mid Rim South
+Coordinates: O-18, Hyperspace routes: 0
+
+Geology: Planet
+Species: 
+Exports: 
+
+History: 
+
+Appearances: Atlas
+"
+Wroona;178;11896;Mid Rim South;528;631;Core;191;"[CANON] Sector: Mid Rim South
+Coordinates: L-15, Hyperspace routes: 4
+
+Geology: Moon
+Species: 
+Exports: 
+
+History: 
+
+Appearances: 
+"
+Yag'Dhul;179;11897;Mid Rim South;509;628;Core;193;"[CANON] Sector: Mid Rim South
+Coordinates: L-14, Hyperspace routes: 4
+
+Geology: 
+Species: 
+Exports: 
+
+History: 
+
+Appearances: 
+"
+Cato Neimoidia;180;11904;Inner Rim;567;476;Core;26;"[CANON] Sector: Inner Rim
+Coordinates: N-11, Hyperspace routes: 1
+
+Geology: Planet
+Species: 
+Exports: 
+
+History: 
+
+Appearances: Episode 3, Clone Wars, Rebels
+"
+Commenor;181;11905;Inner Rim;576;458;Core;32;"[CANON] Sector: Inner Rim
+Coordinates: N-10, Hyperspace routes: 4
+
+Geology: Planet
+Species: 
+Exports: 
+
+History: 
+
+Appearances: 
+"
+Exodeen;182;11906;Inner Rim;564;494;Core;60;"[CANON] Sector: Inner Rim
+Coordinates: M-12, Hyperspace routes: 3
+
+Geology: Planet
+Species: 
+Exports: 
+
+History: 
+
+Appearances: 
+"
+Gamor;183;11907;Inner Rim;575;517;Core;66;"[CANON] Sector: Inner Rim
+Coordinates: O-14, Hyperspace routes: 4
+
+Geology: Planet
+Species: 
+Exports: 
+
+History: 
+
+Appearances: 
+"
+Manaan;184;11908;Inner Rim;595;468;Core;104;"[CANON] Sector: Inner Rim
+Coordinates: O-11, Hyperspace routes: -
+
+Geology: Planet
+Species: 
+Exports: 
+
+History: 
+
+Appearances: KOTOR 1, SWTOR
+"
+Milagro;185;11909;Inner Rim;580;535;Core;107;"[CANON] Sector: Inner Rim                                                                 
+Coordinates: O-14, Hyperspace routes: 4
+
+Geology: Planet
+Species: 
+Exports: 
+
+History: 
+
+Appearances: "
+Mimban;186;11910;Inner Rim;599;486;Core;108;"[CANON] Sector: Inner Rim
+Coordinates: O-12, Hyperspace routes: 2
+
+Geology: Planet
+Species: 
+Exports: 
+
+History: 
+
+Appearances: Solo, Atlas
+"
+Nexus Ortai;187;11911;Inner Rim;618;535;Core;123;"[CANON] Sector: Inner Rim
+Coordinates: Q-14, Hyperspace routes: 4
+
+Geology: Planet
+Species: 
+Exports: 
+
+History: 
+
+Appearances: 
+"
+Pasaana;188;11912;Inner Rim;604;504;Core;133;"[CANON] Sector: Inner Rim
+Coordinates: P-12, Hyperspace routes: -
+
+Geology: Planet
+Species: 
+Exports: 
+
+History: 
+
+Appearances: Episode 9
+"
+Vandor-1;189;11913;Inner Rim;599;531;Core;185;"[LEGENDS] Sector: Inner Rim
+Coordinates: P-14, Hyperspace routes: -
+
+Geology: Planet
+Species: 
+Exports: 
+
+History: 
+
+Appearances: Solo
+"
+Bonadan;190;11920;Tingel Arm;807;138;Rim;17;"[CANON] Sector: Tingel Arm
+Coordinates: S-3, Hyperspace routes: 5
+
+Geology: Planet
+Species: Human, Mixed
+Economy: [Legends] Secondary, Manufacturing, Heavy Industries, Mineral extraction
+
+History: [Legends] Bonadan is the chief port world of the Corporate Sector, boasting 10 gigantic spaceports.Bonadan's yellow, parched surface was heavily eroded, and its topsoil had been destroyed due to constant drilling and construction. The once-beautiful landscape was scorched and barren from years of strip-mining, pollution, and mismanagement. The remaining surface was covered with factories, refineries, docks, and shipbuilding facilities
+
+[Legends] A massive weather-control station lay in the mountains to the north of the main cities"
+Cantonica;191;11921;Tingel Arm;788;148;Rim;24;"[CANON] Sector: Tingel Arm
+Coordinates: S-4, Hyperspace routes: 2
+
+Geology: Planet
+Species: 
+Exports: 
+
+History: 
+
+Appearances: Episode 8
+"
+Dellalt;192;11922;Tingel Arm;815;204;Rim;44;"[CANON] Sector: Tingel Arm
+Coordinates: T-6, Hyperspace routes: 4
+
+Geology: Planet
+Species: 
+Exports: 
+
+History: 
+
+Appearances: 
+"
+Florn;193;11923;Tingel Arm;824;161;Rim;63;"[CANON] Sector: Tingel Arm
+Coordinates: T-5, Hyperspace routes: 4
+
+Geology: Planet 
+Species: 
+Exports: 
+
+History: 
+
+Appearances: 
+"
+Lothal;194;11924;Tingel Arm;838;215;Rim;98;"[CANON] Sector: Tingel Arm
+Coordinates: U-7, Hyperspace routes: 2
+
+Geology: Planet
+Species: 
+Exports: 
+
+History: 
+
+Appearances: Rebels
+"
+Mon Cala;195;11925;Tingel Arm;834;197;Rim;110;"[CANON] Sector: Tingel Arm
+Coordinates: U-6, Hyperspace routes: 4
+
+Geology: Planet
+Species: 
+Exports: 
+
+History: 
+
+Appearances: Clone Wars, Atlas
+"
+Pakuuni;196;11926;Tingel Arm;828;179;Rim;130;"[CANON] Sector: Tingel Arm
+Coordinates: T-6, Hyperspace routes: 4
+
+Geology: Planet
+Species: 
+Exports: 
+
+History: 
+
+Appearances: 
+"
+Quermia;197;11927;Tingel Arm;805;178;Rim;137;"[CANON] Sector: Tingel Arm
+Coordinates: S-5, Hyperspace routes: 4
+
+Geology: Planet
+Species: 
+Exports: 
+
+History: 
+
+Appearances: 
+"
+Raxus;198;11928;Tingel Arm;796;196;Rim;142;"[CANON] Sector: Tingel Arm
+Coordinates: S-5, Hyperspace routes: 4
+
+Geology: Planet
+Species: 
+Exports: 
+
+History: 
+
+Appearances: Clone Wars
+"
+Zygerria;199;11929;Tingel Arm;780;166;Rim;200;"[CANON] Sector: Tingel Arm
+Coordinates: S-4, Hyperspace routes: 4
+
+Geology: Planet
+Species: 
+Exports: 
+
+History: 
+
+Appearances: Clone Wars, Rebels
+"
+Belderone;200;12032;Outer Rim East;753;269;Rim;11;"[CANON] Sector: Outer Rim East
+Coordinates: R-6, Hyperspace routes: 4
+
+Geology: Planet
+Species: Human, mixed
+Economy: -
+
+History: In the early days of the Galactic Empire, members of the Imperial Army were reluctant to be stationed on Belderone, as it was understood that the troops stationed the farthest from Imperial Center were of least importance to the Empire's cause. As such, virtually any reassignment to the planet was viewed as punishment or demotion.
+
+Appearances: -
+"
+Boonta;201;12033;Outer Rim East;772;308;Rim;18;"[CANON] Sector: Outer Rim East
+Coordinates: S-8, Hyperspace routes: 5
+
+Geology: Moon, Dry, Baren wastelands
+Species: Human, Hutt
+Economy: Unknown
+
+History: [Legends] Boonta, formerly known as Ko Vari, is a planet colonized by the Hutts in the distant past. Despite it being a devastated world, Boonta is famous in the galaxy for its podracing and speeder races. 
+
+Appearances: 
+"
+Dennogra;202;12034;Outer Rim East;791;295;Rim;45;"[CANON] Sector: Outer Rim East
+Coordinates: S-8, Hyperspace routes: 2
+
+Geology: Planet
+Species: 
+Exports: 
+
+History: 
+
+Appearances: Rebels
+"
+Iego;203;12035;Outer Rim East;805;277;Rim;76;"[CANON] Sector: Outer Rim East
+Coordinates: T-7, Hyperspace routes: 0
+
+Geology: Planet
+Species: 
+Exports: 
+
+History: 
+
+Appearances: Clone Wars
+"
+Ossus;204;12036;Outer Rim East;758;251;Rim;129;"[CANON] Sector: Outer Rim East
+Coordinates: R-6, Hyperspace routes: 3
+
+Geology: Planet
+Species: 
+Exports: 
+
+History: 
+
+Appearances: Atlas
+"
+Saleucami;205;12037;Outer Rim East;753;308;Rim;148;"[CANON] Sector: Outer Rim East
+Coordinates: S-8, Hyperspace routes: 0
+
+Geology: Planet
+Species: 
+Exports: 
+
+History: 
+
+Appearances: Episode 3, Clone Wars, Atlas
+"
+Sriluur;206;12038;Outer Rim East;786;326;Rim;161;"[CANON] Sector: Outer Rim East
+Coordinates: S-8, Hyperspace routes: 4
+
+Geology: Planet
+Species: 
+Exports: 
+
+History: 
+
+Appearances: 
+"
+Sy Myrth;207;12039;Outer Rim East;765;287;Rim;163;"[CANON] Sector: Outer Rim East
+Coordinates: S-7, Hyperspace routes: 4
+
+Geology: Planet
+Species: 
+Exports: 
+
+History: 
+
+Appearances: 
+"
 Tund;208;12040;Outer Rim East;811;318;Rim;181;"[CANON] Sector: Outer Rim East
 Coordinates: U-8, Hyperspace routes: -
 
@@ -378,51 +1189,414 @@ Exports:
 History: This planet is full of deadly radiation except in some places where the radiation is held in check by force fields.  This was home to the Sorcerers of Tund, before the radiation when the planet was awash in life.
 
 Appearances: Atlas"
-Voss;209;12041;Outer Rim East;777;249;Rim;187;
-Abregado-rae;210;12048;Deep Core;377;493;Rim;1;
-Byss;211;12049;Deep Core;381;459;Rim;23;
-Fondor;212;12050;Deep Core;398;493;Rim;64;
-Ghorman;213;12051;Deep Core;388;511;Rim;70;
-Jakku;214;12052;Deep Core;354;494;Rim;82;
-Jedha;215;12053;Deep Core;363;438;Rim;83;
-Rakata Prime;216;12054;Deep Core;352;471;Rim;139;
-Thyferra;217;12055;Deep Core;407;515;Rim;174;
-Tython;218;12056;Deep Core;399;441;Rim;182;
-Wellspring of Life;219;12057;Deep Core;400;465;Rim;188;
-Agamar;220;12064;Mandalorian Space;531;197;Rim;2;
-Ajan Kloss;221;12065;Mandalorian Space;512;203;Rim;4;
-Celanon;222;12066;Mandalorian Space;570;207;Rim;27;
-Concord Dawn;223;12067;Mandalorian Space;563;263;Rim;33;
-Corsin;224;12068;Mandalorian Space;537;259;Rim;35;
-Dathomir;225;12069;Mandalorian Space;551;218;Rim;43;
-Mandalore;226;12070;Mandalorian Space;570;245;Rim;105;
-Shili;227;12071;Mandalorian Space;515;274;Rim;153;
-Taris;228;12072;Mandalorian Space;551;238;Rim;167;
-Vinsoth;229;12073;Mandalorian Space;551;198;Rim;186;
-Anoat;230;12080;Western Reaches;376;772;Rim;7;
-Bespin;231;12081;Western Reaches;395;759;Rim;14;"[CANON] Sector: Western Reaches
-Coordinates: K-18, Hyperspace routes: 3
+Voss;209;12041;Outer Rim East;777;249;Rim;187;"[LEGENDS] Sector: Outer Rim East
+Coordinates: S-6, Hyperspace routes: -
 
-Geology: Gas giant, 
+Geology: Planet
 Species: 
 Exports: 
 
-History: A many-mooned gaseous system, Bespin is home to several mining operations, including Tibannopolis and Cloud City, that draw valuable tibanna gas from below the cloud layers. Cloud City is staffed by a large population of Ugnaughts from the nearby Anoat system, and is not a part of the Mining Guild or the Empire. Bespin's fauna includes birdlike rawwks and airborne algae sacks.
+History: 
 
-Appearances: Episode 5, Episode 6, Episode 9, BattleField 1, BattleField 2, Atlas"
-Gerrenthum;232;12082;Western Reaches;414;746;Rim;69;
-Hoth;233;12083;Western Reaches;414;764;Rim;75;
-Isde Naha;234;12084;Western Reaches;395;777;Rim;79;
-Lotho Minor;235;12085;Western Reaches;359;734;Rim;99;
-Lutrillia;236;12086;Western Reaches;392;741;Rim;100;
-Mustafar;237;12087;Western Reaches;417;784;Rim;113;
-Polis Massa;238;12088;Western Reaches;407;804;Rim;135;
-Terminus;239;12089;Western Reaches;388;810;Rim;171;
-Circumtore;240;12096;Hutt Space;788;454;Rim;31;
-Eadu;241;12097;Hutt Space;828;399;Rim;53;
-Formos;242;12098;Hutt Space;825;381;Rim;65;
-Honoghr;243;12099;Hutt Space;809;399;Rim;73;
-Kessel;244;12100;Hutt Space;802;378;Rim;92;
+Appearances: SWTOR
+"
+Abregado-rae;210;12048;Deep Core;377;493;Rim;1;"[CANON] Sector: Deep Core
+Coordinates: K13, Hyperspace routes: 2
+
+Geology: Planet. Temperate, Varried
+Species: Gados, Humans
+Economy: Tertiary, Trade, [Legends] Technology
+
+History: Abregado-rae, also known simply as Abregado, is a trade world located in the galaxy's Core Worlds. It was situated at the beginning of the Rimma Trade Route. Abregado-rae had the reputation to be a rather lawless world, and its main spaceport was as close to a safe dock for smugglers as could be found in the Core.
+
+During the High Republic Era, a countess living on Abregado-rae ordered a saberfish from Tibrin for her private aquarium, with it being transported to the Core in the starship Legacy Run. After the saberfish became ill due to her people not knowing how to care for it, the countess paid for the Run to return the fish to Tibrin.  
+
+[Legends] Unlike most Core Worlds, Abregado-rae was fairly backward, to the point of being compared with worlds in the Outer Rim Territories. The planet's spaceports seemed safe, at least to the untrained eye, but in fact it was a known smuggler's paradise. 
+
+Appearances: Clone Wars
+"
+Byss;211;12049;Deep Core;381;459;Rim;23;"[CANON] Sector: Deep Core
+Coordinates: K-11, Hyperspace routes: 1
+
+Geology: Planet
+Species: Human
+Economy: -
+
+History: Byss was a planet located within the galaxy's Deep Core with a Standard Galactic Grid coordinate of K-11. Only discovered late during the Old Republic, it was the endpoint of the Byss Run hyperspace route after Prakith. An unusual world with an uncanny glow caused by its sun, it is considered extremely important by Emperor Palpatine.
+
+Appearances: Atlas
+"
+Fondor;212;12050;Deep Core;398;493;Rim;64;"[CANON] Sector: Deep Core
+Coordinates: L-13, Hyperspace routes: 3
+
+Geology: Planet
+Species: 
+Exports: 
+
+History: 
+
+Appearances: Battlefront 2, Atlas
+"
+Ghorman;213;12051;Deep Core;388;511;Rim;70;"[CANON] Sector: Deep Core
+Coordinates: L-13, Hyperspace routes: 2
+
+Geology: Planet
+Species: 
+Exports: 
+
+History: 
+
+Appearances: Rebels
+"
+Jakku;214;12052;Deep Core;354;494;Rim;82;"[CANON] Sector: Deep Core
+Coordinates: I-13, Hyperspace routes: -
+
+Geology: Planet
+Species: 
+Exports: 
+
+History: 
+
+Appearances: Episode 7, Episode 9, Battlefront 2
+"
+Jedha;215;12053;Deep Core;363;438;Rim;83;"[CANON] Sector: Deep Core
+Coordinates: H-10, , Hyperspace routes: -
+
+Geology: Moon
+Species: 
+Exports: 
+
+History: 
+
+Appearances: Rouge One
+"
+Rakata Prime;216;12054;Deep Core;352;471;Rim;139;"[CANON] Sector: Deep Core
+Coordinates: G-11, Hyperspace routes: 0
+
+Geology: Planet
+Species: 
+Exports: 
+
+History: 
+
+Appearances: KOTOR 1, KOTOR 2, Atlas
+"
+Thyferra;217;12055;Deep Core;407;515;Rim;174;"[CANON] Sector: Deep Core
+Coordinates: L-14, Hyperspace routes: 2
+
+Geology: Planet
+Species: 
+Exports: 
+
+History: 
+
+Appearances: Atlas
+"
+Tython;218;12056;Deep Core;399;441;Rim;182;"[CANON] Sector: Deep Core
+Coordinates: L-10, Hyperspace routes: -
+
+Geology: Planet
+Species: 
+Exports: 
+
+History: 
+
+Appearances: The Mandalorian, SWTOR
+"
+Wellspring of Life;219;12057;Deep Core;400;465;Rim;188;"[CANON] Sector: Deep Core
+Coordinates: Unknown
+
+Geology: Planet
+Species: 
+Exports: 
+
+History: 
+
+Appearances: Clone Wars
+"
+Agamar;220;12064;Mandalorian Space;531;197;Rim;2;"[CANON] Sector: Mandalorian Space
+Coordinates: M-5, Hyperspace routes: 4
+
+Geology: Planet, Cold, Rocky
+Species: Human
+Economy: None
+
+History: Agamar was a barren, rocky planet located in the Agamar system within the Outer Rim Territories of the galaxy in grid coordinates M-5. During the Clone Wars, Separatist General Kalani was ordered by Count Dooku to retreat from Onderon to Agamar following the Separatist defeat on Onderon. 
+
+In 20 BBY, the third year of the Clone Wars, the planet was under the control of the Confederacy of Independent Systems. Count Dooku ordered General Kalani to retreat to Agamar following his defeat at the Onderonian Civil War to the Onderon rebels. Because of Kalani's override of the droid shutdown signal, an isolated Separatist holdout remained on the planet until well into the era of the Galactic Empire.
+
+Appearances: Clone Wars, Rebels
+"
+Ajan Kloss;221;12065;Mandalorian Space;512;203;Rim;4;"[CANON] Sector: Mandalorian Space
+Coordinates: L-5, Hyperspace routes: -
+
+Geology: Moon, Humid, Forests
+Species: Uninhabited
+Economy: None
+
+History: Ajan Kloss was a jungle moon located in the Outer Rim Territories, in grid square L-5 on the Standard Galactic Grid, orbiting the gas giant Ajara. Although Ajan Kloss was a moon, it has two moons of its own. Its gas giant shields it from harmful radiation.
+
+The world was inhabited by a people called the Kloss lived in the Klosslands and hollowed-out caves. 
+
+Prior to the outbreak of the Galactic Civil War, Alderaanian scouts charted Ajan Kloss, which was located in a patchily explored stretch of space off the Celanon Spur. However, the scouts deliberately hid it from the Imperial Senate because it was short-listed as a potential home for a rebel base like Yavin 4 and Dantooine.
+
+Appearances: Episode 9
+"
+Celanon;222;12066;Mandalorian Space;570;207;Rim;27;"[CANON] Sector: Mandalorian Space
+Coordinates: O-6, Hyperspace routes: 4
+
+Geology: Planet
+Species: 
+Exports: 
+
+History: 
+
+Appearances: 
+"
+Concord Dawn;223;12067;Mandalorian Space;563;263;Rim;33;"[CANON] Sector: Mandalorian Space
+Coordinates: O-7, Hyperspace routes: -
+
+Geology: Planet
+Species: 
+Exports: 
+
+History: 
+
+Appearances: Clone Wars, Rebels
+"
+Corsin;224;12068;Mandalorian Space;537;259;Rim;35;"[CANON] Sector: Mandalorian Space
+Coordinates: M-7, Hyperspace routes: 3
+
+Geology: Planet
+Species: 
+Exports: 
+
+History: 
+
+Appearances: 
+"
+Dathomir;225;12069;Mandalorian Space;551;218;Rim;43;"[CANON] Sector: Mandalorian Space
+Coordinates: O-6, Hyperspace routes: 0
+
+Geology: Planet
+Species: 
+Exports: 
+
+History: 
+
+Appearances: Clone Wars, Rebels, Star Wars Galaxies, Atlas
+"
+Mandalore;226;12070;Mandalorian Space;570;245;Rim;105;"[CANON] Sector: Mandalorian Space
+Coordinates: O-7, Hyperspace routes: 3
+
+Geology: Planet
+Species: 
+Exports: 
+
+History: 
+
+Appearances: The Mandalorian, Clone Wars, Rebels, Atlas
+"
+Shili;227;12071;Mandalorian Space;515;274;Rim;153;"[CANON] Sector: Mandalorian Space
+Coordinates: L-8, Hyperspace routes: -
+
+Geology: Planet
+Species: 
+Exports: 
+
+History: 
+
+Appearances: Clone Wars, Rebels
+"
+Taris;228;12072;Mandalorian Space;551;238;Rim;167;"[CANON] Sector: Mandalorian Space
+Coordinates: N-7, Hyperspace routes: -
+
+Geology: Planet
+Species: 
+Exports: 
+
+History: 
+
+Appearances: KOTOR 1, SWTOR
+"
+Vinsoth;229;12073;Mandalorian Space;551;198;Rim;186;"[CANON] Sector: Mandalorian Space
+Coordinates: N-5, Hyperspace routes: 4
+
+Geology: Planet
+Species: 
+Exports: 
+
+History: 
+
+Appearances: 
+"
+Anoat;230;12080;Western Reaches;376;772;Rim;7;"[CANON] Sector: Western Reaches
+Coordinates: K-18, Hyperspace routes: 2
+
+Geology: Planet, Polluted, Toxic, Urban
+Species: Lurkers, Uninhabited
+Economy: None 
+
+History: Once a sprawling city-world, Anoat served as the capital of the entire Anoat sector. However, the entire planet was gassed by the Galactic Empire, and the atmosphere became toxic and poisonous, forcing much of the population to flee from the polluted world.
+
+Appearances: Atlas
+"
+Bespin;231;12081;Western Reaches;395;759;Rim;14;"[CANON] Sector: Western Reaches
+Coordinates: K-18, Hyperspace routes: 3
+
+Geology: Gas Giant
+Species: 
+Economy: Primary, Tabanna gas
+
+History: Bespin is a gas giant located in the vicinity of the Anoat sector, a desolate sector of the galaxy. Bespin has two moons, and its gaseous mass contains a thin stratum of habitable atmosphere above a source of rare and costly tibanna gas. Tibanna gas is harvested and refined in several mining complexes, including Cloud City, an opulent metropolis suspended in the planet's huge billowing clouds.
+
+Bespin was home to many types of life, which was rare for a gas giant. The planet had two sister worlds, from which it was separated by an asteroid belt called Velser's Ring.
+
+Appearances: Episode 5, Episode 6, Episode 9, Battlefront 1 and 2, Atlas
+"
+Gerrenthum;232;12082;Western Reaches;414;746;Rim;69;"[CANON] Sector: Western Reaches
+Coordinates: K-18, Hyperspace routes: 4
+
+Geology: Planet
+Species: 
+Exports: 
+
+History: 
+
+Appearances: 
+"
+Hoth;233;12083;Western Reaches;414;764;Rim;75;"[CANON] Sector: Western Reaches
+Coordinates: K-18, Hyperspace routes: 3
+
+Geology: Planet
+Species: 
+Exports: 
+
+History: 
+
+Appearances: Episode 5, Star Wars Galaxies, SWTOR, Battlefront 1, Battlefront 2, Atlas
+"
+Isde Naha;234;12084;Western Reaches;395;777;Rim;79;"[CANON] Sector: Western Reaches
+Coordinates: K-18, Hyperspace routes:4
+
+Geology: Planet
+Species: 
+Exports: 
+
+History: 
+
+Appearances: 
+"
+Lotho Minor;235;12085;Western Reaches;359;734;Rim;99;"[CANON] Sector: Western Reaches
+Coordinates: I-17, Hyperspace routes: -
+
+Geology: Planet
+Species: 
+Exports: 
+
+History: 
+
+Appearances: Clone Wars, Rebels
+"
+Lutrillia;236;12086;Western Reaches;392;741;Rim;100;"[CANON] Sector: 
+Coordinates: J-18, Hyperspace routes: 4
+
+Geology: Planet
+Species: 
+Exports: 
+
+History: 
+
+Appearances: 
+"
+Mustafar;237;12087;Western Reaches;417;784;Rim;113;"[CANON] Sector: Western Reaches
+Coordinates: L-19, Hyperspace routes: 0
+
+Geology: Planet
+Species: 
+Exports: 
+
+History: 
+
+Appearances: Episode 3, Rouge One, Episode 9, Clone Wars, Rebels, SWG, Atlas
+"
+Polis Massa;238;12088;Western Reaches;407;804;Rim;135;"[CANON] Sector: Western Reaches
+Coordinates: K-20, Hyperspace routes: -
+
+Geology: Planet
+Species: 
+Exports: 
+
+History: 
+
+Appearances: Episode 3
+"
+Terminus;239;12089;Western Reaches;388;810;Rim;171;"[CANON] Sector: Western Reaches
+Coordinates: K-20, Hyperspace routes: 4
+
+Geology: Planet
+Species: 
+Exports: 
+
+History: 
+
+Appearances: 
+"
+Circumtore;240;12096;Hutt Space;788;454;Rim;31;"[CANON] Sector: Hutt Space
+Coordinates: S-12, Hyperspace routes: 4
+
+Geology: Planet
+Species: 
+Exports: 
+
+History: 
+
+Appearances: 
+"
+Eadu;241;12097;Hutt Space;828;399;Rim;53;"[CANON] Sector: Hutt Space
+Coordinates: U-10, Hyperspace routes: 2
+
+Geology: Planet
+Species: 
+Exports: 
+
+History: 
+
+Appearances: Rouge One
+"
+Formos;242;12098;Hutt Space;825;381;Rim;65;"[CANON] Sector: Hutt Space
+Coordinates: T-10, Hyperspace routes: 4
+
+Geology: Planet
+Species: 
+Exports: 
+
+History: 
+
+Appearances: 
+"
+Honoghr;243;12099;Hutt Space;809;399;Rim;73;"[LEGENDS] Sector: Hutt Space
+Coordinates: T-10, Hyperspace routes: 1
+
+Geology: PLanet
+Species: 
+Exports: 
+
+History: 
+
+Appearances: Atlas
+"
+Kessel;244;12100;Hutt Space;802;378;Rim;92;"[CANON] Sector: Hutt Space
+Coordinates: T-10, Hyperspace routes: 2
+
+Geology: Planet
+Species: 
+Exports: 
+
+History: 
+
+Appearances: Solo, Clone Wars, Rebels, Battlefront 2, Atlas
+"
 Nal Hutta;245;12101;Hutt Space;788;436;Rim;118;"[CANON] Sector: Hutt Space
 Coordinates: S-12, Hyperspace routes: 4
 
@@ -433,48 +1607,362 @@ Exports:
 History: Nal Hutta, which means Glorious Jewel in Huttese, is one of the systems colonized by the Hutts.  The infamous Jabba the Hutt was born in the system.
 
 Appearances: Clone Wars, SWTOR, Atlas"
-Nar Shaddaa;246;12102;Hutt Space;807;440;Rim;119;
-Quesh;247;12103;Hutt Space;795;417;Rim;138;
-Sleheyron;248;12104;Hutt Space;790;396;Rim;156;
-Toydaria;249;12105;Hutt Space;770;430;Rim;176;
-Bith;250;12112;Outher Rim South;491;761;Rim;16;
-Dagobah;251;12113;Outher Rim South;496;779;Rim;41;
-Eriadu;252;12114;Outher Rim South;489;743;Rim;57;
-Kabal;253;12115;Outher Rim South;532;749;Rim;84;
-Kaller;254;12116;Outher Rim South;474;801;Rim;86;
-Nevarro;255;12117;Outher Rim South;528;807;Rim;122;
-Sluis Van;256;12118;Outher Rim South;510;761;Rim;157;
-Sorgan;257;12119;Outher Rim South;494;819;Rim;160;
-Triton;258;12120;Outher Rim South;508;743;Rim;180;
-Utapau;259;12121;Outher Rim South;525;789;Rim;184;
-Anaxes;260;12128;Core Worlds North;433;333;Core;6;
-Brentaal IV;261;12129;Core Worlds North;455;333;Core;22;
-Chandrila;262;12130;Core Worlds North;442;351;Core;28;
-Empress Teta;263;12131;Core Worlds North;426;399;Core;55;
-N'Zoth;264;12132;Core Worlds North;399;404;Core;125;
-Coruscant;265;12133;Core Worlds North;414;377;Core;36;"[CANON] Sector: Core Worlds
+Nar Shaddaa;246;12102;Hutt Space;807;440;Rim;119;"[CANON] Sector: Hutt Space
+Coordinates: S-12, Hyperspace routes: 4
+
+Geology: Moon
+Species: 
+Exports: 
+
+History: 
+
+Appearances: KOTOR 2, SWTOR, Atlas
+"
+Quesh;247;12103;Hutt Space;795;417;Rim;138;"[LEGENDS] Sector: Hutt Space
+Coordinates: S-10, Hyperspace routes: 0
+
+Geology: Planet
+Species: 
+Exports: 
+
+History: 
+
+Appearances: SWTOR
+"
+Sleheyron;248;12104;Hutt Space;790;396;Rim;156;"[CANON] Sector: Hutt Space 
+Coordinates: S-10, Hyperspace routes: 4
+
+Geology: Planet
+Species: 
+Exports: 
+
+History: 
+
+Appearances: 
+"
+Toydaria;249;12105;Hutt Space;770;430;Rim;176;"[CANON] Sector: Hutt Space
+Coordinates: R-11, Hyperspace routes: 2
+
+Geology: Planet
+Species: 
+Exports: 
+
+History: 
+
+Appearances: Clone Wars, Rebels, Atlas
+"
+Bith;250;12112;Outher Rim South;491;761;Rim;16;"[CANON] Sector: Outer Rim South
+Coordinates: M-18, Hyperspace routes: 2
+
+Geology: Planet
+Species: Bith
+Economy: [Legends] Tertiary, Technology, Medicine, Cybernetic implants, Trade, Art
+
+History: Bith, also known as Clak'dor VII or simply Clak'dor, is a planet located in the Outer Rim and the homeworld of the Bith species. The Bith live in domed cities, the majority of which lay nestled in the crags of Clak'dor's mountain ranges. Many Bith, including offworld Bith, found Clak'dor harsh and depressing.
+
+Appearances: Rebels
+"
+Dagobah;251;12113;Outher Rim South;496;779;Rim;41;"[CANON] Sector: Outer Rim South
+Coordinates: M-19, Hyperspace routes: 0
+
+Geology: Planet
+Species: 
+Exports: 
+
+History: 
+
+Appearances: Episode 5, Episode 6, Clone Wars, Rebels, Atlas
+"
+Eriadu;252;12114;Outher Rim South;489;743;Rim;57;"[CANON] Sector: Outer Rim South
+Coordinates: M-18, Hyperspace routes: 7
+
+Geology: Planet
+Species: 
+Exports: 
+
+History: 
+
+Appearances: Rebels, Atlas
+"
+Kabal;253;12115;Outher Rim South;532;749;Rim;84;"[CANON] Sector: Outer Rim South
+Coordinates: N-18, Hyperspace routes: 4
+
+Geology: Planet
+Species: 
+Exports: 
+
+History: 
+
+Appearances: 
+"
+Kaller;254;12116;Outher Rim South;474;801;Rim;86;"[CANON] Sector: Outer Rim South
+Coordinates: -
+
+Geology: Planet
+Species: 
+Exports: 
+
+History: 
+
+Appearances: Clone Wars, Rebels
+"
+Nevarro;255;12117;Outher Rim South;528;807;Rim;122;"[CANON] Sector: Outer Rim South
+Coordinates: Unknown
+
+Geology: Planet
+Species: 
+Exports: 
+
+History: 
+
+Appearances: The Mandalorian 
+"
+Sluis Van;256;12118;Outher Rim South;510;761;Rim;157;"[CANON] Sector: Outer Rim South
+Coordinates: M-19, Hyperspace routes: 2
+
+Geology: Planet
+Species: 
+Exports: 
+
+History: 
+
+Appearances: 
+"
+Sorgan;257;12119;Outher Rim South;494;819;Rim;160;"[CANON] Sector: Outer Rim South
+Coordinates: Unknown
+
+Geology: Planet
+Species: 
+Exports: 
+
+History: 
+
+Appearances: The Mandalorian
+"
+Triton;258;12120;Outher Rim South;508;743;Rim;180;"[CANON] Sector: Outer Rim South
+Coordinates: M-18, Hyperspace routes: 3
+
+Geology: Planet
+Species: 
+Exports: 
+
+History: 
+
+Appearances: Atlas
+"
+Utapau;259;12121;Outher Rim South;525;789;Rim;184;"[CANON] Sector: Outer Rim South
+Coordinates: N-19, Hyperspace routes: 0
+
+Geology: Planet
+Species: 
+Exports: 
+
+History: 
+
+Appearances: Episode 3, Clone Wars, Atlas
+"
+Anaxes;260;12128;Core Worlds North;433;333;Core;6;"[CANON] Sector: Core Worlds North
+Coordinates: L-9, Hyperspace routes: 2
+
+Geology: Asteroid field
+Species: None
+Economy: None
+
+History: Anaxes, was an ancient member of the Galactic Republic, hosting a Republic naval base protecting the Core Worlds from attacks along the Perlemian, as well as prominent shipyards. For centuries, it primarily worked with local defense forces.
+
+After the Clone Wars, Anaxes was destroyed by a cataclysmic event, believed to be the result of a catastrophic main reactor failure detonating a massive stockpile of hypermatter in the shipyards. All that remained of the planet was an asteroid belt. Fort Anaxes, a Republic Military base constructed on Anaxes during the Clone Wars, survived the planet's destruction and remained on the planetoid PM-1203.
+
+Appearances: Clone Wars, Rebels, Atlas
+"
+Brentaal IV;261;12129;Core Worlds North;455;333;Core;22;"[CANON] Sector: Core Worlds North
+Coordinates: L-9, Hyperspace routes: 5
+
+Geology: Planet, Temperate, Rocky
+Species: Human
+Exports: [Legends] Tertiary, Financial services, Trade
+
+History: Brentaal IV, also referred to simply as Brentaal, is a terrestrial planet located in the the galaxy's Core Worlds, on both the Hydian Way and the Perlemian Trade Route. Brentaal IV has a rocky surface and an atmosphere that is breathable to humans.
+
+The planet was the site of the Republic Futures Program training facility. 
+
+Appearances: Atlas
+"
+Chandrila;262;12130;Core Worlds North;442;351;Core;28;"[CANON] Sector: Core Worlds North
+Coordinates: L-9, Hyperspace routes: -
+
+Geology: Planet
+Species: 
+Exports: 
+
+History: 
+
+Appearances: Clone Wars, Rebels
+"
+Empress Teta;263;12131;Core Worlds North;426;399;Core;55;"[CANON] Sector: Core Worlds North
+Coordinates: L-10, Hyperspace routes: 2
+
+Geology: Planet
+Species: 
+Exports: 
+
+History: 
+
+Appearances: 
+"
+N'Zoth;264;12132;Core Worlds North;399;404;Core;125;"[CANON] Sector: Core Worlds North
+Coordinates: K-10, Hyperspace routes: 1
+
+Geology: Planet
+Species: 
+Exports: 
+
+History: 
+
+Appearances: Atlas
+"
+Coruscant;265;12133;Core Worlds North;414;377;Core;36;"[CANON] Sector: Core Worlds North
 Coordinates: L-9, Hyperspace routes: 6
 
-Geology: Planet, 
+Geology: Planet, Ecumenopolis
 Species: 
 Exports: 
 
 History: Coruscant has been the governmental capital of the galaxy for generations. The planet's entire surface is covered by an enormous, multileveled city, called Imperial City, whose foundations have been in place since the beginning of the Old Republic, over a thousand generations ago. The pyramidal Imperial Palace, an impregnable fortress and home to the Emperor, is constructed of gray-green rock and sparkling crystals and is taller than all other structures including the Senate building. The lowest, darkest levels of Imperial City were abandoned long ago and are now home to discarded equipment, wrecked starships, and nameless subhumans moving through the shadows.
 
 Appearances: Episode 1, Episode 2, The Clone Wars, Episode 3, Rogue One, Episode 6, Andor, Clone Wars, Rebels, Atlas"
-Palanhi;266;12134;Core Worlds North;404;327;Core;131;
-Sissubo;267;12135;Core Worlds North;436;369;Core;154;
-Skako Minor;268;12136;Core Worlds North;455;369;Core;155;
-Wor Tandell;269;12137;Core Worlds North;403;359;Core;190;
-Christophsis;270;12144;Wild Space;678;666;Core;30;
-Geonosis;271;12145;Wild Space;725;664;Core;68;
-Lok;272;12146;Wild Space;676;699;Core;97;
-Mon Gazza;273;12147;Wild Space;668;642;Core;111;
-Nelvaan;274;12148;Wild Space;702;685;Core;121;
-Rodia;275;12149;Wild Space;706;649;Core;145;
-Savareen;276;12150;Wild Space;702;667;Core;149;
-Socorro;277;12151;Wild Space;667;719;Core;159;
-Tatooine;278;12152;Wild Space;721;682;Core;168;"[CANON] Sector: Spice Triangle
+Palanhi;266;12134;Core Worlds North;404;327;Core;131;"[CANON] Sector: Core Worlds North
+Coordinates: K-9, Hyperspace routes: 4
+
+Geology: Planet
+Species: 
+Exports: 
+
+History: 
+
+Appearances: 
+"
+Sissubo;267;12135;Core Worlds North;436;369;Core;154;"[CANON] Sector: Core Worlds North
+Coordinates: L-9, Hyperspace routes: -
+
+Geology: Planet
+Species: 
+Exports: 
+
+History: 
+
+Appearances: Squadrons
+"
+Skako Minor;268;12136;Core Worlds North;455;369;Core;155;"[CANON] Sector: Core Worlds North
+Coordinates: L-9, Hyperspace routes: 2
+
+Geology: Planet
+Species: 
+Exports: 
+
+History: 
+
+Appearances: Clone Wars
+"
+Wor Tandell;269;12137;Core Worlds North;403;359;Core;190;"[CANON] Sector: Core Worlds North
+Coordinates: K-9, Hyperspace routes: -
+
+Geology: Planet
+Species: 
+Exports: 
+
+History: 
+
+Appearances: Rebels
+"
+Christophsis;270;12144;Wild Space;678;666;Core;30;"[CANON] Sector: Wild Space
+Coordinates: Q-16, Hyperspace routes: 2
+
+Geology: Planet
+Species: 
+Exports: 
+
+History: 
+
+Appearances: The Clone Wars, Clone Wars, Rebels, Atlas
+"
+Geonosis;271;12145;Wild Space;725;664;Core;68;"[CANON] Sector: Wild Space
+Coordinates: R-16, Hyperspace routes: 5
+
+Geology: Planet
+Species: 
+Exports: 
+
+History: 
+
+Appearances: Episode 2, Clone Wars, Rebels, Battlefront 1, Battlefront 2, Atlas
+"
+Lok;272;12146;Wild Space;676;699;Core;97;"[CANON] Sector: Wild Space
+Coordinates: Q-17, Hyperspace routes: -
+
+Geology: Planet
+Species: 
+Exports: 
+
+History: 
+
+Appearances: Star Wars Galaxies
+"
+Mon Gazza;273;12147;Wild Space;668;642;Core;111;"[CANON] Sector: Wild Space
+Coordinates: Q-16, Hyperspace routes: 4
+
+Geology: Planet
+Species: 
+Exports: 
+
+History: 
+
+Appearances: 
+"
+Nelvaan;274;12148;Wild Space;702;685;Core;121;"[CANON] Sector: Wild Space
+Coordinates: Q-16, Hyperspace routes: 2
+
+Geology: Planet
+Species: 
+Exports: 
+
+History: 
+
+Appearances: Clone Wars
+"
+Rodia;275;12149;Wild Space;706;649;Core;145;"[CANON] Sector: Wild Space
+Coordinates: R-16, Hyperspace routes: 0
+
+Geology: Planet
+Species: 
+Exports: 
+
+History: 
+
+Appearances: Clone Wars, Atlas
+"
+Savareen;276;12150;Wild Space;702;667;Core;149;"[CANON] Sector: Wild Space
+Coordinates: Q-16, Hyperspace routes: 2
+
+Geology: Planet
+Species: 
+Exports: 
+
+History: 
+
+Appearances: Solo
+"
+Socorro;277;12151;Wild Space;667;719;Core;159;"[CANON] Sector: Wild Space
+Coordinates: Q-17, Hyperspace routes: 2
+
+Geology: Planet
+Species: 
+Exports: 
+
+History: 
+
+Appearances: Rebels
+"
+Tatooine;278;12152;Wild Space;721;682;Core;168;"[CANON] Sector: Wild Space
 Coordinates: R-16, Hyperspace routes: 5
 
 Geology: Planet, 
@@ -483,34 +1971,249 @@ Exports:
 
 History: Tatooine, the primary planet in the star system of the same name, is a desert world far from the bright center of the galaxy.  Twin suns beat down on this sand-covered world, burning the great expanses of desert and all who dwell there.
 
-Appearances: Episode 1, Episode 2, The Clone Wars, Episode 3, Episode 4, Episode 6, Episode 9, The Mandalorian, Clone Wars, Rebels, SWG, KOTOR 1, SWTOR, BattleField 1, BattleField 2, Atlas"
-Trask;279;12153;Wild Space;715;703;Core;179;
-Dromund Kaas;280;12160;Sith Worlds;718;170;Rim;50;
-Felucia;281;12161;Sith Worlds;723;195;Rim;62;
-Korriban;282;12162;Sith Worlds;697;178;Rim;94;
-Maridun;283;12163;Sith Worlds;680;213;Rim;106;
-Mirial;284;12164;Sith Worlds;700;137;Rim;109;
-Rhen Var;285;12165;Sith Worlds;709;213;Rim;143;
-Telos IV;286;12166;Sith Worlds;681;136;Rim;169;
-Yavin Prime;287;12167;Sith Worlds;667;195;Rim;195;
-Ziost;288;12168;Sith Worlds;698;155;Rim;198;
-Yavin 4;289;12169;Sith Worlds;666;177;Rim;194;
-Bothawui;290;12176;Bothan Space;746;564;Rim;20;"[CANON] Sector: Spies' Rest
+Appearances: Episode 1, 2, 3, 4, 6, 9, The Clone Wars, The Mandalorian, Clone Wars, Rebels, SWG, KOTOR 1, SWTOR, Battlefront 1, Battlefront 2, Atlas"
+Trask;279;12153;Wild Space;715;703;Core;179;"[CANON] Sector: Wild Space
+Coordinates: R-17, Hyperspace routes: 5
+
+Geology: Moon
+Species: 
+Exports: 
+
+History: 
+
+Appearances: The Mandalorian
+"
+Dromund Kaas;280;12160;Sith Worlds;718;170;Rim;50;"[LEGENDS] Sector: Sith Worlds
+Coordinates: R-5, Hyperspace routes: 2
+
+Geology: Planet
+Species: 
+Exports: 
+
+History: 
+
+Appearances: Swtor
+"
+Felucia;281;12161;Sith Worlds;723;195;Rim;62;"[CANON] Sector: Sith Worlds 
+Coordinates: R-6, Hyperspace routes: 2
+
+Geology: Planet
+Species: 
+Exports: 
+
+History: 
+
+Appearances: Clone Wars, Rebels, Battlefront 2, Atlas
+"
+Korriban;282;12162;Sith Worlds;697;178;Rim;94;"[LEGENDS] Sector: Sith Worlds
+Coordinates: R-5, Hyperspace routes: 5
+
+Geology: Planet
+Species: 
+Exports: 
+
+History: 
+
+Appearances: KOTOR 1, KOTOR 2, SWTOR, Atlas
+"
+Maridun;283;12163;Sith Worlds;680;213;Rim;106;"[CANON] Sector: Sith Worlds
+Coordinates: Q-6, Hyperspace routes: 2
+
+Geology: Planet
+Species: 
+Exports: 
+
+History: 
+
+Appearances: Clone Wars
+"
+Mirial;284;12164;Sith Worlds;700;137;Rim;109;"[CANON] Sector: Sith Worlds
+Coordinates: Q-4, Hyperspace routes: 2
+
+Geology: 
+Species: 
+Exports: 
+
+History: 
+
+Appearances: Clone Wars
+"
+Rhen Var;285;12165;Sith Worlds;709;213;Rim;143;"[CANON] Sector: Sith Worlds
+Coordinates: R-6, Hyperspace routes: 2
+
+Geology: Planet
+Species: 
+Exports: 
+
+History: 
+
+Appearances: Battlefront 1, Atlas
+"
+Telos IV;286;12166;Sith Worlds;681;136;Rim;169;"[CANON] Sector: Sith Worlds
+Coordinates: Q-4, Hyperspace routes: 2
+
+Geology: 
+Species: 
+Exports: 
+
+History: 
+
+Appearances: KOTOR 2, SWTOR
+"
+Yavin Prime;287;12167;Sith Worlds;667;195;Rim;195;"[CANON] Sector: Sith Worlds
+Coordinates: P-6, Hyperspace routes: 4
+
+Geology: Gas Giant
+Species: 
+Exports: 
+
+History: 
+
+Appearances: Clone Wars, Rebels, Squadrons, Atlas
+"
+Ziost;288;12168;Sith Worlds;698;155;Rim;198;"[CANON] Sector: Sith Worlds
+Coordinates: R-4, Hyperspace routes: 3
+
+Geology: Planet
+Species: 
+Exports: 
+
+History: 
+
+Appearances: SWTOR
+"
+Yavin 4;289;12169;Sith Worlds;666;177;Rim;194;"[CANON] Sector: Sith Worlds
+Coordinates: P-6, Hyperspace routes: 4
+
+Geology: Moon
+Species: 
+Exports: 
+
+History: 
+
+Appearances: Rouge One, Episode 4, Clone Wars, SWTOR, Battlefront 1, Battlefront 2
+"
+Bothawui;290;12176;Bothan Space;746;564;Rim;20;"[CANON] Sector: Bothan Space
 Coordinates: R-14, Hyperspace routes: 4
 
-Geology: Planet, Hot, Dry, Desert, Plains
-Species: -
-Exports: -
+Geology: Temperate, Plains, Mountains, Forests
+Species: Bothan
+Economy: Tertiary, Technology, Information, Trade
 
-History: Bothawui is the homeworld of the Bothans.  Bothans are known for being master politicians and spies, craving intrigue and subterfuge.  It is suspected that Bothan spies liberated the plans for the Death Star and passed them on to the Alliance.
+History: [Legends] Bothawui is the fourth planet from the star Both in the Both system. A major trade world, Bothawui is the center of the trade of technology in its sector and is the home of many trade houses and mega-corporations, while also boasting strong shipping, communication, and transportation industries.
+
+[Legends] Assassinations, espionage, and sabotage were as commonplace on Bothawui as debates and typical legislation were on other worlds, and the Bothan Spynet developed into the foremost information-gathering network in the galaxy because of the suspicious and treacherous nature of life on Bothawui.
+
+[Legends] Bothawui remained neutral during the clone wars, and has negotiated limited independence from the Galactic Empire.
 
 Appearances: Clone Wars, Atlas"
-Daalang;291;12177;Bothan Space;760;535;Rim;40;
-Gamorr;292;12178;Bothan Space;795;558;Rim;67;
-Kamino;293;12179;Bothan Space;766;580;Rim;87;
-Makeb;294;12180;Bothan Space;741;546;Rim;102;
-Rishi;295;12181;Bothan Space;772;562;Rim;144;
-Ryloth;296;12182;Bothan Space;750;603;Rim;147;
-Scarif;297;12183;Bothan Space;785;586;Rim;150;
-Smuggler's Run;298;12184;Bothan Space;769;608;Rim;158;
-Teth;299;12185;Bothan Space;799;531;Rim;172;
+Daalang;291;12177;Bothan Space;760;535;Rim;40;"[CANON] Sector: Bothan Space
+Coordinates: Q-12, Hyperspace routes: 4
+
+Geology: Planet, Habitable
+Species: Human
+Economy: -
+
+History: [Legends] Daalang joined the Galactic Republic prior to the Indecta Era. During the Alsakan Conflicts, it supported Coruscant. Durring the Clone Wars, the CIS stationed an anti-orbital mass-driver cannon on the planet. The shields of the CIS base were destroyed by Lightning Squadron, clearing the path for the Star Destroyer Eliminator to attack the CIS base hidden in the nebula surrounding the body.
+
+Appearances: 
+"
+Gamorr;292;12178;Bothan Space;795;558;Rim;67;"[CANON] Sector: Bothan Space
+Coordinates: T-14, Hyperspace routes: 2
+
+Geology: Planet
+Species: Gamorreans
+Economy: Primary, [Legends] Slaves, Mercenaries
+
+History: Gamorr is a lush planet located near Hutt Space and on the Triellus Trade Route. It is the homeworld of a porcine sentient species, the Gamorreans, who chop down forests to clear land for farming.
+
+[Legends] The forests and jungles of Gamorr cover a high percentage of its land mass, often overgrowing mountainous areas, and are home to a diverse variety of flora and fauna. Gamorrean forests are typically dense and damp, with hardwood trees that provide shelter for fungi that live on the dark forest floors.
+
+Appearances: Atlas 
+"
+Kamino;293;12179;Bothan Space;766;580;Rim;87;"[CANON] Sector: Bothan Space
+Coordinates: S-15, Hyperspace routes: 0
+
+Geology: Planet, Temperate, Ocean world
+Species: Kaminoans
+Economy: Tertiary, Cloning, Technology 
+
+History: Kamino is an aquatic planet located in a remote star system in the outskirts of the galaxy. It is inhabited by the Kaminoans. They are a race of tall, elegant beings with long necks who tended to keep to themselves. They are also known for their cloning technology, which was used to create a clone army for the Galactic Republic.
+
+At some point the planet was not covered in water, and the Kaminoans built a large land-based civilization. However, the water level rose, forcing the Kaminoans to build their structures on stilts. Kamino often experienced heavy rain, and during some parts of the year was covered with heavy electrical storms. During this season, Kaminoans rode on aiwhas underwater and resurfaced once they were near their destination.
+
+Shortly after the establishment of the Galactic Empire, Imperial Governor and Admiral Wilhuff Tarkin arrived on Kamino to discuss the status of the new Imperial Army with Lama Su. Tarkin informed the Prime Minister that the Empire was reluctant to continuing using clones. The Empire slowly dismantled the cloning program as the troops in the Imperial Army were gradually replaced by non-clone recruits
+
+
+Appearances: Episode 2, Clone Wars, Battlefront 1, Battlefront 2
+"
+Makeb;294;12180;Bothan Space;741;546;Rim;102;"[LEGENDS] Sector: Bothan Space
+Coordinates: Q-13, Hyperspace routes: 0
+
+Geology: Planet, Temperate, Ocean, Mesa and plateau topped stone Pillars
+Species: Chagrian, Human, Twi'lek, Weequay, Zabrak, Mixed
+Economy: Primary, Mineral extraction, Isotope-5
+
+History: [Legends] Makeb is an oceanic planet with enormous amounts of electromagnetic interference in the upper levels of it's atmosphere. The planet's gravity, while below standard, has unique anomalies that formed many massive stone pillars across Makeb's surface. The pillars, which reach high above Makeb's cloud layer, are often large enough to contain entire cities on the plateaus and mesas that topped them.
+
+[Legends] The Pillars and caves on the planet contained a rare mineral known as Isotope-5. The mineral has powerful warping effects on electromagnetic and gravitational fields
+
+Appearances: SWTOR
+"
+Rishi;295;12181;Bothan Space;772;562;Rim;144;"[CANON] Sector: Bothan Space
+Coordinates: S-15, Hyperspace routes: 2
+
+Geology: Planet, [Legends] Hot, Jungle, Swamps, Mountains
+Species: Human
+Economy: [Legends] Primary, Mineral Extraction, Exonium
+
+History: Rishi is a planet located in the Rishi system in the outer rim. It contained deposits of exonium. The planet is orbited by the Rishi Moon.
+
+During the time of the Clone Wars, the Rishi Moon housed a Galactic Republic listening post known as the Rishi Station, which was invaded and later destroyed by the Confederacy of Independent Systems.
+
+Appearances: Clone Wars, SWTOR, Atlas
+"
+Ryloth;296;12182;Bothan Space;750;603;Rim;147;"[CANON] Sector: Bothan Space
+Coordinates: R-17, Hyperspace routes: 3
+
+Geology: Planet
+Species: 
+Exports: 
+
+History: 
+
+Appearances: Clone Wars, Rebels, Battlefront 2, Atlas
+"
+Scarif;297;12183;Bothan Space;785;586;Rim;150;"[CANON] Sector: Bothan Space
+Coordinates: S-15, Hyperspace routes: 3
+
+Geology: Planet
+Species: 
+Exports: 
+
+History: 
+
+Appearances: Rouge One
+"
+Smuggler's Run;298;12184;Bothan Space;769;608;Rim;158;"[CANON] Sector: Bothan Space
+Coordinates: S-18, Hyperspace routes: 2
+
+Geology: Planet
+Species: 
+Exports: 
+
+History: 
+
+Appearances: 
+"
+Teth;299;12185;Bothan Space;799;531;Rim;172;"[CANON] Sector: Bothan Space
+Coordinates: U-12, Hyperspace routes: 3
+
+Geology: Planet
+Species: 
+Exports: 
+
+History: 
+
+Appearances: The Clone Wars, Clone Wars, Atlas
+"

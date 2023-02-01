@@ -18,13 +18,13 @@ public static class TextStra
     static TextStra()
     {
         Resources = new ResourceFile(Path.Combine(Settings.Current.GameFolder, "TEXTSTRA.DLL"));
-        LocalizedAdmiral = Resources.GetString(LocalizedAdmiralId);
-        LocalizedCommander = Resources.GetString(LocalizedCommanderId);
-        LocalizedGeneral = Resources.GetString(LocalizedGeneralId);
+        LocalizedAdmiral = Resources.RT_STRING[LocalizedAdmiralId];
+        LocalizedCommander = Resources.RT_STRING[LocalizedCommanderId];
+        LocalizedGeneral = Resources.RT_STRING[LocalizedGeneralId];
     }
     public static void SaveCharacterName(ushort id, string text)
     {
-        var prevName = Resources.GetString(id);
+        var prevName = Resources.RT_STRING[id];
         Resources.SaveString(id, text);
         if (text.Contains(" "))
             text = text.Substring(text.IndexOf(" ") + 1);

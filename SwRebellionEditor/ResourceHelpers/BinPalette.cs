@@ -1,16 +1,16 @@
 ﻿namespace SwRebellionEditor;
 
-public class Palette
+public class BinPalette
 {
     public List<Color> colors;
     public int Size => colors.Count;
 
-    public Palette(string filePath)
+    public BinPalette(string filePath)
     {
         var bytes = File.ReadAllBytes(filePath);
         Set(bytes);
     }
-    public Palette(byte[] bytes)
+    public BinPalette(byte[] bytes)
     {
         Set(bytes);
     }
@@ -44,5 +44,15 @@ public class Palette
             bytes[b++] = colors[c].B;
         }
         File.WriteAllBytes(filePath, bytes);
+    }
+    public Bitmap ToBitmap()
+    {
+        var height = (Size / 16) + (Size % 16 > 0 ? 1 : 0);
+        var bitmap = new Bitmap(16, height);
+        var c = 0;
+        for (int row = 0; row < height; ++row)
+            for (int column = 0; column < 16; ++column)
+                bitmap.SetPixel(column, row, colors[c++]);
+        return bitmap;
     }
 }

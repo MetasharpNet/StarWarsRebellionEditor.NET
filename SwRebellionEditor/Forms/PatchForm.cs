@@ -1,4 +1,5 @@
-﻿using System.Globalization;
+﻿using SwRebellionEditor.ResourceHelpers;
+using System.Globalization;
 
 namespace SwRebellionEditor;
 
@@ -16,6 +17,15 @@ public partial class PatchForm : PatchDesignForm
         GameFilePath = Path.Combine(Settings.Current.GDataFolder , "SYSTEMSD.DAT");
         GameFile = DatFile.Load<SYSTEMSD>(GameFilePath);
         InitializeComponent();
+        var rt303 = Tactical.Resources.RT_303;
+        //var bin = new BinImage("5511.bin");
+        //var pal = new BinPalette("5541.pal");
+        var bin = new BinImage(rt303["5511"]);
+        var pal = new BinPalette(rt303["5541"]);
+        //binPicture.Image = pal.ToBitmap();
+        binPicture.Image = bin.ToBitmap(pal);
+        //rt303["ASSFRG_M.BMP"] = rt303["ASSFRG52.BMP"];
+        //Tactical.Resources.Save();
     }
 
     #endregion
@@ -25,8 +35,8 @@ public partial class PatchForm : PatchDesignForm
     {
         foreach (var s in GameFile.Systems)
         {
-            s.Name = TextStra.Resources.GetString(s.TextStraDllId);
-            s.EncyclopediaDescription = EncyText.Resources.GetRcdata((s.TextStraDllId - 4096).ToString());
+            s.Name = TextStra.Resources.RT_STRING[s.TextStraDllId];
+            s.EncyclopediaDescription = EncyText.Resources.RT_RCDATA[(s.TextStraDllId - 4096).ToString()];
         }
     }
     private void cancel_Click(object sender, EventArgs e)
@@ -174,7 +184,7 @@ public partial class PatchForm : PatchDesignForm
         foreach (var system in GameFile.Systems)
         {
             TextStra.Resources.SaveString(Convert.ToUInt16(system.TextStraDllId), system.Name);
-            EncyText.Resources.UpdateRcdata((system.TextStraDllId - 4096).ToString(), system.EncyclopediaDescription);
+            EncyText.Resources.SaveRcdata((system.TextStraDllId - 4096).ToString(), system.EncyclopediaDescription);
         }
         this.Close();
     }

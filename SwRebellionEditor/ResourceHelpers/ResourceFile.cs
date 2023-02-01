@@ -1,8 +1,8 @@
 ﻿using System.ComponentModel;
-using System.Drawing.Imaging;
 using System.Runtime.InteropServices;
 using System.Text;
 using Vestris.ResourceLib;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace SwRebellionEditor;
 
@@ -11,60 +11,54 @@ namespace SwRebellionEditor;
 public class ResourceFile
 {
     #region kernel32.dll
-    /// <summary>
-    /// Returns a handle to either a language-neutral portable executable file (LN file) or a 
-    /// language-specific resource file (.mui file) that can be used by the UpdateResource function 
-    /// to add, delete, or replace resources in a binary module.
-    /// </summary>
-    /// <param name="pFileName">Pointer to a null-terminated string that specifies the binary file in which to update resources.</param>
-    /// <param name="bDeleteExistingResources">Specifies whether to delete the pFileName parameter's existing resources.</param>
-    /// <returns>If the function succeeds, the return value is a handle that can be used by the UpdateResource and EndUpdateResource functions.</returns>
-    [DllImport("kernel32.dll", EntryPoint = "BeginUpdateResourceW", SetLastError = true, CharSet = CharSet.Unicode, ExactSpelling = true, CallingConvention = CallingConvention.StdCall)]
-    protected static extern IntPtr BeginUpdateResource(string pFileName, bool bDeleteExistingResources);
-    /// <summary>
-    /// Adds, deletes, or replaces a resource in a portable executable (PE) file. 
-    /// There are some restrictions on resource updates in files that contain Resource Configuration (RC Config) data: 
-    /// language-neutral (LN) files and language-specific resource (.mui) files.
-    /// </summary>
-    /// <param name="hUpdate">A module handle returned by the BeginUpdateResource function, referencing the file to be updated.</param>
-    /// <param name="lpType">Pointer to a null-terminated string specifying the resource type to be updated.</param>
-    /// <param name="lpName">Pointer to a null-terminated string specifying the name of the resource to be updated.</param>
-    /// <param name="wLanguage">Specifies the language identifier of the resource to be updated.</param>
-    /// <param name="lpData">Pointer to the resource data to be inserted into the file indicated by hUpdate.</param>
-    /// <param name="cbData">Specifies the size, in bytes, of the resource data at lpData.</param>
-    /// <returns>Returns TRUE if successful or FALSE otherwise.</returns>
-    [DllImport("kernel32.dll", EntryPoint = "UpdateResourceW", SetLastError = true, CharSet = CharSet.Unicode, ExactSpelling = true, CallingConvention = CallingConvention.StdCall)]
-    protected static extern bool UpdateResource(IntPtr hUpdate, IntPtr lpType, IntPtr lpName, UInt16 wLanguage, byte[] lpData, UInt32 cbData);
-    /// <summary>
-    /// Commits or discards changes made prior to a call to UpdateResource.
-    /// </summary>
-    /// <param name="hUpdate">A module handle returned by the BeginUpdateResource function, and used by UpdateResource, referencing the file to be updated.</param>
-    /// <param name="fDiscard">Specifies whether to write the resource updates to the file. If this parameter is TRUE, no changes are made. If it is FALSE, the changes are made: the resource updates will take effect.</param>
-    /// <returns>Returns TRUE if the function succeeds; FALSE otherwise.</returns>
-    [DllImport("kernel32.dll", EntryPoint = "EndUpdateResourceW", SetLastError = true, CharSet = CharSet.Unicode, ExactSpelling = true, CallingConvention = CallingConvention.StdCall)]
-    protected static extern bool EndUpdateResource(IntPtr hUpdate, bool fDiscard);
+
+    [DllImport("kernel32.dll", SetLastError = true, CharSet = CharSet.Unicode, ExactSpelling = true, CallingConvention = CallingConvention.StdCall)]
+    protected static extern IntPtr BeginUpdateResourceW(string pFileName, bool bDeleteExistingResources);
+
+    [DllImport("kernel32.dll", SetLastError = true, CharSet = CharSet.Unicode, ExactSpelling = true, CallingConvention = CallingConvention.StdCall)]
+    protected static extern bool UpdateResourceW(IntPtr hUpdate, IntPtr lpType, IntPtr lpName, ushort wLanguage, byte[] lpData, UInt32 cbData);
+
+    [DllImport("kernel32.dll", SetLastError = true, CharSet = CharSet.Unicode)]
+    protected static extern bool UpdateResource(IntPtr hUpdate, string lpType, string lpName, ushort wLanguage, IntPtr lpData, uint cbData);
+
+    [DllImport("kernel32.dll", SetLastError = true, CharSet = CharSet.Unicode, ExactSpelling = true, CallingConvention = CallingConvention.StdCall)]
+    protected static extern bool EndUpdateResourceW(IntPtr hUpdate, bool fDiscard);
+
     #endregion
 
     #region variables
     protected string _filePath;
-    protected ushort _language;
+    public Dictionary<string, byte[]> RT_303;
+    public Dictionary<string, ushort> RT_303_lang;
     public Dictionary<string, BitmapResource> RT_BITMAP;
+    public Dictionary<string, ushort> RT_BITMAP_lang;
     public Dictionary<string, string> RT_RCDATA;
+    public Dictionary<string, ushort> RT_RCDATA_lang;
     public Dictionary<ushort, string> RT_STRING;
+    public Dictionary<ushort, ushort> RT_STRING_lang;
+    public ushort RT_303_lang_default => RT_303_lang.Values.GroupBy(l => l).OrderByDescending(g => g.Count()).First().Key;
+    public ushort RT_BITMAP_lang_default => RT_BITMAP_lang.Values.GroupBy(l => l).OrderByDescending(g => g.Count()).First().Key;
+    public ushort RT_RCDATA_lang_default => RT_RCDATA_lang.Values.GroupBy(l => l).OrderByDescending(g => g.Count()).First().Key;
+    public ushort RT_STRING_lang_default => RT_STRING_lang.Values.GroupBy(l => l).OrderByDescending(g => g.Count()).First().Key;
     #endregion
 
     #region .ctor
     public ResourceFile(string filePath)
     {
         _filePath = filePath;
+        RT_303 = new Dictionary<string, byte[]>();
+        RT_303_lang = new Dictionary<string, ushort>();
         RT_BITMAP = new Dictionary<string, BitmapResource>();
+        RT_BITMAP_lang = new Dictionary<string, ushort>();
         RT_RCDATA = new Dictionary<string, string>();
+        RT_RCDATA_lang = new Dictionary<string, ushort>();
         RT_STRING = new Dictionary<ushort, string>();
+        RT_STRING_lang = new Dictionary<ushort, ushort>();
         Load();
     }
     #endregion
 
-    #region Load/Save (RT_RCDATA, RT_BITMAP, RT_STRING)
+    #region Load/Save (RT_RCDATA, RT_BITMAP, RT_STRING, RT_303)
     public void Load()
     {
         using (ResourceInfo ri = new ResourceInfo())
@@ -74,16 +68,16 @@ public class ResourceFile
             {
                 foreach (var r in ri[Kernel32.ResourceTypes.RT_RCDATA])
                 {
-                    _language = r.Language;
                     RT_RCDATA.Add(r.Name.Name, Encoding.Latin1.GetString(r.WriteAndGetBytes()));
+                    RT_RCDATA_lang.Add(r.Name.Name, r.Language);
                 }
             }
             if (ri.ResourceTypes.Any(t => t.Name == (((int)Kernel32.ResourceTypes.RT_BITMAP).ToString())))
             {
                 foreach (BitmapResource br in ri[Kernel32.ResourceTypes.RT_BITMAP])
                 {
-                    _language = br.Language;
                     RT_BITMAP.Add(br.Name.Name, br);
+                    RT_BITMAP_lang.Add(br.Name.Name, br.Language);
                 }
             }
             if (ri.ResourceTypes.Any(t => t.Name == (((int)Kernel32.ResourceTypes.RT_STRING).ToString())))
@@ -92,9 +86,18 @@ public class ResourceFile
                 {
                     foreach (var s in sr.Strings)
                     {
-                        _language = sr.Language;
                         RT_STRING.Add(s.Key, s.Value);
+                        RT_STRING_lang.Add(s.Key, sr.Language);
                     }
+                }
+            }
+            if (ri.ResourceTypes.Any(t => t.Name == "303"))
+            {
+                var resources = ri.Resources.First(dr => dr.Key.ToString() == "303").Value;
+                foreach (var r in resources)
+                {
+                    RT_303.Add(r.Name.Name, r.WriteAndGetBytes());
+                    RT_303_lang.Add(r.Name.Name, r.Language);
                 }
             }
         }
@@ -104,157 +107,152 @@ public class ResourceFile
         foreach (var key in RT_STRING.Keys)
             SaveString(key, RT_STRING[key]);
         foreach (var key in RT_RCDATA.Keys)
-            UpdateRcdata(key, RT_RCDATA[key]);
+            SaveRcdata(key, RT_RCDATA[key]);
         foreach (var key in RT_BITMAP.Keys)
             SaveBitmap(key, RT_BITMAP[key]);
+        foreach (var key in RT_303.Keys)
+            Save303(key, RT_303[key]);
+    }
+    #endregion
+
+    #region RT_303
+    public ushort Get303Language(string id)
+    {
+        if (RT_303_lang.ContainsKey(id))
+            return RT_303_lang[id];
+        return RT_303_lang_default;
+    }
+    public void Save303(string id, byte[] bytes)
+    {
+        var lang = Get303Language(id);
+        nint idAsNint;
+        try
+        {
+            idAsNint = Convert.ToInt32(id);
+        }
+        catch
+        {
+            idAsNint = new ResourceId(id).Id;
+        }
+        IntPtr h = BeginUpdateResourceW(_filePath, false);
+        if (h == IntPtr.Zero)
+            throw new Win32Exception(Marshal.GetLastWin32Error());
+
+        if (bytes != null && bytes.Length == 0)
+            bytes = null;
+
+        if (!UpdateResourceW(h, 303, idAsNint, lang, bytes, (bytes == null ? 0 : (uint)bytes.Length)))
+            throw new Win32Exception(Marshal.GetLastWin32Error());
+        
+        if (!EndUpdateResourceW(h, false))
+            throw new Win32Exception(Marshal.GetLastWin32Error());
+
+        if (RT_303.ContainsKey(id))
+            RT_303[id] = bytes;
+        else
+        {
+            RT_303.Add(id, bytes);
+            RT_303_lang.Add(id, lang);
+        }
     }
     #endregion
 
     #region RT_BITMAP
-    public BitmapResource GetBitmap(string id)
+    public ushort GetBitmapLanguage(string id)
     {
-        return RT_BITMAP[id];
-    }
-    public ushort GetBitmapLanguage(string bitmapId)
-    {
-        using (ResourceInfo ri = new ResourceInfo())
-        {
-            ri.Load(_filePath);
-            if (ri.ResourceTypes.Any(t => t.Name == (((int)Kernel32.ResourceTypes.RT_BITMAP).ToString())))
-            {
-                foreach (BitmapResource br in ri[Kernel32.ResourceTypes.RT_BITMAP])
-                {
-                    if (br.Name.Name == bitmapId)
-                        return br.Language;
-                }
-            }
-        }
-        return 0;
-    }
-    public void SaveBitmap(string id, string bitmapFilePath)
-    {
-        if (!RT_BITMAP.ContainsKey(id))
-            SaveNewBitmap(id, bitmapFilePath);
-        var br = RT_BITMAP[id];
-        br.Bitmap = new BitmapFile(bitmapFilePath).Bitmap;
-        SaveBitmap(id, br);
+        if (RT_BITMAP_lang.ContainsKey(id))
+            return RT_BITMAP_lang[id];
+        return RT_BITMAP_lang_default;
     }
     public void SaveBitmap(string id, BitmapResource bitmapResource)
     {
         RT_BITMAP[id] = bitmapResource;
         bitmapResource.SaveTo(_filePath);
     }
-    public void SaveNewBitmap(string id, string bitmapFilePath)
+    public void SaveBitmap(string id, string bitmapFilePath)
     {
+        var lang = GetBitmapLanguage(id);
+
+        IntPtr h = BeginUpdateResourceW(_filePath, false);
+        if (h == IntPtr.Zero)
+            throw new Win32Exception(Marshal.GetLastWin32Error());
+
         var bitmapFile = new BitmapFile(bitmapFilePath);
+        var bytes = bitmapFile.Bitmap.Data;
+        if (bytes != null && bytes.Length == 0)
+            bytes = null;
+
+        if (!UpdateResourceW(h, 2, Convert.ToInt32(id), lang, bytes, (bytes == null ? 0 : (uint)bytes.Length)))
+            throw new Win32Exception(Marshal.GetLastWin32Error());
+
+        if (!EndUpdateResourceW(h, false))
+            throw new Win32Exception(Marshal.GetLastWin32Error());
+
         using (ResourceInfo ri = new ResourceInfo())
         {
             ri.Load(_filePath);
-            if (ri.ResourceTypes.Any(t => t.Name == (((int)Kernel32.ResourceTypes.RT_BITMAP).ToString())))
-            {
-                var r = ri[Kernel32.ResourceTypes.RT_BITMAP].FirstOrDefault(x => x?.Name?.Name == id);
-                if (r == null)
+            foreach (BitmapResource br in ri[Kernel32.ResourceTypes.RT_BITMAP])
+                if (br.Name.Name == id)
                 {
-                    IntPtr h = BeginUpdateResource(_filePath, false);
-                    if (h == IntPtr.Zero)
-                        throw new Win32Exception(Marshal.GetLastWin32Error());
-                    var bytes = bitmapFile.Bitmap.Data;
-                    Array.Resize(ref bytes, bytes.Length + 1);
-                    if (bytes != null && bytes.Length == 0)
-                        bytes = null;
-                    if (!UpdateResource(h, 2, Convert.ToInt32(id), _language, bytes, (bytes == null ? 0 : (uint)bytes.Length)))
-                        throw new Win32Exception(Marshal.GetLastWin32Error());
-                    ri.Dispose();
-                    if (!EndUpdateResource(h, false))
-                        throw new Win32Exception(Marshal.GetLastWin32Error());
-                    // add in dictionary
-                    ri.Load(_filePath);
-                    foreach (BitmapResource br in ri[Kernel32.ResourceTypes.RT_BITMAP])
-                        if (br.Name.Name == id)
-                            RT_BITMAP.Add(id, br);
+                    if (RT_BITMAP.ContainsKey(id))
+                        RT_BITMAP[id] = br;
+                    else
+                    {
+                        RT_BITMAP.Add(id, br);
+                        RT_BITMAP_lang.Add(id, lang);
+                    }
                 }
-            }
         }
     }
     #endregion
 
     #region RT_RCDATA
-    public string GetRcdata(string id)
+    public ushort GetRcdataLanguage(string id)
     {
-        return RT_RCDATA[id];
+        if (RT_RCDATA_lang.ContainsKey(id))
+            return RT_RCDATA_lang[id];
+        return RT_RCDATA_lang_default;
     }
-    public ushort GetRcdataLanguage(ushort rcdataId)
+    public void SaveRcdata(string id, string text)
     {
-        using (ResourceInfo ri = new ResourceInfo())
+        var lang = GetRcdataLanguage(id);
+
+        IntPtr h = BeginUpdateResourceW(_filePath, false);
+        if (h == IntPtr.Zero)
+            throw new Win32Exception(Marshal.GetLastWin32Error());
+
+        var bytes = Encoding.Latin1.GetBytes(text);
+        if (bytes != null)
+            Array.Resize(ref bytes, bytes.Length + 1); // end of string 0
+
+        if (!UpdateResourceW(h, 10, Convert.ToInt32(id), lang, bytes, (bytes == null ? 0 : (uint)bytes.Length)))
+            throw new Win32Exception(Marshal.GetLastWin32Error());
+
+        if (!EndUpdateResourceW(h, false))
+            throw new Win32Exception(Marshal.GetLastWin32Error());
+
+        if (RT_RCDATA.ContainsKey(id))
+            RT_RCDATA[id] = text;
+        else
         {
-            ri.Load(_filePath);
-            if (ri.ResourceTypes.Any(t => t.Name == (((int)Kernel32.ResourceTypes.RT_RCDATA).ToString())))
-            {
-                foreach (Resource r in ri[Kernel32.ResourceTypes.RT_RCDATA])
-                {
-                    if (r.Name.Name == rcdataId.ToString())
-                        return r.Language;
-                }
-            }
-        }
-        return 0;
-    }
-    public void UpdateRcdata(string id, string text)
-    {
-        using (ResourceInfo ri = new ResourceInfo())
-        {
-            ri.Load(_filePath);
-            if (ri.ResourceTypes.Any(t => t.Name == (((int)Kernel32.ResourceTypes.RT_RCDATA).ToString())))
-            {
-                var r = ri[Kernel32.ResourceTypes.RT_RCDATA].FirstOrDefault(x => x?.Name?.Name == id);
-                if (r != null)
-                {
-                    IntPtr h = BeginUpdateResource(_filePath, false);
-                    if (h == IntPtr.Zero)
-                        throw new Win32Exception(Marshal.GetLastWin32Error());
-                    var bytes = Encoding.Latin1.GetBytes(text);
-                    Array.Resize(ref bytes, bytes.Length + 1);
-                    if (bytes != null && bytes.Length == 0)
-                        bytes = null;
-                    if (!UpdateResource(h, 10, r.Name.Id, r.Language, bytes, (bytes == null ? 0 : (uint)bytes.Length)))
-                        throw new Win32Exception(Marshal.GetLastWin32Error());
-                    ri.Dispose();
-                    if (!EndUpdateResource(h, false))
-                        throw new Win32Exception(Marshal.GetLastWin32Error());
-                    RT_RCDATA[id] = text;
-                }
-            }
+            RT_RCDATA.Add(id, text);
+            RT_RCDATA_lang.Add(id, lang);
         }
     }
     #endregion
 
     #region RT_STRING
-    public string GetString(ushort id)
+    public ushort GetStringLanguage(ushort id)
     {
-        return RT_STRING[id];
-    }
-    public ushort GetStringLanguage(ushort stringId)
-    {
-        using (ResourceInfo ri = new ResourceInfo())
-        {
-            ri.Load(_filePath);
-            if (ri.ResourceTypes.Any(t => t.Name == (((int)Kernel32.ResourceTypes.RT_STRING).ToString())))
-            {
-                var blockId = new ResourceId(StringResource.GetBlockId(stringId));
-                foreach (StringResource sr in ri[Kernel32.ResourceTypes.RT_STRING])
-                {
-                    if (sr.Name.Name == blockId.Name)
-                        return sr.Language;
-                }
-            }
-        }
-        return 0;
+        if (RT_STRING_lang.ContainsKey(id))
+            return RT_STRING_lang[id];
+        return RT_STRING_lang_default;
     }
     public void SaveString(ushort id, string text)
     {
         var sr = new StringResource();
         sr.Name = new ResourceId(StringResource.GetBlockId(id));
-        sr.Language = _language;
+        sr.Language = GetStringLanguage(id);
         try
         {
             sr.LoadFrom(_filePath);

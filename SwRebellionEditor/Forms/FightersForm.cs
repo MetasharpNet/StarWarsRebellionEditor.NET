@@ -82,14 +82,14 @@ public partial class FightersForm : FightersDesignForm
     {
         foreach (var f in GameFile.Fighters)
         {
-            f.Name = TextStra.Resources.GetString(f.TextStraDllId);
-            f.EncyclopediaDescription = EncyText.Resources.GetRcdata((f.TextStraDllId - 4096).ToString());
+            f.Name = TextStra.Resources.RT_STRING[f.TextStraDllId];
+            f.EncyclopediaDescription = EncyText.Resources.RT_RCDATA[(f.TextStraDllId - 4096).ToString()];
         }
     }
     protected override void SaveSideInfo()
     {
         TextStra.Resources.SaveString(Convert.ToUInt16(textStraDllId.Value), name.Text);
-        EncyText.Resources.UpdateRcdata((textStraDllId.Value - 4096).ToString(), encyclopediaDescription.Text);
+        EncyText.Resources.SaveRcdata((textStraDllId.Value - 4096).ToString(), encyclopediaDescription.Text);
     }
     private void UpdateTotals(int selectorIndex)
     {

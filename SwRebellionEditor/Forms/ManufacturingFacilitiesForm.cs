@@ -54,14 +54,14 @@ public partial class ManufacturingFacilitiesForm : ManufacturingFacilitiesDesign
     {
         foreach (var mf in GameFile.ManufacturingFacilities)
         {
-            mf.Name = TextStra.Resources.GetString(mf.TextStraDllId);
-            mf.EncyclopediaDescription = EncyText.Resources.GetRcdata((mf.TextStraDllId - 4096).ToString());
+            mf.Name = TextStra.Resources.RT_STRING[mf.TextStraDllId];
+            mf.EncyclopediaDescription = EncyText.Resources.RT_RCDATA[(mf.TextStraDllId - 4096).ToString()];
         }
     }
     protected override void SaveSideInfo()
     {
         TextStra.Resources.SaveString(Convert.ToUInt16(textStraDllId.Value), name.Text);
-        EncyText.Resources.UpdateRcdata((textStraDllId.Value - 4096).ToString(), encyclopediaDescription.Text);
+        EncyText.Resources.SaveRcdata((textStraDllId.Value - 4096).ToString(), encyclopediaDescription.Text);
     }
 
     #endregion

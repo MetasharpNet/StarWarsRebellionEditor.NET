@@ -59,14 +59,14 @@ public partial class DefenseFacilitiesForm : DefenseFacilitiesDesignForm
     {
         foreach (var df in GameFile.DefenseFacilities)
         {
-            df.Name = TextStra.Resources.GetString(df.TextStraDllId);
-            df.EncyclopediaDescription = EncyText.Resources.GetRcdata((df.TextStraDllId - 4096).ToString());
+            df.Name = TextStra.Resources.RT_STRING[df.TextStraDllId];
+            df.EncyclopediaDescription = EncyText.Resources.RT_RCDATA[(df.TextStraDllId - 4096).ToString()];
         }
     }
     protected override void SaveSideInfo()
     {
         TextStra.Resources.SaveString(Convert.ToUInt16(textStraDllId.Value), name.Text);
-        EncyText.Resources.UpdateRcdata((textStraDllId.Value - 4096).ToString(), encyclopediaDescription.Text);
+        EncyText.Resources.SaveRcdata((textStraDllId.Value - 4096).ToString(), encyclopediaDescription.Text);
     }
 
     #endregion
