@@ -35,7 +35,8 @@ namespace SwRebellionEditor.ResourceHelpers
             Width = bitmap.Width;
             Height = bitmap.Height;
             Palette = new BinPalette();
-            Palette.colors = new List<Color>();
+            Palette.Colors = new List<Color>();
+            var paletteBytes = new List<byte>();
             var dic = new Dictionary<string, byte>();
             var by = new List<byte>();
             by.AddRange(BitConverter.GetBytes(Width));
@@ -49,12 +50,16 @@ namespace SwRebellionEditor.ResourceHelpers
                     if (!dic.ContainsKey(color.Name))
                     {
                         dic.Add(color.Name, paletteId++);
-                        Palette.colors.Add(color);
+                        Palette.Colors.Add(color);
+                        paletteBytes.Add(color.R);
+                        paletteBytes.Add(color.G);
+                        paletteBytes.Add(color.B);
                     }
                     by.Add(1);
                     by.Add(dic[color.Name]);
                 }
             Bytes = by.ToArray();
+            Palette.Bytes = paletteBytes.ToArray();
         }
         public void Set(byte[] bytes)
         {
@@ -109,7 +114,7 @@ namespace SwRebellionEditor.ResourceHelpers
             var bitmap = new Bitmap(Width, Height);
             for (int row = 0; row < Width; ++row)
                 for (int column = 0; column < Height; ++column)
-                    bitmap.SetPixel(column, row, Palette.colors[Pixels[column, row]]);
+                    bitmap.SetPixel(column, row, Palette.Colors[Pixels[column, row]]);
             return bitmap;
         }
     }

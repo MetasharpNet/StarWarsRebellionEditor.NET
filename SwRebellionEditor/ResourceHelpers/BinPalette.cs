@@ -2,8 +2,8 @@
 
 public class BinPalette
 {
-    public List<Color> colors;
-    public int Size => colors.Count;
+    public List<Color> Colors;
+    public int Size => Colors.Count;
     public byte[] Bytes;
 
     public BinPalette(string filePath)
@@ -22,7 +22,7 @@ public class BinPalette
     public void Set(byte[] bytes)
     {
         Bytes = bytes;
-        colors = new List<Color>();
+        Colors = new List<Color>();
         for (int b = 0; b < bytes.Length; ++b)
         {
             byte red = bytes[b];
@@ -36,18 +36,18 @@ public class BinPalette
                 if (b < bytes.Length)
                     blue = bytes[b];
             }
-            colors.Add(Color.FromArgb(red, green, blue));
+            Colors.Add(Color.FromArgb(red, green, blue));
         }
     }
     public void Save(string filePath)
     {
-        var bytes = new byte[colors.Count * 3];
+        var bytes = new byte[Colors.Count * 3];
         int b = 0;
-        for (int c = 0; c < colors.Count; ++c)
+        for (int c = 0; c < Colors.Count; ++c)
         {
-            bytes[b++] = colors[c].R;
-            bytes[b++] = colors[c].G;
-            bytes[b++] = colors[c].B;
+            bytes[b++] = Colors[c].R;
+            bytes[b++] = Colors[c].G;
+            bytes[b++] = Colors[c].B;
         }
         Bytes = bytes;
         File.WriteAllBytes(filePath, bytes);
@@ -59,7 +59,7 @@ public class BinPalette
         var c = 0;
         for (int row = 0; row < height; ++row)
             for (int column = 0; column < 16; ++column)
-                bitmap.SetPixel(column, row, colors[c++]);
+                bitmap.SetPixel(column, row, Colors[c++]);
         return bitmap;
     }
 }
