@@ -52,9 +52,9 @@ public partial class PatchForm : PatchDesignForm
         {
             // to use 13001+ ids for galaxy map planet sprites
             stream.Position = int.Parse("5B1E4", NumberStyles.HexNumber);
-            stream.WriteByte(0x05); // add eax, 13000
-            stream.WriteByte(0xC8);
-            stream.WriteByte(0x32);
+            stream.WriteByte(0x05); // add eax, 14000
+            stream.WriteByte(0xB0);
+            stream.WriteByte(0x36);
             stream.WriteByte(0x00);
             stream.WriteByte(0x00); 
             stream.WriteByte(0xC3); // retn
@@ -62,9 +62,9 @@ public partial class PatchForm : PatchDesignForm
             stream.Position = int.Parse("5DED6", NumberStyles.HexNumber);
             stream.WriteByte(0x89); // move eax, ecx
             stream.WriteByte(0xC8);
-            stream.WriteByte(0x05); // add eax, 13000
-            stream.WriteByte(0xC8);
-            stream.WriteByte(0x32);
+            stream.WriteByte(0x05); // add eax, 14000
+            stream.WriteByte(0xB0);
+            stream.WriteByte(0x36);
             stream.WriteByte(0x00);
             stream.WriteByte(0x00);
             stream.WriteByte(0xC2); // retn 4
@@ -101,7 +101,7 @@ public partial class PatchForm : PatchDesignForm
         var f = Directory.GetFiles("new-systems-sprites").First(f => f.Contains("10240-debris.bmp"));
         for (int p = 0; p <= 200; ++p)
         {
-            var key = (13000 + p).ToString();
+            var key = (14000 + p).ToString();
             if (!t.RT_BITMAP.ContainsKey(key))
                 t.SaveBitmap(key, f);
         }
@@ -167,7 +167,7 @@ public partial class PatchForm : PatchDesignForm
             GameFile.Systems[i].YPosition = Convert.ToUInt16(TrimDecimal(systemColumns[5]));
             GameFile.Systems[i].FamilyId = (uint)(systemColumns[6] == "Rim" ? 146 : 144);
             GameFile.Systems[i].PictureId = Convert.ToUInt32(TrimDecimal(systemColumns[7]));
-            if (!Strategy.Resources.RT_BITMAP.ContainsKey((13000+Convert.ToInt32(systemColumns[7])).ToString()))
+            if (!Strategy.Resources.RT_BITMAP.ContainsKey((14000+Convert.ToInt32(systemColumns[7])).ToString()))
                 GameFile.Systems[i].PictureId = 0;
             if (systemColumns[8]?.Length > 0)
                 GameFile.Systems[i].EncyclopediaDescription = systemColumns[8].TrimStart('"').TrimEnd('"');

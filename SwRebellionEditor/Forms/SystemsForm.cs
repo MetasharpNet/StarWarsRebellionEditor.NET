@@ -53,7 +53,7 @@ public partial class SystemsForm : SystemsDesignForm
     private uint GetStrategyId(uint pictureId)
     {
         if (HasPatchedRebexeForEncyclopedia)
-            return 13000 + pictureId;
+            return 14000 + pictureId;
         if (pictureId < 24)
             return 10211 + pictureId;
         if (pictureId > 24)
@@ -63,7 +63,7 @@ public partial class SystemsForm : SystemsDesignForm
     private uint GetEncybmapId(uint pictureId)
     {
         if (HasPatchedRebexeForEncyclopedia)
-            return 13000 + pictureId;
+            return 14000 + pictureId;
         if (pictureId < 24)
             return 11099 + pictureId;
         if (pictureId > 24)

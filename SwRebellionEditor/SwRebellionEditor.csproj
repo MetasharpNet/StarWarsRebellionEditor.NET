@@ -346,6 +346,366 @@
     <None Update="new-systems-encyclopedia-pictures\13199-zonama-sekot-atlas-ok.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="new-systems-encyclopedia-pictures\14001-abregado-rae.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-systems-encyclopedia-pictures\14002-agamar.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-systems-encyclopedia-pictures\14003-ahch-to.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-systems-encyclopedia-pictures\14005-alderaan %28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-systems-encyclopedia-pictures\14006-anaxes %28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-systems-encyclopedia-pictures\14007-anoat %28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-systems-encyclopedia-pictures\14008-ansion %28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-systems-encyclopedia-pictures\14009-bakura %28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-systems-encyclopedia-pictures\14012-belsavis.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-systems-encyclopedia-pictures\14014-bespin %28giant%29 %28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-systems-encyclopedia-pictures\14015-bestine %28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-systems-encyclopedia-pictures\14016-bith.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-systems-encyclopedia-pictures\14017-bonadan %28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-systems-encyclopedia-pictures\14018-boonta.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-systems-encyclopedia-pictures\14020-bothawui %28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-systems-encyclopedia-pictures\14021-boz-pity %28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-systems-encyclopedia-pictures\14022-brentaal-iv %28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-systems-encyclopedia-pictures\14023-byss %28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-systems-encyclopedia-pictures\14024-cantonica.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-systems-encyclopedia-pictures\14030-christophsis %28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-systems-encyclopedia-pictures\14034-corellia %28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-systems-encyclopedia-pictures\14036-coruscant %28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-systems-encyclopedia-pictures\14038-csilla %28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-systems-encyclopedia-pictures\14039-cyphar.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-systems-encyclopedia-pictures\14041-dagobah %28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-systems-encyclopedia-pictures\14042-dantooine %28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-systems-encyclopedia-pictures\14043-dathomir %28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-systems-encyclopedia-pictures\14044-dellalt.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-systems-encyclopedia-pictures\14045-dennogra.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-systems-encyclopedia-pictures\14046-denon.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-systems-encyclopedia-pictures\14051-dubrillion.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-systems-encyclopedia-pictures\14052-duro %28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-systems-encyclopedia-pictures\14054-earth.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-systems-encyclopedia-pictures\14056-endor %28moon%29 %28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-systems-encyclopedia-pictures\14057-eriadu %28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-systems-encyclopedia-pictures\14061-farstine.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-systems-encyclopedia-pictures\14062-felucia %28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-systems-encyclopedia-pictures\14064-fondor %28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-systems-encyclopedia-pictures\14067-gamorr %28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-systems-encyclopedia-pictures\14068-geonosis %28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-systems-encyclopedia-pictures\14070-ghorman.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-systems-encyclopedia-pictures\14072-hapes %28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-systems-encyclopedia-pictures\14073-honoghr %28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-systems-encyclopedia-pictures\14075-hoth %28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-systems-encyclopedia-pictures\14076-iego %28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-systems-encyclopedia-pictures\14077-ilum %28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-systems-encyclopedia-pictures\14078-iridonia.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-systems-encyclopedia-pictures\14080-ithor %28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-systems-encyclopedia-pictures\14083-jedha %28moon%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-systems-encyclopedia-pictures\14085-kalee %28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-systems-encyclopedia-pictures\14086-kaller.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-systems-encyclopedia-pictures\14087-kamino %28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-systems-encyclopedia-pictures\14089-kashyyyk %28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-systems-encyclopedia-pictures\14092-kessel %28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-systems-encyclopedia-pictures\14094-korriban %28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-systems-encyclopedia-pictures\14095-kuat %28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-systems-encyclopedia-pictures\14098-lothal.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-systems-encyclopedia-pictures\14101-lwhekk.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-systems-encyclopedia-pictures\14103-malastare %28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-systems-encyclopedia-pictures\14104-manaan.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-systems-encyclopedia-pictures\14105-mandalore %28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-systems-encyclopedia-pictures\14106-maridun.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-systems-encyclopedia-pictures\14108-mimban %28circarpous v%29 %28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-systems-encyclopedia-pictures\14110-mon calamari %28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-systems-encyclopedia-pictures\14111-mon gazza.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-systems-encyclopedia-pictures\14113-mustafar %28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-systems-encyclopedia-pictures\14115-mygeeto %28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-systems-encyclopedia-pictures\14116-naboo %28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-systems-encyclopedia-pictures\14117-nagi %28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-systems-encyclopedia-pictures\14118-nal hutta %28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-systems-encyclopedia-pictures\14119-nar shaddaa %28moon%29 %28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-systems-encyclopedia-pictures\14120-neimoidia %28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-systems-encyclopedia-pictures\14121-nelvaan.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-systems-encyclopedia-pictures\14122-nevarro.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-systems-encyclopedia-pictures\14123-nexus ortai.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-systems-encyclopedia-pictures\14124-nubia %28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-systems-encyclopedia-pictures\14125-n%27zoth %28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-systems-encyclopedia-pictures\14126-onderon %28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-systems-encyclopedia-pictures\14127-ord-mantel %28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-systems-encyclopedia-pictures\14129-ossus %28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-systems-encyclopedia-pictures\14130-pakuuni.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-systems-encyclopedia-pictures\14132-parnassos.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-systems-encyclopedia-pictures\14136-quarzite.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-systems-encyclopedia-pictures\14139-rakata-prime %28lehon%29 %28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-systems-encyclopedia-pictures\14141-rattatak %28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-systems-encyclopedia-pictures\14142-raxus-prime %28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-systems-encyclopedia-pictures\14143-rhen-var %28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-systems-encyclopedia-pictures\14144-rishi %28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-systems-encyclopedia-pictures\14145-rodia %28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-systems-encyclopedia-pictures\14146-ruusan %28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-systems-encyclopedia-pictures\14147-ryloth %28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-systems-encyclopedia-pictures\14148-saleucami %28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-systems-encyclopedia-pictures\14149-savareen.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-systems-encyclopedia-pictures\14151-sernpidal %28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-systems-encyclopedia-pictures\14152-shadda-bi-boran %28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-systems-encyclopedia-pictures\14153-shili.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-systems-encyclopedia-pictures\14154-sissubo.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-systems-encyclopedia-pictures\14160-sorgan.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-systems-encyclopedia-pictures\14162-sullust %28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-systems-encyclopedia-pictures\14164-taanab %28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-systems-encyclopedia-pictures\14166-talus.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-systems-encyclopedia-pictures\14168-tatooine %28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-systems-encyclopedia-pictures\14171-terminus.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-systems-encyclopedia-pictures\14172-teth %28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-systems-encyclopedia-pictures\14173-the-redoubt-brask-oto.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-systems-encyclopedia-pictures\14174-thyferra %28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-systems-encyclopedia-pictures\14176-toydaria %28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-systems-encyclopedia-pictures\14177-tralus.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-systems-encyclopedia-pictures\14178-trandosha.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-systems-encyclopedia-pictures\14179-trask %28moon%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-systems-encyclopedia-pictures\14180-triton %28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-systems-encyclopedia-pictures\14181-tund %28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-systems-encyclopedia-pictures\14183-umbara.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-systems-encyclopedia-pictures\14184-utapau %28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-systems-encyclopedia-pictures\14188-wellspring of life.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-systems-encyclopedia-pictures\14189-wobani.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-systems-encyclopedia-pictures\14194-yavin 4 %28moon%29 %28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-systems-encyclopedia-pictures\14195-yavin prime %28giant%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-systems-encyclopedia-pictures\14196-zakuul.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-systems-encyclopedia-pictures\14199-zonama-sekot %28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="new-systems-encyclopedia-pictures\EDATA.166.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
@@ -1033,7 +1393,373 @@
     <None Update="new-systems-sprites\13199-zonama-sekot-atlas-ok.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="new-systems-sprites\14000-debris.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-systems-sprites\14001-abregado-rae.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-systems-sprites\14002-agamar.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-systems-sprites\14003-ahch-to.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-systems-sprites\14005-alderaan %28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-systems-sprites\14006-anaxes %28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-systems-sprites\14007-anoat %28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-systems-sprites\14008-ansion %28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-systems-sprites\14009-bakura %28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-systems-sprites\14012-belsavis.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-systems-sprites\14014-bespin %28giant%29 %28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-systems-sprites\14015-bestine %28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-systems-sprites\14016-bith.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-systems-sprites\14017-bonadan %28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-systems-sprites\14018-boonta.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-systems-sprites\14020-bothawui %28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-systems-sprites\14021-boz-pity %28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-systems-sprites\14022-brentaal-iv %28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-systems-sprites\14023-byss %28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-systems-sprites\14024-cantonica.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-systems-sprites\14030-christophsis %28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-systems-sprites\14034-corellia %28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-systems-sprites\14036-coruscant %28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-systems-sprites\14038-csilla %28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-systems-sprites\14039-cyphar.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-systems-sprites\14041-dagobah %28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-systems-sprites\14042-dantooine %28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-systems-sprites\14043-dathomir %28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-systems-sprites\14044-dellalt.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-systems-sprites\14045-dennogra sprite.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-systems-sprites\14046-denon sprite.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-systems-sprites\14051-dubrillion sprite.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-systems-sprites\14052-duro %28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-systems-sprites\14054-earth.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-systems-sprites\14056-endor %28moon%29 %28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-systems-sprites\14057-eriadu %28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-systems-sprites\14061-farstine.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-systems-sprites\14062-felucia %28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-systems-sprites\14064-fondor %28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-systems-sprites\14067-gamorr %28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-systems-sprites\14068-geonosis %28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-systems-sprites\14070-ghorman sprite.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-systems-sprites\14072-hapes %28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-systems-sprites\14073-honoghr %28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-systems-sprites\14075-hoth %28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-systems-sprites\14076-iego %28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-systems-sprites\14077-ilum %28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-systems-sprites\14078-iridonia.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-systems-sprites\14080-ithor %28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-systems-sprites\14083-jedha %28moon%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-systems-sprites\14085-kalee %28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-systems-sprites\14086-kaller sprite.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-systems-sprites\14087-kamino %28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-systems-sprites\14089-kashyyyk %28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-systems-sprites\14092-kessel %28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-systems-sprites\14094-korriban %28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-systems-sprites\14095-kuat %28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-systems-sprites\14098-lothal.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-systems-sprites\14101-lwhekk.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-systems-sprites\14103-malastare %28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-systems-sprites\14104-manaan.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-systems-sprites\14105-mandalore %28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-systems-sprites\14106-maridun.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-systems-sprites\14108-mimban %28circarpous v%29 %28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-systems-sprites\14110-mon calamari %28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-systems-sprites\14111-mon gazza.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-systems-sprites\14113-mustafar %28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-systems-sprites\14115-mygeeto %28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-systems-sprites\14116-naboo %28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-systems-sprites\14117-nagi %28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-systems-sprites\14118-nal hutta %28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-systems-sprites\14119-nar shaddaa %28moon%29 %28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-systems-sprites\14120-neimoidia %28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-systems-sprites\14121-nelvaan.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-systems-sprites\14122-nevarro.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-systems-sprites\14123-nexus ortai.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-systems-sprites\14124-nubia %28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-systems-sprites\14125-n%27zoth %28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-systems-sprites\14126-onderon %28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-systems-sprites\14127-ord-mantel %28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-systems-sprites\14129-ossus %28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-systems-sprites\14130-pakuuni.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-systems-sprites\14132-parnassos.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-systems-sprites\14136-quarzite.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-systems-sprites\14139-rakata-prime %28lehon%29 %28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-systems-sprites\14141-rattatak %28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-systems-sprites\14142-raxus-prime %28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-systems-sprites\14143-rhen-var %28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-systems-sprites\14144-rishi %28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-systems-sprites\14145-rodia %28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-systems-sprites\14146-ruusan %28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-systems-sprites\14147-ryloth %28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-systems-sprites\14148-saleucami %28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-systems-sprites\14149-savareen.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-systems-sprites\14151-sernpidal %28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-systems-sprites\14152-shadda-bi-boran %28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-systems-sprites\14153-shili.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-systems-sprites\14154-sissubo.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-systems-sprites\14160-sorgan.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-systems-sprites\14162-sullust %28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-systems-sprites\14164-taanab %28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-systems-sprites\14166-talus.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-systems-sprites\14168-tatooine %28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-systems-sprites\14171-terminus.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-systems-sprites\14172-teth %28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-systems-sprites\14173-the redoubt-brask-oto.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-systems-sprites\14174-thyferra %28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-systems-sprites\14176-toydaria %28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-systems-sprites\14177-tralus.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-systems-sprites\14178-trandosha.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-systems-sprites\14179-trask %28moon%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-systems-sprites\14180-triton %28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-systems-sprites\14181-tund %28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-systems-sprites\14183-umbara.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-systems-sprites\14184-utapau %28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-systems-sprites\14188-wellspring of life.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-systems-sprites\14189-wobani.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-systems-sprites\14194-yavin 4 %28moon%29 %28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-systems-sprites\14195-yavin prime %28giant%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-systems-sprites\14196-zakuul.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-systems-sprites\14199-zonama-sekot %28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="new-systems-tactical\13001-abregado-rae.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-systems-tactical\14001-abregado-rae.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="new-systems.csv">
