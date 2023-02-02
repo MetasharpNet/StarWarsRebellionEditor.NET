@@ -50,7 +50,7 @@ public partial class PatchForm : PatchDesignForm
         // patching rebexe.exe
         using (var stream = new FileStream(Settings.Current.REBEXEFilePath, FileMode.Open, FileAccess.ReadWrite))
         {
-            // to use 13001+ ids for galaxy map planet sprites
+            // to use 14001+ ids for galaxy map planet sprites
             stream.Position = int.Parse("5B1E4", NumberStyles.HexNumber);
             stream.WriteByte(0x05); // add eax, 14000
             stream.WriteByte(0xB0);
@@ -58,7 +58,7 @@ public partial class PatchForm : PatchDesignForm
             stream.WriteByte(0x00);
             stream.WriteByte(0x00); 
             stream.WriteByte(0xC3); // retn
-            // to use 13001+ ids for encyclopedia edata planets pictures
+            // to use 14001+ ids for encyclopedia edata planets pictures
             stream.Position = int.Parse("5DED6", NumberStyles.HexNumber);
             stream.WriteByte(0x89); // move eax, ecx
             stream.WriteByte(0xC8);
@@ -69,6 +69,16 @@ public partial class PatchForm : PatchDesignForm
             stream.WriteByte(0x00);
             stream.WriteByte(0xC2); // retn 4
             stream.WriteByte(0x04);
+            // to use 14001+ ids for tactical planets bin images
+            stream.Position = int.Parse("1AA022", NumberStyles.HexNumber);
+            stream.WriteByte(0xB0); // 14000
+            stream.WriteByte(0x36);
+            // to use 15001+ ids for tactical planets bin palettes
+            stream.Position = int.Parse("19456E", NumberStyles.HexNumber);
+            stream.WriteByte(0x98); // 15000
+            stream.WriteByte(0x3A);
+            stream.Position = int.Parse("1C0929", NumberStyles.HexNumber);
+            stream.WriteByte(0x00); // +0
         }
 
         // new encybmap ids for encyclopedia pictures EDATA.13001 to 13200

@@ -29,19 +29,19 @@ public partial class SystemsForm : SystemsDesignForm
         // checking if patched rebexe.exe
         using (var stream = new FileStream(Settings.Current.REBEXEFilePath, FileMode.Open, FileAccess.ReadWrite))
         {
-            // to use 13001+ ids for planet sprites
+            // to use 14001+ ids for planet sprites
             stream.Position = int.Parse("5B1E5", NumberStyles.HexNumber);
-            int bC8 = stream.ReadByte();
-            int b32 = stream.ReadByte();
-            Console.WriteLine(bC8 + " " + b32);
-            if (bC8 == 200 && b32 == 50)
+            int bB0 = stream.ReadByte();
+            int b36 = stream.ReadByte();
+            Console.WriteLine(bB0 + " " + b36);
+            if (bB0 == 176 && b36 == 54)
                 HasPatchedRebexeForSprites = true;
-            // to use 13001+ ids for encyclopedia edata planets pictures
+            // to use 14001+ ids for encyclopedia edata planets pictures
             stream.Position = int.Parse("5DED9", NumberStyles.HexNumber);
-            bC8 = stream.ReadByte();
-            b32 = stream.ReadByte();
-            Console.WriteLine(bC8 + " " + b32);
-            if (bC8 == 200 && b32 == 50)
+            bB0 = stream.ReadByte();
+            b36 = stream.ReadByte();
+            Console.WriteLine(bB0 + " " + b36);
+            if (bB0 == 176 && b36 == 54)
                 HasPatchedRebexeForEncyclopedia = true;
         }
     }
