@@ -49,8 +49,6 @@ namespace SwRebellionEditor
             this.line5Label = new System.Windows.Forms.Label();
             this.warningLabel = new System.Windows.Forms.Label();
             this.patchInfoLabel = new System.Windows.Forms.Label();
-            this.binPicture = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.binPicture)).BeginInit();
             this.SuspendLayout();
             // 
             // systemsImageList
@@ -167,21 +165,11 @@ namespace SwRebellionEditor
             this.patchInfoLabel.TabIndex = 1164;
             this.patchInfoLabel.Text = "This window will close when done.";
             // 
-            // binPicture
-            // 
-            this.binPicture.Location = new System.Drawing.Point(467, 5);
-            this.binPicture.Name = "binPicture";
-            this.binPicture.Size = new System.Drawing.Size(256, 256);
-            this.binPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.binPicture.TabIndex = 1165;
-            this.binPicture.TabStop = false;
-            // 
             // PatchForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(735, 273);
-            this.Controls.Add(this.binPicture);
+            this.ClientSize = new System.Drawing.Size(735, 245);
             this.Controls.Add(this.patchInfoLabel);
             this.Controls.Add(this.warningLabel);
             this.Controls.Add(this.line5Label);
@@ -197,13 +185,13 @@ namespace SwRebellionEditor
             this.KeyPreview = true;
             this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(751, 284);
             this.MinimumSize = new System.Drawing.Size(751, 284);
             this.Name = "PatchForm";
             this.Text = "Patch";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.GameObjectsListForm_FormClosing);
             this.Load += new System.EventHandler(this.GameObjectsListForm_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.GameObjectsListForm_KeyDown);
-            ((System.ComponentModel.ISupportInitialize)(this.binPicture)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -221,6 +209,5 @@ namespace SwRebellionEditor
         private Label line5Label;
         private Label warningLabel;
         private Label patchInfoLabel;
-        private PictureBox binPicture;
     }
 }

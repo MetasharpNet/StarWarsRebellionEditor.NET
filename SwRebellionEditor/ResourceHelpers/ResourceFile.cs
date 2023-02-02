@@ -134,6 +134,7 @@ public class ResourceFile
         {
             idAsNint = new ResourceId(id).Id;
         }
+
         IntPtr h = BeginUpdateResourceW(_filePath, false);
         if (h == IntPtr.Zero)
             throw new Win32Exception(Marshal.GetLastWin32Error());

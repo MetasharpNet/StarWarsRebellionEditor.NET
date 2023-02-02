@@ -17,15 +17,6 @@ public partial class PatchForm : PatchDesignForm
         GameFilePath = Path.Combine(Settings.Current.GDataFolder , "SYSTEMSD.DAT");
         GameFile = DatFile.Load<SYSTEMSD>(GameFilePath);
         InitializeComponent();
-        var rt303 = Tactical.Resources.RT_303;
-        //var bin = new BinImage("5511.bin");
-        //var pal = new BinPalette("5541.pal");
-        var bin = new BinImage(rt303["5511"]);
-        var pal = new BinPalette(rt303["5541"]);
-        //binPicture.Image = pal.ToBitmap();
-        binPicture.Image = bin.ToBitmap(pal);
-        //rt303["ASSFRG_M.BMP"] = rt303["ASSFRG52.BMP"];
-        //Tactical.Resources.Save();
     }
 
     #endregion
@@ -91,6 +82,17 @@ public partial class PatchForm : PatchDesignForm
             if (Convert.ToInt32(ebId) < 166 || Convert.ToInt32(ebId) > 191)
                 EncyBmap.Resources.SaveString(Convert.ToUInt16(ebId), "EDATA." + ebId);
             File.Copy(filesPath, Path.Combine(Settings.Current.EDataFolder, "EDATA." + ebId), true);
+        }
+
+        // new tactical sprites
+        foreach (var filesPath in Directory.GetFiles("new-systems-tactical"))
+        {
+            var taId = Path.GetFileNameWithoutExtension(filesPath).Split('-')[0];
+            var taPalId = (Convert.ToInt32(taId) + 1000).ToString();
+            var b = new Bitmap(filesPath);
+            var bi = new BinImage(b);
+            Tactical.Resources.Save303(taId, bi.Bytes);
+            Tactical.Resources.Save303(taPalId, bi.Palette.Bytes);
         }
 
         // planets-sprites

@@ -4,6 +4,7 @@ public class BinPalette
 {
     public List<Color> colors;
     public int Size => colors.Count;
+    public byte[] Bytes;
 
     public BinPalette(string filePath)
     {
@@ -12,10 +13,15 @@ public class BinPalette
     }
     public BinPalette(byte[] bytes)
     {
+        Bytes = bytes;
         Set(bytes);
+    }
+    public BinPalette()
+    {
     }
     public void Set(byte[] bytes)
     {
+        Bytes = bytes;
         colors = new List<Color>();
         for (int b = 0; b < bytes.Length; ++b)
         {
@@ -43,6 +49,7 @@ public class BinPalette
             bytes[b++] = colors[c].G;
             bytes[b++] = colors[c].B;
         }
+        Bytes = bytes;
         File.WriteAllBytes(filePath, bytes);
     }
     public Bitmap ToBitmap()

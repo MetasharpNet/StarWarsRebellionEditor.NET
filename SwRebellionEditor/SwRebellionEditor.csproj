@@ -1033,6 +1033,9 @@
     <None Update="new-systems-sprites\13199-zonama-sekot-atlas-ok.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="new-systems-tactical\13001-abregado-rae.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="new-systems.csv">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>

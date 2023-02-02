@@ -30,6 +30,32 @@ namespace SwRebellionEditor.ResourceHelpers
         {
             Set(bytes);
         }
+        public BinImage(Bitmap bitmap)
+        {
+            Width = bitmap.Width;
+            Height = bitmap.Height;
+            Palette = new BinPalette();
+            Palette.colors = new List<Color>();
+            var dic = new Dictionary<string, byte>();
+            var by = new List<byte>();
+            by.AddRange(BitConverter.GetBytes(Width));
+            by.AddRange(BitConverter.GetBytes(Height));
+            byte paletteId = 0;
+            for (int y = 0; y < Height; ++y)
+                for (int x = 0; x < Width; ++x)
+                {
+                    var pixel = bitmap.GetPixel(x, y);
+                    var color = Color.FromArgb(pixel.R, pixel.G, pixel.B);
+                    if (!dic.ContainsKey(color.Name))
+                    {
+                        dic.Add(color.Name, paletteId++);
+                        Palette.colors.Add(color);
+                    }
+                    by.Add(1);
+                    by.Add(dic[color.Name]);
+                }
+            Bytes = by.ToArray();
+        }
         public void Set(byte[] bytes)
         {
             Bytes = bytes;
