@@ -20,9 +20,9 @@ To buy the game or get free fan mods, check : https://swrebellion.net/
 
 ### Beta Roadmap (current) :
 * Known bug: tactical battle crash is fixed when restoring initial GData/SYSTEMSD.DAT file (investagation required)
-* 200 system sprites (93/200 done)
+* 200 system sprites (120/200 done)
 * 200 encyclopedia sprites (93/200 done)
-* 200 encyclopedia descriptions (~20/200 done)
+* 200 encyclopedia descriptions (~30/200 done)
 
 ### Final Roadmap (low chance i'll invest time on it):
 * Cleanup code on rarely used windows
