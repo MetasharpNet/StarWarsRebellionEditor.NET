@@ -64,6 +64,12 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Update="new-3d-models-301\_readme.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-3d-textures-303\_readme.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="new-systems-encyclopedia-pictures\13005-alderaan-atlas-ok.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
@@ -784,6 +790,9 @@
     <None Update="new-systems-encyclopedia-pictures\EDATA.191.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="new-systems-encyclopedia-pictures\_readme.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="new-systems-sprites\10212-01-alderaan.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
@@ -1396,6 +1405,9 @@
     <None Update="new-systems-sprites\14000-debris.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="new-systems-sprites\14000-wireframe.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="new-systems-sprites\14001-abregado-rae.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
@@ -1768,6 +1780,9 @@
     <None Update="new-systems-sprites\14199-zonama-sekot %28atlas%29.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="new-systems-sprites\_readme.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="new-systems-tactical\13001-abregado-rae.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
@@ -2129,6 +2144,9 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="new-systems-tactical\14199-zonama-sekot %28atlas%29.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-systems-tactical\_readme.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="new-systems.csv">

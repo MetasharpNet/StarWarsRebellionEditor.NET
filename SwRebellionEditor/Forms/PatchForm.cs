@@ -82,43 +82,66 @@ public partial class PatchForm : PatchDesignForm
         }
 
         // new encybmap ids for encyclopedia pictures EDATA.13001 to 13200
-        foreach (var filesPath in Directory.GetFiles("new-systems-encyclopedia-pictures"))
+        foreach (var filePath in Directory.GetFiles("new-systems-encyclopedia-pictures"))
         {
-            var ebId = Path.GetFileNameWithoutExtension(filesPath);
+            var ebId = Path.GetFileNameWithoutExtension(filePath);
             if (ebId.Contains("-"))
                 ebId = ebId.Split('-')[0];
             else if (ebId.StartsWith("EDATA."))
                 ebId = ebId.Split('.')[1];
             if (Convert.ToInt32(ebId) < 166 || Convert.ToInt32(ebId) > 191)
                 EncyBmap.Resources.SaveString(Convert.ToUInt16(ebId), "EDATA." + ebId);
-            File.Copy(filesPath, Path.Combine(Settings.Current.EDataFolder, "EDATA." + ebId), true);
+            File.Copy(filePath, Path.Combine(Settings.Current.EDataFolder, "EDATA." + ebId), true);
         }
 
         // new tactical sprites
-        foreach (var filesPath in Directory.GetFiles("new-systems-tactical"))
+        foreach (var filePath in Directory.GetFiles("new-systems-tactical"))
         {
-            var taId = Path.GetFileNameWithoutExtension(filesPath).Split('-')[0];
+            if (Path.GetExtension(filePath).ToLowerInvariant() == ".txt")
+                continue;
+            var taId = Path.GetFileNameWithoutExtension(filePath).Split('-')[0];
             var taPalId = (Convert.ToInt32(taId) + 1000).ToString();
-            var b = new Bitmap(filesPath);
+            var b = new Bitmap(filePath);
             var bi = new BinImage(b);
             Tactical.Resources.Save303(taId, bi.Bytes);
             Tactical.Resources.Save303(taPalId, bi.Palette.Bytes);
         }
 
+        // new 3D models textures
+        foreach (var filePath in Directory.GetFiles("new-3d-models-301"))
+        {
+            if (Path.GetExtension(filePath).ToLowerInvariant() == ".txt")
+                continue;
+            var id301 = Path.GetFileNameWithoutExtension(filePath);
+            var bi = new BinImage(filePath);
+            Tactical.Resources.Save301(id301, bi.Bytes);
+        }
+        // new 3D models
+        foreach (var filePath in Directory.GetFiles("new-3d-textures-303"))
+        {
+            if (Path.GetExtension(filePath).ToLowerInvariant() == ".txt")
+                continue;
+            var id303 = Path.GetFileNameWithoutExtension(filePath);
+            var bi = new BinImage(filePath);
+            Tactical.Resources.Save303(id303, bi.Bytes);
+        }
+
         // planets-sprites
         var t = new ResourceFile(Path.Combine(Settings.Current.GameFolder, "STRATEGY.DLL"));
         // pre-init resource slots with a specific sprite to avoid sprite being displayed on top of the names
-        var f = Directory.GetFiles("new-systems-sprites").First(f => f.Contains("14000-debris.bmp"));
+        var f = Directory.GetFiles("new-systems-sprites").First(f => f.Contains("14000-wireframe.bmp"));
         for (int p = 0; p <= 200; ++p)
         {
             var key = (14000 + p).ToString();
             if (!t.RT_BITMAP.ContainsKey(key))
                 t.SaveBitmap(key, f);
         }
-        foreach (var filesPath in Directory.GetFiles("new-systems-sprites"))
+        foreach (var filePath in Directory.GetFiles("new-systems-sprites"))
         {
-            var id = Path.GetFileNameWithoutExtension(filesPath).Split('-')[0];
-            t.SaveBitmap(id, filesPath);
+            if (Path.GetExtension(filePath).ToLowerInvariant() == ".txt")
+                continue;
+            var id = Path.GetFileNameWithoutExtension(filePath).Split('-')[0];
+            t.SaveBitmap(id, filePath);
         }
 
         // sectors
