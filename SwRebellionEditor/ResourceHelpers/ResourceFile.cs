@@ -28,6 +28,8 @@ public class ResourceFile
 
     #region variables
     protected string _filePath;
+    public Dictionary<string, byte[]> RT_301;
+    public Dictionary<string, ushort> RT_301_lang;
     public Dictionary<string, byte[]> RT_303;
     public Dictionary<string, ushort> RT_303_lang;
     public Dictionary<string, BitmapResource> RT_BITMAP;
@@ -36,6 +38,7 @@ public class ResourceFile
     public Dictionary<string, ushort> RT_RCDATA_lang;
     public Dictionary<ushort, string> RT_STRING;
     public Dictionary<ushort, ushort> RT_STRING_lang;
+    public ushort RT_301_lang_default => RT_301_lang.Values.GroupBy(l => l).OrderByDescending(g => g.Count()).First().Key;
     public ushort RT_303_lang_default => RT_303_lang.Values.GroupBy(l => l).OrderByDescending(g => g.Count()).First().Key;
     public ushort RT_BITMAP_lang_default => RT_BITMAP_lang.Values.GroupBy(l => l).OrderByDescending(g => g.Count()).First().Key;
     public ushort RT_RCDATA_lang_default => RT_RCDATA_lang.Values.GroupBy(l => l).OrderByDescending(g => g.Count()).First().Key;
@@ -91,6 +94,15 @@ public class ResourceFile
                     }
                 }
             }
+            if (ri.ResourceTypes.Any(t => t.Name == "301"))
+            {
+                var resources = ri.Resources.First(dr => dr.Key.ToString() == "301").Value;
+                foreach (var r in resources)
+                {
+                    RT_301.Add(r.Name.Name, r.WriteAndGetBytes());
+                    RT_301_lang.Add(r.Name.Name, r.Language);
+                }
+            }
             if (ri.ResourceTypes.Any(t => t.Name == "303"))
             {
                 var resources = ri.Resources.First(dr => dr.Key.ToString() == "303").Value;
@@ -112,6 +124,49 @@ public class ResourceFile
             SaveBitmap(key, RT_BITMAP[key]);
         foreach (var key in RT_303.Keys)
             Save303(key, RT_303[key]);
+    }
+    #endregion
+
+    #region RT_301
+    public ushort Get301Language(string id)
+    {
+        if (RT_301_lang.ContainsKey(id))
+            return RT_301_lang[id];
+        return RT_301_lang_default;
+    }
+    public void Save301(string id, byte[] bytes)
+    {
+        var lang = Get301Language(id);
+        nint idAsNint;
+        try
+        {
+            idAsNint = Convert.ToInt32(id);
+        }
+        catch
+        {
+            idAsNint = new ResourceId(id).Id;
+        }
+
+        IntPtr h = BeginUpdateResourceW(_filePath, false);
+        if (h == IntPtr.Zero)
+            throw new Win32Exception(Marshal.GetLastWin32Error());
+
+        if (bytes != null && bytes.Length == 0)
+            bytes = null;
+
+        if (!UpdateResourceW(h, 303, idAsNint, lang, bytes, (bytes == null ? 0 : (uint)bytes.Length)))
+            throw new Win32Exception(Marshal.GetLastWin32Error());
+
+        if (!EndUpdateResourceW(h, false))
+            throw new Win32Exception(Marshal.GetLastWin32Error());
+
+        if (RT_301.ContainsKey(id))
+            RT_301[id] = bytes;
+        else
+        {
+            RT_301.Add(id, bytes);
+            RT_301_lang.Add(id, lang);
+        }
     }
     #endregion
 
