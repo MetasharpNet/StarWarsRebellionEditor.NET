@@ -114,18 +114,18 @@ public partial class PatchForm : PatchDesignForm
         {
             if (Path.GetExtension(filePath).ToLowerInvariant() == ".txt")
                 continue;
-            var id301 = Path.GetFileNameWithoutExtension(filePath);
-            var bi = new BinImage(filePath);
-            Tactical.Resources.Save301(id301, bi.Bytes);
+            var id301 = Path.GetFileNameWithoutExtension(filePath).Split('-')[0];
+            var bytes = File.ReadAllBytes(filePath);
+            Tactical.Resources.Save301(id301, bytes);
         }
         // new 3D models
         foreach (var filePath in Directory.GetFiles("new-3d-textures-303"))
         {
             if (Path.GetExtension(filePath).ToLowerInvariant() == ".txt")
                 continue;
-            var id303 = Path.GetFileNameWithoutExtension(filePath);
-            var bi = new BinImage(filePath);
-            Tactical.Resources.Save303(id303, bi.Bytes);
+            var id303 = Path.GetFileNameWithoutExtension(filePath).Split('-')[0];
+            var bytes = File.ReadAllBytes(filePath);
+            Tactical.Resources.Save303(id303, bytes);
         }
 
         // planets-sprites
