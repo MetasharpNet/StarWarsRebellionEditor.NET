@@ -49,6 +49,8 @@ public class ResourceFile
     public ResourceFile(string filePath)
     {
         _filePath = filePath;
+        RT_301 = new Dictionary<string, byte[]>();
+        RT_301_lang = new Dictionary<string, ushort>();
         RT_303 = new Dictionary<string, byte[]>();
         RT_303_lang = new Dictionary<string, ushort>();
         RT_BITMAP = new Dictionary<string, BitmapResource>();
