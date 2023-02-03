@@ -84,6 +84,8 @@ public partial class PatchForm : PatchDesignForm
         // new encybmap ids for encyclopedia pictures EDATA.13001 to 13200
         foreach (var filePath in Directory.GetFiles("new-systems-encyclopedia-pictures"))
         {
+            if (Path.GetExtension(filePath).ToLowerInvariant() == ".txt")
+                continue;
             var ebId = Path.GetFileNameWithoutExtension(filePath);
             if (ebId.Contains("-"))
                 ebId = ebId.Split('-')[0];
