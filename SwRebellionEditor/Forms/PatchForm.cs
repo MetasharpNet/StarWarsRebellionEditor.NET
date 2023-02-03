@@ -108,7 +108,7 @@ public partial class PatchForm : PatchDesignForm
         // planets-sprites
         var t = new ResourceFile(Path.Combine(Settings.Current.GameFolder, "STRATEGY.DLL"));
         // pre-init resource slots with a specific sprite to avoid sprite being displayed on top of the names
-        var f = Directory.GetFiles("new-systems-sprites").First(f => f.Contains("10240-debris.bmp"));
+        var f = Directory.GetFiles("new-systems-sprites").First(f => f.Contains("14000-debris.bmp"));
         for (int p = 0; p <= 200; ++p)
         {
             var key = (14000 + p).ToString();
