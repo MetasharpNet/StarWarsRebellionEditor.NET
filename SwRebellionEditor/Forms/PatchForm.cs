@@ -38,14 +38,15 @@ public partial class PatchForm : PatchDesignForm
     {
         this.Enabled = false;
         // MANDATORY EXPECTATIONS
-
         // systems
         // id = 265, sectorid = 36   (Coruscant)
         // id = 289, sectorid = 38   (Yavin)
-
         // sectors
         // id = 36, galaxysize = 1, importance = 1
         // id = 38, galaxysize = 1
+
+
+        // ---------------------------- REBEXE.EXE ----------------------------
 
         // patching rebexe.exe
         using (var stream = new FileStream(Settings.Current.REBEXEFilePath, FileMode.Open, FileAccess.ReadWrite))
@@ -79,7 +80,12 @@ public partial class PatchForm : PatchDesignForm
             stream.WriteByte(0x3A);
             stream.Position = int.Parse("1C0929", NumberStyles.HexNumber);
             stream.WriteByte(0x00); // +0
+            // to use 14000 ids for tactical destroyed planet
+            stream.Position = int.Parse("197A25", NumberStyles.HexNumber);
+            stream.WriteByte(0x00); // +0
         }
+
+        // ---------------------------- SPRITES ----------------------------
 
         // new encybmap ids for encyclopedia pictures EDATA.13001 to 13200
         foreach (var filePath in Directory.GetFiles("new-systems-encyclopedia-pictures"))
@@ -96,7 +102,9 @@ public partial class PatchForm : PatchDesignForm
             File.Copy(filePath, Path.Combine(Settings.Current.EDataFolder, "EDATA." + ebId), true);
         }
 
-        // new tactical sprites
+        var defaultTacticalPalette = new AdobeColorTable(Tactical.Resources.RT_303["5557"]);
+        // new 256x256 tactical systems sprites using extended palette
+        this.Enabled = true;
         foreach (var filePath in Directory.GetFiles("new-systems-tactical"))
         {
             if (Path.GetExtension(filePath).ToLowerInvariant() == ".txt")
@@ -104,28 +112,45 @@ public partial class PatchForm : PatchDesignForm
             var taId = Path.GetFileNameWithoutExtension(filePath).Split('-')[0];
             var taPalId = (Convert.ToInt32(taId) + 1000).ToString();
             var b = new Bitmap(filePath);
-            var bi = new BinImage(b);
+            var bi = new BinImage(b, defaultTacticalPalette, true, 256, 256);
             Tactical.Resources.Save303(taId, bi.Bytes);
-            Tactical.Resources.Save303(taPalId, bi.Palette.Bytes);
+            Tactical.Resources.Save303(taPalId, bi.ColorTable.Bytes);
+        }
+
+        // new 3D models
+        foreach (var filePath in Directory.GetFiles("new-3d-models-301"))
+        {
+            var extension = Path.GetExtension(filePath).ToLowerInvariant();
+            if (extension == ".txt")
+                continue;
+            var id301 = Path.GetFileNameWithoutExtension(filePath).Split('-')[0];
+            byte[] bytes;
+            if (extension == ".x")
+                bytes = File.ReadAllBytes(filePath);
+            else
+                throw new ApplicationException("Accepted 3D model extension: x. File provided: " + filePath);
+            Tactical.Resources.Save301(id301, bytes);
         }
 
         // new 3D models textures
-        foreach (var filePath in Directory.GetFiles("new-3d-models-301"))
-        {
-            if (Path.GetExtension(filePath).ToLowerInvariant() == ".txt")
-                continue;
-            var id301 = Path.GetFileNameWithoutExtension(filePath).Split('-')[0];
-            var bytes = File.ReadAllBytes(filePath);
-            Tactical.Resources.Save301(id301, bytes);
-        }
-        // new 3D models
         foreach (var filePath in Directory.GetFiles("new-3d-textures-303"))
         {
-            if (Path.GetExtension(filePath).ToLowerInvariant() == ".txt")
+            var extension = Path.GetExtension(filePath).ToLowerInvariant();
+            if (extension == ".txt")
                 continue;
             var id303 = Path.GetFileNameWithoutExtension(filePath).Split('-')[0];
-            var bytes = File.ReadAllBytes(filePath);
-            Tactical.Resources.Save303(id303, bytes);
+            byte[] bytes;
+            if (extension == ".jpg" || extension == ".jpeg" || extension == ".png" || extension == ".bmp")
+            {
+                var b = new Bitmap(filePath);
+                var bi = new BinImage(b, defaultTacticalPalette, true);
+                bytes = bi.Bytes;
+            }
+            else if (extension == ".bin")
+                bytes = File.ReadAllBytes(filePath);
+            else
+                throw new ApplicationException("Accepted 3D model textures extensions: jpg, jpeg, bmp, png, bin. File provided: " + filePath);
+            Tactical.Resources.Save301(id303, bytes);
         }
 
         // planets-sprites
@@ -145,6 +170,8 @@ public partial class PatchForm : PatchDesignForm
             var id = Path.GetFileNameWithoutExtension(filePath).Split('-')[0];
             t.SaveBitmap(id, filePath);
         }
+
+        // ---------------------------- DATA ----------------------------
 
         // sectors
         var newSectorsAsString = File.ReadAllText("new-sectors.csv");
