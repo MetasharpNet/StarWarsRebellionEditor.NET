@@ -130,8 +130,8 @@
                 throw new ApplicationException("Pixels=null");
 
             var bitmap = new Bitmap(Width, Height);
-            for (int y = 0; y < Width; ++y)
-                for (int x = 0; x < Height; ++x)
+            for (int y = 0; y < Height; ++y)
+                for (int x = 0; x < Width; ++x)
                     bitmap.SetPixel(x, y, ColorTable.Colors[IndexedColors[x, y]]);
             return bitmap;
         }
