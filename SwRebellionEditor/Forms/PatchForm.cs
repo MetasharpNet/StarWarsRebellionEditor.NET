@@ -46,44 +46,6 @@ public partial class PatchForm : PatchDesignForm
         // id = 38, galaxysize = 1
 
 
-        // ---------------------------- REBEXE.EXE ----------------------------
-
-        // patching rebexe.exe
-        using (var stream = new FileStream(Settings.Current.REBEXEFilePath, FileMode.Open, FileAccess.ReadWrite))
-        {
-            // to use 14001+ ids for galaxy map planet sprites
-            stream.Position = int.Parse("5B1E4", NumberStyles.HexNumber);
-            stream.WriteByte(0x05); // add eax, 14000
-            stream.WriteByte(0xB0);
-            stream.WriteByte(0x36);
-            stream.WriteByte(0x00);
-            stream.WriteByte(0x00); 
-            stream.WriteByte(0xC3); // retn
-            // to use 14001+ ids for encyclopedia edata planets pictures
-            stream.Position = int.Parse("5DED6", NumberStyles.HexNumber);
-            stream.WriteByte(0x89); // move eax, ecx
-            stream.WriteByte(0xC8);
-            stream.WriteByte(0x05); // add eax, 14000
-            stream.WriteByte(0xB0);
-            stream.WriteByte(0x36);
-            stream.WriteByte(0x00);
-            stream.WriteByte(0x00);
-            stream.WriteByte(0xC2); // retn 4
-            stream.WriteByte(0x04);
-            // to use 14001+ ids for tactical planets bin images
-            stream.Position = int.Parse("1AA022", NumberStyles.HexNumber);
-            stream.WriteByte(0xB0); // 14000
-            stream.WriteByte(0x36);
-            // to use 15001+ ids for tactical planets bin palettes
-            stream.Position = int.Parse("19456E", NumberStyles.HexNumber);
-            stream.WriteByte(0x98); // 15000
-            stream.WriteByte(0x3A);
-            stream.Position = int.Parse("1C0929", NumberStyles.HexNumber);
-            stream.WriteByte(0x00); // +0
-            // to use 14000 ids for tactical destroyed planet
-            stream.Position = int.Parse("197A25", NumberStyles.HexNumber);
-            stream.WriteByte(0x00); // +0
-        }
 
         // ---------------------------- SPRITES ----------------------------
 
@@ -154,8 +116,11 @@ public partial class PatchForm : PatchDesignForm
 
         // planets-sprites
         var t = new ResourceFile(Path.Combine(Settings.Current.GameFolder, "STRATEGY.DLL"));
+        // identify coruscant id
+        var f = Directory.GetFiles("new-systems-sprites").First(f => f.ToLowerInvariant().Contains("coruscant"));
+        var coruscantId = Convert.ToUInt16(Path.GetFileName(f).Split("-")[0]);
         // pre-init resource slots with a specific sprite to avoid sprite being displayed on top of the names
-        var f = Directory.GetFiles("new-systems-sprites").First(f => f.Contains("14000-wireframe.bmp"));
+        f = Directory.GetFiles("new-systems-sprites").First(f => f.Contains("14000-wireframe.bmp"));
         for (int p = 0; p <= 200; ++p)
         {
             var key = (14000 + p).ToString();
@@ -168,6 +133,53 @@ public partial class PatchForm : PatchDesignForm
                 continue;
             var id = Path.GetFileNameWithoutExtension(filePath).Split('-')[0];
             t.SaveBitmap(id, filePath);
+        }
+
+        // ---------------------------- REBEXE.EXE ----------------------------
+
+        // patching rebexe.exe
+        using (var stream = new FileStream(Settings.Current.REBEXEFilePath, FileMode.Open, FileAccess.ReadWrite))
+        {
+            // to use 14001+ ids for galaxy map planet sprites
+            stream.Position = int.Parse("5B1E4", NumberStyles.HexNumber);
+            stream.WriteByte(0x05); // add eax, 14000
+            stream.WriteByte(0xB0);
+            stream.WriteByte(0x36);
+            stream.WriteByte(0x00);
+            stream.WriteByte(0x00);
+            stream.WriteByte(0xC3); // retn
+            // to use coruscant sprite for empire objective to keep coruscant
+            stream.Position = int.Parse("4A46F", NumberStyles.HexNumber);
+            stream.WriteByte((byte)(coruscantId & 0x00FF)); // 14036 36D4 => D4 then 36
+            stream.WriteByte((byte)((coruscantId & 0xFF00) >> 8));
+            // to use coruscant sprite for rebel alliance objective to take coruscant
+            stream.Position = int.Parse("49BCF", NumberStyles.HexNumber);
+            stream.WriteByte((byte)(coruscantId & 0x00FF)); // 14036 36D4 => D4 then 36
+            stream.WriteByte((byte)((coruscantId & 0xFF00) >> 8));
+            // to use 14001+ ids for encyclopedia edata planets pictures
+            stream.Position = int.Parse("5DED6", NumberStyles.HexNumber);
+            stream.WriteByte(0x89); // move eax, ecx
+            stream.WriteByte(0xC8);
+            stream.WriteByte(0x05); // add eax, 14000
+            stream.WriteByte(0xB0);
+            stream.WriteByte(0x36);
+            stream.WriteByte(0x00);
+            stream.WriteByte(0x00);
+            stream.WriteByte(0xC2); // retn 4
+            stream.WriteByte(0x04);
+            // to use 14001+ ids for tactical planets bin images
+            stream.Position = int.Parse("1AA022", NumberStyles.HexNumber);
+            stream.WriteByte(0xB0); // 14000
+            stream.WriteByte(0x36);
+            // to use 15001+ ids for tactical planets bin palettes
+            stream.Position = int.Parse("19456E", NumberStyles.HexNumber);
+            stream.WriteByte(0x98); // 15000
+            stream.WriteByte(0x3A);
+            stream.Position = int.Parse("1C0929", NumberStyles.HexNumber);
+            stream.WriteByte(0x00); // +0
+            // to use 14000 ids for tactical destroyed planet
+            stream.Position = int.Parse("197A25", NumberStyles.HexNumber);
+            stream.WriteByte(0x00); // +0
         }
 
         // ---------------------------- DATA ----------------------------
