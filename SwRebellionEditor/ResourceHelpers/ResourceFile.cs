@@ -156,7 +156,7 @@ public class ResourceFile
         if (bytes != null && bytes.Length == 0)
             bytes = null;
 
-        if (!UpdateResourceW(h, 303, idAsNint, lang, bytes, (bytes == null ? 0 : (uint)bytes.Length)))
+        if (!UpdateResourceW(h, 301, idAsNint, lang, bytes, (bytes == null ? 0 : (uint)bytes.Length)))
             throw new Win32Exception(Marshal.GetLastWin32Error());
 
         if (!EndUpdateResourceW(h, false))
