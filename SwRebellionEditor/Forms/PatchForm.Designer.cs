@@ -49,6 +49,7 @@ namespace SwRebellionEditor
             this.line5Label = new System.Windows.Forms.Label();
             this.warningLabel = new System.Windows.Forms.Label();
             this.patchInfoLabel = new System.Windows.Forms.Label();
+            this.label1Requirement = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // systemsImageList
@@ -165,11 +166,23 @@ namespace SwRebellionEditor
             this.patchInfoLabel.TabIndex = 1164;
             this.patchInfoLabel.Text = "This window will close when done.";
             // 
+            // label1Requirement
+            // 
+            this.label1Requirement.AutoSize = true;
+            this.label1Requirement.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
+            this.label1Requirement.ForeColor = System.Drawing.Color.Red;
+            this.label1Requirement.Location = new System.Drawing.Point(444, 14);
+            this.label1Requirement.Name = "label1Requirement";
+            this.label1Requirement.Size = new System.Drawing.Size(260, 15);
+            this.label1Requirement.TabIndex = 1165;
+            this.label1Requirement.Text = "Requires  first to apply update-1.02-(2.63.1.0-fix)";
+            // 
             // PatchForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(735, 245);
+            this.Controls.Add(this.label1Requirement);
             this.Controls.Add(this.patchInfoLabel);
             this.Controls.Add(this.warningLabel);
             this.Controls.Add(this.line5Label);
@@ -209,5 +222,6 @@ namespace SwRebellionEditor
         private Label line5Label;
         private Label warningLabel;
         private Label patchInfoLabel;
+        private Label label1Requirement;
     }
 }

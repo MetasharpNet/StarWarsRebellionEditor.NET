@@ -31,19 +31,11 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Compile Update="FormsParents\GalaxyMapDesignForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Update="FormsParents\PatchDesignForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Update="FormsParents\GalaxyMapDesignForm.cs" />
+    <Compile Update="FormsParents\PatchDesignForm.cs" />
     <Compile Update="Forms\GalaxyMapForm.cs" />
-    <Compile Update="Forms\SectorsForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Update="Forms\PatchForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Update="Forms\SectorsForm.cs" />
+    <Compile Update="Forms\PatchForm.cs" />
     <Compile Update="Properties\Settings.Designer.cs">
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
       <AutoGen>True</AutoGen>

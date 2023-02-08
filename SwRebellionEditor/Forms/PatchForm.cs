@@ -104,7 +104,6 @@ public partial class PatchForm : PatchDesignForm
 
         var defaultTacticalPalette = new AdobeColorTable(Tactical.Resources.RT_303["5557"]);
         // new 256x256 tactical systems sprites using extended palette
-        this.Enabled = true;
         foreach (var filePath in Directory.GetFiles("new-systems-tactical"))
         {
             if (Path.GetExtension(filePath).ToLowerInvariant() == ".txt")
