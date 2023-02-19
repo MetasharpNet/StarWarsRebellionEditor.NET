@@ -42,7 +42,6 @@ namespace SwRebellionConverter
                         bi.Save(Path.Combine(Path.GetDirectoryName(file), Path.GetFileNameWithoutExtension(file) + ".bin"));
                         if (extendedColorTable.Checked)
                             bi.ColorTable.Save(Path.Combine(Path.GetDirectoryName(file), Path.GetFileNameWithoutExtension(file) + ".act"));
-                        b.Dispose();
                     }
                     else if (file.EndsWith(".bin"))
                     {
@@ -55,7 +54,6 @@ namespace SwRebellionConverter
                         source.Image = b;
                         destination.Image = bi.ToBitmap();
                         b.Save(Path.Combine(Path.GetDirectoryName(file), Path.GetFileNameWithoutExtension(file) + ".bmp"));
-                        b.Dispose();
                     }
                 }
             }

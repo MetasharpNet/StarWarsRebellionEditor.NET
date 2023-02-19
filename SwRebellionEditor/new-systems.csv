@@ -4,7 +4,7 @@ Coordinates: S-9, Hyperspace routes: 2
 
 Geology: Planet, Hot, Dry, Desert, Plains
 Species: -
-Exports: -
+Economy: -
 
 History: During the High Republic Era, it was considered a key member of the Galactic Republic, and received a sky-island with a representation of its environment at the Valo Republic Fair. By the time of the Clone Wars, Boz Pity was largely uninhabited. The planet was used as staging area by the CIS for raids against the Galactic republic.
 
@@ -14,7 +14,7 @@ Coordinates: P-9, Hyperspace routes: 6
 
 Geology: Planet, Temperate, Wet, Jungle
 Species: Wookiees
-Exports: Slaves, Imperial manufactured goods
+Economy: Slaves, Imperial manufactured goods
 
 History: Covered in wroshyr trees, Kashyyyk is the homeworld to the Wookiee species. The center of the planet is covered with a tropical ocean belt, which contained a number of islands and large coral reefs. Kashyyyk was in the same star system as Trandosha, the home of the Trandoshan species, who were traditional enemies of the Wookiees. Unfortunately the planet has been plagued intermittently by exploitation and slavery due to the Wookiees immense physical strength.
 
@@ -24,7 +24,7 @@ Coordinates: R-8, Hyperspace routes: -
 
 Geology: Planet, Cold, Mountainous
 Species: Human, Anzellan, Boosodian
-Exports: Spice
+Economy: Spice
 
 History: Once famed for its marked spirituality, the planet became known as a haven for criminals. The Largest city on the planet, Kijimi City is home to many temples and monestaries.
 
@@ -34,7 +34,7 @@ Coordinates: O-9, Hyperspace routes: 2
 
 Geology: Planet, Temperate, Jungle
 Species: Human
-Exports: Spice
+Economy: Spice
 
 History: Onderon and its 4 moons we're key worlds during the Mandalorian wars. During the Clone Wars, Onderon joined the Confederacy of Independent Systems. It was annexed by the Galactic Empire after the war. The resistance fighter Saw Gerrera hails from Onderon.
 
@@ -44,7 +44,7 @@ Coordinates: Q-10, Hyperspace routes: 5
 
 Geology: Planet, Temperate, Urban
 Species: Randoni (Human)
-Exports: Trade, Business
+Economy: Trade, Business
 
 History: Randon was a planet from which the Randoni originated. It was a large business world with crowded bazaars and elegant corporate towers. It was at the intersection with several major trade routes.
 
@@ -54,7 +54,7 @@ Coordinates: P-11, Hyperspace routes: -
 
 Geology: Planet, Temperate, Varried
 Species: Bouncer 
-Exports: 
+Economy: 
 
 History: 
 
@@ -65,7 +65,7 @@ Coordinates: P-9, Hyperspace routes: 6
 
 Geology: Planet, Humid, Temperate, Jungle, Arid
 Species: Trandoshan
-Exports: Mercenaries, Slaves
+Economy: Mercenaries, Slaves
 
 History: Trandosha, also known as Dosh, is an arboreal planet and the homeworld of the Trandoshan species. It is orbited by Wasskah, a verdant moon, and was positioned in the same star system as Kashyyyk. The Bounty Hunter Bossk was born on Trandosha.
 
@@ -75,7 +75,7 @@ Coordinates: P-10, Hyperspace routes: 2
 
 Geology: Planet, Temperate, Bio-luminescent forests
 Species: Umbaran
-Exports: Doonium, Mined ore, Refined ore
+Economy: Doonium, Mined ore, Refined ore
 
 History: Known as the ""Shadow World"" due to the lack of sunlight on its surface. It is the Homeword of the Umbaran people. The planet was initially part of the Galactic Republic before seceding to join the Confederacy of Independent Systems, before being retaken and coming under the rule of the Galactic Empire. They always prioritize their homeworld over the galactic government.
 
@@ -85,7 +85,7 @@ Coordinates: R-8, Hyperspace routes: -
 
 Geology: Planet, Temperate, Rocky, Muddy
 Species: Mixed, Prisoners
-Exports: Doonium, Mined ore, Refined ore
+Economy: Doonium, Mined ore, Refined ore
 
 History: Wobani was a temperate planet partially hidden by a swirling dust cloud. The planet was used by the Galactic Empire as a site for labor and prison camps. Many pirates were sent there as the Empire cracked down on criminals in the Outer Rim.
 
@@ -95,7 +95,7 @@ Coordinates: O-10, Hyperspace routes: 4
 
 Geology: Planet, Varied
 Species: Zeltron
-Exports: Tourism
+Economy: Tourism
 
 History: In accordance with that species' reputation, Zeltros was known as a luxury world, where many went to vacation, owing to the planet's abundance of pleasurable facilities ranging from amusement parks to theaters, night clubs, and much more.
 
@@ -115,7 +115,7 @@ Coordinates: F-8, Hyperspace routes: 7
 
 Geology: Planet, Cold, Ice-locked
 Species: Chiss
-Exports: Information
+Economy: Information
 
 History: It is the homeworld of the Chiss species and the capital world of the Chiss Ascendancy. Though largely unknown to the wider galaxy. Csilla is a cold, ice-locked planet and most of the population lives in underground settlements.
 
@@ -125,7 +125,7 @@ Coordinates: F-7, Hyperspace routes: -
 
 Geology: Planet, Hot and Dry, Desert
 Species: Human, Symeong
-Exports: -
+Economy: -
 
 History: Exegol once had a fertile environment, until the Sith established their presence there and laid waste to the planet. According to legend, two Sith Lords, Darth Noctyss and Darth Sanguis, reached Exegol in their quest for immortality, which the former hoped to learn from the latter.
 
@@ -135,7 +135,7 @@ Coordinates: G-7, Hyperspace routes: -
 
 Geology: Planet, Cold, Tundra, Forests
 Species: Human
-Exports: Kyber Crystals
+Economy: Kyber Crystals
 
 History: Hidden beneath Ilum's frigid surface was what came to be known as the Crystal Cave. Within the maze-like caves grew kyber crystals, which brought the Jedi Order to Ilum so they could harvest the crystals in a rite of passage known as the Gathering. The Empire has strip mined the planet for Kyber Crystals. Leaving deep scars in the planets surface that are clearly visible from space.
 
@@ -145,7 +145,7 @@ Coordinates: C-16, Hyperspace routes: -
 
 Geology: Planet
 Species: 
-Exports: 
+Economy: 
 
 History: 
 
@@ -156,7 +156,7 @@ Coordinates: -, Hyperspace routes: -
 
 Geology: Planet, Arid, Mountainous
 Species: Nagai
-Exports: Raw Materials
+Economy: Raw Materials
 
 History: Nagi was a planet in the Unknown Regions, located in the dwarf galaxy known as Firefist that orbited the known galaxy. Nagi is the ancestral homeworld of the Nagai. Nagi is an arid world, and quite mountainous, characterized by very high mountain peaks separated by deep, wide valleys. The thin upper atmosphere is relatively ineffective at blocking solar radiation, and the high peaks of the world are bathed in it.
 
@@ -166,7 +166,7 @@ Coordinates: H-6, Hyperspace routes: -
 
 Geology: Planet, Radioactive, Arid
 Species: Mixed
-Exports: -
+Economy: -
 
 History: Parnassos was settled during the Republic Era by Con Star Mining Corporation, which wanted to exploit the planet for its metals and minerals. Con Star also established several settlements throughout the planet with laboratories, factories, mines, and houses for the colonists. Con Star also built a powerful automated orbital defense system around the planet. However a poorly maintained reactor at an unidentified Con Star station malfunctioned, devastating the planet's environment. The surrounding land was reduced to a radioactive wasteland called the ""dead lands."" Much of the surrounding continent was reduced to a barren desert.
 
@@ -176,7 +176,7 @@ Coordinates: H-7, Hyperspace routes: 2
 
 Geology: Planet x10
 Species: Chiss
-Exports: -
+Economy: -
 
 History: The Redoubt, formally the Chiss Redoubt, was a remote star cluster that was located in Chiss space, near the Utegetu Nebula, and that contained at least ten habitable planets and hundreds of stars. A planetoid in The Redoubt was the resting place of the ill-fated Outbound Flight Project, which crashed there.
 
@@ -186,7 +186,7 @@ Coordinates: D-13, Hyperspace routes: -
 
 Geology: Planet, Wet, Swamp, Ocean
 Species: Human
-Exports: -
+Economy: -
 
 History: A world with a significant southern ocean and swamps that cover the planet's surface including the Endless Swamp, a semi-solid area filled with massive, overgrown trees. The planet also has a unique connection to the Force being balanced between the light and dark sides of the Force, similar to Odessen. Zakuul is home to an immigrated Human population along with the native Iknayid but other creatures were present also and even adapted to their environment. The planet also possessed advanced technology with several cities spread throughout the world branching off from the Spire and being the resting place of the Eternal Throne. In the distant past they waged war with both the Republic and the Sith empire.
 
@@ -196,7 +196,7 @@ Coordinates: F-13, Hyperspace routes: -
 
 Geology: Planet
 Species: -
-Exports: -
+Economy: -
 
 History: Zonama Sekot was an astronomical object located in the Unknown Regions. It was situated in an otherwise empty and unexplored area, in the neighborhood of the planets Ahch-To and Rakata Prime.
 
@@ -204,15 +204,11 @@ Appearances: Atlas"
 Ansion;120;11808;Mid Rim North;356;244;Rim;8;"[CANON] Sector: Mid Rim North
 Coordinates: I-6, Hyperspace routes: 4
 
-Geology: Planet, [Legends] Temperate, Plains, Hills
+Geology: Planet, Temperate, Plains, Hills
 Species: Ansionian
-Economy: [Legends] Primary, Foodstuffs 
+Economy: Primary, Foodstuffs
 
-History: Ansion was a planet located in the Mid Rim. A border dispute occurred on Ansion during the Separatist Crisis, which, along with turmoil on the planet Ando, was enough to stagger the galaxy.
-
-[Legends] Shortly after Battle of Yavin, the Galactic Empire prepared a massive attack on Ansion, a civilian target. The Empire suspected the planet's population of harboring Alliance assets or at least Rebel sympathizers.
-
-[Legends] Ansion was a world of rolling plains, grassy fields, and wide valleys. Due to the high winds that swept the planet's surface, the extensive animal life on the world adapted to ride the winds or withstand it on the ground.
+History: Ansion was a planet located in the Mid Rim. A border dispute occurred on Ansion during the Separatist Crisis, which, along with turmoil on the planet Ando, was enough to stagger the galaxy. Shortly after Battle of Yavin, the Galactic Empire prepared a massive attack on Ansion, a civilian target. The Empire suspected the planet's population of harboring Alliance assets or at least Rebel sympathizers. Ansion was a world of rolling plains, grassy fields, and wide valleys. Due to the high winds that swept the planet's surface, the extensive animal life on the world adapted to ride the winds or withstand it on the ground.
 
 Appearances: Atlas
 "
@@ -232,7 +228,7 @@ Coordinates: K-6, Hyperspace routes: -
 
 Geology: Planet
 Species: 
-Exports: 
+Economy: 
 
 History: 
 
@@ -243,7 +239,7 @@ Coordinates: J-7, Hyperspace routes: 2
 
 Geology: Planet
 Species: 
-Exports: 
+Economy: 
 
 History: 
 
@@ -254,7 +250,7 @@ Coordinates: J-17, Hyperspace routes:-
 
 Geology: 
 Species: 
-Exports: 
+Economy: 
 
 History: 
 
@@ -265,7 +261,7 @@ Coordinates: M-6, Hyperspace routes: 2
 
 Geology: Planet, 
 Species: 
-Exports: 
+Economy: 
 
 History: Ithor is a beautiful forest planet.  The planet is inhabited by beings called Ithorians, who live in great floating cities.  The Ithorians rarely if ever set foot in the forests below their cities and consider these forests sacred.
 
@@ -275,7 +271,7 @@ Coordinates: J-6, Hyperspace routes: 1
 
 Geology: Planet
 Species: 
-Exports: 
+Economy: 
 
 History: 
 
@@ -286,7 +282,7 @@ Coordinates: K-5, Hyperspace routes: 2
 
 Geology: Planet
 Species: 
-Exports: 
+Economy: 
 
 History: 
 
@@ -297,7 +293,7 @@ Coordinates: L-7, Hyperspace routes: 3
 
 Geology: Planet
 Species: 
-Exports: 
+Economy: 
 
 History: 
 
@@ -308,7 +304,7 @@ Coordinates: K-5, Hyperspace routes: 2
 
 Geology: Planet
 Species: 
-Exports: 
+Economy: 
 
 History: 
 
@@ -318,7 +314,7 @@ Coordinates: N-13, Hyperspace routes: 4
 
 Geology: Planet
 Species: 
-Exports: 
+Economy: 
 
 History: 
 
@@ -329,7 +325,7 @@ Coordinates: M-11, Hyperspace routes: 3
 
 Geology: Planet, 
 Species: 
-Exports: 
+Economy: 
 
 History: Corellia has a rich history dating back before the time of the Old Republic.  It is suspected that Corellia and its four sister planets were not always in the system, but were moved there by some unknown race.  Huge repulsorlifts and hyperdrives beneath the surface of the planets lend substance to this theory.  Corellia is best known for her vast shipyards and excellent pilots.
 
@@ -339,7 +335,7 @@ Coordinates: N-13, Hyperspace routes: 4
 
 Geology: Planet
 Species: 
-Exports: 
+Economy: 
 
 History: 
 
@@ -350,7 +346,7 @@ Coordinates: M-13, Hyperspace routes: -
 
 Geology: Planet
 Species: 
-Exports: 
+Economy: 
 
 History: 
 
@@ -361,7 +357,7 @@ Coordinates: M-11, Hyperspace routes: 3
 
 Geology: Planet
 Species: 
-Exports: 
+Economy: 
 
 History: 
 
@@ -372,7 +368,7 @@ Coordinates: M-12, Hyperspace routes: 2
 
 Geology: Planet
 Species: 
-Exports: 
+Economy: 
 
 History: 
 
@@ -383,7 +379,7 @@ Coordinates: M-11, Hyperspace routes: 4
 
 Geology: Planet
 Species: 
-Exports: 
+Economy: 
 
 History: 
 
@@ -394,7 +390,7 @@ Coordinates: M-13, Hyperspace routes: -
 
 Geology: Planet
 Species: 
-Exports: 
+Economy: 
 
 History: 
 
@@ -405,7 +401,7 @@ Coordinates: M-11, Hyperspace routes: 3
 
 Geology: Planet, 
 Species: 
-Exports: 
+Economy: 
 
 History: Talus shares its orbit with its sister planet Tralus, they both have the same center of gravity.  Talus has a myriad of climates throughout its atmosphere that would be hospitable to a great many galactic citizens.
 
@@ -415,7 +411,7 @@ Coordinates: M-11, Hyperspace routes: 3
 
 Geology: Planet, 
 Species: 
-Exports: 
+Economy: 
 
 History: Tralus shares its orbit with its sister planet Talus, they both have the same center of gravity.  Talus is quite hospitable to most sentient beings of the galaxy due to its many climates.
 
@@ -425,9 +421,9 @@ Coordinates: K-3, Hyperspace routes: 3
 
 Geology: Planet, Temperate, Urban
 Species: Humans
-Economy: Secondary, [Legends] Heavy metals, Mass produced goods and materials, Chemicals
+Economy: Secondary, Heavy metals, Mass produced goods and materials, Chemicals
 
-History: [Legends] Bescane is a planet near Dantooine, run by Galentro Heavy Works. A cool, temperate world, it was overpopulated and covered in factories, its natural environment destroyed. 
+History: Bescane is a planet near Dantooine, run by Galentro Heavy Works. A cool, temperate world, it was overpopulated and covered in factories, its natural environment destroyed. 
 
 Appearances: 
 "
@@ -436,7 +432,7 @@ Coordinates: L-4, Hyperspace routes: 4
 
 Geology: Planet
 Species: 
-Exports: 
+Economy: 
 
 History: 
 
@@ -447,7 +443,7 @@ Coordinates: K-3, Hyperspace routes: 4
 
 Geology: 
 Species: 
-Exports: 
+Economy: 
 
 History: 
 
@@ -458,7 +454,7 @@ Coordinates: K-4, , Hyperspace routes: 4
 
 Geology: Planet
 Species: 
-Exports: 
+Economy: 
 
 History: 
 
@@ -469,7 +465,7 @@ Coordinates: J-4, , Hyperspace routes: 0
 
 Geology: Planet
 Species: 
-Exports: 
+Economy: 
 
 History: 
 
@@ -480,18 +476,18 @@ Coordinates: L-3, Hyperspace routes: -
 
 Geology: Planet
 Species: 
-Exports: 
+Economy: 
 
 History: 
 
-Appearances: Rouge One
+Appearances: Rogue One
 "
 Mortis;146;11846;Outer Rim North;404;74;Rim;112;"[CANON] Sector: Outer Rim North
 Coordinates: K-2, Hyperspace routes: -
 
 Geology: Planet
 Species: 
-Exports: 
+Economy: 
 
 History: 
 
@@ -502,7 +498,7 @@ Coordinates: K-4, Hyperspace routes: 3
 
 Geology: Planet
 Species: 
-Exports: 
+Economy: 
 
 History: 
 
@@ -513,7 +509,7 @@ Coordinates: L-4, Hyperspace routes: 4
 
 Geology: Planet
 Species: 
-Exports: 
+Economy: 
 
 History: 
 
@@ -524,7 +520,7 @@ Coordinates: L-3, Hyperspace routes: 3
 
 Geology: Planet
 Species: 
-Exports: 
+Economy: 
 
 History: 
 
@@ -537,9 +533,7 @@ Geology: Debris field
 Species: None
 Economy: None 
 
-History: Alderaan, located in the Core Worlds, was a terrestrial planet covered with mountains. During the waning decades of the Galactic Republic, it was ruled by Queen Breha Organa and represented in the Galactic Senate by her husband, Senator Bail Prestor Organa. Alderaan was regarded for its natural beauty, its tranquility, and the sophistication of its arts and culture. 
-
-Alderaan played a pivotal role in the establishment of the Rebel Alliance, a movement that sought to restore the Old Republic's values, and was one of it's earliest supporters. Because of its ties with the Alliance, the planet was destroyed when Grand Moff Wilhuff Tarkin decided to test the superlaser of the Death Star,
+History: Alderaan, located in the Core Worlds, was a terrestrial planet covered with mountains. During the waning decades of the Galactic Republic, it was ruled by Queen Breha Organa and represented in the Galactic Senate by her husband, Senator Bail Prestor Organa. Alderaan was regarded for its natural beauty, its tranquility, and the sophistication of its arts and culture.  Alderaan played a pivotal role in the establishment of the Rebel Alliance, a movement that sought to restore the Old Republic's values, and was one of it's earliest supporters. Because of its ties with the Alliance, the planet was destroyed when Grand Moff Wilhuff Tarkin decided to test the superlaser of the Death Star,
 
 Appearances: Episode 3, Episode 4, Atlas
 "
@@ -550,11 +544,9 @@ Geology: Planet, Temperate, Plains, Mountains, Industrial
 Species: Mixed
 Economy: Secondary, Manufacturing, Starships, Starship parts, Weapons and droids
 
-History: Balmorra is a factory world located in the galaxy's Colonies region. Despite being close to the Core Worlds, the planet has a strong sense of independence and was slow to join the Galactic Republic. During the Clone Wars, Balmorra left the Republic and joined the Confederacy of Independent Systems. After the war the Galactic Empire made use of its foundries, using them to build many of its All Terrain Armored Transports.
+History: Balmorra is a factory world located in the galaxy's Colonies region. Despite being close to the Core Worlds, the planet has a strong sense of independence and was slow to join the Galactic Republic. During the Clone Wars, Balmorra left the Republic and joined the Confederacy of Independent Systems. After the war the Galactic Empire made use of its foundries, using them to build many of its All Terrain Armored Transports. The world shares its name with Balmorran Arms, a droid manufacturer, and Balmorran Heavyworks, a starship manufacturer that notably produced hauler models.
 
-The world shares its name with Balmorran Arms, a droid manufacturer, and Balmorran Heavyworks, a starship manufacturer that notably produced hauler models.
-
-Appearances: Swtor
+Appearances: SWTOR
 "
 Carida;152;11858;Colonies;511;346;Core;25;"[CANON] Sector: Colonies
 Coordinates: M-9, Hyperspace routes: -
@@ -569,9 +561,9 @@ Appearances: Clone Wars, Rebels"
 Esseles;153;11859;Colonies;492;352;Core;58;"[CANON] Sector: Colonies
 Coordinates: L-9, Hyperspace routes: -
 
-Geology: Planet, [Legends] Temperate, Volcanic, Dense atmosphere
+Geology: Planet, Temperate, Volcanic, Dense atmosphere
 Species: Human
-Economy: Secondary, Manufacturing, Shipbuilding [Legends] Foodstuffs, Raw Materials 
+Economy: Secondary, Manufacturing, Shipbuilding, Foodstuffs, Raw Materials 
 
 History: Esseles is a planet in the galaxy that had been contested territory throughout the early years of the Empire and is home to a secret Imperial listening post concealed in its icy rings. The Carrack-class light cruiser was designed and manufactured by the Damorian Manufacturing Corporation based on Esseles.
 
@@ -582,13 +574,9 @@ Coordinates: O-9, Hyperspace routes: 3
 
 Geology: Planet, Temperate, Forests, Mountains, Varied
 Species: Hapan, Human
-Economy: [Legends] Tertiary, Art, Administration 
+Economy: Tertiary, Art, Administration 
 
-History: [Legends]: Hapes is the homeworld of the Hapans, a near-Human race known for their beauty, and the administrative capital of the Hapes Consortium. Surrounded by shimmering nebulae, and with seven moons in the sky after sunset, Hapes never knew the darkness of true night, and the Hapan people had relatively poor night-vision.
-
-Only a few small, neat cities were necessary to cater for the needs of the state bureaucracy and the Consortium's commercial and legal institutions, and much of the planet was an unspoiled wilderness of broad oceans, snow-peaked mountains and lush primeval forest, where tightly-controlled commercial fisheries and game-preserves were the major focus of Hapan activity. 
-
-Hapes was first settled by the Lorell Raiders, a group of pirates who had found routes through the Transitory Mists and used the Hapes Cluster as their base.
+History: Hapes is the homeworld of the Hapans, a near-Human race known for their beauty, and the administrative capital of the Hapes Consortium. Surrounded by shimmering nebulae, and with seven moons in the sky after sunset, Hapes never knew the darkness of true night, and the Hapan people had relatively poor night-vision. Only a few small, neat cities were necessary to cater for the needs of the state bureaucracy and the Consortium's commercial and legal institutions, and much of the planet was an unspoiled wilderness of broad oceans, snow-peaked mountains and lush primeval forest, where tightly-controlled commercial fisheries and game-preserves were the major focus of Hapan activity. Hapes was first settled by the Lorell Raiders, a group of pirates who had found routes through the Transitory Mists and used the Hapes Cluster as their base.
 
 Appearances: Atlas
 "
@@ -599,9 +587,7 @@ Geology: Planet, Temperate, Varied
 Species: Human
 Economy: Secondary, Starships, Manufacturing
 
-History: Kuat is a vital shipbuilding and industrial planet located in the Kuat system of the galaxy's Core Worlds region. Known for the prestigious Kuat Drive Yards corporation and its large shipyards, the planet notably produced warships for the Galactic Republic. Now the shipyards are used to produce and maintain the massive Imperial-class Star Destroyers of the Galactic Empire. 
-
-Kuat is a standard terrestrial planet of clouds, water, and land. However, unlike most other planets in the galaxy, a single, large man-made ring circled its equator. Serving as Kuat Drive Yards' legendary shipyards.
+History: Kuat is a vital shipbuilding and industrial planet located in the Kuat system of the galaxy's Core Worlds region. Known for the prestigious Kuat Drive Yards corporation and its large shipyards, the planet notably produced warships for the Galactic Republic. Now the shipyards are used to produce and maintain the massive Imperial-class Star Destroyers of the Galactic Empire. Kuat is a standard terrestrial planet of clouds, water, and land. However, unlike most other planets in the galaxy, a single, large man-made ring circled its equator. Serving as Kuat Drive Yards' legendary shipyards.
 
 Appearances: Atlas
 "
@@ -612,42 +598,40 @@ Geology: Planet, Hot, Humid, Rainforests, Desert
 Species: Nemoidian, Duros
 Economy: Primary, Agriculture
 
-History: Neimoidia, also known as Pure Neimoidia, id a planet centrally located in the galaxy's Colonies region. It is the homeworld of the Neimoidian species, and was near a string of wealthy worlds. 
-
-the planet was discovered by Duros explorers from the planet Duro during their travels throughout the galaxy. After its colonization, Neimoidia became allied with but separate from the Duros homeworld. The Duros colonists eventually evolved into a distinctly different species. These became the species known as Neimoidians 
+History: Neimoidia, also known as Pure Neimoidia, id a planet centrally located in the galaxy's Colonies region. It is the homeworld of the Neimoidian species, and was near a string of wealthy.
 
 Appearances: Atlas
 "
 Taanab;157;11863;Colonies;548;328;Core;164;"[CANON] Sector: Colonies
 Coordinates: O-8, Hyperspace routes: 3
 
-Geology: Planet
-Species: 
-Exports: 
+Geology: Planet, Mild, Terrestrial, Fields
+Species: Human
+Economy: Primary, Foodstuffs
 
-History: 
+History: Taanab is a planet in the inner rim. Primarily the planet was an agriworld that served as a major supplier to the mid rim and outer rim territories. Taanab has a mild, stable climate, that supports it s many agricultural projects. 
 
-Appearances: Episode 6, The Mandalorian, SWG, Atlas
+Appearances: Episode 6, The Mandalorian, SWG
 "
 Tepasi;158;11864;Colonies;490;373;Core;170;"[CANON] Sector: Colonies
 Coordinates: L-9, Hyperspace routes: 5
 
 Geology: Planet
-Species: 
-Exports: 
+Species: Human
+Economy: Tertiary, Commerce, Finance
 
-History: 
+History: Tepasi was colonized by prior to the formation of the galactic republic. The world was already establishing itself as a commercial hub before becoming on of the founding members of the Galactic Republic. Now the world is mostly governed by House of Tagge. The world is an average terrestrial world with abundant forests, which were home to predatory achtnaks. The world was also prone to groundquakes. 
 
 Appearances: 
 "
 Tirahnn;159;11865;Colonies;529;324;Core;175;"[CANON] Sector: Colonies
 Coordinates: N-8, Hyperspace routes: 2
 
-Geology: 
-Species: 
-Exports: 
+Geology: Planet, Warm, Forests, Plains, Mountains
+Species: Human, Mixed
+Economy: Tertiary, Trade, Commerce 
 
-History: 
+History: Tirahnn is a major trade hub along the perlemian trade route, in the outer rim. It has a stable, mild climate all year round. The world is essentially governed by a powerful merchant class, ruled by an extremely wealthy Merchant Princess.  
 
 Appearances: Rebels
 "
@@ -658,9 +642,9 @@ Geology: Planet, Temperate, Varied
 Species: -
 Economys: Secondary, Manufactured goods, Repulsorlift coils, Metal extraction
 
-History: [Legends] Bakura, is a rich, green and blue planet, located on the isolated edge of Wild Space, and was the homeworld of the indigenous Kurtzen and isolated humans colonisers known as Bakurans.
+History: Bakura, is a rich, green and blue planet, located on the isolated edge of Wild Space, and was the homeworld of the indigenous Kurtzen and isolated humans colonisers known as Bakurans. Bakura's primary industry was the manufacture of repulsorlift coils.
 
-[Legends] Bakura's primary industry was the manufacture of repulsorlift coils"
+Appearances:"
 Belsavis;161;11873;Outer Rim West;356;694;Rim;12;"[CANON] Sector: Outer Rim West
 Coordinates: L-18, Hyperspace routes: 3
 
@@ -668,17 +652,16 @@ Geology: Planet, Cold, Frozen, Tropical rift valleys
 Species: None
 Economy: None 
 
-History: Belsavis was connected via hyperspace route to Karfeddion, and was located near the Thull's Shroud, a location where the marauder group of the Nihil operated during the High Republic Era. It has been used as a Prison world due to the hard conditions on the planet. 
-[Legends] The planet is Ice-covered and its average temperature is -50.
+History: Belsavis was connected via hyperspace route to Karfeddion, and was located near the Thull's Shroud, a location where the marauder group of the Nihil operated during the High Republic Era. It has been used as a Prison world due to the hard conditions on the planet. The planet is Ice-covered and its average temperature is -50.
 
-Appearances: Swtor
+Appearances: SWTOR
 "
 Cyphar;162;11874;Outer Rim West;356;658;Rim;39;"[CANON] Sector: Outer Rim West
 Coordinates: L-17, Hyperspace routes: 2
 
 Geology: Planet
 Species: 
-Exports: 
+Economy: 
 
 History: 
 
@@ -689,7 +672,7 @@ Coordinates: L-18, , Hyperspace routes: 4
 
 Geology: Planet
 Species: 
-Exports: 
+Economy: 
 
 History: 
 
@@ -700,7 +683,7 @@ Coordinates: H-16, Hyperspace routes: 4
 
 Geology: Moon
 Species: 
-Exports: 
+Economy: 
 
 History: 
 
@@ -711,7 +694,7 @@ Coordinates: L-18, Hyperspace routes: 6
 
 Geology: Planet
 Species: 
-Exports: 
+Economy: 
 
 History: 
 
@@ -722,7 +705,7 @@ Coordinates: H-16, Hyperspace routes: -
 
 Geology: Moon
 Species: 
-Exports: 
+Economy: 
 
 History: 
 
@@ -733,7 +716,7 @@ Coordinates: H-16, Hyperspace routes: 0
 
 Geology: Planet
 Species: 
-Exports: 
+Economy: 
 
 History: 
 
@@ -744,7 +727,7 @@ Coordinates: M-17, Hyperspace routes: 2
 
 Geology: Planet
 Species: 
-Exports: 
+Economy: 
 
 History: 
 
@@ -755,7 +738,7 @@ Coordinates: J-16, Hyperspace routes: 2
 
 Geology: Planet
 Species: 
-Exports: 
+Economy: 
 
 History: 
 
@@ -768,9 +751,7 @@ Geology: Planet, Temperate, Ocean, Islands
 Species: Human
 Economy: Secondary, Agriculture, Shipbuilding
 
-History: Bestine IV is a water-covered planet located in the Inner Rim. One of forty-two key member worlds of the Galactic Republic by the time of the High Republic Era, it served primarily as an agricultural world under the Republic, having some ship building facilities as well.
-
-Bestine IV remained loyal to the Republic during the Clone Wars against the Separatists, hosting a Republic Navy fleet.
+History: Bestine IV is a water-covered planet located in the Inner Rim. One of forty-two key member worlds of the Galactic Republic by the time of the High Republic Era, it served primarily as an agricultural world under the Republic, having some ship building facilities as well. Bestine IV remained loyal to the Republic during the Clone Wars against the Separatists, hosting a Republic Navy fleet.
 
 Appearances: Episode 4, The Clone Wars
 "
@@ -779,7 +760,7 @@ Coordinates: N-17, Hyperspace routes: -
 
 Geology: Planet, Hot, Dry, Salt Flats
 Species: 
-Exports: 
+Economy: 
 
 History: 
 
@@ -790,7 +771,7 @@ Coordinates: O-17, Hyperspace routes: -
 
 Geology: Planet
 Species: 
-Exports: 
+Economy: 
 
 History: 
 
@@ -801,7 +782,7 @@ Coordinates: P-17, Hyperspace routes: 3
 
 Geology: Planet
 Species: 
-Exports: 
+Economy: 
 
 History: 
 
@@ -812,7 +793,7 @@ Coordinates: N-16, Hyperspace routes: 2
 
 Geology: Planet
 Species: 
-Exports: 
+Economy: 
 
 History: 
 
@@ -823,7 +804,7 @@ Coordinates: O-17, Hyperspace routes: 2
 
 Geology: Planet
 Species: 
-Exports: 
+Economy: 
 
 History: 
 
@@ -834,7 +815,7 @@ Coordinates: N-16, Hyperspace routes: 4
 
 Geology: Planet
 Species: 
-Exports: 
+Economy: 
 
 History: 
 
@@ -845,7 +826,7 @@ Coordinates: O-18, Hyperspace routes: 0
 
 Geology: Planet
 Species: 
-Exports: 
+Economy: 
 
 History: 
 
@@ -856,7 +837,7 @@ Coordinates: L-15, Hyperspace routes: 4
 
 Geology: Moon
 Species: 
-Exports: 
+Economy: 
 
 History: 
 
@@ -867,7 +848,7 @@ Coordinates: L-14, Hyperspace routes: 4
 
 Geology: 
 Species: 
-Exports: 
+Economy: 
 
 History: 
 
@@ -878,7 +859,7 @@ Coordinates: N-11, Hyperspace routes: 1
 
 Geology: Planet
 Species: 
-Exports: 
+Economy: 
 
 History: 
 
@@ -889,7 +870,7 @@ Coordinates: N-10, Hyperspace routes: 4
 
 Geology: Planet
 Species: 
-Exports: 
+Economy: 
 
 History: 
 
@@ -900,7 +881,7 @@ Coordinates: M-12, Hyperspace routes: 3
 
 Geology: Planet
 Species: 
-Exports: 
+Economy: 
 
 History: 
 
@@ -911,7 +892,7 @@ Coordinates: O-14, Hyperspace routes: 4
 
 Geology: Planet
 Species: 
-Exports: 
+Economy: 
 
 History: 
 
@@ -922,7 +903,7 @@ Coordinates: O-11, Hyperspace routes: -
 
 Geology: Planet
 Species: 
-Exports: 
+Economy: 
 
 History: 
 
@@ -933,7 +914,7 @@ Coordinates: O-14, Hyperspace routes: 4
 
 Geology: Planet
 Species: 
-Exports: 
+Economy: 
 
 History: 
 
@@ -943,7 +924,7 @@ Coordinates: O-12, Hyperspace routes: 2
 
 Geology: Planet
 Species: 
-Exports: 
+Economy: 
 
 History: 
 
@@ -954,7 +935,7 @@ Coordinates: Q-14, Hyperspace routes: 4
 
 Geology: Planet
 Species: 
-Exports: 
+Economy: 
 
 History: 
 
@@ -965,7 +946,7 @@ Coordinates: P-12, Hyperspace routes: -
 
 Geology: Planet
 Species: 
-Exports: 
+Economy: 
 
 History: 
 
@@ -976,7 +957,7 @@ Coordinates: P-14, Hyperspace routes: -
 
 Geology: Planet
 Species: 
-Exports: 
+Economy: 
 
 History: 
 
@@ -987,17 +968,17 @@ Coordinates: S-3, Hyperspace routes: 5
 
 Geology: Planet
 Species: Human, Mixed
-Economy: [Legends] Secondary, Manufacturing, Heavy Industries, Mineral extraction
+Economy: Secondary, Manufacturing, Heavy Industries, Mineral extraction
 
-History: [Legends] Bonadan is the chief port world of the Corporate Sector, boasting 10 gigantic spaceports.Bonadan's yellow, parched surface was heavily eroded, and its topsoil had been destroyed due to constant drilling and construction. The once-beautiful landscape was scorched and barren from years of strip-mining, pollution, and mismanagement. The remaining surface was covered with factories, refineries, docks, and shipbuilding facilities
+History: Bonadan is the chief port world of the Corporate Sector, boasting 10 gigantic spaceports.Bonadan's yellow, parched surface was heavily eroded, and its topsoil had been destroyed due to constant drilling and construction. The once-beautiful landscape was scorched and barren from years of strip-mining, pollution, and mismanagement. The remaining surface was covered with factories, refineries, docks, and shipbuilding facilities. A massive weather-control station lay in the mountains to the north of the main cities.
 
-[Legends] A massive weather-control station lay in the mountains to the north of the main cities"
+Appearances: "
 Cantonica;191;11921;Tingel Arm;788;148;Rim;24;"[CANON] Sector: Tingel Arm
 Coordinates: S-4, Hyperspace routes: 2
 
 Geology: Planet
 Species: 
-Exports: 
+Economy: 
 
 History: 
 
@@ -1008,7 +989,7 @@ Coordinates: T-6, Hyperspace routes: 4
 
 Geology: Planet
 Species: 
-Exports: 
+Economy: 
 
 History: 
 
@@ -1019,7 +1000,7 @@ Coordinates: T-5, Hyperspace routes: 4
 
 Geology: Planet 
 Species: 
-Exports: 
+Economy: 
 
 History: 
 
@@ -1030,7 +1011,7 @@ Coordinates: U-7, Hyperspace routes: 2
 
 Geology: Planet
 Species: 
-Exports: 
+Economy: 
 
 History: 
 
@@ -1041,7 +1022,7 @@ Coordinates: U-6, Hyperspace routes: 4
 
 Geology: Planet
 Species: 
-Exports: 
+Economy: 
 
 History: 
 
@@ -1052,7 +1033,7 @@ Coordinates: T-6, Hyperspace routes: 4
 
 Geology: Planet
 Species: 
-Exports: 
+Economy: 
 
 History: 
 
@@ -1063,7 +1044,7 @@ Coordinates: S-5, Hyperspace routes: 4
 
 Geology: Planet
 Species: 
-Exports: 
+Economy: 
 
 History: 
 
@@ -1074,7 +1055,7 @@ Coordinates: S-5, Hyperspace routes: 4
 
 Geology: Planet
 Species: 
-Exports: 
+Economy: 
 
 History: 
 
@@ -1085,7 +1066,7 @@ Coordinates: S-4, Hyperspace routes: 4
 
 Geology: Planet
 Species: 
-Exports: 
+Economy: 
 
 History: 
 
@@ -1109,7 +1090,7 @@ Geology: Moon, Dry, Baren wastelands
 Species: Human, Hutt
 Economy: Unknown
 
-History: [Legends] Boonta, formerly known as Ko Vari, is a planet colonized by the Hutts in the distant past. Despite it being a devastated world, Boonta is famous in the galaxy for its podracing and speeder races. 
+History: Boonta, formerly known as Ko Vari, is a planet colonized by the Hutts in the distant past. Despite it being a devastated world, Boonta is famous in the galaxy for its podracing and speeder races. 
 
 Appearances: 
 "
@@ -1118,7 +1099,7 @@ Coordinates: S-8, Hyperspace routes: 2
 
 Geology: Planet
 Species: 
-Exports: 
+Economy: 
 
 History: 
 
@@ -1129,7 +1110,7 @@ Coordinates: T-7, Hyperspace routes: 0
 
 Geology: Planet
 Species: 
-Exports: 
+Economy: 
 
 History: 
 
@@ -1140,7 +1121,7 @@ Coordinates: R-6, Hyperspace routes: 3
 
 Geology: Planet
 Species: 
-Exports: 
+Economy: 
 
 History: 
 
@@ -1151,7 +1132,7 @@ Coordinates: S-8, Hyperspace routes: 0
 
 Geology: Planet
 Species: 
-Exports: 
+Economy: 
 
 History: 
 
@@ -1162,7 +1143,7 @@ Coordinates: S-8, Hyperspace routes: 4
 
 Geology: Planet
 Species: 
-Exports: 
+Economy: 
 
 History: 
 
@@ -1173,7 +1154,7 @@ Coordinates: S-7, Hyperspace routes: 4
 
 Geology: Planet
 Species: 
-Exports: 
+Economy: 
 
 History: 
 
@@ -1184,7 +1165,7 @@ Coordinates: U-8, Hyperspace routes: -
 
 Geology: Planet, 
 Species: 
-Exports: 
+Economy: 
 
 History: This planet is full of deadly radiation except in some places where the radiation is held in check by force fields.  This was home to the Sorcerers of Tund, before the radiation when the planet was awash in life.
 
@@ -1194,7 +1175,7 @@ Coordinates: S-6, Hyperspace routes: -
 
 Geology: Planet
 Species: 
-Exports: 
+Economy: 
 
 History: 
 
@@ -1205,13 +1186,9 @@ Coordinates: K13, Hyperspace routes: 2
 
 Geology: Planet. Temperate, Varried
 Species: Gados, Humans
-Economy: Tertiary, Trade, [Legends] Technology
+Economy: Tertiary, Trade, Technology
 
-History: Abregado-rae, also known simply as Abregado, is a trade world located in the galaxy's Core Worlds. It was situated at the beginning of the Rimma Trade Route. Abregado-rae had the reputation to be a rather lawless world, and its main spaceport was as close to a safe dock for smugglers as could be found in the Core.
-
-During the High Republic Era, a countess living on Abregado-rae ordered a saberfish from Tibrin for her private aquarium, with it being transported to the Core in the starship Legacy Run. After the saberfish became ill due to her people not knowing how to care for it, the countess paid for the Run to return the fish to Tibrin.  
-
-[Legends] Unlike most Core Worlds, Abregado-rae was fairly backward, to the point of being compared with worlds in the Outer Rim Territories. The planet's spaceports seemed safe, at least to the untrained eye, but in fact it was a known smuggler's paradise. 
+History: Abregado-rae, also known simply as Abregado, is a trade world located in the galaxy's Core Worlds. It was situated at the beginning of the Rimma Trade Route. Abregado-rae had the reputation to be a rather lawless world, and its main spaceport was as close to a safe dock for smugglers as could be found in the Core. During the High Republic Era, a countess living on Abregado-rae ordered a saberfish from Tibrin for her private aquarium, with it being transported to the Core in the starship Legacy Run. After the saberfish became ill due to her people not knowing how to care for it, the countess paid for the Run to return the fish to Tibrin. Unlike most Core Worlds, Abregado-rae was fairly backward, to the point of being compared with worlds in the Outer Rim Territories. The planet's spaceports seemed safe, at least to the untrained eye, but in fact it was a known smuggler's paradise.
 
 Appearances: Clone Wars
 "
@@ -1231,7 +1208,7 @@ Coordinates: L-13, Hyperspace routes: 3
 
 Geology: Planet
 Species: 
-Exports: 
+Economy: 
 
 History: 
 
@@ -1242,7 +1219,7 @@ Coordinates: L-13, Hyperspace routes: 2
 
 Geology: Planet
 Species: 
-Exports: 
+Economy: 
 
 History: 
 
@@ -1253,7 +1230,7 @@ Coordinates: I-13, Hyperspace routes: -
 
 Geology: Planet
 Species: 
-Exports: 
+Economy: 
 
 History: 
 
@@ -1264,18 +1241,18 @@ Coordinates: H-10, , Hyperspace routes: -
 
 Geology: Moon
 Species: 
-Exports: 
+Economy: 
 
 History: 
 
-Appearances: Rouge One
+Appearances: Rogue One
 "
 Rakata Prime;216;12054;Deep Core;352;471;Rim;139;"[CANON] Sector: Deep Core
 Coordinates: G-11, Hyperspace routes: 0
 
 Geology: Planet
 Species: 
-Exports: 
+Economy: 
 
 History: 
 
@@ -1286,7 +1263,7 @@ Coordinates: L-14, Hyperspace routes: 2
 
 Geology: Planet
 Species: 
-Exports: 
+Economy: 
 
 History: 
 
@@ -1297,7 +1274,7 @@ Coordinates: L-10, Hyperspace routes: -
 
 Geology: Planet
 Species: 
-Exports: 
+Economy: 
 
 History: 
 
@@ -1308,7 +1285,7 @@ Coordinates: Unknown
 
 Geology: Planet
 Species: 
-Exports: 
+Economy: 
 
 History: 
 
@@ -1321,9 +1298,7 @@ Geology: Planet, Cold, Rocky
 Species: Human
 Economy: None
 
-History: Agamar was a barren, rocky planet located in the Agamar system within the Outer Rim Territories of the galaxy in grid coordinates M-5. During the Clone Wars, Separatist General Kalani was ordered by Count Dooku to retreat from Onderon to Agamar following the Separatist defeat on Onderon. 
-
-In 20 BBY, the third year of the Clone Wars, the planet was under the control of the Confederacy of Independent Systems. Count Dooku ordered General Kalani to retreat to Agamar following his defeat at the Onderonian Civil War to the Onderon rebels. Because of Kalani's override of the droid shutdown signal, an isolated Separatist holdout remained on the planet until well into the era of the Galactic Empire.
+History: Agamar was a barren, rocky planet located in the Agamar system within the Outer Rim Territories of the galaxy in grid coordinates M-5. During the Clone Wars, Separatist General Kalani was ordered by Count Dooku to retreat from Onderon to Agamar following the Separatist defeat on Onderon. In 20 BBY, the third year of the Clone Wars, the planet was under the control of the Confederacy of Independent Systems. Count Dooku ordered General Kalani to retreat to Agamar following his defeat at the Onderonian Civil War to the Onderon rebels. Because of Kalani's override of the droid shutdown signal, an isolated Separatist holdout remained on the planet until well into the era of the Galactic Empire.
 
 Appearances: Clone Wars, Rebels
 "
@@ -1334,11 +1309,7 @@ Geology: Moon, Humid, Forests
 Species: Uninhabited
 Economy: None
 
-History: Ajan Kloss was a jungle moon located in the Outer Rim Territories, in grid square L-5 on the Standard Galactic Grid, orbiting the gas giant Ajara. Although Ajan Kloss was a moon, it has two moons of its own. Its gas giant shields it from harmful radiation.
-
-The world was inhabited by a people called the Kloss lived in the Klosslands and hollowed-out caves. 
-
-Prior to the outbreak of the Galactic Civil War, Alderaanian scouts charted Ajan Kloss, which was located in a patchily explored stretch of space off the Celanon Spur. However, the scouts deliberately hid it from the Imperial Senate because it was short-listed as a potential home for a rebel base like Yavin 4 and Dantooine.
+History: Ajan Kloss was a jungle moon located in the Outer Rim Territories, in grid square L-5 on the Standard Galactic Grid, orbiting the gas giant Ajara. Although Ajan Kloss was a moon, it has two moons of its own. Its gas giant shields it from harmful radiation. The world was inhabited by a people called the Kloss lived in the Klosslands and hollowed-out caves. Prior to the outbreak of the Galactic Civil War, Alderaanian scouts charted Ajan Kloss, which was located in a patchily explored stretch of space off the Celanon Spur. However, the scouts deliberately hid it from the Imperial Senate because it was short-listed as a potential home for a rebel base like Yavin 4 and Dantooine.
 
 Appearances: Episode 9
 "
@@ -1347,7 +1318,7 @@ Coordinates: O-6, Hyperspace routes: 4
 
 Geology: Planet
 Species: 
-Exports: 
+Economy: 
 
 History: 
 
@@ -1358,7 +1329,7 @@ Coordinates: O-7, Hyperspace routes: -
 
 Geology: Planet
 Species: 
-Exports: 
+Economy: 
 
 History: 
 
@@ -1369,7 +1340,7 @@ Coordinates: M-7, Hyperspace routes: 3
 
 Geology: Planet
 Species: 
-Exports: 
+Economy: 
 
 History: 
 
@@ -1380,7 +1351,7 @@ Coordinates: O-6, Hyperspace routes: 0
 
 Geology: Planet
 Species: 
-Exports: 
+Economy: 
 
 History: 
 
@@ -1391,7 +1362,7 @@ Coordinates: O-7, Hyperspace routes: 3
 
 Geology: Planet
 Species: 
-Exports: 
+Economy: 
 
 History: 
 
@@ -1402,7 +1373,7 @@ Coordinates: L-8, Hyperspace routes: -
 
 Geology: Planet
 Species: 
-Exports: 
+Economy: 
 
 History: 
 
@@ -1413,7 +1384,7 @@ Coordinates: N-7, Hyperspace routes: -
 
 Geology: Planet
 Species: 
-Exports: 
+Economy: 
 
 History: 
 
@@ -1424,7 +1395,7 @@ Coordinates: N-5, Hyperspace routes: 4
 
 Geology: Planet
 Species: 
-Exports: 
+Economy: 
 
 History: 
 
@@ -1448,9 +1419,7 @@ Geology: Gas Giant
 Species: 
 Economy: Primary, Tabanna gas
 
-History: Bespin is a gas giant located in the vicinity of the Anoat sector, a desolate sector of the galaxy. Bespin has two moons, and its gaseous mass contains a thin stratum of habitable atmosphere above a source of rare and costly tibanna gas. Tibanna gas is harvested and refined in several mining complexes, including Cloud City, an opulent metropolis suspended in the planet's huge billowing clouds.
-
-Bespin was home to many types of life, which was rare for a gas giant. The planet had two sister worlds, from which it was separated by an asteroid belt called Velser's Ring.
+History: Bespin is a gas giant located in the vicinity of the Anoat sector, a desolate sector of the galaxy. Bespin has two moons, and its gaseous mass contains a thin stratum of habitable atmosphere above a source of rare and costly tibanna gas. Tibanna gas is harvested and refined in several mining complexes, including Cloud City, an opulent metropolis suspended in the planet's huge billowing clouds. Bespin was home to many types of life, which was rare for a gas giant. The planet had two sister worlds, from which it was separated by an asteroid belt called Velser's Ring.
 
 Appearances: Episode 5, Episode 6, Episode 9, Battlefront 1 and 2, Atlas
 "
@@ -1459,7 +1428,7 @@ Coordinates: K-18, Hyperspace routes: 4
 
 Geology: Planet
 Species: 
-Exports: 
+Economy: 
 
 History: 
 
@@ -1470,7 +1439,7 @@ Coordinates: K-18, Hyperspace routes: 3
 
 Geology: Planet
 Species: 
-Exports: 
+Economy: 
 
 History: 
 
@@ -1481,7 +1450,7 @@ Coordinates: K-18, Hyperspace routes:4
 
 Geology: Planet
 Species: 
-Exports: 
+Economy: 
 
 History: 
 
@@ -1492,7 +1461,7 @@ Coordinates: I-17, Hyperspace routes: -
 
 Geology: Planet
 Species: 
-Exports: 
+Economy: 
 
 History: 
 
@@ -1503,7 +1472,7 @@ Coordinates: J-18, Hyperspace routes: 4
 
 Geology: Planet
 Species: 
-Exports: 
+Economy: 
 
 History: 
 
@@ -1514,18 +1483,18 @@ Coordinates: L-19, Hyperspace routes: 0
 
 Geology: Planet
 Species: 
-Exports: 
+Economy: 
 
 History: 
 
-Appearances: Episode 3, Rouge One, Episode 9, Clone Wars, Rebels, SWG, Atlas
+Appearances: Episode 3, Rogue One, Episode 9, Clone Wars, Rebels, SWG, Atlas
 "
 Polis Massa;238;12088;Western Reaches;407;804;Rim;135;"[CANON] Sector: Western Reaches
 Coordinates: K-20, Hyperspace routes: -
 
 Geology: Planet
 Species: 
-Exports: 
+Economy: 
 
 History: 
 
@@ -1536,7 +1505,7 @@ Coordinates: K-20, Hyperspace routes: 4
 
 Geology: Planet
 Species: 
-Exports: 
+Economy: 
 
 History: 
 
@@ -1547,7 +1516,7 @@ Coordinates: S-12, Hyperspace routes: 4
 
 Geology: Planet
 Species: 
-Exports: 
+Economy: 
 
 History: 
 
@@ -1558,18 +1527,18 @@ Coordinates: U-10, Hyperspace routes: 2
 
 Geology: Planet
 Species: 
-Exports: 
+Economy: 
 
 History: 
 
-Appearances: Rouge One
+Appearances: Rogue One
 "
 Formos;242;12098;Hutt Space;825;381;Rim;65;"[CANON] Sector: Hutt Space
 Coordinates: T-10, Hyperspace routes: 4
 
 Geology: Planet
 Species: 
-Exports: 
+Economy: 
 
 History: 
 
@@ -1578,9 +1547,9 @@ Appearances:
 Honoghr;243;12099;Hutt Space;809;399;Rim;73;"[LEGENDS] Sector: Hutt Space
 Coordinates: T-10, Hyperspace routes: 1
 
-Geology: PLanet
+Geology: Planet
 Species: 
-Exports: 
+Economy: 
 
 History: 
 
@@ -1591,7 +1560,7 @@ Coordinates: T-10, Hyperspace routes: 2
 
 Geology: Planet
 Species: 
-Exports: 
+Economy: 
 
 History: 
 
@@ -1602,7 +1571,7 @@ Coordinates: S-12, Hyperspace routes: 4
 
 Geology: Planet, 
 Species: 
-Exports: 
+Economy: 
 
 History: Nal Hutta, which means Glorious Jewel in Huttese, is one of the systems colonized by the Hutts.  The infamous Jabba the Hutt was born in the system.
 
@@ -1612,7 +1581,7 @@ Coordinates: S-12, Hyperspace routes: 4
 
 Geology: Moon
 Species: 
-Exports: 
+Economy: 
 
 History: 
 
@@ -1623,7 +1592,7 @@ Coordinates: S-10, Hyperspace routes: 0
 
 Geology: Planet
 Species: 
-Exports: 
+Economy: 
 
 History: 
 
@@ -1634,7 +1603,7 @@ Coordinates: S-10, Hyperspace routes: 4
 
 Geology: Planet
 Species: 
-Exports: 
+Economy: 
 
 History: 
 
@@ -1645,7 +1614,7 @@ Coordinates: R-11, Hyperspace routes: 2
 
 Geology: Planet
 Species: 
-Exports: 
+Economy: 
 
 History: 
 
@@ -1656,7 +1625,7 @@ Coordinates: M-18, Hyperspace routes: 2
 
 Geology: Planet
 Species: Bith
-Economy: [Legends] Tertiary, Technology, Medicine, Cybernetic implants, Trade, Art
+Economy: Tertiary, Technology, Medicine, Cybernetic implants, Trade, Art
 
 History: Bith, also known as Clak'dor VII or simply Clak'dor, is a planet located in the Outer Rim and the homeworld of the Bith species. The Bith live in domed cities, the majority of which lay nestled in the crags of Clak'dor's mountain ranges. Many Bith, including offworld Bith, found Clak'dor harsh and depressing.
 
@@ -1667,7 +1636,7 @@ Coordinates: M-19, Hyperspace routes: 0
 
 Geology: Planet
 Species: 
-Exports: 
+Economy: 
 
 History: 
 
@@ -1678,7 +1647,7 @@ Coordinates: M-18, Hyperspace routes: 7
 
 Geology: Planet
 Species: 
-Exports: 
+Economy: 
 
 History: 
 
@@ -1689,7 +1658,7 @@ Coordinates: N-18, Hyperspace routes: 4
 
 Geology: Planet
 Species: 
-Exports: 
+Economy: 
 
 History: 
 
@@ -1700,7 +1669,7 @@ Coordinates: -
 
 Geology: Planet
 Species: 
-Exports: 
+Economy: 
 
 History: 
 
@@ -1711,7 +1680,7 @@ Coordinates: Unknown
 
 Geology: Planet
 Species: 
-Exports: 
+Economy: 
 
 History: 
 
@@ -1722,7 +1691,7 @@ Coordinates: M-19, Hyperspace routes: 2
 
 Geology: Planet
 Species: 
-Exports: 
+Economy: 
 
 History: 
 
@@ -1733,7 +1702,7 @@ Coordinates: Unknown
 
 Geology: Planet
 Species: 
-Exports: 
+Economy: 
 
 History: 
 
@@ -1744,7 +1713,7 @@ Coordinates: M-18, Hyperspace routes: 3
 
 Geology: Planet
 Species: 
-Exports: 
+Economy: 
 
 History: 
 
@@ -1755,7 +1724,7 @@ Coordinates: N-19, Hyperspace routes: 0
 
 Geology: Planet
 Species: 
-Exports: 
+Economy: 
 
 History: 
 
@@ -1768,9 +1737,7 @@ Geology: Asteroid field
 Species: None
 Economy: None
 
-History: Anaxes, was an ancient member of the Galactic Republic, hosting a Republic naval base protecting the Core Worlds from attacks along the Perlemian, as well as prominent shipyards. For centuries, it primarily worked with local defense forces.
-
-After the Clone Wars, Anaxes was destroyed by a cataclysmic event, believed to be the result of a catastrophic main reactor failure detonating a massive stockpile of hypermatter in the shipyards. All that remained of the planet was an asteroid belt. Fort Anaxes, a Republic Military base constructed on Anaxes during the Clone Wars, survived the planet's destruction and remained on the planetoid PM-1203.
+History: Anaxes, was an ancient member of the Galactic Republic, hosting a Republic naval base protecting the Core Worlds from attacks along the Perlemian, as well as prominent shipyards. For centuries, it primarily worked with local defense forces. After the Clone Wars, Anaxes was destroyed by a cataclysmic event, believed to be the result of a catastrophic main reactor failure detonating a massive stockpile of hypermatter in the shipyards. All that remained of the planet was an asteroid belt. Fort Anaxes, a Republic Military base constructed on Anaxes during the Clone Wars, survived the planet's destruction and remained on the planetoid PM-1203.
 
 Appearances: Clone Wars, Rebels, Atlas
 "
@@ -1779,44 +1746,42 @@ Coordinates: L-9, Hyperspace routes: 5
 
 Geology: Planet, Temperate, Rocky
 Species: Human
-Exports: [Legends] Tertiary, Financial services, Trade
+Economy: Tertiary, Financial services, Trade
 
-History: Brentaal IV, also referred to simply as Brentaal, is a terrestrial planet located in the the galaxy's Core Worlds, on both the Hydian Way and the Perlemian Trade Route. Brentaal IV has a rocky surface and an atmosphere that is breathable to humans.
-
-The planet was the site of the Republic Futures Program training facility. 
+History: Brentaal IV, also referred to simply as Brentaal, is a terrestrial planet located in the the galaxy's Core Worlds, on both the Hydian Way and the Perlemian Trade Route. Brentaal IV has a rocky surface and an atmosphere that is breathable to humans. The planet was the site of the Republic Futures Program training facility. 
 
 Appearances: Atlas
 "
 Chandrila;262;12130;Core Worlds North;442;351;Core;28;"[CANON] Sector: Core Worlds North
 Coordinates: L-9, Hyperspace routes: -
 
-Geology: Planet
-Species: 
-Exports: 
+Geology: Planet, Mild, Rolling hills, Calm seas
+Species: Mixed
+Economy: Tertiary, Mixed
 
-History: 
+History: Chandrila is a small, idyllic, blue green world with calm seas and rolling hills. The climate is stable and mild. The world has a long history of democracy on it's world and was one of the core founders of the Galactic Republic. Senator Mon Mothma of Chandrila was a known opponent of the formation of the Galactic Empire, and has since taken the helm as leader of the Alliance to restore the Republic. 
 
 Appearances: Clone Wars, Rebels
 "
 Empress Teta;263;12131;Core Worlds North;426;399;Core;55;"[CANON] Sector: Core Worlds North
 Coordinates: L-10, Hyperspace routes: 2
 
-Geology: Planet
-Species: 
-Exports: 
+Geology: Planet, Ecumenopolis
+Species: Human, mixed
+Economy: Tertiery, Finance, Administration, Raw materials  
 
-History: 
+History: Similar to Coruscant, Empress Teta was an Ecumenopolis, meaning it's massive cites grew to cover most of the planets surface. Though not as dense or as populated. Under the massive cityscape known as Cinnagar, lies the old adris spice and carbonite mines. These mines were run and operated by the mining guild. Though the mines have long dried up, the mining guild maintains a large amount of administrative infrastructure on the planet. The planet is ruled by a Monarchy and a series of powerful noble families. During the clone wars the houses were split between those associated with the mining guildwho allied with the separatists and the Loyalists Nobles who fled to Coruscant. After the war, the loyalists were reestablished into positions of power on Empress Teta as well as being installed into important roles within the mining guild. 
 
 Appearances: 
 "
 N'Zoth;264;12132;Core Worlds North;399;404;Core;125;"[CANON] Sector: Core Worlds North
 Coordinates: K-10, Hyperspace routes: 1
 
-Geology: Planet
-Species: 
-Exports: 
+Geology: Planet, Arid, Deserts
+Species: Yevetha
+Economy: Unknown 
 
-History: 
+History: A mostly unremarkable desert world and home to the Yevethan species. N'zoth is has been mostly alone by the Galactic republic and the Empire alike, both due to it's hostile climate and it's hostile natives. The Yevethan are well known for their brutality and general dislike of other species. 
 
 Appearances: Atlas
 "
@@ -1824,62 +1789,62 @@ Coruscant;265;12133;Core Worlds North;414;377;Core;36;"[CANON] Sector: Core Worl
 Coordinates: L-9, Hyperspace routes: 6
 
 Geology: Planet, Ecumenopolis
-Species: 
-Exports: 
+Species: Human, Mixed
+Economy: Tertiary, Mixed 
 
-History: Coruscant has been the governmental capital of the galaxy for generations. The planet's entire surface is covered by an enormous, multileveled city, called Imperial City, whose foundations have been in place since the beginning of the Old Republic, over a thousand generations ago. The pyramidal Imperial Palace, an impregnable fortress and home to the Emperor, is constructed of gray-green rock and sparkling crystals and is taller than all other structures including the Senate building. The lowest, darkest levels of Imperial City were abandoned long ago and are now home to discarded equipment, wrecked starships, and nameless subhumans moving through the shadows.
+History: Coruscant is the capitol of the galactic empire, prior to this, it was also home to the galactic senate and the administrative capitol of the Galactic Republic. The History of Coruscant has been closely tied to the history of the republic from it's early days and one of the core founders. The planet is almost entirely cased in a single, multi-leveled, urban sprawl, collectively known as Imperial City or Galactic City. The surface is dominated by massive skyscrapers, gleaming city streets and bustling traffic. However below the surface levels, the decaying lower levels were home to the poor and unfortunate citizens, along side the criminal gangs that ruled the undercity. Coruscant is also famous for being the former home of the jedi council and the site of a massive Jedi temple, which has now been repurposed as the Imperial palace. The world is also believed by many to be the ancestral homeworld of the Human species. 
 
 Appearances: Episode 1, Episode 2, The Clone Wars, Episode 3, Rogue One, Episode 6, Andor, Clone Wars, Rebels, Atlas"
 Palanhi;266;12134;Core Worlds North;404;327;Core;131;"[CANON] Sector: Core Worlds North
 Coordinates: K-9, Hyperspace routes: 4
 
-Geology: Planet
-Species: 
-Exports: 
+Geology: Planet, Terestrial, Volcanic islands, Forests, Valleys
+Species: Human, Mixed
+Economy: Tertiery, Mixed, Shipping, Banking 
 
-History: 
+History: Palanhi has more dry land than ocean, which was mostly formed into a single super continent, while deep sea volcanoes produce islands in the planets ocean.  Palanhi is a wealthy world with prominent shipping industry. It is also home to an important central bank.
 
 Appearances: 
 "
 Sissubo;267;12135;Core Worlds North;436;369;Core;154;"[CANON] Sector: Core Worlds North
 Coordinates: L-9, Hyperspace routes: -
 
-Geology: Planet
-Species: 
-Exports: 
+Geology: Planet, Frozen, Rocky
+Species: Unknown
+Economy: Secondary, Salvage, Recycling
 
-History: 
+History: Sissubo is the seventh planet of the Chandrila system in the Bormea sector.
 
 Appearances: Squadrons
 "
 Skako Minor;268;12136;Core Worlds North;455;369;Core;155;"[CANON] Sector: Core Worlds North
 Coordinates: L-9, Hyperspace routes: 2
 
-Geology: Planet
-Species: 
-Exports: 
+Geology: Planet, Temperate, Fungal forests, Canyons, Caverns, Mountains
+Species: Skakoan, Poletec
+Economy: Secondary, Technology, Robotics, Manufacturing
 
-History: 
+History: Skoko minor was the capitol world of the Techno union and home to Wat Tambor’s workshop. It is also the homeworld of the Poletec species. Though the population eventually became Skakoan majority. The world was occupied by the republic during the Clone wars. The planet has an atmosphere of Hydrogen sulphide which is toxic to humans, but breathable to both the Poletec and the Skakoan. The planet is home to massive fungal forests as well as mountains and canyons. 
 
 Appearances: Clone Wars
 "
 Wor Tandell;269;12137;Core Worlds North;403;359;Core;190;"[CANON] Sector: Core Worlds North
 Coordinates: K-9, Hyperspace routes: -
 
-Geology: Planet
-Species: 
-Exports: 
+Geology: Planet, Tropical, Jungles, Ocean
+Species: Human
+Economy: Unknown
 
-History: 
+History: Wor Tandell is located in the Core Worlds. It is mostly an oceanic and tropical planet with vast jungles located on its surface. The Tandreed was a native animal of these jungles. The planet housed many urban settlements as well of which the capital was Gantra Lea. It served as the primary spaceport and commercial hub of Wor Tandell. Most of its inhabitants were immigrated Humans. 
 
-Appearances: Rebels
+Appearances: Rebels, SWR Original
 "
 Christophsis;270;12144;Wild Space;678;666;Core;30;"[CANON] Sector: Wild Space
 Coordinates: Q-16, Hyperspace routes: 2
 
 Geology: Planet
 Species: 
-Exports: 
+Economy: 
 
 History: 
 
@@ -1890,7 +1855,7 @@ Coordinates: R-16, Hyperspace routes: 5
 
 Geology: Planet
 Species: 
-Exports: 
+Economy: 
 
 History: 
 
@@ -1901,7 +1866,7 @@ Coordinates: Q-17, Hyperspace routes: -
 
 Geology: Planet
 Species: 
-Exports: 
+Economy: 
 
 History: 
 
@@ -1912,7 +1877,7 @@ Coordinates: Q-16, Hyperspace routes: 4
 
 Geology: Planet
 Species: 
-Exports: 
+Economy: 
 
 History: 
 
@@ -1923,7 +1888,7 @@ Coordinates: Q-16, Hyperspace routes: 2
 
 Geology: Planet
 Species: 
-Exports: 
+Economy: 
 
 History: 
 
@@ -1934,7 +1899,7 @@ Coordinates: R-16, Hyperspace routes: 0
 
 Geology: Planet
 Species: 
-Exports: 
+Economy: 
 
 History: 
 
@@ -1945,7 +1910,7 @@ Coordinates: Q-16, Hyperspace routes: 2
 
 Geology: Planet
 Species: 
-Exports: 
+Economy: 
 
 History: 
 
@@ -1956,7 +1921,7 @@ Coordinates: Q-17, Hyperspace routes: 2
 
 Geology: Planet
 Species: 
-Exports: 
+Economy: 
 
 History: 
 
@@ -1967,7 +1932,7 @@ Coordinates: R-16, Hyperspace routes: 5
 
 Geology: Planet, 
 Species: 
-Exports: 
+Economy: 
 
 History: Tatooine, the primary planet in the star system of the same name, is a desert world far from the bright center of the galaxy.  Twin suns beat down on this sand-covered world, burning the great expanses of desert and all who dwell there.
 
@@ -1977,7 +1942,7 @@ Coordinates: R-17, Hyperspace routes: 5
 
 Geology: Moon
 Species: 
-Exports: 
+Economy: 
 
 History: 
 
@@ -1988,18 +1953,18 @@ Coordinates: R-5, Hyperspace routes: 2
 
 Geology: Planet
 Species: 
-Exports: 
+Economy: 
 
 History: 
 
-Appearances: Swtor
+Appearances: SWTOR
 "
 Felucia;281;12161;Sith Worlds;723;195;Rim;62;"[CANON] Sector: Sith Worlds 
 Coordinates: R-6, Hyperspace routes: 2
 
 Geology: Planet
 Species: 
-Exports: 
+Economy: 
 
 History: 
 
@@ -2010,7 +1975,7 @@ Coordinates: R-5, Hyperspace routes: 5
 
 Geology: Planet
 Species: 
-Exports: 
+Economy: 
 
 History: 
 
@@ -2021,7 +1986,7 @@ Coordinates: Q-6, Hyperspace routes: 2
 
 Geology: Planet
 Species: 
-Exports: 
+Economy: 
 
 History: 
 
@@ -2032,7 +1997,7 @@ Coordinates: Q-4, Hyperspace routes: 2
 
 Geology: 
 Species: 
-Exports: 
+Economy: 
 
 History: 
 
@@ -2043,7 +2008,7 @@ Coordinates: R-6, Hyperspace routes: 2
 
 Geology: Planet
 Species: 
-Exports: 
+Economy: 
 
 History: 
 
@@ -2054,7 +2019,7 @@ Coordinates: Q-4, Hyperspace routes: 2
 
 Geology: 
 Species: 
-Exports: 
+Economy: 
 
 History: 
 
@@ -2065,7 +2030,7 @@ Coordinates: P-6, Hyperspace routes: 4
 
 Geology: Gas Giant
 Species: 
-Exports: 
+Economy: 
 
 History: 
 
@@ -2076,7 +2041,7 @@ Coordinates: R-4, Hyperspace routes: 3
 
 Geology: Planet
 Species: 
-Exports: 
+Economy: 
 
 History: 
 
@@ -2087,11 +2052,11 @@ Coordinates: P-6, Hyperspace routes: 4
 
 Geology: Moon
 Species: 
-Exports: 
+Economy: 
 
 History: 
 
-Appearances: Rouge One, Episode 4, Clone Wars, SWTOR, Battlefront 1, Battlefront 2
+Appearances: Rogue One, Episode 4, Clone Wars, SWTOR, Battlefront 1, Battlefront 2
 "
 Bothawui;290;12176;Bothan Space;746;564;Rim;20;"[CANON] Sector: Bothan Space
 Coordinates: R-14, Hyperspace routes: 4
@@ -2100,11 +2065,7 @@ Geology: Temperate, Plains, Mountains, Forests
 Species: Bothan
 Economy: Tertiary, Technology, Information, Trade
 
-History: [Legends] Bothawui is the fourth planet from the star Both in the Both system. A major trade world, Bothawui is the center of the trade of technology in its sector and is the home of many trade houses and mega-corporations, while also boasting strong shipping, communication, and transportation industries.
-
-[Legends] Assassinations, espionage, and sabotage were as commonplace on Bothawui as debates and typical legislation were on other worlds, and the Bothan Spynet developed into the foremost information-gathering network in the galaxy because of the suspicious and treacherous nature of life on Bothawui.
-
-[Legends] Bothawui remained neutral during the clone wars, and has negotiated limited independence from the Galactic Empire.
+History: Bothawui is the fourth planet from the star Both in the Both system. A major trade world, Bothawui is the center of the trade of technology in its sector and is the home of many trade houses and mega-corporations, while also boasting strong shipping, communication, and transportation industries. Assassinations, espionage, and sabotage were as commonplace on Bothawui as debates and typical legislation were on other worlds, and the Bothan Spynet developed into the foremost information-gathering network in the galaxy because of the suspicious and treacherous nature of life on Bothawui. Bothawui remained neutral during the clone wars, and has negotiated limited independence from the Galactic Empire.
 
 Appearances: Clone Wars, Atlas"
 Daalang;291;12177;Bothan Space;760;535;Rim;40;"[CANON] Sector: Bothan Space
@@ -2114,7 +2075,7 @@ Geology: Planet, Habitable
 Species: Human
 Economy: -
 
-History: [Legends] Daalang joined the Galactic Republic prior to the Indecta Era. During the Alsakan Conflicts, it supported Coruscant. Durring the Clone Wars, the CIS stationed an anti-orbital mass-driver cannon on the planet. The shields of the CIS base were destroyed by Lightning Squadron, clearing the path for the Star Destroyer Eliminator to attack the CIS base hidden in the nebula surrounding the body.
+History: Daalang joined the Galactic Republic prior to the Indecta Era. During the Alsakan Conflicts, it supported Coruscant. Durring the Clone Wars, the CIS stationed an anti-orbital mass-driver cannon on the planet. The shields of the CIS base were destroyed by Lightning Squadron, clearing the path for the Star Destroyer Eliminator to attack the CIS base hidden in the nebula surrounding the body.
 
 Appearances: 
 "
@@ -2123,11 +2084,9 @@ Coordinates: T-14, Hyperspace routes: 2
 
 Geology: Planet
 Species: Gamorreans
-Economy: Primary, [Legends] Slaves, Mercenaries
+Economy: Primary, Slaves, Mercenaries
 
-History: Gamorr is a lush planet located near Hutt Space and on the Triellus Trade Route. It is the homeworld of a porcine sentient species, the Gamorreans, who chop down forests to clear land for farming.
-
-[Legends] The forests and jungles of Gamorr cover a high percentage of its land mass, often overgrowing mountainous areas, and are home to a diverse variety of flora and fauna. Gamorrean forests are typically dense and damp, with hardwood trees that provide shelter for fungi that live on the dark forest floors.
+History: Gamorr is a lush planet located near Hutt Space and on the Triellus Trade Route. It is the homeworld of a porcine sentient species, the Gamorreans, who chop down forests to clear land for farming. The forests and jungles of Gamorr cover a high percentage of its land mass, often overgrowing mountainous areas, and are home to a diverse variety of flora and fauna. Gamorrean forests are typically dense and damp, with hardwood trees that provide shelter for fungi that live on the dark forest floors.
 
 Appearances: Atlas 
 "
@@ -2138,12 +2097,7 @@ Geology: Planet, Temperate, Ocean world
 Species: Kaminoans
 Economy: Tertiary, Cloning, Technology 
 
-History: Kamino is an aquatic planet located in a remote star system in the outskirts of the galaxy. It is inhabited by the Kaminoans. They are a race of tall, elegant beings with long necks who tended to keep to themselves. They are also known for their cloning technology, which was used to create a clone army for the Galactic Republic.
-
-At some point the planet was not covered in water, and the Kaminoans built a large land-based civilization. However, the water level rose, forcing the Kaminoans to build their structures on stilts. Kamino often experienced heavy rain, and during some parts of the year was covered with heavy electrical storms. During this season, Kaminoans rode on aiwhas underwater and resurfaced once they were near their destination.
-
-Shortly after the establishment of the Galactic Empire, Imperial Governor and Admiral Wilhuff Tarkin arrived on Kamino to discuss the status of the new Imperial Army with Lama Su. Tarkin informed the Prime Minister that the Empire was reluctant to continuing using clones. The Empire slowly dismantled the cloning program as the troops in the Imperial Army were gradually replaced by non-clone recruits
-
+History: Kamino is an aquatic planet located in a remote star system in the outskirts of the galaxy. It is inhabited by the Kaminoans. They are a race of tall, elegant beings with long necks who tended to keep to themselves. They are also known for their cloning technology, which was used to create a clone army for the Galactic Republic. At some point the planet was not covered in water, and the Kaminoans built a large land-based civilization. However, the water level rose, forcing the Kaminoans to build their structures on stilts. Kamino often experienced heavy rain, and during some parts of the year was covered with heavy electrical storms. During this season, Kaminoans rode on aiwhas underwater and resurfaced once they were near their destination. Shortly after the establishment of the Galactic Empire, Imperial Governor and Admiral Wilhuff Tarkin arrived on Kamino to discuss the status of the new Imperial Army with Lama Su. Tarkin informed the Prime Minister that the Empire was reluctant to continuing using clones. The Empire slowly dismantled the cloning program as the troops in the Imperial Army were gradually replaced by non-clone recruits
 
 Appearances: Episode 2, Clone Wars, Battlefront 1, Battlefront 2
 "
@@ -2154,66 +2108,61 @@ Geology: Planet, Temperate, Ocean, Mesa and plateau topped stone Pillars
 Species: Chagrian, Human, Twi'lek, Weequay, Zabrak, Mixed
 Economy: Primary, Mineral extraction, Isotope-5
 
-History: [Legends] Makeb is an oceanic planet with enormous amounts of electromagnetic interference in the upper levels of it's atmosphere. The planet's gravity, while below standard, has unique anomalies that formed many massive stone pillars across Makeb's surface. The pillars, which reach high above Makeb's cloud layer, are often large enough to contain entire cities on the plateaus and mesas that topped them.
-
-[Legends] The Pillars and caves on the planet contained a rare mineral known as Isotope-5. The mineral has powerful warping effects on electromagnetic and gravitational fields
+History: Makeb is an oceanic planet with enormous amounts of electromagnetic interference in the upper levels of it's atmosphere. The planet's gravity, while below standard, has unique anomalies that formed many massive stone pillars across Makeb's surface. The pillars, which reach high above Makeb's cloud layer, are often large enough to contain entire cities on the plateaus and mesas that topped them. The Pillars and caves on the planet contained a rare mineral known as Isotope-5. The mineral has powerful warping effects on electromagnetic and gravitational fields
 
 Appearances: SWTOR
 "
 Rishi;295;12181;Bothan Space;772;562;Rim;144;"[CANON] Sector: Bothan Space
 Coordinates: S-15, Hyperspace routes: 2
 
-Geology: Planet, [Legends] Hot, Jungle, Swamps, Mountains
+Geology: Planet, Hot, Jungle, Swamps, Mountains
 Species: Human
-Economy: [Legends] Primary, Mineral Extraction, Exonium
+Economy: Primary, Mineral Extraction, Exonium
 
-History: Rishi is a planet located in the Rishi system in the outer rim. It contained deposits of exonium. The planet is orbited by the Rishi Moon.
-
-During the time of the Clone Wars, the Rishi Moon housed a Galactic Republic listening post known as the Rishi Station, which was invaded and later destroyed by the Confederacy of Independent Systems.
+History: Rishi is a planet located in the Rishi system in the outer rim. It contained deposits of exonium. The planet is orbited by the Rishi Moon. During the time of the Clone Wars, the Rishi Moon housed a Galactic Republic listening post known as the Rishi Station, which was invaded and later destroyed by the Confederacy of Independent Systems.
 
 Appearances: Clone Wars, SWTOR, Atlas
 "
 Ryloth;296;12182;Bothan Space;750;603;Rim;147;"[CANON] Sector: Bothan Space
 Coordinates: R-17, Hyperspace routes: 3
 
-Geology: Planet
-Species: 
-Exports: 
+Geology: Planet, Hot, Humid, Varied
+Species: Twi'lek
+Economy: Primary, Ore Extraction, Slaves, Spice
 
-History: 
+History: A hot and humid world, Ryloth was located far out in the Outer Rim Territories, at grid square R-17 on the Standard Galactic Grid. It is orbited by five moons, whose gravitational pull affected the planet dramatically. Ryloth is a very diverse world with multiple of mountain ranges, snow plains, lush temperate forests, and deserts. All of which were occupied by the planet's indigenous wildlife. Much of Ryloth's wildlife was lethally dangerous and forced the native Twi'lek species to live in enclosed cave systems or in easily defended locations. For centuries, the planet and its people were exploited by the Hutts and their criminal enterprises.
 
-Appearances: Clone Wars, Rebels, Battlefront 2, Atlas
-"
+Appearances:"
 Scarif;297;12183;Bothan Space;785;586;Rim;150;"[CANON] Sector: Bothan Space
 Coordinates: S-15, Hyperspace routes: 3
 
-Geology: Planet
-Species: 
-Exports: 
+Geology: Planet, Temperate, Tropical, Oceans, Archipelagos
+Species: Human
+Economy: None 
 
-History: 
+History: Scarif was a verdant, beautiful if relatively small world. Scarif was comprised of tropical, volcanic island chains rising from clear, shallow oceans. Deeper oceans teeming with life were surrounded by rocky archipelagos. It was a popular semi retirement post for Imperial officers. Scarif was home to a major imperial research center, that was destroyed by the Death Star during a rebel raid. The Rebel's on the ground were able to transfer vital intel on the Death Stars weakness to a Fleet in orbit before the facility was destroied. This Intel would prove instrumental in the destruction of the death star over Yavin IV. 
 
-Appearances: Rouge One
+Appearances: Rogue One
 "
 Smuggler's Run;298;12184;Bothan Space;769;608;Rim;158;"[CANON] Sector: Bothan Space
 Coordinates: S-18, Hyperspace routes: 2
 
-Geology: Planet
-Species: 
-Exports: 
+Geology: Asteroid field
+Species: None
+Economy: None
 
-History: 
+History: The Smuggler's Run was an asteroid belt located in the Outer Rim Territories on the Corellian Run. It is near the planet Wrea. The asteroid field is a popular route for smugglers looking to avoid detection.  
 
 Appearances: 
 "
 Teth;299;12185;Bothan Space;799;531;Rim;172;"[CANON] Sector: Bothan Space
 Coordinates: U-12, Hyperspace routes: 3
 
-Geology: Planet
-Species: 
-Exports: 
+Geology: Planet, Temperate, Misty, Jungles
+Species: Hutt
+Economy: Unknown 
 
-History: 
+History: The planet Teth is situated on the border of the Outer rim and Wildspace. The surface is a mix of rocky ground and tangled jungle, all cast in shades of deep purple by gases in its atmosphere. The planet has a gloomy atmosphere and features perpetual mist. At some point, the world was inhabited by the B'omarr Order. However, by the time of the Clone Wars, their castles were abandoned, though some would be taken over by the Hutts that immigrated there.
 
 Appearances: The Clone Wars, Clone Wars, Atlas
 "
