@@ -143,11 +143,11 @@ Appearances: Episode 7, Clone Wars, Rebels, SWTOR, BattleField 2, Atlas"
 Lwhekk;114;11796;Unknown Regions;126;453;Rim;101;"[CANON] Sector: 
 Coordinates: C-16, Hyperspace routes: -
 
-Geology: Planet
-Species: 
-Economy: 
+Geology: Planet, Humid, Jungles, Oceans, Volcanoes
+Species: Unknown
+Economy: Unknown
 
-History: 
+History: Lwhekk is a planet in the unknown regions. Little is known about this world asside from rumours and myths. It is said to be home to large lizard-like creatures who abduct humans for unknown purposes. All that is known is they are never seen again. However these claims cannot be substantiated as none have traveled there and returned to tell the tale. 
 
 Appearances: 
 "
@@ -226,33 +226,33 @@ Appearances:
 Earth;122;11810;Mid Rim North;389;226;Rim;54;"[CANON] Sector: Mid Rim North
 Coordinates: K-6, Hyperspace routes: -
 
-Geology: Planet
-Species: 
-Economy: 
+Geology: Planet, Tererestrial, Varried
+Species: Human
+Economy: Unknown
 
-History: 
+History: Earth is a world in the norther border of outer rim territory. The planet is habitable to humans,  however due to it's remote location it has not been investigated by the Republic or it's member states, nor has it been incorporated into the Galactic Empire. However it is rumoured that a population of primitive Human's dwell there. 
 
 Appearances: 
 "
 Glee Anselm;123;11811;Mid Rim North;361;262;Rim;71;"[CANON] Sector: Mid Rim North
 Coordinates: J-7, Hyperspace routes: 2
 
-Geology: Planet
-Species: 
-Economy: 
+Geology: Planet, Tropical, Ocean, Tropical Islands
+Species: Anslemi, Nautolan, Human
+Economy: Primary, Fish, Foodstuffs, Medicine, water
 
-History: 
+History: Glee Anselm is an ocean world with no major landmasses. However there are small jungle islands dotting the ocean. Tow sentient species live on the world. The Anselmi and the Nautolan. Humans have also immigrated there over the years.According to legend, Glee Anselm used to have a continent with life until it sank to the seabed thousands of years before the fall of the Galactic Republic.n 3 BBY, Glee Anselm was one of only forty worlds that still sent representatives to the Apprentice Legislature. Princess Leia Organa of Alderaan owned a bed made from Glee Anselm hardwoods.
 
 Appearances: Clone Wars
 "
 Iridonia;124;11812;Mid Rim North;379;244;Rim;78;"[CANON] Sector: Mid Rim North
 Coordinates: J-17, Hyperspace routes:- 
 
-Geology: 
-Species: 
-Economy: 
+Geology: Planet, Arid, Acid pools, Windy Canyons
+Species: Zabrak
+Economy: Primary, Foodstuffs
 
-History: 
+History: Iridonia is the Arid, harsh world that the Zabrak species originates from. Due in part to the harsh environment of their homeworld Zabrak inhabitants quickly began colonizing other worlds, once they had a grasp of space flight and hyperspace travel. Very few other species can tolerate the planet, so it is mostly inhabited by the Zabrak that remained there. Iridonia remains mostly rural, though it is home to a few major cities. 
 
 Appearances: 
 "
@@ -261,7 +261,7 @@ Coordinates: M-6, Hyperspace routes: 2
 
 Geology: Planet, 
 Species: 
-Economy: 
+Economy: Primary, Foodstuffs, Botanicals, Medicine, Spices
 
 History: Ithor is a beautiful forest planet.  The planet is inhabited by beings called Ithorians, who live in great floating cities.  The Ithorians rarely if ever set foot in the forests below their cities and consider these forests sacred.
 
@@ -659,11 +659,11 @@ Appearances: SWTOR
 Cyphar;162;11874;Outer Rim West;356;658;Rim;39;"[CANON] Sector: Outer Rim West
 Coordinates: L-17, Hyperspace routes: 2
 
-Geology: Planet
-Species: 
-Economy: 
+Geology: Planet, Dry, Grasslands, Deserts
+Species: Cyphari, Human
+Economy: Primary, Scarn
 
-History: 
+History: Cyphar is a the homeworld of the Cyphari species. The planet is mainly covered in grasslands and deserts with canyons, and the ground is rich in scarn, a pre-spice compound. At some point, during the reign of the Galactic Empire, a land dispute occurred between the Cyphari's Afe clan and the human colonists from the Hollenside Enclave. the situation escalated so much, the Empire forced to intervene.
 
 Appearances: Rebels
 "
@@ -671,10 +671,10 @@ Dolla;163;11875;Outer Rim West;337;698;Rim;48;"[CANON] Sector: Outer Rim West
 Coordinates: L-18, , Hyperspace routes: 4
 
 Geology: Planet
-Species: 
-Economy: 
+Species: Unknown
+Economy: None
 
-History: 
+History: Dolla was a part of the Galactic Republic during the Clone Wars of 22 BBY-19 BBY, and serves as a major Imperial Navy staging area in the Outer Rim Territories. The planet has a small population of settlers and is still a developing world. 
 
 Appearances: 
 "
@@ -682,10 +682,10 @@ Endor;164;11876;Outer Rim West;327;649;Rim;56;"[CANON] Sector: Outer Rim West
 Coordinates: H-16, Hyperspace routes: 4
 
 Geology: Moon
-Species: 
-Economy: 
+Species: Ewok
+Economy: None
 
-History: 
+History: The forest moon of Endor also known as the sanctuary moon is a small forested moon orbiting a gas giant in the outer rim. The planet is and has been of little consequence to the republic and by extension the empire. As such a population of sentient but primitive Ewoks inhabit the world. It is also inhabited by other sentient species as well.The world was almost entirely covered in dense forests that were home to massive trees, some more than 1000 meters tall. The atmosphere was breathable to humans and the climate was mild. However there is very little surface water. 
 
 Appearances: 
 "
@@ -759,10 +759,10 @@ Crait;171;11889;Mid Rim South;528;678;Core;37;"[CANON] Sector: Mid Rim South
 Coordinates: N-17, Hyperspace routes: -
 
 Geology: Planet, Hot, Dry, Salt Flats
-Species: 
-Economy: 
+Species: None
+Economy: None
 
-History: 
+History: A dry, saltyflat covered world in the middle of nowhere. The surface of the world hostile, however there may be underground water reserves on the planet. The slow degredation of solid oxygen crystals has made the atmosphere breathable to humans, dispite a lack of plantlife. Due to it's remote location, it makes for a good hiding spot for a rebel base.
 
 Appearances: Episode 8, Battlefront 2
 "
@@ -1824,7 +1824,7 @@ Geology: Planet, Temperate, Fungal forests, Canyons, Caverns, Mountains
 Species: Skakoan, Poletec
 Economy: Secondary, Technology, Robotics, Manufacturing
 
-History: Skoko minor was the capitol world of the Techno union and home to Wat Tambor’s workshop. It is also the homeworld of the Poletec species. Though the population eventually became Skakoan majority. The world was occupied by the republic during the Clone wars. The planet has an atmosphere of Hydrogen sulphide which is toxic to humans, but breathable to both the Poletec and the Skakoan. The planet is home to massive fungal forests as well as mountains and canyons. 
+History: Skoko minor was the capitol world of the Techno union and home to Wat Tambor's workshop. It is also the homeworld of the Poletec species. Though the population eventually became Skakoan majority. The world was occupied by the republic during the Clone wars. The planet has an atmosphere of Hydrogen sulphide which is toxic to humans, but breathable to both the Poletec and the Skakoan. The planet is home to massive fungal forests as well as mountains and canyons. 
 
 Appearances: Clone Wars
 "
