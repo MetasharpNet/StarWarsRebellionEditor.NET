@@ -111,7 +111,7 @@ public partial class PatchForm : PatchDesignForm
                 bytes = File.ReadAllBytes(filePath);
             else
                 throw new ApplicationException("Accepted 3D model textures extensions: jpg, jpeg, bmp, png, bin. File provided: " + filePath);
-            Tactical.Resources.Save301(id303, bytes);
+            Tactical.Resources.Save303(id303, bytes);
         }
 
         // planets-sprites

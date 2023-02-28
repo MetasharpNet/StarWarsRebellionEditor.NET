@@ -1,7 +1,9 @@
 Place in this folder files that will be imported as
 resources in tactical.dll 301 resources folder.
 
-Extensions are removed to determine the resource entry in 303 folder
+Extensions are removed to determine the resource entry in 303 folder.
+If the filename doesn't start with a number or a string containing a dot before the dash (ex: 1234-blablabla.bmp or test.bmp-blablabla.bin),
+then the full name is kept as resource id.
 
 Example:
 ASSFRG52.BMP-assault-frigate-128x128.bin           => ASSFRG52.BMP
