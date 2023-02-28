@@ -1,7 +1,9 @@
 Place in this folder files that will be imported as
 resources in tactical.dll 301 resources folder.
 
-Extensions are removed to determine the resource entry in 301 folder
+Extensions are removed to determine the resource entry in 301 folder.
+Each model MUST have its own textures. 2 models can't share the same texture,
+else the game will crash at the end of tactical battles.
 
 Example:
 2010-mon-calamari-cruiser-close.x       => 2010

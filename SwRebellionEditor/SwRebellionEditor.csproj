@@ -68,6 +68,9 @@
     <None Update="new-3d-models-301\2011-alliance-mc80-liberty-type-star-cruiser-close.x">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="new-3d-models-301\2011-alliance-mc80-liberty-type-star-cruiser-medium.x">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="new-3d-models-301\2011-mc80-liberty-type-star-cruiser-medium.x">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
@@ -75,6 +78,9 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="new-3d-models-301\2012-alliance-mc80-liberty-type-star-cruiser-close.x">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-3d-models-301\2012-alliance-mc80-liberty-type-star-cruiser-far.x">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="new-3d-models-301\2012-mc80-liberty-type-star-cruiser-far.x">
@@ -95,6 +101,9 @@
     <None Update="new-3d-models-301\2021-alliance-neutron-star-class-bulk-cruiser-close.x">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="new-3d-models-301\2021-alliance-neutron-star-class-bulk-cruiser-medium.x">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="new-3d-models-301\2021-bulk-cruiser-medium.x">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
@@ -102,6 +111,9 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="new-3d-models-301\2022-alliance-neutron-star-class-bulk-cruiser-close.x">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-3d-models-301\2022-alliance-neutron-star-class-bulk-cruiser-far.x">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="new-3d-models-301\2022-bulk-cruiser-far.x">
@@ -122,6 +134,9 @@
     <None Update="new-3d-models-301\2031-alliance-assault-frigate-mark-1-close.x">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="new-3d-models-301\2031-alliance-assault-frigate-mark-1-medium.x">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="new-3d-models-301\2031-assault-frigate-mark-1-medium.x">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
@@ -129,6 +144,9 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="new-3d-models-301\2032-alliance-assault-frigate-mark-1-close.x">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-3d-models-301\2032-alliance-assault-frigate-mark-1-far.x">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="new-3d-models-301\2032-assault-frigate-far.x">
@@ -149,6 +167,9 @@
     <None Update="new-3d-models-301\2041-alliance-ef76-nebulon-b-escort-frigate-close.x">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="new-3d-models-301\2041-alliance-ef76-nebulon-b-escort-frigate-medium.x">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="new-3d-models-301\2041-ef76-nebulon-b-escort-frigate-medium.x">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
@@ -156,6 +177,9 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="new-3d-models-301\2042-alliance-ef76-nebulon-b-escort-frigate-close.x">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-3d-models-301\2042-alliance-ef76-nebulon-b-escort-frigate-far.x">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="new-3d-models-301\2042-ef76-nebulon-b-escort-frigate-far.x">
@@ -176,6 +200,9 @@
     <None Update="new-3d-models-301\2051-alliance-quasar-fire-class-bulk-cruiser-close.x">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="new-3d-models-301\2051-alliance-quasar-fire-class-bulk-cruiser-medium.x">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="new-3d-models-301\2051-quasar-fire-class-bulk-cruiser-medium.x">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
@@ -183,6 +210,9 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="new-3d-models-301\2052-alliance-quasar-fire-class-bulk-cruiser-close.x">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-3d-models-301\2052-alliance-quasar-fire-class-bulk-cruiser-far.x">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="new-3d-models-301\2052-quasar-fire-class-bulk-cruiser-far.x">
@@ -203,6 +233,9 @@
     <None Update="new-3d-models-301\2061-alliance-cr90-corellian-corvette-close.x">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="new-3d-models-301\2061-alliance-cr90-corellian-corvette-medium.x">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="new-3d-models-301\2061-correlian-corvette-medium.x">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
@@ -210,6 +243,9 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="new-3d-models-301\2062-alliance-cr90-corellian-corvette-close.x">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-3d-models-301\2062-alliance-cr90-corellian-corvette-far.x">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="new-3d-models-301\2062-correlian-corvette-far.x">
@@ -266,6 +302,9 @@
     <None Update="new-3d-models-301\2091-alliance-dp20-frigate-corellian-gunship-close.x">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="new-3d-models-301\2091-alliance-dp20-frigate-corellian-gunship-medium.x">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="new-3d-models-301\2091-correlian-gunship-medium.x">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
@@ -273,6 +312,9 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="new-3d-models-301\2092-alliance-dp20-frigate-corellian-gunship-close.x">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-3d-models-301\2092-alliance-dp20-frigate-corellian-gunship-far.x">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="new-3d-models-301\2092-correlian-gunship-far.x">
@@ -296,6 +338,9 @@
     <None Update="new-3d-models-301\2101-alliance-republic-dreadnaught-class-heavy-cruiser-close.x">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="new-3d-models-301\2101-alliance-republic-dreadnaught-class-heavy-cruiser-medium.x">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="new-3d-models-301\2101-republic-dreadnaught-class-heavy-cruiser-medium.x">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
@@ -303,6 +348,9 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="new-3d-models-301\2102-alliance-republic-dreadnaught-class-heavy-cruiser-close.x">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-3d-models-301\2102-alliance-republic-dreadnaught-class-heavy-cruiser-far.x">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="new-3d-models-301\2102-republic-dreadnaught-class-heavy-cruiser-far.x">
@@ -317,10 +365,16 @@
     <None Update="new-3d-models-301\2111-alliance-cc-7700-frigate-close.x">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="new-3d-models-301\2111-alliance-cc-7700-frigate-medium.x">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="new-3d-models-301\2111-cc-7700-frigate-medium.x">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="new-3d-models-301\2112-alliance-cc-7700-frigate-close.x">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-3d-models-301\2112-alliance-cc-7700-frigate-far.x">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="new-3d-models-301\2112-cc-7700-frigate-far.x">
@@ -374,6 +428,9 @@
     <None Update="new-3d-models-301\2141-alliance-liberator-class-cruiser-close.x">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="new-3d-models-301\2141-alliance-liberator-class-cruiser-medium.x">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="new-3d-models-301\2141-liberator-class-cruiser-medium.x">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
@@ -381,6 +438,9 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="new-3d-models-301\2142-alliance-liberator-class-cruiser-close.x">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-3d-models-301\2142-alliance-liberator-class-cruiser-far.x">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="new-3d-models-301\2142-liberator-class-cruiser-far.x">
@@ -401,6 +461,9 @@
     <None Update="new-3d-models-301\2151-alliance-dauntless-class-heavy-cruiser-close.x">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="new-3d-models-301\2151-alliance-dauntless-class-heavy-cruiser-medium.x">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="new-3d-models-301\2151-dauntless-class-heavy-cruiser-medium.x">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
@@ -408,6 +471,9 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="new-3d-models-301\2152-alliance-dauntless-class-heavy-cruiser-close.x">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-3d-models-301\2152-alliance-dauntless-class-heavy-cruiser-far.x">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="new-3d-models-301\2152-dauntless-class-heavy-cruiser-far.x">
@@ -428,6 +494,9 @@
     <None Update="new-3d-models-301\2511-empire-strike-class-medium-cruiser-close.x">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="new-3d-models-301\2511-empire-strike-class-medium-cruiser-medium.x">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="new-3d-models-301\2511-strike-class-medium-cruiser-medium.x">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
@@ -435,6 +504,9 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="new-3d-models-301\2512-empire-strike-class-medium-cruiser-close.x">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-3d-models-301\2512-empire-strike-class-medium-cruiser-far.x">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="new-3d-models-301\2512-strike-class-medium-cruiser-far.x">
@@ -455,6 +527,9 @@
     <None Update="new-3d-models-301\2521-empire-lancer-class-frigate-close.x">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="new-3d-models-301\2521-empire-lancer-class-frigate-medium.x">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="new-3d-models-301\2521-lancer-class-frigate-medium.x">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
@@ -462,6 +537,9 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="new-3d-models-301\2522-empire-lancer-class-frigate-close.x">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-3d-models-301\2522-empire-lancer-class-frigate-far.x">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="new-3d-models-301\2522-lancer-class-frigate-far.x">
@@ -485,6 +563,9 @@
     <None Update="new-3d-models-301\2531-empire-dominator-interdictor-class-star-destroyer-close.x">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="new-3d-models-301\2531-empire-dominator-interdictor-class-star-destroyer-medium.x">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="new-3d-models-301\2531-interdictor-cruiser-medium.x">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
@@ -492,6 +573,9 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="new-3d-models-301\2532-empire-dominator-interdictor-class-star-destroyer-close.x">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-3d-models-301\2532-empire-dominator-interdictor-class-star-destroyer-far.x">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="new-3d-models-301\2532-interdictor-cruiser-far.x">
@@ -515,6 +599,9 @@
     <None Update="new-3d-models-301\2541-empire-carrack-class-light-cruiser-close.x">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="new-3d-models-301\2541-empire-carrack-class-light-cruiser-medium.x">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="new-3d-models-301\2542-carrack-class-light-cruiser-far.x">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
@@ -522,6 +609,9 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="new-3d-models-301\2542-empire-carrack-class-light-cruiser-close.x">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-3d-models-301\2542-empire-carrack-class-light-cruiser-far.x">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="new-3d-models-301\2550-empire-victory-class-star-destroyer-mark-1-close.x">
@@ -536,6 +626,9 @@
     <None Update="new-3d-models-301\2551-empire-victory-class-star-destroyer-mark-1-close.x">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="new-3d-models-301\2551-empire-victory-class-star-destroyer-mark-1-medium.x">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="new-3d-models-301\2551-victory-class-star-destroyer-mark-1-medium.x">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
@@ -543,6 +636,9 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="new-3d-models-301\2552-empire-victory-class-star-destroyer-mark-1-close.x">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-3d-models-301\2552-empire-victory-class-star-destroyer-mark-1-far.x">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="new-3d-models-301\2552-victory-class-star-destroyer-mark-1-far.x">
@@ -563,6 +659,9 @@
     <None Update="new-3d-models-301\2561-empire-imperial-1-class-star-destroyer-close.x">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="new-3d-models-301\2561-empire-imperial-1-class-star-destroyer-medium.x">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="new-3d-models-301\2561-imperial-1-class-star-destroyer-medium.x">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
@@ -570,6 +669,9 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="new-3d-models-301\2562-empire-imperial-1-class-star-destroyer-close.x">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-3d-models-301\2562-empire-imperial-1-class-star-destroyer-far.x">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="new-3d-models-301\2562-imperial-1-class-star-destroyer-far.x">
@@ -590,6 +692,9 @@
     <None Update="new-3d-models-301\2571-empire-executor-class-star-dreadnought-close.x">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="new-3d-models-301\2571-empire-executor-class-star-dreadnought-medium.x">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="new-3d-models-301\2571-executor-class-star-dreadnought-medium.x">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
@@ -597,6 +702,9 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="new-3d-models-301\2572-empire-executor-class-star-dreadnought-close.x">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-3d-models-301\2572-empire-executor-class-star-dreadnought-far.x">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="new-3d-models-301\2572-executor-class-star-dreadnought-far.x">
@@ -653,6 +761,9 @@
     <None Update="new-3d-models-301\2601-empire-victory-2-class-star-destroyer-close.x">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="new-3d-models-301\2601-empire-victory-2-class-star-destroyer-medium.x">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="new-3d-models-301\2601-victory-2-class-star-destroyer-medium.x">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
@@ -660,6 +771,9 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="new-3d-models-301\2602-empire-victory-2-class-star-destroyer-close.x">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-3d-models-301\2602-empire-victory-2-class-star-destroyer-far.x">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="new-3d-models-301\2602-victory-2-class-star-destroyer-far.x">
@@ -680,6 +794,9 @@
     <None Update="new-3d-models-301\2611-empire-imperial-2-class-star-destroyer-close.x">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="new-3d-models-301\2611-empire-imperial-2-class-star-destroyer-medium.x">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="new-3d-models-301\2611-imperial-2-class-star-destroyer-medium.x">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
@@ -687,6 +804,9 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="new-3d-models-301\2612-empire-imperial-2-class-star-destroyer-close.x">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-3d-models-301\2612-empire-imperial-2-class-star-destroyer-far.x">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="new-3d-models-301\2612-imperial-2-class-star-destroyer-far.x">
@@ -707,6 +827,9 @@
     <None Update="new-3d-models-301\2621-empire-star-galleon-class-frigate-close.x">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="new-3d-models-301\2621-empire-star-galleon-class-frigate-medium.x">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="new-3d-models-301\2621-star-galleon-class-frigate-medium.x">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
@@ -714,6 +837,9 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="new-3d-models-301\2622-empire-star-galleon-class-frigate-close.x">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-3d-models-301\2622-empire-star-galleon-class-frigate-far.x">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="new-3d-models-301\2622-star-galleon-class-frigate-far.x">
@@ -734,6 +860,9 @@
     <None Update="new-3d-models-301\2631-empire-ton-falk-class-imperial-escort-carrier-close.x">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="new-3d-models-301\2631-empire-ton-falk-class-imperial-escort-carrier-medium.x">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="new-3d-models-301\2631-imperial-escort-carrier-medium.x">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
@@ -741,6 +870,9 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="new-3d-models-301\2632-empire-ton-falk-class-imperial-escort-carrier-close.x">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-3d-models-301\2632-empire-ton-falk-class-imperial-escort-carrier-far.x">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="new-3d-models-301\2632-imperial-escort-carrier-far.x">
@@ -761,6 +893,9 @@
     <None Update="new-3d-models-301\2641-empire-imperial-dreadnaught-class-heavy-cruiser-close.x">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="new-3d-models-301\2641-empire-imperial-dreadnaught-class-heavy-cruiser-medium.x">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="new-3d-models-301\2641-imperial-dreadnaught-class-heavy-cruiser-medium.x">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
@@ -768,6 +903,9 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="new-3d-models-301\2642-empire-imperial-dreadnaught-class-heavy-cruiser-close.x">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-3d-models-301\2642-empire-imperial-dreadnaught-class-heavy-cruiser-far.x">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="new-3d-models-301\2642-imperial-dreadnaught-class-heavy-cruiser-far.x">
@@ -1511,34 +1649,100 @@
     <None Update="new-3d-textures-303\ALLIANCE_ASSAULT_FRIGATE_MARK_1_CLOSE.BMP">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="new-3d-textures-303\ALLIANCE_ASSAULT_FRIGATE_MARK_1_FAR.BMP">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-3d-textures-303\ALLIANCE_ASSAULT_FRIGATE_MARK_1_MEDIUM.BMP">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="new-3d-textures-303\ALLIANCE_CC_7700_FRIGATE_CLOSE.BMP">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-3d-textures-303\ALLIANCE_CC_7700_FRIGATE_FAR.BMP">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-3d-textures-303\ALLIANCE_CC_7700_FRIGATE_MEDIUM.BMP">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="new-3d-textures-303\ALLIANCE_CR90_CORELLIAN_CORVETTE_CLOSE.BMP">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="new-3d-textures-303\ALLIANCE_CR90_CORELLIAN_CORVETTE_FAR.BMP">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-3d-textures-303\ALLIANCE_CR90_CORELLIAN_CORVETTE_MEDIUM.BMP">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="new-3d-textures-303\ALLIANCE_DAUNTLESS_CLASS_HEAVY_CRUISER_CLOSE.BMP">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-3d-textures-303\ALLIANCE_DAUNTLESS_CLASS_HEAVY_CRUISER_FAR.BMP">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-3d-textures-303\ALLIANCE_DAUNTLESS_CLASS_HEAVY_CRUISER_MEDIUM.BMP">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="new-3d-textures-303\ALLIANCE_DP20_FRIGATE_CORELLIAN_GUNSHIP_CLOSE.BMP">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="new-3d-textures-303\ALLIANCE_DP20_FRIGATE_CORELLIAN_GUNSHIP_FAR.BMP">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-3d-textures-303\ALLIANCE_DP20_FRIGATE_CORELLIAN_GUNSHIP_MEDIUM.BMP">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="new-3d-textures-303\ALLIANCE_EF76_NEBULON_B_ESCORT_FRIGATE_CLOSE.BMP">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-3d-textures-303\ALLIANCE_EF76_NEBULON_B_ESCORT_FRIGATE_FAR.BMP">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-3d-textures-303\ALLIANCE_EF76_NEBULON_B_ESCORT_FRIGATE_MEDIUM.BMP">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="new-3d-textures-303\ALLIANCE_LIBERATOR_CLASS_CRUISER_CLOSE.BMP">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="new-3d-textures-303\ALLIANCE_LIBERATOR_CLASS_CRUISER_FAR.BMP">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-3d-textures-303\ALLIANCE_LIBERATOR_CLASS_CRUISER_MEDIUM.BMP">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="new-3d-textures-303\ALLIANCE_MC80_LIBERTY_TYPE_STAR_CRUISER_CLOSE.BMP">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-3d-textures-303\ALLIANCE_MC80_LIBERTY_TYPE_STAR_CRUISER_FAR.BMP">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-3d-textures-303\ALLIANCE_MC80_LIBERTY_TYPE_STAR_CRUISER_MEDIUM.BMP">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="new-3d-textures-303\ALLIANCE_NEUTRON_STAR_CLASS_BULK_CRUISER_CLOSE.BMP">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="new-3d-textures-303\ALLIANCE_NEUTRON_STAR_CLASS_BULK_CRUISER_FAR.BMP">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-3d-textures-303\ALLIANCE_NEUTRON_STAR_CLASS_BULK_CRUISER_MEDIUM.BMP">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="new-3d-textures-303\ALLIANCE_QUASAR_FIRE_CLASS_BULK_CRUISER_CLOSE.BMP">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="new-3d-textures-303\ALLIANCE_QUASAR_FIRE_CLASS_BULK_CRUISER_FAR.BMP">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-3d-textures-303\ALLIANCE_QUASAR_FIRE_CLASS_BULK_CRUISER_MEDIUM.BMP">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="new-3d-textures-303\ALLIANCE_REPUBLIC_DREADNAUGHT_CLASS_HEAVY_CRUISER_CLOSE.BMP">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-3d-textures-303\ALLIANCE_REPUBLIC_DREADNAUGHT_CLASS_HEAVY_CRUISER_FAR.BMP">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-3d-textures-303\ALLIANCE_REPUBLIC_DREADNAUGHT_CLASS_HEAVY_CRUISER_MEDIUM.BMP">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="new-3d-textures-303\assault-frigate-mark-1-close.bmp">
@@ -1568,37 +1772,109 @@
     <None Update="new-3d-textures-303\EMPIRE_CARRACK_CLASS_LIGHT_CRUISER_CLOSE.BMP">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="new-3d-textures-303\EMPIRE_CARRACK_CLASS_LIGHT_CRUISER_FAR.BMP">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-3d-textures-303\EMPIRE_CARRACK_CLASS_LIGHT_CRUISER_MEDIUM.BMP">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="new-3d-textures-303\EMPIRE_DOMINATOR_INTERDICTOR_CLASS_STAR_DESTROYER_CLOSE.BMP">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-3d-textures-303\EMPIRE_DOMINATOR_INTERDICTOR_CLASS_STAR_DESTROYER_FAR.BMP">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-3d-textures-303\EMPIRE_DOMINATOR_INTERDICTOR_CLASS_STAR_DESTROYER_MEDIUM.BMP">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="new-3d-textures-303\EMPIRE_EXECUTOR_CLASS_STAR_DREADNOUGHT_CLOSE.BMP">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="new-3d-textures-303\EMPIRE_EXECUTOR_CLASS_STAR_DREADNOUGHT_FAR.BMP">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-3d-textures-303\EMPIRE_EXECUTOR_CLASS_STAR_DREADNOUGHT_MEDIUM.BMP">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="new-3d-textures-303\EMPIRE_IMPERIAL_1_CLASS_STAR_DESTROYER_CLOSE.BMP">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-3d-textures-303\EMPIRE_IMPERIAL_1_CLASS_STAR_DESTROYER_FAR.BMP">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-3d-textures-303\EMPIRE_IMPERIAL_1_CLASS_STAR_DESTROYER_MEDIUM.BMP">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="new-3d-textures-303\EMPIRE_IMPERIAL_2_CLASS_STAR_DESTROYER_CLOSE.BMP">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="new-3d-textures-303\EMPIRE_IMPERIAL_2_CLASS_STAR_DESTROYER_FAR.BMP">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-3d-textures-303\EMPIRE_IMPERIAL_2_CLASS_STAR_DESTROYER_MEDIUM.BMP">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="new-3d-textures-303\EMPIRE_IMPERIAL_DREADNAUGHT_CLASS_HEAVY_CRUISER_CLOSE.BMP">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-3d-textures-303\EMPIRE_IMPERIAL_DREADNAUGHT_CLASS_HEAVY_CRUISER_FAR.BMP">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-3d-textures-303\EMPIRE_IMPERIAL_DREADNAUGHT_CLASS_HEAVY_CRUISER_MEDIUM.BMP">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="new-3d-textures-303\EMPIRE_LANCER_CLASS_FRIGATE_CLOSE.BMP">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="new-3d-textures-303\EMPIRE_LANCER_CLASS_FRIGATE_FAR.BMP">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-3d-textures-303\EMPIRE_LANCER_CLASS_FRIGATE_MEDIUM.BMP">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="new-3d-textures-303\EMPIRE_STAR_GALLEON_CLASS_FRIGATE_CLOSE.BMP">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-3d-textures-303\EMPIRE_STAR_GALLEON_CLASS_FRIGATE_FAR.BMP">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-3d-textures-303\EMPIRE_STAR_GALLEON_CLASS_FRIGATE_MEDIUM.BMP">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="new-3d-textures-303\EMPIRE_STRIKE_CLASS_MEDIUM_CRUISER_CLOSE.BMP">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="new-3d-textures-303\EMPIRE_STRIKE_CLASS_MEDIUM_CRUISER_FAR.BMP">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-3d-textures-303\EMPIRE_STRIKE_CLASS_MEDIUM_CRUISER_MEDIUM.BMP">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="new-3d-textures-303\EMPIRE_TON_FALK_CLASS_IMPERIAL_ESCORT_CARRIER_CLOSE.BMP">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-3d-textures-303\EMPIRE_TON_FALK_CLASS_IMPERIAL_ESCORT_CARRIER_FAR.BMP">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-3d-textures-303\EMPIRE_TON_FALK_CLASS_IMPERIAL_ESCORT_CARRIER_MEDIUM.BMP">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="new-3d-textures-303\EMPIRE_VICTORY_2_CLASS_STAR_DESTROYER_CLOSE.BMP">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="new-3d-textures-303\EMPIRE_VICTORY_2_CLASS_STAR_DESTROYER_FAR.BMP">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-3d-textures-303\EMPIRE_VICTORY_2_CLASS_STAR_DESTROYER_MEDIUM.BMP">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="new-3d-textures-303\EMPIRE_VICTORY_CLASS_STAR_DESTROYER_MARK_1_CLOSE.BMP">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-3d-textures-303\EMPIRE_VICTORY_CLASS_STAR_DESTROYER_MARK_1_FAR.BMP">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-3d-textures-303\EMPIRE_VICTORY_CLASS_STAR_DESTROYER_MARK_1_MEDIUM.BMP">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="new-3d-textures-303\executor-class-star-dreadnought-close.bmp">

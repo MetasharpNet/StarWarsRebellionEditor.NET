@@ -100,6 +100,9 @@ public partial class PatchForm : PatchDesignForm
             if (extension == ".txt")
                 continue;
             var id303 = Path.GetFileNameWithoutExtension(filePath).Split('-')[0];
+            int res;
+            if (!Int32.TryParse(id303, out res) && !id303.Contains("."))
+                id303 = Path.GetFileName(filePath);
             byte[] bytes;
             if (extension == ".jpg" || extension == ".jpeg" || extension == ".png" || extension == ".bmp")
             {
