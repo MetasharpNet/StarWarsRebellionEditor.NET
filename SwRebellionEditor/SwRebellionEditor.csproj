@@ -920,6 +920,9 @@
     <None Update="new-3d-textures-303\4000-alliance-x-wing-red-%28sistros%29.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="new-3d-textures-303\4000-alliance-x-wing-red-512x512-%28metasharp%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="new-3d-textures-303\4000-x-wing-red-big.bin">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
@@ -927,6 +930,9 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="new-3d-textures-303\4001-alliance-x-wing-blue-%28sistros%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-3d-textures-303\4001-alliance-x-wing-blue-512x512-%28metasharp%29.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="new-3d-textures-303\4001-x-wing-blue-big.bin">
@@ -938,6 +944,9 @@
     <None Update="new-3d-textures-303\4002-alliance-x-wing-green-%28sistros%29.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="new-3d-textures-303\4002-alliance-x-wing-green-512x512-%28metasharp%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="new-3d-textures-303\4002-x-wing-green-big.bin">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
@@ -945,6 +954,9 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="new-3d-textures-303\4003-alliance-x-wing-gold-%28sistros%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-3d-textures-303\4003-alliance-x-wing-gold-512x512-%28metasharp%29.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="new-3d-textures-303\4003-x-wing-yellow-big.bin">
@@ -956,10 +968,16 @@
     <None Update="new-3d-textures-303\4004-alliance-x-wing-gray-%28sistros%29.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="new-3d-textures-303\4004-alliance-x-wing-gray-512x512-%28metasharp%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="new-3d-textures-303\4004-x-wing-gray-big.bin">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="new-3d-textures-303\4004-x-wing-gray-big.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-3d-textures-303\4005-alliance-x-wing-red-128x128-%28metasharp%29.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="new-3d-textures-303\4005-alliance-x-wing-red-small-%28sistros%29.bmp">
@@ -971,6 +989,9 @@
     <None Update="new-3d-textures-303\4005-x-wing-red-small.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="new-3d-textures-303\4006-alliance-x-wing-blue-128x128-%28metasharp%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="new-3d-textures-303\4006-alliance-x-wing-blue-small-%28sistros%29.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
@@ -978,6 +999,9 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="new-3d-textures-303\4006-x-wing-blue-small.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-3d-textures-303\4007-alliance-x-wing-gold-128x128-%28metasharp%29.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="new-3d-textures-303\4007-alliance-x-wing-green-small-%28sistros%29.bmp">
@@ -992,10 +1016,16 @@
     <None Update="new-3d-textures-303\4008-alliance-x-wing-gold-small-%28sistros%29.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="new-3d-textures-303\4008-alliance-x-wing-green-128x128-%28metasharp%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="new-3d-textures-303\4008-x-wing-yellow-small.bin">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="new-3d-textures-303\4008-x-wing-yellow-small.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-3d-textures-303\4009-alliance-x-wing-gray-128x128-%28metasharp%29.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="new-3d-textures-303\4009-alliance-x-wing-gray-small-%28sistros%29.bmp">
@@ -1010,6 +1040,9 @@
     <None Update="new-3d-textures-303\4010-alliance-y-wing-red-%28sistros%29.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="new-3d-textures-303\4010-alliance-y-wing-red-512x512-%28metasharp%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="new-3d-textures-303\4010-y-wing-red-big.bin">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
@@ -1017,6 +1050,9 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="new-3d-textures-303\4011-alliance-y-wing-blue-%28sistros%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-3d-textures-303\4011-alliance-y-wing-blue-512x512-%28metasharp%29.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="new-3d-textures-303\4011-y-wing-blue-big.bin">
@@ -1028,6 +1064,9 @@
     <None Update="new-3d-textures-303\4012-alliance-y-wing-green-%28sistros%29.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="new-3d-textures-303\4012-alliance-y-wing-green-512x512-%28metasharp%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="new-3d-textures-303\4012-y-wing-green-big.bin">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
@@ -1035,6 +1074,9 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="new-3d-textures-303\4013-alliance-y-wing-gold-%28sistros%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-3d-textures-303\4013-alliance-y-wing-gold-512x512-%28metasharp%29.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="new-3d-textures-303\4013-y-wing-yellow-big.bin">
@@ -1046,10 +1088,16 @@
     <None Update="new-3d-textures-303\4014-alliance-y-wing-gray-%28sistros%29.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="new-3d-textures-303\4014-alliance-y-wing-gray-512x512-%28metasharp%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="new-3d-textures-303\4014-y-wing-gray-big.bin">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="new-3d-textures-303\4014-y-wing-gray-big.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-3d-textures-303\4015-alliance-y-wing-red-128x128-%28metasharp%29.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="new-3d-textures-303\4015-alliance-y-wing-red-small-%28sistros%29.bmp">
@@ -1061,6 +1109,9 @@
     <None Update="new-3d-textures-303\4015-y-wing-red-small.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="new-3d-textures-303\4016-alliance-y-wing-blue-128x128-%28metasharp%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="new-3d-textures-303\4016-alliance-y-wing-blue-small-%28sistros%29.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
@@ -1068,6 +1119,9 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="new-3d-textures-303\4016-y-wing-blue-small.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-3d-textures-303\4017-alliance-y-wing-green-128x128-%28metasharp%29.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="new-3d-textures-303\4017-alliance-y-wing-green-small-%28sistros%29.bmp">
@@ -1079,6 +1133,9 @@
     <None Update="new-3d-textures-303\4017-y-wing-green-small.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="new-3d-textures-303\4018-alliance-y-wing-gold-128x128-%28metasharp%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="new-3d-textures-303\4018-alliance-y-wing-gold-small-%28sistros%29.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
@@ -1086,6 +1143,9 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="new-3d-textures-303\4018-y-wing-yellow-small.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-3d-textures-303\4019-alliance-y-wing-gray-128x128-%28metasharp%29.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="new-3d-textures-303\4019-alliance-y-wing-gray-small-%28sistros%29.bmp">
@@ -1106,6 +1166,9 @@
     <None Update="new-3d-textures-303\4020-alliance-a-wing-red-%28sistros%29.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="new-3d-textures-303\4020-alliance-a-wing-red-512x512-%28metasharp%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="new-3d-textures-303\4021-a-wing-blue-big.bin">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
@@ -1113,6 +1176,9 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="new-3d-textures-303\4021-alliance-a-wing-blue-%28sistros%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-3d-textures-303\4021-alliance-a-wing-blue-512x512-%28metasharp%29.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="new-3d-textures-303\4022-a-wing-green-big.bin">
@@ -1124,6 +1190,9 @@
     <None Update="new-3d-textures-303\4022-alliance-a-wing-green-%28sistros%29.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="new-3d-textures-303\4022-alliance-a-wing-green-512x512-%28metasharp%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="new-3d-textures-303\4023-a-wing-yellow-big.bin">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
@@ -1131,6 +1200,9 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="new-3d-textures-303\4023-alliance-a-wing-gold-%28sistros%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-3d-textures-303\4023-alliance-a-wing-gold-512x512-%28metasharp%29.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="new-3d-textures-303\4024-a-wing-gray-big.bin">
@@ -1142,10 +1214,16 @@
     <None Update="new-3d-textures-303\4024-alliance-a-wing-gray-%28sistros%29.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="new-3d-textures-303\4024-alliance-a-wing-gray-512x512-%28metasharp%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="new-3d-textures-303\4025-a-wing-red-small.bin">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="new-3d-textures-303\4025-a-wing-red-small.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-3d-textures-303\4025-alliance-a-wing-red-128x128-%28metasharp%29.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="new-3d-textures-303\4025-alliance-a-wing-red-small-%28sistros%29.bmp">
@@ -1157,6 +1235,9 @@
     <None Update="new-3d-textures-303\4026-a-wing-blue-small.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="new-3d-textures-303\4026-alliance-a-wing-blue-128x128-%28metasharp%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="new-3d-textures-303\4026-alliance-a-wing-blue-small-%28sistros%29.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
@@ -1164,6 +1245,9 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="new-3d-textures-303\4027-a-wing-green-small.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-3d-textures-303\4027-alliance-a-wing-green-128x128-%28metasharp%29.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="new-3d-textures-303\4027-alliance-a-wing-green-small-%28sistros%29.bmp">
@@ -1175,6 +1259,9 @@
     <None Update="new-3d-textures-303\4028-a-wing-yellow-small.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="new-3d-textures-303\4028-alliance-a-wing-gold-128x128-%28metasharp%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="new-3d-textures-303\4028-alliance-a-wing-gold-small-%28sistros%29.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
@@ -1184,10 +1271,16 @@
     <None Update="new-3d-textures-303\4029-a-wing-gray-small.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="new-3d-textures-303\4029-alliance-a-wing-gray-128x128-%28metasharp%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="new-3d-textures-303\4029-alliance-a-wing-gray-small-%28sistros%29.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="new-3d-textures-303\4030-alliance-b-wing-red-%28sistros%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-3d-textures-303\4030-alliance-b-wing-red-512x512-%28metasharp%29.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="new-3d-textures-303\4030-b-wing-red-big.bin">
@@ -1199,6 +1292,9 @@
     <None Update="new-3d-textures-303\4031-alliance-b-wing-blue-%28sistros%29.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="new-3d-textures-303\4031-alliance-b-wing-blue-512x512-%28metasharp%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="new-3d-textures-303\4031-b-wing-blue-big.bin">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
@@ -1206,6 +1302,9 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="new-3d-textures-303\4032-alliance-b-wing-green-%28sistros%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-3d-textures-303\4032-alliance-b-wing-green-512x512-%28metasharp%29.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="new-3d-textures-303\4032-b-wing-green-big.bin">
@@ -1217,6 +1316,9 @@
     <None Update="new-3d-textures-303\4033-alliance-b-wing-gold-%28sistros%29.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="new-3d-textures-303\4033-alliance-b-wing-gold-512x512-%28metasharp%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="new-3d-textures-303\4033-b-wing-yellow-big.bin">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
@@ -1226,10 +1328,16 @@
     <None Update="new-3d-textures-303\4034-alliance-b-wing-gray-%28sistros%29.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="new-3d-textures-303\4034-alliance-b-wing-gray-512x512-%28metasharp%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="new-3d-textures-303\4034-b-wing-gray-big.bin">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="new-3d-textures-303\4034-b-wing-gray-big.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-3d-textures-303\4035-alliance-b-wing-red-128x128-%28metasharp%29.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="new-3d-textures-303\4035-alliance-b-wing-red-small-%28sistros%29.bmp">
@@ -1241,6 +1349,9 @@
     <None Update="new-3d-textures-303\4035-b-wing-red-small.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="new-3d-textures-303\4036-alliance-b-wing-blue-128x128-%28metasharp%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="new-3d-textures-303\4036-alliance-b-wing-blue-small-%28sistros%29.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
@@ -1248,6 +1359,9 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="new-3d-textures-303\4036-b-wing-blue-small.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-3d-textures-303\4037-alliance-b-wing-green-128x128-%28metasharp%29.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="new-3d-textures-303\4037-alliance-b-wing-green-small-%28sistros%29.bmp">
@@ -1259,6 +1373,9 @@
     <None Update="new-3d-textures-303\4037-b-wing-green-small.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="new-3d-textures-303\4038-alliance-b-wing-gold-128x128-%28metasharp%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="new-3d-textures-303\4038-alliance-b-wing-gold-small-%28sistros%29.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
@@ -1266,6 +1383,9 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="new-3d-textures-303\4038-b-wing-yellow-small.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-3d-textures-303\4039-alliance-b-wing-gray-128x128-%28metasharp%29.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="new-3d-textures-303\4039-alliance-b-wing-gray-small-%28sistros%29.bmp">
@@ -1280,6 +1400,9 @@
     <None Update="new-3d-textures-303\4100-empire-tie-fighter-red-%28sistros%29.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="new-3d-textures-303\4100-empire-tie-fighter-red-512x512-%28metasharp%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="new-3d-textures-303\4100-tie-fighter-red-big.bin">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
@@ -1287,6 +1410,9 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="new-3d-textures-303\4101-empire-tie-fighter-blue-%28sistros%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-3d-textures-303\4101-empire-tie-fighter-blue-512x512-%28metasharp%29.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="new-3d-textures-303\4101-tie-fighter-blue-big.bin">
@@ -1298,6 +1424,9 @@
     <None Update="new-3d-textures-303\4102-empire-tie-fighter-green-%28sistros%29.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="new-3d-textures-303\4102-empire-tie-fighter-green-512x512-%28metasharp%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="new-3d-textures-303\4102-tie-fighter-green-big.bin">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
@@ -1305,6 +1434,9 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="new-3d-textures-303\4103-empire-tie-fighter-gold-%28sistros%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-3d-textures-303\4103-empire-tie-fighter-gold-512x512-%28metasharp%29.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="new-3d-textures-303\4103-tie-fighter-yellow-big.bin">
@@ -1316,10 +1448,16 @@
     <None Update="new-3d-textures-303\4104-empire-tie-fighter-gray-%28sistros%29.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="new-3d-textures-303\4104-empire-tie-fighter-gray-512x512-%28metasharp%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="new-3d-textures-303\4104-tie-fighter-gray-big.bin">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="new-3d-textures-303\4104-tie-fighter-gray-big.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-3d-textures-303\4105-empire-tie-fighter-red-128x128-%28metasharp%29.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="new-3d-textures-303\4105-empire-tie-fighter-red-small-%28sistros%29.bmp">
@@ -1331,6 +1469,9 @@
     <None Update="new-3d-textures-303\4105-tie-fighter-red-small.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="new-3d-textures-303\4106-empire-tie-fighter-blue-128x128-%28metasharp%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="new-3d-textures-303\4106-empire-tie-fighter-blue-small-%28sistros%29.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
@@ -1338,6 +1479,9 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="new-3d-textures-303\4106-tie-fighter-blue-small.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-3d-textures-303\4107-empire-tie-fighter-green-128x128-%28metasharp%29.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="new-3d-textures-303\4107-empire-tie-fighter-green-small-%28sistros%29.bmp">
@@ -1349,6 +1493,9 @@
     <None Update="new-3d-textures-303\4107-tie-fighter-green-small.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="new-3d-textures-303\4108-empire-tie-fighter-gold-128x128-%28metasharp%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="new-3d-textures-303\4108-empire-tie-fighter-gold-small-%28sistros%29.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
@@ -1356,6 +1503,9 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="new-3d-textures-303\4108-tie-fighter-yellow-small.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-3d-textures-303\4109-empire-tie-fighter-gray-128x128-%28metasharp%29.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="new-3d-textures-303\4109-empire-tie-fighter-gray-small-%28sistros%29.bmp">
@@ -1370,6 +1520,9 @@
     <None Update="new-3d-textures-303\4110-empire-tie-interceptor-red-%28sistros%29.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="new-3d-textures-303\4110-empire-tie-interceptor-red-512x512-%28metasharp%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="new-3d-textures-303\4110-tie-interceptor-red-big.bin">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
@@ -1377,6 +1530,9 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="new-3d-textures-303\4111-empire-tie-interceptor-blue-%28sistros%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-3d-textures-303\4111-empire-tie-interceptor-blue-512x512-%28metasharp%29.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="new-3d-textures-303\4111-tie-interceptor-blue-big.bin">
@@ -1388,6 +1544,9 @@
     <None Update="new-3d-textures-303\4112-empire-tie-interceptor-green-%28sistros%29.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="new-3d-textures-303\4112-empire-tie-interceptor-green-512x512-%28metasharp%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="new-3d-textures-303\4112-tie-interceptor-green-big.bin">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
@@ -1395,6 +1554,9 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="new-3d-textures-303\4113-empire-tie-interceptor-gold-%28sistros%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-3d-textures-303\4113-empire-tie-interceptor-gold-512x512-%28metasharp%29.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="new-3d-textures-303\4113-tie-interceptor-yellow-big.bin">
@@ -1406,10 +1568,16 @@
     <None Update="new-3d-textures-303\4114-empire-tie-interceptor-gray-%28sistros%29.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="new-3d-textures-303\4114-empire-tie-interceptor-gray-512x512-%28metasharp%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="new-3d-textures-303\4114-tie-interceptor-gray-big.bin">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="new-3d-textures-303\4114-tie-interceptor-gray-big.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-3d-textures-303\4115-empire-tie-interceptor-red-128x128-%28metasharp%29.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="new-3d-textures-303\4115-empire-tie-interceptor-red-small-%28sistros%29.bmp">
@@ -1421,6 +1589,9 @@
     <None Update="new-3d-textures-303\4115-tie-interceptor-red-small.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="new-3d-textures-303\4116-empire-tie-interceptor-blue-128x128-%28metasharp%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="new-3d-textures-303\4116-empire-tie-interceptor-blue-small-%28sistros%29.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
@@ -1428,6 +1599,9 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="new-3d-textures-303\4116-tie-interceptor-blue-small.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-3d-textures-303\4117-empire-tie-interceptor-green-128x128-%28metasharp%29.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="new-3d-textures-303\4117-empire-tie-interceptor-green-small-%28sistros%29.bmp">
@@ -1439,6 +1613,9 @@
     <None Update="new-3d-textures-303\4117-tie-interceptor-green-small.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="new-3d-textures-303\4118-empire-tie-interceptor-gold-128x128-%28metasharp%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="new-3d-textures-303\4118-empire-tie-interceptor-gold-small-%28sistros%29.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
@@ -1446,6 +1623,9 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="new-3d-textures-303\4118-tie-interceptor-yellow-small.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-3d-textures-303\4119-empire-tie-interceptor-gray-128x128-%28metasharp%29.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="new-3d-textures-303\4119-empire-tie-interceptor-gray-small-%28sistros%29.bmp">
@@ -1460,6 +1640,9 @@
     <None Update="new-3d-textures-303\4120-empire-tie-bomber-red-%28sistros%29.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="new-3d-textures-303\4120-empire-tie-bomber-red-512x512-%28metasharp%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="new-3d-textures-303\4120-tie-bomber-red-big.bin">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
@@ -1467,6 +1650,9 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="new-3d-textures-303\4121-empire-tie-bomber-blue-%28sistros%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-3d-textures-303\4121-empire-tie-bomber-blue-512x512-%28metasharp%29.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="new-3d-textures-303\4121-tie-bomber-blue-big.bin">
@@ -1478,6 +1664,9 @@
     <None Update="new-3d-textures-303\4122-empire-tie-bomber-green-%28sistros%29.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="new-3d-textures-303\4122-empire-tie-bomber-green-512x512-%28metasharp%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="new-3d-textures-303\4122-tie-bomber-green-big.bin">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
@@ -1485,6 +1674,9 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="new-3d-textures-303\4123-empire-tie-bomber-gold-%28sistros%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-3d-textures-303\4123-empire-tie-bomber-gold-512x512-%28metasharp%29.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="new-3d-textures-303\4123-tie-bomber-yellow-big.bin">
@@ -1496,10 +1688,16 @@
     <None Update="new-3d-textures-303\4124-empire-tie-bomber-gray-%28sistros%29.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="new-3d-textures-303\4124-empire-tie-bomber-gray-512x512-%28metasharp%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="new-3d-textures-303\4124-tie-bomber-gray-big.bin">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="new-3d-textures-303\4124-tie-bomber-gray-big.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-3d-textures-303\4125-empire-tie-bomber-red-128x128-%28metasharp%29.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="new-3d-textures-303\4125-empire-tie-bomber-red-small-%28sistros%29.bmp">
@@ -1511,6 +1709,9 @@
     <None Update="new-3d-textures-303\4125-tie-bomber-red-small.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="new-3d-textures-303\4126-empire-tie-bomber-blue-128x128-%28metasharp%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="new-3d-textures-303\4126-empire-tie-bomber-blue-small-%28sistros%29.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
@@ -1518,6 +1719,9 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="new-3d-textures-303\4126-tie-bomber-blue-small.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-3d-textures-303\4127-empire-tie-bomber-green-128x128-%28metasharp%29.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="new-3d-textures-303\4127-empire-tie-bomber-green-small-%28sistros%29.bmp">
@@ -1529,6 +1733,9 @@
     <None Update="new-3d-textures-303\4127-tie-bomber-green-small.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="new-3d-textures-303\4128-empire-tie-bomber-gold-128x128-%28metasharp%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="new-3d-textures-303\4128-empire-tie-bomber-gold-small-%28sistros%29.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
@@ -1536,6 +1743,9 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="new-3d-textures-303\4128-tie-bomber-yellow-small.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-3d-textures-303\4129-empire-tie-bomber-gray-128x128-%28metasharp%29.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="new-3d-textures-303\4129-empire-tie-bomber-gray-small-%28sistros%29.bmp">
@@ -1550,6 +1760,9 @@
     <None Update="new-3d-textures-303\4130-empire-tie-defender-red-%28sistros%29.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="new-3d-textures-303\4130-empire-tie-defender-red-512x512-%28metasharp%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="new-3d-textures-303\4130-tie-defender-red-big.bin">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
@@ -1557,6 +1770,9 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="new-3d-textures-303\4131-empire-tie-defender-blue-%28sistros%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-3d-textures-303\4131-empire-tie-defender-blue-512x512-%28metasharp%29.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="new-3d-textures-303\4131-tie-defender-blue-big.bin">
@@ -1568,6 +1784,9 @@
     <None Update="new-3d-textures-303\4132-empire-tie-defender-green-%28sistros%29.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="new-3d-textures-303\4132-empire-tie-defender-green-512x512-%28metasharp%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="new-3d-textures-303\4132-tie-defender-green-big.bin">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
@@ -1575,6 +1794,9 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="new-3d-textures-303\4133-empire-tie-defender-gold-%28sistros%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-3d-textures-303\4133-empire-tie-defender-gold-512x512-%28metasharp%29.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="new-3d-textures-303\4133-tie-defender-yellow-big.bin">
@@ -1586,10 +1808,16 @@
     <None Update="new-3d-textures-303\4134-empire-tie-defender-gray-%28sistros%29.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="new-3d-textures-303\4134-empire-tie-defender-gray-512x512-%28metasharp%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="new-3d-textures-303\4134-tie-defender-gray-big.bin">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="new-3d-textures-303\4134-tie-defender-gray-big.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-3d-textures-303\4135-empire-tie-defender-red-128x128-%28metasharp%29.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="new-3d-textures-303\4135-empire-tie-defender-red-small-%28sistros%29.bmp">
@@ -1601,6 +1829,9 @@
     <None Update="new-3d-textures-303\4135-tie-defender-red-small.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="new-3d-textures-303\4136-empire-tie-defender-blue-128x128-%28metasharp%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="new-3d-textures-303\4136-empire-tie-defender-blue-small-%28sistros%29.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
@@ -1608,6 +1839,9 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="new-3d-textures-303\4136-tie-defender-blue-small.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-3d-textures-303\4137-empire-tie-defender-green-128x128-%28metasharp%29.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="new-3d-textures-303\4137-empire-tie-defender-green-small-%28sistros%29.bmp">
@@ -1619,6 +1853,9 @@
     <None Update="new-3d-textures-303\4137-tie-defender-green-small.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="new-3d-textures-303\4138-empire-tie-defender-gold-128x128-%28metasharp%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="new-3d-textures-303\4138-empire-tie-defender-gold-small-%28sistros%29.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
@@ -1626,6 +1863,9 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="new-3d-textures-303\4138-tie-defender-yellow-small.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-3d-textures-303\4139-empire-tie-defender-gray-128x128-%28metasharp%29.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="new-3d-textures-303\4139-empire-tie-defender-gray-small-%28sistros%29.bmp">
