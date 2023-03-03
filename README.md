@@ -21,7 +21,7 @@ To buy the game or get free fan mods, check : https://swrebellion.net/
 ### Beta Roadmap (current) :
 * 200 system sprites (180/200 done)
 * 200 encyclopedia sprites (125/200 done)
-* 200 encyclopedia descriptions (~60/200 done)
+* 200 encyclopedia descriptions (~103/200 done)
 * 29 higher definition models for capital ships (23/29 done)
 
 ### Final Roadmap (low chance i'll invest time on it):
