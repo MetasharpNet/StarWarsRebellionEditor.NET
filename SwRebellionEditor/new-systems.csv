@@ -54,9 +54,9 @@ Coordinates: P-11, Hyperspace routes: -
 
 Geology: Planet, Temperate, Varried
 Species: Bouncer 
-Economy: 
+Economy: Primary, Ore extraction
 
-History: 
+History: TBD
 
 Appearances: Clone Wars, Atlas
 "
@@ -166,9 +166,9 @@ Coordinates: H-6, Hyperspace routes: -
 
 Geology: Planet, Radioactive, Arid
 Species: Mixed
-Economy: -
+Economy: None
 
-History: Parnassos was settled during the Republic Era by Con Star Mining Corporation, which wanted to exploit the planet for its metals and minerals. Con Star also established several settlements throughout the planet with laboratories, factories, mines, and houses for the colonists. Con Star also built a powerful automated orbital defense system around the planet. However a poorly maintained reactor at an unidentified Con Star station malfunctioned, devastating the planet's environment. The surrounding land was reduced to a radioactive wasteland called the ""dead lands."" Much of the surrounding continent was reduced to a barren desert.
+History: Parnassos was settled during the Republic Era by Con Star Mining Corporation, which wanted to exploit the planet for its metals and minerals. Con Star also established several settlements throughout the planet with laboratories, factories, mines, and houses for the colonists. Con Star also built a powerful automated orbital defense system around the planet. However a poorly maintained reactor at an unidentified Con Star station malfunctioned, devastating the planet's environment. The surrounding land was reduced to a radioactive wasteland called the dead lands. Much of the surrounding continent was reduced to a barren desert.
 
 Appearances: Atlas"
 The Redoubt;117;11799;Unknown Regions;168;394;Rim;173;"[CANON] Sector: Unknown Regions
@@ -176,7 +176,7 @@ Coordinates: H-7, Hyperspace routes: 2
 
 Geology: Planet x10
 Species: Chiss
-Economy: -
+Economy: None
 
 History: The Redoubt, formally the Chiss Redoubt, was a remote star cluster that was located in Chiss space, near the Utegetu Nebula, and that contained at least ten habitable planets and hundreds of stars. A planetoid in The Redoubt was the resting place of the ill-fated Outbound Flight Project, which crashed there.
 
@@ -186,7 +186,7 @@ Coordinates: D-13, Hyperspace routes: -
 
 Geology: Planet, Wet, Swamp, Ocean
 Species: Human
-Economy: -
+Economy: unknown
 
 History: A world with a significant southern ocean and swamps that cover the planet's surface including the Endless Swamp, a semi-solid area filled with massive, overgrown trees. The planet also has a unique connection to the Force being balanced between the light and dark sides of the Force, similar to Odessen. Zakuul is home to an immigrated Human population along with the native Iknayid but other creatures were present also and even adapted to their environment. The planet also possessed advanced technology with several cities spread throughout the world branching off from the Spire and being the resting place of the Eternal Throne. In the distant past they waged war with both the Republic and the Sith empire.
 
@@ -195,8 +195,8 @@ Zonama Sekot;119;11801;Unknown Regions;167;441;Rim;199;"[LEGENDS] Sector: Unknow
 Coordinates: F-13, Hyperspace routes: -
 
 Geology: Planet
-Species: -
-Economy: -
+Species: None
+Economy: None
 
 History: Zonama Sekot was an astronomical object located in the Unknown Regions. It was situated in an otherwise empty and unexplored area, in the neighborhood of the planets Ahch-To and Rakata Prime.
 
@@ -226,11 +226,11 @@ Appearances:
 Earth;122;11810;Mid Rim North;389;226;Rim;54;"[CANON] Sector: Mid Rim North
 Coordinates: K-6, Hyperspace routes: -
 
-Geology: Planet, Tererestrial, Varried
+Geology: Planet, Terrestrial, Tarried
 Species: Human
 Economy: Unknown
 
-History: Earth is a world in the norther border of outer rim territory. The planet is habitable to humans,  however due to it's remote location it has not been investigated by the Republic or it's member states, nor has it been incorporated into the Galactic Empire. However it is rumoured that a population of primitive Human's dwell there. 
+History: Earth is a world in the norther border of outer rim territory. The planet is habitable to humans,  however due to it's remote location it has not been investigated by the Republic or it's member states, nor has it been incorporated into the Galactic Empire. However it is rumored that a population of primitive Human's dwell there. 
 
 Appearances: 
 "
@@ -259,8 +259,8 @@ Appearances:
 Ithor;125;11813;Mid Rim North;414;237;Rim;80;"[CANON] Sector: Mid Rim North
 Coordinates: M-6, Hyperspace routes: 2
 
-Geology: Planet, 
-Species: 
+Geology: Planet, Temperate, Forest, Oceans 
+Species: Ithorians
 Economy: Primary, Foodstuffs, Botanicals, Medicine, Spices
 
 History: Ithor is a beautiful forest planet.  The planet is inhabited by beings called Ithorians, who live in great floating cities.  The Ithorians rarely if ever set foot in the forests below their cities and consider these forests sacred.
@@ -270,138 +270,138 @@ Keitum;126;11814;Mid Rim North;364;226;Rim;91;"[CANON] Sector: Mid Rim North
 Coordinates: J-6, Hyperspace routes: 1
 
 Geology: Planet
-Species: 
-Economy: 
+Species: Unknown
+Economy: Unknown
 
-History: 
+History: A planet in the mid rim. The City of Catherston is located on the planet. The planet has a hyperspace route to ansion.
 
 Appearances: Rebels
 "
 Mygeeto;127;11815;Mid Rim North;391;185;Rim;115;"[CANON] Sector: Mid Rim North
 Coordinates: K-5, Hyperspace routes: 2
 
-Geology: Planet
-Species: 
-Economy: 
+Geology: Planet, Frigid, Frozen
+Species: Lurmen, Muun
+Economy: Primary, Crystals
 
-History: 
+History: TBD
 
 Appearances: Episode 3, Rebels, Atlas
 "
 Ord Mantell;128;11816;Mid Rim North;399;258;Rim;127;"[CANON] Sector: Mid Rim North
 Coordinates: L-7, Hyperspace routes: 3
 
-Geology: Planet
-Species: 
-Economy: 
+Geology: Planet, Temperate, Varied
+Species: Human, Mixed
+Economy: Secondary, Manufacturing
 
-History: 
+History: TBD
 
 Appearances: Clone Wars, SWG, SWTOR
 "
 Yaga Minor;129;11817;Mid Rim North;371;188;Rim;192;"[CANON] Sector: Mid Rim North
 Coordinates: K-5, Hyperspace routes: 2
 
-Geology: Planet
-Species: 
-Economy: 
+Geology: Planet, Temperate, High Gravity, Forests, mountains, Oceans
+Species: Human, Yagai
+Economy: Secondary, Manufacturing, Shipbuilding
 
-History: 
+History: An industrialized world in the outer rim. The planet is home to a large shipyard along side several other industrial operations. 
 
 Appearances: -"
 Chardaan;130;11824;Core Worlds South;527;524;Core;29;"[CANON] Sector: Core Worlds South
 Coordinates: N-13, Hyperspace routes: 4
 
 Geology: Planet
-Species: 
-Economy: 
+Species: Humans
+Economy: Secondary, Shipbuilding
 
-History: 
+History: During the clone wars Chardaan was the headquarters of the Republic 16th sector army. 
 
 Appearances: 
 "
 Corellia;131;11825;Core Worlds South;488;448;Core;34;"[CANON] Sector: Core Worlds South
 Coordinates: M-11, Hyperspace routes: 3
 
-Geology: Planet, 
-Species: 
-Economy: 
+Geology: Planet, Temperate, Forests, Jungles, Oceans
+Species: Human, Mixed
+Economy: Secondary, Manufacturing, Shipbuilding
 
-History: Corellia has a rich history dating back before the time of the Old Republic.  It is suspected that Corellia and its four sister planets were not always in the system, but were moved there by some unknown race.  Huge repulsorlifts and hyperdrives beneath the surface of the planets lend substance to this theory.  Corellia is best known for her vast shipyards and excellent pilots.
+History: TBD Corellia is best known for her vast shipyards and excellent pilots.
 
 Appearances: Clone Wars, Rebels, SWG, SWTOR, Atlas"
 Denon;132;11826;Core Worlds South;524;498;Core;46;"[CANON] Sector: Core Worlds South
 Coordinates: N-13, Hyperspace routes: 4
 
-Geology: Planet
-Species: 
-Economy: 
+Geology: Planet, Ecumenopolis
+Species: Human
+Economy: Tertiary
 
-History: 
+History: Denon is an ancient conservative planet. Like Coruscant, the planet's surface is covered in a single massive city. It is second only to Coruscant in size and population. 
 
 Appearances: 
 "
 Devaron;133;11827;Core Worlds South;469;518;Core;47;"[CANON] Sector: Core Worlds South
 Coordinates: M-13, Hyperspace routes: -
 
-Geology: Planet
-Species: 
-Economy: 
+Geology: Planet, Temperate, Jungle, Deep valleys, Low mountains
+Species: Deveronians
+Economy: Primary, Labor, Wanderers
 
-History: 
+History: TBD
 
 Appearances: Clone Wars
 "
 Duro;134;11828;Core Worlds South;469;451;Core;52;"[CANON] Sector: Core Worlds South
 Coordinates: M-11, Hyperspace routes: 3
 
-Geology: Planet
-Species: 
-Economy: 
+Geology: Planet, Temperate, Toxic, Jungle
+Species: Duros, Human, Rodian
+Economy: Secondary, Starships, Starship parts, Technology
 
-History: 
+History: TBD Homeworld of the Duros
 
 Appearances: Atlas
 "
 Hosnian Prime;135;11829;Core Worlds South;498;492;Core;74;"[CANON] Sector: Core Worlds South
 Coordinates: M-12, Hyperspace routes: 2
 
-Geology: Planet
-Species: 
-Economy: 
+Geology: Planet, Ecumenopolis
+Species: Human, Pantoran, Mixed
+Economy: Tertiary 
 
-History: 
+History: Hosnian prime is an Ecumenopolis located along the Corellian Trade Spine. During the waning years of the Galactic Republic, Hosnian Prime hosted a factory complex run by Czerka Arms, an arms manufacturer whose activities included the use of slavery.
 
 Appearances: Episode 7
 "
 Nubia;136;11830;Core Worlds South;474;469;Core;124;"[LEGENDS] Sector: Core Worlds South
 Coordinates: M-11, Hyperspace routes: 4
 
-Geology: Planet
-Species: 
-Economy: 
+Geology: Planet, Temperate, Urban
+Species: Human
+Economy: Varied, Foodstuffs, Ore, Starship parts, Astromech droids
 
-History: 
+History: Nubia is a small temperate world. The headquarters of Nubian Star Drives is located on this world, as is the headquarters of industrial automation droid factories and several other corporations. 
 
 Appearances: Atlas
 "
 Quarzite;137;11831;Core Worlds South;504;515;Core;136;"[CANON] Sector: Core Worlds South
 Coordinates: M-13, Hyperspace routes: -
 
-Geology: Planet
-Species: 
-Economy: 
+Geology: Planet, Cool, High pressure atmosphere, Crystal caverns
+Species: Belugan, Kage
+Economy: Unknown
 
-History: 
+History: TBD
 
 Appearances: Clone Wars, Rebels
 "
 Talus;138;11832;Core Worlds South;492;466;Core;166;"[CANON] Sector: Core Worlds South
 Coordinates: M-11, Hyperspace routes: 3
 
-Geology: Planet, 
-Species: 
-Economy: 
+Geology: Planet, Temperate, Varied
+Species: Human, Mixed
+Economy: Primary, Foodstuffs, Mineral extraction, Metals
 
 History: Talus shares its orbit with its sister planet Tralus, they both have the same center of gravity.  Talus has a myriad of climates throughout its atmosphere that would be hospitable to a great many galactic citizens.
 
@@ -409,9 +409,9 @@ Appearances: SWG"
 Tralus;139;11833;Core Worlds South;507;448;Core;177;"[CANON] Sector: Core Worlds South
 Coordinates: M-11, Hyperspace routes: 3
 
-Geology: Planet, 
-Species: 
-Economy: 
+Geology: Planet, Temperate, Varied
+Species: Human, Mixed
+Economy: Primary, Foodstuffs, Mineral extraction, Metals
 
 History: Tralus shares its orbit with its sister planet Talus, they both have the same center of gravity.  Talus is quite hospitable to most sentient beings of the galaxy due to its many climates.
 
@@ -430,22 +430,22 @@ Appearances:
 Dantooine;141;11841;Outer Rim North;418;131;Rim;42;"[CANON] Sector: Outer Rim North
 Coordinates: L-4, Hyperspace routes: 4
 
-Geology: Planet
-Species: 
-Economy: 
+Geology: Planet, Temperate, Varied
+Species: Human
+Economy: Primary, Foodstuffs
 
-History: 
+History: Dantooine is a quiet rural world in the outer rim. It was settled in the early days of the republic and was home to a Jedi temple. Dantooine was also home to a rebel base up until recently.
 
-Appearances: Episode 4, Clone Wars, Rebels, Star Wars Galaxies, Kotor 1, Kotor 2, Attlas
+Appearances: Episode 4, Clone Wars, Rebels, Star Wars Galaxies, Kotor 1, Kotor 2, Atlas
 "
 Dubrillion;142;11842;Outer Rim North;410;104;Rim;51;"[CANON] Sector: Outer Rim North
 Coordinates: K-3, Hyperspace routes: 4
 
-Geology: 
-Species: 
-Economy: 
+Geology: Planet, Ocean, Lush green continents
+Species: Human
+Economy: Tertiary, Asteroid mining, Tourism
 
-History: 
+History: Dubrillion is a planet with beautiful oceans and lush green continents, framed with fluffy white clouds. It is the sister world of Destrillion, and is near by to both Dantooine and Muunilinst. 
 
 Appearances: 
 "
@@ -453,76 +453,80 @@ Jaemus;143;11843;Outer Rim North;397;127;Rim;81;"[CANON] Sector: Outer Rim North
 Coordinates: K-4, , Hyperspace routes: 4
 
 Geology: Planet
-Species: 
-Economy: 
+Species: Human
+Economy: Secondary, Shipbuilding
 
-History: 
+History: Jaemus is a planet with Galentro Heavy Works shipyards comparable in size to Sluis Van. During the Clone Wars, the planet was a member of the Confederacy of Independent Systems. It shares its name with two subsidiaries of Sienar Fleet Systems
 
 Appearances: 
 "
 Kalee;144;11844;Outer Rim North;377;127;Rim;85;"[CANON] Sector: Outer Rim North
 Coordinates: J-4, , Hyperspace routes: 0
 
-Geology: Planet
-Species: 
-Economy: 
+Geology: Varied climate, Canyons, Rain forests, Seas
+Species: Kaleesh
+Economy: Primary, Exotic animals, Mercenaries
 
-History: 
+History: Kalee is a planet located in Wild Space and the homeworld of the Kaleesh species. Grievous, a male Kaleesh warlord, was from this world.
+
+Years before the Clone Wars, the Republic frequently overlooked the requests of peripheral worlds, and Kalee was one of many planets that endured injustices as a result of this regime's indifference. The Kaleesh became a victim of the devastating Yam'rii, a greedy, technologically-advanced insectoid species from the planet Huk, who sold them as slaves.
 
 Appearances: Atlas
 "
 Lah'Mu;145;11845;Outer Rim North;430;111;Rim;96;"[CANON] Sector: Outer Rim North
 Coordinates: L-3, Hyperspace routes: -
 
-Geology: Planet
-Species: 
-Economy: 
+Geology: Planet, Temperate, Black sand beaches, Fertile lowlands, Plateaus, Mountains
+Species: Human
+Economy: Primary, Foodstuffs
 
-History: 
+History: Lah'mu is a ringed agrarian planet in the Raioballo sector of the Outer Rim Territories. Its is home to a small population of settlers. 
+
+Early in its geographic life, Lah'mu's crust split numerous times, bringing minerals and soils to the surface that would later be farmed by the planet's sparse settlers. 
 
 Appearances: Rogue One
 "
 Mortis;146;11846;Outer Rim North;404;74;Rim;112;"[CANON] Sector: Outer Rim North
 Coordinates: K-2, Hyperspace routes: -
 
-Geology: Planet
-Species: 
-Economy: 
+Geology: Ethereal realm, Artifact, Dreamlike environments
+Species: None
+Economy: None
 
-History: 
+History: Mortis is an ethereal realm within the Force which was whispered over in legends and stories passed down through the millennia.
 
 Appearances: Clone Wars
 "
 Muunilinst;147;11847;Outer Rim North;397;147;Rim;114;"[CANON] Sector: Outer Rim North
 Coordinates: K-4, Hyperspace routes: 3
 
-Geology: Planet
-Species: 
-Economy: 
+Geology: Planet, Temperate, Forests, Plains, Hills, Mountains 
+Species: Muun
+Economy: Tertiary, Finance, Banking, Ore extraction, Metals
 
-History: 
+History: Muunilinst is a mineral rich planet located in the galaxy's Outer Rim Territories that was home to a division of the InterGalactic Banking Clan and inhabited by members of the Muun species.
 
 Appearances: Clone Wars
 "
 Ord Trasi;148;11848;Outer Rim North;421;150;Rim;128;"[CANON] Sector: Outer Rim North
 Coordinates: L-4, Hyperspace routes: 4
 
-Geology: Planet
-Species: 
-Economy: 
+Geology: Planet, Cool, Arid
+Species: Humans, Wookiees
+Economy: Secondary, Ore extraction, Shipbuilding
 
-History: 
+History: Ord Trasi is a planet rich in natural resources such as metals, minerals, ores and crystals. This allowed the planet to become a major shipbuilding world. Space platforms completely encircled the planet.
 
-Appearances: 
+Appearances: Star wars Rebellion Original
 "
 Sernpidal;149;11849;Outer Rim North;435;89;Rim;151;"[CANON] Sector: Outer Rim North
 Coordinates: L-3, Hyperspace routes: 3
 
-Geology: Planet
-Species: 
-Economy: 
+Geology: Planet, Dry, Deserts, Ravines, Seas
+Species: Sernpidalan
+Economy: Primary, Ore Extraction, Metals
 
-History: 
+History: TBD
 
 Appearances: Atlas
 "
@@ -553,7 +557,7 @@ Coordinates: M-9, Hyperspace routes: -
 
 Geology: Planet, Temperate, Baren, Mountainous, Urban
 Species: Human
-Economy: Tertiary, Millitary training, Technology, Mixed industry
+Economy: Tertiary, Military training, Technology, Mixed industry
 
 History: Carida is a mountainous planet located within the Colonies region of the galaxy. During the Clone Wars, the Valor space station orbited the planet. Now it is home to a major imperial academy and naval dock. 
 
@@ -594,7 +598,7 @@ Appearances: Atlas
 Neimoidia;156;11862;Colonies;533;401;Core;120;"[CANON] Sector: Colonies
 Coordinates: M-10, Hyperspace routes: 2
 
-Geology: Planet, Hot, Humid, Rainforests, Desert
+Geology: Planet, Hot, Humid, Rain forests, Desert
 Species: Nemoidian, Duros
 Economy: Primary, Agriculture
 
@@ -640,7 +644,7 @@ Coordinates: G-16, Hyperspace routes: 1
 
 Geology: Planet, Temperate, Varied
 Species: -
-Economys: Secondary, Manufactured goods, Repulsorlift coils, Metal extraction
+Economy: Secondary, Manufactured goods, Repulsorlift coils, Metal extraction
 
 History: Bakura, is a rich, green and blue planet, located on the isolated edge of Wild Space, and was the homeworld of the indigenous Kurtzen and isolated humans colonisers known as Bakurans. Bakura's primary industry was the manufacture of repulsorlift coils.
 
@@ -692,55 +696,57 @@ Appearances:
 Karfeddion;165;11877;Outer Rim West;337;680;Rim;88;"[CANON] Sector: Outer Rim West
 Coordinates: L-18, Hyperspace routes: 6
 
-Geology: Planet
-Species: 
-Economy: 
+Geology: Planet, Mild, Temperate, Agriculture
+Species: Humans, Mixed
+Economy: Primary, Foodstuffs, Slaves
 
-History: 
+History: Karfeddion is a terrestrial planet located in the Senex sector
 
 Appearances: 
 "
 Kef Bir;166;11878;Outer Rim West;308;657;Rim;90;"[CANON] Sector: Outer Rim West
 Coordinates: H-16, Hyperspace routes: -
 
-Geology: Moon
-Species: 
-Economy: 
+Geology: Moon, Ocean
+Species: Human
+Economy: None
 
-History: 
+History: Kef Bir, is known as the Ocean Moon of Endor, it is an ocean moon orbiting the gas giant Endor, the same Gas giant as the Forrest moon of the same name. 
 
-Appearances: 
+Appearances: Episode IX
 "
 Rattatak;167;11879;Outer Rim West;312;621;Rim;141;"[CANON] Sector: Outer Rim West
 Coordinates: H-16, Hyperspace routes: 0
 
 Geology: Planet
-Species: 
-Economy: 
+Species: Rattataki, Mixed
+Economy: Unknown
 
-History: 
+History: Rattatak is an Outer Rim world that was unknown to the Galactic Republic at the beginning of the Clone Wars. 
+
+Rattatak is a dry, arid, mountainous planet covered in red rock. Most settlements appeared to be hewn into the rock itself. Rattatak's climate was too harsh to sustain widespread agriculture.
 
 Appearances: Clone Wars, Atlas
 "
 Sullust;168;11880;Outer Rim West;362;676;Rim;162;"[CANON] Sector: Outer Rim West
 Coordinates: M-17, Hyperspace routes: 2
 
-Geology: Planet
-Species: 
-Economy: 
+Geology: Planet, Hot, Volcanoes, Lava Streams, Lakes
+Species: Sullustan, Human
+Economy: Secondary, Manufacturing, Shipbuilding
 
-History: 
+History: Sullust is a barren, volcanic world, the homeworld of the Sullustan species. Half of the worlds population was employed by the SoroSuub Corporation. Sullust is a major manufacturing and shipbuilding world. 
 
 Appearances: Clone Wars, Rebels, Battlefront 1, Atlas
 "
 Takodana;169;11881;Outer Rim West;331;624;Rim;165;"[CANON] Sector: Outer Rim West
 Coordinates: J-16, Hyperspace routes: 2
 
-Geology: Planet
-Species: 
-Economy: 
+Geology: Planet, Hot, Humid, Forests, Seas
+Species: Mixed
+Economy: None
 
-History: 
+History: Takodana is a remote, neutral planet that is covered in lush forests.
 
 Appearances: Episode 7, Rebels, Battlefront 2
 "
@@ -762,7 +768,7 @@ Geology: Planet, Hot, Dry, Salt Flats
 Species: None
 Economy: None
 
-History: A dry, saltyflat covered world in the middle of nowhere. The surface of the world hostile, however there may be underground water reserves on the planet. The slow degredation of solid oxygen crystals has made the atmosphere breathable to humans, dispite a lack of plantlife. Due to it's remote location, it makes for a good hiding spot for a rebel base.
+History: A dry, saltyflatt covered world in the middle of nowhere. The surface of the world hostile, however there may be underground water reserves on the planet. The slow degradation of solid oxygen crystals has made the atmosphere breathable to humans, despite a lack of plantlife. Due to it's remote location, it makes for a good hiding spot for a rebel base.
 
 Appearances: Episode 8, Battlefront 2
 "
@@ -1184,7 +1190,7 @@ Appearances: SWTOR
 Abregado-rae;210;12048;Deep Core;377;493;Rim;1;"[CANON] Sector: Deep Core
 Coordinates: K13, Hyperspace routes: 2
 
-Geology: Planet. Temperate, Varried
+Geology: Planet. Temperate, Varied
 Species: Gados, Humans
 Economy: Tertiary, Trade, Technology
 
