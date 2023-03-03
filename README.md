@@ -17,12 +17,13 @@ To buy the game or get free fan mods, check : https://swrebellion.net/
 * Export : Systems
 * Other features in testing accessible in menus only
 * Patch : Star Wars Rebellion 25th Anniversary patch beta (work in progress) : 200 individual systems sprites, new galaxy map, systems & sector names
+* 80 high definition sprites for space fighters (80/80 done)
 
-### Beta Roadmap (current) :
+### Current Roadmap:
 * 200 system sprites (180/200 done)
 * 200 encyclopedia sprites (125/200 done)
 * 200 encyclopedia descriptions (~103/200 done)
-* 29 higher definition models for capital ships (23/29 done)
+* 29 high definition 3d models for capital ships (23/29 done)
 
 ### Final Roadmap (low chance i'll invest time on it):
 * Cleanup code on rarely used windows
