@@ -3680,6 +3680,9 @@
     <None Update="new-systems-sprites\14054-earth.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="new-systems-sprites\14055-empress teta.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="new-systems-sprites\14056-endor %28moon%29 %28atlas%29.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
@@ -3687,6 +3690,9 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="new-systems-sprites\14058-esseles.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-systems-sprites\14059-exegol.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="new-systems-sprites\14060-exodeen.bmp">
@@ -3705,6 +3711,9 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="new-systems-sprites\14065-formos.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-systems-sprites\14066-gamor.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="new-systems-sprites\14067-gamorr %28atlas%29.bmp">
@@ -3743,7 +3752,16 @@
     <None Update="new-systems-sprites\14078-iridonia.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="new-systems-sprites\14079-isde-naha.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="new-systems-sprites\14080-ithor %28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-systems-sprites\14081-jaemus.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-systems-sprites\14082-jakku.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="new-systems-sprites\14083-jedha %28moon%29.bmp">
@@ -3773,7 +3791,13 @@
     <None Update="new-systems-sprites\14090-kef bir %28moon%29.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="new-systems-sprites\14091-keitum.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="new-systems-sprites\14092-kessel %28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-systems-sprites\14093-kimiji.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="new-systems-sprites\14094-korriban %28atlas%29.bmp">
@@ -3789,6 +3813,9 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="new-systems-sprites\14098-lothal.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-systems-sprites\14099-lotho minor.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="new-systems-sprites\14100-lutrillia.bmp">
@@ -3818,10 +3845,16 @@
     <None Update="new-systems-sprites\14108-mimban %28circarpous v%29 %28atlas%29.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="new-systems-sprites\14109-mirial.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="new-systems-sprites\14110-mon calamari %28atlas%29.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="new-systems-sprites\14111-mon gazza.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-systems-sprites\14112-mortis.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="new-systems-sprites\14113-mustafar %28atlas%29.bmp">
@@ -3953,6 +3986,9 @@
     <None Update="new-systems-sprites\14156-sleheyron.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="new-systems-sprites\14157-sluis van.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="new-systems-sprites\14158-smuggler%27s-run.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
@@ -3962,10 +3998,16 @@
     <None Update="new-systems-sprites\14160-sorgan.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="new-systems-sprites\14161-sriluur.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="new-systems-sprites\14162-sullust %28atlas%29.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="new-systems-sprites\14162-sullust.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-systems-sprites\14163-sy-myrth.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="new-systems-sprites\14164-taanab %28atlas%29.bmp">
@@ -4031,6 +4073,9 @@
     <None Update="new-systems-sprites\14184-utapau %28atlas%29.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="new-systems-sprites\14185-vandor-1.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="new-systems-sprites\14186-vinsoth.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
@@ -4046,7 +4091,13 @@
     <None Update="new-systems-sprites\14190-word tandell.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="new-systems-sprites\14191-wroona-%28moon%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="new-systems-sprites\14192-yaga minor.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-systems-sprites\14193-yag%27dhul.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="new-systems-sprites\14194-yavin 4 %28moon%29 %28atlas%29.bmp">
