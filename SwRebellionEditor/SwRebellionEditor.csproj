@@ -3617,6 +3617,9 @@
     <None Update="new-systems-sprites\14036-coruscant %28atlas%29.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="new-systems-sprites\14036-coruscant.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="new-systems-sprites\14037-crait.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
