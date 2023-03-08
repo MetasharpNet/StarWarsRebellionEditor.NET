@@ -273,7 +273,7 @@ Geology: Planet
 Species: Unknown
 Economy: Unknown
 
-History: A planet in the mid rim. The City of Catherston is located on the planet. The planet has a hyperspace route to ansion.
+History: A planet in the mid rim. The City of Catherston is located on the planet. The planet has a hyperspace route to Ansion.
 
 Appearances: Rebels
 "
@@ -768,51 +768,51 @@ Geology: Planet, Hot, Dry, Salt Flats
 Species: None
 Economy: None
 
-History: A dry, saltyflatt covered world in the middle of nowhere. The surface of the world hostile, however there may be underground water reserves on the planet. The slow degradation of solid oxygen crystals has made the atmosphere breathable to humans, despite a lack of plantlife. Due to it's remote location, it makes for a good hiding spot for a rebel base.
+History: A dry, world covered in a layer of saltflats in the middle of nowhere. The surface of the world hostile, however there may be underground water reserves on the planet. The slow degradation of solid oxygen crystals has made the atmosphere breathable to humans, despite a lack of plant life Due to it's remote location, it makes for a good hiding spot for a rebel base.
 
 Appearances: Episode 8, Battlefront 2
 "
 D'Qar;172;11890;Mid Rim South;548;671;Core;49;"[CANON] Sector: Mid Rim South
 Coordinates: O-17, Hyperspace routes: -
 
-Geology: Planet
-Species: 
-Economy: 
+Geology: Planet, Temperate, Jungle
+Species: None
+Economy: None
 
-History: 
+History: D'Qar is a verdant world in the outer rim. It was once home to a civilization that has since disappeared, leaving behind ruins. The planet is also sited as a candidate for a rebel base. 
 
 Appearances: Episode 7, Episode 8, Battlefront 2
 "
 Farstine;173;11891;Mid Rim South;567;671;Core;61;"[CANON] Sector: Mid Rim South
 Coordinates: P-17, Hyperspace routes: 3
 
-Geology: Planet
-Species: 
-Economy: 
+Geology: Planet, Methane atmosphere
+Species: Human, Mixed
+Economy: Tertiary
 
-History: 
+History: TBD
 
 Appearances: 
 "
 Malastare;174;11892;Mid Rim South;509;668;Core;103;"[CANON] Sector: Mid Rim South
 Coordinates: N-16, Hyperspace routes: 2
 
-Geology: Planet
-Species: 
-Economy: 
+Geology: Planet, Temperate, Forest
+Species: Dug, Gran, Human
+Economy: Secondary, Manufacturing, Fuel
 
-History: 
+History: Malastare is forest world in the Mid Rim. It is the homeworld of the Dug species, though it was represented in the Galactic Senate by the Gran species, who had colonised Malastare. The planets core is home to large reserves of a special Malastarian fuel, a toxic fuel found only on Malastare.
 
 Appearances: Clone Wars, Atlas
 "
 Naboo;175;11893;Mid Rim South;563;653;Core;116;"[CANON] Sector: Mid Rim South
 Coordinates: O-17, Hyperspace routes: 2
 
-Geology: Planet
-Species: 
-Economy: 
+Geology: Planet, Temperate, Varied, Subterranean ocean
+Species: Human, Gungan
+Economy: Tertiary, Culture, Wine, Grain
 
-History: 
+History: Naboo is a beautiful and peaceful world in the mid rim. The planet is ruled by an elected monarch, but it is firmly committed to democracy and peace. Naboo was originally the homeworld of the Gungans, however eventually human colonists settled the world. Conflict between Humans and the Gungans were only recently resolved after the battle of Naboo, where they joined forces to drive away an invasion force of the Trade federation. 
 
 Appearances: Episode 1, 2, 3, 6, Clone Wars, Rebels, SWG, Battlefront 1, 2, Atlas
 "
@@ -820,65 +820,65 @@ Pax;176;11894;Mid Rim South;528;654;Core;134;"[CANON] Sector: Mid Rim South
 Coordinates: N-16, Hyperspace routes: 4
 
 Geology: Planet
-Species: 
-Economy: 
+Species: Unknown
+Economy: Unknown
 
-History: 
+History: A world in the expansion region. 
 
 Appearances: 
 "
 Shadda-Bi-Boran;177;11895;Mid Rim South;561;689;Core;152;"[CANON] Sector: Mid Rim South
 Coordinates: O-18, Hyperspace routes: 0
 
-Geology: Planet
-Species: 
-Economy: 
+Geology: Planet remnant, Irradiated
+Species: None
+Economy: None
 
-History: 
+History: Shadda Bi Boran was previously a beautiful world, home to a sun worshiping civilization. However the host star went supernova, destroying the planet in the process. Padmé Amidala working with the Refugee Relief movement attempted to evacuate the world before it's destruction. However the native species eventually died out as they couldn't adapt to life on other worlds. 
 
 Appearances: Atlas
 "
 Wroona;178;11896;Mid Rim South;528;631;Core;191;"[CANON] Sector: Mid Rim South
 Coordinates: L-15, Hyperspace routes: 4
 
-Geology: Moon
-Species: 
-Economy: 
+Geology: Planet, Ocean, Forests, Mountains, Plains 
+Species: Wroonian, Mixed
+Economy: Tertiary, Technology, Luxury goods
 
-History: 
+History: Wroona is the homeworld of the near-Human Wroonians, who are distinguished by their blue skin and yellow irises. It is a small blue world located at the edge of the inner rim. It is covered by oceans divided by long continents. 
 
 Appearances: 
 "
 Yag'Dhul;179;11897;Mid Rim South;509;628;Core;193;"[CANON] Sector: Mid Rim South
 Coordinates: L-14, Hyperspace routes: 4
 
-Geology: 
-Species: 
-Economy: 
+Geology: Planet, Barren, Oceans
+Species: Givin
+Economy: Unknown
 
-History: 
+History: Yag'Dhul is the homeworld of the Givin species. The world is so harsh their organs are sealed away from the atmosphere and they could survive for some time in a Vacuum. It's 3 large moons produce tidal forces so extreme that the planets water and atmosphere are drawn to different parts of the planet, leaving the lest of the world in Vacuum. The Givin live in hermetically sealed cities. 
 
 Appearances: 
 "
 Cato Neimoidia;180;11904;Inner Rim;567;476;Core;26;"[CANON] Sector: Inner Rim
 Coordinates: N-11, Hyperspace routes: 1
 
-Geology: Planet
-Species: 
-Economy: 
+Geology: Planet, Temperate, Mountains, Plains, Forests
+Species: Neimoidian
+Economy: Tertiary, Droids, Foodstuffs, Technology, Commerce
 
-History: 
+History: Cato Neimoidia was one of the most prominent Purse worlds of the Neimoidians and the main headquarters of the Trade federation. The world was home to large bridge cities that were suspended over the planets acidic ocean and the persistent fog of the lowlands. While Cato Nemoidia tried to maintain it’s neutrality during the clone wars the trade federation was closely affiliated with the separatists. Eventually the planet fully joined the Separatists and was conquered by the republic. After the war, the trade federation was nationalized by the Galactic empire and then subsequently dissolved. 
 
 Appearances: Episode 3, Clone Wars, Rebels
 "
 Commenor;181;11905;Inner Rim;576;458;Core;32;"[CANON] Sector: Inner Rim
 Coordinates: N-10, Hyperspace routes: 4
 
-Geology: Planet
-Species: 
-Economy: 
+Geology: Planet, Varied
+Species: Human
+Economy: Secondary, Shipbuilding, Trade
 
-History: 
+History: Commenor is an ancient, conservative planet located in the Colonies region of the galaxy. Commenor joined the republic early on in republic history. 
 
 Appearances: 
 "
@@ -886,10 +886,10 @@ Exodeen;182;11906;Inner Rim;564;494;Core;60;"[CANON] Sector: Inner Rim
 Coordinates: M-12, Hyperspace routes: 3
 
 Geology: Planet
-Species: 
-Economy: 
+Species: Humans, Exodeenians
+Economy: Tertiary
 
-History: 
+History: Exodeen was the first major occupied world in a string of planets of the Colonies encountered on the Hydian's route 
 
 Appearances: 
 "
@@ -897,42 +897,42 @@ Gamor;183;11907;Inner Rim;575;517;Core;66;"[CANON] Sector: Inner Rim
 Coordinates: O-14, Hyperspace routes: 4
 
 Geology: Planet
-Species: 
-Economy: 
+Species: Mixed
+Economy: Unknown
 
-History: 
+History: TBD
 
 Appearances: 
 "
 Manaan;184;11908;Inner Rim;595;468;Core;104;"[CANON] Sector: Inner Rim
 Coordinates: O-11, Hyperspace routes: -
 
-Geology: Planet
-Species: 
-Economy: 
+Geology: Planet, Temperate, Ocean
+Species: Selkath
+Economy: Unknown
 
-History: 
+History: An ocean world in the inner rim. Manaan is the home of the Selkath species, who are dedicated to preserving their oceans. Mannan was once a very prominent world in the galaxy, as they were the sole producer of kolto, a rare material used for medical purposes. Though kolto would eventually be replaced by bacta, which eventually led to the republic losing interest in the neutral world. 
 
 Appearances: KOTOR 1, SWTOR
 "
 Milagro;185;11909;Inner Rim;580;535;Core;107;"[CANON] Sector: Inner Rim                                                                 
 Coordinates: O-14, Hyperspace routes: 4
 
-Geology: Planet
-Species: 
-Economy: 
+Geology: Planet, Thin atmosphere
+Species: Humans
+Economy: Secondary, Manufacturing, Trade
 
-History: 
+History: It is a prosperous trade and manufacturing world. Milagro is ruled by its own noble houses, descendants of the first settlers of the planet.
 
 Appearances: "
 Mimban;186;11910;Inner Rim;599;486;Core;108;"[CANON] Sector: Inner Rim
 Coordinates: O-12, Hyperspace routes: 2
 
-Geology: Planet
-Species: 
-Economy: 
+Geology: Planet, Humid, Mud fields, Rainforests, Swamps
+Species: Mimbanese, Greenie
+Economy: Primary, Mining
 
-History: 
+History: Formally known as Circarpous V, Mimban is a swamp world in the expansion region. The world featured deep hyperbaride mineral deposits, which has led multiple conflicts between the native Mimbanese and various mining companies who want to extract the resources for them selves.After the clone wars, the Galactic Empire sent the 224th division who had previously helped defend the world, to subjugate it and make the planets resources available to the empire. 
 
 Appearances: Solo, Atlas
 "
@@ -940,10 +940,10 @@ Nexus Ortai;187;11911;Inner Rim;618;535;Core;123;"[CANON] Sector: Inner Rim
 Coordinates: Q-14, Hyperspace routes: 4
 
 Geology: Planet
-Species: 
-Economy: 
+Species: Unknown
+Economy: Unknown
 
-History: 
+History: Nexus Ortai is a peaceful world in the mid rim. During the clone wars, the republic and the Confederacy fought over the world due to it’s strategic position. 
 
 Appearances: 
 "
@@ -951,21 +951,21 @@ Pasaana;188;11912;Inner Rim;604;504;Core;133;"[CANON] Sector: Inner Rim
 Coordinates: P-12, Hyperspace routes: -
 
 Geology: Planet
-Species: 
-Economy: 
+Species: Aki-Aki
+Economy: Primary, Dust farming
 
-History: 
+History: Pasaana is a desert world in the expansion region. It is the homeworld of the Aki-Aki species and is known for it�s festival of the ancestors. 
 
 Appearances: Episode 9
 "
 Vandor-1;189;11913;Inner Rim;599;531;Core;185;"[LEGENDS] Sector: Inner Rim
 Coordinates: P-14, Hyperspace routes: -
 
-Geology: Planet
-Species: 
-Economy: 
+Geology: Planet, Frigid, Plains, Mountains, Rivers
+Species: Human
+Economy: None
 
-History: 
+History: Vandor is a cold frontier world in the mid rim. The planet was discovered by the republic scout service, later an ambitious settlement was established by the Ypsobay trading company. Unfortunately this initial settlement failed and most of the settlers left the world. The planet however remains sparsely inhabited. 
 
 Appearances: Solo
 "
@@ -976,7 +976,7 @@ Geology: Planet
 Species: Human, Mixed
 Economy: Secondary, Manufacturing, Heavy Industries, Mineral extraction
 
-History: Bonadan is the chief port world of the Corporate Sector, boasting 10 gigantic spaceports.Bonadan's yellow, parched surface was heavily eroded, and its topsoil had been destroyed due to constant drilling and construction. The once-beautiful landscape was scorched and barren from years of strip-mining, pollution, and mismanagement. The remaining surface was covered with factories, refineries, docks, and shipbuilding facilities. A massive weather-control station lay in the mountains to the north of the main cities.
+History: Bonadan is the chief port world of the Corporate Sector, boasting 10 gigantic spaceports. Bonadan's yellow, parched surface was heavily eroded, and its topsoil had been destroyed due to constant drilling and construction. The once-beautiful landscape was scorched and barren from years of strip-mining, pollution, and mismanagement. The remaining surface was covered with factories, refineries, docks, and shipbuilding facilities. A massive weather-control station lay in the mountains to the north of the main cities.
 
 Appearances: "
 Cantonica;191;11921;Tingel Arm;788;148;Rim;24;"[CANON] Sector: Tingel Arm
