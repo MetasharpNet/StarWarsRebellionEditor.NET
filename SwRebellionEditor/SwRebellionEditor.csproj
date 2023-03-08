@@ -2516,6 +2516,9 @@
     <None Update="new-systems-encyclopedia-pictures\14036-coruscant %28atlas%29.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="new-systems-encyclopedia-pictures\14036-coruscant.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="new-systems-encyclopedia-pictures\14038-csilla %28atlas%29.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
