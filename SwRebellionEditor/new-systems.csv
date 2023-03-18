@@ -1,206 +1,134 @@
 Planet;Id;TextStraDllId;New game sector;Rescaled X;Rescaled Y;Core/Rim;PictureId;EncyclopediaDescription
-Boz Pity;100;11776;Crossroads;698;349;Rim;21;"[CANON] Sector: Crossroads
-Coordinates: S-9, Hyperspace routes: 2 
-
+Boz Pity;100;11776;Crossroads;698;349;Rim;21;"Boz Pity (S-9, Crossroads, 2 Hyperlanes)
 Geology: Planet, Hot, Dry, Desert, Plains
 Species: -
 Economy: -
-
 History: During the High Republic Era, it was considered a key member of the Galactic Republic, and received a sky-island with a representation of its environment at the Valo Republic Fair. By the time of the Clone Wars, Boz Pity was largely uninhabited. The planet was used as staging area by the CIS for raids against the Galactic republic.
-
 Sources: Rebels, Atlas"
-Kashyyyk;101;11777;Crossroads;678;369;Rim;89;"[CANON] Sector: Crossroads
-Coordinates: P-9, Hyperspace routes: 6
-
+Kashyyyk;101;11777;Crossroads;678;369;Rim;89;"Kashyyyk (P-9, Crossroads, 6 Hyperlanes)
 Geology: Planet, Temperate, Wet, Jungle
 Species: Wookiees
-Economy: Slaves, Imperial manufactured goods
-
+Economy: Slaves, Manufactured goods
 History: TBD
-
 Sources: Clone Wars, Rebels, SWG, KOTOR 1, BattleField 1, BattleField 2, Atlas"
-Kijimi;102;11778;Crossroads;673;331;Rim;93;"[CANON] Sector: Crossroads
-Coordinates: R-8, Hyperspace routes: -
-
+Kijimi;102;11778;Crossroads;673;331;Rim;93;"Kijimi (R-8, Crossroads)
 Geology: Planet, Cold, Mountainous
 Species: Human, Anzellan, Boosodian
 Economy: Spice
-
-History: Once famed for its marked spirituality, the planet became known as a haven for criminals. The Largest city on the planet, Kijimi City is home to many temples and monestaries.
-
+History: Once famed for its marked spirituality, the planet became known as a haven for criminals. The Largest city on the planet, Kijimi City is home to many temples and monestaries. TBD
 Sources: Episode 9"
-Onderon;103;11779;Crossroads;640;368;Rim;126;"[CANON] Sector: Crossroads
-Coordinates: O-9, Hyperspace routes: 2
-
+Onderon;103;11779;Crossroads;640;368;Rim;126;"Onderon (O-9, Crossroads, 2 Hyperlanes)
 Geology: Planet, Temperate, Jungle
 Species: Human
 Economy: Spice
-
-History: Onderon and its 4 moons we're key worlds during the Mandalorian wars. During the Clone Wars, Onderon joined the Confederacy of Independent Systems. It was annexed by the Galactic Empire after the war. The resistance fighter Saw Gerrera hails from Onderon.
-
+History: Onderon and its 4 moons we're key worlds during the Mandalorian wars. During the Clone Wars, Onderon joined the Confederacy of Independent Systems. It was annexed by the Galactic Empire after the war. The resistance fighter Saw Gerrera hails from Onderon. TBD?
 Sources: Clone Wars, Rebels, KOTOR 2, Atlas"
-Randon;104;11780;Crossroads;678;394;Rim;140;"[CANON] Sector: Crossroads
-Coordinates: Q-10, Hyperspace routes: 5
-
+Randon;104;11780;Crossroads;678;394;Rim;140;"Randon (Q-10, Crossroads, 5 Hyperlanes)
 Geology: Planet, Temperate, Urban
-Species: Randoni (Human)
+Species: Randoni (Homeworld)
 Economy: Trade, Business
-
-History: Randon was a planet from which the Randoni originated. It is a large business world with crowded bazaars and elegant corporate towers. It is at the intersection with several major trade routes.
-
+History: Randon was a planet from which the Randoni originated. It is a large business world the at the intersection of several major trade routes. It features crowded bazaars and elegant corporate towers. During the Clone wars, Randon was situated in CIS territory
 Sources: -"
-Ruusan;105;11781;Crossroads;659;401;Rim;146;"[CANON] Sector: Crossroads
+Ruusan;105;11781;Crossroads;659;401;Rim;146;"Ruusan (P-11, Crossroads)
 Coordinates: P-11, Hyperspace routes: -
-
 Geology: Planet, Temperate, Varried
-Species: Bouncer 
+Species: Ruusanians (Homeworld), Human 
 Economy: Primary, Ore extraction
-
-History: TBD
-
+History: Ruusan was home to the final battle between the Sith and the Jedi, where the Sith were finally defeated. There are many relics of ancient times left behind on this world. During the clone wars, Ruusan was allied with the seperatists and one of it’s moons was home to the listening post Skytop station. The World also lends it’s name to the Ruusan reformation and the Ruusan armistice.  
 Sources: Clone Wars, Atlas
 "
-Trandosha;106;11782;Crossroads;659;362;Rim;178;"[CANON] Sector: Crossroads
-Coordinates: P-9, Hyperspace routes: 6
-
+Trandosha;106;11782;Crossroads;659;362;Rim;178;"Trandosha (P-9, Crossroads, 6 Hyperlanes)
 Geology: Planet, Humid, Temperate, Jungle, Arid
 Species: Trandoshan
 Economy: Mercenaries, Slaves
-
-History: Trandosha, also known as Dosh, is an arboreal planet and the homeworld of the Trandoshan species. It is orbited by Wasskah, a verdant moon, and was positioned in the same star system as Kashyyyk. The Bounty Hunter Bossk was born on Trandosha.
-
+History: Trandosha, also known as Dosh, is orbited by Wasskah, a verdant moon, and is  positioned in the same star system as Kashyyyk. TBD
 Sources: Clone Wars, Rebels"
-Umbara;107;11783;Crossroads;659;381;Rim;183;"[CANON] Sector: Crossroads
-Coordinates: P-10, Hyperspace routes: 2
-
+Umbara;107;11783;Crossroads;659;381;Rim;183;"Umbara (P-10, Crossroads, 2 Hyperlanes)
 Geology: Planet, Temperate, Bio-luminescent forests
 Species: Umbaran
 Economy: Doonium, Mined ore, Refined ore
-
 History: Known as the ""Shadow World"" due to the lack of sunlight on its surface. It is the Homeword of the Umbaran people. The planet was initially part of the Galactic Republic before seceding to join the Confederacy of Independent Systems, before being retaken and coming under the rule of the Galactic Empire. They always prioritize their homeworld over the galactic government.
-
 Sources: Clone Wars, Rebels"
-Wobani;108;11784;Crossroads;692;324;Rim;189;"[CANON] Sector: Crossroads
-Coordinates: R-8, Hyperspace routes: -
-
+Wobani;108;11784;Crossroads;692;324;Rim;189;"Wobani (R-8, Crossroads)
 Geology: Planet, Temperate, Rocky, Muddy
 Species: Mixed, Prisoners
 Economy: Doonium, Mined ore, Refined ore
-
 History: Wobani was a temperate planet partially hidden by a swirling dust cloud. The planet was used by the Galactic Empire as a site for labor and prison camps. Many pirates were sent there as the Empire cracked down on criminals in the Outer Rim.
-
 Sources: Rogue One"
-Zeltros;109;11785;Crossroads;640;391;Rim;197;"[CANON] Sector: Crossroads
-Coordinates: O-10, Hyperspace routes: 4
-
+Zeltros;109;11785;Crossroads;640;391;Rim;197;"Zeltros: (O-10, Crossroads, 4 Hyperlanes)
 Geology: Planet, Varied
 Species: Zeltron
 Economy: Tourism
-
-History: In accordance with that species' reputation, Zeltros was known as a luxury world, where many went to vacation, owing to the planet's abundance of pleasurable facilities ranging from amusement parks to theaters, night clubs, and much more.
-
+History: Zeltros is known as a luxury world, and popular vacation destination, owing to the planet's abundance of pleasurable facilities ranging from amusement parks to theaters, night clubs, and much more.
 Sources: -"
-Ahch-to;110;11792;Unknown Regions;145;447;Rim;3;"[CANON] Sector: Unknown Regions
+Ahch-to;110;11792;Unknown Regions;145;447;Rim;3;"Ahch-to (E-13, Unknown Regions)
 Coordinates: E-13, Hyperspace routes: -
-
 Geology: Planet, Temperate, Ocean, Archipelago 
 Species: Lanai
 Economy: Primary, No exports
-
-History: Ahch-To, known by many names in ancient legends, was a planet mostly covered in water, with numerous rocky islands blanketed with green trees located in the Unknown Regions. It was the birthplace of the Jedi Order and held the ancient Jedi texts.
-
+History: Ahch-To, known by many names in ancient legends. It was the birthplace of the Jedi Order and home to the ancient Jedi texts. The world was thought to have been lost to time. 
 Sources: Episode 7, Episode 8, Episode 9"
-Csilla;111;11793;Unknown Regions;156;412;Rim;38;"[CANON] Sector: Unknown Regions
+Csilla;111;11793;Unknown Regions;156;412;Rim;38;"Csilla (F-8, Unknown Regions, 7 Hyperlanes)
 Coordinates: F-8, Hyperspace routes: 7
-
 Geology: Planet, Cold, Ice-locked
-Species: Chiss
+Species: Chiss (Homeworld)
 Economy: Information
-
-History: It is the homeworld of the Chiss species and the capital world of the Chiss Ascendancy. Though largely unknown to the wider galaxy. Csilla is a cold, ice-locked planet and most of the population lives in underground settlements.
-
+History: It is the capital world of the Chiss Ascendancy. Because of the change in temperature, a majority of the planet's four billion residents moved offworld to the planets Rentor, Avidich and Sarvchi. Those who remained moved underground. Chiss space was generally considered safe from outside local threats, though Csilla was openly attacked in 19 years before the battle of Yavin. Thrawn hails from Csilla. 
 Sources: Atlas"
-Exegol;112;11794;Unknown Regions;135;376;Rim;59;"[CANON] Sector: Unknown Regions
-Coordinates: F-7, Hyperspace routes: -
-
+Exegol;112;11794;Unknown Regions;135;376;Rim;59;"Exegol (F-7, Unknown Regions)
 Geology: Planet, Hot and Dry, Desert
 Species: Human, Symeong
 Economy: -
-
 History: Exegol once had a fertile environment, until the Sith established their presence there and laid waste to the planet. According to legend, two Sith Lords, Darth Noctyss and Darth Sanguis, reached Exegol in their quest for immortality, which the former hoped to learn from the latter.
-
 Sources: Episode 9"
-Ilum;113;11795;Unknown Regions;146;394;Rim;77;"[CANON] Sector: Unknown Regions
-Coordinates: G-7, Hyperspace routes: -
-
+Ilum;113;11795;Unknown Regions;146;394;Rim;77;"Ilum (G-7, Unknown Regions)
 Geology: Planet, Cold, Tundra, Forests
 Species: Human
 Economy: Kyber Crystals
-
-History: Hidden beneath Ilum's frigid surface was what came to be known as the Crystal Cave. Within the maze-like caves grew kyber crystals, which brought the Jedi Order to Ilum so they could harvest the crystals in a rite of passage known as the Gathering. The Empire has strip mined the planet for Kyber Crystals. Leaving deep scars in the planets surface that are clearly visible from space.
-
+History: Hidden beneath Ilum's frigid surface was what came to be known as the Crystal Cave. Within the maze-like caves grew kyber crystals, which brought the Jedi Order to Ilum so they could harvest the crystals in a rite of passage known as the Gathering. The Empire has strip-mined the planet for Kyber Crystals. Leaving deep scars in the planets surface that are clearly visible from space.
 Sources: Episode 7, Clone Wars, Rebels, SWTOR, BattleField 2, Atlas"
-Lwhekk;114;11796;Unknown Regions;126;453;Rim;101;"[CANON] Sector: 
+Lwhekk;114;11796;Unknown Regions;126;453;Rim;101;"Lwhekk (C-16, Unknown regions)
 Coordinates: C-16, Hyperspace routes: -
-
-Geology: Planet, Humid, Jungles, Oceans, Volcanoes
+Geology: Unknown
 Species: Unknown
 Economy: Unknown
-
 History: Lwhekk is a planet in the unknown regions. Little is known about this world asside from rumours and myths. It is said to be home to large lizard-like creatures who abduct humans for unknown purposes. All that is known is they are never seen again. However these claims cannot be substantiated as none have traveled there and returned to tell the tale. 
-
 Sources: 
 "
-Nagi;115;11797;Unknown Regions;112;435;Rim;117;"[LEGENDS] Sector: Unknown Regions
+Nagi;115;11797;Unknown Regions;112;435;Rim;117;"Nagi (Unknown Regions)
 Coordinates: -, Hyperspace routes: -
-
 Geology: Planet, Arid, Mountainous
 Species: Nagai
 Economy: Raw Materials
-
-History: Nagi was a planet in the Unknown Regions, located in the dwarf galaxy known as Firefist that orbited the known galaxy. Nagi is the ancestral homeworld of the Nagai. Nagi is an arid world, and quite mountainous, characterized by very high mountain peaks separated by deep, wide valleys. The thin upper atmosphere is relatively ineffective at blocking solar radiation, and the high peaks of the world are bathed in it.
-
+History: Nagi was a planet in the Unknown Regions, located in the dwarf galaxy known as Firefist that orbited the known galaxy. TBD
 Sources: Atlas"
-Parnassos;116;11798;Unknown Regions;162;376;Rim;132;"[CANON] Sector: Unknown Regions
-Coordinates: H-6, Hyperspace routes: -
-
+Parnassos;116;11798;Unknown Regions;162;376;Rim;132;"Parnassos (H-6, Unknown Regions)
 Geology: Planet, Radioactive, Arid
 Species: Mixed
 Economy: None
-
 History: Parnassos was settled during the Republic Era by Con Star Mining Corporation, which wanted to exploit the planet for its metals and minerals. Con Star also established several settlements throughout the planet with laboratories, factories, mines, and houses for the colonists. Con Star also built a powerful automated orbital defense system around the planet. However a poorly maintained reactor at an unidentified Con Star station malfunctioned, devastating the planet's environment. The surrounding land was reduced to a radioactive wasteland called the dead lands. Much of the surrounding continent was reduced to a barren desert.
-
 Sources: Atlas"
-The Redoubt;117;11799;Unknown Regions;168;394;Rim;173;"[CANON] Sector: Unknown Regions
+The Redoubt;117;11799;Unknown Regions;168;394;Rim;173;"The Redoubt (H-7, Unknown Regions, 2 Hyperlanes)
 Coordinates: H-7, Hyperspace routes: 2
-
 Geology: Planet x10
 Species: Chiss
 Economy: None
-
-History: The Redoubt, formally the Chiss Redoubt, was a remote star cluster that was located in Chiss space, near the Utegetu Nebula, and that contained at least ten habitable planets and hundreds of stars. A planetoid in The Redoubt was the resting place of the ill-fated Outbound Flight Project, which crashed there.
-
+History: The Redoubt, formally the Chiss Redoubt, was a remote star cluster that was located in Chiss space, near the Utegetu Nebula, and that contained at least ten habitable planets and hundreds of stars. A planetoid in The Redoubt was the resting place of the ill-fated Outbound Flight Project, which crashed there. TBD
 Sources: -"
-Zakuul;118;11800;Unknown Regions;131;425;Rim;196;"[LEGENDS] Sector: Unknown Regions
+Zakuul;118;11800;Unknown Regions;131;425;Rim;196;"Zakuul (D-13 Unknown Regions)
 Coordinates: D-13, Hyperspace routes: -
-
 Geology: Planet, Wet, Swamp, Ocean
 Species: Human
 Economy: unknown
-
-History: A world with a significant southern ocean and swamps that cover the planet's surface including the Endless Swamp, a semi-solid area filled with massive, overgrown trees. The planet also has a unique connection to the Force being balanced between the light and dark sides of the Force, similar to Odessen. Zakuul is home to an immigrated Human population along with the native Iknayid but other creatures were present also and even adapted to their environment. The planet also possessed advanced technology with several cities spread throughout the world branching off from the Spire and being the resting place of the Eternal Throne. In the distant past they waged war with both the Republic and the Sith empire.
-
-Sources: SWTOR"
-Zonama Sekot;119;11801;Unknown Regions;167;441;Rim;199;"[LEGENDS] Sector: Unknown Regions
+History: The planet has a unique connection to the Force, being balanced between the light and dark sides, similar to Odessen. Legends speak of an ancient and advanced empire that once ruled this world. The Eternal empire as it was named was said to have once waged war with both the Republic and the Sith at some point, however much of the story has been lost to time 
+Sources: SWTOR [Legends]"
+Zonama Sekot;119;11801;Unknown Regions;167;441;Rim;199;"Zonama Sekot (F-13, Unknown Regions)
 Coordinates: F-13, Hyperspace routes: -
-
-Geology: Planet
-Species: None
-Economy: None
-
-History: Zonama Sekot was an astronomical object located in the Unknown Regions. It was situated in an otherwise empty and unexplored area, in the neighborhood of the planets Ahch-To and Rakata Prime.
-
-Sources: Atlas"
+Geology: Unknown
+Species: Unknown
+Economy:Unknown
+History: Zonama Sekot was an astronomical object located in the Unknown Regions. It was situated in an otherwise empty and unexplored area, in the neighborhood of the planets Ahch-To and Rakata Prime. The object is strangely reported to have been in different locations at different times throught galactic history.
+Sources: Atlas [Legends]"
 Ansion;120;11808;Mid Rim North;356;244;Rim;8;"[CANON] Sector: Mid Rim North
 Coordinates: I-6, Hyperspace routes: 4
 
@@ -1519,90 +1447,65 @@ History:
 
 Sources: 
 "
-Kaller;254;12116;Outer Rim South;474;801;Rim;86;"[CANON] Sector: Outer Rim South
-Coordinates: -
-
+Kaller;254;12116;Outer Rim South;474;801;Rim;86;"Kaller (K-5, Outer Rim South, 0 hyperlane)
 Geology: Planet
 Species: 
 Economy: 
-
 History: 
-
-Sources: Clone Wars, Rebels
-"
-Nevarro;255;12117;Outer Rim South;528;807;Rim;122;"[CANON] Sector: Outer Rim South
-Coordinates: Unknown
-
-Geology: Planet
-Species: 
-Economy: 
-
-History: 
-
-Sources: The Mandalorian 
-"
-Sluis Van;256;12118;Outer Rim South;510;761;Rim;157;"[CANON] Sector: Outer Rim South
-Coordinates: M-19, Hyperspace routes: 2
-
-Geology: Planet
-Species: 
-Economy: 
-
-History: 
-
-Sources: 
-"
-Sorgan;257;12119;Outer Rim South;494;819;Rim;160;"[CANON] Sector: Outer Rim South
-Coordinates: Unknown
-
-Geology: Planet
-Species: 
-Economy: 
-
-History: 
-
-Sources: The Mandalorian
-"
-Triton;258;12120;Outer Rim South;508;743;Rim;180;"[CANON] Sector: Outer Rim South
-Coordinates: M-18, Hyperspace routes: 3
-
-Geology: Planet
-Species: 
-Economy: 
-
-History: 
-
-Sources: Atlas
-"
+Sources: Clone Wars, Rebels"
+Nevarro;255;12117;Outer Rim South;528;807;Rim;122;"Nevarro (N-20, Outer Rim South, 0 hyperlane)
+Geology: Planet, Ashen, Rocky, Volcanic
+Species: Human, Melbu, Jawa, Rodian, Suerton, Trandoshan, Twi'lek, Wickwar, Zabrak, Aqualish, Mon Calamari
+Economy: -
+History: During the Imperial Era, the Galactic Empire controlled Nevarro. In it aftermath, Nevarro became lawless and was a haven for bounty hunters working for Greef Karga, an agent of the the Bounty Hunters' Guild, which was headquartered inside a cantina. Navarro saw brief conflict when the bounty hunter Din Djarin rescued Grogu, an infant that he had delivered to a member of an Imperial remnant in a previous job, betraying the Guild.
+Sources: The Mandalorian"
+Sluis Van;256;12118;Outer Rim South;510;761;Rim;157;"Sluis Van (M-19, Outer Rim South, 2 hyperlanes)
+Geology: Planet, Rocky, Industrial
+Species: Sluissi (homeworld), Human, Bith
+Economy: Starships
+History: Sluis Van provided ships to Seswenna's Outland Regions Security Force prior to the Clone Wars. Count Dooku later turned both Sluis Van and Yag'Dhul over to the side of the Confederacy of Independent Systems.
+Sources: Andor, SWTOR"
+Sorgan;257;12119;Outer Rim South;494;819;Rim;160;"Sorgan (M-21, Outer Rim South, 0 hyperlane)
+Geology: Planet, Forests, Meadows, Swamps, Wetlands
+Species: Human, Klatooinian, Rodian
+Economy: Spotchka
+History: -
+Sources: The Mandalorian"
+Triton;258;12120;Outer Rim South;508;743;Rim;180;"Triton (M-18, Outer Rim South, 3 hyperlanes)
+Geology: Planet, Deserts
+Species: Tritonite (homeworld)
+Economy: -
+History: During the Clone Wars, Triton was the site of a battle as part of the Outer Rim Sieges. The Galactic Republic besieged Separatist holdings on the planet, or possibly its moons.
+Sources: Atlas"
 Utapau;259;12121;Outer Rim South;525;789;Rim;184;"Utapau (N-19, Outer Rim South, 0 hyperlane)
 Geology: Planet, Temperate, Desert, Grassy Plains, Large Sinkholes, Rocky
-Species: Pau'ans (homeworld), Utais (homeworld), Amanis, Sugis
+Species: Pau'an (homeworld), Utai (homeworld), Amani, Sugi
 Economy: Food, Tech, Chemicals, Ores, Minerals, Salts, Starships
-History: During the Clone Wars, the Confederacy of Independent Systems sought the planet. Despite this, the planet remained neutral. Late in the war, Anakin Skywalker and Obi-Wan Kenobi were sent to investigate the death of Jedi Master Tu-Anh. This led them to locate a massive kyber crystal that the Confederacy was attempting to acquire. They were able to destroy the crystal before it could fall into Separatist hands. Within months, the Separatists invaded Utapau with thousands of battle droids. Later, a number of key Separatist leaders were stationed on the planet, but were moved to a mining complex on Mustafar prior to the battle on the orders of Darth Sidious. General Grievous remained on Utapau to oversee the battle, but met his end at the hands of Jedi Master Kenobi. Unfortunately for him, Supreme Chancellor Palpatine issued Order 66 shortly thereafter. Because of their behavioral modification biochips, Kenobi's clone troopers turned on their Jedi General and shot him down into a sinkhole. However, Kenobi survived and escaped Utapau. After the end of the Clone Wars, the Galactic Empire occupied the planet, leading to a number of Pau'an refugees left Utapau. In 13 BBY, the Pau'an medical students Fyzen Gor and Greesto Ftrak were abducted by the Wandering Star criminal organization. One of the gangsters shot Ftrak in the chest, and he fell into a coma. Gor later killed Ftrak by removing one of his arms, and attached it to a medical droid. Over the next two years, Gor built a small army of droids augmented with organic body parts, which drew Wandering Star's attention once more. Most of the droids were destroyed in a brief skirmish, and Gor was forced into the service of the gang.
+History: During the Clone Wars, the Confederacy of Independent Systems sought the planet. Despite this, Utapau remained neutral until the Separatists invaded with thousands of battle droids. After the end of the Clone Wars, the Galactic Empire occupied the planet, leading to a number of Pau'an refugees left Utapau.
 Sources: Episode 3, Clone Wars, Atlas"
 Fort Anaxes;260;12128;Core Worlds North;433;333;Core;6;"Fort Anaxes (L-9, Core Worlds North, 2 hyperlanes)
 Geology: Asteroid Belt, Caverns
-Species: Humans
+Species: Human
 Economy: -
 History: Fort Anaxes was located in a valley on the planet Anaxes, mostly built into a cavern inside a sheer cliff face, with a landing pad and outbuildings outside. After Anaxes' destruction early in the Imperial Era, the fort miraculously survived, remaining intact on an asteroid eventually designated PM-1203.
 Sources: Clone Wars, Rebels, Atlas
 "
 Brentaal IV;261;12129;Core Worlds North;455;333;Core;22;"Brentaal IV (L-9, Core Worlds North, 5 hyperlanes)
 Geology: Planet, Rocky
-Species: Humans, Herglics, Skakoans
+Species: Human, Herglic, Skakoan
 Economy: Food, Trade Goods, Financial Services
 History: The pirate Q'anah and her father were natives of Brentaal IV, and Q'anah's father served House Cormond as a bodyguard until he was given a lucrative offer by House Elegin of the planet Asmeru to work for them instead. The planet was the site of the Republic Futures Program training facility, where Galen Erso met and befriended Orson Krennic in 36 BBY. Jul Tambor helps the Skakoans on exile on Brentaal IV. The Nuxan informant Bodo Linx had a contact, Qensog, on Brentaal IV, who he believed could help reconnect the fragmented Rebel Alliance after the Assault on the Mako-Ta Space Docks giving Leia Organa the contact's details. The rebels later met with Qensog, and he gave them the locations of both Admiral Ackbar's Home One and Hera Syndulla's Geist. Bentraal IV was a key foothold for the New Republic during the final days of the Galactic Civil War. It and other planets in the Bormea sector were defended by the New Republic's Vanguard Squadron.
 Sources: Atlas
 "
 Chandrila;262;12130;Core Worlds North;442;351;Core;28;"Chandrila (L-9, Core Worlds North, 0  hyperlanes)
 Geology: Planet, Rolling Hills, Calm Seas
-Species: Jawas, Humans, Mon Calamaris, Pantorans, Rodians, Trandoshans, Twi'leks
+Species: Jawa, Human, Mon Calamari, Pantoran, Rodian, Trandoshan, Twi'lek
 Economy: High Tech, Food
 History: During the early rebellion against the Galactic Empire, Chandrila was listed as an Alliance to Restore the Republic safe world. During the Galactic Civil War, Chandrila supported the Alliance. By 1 BBY, Chandrila had become one of the thousands of worlds that suffered under Imperial rule. Mothma, by that time the chancellor of the Alliance, recognized her homeworld's suffering but believed she could not let her personal biases get in the way of the Rebellion's decision making; with thousands of worlds suffering under Imperial rule, she could not simply decide to point their resources at helping the one planet.
 Sources: Andor, Clone Wars, Rebels, Battlefront 2"
 Empress Teta;263;12131;Core Worlds North;426;399;Core;55;"Empress Teta (L-10, Core Worlds North, 2 hyperlanes)
 Geology: Planet, Urban, Forests, Mountains, Plains
-Species: Humans, ...
+Species: Human, ...
 Economy: Tech, Food, Raw Materials, Andris Spice, Carbonite
 History: Though the andris mines on Empress Teta were abandoned once they ran dry, the Mining Guild continued to assert control over the world and eventually usurped the power of the ruling Keto family in all but name. The guild's affiliation with the Confederacy of Independent Systems caused Empress Teta to side against the Galactic Republic during the Clone Wars, while loyalist nobles fled to Coruscant. After the war ended with a Separatist defeat, the newly-formed Galactic Empire installed these nobles in positions of power, such as planetary bureaucrats or Mining Guild administrators. During the Galactic Civil War, the planet was ruled by Emperor Alor Keto, though he was largely an ineffectual puppet of the Mining Guild. Already a major supplier for the Imperial Military, Empress Teta assumed increased strategic importance for the Empire as its location restricted access to the Deep Core Security Zone, where the Empire tested experimental technologies such as Interdictors. The world was protected by Admiral Yzu's 15th Deep Core Reserve Fleet.
 Sources: -"
@@ -1628,7 +1531,7 @@ Sissubo;267;12135;Core Worlds North;436;369;Core;154;"Sissubo (L-9, Core Worlds 
 Geology: Planet, Frozen, Rock
 Species: -
 Economy: -
-History: Sissubo was surrounded by a debris field that consisted of remnants of salvaged Galactic Empire starships as part of the New Republic's Project Starhawk.[2] The graveyard of starship salvage that surrounded it provided a first line of defense for the New Republic capital on nearby Chandrila.
+History: Sissubo was surrounded by a debris field that consisted of remnants of salvaged Galactic Empire starships as part of the New Republic's Project Starhawk. The graveyard of starship salvage that surrounded it provided a first line of defense for the New Republic capital on nearby Chandrila.
 Sources: Squadrons
 "
 Skako Minor;268;12136;Core Worlds North;455;369;Core;155;"Skako Minor (L-9, Core Worlds North, 2 hyperlanes)
@@ -1640,27 +1543,27 @@ Sources: Clone Wars
 "
 Wor Tandell;269;12137;Core Worlds North;403;359;Core;190;"Wor Tandell (K-9, Core Worlds North, 0 hyperlane)
 Geology: Planet, Tropical, Jungles, Oceans
-Species: Humans
+Species: Human
 Economy: -
 History: During the Gorse Conflict, while attempting to persuade Hera Syndulla to leave Gorse with him, Kanan Jarrus offered to take her there, saying it was nice. Imperial Captain Rae Sloane later imagined that Count Denetrius Vidian's cyborg staff on Calcoraan Depot, among other things, managed trading with Wor Tandell.
 Sources: Rebels, Atlas"
 Christophsis;270;12144;Wild Space;678;666;Core;30;"Christophsis (Q-16, Wild Space, 2 hyperlanes)
 Geology: Planet, Crystalline Formations
-Species: Christophsians (homeworld), Humans
+Species: Christophsian (homeworld), Human
 Economy: Kyber Crystals
 History:  Battle of Christophsis was fought during the Clone Wars. The crystalline planet was invaded by the battle droid armies of the Confederacy of Independent Systems but were repelled by the Jedi and Clone troopers dispatched by the Galactic Republic. Later, the planet was the site of a second battle between the Republic and the Separatists. After the transformation of the Galactic Republic into the Galactic Empire, the planet was placed under Imperial control, but nevertheless hosted rebellious elements.
 Sources: The Clone Wars, Clone Wars, Rebels, Atlas
 "
 Geonosis;271;12145;Wild Space;725;664;Core;68;"Geonosis (R-16, Wild Space, 5 hyperlanes)
 Geology: Planet, Hot, Arid, Deserts, Mesas, Mountains
-Species: Geonosians (homeworld), Acklays, Massiffs, Nexus, Reeks
+Species: Geonosian (homeworld), Acklay, Massiff, Nexu, Reek
 Economy: Raw materials, Battle Droids, Tech
 History: Geonosis was the Confederacy of Independent Systems' first capital and hosted its major battle droid foundries. It was the site of the First Battle of Geonosis, the opening conflict of the Clone Wars, as well as the subsequent invasion by the Galactic Republic. During and after the war, the Death Star was constructed above the planet. Five years after the conflict's conclusion and transformation of the Galactic Republic, the Galactic Empire would garrison the planet heavily and attempt to mine the planet's asteroids for minerals. At least 5 years after the Clone Wars, the Empire moved the Death Star to another construction site and the planet was sterilized by the Empire as a security measure, an act which resulted in the virtual elimination of the planet's native population.
 Sources: Episode 2, Clone Wars, Rebels, Battlefront 1, Battlefront 2, Atlas
 "
 Lok;272;12146;Wild Space;676;699;Core;97;"Lok (Q-17, Wild Space, 0 hyperlane)
 Geology: Planet, Arid, Deserts, Sulfur Pools, Mountains, Lava Lands
-Species: Humans
+Species: Human
 Economy: Food, Tech, Luxury
 History: Lok is the home of several hostile creatures, including the massive Kimogila. Lok was one of the first planets in the Karthakk system to be colonized. It was originally home to outlaws who saw the world as a potential staging ground for raids into the Mid Rim. The Trade Federation decided to invade the planet after one such pirate raid in 32 BBY. The occupation of Lok lasted 10 years. During that time, the Trade Federation used Nym's captured base as a staging ground for their raids in the Karthakk system. The Lok Revenants finally reclaimed Lok during the first days of the Clone Wars, in 22 BBY. The Galactic Empire eventually claimed Lok and established a military presence on the planet. An outpost was built there, as part of a plan to extend Imperial control over less developed worlds.
 Sources: SWG
@@ -1674,86 +1577,86 @@ Sources: -
 "
 Nelvaan;274;12148;Wild Space;702;685;Core;121;"Nelvaan (Q-16, Wild Space, 2 hyperlanes)
 Geology: Planet, Frozen, Mesas, Mountains, Rivers, Forests, Glaciers
-Species: Nelvaanians (homeworld), Skakoans
+Species: Nelvaanian (homeworld), Skakoan
 Economy: Water
 History: During the Clone Wars, the planet's exploitation rights were ceded to the Confederacy of Independent Systems by Onaconda Farr, the Galactic Republic senator of Rodia. The Confederacy-aligned Techno Union used the natives to perform experiments, turning them into cyborg monsters.
 Sources: Clone Wars
 "
 Rodia;275;12149;Wild Space;706;649;Core;145;"Rodia (R-16, Wild Space, 0 hyperlane)
 Geology: Planet, Hot, Humid, Jungles, Swamps, Oceans
-Species: Rodians (homeworld)
+Species: Rodian (homeworld)
 Economy: Food, Luxury, Bounty Hunters, Weapons Tech, Exotic Animals
 History:  Rodia joined the Galactic Republic in 5000 BBY. By the time of the Galactic Civil War, Rodia had fallen under Imperial control. Many Rodians who opposed the occupation of their homeworld were recruited by the Alliance to Restore the Republic.
 Sources: Clone Wars, Atlas"
 Savareen;276;12150;Wild Space;702;667;Core;149;"Savareen (Q-16, Wild Space, 2 hyperlanes)
 Geology: Planet, Deserts, Oceans
-Species: Savarians (homeworld), Humans
+Species: Savarian (homeworld), Human
 Economy: Savareen Brandy
 History: At some point prior to 10 BBY, the crime syndicate known as Crimson Dawn had a business on Savareen. When the natives tried to rise up against Crimson Dawn, they lost their tongues. After the raid on Kessel, Han Solo and the rest of Beckett's gang went to Savareen to refine the coaxium they had stolen from the Pyke Syndicate on Kessel.
 Sources: Solo
 "
 Socorro;277;12151;Wild Space;667;719;Core;159;"Soccoro (Q-17, Wild Space, 2 hyperlanes)
 Geology: Planet, Deserts
-Species: Monnoks (homeworld), Humans
+Species: Monnok (homeworld), Human
 Economy: Metals, High Tech, Water, Nether Ice, High Tech Skills
 History: Soccoro is the homeworld of Lando Calrissian, former Baron Administrator of Cloud City. It is also the location of asteroid belts with large quantities of doonium ore. The former pirate queen Maz Kanata marked it as a shadowport on a map she included in the book that became known as the Smuggler's Guide.
 Sources: Rebels
 "
 Tatooine;278;12152;Wild Space;721;682;Core;168;"Tatooine (R-16, Wild Space, 5 hyperlanes)
 Geology: Planet, Hot, Arid, Canyons, Deserts, Mountains
-Species: Jawas (homeworld), Tusken Raiders (homeworld), Humans, ...
+Species: Jawa (homeworld), Tusken Raider (homeworld), Human, ...
 Economy: Consumables, Tech, Water, Dilarium oil, Silicax oxalate, Slaves
 History: In the last decades of the Galactic Republic, Tatooine was known as a haven for smugglers and criminal activity. It's also know as the homeworld of Anakin Skywalker, a human slave that became a Jedi Knight before falling to the dark side and being now known as Darth Vader. His son Luke was raised in secret on Tatooine by Anakin's former master Obiwan Kenobi. Jabba the Hutt is conducting his criminal activities from his palace on Tatooine, using his thugs to collect water taxes.
 Sources: Episode 1, Episode 2, Episode 3, Episode 4, Episode 6, Episode 9, The Clone Wars, The Mandalorian, Clone Wars, Rebels, SWG, KOTOR 1, SWTOR, Battlefront 1, Battlefront 2, Atlas"
 Trask;279;12153;Wild Space;715;703;Core;179;"Trask (R-17, Wild Space; 5 hyperlanes)
 Geology: Moon, Oceans
-Species: Humans, Mon Calamaris, Quarrens, Frog-like anthropoids
+Species: Humans, Mon Calamari, Quarren, Frog-like anthropoid
 Economy: -
 History: Trask was a black market port, and its population consisted mostly of Mon Calamari and Quarren that sought to escape the politics of their homeworld, Mon Cala. It featured a series of landing platforms and an inn where Trask Chowder was served. There was a rule for departing ships against ascending into the upper atmosphere inside the harbor zone.
 Sources: The Mandalorian"
 Dromund Kaas;280;12160;Sith Worlds;718;170;Rim;50;"Dromund Kaas (R-5, Sith Worlds, 2 hyperlanes)
 Geology: Planet, Wet, Electrified, Swamp, Jungle, Oceans
-Species: Siths, Humans
+Species: Sith, Human
 Economy: -
 History: Originally a colony of the Sith Empire, its location was lost then rediscovered in 4980 BBY. The Emperor and the remnants of the shattered Sith society reconstituted the Sith Empire with Dromund Kaas as its capital. In 3640 BBY a Jedi Knight defeated there the Emperor in personal combat. The reconstituted Empire eventually dissolved before 2000 BBY. Several decades later the rogue Sith Lord Darth Millennial established the Dark Force religion on Dromund Kaas after he rejected the Rule of Two and abandoned the Order of the Sith Lords. The Prophets of the Dark Side who followed Millennial's religion ruled Dromund Kaas for almost a thousand years before they incurred the wrath of Darth Sidious, causing the Prophets to abandon the planet for Bosthirda. Despite its relative obscurity, the planet became embroiled in the galactic conflict known as the Clone Wars, but the powerful influence of the dark side of the Force on Dromund Kaas continued to draw both Jedi and Sith to the planet over the next several decades.
 Sources: SWTOR
 "
 Felucia;281;12161;Sith Worlds;723;195;Rim;62;"Felucia (R-6, Sith Worlds, 2 hyperlanes)
 Geology: Planet, Hot, Humid, Jungle
-Species: Felucians (homeworld), Gossams, Kyuzos, Tee-muss
+Species: Felucian (homeworld), Gossam, Kyuzo, Tee-muss
 Economy: Fuel, Food, Farming Equipment, Nysillin
 History: Felucia was known as Galush prior to the formation of the Galactic Republic. The headquarters of the Commerce Guild, its primary agricultural export was the valuable crop nysillin, which was largely farmed by the native Felucian tribes. Its important strategic location along the Perlemian Trade Route made it a major battleground throughout the Clone Wars.
 Sources: Clone Wars, Rebels, Battlefront 2, Atlas
 "
 Korriban;282;12162;Sith Worlds;697;178;Rim;94;"Korriban (R-5, Sith Worlds, 5 hyperlanes)
 Geology: Planet, Hot, Desolate, Mountains
-Species: Sith (homeworld), Hssiss, Humans, Rakatas, Theelins, Tuk'atas, Wraids
+Species: Sith (homeworld), Hssiss, Human, Rakata, Theelin, Tuk'ata, Wraid
 Economy: Food, High Tech, Raw Materials, Weapons, Sith Artifacts
 History: The Valley of the Dark Lords on the planet's surface was the final resting place of Darth Bane, the Sith Lord who created the Rule of Two. Korriban is now known as Moraband. During the Clone Wars, Yoda ventured to the abandoned world as part of his journey to discover the secrets of eternal consciousness.
 Sources: Clone Wars, KOTOR 1, KOTOR 2, SWTOR, Atlas
 "
 Maridun;283;12163;Sith Worlds;680;213;Rim;106;"Maridun (Q-6, Sith Worlds, 2 hyperlanes)
 Geology: Planet, Temperate, Plains, Savannas
-Species: Amanis (homeworld), Lurmens
+Species: Amani (homeworld), Lurmen
 Economy: -
 History: Lurmen refugees who sought to escape the Clone Wars settled on the planet, seeking to make peaceful new lives away from watchful eyes. During the war, Republic survivors of the Battle of Quell crash-landed there and discovered the Lurmen village. Soon, Separatist General Lok Durd arrived and sought an alliance with the Lurmen, while plotting to test a new weapon known as the Defoliator on them. The Jedi present discovered this and defended the Lurmen village when Durd betrayed them. They rallied the villagers, disabled the Defoliator and captured Durd before three Star Destroyers arrived to retrieve them.
 Sources: Clone Wars
 "
 Mirial;284;12164;Sith Worlds;700;137;Rim;109;"Mirial (Q-4, Sith Worlds, 2 hyperlanes)
 Geology: Planet, Cold, Dry, Deserts
-Species: Mirialans (homeworld)
+Species: Mirialan (homeworld)
 Economy: -
 History: During the final decades of the Republic Era, Mirialan Jedi Master Luminara Unduli and her Padawan, Barriss Offee, both hailed from Mirial. Unduli took Offee as her apprentice in accordance with Mirialan tradition. New Republic pilot Keo Venzee also hailed from the planet. Pirate Synara San, who was active during the New Republic Era and Cold War, hailed from Mirial.
 Sources: Clone Wars, Squadrons"
 Rhen Var;285;12165;Sith Worlds;709;213;Rim;143;"Rhen Var (R-6, Sith Worlds, 2 hyperlanes)
 Geology: Planet, Frigid, Glaciers, Mountains
-Species: Rhen Varites (homeworld), Humans
+Species: Rhen Varite (homeworld), Human
 Economy: -
 History: During the galaxy-spanning conflict known as the Clone Wars, the Galactic Republic deployed clone cold assault troopers on the world, troops specifically equipped to deal with cold environments. During the reign of the Galactic Empire, an Imperial outpost was located on Rhen Var. After the stolen Imperial corvette Carrion Spike attacked Imperial facilities in the Galidraan star system, the planet's outpost was considered as one of the potential targets for the corvette by Moff Wilhuff Tarkin. Due to the relative unimportance of the outpost on Rhen Var, Tarkin decided that the Imperial assets on the planet Nam Chorios were a more likely choice for the rebel cell piloting the stolen starship.
 Sources: Battlefront 1, Atlas"
 Telos IV;286;12166;Sith Worlds;681;136;Rim;169;"Telos IV (Q-4, Sith Worlds, 2 hyperlanes)
 Geology: Planet, Temperate, Beachs, Canyons, Cityscape, Forests, Mountains, Hills
-Species: Aqualishs, Duros, Gamorreans, Humans, Ithorians, Rodians, Sullustans, Twi'leks, Quarrens, Zeltrons
+Species: Aqualish, Duro, Gamorrean, Human, Ithorian, Rodian, Sullustan, Twi'lek, Quarren, Zeltron
 Economy: Luxury, Food, Tech, Tourism
 History: During the campaign at Salient, an Imperial battle group was stationed at Telos under the command of Admiral Utu. Moff Wilhuff Tarkin requested that Utu dispatch whatever vessels she could spare from Telos to Salient, and was later informed by a commander that Utu hoped to send two Star Destroyers.
 Sources: KOTOR 1, KOTOR 2, SWTOR
@@ -1767,77 +1670,77 @@ Sources: Clone Wars, Rebels, Battlefront 2, Squadrons, Atlas
 "
 Ziost;288;12168;Sith Worlds;698;155;Rim;198;"Ziost (R-4, Sith Worlds, 3 hyperlanes)
 Geology: Planet, Cold, Arid, Mountains, Glaciers, Tundra, Forests
-Species: Herglics, Humans, Monoliths, Siths
+Species: Herglic, Human, Monolith, Sith
 Economy: -
 History: Ziost once had a fertile environment, until the Sith established their presence there and laid waste to the planet just as they did with Moraband, Exegol, and Asog. In the time of the Galactic Republic, Ziost was quarantined along with the likes of Malachor, Jaguada, and Rhelg, and its affiliation to the Sith was hidden from history. Ziost was the original site of an ancient Sith ritual altar that was present in the Grand Republic Medical Facility on Coruscant in 19 BBY. Sometime between 0 BBY and 4 ABY, CR-8R considered Fortress Vader on the planet Mustafar the spookiest Imperial stronghold this side of Ziost.
 Sources: SWTOR"
 Yavin 4;289;12169;Sith Worlds;666;177;Rim;194;"Yavin 4 (P-6, Sith Worlds, 4 hyperlanes)
 Geology: Moon, Temperate, Tropical, Jungle
-Species: Duros, Humans, Massassi
+Species: Duro, Human, Massassi
 Economy: -
 History: Yavin 4 played an important role in galactic events, including the seduction of Jedi Knight Exar Kun to the dark side and the destruction of Sith Lord Freedon Nadd during the Great Sith War, the site of the eventual final death of the maddened Jedi Revan in the waning days of the Galactic War, a ferocious duel between Jedi and Sith during the Clone Wars, and serving as the base of the Alliance to Restore the Republic during the Battle of Yavin and as a battlefield in other battles of the Galactic Civil War. An attack was launched on the Death Star from this moon.
 Sources: Rogue One, Episode 4, Andor, Clone Wars, Rebels, SWTOR, Battlefront 1, Battlefront 2
 "
 Bothawui;290;12176;Bothan Space;746;564;Rim;20;"Bothawui (R-14, Bothan Space, 4 hyperlanes)
 Geology: Gas Giant
-Species: Bothans (homeworld), Humans
+Species: Bothan (homeworld), Human
 Economy: High Tech, Info, Mid Tech
 History: Bothawui was considered to be strategically important during the Clone Wars, leading to it being the site of a battle between Jedi General Anakin Skywalker and General Grievous that halted a Separatist advance. Later in the war, around the time the Galactic Republic suffered a loss on Ryloth, Bothawui hosted another battle, though this engagement ended with many Republic losses. Several of the individuals who taught the human Wilhuff Tarkin to fly starships originated on this world, despite the great distance between the world and the planet Eriadu where Tarkin lived. Many years later, Imperial resources were redirected from Bothawui by the Imperial Navy to help deal with Tarkin's corvette, Carrion Spike, after it was stolen by dissidents.
 Sources: Clone Wars, Atlas"
 Daalang;291;12177;Bothan Space;760;535;Rim;40;"Daalang (Q-12, Bothan Space, 4 hyperlanes)
 Geology: Planet
-Species: Humans
+Species: Human
 Economy: -
 History: Daalang joined the Galactic Republic prior to the Indecta Era. During the Alsakan Conflicts, it supported Coruscant. During the Clone Wars, the CIS stationed an anti-orbital mass-driver cannon on the planet. The shields of the CIS base were destroyed by Lightning Squadron, clearing the path for the Star Destroyer Eliminator to attack the CIS base hidden in the nebula surrounding the body.
 Sources: Atlas
 "
 Gamorr;292;12178;Bothan Space;795;558;Rim;67;"Gamorr (T-14, Bothan Space, 2 hyperlanes)
 Geology: Planet, Forests, Croplands
-Species: Gamorreans (homeworld)
+Species: Gamorrean (homeworld)
 Economy: Melee Weapons, Food, Tech, Slaves, Mercenaries
 History: The history of Gamorr was characterized by warfare and violence, with conflicts so numerous that almost no historians other than the Gamorreans themselves could genuinely understand them. Over time, Gamorr went under many occupations such as Sith and Galactic Republic. Later, attempts by the Galactic Empire to civilize Gamorr resulted in failure, with Imperial representatives staying in a small number of fortified trading ports.
 Sources: Atlas"
-Kamino;293;12179;Bothan Space;766;580;Rim;87;"Kamino (S-15, Bothan Space, 0 hyperlanes)
+Kamino;293;12179;Bothan Space;766;580;Rim;87;"Kamino (S-15, Bothan Space, 0 hyperlane)
 Geology: Planet, Temperate, Oceans
-Species: Kaminoans (homeworld), Humans
+Species: Kaminoan (homeworld), Human
 Economy: Food, Clones, Covert Tech, Military Hardware
 History: At some point Kamino was not covered in water, and the Kaminoans built a large land-based civilization. However, the water level rose, forcing the Kaminoans to build their structures on stilts. Kamino often experience heavy rain, and during some parts of the year was covered with heavy electrical storms. During this season, Kaminoans ride on aiwhas underwater and resurface once they are near their destination. Shortly after the establishment of the Galactic Empire, Imperial Governor and Admiral Wilhuff Tarkin arrived on Kamino to discuss the status of the new Imperial Army with Lama Su. Tarkin informed the Prime Minister that the Empire was reluctant to continuing using clones. The Empire slowly dismantled the cloning program as the troops in the Imperial Army were gradually replaced by non-clone recruits.
 Sources: Episode 2, Clone Wars, Battlefront 1, Battlefront 2"
 Makeb;294;12180;Bothan Space;741;546;Rim;102;"Makeb (Q-13, Bothan Space, 0 hyperlane)
 Geology: Planet, Temperate, Oceans, Mesas, Plateau, Stone Pillars
-Species: Chagrians, Humans, Twi'leks, Weequays, Zabraks
+Species: Chagrian, Human, Twi'lek, Weequay, Zabrak
 Economy: Minerals, Isotope-5
 History: Makeb was discovered during the Mandalorian Wars then invaded by the Hutt Cartel during the Galactic War. It is a major source of isotope-5, one of the rarest minerals in the galaxy.
 Sources: [legends], SWTOR
 "
 Rishi;295;12181;Bothan Space;772;562;Rim;144;"Rishi (S-15, Bothan Space, 2 hyperlanes)
 Geology: Planet, Hot, Jungle, Swamps, Mountains
-Species: Rishiis (homeworld)
+Species: Rishii (homeworld)
 Economy: Exonium
 History: During the Republic Era, Jedi Master Lene Kostana and her Padawan, Sifo-Dyas, discovered the Hand of Skrye on Rishi, and while on the planet, Kostana taught her apprentice a cleansing ritual. Later, during the time of the Clone Wars, the Rishi Moon housed a Galactic Republic listening post known as the Rishi Station, which was invaded and later destroyed by the Confederacy of Independent Systems led by Kaleesh General Grievous in 22 BBY.
 Sources: Clone Wars, SWTOR, Atlas
 "
 Ryloth;296;12182;Bothan Space;750;603;Rim;147;"Ryloth (R-17, Bothan Space, 3 hyperlanes)
 Geology: Planet, Hot, Humid, Jungle, Mesas, Valleys, Volcanoes
-Species: Twi'leks (homeworld), Humans
+Species: Twi'lek (homeworld), Human
 Economy: Doonium, Ryll, Slaves, Spices
 History: For centuries, the planet and its people were exploited by the Hutts and their criminal enterprises. it served as a key world for the spice trade. Ryloth was one of many worlds that fell under the control of the Zygerrian Slave Empire before the Jedi Knights destroyed the regime. During the High Republic Era, it was ruled by the Clan Assembly. The planet allegiance changed during the clone wars to finally become a protectorate of the Galactic Empire in 19 BBY.
 Sources: Clone Wars, Battlefront 2"
 Scarif;297;12183;Bothan Space;785;586;Rim;150;"Scarif (S-15, Bothan Space, 3 hyperlanes)
 Geology: Planet, Temperate, Tropical, Oceans, Archipelagos, Jungle, Volcanoes
-Species: Humans
+Species: Human
 Economy: Starships, Death Star Supplies
 History: Although a small and idyllic world, Scarif played an important part in the Galactic Empire's military-industrial complex, becoming a center for top-secret research beyond inspection distance of the prying eyes of the Imperial Senate. Among the projects stored here was the Death Star battle station, a construction so important the entire planet was covered by a planetary deflector shield that could only be entered via a Shield Gate, a Golan M3185 space station.
 Sources: Solo, Rogue One, Andor, Battlefront 2"
 Smuggler's Run;298;12184;Bothan Space;769;608;Rim;158;"Smuggler's Run (S-18, Bothan Space, 3 hyperlanes)
 Geology: Asteroid belt
-Species: Humans, Aliens
+Species: Human, Alien
 Economy: Contraband
 History: During the Galactic Civil War, Imperial TIEs marked with blue stripes patrolled the Smuggler's Run and intercepted freighters suspected of carrying illicit cargo. Any pilots who didn't submit for Imperial boarding inspection were obliterated immediately.
 Sources: Rebels, Battlefront 2, Squadrons"
 Teth;299;12185;Bothan Space;799;531;Rim;172;"Teth (U-12, Bothan Space, 3 hyperlanes)
 Geology: Planet, Temperate, Mist, Jungles, Mesas, Purple atmosphere
-Species: Hutts
+Species: Hutt
 Economy: High Tech, Luxury, Food
 History: At some point, Teth was inhabited by the B'omarr Order. However, by the time of the Clone Wars, their castles were abandoned, though some would be converted by the Hutts into formidable strongholds. Some distance from the B'omarr monasteries and the Tomb of Ziro the Hutt's father, an area of mysterious rock formations could be found on the surface of Teth.
 Sources: The Clone Wars, Clone Wars, Atlas"
