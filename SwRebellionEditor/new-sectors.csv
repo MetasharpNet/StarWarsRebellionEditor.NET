@@ -1,21 +1,21 @@
 Sector;Id;Manual X;Manual Y;Group;Galaxy Size
-Bothan Space;20;736;524;Rim (inner);Huge
-Colonies;21;485;317;Core;Huge
-Core Worlds South;22;464;441;Rim (inner);Large
-Crossroads;23;635;317;Rim (inner);Large
-Deep Core;24;344;431;Rim (inner);Standard
-Hutt Space;25;765;370;Rim (outer);Standard
-Inner Rim;26;557;451;Core;Huge
-Mandalorian Space;27;507;190;Rim (outer);Large
-Mid Rim North;28;351;178;Rim (inner);Standard
-Mid Rim South;29;504;606;Rim (outer);Huge
-Outer Rim East;30;748;242;Rim (outer);Large
+Bothan Space;20;741;546;Rim (inner);Huge
+Colonies;21;498;336;Core;Huge
+Core Worlds North;36;407;308;Core;Standard
+Core Worlds South;22;462;444;Rim (inner);Large
+Crossroads;23;632;314;Rim (inner);Large
+Deep Core;24;332;412;Rim (inner);Standard
+Hutt Space;25;765;364;Rim (outer);Standard
+Inner Rim;26;574;478;Core;Huge
+Mandalorian Space;27;508;185;Rim (outer);Large
+Mid Rim North;28;344;173;Rim (inner);Standard
+Mid Rim South;29;492;604;Rim (outer);Huge
+Outer Rim East;30;757;241;Rim (outer);Large
 Outer Rim North;31;372;67;Core;Standard
-Outer Rim South;32;469;736;Rim (inner);Standard
-Outer Rim West;33;299;614;Core;Standard
-Tingel Arm;34;775;131;Rim (inner);Standard
-Unknown Regions;35;107;369;Core;Large
-Core Worlds North;36;394;320;Core;Standard
-Western Reaches;37;354;727;Rim (outer);Huge
-Sith Worlds;38;660;129;Rim (outer);Standard
-Wild Space;39;662;635;Rim (outer);Standard
+Outer Rim South;32;468;736;Rim (inner);Standard
+Outer Rim West;33;311;631;Core;Standard
+Sith Worlds;38;666;135;Rim (outer);Standard
+Tingel Arm;34;776;138;Rim (inner);Standard
+Unknown Regions;35;107;356;Core;Large
+Western Reaches;37;342;734;Rim (outer);Huge
+Wild Space;39;661;642;Rim (outer);Standard

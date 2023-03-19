@@ -2468,6 +2468,9 @@
     <None Update="new-systems-encyclopedia-pictures\14006-anaxes-%28atlas%29.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="new-systems-encyclopedia-pictures\14006-anaxes.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="new-systems-encyclopedia-pictures\14006-fort-anaxes.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
@@ -4019,6 +4022,9 @@
     <None Update="new-systems-sprites\14006-anaxes %28atlas%29.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="new-systems-sprites\14006-anaxes.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="new-systems-sprites\14006-fort-anaxes.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
@@ -4349,6 +4355,9 @@
     <None Update="new-systems-sprites\14108-mimban %28circarpous v%29 %28atlas%29.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="new-systems-sprites\14108-mimban-%28circarpous-v%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="new-systems-sprites\14109-mirial.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
@@ -4674,6 +4683,9 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="new-systems-tactical\14006-anaxes-%28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-systems-tactical\14006-anaxes.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="new-systems-tactical\14006-fort-anaxes.bmp">
