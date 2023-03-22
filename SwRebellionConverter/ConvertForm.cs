@@ -9,7 +9,7 @@ namespace SwRebellionConverter
         public ConvertForm()
         {
             InitializeComponent();
-            Text = "Star Wars Rebellion Converter .NET " + GetType().Assembly.GetName().Version.ToString() + " beta";
+            Text = "Star Wars Rebellion Converter .NET " + GetType().Assembly.GetName().Version.ToString() + " final";
             source.AllowDrop = true;
             colorTable.Items.Add("strategy-dll.act");
             colorTable.Items.Add("tactical-dll.act");
