@@ -10,6 +10,8 @@ Direct link : https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/sdk-7
 
 To buy the game or get free fan mods, check : https://swrebellion.net/
 
+Install the 1.02 community patch first : https://swrebellion.net/files/file/260-star-wars-rebellion-post-install-package-fix-proper-fullscreen-multiplayer-config/
+
 ### Current Features :
 * Galaxy Map editor : can drag&drop sectors and systems
 * Editor for : Sectors, Systems, Characters, Units, Building (all fields can be modified, unlimited names and encyclopedia descriptions lengths)
@@ -21,9 +23,9 @@ To buy the game or get free fan mods, check : https://swrebellion.net/
 * 200/200 systems sprites
 * 200/200 systems encyclopedia pictures
 * 200/200 systems tactical sprites
+* 200/200 encyclopedia descriptions
 
 ### Current Roadmap:
-* 120/200 encyclopedia descriptions
 * 29 high definition 3d models for capital ships (23/29 done)
 
 ### Final Roadmap (low chance i'll invest time on it):
