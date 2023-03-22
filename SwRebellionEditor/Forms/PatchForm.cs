@@ -49,8 +49,8 @@ public partial class PatchForm : PatchDesignForm
 
         // ---------------------------- SPRITES ----------------------------
 
-        // new encybmap ids for encyclopedia pictures EDATA.13001 to 13200
-        foreach (var filePath in Directory.GetFiles("new-systems-encyclopedia-pictures"))
+        // new encybmap ids for encyclopedia systems pictures EDATA.14001 to 14200
+        foreach (var filePath in Directory.GetFiles("new-encyclopedia-pictures"))
         {
             if (Path.GetExtension(filePath).ToLowerInvariant() == ".txt")
                 continue;
