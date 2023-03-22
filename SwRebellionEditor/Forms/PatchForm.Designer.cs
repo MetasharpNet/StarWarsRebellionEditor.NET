@@ -35,179 +35,174 @@ namespace SwRebellionEditor
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PatchForm));
-            this.systemsImageList = new System.Windows.Forms.ImageList(this.components);
-            this.cancel = new System.Windows.Forms.Button();
-            this.patch = new System.Windows.Forms.Button();
-            this.titleLabel = new System.Windows.Forms.Label();
-            this.contentLabel = new System.Windows.Forms.Label();
-            this.line3Label = new System.Windows.Forms.Label();
-            this.line1Label = new System.Windows.Forms.Label();
-            this.line2Label = new System.Windows.Forms.Label();
-            this.line4Label = new System.Windows.Forms.Label();
-            this.line5Label = new System.Windows.Forms.Label();
-            this.warningLabel = new System.Windows.Forms.Label();
-            this.patchInfoLabel = new System.Windows.Forms.Label();
-            this.label1Requirement = new System.Windows.Forms.Label();
-            this.SuspendLayout();
+            components = new Container();
+            ComponentResourceManager resources = new ComponentResourceManager(typeof(PatchForm));
+            systemsImageList = new ImageList(components);
+            cancel = new Button();
+            patch = new Button();
+            titleLabel = new Label();
+            contentLabel = new Label();
+            line3Label = new Label();
+            line1Label = new Label();
+            line2Label = new Label();
+            line4Label = new Label();
+            line5Label = new Label();
+            warningLabel = new Label();
+            patchInfoLabel = new Label();
+            label1Requirement = new Label();
+            SuspendLayout();
             // 
             // systemsImageList
             // 
-            this.systemsImageList.ColorDepth = System.Windows.Forms.ColorDepth.Depth8Bit;
-            this.systemsImageList.ImageSize = new System.Drawing.Size(120, 60);
-            this.systemsImageList.TransparentColor = System.Drawing.Color.Transparent;
+            systemsImageList.ColorDepth = ColorDepth.Depth8Bit;
+            systemsImageList.ImageSize = new Size(120, 60);
+            systemsImageList.TransparentColor = Color.Transparent;
             // 
             // cancel
             // 
-            this.cancel.Location = new System.Drawing.Point(358, 211);
-            this.cancel.Name = "cancel";
-            this.cancel.Size = new System.Drawing.Size(75, 23);
-            this.cancel.TabIndex = 1154;
-            this.cancel.Text = "Cancel";
-            this.cancel.UseVisualStyleBackColor = true;
-            this.cancel.Click += new System.EventHandler(this.cancel_Click);
+            cancel.Location = new Point(358, 211);
+            cancel.Name = "cancel";
+            cancel.Size = new Size(75, 23);
+            cancel.TabIndex = 1154;
+            cancel.Text = "Cancel";
+            cancel.UseVisualStyleBackColor = true;
+            cancel.Click += cancel_Click;
             // 
             // patch
             // 
-            this.patch.Location = new System.Drawing.Point(24, 211);
-            this.patch.Name = "patch";
-            this.patch.Size = new System.Drawing.Size(110, 23);
-            this.patch.TabIndex = 1155;
-            this.patch.Text = "Patch my game";
-            this.patch.UseVisualStyleBackColor = true;
-            this.patch.Click += new System.EventHandler(this.patch_Click);
+            patch.Location = new Point(24, 211);
+            patch.Name = "patch";
+            patch.Size = new Size(110, 23);
+            patch.TabIndex = 1155;
+            patch.Text = "Patch my game";
+            patch.UseVisualStyleBackColor = true;
+            patch.Click += patch_Click;
             // 
             // titleLabel
             // 
-            this.titleLabel.AutoSize = true;
-            this.titleLabel.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.titleLabel.Location = new System.Drawing.Point(12, 14);
-            this.titleLabel.Name = "titleLabel";
-            this.titleLabel.Size = new System.Drawing.Size(239, 15);
-            this.titleLabel.TabIndex = 1156;
-            this.titleLabel.Text = "StarWars Rebellion 25th Anniversary Mod";
+            titleLabel.AutoSize = true;
+            titleLabel.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            titleLabel.Location = new Point(12, 14);
+            titleLabel.Name = "titleLabel";
+            titleLabel.Size = new Size(239, 15);
+            titleLabel.TabIndex = 1156;
+            titleLabel.Text = "StarWars Rebellion 25th Anniversary Mod";
             // 
             // contentLabel
             // 
-            this.contentLabel.AutoSize = true;
-            this.contentLabel.Location = new System.Drawing.Point(24, 38);
-            this.contentLabel.Name = "contentLabel";
-            this.contentLabel.Size = new System.Drawing.Size(56, 15);
-            this.contentLabel.TabIndex = 1157;
-            this.contentLabel.Text = "Content :";
+            contentLabel.AutoSize = true;
+            contentLabel.Location = new Point(24, 38);
+            contentLabel.Name = "contentLabel";
+            contentLabel.Size = new Size(56, 15);
+            contentLabel.TabIndex = 1157;
+            contentLabel.Text = "Content :";
             // 
             // line3Label
             // 
-            this.line3Label.AutoSize = true;
-            this.line3Label.Location = new System.Drawing.Point(33, 103);
-            this.line3Label.Name = "line3Label";
-            this.line3Label.Size = new System.Drawing.Size(384, 15);
-            this.line3Label.TabIndex = 1158;
-            this.line3Label.Text = "- Newly imagined Sector names (to match the 20 groups of 10 Systems)";
+            line3Label.AutoSize = true;
+            line3Label.Location = new Point(33, 103);
+            line3Label.Name = "line3Label";
+            line3Label.Size = new Size(384, 15);
+            line3Label.TabIndex = 1158;
+            line3Label.Text = "- Newly imagined Sector names (to match the 20 groups of 10 Systems)";
             // 
             // line1Label
             // 
-            this.line1Label.AutoSize = true;
-            this.line1Label.Location = new System.Drawing.Point(33, 59);
-            this.line1Label.Name = "line1Label";
-            this.line1Label.Size = new System.Drawing.Size(686, 15);
-            this.line1Label.TabIndex = 1159;
-            this.line1Label.Text = "- Revised Top 200 systems from Star Wars franchise based on many aspects (movies," +
-    " tv series, games, atlas, hyperspace routes, ...)";
+            line1Label.AutoSize = true;
+            line1Label.Location = new Point(33, 59);
+            line1Label.Name = "line1Label";
+            line1Label.Size = new Size(686, 15);
+            line1Label.TabIndex = 1159;
+            line1Label.Text = "- Revised Top 200 systems from Star Wars franchise based on many aspects (movies, tv series, games, atlas, hyperspace routes, ...)";
             // 
             // line2Label
             // 
-            this.line2Label.AutoSize = true;
-            this.line2Label.Location = new System.Drawing.Point(33, 81);
-            this.line2Label.Name = "line2Label";
-            this.line2Label.Size = new System.Drawing.Size(607, 15);
-            this.line2Label.TabIndex = 1160;
-            this.line2Label.Text = "- Accurate positionning of Systems and Sectors (through barycenters computation, " +
-    "then proportional projections)";
+            line2Label.AutoSize = true;
+            line2Label.Location = new Point(33, 81);
+            line2Label.Name = "line2Label";
+            line2Label.Size = new Size(607, 15);
+            line2Label.TabIndex = 1160;
+            line2Label.Text = "- Accurate positionning of Systems and Sectors (through barycenters computation, then proportional projections)";
             // 
             // line4Label
             // 
-            this.line4Label.AutoSize = true;
-            this.line4Label.Location = new System.Drawing.Point(33, 125);
-            this.line4Label.Name = "line4Label";
-            this.line4Label.Size = new System.Drawing.Size(623, 15);
-            this.line4Label.TabIndex = 1161;
-            this.line4Label.Text = "- Rebexe.exe patch to enable having 200+ Systems sprites and Encyclopedia picture" +
-    "s (no more hardcoded limit of 26)";
+            line4Label.AutoSize = true;
+            line4Label.Location = new Point(33, 125);
+            line4Label.Name = "line4Label";
+            line4Label.Size = new Size(623, 15);
+            line4Label.TabIndex = 1161;
+            line4Label.Text = "- Rebexe.exe patch to enable having 200+ Systems sprites and Encyclopedia pictures (no more hardcoded limit of 26)";
             // 
             // line5Label
             // 
-            this.line5Label.AutoSize = true;
-            this.line5Label.Location = new System.Drawing.Point(33, 147);
-            this.line5Label.Name = "line5Label";
-            this.line5Label.Size = new System.Drawing.Size(268, 15);
-            this.line5Label.TabIndex = 1162;
-            this.line5Label.Text = "- Unique sprites and pictures for ALL 200 systems!";
+            line5Label.AutoSize = true;
+            line5Label.Location = new Point(33, 147);
+            line5Label.Name = "line5Label";
+            line5Label.Size = new Size(670, 15);
+            line5Label.TabIndex = 1162;
+            line5Label.Text = "- Unique sprites and pictures for ALL 200 systems! + New Encyclopedia descriptions! + New tactical sprites & 3D models (23/29).";
             // 
             // warningLabel
             // 
-            this.warningLabel.AutoSize = true;
-            this.warningLabel.ForeColor = System.Drawing.Color.Red;
-            this.warningLabel.Location = new System.Drawing.Point(24, 177);
-            this.warningLabel.Name = "warningLabel";
-            this.warningLabel.Size = new System.Drawing.Size(680, 15);
-            this.warningLabel.TabIndex = 1163;
-            this.warningLabel.Text = "This patch is currently a work in progress and provided without any warranty of a" +
-    "ny kind. Doesn\'t work with existing savegames.";
+            warningLabel.AutoSize = true;
+            warningLabel.ForeColor = Color.Red;
+            warningLabel.Location = new Point(24, 177);
+            warningLabel.Name = "warningLabel";
+            warningLabel.Size = new Size(670, 15);
+            warningLabel.TabIndex = 1163;
+            warningLabel.Text = "This patch v1 was released 22/3/2023 and is provided without any warranty of any kind. Doesn't work with existing savegames.";
             // 
             // patchInfoLabel
             // 
-            this.patchInfoLabel.AutoSize = true;
-            this.patchInfoLabel.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
-            this.patchInfoLabel.Location = new System.Drawing.Point(140, 215);
-            this.patchInfoLabel.Name = "patchInfoLabel";
-            this.patchInfoLabel.Size = new System.Drawing.Size(185, 15);
-            this.patchInfoLabel.TabIndex = 1164;
-            this.patchInfoLabel.Text = "This window will close when done.";
+            patchInfoLabel.AutoSize = true;
+            patchInfoLabel.Font = new Font("Segoe UI", 9F, FontStyle.Italic, GraphicsUnit.Point);
+            patchInfoLabel.Location = new Point(140, 215);
+            patchInfoLabel.Name = "patchInfoLabel";
+            patchInfoLabel.Size = new Size(185, 15);
+            patchInfoLabel.TabIndex = 1164;
+            patchInfoLabel.Text = "This window will close when done.";
             // 
             // label1Requirement
             // 
-            this.label1Requirement.AutoSize = true;
-            this.label1Requirement.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
-            this.label1Requirement.ForeColor = System.Drawing.Color.Red;
-            this.label1Requirement.Location = new System.Drawing.Point(444, 14);
-            this.label1Requirement.Name = "label1Requirement";
-            this.label1Requirement.Size = new System.Drawing.Size(260, 15);
-            this.label1Requirement.TabIndex = 1165;
-            this.label1Requirement.Text = "Requires  first to apply update-1.02-(2.63.1.0-fix)";
+            label1Requirement.AutoSize = true;
+            label1Requirement.Font = new Font("Segoe UI", 9F, FontStyle.Italic, GraphicsUnit.Point);
+            label1Requirement.ForeColor = Color.Red;
+            label1Requirement.Location = new Point(444, 14);
+            label1Requirement.Name = "label1Requirement";
+            label1Requirement.Size = new Size(260, 15);
+            label1Requirement.TabIndex = 1165;
+            label1Requirement.Text = "Requires  first to apply update-1.02-(2.63.1.0-fix)";
             // 
             // PatchForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(735, 245);
-            this.Controls.Add(this.label1Requirement);
-            this.Controls.Add(this.patchInfoLabel);
-            this.Controls.Add(this.warningLabel);
-            this.Controls.Add(this.line5Label);
-            this.Controls.Add(this.line4Label);
-            this.Controls.Add(this.line2Label);
-            this.Controls.Add(this.line1Label);
-            this.Controls.Add(this.line3Label);
-            this.Controls.Add(this.contentLabel);
-            this.Controls.Add(this.titleLabel);
-            this.Controls.Add(this.patch);
-            this.Controls.Add(this.cancel);
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.KeyPreview = true;
-            this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.MaximizeBox = false;
-            this.MaximumSize = new System.Drawing.Size(751, 284);
-            this.MinimumSize = new System.Drawing.Size(751, 284);
-            this.Name = "PatchForm";
-            this.Text = "Patch";
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.GameObjectsListForm_FormClosing);
-            this.Load += new System.EventHandler(this.GameObjectsListForm_Load);
-            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.GameObjectsListForm_KeyDown);
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(735, 245);
+            Controls.Add(label1Requirement);
+            Controls.Add(patchInfoLabel);
+            Controls.Add(warningLabel);
+            Controls.Add(line5Label);
+            Controls.Add(line4Label);
+            Controls.Add(line2Label);
+            Controls.Add(line1Label);
+            Controls.Add(line3Label);
+            Controls.Add(contentLabel);
+            Controls.Add(titleLabel);
+            Controls.Add(patch);
+            Controls.Add(cancel);
+            Icon = (Icon)resources.GetObject("$this.Icon");
+            KeyPreview = true;
+            Margin = new Padding(4, 3, 4, 3);
+            MaximizeBox = false;
+            MaximumSize = new Size(751, 284);
+            MinimumSize = new Size(751, 284);
+            Name = "PatchForm";
+            Text = "Patch";
+            FormClosing += GameObjectsListForm_FormClosing;
+            Load += GameObjectsListForm_Load;
+            KeyDown += GameObjectsListForm_KeyDown;
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
