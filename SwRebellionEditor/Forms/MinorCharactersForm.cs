@@ -91,7 +91,7 @@ public partial class MinorCharactersForm : MinorCharactersDesignForm
             jediCombatBase.Value = (int)(minorCharacter.CombatBase + minorCharacter.CombatBase * (double)(minorCharacter.JediLevelBase / 100f));
             jediDiplomacyBase.Value = (int)(minorCharacter.DiplomacyBase + minorCharacter.DiplomacyBase * (double)(minorCharacter.JediLevelBase / 100f));
             jediEspionageBase.Value = (int)(minorCharacter.EspionageBase + minorCharacter.EspionageBase * (double)(minorCharacter.JediLevelBase / 100f));
-            jediLeadershipBase.Value = (int)(minorCharacter.LeadershipBase + minorCharacter.LeadershipBase * (double)(minorCharacter.JediLevelBase / 100f));
+            jediLeadershipBase.Value = (int)(minorCharacter.LeadershipBase);
         }
 
         picture.SizeMode = PictureBoxSizeMode.Zoom;

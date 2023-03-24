@@ -91,7 +91,7 @@ public partial class MajorCharactersForm : MajorCharactersDesignForm
             jediCombatBase.Value = (int)(majorCharacter.CombatBase + majorCharacter.CombatBase * (double)(majorCharacter.JediLevelBase / 100f));
             jediDiplomacyBase.Value = (int)(majorCharacter.DiplomacyBase + majorCharacter.DiplomacyBase * (double)(majorCharacter.JediLevelBase / 100f));
             jediEspionageBase.Value = (int)(majorCharacter.EspionageBase + majorCharacter.EspionageBase * (double)(majorCharacter.JediLevelBase / 100f));
-            jediLeadershipBase.Value = (int)(majorCharacter.LeadershipBase + majorCharacter.LeadershipBase * (double)(majorCharacter.JediLevelBase / 100f));
+            jediLeadershipBase.Value = (int)(majorCharacter.LeadershipBase);
         }
 
         picture.SizeMode = PictureBoxSizeMode.Zoom;

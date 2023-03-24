@@ -103,798 +103,726 @@ namespace SwRebellionEditor
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
-            this.menuStrip = new System.Windows.Forms.MenuStrip();
-            this.File_Menu = new System.Windows.Forms.ToolStripMenuItem();
-            this.Exit_ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.Options_Menu = new System.Windows.Forms.ToolStripMenuItem();
-            this.DisplayToolBar_ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.DisplayStatusBar_ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.PlayMusic_ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.PlaySounds_ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.Editor_Menu = new System.Windows.Forms.ToolStripMenuItem();
-            this.Galaxy_ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.mapToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.Sectors_ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.Systems_ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.CharactersAndTroops_ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.MajorCharacters_ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.MinorCharacters_ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.Troops_ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.SpecialForces_ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.Ships_ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.CapitalShips_ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.Fighters_ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.Facilities_ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.DefensiveFacilities_ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.ManufacturingFacilities_ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.ProductionFacilties_ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.Patch_ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.TestCode_ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.GeneralParametersTables_ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.ProbabilityTables_ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.SystemFacilitiesCoreTables_ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.SystemFacilitiesRimTables_ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.StartingArmies_ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.EmpireHq_ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.CMUNEmpireTables_ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.AllianceHq_ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.CMUNAllianceTables_ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.Windows_Menu = new System.Windows.Forms.ToolStripMenuItem();
-            this.Cascade_ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.TileVertical_ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.TileHorizontal_ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.CloseAll_ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.ArrangeIcons_ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.Options_ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.Size1280x1024_ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.Size1024x768_ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.Size800x600_ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.Size640x480_ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.RestoreDefaults_ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.Help_Menu = new System.Windows.Forms.ToolStripMenuItem();
-            this.About_ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.statusStrip = new System.Windows.Forms.StatusStrip();
-            this.Save_ToolStripStatusLabel = new System.Windows.Forms.ToolStripStatusLabel();
-            this.roopDataStatus = new System.Windows.Forms.ToolStripStatusLabel();
-            this.majorCharDataStatus = new System.Windows.Forms.ToolStripStatusLabel();
-            this.minorCharDataStatus = new System.Windows.Forms.ToolStripStatusLabel();
-            this.specOpDataStatus = new System.Windows.Forms.ToolStripStatusLabel();
-            this.CapShipDataStatus = new System.Windows.Forms.ToolStripStatusLabel();
-            this.fighterDataStatus = new System.Windows.Forms.ToolStripStatusLabel();
-            this.ToolTip = new System.Windows.Forms.ToolTip(this.components);
-            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
-            this.Sectors_Button = new System.Windows.Forms.ToolStripButton();
-            this.Systems_Button = new System.Windows.Forms.ToolStripButton();
-            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.MajorCharacters_Button = new System.Windows.Forms.ToolStripButton();
-            this.MinorCharacters_Button = new System.Windows.Forms.ToolStripButton();
-            this.Troops_ToolStripButton = new System.Windows.Forms.ToolStripButton();
-            this.SpecialForces_Button = new System.Windows.Forms.ToolStripButton();
-            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.CapitalShips_Button = new System.Windows.Forms.ToolStripButton();
-            this.Fighters_Button = new System.Windows.Forms.ToolStripButton();
-            this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
-            this.DefensiveFacilities_Button = new System.Windows.Forms.ToolStripButton();
-            this.ManufacturingFacilities_Button = new System.Windows.Forms.ToolStripButton();
-            this.ProductionFacilities_Button = new System.Windows.Forms.ToolStripButton();
-            this.toolStrip = new System.Windows.Forms.ToolStrip();
-            this.galaxyMapButton = new System.Windows.Forms.ToolStripButton();
-            this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
-            this.Patch_Button = new System.Windows.Forms.ToolStripButton();
-            this.menuStrip.SuspendLayout();
-            this.statusStrip.SuspendLayout();
-            this.toolStrip.SuspendLayout();
-            this.SuspendLayout();
+            menuStrip = new MenuStrip();
+            File_Menu = new ToolStripMenuItem();
+            Exit_ToolStripMenuItem = new ToolStripMenuItem();
+            Options_Menu = new ToolStripMenuItem();
+            DisplayToolBar_ToolStripMenuItem = new ToolStripMenuItem();
+            DisplayStatusBar_ToolStripMenuItem = new ToolStripMenuItem();
+            PlayMusic_ToolStripMenuItem = new ToolStripMenuItem();
+            PlaySounds_ToolStripMenuItem = new ToolStripMenuItem();
+            Editor_Menu = new ToolStripMenuItem();
+            Galaxy_ToolStripMenuItem = new ToolStripMenuItem();
+            mapToolStripMenuItem = new ToolStripMenuItem();
+            Sectors_ToolStripMenuItem = new ToolStripMenuItem();
+            Systems_ToolStripMenuItem = new ToolStripMenuItem();
+            CharactersAndTroops_ToolStripMenuItem = new ToolStripMenuItem();
+            MajorCharacters_ToolStripMenuItem = new ToolStripMenuItem();
+            MinorCharacters_ToolStripMenuItem = new ToolStripMenuItem();
+            Troops_ToolStripMenuItem = new ToolStripMenuItem();
+            SpecialForces_ToolStripMenuItem = new ToolStripMenuItem();
+            Ships_ToolStripMenuItem = new ToolStripMenuItem();
+            CapitalShips_ToolStripMenuItem = new ToolStripMenuItem();
+            Fighters_ToolStripMenuItem = new ToolStripMenuItem();
+            Facilities_ToolStripMenuItem = new ToolStripMenuItem();
+            DefensiveFacilities_ToolStripMenuItem = new ToolStripMenuItem();
+            ManufacturingFacilities_ToolStripMenuItem = new ToolStripMenuItem();
+            ProductionFacilties_ToolStripMenuItem = new ToolStripMenuItem();
+            Patch_ToolStripMenuItem = new ToolStripMenuItem();
+            TestCode_ToolStripMenuItem = new ToolStripMenuItem();
+            GeneralParametersTables_ToolStripMenuItem = new ToolStripMenuItem();
+            ProbabilityTables_ToolStripMenuItem = new ToolStripMenuItem();
+            SystemFacilitiesCoreTables_ToolStripMenuItem = new ToolStripMenuItem();
+            SystemFacilitiesRimTables_ToolStripMenuItem = new ToolStripMenuItem();
+            StartingArmies_ToolStripMenuItem = new ToolStripMenuItem();
+            EmpireHq_ToolStripMenuItem = new ToolStripMenuItem();
+            CMUNEmpireTables_ToolStripMenuItem = new ToolStripMenuItem();
+            AllianceHq_ToolStripMenuItem = new ToolStripMenuItem();
+            CMUNAllianceTables_ToolStripMenuItem = new ToolStripMenuItem();
+            Windows_Menu = new ToolStripMenuItem();
+            Cascade_ToolStripMenuItem = new ToolStripMenuItem();
+            TileVertical_ToolStripMenuItem = new ToolStripMenuItem();
+            TileHorizontal_ToolStripMenuItem = new ToolStripMenuItem();
+            CloseAll_ToolStripMenuItem = new ToolStripMenuItem();
+            ArrangeIcons_ToolStripMenuItem = new ToolStripMenuItem();
+            Options_ToolStripMenuItem = new ToolStripMenuItem();
+            Size1280x1024_ToolStripMenuItem = new ToolStripMenuItem();
+            Size1024x768_ToolStripMenuItem = new ToolStripMenuItem();
+            Size800x600_ToolStripMenuItem = new ToolStripMenuItem();
+            Size640x480_ToolStripMenuItem = new ToolStripMenuItem();
+            RestoreDefaults_ToolStripMenuItem = new ToolStripMenuItem();
+            Help_Menu = new ToolStripMenuItem();
+            About_ToolStripMenuItem = new ToolStripMenuItem();
+            statusStrip = new StatusStrip();
+            Save_ToolStripStatusLabel = new ToolStripStatusLabel();
+            roopDataStatus = new ToolStripStatusLabel();
+            majorCharDataStatus = new ToolStripStatusLabel();
+            minorCharDataStatus = new ToolStripStatusLabel();
+            specOpDataStatus = new ToolStripStatusLabel();
+            CapShipDataStatus = new ToolStripStatusLabel();
+            fighterDataStatus = new ToolStripStatusLabel();
+            ToolTip = new ToolTip(components);
+            imageList1 = new ImageList(components);
+            Sectors_Button = new ToolStripButton();
+            Systems_Button = new ToolStripButton();
+            toolStripSeparator1 = new ToolStripSeparator();
+            MajorCharacters_Button = new ToolStripButton();
+            MinorCharacters_Button = new ToolStripButton();
+            Troops_ToolStripButton = new ToolStripButton();
+            SpecialForces_Button = new ToolStripButton();
+            toolStripSeparator2 = new ToolStripSeparator();
+            CapitalShips_Button = new ToolStripButton();
+            Fighters_Button = new ToolStripButton();
+            toolStripSeparator3 = new ToolStripSeparator();
+            DefensiveFacilities_Button = new ToolStripButton();
+            ManufacturingFacilities_Button = new ToolStripButton();
+            ProductionFacilities_Button = new ToolStripButton();
+            toolStrip = new ToolStrip();
+            galaxyMapButton = new ToolStripButton();
+            toolStripSeparator4 = new ToolStripSeparator();
+            Patch_Button = new ToolStripButton();
+            menuStrip.SuspendLayout();
+            statusStrip.SuspendLayout();
+            toolStrip.SuspendLayout();
+            SuspendLayout();
             // 
             // menuStrip
             // 
-            this.menuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.File_Menu,
-            this.Options_Menu,
-            this.Editor_Menu,
-            this.Windows_Menu,
-            this.Help_Menu});
-            this.menuStrip.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip.MdiWindowListItem = this.Windows_Menu;
-            this.menuStrip.Name = "menuStrip";
-            this.menuStrip.Padding = new System.Windows.Forms.Padding(7, 2, 0, 2);
-            this.menuStrip.Size = new System.Drawing.Size(1008, 24);
-            this.menuStrip.TabIndex = 0;
-            this.menuStrip.Text = "MenuStrip";
+            menuStrip.Items.AddRange(new ToolStripItem[] { File_Menu, Options_Menu, Editor_Menu, Windows_Menu, Help_Menu });
+            menuStrip.Location = new Point(0, 0);
+            menuStrip.MdiWindowListItem = Windows_Menu;
+            menuStrip.Name = "menuStrip";
+            menuStrip.Padding = new Padding(7, 2, 0, 2);
+            menuStrip.Size = new Size(1008, 24);
+            menuStrip.TabIndex = 0;
+            menuStrip.Text = "MenuStrip";
             // 
             // File_Menu
             // 
-            this.File_Menu.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.Exit_ToolStripMenuItem});
-            this.File_Menu.ImageTransparentColor = System.Drawing.SystemColors.ActiveBorder;
-            this.File_Menu.Name = "File_Menu";
-            this.File_Menu.Size = new System.Drawing.Size(37, 20);
-            this.File_Menu.Text = "&File";
+            File_Menu.DropDownItems.AddRange(new ToolStripItem[] { Exit_ToolStripMenuItem });
+            File_Menu.ImageTransparentColor = SystemColors.ActiveBorder;
+            File_Menu.Name = "File_Menu";
+            File_Menu.Size = new Size(37, 20);
+            File_Menu.Text = "&File";
             // 
             // Exit_ToolStripMenuItem
             // 
-            this.Exit_ToolStripMenuItem.Name = "Exit_ToolStripMenuItem";
-            this.Exit_ToolStripMenuItem.Size = new System.Drawing.Size(93, 22);
-            this.Exit_ToolStripMenuItem.Text = "Exit";
-            this.Exit_ToolStripMenuItem.Click += new System.EventHandler(this.Exit_ToolsStripMenuItem_Click);
+            Exit_ToolStripMenuItem.Name = "Exit_ToolStripMenuItem";
+            Exit_ToolStripMenuItem.Size = new Size(93, 22);
+            Exit_ToolStripMenuItem.Text = "Exit";
+            Exit_ToolStripMenuItem.Click += Exit_ToolsStripMenuItem_Click;
             // 
             // Options_Menu
             // 
-            this.Options_Menu.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.DisplayToolBar_ToolStripMenuItem,
-            this.DisplayStatusBar_ToolStripMenuItem,
-            this.PlayMusic_ToolStripMenuItem,
-            this.PlaySounds_ToolStripMenuItem});
-            this.Options_Menu.Name = "Options_Menu";
-            this.Options_Menu.Size = new System.Drawing.Size(61, 20);
-            this.Options_Menu.Text = "&Options";
+            Options_Menu.DropDownItems.AddRange(new ToolStripItem[] { DisplayToolBar_ToolStripMenuItem, DisplayStatusBar_ToolStripMenuItem, PlayMusic_ToolStripMenuItem, PlaySounds_ToolStripMenuItem });
+            Options_Menu.Name = "Options_Menu";
+            Options_Menu.Size = new Size(61, 20);
+            Options_Menu.Text = "&Options";
             // 
             // DisplayToolBar_ToolStripMenuItem
             // 
-            this.DisplayToolBar_ToolStripMenuItem.AutoToolTip = true;
-            this.DisplayToolBar_ToolStripMenuItem.Checked = true;
-            this.DisplayToolBar_ToolStripMenuItem.CheckOnClick = true;
-            this.DisplayToolBar_ToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.DisplayToolBar_ToolStripMenuItem.Name = "DisplayToolBar_ToolStripMenuItem";
-            this.DisplayToolBar_ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.DisplayToolBar_ToolStripMenuItem.Text = "Display Toolbar";
-            this.DisplayToolBar_ToolStripMenuItem.Click += new System.EventHandler(this.DisplayToolBar_ToolStripMenuItem_Click);
+            DisplayToolBar_ToolStripMenuItem.AutoToolTip = true;
+            DisplayToolBar_ToolStripMenuItem.Checked = true;
+            DisplayToolBar_ToolStripMenuItem.CheckOnClick = true;
+            DisplayToolBar_ToolStripMenuItem.CheckState = CheckState.Checked;
+            DisplayToolBar_ToolStripMenuItem.Name = "DisplayToolBar_ToolStripMenuItem";
+            DisplayToolBar_ToolStripMenuItem.Size = new Size(167, 22);
+            DisplayToolBar_ToolStripMenuItem.Text = "Display Toolbar";
+            DisplayToolBar_ToolStripMenuItem.Click += DisplayToolBar_ToolStripMenuItem_Click;
             // 
             // DisplayStatusBar_ToolStripMenuItem
             // 
-            this.DisplayStatusBar_ToolStripMenuItem.Checked = true;
-            this.DisplayStatusBar_ToolStripMenuItem.CheckOnClick = true;
-            this.DisplayStatusBar_ToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.DisplayStatusBar_ToolStripMenuItem.Name = "DisplayStatusBar_ToolStripMenuItem";
-            this.DisplayStatusBar_ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.DisplayStatusBar_ToolStripMenuItem.Text = "Display Status Bar";
-            this.DisplayStatusBar_ToolStripMenuItem.Click += new System.EventHandler(this.DisplayStatusBar_ToolStripMenuItem_Click);
+            DisplayStatusBar_ToolStripMenuItem.Checked = true;
+            DisplayStatusBar_ToolStripMenuItem.CheckOnClick = true;
+            DisplayStatusBar_ToolStripMenuItem.CheckState = CheckState.Checked;
+            DisplayStatusBar_ToolStripMenuItem.Name = "DisplayStatusBar_ToolStripMenuItem";
+            DisplayStatusBar_ToolStripMenuItem.Size = new Size(167, 22);
+            DisplayStatusBar_ToolStripMenuItem.Text = "Display Status Bar";
+            DisplayStatusBar_ToolStripMenuItem.Click += DisplayStatusBar_ToolStripMenuItem_Click;
             // 
             // PlayMusic_ToolStripMenuItem
             // 
-            this.PlayMusic_ToolStripMenuItem.Name = "PlayMusic_ToolStripMenuItem";
-            this.PlayMusic_ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.PlayMusic_ToolStripMenuItem.Text = "Play Music";
-            this.PlayMusic_ToolStripMenuItem.Click += new System.EventHandler(this.PlayMusic_ToolStripMenuItem_Click);
+            PlayMusic_ToolStripMenuItem.Name = "PlayMusic_ToolStripMenuItem";
+            PlayMusic_ToolStripMenuItem.Size = new Size(167, 22);
+            PlayMusic_ToolStripMenuItem.Text = "Play Music";
+            PlayMusic_ToolStripMenuItem.Click += PlayMusic_ToolStripMenuItem_Click;
             // 
             // PlaySounds_ToolStripMenuItem
             // 
-            this.PlaySounds_ToolStripMenuItem.Name = "PlaySounds_ToolStripMenuItem";
-            this.PlaySounds_ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.PlaySounds_ToolStripMenuItem.Text = "Play Sounds";
-            this.PlaySounds_ToolStripMenuItem.Click += new System.EventHandler(this.PlaySounds_ToolStripMenuItem_Click);
+            PlaySounds_ToolStripMenuItem.Name = "PlaySounds_ToolStripMenuItem";
+            PlaySounds_ToolStripMenuItem.Size = new Size(167, 22);
+            PlaySounds_ToolStripMenuItem.Text = "Play Sounds";
+            PlaySounds_ToolStripMenuItem.Click += PlaySounds_ToolStripMenuItem_Click;
             // 
             // Editor_Menu
             // 
-            this.Editor_Menu.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.Galaxy_ToolStripMenuItem,
-            this.CharactersAndTroops_ToolStripMenuItem,
-            this.Ships_ToolStripMenuItem,
-            this.Facilities_ToolStripMenuItem,
-            this.Patch_ToolStripMenuItem,
-            this.TestCode_ToolStripMenuItem});
-            this.Editor_Menu.Name = "Editor_Menu";
-            this.Editor_Menu.Size = new System.Drawing.Size(50, 20);
-            this.Editor_Menu.Text = "&Editor";
+            Editor_Menu.DropDownItems.AddRange(new ToolStripItem[] { Galaxy_ToolStripMenuItem, CharactersAndTroops_ToolStripMenuItem, Ships_ToolStripMenuItem, Facilities_ToolStripMenuItem, Patch_ToolStripMenuItem, TestCode_ToolStripMenuItem });
+            Editor_Menu.Name = "Editor_Menu";
+            Editor_Menu.Size = new Size(50, 20);
+            Editor_Menu.Text = "&Editor";
             // 
             // Galaxy_ToolStripMenuItem
             // 
-            this.Galaxy_ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.mapToolStripMenuItem,
-            this.Sectors_ToolStripMenuItem,
-            this.Systems_ToolStripMenuItem});
-            this.Galaxy_ToolStripMenuItem.Image = global::SwRebellionEditor.Resources.galaxy_16x16_bmp;
-            this.Galaxy_ToolStripMenuItem.Name = "Galaxy_ToolStripMenuItem";
-            this.Galaxy_ToolStripMenuItem.Size = new System.Drawing.Size(195, 22);
-            this.Galaxy_ToolStripMenuItem.Text = "Galaxy";
+            Galaxy_ToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { mapToolStripMenuItem, Sectors_ToolStripMenuItem, Systems_ToolStripMenuItem });
+            Galaxy_ToolStripMenuItem.Image = Resources.galaxy_16x16_bmp;
+            Galaxy_ToolStripMenuItem.Name = "Galaxy_ToolStripMenuItem";
+            Galaxy_ToolStripMenuItem.Size = new Size(195, 22);
+            Galaxy_ToolStripMenuItem.Text = "Galaxy";
             // 
             // mapToolStripMenuItem
             // 
-            this.mapToolStripMenuItem.Image = global::SwRebellionEditor.Resources.galaxy_16x16_bmp;
-            this.mapToolStripMenuItem.Name = "mapToolStripMenuItem";
-            this.mapToolStripMenuItem.Size = new System.Drawing.Size(117, 22);
-            this.mapToolStripMenuItem.Text = "Map";
-            this.mapToolStripMenuItem.Click += new System.EventHandler(this.Map_ToolStripMenuItem_Click);
+            mapToolStripMenuItem.Image = Resources.galaxy_16x16_bmp;
+            mapToolStripMenuItem.Name = "mapToolStripMenuItem";
+            mapToolStripMenuItem.Size = new Size(117, 22);
+            mapToolStripMenuItem.Text = "Map";
+            mapToolStripMenuItem.Click += Map_ToolStripMenuItem_Click;
             // 
             // Sectors_ToolStripMenuItem
             // 
-            this.Sectors_ToolStripMenuItem.Image = global::SwRebellionEditor.Resources.sector_16x16_bmp;
-            this.Sectors_ToolStripMenuItem.Name = "Sectors_ToolStripMenuItem";
-            this.Sectors_ToolStripMenuItem.Size = new System.Drawing.Size(117, 22);
-            this.Sectors_ToolStripMenuItem.Text = "Sectors";
-            this.Sectors_ToolStripMenuItem.Click += new System.EventHandler(this.Sectors_ToolStripMenuItem_Click);
+            Sectors_ToolStripMenuItem.Image = Resources.sector_16x16_bmp;
+            Sectors_ToolStripMenuItem.Name = "Sectors_ToolStripMenuItem";
+            Sectors_ToolStripMenuItem.Size = new Size(117, 22);
+            Sectors_ToolStripMenuItem.Text = "Sectors";
+            Sectors_ToolStripMenuItem.Click += Sectors_ToolStripMenuItem_Click;
             // 
             // Systems_ToolStripMenuItem
             // 
-            this.Systems_ToolStripMenuItem.Image = global::SwRebellionEditor.Resources.planet_37x37_bmp;
-            this.Systems_ToolStripMenuItem.Name = "Systems_ToolStripMenuItem";
-            this.Systems_ToolStripMenuItem.Size = new System.Drawing.Size(117, 22);
-            this.Systems_ToolStripMenuItem.Text = "Systems";
-            this.Systems_ToolStripMenuItem.Click += new System.EventHandler(this.Systems_ToolStripMenuItem_Click);
+            Systems_ToolStripMenuItem.Image = Resources.planet_37x37_bmp;
+            Systems_ToolStripMenuItem.Name = "Systems_ToolStripMenuItem";
+            Systems_ToolStripMenuItem.Size = new Size(117, 22);
+            Systems_ToolStripMenuItem.Text = "Systems";
+            Systems_ToolStripMenuItem.Click += Systems_ToolStripMenuItem_Click;
             // 
             // CharactersAndTroops_ToolStripMenuItem
             // 
-            this.CharactersAndTroops_ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.MajorCharacters_ToolStripMenuItem,
-            this.MinorCharacters_ToolStripMenuItem,
-            this.Troops_ToolStripMenuItem,
-            this.SpecialForces_ToolStripMenuItem});
-            this.CharactersAndTroops_ToolStripMenuItem.Image = global::SwRebellionEditor.Resources.luke_16x16_bmp;
-            this.CharactersAndTroops_ToolStripMenuItem.Name = "CharactersAndTroops_ToolStripMenuItem";
-            this.CharactersAndTroops_ToolStripMenuItem.Size = new System.Drawing.Size(195, 22);
-            this.CharactersAndTroops_ToolStripMenuItem.Text = "Characters and Troops";
+            CharactersAndTroops_ToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { MajorCharacters_ToolStripMenuItem, MinorCharacters_ToolStripMenuItem, Troops_ToolStripMenuItem, SpecialForces_ToolStripMenuItem });
+            CharactersAndTroops_ToolStripMenuItem.Image = Resources.luke_16x16_bmp;
+            CharactersAndTroops_ToolStripMenuItem.Name = "CharactersAndTroops_ToolStripMenuItem";
+            CharactersAndTroops_ToolStripMenuItem.Size = new Size(195, 22);
+            CharactersAndTroops_ToolStripMenuItem.Text = "Characters and Troops";
             // 
             // MajorCharacters_ToolStripMenuItem
             // 
-            this.MajorCharacters_ToolStripMenuItem.Image = global::SwRebellionEditor.Resources.luke_16x16_bmp;
-            this.MajorCharacters_ToolStripMenuItem.Name = "MajorCharacters_ToolStripMenuItem";
-            this.MajorCharacters_ToolStripMenuItem.Size = new System.Drawing.Size(165, 22);
-            this.MajorCharacters_ToolStripMenuItem.Text = "Major Characters";
-            this.MajorCharacters_ToolStripMenuItem.Click += new System.EventHandler(this.MajorCharacters_ToolStripMenuItem_Click);
+            MajorCharacters_ToolStripMenuItem.Image = Resources.luke_16x16_bmp;
+            MajorCharacters_ToolStripMenuItem.Name = "MajorCharacters_ToolStripMenuItem";
+            MajorCharacters_ToolStripMenuItem.Size = new Size(165, 22);
+            MajorCharacters_ToolStripMenuItem.Text = "Major Characters";
+            MajorCharacters_ToolStripMenuItem.Click += MajorCharacters_ToolStripMenuItem_Click;
             // 
             // MinorCharacters_ToolStripMenuItem
             // 
-            this.MinorCharacters_ToolStripMenuItem.Image = global::SwRebellionEditor.Resources.thrawn_16x16_bmp;
-            this.MinorCharacters_ToolStripMenuItem.Name = "MinorCharacters_ToolStripMenuItem";
-            this.MinorCharacters_ToolStripMenuItem.Size = new System.Drawing.Size(165, 22);
-            this.MinorCharacters_ToolStripMenuItem.Text = "Minor Characters";
-            this.MinorCharacters_ToolStripMenuItem.Click += new System.EventHandler(this.MinorCharacters_ToolStripMenuItem_Click);
+            MinorCharacters_ToolStripMenuItem.Image = Resources.thrawn_16x16_bmp;
+            MinorCharacters_ToolStripMenuItem.Name = "MinorCharacters_ToolStripMenuItem";
+            MinorCharacters_ToolStripMenuItem.Size = new Size(165, 22);
+            MinorCharacters_ToolStripMenuItem.Text = "Minor Characters";
+            MinorCharacters_ToolStripMenuItem.Click += MinorCharacters_ToolStripMenuItem_Click;
             // 
             // Troops_ToolStripMenuItem
             // 
-            this.Troops_ToolStripMenuItem.Image = global::SwRebellionEditor.Resources.stormtrooper_16x16_bmp;
-            this.Troops_ToolStripMenuItem.Name = "Troops_ToolStripMenuItem";
-            this.Troops_ToolStripMenuItem.Size = new System.Drawing.Size(165, 22);
-            this.Troops_ToolStripMenuItem.Text = "Troops";
-            this.Troops_ToolStripMenuItem.Click += new System.EventHandler(this.Troops_ToolStripMenuItem_Click);
+            Troops_ToolStripMenuItem.Image = Resources.stormtrooper_16x16_bmp;
+            Troops_ToolStripMenuItem.Name = "Troops_ToolStripMenuItem";
+            Troops_ToolStripMenuItem.Size = new Size(165, 22);
+            Troops_ToolStripMenuItem.Text = "Troops";
+            Troops_ToolStripMenuItem.Click += Troops_ToolStripMenuItem_Click;
             // 
             // SpecialForces_ToolStripMenuItem
             // 
-            this.SpecialForces_ToolStripMenuItem.Image = global::SwRebellionEditor.Resources.c3po_16x16_bmp;
-            this.SpecialForces_ToolStripMenuItem.Name = "SpecialForces_ToolStripMenuItem";
-            this.SpecialForces_ToolStripMenuItem.Size = new System.Drawing.Size(165, 22);
-            this.SpecialForces_ToolStripMenuItem.Text = "Special Forces";
-            this.SpecialForces_ToolStripMenuItem.Click += new System.EventHandler(this.SpecialForces_ToolStripMenuItem_Click);
+            SpecialForces_ToolStripMenuItem.Image = Resources.c3po_16x16_bmp;
+            SpecialForces_ToolStripMenuItem.Name = "SpecialForces_ToolStripMenuItem";
+            SpecialForces_ToolStripMenuItem.Size = new Size(165, 22);
+            SpecialForces_ToolStripMenuItem.Text = "Special Forces";
+            SpecialForces_ToolStripMenuItem.Click += SpecialForces_ToolStripMenuItem_Click;
             // 
             // Ships_ToolStripMenuItem
             // 
-            this.Ships_ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.CapitalShips_ToolStripMenuItem,
-            this.Fighters_ToolStripMenuItem});
-            this.Ships_ToolStripMenuItem.Image = global::SwRebellionEditor.Resources.star_destroyer_16x16_bmp;
-            this.Ships_ToolStripMenuItem.Name = "Ships_ToolStripMenuItem";
-            this.Ships_ToolStripMenuItem.Size = new System.Drawing.Size(195, 22);
-            this.Ships_ToolStripMenuItem.Text = "Ships";
+            Ships_ToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { CapitalShips_ToolStripMenuItem, Fighters_ToolStripMenuItem });
+            Ships_ToolStripMenuItem.Image = Resources.star_destroyer_16x16_bmp;
+            Ships_ToolStripMenuItem.Name = "Ships_ToolStripMenuItem";
+            Ships_ToolStripMenuItem.Size = new Size(195, 22);
+            Ships_ToolStripMenuItem.Text = "Ships";
             // 
             // CapitalShips_ToolStripMenuItem
             // 
-            this.CapitalShips_ToolStripMenuItem.Image = global::SwRebellionEditor.Resources.star_destroyer_16x16_bmp;
-            this.CapitalShips_ToolStripMenuItem.Name = "CapitalShips_ToolStripMenuItem";
-            this.CapitalShips_ToolStripMenuItem.Size = new System.Drawing.Size(142, 22);
-            this.CapitalShips_ToolStripMenuItem.Text = "Capital Ships";
-            this.CapitalShips_ToolStripMenuItem.Click += new System.EventHandler(this.CapitalShips_ToolStripMenuItem_Click);
+            CapitalShips_ToolStripMenuItem.Image = Resources.star_destroyer_16x16_bmp;
+            CapitalShips_ToolStripMenuItem.Name = "CapitalShips_ToolStripMenuItem";
+            CapitalShips_ToolStripMenuItem.Size = new Size(142, 22);
+            CapitalShips_ToolStripMenuItem.Text = "Capital Ships";
+            CapitalShips_ToolStripMenuItem.Click += CapitalShips_ToolStripMenuItem_Click;
             // 
             // Fighters_ToolStripMenuItem
             // 
-            this.Fighters_ToolStripMenuItem.Image = global::SwRebellionEditor.Resources.tie_fighter_16x16_bmp;
-            this.Fighters_ToolStripMenuItem.Name = "Fighters_ToolStripMenuItem";
-            this.Fighters_ToolStripMenuItem.Size = new System.Drawing.Size(142, 22);
-            this.Fighters_ToolStripMenuItem.Text = "Fighters";
-            this.Fighters_ToolStripMenuItem.Click += new System.EventHandler(this.Fighters_ToolStripMenuItem_Click);
+            Fighters_ToolStripMenuItem.Image = Resources.tie_fighter_16x16_bmp;
+            Fighters_ToolStripMenuItem.Name = "Fighters_ToolStripMenuItem";
+            Fighters_ToolStripMenuItem.Size = new Size(142, 22);
+            Fighters_ToolStripMenuItem.Text = "Fighters";
+            Fighters_ToolStripMenuItem.Click += Fighters_ToolStripMenuItem_Click;
             // 
             // Facilities_ToolStripMenuItem
             // 
-            this.Facilities_ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.DefensiveFacilities_ToolStripMenuItem,
-            this.ManufacturingFacilities_ToolStripMenuItem,
-            this.ProductionFacilties_ToolStripMenuItem});
-            this.Facilities_ToolStripMenuItem.Image = global::SwRebellionEditor.Resources.mine_16x16_bmp;
-            this.Facilities_ToolStripMenuItem.Name = "Facilities_ToolStripMenuItem";
-            this.Facilities_ToolStripMenuItem.Size = new System.Drawing.Size(195, 22);
-            this.Facilities_ToolStripMenuItem.Text = "Facilities";
+            Facilities_ToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { DefensiveFacilities_ToolStripMenuItem, ManufacturingFacilities_ToolStripMenuItem, ProductionFacilties_ToolStripMenuItem });
+            Facilities_ToolStripMenuItem.Image = Resources.mine_16x16_bmp;
+            Facilities_ToolStripMenuItem.Name = "Facilities_ToolStripMenuItem";
+            Facilities_ToolStripMenuItem.Size = new Size(195, 22);
+            Facilities_ToolStripMenuItem.Text = "Facilities";
             // 
             // DefensiveFacilities_ToolStripMenuItem
             // 
-            this.DefensiveFacilities_ToolStripMenuItem.Image = global::SwRebellionEditor.Resources.defense_facility_16x16_bmp;
-            this.DefensiveFacilities_ToolStripMenuItem.Name = "DefensiveFacilities_ToolStripMenuItem";
-            this.DefensiveFacilities_ToolStripMenuItem.Size = new System.Drawing.Size(201, 22);
-            this.DefensiveFacilities_ToolStripMenuItem.Text = "Defensive Facilities";
-            this.DefensiveFacilities_ToolStripMenuItem.Click += new System.EventHandler(this.Defensive_ToolStripMenuItem_Click);
+            DefensiveFacilities_ToolStripMenuItem.Image = Resources.defense_facility_16x16_bmp;
+            DefensiveFacilities_ToolStripMenuItem.Name = "DefensiveFacilities_ToolStripMenuItem";
+            DefensiveFacilities_ToolStripMenuItem.Size = new Size(201, 22);
+            DefensiveFacilities_ToolStripMenuItem.Text = "Defensive Facilities";
+            DefensiveFacilities_ToolStripMenuItem.Click += Defensive_ToolStripMenuItem_Click;
             // 
             // ManufacturingFacilities_ToolStripMenuItem
             // 
-            this.ManufacturingFacilities_ToolStripMenuItem.Image = global::SwRebellionEditor.Resources.shipyard_16x16_bmp;
-            this.ManufacturingFacilities_ToolStripMenuItem.Name = "ManufacturingFacilities_ToolStripMenuItem";
-            this.ManufacturingFacilities_ToolStripMenuItem.Size = new System.Drawing.Size(201, 22);
-            this.ManufacturingFacilities_ToolStripMenuItem.Text = "Manufacturing Facilities";
-            this.ManufacturingFacilities_ToolStripMenuItem.Click += new System.EventHandler(this.Manufacturing_ToolStripMenuItem_Click);
+            ManufacturingFacilities_ToolStripMenuItem.Image = Resources.shipyard_16x16_bmp;
+            ManufacturingFacilities_ToolStripMenuItem.Name = "ManufacturingFacilities_ToolStripMenuItem";
+            ManufacturingFacilities_ToolStripMenuItem.Size = new Size(201, 22);
+            ManufacturingFacilities_ToolStripMenuItem.Text = "Manufacturing Facilities";
+            ManufacturingFacilities_ToolStripMenuItem.Click += Manufacturing_ToolStripMenuItem_Click;
             // 
             // ProductionFacilties_ToolStripMenuItem
             // 
-            this.ProductionFacilties_ToolStripMenuItem.Image = global::SwRebellionEditor.Resources.mine_16x16_bmp;
-            this.ProductionFacilties_ToolStripMenuItem.Name = "ProductionFacilties_ToolStripMenuItem";
-            this.ProductionFacilties_ToolStripMenuItem.Size = new System.Drawing.Size(201, 22);
-            this.ProductionFacilties_ToolStripMenuItem.Text = "Production Facilities";
-            this.ProductionFacilties_ToolStripMenuItem.Click += new System.EventHandler(this.Production_ToolStripMenuItem_Click);
+            ProductionFacilties_ToolStripMenuItem.Image = Resources.mine_16x16_bmp;
+            ProductionFacilties_ToolStripMenuItem.Name = "ProductionFacilties_ToolStripMenuItem";
+            ProductionFacilties_ToolStripMenuItem.Size = new Size(201, 22);
+            ProductionFacilties_ToolStripMenuItem.Text = "Production Facilities";
+            ProductionFacilties_ToolStripMenuItem.Click += Production_ToolStripMenuItem_Click;
             // 
             // Patch_ToolStripMenuItem
             // 
-            this.Patch_ToolStripMenuItem.Image = global::SwRebellionEditor.Resources.death_star_16x16xbmp;
-            this.Patch_ToolStripMenuItem.Name = "Patch_ToolStripMenuItem";
-            this.Patch_ToolStripMenuItem.Size = new System.Drawing.Size(195, 22);
-            this.Patch_ToolStripMenuItem.Text = "25th Anniversary Patch";
-            this.Patch_ToolStripMenuItem.Click += new System.EventHandler(this.Patch_ToolStripMenuItem_Click);
+            Patch_ToolStripMenuItem.Image = Resources.death_star_16x16xbmp;
+            Patch_ToolStripMenuItem.Name = "Patch_ToolStripMenuItem";
+            Patch_ToolStripMenuItem.Size = new Size(195, 22);
+            Patch_ToolStripMenuItem.Text = "25th Anniversary Patch";
+            Patch_ToolStripMenuItem.Click += Patch_ToolStripMenuItem_Click;
             // 
             // TestCode_ToolStripMenuItem
             // 
-            this.TestCode_ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.GeneralParametersTables_ToolStripMenuItem,
-            this.ProbabilityTables_ToolStripMenuItem,
-            this.StartingArmies_ToolStripMenuItem});
-            this.TestCode_ToolStripMenuItem.Name = "TestCode_ToolStripMenuItem";
-            this.TestCode_ToolStripMenuItem.Size = new System.Drawing.Size(195, 22);
-            this.TestCode_ToolStripMenuItem.Text = "Test Code";
+            TestCode_ToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { GeneralParametersTables_ToolStripMenuItem, ProbabilityTables_ToolStripMenuItem, StartingArmies_ToolStripMenuItem });
+            TestCode_ToolStripMenuItem.Name = "TestCode_ToolStripMenuItem";
+            TestCode_ToolStripMenuItem.Size = new Size(195, 22);
+            TestCode_ToolStripMenuItem.Text = "Test Code";
             // 
             // GeneralParametersTables_ToolStripMenuItem
             // 
-            this.GeneralParametersTables_ToolStripMenuItem.Name = "GeneralParametersTables_ToolStripMenuItem";
-            this.GeneralParametersTables_ToolStripMenuItem.Size = new System.Drawing.Size(177, 22);
-            this.GeneralParametersTables_ToolStripMenuItem.Text = "HyperSpace Speeds";
-            this.GeneralParametersTables_ToolStripMenuItem.Click += new System.EventHandler(this.GeneralParametersTables_ToolStripMenuItem_Click);
+            GeneralParametersTables_ToolStripMenuItem.Name = "GeneralParametersTables_ToolStripMenuItem";
+            GeneralParametersTables_ToolStripMenuItem.Size = new Size(177, 22);
+            GeneralParametersTables_ToolStripMenuItem.Text = "HyperSpace Speeds";
+            GeneralParametersTables_ToolStripMenuItem.Click += GeneralParametersTables_ToolStripMenuItem_Click;
             // 
             // ProbabilityTables_ToolStripMenuItem
             // 
-            this.ProbabilityTables_ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.SystemFacilitiesCoreTables_ToolStripMenuItem,
-            this.SystemFacilitiesRimTables_ToolStripMenuItem});
-            this.ProbabilityTables_ToolStripMenuItem.Name = "ProbabilityTables_ToolStripMenuItem";
-            this.ProbabilityTables_ToolStripMenuItem.Size = new System.Drawing.Size(177, 22);
-            this.ProbabilityTables_ToolStripMenuItem.Text = "Probability Tables";
+            ProbabilityTables_ToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { SystemFacilitiesCoreTables_ToolStripMenuItem, SystemFacilitiesRimTables_ToolStripMenuItem });
+            ProbabilityTables_ToolStripMenuItem.Name = "ProbabilityTables_ToolStripMenuItem";
+            ProbabilityTables_ToolStripMenuItem.Size = new Size(177, 22);
+            ProbabilityTables_ToolStripMenuItem.Text = "Probability Tables";
             // 
             // SystemFacilitiesCoreTables_ToolStripMenuItem
             // 
-            this.SystemFacilitiesCoreTables_ToolStripMenuItem.Name = "SystemFacilitiesCoreTables_ToolStripMenuItem";
-            this.SystemFacilitiesCoreTables_ToolStripMenuItem.Size = new System.Drawing.Size(219, 22);
-            this.SystemFacilitiesCoreTables_ToolStripMenuItem.Text = "Sytem Facilities Core Tables";
-            this.SystemFacilitiesCoreTables_ToolStripMenuItem.Click += new System.EventHandler(this.SystemFacilitiesCoreTables_ToolStripMenuItem_Click);
+            SystemFacilitiesCoreTables_ToolStripMenuItem.Name = "SystemFacilitiesCoreTables_ToolStripMenuItem";
+            SystemFacilitiesCoreTables_ToolStripMenuItem.Size = new Size(219, 22);
+            SystemFacilitiesCoreTables_ToolStripMenuItem.Text = "Sytem Facilities Core Tables";
+            SystemFacilitiesCoreTables_ToolStripMenuItem.Click += SystemFacilitiesCoreTables_ToolStripMenuItem_Click;
             // 
             // SystemFacilitiesRimTables_ToolStripMenuItem
             // 
-            this.SystemFacilitiesRimTables_ToolStripMenuItem.Name = "SystemFacilitiesRimTables_ToolStripMenuItem";
-            this.SystemFacilitiesRimTables_ToolStripMenuItem.Size = new System.Drawing.Size(219, 22);
-            this.SystemFacilitiesRimTables_ToolStripMenuItem.Text = "System Facilities Rim Tables";
-            this.SystemFacilitiesRimTables_ToolStripMenuItem.Click += new System.EventHandler(this.SystemFacilitiesRimTables_ToolStripMenuItem_Click);
+            SystemFacilitiesRimTables_ToolStripMenuItem.Name = "SystemFacilitiesRimTables_ToolStripMenuItem";
+            SystemFacilitiesRimTables_ToolStripMenuItem.Size = new Size(219, 22);
+            SystemFacilitiesRimTables_ToolStripMenuItem.Text = "System Facilities Rim Tables";
+            SystemFacilitiesRimTables_ToolStripMenuItem.Click += SystemFacilitiesRimTables_ToolStripMenuItem_Click;
             // 
             // StartingArmies_ToolStripMenuItem
             // 
-            this.StartingArmies_ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.EmpireHq_ToolStripMenuItem,
-            this.CMUNEmpireTables_ToolStripMenuItem,
-            this.AllianceHq_ToolStripMenuItem,
-            this.CMUNAllianceTables_ToolStripMenuItem});
-            this.StartingArmies_ToolStripMenuItem.Name = "StartingArmies_ToolStripMenuItem";
-            this.StartingArmies_ToolStripMenuItem.Size = new System.Drawing.Size(177, 22);
-            this.StartingArmies_ToolStripMenuItem.Text = "Starting Armies";
+            StartingArmies_ToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { EmpireHq_ToolStripMenuItem, CMUNEmpireTables_ToolStripMenuItem, AllianceHq_ToolStripMenuItem, CMUNAllianceTables_ToolStripMenuItem });
+            StartingArmies_ToolStripMenuItem.Name = "StartingArmies_ToolStripMenuItem";
+            StartingArmies_ToolStripMenuItem.Size = new Size(177, 22);
+            StartingArmies_ToolStripMenuItem.Text = "Starting Armies";
             // 
             // EmpireHq_ToolStripMenuItem
             // 
-            this.EmpireHq_ToolStripMenuItem.Enabled = false;
-            this.EmpireHq_ToolStripMenuItem.Name = "EmpireHq_ToolStripMenuItem";
-            this.EmpireHq_ToolStripMenuItem.Size = new System.Drawing.Size(160, 22);
-            this.EmpireHq_ToolStripMenuItem.Text = "Empire HQ Fleet";
-            this.EmpireHq_ToolStripMenuItem.ToolTipText = "Starting Fleet on Coruscant";
+            EmpireHq_ToolStripMenuItem.Enabled = false;
+            EmpireHq_ToolStripMenuItem.Name = "EmpireHq_ToolStripMenuItem";
+            EmpireHq_ToolStripMenuItem.Size = new Size(160, 22);
+            EmpireHq_ToolStripMenuItem.Text = "Empire HQ Fleet";
+            EmpireHq_ToolStripMenuItem.ToolTipText = "Starting Fleet on Coruscant";
             // 
             // CMUNEmpireTables_ToolStripMenuItem
             // 
-            this.CMUNEmpireTables_ToolStripMenuItem.Enabled = false;
-            this.CMUNEmpireTables_ToolStripMenuItem.Name = "CMUNEmpireTables_ToolStripMenuItem";
-            this.CMUNEmpireTables_ToolStripMenuItem.Size = new System.Drawing.Size(160, 22);
-            this.CMUNEmpireTables_ToolStripMenuItem.Text = "Empire Random";
-            this.CMUNEmpireTables_ToolStripMenuItem.ToolTipText = "Randomly Generated Empiral Starting Fleet";
-            this.CMUNEmpireTables_ToolStripMenuItem.Click += new System.EventHandler(this.CMUNEmpireTables_ToolStripMenuItem_Click);
+            CMUNEmpireTables_ToolStripMenuItem.Enabled = false;
+            CMUNEmpireTables_ToolStripMenuItem.Name = "CMUNEmpireTables_ToolStripMenuItem";
+            CMUNEmpireTables_ToolStripMenuItem.Size = new Size(160, 22);
+            CMUNEmpireTables_ToolStripMenuItem.Text = "Empire Random";
+            CMUNEmpireTables_ToolStripMenuItem.ToolTipText = "Randomly Generated Empiral Starting Fleet";
+            CMUNEmpireTables_ToolStripMenuItem.Click += CMUNEmpireTables_ToolStripMenuItem_Click;
             // 
             // AllianceHq_ToolStripMenuItem
             // 
-            this.AllianceHq_ToolStripMenuItem.Enabled = false;
-            this.AllianceHq_ToolStripMenuItem.Name = "AllianceHq_ToolStripMenuItem";
-            this.AllianceHq_ToolStripMenuItem.Size = new System.Drawing.Size(160, 22);
-            this.AllianceHq_ToolStripMenuItem.Text = "Rebel HQ";
-            this.AllianceHq_ToolStripMenuItem.ToolTipText = "Starting Fleet with Rebel Headquarters";
+            AllianceHq_ToolStripMenuItem.Enabled = false;
+            AllianceHq_ToolStripMenuItem.Name = "AllianceHq_ToolStripMenuItem";
+            AllianceHq_ToolStripMenuItem.Size = new Size(160, 22);
+            AllianceHq_ToolStripMenuItem.Text = "Rebel HQ";
+            AllianceHq_ToolStripMenuItem.ToolTipText = "Starting Fleet with Rebel Headquarters";
             // 
             // CMUNAllianceTables_ToolStripMenuItem
             // 
-            this.CMUNAllianceTables_ToolStripMenuItem.Name = "CMUNAllianceTables_ToolStripMenuItem";
-            this.CMUNAllianceTables_ToolStripMenuItem.Size = new System.Drawing.Size(160, 22);
-            this.CMUNAllianceTables_ToolStripMenuItem.Text = "Rebel Random";
-            this.CMUNAllianceTables_ToolStripMenuItem.ToolTipText = "Randomly Generated Rebel Starting Fleet";
-            this.CMUNAllianceTables_ToolStripMenuItem.Click += new System.EventHandler(this.CMUNAllianceTables_ToolStripMenuItem_Click);
+            CMUNAllianceTables_ToolStripMenuItem.Name = "CMUNAllianceTables_ToolStripMenuItem";
+            CMUNAllianceTables_ToolStripMenuItem.Size = new Size(160, 22);
+            CMUNAllianceTables_ToolStripMenuItem.Text = "Rebel Random";
+            CMUNAllianceTables_ToolStripMenuItem.ToolTipText = "Randomly Generated Rebel Starting Fleet";
+            CMUNAllianceTables_ToolStripMenuItem.Click += CMUNAllianceTables_ToolStripMenuItem_Click;
             // 
             // Windows_Menu
             // 
-            this.Windows_Menu.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.Cascade_ToolStripMenuItem,
-            this.TileVertical_ToolStripMenuItem,
-            this.TileHorizontal_ToolStripMenuItem,
-            this.CloseAll_ToolStripMenuItem,
-            this.ArrangeIcons_ToolStripMenuItem,
-            this.Options_ToolStripMenuItem});
-            this.Windows_Menu.Name = "Windows_Menu";
-            this.Windows_Menu.Size = new System.Drawing.Size(68, 20);
-            this.Windows_Menu.Text = "&Windows";
+            Windows_Menu.DropDownItems.AddRange(new ToolStripItem[] { Cascade_ToolStripMenuItem, TileVertical_ToolStripMenuItem, TileHorizontal_ToolStripMenuItem, CloseAll_ToolStripMenuItem, ArrangeIcons_ToolStripMenuItem, Options_ToolStripMenuItem });
+            Windows_Menu.Name = "Windows_Menu";
+            Windows_Menu.Size = new Size(68, 20);
+            Windows_Menu.Text = "&Windows";
             // 
             // Cascade_ToolStripMenuItem
             // 
-            this.Cascade_ToolStripMenuItem.Name = "Cascade_ToolStripMenuItem";
-            this.Cascade_ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.Cascade_ToolStripMenuItem.Text = "Cascade";
-            this.Cascade_ToolStripMenuItem.Click += new System.EventHandler(this.Cascade_ToolStripMenuItem_Click);
+            Cascade_ToolStripMenuItem.Name = "Cascade_ToolStripMenuItem";
+            Cascade_ToolStripMenuItem.Size = new Size(150, 22);
+            Cascade_ToolStripMenuItem.Text = "Cascade";
+            Cascade_ToolStripMenuItem.Click += Cascade_ToolStripMenuItem_Click;
             // 
             // TileVertical_ToolStripMenuItem
             // 
-            this.TileVertical_ToolStripMenuItem.Name = "TileVertical_ToolStripMenuItem";
-            this.TileVertical_ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.TileVertical_ToolStripMenuItem.Text = "Tile Vertical";
-            this.TileVertical_ToolStripMenuItem.Click += new System.EventHandler(this.TileVertical_ToolStripMenuItem_Click);
+            TileVertical_ToolStripMenuItem.Name = "TileVertical_ToolStripMenuItem";
+            TileVertical_ToolStripMenuItem.Size = new Size(150, 22);
+            TileVertical_ToolStripMenuItem.Text = "Tile Vertical";
+            TileVertical_ToolStripMenuItem.Click += TileVertical_ToolStripMenuItem_Click;
             // 
             // TileHorizontal_ToolStripMenuItem
             // 
-            this.TileHorizontal_ToolStripMenuItem.Name = "TileHorizontal_ToolStripMenuItem";
-            this.TileHorizontal_ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.TileHorizontal_ToolStripMenuItem.Text = "Tile Horizontal";
-            this.TileHorizontal_ToolStripMenuItem.Click += new System.EventHandler(this.TileHorizontal_ToolStripMenuItem_Click);
+            TileHorizontal_ToolStripMenuItem.Name = "TileHorizontal_ToolStripMenuItem";
+            TileHorizontal_ToolStripMenuItem.Size = new Size(150, 22);
+            TileHorizontal_ToolStripMenuItem.Text = "Tile Horizontal";
+            TileHorizontal_ToolStripMenuItem.Click += TileHorizontal_ToolStripMenuItem_Click;
             // 
             // CloseAll_ToolStripMenuItem
             // 
-            this.CloseAll_ToolStripMenuItem.Name = "CloseAll_ToolStripMenuItem";
-            this.CloseAll_ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.CloseAll_ToolStripMenuItem.Text = "Close All";
-            this.CloseAll_ToolStripMenuItem.Click += new System.EventHandler(this.CloseAll_ToolStripMenuItem_Click);
+            CloseAll_ToolStripMenuItem.Name = "CloseAll_ToolStripMenuItem";
+            CloseAll_ToolStripMenuItem.Size = new Size(150, 22);
+            CloseAll_ToolStripMenuItem.Text = "Close All";
+            CloseAll_ToolStripMenuItem.Click += CloseAll_ToolStripMenuItem_Click;
             // 
             // ArrangeIcons_ToolStripMenuItem
             // 
-            this.ArrangeIcons_ToolStripMenuItem.Name = "ArrangeIcons_ToolStripMenuItem";
-            this.ArrangeIcons_ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.ArrangeIcons_ToolStripMenuItem.Text = "Arrange Icons";
-            this.ArrangeIcons_ToolStripMenuItem.Click += new System.EventHandler(this.ArrangeIcons_ToolStripMenuItem_Click);
+            ArrangeIcons_ToolStripMenuItem.Name = "ArrangeIcons_ToolStripMenuItem";
+            ArrangeIcons_ToolStripMenuItem.Size = new Size(150, 22);
+            ArrangeIcons_ToolStripMenuItem.Text = "Arrange Icons";
+            ArrangeIcons_ToolStripMenuItem.Click += ArrangeIcons_ToolStripMenuItem_Click;
             // 
             // Options_ToolStripMenuItem
             // 
-            this.Options_ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.Size1280x1024_ToolStripMenuItem,
-            this.Size1024x768_ToolStripMenuItem,
-            this.Size800x600_ToolStripMenuItem,
-            this.Size640x480_ToolStripMenuItem,
-            this.RestoreDefaults_ToolStripMenuItem});
-            this.Options_ToolStripMenuItem.Name = "Options_ToolStripMenuItem";
-            this.Options_ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.Options_ToolStripMenuItem.Text = "Options";
+            Options_ToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { Size1280x1024_ToolStripMenuItem, Size1024x768_ToolStripMenuItem, Size800x600_ToolStripMenuItem, Size640x480_ToolStripMenuItem, RestoreDefaults_ToolStripMenuItem });
+            Options_ToolStripMenuItem.Name = "Options_ToolStripMenuItem";
+            Options_ToolStripMenuItem.Size = new Size(150, 22);
+            Options_ToolStripMenuItem.Text = "Options";
             // 
             // Size1280x1024_ToolStripMenuItem
             // 
-            this.Size1280x1024_ToolStripMenuItem.Name = "Size1280x1024_ToolStripMenuItem";
-            this.Size1280x1024_ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.Size1280x1024_ToolStripMenuItem.Text = "Size 1280x1024";
-            this.Size1280x1024_ToolStripMenuItem.Click += new System.EventHandler(this.Size1280x1024_ToolStripMenuItem_Click);
+            Size1280x1024_ToolStripMenuItem.Name = "Size1280x1024_ToolStripMenuItem";
+            Size1280x1024_ToolStripMenuItem.Size = new Size(159, 22);
+            Size1280x1024_ToolStripMenuItem.Text = "Size 1280x1024";
+            Size1280x1024_ToolStripMenuItem.Click += Size1280x1024_ToolStripMenuItem_Click;
             // 
             // Size1024x768_ToolStripMenuItem
             // 
-            this.Size1024x768_ToolStripMenuItem.Name = "Size1024x768_ToolStripMenuItem";
-            this.Size1024x768_ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.Size1024x768_ToolStripMenuItem.Text = "Size 1024x768";
-            this.Size1024x768_ToolStripMenuItem.Click += new System.EventHandler(this.Size1024x768_ToolStripMenuItem_Click);
+            Size1024x768_ToolStripMenuItem.Name = "Size1024x768_ToolStripMenuItem";
+            Size1024x768_ToolStripMenuItem.Size = new Size(159, 22);
+            Size1024x768_ToolStripMenuItem.Text = "Size 1024x768";
+            Size1024x768_ToolStripMenuItem.Click += Size1024x768_ToolStripMenuItem_Click;
             // 
             // Size800x600_ToolStripMenuItem
             // 
-            this.Size800x600_ToolStripMenuItem.Name = "Size800x600_ToolStripMenuItem";
-            this.Size800x600_ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.Size800x600_ToolStripMenuItem.Text = "Size 800x600";
-            this.Size800x600_ToolStripMenuItem.Click += new System.EventHandler(this.Size800x600_ToolStripMenuItem_Click);
+            Size800x600_ToolStripMenuItem.Name = "Size800x600_ToolStripMenuItem";
+            Size800x600_ToolStripMenuItem.Size = new Size(159, 22);
+            Size800x600_ToolStripMenuItem.Text = "Size 800x600";
+            Size800x600_ToolStripMenuItem.Click += Size800x600_ToolStripMenuItem_Click;
             // 
             // Size640x480_ToolStripMenuItem
             // 
-            this.Size640x480_ToolStripMenuItem.Name = "Size640x480_ToolStripMenuItem";
-            this.Size640x480_ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.Size640x480_ToolStripMenuItem.Text = "Size 640x480";
-            this.Size640x480_ToolStripMenuItem.Click += new System.EventHandler(this.Size640x480_ToolStripMenuItem_Click);
+            Size640x480_ToolStripMenuItem.Name = "Size640x480_ToolStripMenuItem";
+            Size640x480_ToolStripMenuItem.Size = new Size(159, 22);
+            Size640x480_ToolStripMenuItem.Text = "Size 640x480";
+            Size640x480_ToolStripMenuItem.Click += Size640x480_ToolStripMenuItem_Click;
             // 
             // RestoreDefaults_ToolStripMenuItem
             // 
-            this.RestoreDefaults_ToolStripMenuItem.Name = "RestoreDefaults_ToolStripMenuItem";
-            this.RestoreDefaults_ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.RestoreDefaults_ToolStripMenuItem.Text = "Restore Defaults";
-            this.RestoreDefaults_ToolStripMenuItem.Click += new System.EventHandler(this.RestoreDefaults_ToolStripMenuItem_Click);
+            RestoreDefaults_ToolStripMenuItem.Name = "RestoreDefaults_ToolStripMenuItem";
+            RestoreDefaults_ToolStripMenuItem.Size = new Size(159, 22);
+            RestoreDefaults_ToolStripMenuItem.Text = "Restore Defaults";
+            RestoreDefaults_ToolStripMenuItem.Click += RestoreDefaults_ToolStripMenuItem_Click;
             // 
             // Help_Menu
             // 
-            this.Help_Menu.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.About_ToolStripMenuItem});
-            this.Help_Menu.Name = "Help_Menu";
-            this.Help_Menu.Size = new System.Drawing.Size(44, 20);
-            this.Help_Menu.Text = "&Help";
+            Help_Menu.DropDownItems.AddRange(new ToolStripItem[] { About_ToolStripMenuItem });
+            Help_Menu.Name = "Help_Menu";
+            Help_Menu.Size = new Size(44, 20);
+            Help_Menu.Text = "&Help";
             // 
             // About_ToolStripMenuItem
             // 
-            this.About_ToolStripMenuItem.Name = "About_ToolStripMenuItem";
-            this.About_ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.About_ToolStripMenuItem.Text = "&About";
-            this.About_ToolStripMenuItem.Click += new System.EventHandler(this.About_ToolStripMenuItem_Click);
+            About_ToolStripMenuItem.Name = "About_ToolStripMenuItem";
+            About_ToolStripMenuItem.Size = new Size(107, 22);
+            About_ToolStripMenuItem.Text = "&About";
+            About_ToolStripMenuItem.Click += About_ToolStripMenuItem_Click;
             // 
             // statusStrip
             // 
-            this.statusStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.Save_ToolStripStatusLabel,
-            this.roopDataStatus,
-            this.majorCharDataStatus,
-            this.minorCharDataStatus,
-            this.specOpDataStatus,
-            this.CapShipDataStatus,
-            this.fighterDataStatus});
-            this.statusStrip.Location = new System.Drawing.Point(0, 707);
-            this.statusStrip.Name = "statusStrip";
-            this.statusStrip.Padding = new System.Windows.Forms.Padding(1, 0, 16, 0);
-            this.statusStrip.Size = new System.Drawing.Size(1008, 22);
-            this.statusStrip.TabIndex = 2;
-            this.statusStrip.Text = "StatusStrip";
-            this.ToolTip.SetToolTip(this.statusStrip, "TBD");
+            statusStrip.Items.AddRange(new ToolStripItem[] { Save_ToolStripStatusLabel, roopDataStatus, majorCharDataStatus, minorCharDataStatus, specOpDataStatus, CapShipDataStatus, fighterDataStatus });
+            statusStrip.Location = new Point(0, 707);
+            statusStrip.Name = "statusStrip";
+            statusStrip.Padding = new Padding(1, 0, 16, 0);
+            statusStrip.Size = new Size(1008, 22);
+            statusStrip.TabIndex = 2;
+            statusStrip.Text = "StatusStrip";
+            ToolTip.SetToolTip(statusStrip, "TBD");
             // 
             // Save_ToolStripStatusLabel
             // 
-            this.Save_ToolStripStatusLabel.Name = "Save_ToolStripStatusLabel";
-            this.Save_ToolStripStatusLabel.Size = new System.Drawing.Size(130, 17);
-            this.Save_ToolStripStatusLabel.Text = "Save Status: (not in yet)";
+            Save_ToolStripStatusLabel.Name = "Save_ToolStripStatusLabel";
+            Save_ToolStripStatusLabel.Size = new Size(130, 17);
+            Save_ToolStripStatusLabel.Text = "Save Status: (not in yet)";
             // 
             // roopDataStatus
             // 
-            this.roopDataStatus.Name = "roopDataStatus";
-            this.roopDataStatus.Padding = new System.Windows.Forms.Padding(10, 0, 10, 0);
-            this.roopDataStatus.Size = new System.Drawing.Size(105, 17);
-            this.roopDataStatus.Text = "Unsaved Troop";
+            roopDataStatus.Name = "roopDataStatus";
+            roopDataStatus.Padding = new Padding(10, 0, 10, 0);
+            roopDataStatus.Size = new Size(105, 17);
+            roopDataStatus.Text = "Unsaved Troop";
             // 
             // majorCharDataStatus
             // 
-            this.majorCharDataStatus.Name = "majorCharDataStatus";
-            this.majorCharDataStatus.Padding = new System.Windows.Forms.Padding(10, 0, 10, 0);
-            this.majorCharDataStatus.Size = new System.Drawing.Size(109, 17);
-            this.majorCharDataStatus.Text = "Unsaved Major ";
+            majorCharDataStatus.Name = "majorCharDataStatus";
+            majorCharDataStatus.Padding = new Padding(10, 0, 10, 0);
+            majorCharDataStatus.Size = new Size(109, 17);
+            majorCharDataStatus.Text = "Unsaved Major ";
             // 
             // minorCharDataStatus
             // 
-            this.minorCharDataStatus.Name = "minorCharDataStatus";
-            this.minorCharDataStatus.Padding = new System.Windows.Forms.Padding(10, 0, 10, 0);
-            this.minorCharDataStatus.Size = new System.Drawing.Size(107, 17);
-            this.minorCharDataStatus.Text = "Unsaved Minor";
+            minorCharDataStatus.Name = "minorCharDataStatus";
+            minorCharDataStatus.Padding = new Padding(10, 0, 10, 0);
+            minorCharDataStatus.Size = new Size(107, 17);
+            minorCharDataStatus.Text = "Unsaved Minor";
             // 
             // specOpDataStatus
             // 
-            this.specOpDataStatus.Name = "specOpDataStatus";
-            this.specOpDataStatus.Padding = new System.Windows.Forms.Padding(10, 0, 10, 0);
-            this.specOpDataStatus.Size = new System.Drawing.Size(116, 17);
-            this.specOpDataStatus.Text = "Unsaved SpecOp";
+            specOpDataStatus.Name = "specOpDataStatus";
+            specOpDataStatus.Padding = new Padding(10, 0, 10, 0);
+            specOpDataStatus.Size = new Size(116, 17);
+            specOpDataStatus.Text = "Unsaved SpecOp";
             // 
             // CapShipDataStatus
             // 
-            this.CapShipDataStatus.Name = "CapShipDataStatus";
-            this.CapShipDataStatus.Size = new System.Drawing.Size(102, 17);
-            this.CapShipDataStatus.Text = "Unsaved Cap Ship";
+            CapShipDataStatus.Name = "CapShipDataStatus";
+            CapShipDataStatus.Size = new Size(102, 17);
+            CapShipDataStatus.Text = "Unsaved Cap Ship";
             // 
             // fighterDataStatus
             // 
-            this.fighterDataStatus.Name = "fighterDataStatus";
-            this.fighterDataStatus.Size = new System.Drawing.Size(92, 17);
-            this.fighterDataStatus.Text = "Unsaved Fighter";
+            fighterDataStatus.Name = "fighterDataStatus";
+            fighterDataStatus.Size = new Size(92, 17);
+            fighterDataStatus.Text = "Unsaved Fighter";
             // 
             // imageList1
             // 
-            this.imageList1.ColorDepth = System.Windows.Forms.ColorDepth.Depth8Bit;
-            this.imageList1.ImageSize = new System.Drawing.Size(16, 16);
-            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
+            imageList1.ColorDepth = ColorDepth.Depth8Bit;
+            imageList1.ImageSize = new Size(16, 16);
+            imageList1.TransparentColor = Color.Transparent;
             // 
             // Sectors_Button
             // 
-            this.Sectors_Button.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.Sectors_Button.Image = global::SwRebellionEditor.Resources.sector_16x16_bmp;
-            this.Sectors_Button.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.Sectors_Button.Name = "Sectors_Button";
-            this.Sectors_Button.Size = new System.Drawing.Size(23, 22);
-            this.Sectors_Button.Click += new System.EventHandler(this.Sectors_Button_Click);
+            Sectors_Button.DisplayStyle = ToolStripItemDisplayStyle.Image;
+            Sectors_Button.Image = Resources.sector_16x16_bmp;
+            Sectors_Button.ImageTransparentColor = Color.Magenta;
+            Sectors_Button.Name = "Sectors_Button";
+            Sectors_Button.Size = new Size(23, 22);
+            Sectors_Button.ToolTipText = "Sectors";
+            Sectors_Button.Click += Sectors_Button_Click;
             // 
             // Systems_Button
             // 
-            this.Systems_Button.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.Systems_Button.Image = global::SwRebellionEditor.Resources.planet_37x37_bmp;
-            this.Systems_Button.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.Systems_Button.Name = "Systems_Button";
-            this.Systems_Button.Size = new System.Drawing.Size(23, 22);
-            this.Systems_Button.ToolTipText = "Systems";
-            this.Systems_Button.Click += new System.EventHandler(this.Systems_Button_Click);
+            Systems_Button.DisplayStyle = ToolStripItemDisplayStyle.Image;
+            Systems_Button.Image = Resources.planet_37x37_bmp;
+            Systems_Button.ImageTransparentColor = Color.Magenta;
+            Systems_Button.Name = "Systems_Button";
+            Systems_Button.Size = new Size(23, 22);
+            Systems_Button.ToolTipText = "Systems";
+            Systems_Button.Click += Systems_Button_Click;
             // 
             // toolStripSeparator1
             // 
-            this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 25);
+            toolStripSeparator1.Name = "toolStripSeparator1";
+            toolStripSeparator1.Size = new Size(6, 25);
             // 
             // MajorCharacters_Button
             // 
-            this.MajorCharacters_Button.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.MajorCharacters_Button.Image = global::SwRebellionEditor.Resources.luke_16x16_bmp;
-            this.MajorCharacters_Button.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.MajorCharacters_Button.Name = "MajorCharacters_Button";
-            this.MajorCharacters_Button.Size = new System.Drawing.Size(23, 22);
-            this.MajorCharacters_Button.ToolTipText = "Major Characters";
-            this.MajorCharacters_Button.Click += new System.EventHandler(this.MajorCharacters_Button_Click);
+            MajorCharacters_Button.DisplayStyle = ToolStripItemDisplayStyle.Image;
+            MajorCharacters_Button.Image = Resources.luke_16x16_bmp;
+            MajorCharacters_Button.ImageTransparentColor = Color.Magenta;
+            MajorCharacters_Button.Name = "MajorCharacters_Button";
+            MajorCharacters_Button.Size = new Size(23, 22);
+            MajorCharacters_Button.ToolTipText = "Major Characters";
+            MajorCharacters_Button.Click += MajorCharacters_Button_Click;
             // 
             // MinorCharacters_Button
             // 
-            this.MinorCharacters_Button.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.MinorCharacters_Button.Image = global::SwRebellionEditor.Resources.thrawn_16x16_bmp;
-            this.MinorCharacters_Button.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.MinorCharacters_Button.Name = "MinorCharacters_Button";
-            this.MinorCharacters_Button.Size = new System.Drawing.Size(23, 22);
-            this.MinorCharacters_Button.ToolTipText = "Minor Characters";
-            this.MinorCharacters_Button.Click += new System.EventHandler(this.MinorCharacters_Button_Click);
+            MinorCharacters_Button.DisplayStyle = ToolStripItemDisplayStyle.Image;
+            MinorCharacters_Button.Image = Resources.thrawn_16x16_bmp;
+            MinorCharacters_Button.ImageTransparentColor = Color.Magenta;
+            MinorCharacters_Button.Name = "MinorCharacters_Button";
+            MinorCharacters_Button.Size = new Size(23, 22);
+            MinorCharacters_Button.ToolTipText = "Minor Characters";
+            MinorCharacters_Button.Click += MinorCharacters_Button_Click;
             // 
             // Troops_ToolStripButton
             // 
-            this.Troops_ToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.Troops_ToolStripButton.Image = global::SwRebellionEditor.Resources.stormtrooper_16x16_bmp;
-            this.Troops_ToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.Troops_ToolStripButton.Name = "Troops_ToolStripButton";
-            this.Troops_ToolStripButton.Size = new System.Drawing.Size(23, 22);
-            this.Troops_ToolStripButton.ToolTipText = "Troops ";
-            this.Troops_ToolStripButton.Click += new System.EventHandler(this.Troops_ToolStripButton_Click);
+            Troops_ToolStripButton.DisplayStyle = ToolStripItemDisplayStyle.Image;
+            Troops_ToolStripButton.Image = Resources.stormtrooper_16x16_bmp;
+            Troops_ToolStripButton.ImageTransparentColor = Color.Magenta;
+            Troops_ToolStripButton.Name = "Troops_ToolStripButton";
+            Troops_ToolStripButton.Size = new Size(23, 22);
+            Troops_ToolStripButton.ToolTipText = "Troops ";
+            Troops_ToolStripButton.Click += Troops_ToolStripButton_Click;
             // 
             // SpecialForces_Button
             // 
-            this.SpecialForces_Button.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.SpecialForces_Button.Image = global::SwRebellionEditor.Resources.c3po_16x16_bmp;
-            this.SpecialForces_Button.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.SpecialForces_Button.Name = "SpecialForces_Button";
-            this.SpecialForces_Button.Size = new System.Drawing.Size(23, 22);
-            this.SpecialForces_Button.ToolTipText = "Special Forces";
-            this.SpecialForces_Button.Click += new System.EventHandler(this.SpecialForces_Button_Click);
+            SpecialForces_Button.DisplayStyle = ToolStripItemDisplayStyle.Image;
+            SpecialForces_Button.Image = Resources.c3po_16x16_bmp;
+            SpecialForces_Button.ImageTransparentColor = Color.Magenta;
+            SpecialForces_Button.Name = "SpecialForces_Button";
+            SpecialForces_Button.Size = new Size(23, 22);
+            SpecialForces_Button.ToolTipText = "Special Forces";
+            SpecialForces_Button.Click += SpecialForces_Button_Click;
             // 
             // toolStripSeparator2
             // 
-            this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(6, 25);
+            toolStripSeparator2.Name = "toolStripSeparator2";
+            toolStripSeparator2.Size = new Size(6, 25);
             // 
             // CapitalShips_Button
             // 
-            this.CapitalShips_Button.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.CapitalShips_Button.Image = global::SwRebellionEditor.Resources.star_destroyer_16x16_bmp;
-            this.CapitalShips_Button.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.CapitalShips_Button.Name = "CapitalShips_Button";
-            this.CapitalShips_Button.Size = new System.Drawing.Size(23, 22);
-            this.CapitalShips_Button.ToolTipText = "Capital Ships";
-            this.CapitalShips_Button.Click += new System.EventHandler(this.CapitalShips_Button_Click);
+            CapitalShips_Button.DisplayStyle = ToolStripItemDisplayStyle.Image;
+            CapitalShips_Button.Image = Resources.star_destroyer_16x16_bmp;
+            CapitalShips_Button.ImageTransparentColor = Color.Magenta;
+            CapitalShips_Button.Name = "CapitalShips_Button";
+            CapitalShips_Button.Size = new Size(23, 22);
+            CapitalShips_Button.ToolTipText = "Capital Ships";
+            CapitalShips_Button.Click += CapitalShips_Button_Click;
             // 
             // Fighters_Button
             // 
-            this.Fighters_Button.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.Fighters_Button.Image = global::SwRebellionEditor.Resources.tie_fighter_16x16_bmp;
-            this.Fighters_Button.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.Fighters_Button.Name = "Fighters_Button";
-            this.Fighters_Button.Size = new System.Drawing.Size(23, 22);
-            this.Fighters_Button.ToolTipText = "Fighters";
-            this.Fighters_Button.Click += new System.EventHandler(this.Fighter_Button_Click);
+            Fighters_Button.DisplayStyle = ToolStripItemDisplayStyle.Image;
+            Fighters_Button.Image = Resources.tie_fighter_16x16_bmp;
+            Fighters_Button.ImageTransparentColor = Color.Magenta;
+            Fighters_Button.Name = "Fighters_Button";
+            Fighters_Button.Size = new Size(23, 22);
+            Fighters_Button.ToolTipText = "Fighters";
+            Fighters_Button.Click += Fighter_Button_Click;
             // 
             // toolStripSeparator3
             // 
-            this.toolStripSeparator3.Name = "toolStripSeparator3";
-            this.toolStripSeparator3.Size = new System.Drawing.Size(6, 25);
+            toolStripSeparator3.Name = "toolStripSeparator3";
+            toolStripSeparator3.Size = new Size(6, 25);
             // 
             // DefensiveFacilities_Button
             // 
-            this.DefensiveFacilities_Button.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.DefensiveFacilities_Button.Image = global::SwRebellionEditor.Resources.defense_facility_16x16_bmp;
-            this.DefensiveFacilities_Button.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.DefensiveFacilities_Button.Name = "DefensiveFacilities_Button";
-            this.DefensiveFacilities_Button.Size = new System.Drawing.Size(23, 22);
-            this.DefensiveFacilities_Button.ToolTipText = "Defensive Facilities";
-            this.DefensiveFacilities_Button.Click += new System.EventHandler(this.Defensive_Button_Click);
+            DefensiveFacilities_Button.DisplayStyle = ToolStripItemDisplayStyle.Image;
+            DefensiveFacilities_Button.Image = Resources.defense_facility_16x16_bmp;
+            DefensiveFacilities_Button.ImageTransparentColor = Color.Magenta;
+            DefensiveFacilities_Button.Name = "DefensiveFacilities_Button";
+            DefensiveFacilities_Button.Size = new Size(23, 22);
+            DefensiveFacilities_Button.ToolTipText = "Defensive Facilities";
+            DefensiveFacilities_Button.Click += Defensive_Button_Click;
             // 
             // ManufacturingFacilities_Button
             // 
-            this.ManufacturingFacilities_Button.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.ManufacturingFacilities_Button.Image = global::SwRebellionEditor.Resources.shipyard_16x16_bmp;
-            this.ManufacturingFacilities_Button.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.ManufacturingFacilities_Button.Name = "ManufacturingFacilities_Button";
-            this.ManufacturingFacilities_Button.Size = new System.Drawing.Size(23, 22);
-            this.ManufacturingFacilities_Button.ToolTipText = "Manufacturing Facilities";
-            this.ManufacturingFacilities_Button.Click += new System.EventHandler(this.Manufacturing_Button_Click);
+            ManufacturingFacilities_Button.DisplayStyle = ToolStripItemDisplayStyle.Image;
+            ManufacturingFacilities_Button.Image = Resources.shipyard_16x16_bmp;
+            ManufacturingFacilities_Button.ImageTransparentColor = Color.Magenta;
+            ManufacturingFacilities_Button.Name = "ManufacturingFacilities_Button";
+            ManufacturingFacilities_Button.Size = new Size(23, 22);
+            ManufacturingFacilities_Button.ToolTipText = "Manufacturing Facilities";
+            ManufacturingFacilities_Button.Click += Manufacturing_Button_Click;
             // 
             // ProductionFacilities_Button
             // 
-            this.ProductionFacilities_Button.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.ProductionFacilities_Button.Image = global::SwRebellionEditor.Resources.mine_16x16_bmp;
-            this.ProductionFacilities_Button.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.ProductionFacilities_Button.Name = "ProductionFacilities_Button";
-            this.ProductionFacilities_Button.Size = new System.Drawing.Size(23, 22);
-            this.ProductionFacilities_Button.ToolTipText = "Production Facilities";
-            this.ProductionFacilities_Button.Click += new System.EventHandler(this.Production_Button_Click);
+            ProductionFacilities_Button.DisplayStyle = ToolStripItemDisplayStyle.Image;
+            ProductionFacilities_Button.Image = Resources.mine_16x16_bmp;
+            ProductionFacilities_Button.ImageTransparentColor = Color.Magenta;
+            ProductionFacilities_Button.Name = "ProductionFacilities_Button";
+            ProductionFacilities_Button.Size = new Size(23, 22);
+            ProductionFacilities_Button.ToolTipText = "Production Facilities";
+            ProductionFacilities_Button.Click += Production_Button_Click;
             // 
             // toolStrip
             // 
-            this.toolStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.galaxyMapButton,
-            this.Sectors_Button,
-            this.Systems_Button,
-            this.toolStripSeparator1,
-            this.MajorCharacters_Button,
-            this.MinorCharacters_Button,
-            this.Troops_ToolStripButton,
-            this.SpecialForces_Button,
-            this.toolStripSeparator2,
-            this.CapitalShips_Button,
-            this.Fighters_Button,
-            this.toolStripSeparator3,
-            this.DefensiveFacilities_Button,
-            this.ManufacturingFacilities_Button,
-            this.ProductionFacilities_Button,
-            this.toolStripSeparator4,
-            this.Patch_Button});
-            this.toolStrip.Location = new System.Drawing.Point(0, 24);
-            this.toolStrip.Name = "toolStrip";
-            this.toolStrip.Size = new System.Drawing.Size(1008, 25);
-            this.toolStrip.TabIndex = 1;
-            this.toolStrip.Text = "ToolStrip";
+            toolStrip.Items.AddRange(new ToolStripItem[] { galaxyMapButton, Sectors_Button, Systems_Button, toolStripSeparator1, MajorCharacters_Button, MinorCharacters_Button, Troops_ToolStripButton, SpecialForces_Button, toolStripSeparator2, CapitalShips_Button, Fighters_Button, toolStripSeparator3, DefensiveFacilities_Button, ManufacturingFacilities_Button, ProductionFacilities_Button, toolStripSeparator4, Patch_Button });
+            toolStrip.Location = new Point(0, 24);
+            toolStrip.Name = "toolStrip";
+            toolStrip.Size = new Size(1008, 25);
+            toolStrip.TabIndex = 1;
+            toolStrip.Text = "ToolStrip";
             // 
             // galaxyMapButton
             // 
-            this.galaxyMapButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.galaxyMapButton.Image = global::SwRebellionEditor.Resources.galaxy_16x16_bmp;
-            this.galaxyMapButton.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.galaxyMapButton.Name = "galaxyMapButton";
-            this.galaxyMapButton.Size = new System.Drawing.Size(23, 22);
-            this.galaxyMapButton.Click += new System.EventHandler(this.Map_Button_Click);
+            galaxyMapButton.DisplayStyle = ToolStripItemDisplayStyle.Image;
+            galaxyMapButton.Image = Resources.galaxy_16x16_bmp;
+            galaxyMapButton.ImageTransparentColor = Color.Magenta;
+            galaxyMapButton.Name = "galaxyMapButton";
+            galaxyMapButton.Size = new Size(23, 22);
+            galaxyMapButton.ToolTipText = "Galaxy map";
+            galaxyMapButton.Click += Map_Button_Click;
             // 
             // toolStripSeparator4
             // 
-            this.toolStripSeparator4.Name = "toolStripSeparator4";
-            this.toolStripSeparator4.Size = new System.Drawing.Size(6, 25);
+            toolStripSeparator4.Name = "toolStripSeparator4";
+            toolStripSeparator4.Size = new Size(6, 25);
             // 
             // Patch_Button
             // 
-            this.Patch_Button.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.Patch_Button.Image = global::SwRebellionEditor.Resources.death_star_16x16xbmp;
-            this.Patch_Button.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.Patch_Button.Name = "Patch_Button";
-            this.Patch_Button.Size = new System.Drawing.Size(23, 22);
-            this.Patch_Button.Text = "Patch";
-            this.Patch_Button.Click += new System.EventHandler(this.Patch_Button_Click);
+            Patch_Button.DisplayStyle = ToolStripItemDisplayStyle.Image;
+            Patch_Button.Image = Resources.death_star_16x16xbmp;
+            Patch_Button.ImageTransparentColor = Color.Magenta;
+            Patch_Button.Name = "Patch_Button";
+            Patch_Button.Size = new Size(23, 22);
+            Patch_Button.Text = "Patch";
+            Patch_Button.Click += Patch_Button_Click;
             // 
             // MainForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::SwRebellionEditor.Resources.galaxy_640x480_bmp;
-            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1008, 729);
-            this.Controls.Add(this.toolStrip);
-            this.Controls.Add(this.statusStrip);
-            this.Controls.Add(this.menuStrip);
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.IsMdiContainer = true;
-            this.KeyPreview = true;
-            this.MainMenuStrip = this.menuStrip;
-            this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.MinimumSize = new System.Drawing.Size(640, 480);
-            this.Name = "MainForm";
-            this.Text = "Star Wars Rebellion Editor .NET";
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.MainForm_FormClosing);
-            this.Load += new System.EventHandler(this.MainForm_Load);
-            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.MainForm_KeyDown);
-            this.menuStrip.ResumeLayout(false);
-            this.menuStrip.PerformLayout();
-            this.statusStrip.ResumeLayout(false);
-            this.statusStrip.PerformLayout();
-            this.toolStrip.ResumeLayout(false);
-            this.toolStrip.PerformLayout();
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            BackgroundImage = Resources.galaxy_640x480_bmp;
+            BackgroundImageLayout = ImageLayout.Stretch;
+            ClientSize = new Size(1008, 729);
+            Controls.Add(toolStrip);
+            Controls.Add(statusStrip);
+            Controls.Add(menuStrip);
+            Icon = (Icon)resources.GetObject("$this.Icon");
+            IsMdiContainer = true;
+            KeyPreview = true;
+            MainMenuStrip = menuStrip;
+            Margin = new Padding(4, 3, 4, 3);
+            MinimumSize = new Size(640, 480);
+            Name = "MainForm";
+            Text = "Star Wars Rebellion Editor .NET";
+            FormClosing += MainForm_FormClosing;
+            Load += MainForm_Load;
+            KeyDown += MainForm_KeyDown;
+            menuStrip.ResumeLayout(false);
+            menuStrip.PerformLayout();
+            statusStrip.ResumeLayout(false);
+            statusStrip.PerformLayout();
+            toolStrip.ResumeLayout(false);
+            toolStrip.PerformLayout();
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         private ToolStripButton galaxyMapButton;
