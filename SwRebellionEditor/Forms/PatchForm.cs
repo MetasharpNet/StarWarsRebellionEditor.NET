@@ -138,6 +138,15 @@ public partial class PatchForm : PatchDesignForm
             t.SaveBitmap(id, filePath);
         }
 
+        // new 61x25 characters sprites using global color table
+        foreach (var filePath in Directory.GetFiles("new-characters-sprites"))
+        {
+            if (Path.GetExtension(filePath).ToLowerInvariant() == ".txt")
+                continue;
+            var grId = Path.GetFileNameWithoutExtension(filePath).Split('-')[0];
+            Gokres.Resources.SaveBitmap(grId, filePath);
+        }
+
         // ---------------------------- REBEXE.EXE ----------------------------
 
         // patching rebexe.exe
