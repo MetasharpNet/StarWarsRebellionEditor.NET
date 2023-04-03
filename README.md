@@ -24,10 +24,11 @@ Install the 1.02 community patch first : https://swrebellion.net/files/file/260-
 * 200/200 systems encyclopedia pictures
 * 200/200 systems tactical sprites
 * 200/200 encyclopedia descriptions
-* 61/61 new character sprites that include their base stats average
+* 61/61 enhanced character sprites that include their base stats average
 
 ### Current Roadmap:
 * 29 high definition 3d models for capital ships (23/29 done)
+* 0/61 new character sprites from LordLaForge including optimized base stats average display
 
 ### Final Roadmap (low chance i'll invest time on it):
 * Cleanup code on rarely used windows
