@@ -36,6 +36,8 @@ Install the 1.02 community patch first : https://swrebellion.net/files/file/260-
 * Other features from RebEd
 * etc.
 
+GitHub Downloads stats : https://hanadigital.github.io/grev/?user=MetasharpNet&repo=StarWarsRebellionEditor.NET
+
 --
 
 **Meta**
