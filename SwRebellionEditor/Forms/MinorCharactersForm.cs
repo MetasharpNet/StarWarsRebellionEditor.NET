@@ -23,10 +23,7 @@ public partial class MinorCharactersForm : MinorCharactersDesignForm
         minorCharactersImages.Images.Clear();
         for (int selectorIndex = 0; selectorIndex < GameFile.MinorCharactersCount; ++selectorIndex)
         {
-            var edataId = 78 + selectorIndex;
-            var filepath = Path.Combine(Settings.Current.EDataFolder, "EDATA." + edataId.ToString("000"));
-            if (File.Exists(filepath))
-                minorCharactersImages.Images.Add(Image.FromFile(filepath));
+            GetEncyclopediaImageAndAddToList(78 + selectorIndex, minorCharactersImages);
             minorCharactersListView.Items.Add(GameFile.MinorCharacters[selectorIndex].Name, selectorIndex);
         }
     }
@@ -95,8 +92,7 @@ public partial class MinorCharactersForm : MinorCharactersDesignForm
         }
 
         picture.SizeMode = PictureBoxSizeMode.Zoom;
-        var edataId = 78 + selectorIndex;
-        picture.Image = Image.FromFile(Path.Combine(Settings.Current.EDataFolder, "EDATA." + edataId.ToString("000")));
+        picture.Image = GetEncyclopediaImageAndAddToList(78 + selectorIndex);
         GameFile.UnsavedData = previousUnsavedData;
     }
     protected override void LoadSideInfo()

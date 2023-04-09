@@ -109,17 +109,14 @@ public abstract class DatFile
     public static TDatFile Load<TDatFile>(string filePath)
         where TDatFile : DatFile, new()
     {
-        using (var fileStream = File.Open(filePath, FileMode.Open))
-        {
-            using (var binaryReader = new BinaryReader(fileStream))
-            {
-                var datFile = new TDatFile();
-                var t = datFile.GetType();
-                var fields = t.GetFields();
-                LoadFields(binaryReader, fields, datFile);
-                return datFile;
-            }
-        }
+        using var fileStream = File.Open(filePath, FileMode.Open);
+        using var binaryReader = new BinaryReader(fileStream);
+        var datFile = new TDatFile();
+        var t = datFile.GetType();
+        var fields = t.GetFields();
+        LoadFields(binaryReader, fields, datFile);
+        binaryReader.Close();
+        return datFile;
     }
 
     public void SaveFields<T>(BinaryWriter outputBinaryWriter, FieldInfo[] inputFieldInfos, T inputObject)
@@ -213,14 +210,11 @@ public abstract class DatFile
 
     public void Save(string filePath)
     {
-        using (var fileStream = File.Open(filePath, FileMode.Create))
-        {
-            using (var binaryWriter = new BinaryWriter(fileStream))
-            {
-                var t = GetType();
-                var fields = t.GetFields();
-                SaveFields(binaryWriter, fields, (dynamic)this);
-            }
-        }
+        using var fileStream = File.Open(filePath, FileMode.Create);
+        using var binaryWriter = new BinaryWriter(fileStream);
+        var t = GetType();
+        var fields = t.GetFields();
+        SaveFields(binaryWriter, fields, (dynamic)this);
+        binaryWriter.Close();
     }
 }

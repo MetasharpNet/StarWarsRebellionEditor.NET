@@ -1,4 +1,6 @@
-﻿namespace SwRebellionEditor;
+﻿using System.IO;
+
+namespace SwRebellionEditor;
 
 /// <summary>
 /// When derivating this class:
@@ -19,6 +21,7 @@ public abstract class GameObjectsListForm<TDatFile> : Form
     public TDatFile GameFile;
     public string GameFilePath;
     protected TrackBar TrackBarSelector;
+    public List<MemoryStream> ImagesMemoryStreams = new List<MemoryStream>();
 
     #region Business Layer
 
@@ -186,6 +189,48 @@ public abstract class GameObjectsListForm<TDatFile> : Form
         }
         else
             DisplaySelectedGameObject(-1);
+    }
+
+    #endregion
+
+    #region Utilities
+
+    public Image GetEncyclopediaImageAndAddToList(int edataId, ImageList imagesList = null, Image defaultImage = null)
+    {
+        return GetEncyclopediaImageAndAddToList("EDATA." + edataId.ToString("000"), imagesList, defaultImage);
+    }
+
+    public Image GetEncyclopediaImageAndAddToList(string edataId, ImageList imagesList = null, Image defaultImage = null)
+    {
+        var filepath = Path.Combine(Settings.Current.EDataFolder, edataId);
+        if (File.Exists(filepath))
+        {
+            var bytes = File.ReadAllBytes(filepath);
+            var ms = new MemoryStream(bytes);
+            ImagesMemoryStreams.Add(ms);
+            var image = Image.FromStream(ms);
+            if (imagesList != null)
+                imagesList.Images.Add(image);
+            return image;
+        }
+        else
+        {
+            if (imagesList != null)
+                imagesList.Images.Add(defaultImage);
+        }
+        return null;
+    }
+
+    #endregion
+
+    #region Dispose
+
+    protected override void Dispose(bool disposing)
+    {
+        foreach (var ms in ImagesMemoryStreams)
+            ms.Dispose();
+        ImagesMemoryStreams.Clear();
+        base.Dispose(disposing);
     }
 
     #endregion

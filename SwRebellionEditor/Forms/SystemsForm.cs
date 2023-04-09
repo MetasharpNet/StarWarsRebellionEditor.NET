@@ -78,13 +78,7 @@ public partial class SystemsForm : SystemsDesignForm
         for (int selectorIndex = 0; selectorIndex < GameFile.SystemsCount; ++selectorIndex)
         {
             ushort encybmapId = (ushort)GetEncybmapId(GameFile.Systems[selectorIndex].PictureId);
-            try
-            {
-                var filepath = Path.Combine(Settings.Current.EDataFolder, EncyBmap.Resources.RT_STRING[encybmapId]);
-                if (File.Exists(filepath))
-                    systemsImageList.Images.Add(Image.FromFile(filepath));
-            }
-            catch { systemsImageList.Images.Add(Resources.missing_encyclopedia_picture_400x200_bmp); }
+            GetEncyclopediaImageAndAddToList(EncyBmap.Resources.RT_STRING[encybmapId], systemsImageList, Resources.missing_encyclopedia_picture_400x200_bmp);
             systemsListView.Items.Add(GameFile.Systems[selectorIndex].Name, selectorIndex);
         }
     }
@@ -114,15 +108,7 @@ public partial class SystemsForm : SystemsDesignForm
 
         picture.SizeMode = PictureBoxSizeMode.Zoom;
         ushort encybmapId = (ushort)GetEncybmapId(GameFile.Systems[selectorIndex].PictureId);
-        try
-        {
-            var filepath = Path.Combine(Settings.Current.EDataFolder, EncyBmap.Resources.RT_STRING[encybmapId]);
-            if (File.Exists(filepath))
-                picture.Image = Image.FromFile(filepath);
-            else
-                picture.Image = Resources.missing_encyclopedia_picture_400x200_bmp;
-        }
-        catch { picture.Image = Resources.missing_encyclopedia_picture_400x200_bmp; }
+        picture.Image = GetEncyclopediaImageAndAddToList(EncyBmap.Resources.RT_STRING[encybmapId], null, Resources.missing_encyclopedia_picture_400x200_bmp);
 
         sprite.SizeMode = PictureBoxSizeMode.Zoom;
         var strategyId = GetStrategyId(GameFile.Systems[selectorIndex].PictureId).ToString();

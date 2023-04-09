@@ -48,11 +48,8 @@ public partial class DefenseFacilitiesForm : DefenseFacilitiesDesignForm
             edataId = 14;
         else if (edataId > 12)
             --edataId;
-        var filepath = Path.Combine(Settings.Current.EDataFolder, "EDATA." + edataId.ToString("000"));
-        if (File.Exists(filepath))
-            picture.Image = Image.FromFile(filepath);
-        else
-            picture.Image = null;
+        picture.Image = picture.Image = GetEncyclopediaImageAndAddToList(edataId);
+
         GameFile.UnsavedData = previousUnsavedData;
     }
     protected override void LoadSideInfo()

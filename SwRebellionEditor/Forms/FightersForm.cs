@@ -70,12 +70,7 @@ public partial class FightersForm : FightersDesignForm
         uprisingDefense.Value = fighter.UprisingDefense;
 
         picture.SizeMode = PictureBoxSizeMode.Zoom;
-        var edataId = 34 + selectorIndex;
-        var filepath = Path.Combine(Settings.Current.EDataFolder, "EDATA." + edataId.ToString("000"));
-        if (File.Exists(filepath))
-            picture.Image = Image.FromFile(filepath);
-        else
-            picture.Image = null;
+        picture.Image = GetEncyclopediaImageAndAddToList(34 + selectorIndex);
         GameFile.UnsavedData = previousUnsavedData;
     }
     protected override void LoadSideInfo()

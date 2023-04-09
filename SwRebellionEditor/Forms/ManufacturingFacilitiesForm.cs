@@ -41,13 +41,8 @@ public partial class ManufacturingFacilitiesForm : ManufacturingFacilitiesDesign
         researchOrder.Value = manufacturingFacility.ResearchOrder;
         textStraDllId.Value = manufacturingFacility.TextStraDllId;
 
-        var edataId = 3 + selectorIndex;
         picture.SizeMode = PictureBoxSizeMode.Zoom;
-        var filepath = Path.Combine(Settings.Current.EDataFolder, "EDATA." + edataId.ToString("000"));
-        if (File.Exists(filepath))
-            picture.Image = Image.FromFile(filepath);
-        else
-            picture.Image = null;
+        picture.Image = GetEncyclopediaImageAndAddToList(3 + selectorIndex);
         GameFile.UnsavedData = previousUnsavedData;
     }
     protected override void LoadSideInfo()

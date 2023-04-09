@@ -78,12 +78,7 @@ public partial class CapitalShipsForm : CapitalShipsDesignForm
         weaponRechargeRate.Value = capitalShip.WeaponRechargeRate;
 
         picture.SizeMode = PictureBoxSizeMode.Zoom;
-        var edataId = 42 + selectorIndex;
-        var filepath = Path.Combine(Settings.Current.EDataFolder, "EDATA." + edataId.ToString("000"));
-        if (File.Exists(filepath))
-            picture.Image = Image.FromFile(filepath);
-        else
-            picture.Image = null;
+        picture.Image = GetEncyclopediaImageAndAddToList(42 + selectorIndex);
         GameFile.UnsavedData = previousUnsavedData;
     }
     protected override void LoadSideInfo()

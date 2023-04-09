@@ -23,10 +23,7 @@ public partial class SpecialForcesForm : SpecialForcesDesignForm
         specialForcesImages.Images.Clear();
         for (int selectorIndex = 0; selectorIndex < GameFile.SpecialForcesCount; ++selectorIndex)
         {
-            var edataId = 25 + selectorIndex;
-            var filepath = Path.Combine(Settings.Current.EDataFolder, "EDATA." + edataId.ToString("000"));
-            if (File.Exists(filepath))
-                specialForcesImages.Images.Add(Image.FromFile(filepath));
+            GetEncyclopediaImageAndAddToList(25 + selectorIndex, specialForcesImages);
             specialForcesListView.Items.Add(GameFile.SpecialForces[selectorIndex].Name, selectorIndex);
         }
     }
@@ -70,12 +67,7 @@ public partial class SpecialForcesForm : SpecialForcesDesignForm
         troopTrainingVariance_0.Value = specialForce.TroopTrainingVariance_0;
 
         picture.SizeMode = PictureBoxSizeMode.Zoom;
-        var edataId = 25 + selectorIndex;
-        var filepath = Path.Combine(Settings.Current.EDataFolder, "EDATA." + edataId.ToString("000"));
-        if (File.Exists(filepath))
-            picture.Image = Image.FromFile(filepath);
-        else
-            picture.Image = null;
+        picture.Image = GetEncyclopediaImageAndAddToList(25 + selectorIndex);
         GameFile.UnsavedData = previousUnsavedData;
     }
     protected override void LoadSideInfo()

@@ -23,8 +23,7 @@ public partial class TroopsForm : TroopsDesignForm
         troopsImages.Images.Clear();
         for (int selectorIndex = 0; selectorIndex < GameFile.TroopsCount; ++selectorIndex)
         {
-            var edataId = 15 + selectorIndex;
-            troopsImages.Images.Add(Image.FromFile(Path.Combine(Settings.Current.EDataFolder, "EDATA." + edataId.ToString("000"))));
+            GetEncyclopediaImageAndAddToList(15 + selectorIndex, troopsImages);
             troopsListView.Items.Add(GameFile.Troops[selectorIndex].Name, selectorIndex);
         }
     }
@@ -56,8 +55,7 @@ public partial class TroopsForm : TroopsDesignForm
         uprisingDefense.Value = troop.UprisingDefense;
 
         picture.SizeMode = PictureBoxSizeMode.Zoom;
-        var edataId = 15 + selectorIndex;
-        picture.Image = Image.FromFile(Path.Combine(Settings.Current.EDataFolder, "EDATA." + edataId.ToString("000")));
+        picture.Image = GetEncyclopediaImageAndAddToList(15 + selectorIndex);
         GameFile.UnsavedData = previousUnsavedData;
     }
     protected override void LoadSideInfo()
