@@ -80,6 +80,12 @@
     <None Update="game-update\_dgvoodoo2_official_site.url">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="game-update\_dgvoodoo_settings_suggestion_1_general.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="game-update\_dgvoodoo_settings_suggestion_3_directx.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="game-update\_readme.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
