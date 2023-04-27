@@ -10,7 +10,9 @@ Direct link : https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/sdk-7
 
 To buy the game or get free fan mods, check : https://swrebellion.net/
 
-Install the 1.02 community patch first : https://swrebellion.net/files/file/260-star-wars-rebellion-post-install-package-fix-proper-fullscreen-multiplayer-config/
+Install latest game update from here : https://swrebellion.net/files/file/260-star-wars-rebellion-update/
+
+Note: this update is automatically applied if you patch the game using the editor patch menu.
 
 ### Current Features :
 * Galaxy Map editor : can drag&drop sectors and systems
