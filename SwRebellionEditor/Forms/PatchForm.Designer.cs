@@ -50,6 +50,7 @@ namespace SwRebellionEditor
             warningLabel = new Label();
             patchInfoLabel = new Label();
             label1Requirement = new Label();
+            label1 = new Label();
             SuspendLayout();
             // 
             // systemsImageList
@@ -148,9 +149,9 @@ namespace SwRebellionEditor
             warningLabel.ForeColor = Color.Red;
             warningLabel.Location = new Point(24, 177);
             warningLabel.Name = "warningLabel";
-            warningLabel.Size = new Size(670, 15);
+            warningLabel.Size = new Size(661, 15);
             warningLabel.TabIndex = 1163;
-            warningLabel.Text = "This patch v1 was released 22/3/2023 and is provided without any warranty of any kind. Doesn't work with existing savegames.";
+            warningLabel.Text = "This patch was released 2023-04-12 and is provided without any warranty of any kind. Doesn't work with existing savegames.";
             // 
             // patchInfoLabel
             // 
@@ -167,17 +168,29 @@ namespace SwRebellionEditor
             label1Requirement.AutoSize = true;
             label1Requirement.Font = new Font("Segoe UI", 9F, FontStyle.Italic, GraphicsUnit.Point);
             label1Requirement.ForeColor = Color.Red;
-            label1Requirement.Location = new Point(444, 14);
+            label1Requirement.Location = new Point(393, 14);
             label1Requirement.Name = "label1Requirement";
-            label1Requirement.Size = new Size(260, 15);
+            label1Requirement.Size = new Size(247, 15);
             label1Requirement.TabIndex = 1165;
-            label1Requirement.Text = "Requires  first to apply update-1.02-(2.63.1.0-fix)";
+            label1Requirement.Text = "Includes update 1.02 (dgvoodoo2 directx 2.8.1)";
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Segoe UI", 9F, FontStyle.Italic, GraphicsUnit.Point);
+            label1.ForeColor = Color.Black;
+            label1.Location = new Point(408, 29);
+            label1.Name = "label1";
+            label1.Size = new Size(311, 15);
+            label1.TabIndex = 1166;
+            label1.Text = "Run dgVoodooCpl.exe after to setup your graphic settings.";
             // 
             // PatchForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(735, 245);
+            Controls.Add(label1);
             Controls.Add(label1Requirement);
             Controls.Add(patchInfoLabel);
             Controls.Add(warningLabel);
@@ -218,5 +231,6 @@ namespace SwRebellionEditor
         private Label warningLabel;
         private Label patchInfoLabel;
         private Label label1Requirement;
+        private Label label1;
     }
 }

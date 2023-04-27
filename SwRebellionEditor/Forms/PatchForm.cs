@@ -45,7 +45,15 @@ public partial class PatchForm : PatchDesignForm
         // id = 36, galaxysize = 1, importance = 1
         // id = 38, galaxysize = 1
 
+        // ---------------------------- PATCH ----------------------------
 
+        foreach (var filePath in Directory.GetFiles("game-update"))
+        {
+            if (Path.GetExtension(filePath).ToLowerInvariant() == ".txt")
+                continue;
+            var filename = Path.GetFileName(filePath);
+            File.Copy(filePath, Path.Combine(Settings.Current.GameFolder, filename), true);
+        }
 
         // ---------------------------- SPRITES ----------------------------
 
