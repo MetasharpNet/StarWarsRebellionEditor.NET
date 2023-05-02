@@ -24,10 +24,10 @@ Note: this update is automatically applied if you patch the game using the edito
 
 ### 25th Anniversary Patch Features :
 * New Galaxy map using top 200 star wars planets (called systems in game) from 2023 canon mostly positioned as accurately as possible within game engine limits!
-** 200/200 systems sprites (instead of 26 original sprites shared amongst 200 systems)
-** 200/200 systems tactical sprites
-** 200/200 systems encyclopedia pictures
-** 200/200 encyclopedia descriptions
+* 200/200 systems sprites (instead of 26 original sprites shared amongst 200 systems)
+* 200/200 systems tactical sprites
+* 200/200 systems encyclopedia pictures
+* 200/200 encyclopedia descriptions
 * 61/61 enhanced character sprites that include their base stats average
 * 23/29 high definition 3d models for capital ships
 * 80 high definition sprites for space fighters (X-wing, ...)
