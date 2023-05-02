@@ -57,6 +57,15 @@ public partial class PatchForm : PatchDesignForm
 
         // ---------------------------- SPRITES ----------------------------
 
+        // new common
+        foreach (var filePath in Directory.GetFiles("new-common"))
+        {
+            if (Path.GetExtension(filePath).ToLowerInvariant() == ".txt")
+                continue;
+            var id = Path.GetFileNameWithoutExtension(filePath).Split('-')[0];
+            Common.Resources.SaveBitmap(id, filePath);
+        }
+
         // new encybmap ids for encyclopedia systems pictures EDATA.14001 to 14200
         foreach (var filePath in Directory.GetFiles("new-encyclopedia-pictures"))
         {

@@ -2468,6 +2468,9 @@
     <None Update="new-characters-sprites\19099.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="new-common\20001-main-screen.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="new-encyclopedia-pictures\001-mine.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
