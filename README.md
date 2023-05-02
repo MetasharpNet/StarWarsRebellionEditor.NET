@@ -33,6 +33,11 @@ Note: this update is automatically applied if you patch the game using the edito
 * 61/61 enhanced character sprites displaying their base average stats
 * 23/29 high definition 3d models for capital ships
 * 80 high definition sprites for space fighters (X-wing, ...)
+* Screenshots :
+https://i.ibb.co/c8XZD0j/1.png
+https://i.ibb.co/LpdxfcR/2.png
+https://i.ibb.co/cDMHwR1/3.png
+https://i.ibb.co/KxVDTLc/4.png
 
 ### Current Roadmap:
 * new high definition 3d models for all capital ships
