@@ -195,6 +195,22 @@ public partial class MainForm : Form
         }
         Settings.Current.Serialize();
     }
+    // Options - Change Game Folder
+    private void changeGameFolderToolStripMenuItem_Click(object sender, EventArgs e)
+    {
+        using (var folderDialog = new FolderBrowserDialog())
+        {
+            folderDialog.InitialDirectory = Settings.Current.GameFolder;
+            folderDialog.Description = "Select your Star Wars Rebellion Folder";
+            folderDialog.UseDescriptionForTitle = true;
+            var dialogResult = folderDialog.ShowDialog();
+            if (dialogResult == DialogResult.OK && !string.IsNullOrWhiteSpace(folderDialog.SelectedPath))
+            {
+                Settings.Current.GameFolder = folderDialog.SelectedPath;
+                Settings.Current.Serialize();
+            }
+        }
+    }
 
     // Editor - Galaxy Map
     private void Map_ToolStripMenuItem_Click(object sender, EventArgs e)

@@ -134,6 +134,7 @@ namespace SwRebellionEditor
             TestCode_ToolStripMenuItem = new ToolStripMenuItem();
             GeneralParametersTables_ToolStripMenuItem = new ToolStripMenuItem();
             ProbabilityTables_ToolStripMenuItem = new ToolStripMenuItem();
+            sideParamEntryTableToolStripMenuItem = new ToolStripMenuItem();
             SystemFacilitiesCoreTables_ToolStripMenuItem = new ToolStripMenuItem();
             SystemFacilitiesRimTables_ToolStripMenuItem = new ToolStripMenuItem();
             StartingArmies_ToolStripMenuItem = new ToolStripMenuItem();
@@ -183,7 +184,7 @@ namespace SwRebellionEditor
             galaxyMapButton = new ToolStripButton();
             toolStripSeparator4 = new ToolStripSeparator();
             Patch_Button = new ToolStripButton();
-            sideParamEntryTableToolStripMenuItem = new ToolStripMenuItem();
+            changeGameFolderToolStripMenuItem = new ToolStripMenuItem();
             menuStrip.SuspendLayout();
             statusStrip.SuspendLayout();
             toolStrip.SuspendLayout();
@@ -211,13 +212,13 @@ namespace SwRebellionEditor
             // Exit_ToolStripMenuItem
             // 
             Exit_ToolStripMenuItem.Name = "Exit_ToolStripMenuItem";
-            Exit_ToolStripMenuItem.Size = new Size(93, 22);
+            Exit_ToolStripMenuItem.Size = new Size(180, 22);
             Exit_ToolStripMenuItem.Text = "Exit";
             Exit_ToolStripMenuItem.Click += Exit_ToolsStripMenuItem_Click;
             // 
             // Options_Menu
             // 
-            Options_Menu.DropDownItems.AddRange(new ToolStripItem[] { DisplayToolBar_ToolStripMenuItem, DisplayStatusBar_ToolStripMenuItem, PlayMusic_ToolStripMenuItem, PlaySounds_ToolStripMenuItem });
+            Options_Menu.DropDownItems.AddRange(new ToolStripItem[] { DisplayToolBar_ToolStripMenuItem, DisplayStatusBar_ToolStripMenuItem, PlayMusic_ToolStripMenuItem, PlaySounds_ToolStripMenuItem, changeGameFolderToolStripMenuItem });
             Options_Menu.Name = "Options_Menu";
             Options_Menu.Size = new Size(61, 20);
             Options_Menu.Text = "&Options";
@@ -229,7 +230,7 @@ namespace SwRebellionEditor
             DisplayToolBar_ToolStripMenuItem.CheckOnClick = true;
             DisplayToolBar_ToolStripMenuItem.CheckState = CheckState.Checked;
             DisplayToolBar_ToolStripMenuItem.Name = "DisplayToolBar_ToolStripMenuItem";
-            DisplayToolBar_ToolStripMenuItem.Size = new Size(167, 22);
+            DisplayToolBar_ToolStripMenuItem.Size = new Size(185, 22);
             DisplayToolBar_ToolStripMenuItem.Text = "Display Toolbar";
             DisplayToolBar_ToolStripMenuItem.Click += DisplayToolBar_ToolStripMenuItem_Click;
             // 
@@ -239,21 +240,21 @@ namespace SwRebellionEditor
             DisplayStatusBar_ToolStripMenuItem.CheckOnClick = true;
             DisplayStatusBar_ToolStripMenuItem.CheckState = CheckState.Checked;
             DisplayStatusBar_ToolStripMenuItem.Name = "DisplayStatusBar_ToolStripMenuItem";
-            DisplayStatusBar_ToolStripMenuItem.Size = new Size(167, 22);
+            DisplayStatusBar_ToolStripMenuItem.Size = new Size(185, 22);
             DisplayStatusBar_ToolStripMenuItem.Text = "Display Status Bar";
             DisplayStatusBar_ToolStripMenuItem.Click += DisplayStatusBar_ToolStripMenuItem_Click;
             // 
             // PlayMusic_ToolStripMenuItem
             // 
             PlayMusic_ToolStripMenuItem.Name = "PlayMusic_ToolStripMenuItem";
-            PlayMusic_ToolStripMenuItem.Size = new Size(167, 22);
+            PlayMusic_ToolStripMenuItem.Size = new Size(185, 22);
             PlayMusic_ToolStripMenuItem.Text = "Play Music";
             PlayMusic_ToolStripMenuItem.Click += PlayMusic_ToolStripMenuItem_Click;
             // 
             // PlaySounds_ToolStripMenuItem
             // 
             PlaySounds_ToolStripMenuItem.Name = "PlaySounds_ToolStripMenuItem";
-            PlaySounds_ToolStripMenuItem.Size = new Size(167, 22);
+            PlaySounds_ToolStripMenuItem.Size = new Size(185, 22);
             PlaySounds_ToolStripMenuItem.Text = "Play Sounds";
             PlaySounds_ToolStripMenuItem.Click += PlaySounds_ToolStripMenuItem_Click;
             // 
@@ -410,7 +411,7 @@ namespace SwRebellionEditor
             // GeneralParametersTables_ToolStripMenuItem
             // 
             GeneralParametersTables_ToolStripMenuItem.Name = "GeneralParametersTables_ToolStripMenuItem";
-            GeneralParametersTables_ToolStripMenuItem.Size = new Size(180, 22);
+            GeneralParametersTables_ToolStripMenuItem.Size = new Size(177, 22);
             GeneralParametersTables_ToolStripMenuItem.Text = "HyperSpace Speeds";
             GeneralParametersTables_ToolStripMenuItem.Click += GeneralParametersTables_ToolStripMenuItem_Click;
             // 
@@ -418,8 +419,15 @@ namespace SwRebellionEditor
             // 
             ProbabilityTables_ToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { sideParamEntryTableToolStripMenuItem, SystemFacilitiesCoreTables_ToolStripMenuItem, SystemFacilitiesRimTables_ToolStripMenuItem });
             ProbabilityTables_ToolStripMenuItem.Name = "ProbabilityTables_ToolStripMenuItem";
-            ProbabilityTables_ToolStripMenuItem.Size = new Size(180, 22);
+            ProbabilityTables_ToolStripMenuItem.Size = new Size(177, 22);
             ProbabilityTables_ToolStripMenuItem.Text = "Probability Tables";
+            // 
+            // sideParamEntryTableToolStripMenuItem
+            // 
+            sideParamEntryTableToolStripMenuItem.Name = "sideParamEntryTableToolStripMenuItem";
+            sideParamEntryTableToolStripMenuItem.Size = new Size(219, 22);
+            sideParamEntryTableToolStripMenuItem.Text = "Side Param Entry Table";
+            sideParamEntryTableToolStripMenuItem.Click += sideParamEntryTableToolStripMenuItem_Click;
             // 
             // SystemFacilitiesCoreTables_ToolStripMenuItem
             // 
@@ -439,7 +447,7 @@ namespace SwRebellionEditor
             // 
             StartingArmies_ToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { EmpireHq_ToolStripMenuItem, CMUNEmpireTables_ToolStripMenuItem, AllianceHq_ToolStripMenuItem, CMUNAllianceTables_ToolStripMenuItem });
             StartingArmies_ToolStripMenuItem.Name = "StartingArmies_ToolStripMenuItem";
-            StartingArmies_ToolStripMenuItem.Size = new Size(180, 22);
+            StartingArmies_ToolStripMenuItem.Size = new Size(177, 22);
             StartingArmies_ToolStripMenuItem.Text = "Starting Armies";
             // 
             // EmpireHq_ToolStripMenuItem
@@ -795,12 +803,12 @@ namespace SwRebellionEditor
             Patch_Button.Text = "Patch";
             Patch_Button.Click += Patch_Button_Click;
             // 
-            // sideParamEntryTableToolStripMenuItem
+            // changeGameFolderToolStripMenuItem
             // 
-            sideParamEntryTableToolStripMenuItem.Name = "sideParamEntryTableToolStripMenuItem";
-            sideParamEntryTableToolStripMenuItem.Size = new Size(219, 22);
-            sideParamEntryTableToolStripMenuItem.Text = "Side Param Entry Table";
-            sideParamEntryTableToolStripMenuItem.Click += sideParamEntryTableToolStripMenuItem_Click;
+            changeGameFolderToolStripMenuItem.Name = "changeGameFolderToolStripMenuItem";
+            changeGameFolderToolStripMenuItem.Size = new Size(185, 22);
+            changeGameFolderToolStripMenuItem.Text = "Change Game Folder";
+            changeGameFolderToolStripMenuItem.Click += changeGameFolderToolStripMenuItem_Click;
             // 
             // MainForm
             // 
@@ -839,6 +847,7 @@ namespace SwRebellionEditor
         private ToolStripButton Patch_Button;
         private ToolStripMenuItem Patch_ToolStripMenuItem;
         private ToolStripMenuItem sideParamEntryTableToolStripMenuItem;
+        private ToolStripMenuItem changeGameFolderToolStripMenuItem;
     }
 }
 #endregion
