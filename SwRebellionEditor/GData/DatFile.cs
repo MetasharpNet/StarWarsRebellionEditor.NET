@@ -116,8 +116,11 @@ public abstract class DatFile
         var fields = t.GetFields();
         LoadFields(binaryReader, fields, datFile);
         binaryReader.Close();
+        datFile.PostLoad();
         return datFile;
     }
+
+    public virtual void PostLoad() { }
 
     public void SaveFields<T>(BinaryWriter outputBinaryWriter, FieldInfo[] inputFieldInfos, T inputObject)
         where T : new()

@@ -323,6 +323,11 @@ public partial class MainForm : Form
     {
         Show<GeneralParametersTablesForm>();
     }
+    // Editor - Test Code - Side Param Entry Table
+    private void sideParamEntryTableToolStripMenuItem_Click(object sender, EventArgs e)
+    {
+        Show<SideParamEntryTableForm>();
+    }
     // Editor - Test Code - Probability Tables - System Facilities Core Tables
     private void SystemFacilitiesCoreTables_ToolStripMenuItem_Click(object sender, EventArgs e)
     {
