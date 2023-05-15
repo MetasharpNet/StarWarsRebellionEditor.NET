@@ -6,7 +6,7 @@ The project is going under a heavy cleanup phase. So don't inspect the code as i
 
 Runtime can be downloaded here : https://dotnet.microsoft.com/en-us/download/dotnet/7.0
 
-Direct link : https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/sdk-7.0.202-windows-x64-installer
+Direct link : https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/runtime-7.0.5-windows-x64-installer
 
 To buy the game or get free fan mods, check : https://swrebellion.net/
 
