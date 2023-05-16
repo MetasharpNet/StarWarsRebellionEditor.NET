@@ -6,7 +6,7 @@ using System.Windows.Forms;
 
 namespace SwRebellionEditor
 {
-    partial class SideParamEntryTableForm
+    partial class SideParamTableEntryForm
     {
         /// <summary>
         /// Required designer variable.
@@ -48,7 +48,7 @@ namespace SwRebellionEditor
         /// </summary>
         private void InitializeComponent()
         {
-            ComponentResourceManager resources = new ComponentResourceManager(typeof(SideParamEntryTableForm));
+            ComponentResourceManager resources = new ComponentResourceManager(typeof(SideParamTableEntryForm));
             Open = new Button();
             SaveAs = new Button();
             Cancel = new Button();
@@ -657,7 +657,7 @@ namespace SwRebellionEditor
             empireMultiPlayerLabel.TabIndex = 172;
             empireMultiPlayerLabel.Text = "Multi Player";
             // 
-            // SideParamEntryTableForm
+            // SideParamTableEntryForm
             // 
             AcceptButton = Ok;
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -687,8 +687,8 @@ namespace SwRebellionEditor
             MaximizeBox = false;
             MaximumSize = new Size(409, 580);
             MinimumSize = new Size(409, 580);
-            Name = "SideParamEntryTableForm";
-            Text = "SideParamEntryTable (SDPRTB.DAT)";
+            Name = "SideParamTableEntryForm";
+            Text = "SideParamTableEntry (SDPRTB.DAT)";
             FormClosing += GameObjectsListForm_FormClosing;
             Load += GameObjectsListForm_Load;
             KeyDown += GameObjectsListForm_KeyDown;

@@ -335,14 +335,14 @@ public partial class MainForm : Form
     }
 
     // Editor - Test Code - General Parameters Tables
-    private void GeneralParametersTables_ToolStripMenuItem_Click(object sender, EventArgs e)
+    private void generalParamTableEntry_ToolStripMenuItem_Click(object sender, EventArgs e)
     {
-        Show<GeneralParametersTablesForm>();
+        Show<GeneralParamTableEntryForm>();
     }
     // Editor - Test Code - Side Param Entry Table
-    private void sideParamEntryTableToolStripMenuItem_Click(object sender, EventArgs e)
+    private void sideParamEntryTable_ToolStripMenuItem_Click(object sender, EventArgs e)
     {
-        Show<SideParamEntryTableForm>();
+        Show<SideParamTableEntryForm>();
     }
     // Editor - Test Code - Probability Tables - System Facilities Core Tables
     private void SystemFacilitiesCoreTables_ToolStripMenuItem_Click(object sender, EventArgs e)
