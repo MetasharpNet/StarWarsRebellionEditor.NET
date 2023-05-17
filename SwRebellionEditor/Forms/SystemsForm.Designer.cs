@@ -77,1019 +77,890 @@ namespace SwRebellionEditor
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SystemsForm));
-            this.systemsListView = new System.Windows.Forms.ListView();
-            this.systemsImageList = new System.Windows.Forms.ImageList(this.components);
-            this.Open = new System.Windows.Forms.Button();
-            this.SaveAs = new System.Windows.Forms.Button();
-            this.Cancel = new System.Windows.Forms.Button();
-            this.Ok = new System.Windows.Forms.Button();
-            this.selector = new System.Windows.Forms.TrackBar();
-            this.sectorGroupBox = new System.Windows.Forms.GroupBox();
-            this.sectorName = new System.Windows.Forms.TextBox();
-            this.sectorGalaxySizeLabel = new System.Windows.Forms.Label();
-            this.sectorNameLabel = new System.Windows.Forms.Label();
-            this.sectorSecImportLabel = new System.Windows.Forms.Label();
-            this.sectorFamilyIdHexLabel = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.sectorFamilyId = new System.Windows.Forms.NumericUpDown();
-            this.sectorYPosition = new System.Windows.Forms.NumericUpDown();
-            this.sectorFamilyIdLabel = new System.Windows.Forms.Label();
-            this.sectorTextStraDllIdLabel = new System.Windows.Forms.Label();
-            this.sectorXPosition = new System.Windows.Forms.NumericUpDown();
-            this.sectorTextStraDllId = new System.Windows.Forms.NumericUpDown();
-            this.sectorSecImport = new System.Windows.Forms.NumericUpDown();
-            this.sectorGalaxySize = new System.Windows.Forms.NumericUpDown();
-            this.Field7_2Label = new System.Windows.Forms.Label();
-            this.field10_1 = new System.Windows.Forms.NumericUpDown();
-            this.sectorId = new System.Windows.Forms.NumericUpDown();
-            this.sectorIdLabel = new System.Windows.Forms.Label();
-            this.familyIdHexLabel = new System.Windows.Forms.Label();
-            this.productionFamily_0 = new System.Windows.Forms.NumericUpDown();
-            this.productionFamily_0Label = new System.Windows.Forms.Label();
-            this.idHexLabel = new System.Windows.Forms.Label();
-            this.nextProductionFamily_0Label = new System.Windows.Forms.Label();
-            this.nextProductionFamily_0 = new System.Windows.Forms.NumericUpDown();
-            this.id = new System.Windows.Forms.NumericUpDown();
-            this.familyIdLabel = new System.Windows.Forms.Label();
-            this.textStraDllIdLabel = new System.Windows.Forms.Label();
-            this.familyId = new System.Windows.Forms.NumericUpDown();
-            this.textStraDllId = new System.Windows.Forms.NumericUpDown();
-            this.field7_2 = new System.Windows.Forms.NumericUpDown();
-            this.field10_1Label = new System.Windows.Forms.Label();
-            this.pictureId = new System.Windows.Forms.NumericUpDown();
-            this.idLabel = new System.Windows.Forms.Label();
-            this.yPosition = new System.Windows.Forms.NumericUpDown();
-            this.field13_0Label = new System.Windows.Forms.Label();
-            this.field13_0 = new System.Windows.Forms.NumericUpDown();
-            this.xPosition = new System.Windows.Forms.NumericUpDown();
-            this.positionLabel = new System.Windows.Forms.Label();
-            this.picture = new System.Windows.Forms.PictureBox();
-            this.familyIdInfoLabel = new System.Windows.Forms.Label();
-            this.pictureIdLabel = new System.Windows.Forms.Label();
-            this.field2_1 = new System.Windows.Forms.NumericUpDown();
-            this.field2_1Label = new System.Windows.Forms.Label();
-            this.inGameDataGroupBox = new System.Windows.Forms.GroupBox();
-            this.sprite = new System.Windows.Forms.PictureBox();
-            this.encyclopediaDescriptionLabel = new System.Windows.Forms.Label();
-            this.name = new System.Windows.Forms.TextBox();
-            this.nameLabel = new System.Windows.Forms.Label();
-            this.encyclopediaDescription = new System.Windows.Forms.RichTextBox();
-            this.hiddenDataGroupBox = new System.Windows.Forms.GroupBox();
-            this.export = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.selector)).BeginInit();
-            this.sectorGroupBox.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.sectorFamilyId)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.sectorYPosition)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.sectorXPosition)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.sectorTextStraDllId)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.sectorSecImport)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.sectorGalaxySize)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.field10_1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.sectorId)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.productionFamily_0)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nextProductionFamily_0)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.id)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.familyId)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textStraDllId)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.field7_2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureId)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.yPosition)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.field13_0)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.xPosition)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picture)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.field2_1)).BeginInit();
-            this.inGameDataGroupBox.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.sprite)).BeginInit();
-            this.hiddenDataGroupBox.SuspendLayout();
-            this.SuspendLayout();
+            components = new Container();
+            ComponentResourceManager resources = new ComponentResourceManager(typeof(SystemsForm));
+            systemsListView = new ListView();
+            systemsImageList = new ImageList(components);
+            Open = new Button();
+            SaveAs = new Button();
+            Cancel = new Button();
+            Ok = new Button();
+            selector = new TrackBar();
+            sectorGroupBox = new GroupBox();
+            sectorName = new TextBox();
+            sectorGalaxySizeLabel = new Label();
+            sectorNameLabel = new Label();
+            sectorSecImportLabel = new Label();
+            sectorFamilyIdHexLabel = new Label();
+            label4 = new Label();
+            sectorFamilyId = new NumericUpDown();
+            sectorYPosition = new NumericUpDown();
+            sectorFamilyIdLabel = new Label();
+            sectorTextStraDllIdLabel = new Label();
+            sectorXPosition = new NumericUpDown();
+            sectorTextStraDllId = new NumericUpDown();
+            sectorSecImport = new NumericUpDown();
+            sectorGalaxySize = new NumericUpDown();
+            Field7_2Label = new Label();
+            field10_1 = new NumericUpDown();
+            sectorId = new NumericUpDown();
+            sectorIdLabel = new Label();
+            familyIdHexLabel = new Label();
+            productionFamily_0 = new NumericUpDown();
+            productionFamily_0Label = new Label();
+            idHexLabel = new Label();
+            nextProductionFamily_0Label = new Label();
+            nextProductionFamily_0 = new NumericUpDown();
+            id = new NumericUpDown();
+            familyIdLabel = new Label();
+            textStraDllIdLabel = new Label();
+            familyId = new NumericUpDown();
+            textStraDllId = new NumericUpDown();
+            field7_2 = new NumericUpDown();
+            field10_1Label = new Label();
+            pictureId = new NumericUpDown();
+            idLabel = new Label();
+            yPosition = new NumericUpDown();
+            field13_0Label = new Label();
+            field13_0 = new NumericUpDown();
+            xPosition = new NumericUpDown();
+            positionLabel = new Label();
+            picture = new PictureBox();
+            familyIdInfoLabel = new Label();
+            pictureIdLabel = new Label();
+            field2_1 = new NumericUpDown();
+            field2_1Label = new Label();
+            inGameDataGroupBox = new GroupBox();
+            sprite = new PictureBox();
+            encyclopediaDescriptionLabel = new Label();
+            name = new TextBox();
+            nameLabel = new Label();
+            encyclopediaDescription = new RichTextBox();
+            hiddenDataGroupBox = new GroupBox();
+            export = new Button();
+            infoLabel = new Label();
+            ((ISupportInitialize)selector).BeginInit();
+            sectorGroupBox.SuspendLayout();
+            ((ISupportInitialize)sectorFamilyId).BeginInit();
+            ((ISupportInitialize)sectorYPosition).BeginInit();
+            ((ISupportInitialize)sectorXPosition).BeginInit();
+            ((ISupportInitialize)sectorTextStraDllId).BeginInit();
+            ((ISupportInitialize)sectorSecImport).BeginInit();
+            ((ISupportInitialize)sectorGalaxySize).BeginInit();
+            ((ISupportInitialize)field10_1).BeginInit();
+            ((ISupportInitialize)sectorId).BeginInit();
+            ((ISupportInitialize)productionFamily_0).BeginInit();
+            ((ISupportInitialize)nextProductionFamily_0).BeginInit();
+            ((ISupportInitialize)id).BeginInit();
+            ((ISupportInitialize)familyId).BeginInit();
+            ((ISupportInitialize)textStraDllId).BeginInit();
+            ((ISupportInitialize)field7_2).BeginInit();
+            ((ISupportInitialize)pictureId).BeginInit();
+            ((ISupportInitialize)yPosition).BeginInit();
+            ((ISupportInitialize)field13_0).BeginInit();
+            ((ISupportInitialize)xPosition).BeginInit();
+            ((ISupportInitialize)picture).BeginInit();
+            ((ISupportInitialize)field2_1).BeginInit();
+            inGameDataGroupBox.SuspendLayout();
+            ((ISupportInitialize)sprite).BeginInit();
+            hiddenDataGroupBox.SuspendLayout();
+            SuspendLayout();
             // 
             // systemsListView
             // 
-            this.systemsListView.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.systemsListView.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.systemsListView.GridLines = true;
-            this.systemsListView.LargeImageList = this.systemsImageList;
-            this.systemsListView.Location = new System.Drawing.Point(4, 3);
-            this.systemsListView.Margin = new System.Windows.Forms.Padding(0);
-            this.systemsListView.MultiSelect = false;
-            this.systemsListView.Name = "systemsListView";
-            this.systemsListView.ShowGroups = false;
-            this.systemsListView.Size = new System.Drawing.Size(185, 440);
-            this.systemsListView.TabIndex = 1;
-            this.systemsListView.TabStop = false;
-            this.systemsListView.UseCompatibleStateImageBehavior = false;
-            this.systemsListView.Click += new System.EventHandler(this.systemsListView_Click);
-            this.systemsListView.DoubleClick += new System.EventHandler(this.systemsListView_DoubleClick);
+            systemsListView.BackColor = SystemColors.ControlLight;
+            systemsListView.BorderStyle = BorderStyle.FixedSingle;
+            systemsListView.GridLines = true;
+            systemsListView.LargeImageList = systemsImageList;
+            systemsListView.Location = new Point(4, 3);
+            systemsListView.Margin = new Padding(0);
+            systemsListView.MultiSelect = false;
+            systemsListView.Name = "systemsListView";
+            systemsListView.ShowGroups = false;
+            systemsListView.Size = new Size(185, 440);
+            systemsListView.TabIndex = 1;
+            systemsListView.TabStop = false;
+            systemsListView.UseCompatibleStateImageBehavior = false;
+            systemsListView.Click += systemsListView_Click;
+            systemsListView.DoubleClick += systemsListView_DoubleClick;
             // 
             // systemsImageList
             // 
-            this.systemsImageList.ColorDepth = System.Windows.Forms.ColorDepth.Depth8Bit;
-            this.systemsImageList.ImageSize = new System.Drawing.Size(120, 60);
-            this.systemsImageList.TransparentColor = System.Drawing.Color.Transparent;
+            systemsImageList.ColorDepth = ColorDepth.Depth8Bit;
+            systemsImageList.ImageSize = new Size(120, 60);
+            systemsImageList.TransparentColor = Color.Transparent;
             // 
             // Open
             // 
-            this.Open.Location = new System.Drawing.Point(403, 449);
-            this.Open.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.Open.Name = "Open";
-            this.Open.Size = new System.Drawing.Size(88, 27);
-            this.Open.TabIndex = 21;
-            this.Open.TabStop = false;
-            this.Open.Text = "Open...";
-            this.Open.UseVisualStyleBackColor = true;
-            this.Open.Click += new System.EventHandler(this.Open_Click);
+            Open.Location = new Point(403, 449);
+            Open.Margin = new Padding(4, 3, 4, 3);
+            Open.Name = "Open";
+            Open.Size = new Size(88, 27);
+            Open.TabIndex = 21;
+            Open.TabStop = false;
+            Open.Text = "Open...";
+            Open.UseVisualStyleBackColor = true;
+            Open.Click += Open_Click;
             // 
             // SaveAs
             // 
-            this.SaveAs.Location = new System.Drawing.Point(307, 449);
-            this.SaveAs.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.SaveAs.Name = "SaveAs";
-            this.SaveAs.Size = new System.Drawing.Size(88, 27);
-            this.SaveAs.TabIndex = 20;
-            this.SaveAs.TabStop = false;
-            this.SaveAs.Text = "&SaveAs...";
-            this.SaveAs.UseVisualStyleBackColor = true;
-            this.SaveAs.Click += new System.EventHandler(this.SaveAs_Click);
+            SaveAs.Location = new Point(307, 449);
+            SaveAs.Margin = new Padding(4, 3, 4, 3);
+            SaveAs.Name = "SaveAs";
+            SaveAs.Size = new Size(88, 27);
+            SaveAs.TabIndex = 20;
+            SaveAs.TabStop = false;
+            SaveAs.Text = "&SaveAs...";
+            SaveAs.UseVisualStyleBackColor = true;
+            SaveAs.Click += SaveAs_Click;
             // 
             // Cancel
             // 
-            this.Cancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.Cancel.Location = new System.Drawing.Point(211, 449);
-            this.Cancel.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.Cancel.Name = "Cancel";
-            this.Cancel.Size = new System.Drawing.Size(88, 27);
-            this.Cancel.TabIndex = 19;
-            this.Cancel.Text = "&Cancel";
-            this.Cancel.UseVisualStyleBackColor = true;
-            this.Cancel.Click += new System.EventHandler(this.Cancel_Click);
+            Cancel.DialogResult = DialogResult.Cancel;
+            Cancel.Location = new Point(211, 449);
+            Cancel.Margin = new Padding(4, 3, 4, 3);
+            Cancel.Name = "Cancel";
+            Cancel.Size = new Size(88, 27);
+            Cancel.TabIndex = 19;
+            Cancel.Text = "&Cancel";
+            Cancel.UseVisualStyleBackColor = true;
+            Cancel.Click += Cancel_Click;
             // 
             // Ok
             // 
-            this.Ok.Location = new System.Drawing.Point(115, 449);
-            this.Ok.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.Ok.Name = "Ok";
-            this.Ok.Size = new System.Drawing.Size(88, 27);
-            this.Ok.TabIndex = 18;
-            this.Ok.Text = "&Ok";
-            this.Ok.UseVisualStyleBackColor = true;
-            this.Ok.Click += new System.EventHandler(this.Ok_Click);
+            Ok.Location = new Point(115, 449);
+            Ok.Margin = new Padding(4, 3, 4, 3);
+            Ok.Name = "Ok";
+            Ok.Size = new Size(88, 27);
+            Ok.TabIndex = 18;
+            Ok.Text = "&Ok";
+            Ok.UseVisualStyleBackColor = true;
+            Ok.Click += Ok_Click;
             // 
             // selector
             // 
-            this.selector.LargeChange = 1;
-            this.selector.Location = new System.Drawing.Point(193, 3);
-            this.selector.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.selector.Maximum = 199;
-            this.selector.Name = "selector";
-            this.selector.Size = new System.Drawing.Size(447, 45);
-            this.selector.TabIndex = 2;
-            this.selector.ValueChanged += new System.EventHandler(this.GameObjectsSelector_ValueChanged);
+            selector.LargeChange = 1;
+            selector.Location = new Point(193, 3);
+            selector.Margin = new Padding(4, 3, 4, 3);
+            selector.Maximum = 199;
+            selector.Name = "selector";
+            selector.Size = new Size(447, 45);
+            selector.TabIndex = 2;
+            selector.ValueChanged += GameObjectsSelector_ValueChanged;
             // 
             // sectorGroupBox
             // 
-            this.sectorGroupBox.Controls.Add(this.sectorName);
-            this.sectorGroupBox.Controls.Add(this.sectorGalaxySizeLabel);
-            this.sectorGroupBox.Controls.Add(this.sectorNameLabel);
-            this.sectorGroupBox.Controls.Add(this.sectorSecImportLabel);
-            this.sectorGroupBox.Controls.Add(this.sectorFamilyIdHexLabel);
-            this.sectorGroupBox.Controls.Add(this.label4);
-            this.sectorGroupBox.Controls.Add(this.sectorFamilyId);
-            this.sectorGroupBox.Controls.Add(this.sectorYPosition);
-            this.sectorGroupBox.Controls.Add(this.sectorFamilyIdLabel);
-            this.sectorGroupBox.Controls.Add(this.sectorTextStraDllIdLabel);
-            this.sectorGroupBox.Controls.Add(this.sectorXPosition);
-            this.sectorGroupBox.Controls.Add(this.sectorTextStraDllId);
-            this.sectorGroupBox.Controls.Add(this.sectorSecImport);
-            this.sectorGroupBox.Controls.Add(this.sectorGalaxySize);
-            this.sectorGroupBox.Location = new System.Drawing.Point(193, 337);
-            this.sectorGroupBox.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.sectorGroupBox.Name = "sectorGroupBox";
-            this.sectorGroupBox.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.sectorGroupBox.Size = new System.Drawing.Size(523, 106);
-            this.sectorGroupBox.TabIndex = 0;
-            this.sectorGroupBox.TabStop = false;
-            this.sectorGroupBox.Text = "Sector (SECTORSD.DAT)";
+            sectorGroupBox.Controls.Add(sectorName);
+            sectorGroupBox.Controls.Add(sectorGalaxySizeLabel);
+            sectorGroupBox.Controls.Add(sectorNameLabel);
+            sectorGroupBox.Controls.Add(sectorSecImportLabel);
+            sectorGroupBox.Controls.Add(sectorFamilyIdHexLabel);
+            sectorGroupBox.Controls.Add(label4);
+            sectorGroupBox.Controls.Add(sectorFamilyId);
+            sectorGroupBox.Controls.Add(sectorYPosition);
+            sectorGroupBox.Controls.Add(sectorFamilyIdLabel);
+            sectorGroupBox.Controls.Add(sectorTextStraDllIdLabel);
+            sectorGroupBox.Controls.Add(sectorXPosition);
+            sectorGroupBox.Controls.Add(sectorTextStraDllId);
+            sectorGroupBox.Controls.Add(sectorSecImport);
+            sectorGroupBox.Controls.Add(sectorGalaxySize);
+            sectorGroupBox.Location = new Point(193, 337);
+            sectorGroupBox.Margin = new Padding(4, 3, 4, 3);
+            sectorGroupBox.Name = "sectorGroupBox";
+            sectorGroupBox.Padding = new Padding(4, 3, 4, 3);
+            sectorGroupBox.Size = new Size(483, 106);
+            sectorGroupBox.TabIndex = 0;
+            sectorGroupBox.TabStop = false;
+            sectorGroupBox.Text = "Sector (SECTORSD.DAT)";
             // 
             // sectorName
             // 
-            this.sectorName.Enabled = false;
-            this.sectorName.Location = new System.Drawing.Point(74, 22);
-            this.sectorName.Name = "sectorName";
-            this.sectorName.Size = new System.Drawing.Size(134, 23);
-            this.sectorName.TabIndex = 0;
+            sectorName.Enabled = false;
+            sectorName.Location = new Point(63, 22);
+            sectorName.Name = "sectorName";
+            sectorName.Size = new Size(134, 23);
+            sectorName.TabIndex = 0;
             // 
             // sectorGalaxySizeLabel
             // 
-            this.sectorGalaxySizeLabel.AutoSize = true;
-            this.sectorGalaxySizeLabel.Enabled = false;
-            this.sectorGalaxySizeLabel.Location = new System.Drawing.Point(293, 50);
-            this.sectorGalaxySizeLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.sectorGalaxySizeLabel.Name = "sectorGalaxySizeLabel";
-            this.sectorGalaxySizeLabel.Size = new System.Drawing.Size(65, 15);
-            this.sectorGalaxySizeLabel.TabIndex = 0;
-            this.sectorGalaxySizeLabel.Text = "Galaxy Size";
+            sectorGalaxySizeLabel.AutoSize = true;
+            sectorGalaxySizeLabel.Enabled = false;
+            sectorGalaxySizeLabel.Location = new Point(259, 50);
+            sectorGalaxySizeLabel.Margin = new Padding(4, 0, 4, 0);
+            sectorGalaxySizeLabel.Name = "sectorGalaxySizeLabel";
+            sectorGalaxySizeLabel.Size = new Size(65, 15);
+            sectorGalaxySizeLabel.TabIndex = 0;
+            sectorGalaxySizeLabel.Text = "Galaxy Size";
             // 
             // sectorNameLabel
             // 
-            this.sectorNameLabel.AutoSize = true;
-            this.sectorNameLabel.Enabled = false;
-            this.sectorNameLabel.Location = new System.Drawing.Point(21, 25);
-            this.sectorNameLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.sectorNameLabel.Name = "sectorNameLabel";
-            this.sectorNameLabel.Size = new System.Drawing.Size(39, 15);
-            this.sectorNameLabel.TabIndex = 171;
-            this.sectorNameLabel.Text = "Name";
+            sectorNameLabel.AutoSize = true;
+            sectorNameLabel.Enabled = false;
+            sectorNameLabel.Location = new Point(10, 25);
+            sectorNameLabel.Margin = new Padding(4, 0, 4, 0);
+            sectorNameLabel.Name = "sectorNameLabel";
+            sectorNameLabel.Size = new Size(39, 15);
+            sectorNameLabel.TabIndex = 171;
+            sectorNameLabel.Text = "Name";
             // 
             // sectorSecImportLabel
             // 
-            this.sectorSecImportLabel.AutoSize = true;
-            this.sectorSecImportLabel.Enabled = false;
-            this.sectorSecImportLabel.Location = new System.Drawing.Point(293, 25);
-            this.sectorSecImportLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.sectorSecImportLabel.Name = "sectorSecImportLabel";
-            this.sectorSecImportLabel.Size = new System.Drawing.Size(64, 15);
-            this.sectorSecImportLabel.TabIndex = 0;
-            this.sectorSecImportLabel.Text = "Sec Import";
+            sectorSecImportLabel.AutoSize = true;
+            sectorSecImportLabel.Enabled = false;
+            sectorSecImportLabel.Location = new Point(259, 25);
+            sectorSecImportLabel.Margin = new Padding(4, 0, 4, 0);
+            sectorSecImportLabel.Name = "sectorSecImportLabel";
+            sectorSecImportLabel.Size = new Size(64, 15);
+            sectorSecImportLabel.TabIndex = 0;
+            sectorSecImportLabel.Text = "Sec Import";
             // 
             // sectorFamilyIdHexLabel
             // 
-            this.sectorFamilyIdHexLabel.AutoSize = true;
-            this.sectorFamilyIdHexLabel.Enabled = false;
-            this.sectorFamilyIdHexLabel.Location = new System.Drawing.Point(216, 52);
-            this.sectorFamilyIdHexLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.sectorFamilyIdHexLabel.Name = "sectorFamilyIdHexLabel";
-            this.sectorFamilyIdHexLabel.Size = new System.Drawing.Size(31, 15);
-            this.sectorFamilyIdHexLabel.TabIndex = 0;
-            this.sectorFamilyIdHexLabel.Text = "0x00";
+            sectorFamilyIdHexLabel.AutoSize = true;
+            sectorFamilyIdHexLabel.Enabled = false;
+            sectorFamilyIdHexLabel.Location = new Point(205, 52);
+            sectorFamilyIdHexLabel.Margin = new Padding(4, 0, 4, 0);
+            sectorFamilyIdHexLabel.Name = "sectorFamilyIdHexLabel";
+            sectorFamilyIdHexLabel.Size = new Size(31, 15);
+            sectorFamilyIdHexLabel.TabIndex = 0;
+            sectorFamilyIdHexLabel.Text = "0x00";
             // 
             // label4
             // 
-            this.label4.AutoSize = true;
-            this.label4.Enabled = false;
-            this.label4.Location = new System.Drawing.Point(293, 76);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(81, 15);
-            this.label4.TabIndex = 0;
-            this.label4.Text = "Position (X, Y)";
+            label4.AutoSize = true;
+            label4.Enabled = false;
+            label4.Location = new Point(259, 76);
+            label4.Margin = new Padding(4, 0, 4, 0);
+            label4.Name = "label4";
+            label4.Size = new Size(81, 15);
+            label4.TabIndex = 0;
+            label4.Text = "Position (X, Y)";
             // 
             // sectorFamilyId
             // 
-            this.sectorFamilyId.Enabled = false;
-            this.sectorFamilyId.Location = new System.Drawing.Point(149, 48);
-            this.sectorFamilyId.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.sectorFamilyId.Maximum = new decimal(new int[] {
-            -1,
-            0,
-            0,
-            0});
-            this.sectorFamilyId.Name = "sectorFamilyId";
-            this.sectorFamilyId.Size = new System.Drawing.Size(59, 23);
-            this.sectorFamilyId.TabIndex = 0;
-            this.sectorFamilyId.TabStop = false;
-            this.sectorFamilyId.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.sectorFamilyId.Value = new decimal(new int[] {
-            -1,
-            0,
-            0,
-            0});
+            sectorFamilyId.Enabled = false;
+            sectorFamilyId.Location = new Point(138, 48);
+            sectorFamilyId.Margin = new Padding(4, 3, 4, 3);
+            sectorFamilyId.Maximum = new decimal(new int[] { -1, 0, 0, 0 });
+            sectorFamilyId.Name = "sectorFamilyId";
+            sectorFamilyId.Size = new Size(59, 23);
+            sectorFamilyId.TabIndex = 0;
+            sectorFamilyId.TabStop = false;
+            sectorFamilyId.TextAlign = HorizontalAlignment.Right;
+            sectorFamilyId.Value = new decimal(new int[] { -1, 0, 0, 0 });
             // 
             // sectorYPosition
             // 
-            this.sectorYPosition.Enabled = false;
-            this.sectorYPosition.Location = new System.Drawing.Point(451, 74);
-            this.sectorYPosition.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.sectorYPosition.Maximum = new decimal(new int[] {
-            -1,
-            0,
-            0,
-            0});
-            this.sectorYPosition.Name = "sectorYPosition";
-            this.sectorYPosition.Size = new System.Drawing.Size(59, 23);
-            this.sectorYPosition.TabIndex = 0;
-            this.sectorYPosition.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.sectorYPosition.Value = new decimal(new int[] {
-            -1,
-            0,
-            0,
-            0});
+            sectorYPosition.Enabled = false;
+            sectorYPosition.Location = new Point(417, 74);
+            sectorYPosition.Margin = new Padding(4, 3, 4, 3);
+            sectorYPosition.Maximum = new decimal(new int[] { -1, 0, 0, 0 });
+            sectorYPosition.Name = "sectorYPosition";
+            sectorYPosition.Size = new Size(59, 23);
+            sectorYPosition.TabIndex = 0;
+            sectorYPosition.TextAlign = HorizontalAlignment.Right;
+            sectorYPosition.Value = new decimal(new int[] { -1, 0, 0, 0 });
             // 
             // sectorFamilyIdLabel
             // 
-            this.sectorFamilyIdLabel.AutoSize = true;
-            this.sectorFamilyIdLabel.Enabled = false;
-            this.sectorFamilyIdLabel.Location = new System.Drawing.Point(21, 52);
-            this.sectorFamilyIdLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.sectorFamilyIdLabel.Name = "sectorFamilyIdLabel";
-            this.sectorFamilyIdLabel.Size = new System.Drawing.Size(55, 15);
-            this.sectorFamilyIdLabel.TabIndex = 1154;
-            this.sectorFamilyIdLabel.Text = "Family Id";
+            sectorFamilyIdLabel.AutoSize = true;
+            sectorFamilyIdLabel.Enabled = false;
+            sectorFamilyIdLabel.Location = new Point(10, 52);
+            sectorFamilyIdLabel.Margin = new Padding(4, 0, 4, 0);
+            sectorFamilyIdLabel.Name = "sectorFamilyIdLabel";
+            sectorFamilyIdLabel.Size = new Size(55, 15);
+            sectorFamilyIdLabel.TabIndex = 1154;
+            sectorFamilyIdLabel.Text = "Family Id";
             // 
             // sectorTextStraDllIdLabel
             // 
-            this.sectorTextStraDllIdLabel.AutoSize = true;
-            this.sectorTextStraDllIdLabel.Enabled = false;
-            this.sectorTextStraDllIdLabel.Location = new System.Drawing.Point(21, 76);
-            this.sectorTextStraDllIdLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.sectorTextStraDllIdLabel.Name = "sectorTextStraDllIdLabel";
-            this.sectorTextStraDllIdLabel.Size = new System.Drawing.Size(77, 15);
-            this.sectorTextStraDllIdLabel.TabIndex = 0;
-            this.sectorTextStraDllIdLabel.Text = "TextStra.dll Id";
+            sectorTextStraDllIdLabel.AutoSize = true;
+            sectorTextStraDllIdLabel.Enabled = false;
+            sectorTextStraDllIdLabel.Location = new Point(10, 76);
+            sectorTextStraDllIdLabel.Margin = new Padding(4, 0, 4, 0);
+            sectorTextStraDllIdLabel.Name = "sectorTextStraDllIdLabel";
+            sectorTextStraDllIdLabel.Size = new Size(77, 15);
+            sectorTextStraDllIdLabel.TabIndex = 0;
+            sectorTextStraDllIdLabel.Text = "TextStra.dll Id";
             // 
             // sectorXPosition
             // 
-            this.sectorXPosition.Enabled = false;
-            this.sectorXPosition.Location = new System.Drawing.Point(384, 74);
-            this.sectorXPosition.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.sectorXPosition.Maximum = new decimal(new int[] {
-            -1,
-            0,
-            0,
-            0});
-            this.sectorXPosition.Name = "sectorXPosition";
-            this.sectorXPosition.Size = new System.Drawing.Size(59, 23);
-            this.sectorXPosition.TabIndex = 0;
-            this.sectorXPosition.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.sectorXPosition.Value = new decimal(new int[] {
-            -1,
-            0,
-            0,
-            0});
+            sectorXPosition.Enabled = false;
+            sectorXPosition.Location = new Point(350, 74);
+            sectorXPosition.Margin = new Padding(4, 3, 4, 3);
+            sectorXPosition.Maximum = new decimal(new int[] { -1, 0, 0, 0 });
+            sectorXPosition.Name = "sectorXPosition";
+            sectorXPosition.Size = new Size(59, 23);
+            sectorXPosition.TabIndex = 0;
+            sectorXPosition.TextAlign = HorizontalAlignment.Right;
+            sectorXPosition.Value = new decimal(new int[] { -1, 0, 0, 0 });
             // 
             // sectorTextStraDllId
             // 
-            this.sectorTextStraDllId.Enabled = false;
-            this.sectorTextStraDllId.Location = new System.Drawing.Point(149, 74);
-            this.sectorTextStraDllId.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.sectorTextStraDllId.Maximum = new decimal(new int[] {
-            -1,
-            0,
-            0,
-            0});
-            this.sectorTextStraDllId.Name = "sectorTextStraDllId";
-            this.sectorTextStraDllId.Size = new System.Drawing.Size(59, 23);
-            this.sectorTextStraDllId.TabIndex = 0;
-            this.sectorTextStraDllId.TabStop = false;
-            this.sectorTextStraDllId.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.sectorTextStraDllId.Value = new decimal(new int[] {
-            -1,
-            0,
-            0,
-            0});
+            sectorTextStraDllId.Enabled = false;
+            sectorTextStraDllId.Location = new Point(138, 74);
+            sectorTextStraDllId.Margin = new Padding(4, 3, 4, 3);
+            sectorTextStraDllId.Maximum = new decimal(new int[] { -1, 0, 0, 0 });
+            sectorTextStraDllId.Name = "sectorTextStraDllId";
+            sectorTextStraDllId.Size = new Size(59, 23);
+            sectorTextStraDllId.TabIndex = 0;
+            sectorTextStraDllId.TabStop = false;
+            sectorTextStraDllId.TextAlign = HorizontalAlignment.Right;
+            sectorTextStraDllId.Value = new decimal(new int[] { -1, 0, 0, 0 });
             // 
             // sectorSecImport
             // 
-            this.sectorSecImport.Enabled = false;
-            this.sectorSecImport.Location = new System.Drawing.Point(384, 22);
-            this.sectorSecImport.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.sectorSecImport.Maximum = new decimal(new int[] {
-            -1,
-            0,
-            0,
-            0});
-            this.sectorSecImport.Name = "sectorSecImport";
-            this.sectorSecImport.Size = new System.Drawing.Size(59, 23);
-            this.sectorSecImport.TabIndex = 0;
-            this.sectorSecImport.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.sectorSecImport.Value = new decimal(new int[] {
-            -1,
-            0,
-            0,
-            0});
+            sectorSecImport.Enabled = false;
+            sectorSecImport.Location = new Point(350, 22);
+            sectorSecImport.Margin = new Padding(4, 3, 4, 3);
+            sectorSecImport.Maximum = new decimal(new int[] { -1, 0, 0, 0 });
+            sectorSecImport.Name = "sectorSecImport";
+            sectorSecImport.Size = new Size(59, 23);
+            sectorSecImport.TabIndex = 0;
+            sectorSecImport.TextAlign = HorizontalAlignment.Right;
+            sectorSecImport.Value = new decimal(new int[] { -1, 0, 0, 0 });
             // 
             // sectorGalaxySize
             // 
-            this.sectorGalaxySize.Enabled = false;
-            this.sectorGalaxySize.Location = new System.Drawing.Point(384, 48);
-            this.sectorGalaxySize.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.sectorGalaxySize.Maximum = new decimal(new int[] {
-            -1,
-            0,
-            0,
-            0});
-            this.sectorGalaxySize.Name = "sectorGalaxySize";
-            this.sectorGalaxySize.Size = new System.Drawing.Size(59, 23);
-            this.sectorGalaxySize.TabIndex = 0;
-            this.sectorGalaxySize.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.sectorGalaxySize.Value = new decimal(new int[] {
-            -1,
-            0,
-            0,
-            0});
+            sectorGalaxySize.Enabled = false;
+            sectorGalaxySize.Location = new Point(350, 48);
+            sectorGalaxySize.Margin = new Padding(4, 3, 4, 3);
+            sectorGalaxySize.Maximum = new decimal(new int[] { -1, 0, 0, 0 });
+            sectorGalaxySize.Name = "sectorGalaxySize";
+            sectorGalaxySize.Size = new Size(59, 23);
+            sectorGalaxySize.TabIndex = 0;
+            sectorGalaxySize.TextAlign = HorizontalAlignment.Right;
+            sectorGalaxySize.Value = new decimal(new int[] { -1, 0, 0, 0 });
             // 
             // Field7_2Label
             // 
-            this.Field7_2Label.AutoSize = true;
-            this.Field7_2Label.ForeColor = System.Drawing.Color.Red;
-            this.Field7_2Label.Location = new System.Drawing.Point(11, 180);
-            this.Field7_2Label.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.Field7_2Label.Name = "Field7_2Label";
-            this.Field7_2Label.Size = new System.Drawing.Size(93, 15);
-            this.Field7_2Label.TabIndex = 0;
-            this.Field7_2Label.Text = "Field7 (always 2)";
+            Field7_2Label.AutoSize = true;
+            Field7_2Label.ForeColor = Color.Red;
+            Field7_2Label.Location = new Point(11, 180);
+            Field7_2Label.Margin = new Padding(4, 0, 4, 0);
+            Field7_2Label.Name = "Field7_2Label";
+            Field7_2Label.Size = new Size(93, 15);
+            Field7_2Label.TabIndex = 0;
+            Field7_2Label.Text = "Field7 (always 2)";
             // 
             // field10_1
             // 
-            this.field10_1.ForeColor = System.Drawing.Color.Red;
-            this.field10_1.Location = new System.Drawing.Point(153, 256);
-            this.field10_1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.field10_1.Maximum = new decimal(new int[] {
-            -1,
-            0,
-            0,
-            0});
-            this.field10_1.Name = "field10_1";
-            this.field10_1.Size = new System.Drawing.Size(59, 23);
-            this.field10_1.TabIndex = 14;
-            this.field10_1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.field10_1.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.field10_1.ValueChanged += new System.EventHandler(this.field10_1_ValueChanged);
+            field10_1.ForeColor = Color.Red;
+            field10_1.Location = new Point(153, 256);
+            field10_1.Margin = new Padding(4, 3, 4, 3);
+            field10_1.Maximum = new decimal(new int[] { -1, 0, 0, 0 });
+            field10_1.Name = "field10_1";
+            field10_1.Size = new Size(59, 23);
+            field10_1.TabIndex = 14;
+            field10_1.TextAlign = HorizontalAlignment.Right;
+            field10_1.Value = new decimal(new int[] { 1, 0, 0, 0 });
+            field10_1.ValueChanged += field10_1_ValueChanged;
             // 
             // sectorId
             // 
-            this.sectorId.BackColor = System.Drawing.SystemColors.Window;
-            this.sectorId.Location = new System.Drawing.Point(153, 204);
-            this.sectorId.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.sectorId.Maximum = new decimal(new int[] {
-            -1,
-            0,
-            0,
-            0});
-            this.sectorId.Name = "sectorId";
-            this.sectorId.Size = new System.Drawing.Size(59, 23);
-            this.sectorId.TabIndex = 12;
-            this.sectorId.TabStop = false;
-            this.sectorId.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.sectorId.Value = new decimal(new int[] {
-            -1,
-            0,
-            0,
-            0});
-            this.sectorId.ValueChanged += new System.EventHandler(this.sectorId_ValueChanged);
+            sectorId.BackColor = SystemColors.Window;
+            sectorId.Location = new Point(153, 204);
+            sectorId.Margin = new Padding(4, 3, 4, 3);
+            sectorId.Maximum = new decimal(new int[] { -1, 0, 0, 0 });
+            sectorId.Name = "sectorId";
+            sectorId.Size = new Size(59, 23);
+            sectorId.TabIndex = 12;
+            sectorId.TabStop = false;
+            sectorId.TextAlign = HorizontalAlignment.Right;
+            sectorId.Value = new decimal(new int[] { -1, 0, 0, 0 });
+            sectorId.ValueChanged += sectorId_ValueChanged;
             // 
             // sectorIdLabel
             // 
-            this.sectorIdLabel.AutoSize = true;
-            this.sectorIdLabel.Location = new System.Drawing.Point(11, 206);
-            this.sectorIdLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.sectorIdLabel.Name = "sectorIdLabel";
-            this.sectorIdLabel.Size = new System.Drawing.Size(53, 15);
-            this.sectorIdLabel.TabIndex = 0;
-            this.sectorIdLabel.Text = "Sector Id";
+            sectorIdLabel.AutoSize = true;
+            sectorIdLabel.Location = new Point(11, 206);
+            sectorIdLabel.Margin = new Padding(4, 0, 4, 0);
+            sectorIdLabel.Name = "sectorIdLabel";
+            sectorIdLabel.Size = new Size(53, 15);
+            sectorIdLabel.TabIndex = 0;
+            sectorIdLabel.Text = "Sector Id";
             // 
             // familyIdHexLabel
             // 
-            this.familyIdHexLabel.AutoSize = true;
-            this.familyIdHexLabel.ForeColor = System.Drawing.Color.Red;
-            this.familyIdHexLabel.Location = new System.Drawing.Point(220, 128);
-            this.familyIdHexLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.familyIdHexLabel.Name = "familyIdHexLabel";
-            this.familyIdHexLabel.Size = new System.Drawing.Size(31, 15);
-            this.familyIdHexLabel.TabIndex = 0;
-            this.familyIdHexLabel.Text = "0x00";
+            familyIdHexLabel.AutoSize = true;
+            familyIdHexLabel.ForeColor = Color.Red;
+            familyIdHexLabel.Location = new Point(220, 128);
+            familyIdHexLabel.Margin = new Padding(4, 0, 4, 0);
+            familyIdHexLabel.Name = "familyIdHexLabel";
+            familyIdHexLabel.Size = new Size(31, 15);
+            familyIdHexLabel.TabIndex = 0;
+            familyIdHexLabel.Text = "0x00";
             // 
             // productionFamily_0
             // 
-            this.productionFamily_0.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.productionFamily_0.Location = new System.Drawing.Point(153, 74);
-            this.productionFamily_0.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.productionFamily_0.Maximum = new decimal(new int[] {
-            -1,
-            0,
-            0,
-            0});
-            this.productionFamily_0.Name = "productionFamily_0";
-            this.productionFamily_0.Size = new System.Drawing.Size(59, 23);
-            this.productionFamily_0.TabIndex = 7;
-            this.productionFamily_0.TabStop = false;
-            this.productionFamily_0.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.productionFamily_0.ValueChanged += new System.EventHandler(this.productionFamily_0_ValueChanged);
+            productionFamily_0.ForeColor = Color.FromArgb(192, 0, 192);
+            productionFamily_0.Location = new Point(153, 74);
+            productionFamily_0.Margin = new Padding(4, 3, 4, 3);
+            productionFamily_0.Maximum = new decimal(new int[] { -1, 0, 0, 0 });
+            productionFamily_0.Name = "productionFamily_0";
+            productionFamily_0.Size = new Size(59, 23);
+            productionFamily_0.TabIndex = 7;
+            productionFamily_0.TabStop = false;
+            productionFamily_0.TextAlign = HorizontalAlignment.Right;
+            productionFamily_0.ValueChanged += productionFamily_0_ValueChanged;
             // 
             // productionFamily_0Label
             // 
-            this.productionFamily_0Label.AutoSize = true;
-            this.productionFamily_0Label.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.productionFamily_0Label.Location = new System.Drawing.Point(11, 76);
-            this.productionFamily_0Label.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.productionFamily_0Label.Name = "productionFamily_0Label";
-            this.productionFamily_0Label.Size = new System.Drawing.Size(104, 15);
-            this.productionFamily_0Label.TabIndex = 0;
-            this.productionFamily_0Label.Text = "Production Family";
+            productionFamily_0Label.AutoSize = true;
+            productionFamily_0Label.ForeColor = Color.FromArgb(192, 0, 192);
+            productionFamily_0Label.Location = new Point(11, 76);
+            productionFamily_0Label.Margin = new Padding(4, 0, 4, 0);
+            productionFamily_0Label.Name = "productionFamily_0Label";
+            productionFamily_0Label.Size = new Size(104, 15);
+            productionFamily_0Label.TabIndex = 0;
+            productionFamily_0Label.Text = "Production Family";
             // 
             // idHexLabel
             // 
-            this.idHexLabel.AutoSize = true;
-            this.idHexLabel.ForeColor = System.Drawing.Color.Red;
-            this.idHexLabel.Location = new System.Drawing.Point(220, 24);
-            this.idHexLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.idHexLabel.Name = "idHexLabel";
-            this.idHexLabel.Size = new System.Drawing.Size(31, 15);
-            this.idHexLabel.TabIndex = 0;
-            this.idHexLabel.Text = "0x00";
+            idHexLabel.AutoSize = true;
+            idHexLabel.ForeColor = Color.Red;
+            idHexLabel.Location = new Point(220, 24);
+            idHexLabel.Margin = new Padding(4, 0, 4, 0);
+            idHexLabel.Name = "idHexLabel";
+            idHexLabel.Size = new Size(31, 15);
+            idHexLabel.TabIndex = 0;
+            idHexLabel.Text = "0x00";
             // 
             // nextProductionFamily_0Label
             // 
-            this.nextProductionFamily_0Label.AutoSize = true;
-            this.nextProductionFamily_0Label.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.nextProductionFamily_0Label.Location = new System.Drawing.Point(11, 102);
-            this.nextProductionFamily_0Label.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.nextProductionFamily_0Label.Name = "nextProductionFamily_0Label";
-            this.nextProductionFamily_0Label.Size = new System.Drawing.Size(121, 15);
-            this.nextProductionFamily_0Label.TabIndex = 0;
-            this.nextProductionFamily_0Label.Text = "Production Family +1";
+            nextProductionFamily_0Label.AutoSize = true;
+            nextProductionFamily_0Label.ForeColor = Color.FromArgb(192, 0, 192);
+            nextProductionFamily_0Label.Location = new Point(11, 102);
+            nextProductionFamily_0Label.Margin = new Padding(4, 0, 4, 0);
+            nextProductionFamily_0Label.Name = "nextProductionFamily_0Label";
+            nextProductionFamily_0Label.Size = new Size(121, 15);
+            nextProductionFamily_0Label.TabIndex = 0;
+            nextProductionFamily_0Label.Text = "Production Family +1";
             // 
             // nextProductionFamily_0
             // 
-            this.nextProductionFamily_0.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.nextProductionFamily_0.Location = new System.Drawing.Point(153, 100);
-            this.nextProductionFamily_0.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.nextProductionFamily_0.Maximum = new decimal(new int[] {
-            -1,
-            0,
-            0,
-            0});
-            this.nextProductionFamily_0.Name = "nextProductionFamily_0";
-            this.nextProductionFamily_0.Size = new System.Drawing.Size(59, 23);
-            this.nextProductionFamily_0.TabIndex = 8;
-            this.nextProductionFamily_0.TabStop = false;
-            this.nextProductionFamily_0.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.nextProductionFamily_0.ValueChanged += new System.EventHandler(this.nextProductionFamily_0_ValueChanged);
+            nextProductionFamily_0.ForeColor = Color.FromArgb(192, 0, 192);
+            nextProductionFamily_0.Location = new Point(153, 100);
+            nextProductionFamily_0.Margin = new Padding(4, 3, 4, 3);
+            nextProductionFamily_0.Maximum = new decimal(new int[] { -1, 0, 0, 0 });
+            nextProductionFamily_0.Name = "nextProductionFamily_0";
+            nextProductionFamily_0.Size = new Size(59, 23);
+            nextProductionFamily_0.TabIndex = 8;
+            nextProductionFamily_0.TabStop = false;
+            nextProductionFamily_0.TextAlign = HorizontalAlignment.Right;
+            nextProductionFamily_0.ValueChanged += nextProductionFamily_0_ValueChanged;
             // 
             // id
             // 
-            this.id.BackColor = System.Drawing.SystemColors.Window;
-            this.id.ForeColor = System.Drawing.Color.Red;
-            this.id.Location = new System.Drawing.Point(153, 22);
-            this.id.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.id.Maximum = new decimal(new int[] {
-            -1,
-            0,
-            0,
-            0});
-            this.id.Name = "id";
-            this.id.Size = new System.Drawing.Size(59, 23);
-            this.id.TabIndex = 5;
-            this.id.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.id.Value = new decimal(new int[] {
-            -1,
-            0,
-            0,
-            0});
-            this.id.ValueChanged += new System.EventHandler(this.id_ValueChanged);
+            id.BackColor = SystemColors.Window;
+            id.ForeColor = Color.Red;
+            id.Location = new Point(153, 22);
+            id.Margin = new Padding(4, 3, 4, 3);
+            id.Maximum = new decimal(new int[] { -1, 0, 0, 0 });
+            id.Name = "id";
+            id.Size = new Size(59, 23);
+            id.TabIndex = 5;
+            id.TextAlign = HorizontalAlignment.Right;
+            id.Value = new decimal(new int[] { -1, 0, 0, 0 });
+            id.ValueChanged += id_ValueChanged;
             // 
             // familyIdLabel
             // 
-            this.familyIdLabel.AutoSize = true;
-            this.familyIdLabel.ForeColor = System.Drawing.Color.Blue;
-            this.familyIdLabel.Location = new System.Drawing.Point(11, 128);
-            this.familyIdLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.familyIdLabel.Name = "familyIdLabel";
-            this.familyIdLabel.Size = new System.Drawing.Size(63, 15);
-            this.familyIdLabel.TabIndex = 0;
-            this.familyIdLabel.Text = "Family Id *";
+            familyIdLabel.AutoSize = true;
+            familyIdLabel.ForeColor = Color.Blue;
+            familyIdLabel.Location = new Point(11, 128);
+            familyIdLabel.Margin = new Padding(4, 0, 4, 0);
+            familyIdLabel.Name = "familyIdLabel";
+            familyIdLabel.Size = new Size(63, 15);
+            familyIdLabel.TabIndex = 0;
+            familyIdLabel.Text = "Family Id *";
             // 
             // textStraDllIdLabel
             // 
-            this.textStraDllIdLabel.AutoSize = true;
-            this.textStraDllIdLabel.ForeColor = System.Drawing.Color.Red;
-            this.textStraDllIdLabel.Location = new System.Drawing.Point(11, 154);
-            this.textStraDllIdLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.textStraDllIdLabel.Name = "textStraDllIdLabel";
-            this.textStraDllIdLabel.Size = new System.Drawing.Size(77, 15);
-            this.textStraDllIdLabel.TabIndex = 0;
-            this.textStraDllIdLabel.Text = "TextStra.dll Id";
+            textStraDllIdLabel.AutoSize = true;
+            textStraDllIdLabel.ForeColor = Color.Red;
+            textStraDllIdLabel.Location = new Point(11, 154);
+            textStraDllIdLabel.Margin = new Padding(4, 0, 4, 0);
+            textStraDllIdLabel.Name = "textStraDllIdLabel";
+            textStraDllIdLabel.Size = new Size(77, 15);
+            textStraDllIdLabel.TabIndex = 0;
+            textStraDllIdLabel.Text = "TextStra.dll Id";
             // 
             // familyId
             // 
-            this.familyId.ForeColor = System.Drawing.Color.Red;
-            this.familyId.Location = new System.Drawing.Point(153, 126);
-            this.familyId.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.familyId.Maximum = new decimal(new int[] {
-            -1,
-            0,
-            0,
-            0});
-            this.familyId.Name = "familyId";
-            this.familyId.Size = new System.Drawing.Size(59, 23);
-            this.familyId.TabIndex = 9;
-            this.familyId.TabStop = false;
-            this.familyId.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.familyId.Value = new decimal(new int[] {
-            -1,
-            0,
-            0,
-            0});
-            this.familyId.ValueChanged += new System.EventHandler(this.familyId_ValueChanged);
+            familyId.ForeColor = Color.Red;
+            familyId.Location = new Point(153, 126);
+            familyId.Margin = new Padding(4, 3, 4, 3);
+            familyId.Maximum = new decimal(new int[] { -1, 0, 0, 0 });
+            familyId.Name = "familyId";
+            familyId.Size = new Size(59, 23);
+            familyId.TabIndex = 9;
+            familyId.TabStop = false;
+            familyId.TextAlign = HorizontalAlignment.Right;
+            familyId.Value = new decimal(new int[] { -1, 0, 0, 0 });
+            familyId.ValueChanged += familyId_ValueChanged;
             // 
             // textStraDllId
             // 
-            this.textStraDllId.ForeColor = System.Drawing.Color.Red;
-            this.textStraDllId.Location = new System.Drawing.Point(153, 152);
-            this.textStraDllId.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.textStraDllId.Maximum = new decimal(new int[] {
-            65535,
-            0,
-            0,
-            0});
-            this.textStraDllId.Name = "textStraDllId";
-            this.textStraDllId.Size = new System.Drawing.Size(59, 23);
-            this.textStraDllId.TabIndex = 10;
-            this.textStraDllId.TabStop = false;
-            this.textStraDllId.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.textStraDllId.Value = new decimal(new int[] {
-            65535,
-            0,
-            0,
-            0});
-            this.textStraDllId.ValueChanged += new System.EventHandler(this.textStraDllId_ValueChanged);
+            textStraDllId.ForeColor = Color.Red;
+            textStraDllId.Location = new Point(153, 152);
+            textStraDllId.Margin = new Padding(4, 3, 4, 3);
+            textStraDllId.Maximum = new decimal(new int[] { 65535, 0, 0, 0 });
+            textStraDllId.Name = "textStraDllId";
+            textStraDllId.Size = new Size(59, 23);
+            textStraDllId.TabIndex = 10;
+            textStraDllId.TabStop = false;
+            textStraDllId.TextAlign = HorizontalAlignment.Right;
+            textStraDllId.Value = new decimal(new int[] { 65535, 0, 0, 0 });
+            textStraDllId.ValueChanged += textStraDllId_ValueChanged;
             // 
             // field7_2
             // 
-            this.field7_2.ForeColor = System.Drawing.Color.Red;
-            this.field7_2.Location = new System.Drawing.Point(153, 178);
-            this.field7_2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.field7_2.Maximum = new decimal(new int[] {
-            65535,
-            0,
-            0,
-            0});
-            this.field7_2.Name = "field7_2";
-            this.field7_2.Size = new System.Drawing.Size(59, 23);
-            this.field7_2.TabIndex = 11;
-            this.field7_2.TabStop = false;
-            this.field7_2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.field7_2.Value = new decimal(new int[] {
-            2,
-            0,
-            0,
-            0});
-            this.field7_2.ValueChanged += new System.EventHandler(this.field7_2_ValueChanged);
+            field7_2.ForeColor = Color.Red;
+            field7_2.Location = new Point(153, 178);
+            field7_2.Margin = new Padding(4, 3, 4, 3);
+            field7_2.Maximum = new decimal(new int[] { 65535, 0, 0, 0 });
+            field7_2.Name = "field7_2";
+            field7_2.Size = new Size(59, 23);
+            field7_2.TabIndex = 11;
+            field7_2.TabStop = false;
+            field7_2.TextAlign = HorizontalAlignment.Right;
+            field7_2.Value = new decimal(new int[] { 2, 0, 0, 0 });
+            field7_2.ValueChanged += field7_2_ValueChanged;
             // 
             // field10_1Label
             // 
-            this.field10_1Label.AutoSize = true;
-            this.field10_1Label.ForeColor = System.Drawing.Color.Red;
-            this.field10_1Label.Location = new System.Drawing.Point(11, 258);
-            this.field10_1Label.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.field10_1Label.Name = "field10_1Label";
-            this.field10_1Label.Size = new System.Drawing.Size(99, 15);
-            this.field10_1Label.TabIndex = 0;
-            this.field10_1Label.Text = "Field10 (always 1)";
+            field10_1Label.AutoSize = true;
+            field10_1Label.ForeColor = Color.Red;
+            field10_1Label.Location = new Point(11, 258);
+            field10_1Label.Margin = new Padding(4, 0, 4, 0);
+            field10_1Label.Name = "field10_1Label";
+            field10_1Label.Size = new Size(99, 15);
+            field10_1Label.TabIndex = 0;
+            field10_1Label.Text = "Field10 (always 1)";
             // 
             // pictureId
             // 
-            this.pictureId.Location = new System.Drawing.Point(153, 230);
-            this.pictureId.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.pictureId.Maximum = new decimal(new int[] {
-            -1,
-            0,
-            0,
-            0});
-            this.pictureId.Name = "pictureId";
-            this.pictureId.Size = new System.Drawing.Size(59, 23);
-            this.pictureId.TabIndex = 13;
-            this.pictureId.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.pictureId.Value = new decimal(new int[] {
-            -1,
-            0,
-            0,
-            0});
-            this.pictureId.ValueChanged += new System.EventHandler(this.pictureId_ValueChanged);
+            pictureId.Location = new Point(153, 230);
+            pictureId.Margin = new Padding(4, 3, 4, 3);
+            pictureId.Maximum = new decimal(new int[] { -1, 0, 0, 0 });
+            pictureId.Name = "pictureId";
+            pictureId.Size = new Size(59, 23);
+            pictureId.TabIndex = 13;
+            pictureId.TextAlign = HorizontalAlignment.Right;
+            pictureId.Value = new decimal(new int[] { -1, 0, 0, 0 });
+            pictureId.ValueChanged += pictureId_ValueChanged;
             // 
             // idLabel
             // 
-            this.idLabel.AutoSize = true;
-            this.idLabel.ForeColor = System.Drawing.Color.Red;
-            this.idLabel.Location = new System.Drawing.Point(11, 24);
-            this.idLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.idLabel.Name = "idLabel";
-            this.idLabel.Size = new System.Drawing.Size(17, 15);
-            this.idLabel.TabIndex = 0;
-            this.idLabel.Text = "Id";
+            idLabel.AutoSize = true;
+            idLabel.ForeColor = Color.Red;
+            idLabel.Location = new Point(11, 24);
+            idLabel.Margin = new Padding(4, 0, 4, 0);
+            idLabel.Name = "idLabel";
+            idLabel.Size = new Size(17, 15);
+            idLabel.TabIndex = 0;
+            idLabel.Text = "Id";
             // 
             // yPosition
             // 
-            this.yPosition.Location = new System.Drawing.Point(220, 282);
-            this.yPosition.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.yPosition.Maximum = new decimal(new int[] {
-            65535,
-            0,
-            0,
-            0});
-            this.yPosition.Name = "yPosition";
-            this.yPosition.Size = new System.Drawing.Size(59, 23);
-            this.yPosition.TabIndex = 16;
-            this.yPosition.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.yPosition.Value = new decimal(new int[] {
-            65535,
-            0,
-            0,
-            0});
-            this.yPosition.ValueChanged += new System.EventHandler(this.yPosition_ValueChanged);
+            yPosition.Location = new Point(220, 282);
+            yPosition.Margin = new Padding(4, 3, 4, 3);
+            yPosition.Maximum = new decimal(new int[] { 65535, 0, 0, 0 });
+            yPosition.Name = "yPosition";
+            yPosition.Size = new Size(59, 23);
+            yPosition.TabIndex = 16;
+            yPosition.TextAlign = HorizontalAlignment.Right;
+            yPosition.Value = new decimal(new int[] { 65535, 0, 0, 0 });
+            yPosition.ValueChanged += yPosition_ValueChanged;
             // 
             // field13_0Label
             // 
-            this.field13_0Label.AutoSize = true;
-            this.field13_0Label.ForeColor = System.Drawing.Color.Red;
-            this.field13_0Label.Location = new System.Drawing.Point(11, 310);
-            this.field13_0Label.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.field13_0Label.Name = "field13_0Label";
-            this.field13_0Label.Size = new System.Drawing.Size(99, 15);
-            this.field13_0Label.TabIndex = 0;
-            this.field13_0Label.Text = "Field13 (always 0)";
+            field13_0Label.AutoSize = true;
+            field13_0Label.ForeColor = Color.Red;
+            field13_0Label.Location = new Point(11, 310);
+            field13_0Label.Margin = new Padding(4, 0, 4, 0);
+            field13_0Label.Name = "field13_0Label";
+            field13_0Label.Size = new Size(99, 15);
+            field13_0Label.TabIndex = 0;
+            field13_0Label.Text = "Field13 (always 0)";
             // 
             // field13_0
             // 
-            this.field13_0.ForeColor = System.Drawing.Color.Red;
-            this.field13_0.Location = new System.Drawing.Point(153, 308);
-            this.field13_0.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.field13_0.Maximum = new decimal(new int[] {
-            -1,
-            0,
-            0,
-            0});
-            this.field13_0.Name = "field13_0";
-            this.field13_0.Size = new System.Drawing.Size(59, 23);
-            this.field13_0.TabIndex = 17;
-            this.field13_0.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.field13_0.ValueChanged += new System.EventHandler(this.field13_0_ValueChanged);
+            field13_0.ForeColor = Color.Red;
+            field13_0.Location = new Point(153, 308);
+            field13_0.Margin = new Padding(4, 3, 4, 3);
+            field13_0.Maximum = new decimal(new int[] { -1, 0, 0, 0 });
+            field13_0.Name = "field13_0";
+            field13_0.Size = new Size(59, 23);
+            field13_0.TabIndex = 17;
+            field13_0.TextAlign = HorizontalAlignment.Right;
+            field13_0.ValueChanged += field13_0_ValueChanged;
             // 
             // xPosition
             // 
-            this.xPosition.Location = new System.Drawing.Point(153, 282);
-            this.xPosition.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.xPosition.Maximum = new decimal(new int[] {
-            65535,
-            0,
-            0,
-            0});
-            this.xPosition.Name = "xPosition";
-            this.xPosition.Size = new System.Drawing.Size(59, 23);
-            this.xPosition.TabIndex = 15;
-            this.xPosition.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.xPosition.Value = new decimal(new int[] {
-            65535,
-            0,
-            0,
-            0});
-            this.xPosition.ValueChanged += new System.EventHandler(this.xPosition_ValueChanged);
+            xPosition.Location = new Point(153, 282);
+            xPosition.Margin = new Padding(4, 3, 4, 3);
+            xPosition.Maximum = new decimal(new int[] { 65535, 0, 0, 0 });
+            xPosition.Name = "xPosition";
+            xPosition.Size = new Size(59, 23);
+            xPosition.TabIndex = 15;
+            xPosition.TextAlign = HorizontalAlignment.Right;
+            xPosition.Value = new decimal(new int[] { 65535, 0, 0, 0 });
+            xPosition.ValueChanged += xPosition_ValueChanged;
             // 
             // positionLabel
             // 
-            this.positionLabel.AutoSize = true;
-            this.positionLabel.Location = new System.Drawing.Point(11, 284);
-            this.positionLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.positionLabel.Name = "positionLabel";
-            this.positionLabel.Size = new System.Drawing.Size(81, 15);
-            this.positionLabel.TabIndex = 0;
-            this.positionLabel.Text = "Position (X, Y)";
+            positionLabel.AutoSize = true;
+            positionLabel.Location = new Point(11, 284);
+            positionLabel.Margin = new Padding(4, 0, 4, 0);
+            positionLabel.Name = "positionLabel";
+            positionLabel.Size = new Size(81, 15);
+            positionLabel.TabIndex = 0;
+            positionLabel.Text = "Position (X, Y)";
             // 
             // picture
             // 
-            this.picture.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.picture.InitialImage = null;
-            this.picture.Location = new System.Drawing.Point(7, 22);
-            this.picture.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.picture.Name = "picture";
-            this.picture.Size = new System.Drawing.Size(220, 110);
-            this.picture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picture.TabIndex = 156;
-            this.picture.TabStop = false;
-            this.picture.Click += new System.EventHandler(this.picture_Click);
+            picture.BorderStyle = BorderStyle.FixedSingle;
+            picture.InitialImage = null;
+            picture.Location = new Point(7, 22);
+            picture.Margin = new Padding(4, 3, 4, 3);
+            picture.Name = "picture";
+            picture.Size = new Size(220, 110);
+            picture.SizeMode = PictureBoxSizeMode.Zoom;
+            picture.TabIndex = 156;
+            picture.TabStop = false;
+            picture.Click += picture_Click;
             // 
             // familyIdInfoLabel
             // 
-            this.familyIdInfoLabel.AutoSize = true;
-            this.familyIdInfoLabel.ForeColor = System.Drawing.Color.Blue;
-            this.familyIdInfoLabel.Location = new System.Drawing.Point(724, 345);
-            this.familyIdInfoLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.familyIdInfoLabel.Name = "familyIdInfoLabel";
-            this.familyIdInfoLabel.Size = new System.Drawing.Size(116, 15);
-            this.familyIdInfoLabel.TabIndex = 0;
-            this.familyIdInfoLabel.Text = "* 144=Core 146=Rim";
+            familyIdInfoLabel.AutoSize = true;
+            familyIdInfoLabel.ForeColor = Color.Blue;
+            familyIdInfoLabel.Location = new Point(684, 345);
+            familyIdInfoLabel.Margin = new Padding(4, 0, 4, 0);
+            familyIdInfoLabel.Name = "familyIdInfoLabel";
+            familyIdInfoLabel.Size = new Size(116, 15);
+            familyIdInfoLabel.TabIndex = 0;
+            familyIdInfoLabel.Text = "* 144=Core 146=Rim";
             // 
             // pictureIdLabel
             // 
-            this.pictureIdLabel.AutoSize = true;
-            this.pictureIdLabel.Location = new System.Drawing.Point(11, 232);
-            this.pictureIdLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.pictureIdLabel.Name = "pictureIdLabel";
-            this.pictureIdLabel.Size = new System.Drawing.Size(57, 15);
-            this.pictureIdLabel.TabIndex = 0;
-            this.pictureIdLabel.Text = "Picture Id";
+            pictureIdLabel.AutoSize = true;
+            pictureIdLabel.Location = new Point(11, 232);
+            pictureIdLabel.Margin = new Padding(4, 0, 4, 0);
+            pictureIdLabel.Name = "pictureIdLabel";
+            pictureIdLabel.Size = new Size(57, 15);
+            pictureIdLabel.TabIndex = 0;
+            pictureIdLabel.Text = "Picture Id";
             // 
             // field2_1
             // 
-            this.field2_1.ForeColor = System.Drawing.Color.Red;
-            this.field2_1.Location = new System.Drawing.Point(153, 48);
-            this.field2_1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.field2_1.Maximum = new decimal(new int[] {
-            -1,
-            0,
-            0,
-            0});
-            this.field2_1.Name = "field2_1";
-            this.field2_1.Size = new System.Drawing.Size(59, 23);
-            this.field2_1.TabIndex = 6;
-            this.field2_1.TabStop = false;
-            this.field2_1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.field2_1.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.field2_1.ValueChanged += new System.EventHandler(this.field2_1_ValueChanged);
+            field2_1.ForeColor = Color.Red;
+            field2_1.Location = new Point(153, 48);
+            field2_1.Margin = new Padding(4, 3, 4, 3);
+            field2_1.Maximum = new decimal(new int[] { -1, 0, 0, 0 });
+            field2_1.Name = "field2_1";
+            field2_1.Size = new Size(59, 23);
+            field2_1.TabIndex = 6;
+            field2_1.TabStop = false;
+            field2_1.TextAlign = HorizontalAlignment.Right;
+            field2_1.Value = new decimal(new int[] { 1, 0, 0, 0 });
+            field2_1.ValueChanged += field2_1_ValueChanged;
             // 
             // field2_1Label
             // 
-            this.field2_1Label.AutoSize = true;
-            this.field2_1Label.ForeColor = System.Drawing.Color.Red;
-            this.field2_1Label.Location = new System.Drawing.Point(11, 50);
-            this.field2_1Label.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.field2_1Label.Name = "field2_1Label";
-            this.field2_1Label.Size = new System.Drawing.Size(93, 15);
-            this.field2_1Label.TabIndex = 0;
-            this.field2_1Label.Text = "Field2 (always 1)";
+            field2_1Label.AutoSize = true;
+            field2_1Label.ForeColor = Color.Red;
+            field2_1Label.Location = new Point(11, 50);
+            field2_1Label.Margin = new Padding(4, 0, 4, 0);
+            field2_1Label.Name = "field2_1Label";
+            field2_1Label.Size = new Size(93, 15);
+            field2_1Label.TabIndex = 0;
+            field2_1Label.Text = "Field2 (always 1)";
             // 
             // inGameDataGroupBox
             // 
-            this.inGameDataGroupBox.Controls.Add(this.sprite);
-            this.inGameDataGroupBox.Controls.Add(this.encyclopediaDescriptionLabel);
-            this.inGameDataGroupBox.Controls.Add(this.name);
-            this.inGameDataGroupBox.Controls.Add(this.nameLabel);
-            this.inGameDataGroupBox.Controls.Add(this.encyclopediaDescription);
-            this.inGameDataGroupBox.Controls.Add(this.picture);
-            this.inGameDataGroupBox.Location = new System.Drawing.Point(193, 45);
-            this.inGameDataGroupBox.Name = "inGameDataGroupBox";
-            this.inGameDataGroupBox.Size = new System.Drawing.Size(447, 289);
-            this.inGameDataGroupBox.TabIndex = 1153;
-            this.inGameDataGroupBox.TabStop = false;
-            this.inGameDataGroupBox.Text = "In Game Data";
+            inGameDataGroupBox.Controls.Add(sprite);
+            inGameDataGroupBox.Controls.Add(encyclopediaDescriptionLabel);
+            inGameDataGroupBox.Controls.Add(name);
+            inGameDataGroupBox.Controls.Add(nameLabel);
+            inGameDataGroupBox.Controls.Add(encyclopediaDescription);
+            inGameDataGroupBox.Controls.Add(picture);
+            inGameDataGroupBox.Location = new Point(193, 45);
+            inGameDataGroupBox.Name = "inGameDataGroupBox";
+            inGameDataGroupBox.Size = new Size(447, 289);
+            inGameDataGroupBox.TabIndex = 1153;
+            inGameDataGroupBox.TabStop = false;
+            inGameDataGroupBox.Text = "In Game Data";
             // 
             // sprite
             // 
-            this.sprite.AllowDrop = true;
-            this.sprite.Location = new System.Drawing.Point(238, 86);
-            this.sprite.Name = "sprite";
-            this.sprite.Size = new System.Drawing.Size(37, 37);
-            this.sprite.TabIndex = 169;
-            this.sprite.TabStop = false;
-            this.sprite.DragDrop += new System.Windows.Forms.DragEventHandler(this.sprite_DragDrop);
-            this.sprite.DragEnter += new System.Windows.Forms.DragEventHandler(this.sprite_DragEnter);
+            sprite.AllowDrop = true;
+            sprite.Location = new Point(238, 86);
+            sprite.Name = "sprite";
+            sprite.Size = new Size(37, 37);
+            sprite.TabIndex = 169;
+            sprite.TabStop = false;
+            sprite.DragDrop += sprite_DragDrop;
+            sprite.DragEnter += sprite_DragEnter;
             // 
             // encyclopediaDescriptionLabel
             // 
-            this.encyclopediaDescriptionLabel.AutoSize = true;
-            this.encyclopediaDescriptionLabel.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.encyclopediaDescriptionLabel.ForeColor = System.Drawing.Color.White;
-            this.encyclopediaDescriptionLabel.Location = new System.Drawing.Point(293, 124);
-            this.encyclopediaDescriptionLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.encyclopediaDescriptionLabel.Name = "encyclopediaDescriptionLabel";
-            this.encyclopediaDescriptionLabel.Size = new System.Drawing.Size(140, 15);
-            this.encyclopediaDescriptionLabel.TabIndex = 0;
-            this.encyclopediaDescriptionLabel.Text = "Encyclopedia Description";
+            encyclopediaDescriptionLabel.AutoSize = true;
+            encyclopediaDescriptionLabel.BackColor = SystemColors.ControlDarkDark;
+            encyclopediaDescriptionLabel.ForeColor = Color.White;
+            encyclopediaDescriptionLabel.Location = new Point(293, 124);
+            encyclopediaDescriptionLabel.Margin = new Padding(4, 0, 4, 0);
+            encyclopediaDescriptionLabel.Name = "encyclopediaDescriptionLabel";
+            encyclopediaDescriptionLabel.Size = new Size(140, 15);
+            encyclopediaDescriptionLabel.TabIndex = 0;
+            encyclopediaDescriptionLabel.Text = "Encyclopedia Description";
             // 
             // name
             // 
-            this.name.Location = new System.Drawing.Point(232, 54);
-            this.name.Name = "name";
-            this.name.Size = new System.Drawing.Size(211, 23);
-            this.name.TabIndex = 3;
-            this.name.TextChanged += new System.EventHandler(this.name_TextChanged);
+            name.Location = new Point(232, 54);
+            name.Name = "name";
+            name.Size = new Size(211, 23);
+            name.TabIndex = 3;
+            name.TextChanged += name_TextChanged;
             // 
             // nameLabel
             // 
-            this.nameLabel.AutoSize = true;
-            this.nameLabel.Location = new System.Drawing.Point(236, 33);
-            this.nameLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.nameLabel.Name = "nameLabel";
-            this.nameLabel.Size = new System.Drawing.Size(39, 15);
-            this.nameLabel.TabIndex = 168;
-            this.nameLabel.Text = "Name";
+            nameLabel.AutoSize = true;
+            nameLabel.Location = new Point(236, 33);
+            nameLabel.Margin = new Padding(4, 0, 4, 0);
+            nameLabel.Name = "nameLabel";
+            nameLabel.Size = new Size(39, 15);
+            nameLabel.TabIndex = 168;
+            nameLabel.Text = "Name";
             // 
             // encyclopediaDescription
             // 
-            this.encyclopediaDescription.Location = new System.Drawing.Point(7, 138);
-            this.encyclopediaDescription.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.encyclopediaDescription.Name = "encyclopediaDescription";
-            this.encyclopediaDescription.Size = new System.Drawing.Size(436, 145);
-            this.encyclopediaDescription.TabIndex = 4;
-            this.encyclopediaDescription.TabStop = false;
-            this.encyclopediaDescription.Text = "";
-            this.encyclopediaDescription.TextChanged += new System.EventHandler(this.encyclopediaDescription_TextChanged);
+            encyclopediaDescription.Location = new Point(7, 138);
+            encyclopediaDescription.Margin = new Padding(4, 3, 4, 3);
+            encyclopediaDescription.Name = "encyclopediaDescription";
+            encyclopediaDescription.Size = new Size(436, 145);
+            encyclopediaDescription.TabIndex = 4;
+            encyclopediaDescription.TabStop = false;
+            encyclopediaDescription.Text = "";
+            encyclopediaDescription.TextChanged += encyclopediaDescription_TextChanged;
             // 
             // hiddenDataGroupBox
             // 
-            this.hiddenDataGroupBox.Controls.Add(this.id);
-            this.hiddenDataGroupBox.Controls.Add(this.idHexLabel);
-            this.hiddenDataGroupBox.Controls.Add(this.idLabel);
-            this.hiddenDataGroupBox.Controls.Add(this.field2_1);
-            this.hiddenDataGroupBox.Controls.Add(this.productionFamily_0);
-            this.hiddenDataGroupBox.Controls.Add(this.productionFamily_0Label);
-            this.hiddenDataGroupBox.Controls.Add(this.nextProductionFamily_0Label);
-            this.hiddenDataGroupBox.Controls.Add(this.nextProductionFamily_0);
-            this.hiddenDataGroupBox.Controls.Add(this.field2_1Label);
-            this.hiddenDataGroupBox.Controls.Add(this.familyIdLabel);
-            this.hiddenDataGroupBox.Controls.Add(this.familyId);
-            this.hiddenDataGroupBox.Controls.Add(this.familyIdHexLabel);
-            this.hiddenDataGroupBox.Controls.Add(this.textStraDllIdLabel);
-            this.hiddenDataGroupBox.Controls.Add(this.Field7_2Label);
-            this.hiddenDataGroupBox.Controls.Add(this.positionLabel);
-            this.hiddenDataGroupBox.Controls.Add(this.xPosition);
-            this.hiddenDataGroupBox.Controls.Add(this.field13_0Label);
-            this.hiddenDataGroupBox.Controls.Add(this.yPosition);
-            this.hiddenDataGroupBox.Controls.Add(this.sectorId);
-            this.hiddenDataGroupBox.Controls.Add(this.field10_1);
-            this.hiddenDataGroupBox.Controls.Add(this.sectorIdLabel);
-            this.hiddenDataGroupBox.Controls.Add(this.textStraDllId);
-            this.hiddenDataGroupBox.Controls.Add(this.pictureIdLabel);
-            this.hiddenDataGroupBox.Controls.Add(this.pictureId);
-            this.hiddenDataGroupBox.Controls.Add(this.field7_2);
-            this.hiddenDataGroupBox.Controls.Add(this.field13_0);
-            this.hiddenDataGroupBox.Controls.Add(this.field10_1Label);
-            this.hiddenDataGroupBox.Location = new System.Drawing.Point(648, 3);
-            this.hiddenDataGroupBox.Name = "hiddenDataGroupBox";
-            this.hiddenDataGroupBox.Size = new System.Drawing.Size(297, 339);
-            this.hiddenDataGroupBox.TabIndex = 0;
-            this.hiddenDataGroupBox.TabStop = false;
-            this.hiddenDataGroupBox.Text = "Hidden Data";
+            hiddenDataGroupBox.Controls.Add(id);
+            hiddenDataGroupBox.Controls.Add(idHexLabel);
+            hiddenDataGroupBox.Controls.Add(idLabel);
+            hiddenDataGroupBox.Controls.Add(field2_1);
+            hiddenDataGroupBox.Controls.Add(productionFamily_0);
+            hiddenDataGroupBox.Controls.Add(productionFamily_0Label);
+            hiddenDataGroupBox.Controls.Add(nextProductionFamily_0Label);
+            hiddenDataGroupBox.Controls.Add(nextProductionFamily_0);
+            hiddenDataGroupBox.Controls.Add(field2_1Label);
+            hiddenDataGroupBox.Controls.Add(familyIdLabel);
+            hiddenDataGroupBox.Controls.Add(familyId);
+            hiddenDataGroupBox.Controls.Add(familyIdHexLabel);
+            hiddenDataGroupBox.Controls.Add(textStraDllIdLabel);
+            hiddenDataGroupBox.Controls.Add(Field7_2Label);
+            hiddenDataGroupBox.Controls.Add(positionLabel);
+            hiddenDataGroupBox.Controls.Add(xPosition);
+            hiddenDataGroupBox.Controls.Add(field13_0Label);
+            hiddenDataGroupBox.Controls.Add(yPosition);
+            hiddenDataGroupBox.Controls.Add(sectorId);
+            hiddenDataGroupBox.Controls.Add(field10_1);
+            hiddenDataGroupBox.Controls.Add(sectorIdLabel);
+            hiddenDataGroupBox.Controls.Add(textStraDllId);
+            hiddenDataGroupBox.Controls.Add(pictureIdLabel);
+            hiddenDataGroupBox.Controls.Add(pictureId);
+            hiddenDataGroupBox.Controls.Add(field7_2);
+            hiddenDataGroupBox.Controls.Add(field13_0);
+            hiddenDataGroupBox.Controls.Add(field10_1Label);
+            hiddenDataGroupBox.Location = new Point(648, 3);
+            hiddenDataGroupBox.Name = "hiddenDataGroupBox";
+            hiddenDataGroupBox.Size = new Size(297, 339);
+            hiddenDataGroupBox.TabIndex = 0;
+            hiddenDataGroupBox.TabStop = false;
+            hiddenDataGroupBox.Text = "Hidden Data";
             // 
             // export
             // 
-            this.export.Location = new System.Drawing.Point(868, 453);
-            this.export.Name = "export";
-            this.export.Size = new System.Drawing.Size(75, 23);
-            this.export.TabIndex = 1154;
-            this.export.Text = "Export";
-            this.export.UseVisualStyleBackColor = true;
-            this.export.Click += new System.EventHandler(this.export_Click);
+            export.Location = new Point(551, 449);
+            export.Name = "export";
+            export.Size = new Size(75, 23);
+            export.TabIndex = 1154;
+            export.Text = "Export";
+            export.UseVisualStyleBackColor = true;
+            export.Click += export_Click;
+            // 
+            // infoLabel
+            // 
+            infoLabel.ForeColor = Color.Blue;
+            infoLabel.Location = new Point(687, 376);
+            infoLabel.Margin = new Padding(4, 0, 4, 0);
+            infoLabel.Name = "infoLabel";
+            infoLabel.Size = new Size(252, 67);
+            infoLabel.TabIndex = 1155;
+            infoLabel.Text = "Starting support is 100% for alliance and 50%-50% for empire controlled Rim Systems (planets). Side Param Table Entries 30 to 31 defines the % of affiliated Systems (planets).";
             // 
             // SystemsForm
             // 
-            this.AcceptButton = this.Ok;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.CancelButton = this.Cancel;
-            this.ClientSize = new System.Drawing.Size(949, 481);
-            this.Controls.Add(this.export);
-            this.Controls.Add(this.hiddenDataGroupBox);
-            this.Controls.Add(this.inGameDataGroupBox);
-            this.Controls.Add(this.sectorGroupBox);
-            this.Controls.Add(this.familyIdInfoLabel);
-            this.Controls.Add(this.systemsListView);
-            this.Controls.Add(this.Open);
-            this.Controls.Add(this.SaveAs);
-            this.Controls.Add(this.Cancel);
-            this.Controls.Add(this.Ok);
-            this.Controls.Add(this.selector);
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.KeyPreview = true;
-            this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.MaximizeBox = false;
-            this.MaximumSize = new System.Drawing.Size(965, 520);
-            this.MinimumSize = new System.Drawing.Size(965, 520);
-            this.Name = "SystemsForm";
-            this.Text = "Systems (SYSTEMSD.DAT)";
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.GameObjectsListForm_FormClosing);
-            this.Load += new System.EventHandler(this.GameObjectsListForm_Load);
-            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.GameObjectsListForm_KeyDown);
-            ((System.ComponentModel.ISupportInitialize)(this.selector)).EndInit();
-            this.sectorGroupBox.ResumeLayout(false);
-            this.sectorGroupBox.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.sectorFamilyId)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.sectorYPosition)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.sectorXPosition)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.sectorTextStraDllId)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.sectorSecImport)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.sectorGalaxySize)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.field10_1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.sectorId)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.productionFamily_0)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nextProductionFamily_0)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.id)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.familyId)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textStraDllId)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.field7_2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureId)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.yPosition)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.field13_0)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.xPosition)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picture)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.field2_1)).EndInit();
-            this.inGameDataGroupBox.ResumeLayout(false);
-            this.inGameDataGroupBox.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.sprite)).EndInit();
-            this.hiddenDataGroupBox.ResumeLayout(false);
-            this.hiddenDataGroupBox.PerformLayout();
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AcceptButton = Ok;
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            CancelButton = Cancel;
+            ClientSize = new Size(949, 481);
+            Controls.Add(infoLabel);
+            Controls.Add(export);
+            Controls.Add(hiddenDataGroupBox);
+            Controls.Add(inGameDataGroupBox);
+            Controls.Add(sectorGroupBox);
+            Controls.Add(familyIdInfoLabel);
+            Controls.Add(systemsListView);
+            Controls.Add(Open);
+            Controls.Add(SaveAs);
+            Controls.Add(Cancel);
+            Controls.Add(Ok);
+            Controls.Add(selector);
+            Icon = (Icon)resources.GetObject("$this.Icon");
+            KeyPreview = true;
+            Margin = new Padding(4, 3, 4, 3);
+            MaximizeBox = false;
+            MaximumSize = new Size(965, 520);
+            MinimumSize = new Size(965, 520);
+            Name = "SystemsForm";
+            Text = "Systems (SYSTEMSD.DAT)";
+            FormClosing += GameObjectsListForm_FormClosing;
+            Load += GameObjectsListForm_Load;
+            KeyDown += GameObjectsListForm_KeyDown;
+            ((ISupportInitialize)selector).EndInit();
+            sectorGroupBox.ResumeLayout(false);
+            sectorGroupBox.PerformLayout();
+            ((ISupportInitialize)sectorFamilyId).EndInit();
+            ((ISupportInitialize)sectorYPosition).EndInit();
+            ((ISupportInitialize)sectorXPosition).EndInit();
+            ((ISupportInitialize)sectorTextStraDllId).EndInit();
+            ((ISupportInitialize)sectorSecImport).EndInit();
+            ((ISupportInitialize)sectorGalaxySize).EndInit();
+            ((ISupportInitialize)field10_1).EndInit();
+            ((ISupportInitialize)sectorId).EndInit();
+            ((ISupportInitialize)productionFamily_0).EndInit();
+            ((ISupportInitialize)nextProductionFamily_0).EndInit();
+            ((ISupportInitialize)id).EndInit();
+            ((ISupportInitialize)familyId).EndInit();
+            ((ISupportInitialize)textStraDllId).EndInit();
+            ((ISupportInitialize)field7_2).EndInit();
+            ((ISupportInitialize)pictureId).EndInit();
+            ((ISupportInitialize)yPosition).EndInit();
+            ((ISupportInitialize)field13_0).EndInit();
+            ((ISupportInitialize)xPosition).EndInit();
+            ((ISupportInitialize)picture).EndInit();
+            ((ISupportInitialize)field2_1).EndInit();
+            inGameDataGroupBox.ResumeLayout(false);
+            inGameDataGroupBox.PerformLayout();
+            ((ISupportInitialize)sprite).EndInit();
+            hiddenDataGroupBox.ResumeLayout(false);
+            hiddenDataGroupBox.PerformLayout();
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -1110,5 +981,6 @@ namespace SwRebellionEditor
         private GroupBox hiddenDataGroupBox;
         private Button export;
         private PictureBox sprite;
+        private Label infoLabel;
     }
 }

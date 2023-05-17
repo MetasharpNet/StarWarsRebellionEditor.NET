@@ -57,6 +57,9 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="infoLabel.Text" xml:space="preserve">
+    <value>Core Sector's Systems (planets) are randomly starting as Alliance/Empire/Neutral. See Side Param Table Entries 30 to 35 to define that.                                                    Inner/Outer Rim Sector's Systems (planets) are always starting as Neutral.</value>
+  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>

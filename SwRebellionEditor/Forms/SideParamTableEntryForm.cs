@@ -20,27 +20,28 @@ public partial class SideParamTableEntryForm : SideParamTableEntryDesignForm
     protected override void DisplaySelectedGameObject(int selectorIndex)
     {
         var previousUnsavedData = GameFile.UnsavedData;
-        var sideParamEntry = GameFile.SideParamTableEntries[selectorIndex];
-        id.Value = sideParamEntry.Id;
-        field2_1.Value = sideParamEntry.Field2_1;
-        unknown.Value = sideParamEntry.Unknown;
-        allianceMultiPlayerAlliance.Value = sideParamEntry.AllianceMultiPlayerAlliance;
-        allianceMultiPlayerEmpire.Value = sideParamEntry.AllianceMultiPlayerEmpire;
-        allianceSinglePlayerEasyAlliance.Value = sideParamEntry.AllianceSinglePlayerEasyAlliance;
-        allianceSinglePlayerEasyEmpire.Value = sideParamEntry.AllianceSinglePlayerEasyEmpire;
-        allianceSinglePlayerMediumAlliance.Value = sideParamEntry.AllianceSinglePlayerMediumAlliance;
-        allianceSinglePlayerMediumEmpire.Value = sideParamEntry.AllianceSinglePlayerMediumEmpire;
-        allianceSinglePlayerHardAlliance.Value = sideParamEntry.AllianceSinglePlayerHardAlliance;
-        allianceSinglePlayerHardEmpire.Value = sideParamEntry.AllianceSinglePlayerHardEmpire;
-        empireSinglePlayerEasyAlliance.Value = sideParamEntry.EmpireSinglePlayerEasyAlliance;
-        empireSinglePlayerEasyEmpire.Value = sideParamEntry.EmpireSinglePlayerEasyEmpire;
-        empireSinglePlayerMediumAlliance.Value = sideParamEntry.EmpireSinglePlayerMediumAlliance;
-        empireSinglePlayerMediumEmpire.Value = sideParamEntry.EmpireSinglePlayerMediumEmpire;
-        empireSinglePlayerHardAlliance.Value = sideParamEntry.EmpireSinglePlayerHardAlliance;
-        empireSinglePlayerHardEmpire.Value = sideParamEntry.EmpireSinglePlayerHardEmpire;
-        empireMultiPlayerAlliance.Value = sideParamEntry.EmpireMultiPlayerAlliance;
-        empireMultiPlayerEmpire.Value = sideParamEntry.EmpireMultiPlayerEmpire;
-        name.Text = sideParamEntry.Name;
+        var sideParamTableEntry = GameFile.SideParamTableEntries[selectorIndex];
+        id.Value = sideParamTableEntry.Id;
+        idHexLabel.Text = "0x" + sideParamTableEntry.Id.ToString("X");
+        field2_1.Value = sideParamTableEntry.Field2_1;
+        unknown.Value = sideParamTableEntry.Unknown;
+        allianceMultiPlayerAlliance.Value = sideParamTableEntry.AllianceMultiPlayerAlliance;
+        allianceMultiPlayerEmpire.Value = sideParamTableEntry.AllianceMultiPlayerEmpire;
+        allianceSinglePlayerEasyAlliance.Value = sideParamTableEntry.AllianceSinglePlayerEasyAlliance;
+        allianceSinglePlayerEasyEmpire.Value = sideParamTableEntry.AllianceSinglePlayerEasyEmpire;
+        allianceSinglePlayerMediumAlliance.Value = sideParamTableEntry.AllianceSinglePlayerMediumAlliance;
+        allianceSinglePlayerMediumEmpire.Value = sideParamTableEntry.AllianceSinglePlayerMediumEmpire;
+        allianceSinglePlayerHardAlliance.Value = sideParamTableEntry.AllianceSinglePlayerHardAlliance;
+        allianceSinglePlayerHardEmpire.Value = sideParamTableEntry.AllianceSinglePlayerHardEmpire;
+        empireSinglePlayerEasyAlliance.Value = sideParamTableEntry.EmpireSinglePlayerEasyAlliance;
+        empireSinglePlayerEasyEmpire.Value = sideParamTableEntry.EmpireSinglePlayerEasyEmpire;
+        empireSinglePlayerMediumAlliance.Value = sideParamTableEntry.EmpireSinglePlayerMediumAlliance;
+        empireSinglePlayerMediumEmpire.Value = sideParamTableEntry.EmpireSinglePlayerMediumEmpire;
+        empireSinglePlayerHardAlliance.Value = sideParamTableEntry.EmpireSinglePlayerHardAlliance;
+        empireSinglePlayerHardEmpire.Value = sideParamTableEntry.EmpireSinglePlayerHardEmpire;
+        empireMultiPlayerAlliance.Value = sideParamTableEntry.EmpireMultiPlayerAlliance;
+        empireMultiPlayerEmpire.Value = sideParamTableEntry.EmpireMultiPlayerEmpire;
+        name.Text = sideParamTableEntry.Name;
         GameFile.UnsavedData = previousUnsavedData;
     }
     protected override void LoadSideInfo()

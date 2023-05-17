@@ -36,12 +36,12 @@ public class SDPRTB : DatFile
         SideParamTableEntries.First(spe => spe.Id == 4).Name = "Starting Minor Characters in Small Galaxy = 7 + ?";
         SideParamTableEntries.First(spe => spe.Id == 5).Name = "Starting Minor Characters in Medium Galaxy = 7 + ?";
         SideParamTableEntries.First(spe => spe.Id == 6).Name = "Starting Minor Characters in Large Galaxy = 7 + ?";
-        SideParamTableEntries.First(spe => spe.Id == 30).Name = "Core Systems 1 - % Probability for each side";
-        SideParamTableEntries.First(spe => spe.Id == 31).Name = "Core Systems 2 - % Probability for each side";
-        SideParamTableEntries.First(spe => spe.Id == 32).Name = "Core Systems 1 - % Popular Support Base";
-        SideParamTableEntries.First(spe => spe.Id == 33).Name = "Core Systems 1 - % Popular Support Var";
-        SideParamTableEntries.First(spe => spe.Id == 34).Name = "Core Systems 2 - % Popular Support Base";
-        SideParamTableEntries.First(spe => spe.Id == 35).Name = "Core Systems 2 - % Popular Support Var";
+        SideParamTableEntries.First(spe => spe.Id == 30).Name = "Core Sector Owned Systems with support";
+        SideParamTableEntries.First(spe => spe.Id == 31).Name = "Core Sector Owned Systems without support";
+        SideParamTableEntries.First(spe => spe.Id == 32).Name = "Core Sector Owned Systems with support Base Popularity (%)";
+        SideParamTableEntries.First(spe => spe.Id == 33).Name = "Core Sector Owned Systems with support Random Extra Popularity (%)";
+        SideParamTableEntries.First(spe => spe.Id == 34).Name = "Core Sector Owned Systems without support Base Popularity (%)";
+        SideParamTableEntries.First(spe => spe.Id == 35).Name = "Core Sector Owned Systems without support Random Extra Popularity (%)";
     }
 }
 public class SDPRTB_SideParamTableEntry

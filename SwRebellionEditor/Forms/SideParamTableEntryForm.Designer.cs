@@ -175,7 +175,7 @@ namespace SwRebellionEditor
             selector.Margin = new Padding(4, 3, 4, 3);
             selector.Maximum = 19;
             selector.Name = "selector";
-            selector.Size = new Size(369, 45);
+            selector.Size = new Size(456, 45);
             selector.TabIndex = 149;
             selector.ValueChanged += GameObjectsSelector_ValueChanged;
             // 
@@ -253,9 +253,9 @@ namespace SwRebellionEditor
             // name
             // 
             name.Enabled = false;
-            name.Location = new Point(63, 49);
+            name.Location = new Point(57, 49);
             name.Name = "name";
-            name.Size = new Size(322, 23);
+            name.Size = new Size(412, 23);
             name.TabIndex = 169;
             // 
             // nameLabel
@@ -663,7 +663,7 @@ namespace SwRebellionEditor
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             CancelButton = Cancel;
-            ClientSize = new Size(393, 541);
+            ClientSize = new Size(473, 541);
             Controls.Add(playingAsEmpireGroupBox);
             Controls.Add(idLabel);
             Controls.Add(unknownLabel);
@@ -685,8 +685,8 @@ namespace SwRebellionEditor
             KeyPreview = true;
             Margin = new Padding(4, 3, 4, 3);
             MaximizeBox = false;
-            MaximumSize = new Size(409, 580);
-            MinimumSize = new Size(409, 580);
+            MaximumSize = new Size(489, 580);
+            MinimumSize = new Size(489, 580);
             Name = "SideParamTableEntryForm";
             Text = "SideParamTableEntry (SDPRTB.DAT)";
             FormClosing += GameObjectsListForm_FormClosing;

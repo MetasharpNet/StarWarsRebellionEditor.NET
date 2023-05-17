@@ -20,19 +20,20 @@ public partial class GeneralParamTableEntryForm : GeneralParamTableEntryDesignFo
     protected override void DisplaySelectedGameObject(int selectorIndex)
     {
         var previousUnsavedData = GameFile.UnsavedData;
-        var sideParamEntry = GameFile.GeneralParamTableEntries[selectorIndex];
-        id.Value = sideParamEntry.Id;
-        field2_1.Value = sideParamEntry.Field2_1;
-        unknown.Value = sideParamEntry.Unknown;
-        allianceMultiPlayer.Value = sideParamEntry.AllianceMultiPlayer;
-        allianceSinglePlayerEasy.Value = sideParamEntry.AllianceSinglePlayerEasy;
-        allianceSinglePlayerMedium.Value = sideParamEntry.AllianceSinglePlayerMedium;
-        allianceSinglePlayerHard.Value = sideParamEntry.AllianceSinglePlayerHard;
-        empireSinglePlayerEasy.Value = sideParamEntry.EmpireSinglePlayerEasy;
-        empireSinglePlayerMedium.Value = sideParamEntry.EmpireSinglePlayerMedium;
-        empireSinglePlayerHard.Value = sideParamEntry.EmpireSinglePlayerHard;
-        empireMultiPlayer.Value = sideParamEntry.EmpireMultiPlayer;
-        name.Text = sideParamEntry.Name;
+        var generalParamTableEntry = GameFile.GeneralParamTableEntries[selectorIndex];
+        id.Value = generalParamTableEntry.Id;
+        idHexLabel.Text = "0x" + generalParamTableEntry.Id.ToString("X");
+        field2_1.Value = generalParamTableEntry.Field2_1;
+        unknown.Value = generalParamTableEntry.Unknown;
+        allianceMultiPlayer.Value = generalParamTableEntry.AllianceMultiPlayer;
+        allianceSinglePlayerEasy.Value = generalParamTableEntry.AllianceSinglePlayerEasy;
+        allianceSinglePlayerMedium.Value = generalParamTableEntry.AllianceSinglePlayerMedium;
+        allianceSinglePlayerHard.Value = generalParamTableEntry.AllianceSinglePlayerHard;
+        empireSinglePlayerEasy.Value = generalParamTableEntry.EmpireSinglePlayerEasy;
+        empireSinglePlayerMedium.Value = generalParamTableEntry.EmpireSinglePlayerMedium;
+        empireSinglePlayerHard.Value = generalParamTableEntry.EmpireSinglePlayerHard;
+        empireMultiPlayer.Value = generalParamTableEntry.EmpireMultiPlayer;
+        name.Text = generalParamTableEntry.Name;
         GameFile.UnsavedData = previousUnsavedData;
     }
     protected override void LoadSideInfo()

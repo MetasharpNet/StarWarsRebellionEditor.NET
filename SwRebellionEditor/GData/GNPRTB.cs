@@ -12,10 +12,11 @@ public class GNPRTB : DatFile
 
     public override void PostLoad()
     {
-        GeneralParamTableEntries.First(spe => spe.Id == 1).Name = "Standard Space Travel Speed";
-        GeneralParamTableEntries.First(spe => spe.Id == 53).Name = "Seat of Power Leadership % Bonus";
-        GeneralParamTableEntries.First(spe => spe.Id == 60).Name = "Han Solo Space Travel Speed";
-        GeneralParamTableEntries.First(spe => spe.Id == 83).Name = "Fleet 1 Placement Probability % (Yavin vs HQ)";
+        GeneralParamTableEntries.First(spe => spe.Id == 1).Name = "Space Travel Time: base (%, lower=faster)";
+        GeneralParamTableEntries.First(spe => spe.Id == 53).Name = "Seat of Power (Emperor on Coruscant): Leadership percentage bonus";
+        GeneralParamTableEntries.First(spe => spe.Id == 60).Name = "Space Travel Time: Han Solo (%, lower=faster)";
+        GeneralParamTableEntries.First(spe => spe.Id == 83).Name = "Fleet 1 location probability: Yavin vs HQ";
+        
         GeneralParamTableEntries.First(spe => spe.Id == 84).Name = "CMUNYVTB.DAT - First parent item";
         GeneralParamTableEntries.First(spe => spe.Id == 85).Name = "CMUNYVTB.DAT - Max parent items";
         GeneralParamTableEntries.First(spe => spe.Id == 86).Name = "CMUNHQTB.DAT - First parent item";
@@ -30,31 +31,36 @@ public class GNPRTB : DatFile
         GeneralParamTableEntries.First(spe => spe.Id == 95).Name = "FACLHQTB.DAT - Max parent items";
         GeneralParamTableEntries.First(spe => spe.Id == 96).Name = "FACLCRTB.DAT - First parent item";
         GeneralParamTableEntries.First(spe => spe.Id == 97).Name = "FACLCRTB.DAT - Max parent items";
-        GeneralParamTableEntries.First(spe => spe.Id == 101).Name = "Luke Goes to Dagobah - Base";
-        GeneralParamTableEntries.First(spe => spe.Id == 102).Name = "Luke Goes to Dagobah - Var";
-        GeneralParamTableEntries.First(spe => spe.Id == 103).Name = "Bounty Hunter Frequency - Base";
-        GeneralParamTableEntries.First(spe => spe.Id == 104).Name = "Bounty Hunter Frequency - Var";
-        GeneralParamTableEntries.First(spe => spe.Id == 145).Name = "Maintenance Shortfall Frequency";
-        GeneralParamTableEntries.First(spe => spe.Id == 151).Name = "Required Shield Generators - Prevent Assault";
-        GeneralParamTableEntries.First(spe => spe.Id == 180).Name = "Raw Materials - Hard Limit";
-        GeneralParamTableEntries.First(spe => spe.Id == 182).Name = "System Energy - Hard Limit";
-        GeneralParamTableEntries.First(spe => spe.Id == 185).Name = "Natural Disaster - Frequency - Base";
-        GeneralParamTableEntries.First(spe => spe.Id == 186).Name = "Natural Disaster - Frequency - Var";
-        GeneralParamTableEntries.First(spe => spe.Id == 187).Name = "Resource Event - Frequency - Base";
-        GeneralParamTableEntries.First(spe => spe.Id == 188).Name = "Resource Event - Frequency - Var";
-        GeneralParamTableEntries.First(spe => spe.Id == 189).Name = "System Energy Base - Core sytems";
-        GeneralParamTableEntries.First(spe => spe.Id == 190).Name = "System Energy Var  - Core sytems";
-        GeneralParamTableEntries.First(spe => spe.Id == 191).Name = "Raw Materials Base - Core sytems";
-        GeneralParamTableEntries.First(spe => spe.Id == 192).Name = "Raw Materials Var  - Core sytems";
-        GeneralParamTableEntries.First(spe => spe.Id == 193).Name = "System Energy Base - Rim sytems";
-        GeneralParamTableEntries.First(spe => spe.Id == 194).Name = "System Energy Var1 - Rim sytems";
-        GeneralParamTableEntries.First(spe => spe.Id == 195).Name = "System Energy Var2 - Rim sytems";
-        GeneralParamTableEntries.First(spe => spe.Id == 196).Name = "Raw Materials Base - Rim sytems";
-        GeneralParamTableEntries.First(spe => spe.Id == 197).Name = "Raw Materials Var  - Rim sytems";
-        GeneralParamTableEntries.First(spe => spe.Id == 198).Name = "% Populated systems - Core sytems";
-        GeneralParamTableEntries.First(spe => spe.Id == 199).Name = "% Populated systems - Rim sytems";
-        GeneralParamTableEntries.First(spe => spe.Id == 207).Name = "Garrison Requirement / Uprising - Threshold";
-        GeneralParamTableEntries.First(spe => spe.Id == 208).Name = "Garrison Requirement / Troop's order contribution";
+        
+        GeneralParamTableEntries.First(spe => spe.Id == 101).Name = "Luke goes to Dagobah: base (days)";
+        GeneralParamTableEntries.First(spe => spe.Id == 102).Name = "Luke goes to Dagobah: random extra (days)";
+        GeneralParamTableEntries.First(spe => spe.Id == 103).Name = "Bounty Hunter Frequency: base (days)";
+        GeneralParamTableEntries.First(spe => spe.Id == 104).Name = "Bounty Hunter Frequency: random extra (days)";
+        GeneralParamTableEntries.First(spe => spe.Id == 145).Name = "Maintenance Shortfall Frequency (days)";
+        GeneralParamTableEntries.First(spe => spe.Id == 151).Name = "Required Shield Generators to Prevent Assault";
+        
+        GeneralParamTableEntries.First(spe => spe.Id == 180).Name = "Systems: Mines slots (Raw Materials) max value allowed";
+        GeneralParamTableEntries.First(spe => spe.Id == 182).Name = "Systems: Buildings slots (Energy) max value allowed";
+        
+        GeneralParamTableEntries.First(spe => spe.Id == 185).Name = "Natural Disaster: Frequency base (days)";
+        GeneralParamTableEntries.First(spe => spe.Id == 186).Name = "Natural Disaster: Frequency random extra (days)";
+        GeneralParamTableEntries.First(spe => spe.Id == 187).Name = "Resource Event: Frequency base (days)";
+        GeneralParamTableEntries.First(spe => spe.Id == 188).Name = "Resource Event: Frequency random extra (days)";
+
+        GeneralParamTableEntries.First(spe => spe.Id == 189).Name = "Core Systems: Buildings slots (Energy) base amount";
+        GeneralParamTableEntries.First(spe => spe.Id == 190).Name = "Core Systems: Buildings slots (Energy) random extra amount";
+        GeneralParamTableEntries.First(spe => spe.Id == 191).Name = "Core Systems: Mines slots (Raw Materials) base amount";
+        GeneralParamTableEntries.First(spe => spe.Id == 192).Name = "Core Systems: Mines slots (Raw Materials) random extra amount";
+        GeneralParamTableEntries.First(spe => spe.Id == 193).Name = "Rim Systems: Buildings slots (Energy) base amount";
+        GeneralParamTableEntries.First(spe => spe.Id == 194).Name = "Rim Systems: Buildings slots (Energy) random extra amount 1";
+        GeneralParamTableEntries.First(spe => spe.Id == 195).Name = "Rim Systems: Buildings slots (Energy) random extra amount 2";
+        GeneralParamTableEntries.First(spe => spe.Id == 196).Name = "Rim Systems: Mines slots (Raw Materials) base amount";
+        GeneralParamTableEntries.First(spe => spe.Id == 197).Name = "Rim Systems: Mines slots (Raw Materials) random extra amount";
+        GeneralParamTableEntries.First(spe => spe.Id == 198).Name = "Core Systems: Populated systems percentage";
+        GeneralParamTableEntries.First(spe => spe.Id == 199).Name = "Rim Systems: Populated systems percentage";
+
+        GeneralParamTableEntries.First(spe => spe.Id == 207).Name = "Garrison Requirement: Uprising threshold";
+        GeneralParamTableEntries.First(spe => spe.Id == 208).Name = "Garrison Requirement: Troop's order contribution";
     }
 }
 public class GNPRTB_GeneralParamTableEntry
