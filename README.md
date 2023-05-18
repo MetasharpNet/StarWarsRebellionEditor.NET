@@ -34,10 +34,14 @@ Note: this update is automatically applied if you patch the game using the edito
 * 23/29 high definition 3d models for capital ships
 * 80 high definition sprites for space fighters (X-wing, ...)
 * Screenshots :
-https://i.ibb.co/c8XZD0j/1.png
-https://i.ibb.co/LpdxfcR/2.png
-https://i.ibb.co/cDMHwR1/3.png
-https://i.ibb.co/KxVDTLc/4.png
+
+![New Canon Galaxy map](https://i.ibb.co/c8XZD0j/1.png)
+
+![New planets and sprites](https://i.ibb.co/LpdxfcR/2.png)
+
+![New characters sprites with stats](https://i.ibb.co/cDMHwR1/3.png)
+
+![New encyclopedia entries and hd pictures](https://i.ibb.co/KxVDTLc/4.png)
 
 ### Current Roadmap:
 * new high definition 3d models for all capital ships
