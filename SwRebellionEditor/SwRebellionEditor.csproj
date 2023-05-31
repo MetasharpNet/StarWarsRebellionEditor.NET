@@ -2900,6 +2900,9 @@
     <None Update="new-encyclopedia-pictures\14077-ilum.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="new-encyclopedia-pictures\14092-kessel.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="new-encyclopedia-pictures\141-espionage-empire.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
@@ -5564,6 +5567,9 @@
     <None Update="new-systems-sprites\14092-kessel-%28atlas%29.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="new-systems-sprites\14092-kessel.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="new-systems-sprites\14093-kimiji.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
@@ -6663,6 +6669,9 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="new-systems-tactical\14092-kessel-%28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-systems-tactical\14092-kessel.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="new-systems-tactical\14093-kimiji.bmp">
