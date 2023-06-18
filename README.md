@@ -41,16 +41,6 @@ Note: this update is automatically applied if you patch the game using the edito
 
 ![New encyclopedia entries and hd pictures](https://i.ibb.co/KxVDTLc/4.png)
 
-### Current Roadmap:
-* new high definition 3d models for all capital ships
-* 0/61 new character sprites from LordLaForge including optimized base stats average display
-
-### Final Roadmap (low chance i'll invest time on it):
-* Cleanup code on rarely used windows
-* Identify unknown fields usage
-* Other features from RebEd
-* etc.
-
 ### 25th Anniversary Installation guide:
 * Install the latest .NET Desktop runtime : https://dotnet.microsoft.com/en-us/download/dotnet
   * Direct link to latest version : https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/runtime-7.0.7-windows-x64-installer
@@ -67,11 +57,22 @@ Note: this update is automatically applied if you patch the game using the edito
   * Close the editor
 * Run the game.
 
-* If you have issues with full screen you can try to :
-  * Change settings with : dgVoodooCpl.exe from your game folder
-  * Read that page for more possible ways to fix your graphic issues : https://swrebellion.net/files/file/260-star-wars-rebellion-update/
-    * The 1.02 patch is automatically installed when you install the patch. No need to do it twice.
+If you have issues with full screen you can try to :
+* Change settings with : dgVoodooCpl.exe from your game folder
+* Read that page for more possible ways to fix your graphic issues : https://swrebellion.net/files/file/260-star-wars-rebellion-update/
+  * The 1.02 patch is automatically installed when you install the patch. No need to do it twice.
 
+### Current Roadmap:
+* new high definition 3d models for all capital ships
+* 0/61 new character sprites from LordLaForge including optimized base stats average display
+
+### Final Roadmap (low chance i'll invest time on it):
+* Cleanup code on rarely used windows
+* Identify unknown fields usage
+* Other features from RebEd
+* etc.
+
+### Statistics:
 GitHub Downloads stats : https://hanadigital.github.io/grev/?user=MetasharpNet&repo=StarWarsRebellionEditor.NET
 
 --
