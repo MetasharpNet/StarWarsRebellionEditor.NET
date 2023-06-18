@@ -20,7 +20,7 @@ public partial class AboutForm : Form
     public AboutForm()
     {
         InitializeComponent();
-        Text = "About "+ Get<AssemblyTitleAttribute>()?.Title + ".exe";
+        Text = "About " + Get<AssemblyTitleAttribute>()?.Title + ".exe";
         Product_Label.Text = Get<AssemblyProductAttribute>()?.Product;
         Version_Label.Text = "Version " + Assembly.GetExecutingAssembly().GetName().Version?.ToString();
         Copyright_Label.Text = Get<AssemblyCopyrightAttribute>()?.Copyright;

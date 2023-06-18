@@ -11,7 +11,7 @@ namespace SwRebellionEditor
         /// <summary>
         /// Required designer variable.
         /// </summary>
-        private System.ComponentModel.IContainer components = null;
+        private IContainer components = null;
         private ImageList systemsImageList;
 
         /// <summary>
@@ -61,7 +61,7 @@ namespace SwRebellionEditor
             // 
             // cancel
             // 
-            cancel.Location = new Point(358, 211);
+            cancel.Location = new Point(565, 211);
             cancel.Name = "cancel";
             cancel.Size = new Size(75, 23);
             cancel.TabIndex = 1154;
@@ -149,9 +149,9 @@ namespace SwRebellionEditor
             warningLabel.ForeColor = Color.Red;
             warningLabel.Location = new Point(24, 177);
             warningLabel.Name = "warningLabel";
-            warningLabel.Size = new Size(661, 15);
+            warningLabel.Size = new Size(672, 15);
             warningLabel.TabIndex = 1163;
-            warningLabel.Text = "This patch was released 2023-04-12 and is provided without any warranty of any kind. Doesn't work with existing savegames.";
+            warningLabel.Text = "This patch was released 2023-06-18 and is provided without any warranty of any kind. Doesn't work with pre-patch savegames.";
             // 
             // patchInfoLabel
             // 
@@ -159,9 +159,9 @@ namespace SwRebellionEditor
             patchInfoLabel.Font = new Font("Segoe UI", 9F, FontStyle.Italic, GraphicsUnit.Point);
             patchInfoLabel.Location = new Point(140, 215);
             patchInfoLabel.Name = "patchInfoLabel";
-            patchInfoLabel.Size = new Size(185, 15);
+            patchInfoLabel.Size = new Size(338, 15);
             patchInfoLabel.TabIndex = 1164;
-            patchInfoLabel.Text = "This window will close when done.";
+            patchInfoLabel.Text = "This window will freeze then close when the patch is completed.";
             // 
             // label1Requirement
             // 
@@ -172,7 +172,7 @@ namespace SwRebellionEditor
             label1Requirement.Name = "label1Requirement";
             label1Requirement.Size = new Size(247, 15);
             label1Requirement.TabIndex = 1165;
-            label1Requirement.Text = "Includes update 1.02 (dgvoodoo2 directx 2.8.1)";
+            label1Requirement.Text = "Includes update 1.02 (dgvoodoo2 directx 2.8.2)";
             // 
             // label1
             // 

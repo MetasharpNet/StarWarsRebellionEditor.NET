@@ -13,7 +13,7 @@ namespace SwRebellionEditor
         /// <summary>
         /// Required designer variable.
         /// </summary>
-        private System.ComponentModel.IContainer components = null;
+        private IContainer components = null;
         private TableLayoutPanel tableLayoutPanel;
         private Label Product_Label;
         private Label Version_Label;
@@ -43,154 +43,153 @@ namespace SwRebellionEditor
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AboutForm));
-            this.tableLayoutPanel = new System.Windows.Forms.TableLayoutPanel();
-            this.Product_Label = new System.Windows.Forms.Label();
-            this.Version_Label = new System.Windows.Forms.Label();
-            this.Copyright_Label = new System.Windows.Forms.Label();
-            this.Company_Label = new System.Windows.Forms.Label();
-            this.Description_TextBox = new System.Windows.Forms.TextBox();
-            this.OK_Button = new System.Windows.Forms.Button();
-            this.tableLayoutPanel.SuspendLayout();
-            this.SuspendLayout();
+            ComponentResourceManager resources = new ComponentResourceManager(typeof(AboutForm));
+            tableLayoutPanel = new TableLayoutPanel();
+            Product_Label = new Label();
+            Version_Label = new Label();
+            Copyright_Label = new Label();
+            Company_Label = new Label();
+            Description_TextBox = new TextBox();
+            OK_Button = new Button();
+            tableLayoutPanel.SuspendLayout();
+            SuspendLayout();
             // 
             // tableLayoutPanel
             // 
-            this.tableLayoutPanel.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.tableLayoutPanel.BackgroundImage = global::SwRebellionEditor.Resources.c3po_400x200_bmp;
-            this.tableLayoutPanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.tableLayoutPanel.ColumnCount = 3;
-            this.tableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 35F));
-            this.tableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 373F));
-            this.tableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 700F));
-            this.tableLayoutPanel.Controls.Add(this.Product_Label, 1, 1);
-            this.tableLayoutPanel.Controls.Add(this.Version_Label, 1, 2);
-            this.tableLayoutPanel.Controls.Add(this.Copyright_Label, 1, 3);
-            this.tableLayoutPanel.Controls.Add(this.Company_Label, 1, 4);
-            this.tableLayoutPanel.Controls.Add(this.Description_TextBox, 1, 5);
-            this.tableLayoutPanel.Controls.Add(this.OK_Button, 1, 6);
-            this.tableLayoutPanel.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel.Margin = new System.Windows.Forms.Padding(0);
-            this.tableLayoutPanel.Name = "tableLayoutPanel";
-            this.tableLayoutPanel.RowCount = 7;
-            this.tableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 63F));
-            this.tableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.11111F));
-            this.tableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.11111F));
-            this.tableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.11111F));
-            this.tableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.11111F));
-            this.tableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 55.55556F));
-            this.tableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 81F));
-            this.tableLayoutPanel.Size = new System.Drawing.Size(905, 404);
-            this.tableLayoutPanel.TabIndex = 0;
+            tableLayoutPanel.Anchor = AnchorStyles.None;
+            tableLayoutPanel.BackgroundImage = Resources.c3po_400x200_bmp;
+            tableLayoutPanel.BackgroundImageLayout = ImageLayout.Stretch;
+            tableLayoutPanel.ColumnCount = 3;
+            tableLayoutPanel.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 35F));
+            tableLayoutPanel.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 373F));
+            tableLayoutPanel.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 700F));
+            tableLayoutPanel.Controls.Add(Product_Label, 1, 1);
+            tableLayoutPanel.Controls.Add(Version_Label, 1, 2);
+            tableLayoutPanel.Controls.Add(Copyright_Label, 1, 3);
+            tableLayoutPanel.Controls.Add(Company_Label, 1, 4);
+            tableLayoutPanel.Controls.Add(Description_TextBox, 1, 5);
+            tableLayoutPanel.Controls.Add(OK_Button, 1, 6);
+            tableLayoutPanel.Location = new Point(0, 0);
+            tableLayoutPanel.Margin = new Padding(0);
+            tableLayoutPanel.Name = "tableLayoutPanel";
+            tableLayoutPanel.RowCount = 7;
+            tableLayoutPanel.RowStyles.Add(new RowStyle(SizeType.Absolute, 63F));
+            tableLayoutPanel.RowStyles.Add(new RowStyle(SizeType.Percent, 11.11111F));
+            tableLayoutPanel.RowStyles.Add(new RowStyle(SizeType.Percent, 11.11111F));
+            tableLayoutPanel.RowStyles.Add(new RowStyle(SizeType.Percent, 11.11111F));
+            tableLayoutPanel.RowStyles.Add(new RowStyle(SizeType.Percent, 11.11111F));
+            tableLayoutPanel.RowStyles.Add(new RowStyle(SizeType.Percent, 55.55556F));
+            tableLayoutPanel.RowStyles.Add(new RowStyle(SizeType.Absolute, 81F));
+            tableLayoutPanel.Size = new Size(905, 404);
+            tableLayoutPanel.TabIndex = 0;
             // 
             // Product_Label
             // 
-            this.Product_Label.BackColor = System.Drawing.SystemColors.WindowText;
-            this.Product_Label.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Product_Label.ForeColor = System.Drawing.Color.Lime;
-            this.Product_Label.Location = new System.Drawing.Point(42, 63);
-            this.Product_Label.Margin = new System.Windows.Forms.Padding(7, 0, 4, 0);
-            this.Product_Label.MaximumSize = new System.Drawing.Size(0, 20);
-            this.Product_Label.Name = "Product_Label";
-            this.Product_Label.Size = new System.Drawing.Size(362, 20);
-            this.Product_Label.TabIndex = 0;
-            this.Product_Label.Text = "Product";
-            this.Product_Label.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            Product_Label.BackColor = SystemColors.WindowText;
+            Product_Label.Dock = DockStyle.Fill;
+            Product_Label.ForeColor = Color.Lime;
+            Product_Label.Location = new Point(42, 63);
+            Product_Label.Margin = new Padding(7, 0, 4, 0);
+            Product_Label.MaximumSize = new Size(0, 20);
+            Product_Label.Name = "Product_Label";
+            Product_Label.Size = new Size(362, 20);
+            Product_Label.TabIndex = 0;
+            Product_Label.Text = "Product";
+            Product_Label.TextAlign = ContentAlignment.MiddleLeft;
             // 
             // Version_Label
             // 
-            this.Version_Label.BackColor = System.Drawing.SystemColors.WindowText;
-            this.Version_Label.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Version_Label.ForeColor = System.Drawing.Color.Lime;
-            this.Version_Label.Location = new System.Drawing.Point(42, 91);
-            this.Version_Label.Margin = new System.Windows.Forms.Padding(7, 0, 4, 0);
-            this.Version_Label.MaximumSize = new System.Drawing.Size(0, 20);
-            this.Version_Label.Name = "Version_Label";
-            this.Version_Label.Size = new System.Drawing.Size(362, 20);
-            this.Version_Label.TabIndex = 0;
-            this.Version_Label.Text = "Version";
-            this.Version_Label.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            Version_Label.BackColor = SystemColors.WindowText;
+            Version_Label.Dock = DockStyle.Fill;
+            Version_Label.ForeColor = Color.Lime;
+            Version_Label.Location = new Point(42, 91);
+            Version_Label.Margin = new Padding(7, 0, 4, 0);
+            Version_Label.MaximumSize = new Size(0, 20);
+            Version_Label.Name = "Version_Label";
+            Version_Label.Size = new Size(362, 20);
+            Version_Label.TabIndex = 0;
+            Version_Label.Text = "Version";
+            Version_Label.TextAlign = ContentAlignment.MiddleLeft;
             // 
             // Copyright_Label
             // 
-            this.Copyright_Label.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Copyright_Label.ForeColor = System.Drawing.Color.Lime;
-            this.Copyright_Label.Location = new System.Drawing.Point(42, 119);
-            this.Copyright_Label.Margin = new System.Windows.Forms.Padding(7, 0, 4, 0);
-            this.Copyright_Label.MaximumSize = new System.Drawing.Size(0, 20);
-            this.Copyright_Label.Name = "Copyright_Label";
-            this.Copyright_Label.Size = new System.Drawing.Size(362, 20);
-            this.Copyright_Label.TabIndex = 0;
-            this.Copyright_Label.Text = "Copyright";
-            this.Copyright_Label.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            Copyright_Label.Dock = DockStyle.Fill;
+            Copyright_Label.ForeColor = Color.Lime;
+            Copyright_Label.Location = new Point(42, 119);
+            Copyright_Label.Margin = new Padding(7, 0, 4, 0);
+            Copyright_Label.MaximumSize = new Size(0, 20);
+            Copyright_Label.Name = "Copyright_Label";
+            Copyright_Label.Size = new Size(362, 20);
+            Copyright_Label.TabIndex = 0;
+            Copyright_Label.Text = "Copyright";
+            Copyright_Label.TextAlign = ContentAlignment.MiddleLeft;
             // 
             // Company_Label
             // 
-            this.Company_Label.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Company_Label.ForeColor = System.Drawing.Color.Lime;
-            this.Company_Label.Location = new System.Drawing.Point(42, 147);
-            this.Company_Label.Margin = new System.Windows.Forms.Padding(7, 0, 4, 0);
-            this.Company_Label.MaximumSize = new System.Drawing.Size(0, 20);
-            this.Company_Label.Name = "Company_Label";
-            this.Company_Label.Size = new System.Drawing.Size(362, 20);
-            this.Company_Label.TabIndex = 0;
-            this.Company_Label.Text = "Company";
-            this.Company_Label.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            Company_Label.Dock = DockStyle.Fill;
+            Company_Label.ForeColor = Color.Lime;
+            Company_Label.Location = new Point(42, 147);
+            Company_Label.Margin = new Padding(7, 0, 4, 0);
+            Company_Label.MaximumSize = new Size(0, 20);
+            Company_Label.Name = "Company_Label";
+            Company_Label.Size = new Size(362, 20);
+            Company_Label.TabIndex = 0;
+            Company_Label.Text = "Company";
+            Company_Label.TextAlign = ContentAlignment.MiddleLeft;
             // 
             // Description_TextBox
             // 
-            this.Description_TextBox.BackColor = System.Drawing.SystemColors.WindowFrame;
-            this.Description_TextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.Description_TextBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Description_TextBox.ForeColor = System.Drawing.Color.Lime;
-            this.Description_TextBox.Location = new System.Drawing.Point(42, 178);
-            this.Description_TextBox.Margin = new System.Windows.Forms.Padding(7, 3, 4, 3);
-            this.Description_TextBox.Multiline = true;
-            this.Description_TextBox.Name = "Description_TextBox";
-            this.Description_TextBox.ReadOnly = true;
-            this.Description_TextBox.Size = new System.Drawing.Size(362, 138);
-            this.Description_TextBox.TabIndex = 0;
-            this.Description_TextBox.TabStop = false;
-            this.Description_TextBox.Text = "Description";
+            Description_TextBox.BackColor = SystemColors.WindowFrame;
+            Description_TextBox.BorderStyle = BorderStyle.None;
+            Description_TextBox.Dock = DockStyle.Fill;
+            Description_TextBox.ForeColor = Color.Lime;
+            Description_TextBox.Location = new Point(42, 178);
+            Description_TextBox.Margin = new Padding(7, 3, 4, 3);
+            Description_TextBox.Multiline = true;
+            Description_TextBox.Name = "Description_TextBox";
+            Description_TextBox.ReadOnly = true;
+            Description_TextBox.Size = new Size(362, 138);
+            Description_TextBox.TabIndex = 0;
+            Description_TextBox.TabStop = false;
+            Description_TextBox.Text = "Description";
             // 
             // OK_Button
             // 
-            this.OK_Button.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.OK_Button.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.OK_Button.FlatAppearance.BorderSize = 2;
-            this.OK_Button.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.OK_Button.Location = new System.Drawing.Point(39, 374);
-            this.OK_Button.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.OK_Button.Name = "OK_Button";
-            this.OK_Button.Size = new System.Drawing.Size(88, 27);
-            this.OK_Button.TabIndex = 1;
-            this.OK_Button.Text = "&OK";
-            this.OK_Button.Click += new System.EventHandler(this.OK_Button_Click);
+            OK_Button.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
+            OK_Button.DialogResult = DialogResult.Cancel;
+            OK_Button.FlatAppearance.BorderSize = 2;
+            OK_Button.Font = new Font("Microsoft Sans Serif", 8.25F, FontStyle.Bold, GraphicsUnit.Point);
+            OK_Button.Location = new Point(39, 374);
+            OK_Button.Margin = new Padding(4, 3, 4, 3);
+            OK_Button.Name = "OK_Button";
+            OK_Button.Size = new Size(88, 27);
+            OK_Button.TabIndex = 1;
+            OK_Button.Text = "&OK";
+            OK_Button.Click += OK_Button_Click;
             // 
             // AboutForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Black;
-            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.ClientSize = new System.Drawing.Size(903, 402);
-            this.Controls.Add(this.tableLayoutPanel);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.MaximizeBox = false;
-            this.MinimizeBox = false;
-            this.Name = "AboutForm";
-            this.Padding = new System.Windows.Forms.Padding(10);
-            this.ShowInTaskbar = false;
-            this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
-            this.Text = "About Star Wars Rebellion Editor .NET";
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.AboutForm_FormClosing);
-            this.Load += new System.EventHandler(this.AboutForm_Load);
-            this.tableLayoutPanel.ResumeLayout(false);
-            this.tableLayoutPanel.PerformLayout();
-            this.ResumeLayout(false);
-
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.Black;
+            BackgroundImageLayout = ImageLayout.None;
+            ClientSize = new Size(903, 402);
+            Controls.Add(tableLayoutPanel);
+            FormBorderStyle = FormBorderStyle.FixedDialog;
+            Icon = (Icon)resources.GetObject("$this.Icon");
+            Margin = new Padding(4, 3, 4, 3);
+            MaximizeBox = false;
+            MinimizeBox = false;
+            Name = "AboutForm";
+            Padding = new Padding(10);
+            ShowInTaskbar = false;
+            StartPosition = FormStartPosition.Manual;
+            Text = "About Star Wars Rebellion Editor .NET";
+            FormClosing += AboutForm_FormClosing;
+            Load += AboutForm_Load;
+            tableLayoutPanel.ResumeLayout(false);
+            tableLayoutPanel.PerformLayout();
+            ResumeLayout(false);
         }
 
         #endregion
