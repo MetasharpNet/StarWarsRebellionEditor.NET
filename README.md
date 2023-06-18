@@ -1,6 +1,7 @@
 ## Star Wars Rebellion Editor .NET
 * C# 11.0 project built with .NET 7 in Visual Studio 2022 : https://visualstudio.microsoft.com/vs/community/
-* To find where to buy the game or get free fan mods, check : https://swrebellion.net/ (I advise to go for GoG version of the game)
+* To find where to buy the game or get free fan mods, check : https://swrebellion.net/
+  * I advise to go for GoG version of the game.
 
 ### Current Editor Features :
 * Galaxy Map editor : can drag&drop sectors and systems
