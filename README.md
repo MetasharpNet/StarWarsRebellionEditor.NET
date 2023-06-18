@@ -1,18 +1,7 @@
 ## Star Wars Rebellion Editor .NET
-
-This C# 11.0 project is built with .NET 7 in Visual Studio 2022 : https://visualstudio.microsoft.com/vs/community/
-
-The project is going under a heavy cleanup phase. So don't inspect the code as if it was "ready to receive new features" yet.
-
-Runtime can be downloaded here : https://dotnet.microsoft.com/en-us/download/dotnet/7.0
-
-Direct link : https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/runtime-7.0.5-windows-x64-installer
-
-To buy the game or get free fan mods, check : https://swrebellion.net/
-
-Install latest game update from here : https://swrebellion.net/files/file/260-star-wars-rebellion-update/
-
-Note: this update is automatically applied if you patch the game using the editor patch menu.
+* C# 11.0 project built with .NET 7 in Visual Studio 2022 : https://visualstudio.microsoft.com/vs/community/
+* To find where to buy the game or get free fan mods, check : https://swrebellion.net/
+  * I advise to go for GoG version of the game.
 
 ### Current Editor Features :
 * Galaxy Map editor : can drag&drop sectors and systems
@@ -43,6 +32,27 @@ Note: this update is automatically applied if you patch the game using the edito
 
 ![New encyclopedia entries and hd pictures](https://i.ibb.co/KxVDTLc/4.png)
 
+### 25th Anniversary Installation guide:
+* Install the latest .NET Desktop runtime : https://dotnet.microsoft.com/en-us/download/dotnet
+  * Direct link to latest version : https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/runtime-7.0.7-windows-x64-installer
+* Reboot
+* Install a fresh GoG or Steam Star Wars Rebellion game
+* Download the latest editor release : https://github.com/MetasharpNet/StarWarsRebellionEditor.NET/releases
+  * (the file : swr-editor.net-?.?.????.?????.zip)
+* Extract the whole zip file content to a separate folder.
+* Run : SwRebellionEditor.exe
+  * If prompted, adjust the game folder.
+* Click on the death star icon (the last icon) or through the menu : Editor / 25th Anniversary Patch
+* Click on the patch button
+  * The UI will freeze. Wait for the patch to complete. When done, the patch window will be closed automatically.
+  * Close the editor
+* Run the game.
+
+If you have issues with full screen you can try to :
+* Change settings with : dgVoodooCpl.exe from your game folder
+* Read that page for more possible ways to fix your graphic issues : https://swrebellion.net/files/file/260-star-wars-rebellion-update/
+  * The 1.02 patch is automatically installed when you install the patch. No need to do it twice.
+
 ### Current Roadmap:
 * new high definition 3d models for all capital ships
 * 0/61 new character sprites from LordLaForge including optimized base stats average display
@@ -53,6 +63,7 @@ Note: this update is automatically applied if you patch the game using the edito
 * Other features from RebEd
 * etc.
 
+### Statistics:
 GitHub Downloads stats : https://hanadigital.github.io/grev/?user=MetasharpNet&repo=StarWarsRebellionEditor.NET
 
 --
