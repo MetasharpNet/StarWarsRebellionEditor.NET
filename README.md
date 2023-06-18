@@ -57,7 +57,7 @@ Note: this update is automatically applied if you patch the game using the edito
 * Reboot
 * Install a fresh GoG or Steam Star Wars Rebellion game
 * Download the latest editor release : https://github.com/MetasharpNet/StarWarsRebellionEditor.NET/releases
-* * (the file : swr-editor.net-?.?.????.?????.zip)
+  * (the file : swr-editor.net-?.?.????.?????.zip)
 * Extract the whole zip file content to a separate folder.
 * Run : SwRebellionEditor.exe
   * If prompted, adjust the game folder.
