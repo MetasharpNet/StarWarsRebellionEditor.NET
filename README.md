@@ -20,7 +20,7 @@
 * 200/200 systems encyclopedia pictures
 * 200/200 encyclopedia descriptions
 * 61/61 enhanced character sprites displaying their base average stats
-* 23/29 high definition 3d models for capital ships
+* 24/29 high definition 3d models for capital ships
 * 80 high definition sprites for space fighters (X-wing, ...)
 * Screenshots :
 
