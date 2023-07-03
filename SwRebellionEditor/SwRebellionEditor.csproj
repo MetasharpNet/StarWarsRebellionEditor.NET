@@ -440,16 +440,25 @@
     <None Update="new-3d-models-301\2130-alliance-bulwark-battlecruiser-close-%28base%29.x">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="new-3d-models-301\2130-alliance-bulwark-class-battlecruiser-mark-3-close.x">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="new-3d-models-301\2130-bulwark-battlecruiser-close.x">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="new-3d-models-301\2131-alliance-bulwark-battlecruiser-medium-%28base%29.x">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="new-3d-models-301\2131-alliance-bulwark-class-battlecruiser-mark-3-medium.x">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="new-3d-models-301\2131-bulwark-battlecruiser-medium.x">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="new-3d-models-301\2132-alliance-bulwark-battlecruiser-far-%28base%29.x">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-3d-models-301\2132-alliance-bulwark-class-battlecruiser-mark-3-far.x">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="new-3d-models-301\2132-bulwark-battlecruiser-far.x">
@@ -1932,6 +1941,15 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="new-3d-textures-303\ALLIANCE_ASSAULT_FRIGATE_MARK_1_MEDIUM.BMP">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-3d-textures-303\ALLIANCE_BULWARK_CLASS_BATTLECRUISER_MARK_3_CLOSE.BMP">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-3d-textures-303\ALLIANCE_BULWARK_CLASS_BATTLECRUISER_MARK_3_FAR.BMP">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="new-3d-textures-303\ALLIANCE_BULWARK_CLASS_BATTLECRUISER_MARK_3_MEDIUM.BMP">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="new-3d-textures-303\ALLIANCE_CC_7700_FRIGATE_CLOSE.BMP">
