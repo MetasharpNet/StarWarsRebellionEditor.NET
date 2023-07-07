@@ -39,7 +39,7 @@
 * Install a fresh GoG or Steam Star Wars Rebellion game
 * Download the latest editor release : https://github.com/MetasharpNet/StarWarsRebellionEditor.NET/releases
   * (the file : swr-editor.net-?.?.????.?????.zip)
-* Extract the whole zip file content to a separate folder.
+* Extract the whole zip file content to a separate folder (not in the game folder directly! you can however create an editor subfolder in the game folder if you want, this is ok)
 * Run : SwRebellionEditor.exe
   * If prompted, adjust the game folder.
 * Click on the death star icon (the last icon) or through the menu : Editor / 25th Anniversary Patch
