@@ -4,7 +4,7 @@ public class GNPRTB : DatFile
 {
     public uint Field1_1;
     [ArraySize(1)]
-    public uint GeneralParamTableEntriesCount;
+    public uint GeneralParamTableEntriesCount; // 213
     [ArraySize(0)]
     public uint InfoLength; // 22
     public byte[] Info; // "GeneralParamTableEntry" as 1 byte per char

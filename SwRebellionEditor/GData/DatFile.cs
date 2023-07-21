@@ -150,12 +150,14 @@ public abstract class DatFile
                     break;
                 case "Byte[]":
                     outputBinaryWriter.Write((byte[])inputFieldInfo.GetValue(inputObject));
+                    ++currentArray;
                     break;
                 case "Char":
                     outputBinaryWriter.Write((char)inputFieldInfo.GetValue(inputObject));
                     break;
                 case "Char[]":
                     outputBinaryWriter.Write((char[])inputFieldInfo.GetValue(inputObject));
+                    ++currentArray;
                     break;
                 case "Decimal":
                     outputBinaryWriter.Write((decimal)inputFieldInfo.GetValue(inputObject));
