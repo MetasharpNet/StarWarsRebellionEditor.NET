@@ -46,7 +46,8 @@ public partial class PatchForm : PatchDesignForm
         // id = 38, galaxysize = 1
 
         // ---------------------------- PATCH ----------------------------
-
+        try { File.Delete(Path.Combine(Settings.Current.GameFolder, "_dgvoodoo_settings_suggestion_1_general.jpg")); } catch { }
+        try { File.Delete(Path.Combine(Settings.Current.GameFolder, "_dgvoodoo_settings_suggestion_3_directx.jpg")); } catch { }
         foreach (var filePath in Directory.GetFiles("game-update"))
         {
             if (Path.GetExtension(filePath).ToLowerInvariant() == ".txt")

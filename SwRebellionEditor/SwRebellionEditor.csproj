@@ -86,6 +86,21 @@
     <None Update="game-update\_dgvoodoo2_official_site.url">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="game-update\_dgvoodoo2_official_site_quick_guide.url">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="game-update\_dgvoodoo_settings_directx_base.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="game-update\_dgvoodoo_settings_directx_optimized.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="game-update\_dgvoodoo_settings_general_base.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="game-update\_dgvoodoo_settings_general_optimized.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="game-update\_dgvoodoo_settings_suggestion_1_general.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
