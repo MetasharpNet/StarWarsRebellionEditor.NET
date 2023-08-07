@@ -51,6 +51,8 @@ namespace SwRebellionEditor
             patchInfoLabel = new Label();
             label1Requirement = new Label();
             label1 = new Label();
+            charactersWithStatsCheckBox = new CheckBox();
+            charactersWithoutStatsCheckBox = new CheckBox();
             SuspendLayout();
             // 
             // systemsImageList
@@ -61,7 +63,7 @@ namespace SwRebellionEditor
             // 
             // cancel
             // 
-            cancel.Location = new Point(565, 211);
+            cancel.Location = new Point(604, 246);
             cancel.Name = "cancel";
             cancel.Size = new Size(75, 23);
             cancel.TabIndex = 1154;
@@ -71,7 +73,7 @@ namespace SwRebellionEditor
             // 
             // patch
             // 
-            patch.Location = new Point(24, 211);
+            patch.Location = new Point(24, 246);
             patch.Name = "patch";
             patch.Size = new Size(110, 23);
             patch.TabIndex = 1155;
@@ -157,11 +159,11 @@ namespace SwRebellionEditor
             // 
             patchInfoLabel.AutoSize = true;
             patchInfoLabel.Font = new Font("Segoe UI", 9F, FontStyle.Italic, GraphicsUnit.Point);
-            patchInfoLabel.Location = new Point(140, 215);
+            patchInfoLabel.Location = new Point(140, 250);
             patchInfoLabel.Name = "patchInfoLabel";
-            patchInfoLabel.Size = new Size(338, 15);
+            patchInfoLabel.Size = new Size(432, 15);
             patchInfoLabel.TabIndex = 1164;
-            patchInfoLabel.Text = "This window will freeze then close when the patch is completed.";
+            patchInfoLabel.Text = "This window will freeze for a few minutes then close when the patch is completed.";
             // 
             // label1Requirement
             // 
@@ -185,11 +187,37 @@ namespace SwRebellionEditor
             label1.TabIndex = 1166;
             label1.Text = "Run dgVoodooCpl.exe after to setup your graphic settings.";
             // 
+            // charactersWithStatsCheckBox
+            // 
+            charactersWithStatsCheckBox.AutoSize = true;
+            charactersWithStatsCheckBox.Checked = true;
+            charactersWithStatsCheckBox.CheckState = CheckState.Checked;
+            charactersWithStatsCheckBox.Location = new Point(33, 210);
+            charactersWithStatsCheckBox.Name = "charactersWithStatsCheckBox";
+            charactersWithStatsCheckBox.Size = new Size(158, 19);
+            charactersWithStatsCheckBox.TabIndex = 1167;
+            charactersWithStatsCheckBox.Text = "new characters with stats";
+            charactersWithStatsCheckBox.UseVisualStyleBackColor = true;
+            charactersWithStatsCheckBox.CheckedChanged += charactersWithStatsCheckBox_CheckedChanged;
+            // 
+            // charactersWithoutStatsCheckBox
+            // 
+            charactersWithoutStatsCheckBox.AutoSize = true;
+            charactersWithoutStatsCheckBox.Location = new Point(233, 210);
+            charactersWithoutStatsCheckBox.Name = "charactersWithoutStatsCheckBox";
+            charactersWithoutStatsCheckBox.Size = new Size(176, 19);
+            charactersWithoutStatsCheckBox.TabIndex = 1168;
+            charactersWithoutStatsCheckBox.Text = "new characters without stats";
+            charactersWithoutStatsCheckBox.UseVisualStyleBackColor = true;
+            charactersWithoutStatsCheckBox.CheckedChanged += charactersWithoutStatsCheckBox_CheckedChanged;
+            // 
             // PatchForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(735, 245);
+            ClientSize = new Size(735, 278);
+            Controls.Add(charactersWithoutStatsCheckBox);
+            Controls.Add(charactersWithStatsCheckBox);
             Controls.Add(label1);
             Controls.Add(label1Requirement);
             Controls.Add(patchInfoLabel);
@@ -207,8 +235,6 @@ namespace SwRebellionEditor
             KeyPreview = true;
             Margin = new Padding(4, 3, 4, 3);
             MaximizeBox = false;
-            MaximumSize = new Size(751, 284);
-            MinimumSize = new Size(751, 284);
             Name = "PatchForm";
             Text = "Patch";
             FormClosing += GameObjectsListForm_FormClosing;
@@ -232,5 +258,7 @@ namespace SwRebellionEditor
         private Label patchInfoLabel;
         private Label label1Requirement;
         private Label label1;
+        private CheckBox charactersWithStatsCheckBox;
+        private CheckBox charactersWithoutStatsCheckBox;
     }
 }

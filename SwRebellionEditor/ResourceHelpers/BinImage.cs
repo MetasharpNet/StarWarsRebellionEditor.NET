@@ -15,6 +15,9 @@
 
         public byte[,] IndexedColors;
 
+        public BinImage()
+        {
+        }
         public BinImage(string filePath)
         {
             Set(File.ReadAllBytes(filePath));

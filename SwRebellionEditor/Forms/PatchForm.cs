@@ -56,113 +56,137 @@ public partial class PatchForm : PatchDesignForm
             File.Copy(filePath, Path.Combine(Settings.Current.GameFolder, filename), true);
         }
 
-        // ---------------------------- SPRITES ----------------------------
-
-        // new common
-        foreach (var filePath in Directory.GetFiles("new-common"))
-        {
-            if (Path.GetExtension(filePath).ToLowerInvariant() == ".txt")
-                continue;
-            var id = Path.GetFileNameWithoutExtension(filePath).Split('-')[0];
-            Common.Resources.SaveBitmap(id, filePath);
-        }
-
-        // new encybmap ids for encyclopedia systems pictures EDATA.14001 to 14200
-        foreach (var filePath in Directory.GetFiles("new-encyclopedia-pictures"))
-        {
-            if (Path.GetExtension(filePath).ToLowerInvariant() == ".txt")
-                continue;
-            var ebId = Path.GetFileNameWithoutExtension(filePath);
-            if (ebId.Contains("-"))
-                ebId = ebId.Split('-')[0];
-            else if (ebId.StartsWith("EDATA."))
-                ebId = ebId.Split('.')[1];
-            if (Convert.ToInt32(ebId) < 166 || Convert.ToInt32(ebId) > 191)
-                EncyBmap.Resources.SaveString(Convert.ToUInt16(ebId), "EDATA." + ebId);
-            File.Copy(filePath, Path.Combine(Settings.Current.EDataFolder, "EDATA." + ebId), true);
-        }
+        // ---------------------------- PICTURES ---------------------------
 
         var defaultTacticalPalette = new AdobeColorTable(Tactical.Resources.RT_303["5557"]);
-        // new 256x256 tactical systems sprites using global color table
-        foreach (var filePath in Directory.GetFiles("new-systems-tactical"))
+        int coruscantId = -1;
+        foreach (var setFolder in Directory.GetDirectories("."))
         {
-            if (Path.GetExtension(filePath).ToLowerInvariant() == ".txt")
+            var setFolderOnly = Path.GetFileName(setFolder);
+            if (setFolderOnly == "game-update")
                 continue;
-            var taId = Path.GetFileNameWithoutExtension(filePath).Split('-')[0];
-            var taPalId = (Convert.ToInt32(taId) + 1000).ToString();
-            var b = new Bitmap(filePath);
-            var bi = new BinImage(b, defaultTacticalPalette, true, 256, 256);
-            Tactical.Resources.Save303(taId, bi.Bytes);
-            Tactical.Resources.Save303(taPalId, bi.ColorTable.Bytes);
-        }
-
-        // new 3D models
-        foreach (var filePath in Directory.GetFiles("new-3d-models-301"))
-        {
-            var extension = Path.GetExtension(filePath).ToLowerInvariant();
-            if (extension == ".txt")
+            if (setFolderOnly == "characters+stats" && charactersWithoutStatsCheckBox.Checked)
                 continue;
-            var id301 = Path.GetFileNameWithoutExtension(filePath).Split('-')[0];
-            byte[] bytes;
-            if (extension == ".x")
-                bytes = File.ReadAllBytes(filePath);
-            else
-                throw new ApplicationException("Accepted 3D model extension: x. File provided: " + filePath);
-            Tactical.Resources.Save301(id301, bytes);
-        }
-
-        // new 3D models textures
-        foreach (var filePath in Directory.GetFiles("new-3d-textures-303"))
-        {
-            var extension = Path.GetExtension(filePath).ToLowerInvariant();
-            if (extension == ".txt")
+            if (setFolderOnly == "characters-stats" && charactersWithStatsCheckBox.Checked)
                 continue;
-            var id303 = Path.GetFileNameWithoutExtension(filePath).Split('-')[0];
-            int res;
-            if (!Int32.TryParse(id303, out res) && !id303.Contains("."))
-                id303 = Path.GetFileName(filePath);
-            byte[] bytes;
-            if (extension == ".jpg" || extension == ".jpeg" || extension == ".png" || extension == ".bmp")
+            foreach (var patchFolder in Directory.GetDirectories(setFolder))
             {
-                var b = new Bitmap(filePath);
-                var bi = new BinImage(b, defaultTacticalPalette, true);
-                bytes = bi.Bytes;
+                var patchFolderOnly = Path.GetFileName(patchFolder);
+                if (patchFolderOnly == "EDATA")
+                { // encyclopedia
+                    foreach (var filePath in Directory.GetFiles(patchFolder))
+                    {
+                        if (Path.GetExtension(filePath).ToLowerInvariant() == ".txt")
+                            continue;
+                        var ebId = Path.GetFileNameWithoutExtension(filePath);
+                        if (ebId.Contains("-"))
+                            ebId = ebId.Split('-')[0];
+                        else if (ebId.StartsWith("EDATA."))
+                            ebId = ebId.Split('.')[1];
+                        EncyBmap.Resources.SaveString(Convert.ToUInt16(ebId), "EDATA." + ebId);
+                        File.Copy(filePath, Path.Combine(Settings.Current.EDataFolder, "EDATA." + ebId), true);
+                    }
+                }
+                else if (patchFolderOnly.EndsWith(".DLL"))
+                { // dll resources
+                    foreach (var resourceFolder in Directory.GetDirectories(patchFolder))
+                    {
+                        var resourceFolderOnly = Path.GetFileName(resourceFolder);
+                        if (resourceFolderOnly == "301")
+                        {
+                            foreach (var filePath in Directory.GetFiles(resourceFolder))
+                            {
+                                var extension = Path.GetExtension(filePath).ToLowerInvariant();
+                                if (extension == ".txt")
+                                    continue;
+                                var id301 = Path.GetFileNameWithoutExtension(filePath).Split('-')[0];
+                                byte[] bytes;
+                                if (extension == ".x")
+                                    bytes = File.ReadAllBytes(filePath);
+                                else
+                                    throw new ApplicationException("Accepted 3D model extension: x. File provided: " + filePath);
+                                if (patchFolderOnly == "TACTICAL.DLL")
+                                    Tactical.Resources.Save301(id301, bytes);
+                            }
+                        }
+                        else if (resourceFolderOnly == "303")
+                        {
+                            foreach (var filePath in Directory.GetFiles(resourceFolder))
+                            {
+                                if (Path.GetExtension(filePath).ToLowerInvariant() == ".txt")
+                                    continue;
+                                var extension = Path.GetExtension(filePath).ToLowerInvariant();
+                                var id303 = Path.GetFileNameWithoutExtension(filePath).Split('-')[0];
+                                var id303PalId = (Convert.ToInt32(id303) + 1000).ToString();
+                                int res = -1;
+                                if (!Int32.TryParse(id303, out res) && !id303.Contains("."))
+                                    id303 = Path.GetFileName(filePath);
+                                byte[] bytes;
+                                BinImage bi = new BinImage();
+                                if (extension == ".jpg" || extension == ".jpeg" || extension == ".png" || extension == ".bmp")
+                                {
+                                    var b = new Bitmap(filePath);
+                                    if (res > 10000)
+                                        bi = new BinImage(b, defaultTacticalPalette, true, 256, 256); // resizing tactical system sprites to 256x256
+                                    else
+                                        bi = new BinImage(b, defaultTacticalPalette, true);
+                                    bytes = bi.Bytes;
+                                }
+                                else if (extension == ".bin")
+                                    bytes = File.ReadAllBytes(filePath);
+                                else
+                                    throw new ApplicationException("Accepted extensions: jpg, jpeg, bmp, png, bin. File provided: " + filePath);
+                                if (patchFolderOnly == "TACTICAL.DLL")
+                                {
+                                    Tactical.Resources.Save303(id303, bytes);
+                                    if (res > 10000)
+                                        Tactical.Resources.Save303(id303PalId, bi.ColorTable.Bytes);
+                                }
+                            }
+                        }
+                        else if (resourceFolderOnly == "Bitmap")
+                        {
+                            var files = Directory.GetFiles(resourceFolder);
+                            var coruscantFile = files.FirstOrDefault(f => f.ToLowerInvariant().Contains("coruscant"));
+                            var idsFound = new HashSet<int>();
+                            foreach (var filePath in files)
+                            {
+                                if (Path.GetExtension(filePath).ToLowerInvariant() == ".txt")
+                                    continue;
+                                var id = Path.GetFileNameWithoutExtension(filePath).Split('-')[0];
+                                if (patchFolderOnly == "COMMON.DLL")
+                                    Common.Resources.SaveBitmap(id, filePath);
+                                else if (patchFolderOnly == "GOKRES.DLL")
+                                    Gokres.Resources.SaveBitmap(id, filePath);
+                                else if (patchFolderOnly == "STRATEGY.DLL")
+                                {
+                                    if (coruscantId < 0 && coruscantFile != null)
+                                        coruscantId = Convert.ToUInt16(Path.GetFileName(coruscantFile).Split("-")[0]);
+                                    int idAsInt;
+                                    if (Int32.TryParse(id, out idAsInt) && idAsInt > 10000)
+                                        idsFound.Add(idAsInt);
+                                    Strategy.Resources.SaveBitmap(id, filePath);
+                                }
+                                else if (patchFolderOnly == "TACTICAL.DLL")
+                                    Tactical.Resources.SaveBitmap(id, filePath);
+                            }
+                            if (idsFound.Any())
+                            { // if only a few planets are provided, use the wireframe for the rest
+                                var f = files.FirstOrDefault(f => f.Contains("wireframe"));
+                                if (f != null)
+                                {
+                                    for (int p = 14001; p <= 14200; ++p)
+                                    {
+                                        var key = p.ToString();
+                                        if (!Tactical.Resources.RT_BITMAP.ContainsKey(key))
+                                            Tactical.Resources.SaveBitmap(key, f);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
             }
-            else if (extension == ".bin")
-                bytes = File.ReadAllBytes(filePath);
-            else
-                throw new ApplicationException("Accepted 3D model textures extensions: jpg, jpeg, bmp, png, bin. File provided: " + filePath);
-            Tactical.Resources.Save303(id303, bytes);
-        }
-
-        // planets-sprites
-        var t = new ResourceFile(Path.Combine(Settings.Current.GameFolder, "STRATEGY.DLL"));
-        // identify coruscant id
-        var f = Directory.GetFiles("new-systems-sprites").First(f => f.ToLowerInvariant().Contains("coruscant"));
-        var coruscantId = Convert.ToUInt16(Path.GetFileName(f).Split("-")[0]);
-        // pre-init resource slots with a specific sprite to avoid sprite being displayed on top of the names
-        f = Directory.GetFiles("new-systems-sprites").First(f => f.Contains("14000-wireframe.bmp"));
-        for (int p = 0; p <= 200; ++p)
-        {
-            var key = (14000 + p).ToString();
-            if (!t.RT_BITMAP.ContainsKey(key))
-                t.SaveBitmap(key, f);
-        }
-        foreach (var filePath in Directory.GetFiles("new-systems-sprites"))
-        {
-            if (Path.GetExtension(filePath).ToLowerInvariant() == ".txt")
-                continue;
-            var id = Path.GetFileNameWithoutExtension(filePath).Split('-')[0];
-            t.SaveBitmap(id, filePath);
-        }
-
-        // new 61x25 characters sprites using global color table
-        foreach (var filePath in Directory.GetFiles("new-characters-sprites"))
-        {
-            if (Path.GetExtension(filePath).ToLowerInvariant() == ".txt")
-                continue;
-            var grId = Path.GetFileNameWithoutExtension(filePath).Split('-')[0];
-            Gokres.Resources.SaveBitmap(grId, filePath);
         }
 
         // ---------------------------- REBEXE.EXE ----------------------------
@@ -178,14 +202,17 @@ public partial class PatchForm : PatchDesignForm
             stream.WriteByte(0x00);
             stream.WriteByte(0x00);
             stream.WriteByte(0xC3); // retn
-            // to use coruscant sprite for empire objective to keep coruscant
-            stream.Position = int.Parse("4A46F", NumberStyles.HexNumber);
-            stream.WriteByte((byte)(coruscantId & 0x00FF)); // 14036 36D4 => D4 then 36
-            stream.WriteByte((byte)((coruscantId & 0xFF00) >> 8));
-            // to use coruscant sprite for rebel alliance objective to take coruscant
-            stream.Position = int.Parse("49BCF", NumberStyles.HexNumber);
-            stream.WriteByte((byte)(coruscantId & 0x00FF)); // 14036 36D4 => D4 then 36
-            stream.WriteByte((byte)((coruscantId & 0xFF00) >> 8));
+            if (coruscantId > 0)
+            {
+                // to use coruscant sprite for empire objective to keep coruscant
+                stream.Position = int.Parse("4A46F", NumberStyles.HexNumber);
+                stream.WriteByte((byte)(coruscantId & 0x00FF)); // 14036 36D4 => D4 then 36
+                stream.WriteByte((byte)((coruscantId & 0xFF00) >> 8));
+                // to use coruscant sprite for rebel alliance objective to take coruscant
+                stream.Position = int.Parse("49BCF", NumberStyles.HexNumber);
+                stream.WriteByte((byte)(coruscantId & 0x00FF)); // 14036 36D4 => D4 then 36
+                stream.WriteByte((byte)((coruscantId & 0xFF00) >> 8));
+            }
             // to use 14001+ ids for encyclopedia edata planets pictures
             stream.Position = int.Parse("5DED6", NumberStyles.HexNumber);
             stream.WriteByte(0x89); // move eax, ecx
@@ -306,4 +333,16 @@ public partial class PatchForm : PatchDesignForm
     }
 
     #endregion
+
+    private void charactersWithStatsCheckBox_CheckedChanged(object sender, EventArgs e)
+    {
+        if (charactersWithStatsCheckBox.Checked)
+            charactersWithoutStatsCheckBox.Checked = false;
+    }
+
+    private void charactersWithoutStatsCheckBox_CheckedChanged(object sender, EventArgs e)
+    {
+        if (charactersWithoutStatsCheckBox.Checked)
+            charactersWithStatsCheckBox.Checked = false;
+    }
 }
