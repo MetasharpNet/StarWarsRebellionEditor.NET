@@ -153,7 +153,7 @@ namespace SwRebellionEditor
             warningLabel.Name = "warningLabel";
             warningLabel.Size = new Size(672, 15);
             warningLabel.TabIndex = 1163;
-            warningLabel.Text = "This patch was released 2023-06-18 and is provided without any warranty of any kind. Doesn't work with pre-patch savegames.";
+            warningLabel.Text = "This patch was released 2023-08-08 and is provided without any warranty of any kind. Doesn't work with pre-patch savegames.";
             // 
             // patchInfoLabel
             // 
@@ -172,9 +172,9 @@ namespace SwRebellionEditor
             label1Requirement.ForeColor = Color.Red;
             label1Requirement.Location = new Point(393, 14);
             label1Requirement.Name = "label1Requirement";
-            label1Requirement.Size = new Size(247, 15);
+            label1Requirement.Size = new Size(253, 15);
             label1Requirement.TabIndex = 1165;
-            label1Requirement.Text = "Includes update 1.02 (dgvoodoo2 directx 2.8.2)";
+            label1Requirement.Text = "Includes update 1.02 (dgvoodoo2 directx 2.81.1)";
             // 
             // label1
             // 
