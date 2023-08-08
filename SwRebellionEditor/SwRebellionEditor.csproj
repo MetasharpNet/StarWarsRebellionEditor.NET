@@ -62,187 +62,382 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Update="characters+stats\00000-template-major-fleet.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="characters+stats\00000-template-major-minimalistic-fleet.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="characters+stats\00000-template-minor-fleet.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="characters+stats\GOKRES.DLL\Bitmap\18496-mon-mothma-fleet.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="characters+stats\GOKRES.DLL\Bitmap\18496-mon-mothma.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="characters+stats\GOKRES.DLL\Bitmap\18497-leia-organa-fleet.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="characters+stats\GOKRES.DLL\Bitmap\18497-leia-organa.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="characters+stats\GOKRES.DLL\Bitmap\18498-luke-skywalker-fleet.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="characters+stats\GOKRES.DLL\Bitmap\18498-luke-skywalker.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="characters+stats\GOKRES.DLL\Bitmap\18499-han-solo-fleet.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="characters+stats\GOKRES.DLL\Bitmap\18499-han-solo.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="characters+stats\GOKRES.DLL\Bitmap\18512-luke-knight-fleet.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="characters+stats\GOKRES.DLL\Bitmap\18512-luke-skywalker-jedi-knight.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="characters+stats\GOKRES.DLL\Bitmap\18560-emperor-palpatine-fleet.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="characters+stats\GOKRES.DLL\Bitmap\18560-emperor-palpatine.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="characters+stats\GOKRES.DLL\Bitmap\18561-darth-vader-fleet.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="characters+stats\GOKRES.DLL\Bitmap\18561-darth-vader.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="characters+stats\GOKRES.DLL\Bitmap\19008-ackbar-fleet.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="characters+stats\GOKRES.DLL\Bitmap\19008-ackbar.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="characters+stats\GOKRES.DLL\Bitmap\19009-wedge-antilles-fleet.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="characters+stats\GOKRES.DLL\Bitmap\19009-wedge-antilles.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="characters+stats\GOKRES.DLL\Bitmap\19010-lando-calrissian-fleet.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="characters+stats\GOKRES.DLL\Bitmap\19010-lando-calrissian.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="characters+stats\GOKRES.DLL\Bitmap\19011-chewbacca-fleet.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="characters+stats\GOKRES.DLL\Bitmap\19011-chewbacca.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="characters+stats\GOKRES.DLL\Bitmap\19012-jan-dodonna-fleet.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="characters+stats\GOKRES.DLL\Bitmap\19012-jan-dodonna.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="characters+stats\GOKRES.DLL\Bitmap\19013-crix-madine-fleet.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="characters+stats\GOKRES.DLL\Bitmap\19013-crix-madine.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="characters+stats\GOKRES.DLL\Bitmap\19014-carlist-rieekan-fleet.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="characters+stats\GOKRES.DLL\Bitmap\19014-carlist-rieekan.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="characters+stats\GOKRES.DLL\Bitmap\19015-afyon-fleet.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="characters+stats\GOKRES.DLL\Bitmap\19015-afyon.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="characters+stats\GOKRES.DLL\Bitmap\19016-drayson-fleet.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="characters+stats\GOKRES.DLL\Bitmap\19016-drayson.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="characters+stats\GOKRES.DLL\Bitmap\19017-borsk-fey%27lya-fleet.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="characters+stats\GOKRES.DLL\Bitmap\19017-borsk-fey%27lya.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="characters+stats\GOKRES.DLL\Bitmap\19018-tura-raftican-fleet.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="characters+stats\GOKRES.DLL\Bitmap\19018-tura-raftican.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="characters+stats\GOKRES.DLL\Bitmap\19019-bren-derlin-fleet.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="characters+stats\GOKRES.DLL\Bitmap\19019-bren-derlin.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="characters+stats\GOKRES.DLL\Bitmap\19020-garm-bel-iblis-fleet.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="characters+stats\GOKRES.DLL\Bitmap\19020-garm-bel-iblis.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="characters+stats\GOKRES.DLL\Bitmap\19021-talon-karrde-fleet.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="characters+stats\GOKRES.DLL\Bitmap\19021-talon-karrde.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="characters+stats\GOKRES.DLL\Bitmap\19022-narra-fleet.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="characters+stats\GOKRES.DLL\Bitmap\19022-narra.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="characters+stats\GOKRES.DLL\Bitmap\19023-huoba-neva-fleet.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="characters+stats\GOKRES.DLL\Bitmap\19023-huoba-neva.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="characters+stats\GOKRES.DLL\Bitmap\19024-page-fleet.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="characters+stats\GOKRES.DLL\Bitmap\19024-page.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="characters+stats\GOKRES.DLL\Bitmap\19025-syub-snunb-fleet.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="characters+stats\GOKRES.DLL\Bitmap\19025-syub-snunb.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="characters+stats\GOKRES.DLL\Bitmap\19026-adar-tallon-fleet.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="characters+stats\GOKRES.DLL\Bitmap\19026-adar-tallon.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="characters+stats\GOKRES.DLL\Bitmap\19027-sarin-virgilio-fleet.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="characters+stats\GOKRES.DLL\Bitmap\19027-sarin-virgilio.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="characters+stats\GOKRES.DLL\Bitmap\19028-vanden-willard-fleet.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="characters+stats\GOKRES.DLL\Bitmap\19028-vanden-willard.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="characters+stats\GOKRES.DLL\Bitmap\19029-roget-jiriss-fleet.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="characters+stats\GOKRES.DLL\Bitmap\19029-roget-jiriss.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="characters+stats\GOKRES.DLL\Bitmap\19030-kaiya-andrimetrum-fleet.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="characters+stats\GOKRES.DLL\Bitmap\19030-kaiya-andrimetrum.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="characters+stats\GOKRES.DLL\Bitmap\19031-mazer-rackus-fleet.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="characters+stats\GOKRES.DLL\Bitmap\19031-mazer-rackus.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="characters+stats\GOKRES.DLL\Bitmap\19032-orrimaarko-fleet.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="characters+stats\GOKRES.DLL\Bitmap\19032-orrimaarko.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="characters+stats\GOKRES.DLL\Bitmap\19033-ma%27w%27shiye-fleet.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="characters+stats\GOKRES.DLL\Bitmap\19033-ma%27w%27shiye.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="characters+stats\GOKRES.DLL\Bitmap\19072-jerjerrod-fleet.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="characters+stats\GOKRES.DLL\Bitmap\19072-jerjerrod.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="characters+stats\GOKRES.DLL\Bitmap\19073-ozzel-fleet.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="characters+stats\GOKRES.DLL\Bitmap\19073-ozzel.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="characters+stats\GOKRES.DLL\Bitmap\19074-piett-fleet.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="characters+stats\GOKRES.DLL\Bitmap\19074-piett.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="characters+stats\GOKRES.DLL\Bitmap\19075-veers-fleet.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="characters+stats\GOKRES.DLL\Bitmap\19075-veers.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="characters+stats\GOKRES.DLL\Bitmap\19076-brandei-fleet.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="characters+stats\GOKRES.DLL\Bitmap\19076-brandei.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="characters+stats\GOKRES.DLL\Bitmap\19077-covell-fleet.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="characters+stats\GOKRES.DLL\Bitmap\19077-covell.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="characters+stats\GOKRES.DLL\Bitmap\19078-dorja-fleet.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="characters+stats\GOKRES.DLL\Bitmap\19078-dorja.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="characters+stats\GOKRES.DLL\Bitmap\19079-bin-essada-fleet.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="characters+stats\GOKRES.DLL\Bitmap\19079-bin-essada.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="characters+stats\GOKRES.DLL\Bitmap\19080-niles-ferrier-fleet.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="characters+stats\GOKRES.DLL\Bitmap\19080-niles-ferrier.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="characters+stats\GOKRES.DLL\Bitmap\19081-grammel-fleet.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="characters+stats\GOKRES.DLL\Bitmap\19081-grammel.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="characters+stats\GOKRES.DLL\Bitmap\19082-griff-fleet.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="characters+stats\GOKRES.DLL\Bitmap\19082-griff.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="characters+stats\GOKRES.DLL\Bitmap\19083-klev-fleet.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="characters+stats\GOKRES.DLL\Bitmap\19083-klev.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="characters+stats\GOKRES.DLL\Bitmap\19084-needa-fleet.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="characters+stats\GOKRES.DLL\Bitmap\19084-needa.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="characters+stats\GOKRES.DLL\Bitmap\19085-bane-nothos-fleet.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="characters+stats\GOKRES.DLL\Bitmap\19085-bane-nothos.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="characters+stats\GOKRES.DLL\Bitmap\19086-orlok-fleet.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="characters+stats\GOKRES.DLL\Bitmap\19086-orlok.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="characters+stats\GOKRES.DLL\Bitmap\19087-pellaeon-fleet.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="characters+stats\GOKRES.DLL\Bitmap\19087-pellaeon.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="characters+stats\GOKRES.DLL\Bitmap\19088-screed-fleet.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="characters+stats\GOKRES.DLL\Bitmap\19088-screed.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="characters+stats\GOKRES.DLL\Bitmap\19089-thrawn-fleet.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="characters+stats\GOKRES.DLL\Bitmap\19089-thrawn.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="characters+stats\GOKRES.DLL\Bitmap\19090-zuggs-fleet.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="characters+stats\GOKRES.DLL\Bitmap\19090-zuggs.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="characters+stats\GOKRES.DLL\Bitmap\19091-daala-fleet.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="characters+stats\GOKRES.DLL\Bitmap\19091-daala.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="characters+stats\GOKRES.DLL\Bitmap\19092-pter-thanas-fleet.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="characters+stats\GOKRES.DLL\Bitmap\19092-pter-thanas.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="characters+stats\GOKRES.DLL\Bitmap\19093-bevel-lemelisk-fleet.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="characters+stats\GOKRES.DLL\Bitmap\19093-bevel-lemelisk.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="characters+stats\GOKRES.DLL\Bitmap\19094-shenir-rix-fleet.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="characters+stats\GOKRES.DLL\Bitmap\19094-shenir-rix.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="characters+stats\GOKRES.DLL\Bitmap\19095-noval-garaint-fleet.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="characters+stats\GOKRES.DLL\Bitmap\19095-noval-graint.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="characters+stats\GOKRES.DLL\Bitmap\19096-garindan-fleet.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="characters+stats\GOKRES.DLL\Bitmap\19096-garindan.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="characters+stats\GOKRES.DLL\Bitmap\19097-menndo-fleet.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="characters+stats\GOKRES.DLL\Bitmap\19097-menndo.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="characters+stats\GOKRES.DLL\Bitmap\19098-labansat-fleet.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="characters+stats\GOKRES.DLL\Bitmap\19098-labansat.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="characters+stats\GOKRES.DLL\Bitmap\19099-villar-fleet.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="characters+stats\GOKRES.DLL\Bitmap\19099-villar.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="characters+stats\readme.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="characters-stats\GOKRES.DLL\Bitmap\18496-mon-mothma-fleet.bmp">
@@ -426,6 +621,9 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="characters-stats\GOKRES.DLL\Bitmap\19099-villar-fleet.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="characters-stats\readme.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="characters\EDATA\072-mon-mothma-encyclopedia.bmp">
@@ -972,6 +1170,9 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="characters\GOKRES.DLL\Bitmap\2715-villar-build.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="characters\readme.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="characters\STRATEGY.DLL\Bitmap\11000-ackbar-info.bmp">
@@ -1572,6 +1773,15 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="interface\COMMON.DLL\Bitmap\20001-main-screen.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="interface\readme.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="interface\STRATEGY.DLL\Bitmap\902-galaxy-background.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="interface\STRATEGY.DLL\Bitmap\903-galaxy-background-dark.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="new-3d-models-301\2010-alliance-mc80-liberty-type-star-cruiser-close.x">
@@ -8774,6 +8984,9 @@
       <Pack>True</Pack>
       <PackagePath>\</PackagePath>
     </None>
+    <None Update="ships\readme.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="ships\TACTICAL.DLL\301\2010-alliance-mc80-liberty-type-star-cruiser-close.x">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
@@ -10668,6 +10881,9 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="systems\EDATA\_readme.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="systems\readme.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="systems\STRATEGY.DLL\Bitmap\10212-01.bmp">
