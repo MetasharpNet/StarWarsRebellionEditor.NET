@@ -1358,184 +1358,367 @@
     <None Update="characters\STRATEGY.DLL\Bitmap\11060-zuggs-info.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="characters\STRATEGY.DLL\Bitmap\6208-mon-mothma-events.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="characters\STRATEGY.DLL\Bitmap\6208-mon-mothma-events.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="characters\STRATEGY.DLL\Bitmap\6209-leia-organa-events.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="characters\STRATEGY.DLL\Bitmap\6209-leia-organa-events.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="characters\STRATEGY.DLL\Bitmap\6210-luke-skywalker-events.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="characters\STRATEGY.DLL\Bitmap\6210-luke-skywalker-events.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="characters\STRATEGY.DLL\Bitmap\6211-han-solo-events.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="characters\STRATEGY.DLL\Bitmap\6211-han-solo-events.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="characters\STRATEGY.DLL\Bitmap\6224-luke-knight-events.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="characters\STRATEGY.DLL\Bitmap\6224-luke-knight-events.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="characters\STRATEGY.DLL\Bitmap\6272-emperor-palpatine-events.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="characters\STRATEGY.DLL\Bitmap\6272-emperor-palpatine-events.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="characters\STRATEGY.DLL\Bitmap\6273-darth-vader-events.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="characters\STRATEGY.DLL\Bitmap\6273-darth-vader-events.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="characters\STRATEGY.DLL\Bitmap\6720-ackbar-events.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="characters\STRATEGY.DLL\Bitmap\6720-ackbar-events.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="characters\STRATEGY.DLL\Bitmap\6721-wedge-antilles-events.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="characters\STRATEGY.DLL\Bitmap\6721-wedge-antilles-events.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="characters\STRATEGY.DLL\Bitmap\6722-lando-calrissian-events.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="characters\STRATEGY.DLL\Bitmap\6722-lando-calrissian-events.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="characters\STRATEGY.DLL\Bitmap\6723-chewbacca-events.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="characters\STRATEGY.DLL\Bitmap\6723-chewbacca-events.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="characters\STRATEGY.DLL\Bitmap\6724-jan-dodonna-events.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="characters\STRATEGY.DLL\Bitmap\6724-jan-dodonna-events.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="characters\STRATEGY.DLL\Bitmap\6725-crix-madine-events.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="characters\STRATEGY.DLL\Bitmap\6725-crix-madine-events.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="characters\STRATEGY.DLL\Bitmap\6726-carlist-rieekan-events.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="characters\STRATEGY.DLL\Bitmap\6726-carlist-rieekan-events.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="characters\STRATEGY.DLL\Bitmap\6727-afyon-events.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="characters\STRATEGY.DLL\Bitmap\6727-afyon-events.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="characters\STRATEGY.DLL\Bitmap\6728-drayson-events.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="characters\STRATEGY.DLL\Bitmap\6728-drayson-events.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="characters\STRATEGY.DLL\Bitmap\6729-borsk-fey%27lya-events.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="characters\STRATEGY.DLL\Bitmap\6729-borsk-fey%27lya-events.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="characters\STRATEGY.DLL\Bitmap\6730-tura-raftican-events.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="characters\STRATEGY.DLL\Bitmap\6730-tura-raftican-events.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="characters\STRATEGY.DLL\Bitmap\6731-bren-derlin-events.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="characters\STRATEGY.DLL\Bitmap\6731-bren-derlin-events.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="characters\STRATEGY.DLL\Bitmap\6732-garm-bel-iblis-events.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="characters\STRATEGY.DLL\Bitmap\6732-garm-bel-iblis-events.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="characters\STRATEGY.DLL\Bitmap\6733-talon-karrde-events.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="characters\STRATEGY.DLL\Bitmap\6733-talon-karrde-events.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="characters\STRATEGY.DLL\Bitmap\6734-narra-events.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="characters\STRATEGY.DLL\Bitmap\6734-narra-events.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="characters\STRATEGY.DLL\Bitmap\6735-huoba-neva-events.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="characters\STRATEGY.DLL\Bitmap\6735-huoba-neva-events.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="characters\STRATEGY.DLL\Bitmap\6736-page-events.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="characters\STRATEGY.DLL\Bitmap\6736-page-events.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="characters\STRATEGY.DLL\Bitmap\6737-syub-snunb-events.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="characters\STRATEGY.DLL\Bitmap\6737-syub-snunb-events.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="characters\STRATEGY.DLL\Bitmap\6738-adar-tallon-events.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="characters\STRATEGY.DLL\Bitmap\6738-adar-tallon-events.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="characters\STRATEGY.DLL\Bitmap\6739-sarin-virgilio-events.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="characters\STRATEGY.DLL\Bitmap\6739-sarin-virgilio-events.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="characters\STRATEGY.DLL\Bitmap\6740-vanden-willard-events.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="characters\STRATEGY.DLL\Bitmap\6740-vanden-willard-events.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="characters\STRATEGY.DLL\Bitmap\6741-roget-jiriss-events.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="characters\STRATEGY.DLL\Bitmap\6741-roget-jiriss-events.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="characters\STRATEGY.DLL\Bitmap\6742-kaiya-andrimetrum-events.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="characters\STRATEGY.DLL\Bitmap\6742-kaiya-andrimetrum-events.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="characters\STRATEGY.DLL\Bitmap\6743-mazer-rackus-events.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="characters\STRATEGY.DLL\Bitmap\6743-mazer-rackus-events.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="characters\STRATEGY.DLL\Bitmap\6744-orrimaarko-events.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="characters\STRATEGY.DLL\Bitmap\6744-orrimaarko-events.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="characters\STRATEGY.DLL\Bitmap\6745-ma%27w%27shiye-events.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="characters\STRATEGY.DLL\Bitmap\6745-ma%27w%27shiye-events.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="characters\STRATEGY.DLL\Bitmap\6784-jerjerrod-events.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="characters\STRATEGY.DLL\Bitmap\6784-jerjerrod-events.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="characters\STRATEGY.DLL\Bitmap\6785-ozzel-events.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="characters\STRATEGY.DLL\Bitmap\6785-ozzel-events.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="characters\STRATEGY.DLL\Bitmap\6786-piett-events.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="characters\STRATEGY.DLL\Bitmap\6786-piett-events.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="characters\STRATEGY.DLL\Bitmap\6787-veers-events.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="characters\STRATEGY.DLL\Bitmap\6787-veers-events.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="characters\STRATEGY.DLL\Bitmap\6788-brandei-events.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="characters\STRATEGY.DLL\Bitmap\6788-brandei-events.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="characters\STRATEGY.DLL\Bitmap\6789-covell-events.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="characters\STRATEGY.DLL\Bitmap\6789-covell-events.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="characters\STRATEGY.DLL\Bitmap\6790-dorja-events.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="characters\STRATEGY.DLL\Bitmap\6790-dorja-events.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="characters\STRATEGY.DLL\Bitmap\6791-bin-essada-events.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="characters\STRATEGY.DLL\Bitmap\6791-bin-essada-events.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="characters\STRATEGY.DLL\Bitmap\6792-niles-ferrier-events.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="characters\STRATEGY.DLL\Bitmap\6792-niles-ferrier-events.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="characters\STRATEGY.DLL\Bitmap\6793-grammel-events.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="characters\STRATEGY.DLL\Bitmap\6793-grammel-events.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="characters\STRATEGY.DLL\Bitmap\6794-griff-events.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="characters\STRATEGY.DLL\Bitmap\6794-griff-events.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="characters\STRATEGY.DLL\Bitmap\6795-klev-events.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="characters\STRATEGY.DLL\Bitmap\6795-klev-events.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="characters\STRATEGY.DLL\Bitmap\6796-needa-events.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="characters\STRATEGY.DLL\Bitmap\6796-needa-events.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="characters\STRATEGY.DLL\Bitmap\6797-bane-nothos-events.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="characters\STRATEGY.DLL\Bitmap\6797-bane-nothos-events.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="characters\STRATEGY.DLL\Bitmap\6798-orlok-events.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="characters\STRATEGY.DLL\Bitmap\6798-orlok-events.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="characters\STRATEGY.DLL\Bitmap\6799-pellaeon-events.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="characters\STRATEGY.DLL\Bitmap\6799-pellaeon-events.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="characters\STRATEGY.DLL\Bitmap\6800-screed-events.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="characters\STRATEGY.DLL\Bitmap\6800-screed-events.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="characters\STRATEGY.DLL\Bitmap\6801-thrawn-events.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="characters\STRATEGY.DLL\Bitmap\6801-thrawn-events.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="characters\STRATEGY.DLL\Bitmap\6802-zuggs-events.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="characters\STRATEGY.DLL\Bitmap\6802-zuggs-events.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="characters\STRATEGY.DLL\Bitmap\6803-daala-events.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="characters\STRATEGY.DLL\Bitmap\6803-daala-events.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="characters\STRATEGY.DLL\Bitmap\6804-pter-thanas-events.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="characters\STRATEGY.DLL\Bitmap\6804-pter-thanas-events.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="characters\STRATEGY.DLL\Bitmap\6805-bevel-lemelisk-events.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="characters\STRATEGY.DLL\Bitmap\6805-bevel-lemelisk-events.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="characters\STRATEGY.DLL\Bitmap\6806-shenir-rix-events.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="characters\STRATEGY.DLL\Bitmap\6806-shenir-rix-events.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="characters\STRATEGY.DLL\Bitmap\6807-noval-garaint-events.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="characters\STRATEGY.DLL\Bitmap\6807-noval-garaint-events.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="characters\STRATEGY.DLL\Bitmap\6808-garindan-events.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="characters\STRATEGY.DLL\Bitmap\6808-garindan-events.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="characters\STRATEGY.DLL\Bitmap\6809-menndo-events.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="characters\STRATEGY.DLL\Bitmap\6809-menndo-events.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="characters\STRATEGY.DLL\Bitmap\6810-labansat-events.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="characters\STRATEGY.DLL\Bitmap\6810-labansat-events.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="characters\STRATEGY.DLL\Bitmap\6811-villar-events.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="characters\STRATEGY.DLL\Bitmap\6811-villar-events.png">
