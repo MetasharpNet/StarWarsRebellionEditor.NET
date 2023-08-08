@@ -117,7 +117,6 @@ public partial class PatchForm : PatchDesignForm
                                     continue;
                                 var extension = Path.GetExtension(filePath).ToLowerInvariant();
                                 var id303 = Path.GetFileNameWithoutExtension(filePath).Split('-')[0];
-                                var id303PalId = (Convert.ToInt32(id303) + 1000).ToString();
                                 int res = -1;
                                 if (!Int32.TryParse(id303, out res) && !id303.Contains("."))
                                     id303 = Path.GetFileName(filePath);
@@ -140,7 +139,10 @@ public partial class PatchForm : PatchDesignForm
                                 {
                                     Tactical.Resources.Save303(id303, bytes);
                                     if (res > 10000)
+                                    {
+                                        var id303PalId = (Convert.ToInt32(id303) + 1000).ToString();
                                         Tactical.Resources.Save303(id303PalId, bi.ColorTable.Bytes);
+                                    }
                                 }
                             }
                         }
