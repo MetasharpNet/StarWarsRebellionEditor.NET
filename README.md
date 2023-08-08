@@ -54,8 +54,9 @@ If you have issues with full screen you can try to :
   * The 1.02 patch is automatically installed when you install the patch. No need to do it twice.
 
 ### Current Roadmap:
+* 61/61 new character sprites from LordLaForge including optimized base stats average display
+  * Finalization in progress. Soon available. 2023-08-08
 * new high definition 3d models for all capital ships
-* 0/61 new character sprites from LordLaForge including optimized base stats average display
 
 ### Final Roadmap (low chance i'll invest time on it):
 * Cleanup code on rarely used windows
