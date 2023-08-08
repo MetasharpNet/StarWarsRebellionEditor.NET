@@ -412,6 +412,7 @@ convention: centered inside, we use: 37x37 for giant gas, 35x35 for planets, 31x
 14200-zygerria.bmp
 
 TACTICAL.DLL\303 : Systems' tactical sprites in 256x256 (transparent background color = lower left pixel color, black)
+info: must use tactical-dll.act adobe color table palette colors
 -------------------------------------------------------
 14001-abregado-rae.bmp
 14002-agamar.bmp
