@@ -1724,184 +1724,367 @@
     <None Update="characters\STRATEGY.DLL\Bitmap\6811-villar-events.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="characters\TACTICAL.DLL\Bitmap\2201-ackbar-tactical.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="characters\TACTICAL.DLL\Bitmap\2201-ackbar-tactical.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="characters\TACTICAL.DLL\Bitmap\2202-afyon-tactical.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="characters\TACTICAL.DLL\Bitmap\2202-afyon-tactical.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="characters\TACTICAL.DLL\Bitmap\2203-kaiya-andrimetrum-tactical.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="characters\TACTICAL.DLL\Bitmap\2203-kaiya-andrimetrum-tactical.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="characters\TACTICAL.DLL\Bitmap\2204-wedge-antilles-tactical.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="characters\TACTICAL.DLL\Bitmap\2204-wedge-antilles-tactical.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="characters\TACTICAL.DLL\Bitmap\2205-lando-calrissian-tactical.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="characters\TACTICAL.DLL\Bitmap\2205-lando-calrissian-tactical.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="characters\TACTICAL.DLL\Bitmap\2206-chewbacca-tactical.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="characters\TACTICAL.DLL\Bitmap\2206-chewbacca-tactical.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="characters\TACTICAL.DLL\Bitmap\2207-covell-tactical.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="characters\TACTICAL.DLL\Bitmap\2207-covell-tactical.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="characters\TACTICAL.DLL\Bitmap\2208-daala-tactical.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="characters\TACTICAL.DLL\Bitmap\2208-daala-tactical.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="characters\TACTICAL.DLL\Bitmap\2209-bren-derlin-tactical.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="characters\TACTICAL.DLL\Bitmap\2209-bren-derlin-tactical.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="characters\TACTICAL.DLL\Bitmap\2210-jan-dodonna-tactical.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="characters\TACTICAL.DLL\Bitmap\2210-jan-dodonna-tactical.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="characters\TACTICAL.DLL\Bitmap\2211-dorja-tactical.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="characters\TACTICAL.DLL\Bitmap\2211-dorja-tactical.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="characters\TACTICAL.DLL\Bitmap\2212-drayson-tactical.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="characters\TACTICAL.DLL\Bitmap\2212-drayson-tactical.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="characters\TACTICAL.DLL\Bitmap\2214-emperor-palpatine-tactical.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="characters\TACTICAL.DLL\Bitmap\2214-emperor-palpatine-tactical.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="characters\TACTICAL.DLL\Bitmap\2215-bin-essada-tactical.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="characters\TACTICAL.DLL\Bitmap\2215-bin-essada-tactical.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="characters\TACTICAL.DLL\Bitmap\2216-niles-ferrier-tactical.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="characters\TACTICAL.DLL\Bitmap\2216-niles-ferrier-tactical.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="characters\TACTICAL.DLL\Bitmap\2217-borsk-fey%27lya-tactical.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="characters\TACTICAL.DLL\Bitmap\2217-borsk-fey%27lya-tactical.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="characters\TACTICAL.DLL\Bitmap\2218-griff-tactical.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="characters\TACTICAL.DLL\Bitmap\2218-griff-tactical.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="characters\TACTICAL.DLL\Bitmap\2219-grammel-tactical.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="characters\TACTICAL.DLL\Bitmap\2219-grammel-tactical.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="characters\TACTICAL.DLL\Bitmap\2220-garm-bel-iblis-tactical.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="characters\TACTICAL.DLL\Bitmap\2220-garm-bel-iblis-tactical.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="characters\TACTICAL.DLL\Bitmap\2221-garindan-tactical.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="characters\TACTICAL.DLL\Bitmap\2221-garindan-tactical.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="characters\TACTICAL.DLL\Bitmap\2222-jerjerrod-tactical.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="characters\TACTICAL.DLL\Bitmap\2222-jerjerrod-tactical.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="characters\TACTICAL.DLL\Bitmap\2223-roget-jiriss-tactical.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="characters\TACTICAL.DLL\Bitmap\2223-roget-jiriss-tactical.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="characters\TACTICAL.DLL\Bitmap\2225-talon-karrde-tactical.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="characters\TACTICAL.DLL\Bitmap\2225-talon-karrde-tactical.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="characters\TACTICAL.DLL\Bitmap\2226-klev-tactical.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="characters\TACTICAL.DLL\Bitmap\2226-klev-tactical.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="characters\TACTICAL.DLL\Bitmap\2227-labansat-tactical.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="characters\TACTICAL.DLL\Bitmap\2227-labansat-tactical.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="characters\TACTICAL.DLL\Bitmap\2228-bevel-lemelisk-tactical.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="characters\TACTICAL.DLL\Bitmap\2228-bevel-lemelisk-tactical.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="characters\TACTICAL.DLL\Bitmap\2229-luke-knight-tactical.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="characters\TACTICAL.DLL\Bitmap\2229-luke-knight-tactical.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="characters\TACTICAL.DLL\Bitmap\2230-luke-skywalker-tactical.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="characters\TACTICAL.DLL\Bitmap\2230-luke-skywalker-tactical.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="characters\TACTICAL.DLL\Bitmap\2231-crix-madine-tactical.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="characters\TACTICAL.DLL\Bitmap\2231-crix-madine-tactical.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="characters\TACTICAL.DLL\Bitmap\2232-ma%27w%27shiye-tactical.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="characters\TACTICAL.DLL\Bitmap\2232-ma%27w%27shiye-tactical.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="characters\TACTICAL.DLL\Bitmap\2233-menndo-tactical.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="characters\TACTICAL.DLL\Bitmap\2233-menndo-tactical.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="characters\TACTICAL.DLL\Bitmap\2234-mon-mothma-tactical.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="characters\TACTICAL.DLL\Bitmap\2234-mon-mothma-tactical.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="characters\TACTICAL.DLL\Bitmap\2235-narra-tactical.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="characters\TACTICAL.DLL\Bitmap\2235-narra-tactical.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="characters\TACTICAL.DLL\Bitmap\2236-needa-tactical.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="characters\TACTICAL.DLL\Bitmap\2236-needa-tactical.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="characters\TACTICAL.DLL\Bitmap\2237-huoba-neva-tactical.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="characters\TACTICAL.DLL\Bitmap\2237-huoba-neva-tactical.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="characters\TACTICAL.DLL\Bitmap\2239-bane-nothos-tactical.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="characters\TACTICAL.DLL\Bitmap\2239-bane-nothos-tactical.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="characters\TACTICAL.DLL\Bitmap\2240-noval-garaint-tactical.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="characters\TACTICAL.DLL\Bitmap\2240-noval-garaint-tactical.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="characters\TACTICAL.DLL\Bitmap\2241-leia-organa-tactical.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="characters\TACTICAL.DLL\Bitmap\2241-leia-organa-tactical.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="characters\TACTICAL.DLL\Bitmap\2242-orlok-tactical.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="characters\TACTICAL.DLL\Bitmap\2242-orlok-tactical.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="characters\TACTICAL.DLL\Bitmap\2243-orrimaarko-tactical.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="characters\TACTICAL.DLL\Bitmap\2243-orrimaarko-tactical.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="characters\TACTICAL.DLL\Bitmap\2244-ozzel-tactical.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="characters\TACTICAL.DLL\Bitmap\2244-ozzel-tactical.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="characters\TACTICAL.DLL\Bitmap\2245-page-tactical.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="characters\TACTICAL.DLL\Bitmap\2245-page-tactical.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="characters\TACTICAL.DLL\Bitmap\2246-pellaeon-tactical.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="characters\TACTICAL.DLL\Bitmap\2246-pellaeon-tactical.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="characters\TACTICAL.DLL\Bitmap\2247-piett-tactical.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="characters\TACTICAL.DLL\Bitmap\2247-piett-tactical.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="characters\TACTICAL.DLL\Bitmap\2248-mazer-rackus-tactical.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="characters\TACTICAL.DLL\Bitmap\2248-mazer-rackus-tactical.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="characters\TACTICAL.DLL\Bitmap\2249-tura-raftican-tactical.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="characters\TACTICAL.DLL\Bitmap\2249-tura-raftican-tactical.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="characters\TACTICAL.DLL\Bitmap\2250-carlist-rieekan-tactical.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="characters\TACTICAL.DLL\Bitmap\2250-carlist-rieekan-tactical.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="characters\TACTICAL.DLL\Bitmap\2251-shenir-rix-tactical.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="characters\TACTICAL.DLL\Bitmap\2251-shenir-rix-tactical.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="characters\TACTICAL.DLL\Bitmap\2253-screed-tactical.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="characters\TACTICAL.DLL\Bitmap\2253-screed-tactical.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="characters\TACTICAL.DLL\Bitmap\2254-syub-snunb-tactical.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="characters\TACTICAL.DLL\Bitmap\2254-syub-snunb-tactical.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="characters\TACTICAL.DLL\Bitmap\2255-han-solo-tactical.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="characters\TACTICAL.DLL\Bitmap\2255-han-solo-tactical.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="characters\TACTICAL.DLL\Bitmap\2256-adar-tallon-tactical.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="characters\TACTICAL.DLL\Bitmap\2256-adar-tallon-tactical.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="characters\TACTICAL.DLL\Bitmap\2257-pter-thanas-tactical.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="characters\TACTICAL.DLL\Bitmap\2257-pter-thanas-tactical.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="characters\TACTICAL.DLL\Bitmap\2258-thrawn-tactical.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="characters\TACTICAL.DLL\Bitmap\2258-thrawn-tactical.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="characters\TACTICAL.DLL\Bitmap\2260-darth-vader-tactical.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="characters\TACTICAL.DLL\Bitmap\2260-darth-vader-tactical.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="characters\TACTICAL.DLL\Bitmap\2261-veers-tactical.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="characters\TACTICAL.DLL\Bitmap\2261-veers-tactical.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="characters\TACTICAL.DLL\Bitmap\2262-villar-tactical.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="characters\TACTICAL.DLL\Bitmap\2262-villar-tactical.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="characters\TACTICAL.DLL\Bitmap\2263-sarin-virgilio-tactical.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="characters\TACTICAL.DLL\Bitmap\2263-sarin-virgilio-tactical.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="characters\TACTICAL.DLL\Bitmap\2264-vanden-willard-tactical.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="characters\TACTICAL.DLL\Bitmap\2264-vanden-willard-tactical.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="characters\TACTICAL.DLL\Bitmap\2265-zuggs-tactical.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="characters\TACTICAL.DLL\Bitmap\2265-zuggs-tactical.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="characters\TACTICAL.DLL\Bitmap\2266-brandei-tactical.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="characters\TACTICAL.DLL\Bitmap\2266-brandei-tactical.png">
