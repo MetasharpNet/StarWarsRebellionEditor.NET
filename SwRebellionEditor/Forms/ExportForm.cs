@@ -526,7 +526,6 @@ public partial class ExportForm : ExportDesignForm
         { "14120", "edata-neimoidia-(atlas)" },
         { "14121", "edata-nelvaan" },
         { "14122", "edata-nevarro" },
-        { "14122", "edata-nevarro.png" },
         { "14123", "edata-nexus-ortai" },
         { "14124", "edata-nubia-(atlas)" },
         { "14125", "edata-n'zoth-(atlas)" },
