@@ -63,7 +63,7 @@ public partial class ExportForm : ExportDesignForm
         // WAVE, Bitmap, RCData
         Directory.CreateDirectory("export\\COMMON.DLL");
         Directory.CreateDirectory("export\\COMMON.DLL\\Bitmap");
-        var ids = Common.Resources.RT_BITMAP.Keys;
+        var ids = Common.Resources.RT_BITMAP.Keys.ToList();
         foreach (var id in ids)
         {
             var lang = Common.Resources.GetBitmapLanguage(id);
@@ -74,7 +74,7 @@ public partial class ExportForm : ExportDesignForm
         // Bitmap
         Directory.CreateDirectory("export\\GOKRES.DLL");
         Directory.CreateDirectory("export\\GOKRES.DLL\\Bitmap");
-        ids = Gokres.Resources.RT_BITMAP.Keys;
+        ids = Gokres.Resources.RT_BITMAP.Keys.ToList();
         foreach (var id in ids)
         {
             var lang = Gokres.Resources.GetBitmapLanguage(id);
@@ -86,7 +86,7 @@ public partial class ExportForm : ExportDesignForm
         // WAVE, Bitmap, RCData
         Directory.CreateDirectory("export\\STRATEGY.DLL");
         Directory.CreateDirectory("export\\STRATEGY.DLL\\Bitmap");
-        ids = Strategy.Resources.RT_BITMAP.Keys;
+        ids = Strategy.Resources.RT_BITMAP.Keys.ToList();
         foreach (var id in ids)
         {
             var lang = Strategy.Resources.GetBitmapLanguage(id);
@@ -97,11 +97,25 @@ public partial class ExportForm : ExportDesignForm
         // WAVE, Cursor, Bitmap, RCData, Cursor Group, 301, 303
         Directory.CreateDirectory("export\\TACTICAL.DLL");
         Directory.CreateDirectory("export\\TACTICAL.DLL\\Bitmap");
-        ids = Tactical.Resources.RT_BITMAP.Keys;
+        ids = Tactical.Resources.RT_BITMAP.Keys.ToList();
         foreach (var id in ids)
         {
             var lang = Tactical.Resources.GetBitmapLanguage(id);
             DIB.ToDDB(Tactical.Resources.RT_BITMAP[id].Bitmap, ".\\export\\TACTICAL.DLL\\Bitmap\\" + id + "-" + lang + "-" + ".bmp");
+        }
+        Directory.CreateDirectory("export\\TACTICAL.DLL\\301");
+        ids = Tactical.Resources.RT_301.Keys.ToList();
+        foreach (var id in ids)
+        {
+            var lang = Tactical.Resources.Get301Language(id);
+            File.WriteAllBytes(".\\export\\TACTICAL.DLL\\301\\" + id + "-" + lang + "-" + ".x", Tactical.Resources.RT_301[id]);
+        }
+        Directory.CreateDirectory("export\\TACTICAL.DLL\\303");
+        ids = Tactical.Resources.RT_303.Keys.ToList();
+        foreach (var id in ids)
+        {
+            var lang = Tactical.Resources.Get303Language(id);
+            File.WriteAllBytes(".\\export\\TACTICAL.DLL\\303\\" + id + "-" + lang + "-" + ".bin", Tactical.Resources.RT_303[id]);
         }
 
         this.Close();
