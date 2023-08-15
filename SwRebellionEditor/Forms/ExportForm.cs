@@ -60,6 +60,7 @@ public partial class ExportForm : ExportDesignForm
         }
 
         // -------------------------- COMMON.DLL -------------------------
+        // WAVE, Bitmap, RCData
         Directory.CreateDirectory("export\\COMMON.DLL");
         Directory.CreateDirectory("export\\COMMON.DLL\\Bitmap");
         var ids = Common.Resources.RT_BITMAP.Keys;
@@ -70,6 +71,7 @@ public partial class ExportForm : ExportDesignForm
         }
 
         // -------------------------- GOKRES.DLL -------------------------
+        // Bitmap
         Directory.CreateDirectory("export\\GOKRES.DLL");
         Directory.CreateDirectory("export\\GOKRES.DLL\\Bitmap");
         ids = Gokres.Resources.RT_BITMAP.Keys;
@@ -81,6 +83,7 @@ public partial class ExportForm : ExportDesignForm
 
 
         // -------------------------- STRATEGY.DLL -------------------------
+        // WAVE, Bitmap, RCData
         Directory.CreateDirectory("export\\STRATEGY.DLL");
         Directory.CreateDirectory("export\\STRATEGY.DLL\\Bitmap");
         ids = Strategy.Resources.RT_BITMAP.Keys;
@@ -90,7 +93,8 @@ public partial class ExportForm : ExportDesignForm
             DIB.ToDDB(Strategy.Resources.RT_BITMAP[id].Bitmap, ".\\export\\STRATEGY.DLL\\Bitmap\\" + id + "-" + lang + "-" + ".bmp");
         }
 
-        // -------------------------- COMMON.DLL -------------------------
+        // -------------------------- TACTICAL.DLL -------------------------
+        // WAVE, Cursor, Bitmap, RCData, Cursor Group, 301, 303
         Directory.CreateDirectory("export\\TACTICAL.DLL");
         Directory.CreateDirectory("export\\TACTICAL.DLL\\Bitmap");
         ids = Tactical.Resources.RT_BITMAP.Keys;
@@ -100,7 +104,6 @@ public partial class ExportForm : ExportDesignForm
             DIB.ToDDB(Tactical.Resources.RT_BITMAP[id].Bitmap, ".\\export\\TACTICAL.DLL\\Bitmap\\" + id + "-" + lang + "-" + ".bmp");
         }
 
-        // save
         this.Close();
     }
 
