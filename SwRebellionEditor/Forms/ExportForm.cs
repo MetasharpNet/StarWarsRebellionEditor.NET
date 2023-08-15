@@ -55,7 +55,9 @@ public partial class ExportForm : ExportDesignForm
         foreach (var filePath in files)
         {
             var fileName = Path.GetFileName(filePath);
-            var newFileName = Path.GetExtension(fileName).Substring(1) + "-.bmp";
+            var extension = Path.GetExtension(fileName).Substring(1);
+            var name = Edata_Names.ContainsKey(extension) ? Edata_Names[extension] : "";
+            var newFileName = extension + "-" + name + ".bmp";
             File.Copy(filePath, Path.Combine(".\\export\\EDATA", newFileName), true);
         }
 
