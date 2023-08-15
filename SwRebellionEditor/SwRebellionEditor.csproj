@@ -32,11 +32,15 @@
 
   <ItemGroup>
     <Compile Update="FormsParents\GalaxyMapDesignForm.cs" />
+    <Compile Update="FormsParents\ExportDesignForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="FormsParents\PatchDesignForm.cs" />
     <Compile Update="FormsParents\SideParamTableEntryDesignForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Forms\GalaxyMapForm.cs" />
+    <Compile Update="Forms\ExportForm.cs" />
     <Compile Update="Forms\SideParamTableEntryForm.cs">
       <SubType>Form</SubType>
     </Compile>

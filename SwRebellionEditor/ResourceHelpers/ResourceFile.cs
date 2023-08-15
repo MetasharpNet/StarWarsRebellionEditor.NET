@@ -1,4 +1,6 @@
 ﻿using System.ComponentModel;
+using System.Drawing.Imaging;
+using System.Reflection;
 using System.Runtime.InteropServices;
 using System.Text;
 using Vestris.ResourceLib;
@@ -7,6 +9,17 @@ using static System.Runtime.InteropServices.JavaScript.JSType;
 namespace SwRebellionEditor;
 
 // resource lib: https://github.com/resourcelib/resourcelib
+
+#region LoadLibraryExFlags
+
+[Flags]
+public enum LoadLibraryExFlags : uint
+{
+    None = 0,
+    LOAD_LIBRARY_AS_IMAGE_RESOURCE = 0x20
+}
+
+#endregion
 
 public class ResourceFile
 {
@@ -17,9 +30,6 @@ public class ResourceFile
 
     [DllImport("kernel32.dll", SetLastError = true, CharSet = CharSet.Unicode, ExactSpelling = true, CallingConvention = CallingConvention.StdCall)]
     protected static extern bool UpdateResourceW(IntPtr hUpdate, IntPtr lpType, IntPtr lpName, ushort wLanguage, byte[] lpData, UInt32 cbData);
-
-    [DllImport("kernel32.dll", SetLastError = true, CharSet = CharSet.Unicode)]
-    protected static extern bool UpdateResource(IntPtr hUpdate, string lpType, string lpName, ushort wLanguage, IntPtr lpData, uint cbData);
 
     [DllImport("kernel32.dll", SetLastError = true, CharSet = CharSet.Unicode, ExactSpelling = true, CallingConvention = CallingConvention.StdCall)]
     protected static extern bool EndUpdateResourceW(IntPtr hUpdate, bool fDiscard);
@@ -98,7 +108,7 @@ public class ResourceFile
             }
             if (ri.ResourceTypes.Any(t => t.Name == "301"))
             {
-                var resources = ri.Resources.First(dr => dr.Key.ToString() == "301").Value;
+                var resources = ri.Resources.FirstOrDefault(dr => dr.Key.TypeName == "301").Value;
                 foreach (var r in resources)
                 {
                     RT_301.Add(r.Name.Name, r.WriteAndGetBytes());
@@ -107,13 +117,14 @@ public class ResourceFile
             }
             if (ri.ResourceTypes.Any(t => t.Name == "303"))
             {
-                var resources = ri.Resources.First(dr => dr.Key.ToString() == "303").Value;
+                var resources = ri.Resources.FirstOrDefault(dr => dr.Key.TypeName == "303").Value;
                 foreach (var r in resources)
                 {
                     RT_303.Add(r.Name.Name, r.WriteAndGetBytes());
                     RT_303_lang.Add(r.Name.Name, r.Language);
                 }
             }
+            ri.Dispose();
         }
     }
     public void Save()

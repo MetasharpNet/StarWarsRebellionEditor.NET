@@ -185,6 +185,7 @@ namespace SwRebellionEditor
             galaxyMapButton = new ToolStripButton();
             toolStripSeparator4 = new ToolStripSeparator();
             Patch_Button = new ToolStripButton();
+            Export_ToolStripMenuItem = new ToolStripMenuItem();
             menuStrip.SuspendLayout();
             statusStrip.SuspendLayout();
             toolStrip.SuspendLayout();
@@ -267,7 +268,7 @@ namespace SwRebellionEditor
             // 
             // Editor_Menu
             // 
-            Editor_Menu.DropDownItems.AddRange(new ToolStripItem[] { Galaxy_ToolStripMenuItem, CharactersAndTroops_ToolStripMenuItem, Ships_ToolStripMenuItem, Facilities_ToolStripMenuItem, Patch_ToolStripMenuItem, TestCode_ToolStripMenuItem });
+            Editor_Menu.DropDownItems.AddRange(new ToolStripItem[] { Galaxy_ToolStripMenuItem, CharactersAndTroops_ToolStripMenuItem, Ships_ToolStripMenuItem, Facilities_ToolStripMenuItem, Patch_ToolStripMenuItem, Export_ToolStripMenuItem, TestCode_ToolStripMenuItem });
             Editor_Menu.Name = "Editor_Menu";
             Editor_Menu.Size = new Size(50, 20);
             Editor_Menu.Text = "&Editor";
@@ -810,6 +811,13 @@ namespace SwRebellionEditor
             Patch_Button.Text = "Patch";
             Patch_Button.Click += Patch_Button_Click;
             // 
+            // Export_ToolStripMenuItem
+            // 
+            Export_ToolStripMenuItem.Name = "Export_ToolStripMenuItem";
+            Export_ToolStripMenuItem.Size = new Size(195, 22);
+            Export_ToolStripMenuItem.Text = "Export Game Data";
+            Export_ToolStripMenuItem.Click += Export_ToolStripMenuItem_Click;
+            // 
             // MainForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -849,6 +857,7 @@ namespace SwRebellionEditor
         private ToolStripMenuItem sideParamTableEntry_ToolStripMenuItem;
         private ToolStripMenuItem changeGameFolderToolStripMenuItem;
         private ToolStripMenuItem generalParamTableEntry_ToolStripMenuItem;
+        private ToolStripMenuItem Export_ToolStripMenuItem;
     }
 }
 #endregion

@@ -34,6 +34,16 @@ public partial class PatchForm : PatchDesignForm
     {
         Close();
     }
+    private void charactersWithoutStatsCheckBox_CheckedChanged(object sender, EventArgs e)
+    {
+        if (charactersWithoutStatsCheckBox.Checked)
+            charactersWithStatsCheckBox.Checked = false;
+    }
+    private void charactersWithStatsCheckBox_CheckedChanged(object sender, EventArgs e)
+    {
+        if (charactersWithStatsCheckBox.Checked)
+            charactersWithoutStatsCheckBox.Checked = false;
+    }
     private void patch_Click(object sender, EventArgs e)
     {
         this.Enabled = false;
@@ -64,6 +74,8 @@ public partial class PatchForm : PatchDesignForm
         {
             var setFolderOnly = Path.GetFileName(setFolder);
             if (setFolderOnly == "game-update")
+                continue;
+            if (setFolderOnly == "export")
                 continue;
             if (setFolderOnly == "characters+stats" && charactersWithoutStatsCheckBox.Checked)
                 continue;
@@ -335,16 +347,4 @@ public partial class PatchForm : PatchDesignForm
     }
 
     #endregion
-
-    private void charactersWithStatsCheckBox_CheckedChanged(object sender, EventArgs e)
-    {
-        if (charactersWithStatsCheckBox.Checked)
-            charactersWithoutStatsCheckBox.Checked = false;
-    }
-
-    private void charactersWithoutStatsCheckBox_CheckedChanged(object sender, EventArgs e)
-    {
-        if (charactersWithoutStatsCheckBox.Checked)
-            charactersWithStatsCheckBox.Checked = false;
-    }
 }

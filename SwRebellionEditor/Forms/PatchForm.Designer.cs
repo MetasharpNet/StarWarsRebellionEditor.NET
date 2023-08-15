@@ -235,6 +235,8 @@ namespace SwRebellionEditor
             KeyPreview = true;
             Margin = new Padding(4, 3, 4, 3);
             MaximizeBox = false;
+            MaximumSize = new Size(751, 317);
+            MinimumSize = new Size(751, 317);
             Name = "PatchForm";
             Text = "Patch";
             FormClosing += GameObjectsListForm_FormClosing;
