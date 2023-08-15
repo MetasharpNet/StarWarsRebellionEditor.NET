@@ -127,9 +127,9 @@ namespace SwRebellionEditor
             line4Label.AutoSize = true;
             line4Label.Location = new Point(33, 125);
             line4Label.Name = "line4Label";
-            line4Label.Size = new Size(409, 15);
+            line4Label.Size = new Size(648, 15);
             line4Label.TabIndex = 1161;
-            line4Label.Text = "- Exported Files: COMMON.DLL, GOKRES.DLL, STRATEGY.DLL, TACTICAL.DLL";
+            line4Label.Text = "- Exported Files: ALSPRITE.DLL, COMMON.DLL, EMSPRITE.DLL, GOKRES.DLL, REBDLOG.DLL, STRATEGY.DLL, TACTICAL.DLL";
             // 
             // line5Label
             // 
