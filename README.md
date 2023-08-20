@@ -9,6 +9,7 @@
 * Drag and drop a new System 37x37 BMP picture on current to update it
 * Export : Systems
 * Other features in testing accessible in menus only
+* Extract : Export in 1 click game resources in an export folder (bitmaps and 3d models for now)
 * Patch : Star Wars Rebellion 25th Anniversary patch
 
 ### 25th Anniversary Patch Features :
