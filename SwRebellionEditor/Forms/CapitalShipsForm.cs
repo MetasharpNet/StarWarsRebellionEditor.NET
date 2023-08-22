@@ -83,7 +83,7 @@ public partial class CapitalShipsForm : CapitalShipsDesignForm
     }
     protected override void LoadSideInfo()
     {
-        foreach (var cs in  GameFile.CapitalShips)
+        foreach (var cs in GameFile.CapitalShips)
         {
             cs.Name = TextStra.Resources.RT_STRING[cs.TextStraDllId];
             cs.EncyclopediaDescription = EncyText.Resources.RT_RCDATA[(cs.TextStraDllId - 4096).ToString()];

@@ -13,23 +13,23 @@ public class SDPRTB : DatFile
     public SDPRTB_SideParamTableEntry[] SideParamTableEntries;
 
     [Ignore]
-    public SDPRTB_SideParamTableEntry MinorCharactersInSmallGalaxy { get { return SideParamTableEntries.First(spe => spe.Id == 4); } }
+    public SDPRTB_SideParamTableEntry MinorCharactersInSmallGalaxy => SideParamTableEntries.First(spe => spe.Id == 4);
     [Ignore]
-    public SDPRTB_SideParamTableEntry MinorCharactersInMediumGalaxy { get { return SideParamTableEntries.First(spe => spe.Id == 5); } }
+    public SDPRTB_SideParamTableEntry MinorCharactersInMediumGalaxy => SideParamTableEntries.First(spe => spe.Id == 5);
     [Ignore]
-    public SDPRTB_SideParamTableEntry MinorCharactersInLargeGalaxy { get { return SideParamTableEntries.First(spe => spe.Id == 6); } }
+    public SDPRTB_SideParamTableEntry MinorCharactersInLargeGalaxy => SideParamTableEntries.First(spe => spe.Id == 6);
     [Ignore]
-    public SDPRTB_SideParamTableEntry SideLotteryCoreSystems1_ProbaForEachSide { get { return SideParamTableEntries.First(spe => spe.Id == 30); } }
+    public SDPRTB_SideParamTableEntry SideLotteryCoreSystems1_ProbaForEachSide => SideParamTableEntries.First(spe => spe.Id == 30);
     [Ignore]
-    public SDPRTB_SideParamTableEntry SideLotteryCoreSystems2_ProbaForEachSide { get { return SideParamTableEntries.First(spe => spe.Id == 31); } }
+    public SDPRTB_SideParamTableEntry SideLotteryCoreSystems2_ProbaForEachSide => SideParamTableEntries.First(spe => spe.Id == 31);
     [Ignore]
-    public SDPRTB_SideParamTableEntry SideLotteryCoreSystems1_PopularitySupportBase { get { return SideParamTableEntries.First(spe => spe.Id == 32); } }
+    public SDPRTB_SideParamTableEntry SideLotteryCoreSystems1_PopularitySupportBase => SideParamTableEntries.First(spe => spe.Id == 32);
     [Ignore]
-    public SDPRTB_SideParamTableEntry SideLotteryCoreSystems1_PopularitySupportVar { get { return SideParamTableEntries.First(spe => spe.Id == 33); } }
+    public SDPRTB_SideParamTableEntry SideLotteryCoreSystems1_PopularitySupportVar => SideParamTableEntries.First(spe => spe.Id == 33);
     [Ignore]
-    public SDPRTB_SideParamTableEntry SideLotteryCoreSystems2_PopularitySupportBase { get { return SideParamTableEntries.First(spe => spe.Id == 34); } }
+    public SDPRTB_SideParamTableEntry SideLotteryCoreSystems2_PopularitySupportBase => SideParamTableEntries.First(spe => spe.Id == 34);
     [Ignore]
-    public SDPRTB_SideParamTableEntry SideLotteryCoreSystems2_PopularitySupportVar { get { return SideParamTableEntries.First(spe => spe.Id == 35); } }
+    public SDPRTB_SideParamTableEntry SideLotteryCoreSystems2_PopularitySupportVar => SideParamTableEntries.First(spe => spe.Id == 35);
 
     public override void PostLoad()
     {

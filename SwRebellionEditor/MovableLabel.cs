@@ -9,8 +9,8 @@ public class MovableLabel : Label
     private Label _xLabel;
     public int _yDiff;
     private Label _yLabel;
-    public ushort X { get { return (ushort)(base.Location.X - _hostingPictureBox.Location.X + _originX); } }
-    public ushort Y { get { return (ushort)(base.Location.Y - _hostingPictureBox.Location.Y + _originY); } }
+    public ushort X => (ushort)(base.Location.X - _hostingPictureBox.Location.X + _originX);
+    public ushort Y => (ushort)(base.Location.Y - _hostingPictureBox.Location.Y + _originY);
 
     // Used to store the current cursor shape when we start to move the control
     private Cursor _currentCursor;

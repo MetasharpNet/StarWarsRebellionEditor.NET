@@ -1,10 +1,4 @@
-﻿using System.Drawing.Imaging;
-using System.Globalization;
-using System.Reflection;
-using System.Runtime.InteropServices;
-using System.Windows.Forms;
-using Vestris.ResourceLib;
-using static Vestris.ResourceLib.Gdi32;
+﻿using System.Globalization;
 
 namespace SwRebellionEditor;
 

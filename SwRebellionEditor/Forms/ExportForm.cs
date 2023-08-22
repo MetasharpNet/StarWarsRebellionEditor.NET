@@ -1,6 +1,4 @@
 ﻿using SwRebellionEditor.ResourceHelpers;
-using System.Drawing.Imaging;
-using System.Globalization;
 
 namespace SwRebellionEditor;
 
@@ -43,7 +41,7 @@ public partial class ExportForm : ExportDesignForm
             catch { MessageBox.Show("Please set in the editor a proper game folder."); }
             return;
         }
-        this.Enabled = false;
+        Enabled = false;
         // MANDATORY EXPECTATIONS
         // systems
         // id = 265, sectorid = 36   (Coruscant)
@@ -200,7 +198,7 @@ public partial class ExportForm : ExportDesignForm
         // -------------------------- VOICEFXE.DLL -------------------------
         // WAVE, Version Info
 
-        this.Close();
+        Close();
     }
 
     public string TrimDecimal(string s)

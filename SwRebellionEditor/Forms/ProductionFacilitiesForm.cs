@@ -34,7 +34,7 @@ public partial class ProductionFacilitiesForm : ProductionFacilitiesDesignForm
         maintenanceCost.Value = productionFacility.MaintenanceCost;
         name.Text = productionFacility.Name;
         nextProductionFamily.Value = productionFacility.NextProductionFamily;
-        this.productionFamily.Value = productionFacility.ProductionFamily;
+        productionFamily.Value = productionFacility.ProductionFamily;
         processingRate.Value = productionFacility.ProcessingRate;
         refinedMaterialCost.Value = productionFacility.RefinedMaterialCost;
         researchDifficulty.Value = productionFacility.ResearchDifficulty;

@@ -13,7 +13,7 @@ namespace SwRebellionEditor;
 // https://bytes.com/topic/visual-basic-net/answers/678944-how-display-dib-draw-into-bitmap
 //is the 1078 byte marker related to the bitmaps from strategy.dll?
 
-static public class DIB
+public static class DIB
 {
     public static Bitmap ToDDB(DeviceIndependentBitmap dib, string filePath = null)
     {

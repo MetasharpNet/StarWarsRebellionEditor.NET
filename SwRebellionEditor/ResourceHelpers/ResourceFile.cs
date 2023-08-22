@@ -1,10 +1,7 @@
 ﻿using System.ComponentModel;
-using System.Drawing.Imaging;
-using System.Reflection;
 using System.Runtime.InteropServices;
 using System.Text;
 using Vestris.ResourceLib;
-using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace SwRebellionEditor;
 

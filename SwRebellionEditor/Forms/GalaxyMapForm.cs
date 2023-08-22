@@ -20,7 +20,7 @@ public partial class GalaxyMapForm : GalaxyMapDesignForm
         InitializeComponent();
         SectorsDic = new Dictionary<MovableLabel, SECTORSD_Sector>();
         SystemsDic = new Dictionary<MovableLabel, SYSTEMSD_System>();
-        SystemsSprites= new List<MovableLabel>();
+        SystemsSprites = new List<MovableLabel>();
     }
 
     #endregion
