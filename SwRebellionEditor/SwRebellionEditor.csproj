@@ -115,6 +115,9 @@
     <None Update="characters+stats\GOKRES.DLL\Bitmap\19016-1033-gokres-fleet-drayson.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="characters+stats\GOKRES.DLL\Bitmap\19017-1033-gokres-fleet-borsk-fey%27lya.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="characters+stats\GOKRES.DLL\Bitmap\19018-1033-gokres-fleet-tura-raftican.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
@@ -158,6 +161,9 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="characters+stats\GOKRES.DLL\Bitmap\19032-1033-gokres-fleet-orrimaarko.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="characters+stats\GOKRES.DLL\Bitmap\19033-1033-gokres-fleet-ma%27w%27shiye.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="characters+stats\GOKRES.DLL\Bitmap\19072-1033-gokres-fleet-jerjerrod.bmp">
@@ -295,6 +301,9 @@
     <None Update="characters-stats\GOKRES.DLL\Bitmap\19016-1033-gokres-fleet-drayson.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="characters-stats\GOKRES.DLL\Bitmap\19017-1033-gokres-fleet-borsk-fey%27lya.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="characters-stats\GOKRES.DLL\Bitmap\19018-1033-gokres-fleet-tura-raftican.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
@@ -338,6 +347,9 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="characters-stats\GOKRES.DLL\Bitmap\19032-1033-gokres-fleet-orrimaarko.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="characters-stats\GOKRES.DLL\Bitmap\19033-1033-gokres-fleet-ma%27w%27shiye.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="characters-stats\GOKRES.DLL\Bitmap\19072-1033-gokres-fleet-jerjerrod.bmp">
@@ -472,6 +484,9 @@
     <None Update="characters\EDATA\086-edata-drayson.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="characters\EDATA\087-edata-borsk-fey%27lya.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="characters\EDATA\088-edata-tura-raftican.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
@@ -515,6 +530,9 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="characters\EDATA\102-edata-orrimaarko.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="characters\EDATA\103-edata-ma%27w%27shiye.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="characters\EDATA\104-edata-jerjerrod.bmp">
@@ -652,6 +670,9 @@
     <None Update="characters\GOKRES.DLL\Bitmap\2632-1033-gokres-build-drayson.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="characters\GOKRES.DLL\Bitmap\2633-1033-gokres-build-borsk-fey%27lya.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="characters\GOKRES.DLL\Bitmap\2634-1033-gokres-build-tura-raftican.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
@@ -695,6 +716,9 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="characters\GOKRES.DLL\Bitmap\2648-1033-gokres-build-orrimaarko.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="characters\GOKRES.DLL\Bitmap\2649-1033-gokres-build-ma%27w%27shiye.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="characters\GOKRES.DLL\Bitmap\2688-1033-gokres-build-jerjerrod.bmp">
@@ -832,6 +856,9 @@
     <None Update="characters\STRATEGY.DLL\Bitmap\11015-1033-strategy-info-niles-ferrier.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="characters\STRATEGY.DLL\Bitmap\11016-1033-strategy-info-borsk-fey%27lya.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="characters\STRATEGY.DLL\Bitmap\11017-1033-strategy-info-griff.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
@@ -869,6 +896,9 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="characters\STRATEGY.DLL\Bitmap\11029-1033-strategy-info-crix-madine.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="characters\STRATEGY.DLL\Bitmap\11030-1033-strategy-info-ma%27w%27shiye.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="characters\STRATEGY.DLL\Bitmap\11031-1033-strategy-info-menndo.bmp">
@@ -1009,6 +1039,9 @@
     <None Update="characters\STRATEGY.DLL\Bitmap\6728-1033-strategy-events-drayson.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="characters\STRATEGY.DLL\Bitmap\6729-1033-strategy-events-borsk-fey%27lya.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="characters\STRATEGY.DLL\Bitmap\6730-1033-strategy-events-tura-raftican.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
@@ -1052,6 +1085,9 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="characters\STRATEGY.DLL\Bitmap\6744-1033-strategy-events-orrimaarko.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="characters\STRATEGY.DLL\Bitmap\6745-1033-strategy-events-ma%27w%27shiye.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="characters\STRATEGY.DLL\Bitmap\6784-1033-strategy-events-jerjerrod.bmp">
@@ -1183,6 +1219,9 @@
     <None Update="characters\TACTICAL.DLL\Bitmap\2216-1033-tactical-niles-ferrier.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="characters\TACTICAL.DLL\Bitmap\2217-1033-tactical-borsk-fey%27lya.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="characters\TACTICAL.DLL\Bitmap\2218-1033-tactical-griff.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
@@ -1220,6 +1259,9 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="characters\TACTICAL.DLL\Bitmap\2231-1033-tactical-crix-madine.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="characters\TACTICAL.DLL\Bitmap\2232-1033-tactical-ma%27w%27shiye.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="characters\TACTICAL.DLL\Bitmap\2233-1033-tactical-menndo.bmp">
@@ -1440,6 +1482,24 @@
     <None Update="ships\TACTICAL.DLL\301\2062-1033-tactical-alliance-cr90-corellian-corvette-far.x">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="ships\TACTICAL.DLL\301\2070-1033-tactical-alliance-medium-transport-close-%28base%29.x">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="ships\TACTICAL.DLL\301\2071-1033-tactical-alliance-medium-transport-medium-%28base%29.x">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="ships\TACTICAL.DLL\301\2072-1033-tactical-alliance-medium-transport-far-%28base%29.x">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="ships\TACTICAL.DLL\301\2080-1033-tactical-alliance-bulk-transport-close-%28base%29.x">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="ships\TACTICAL.DLL\301\2081-1033-tactical-alliance-bulk-transport-medium-%28base%29.x">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="ships\TACTICAL.DLL\301\2082-1033-tactical-alliance-bulk-transport-far-%28base%29.x">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="ships\TACTICAL.DLL\301\2090-1033-tactical-alliance-dp20-frigate-corellian-gunship-close.x">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
@@ -1465,6 +1525,15 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="ships\TACTICAL.DLL\301\2112-1033-tactical-alliance-cc-7700-frigate-far.x">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="ships\TACTICAL.DLL\301\2120-1033-tactical-alliance-cc-9600-frigate-close-%28base%29.x">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="ships\TACTICAL.DLL\301\2121-1033-tactical-alliance-cc-9600-frigate-medium-%28base%29.x">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="ships\TACTICAL.DLL\301\2122-1033-tactical-alliance-cc-9600-frigate-far-%28base%29.x">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="ships\TACTICAL.DLL\301\2130-1033-tactical-alliance-bulwark-class-battlecruiser-mark-3-close.x">
@@ -1557,6 +1626,24 @@
     <None Update="ships\TACTICAL.DLL\301\2572-1033-tactical-empire-executor-class-star-dreadnought-far.x">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="ships\TACTICAL.DLL\301\2580-1033-tactical-empire-assault-transport-close-%28base%29.x">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="ships\TACTICAL.DLL\301\2581-1033-tactical-empire-assault-transport-medium-%28base%29.x">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="ships\TACTICAL.DLL\301\2582-1033-tactical-empire-assault-transport-far-%28base%29.x">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="ships\TACTICAL.DLL\301\2590-1033-tactical-empire-galleon-close-%28base%29.x">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="ships\TACTICAL.DLL\301\2591-1033-tactical-empire-galleon-medium-%28base%29.x">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="ships\TACTICAL.DLL\301\2592-1033-tactical-empire-galleon-far-%28base%29.x">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="ships\TACTICAL.DLL\301\2600-1033-tactical-empire-victory-2-class-star-destroyer-close.x">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
@@ -1600,6 +1687,246 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="ships\TACTICAL.DLL\301\2642-1033-tactical-empire-imperial-dreadnaught-class-heavy-cruiser-far.x">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="ships\TACTICAL.DLL\303\4000-1033-tactical-alliance-x-wing-red-128x128-%28metasharp%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="ships\TACTICAL.DLL\303\4001-1033-tactical-alliance-x-wing-blue-128x128-%28metasharp%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="ships\TACTICAL.DLL\303\4002-1033-tactical-alliance-x-wing-green-128x128-%28metasharp%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="ships\TACTICAL.DLL\303\4003-1033-tactical-alliance-x-wing-gold-128x128-%28metasharp%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="ships\TACTICAL.DLL\303\4004-1033-tactical-alliance-x-wing-gray-128x128-%28metasharp%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="ships\TACTICAL.DLL\303\4005-1033-tactical-alliance-x-wing-red-32x32-%28metasharp%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="ships\TACTICAL.DLL\303\4006-1033-tactical-alliance-x-wing-blue-32x32-%28metasharp%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="ships\TACTICAL.DLL\303\4007-1033-tactical-alliance-x-wing-gold-32x32-%28metasharp%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="ships\TACTICAL.DLL\303\4008-1033-tactical-alliance-x-wing-green-32x32-%28metasharp%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="ships\TACTICAL.DLL\303\4009-1033-tactical-alliance-x-wing-gray-32x32-%28metasharp%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="ships\TACTICAL.DLL\303\4010-1033-tactical-alliance-y-wing-red-128x128-%28metasharp%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="ships\TACTICAL.DLL\303\4011-1033-tactical-alliance-y-wing-blue-128x128-%28metasharp%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="ships\TACTICAL.DLL\303\4012-1033-tactical-alliance-y-wing-green-128x128-%28metasharp%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="ships\TACTICAL.DLL\303\4013-1033-tactical-alliance-y-wing-gold-128x128-%28metasharp%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="ships\TACTICAL.DLL\303\4014-1033-tactical-alliance-y-wing-gray-128x128-%28metasharp%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="ships\TACTICAL.DLL\303\4015-1033-tactical-alliance-y-wing-red-32x32-%28metasharp%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="ships\TACTICAL.DLL\303\4016-1033-tactical-alliance-y-wing-blue-32x32-%28metasharp%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="ships\TACTICAL.DLL\303\4017-1033-tactical-alliance-y-wing-green-32x32-%28metasharp%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="ships\TACTICAL.DLL\303\4018-1033-tactical-alliance-y-wing-gold-32x32-%28metasharp%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="ships\TACTICAL.DLL\303\4019-1033-tactical-alliance-y-wing-gray-32x32-%28metasharp%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="ships\TACTICAL.DLL\303\4020-1033-tactical-alliance-a-wing-red-128x128-%28metasharp%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="ships\TACTICAL.DLL\303\4021-1033-tactical-alliance-a-wing-blue-128x128-%28metasharp%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="ships\TACTICAL.DLL\303\4022-1033-tactical-alliance-a-wing-green-128x128-%28metasharp%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="ships\TACTICAL.DLL\303\4023-1033-tactical-alliance-a-wing-gold-128x128-%28metasharp%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="ships\TACTICAL.DLL\303\4024-1033-tactical-alliance-a-wing-gray-128x128-%28metasharp%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="ships\TACTICAL.DLL\303\4025-1033-tactical-alliance-a-wing-red-32x32-%28metasharp%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="ships\TACTICAL.DLL\303\4026-1033-tactical-alliance-a-wing-blue-32x32-%28metasharp%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="ships\TACTICAL.DLL\303\4027-1033-tactical-alliance-a-wing-green-32x32-%28metasharp%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="ships\TACTICAL.DLL\303\4028-1033-tactical-alliance-a-wing-gold-32x32-%28metasharp%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="ships\TACTICAL.DLL\303\4029-1033-tactical-alliance-a-wing-gray-32x32-%28metasharp%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="ships\TACTICAL.DLL\303\4030-1033-tactical-alliance-b-wing-red-128x128-%28metasharp%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="ships\TACTICAL.DLL\303\4031-1033-tactical-alliance-b-wing-blue-128x128-%28metasharp%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="ships\TACTICAL.DLL\303\4032-1033-tactical-alliance-b-wing-green-128x128-%28metasharp%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="ships\TACTICAL.DLL\303\4033-1033-tactical-alliance-b-wing-gold-128x128-%28metasharp%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="ships\TACTICAL.DLL\303\4034-1033-tactical-alliance-b-wing-gray-128x128-%28metasharp%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="ships\TACTICAL.DLL\303\4035-1033-tactical-alliance-b-wing-red-32x32-%28metasharp%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="ships\TACTICAL.DLL\303\4036-1033-tactical-alliance-b-wing-blue-32x32-%28metasharp%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="ships\TACTICAL.DLL\303\4037-1033-tactical-alliance-b-wing-green-32x32-%28metasharp%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="ships\TACTICAL.DLL\303\4038-1033-tactical-alliance-b-wing-gold-32x32-%28metasharp%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="ships\TACTICAL.DLL\303\4039-1033-tactical-alliance-b-wing-gray-32x32-%28metasharp%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="ships\TACTICAL.DLL\303\4100-1033-tactical-empire-tie-fighter-red-128x128-%28metasharp%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="ships\TACTICAL.DLL\303\4101-1033-tactical-empire-tie-fighter-blue-128x128-%28metasharp%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="ships\TACTICAL.DLL\303\4102-1033-tactical-empire-tie-fighter-green-128x128-%28metasharp%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="ships\TACTICAL.DLL\303\4103-1033-tactical-empire-tie-fighter-gold-128x128-%28metasharp%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="ships\TACTICAL.DLL\303\4104-1033-tactical-empire-tie-fighter-gray-128x128-%28metasharp%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="ships\TACTICAL.DLL\303\4105-1033-tactical-empire-tie-fighter-red-32x32-%28metasharp%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="ships\TACTICAL.DLL\303\4106-1033-tactical-empire-tie-fighter-blue-32x32-%28metasharp%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="ships\TACTICAL.DLL\303\4107-1033-tactical-empire-tie-fighter-green-32x32-%28metasharp%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="ships\TACTICAL.DLL\303\4108-1033-tactical-empire-tie-fighter-gold-32x32-%28metasharp%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="ships\TACTICAL.DLL\303\4109-1033-tactical-empire-tie-fighter-gray-32x32-%28metasharp%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="ships\TACTICAL.DLL\303\4110-1033-tactical-empire-tie-interceptor-red-128x128-%28metasharp%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="ships\TACTICAL.DLL\303\4111-1033-tactical-empire-tie-interceptor-blue-128x128-%28metasharp%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="ships\TACTICAL.DLL\303\4112-1033-tactical-empire-tie-interceptor-green-128x128-%28metasharp%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="ships\TACTICAL.DLL\303\4113-1033-tactical-empire-tie-interceptor-gold-128x128-%28metasharp%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="ships\TACTICAL.DLL\303\4114-1033-tactical-empire-tie-interceptor-gray-128x128-%28metasharp%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="ships\TACTICAL.DLL\303\4115-1033-tactical-empire-tie-interceptor-red-32x32-%28metasharp%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="ships\TACTICAL.DLL\303\4116-1033-tactical-empire-tie-interceptor-blue-32x32-%28metasharp%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="ships\TACTICAL.DLL\303\4117-1033-tactical-empire-tie-interceptor-green-32x32-%28metasharp%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="ships\TACTICAL.DLL\303\4118-1033-tactical-empire-tie-interceptor-gold-32x32-%28metasharp%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="ships\TACTICAL.DLL\303\4119-1033-tactical-empire-tie-interceptor-gray-32x32-%28metasharp%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="ships\TACTICAL.DLL\303\4120-1033-tactical-empire-tie-bomber-red-128x128-%28metasharp%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="ships\TACTICAL.DLL\303\4121-1033-tactical-empire-tie-bomber-blue-128x128-%28metasharp%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="ships\TACTICAL.DLL\303\4122-1033-tactical-empire-tie-bomber-green-128x128-%28metasharp%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="ships\TACTICAL.DLL\303\4123-1033-tactical-empire-tie-bomber-gold-128x128-%28metasharp%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="ships\TACTICAL.DLL\303\4124-1033-tactical-empire-tie-bomber-gray-128x128-%28metasharp%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="ships\TACTICAL.DLL\303\4125-1033-tactical-empire-tie-bomber-red-32x32-%28metasharp%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="ships\TACTICAL.DLL\303\4126-1033-tactical-empire-tie-bomber-blue-32x32-%28metasharp%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="ships\TACTICAL.DLL\303\4127-1033-tactical-empire-tie-bomber-green-32x32-%28metasharp%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="ships\TACTICAL.DLL\303\4128-1033-tactical-empire-tie-bomber-gold-32x32-%28metasharp%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="ships\TACTICAL.DLL\303\4129-1033-tactical-empire-tie-bomber-gray-32x32-%28metasharp%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="ships\TACTICAL.DLL\303\4130-1033-tactical-empire-tie-defender-red-128x128-%28metasharp%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="ships\TACTICAL.DLL\303\4131-1033-tactical-empire-tie-defender-blue-128x128-%28metasharp%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="ships\TACTICAL.DLL\303\4132-1033-tactical-empire-tie-defender-green-128x128-%28metasharp%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="ships\TACTICAL.DLL\303\4133-1033-tactical-empire-tie-defender-gold-128x128-%28metasharp%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="ships\TACTICAL.DLL\303\4134-1033-tactical-empire-tie-defender-gray-128x128-%28metasharp%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="ships\TACTICAL.DLL\303\4135-1033-tactical-empire-tie-defender-red-32x32-%28metasharp%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="ships\TACTICAL.DLL\303\4136-1033-tactical-empire-tie-defender-blue-32x32-%28metasharp%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="ships\TACTICAL.DLL\303\4137-1033-tactical-empire-tie-defender-green-32x32-%28metasharp%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="ships\TACTICAL.DLL\303\4138-1033-tactical-empire-tie-defender-gold-32x32-%28metasharp%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="ships\TACTICAL.DLL\303\4139-1033-tactical-empire-tie-defender-gray-32x32-%28metasharp%29.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="ships\TACTICAL.DLL\303\5020-1033-tactical-empire-deathstar-2-under-construction.bmp">
@@ -1833,7 +2160,19 @@
     <None Update="systems\EDATA\14003-edata-ahch-to.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="systems\EDATA\14004-edata-ajan-kloss-%28moon%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="systems\EDATA\14005-edata-anaxes.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="systems\EDATA\14006-edata-anoat-%28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="systems\EDATA\14007-edata-ansion-%28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="systems\EDATA\14008-edata-bakura-%28atlas%29.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="systems\EDATA\14009-edata-balmorra.bmp">
@@ -1848,13 +2187,34 @@
     <None Update="systems\EDATA\14012-edata-bescane.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="systems\EDATA\14013-edata-bespin-%28gas-giant%29-%28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="systems\EDATA\14014-edata-bestine-%28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="systems\EDATA\14015-edata-bith.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="systems\EDATA\14016-edata-bonadan-%28atlas%29.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="systems\EDATA\14017-edata-boonta.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="systems\EDATA\14018-edata-borosk.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="systems\EDATA\14019-edata-bothawui-%28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="systems\EDATA\14020-edata-boz-pity-%28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="systems\EDATA\14021-edata-brentaal-iv-%28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="systems\EDATA\14022-edata-byss-%28atlas%29.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="systems\EDATA\14023-edata-cantonica.bmp">
@@ -1875,6 +2235,9 @@
     <None Update="systems\EDATA\14028-edata-chardaan.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="systems\EDATA\14029-edata-christophsis-%28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="systems\EDATA\14030-edata-circumtore.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
@@ -1882,6 +2245,9 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="systems\EDATA\14032-edata-concord-dawn.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="systems\EDATA\14033-edata-corellia-%28atlas%29.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="systems\EDATA\14034-edata-corsin.bmp">
@@ -1893,10 +2259,25 @@
     <None Update="systems\EDATA\14036-edata-crait.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="systems\EDATA\14037-edata-csilla-%28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="systems\EDATA\14038-edata-cyphar.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="systems\EDATA\14039-edata-daalang.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="systems\EDATA\14040-edata-dagobah-%28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="systems\EDATA\14041-edata-dantooine-%28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="systems\EDATA\14042-edata-dathomir-%28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="systems\EDATA\14043-edata-delaya-%28alderaan%29.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="systems\EDATA\14044-edata-dellalt.bmp">
@@ -1914,10 +2295,16 @@
     <None Update="systems\EDATA\14048-edata-dolla.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="systems\EDATA\14049-edata-d%27qar.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="systems\EDATA\14050-edata-dromund-kaas.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="systems\EDATA\14051-edata-dubrillion.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="systems\EDATA\14052-edata-duro-%28atlas%29.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="systems\EDATA\14053-edata-eadu.bmp">
@@ -1927,6 +2314,12 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="systems\EDATA\14055-edata-empress-teta.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="systems\EDATA\14056-edata-endor-%28moon%29-%28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="systems\EDATA\14057-edata-eriadu-%28atlas%29.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="systems\EDATA\14058-edata-esseles.bmp">
@@ -1941,13 +2334,25 @@
     <None Update="systems\EDATA\14061-edata-farstine.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="systems\EDATA\14062-edata-felucia-%28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="systems\EDATA\14063-edata-florn.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="systems\EDATA\14064-edata-fondor-%28atlas%29.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="systems\EDATA\14065-edata-formos.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="systems\EDATA\14066-edata-gamor.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="systems\EDATA\14067-edata-gamorr-%28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="systems\EDATA\14068-edata-geonosis-%28atlas%29.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="systems\EDATA\14069-edata-gerrenthum.bmp">
@@ -1959,7 +2364,19 @@
     <None Update="systems\EDATA\14071-edata-glee-anselm.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="systems\EDATA\14072-edata-hapes-%28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="systems\EDATA\14073-edata-honoghr-%28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="systems\EDATA\14074-edata-hosnian-prime.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="systems\EDATA\14075-edata-hoth-%28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="systems\EDATA\14076-edata-iego-%28atlas%29.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="systems\EDATA\14077-edata-ilum.bmp">
@@ -1971,19 +2388,37 @@
     <None Update="systems\EDATA\14079-edata-isde-naha.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="systems\EDATA\14080-edata-ithor-%28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="systems\EDATA\14081-edata-jaemus.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="systems\EDATA\14082-edata-jakku.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="systems\EDATA\14083-edata-jedha-%28moon%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="systems\EDATA\14084-edata-kabal.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="systems\EDATA\14085-edata-kalee-%28atlas%29.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="systems\EDATA\14086-edata-kaller.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="systems\EDATA\14087-edata-kamino-%28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="systems\EDATA\14088-edata-karfeddion.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="systems\EDATA\14089-edata-kashyyyk-%28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="systems\EDATA\14090-edata-kef-bir-%28moon%29.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="systems\EDATA\14091-edata-keitum.bmp">
@@ -1993,6 +2428,12 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="systems\EDATA\14093-edata-kimiji.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="systems\EDATA\14094-edata-kuat-%28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="systems\EDATA\14095-edata-lah%27mu.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="systems\EDATA\14096-edata-lok.bmp">
@@ -2013,7 +2454,13 @@
     <None Update="systems\EDATA\14101-edata-makeb.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="systems\EDATA\14102-edata-malastare-%28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="systems\EDATA\14103-edata-manaan.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="systems\EDATA\14104-edata-mandalore-%28atlas%29.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="systems\EDATA\14105-edata-maridun.bmp">
@@ -2022,16 +2469,46 @@
     <None Update="systems\EDATA\14106-edata-milagro.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="systems\EDATA\14107-edata-mimban-%28circarpous-v%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="systems\EDATA\14108-edata-mirial.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="systems\EDATA\14109-edata-mon-calamari-%28atlas%29.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="systems\EDATA\14110-edata-mon-gazza.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="systems\EDATA\14111-edata-moraband-%28korriban%29-%28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="systems\EDATA\14112-edata-mortis.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="systems\EDATA\14113-edata-mustafar-%28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="systems\EDATA\14114-edata-muunilinst.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="systems\EDATA\14115-edata-mygeeto-%28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="systems\EDATA\14116-edata-naboo-%28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="systems\EDATA\14117-edata-nagi-%28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="systems\EDATA\14118-edata-nal-hutta-%28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="systems\EDATA\14119-edata-nar-shaddaa-%28moon%29-%28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="systems\EDATA\14120-edata-neimoidia-%28atlas%29.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="systems\EDATA\14121-edata-nelvaan.bmp">
@@ -2046,7 +2523,22 @@
     <None Update="systems\EDATA\14123-edata-nexus-ortai.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="systems\EDATA\14124-edata-nubia-%28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="systems\EDATA\14125-edata-n%27zoth-%28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="systems\EDATA\14126-edata-onderon-%28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="systems\EDATA\14127-edata-ord-mantel-%28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="systems\EDATA\14128-edata-ord-trasi.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="systems\EDATA\14129-edata-ossus-%28atlas%29.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="systems\EDATA\14130-edata-pakuuni.bmp">
@@ -2076,13 +2568,46 @@
     <None Update="systems\EDATA\14138-edata-quesh.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="systems\EDATA\14139-edata-rakata-prime-%28lehon%29-%28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="systems\EDATA\14140-edata-randon.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="systems\EDATA\14141-edata-rattatak-%28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="systems\EDATA\14142-edata-raxus-prime-%28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="systems\EDATA\14143-edata-rhen-var-%28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="systems\EDATA\14144-edata-rishi-%28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="systems\EDATA\14145-edata-rodia-%28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="systems\EDATA\14146-edata-ruusan-%28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="systems\EDATA\14147-edata-ryloth-%28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="systems\EDATA\14148-edata-saleucami-%28atlas%29.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="systems\EDATA\14149-edata-savareen.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="systems\EDATA\14150-edata-scarif.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="systems\EDATA\14151-edata-sernpidal-%28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="systems\EDATA\14152-edata-shadda-bi-boran-%28atlas%29.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="systems\EDATA\14153-edata-shili.bmp">
@@ -2100,6 +2625,9 @@
     <None Update="systems\EDATA\14157-edata-sluis-van.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="systems\EDATA\14158-edata-smuggler%27s-run.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="systems\EDATA\14159-edata-socorro.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
@@ -2113,6 +2641,9 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="systems\EDATA\14163-edata-sy-myrth.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="systems\EDATA\14164-edata-taanab-%28atlas%29.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="systems\EDATA\14165-edata-takodana.bmp">
@@ -2136,7 +2667,19 @@
     <None Update="systems\EDATA\14171-edata-terminus.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="systems\EDATA\14172-edata-teth-%28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="systems\EDATA\14173-edata-the-redoubt-%28brask-oto%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="systems\EDATA\14174-edata-thyferra-%28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="systems\EDATA\14175-edata-tirahnn.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="systems\EDATA\14176-edata-toydaria-%28atlas%29.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="systems\EDATA\14177-edata-tralus.bmp">
@@ -2145,10 +2688,22 @@
     <None Update="systems\EDATA\14178-edata-trandosha.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="systems\EDATA\14179-edata-trask-%28moon%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="systems\EDATA\14180-edata-triton-%28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="systems\EDATA\14181-edata-tund-%28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="systems\EDATA\14182-edata-tython.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="systems\EDATA\14183-edata-umbara.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="systems\EDATA\14184-edata-utapau-%28atlas%29.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="systems\EDATA\14185-edata-vandor.bmp">
@@ -2169,7 +2724,19 @@
     <None Update="systems\EDATA\14190-edata-word-tandell.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="systems\EDATA\14191-edata-wroona-%28moon%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="systems\EDATA\14192-edata-yaga-minor.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="systems\EDATA\14193-edata-yag%27dhul.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="systems\EDATA\14194-edata-yavin-4-%28moon%29-%28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="systems\EDATA\14195-edata-yavin-prime-%28gas-giant%29.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="systems\EDATA\14196-edata-zakuul.bmp">
@@ -2179,6 +2746,9 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="systems\EDATA\14198-edata-ziost.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="systems\EDATA\14199-edata-zonama-sekot-%28atlas%29.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="systems\EDATA\14200-edata-zygerria.bmp">
@@ -2202,7 +2772,19 @@
     <None Update="systems\STRATEGY.DLL\Bitmap\14003-1033-strategy-ahch-to.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="systems\STRATEGY.DLL\Bitmap\14004-1033-strategy-ajan-kloss-%28moon%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="systems\STRATEGY.DLL\Bitmap\14005-1033-strategy-anaxes.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="systems\STRATEGY.DLL\Bitmap\14006-1033-strategy-anoat-%28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="systems\STRATEGY.DLL\Bitmap\14007-1033-strategy-ansion-%28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="systems\STRATEGY.DLL\Bitmap\14008-1033-strategy-bakura-%28atlas%29.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="systems\STRATEGY.DLL\Bitmap\14009-1033-strategy-balmorra.bmp">
@@ -2217,13 +2799,34 @@
     <None Update="systems\STRATEGY.DLL\Bitmap\14012-1033-strategy-bescane.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="systems\STRATEGY.DLL\Bitmap\14013-1033-strategy-bespin-%28gas-giant%29-%28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="systems\STRATEGY.DLL\Bitmap\14014-1033-strategy-bestine-%28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="systems\STRATEGY.DLL\Bitmap\14015-1033-strategy-bith.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="systems\STRATEGY.DLL\Bitmap\14016-1033-strategy-bonadan-%28atlas%29.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="systems\STRATEGY.DLL\Bitmap\14017-1033-strategy-boonta.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="systems\STRATEGY.DLL\Bitmap\14018-1033-strategy-borosk.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="systems\STRATEGY.DLL\Bitmap\14019-1033-strategy-bothawui-%28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="systems\STRATEGY.DLL\Bitmap\14020-1033-strategy-boz-pity-%28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="systems\STRATEGY.DLL\Bitmap\14021-1033-strategy-brentaal-iv-%28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="systems\STRATEGY.DLL\Bitmap\14022-1033-strategy-byss-%28atlas%29.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="systems\STRATEGY.DLL\Bitmap\14023-1033-strategy-cantonica.bmp">
@@ -2244,6 +2847,9 @@
     <None Update="systems\STRATEGY.DLL\Bitmap\14028-1033-strategy-chardaan.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="systems\STRATEGY.DLL\Bitmap\14029-1033-strategy-christophsis-%28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="systems\STRATEGY.DLL\Bitmap\14030-1033-strategy-circumtore.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
@@ -2251,6 +2857,9 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="systems\STRATEGY.DLL\Bitmap\14032-1033-strategy-concord-dawn.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="systems\STRATEGY.DLL\Bitmap\14033-1033-strategy-corellia-%28atlas%29.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="systems\STRATEGY.DLL\Bitmap\14034-1033-strategy-corsin.bmp">
@@ -2262,10 +2871,25 @@
     <None Update="systems\STRATEGY.DLL\Bitmap\14036-1033-strategy-crait.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="systems\STRATEGY.DLL\Bitmap\14037-1033-strategy-csilla-%28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="systems\STRATEGY.DLL\Bitmap\14038-1033-strategy-cyphar.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="systems\STRATEGY.DLL\Bitmap\14039-1033-strategy-daalang.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="systems\STRATEGY.DLL\Bitmap\14040-1033-strategy-dagobah-%28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="systems\STRATEGY.DLL\Bitmap\14041-1033-strategy-dantooine-%28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="systems\STRATEGY.DLL\Bitmap\14042-1033-strategy-dathomir-%28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="systems\STRATEGY.DLL\Bitmap\14043-1033-strategy-delaya-%28alderaan%29.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="systems\STRATEGY.DLL\Bitmap\14044-1033-strategy-dellalt.bmp">
@@ -2283,10 +2907,16 @@
     <None Update="systems\STRATEGY.DLL\Bitmap\14048-1033-strategy-dolla.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="systems\STRATEGY.DLL\Bitmap\14049-1033-strategy-d%27qar.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="systems\STRATEGY.DLL\Bitmap\14050-1033-strategy-dromund-kaas.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="systems\STRATEGY.DLL\Bitmap\14051-1033-strategy-dubrillion.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="systems\STRATEGY.DLL\Bitmap\14052-1033-strategy-duro-%28atlas%29.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="systems\STRATEGY.DLL\Bitmap\14053-1033-strategy-eadu.bmp">
@@ -2296,6 +2926,12 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="systems\STRATEGY.DLL\Bitmap\14055-1033-strategy-empress-teta.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="systems\STRATEGY.DLL\Bitmap\14056-1033-strategy-endor-%28moon%29-%28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="systems\STRATEGY.DLL\Bitmap\14057-1033-strategy-eriadu-%28atlas%29.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="systems\STRATEGY.DLL\Bitmap\14058-1033-strategy-esseles.bmp">
@@ -2310,13 +2946,25 @@
     <None Update="systems\STRATEGY.DLL\Bitmap\14061-1033-strategy-farstine.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="systems\STRATEGY.DLL\Bitmap\14062-1033-strategy-felucia-%28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="systems\STRATEGY.DLL\Bitmap\14063-1033-strategy-florn.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="systems\STRATEGY.DLL\Bitmap\14064-1033-strategy-fondor-%28atlas%29.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="systems\STRATEGY.DLL\Bitmap\14065-1033-strategy-formos.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="systems\STRATEGY.DLL\Bitmap\14066-1033-strategy-gamor.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="systems\STRATEGY.DLL\Bitmap\14067-1033-strategy-gamorr-%28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="systems\STRATEGY.DLL\Bitmap\14068-1033-strategy-geonosis-%28atlas%29.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="systems\STRATEGY.DLL\Bitmap\14069-1033-strategy-gerrenthum.bmp">
@@ -2328,7 +2976,19 @@
     <None Update="systems\STRATEGY.DLL\Bitmap\14071-1033-strategy-glee-anselm.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="systems\STRATEGY.DLL\Bitmap\14072-1033-strategy-hapes-%28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="systems\STRATEGY.DLL\Bitmap\14073-1033-strategy-honoghr-%28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="systems\STRATEGY.DLL\Bitmap\14074-1033-strategy-hosnian-prime.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="systems\STRATEGY.DLL\Bitmap\14075-1033-strategy-hoth-%28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="systems\STRATEGY.DLL\Bitmap\14076-1033-strategy-iego-%28atlas%29.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="systems\STRATEGY.DLL\Bitmap\14077-1033-strategy-ilum.bmp">
@@ -2340,19 +3000,37 @@
     <None Update="systems\STRATEGY.DLL\Bitmap\14079-1033-strategy-isde-naha.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="systems\STRATEGY.DLL\Bitmap\14080-1033-strategy-ithor-%28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="systems\STRATEGY.DLL\Bitmap\14081-1033-strategy-jaemus.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="systems\STRATEGY.DLL\Bitmap\14082-1033-strategy-jakku.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="systems\STRATEGY.DLL\Bitmap\14083-1033-strategy-jedha-%28moon%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="systems\STRATEGY.DLL\Bitmap\14084-1033-strategy-kabal.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="systems\STRATEGY.DLL\Bitmap\14085-1033-strategy-kalee-%28atlas%29.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="systems\STRATEGY.DLL\Bitmap\14086-1033-strategy-kaller.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="systems\STRATEGY.DLL\Bitmap\14087-1033-strategy-kamino-%28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="systems\STRATEGY.DLL\Bitmap\14088-1033-strategy-karfeddion.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="systems\STRATEGY.DLL\Bitmap\14089-1033-strategy-kashyyyk-%28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="systems\STRATEGY.DLL\Bitmap\14090-1033-strategy-kef-bir-%28moon%29.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="systems\STRATEGY.DLL\Bitmap\14091-1033-strategy-keitum.bmp">
@@ -2362,6 +3040,12 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="systems\STRATEGY.DLL\Bitmap\14093-1033-strategy-kimiji.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="systems\STRATEGY.DLL\Bitmap\14094-1033-strategy-kuat-%28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="systems\STRATEGY.DLL\Bitmap\14095-1033-strategy-lah%27mu.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="systems\STRATEGY.DLL\Bitmap\14096-1033-strategy-lok.bmp">
@@ -2382,7 +3066,13 @@
     <None Update="systems\STRATEGY.DLL\Bitmap\14101-1033-strategy-makeb.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="systems\STRATEGY.DLL\Bitmap\14102-1033-strategy-malastare-%28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="systems\STRATEGY.DLL\Bitmap\14103-1033-strategy-manaan.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="systems\STRATEGY.DLL\Bitmap\14104-1033-strategy-mandalore-%28atlas%29.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="systems\STRATEGY.DLL\Bitmap\14105-1033-strategy-maridun.bmp">
@@ -2391,16 +3081,46 @@
     <None Update="systems\STRATEGY.DLL\Bitmap\14106-1033-strategy-milagro.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="systems\STRATEGY.DLL\Bitmap\14107-1033-strategy-mimban-%28circarpous-v%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="systems\STRATEGY.DLL\Bitmap\14108-1033-strategy-mirial.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="systems\STRATEGY.DLL\Bitmap\14109-1033-strategy-mon-calamari-%28atlas%29.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="systems\STRATEGY.DLL\Bitmap\14110-1033-strategy-mon-gazza.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="systems\STRATEGY.DLL\Bitmap\14111-1033-strategy-moraband-%28korriban%29-%28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="systems\STRATEGY.DLL\Bitmap\14112-1033-strategy-mortis.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="systems\STRATEGY.DLL\Bitmap\14113-1033-strategy-mustafar-%28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="systems\STRATEGY.DLL\Bitmap\14114-1033-strategy-muunilinst.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="systems\STRATEGY.DLL\Bitmap\14115-1033-strategy-mygeeto-%28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="systems\STRATEGY.DLL\Bitmap\14116-1033-strategy-naboo-%28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="systems\STRATEGY.DLL\Bitmap\14117-1033-strategy-nagi-%28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="systems\STRATEGY.DLL\Bitmap\14118-1033-strategy-nal-hutta-%28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="systems\STRATEGY.DLL\Bitmap\14119-1033-strategy-nar-shaddaa-%28moon%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="systems\STRATEGY.DLL\Bitmap\14120-1033-strategy-neimoidia-%28atlas%29.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="systems\STRATEGY.DLL\Bitmap\14121-1033-strategy-nelvaan.bmp">
@@ -2412,7 +3132,22 @@
     <None Update="systems\STRATEGY.DLL\Bitmap\14123-1033-strategy-nexus-ortai.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="systems\STRATEGY.DLL\Bitmap\14124-1033-strategy-nubia-%28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="systems\STRATEGY.DLL\Bitmap\14125-1033-strategy-n%27zoth-%28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="systems\STRATEGY.DLL\Bitmap\14126-1033-strategy-onderon-%28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="systems\STRATEGY.DLL\Bitmap\14127-1033-strategy-ord-mantel-%28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="systems\STRATEGY.DLL\Bitmap\14128-1033-strategy-ord-trasi.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="systems\STRATEGY.DLL\Bitmap\14129-1033-strategy-ossus-%28atlas%29.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="systems\STRATEGY.DLL\Bitmap\14130-1033-strategy-pakuuni.bmp">
@@ -2442,13 +3177,46 @@
     <None Update="systems\STRATEGY.DLL\Bitmap\14138-1033-strategy-quesh.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="systems\STRATEGY.DLL\Bitmap\14139-1033-strategy-rakata-prime-%28lehon%29-%28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="systems\STRATEGY.DLL\Bitmap\14140-1033-strategy-randon.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="systems\STRATEGY.DLL\Bitmap\14141-1033-strategy-rattatak-%28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="systems\STRATEGY.DLL\Bitmap\14142-1033-strategy-raxus-prime-%28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="systems\STRATEGY.DLL\Bitmap\14143-1033-strategy-rhen-var-%28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="systems\STRATEGY.DLL\Bitmap\14144-1033-strategy-rishi-%28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="systems\STRATEGY.DLL\Bitmap\14145-1033-strategy-rodia-%28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="systems\STRATEGY.DLL\Bitmap\14146-1033-strategy-ruusan-%28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="systems\STRATEGY.DLL\Bitmap\14147-1033-strategy-ryloth-%28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="systems\STRATEGY.DLL\Bitmap\14148-1033-strategy-saleucami-%28atlas%29.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="systems\STRATEGY.DLL\Bitmap\14149-1033-strategy-savareen.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="systems\STRATEGY.DLL\Bitmap\14150-1033-strategy-scarif.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="systems\STRATEGY.DLL\Bitmap\14151-1033-strategy-sernpidal-%28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="systems\STRATEGY.DLL\Bitmap\14152-1033-strategy-shadda-bi-boran-%28atlas%29.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="systems\STRATEGY.DLL\Bitmap\14153-1033-strategy-shili.bmp">
@@ -2466,6 +3234,9 @@
     <None Update="systems\STRATEGY.DLL\Bitmap\14157-1033-strategy-sluis-van.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="systems\STRATEGY.DLL\Bitmap\14158-1033-strategy-smuggler%27s-run.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="systems\STRATEGY.DLL\Bitmap\14159-1033-strategy-socorro.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
@@ -2479,6 +3250,9 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="systems\STRATEGY.DLL\Bitmap\14163-1033-strategy-sy-myrth.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="systems\STRATEGY.DLL\Bitmap\14164-1033-strategy-taanab-%28atlas%29.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="systems\STRATEGY.DLL\Bitmap\14165-1033-strategy-takodana.bmp">
@@ -2502,7 +3276,19 @@
     <None Update="systems\STRATEGY.DLL\Bitmap\14171-1033-strategy-terminus.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="systems\STRATEGY.DLL\Bitmap\14172-1033-strategy-teth-%28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="systems\STRATEGY.DLL\Bitmap\14173-1033-strategy-the-redoubt-%28brask-oto%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="systems\STRATEGY.DLL\Bitmap\14174-1033-strategy-thyferra-%28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="systems\STRATEGY.DLL\Bitmap\14175-1033-strategy-tirahnn.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="systems\STRATEGY.DLL\Bitmap\14176-1033-strategy-toydaria-%28atlas%29.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="systems\STRATEGY.DLL\Bitmap\14177-1033-strategy-tralus.bmp">
@@ -2511,10 +3297,22 @@
     <None Update="systems\STRATEGY.DLL\Bitmap\14178-1033-strategy-trandosha.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="systems\STRATEGY.DLL\Bitmap\14179-1033-strategy-trask-%28moon%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="systems\STRATEGY.DLL\Bitmap\14180-1033-strategy-triton-%28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="systems\STRATEGY.DLL\Bitmap\14181-1033-strategy-tund-%28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="systems\STRATEGY.DLL\Bitmap\14182-1033-strategy-tython.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="systems\STRATEGY.DLL\Bitmap\14183-1033-strategy-umbara.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="systems\STRATEGY.DLL\Bitmap\14184-1033-strategy-utapau-%28atlas%29.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="systems\STRATEGY.DLL\Bitmap\14185-1033-strategy-vandor.bmp">
@@ -2535,7 +3333,19 @@
     <None Update="systems\STRATEGY.DLL\Bitmap\14190-1033-strategy-word-tandell.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="systems\STRATEGY.DLL\Bitmap\14191-1033-strategy-wroona-%28moon%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="systems\STRATEGY.DLL\Bitmap\14192-1033-strategy-yaga-minor.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="systems\STRATEGY.DLL\Bitmap\14193-1033-strategy-yag%27dhul.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="systems\STRATEGY.DLL\Bitmap\14194-1033-strategy-yavin-4-%28moon%29-%28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="systems\STRATEGY.DLL\Bitmap\14195-1033-strategy-yavin-prime-%28gas-giant%29.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="systems\STRATEGY.DLL\Bitmap\14196-1033-strategy-zakuul.bmp">
@@ -2545,6 +3355,9 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="systems\STRATEGY.DLL\Bitmap\14198-1033-strategy-ziost.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="systems\STRATEGY.DLL\Bitmap\14199-1033-strategy-zonama-sekot-%28atlas%29.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="systems\STRATEGY.DLL\Bitmap\14200-1033-strategy-zygerria.bmp">
@@ -2559,7 +3372,19 @@
     <None Update="systems\TACTICAL.DLL\303\14003-1033-tactical-ahch-to.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="systems\TACTICAL.DLL\303\14004-1033-tactical-ajan-kloss-%28moon%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="systems\TACTICAL.DLL\303\14005-1033-tactical-anaxes.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="systems\TACTICAL.DLL\303\14006-1033-tactical-anoat-%28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="systems\TACTICAL.DLL\303\14007-1033-tactical-ansion-%28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="systems\TACTICAL.DLL\303\14008-1033-tactical-bakura-%28atlas%29.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="systems\TACTICAL.DLL\303\14009-1033-tactical-balmorra.bmp">
@@ -2574,13 +3399,34 @@
     <None Update="systems\TACTICAL.DLL\303\14012-1033-tactical-bescane.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="systems\TACTICAL.DLL\303\14013-1033-tactical-bespin-%28gas-giant%29-%28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="systems\TACTICAL.DLL\303\14014-1033-tactical-bestine-%28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="systems\TACTICAL.DLL\303\14015-1033-tactical-bith.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="systems\TACTICAL.DLL\303\14016-1033-tactical-bonadan-%28atlas%29.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="systems\TACTICAL.DLL\303\14017-1033-tactical-boonta.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="systems\TACTICAL.DLL\303\14018-1033-tactical-borosk.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="systems\TACTICAL.DLL\303\14019-1033-tactical-bothawui-%28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="systems\TACTICAL.DLL\303\14020-1033-tactical-boz-pity-%28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="systems\TACTICAL.DLL\303\14021-1033-tactical-brentaal-iv-%28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="systems\TACTICAL.DLL\303\14022-1033-tactical-byss-%28atlas%29.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="systems\TACTICAL.DLL\303\14023-1033-tactical-cantonica.bmp">
@@ -2601,6 +3447,9 @@
     <None Update="systems\TACTICAL.DLL\303\14028-1033-tactical-chardaan.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="systems\TACTICAL.DLL\303\14029-1033-tactical-christophsis-%28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="systems\TACTICAL.DLL\303\14030-1033-tactical-circumtore.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
@@ -2608,6 +3457,9 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="systems\TACTICAL.DLL\303\14032-1033-tactical-concord-dawn.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="systems\TACTICAL.DLL\303\14033-1033-tactical-corellia-%28atlas%29.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="systems\TACTICAL.DLL\303\14034-1033-tactical-corsin.bmp">
@@ -2619,10 +3471,25 @@
     <None Update="systems\TACTICAL.DLL\303\14036-1033-tactical-crait.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="systems\TACTICAL.DLL\303\14037-1033-tactical-csilla-%28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="systems\TACTICAL.DLL\303\14038-1033-tactical-cyphar.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="systems\TACTICAL.DLL\303\14039-1033-tactical-daalang.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="systems\TACTICAL.DLL\303\14040-1033-tactical-dagobah-%28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="systems\TACTICAL.DLL\303\14041-1033-tactical-dantooine-%28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="systems\TACTICAL.DLL\303\14042-1033-tactical-dathomir-%28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="systems\TACTICAL.DLL\303\14043-1033-tactical-delaya-%28alderaan%29.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="systems\TACTICAL.DLL\303\14044-1033-tactical-dellalt.bmp">
@@ -2640,10 +3507,16 @@
     <None Update="systems\TACTICAL.DLL\303\14048-1033-tactical-dolla.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="systems\TACTICAL.DLL\303\14049-1033-tactical-d%27qar.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="systems\TACTICAL.DLL\303\14050-1033-tactical-dromund-kaas.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="systems\TACTICAL.DLL\303\14051-1033-tactical-dubrillion.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="systems\TACTICAL.DLL\303\14052-1033-tactical-duro-%28atlas%29.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="systems\TACTICAL.DLL\303\14053-1033-tactical-eadu.bmp">
@@ -2653,6 +3526,12 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="systems\TACTICAL.DLL\303\14055-1033-tactical-empress-teta.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="systems\TACTICAL.DLL\303\14056-1033-tactical-endor-%28moon%29-%28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="systems\TACTICAL.DLL\303\14057-1033-tactical-eriadu-%28atlas%29.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="systems\TACTICAL.DLL\303\14058-1033-tactical-esseles.bmp">
@@ -2667,13 +3546,25 @@
     <None Update="systems\TACTICAL.DLL\303\14061-1033-tactical-farstine.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="systems\TACTICAL.DLL\303\14062-1033-tactical-felucia-%28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="systems\TACTICAL.DLL\303\14063-1033-tactical-florn.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="systems\TACTICAL.DLL\303\14064-1033-tactical-fondor-%28atlas%29.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="systems\TACTICAL.DLL\303\14065-1033-tactical-formos.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="systems\TACTICAL.DLL\303\14066-1033-tactical-gamor.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="systems\TACTICAL.DLL\303\14067-1033-tactical-gamorr-%28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="systems\TACTICAL.DLL\303\14068-1033-tactical-geonosis-%28atlas%29.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="systems\TACTICAL.DLL\303\14069-1033-tactical-gerrenthum.bmp">
@@ -2685,7 +3576,19 @@
     <None Update="systems\TACTICAL.DLL\303\14071-1033-tactical-glee-anselm.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="systems\TACTICAL.DLL\303\14072-1033-tactical-hapes-%28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="systems\TACTICAL.DLL\303\14073-1033-tactical-honoghr-%28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="systems\TACTICAL.DLL\303\14074-1033-tactical-hosnian-prime.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="systems\TACTICAL.DLL\303\14075-1033-tactical-hoth-%28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="systems\TACTICAL.DLL\303\14076-1033-tactical-iego-%28atlas%29.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="systems\TACTICAL.DLL\303\14077-1033-tactical-ilum.bmp">
@@ -2697,19 +3600,37 @@
     <None Update="systems\TACTICAL.DLL\303\14079-1033-tactical-isde-naha.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="systems\TACTICAL.DLL\303\14080-1033-tactical-ithor-%28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="systems\TACTICAL.DLL\303\14081-1033-tactical-jaemus.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="systems\TACTICAL.DLL\303\14082-1033-tactical-jakku.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="systems\TACTICAL.DLL\303\14083-1033-tactical-jedha-%28moon%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="systems\TACTICAL.DLL\303\14084-1033-tactical-kabal.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="systems\TACTICAL.DLL\303\14085-1033-tactical-kalee-%28atlas%29.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="systems\TACTICAL.DLL\303\14086-1033-tactical-kaller.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="systems\TACTICAL.DLL\303\14087-1033-tactical-kamino-%28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="systems\TACTICAL.DLL\303\14088-1033-tactical-karfeddion.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="systems\TACTICAL.DLL\303\14089-1033-tactical-kashyyyk-%28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="systems\TACTICAL.DLL\303\14090-1033-tactical-kef-bir-%28moon%29.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="systems\TACTICAL.DLL\303\14091-1033-tactical-keitum.bmp">
@@ -2719,6 +3640,12 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="systems\TACTICAL.DLL\303\14093-1033-tactical-kimiji.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="systems\TACTICAL.DLL\303\14094-1033-tactical-kuat-%28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="systems\TACTICAL.DLL\303\14095-1033-tactical-lah%27mu.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="systems\TACTICAL.DLL\303\14096-1033-tactical-lok.bmp">
@@ -2739,7 +3666,13 @@
     <None Update="systems\TACTICAL.DLL\303\14101-1033-tactical-makeb.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="systems\TACTICAL.DLL\303\14102-1033-tactical-malastare-%28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="systems\TACTICAL.DLL\303\14103-1033-tactical-manaan.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="systems\TACTICAL.DLL\303\14104-1033-tactical-mandalore-%28atlas%29.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="systems\TACTICAL.DLL\303\14105-1033-tactical-maridun.bmp">
@@ -2748,16 +3681,46 @@
     <None Update="systems\TACTICAL.DLL\303\14106-1033-tactical-milagro.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="systems\TACTICAL.DLL\303\14107-1033-tactical-mimban-%28circarpous-v%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="systems\TACTICAL.DLL\303\14108-1033-tactical-mirial.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="systems\TACTICAL.DLL\303\14109-1033-tactical-mon-calamari-%28atlas%29.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="systems\TACTICAL.DLL\303\14110-1033-tactical-mon-gazza.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="systems\TACTICAL.DLL\303\14111-1033-tactical-moraband-%28korriban%29-%28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="systems\TACTICAL.DLL\303\14112-1033-tactical-mortis.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="systems\TACTICAL.DLL\303\14113-1033-tactical-mustafar-%28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="systems\TACTICAL.DLL\303\14114-1033-tactical-muunilinst.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="systems\TACTICAL.DLL\303\14115-1033-tactical-mygeeto-%28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="systems\TACTICAL.DLL\303\14116-1033-tactical-naboo-%28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="systems\TACTICAL.DLL\303\14117-1033-tactical-nagi-%28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="systems\TACTICAL.DLL\303\14118-1033-tactical-nal-hutta-%28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="systems\TACTICAL.DLL\303\14119-1033-tactical-nar-shaddaa-%28moon%29-%28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="systems\TACTICAL.DLL\303\14120-1033-tactical-neimoidia-%28atlas%29.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="systems\TACTICAL.DLL\303\14121-1033-tactical-nelvaan.bmp">
@@ -2769,7 +3732,22 @@
     <None Update="systems\TACTICAL.DLL\303\14123-1033-tactical-nexus-ortai.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="systems\TACTICAL.DLL\303\14124-1033-tactical-nubia-%28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="systems\TACTICAL.DLL\303\14125-1033-tactical-n%27zoth-%28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="systems\TACTICAL.DLL\303\14126-1033-tactical-onderon-%28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="systems\TACTICAL.DLL\303\14127-1033-tactical-ord-mantel-%28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="systems\TACTICAL.DLL\303\14128-1033-tactical-ord-trasi.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="systems\TACTICAL.DLL\303\14129-1033-tactical-ossus-%28atlas%29.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="systems\TACTICAL.DLL\303\14130-1033-tactical-pakuuni.bmp">
@@ -2799,13 +3777,46 @@
     <None Update="systems\TACTICAL.DLL\303\14138-1033-tactical-quesh.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="systems\TACTICAL.DLL\303\14139-1033-tactical-rakata-prime-%28lehon%29-%28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="systems\TACTICAL.DLL\303\14140-1033-tactical-randon.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="systems\TACTICAL.DLL\303\14141-1033-tactical-rattatak-%28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="systems\TACTICAL.DLL\303\14142-1033-tactical-raxus-prime-%28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="systems\TACTICAL.DLL\303\14143-1033-tactical-rhen-var-%28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="systems\TACTICAL.DLL\303\14144-1033-tactical-rishi-%28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="systems\TACTICAL.DLL\303\14145-1033-tactical-rodia-%28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="systems\TACTICAL.DLL\303\14146-1033-tactical-ruusan-%28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="systems\TACTICAL.DLL\303\14147-1033-tactical-ryloth-%28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="systems\TACTICAL.DLL\303\14148-1033-tactical-saleucami-%28atlas%29.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="systems\TACTICAL.DLL\303\14149-1033-tactical-savareen.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="systems\TACTICAL.DLL\303\14150-1033-tactical-scarif.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="systems\TACTICAL.DLL\303\14151-1033-tactical-sernpidal-%28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="systems\TACTICAL.DLL\303\14152-1033-tactical-shadda-bi-boran-%28atlas%29.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="systems\TACTICAL.DLL\303\14153-1033-tactical-shili.bmp">
@@ -2823,6 +3834,9 @@
     <None Update="systems\TACTICAL.DLL\303\14157-1033-tactical-sluis-van.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="systems\TACTICAL.DLL\303\14158-1033-tactical-smuggler%27s-run.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="systems\TACTICAL.DLL\303\14159-1033-tactical-socorro.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
@@ -2836,6 +3850,9 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="systems\TACTICAL.DLL\303\14163-1033-tactical-sy-myrth.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="systems\TACTICAL.DLL\303\14164-1033-tactical-taanab-%28atlas%29.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="systems\TACTICAL.DLL\303\14165-1033-tactical-takodana.bmp">
@@ -2859,7 +3876,19 @@
     <None Update="systems\TACTICAL.DLL\303\14171-1033-tactical-terminus.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="systems\TACTICAL.DLL\303\14172-1033-tactical-teth-%28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="systems\TACTICAL.DLL\303\14173-1033-tactical-the-redoubt-%28brask-oto%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="systems\TACTICAL.DLL\303\14174-1033-tactical-thyferra-%28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="systems\TACTICAL.DLL\303\14175-1033-tactical-tirahnn.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="systems\TACTICAL.DLL\303\14176-1033-tactical-toydaria-%28atlas%29.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="systems\TACTICAL.DLL\303\14177-1033-tactical-tralus.bmp">
@@ -2868,10 +3897,22 @@
     <None Update="systems\TACTICAL.DLL\303\14178-1033-tactical-trandosha.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="systems\TACTICAL.DLL\303\14179-1033-tactical-trask-%28moon%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="systems\TACTICAL.DLL\303\14180-1033-tactical-triton-%28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="systems\TACTICAL.DLL\303\14181-1033-tactical-tund-%28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="systems\TACTICAL.DLL\303\14182-1033-tactical-tython.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="systems\TACTICAL.DLL\303\14183-1033-tactical-umbara.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="systems\TACTICAL.DLL\303\14184-1033-tactical-utapau-%28atlas%29.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="systems\TACTICAL.DLL\303\14185-1033-tactical-vandor.bmp">
@@ -2892,7 +3933,19 @@
     <None Update="systems\TACTICAL.DLL\303\14190-1033-tactical-word-tandell.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="systems\TACTICAL.DLL\303\14191-1033-tactical-wroona-%28moon%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="systems\TACTICAL.DLL\303\14192-1033-tactical-yaga-minor.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="systems\TACTICAL.DLL\303\14193-1033-tactical-yag%27dhul.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="systems\TACTICAL.DLL\303\14194-1033-tactical-yavin-4-%28moon%29-%28atlas%29.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="systems\TACTICAL.DLL\303\14195-1033-tactical-yavin-prime-%28gas-giant%29.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="systems\TACTICAL.DLL\303\14196-1033-tactical-zakuul.bmp">
@@ -2902,6 +3955,9 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="systems\TACTICAL.DLL\303\14198-1033-tactical-ziost.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="systems\TACTICAL.DLL\303\14199-1033-tactical-zonama-sekot-%28atlas%29.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="systems\TACTICAL.DLL\303\14200-1033-tactical-zygerria.bmp">
