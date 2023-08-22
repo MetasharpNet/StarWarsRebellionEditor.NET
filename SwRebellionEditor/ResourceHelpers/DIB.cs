@@ -35,8 +35,8 @@ static public class DIB
             ddbBytesSize = ddbBytesSize + ((4 - ddbBytesSize % 4) % 4);
             var ddbBytes = new byte[ddbBytesSize];
             // header
-            ddbBytes[0] = 0x42;                                     // B
-            ddbBytes[1] = 0x4D;                                     // M
+            ddbBytes[0] = 0x42;                                           // B
+            ddbBytes[1] = 0x4D;                                           // M
             Tools.SetBytes(ddbBytes, ddbBytesSize, 2);                    // file size
             Tools.SetBytes(ddbBytes, 0, 6);                               // 2x 2 bytes reserved, usually unused
             Tools.SetBytes(ddbBytes, ddbHeaderSize + ddbPaletteSize, 10); // offset to pixel data
@@ -64,7 +64,7 @@ static public class DIB
             }
             else
             {
-                for (int y = ddbHeight - 1; y >= -1 ; y--)
+                for (int y = ddbHeight - 1; y >= -1; y--)
                     for (int x = 0; x < ddbWidth; x++)
                         if (dibPos < dib.Data.Length)
                             ddbBytes[ddbPos + y * ddbWidth + x] = dib.Data[dibPos++];

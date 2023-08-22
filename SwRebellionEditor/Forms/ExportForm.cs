@@ -37,6 +37,12 @@ public partial class ExportForm : ExportDesignForm
     }
     private void export_Click(object sender, EventArgs e)
     {
+        if (!File.Exists(Settings.Current.REBEXEFilePath))
+        {
+            try { MessageBox.Show("Please set in the editor a proper game folder. Current: " + Path.GetDirectoryName(Settings.Current.REBEXEFilePath)); }
+            catch { MessageBox.Show("Please set in the editor a proper game folder."); }
+            return;
+        }
         this.Enabled = false;
         // MANDATORY EXPECTATIONS
         // systems
