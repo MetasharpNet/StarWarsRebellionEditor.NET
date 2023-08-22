@@ -46,6 +46,31 @@ public partial class PatchForm : PatchDesignForm
     }
     private void patch_Click(object sender, EventArgs e)
     {
+        Patch(false);
+    }
+
+    private void patchTest_Click(object sender, EventArgs e)
+    {
+        Patch(true);
+    }
+
+    public string TrimDecimal(string s)
+    {
+        if (s.IndexOf(',') > -1)
+            s = s.Substring(0, s.IndexOf(","));
+        if (s.IndexOf('.') > -1)
+            s = s.Substring(0, s.IndexOf("."));
+        if (s.Length < 1)
+            s = "0";
+        return s;
+    }
+
+    #endregion
+
+    #region Patch
+
+    private void Patch(bool testOnly)
+    {
         if (!File.Exists(Settings.Current.REBEXEFilePath))
         {
             try { MessageBox.Show("Please set in the editor a proper game folder. Current: " + Path.GetDirectoryName(Settings.Current.REBEXEFilePath)); }
@@ -80,13 +105,20 @@ public partial class PatchForm : PatchDesignForm
         foreach (var setFolder in Directory.GetDirectories("."))
         {
             var setFolderOnly = Path.GetFileName(setFolder);
-            if (setFolderOnly == "game-update")
-                continue;
-            if (setFolderOnly == "export")
-                continue;
-            if (setFolderOnly == "characters+stats" && charactersWithoutStatsCheckBox.Checked)
-                continue;
-            if (setFolderOnly == "characters-stats" && charactersWithStatsCheckBox.Checked)
+            if (!testOnly)
+            {
+                if (setFolderOnly == "game-update")
+                    continue;
+                if (setFolderOnly == "export")
+                    continue;
+                if (setFolderOnly == "test")
+                    continue;
+                if (setFolderOnly == "characters+stats" && charactersWithoutStatsCheckBox.Checked)
+                    continue;
+                if (setFolderOnly == "characters-stats" && charactersWithStatsCheckBox.Checked)
+                    continue;
+            }
+            else if (setFolderOnly != "test")
                 continue;
             foreach (var patchFolder in Directory.GetDirectories(setFolder))
             {
@@ -208,6 +240,12 @@ public partial class PatchForm : PatchDesignForm
                     }
                 }
             }
+        }
+
+        if (testOnly)
+        {
+            Close();
+            return;
         }
 
         // ---------------------------- REBEXE.EXE ----------------------------
@@ -339,18 +377,7 @@ public partial class PatchForm : PatchDesignForm
             TextStra.Resources.SaveString(Convert.ToUInt16(system.TextStraDllId), system.Name);
             EncyText.Resources.SaveRcdata((system.TextStraDllId - 4096).ToString(), system.EncyclopediaDescription);
         }
-        this.Close();
-    }
-
-    public string TrimDecimal(string s)
-    {
-        if (s.IndexOf(',') > -1)
-            s = s.Substring(0, s.IndexOf(","));
-        if (s.IndexOf('.') > -1)
-            s = s.Substring(0, s.IndexOf("."));
-        if (s.Length < 1)
-            s = "0";
-        return s;
+        Close();
     }
 
     #endregion

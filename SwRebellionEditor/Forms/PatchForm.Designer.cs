@@ -53,6 +53,7 @@ namespace SwRebellionEditor
             label1 = new Label();
             charactersWithStatsCheckBox = new CheckBox();
             charactersWithoutStatsCheckBox = new CheckBox();
+            patchTest = new Button();
             SuspendLayout();
             // 
             // systemsImageList
@@ -211,11 +212,22 @@ namespace SwRebellionEditor
             charactersWithoutStatsCheckBox.UseVisualStyleBackColor = true;
             charactersWithoutStatsCheckBox.CheckedChanged += charactersWithoutStatsCheckBox_CheckedChanged;
             // 
+            // patchTest
+            // 
+            patchTest.Location = new Point(450, 207);
+            patchTest.Name = "patchTest";
+            patchTest.Size = new Size(132, 23);
+            patchTest.TabIndex = 1169;
+            patchTest.Text = "Patch test folder only";
+            patchTest.UseVisualStyleBackColor = true;
+            patchTest.Click += patchTest_Click;
+            // 
             // PatchForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(735, 278);
+            Controls.Add(patchTest);
             Controls.Add(charactersWithoutStatsCheckBox);
             Controls.Add(charactersWithStatsCheckBox);
             Controls.Add(label1);
@@ -262,5 +274,6 @@ namespace SwRebellionEditor
         private Label label1;
         private CheckBox charactersWithStatsCheckBox;
         private CheckBox charactersWithoutStatsCheckBox;
+        private Button patchTest;
     }
 }
