@@ -855,7 +855,7 @@ public partial class ExportForm : ExportDesignForm
         { "11049", "strategy-info-screed" },
         { "11050", "strategy-info-syub-snunb" },
         { "11051", "strategy-info-han-solo" },
-        { "11052", "strategy-info" },
+        { "11052", "strategy-info-adar-tallon" },
         { "11053", "strategy-info-pter-thanas" },
         { "11054", "strategy-info-thrawn" },
         { "11055", "strategy-info-darth-vader" },

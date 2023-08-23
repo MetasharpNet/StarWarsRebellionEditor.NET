@@ -964,7 +964,7 @@
     <None Update="characters\STRATEGY.DLL\Bitmap\11051-1033-strategy-info-han-solo.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="characters\STRATEGY.DLL\Bitmap\11052-1033-strategy-info.bmp">
+    <None Update="characters\STRATEGY.DLL\Bitmap\11052-1033-strategy-info-adar-tallon.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="characters\STRATEGY.DLL\Bitmap\11053-1033-strategy-info-pter-thanas.bmp">
