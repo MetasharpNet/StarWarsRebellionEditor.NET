@@ -90,12 +90,15 @@ public partial class PatchForm : PatchDesignForm
         // ---------------------------- PATCH ----------------------------
         try { File.Delete(Path.Combine(Settings.Current.GameFolder, "_dgvoodoo_settings_suggestion_1_general.jpg")); } catch { }
         try { File.Delete(Path.Combine(Settings.Current.GameFolder, "_dgvoodoo_settings_suggestion_3_directx.jpg")); } catch { }
-        foreach (var filePath in Directory.GetFiles("game-update"))
+        if (!testOnly)
         {
-            if (Path.GetExtension(filePath).ToLowerInvariant() == ".txt")
-                continue;
-            var filename = Path.GetFileName(filePath);
-            File.Copy(filePath, Path.Combine(Settings.Current.GameFolder, filename), true);
+            foreach (var filePath in Directory.GetFiles("game-update"))
+            {
+                if (Path.GetExtension(filePath).ToLowerInvariant() == ".txt")
+                    continue;
+                var filename = Path.GetFileName(filePath);
+                File.Copy(filePath, Path.Combine(Settings.Current.GameFolder, filename), true);
+            }
         }
 
         // ---------------------------- PICTURES ---------------------------
