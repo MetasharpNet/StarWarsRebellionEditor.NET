@@ -1530,10 +1530,19 @@
     <None Update="ships\TACTICAL.DLL\301\2120-1033-tactical-alliance-cc-9600-frigate-close-%28base%29.x">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="ships\TACTICAL.DLL\301\2120-1033-tactical-alliance-cc-9600-frigate-close.x">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="ships\TACTICAL.DLL\301\2121-1033-tactical-alliance-cc-9600-frigate-medium-%28base%29.x">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="ships\TACTICAL.DLL\301\2121-1033-tactical-alliance-cc-9600-frigate-medium.x">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="ships\TACTICAL.DLL\301\2122-1033-tactical-alliance-cc-9600-frigate-far-%28base%29.x">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="ships\TACTICAL.DLL\301\2122-1033-tactical-alliance-cc-9600-frigate-far.x">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="ships\TACTICAL.DLL\301\2130-1033-tactical-alliance-bulwark-class-battlecruiser-mark-3-close.x">
@@ -1957,6 +1966,15 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="ships\TACTICAL.DLL\303\ALLIANCE_CC_7700_FRIGATE_MEDIUM.BMP">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="ships\TACTICAL.DLL\303\ALLIANCE_CC_9600_FRIGATE_CLOSE.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="ships\TACTICAL.DLL\303\ALLIANCE_CC_9600_FRIGATE_FAR.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="ships\TACTICAL.DLL\303\ALLIANCE_CC_9600_FRIGATE_MEDIUM.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="ships\TACTICAL.DLL\303\ALLIANCE_CR90_CORELLIAN_CORVETTE_CLOSE.BMP">
