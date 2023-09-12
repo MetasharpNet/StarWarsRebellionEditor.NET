@@ -20,8 +20,9 @@
 * 200/200 systems tactical sprites
 * 200/200 systems encyclopedia pictures
 * 200/200 encyclopedia descriptions
+* 61/61 new character sprites from LordLaForge to be closer to canon/lgends character faces
 * 61/61 enhanced character sprites displaying their base average stats
-* 24/29 high definition 3d models for capital ships
+* 25/29 high definition 3d models for capital ships
 * 80 high definition sprites for space fighters (X-wing, ...)
 * Screenshots :
 
@@ -55,8 +56,6 @@ If you have issues with full screen you can try to :
   * The 1.02 patch is automatically installed when you install the patch. No need to do it twice.
 
 ### Current Roadmap:
-* 61/61 new character sprites from LordLaForge including optimized base stats average display
-  * Finalization in progress. Soon available. 2023-08-08
 * new high definition 3d models for all capital ships
 
 ### Final Roadmap (low chance i'll invest time on it):
