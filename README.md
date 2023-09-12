@@ -30,7 +30,9 @@
 
 ![New planets and sprites](https://i.ibb.co/LpdxfcR/2.png)
 
-![New characters sprites with stats](https://i.ibb.co/cDMHwR1/3.png)
+![image](https://github.com/MetasharpNet/StarWarsRebellionEditor.NET/assets/70144948/f1a92807-8fb5-4f03-8135-aabc6697f536)
+
+![image](https://github.com/MetasharpNet/StarWarsRebellionEditor.NET/assets/70144948/6124e13c-d9e0-455b-8105-abaf0e469548)
 
 ![New encyclopedia entries and hd pictures](https://i.ibb.co/KxVDTLc/4.png)
 
