@@ -1635,13 +1635,13 @@
     <None Update="ships\TACTICAL.DLL\301\2572-1033-tactical-empire-executor-class-star-dreadnought-far.x">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\301\2580-1033-tactical-empire-assault-transport-close-%28base%29.x">
+    <None Update="ships\TACTICAL.DLL\301\2580-1033-tactical-empire-assault-transport-close.x">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\301\2581-1033-tactical-empire-assault-transport-medium-%28base%29.x">
+    <None Update="ships\TACTICAL.DLL\301\2581-1033-tactical-empire-assault-transport-medium.x">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\301\2582-1033-tactical-empire-assault-transport-far-%28base%29.x">
+    <None Update="ships\TACTICAL.DLL\301\2582-1033-tactical-empire-assault-transport-far.x">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="ships\TACTICAL.DLL\301\2590-1033-tactical-empire-galleon-close-%28base%29.x">
@@ -2056,6 +2056,15 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="ships\TACTICAL.DLL\303\ALLIANCE_REPUBLIC_DREADNAUGHT_CLASS_HEAVY_CRUISER_MEDIUM.BMP">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="ships\TACTICAL.DLL\303\EMPIRE_ASSAULT_TRANSPORT_CLOSE.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="ships\TACTICAL.DLL\303\EMPIRE_ASSAULT_TRANSPORT_FAR.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="ships\TACTICAL.DLL\303\EMPIRE_ASSAULT_TRANSPORT_MEDIUM.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="ships\TACTICAL.DLL\303\EMPIRE_CARRACK_CLASS_LIGHT_CRUISER_CLOSE.BMP">
