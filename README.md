@@ -36,6 +36,8 @@
 
 ![New encyclopedia entries and hd pictures](https://i.ibb.co/KxVDTLc/4.png)
 
+3D Ships Before/After comparison :
+
 ![image](https://github.com/MetasharpNet/StarWarsRebellionEditor.NET/assets/70144948/d2a09e53-8278-4073-ab99-b2821cea182d)
 
 ![image](https://github.com/MetasharpNet/StarWarsRebellionEditor.NET/assets/70144948/1742e7b2-bd45-42fe-b9af-e2d98fa8aed8)
