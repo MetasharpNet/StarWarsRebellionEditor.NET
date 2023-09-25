@@ -14,7 +14,7 @@
 
 ### 25th Anniversary Patch Features :
 * Game's 1.02 community update
-* Dgvoodoo 2.81.1 (2023-07-24) directx libraries
+* Dgvoodoo 2.81.3 (2023-09-06) directx libraries : [http://dege.fw.hu/dgVoodoo2/dgVoodoo2/]
 * New Galaxy map using top 200 star wars planets (called systems in game) from 2023 canon mostly positioned as accurately as possible within game engine limits!
 * 200/200 systems sprites (instead of 26 original sprites shared amongst 200 systems)
 * 200/200 systems tactical sprites
@@ -22,7 +22,7 @@
 * 200/200 encyclopedia descriptions
 * 61/61 new character sprites from LordLaForge to be closer to canon/lgends character faces
 * 61/61 enhanced character sprites displaying their base average stats
-* 25/29 high definition 3d models for capital ships
+* 26/29 high definition 3d models for capital ships
 * 80 high definition sprites for space fighters (X-wing, ...)
 * Screenshots :
 
@@ -38,7 +38,7 @@
 
 ### 25th Anniversary Installation guide:
 * Install the latest .NET Desktop runtime : https://dotnet.microsoft.com/en-us/download/dotnet
-  * Direct link to latest version : https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/runtime-7.0.9-windows-x64-installer
+  * Direct link to latest version : https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/runtime-7.0.11-windows-x64-installer
 * Reboot
 * Install a fresh GoG or Steam Star Wars Rebellion game
 * Download the latest editor release : https://github.com/MetasharpNet/StarWarsRebellionEditor.NET/releases
