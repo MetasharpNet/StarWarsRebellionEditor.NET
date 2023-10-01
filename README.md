@@ -30,11 +30,17 @@
 
 ![New planets and sprites](https://i.ibb.co/LpdxfcR/2.png)
 
-![image](https://github.com/MetasharpNet/StarWarsRebellionEditor.NET/assets/70144948/f1a92807-8fb5-4f03-8135-aabc6697f536)
+![image](https://github.com/MetasharpNet/StarWarsRebellionEditor.NET/assets/70144948/0b8d8986-482f-4b87-ab49-339a8ef13a7e)
 
-![image](https://github.com/MetasharpNet/StarWarsRebellionEditor.NET/assets/70144948/6124e13c-d9e0-455b-8105-abaf0e469548)
+![image](https://github.com/MetasharpNet/StarWarsRebellionEditor.NET/assets/70144948/b2391190-872f-402f-a700-675739e0f056)
 
 ![New encyclopedia entries and hd pictures](https://i.ibb.co/KxVDTLc/4.png)
+
+3D Ships Before/After comparison :
+
+![image](https://github.com/MetasharpNet/StarWarsRebellionEditor.NET/assets/70144948/d2a09e53-8278-4073-ab99-b2821cea182d)
+
+![image](https://github.com/MetasharpNet/StarWarsRebellionEditor.NET/assets/70144948/1742e7b2-bd45-42fe-b9af-e2d98fa8aed8)
 
 ### 25th Anniversary Installation guide:
 * Install the latest .NET Desktop runtime : https://dotnet.microsoft.com/en-us/download/dotnet
