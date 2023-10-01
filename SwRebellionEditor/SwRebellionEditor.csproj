@@ -1644,6 +1644,15 @@
     <None Update="ships\TACTICAL.DLL\301\2582-1033-tactical-empire-assault-transport-far.x">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="ships\TACTICAL.DLL\301\2590-empire-galleon-close.x">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="ships\TACTICAL.DLL\301\2591-empire-galleon-medium.x">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="ships\TACTICAL.DLL\301\2592-empire-galleon-far.x">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="ships\TACTICAL.DLL\301\2600-1033-tactical-empire-victory-2-class-star-destroyer-close.x">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
@@ -2083,6 +2092,15 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="ships\TACTICAL.DLL\303\EMPIRE_EXECUTOR_CLASS_STAR_DREADNOUGHT_MEDIUM.BMP">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="ships\TACTICAL.DLL\303\EMPIRE_GALLEON_CLOSE.BMP">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="ships\TACTICAL.DLL\303\EMPIRE_GALLEON_FAR.BMP">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="ships\TACTICAL.DLL\303\EMPIRE_GALLEON_MEDIUM.BMP">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="ships\TACTICAL.DLL\303\EMPIRE_IMPERIAL_1_CLASS_STAR_DESTROYER_CLOSE.BMP">
