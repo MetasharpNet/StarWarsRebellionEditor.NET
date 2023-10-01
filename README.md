@@ -40,7 +40,7 @@
 
 ![image](https://github.com/MetasharpNet/StarWarsRebellionEditor.NET/assets/70144948/d2a09e53-8278-4073-ab99-b2821cea182d)
 
-![image](https://github.com/MetasharpNet/StarWarsRebellionEditor.NET/assets/70144948/1742e7b2-bd45-42fe-b9af-e2d98fa8aed8)
+![image](https://github.com/MetasharpNet/StarWarsRebellionEditor.NET/assets/70144948/1f2461fe-576f-4d91-9321-0f6791c2378e)
 
 ### 25th Anniversary Installation guide:
 * Install the latest .NET Desktop runtime : https://dotnet.microsoft.com/en-us/download/dotnet
