@@ -1644,15 +1644,6 @@
     <None Update="ships\TACTICAL.DLL\301\2582-1033-tactical-empire-assault-transport-far.x">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\301\2590-1033-tactical-empire-galleon-close-%28base%29.x">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Update="ships\TACTICAL.DLL\301\2591-1033-tactical-empire-galleon-medium-%28base%29.x">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Update="ships\TACTICAL.DLL\301\2592-1033-tactical-empire-galleon-far-%28base%29.x">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
     <None Update="ships\TACTICAL.DLL\301\2600-1033-tactical-empire-victory-2-class-star-destroyer-close.x">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
