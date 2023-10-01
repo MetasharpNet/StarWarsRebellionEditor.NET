@@ -14,7 +14,7 @@
 
 ### 25th Anniversary Patch Features :
 * Game's 1.02 community update
-* Dgvoodoo 2.81.3 (2023-09-06) directx libraries : [http://dege.fw.hu/dgVoodoo2/dgVoodoo2/]
+* Dgvoodoo 2.81.3 (2023-09-06) directx libraries : http://dege.fw.hu/dgVoodoo2/dgVoodoo2/
 * New Galaxy map using top 200 star wars planets (called systems in game) from 2023 canon mostly positioned as accurately as possible within game engine limits!
 * 200/200 systems sprites (instead of 26 original sprites shared amongst 200 systems)
 * 200/200 systems tactical sprites
