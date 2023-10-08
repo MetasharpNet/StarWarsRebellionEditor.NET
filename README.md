@@ -1,4 +1,8 @@
 ## Star Wars Rebellion Editor .NET
+* Need some help, talk with us on :
+  * Discord : https://swrebellion.link/discord
+  * Steam : https://steamcommunity.com/app/441550/discussions/0/5913829825701729169/
+  * GoG : https://www.gog.com/forum/star_wars_rebellion/star_wars_rebellion_in_2023_25th_anniv_patch_fix_fr_patch_guides
 * C# 11.0 project built with .NET 7 in Visual Studio 2022 : https://visualstudio.microsoft.com/vs/community/
 * To find where to buy the game or get free fan mods, check : https://swrebellion.net/
   * I advise to go for GoG version of the game.
@@ -14,7 +18,7 @@
 
 ### 25th Anniversary Patch Features :
 * Game's 1.02 community update
-* Dgvoodoo 2.81.3 (2023-09-06) directx libraries : [http://dege.fw.hu/dgVoodoo2/dgVoodoo2/]
+* Dgvoodoo 2.81.3 (2023-09-06) directx libraries : http://dege.fw.hu/dgVoodoo2/dgVoodoo2/
 * New Galaxy map using top 200 star wars planets (called systems in game) from 2023 canon mostly positioned as accurately as possible within game engine limits!
 * 200/200 systems sprites (instead of 26 original sprites shared amongst 200 systems)
 * 200/200 systems tactical sprites
@@ -22,7 +26,7 @@
 * 200/200 encyclopedia descriptions
 * 61/61 new character sprites from LordLaForge to be closer to canon/lgends character faces
 * 61/61 enhanced character sprites displaying their base average stats
-* 26/29 high definition 3d models for capital ships
+* 27/29 high definition 3d models for capital ships
 * 80 high definition sprites for space fighters (X-wing, ...)
 * Screenshots :
 
@@ -40,7 +44,7 @@
 
 ![image](https://github.com/MetasharpNet/StarWarsRebellionEditor.NET/assets/70144948/d2a09e53-8278-4073-ab99-b2821cea182d)
 
-![image](https://github.com/MetasharpNet/StarWarsRebellionEditor.NET/assets/70144948/1742e7b2-bd45-42fe-b9af-e2d98fa8aed8)
+![image](https://github.com/MetasharpNet/StarWarsRebellionEditor.NET/assets/70144948/1f2461fe-576f-4d91-9321-0f6791c2378e)
 
 ### 25th Anniversary Installation guide:
 * Install the latest .NET Desktop runtime : https://dotnet.microsoft.com/en-us/download/dotnet
