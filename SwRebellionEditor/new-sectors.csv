@@ -2,9 +2,9 @@ Sector;Id;Manual X;Manual Y;Group;Galaxy Size
 Bothan Space;20;741;546;Rim (inner);Huge
 Colonies;21;498;336;Core;Huge
 Core Worlds North;36;407;308;Core;Standard
-Core Worlds South;22;462;444;Rim (inner);Large
-Crossroads;23;632;314;Rim (inner);Large
-Deep Core;24;332;412;Rim (inner);Standard
+Core Worlds South;24;462;444;Rim (inner);Large
+Crossroads;22;632;314;Rim (inner);Large
+Deep Core;23;332;412;Rim (inner);Standard
 Hutt Space;25;765;364;Rim (outer);Standard
 Inner Rim;26;574;478;Core;Huge
 Mandalorian Space;27;508;185;Rim (outer);Large
