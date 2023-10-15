@@ -24,11 +24,7 @@ public partial class AllianceFleetsTableForm : AllianceFleetsTableDesignForm
         itemComboBox.Items.AddRange(Identifier.AllianceUnits);
         foreach (var group in GameFile.Groups)
         {
-            groupsDataGridView.Rows.Add(new object[2]
-                {
-                    group.Index,
-                    group.ToString()
-                });
+            groupsDataGridView.Rows.Add(new object[2] { group.Index, group.ToString() });
         }
         GameFile.UnsavedData = previousUnsavedData;
     }
@@ -46,6 +42,7 @@ public partial class AllianceFleetsTableForm : AllianceFleetsTableDesignForm
         }
         var groupId = Int32.Parse(groupsDataGridView.SelectedCells[0].RowIndex.ToString());
         var group = GameFile.Groups[groupId];
+        groupsDataGridView.Rows[groupId].Cells[1].Value = group.ToString();
         itemsListView.Items.Clear();
         foreach (var item in group.Items)
         {
@@ -62,21 +59,21 @@ public partial class AllianceFleetsTableForm : AllianceFleetsTableDesignForm
         if (groupComboBox.SelectedItem == null)
             return;
         var item = new CMUNAFTB_Item
-        {
-            Field1_1 = 1,
-            Field2_0 = 0,
-            Item = Identifier.ToValue(groupComboBox.Text)
-        };
+            {
+                Field1_1 = 1,
+                Field2_0 = 0,
+                Item = Identifier.ToValue(groupComboBox.Text)
+            };
         var group = new CMUNAFTB_Group
-        {
-            Field2_1 = 1,
-            Field4_1 = 1,
-            Field5_1 = 1,
-            Index = (uint)GameFile.Groups.Length + 1,
-            IndexBis = (uint)GameFile.Groups.Length + 1,
-            Items = new CMUNAFTB_Item[] { item },
-            ItemsCount = 1
-        };
+            {
+                Field2_1 = 1,
+                Field4_1 = 1,
+                Field5_1 = 1,
+                Index = (uint)GameFile.Groups.Length + 1,
+                IndexBis = (uint)GameFile.Groups.Length + 1,
+                Items = new CMUNAFTB_Item[] { item },
+                ItemsCount = 1
+            };
         var groups = new List<CMUNAFTB_Group>(GameFile.Groups);
         groups.Add(group);
         GameFile.Groups = groups.ToArray();
@@ -98,6 +95,12 @@ public partial class AllianceFleetsTableForm : AllianceFleetsTableDesignForm
         itemsListView.Items.Clear();
         GameFile.GroupsCount--;
         GameFile.UnsavedData = true;
+        for (int i = 0; i < GameFile.Groups.Length; i++)
+        {
+            GameFile.Groups[i].Index = (uint)i + 1;
+            GameFile.Groups[i].IndexBis = (uint)i + 1;
+            groupsDataGridView.Rows[i].Cells[0].Value = GameFile.Groups[i].Index;
+        }
         groupsDataGridView_SelectionChanged(sender, e);
         if (GameFile.GroupsCount > 0)
             groupsDataGridView.CurrentCell = groupsDataGridView.Rows[(int)Math.Min(groupId, GameFile.GroupsCount - 1)].Cells[1];

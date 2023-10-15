@@ -49,6 +49,7 @@ public partial class AllianceUnitsTableForm : AllianceUnitsTableDesignForm
         }
         var groupId = Int32.Parse(groupsDataGridView.SelectedCells[0].RowIndex.ToString());
         var group = GameFile.Groups[groupId];
+        groupsDataGridView.Rows[groupId].Cells[2].Value = group.ToString();
         itemsListView.Items.Clear();
         foreach (var item in group.Items)
         {
@@ -120,6 +121,11 @@ public partial class AllianceUnitsTableForm : AllianceUnitsTableDesignForm
         itemsListView.Items.Clear();
         GameFile.GroupsCount--;
         GameFile.UnsavedData = true;
+        for (int i = 0; i < GameFile.Groups.Length; i++)
+        {
+            GameFile.Groups[i].Index = (uint)i + 1;
+            groupsDataGridView.Rows[i].Cells[0].Value = GameFile.Groups[i].Index;
+        }
         groupsDataGridView_SelectionChanged(sender, e);
         if (GameFile.GroupsCount > 0)
             groupsDataGridView.CurrentCell = groupsDataGridView.Rows[(int)Math.Min(groupId, GameFile.GroupsCount - 1)].Cells[2];
