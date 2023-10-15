@@ -10,7 +10,7 @@ namespace SwRebellionEditor
         /// <summary>
         /// Required designer variable.
         /// </summary>
-        private System.ComponentModel.IContainer components = null;
+        private IContainer components = null;
         private int currIndex;
         private static string shipSelected = "";
         private static int unitType = 0;
@@ -40,222 +40,255 @@ namespace SwRebellionEditor
         /// </summary>
         private void InitializeComponent()
         {
-            this.openNew = new System.Windows.Forms.Button();
-            this.SaveAs = new System.Windows.Forms.Button();
-            this.Cancel = new System.Windows.Forms.Button();
-            this.Ok = new System.Windows.Forms.Button();
-            this.armiesListView = new System.Windows.Forms.ListView();
-            this.columnHeader1 = new System.Windows.Forms.ColumnHeader();
-            this.columnHeader2 = new System.Windows.Forms.ColumnHeader();
-            this.columnHeader3 = new System.Windows.Forms.ColumnHeader();
-            this.unitsListView = new System.Windows.Forms.ListView();
-            this.columnHeader4 = new System.Windows.Forms.ColumnHeader();
-            this.columnHeader7 = new System.Windows.Forms.ColumnHeader();
-            this.addButton = new System.Windows.Forms.Button();
-            this.removeButton = new System.Windows.Forms.Button();
-            this.unitComboBox = new System.Windows.Forms.ComboBox();
-            this.capitalShipComboBox = new System.Windows.Forms.ComboBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.SuspendLayout();
+            DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
+            openNew = new Button();
+            SaveAs = new Button();
+            Cancel = new Button();
+            Ok = new Button();
+            unitsListView = new ListView();
+            columnHeader4 = new ColumnHeader();
+            addUnitButton = new Button();
+            delUnitButton = new Button();
+            unitComboBox = new ComboBox();
+            armyComboBox = new ComboBox();
+            delArmyButton = new Button();
+            addArmyButton = new Button();
+            armiesDataGridView = new DataGridView();
+            idColumn = new DataGridViewTextBoxColumn();
+            percentColumn = new DataGridViewTextBoxColumn();
+            armyColumn = new DataGridViewTextBoxColumn();
+            infoLabel = new Label();
+            ((ISupportInitialize)armiesDataGridView).BeginInit();
+            SuspendLayout();
             // 
             // openNew
             // 
-            this.openNew.Enabled = false;
-            this.openNew.Location = new System.Drawing.Point(506, 447);
-            this.openNew.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.openNew.Name = "openNew";
-            this.openNew.Size = new System.Drawing.Size(88, 27);
-            this.openNew.TabIndex = 53;
-            this.openNew.Text = "Open...";
-            this.openNew.UseVisualStyleBackColor = true;
+            openNew.Location = new Point(496, 453);
+            openNew.Margin = new Padding(4, 3, 4, 3);
+            openNew.Name = "openNew";
+            openNew.Size = new Size(88, 27);
+            openNew.TabIndex = 53;
+            openNew.Text = "Open...";
+            openNew.UseVisualStyleBackColor = true;
+            openNew.Click += Open_Click;
             // 
             // SaveAs
             // 
-            this.SaveAs.Enabled = false;
-            this.SaveAs.Location = new System.Drawing.Point(412, 447);
-            this.SaveAs.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.SaveAs.Name = "SaveAs";
-            this.SaveAs.Size = new System.Drawing.Size(88, 27);
-            this.SaveAs.TabIndex = 52;
-            this.SaveAs.Text = "&SaveAs...";
-            this.SaveAs.UseVisualStyleBackColor = true;
+            SaveAs.Location = new Point(402, 453);
+            SaveAs.Margin = new Padding(4, 3, 4, 3);
+            SaveAs.Name = "SaveAs";
+            SaveAs.Size = new Size(88, 27);
+            SaveAs.TabIndex = 52;
+            SaveAs.Text = "&SaveAs...";
+            SaveAs.UseVisualStyleBackColor = true;
+            SaveAs.Click += SaveAs_Click;
             // 
             // Cancel
             // 
-            this.Cancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.Cancel.Enabled = false;
-            this.Cancel.Location = new System.Drawing.Point(128, 447);
-            this.Cancel.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.Cancel.Name = "Cancel";
-            this.Cancel.Size = new System.Drawing.Size(88, 27);
-            this.Cancel.TabIndex = 51;
-            this.Cancel.Text = "&Cancel";
-            this.Cancel.UseVisualStyleBackColor = true;
+            Cancel.DialogResult = DialogResult.Cancel;
+            Cancel.Location = new Point(128, 453);
+            Cancel.Margin = new Padding(4, 3, 4, 3);
+            Cancel.Name = "Cancel";
+            Cancel.Size = new Size(88, 27);
+            Cancel.TabIndex = 51;
+            Cancel.Text = "&Cancel";
+            Cancel.UseVisualStyleBackColor = true;
+            Cancel.Click += Cancel_Click;
             // 
             // Ok
             // 
-            this.Ok.Location = new System.Drawing.Point(34, 447);
-            this.Ok.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.Ok.Name = "Ok";
-            this.Ok.Size = new System.Drawing.Size(88, 27);
-            this.Ok.TabIndex = 50;
-            this.Ok.Text = "&Ok";
-            this.Ok.UseVisualStyleBackColor = true;
-            this.Ok.Click += new System.EventHandler(this.Ok_Click);
-            // 
-            // armiesListView
-            // 
-            this.armiesListView.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.columnHeader1,
-            this.columnHeader2,
-            this.columnHeader3});
-            this.armiesListView.FullRowSelect = true;
-            this.armiesListView.GridLines = true;
-            this.armiesListView.Location = new System.Drawing.Point(13, 12);
-            this.armiesListView.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.armiesListView.MultiSelect = false;
-            this.armiesListView.Name = "armiesListView";
-            this.armiesListView.Size = new System.Drawing.Size(328, 368);
-            this.armiesListView.TabIndex = 54;
-            this.armiesListView.UseCompatibleStateImageBehavior = false;
-            this.armiesListView.View = System.Windows.Forms.View.Details;
-            this.armiesListView.SelectedIndexChanged += new System.EventHandler(this.armiesListView_SelectedIndexChanged);
-            // 
-            // columnHeader1
-            // 
-            this.columnHeader1.Text = "Id";
-            this.columnHeader1.Width = 32;
-            // 
-            // columnHeader2
-            // 
-            this.columnHeader2.Text = "%";
-            this.columnHeader2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.columnHeader2.Width = 28;
-            // 
-            // columnHeader3
-            // 
-            this.columnHeader3.Text = "Army";
-            this.columnHeader3.Width = 255;
+            Ok.Location = new Point(34, 453);
+            Ok.Margin = new Padding(4, 3, 4, 3);
+            Ok.Name = "Ok";
+            Ok.Size = new Size(88, 27);
+            Ok.TabIndex = 50;
+            Ok.Text = "&Ok";
+            Ok.UseVisualStyleBackColor = true;
+            Ok.Click += Ok_Click;
             // 
             // unitsListView
             // 
-            this.unitsListView.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.columnHeader4,
-            this.columnHeader7});
-            this.unitsListView.FullRowSelect = true;
-            this.unitsListView.GridLines = true;
-            this.unitsListView.Location = new System.Drawing.Point(349, 12);
-            this.unitsListView.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.unitsListView.MultiSelect = false;
-            this.unitsListView.Name = "unitsListView";
-            this.unitsListView.Size = new System.Drawing.Size(271, 368);
-            this.unitsListView.TabIndex = 55;
-            this.unitsListView.UseCompatibleStateImageBehavior = false;
-            this.unitsListView.View = System.Windows.Forms.View.Details;
+            unitsListView.Columns.AddRange(new ColumnHeader[] { columnHeader4 });
+            unitsListView.FullRowSelect = true;
+            unitsListView.GridLines = true;
+            unitsListView.HeaderStyle = ColumnHeaderStyle.Nonclickable;
+            unitsListView.Location = new Point(332, 31);
+            unitsListView.Margin = new Padding(4, 3, 4, 3);
+            unitsListView.MultiSelect = false;
+            unitsListView.Name = "unitsListView";
+            unitsListView.Size = new Size(271, 384);
+            unitsListView.TabIndex = 55;
+            unitsListView.UseCompatibleStateImageBehavior = false;
+            unitsListView.View = View.Details;
             // 
             // columnHeader4
             // 
-            this.columnHeader4.Text = "Unit";
-            this.columnHeader4.Width = 200;
+            columnHeader4.Text = "Army Units (First is container)";
+            columnHeader4.Width = 265;
             // 
-            // columnHeader7
+            // addUnitButton
             // 
-            this.columnHeader7.Text = "Type";
+            addUnitButton.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            addUnitButton.Location = new Point(521, 421);
+            addUnitButton.Name = "addUnitButton";
+            addUnitButton.Size = new Size(38, 24);
+            addUnitButton.TabIndex = 56;
+            addUnitButton.Text = "Add";
+            addUnitButton.UseVisualStyleBackColor = true;
+            addUnitButton.Click += addUnitButton_Click;
             // 
-            // addButton
+            // delUnitButton
             // 
-            this.addButton.Location = new System.Drawing.Point(545, 385);
-            this.addButton.Name = "addButton";
-            this.addButton.Size = new System.Drawing.Size(75, 23);
-            this.addButton.TabIndex = 56;
-            this.addButton.Text = "Add";
-            this.addButton.UseVisualStyleBackColor = true;
-            // 
-            // removeButton
-            // 
-            this.removeButton.Location = new System.Drawing.Point(545, 414);
-            this.removeButton.Name = "removeButton";
-            this.removeButton.Size = new System.Drawing.Size(75, 23);
-            this.removeButton.TabIndex = 57;
-            this.removeButton.Text = "Remove";
-            this.removeButton.UseVisualStyleBackColor = true;
+            delUnitButton.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            delUnitButton.ForeColor = Color.Red;
+            delUnitButton.Location = new Point(565, 421);
+            delUnitButton.Name = "delUnitButton";
+            delUnitButton.Size = new Size(38, 24);
+            delUnitButton.TabIndex = 57;
+            delUnitButton.Text = "Del";
+            delUnitButton.UseVisualStyleBackColor = true;
+            delUnitButton.Click += delUnitButton_Click;
             // 
             // unitComboBox
             // 
-            this.unitComboBox.FormattingEnabled = true;
-            this.unitComboBox.Location = new System.Drawing.Point(349, 386);
-            this.unitComboBox.Name = "unitComboBox";
-            this.unitComboBox.Size = new System.Drawing.Size(190, 23);
-            this.unitComboBox.TabIndex = 58;
+            unitComboBox.FormattingEnabled = true;
+            unitComboBox.Location = new Point(332, 421);
+            unitComboBox.Name = "unitComboBox";
+            unitComboBox.Size = new Size(183, 23);
+            unitComboBox.TabIndex = 58;
             // 
-            // capitalShipComboBox
+            // armyComboBox
             // 
-            this.capitalShipComboBox.FormattingEnabled = true;
-            this.capitalShipComboBox.Location = new System.Drawing.Point(13, 386);
-            this.capitalShipComboBox.Name = "capitalShipComboBox";
-            this.capitalShipComboBox.Size = new System.Drawing.Size(190, 23);
-            this.capitalShipComboBox.TabIndex = 61;
+            armyComboBox.FormattingEnabled = true;
+            armyComboBox.Location = new Point(6, 421);
+            armyComboBox.Name = "armyComboBox";
+            armyComboBox.Size = new Size(232, 23);
+            armyComboBox.TabIndex = 61;
             // 
-            // button1
+            // delArmyButton
             // 
-            this.button1.Location = new System.Drawing.Point(209, 414);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 60;
-            this.button1.Text = "Remove";
-            this.button1.UseVisualStyleBackColor = true;
+            delArmyButton.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            delArmyButton.ForeColor = Color.Red;
+            delArmyButton.Location = new Point(288, 421);
+            delArmyButton.Name = "delArmyButton";
+            delArmyButton.Size = new Size(38, 23);
+            delArmyButton.TabIndex = 60;
+            delArmyButton.Text = "Del";
+            delArmyButton.UseVisualStyleBackColor = true;
+            delArmyButton.Click += delArmyButton_Click;
             // 
-            // button2
+            // addArmyButton
             // 
-            this.button2.Location = new System.Drawing.Point(209, 385);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 59;
-            this.button2.Text = "Add";
-            this.button2.UseVisualStyleBackColor = true;
+            addArmyButton.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            addArmyButton.Location = new Point(244, 421);
+            addArmyButton.Name = "addArmyButton";
+            addArmyButton.Size = new Size(38, 24);
+            addArmyButton.TabIndex = 59;
+            addArmyButton.Text = "Add";
+            addArmyButton.UseVisualStyleBackColor = true;
+            addArmyButton.Click += addArmyButton_Click;
+            // 
+            // armiesDataGridView
+            // 
+            armiesDataGridView.AllowUserToAddRows = false;
+            armiesDataGridView.AllowUserToDeleteRows = false;
+            armiesDataGridView.AllowUserToResizeColumns = false;
+            armiesDataGridView.AllowUserToResizeRows = false;
+            armiesDataGridView.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            armiesDataGridView.Columns.AddRange(new DataGridViewColumn[] { idColumn, percentColumn, armyColumn });
+            dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = SystemColors.Window;
+            dataGridViewCellStyle2.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            dataGridViewCellStyle2.ForeColor = SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = DataGridViewTriState.False;
+            armiesDataGridView.DefaultCellStyle = dataGridViewCellStyle2;
+            armiesDataGridView.Location = new Point(6, 31);
+            armiesDataGridView.Name = "armiesDataGridView";
+            armiesDataGridView.RowHeadersVisible = false;
+            armiesDataGridView.RowTemplate.Height = 25;
+            armiesDataGridView.Size = new Size(322, 384);
+            armiesDataGridView.TabIndex = 62;
+            armiesDataGridView.CellValueChanged += armiesDataGridView_CellValueChanged;
+            armiesDataGridView.SelectionChanged += armiesDataGridView_SelectionChanged;
+            // 
+            // idColumn
+            // 
+            idColumn.HeaderText = "Id";
+            idColumn.Name = "idColumn";
+            idColumn.ReadOnly = true;
+            idColumn.Resizable = DataGridViewTriState.False;
+            idColumn.Width = 32;
+            // 
+            // percentColumn
+            // 
+            percentColumn.HeaderText = "%";
+            percentColumn.Name = "percentColumn";
+            percentColumn.Resizable = DataGridViewTriState.False;
+            percentColumn.Width = 32;
+            // 
+            // armyColumn
+            // 
+            armyColumn.HeaderText = "Army";
+            armyColumn.Name = "armyColumn";
+            armyColumn.ReadOnly = true;
+            armyColumn.Resizable = DataGridViewTriState.False;
+            armyColumn.Width = 255;
+            // 
+            // infoLabel
+            // 
+            infoLabel.AutoSize = true;
+            infoLabel.Location = new Point(13, 9);
+            infoLabel.Name = "infoLabel";
+            infoLabel.Size = new Size(539, 15);
+            infoLabel.TabIndex = 63;
+            infoLabel.Text = "You can define here the Alliance armies randomly spread in the galaxy at start with their probabilities.";
             // 
             // CMUNAllianceTablesForm
             // 
-            this.AcceptButton = this.Ok;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.CancelButton = this.Cancel;
-            this.ClientSize = new System.Drawing.Size(635, 486);
-            this.Controls.Add(this.capitalShipComboBox);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.unitComboBox);
-            this.Controls.Add(this.removeButton);
-            this.Controls.Add(this.addButton);
-            this.Controls.Add(this.unitsListView);
-            this.Controls.Add(this.armiesListView);
-            this.Controls.Add(this.openNew);
-            this.Controls.Add(this.SaveAs);
-            this.Controls.Add(this.Cancel);
-            this.Controls.Add(this.Ok);
-            this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.Name = "CMUNAllianceTablesForm";
-            this.Text = "CM UN Alliance Tables (CMUNALTB.DAT)";
-            this.Load += new System.EventHandler(this.GameObjectsListForm_Load);
-            this.ResumeLayout(false);
-
+            AcceptButton = Ok;
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            CancelButton = Cancel;
+            ClientSize = new Size(609, 486);
+            Controls.Add(infoLabel);
+            Controls.Add(armiesDataGridView);
+            Controls.Add(armyComboBox);
+            Controls.Add(delArmyButton);
+            Controls.Add(addArmyButton);
+            Controls.Add(unitComboBox);
+            Controls.Add(delUnitButton);
+            Controls.Add(addUnitButton);
+            Controls.Add(unitsListView);
+            Controls.Add(openNew);
+            Controls.Add(SaveAs);
+            Controls.Add(Cancel);
+            Controls.Add(Ok);
+            Margin = new Padding(4, 3, 4, 3);
+            MaximumSize = new Size(625, 525);
+            MinimumSize = new Size(625, 525);
+            Name = "CMUNAllianceTablesForm";
+            Text = "Costing Maintenance Units - Alliance Tables (CMUNALTB.DAT)";
+            Load += GameObjectsListForm_Load;
+            ((ISupportInitialize)armiesDataGridView).EndInit();
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
-
-        private ListView armiesListView;
-        private ColumnHeader columnHeader1;
-        private ColumnHeader columnHeader2;
-        private ColumnHeader columnHeader3;
         private ListView unitsListView;
         private ColumnHeader columnHeader4;
-        private ColumnHeader columnHeader7;
-        private Button addButton;
-        private Button removeButton;
+        private Button addUnitButton;
+        private Button delUnitButton;
         private ComboBox unitComboBox;
-        private ComboBox capitalShipComboBox;
-        private Button button1;
-        private Button button2;
+        private ComboBox armyComboBox;
+        private Button delArmyButton;
+        private Button addArmyButton;
+        private DataGridView armiesDataGridView;
+        private DataGridViewTextBoxColumn idColumn;
+        private DataGridViewTextBoxColumn percentColumn;
+        private DataGridViewTextBoxColumn armyColumn;
+        private Label infoLabel;
     }
 }

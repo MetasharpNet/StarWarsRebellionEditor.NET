@@ -25,12 +25,18 @@
     <PackageReference Include="Vestris.ResourceLib" Version="2.1.0" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Update="FormsParents\CMUNEmpireTablesDesignForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="FormsParents\GalaxyMapDesignForm.cs" />
     <Compile Update="FormsParents\ExportDesignForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="FormsParents\PatchDesignForm.cs" />
     <Compile Update="FormsParents\SideParamTableEntryDesignForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Forms\CMUNEmpireTablesForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Forms\GalaxyMapForm.cs" />

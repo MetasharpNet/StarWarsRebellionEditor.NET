@@ -323,7 +323,6 @@ public partial class MainForm : Form
     {
         Show<ProductionFacilitiesForm>();
     }
-
     // Editor - Patch
     private void Patch_ToolStripMenuItem_Click(object sender, EventArgs e)
     {
@@ -333,46 +332,11 @@ public partial class MainForm : Form
     {
         Show<PatchForm>();
     }
-
     // Editor - Export
     private void Export_ToolStripMenuItem_Click(object sender, EventArgs e)
     {
         Show<ExportForm>();
     }
-
-    // Editor - Test Code - General Parameters Tables
-    private void generalParamTableEntry_ToolStripMenuItem_Click(object sender, EventArgs e)
-    {
-        Show<GeneralParamTableEntryForm>();
-    }
-    // Editor - Test Code - Side Param Entry Table
-    private void sideParamEntryTable_ToolStripMenuItem_Click(object sender, EventArgs e)
-    {
-        Show<SideParamTableEntryForm>();
-    }
-    // Editor - Test Code - Probability Tables - System Facilities Core Tables
-    private void SystemFacilitiesCoreTables_ToolStripMenuItem_Click(object sender, EventArgs e)
-    {
-        Show<SystemFacilitiesCoreTablesForm>();
-    }
-    // Editor - Test Code - Probability Tables - System Facilities Rim Tables
-    private void SystemFacilitiesRimTables_ToolStripMenuItem_Click(object sender, EventArgs e)
-    {
-        Show<SystemFacilitiesRimTablesForm>();
-    }
-    // Editor - Test Code - Starting Fleets - Empire HQ
-    // Editor - Test Code - Starting Fleets - Empire Random
-    private void CMUNEmpireTables_ToolStripMenuItem_Click(object sender, EventArgs e)
-    {
-        //Show<CMUNEmpireTablesForm>(); // EMPIRE version
-    }
-    // Editor - Test Code - Starting Fleets - Rebel HQ
-    // Editor - Test Code - Starting Fleets - Rebel Random
-    private void CMUNAllianceTables_ToolStripMenuItem_Click(object sender, EventArgs e)
-    {
-        Show<CMUNAllianceTablesForm>();
-    }
-
     // Windows - Cascade
     private void Cascade_ToolStripMenuItem_Click(object sender, EventArgs e)
     {
@@ -451,4 +415,68 @@ public partial class MainForm : Form
 
     #endregion
 
+    private void generalParametersToolStripMenuItem_Click(object sender, EventArgs e)
+    {
+        Show<GeneralParamTableEntryForm>();
+    }
+
+    private void sideParametersToolStripMenuItem_Click(object sender, EventArgs e)
+    {
+        Show<SideParamTableEntryForm>();
+    }
+
+    private void coreSystemsFacilitiesToolStripMenuItem_Click(object sender, EventArgs e)
+    {
+        Show<SystemFacilitiesCoreTablesForm>();
+    }
+
+    private void rimSystemsFacilitiesToolStripMenuItem_Click(object sender, EventArgs e)
+    {
+        Show<SystemFacilitiesRimTablesForm>();
+    }
+
+    private void allianceFleetsToolStripMenuItem_Click(object sender, EventArgs e)
+    {
+
+    }
+
+    private void allianceSystemArmiesToolStripMenuItem_Click(object sender, EventArgs e)
+    {
+        Show<CMUNAllianceTablesForm>();
+    }
+
+    private void allianceHeadquarterArmiesToolStripMenuItem_Click(object sender, EventArgs e)
+    {
+
+    }
+
+    private void allianceHeadquarterFacilitiesToolStripMenuItem_Click(object sender, EventArgs e)
+    {
+
+    }
+
+    private void allianceYavin4ArmiesToolStripMenuItem_Click(object sender, EventArgs e)
+    {
+
+    }
+
+    private void empireFleetsToolStripMenuItem_Click(object sender, EventArgs e)
+    {
+
+    }
+
+    private void empireSystemsFleetsToolStripMenuItem_Click(object sender, EventArgs e)
+    {
+        Show<CMUNEmpireTablesForm>();
+    }
+
+    private void empireCoruscantArmiesToolStripMenuItem_Click(object sender, EventArgs e)
+    {
+
+    }
+
+    private void empireCoruscantFacilitiesToolStripMenuItem_Click(object sender, EventArgs e)
+    {
+
+    }
 }
