@@ -28,7 +28,7 @@
 * 61/61 enhanced character sprites displaying their base average stats
 * 27/29 high definition 3d models for capital ships
 * 80 high definition sprites for space fighters (X-wing, ...)
-* A savegame pack to test some features : https://github.com/MetasharpNet/StarWarsRebellionEditor.NET/releases/tag/swr-editor.net-savegame-20231015
+* Savegame Test Pack : https://github.com/MetasharpNet/StarWarsRebellionEditor.NET/releases/tag/swr-editor.net-savegame-20231015
 * Screenshots :
 
 ![New Canon Galaxy map](https://i.ibb.co/c8XZD0j/1.png)
