@@ -19,17 +19,16 @@ public partial class EmpireFleetsTableForm : EmpireFleetsTableDesignForm
     {
         var previousUnsavedData = GameFile.UnsavedData;
 
-        armyComboBox.Items.AddRange(Identifier.EmpireCapitalShips);
-        armyComboBox.Items.AddRange(Identifier.EmpireUnits);
-        unitComboBox.Items.AddRange(Identifier.EmpireCapitalShips);
-        unitComboBox.Items.AddRange(Identifier.EmpireUnits);
-        foreach (var army in GameFile.Armies)
+        groupComboBox.Items.AddRange(Identifier.EmpireCapitalShips);
+        groupComboBox.Items.AddRange(Identifier.EmpireUnits);
+        itemComboBox.Items.AddRange(Identifier.EmpireCapitalShips);
+        itemComboBox.Items.AddRange(Identifier.EmpireUnits);
+        foreach (var group in GameFile.Groups)
         {
-            armiesDataGridView.Rows.Add(new object[3]
-            {
-                    army.Index,
-                    army.Probability,
-                    army.ToString()
+            groupsDataGridView.Rows.Add(new object[2]
+                {
+                    group.Index,
+                    group.ToString()
                 });
         }
 
@@ -40,33 +39,22 @@ public partial class EmpireFleetsTableForm : EmpireFleetsTableDesignForm
 
     #region Changed events
 
-    private void armiesDataGridView_SelectionChanged(object sender, EventArgs e)
+    private void groupsDataGridView_SelectionChanged(object sender, EventArgs e)
     {
-        if (armiesDataGridView.SelectedCells.Count != 1)
+        if (groupsDataGridView.SelectedCells.Count != 1)
         {
-            unitsListView.Items.Clear();
+            itemsListView.Items.Clear();
             return;
         }
-        var armyId = Int32.Parse(armiesDataGridView.SelectedCells[0].RowIndex.ToString());
-        var army = GameFile.Armies[armyId];
-        unitsListView.Items.Clear();
-        foreach (var unit in army.Units)
+        var groupId = Int32.Parse(groupsDataGridView.SelectedCells[0].RowIndex.ToString());
+        var group = GameFile.Groups[groupId];
+        itemsListView.Items.Clear();
+        foreach (var item in group.Items)
         {
-            unitsListView.Items.Add(new ListViewItem(new string[2]
+            itemsListView.Items.Add(new ListViewItem(new string[1]
                 {
-                    unit.ToString(),
-                    ""
+                    item.ToString()
                 }));
-        }
-    }
-    private void armiesDataGridView_CellValueChanged(object sender, DataGridViewCellEventArgs e)
-    {
-        if (e.ColumnIndex == 1 && e.RowIndex >= 0)
-        {
-            var armyId = e.RowIndex;
-            var army = GameFile.Armies[armyId];
-            army.Probability = uint.Parse(armiesDataGridView.Rows[e.RowIndex].Cells[e.ColumnIndex].Value.ToString());
-            GameFile.UnsavedData = true;
         }
     }
 
@@ -74,96 +62,95 @@ public partial class EmpireFleetsTableForm : EmpireFleetsTableDesignForm
 
     #region Add/Remove events
 
-    private void addArmyButton_Click(object sender, EventArgs e)
+    private void addGroupButton_Click(object sender, EventArgs e)
     {
-        if (armyComboBox.SelectedItem == null)
+        if (groupComboBox.SelectedItem == null)
             return;
-        var unit = new CMUNEFTB_Unit()
-        {
-            Field1_1 = 1,
-            Field2_0 = 0,
-            Unit = Identifier.ToValue(armyComboBox.Text)
-        };
-        var army = new CMUNEFTB_Army()
-        {
-            Field2_1 = 1,
-            Field4_1 = 1,
-            Field5_1 = 1,
-            Index = (uint)GameFile.Armies.Length + 1,
-            Probability = 100,
-            Units = new CMUNEFTB_Unit[] { unit },
-            UnitsCount = 1
-        };
-        var armies = new List<CMUNEFTB_Army>(GameFile.Armies);
-        armies.Add(army);
-        GameFile.Armies = armies.ToArray();
-        armiesDataGridView.Rows.Add(new object[3]
+        var item = new CMUNEFTB_Item
             {
-                army.Index,
-                army.Probability,
-                army.ToString()
+                Field1_1 = 1,
+                Field2_0 = 0,
+                Item = Identifier.ToValue(groupComboBox.Text)
+            };
+        var group = new CMUNEFTB_Group
+            {
+                Field2_1 = 1,
+                Field4_1 = 1,
+                Field5_1 = 1,
+                Index = (uint)GameFile.Groups.Length + 1,
+                IndexBis = (uint)GameFile.Groups.Length + 1,
+                Items = new CMUNEFTB_Item[] { item },
+                ItemsCount = 1
+            };
+        var groups = new List<CMUNEFTB_Group>(GameFile.Groups);
+        groups.Add(group);
+        GameFile.Groups = groups.ToArray();
+        groupsDataGridView.Rows.Add(new object[2]
+            {
+                group.Index,
+                group.ToString()
             });
-        GameFile.ArmiesCount++;
+        GameFile.GroupsCount++;
         GameFile.UnsavedData = true;
-        armiesDataGridView_SelectionChanged(sender, e);
+        groupsDataGridView_SelectionChanged(sender, e);
     }
 
-    private void delArmyButton_Click(object sender, EventArgs e)
+    private void delGroupButton_Click(object sender, EventArgs e)
     {
-        if (armiesDataGridView.SelectedCells.Count != 1)
+        if (groupsDataGridView.SelectedCells.Count != 1)
             return;
-        var armyId = Int32.Parse(armiesDataGridView.SelectedCells[0].RowIndex.ToString());
-        var armies = new List<CMUNEFTB_Army>(GameFile.Armies);
-        armies.RemoveAt(armyId);
-        GameFile.Armies = armies.ToArray();
-        armiesDataGridView.Rows.RemoveAt(armyId);
-        unitsListView.Items.Clear();
-        GameFile.ArmiesCount--;
+        var groupId = Int32.Parse(groupsDataGridView.SelectedCells[0].RowIndex.ToString());
+        var groups = new List<CMUNEFTB_Group>(GameFile.Groups);
+        groups.RemoveAt(groupId);
+        GameFile.Groups = groups.ToArray();
+        groupsDataGridView.Rows.RemoveAt(groupId);
+        itemsListView.Items.Clear();
+        GameFile.GroupsCount--;
         GameFile.UnsavedData = true;
-        armiesDataGridView_SelectionChanged(sender, e);
-        if (GameFile.ArmiesCount > 0)
-            armiesDataGridView.CurrentCell = armiesDataGridView.Rows[(int)Math.Min(armyId, GameFile.ArmiesCount - 1)].Cells[2];
+        groupsDataGridView_SelectionChanged(sender, e);
+        if (GameFile.GroupsCount > 0)
+            groupsDataGridView.CurrentCell = groupsDataGridView.Rows[(int)Math.Min(groupId, GameFile.GroupsCount - 1)].Cells[1];
     }
 
-    private void addUnitButton_Click(object sender, EventArgs e)
+    private void addItemButton_Click(object sender, EventArgs e)
     {
-        if (armiesDataGridView.SelectedCells.Count != 1)
+        if (groupsDataGridView.SelectedCells.Count != 1)
             return;
-        if (unitComboBox.SelectedItem == null)
+        if (itemComboBox.SelectedItem == null)
             return;
-        var armyId = Int32.Parse(armiesDataGridView.SelectedCells[0].RowIndex.ToString());
-        var army = GameFile.Armies[armyId];
-        var units = new List<CMUNEFTB_Unit>(army.Units);
-        units.Add(new CMUNEFTB_Unit()
-        {
-            Field1_1 = 1,
-            Field2_0 = 0,
-            Unit = Identifier.ToValue(unitComboBox.Text)
-        });
-        army.Units = units.ToArray();
-        army.UnitsCount = (uint)units.Count;
+        var groupId = Int32.Parse(groupsDataGridView.SelectedCells[0].RowIndex.ToString());
+        var group = GameFile.Groups[groupId];
+        var items = new List<CMUNEFTB_Item>(group.Items);
+        items.Add(new CMUNEFTB_Item
+            {
+                Field1_1 = 1,
+                Field2_0 = 0,
+                Item = Identifier.ToValue(itemComboBox.Text)
+            });
+        group.Items = items.ToArray();
+        group.ItemsCount = (uint)items.Count;
         GameFile.UnsavedData = true;
-        armiesDataGridView_SelectionChanged(sender, e);
+        groupsDataGridView_SelectionChanged(sender, e);
     }
 
-    private void delUnitButton_Click(object sender, EventArgs e)
+    private void delItemButton_Click(object sender, EventArgs e)
     {
-        if (armiesDataGridView.SelectedCells.Count != 1)
+        if (groupsDataGridView.SelectedCells.Count != 1)
             return;
-        if (unitsListView.SelectedItems.Count != 1)
+        if (itemsListView.SelectedItems.Count != 1)
             return;
-        var unitId = Int32.Parse(unitsListView.SelectedIndices[0].ToString());
-        if (unitId == 0)
+        var itemId = Int32.Parse(itemsListView.SelectedIndices[0].ToString());
+        if (itemId == 0)
             return;
-        var armyId = Int32.Parse(armiesDataGridView.SelectedCells[0].RowIndex.ToString());
-        var army = GameFile.Armies[armyId];
-        var units = new List<CMUNEFTB_Unit>(army.Units);
-        units.RemoveAt(unitId);
-        army.Units = units.ToArray();
-        army.UnitsCount = (uint)units.Count;
+        var groupId = Int32.Parse(groupsDataGridView.SelectedCells[0].RowIndex.ToString());
+        var group = GameFile.Groups[groupId];
+        var items = new List<CMUNEFTB_Item>(group.Items);
+        items.RemoveAt(itemId);
+        group.Items = items.ToArray();
+        group.ItemsCount = (uint)items.Count;
         GameFile.UnsavedData = true;
-        armiesDataGridView_SelectionChanged(sender, e);
-        unitsListView.Items[(int)Math.Min(unitId, army.UnitsCount - 1)].Selected = true;
+        groupsDataGridView_SelectionChanged(sender, e);
+        itemsListView.Items[(int)Math.Min(itemId, group.ItemsCount - 1)].Selected = true;
     }
 
     #endregion

@@ -4,13 +4,13 @@ public class CMUNALTB : DatFile
 {
     public uint Field1_1; // 1
     [ArraySize(1)]
-    public uint ArmiesCount; // 12
+    public uint GroupsCount; // 12
     [ArraySize(0)]
     public uint InfoLength; // 20
     public byte[] Info; // "SeedFamilyTableEntry" as 1 byte per char
-    public CMUNALTB_Army[] Armies;
+    public CMUNALTB_Group[] Groups;
 }
-public class CMUNALTB_Army
+public class CMUNALTB_Group
 {
     public uint Index; // index based 1
     public uint Field2_1; // 1
@@ -18,21 +18,21 @@ public class CMUNALTB_Army
     public uint Field4_1; // 1
     public uint Field5_1; // 1
     [ArraySize]
-    public uint UnitsCount;
-    public CMUNALTB_Unit[] Units;
+    public uint ItemsCount;
+    public CMUNALTB_Item[] Items;
     public override string ToString()
     {
-        return String.Join<CMUNALTB_Unit>(",", Units);
+        return String.Join<CMUNALTB_Item>(",", Items);
     }
 
 }
-public class CMUNALTB_Unit
+public class CMUNALTB_Item
 {
     public uint Field1_1; // 1
     public uint Field2_0; // 0
-    public uint Unit;
+    public uint Item;
     public override string ToString()
     {
-        return Identifier.ToName(Unit);
+        return Identifier.ToName(Item);
     }
 }

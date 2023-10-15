@@ -4,35 +4,35 @@ public class CMUNCRTB : DatFile
 {
     public uint Field1_1; // 1
     [ArraySize(1)]
-    public uint ArmiesCount; // 12
+    public uint GroupsCount; // 12
     [ArraySize(0)]
     public uint InfoLength; // 20
     public byte[] Info; // "SeedFamilyTableEntry" as 1 byte per char
-    public CMUNCRTB_Army[] Armies;
+    public CMUNCRTB_Group[] Groups;
 }
-public class CMUNCRTB_Army
+public class CMUNCRTB_Group
 {
     public uint Index; // index based 1
     public uint Field2_1; // 1
-    public uint Probability; // 1, 9, 13, 27, 36, 40, 54, 58, 89, 90, 93, 97
+    public uint IndexBis; // = Index
     public uint Field4_1; // 1
     public uint Field5_1; // 1
     [ArraySize]
-    public uint UnitsCount;
-    public CMUNCRTB_Unit[] Units;
+    public uint ItemsCount;
+    public CMUNCRTB_Item[] Items;
     public override string ToString()
     {
-        return String.Join<CMUNCRTB_Unit>(",", Units);
+        return String.Join<CMUNCRTB_Item>(",", Items);
     }
 
 }
-public class CMUNCRTB_Unit
+public class CMUNCRTB_Item
 {
     public uint Field1_1; // 1
     public uint Field2_0; // 0
-    public uint Unit;
+    public uint Item;
     public override string ToString()
     {
-        return Identifier.ToName(Unit);
+        return Identifier.ToName(Item);
     }
 }

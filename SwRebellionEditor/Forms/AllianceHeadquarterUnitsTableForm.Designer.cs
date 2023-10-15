@@ -45,20 +45,19 @@ namespace SwRebellionEditor
             SaveAs = new Button();
             Cancel = new Button();
             Ok = new Button();
-            unitsListView = new ListView();
-            columnHeader4 = new ColumnHeader();
-            addUnitButton = new Button();
-            delUnitButton = new Button();
-            unitComboBox = new ComboBox();
-            armyComboBox = new ComboBox();
-            delArmyButton = new Button();
-            addArmyButton = new Button();
-            armiesDataGridView = new DataGridView();
+            itemsListView = new ListView();
+            itemsColumn = new ColumnHeader();
+            addItemButton = new Button();
+            delItemButton = new Button();
+            itemComboBox = new ComboBox();
+            groupComboBox = new ComboBox();
+            delGroupButton = new Button();
+            addGroupButton = new Button();
+            groupsDataGridView = new DataGridView();
             idColumn = new DataGridViewTextBoxColumn();
-            percentColumn = new DataGridViewTextBoxColumn();
-            armyColumn = new DataGridViewTextBoxColumn();
+            groupColumn = new DataGridViewTextBoxColumn();
             infoLabel = new Label();
-            ((ISupportInitialize)armiesDataGridView).BeginInit();
+            ((ISupportInitialize)groupsDataGridView).BeginInit();
             SuspendLayout();
             // 
             // openNew
@@ -106,96 +105,99 @@ namespace SwRebellionEditor
             Ok.UseVisualStyleBackColor = true;
             Ok.Click += Ok_Click;
             // 
-            // unitsListView
+            // itemsListView
             // 
-            unitsListView.Columns.AddRange(new ColumnHeader[] { columnHeader4 });
-            unitsListView.FullRowSelect = true;
-            unitsListView.GridLines = true;
-            unitsListView.HeaderStyle = ColumnHeaderStyle.Nonclickable;
-            unitsListView.Location = new Point(332, 31);
-            unitsListView.Margin = new Padding(4, 3, 4, 3);
-            unitsListView.MultiSelect = false;
-            unitsListView.Name = "unitsListView";
-            unitsListView.Size = new Size(271, 384);
-            unitsListView.TabIndex = 55;
-            unitsListView.UseCompatibleStateImageBehavior = false;
-            unitsListView.View = View.Details;
+            itemsListView.Columns.AddRange(new ColumnHeader[] { itemsColumn });
+            itemsListView.FullRowSelect = true;
+            itemsListView.GridLines = true;
+            itemsListView.HeaderStyle = ColumnHeaderStyle.Nonclickable;
+            itemsListView.Location = new Point(332, 31);
+            itemsListView.Margin = new Padding(4, 3, 4, 3);
+            itemsListView.MultiSelect = false;
+            itemsListView.Name = "itemsListView";
+            itemsListView.Size = new Size(271, 384);
+            itemsListView.TabIndex = 55;
+            itemsListView.UseCompatibleStateImageBehavior = false;
+            itemsListView.View = View.Details;
             // 
-            // columnHeader4
+            // itemsColumn
             // 
-            columnHeader4.Text = "Army Units (First is container)";
-            columnHeader4.Width = 265;
+            itemsColumn.Text = "Army Units (First is empty)";
+            itemsColumn.Width = 265;
             // 
-            // addUnitButton
+            // addItemButton
             // 
-            addUnitButton.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            addUnitButton.Location = new Point(521, 421);
-            addUnitButton.Name = "addUnitButton";
-            addUnitButton.Size = new Size(38, 24);
-            addUnitButton.TabIndex = 56;
-            addUnitButton.Text = "Add";
-            addUnitButton.UseVisualStyleBackColor = true;
-            addUnitButton.Click += addUnitButton_Click;
+            addItemButton.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            addItemButton.Location = new Point(521, 421);
+            addItemButton.Name = "addItemButton";
+            addItemButton.Size = new Size(38, 24);
+            addItemButton.TabIndex = 56;
+            addItemButton.Text = "Add";
+            addItemButton.UseVisualStyleBackColor = true;
+            addItemButton.Click += addItemButton_Click;
             // 
-            // delUnitButton
+            // delItemButton
             // 
-            delUnitButton.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            delUnitButton.ForeColor = Color.Red;
-            delUnitButton.Location = new Point(565, 421);
-            delUnitButton.Name = "delUnitButton";
-            delUnitButton.Size = new Size(38, 24);
-            delUnitButton.TabIndex = 57;
-            delUnitButton.Text = "Del";
-            delUnitButton.UseVisualStyleBackColor = true;
-            delUnitButton.Click += delUnitButton_Click;
+            delItemButton.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            delItemButton.ForeColor = Color.Red;
+            delItemButton.Location = new Point(565, 421);
+            delItemButton.Name = "delItemButton";
+            delItemButton.Size = new Size(38, 24);
+            delItemButton.TabIndex = 57;
+            delItemButton.Text = "Del";
+            delItemButton.UseVisualStyleBackColor = true;
+            delItemButton.Click += delItemButton_Click;
             // 
-            // unitComboBox
+            // itemComboBox
             // 
-            unitComboBox.FormattingEnabled = true;
-            unitComboBox.Location = new Point(332, 421);
-            unitComboBox.Name = "unitComboBox";
-            unitComboBox.Size = new Size(183, 23);
-            unitComboBox.TabIndex = 58;
+            itemComboBox.FormattingEnabled = true;
+            itemComboBox.Location = new Point(332, 421);
+            itemComboBox.Name = "itemComboBox";
+            itemComboBox.Size = new Size(183, 23);
+            itemComboBox.TabIndex = 58;
             // 
-            // armyComboBox
+            // groupComboBox
             // 
-            armyComboBox.FormattingEnabled = true;
-            armyComboBox.Location = new Point(6, 421);
-            armyComboBox.Name = "armyComboBox";
-            armyComboBox.Size = new Size(232, 23);
-            armyComboBox.TabIndex = 61;
+            groupComboBox.Enabled = false;
+            groupComboBox.FormattingEnabled = true;
+            groupComboBox.Location = new Point(6, 421);
+            groupComboBox.Name = "groupComboBox";
+            groupComboBox.Size = new Size(232, 23);
+            groupComboBox.TabIndex = 61;
             // 
-            // delArmyButton
+            // delGroupButton
             // 
-            delArmyButton.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            delArmyButton.ForeColor = Color.Red;
-            delArmyButton.Location = new Point(288, 421);
-            delArmyButton.Name = "delArmyButton";
-            delArmyButton.Size = new Size(38, 23);
-            delArmyButton.TabIndex = 60;
-            delArmyButton.Text = "Del";
-            delArmyButton.UseVisualStyleBackColor = true;
-            delArmyButton.Click += delArmyButton_Click;
+            delGroupButton.Enabled = false;
+            delGroupButton.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            delGroupButton.ForeColor = Color.Red;
+            delGroupButton.Location = new Point(288, 421);
+            delGroupButton.Name = "delGroupButton";
+            delGroupButton.Size = new Size(38, 23);
+            delGroupButton.TabIndex = 60;
+            delGroupButton.Text = "Del";
+            delGroupButton.UseVisualStyleBackColor = true;
+            delGroupButton.Click += delGroupButton_Click;
             // 
-            // addArmyButton
+            // addGroupButton
             // 
-            addArmyButton.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            addArmyButton.Location = new Point(244, 421);
-            addArmyButton.Name = "addArmyButton";
-            addArmyButton.Size = new Size(38, 24);
-            addArmyButton.TabIndex = 59;
-            addArmyButton.Text = "Add";
-            addArmyButton.UseVisualStyleBackColor = true;
-            addArmyButton.Click += addArmyButton_Click;
+            addGroupButton.Enabled = false;
+            addGroupButton.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            addGroupButton.Location = new Point(244, 421);
+            addGroupButton.Name = "addGroupButton";
+            addGroupButton.Size = new Size(38, 24);
+            addGroupButton.TabIndex = 59;
+            addGroupButton.Text = "Add";
+            addGroupButton.UseVisualStyleBackColor = true;
+            addGroupButton.Click += addGroupButton_Click;
             // 
-            // armiesDataGridView
+            // groupsDataGridView
             // 
-            armiesDataGridView.AllowUserToAddRows = false;
-            armiesDataGridView.AllowUserToDeleteRows = false;
-            armiesDataGridView.AllowUserToResizeColumns = false;
-            armiesDataGridView.AllowUserToResizeRows = false;
-            armiesDataGridView.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            armiesDataGridView.Columns.AddRange(new DataGridViewColumn[] { idColumn, percentColumn, armyColumn });
+            groupsDataGridView.AllowUserToAddRows = false;
+            groupsDataGridView.AllowUserToDeleteRows = false;
+            groupsDataGridView.AllowUserToResizeColumns = false;
+            groupsDataGridView.AllowUserToResizeRows = false;
+            groupsDataGridView.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            groupsDataGridView.Columns.AddRange(new DataGridViewColumn[] { idColumn, groupColumn });
             dataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle1.BackColor = SystemColors.Window;
             dataGridViewCellStyle1.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
@@ -203,15 +205,14 @@ namespace SwRebellionEditor
             dataGridViewCellStyle1.SelectionBackColor = SystemColors.Highlight;
             dataGridViewCellStyle1.SelectionForeColor = SystemColors.HighlightText;
             dataGridViewCellStyle1.WrapMode = DataGridViewTriState.False;
-            armiesDataGridView.DefaultCellStyle = dataGridViewCellStyle1;
-            armiesDataGridView.Location = new Point(6, 31);
-            armiesDataGridView.Name = "armiesDataGridView";
-            armiesDataGridView.RowHeadersVisible = false;
-            armiesDataGridView.RowTemplate.Height = 25;
-            armiesDataGridView.Size = new Size(322, 384);
-            armiesDataGridView.TabIndex = 62;
-            armiesDataGridView.CellValueChanged += armiesDataGridView_CellValueChanged;
-            armiesDataGridView.SelectionChanged += armiesDataGridView_SelectionChanged;
+            groupsDataGridView.DefaultCellStyle = dataGridViewCellStyle1;
+            groupsDataGridView.Location = new Point(6, 31);
+            groupsDataGridView.Name = "groupsDataGridView";
+            groupsDataGridView.RowHeadersVisible = false;
+            groupsDataGridView.RowTemplate.Height = 25;
+            groupsDataGridView.Size = new Size(322, 384);
+            groupsDataGridView.TabIndex = 62;
+            groupsDataGridView.SelectionChanged += groupsDataGridView_SelectionChanged;
             // 
             // idColumn
             // 
@@ -221,31 +222,24 @@ namespace SwRebellionEditor
             idColumn.Resizable = DataGridViewTriState.False;
             idColumn.Width = 32;
             // 
-            // percentColumn
+            // groupColumn
             // 
-            percentColumn.HeaderText = "%";
-            percentColumn.Name = "percentColumn";
-            percentColumn.Resizable = DataGridViewTriState.False;
-            percentColumn.Width = 32;
-            // 
-            // armyColumn
-            // 
-            armyColumn.HeaderText = "Army";
-            armyColumn.Name = "armyColumn";
-            armyColumn.ReadOnly = true;
-            armyColumn.Resizable = DataGridViewTriState.False;
-            armyColumn.Width = 255;
+            groupColumn.HeaderText = "Army";
+            groupColumn.Name = "groupColumn";
+            groupColumn.ReadOnly = true;
+            groupColumn.Resizable = DataGridViewTriState.False;
+            groupColumn.Width = 287;
             // 
             // infoLabel
             // 
             infoLabel.AutoSize = true;
             infoLabel.Location = new Point(13, 9);
             infoLabel.Name = "infoLabel";
-            infoLabel.Size = new Size(530, 15);
+            infoLabel.Size = new Size(287, 15);
             infoLabel.TabIndex = 63;
-            infoLabel.Text = "You can define here the Alliance Headquarter units at start with their probabilities.";
+            infoLabel.Text = "Define here initial Alliance Headquarter ground units.";
             // 
-            // AllianceUnitsTableForm
+            // AllianceHeadquarterUnitsTableForm
             // 
             AcceptButton = Ok;
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -253,14 +247,14 @@ namespace SwRebellionEditor
             CancelButton = Cancel;
             ClientSize = new Size(609, 486);
             Controls.Add(infoLabel);
-            Controls.Add(armiesDataGridView);
-            Controls.Add(armyComboBox);
-            Controls.Add(delArmyButton);
-            Controls.Add(addArmyButton);
-            Controls.Add(unitComboBox);
-            Controls.Add(delUnitButton);
-            Controls.Add(addUnitButton);
-            Controls.Add(unitsListView);
+            Controls.Add(groupsDataGridView);
+            Controls.Add(groupComboBox);
+            Controls.Add(delGroupButton);
+            Controls.Add(addGroupButton);
+            Controls.Add(itemComboBox);
+            Controls.Add(delItemButton);
+            Controls.Add(addItemButton);
+            Controls.Add(itemsListView);
             Controls.Add(openNew);
             Controls.Add(SaveAs);
             Controls.Add(Cancel);
@@ -271,24 +265,23 @@ namespace SwRebellionEditor
             Name = "AllianceHeadquarterUnitsTableForm";
             Text = "Alliance Headquarter Units Table (CMUNHQTB.DAT)";
             Load += GameObjectsListForm_Load;
-            ((ISupportInitialize)armiesDataGridView).EndInit();
+            ((ISupportInitialize)groupsDataGridView).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
-        private ListView unitsListView;
-        private ColumnHeader columnHeader4;
-        private Button addUnitButton;
-        private Button delUnitButton;
-        private ComboBox unitComboBox;
-        private ComboBox armyComboBox;
-        private Button delArmyButton;
-        private Button addArmyButton;
-        private DataGridView armiesDataGridView;
-        private DataGridViewTextBoxColumn idColumn;
-        private DataGridViewTextBoxColumn percentColumn;
-        private DataGridViewTextBoxColumn armyColumn;
+        private ListView itemsListView;
+        private ColumnHeader itemsColumn;
+        private Button addItemButton;
+        private Button delItemButton;
+        private ComboBox itemComboBox;
+        private ComboBox groupComboBox;
+        private Button delGroupButton;
+        private Button addGroupButton;
+        private DataGridView groupsDataGridView;
         private Label infoLabel;
+        private DataGridViewTextBoxColumn idColumn;
+        private DataGridViewTextBoxColumn groupColumn;
     }
 }

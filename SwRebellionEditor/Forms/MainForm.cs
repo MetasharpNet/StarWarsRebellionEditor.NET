@@ -348,8 +348,8 @@ public partial class MainForm : Form
     {
         Show<AllianceFleetsTableForm>();
     }
-    // Initial Game Setup - Alliance: Systems Units
-    private void allianceSystemUnitsToolStripMenuItem_Click(object sender, EventArgs e)
+    // Initial Game Setup - Alliance: Random Units
+    private void allianceRandomUnitsToolStripMenuItem_Click(object sender, EventArgs e)
     {
         Show<AllianceUnitsTableForm>();
     }
@@ -373,8 +373,8 @@ public partial class MainForm : Form
     {
         Show<EmpireFleetsTableForm>();
     }
-    // Initial Game Setup - Empire: Units
-    private void empireSystemsUnitsToolStripMenuItem_Click(object sender, EventArgs e)
+    // Initial Game Setup - Empire: Random Units
+    private void empireRandomUnitsToolStripMenuItem_Click(object sender, EventArgs e)
     {
         Show<EmpireUnitsTableForm>();
     }
