@@ -1,6 +1,6 @@
 ﻿namespace SwRebellionEditor;
 
-public class CMUNCRTB : DatFile
+public class CMUNAFTB : DatFile
 {
     public uint Field1_1; // 1
     [ArraySize(1)]
@@ -8,9 +8,9 @@ public class CMUNCRTB : DatFile
     [ArraySize(0)]
     public uint InfoLength; // 20
     public byte[] Info; // "SeedFamilyTableEntry" as 1 byte per char
-    public CMUNCRTB_Army[] Armies;
+    public CMUNAFTB_Army[] Armies;
 }
-public class CMUNCRTB_Army
+public class CMUNAFTB_Army
 {
     public uint Index; // index based 1
     public uint Field2_1; // 1
@@ -19,14 +19,14 @@ public class CMUNCRTB_Army
     public uint Field5_1; // 1
     [ArraySize]
     public uint UnitsCount;
-    public CMUNCRTB_Unit[] Units;
+    public CMUNAFTB_Unit[] Units;
     public override string ToString()
     {
-        return String.Join<CMUNCRTB_Unit>(",", Units);
+        return String.Join<CMUNAFTB_Unit>(",", Units);
     }
 
 }
-public class CMUNCRTB_Unit
+public class CMUNAFTB_Unit
 {
     public uint Field1_1; // 1
     public uint Field2_0; // 0

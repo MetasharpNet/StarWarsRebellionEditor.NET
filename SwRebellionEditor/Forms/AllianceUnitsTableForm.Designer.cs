@@ -5,7 +5,7 @@ using System.Windows.Forms;
 
 namespace SwRebellionEditor
 {
-    partial class CMUNEmpireTablesForm
+    partial class AllianceUnitsTableForm
     {
         /// <summary>
         /// Required designer variable.
@@ -241,11 +241,11 @@ namespace SwRebellionEditor
             infoLabel.AutoSize = true;
             infoLabel.Location = new Point(13, 9);
             infoLabel.Name = "infoLabel";
-            infoLabel.Size = new Size(539, 15);
+            infoLabel.Size = new Size(530, 15);
             infoLabel.TabIndex = 63;
-            infoLabel.Text = "You can define here the Empire armies randomly spread in the galaxy at start with their probabilities.";
+            infoLabel.Text = "You can define here the Alliance units randomly spread in the galaxy at start with their probabilities.";
             // 
-            // CMUNEmpireTablesForm
+            // AllianceUnitsTableForm
             // 
             AcceptButton = Ok;
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -268,8 +268,8 @@ namespace SwRebellionEditor
             Margin = new Padding(4, 3, 4, 3);
             MaximumSize = new Size(625, 525);
             MinimumSize = new Size(625, 525);
-            Name = "CMUNEmpireTablesForm";
-            Text = "Costing Maintenance Units - Empire Tables (CMUNEMTB.DAT)";
+            Name = "AllianceUnitsTableForm";
+            Text = "Alliance Units Table (CMUNALTB.DAT)";
             Load += GameObjectsListForm_Load;
             ((ISupportInitialize)armiesDataGridView).EndInit();
             ResumeLayout(false);

@@ -6,7 +6,7 @@ using System.Windows.Forms;
 
 namespace SwRebellionEditor
 {
-    partial class SystemFacilitiesRimTablesForm
+    partial class RimSystemsFacilitiesTablesForm
     {
         /// <summary>
         /// Required designer variable.
@@ -454,7 +454,7 @@ namespace SwRebellionEditor
             facilityPercent0.Value = new decimal(new int[] { 100, 0, 0, 0 });
             facilityPercent0.ValueChanged += facilityPercent0_ValueChanged;
             // 
-            // SystemFacilitiesRimTablesForm
+            // RimSystemsFacilitiesTablesForm
             // 
             AcceptButton = Ok;
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -491,8 +491,8 @@ namespace SwRebellionEditor
             Controls.Add(Cancel);
             Controls.Add(troopName);
             Margin = new Padding(4, 3, 4, 3);
-            Name = "SystemFacilitiesRimTablesForm";
-            Text = "System Facilities Rim Tables (SYFCRMTB.DAT)";
+            Name = "RimSystemsFacilitiesTablesForm";
+            Text = "Rim Systems Facilities Table (SYFCRMTB.DAT)";
             FormClosing += GameObjectsListForm_FormClosing;
             Load += GameObjectsListForm_Load;
             ((ISupportInitialize)facilityType0).EndInit();

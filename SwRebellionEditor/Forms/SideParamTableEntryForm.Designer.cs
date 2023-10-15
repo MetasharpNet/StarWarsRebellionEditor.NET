@@ -11,7 +11,7 @@ namespace SwRebellionEditor
         /// <summary>
         /// Required designer variable.
         /// </summary>
-        private System.ComponentModel.IContainer components = null;
+        private IContainer components = null;
         private Button Open;
         private Button SaveAs;
         private Button Cancel;
@@ -688,7 +688,7 @@ namespace SwRebellionEditor
             MaximumSize = new Size(489, 580);
             MinimumSize = new Size(489, 580);
             Name = "SideParamTableEntryForm";
-            Text = "SideParamTableEntry (SDPRTB.DAT)";
+            Text = "Side Parameters Tables (SDPRTB.DAT)";
             FormClosing += GameObjectsListForm_FormClosing;
             Load += GameObjectsListForm_Load;
             KeyDown += GameObjectsListForm_KeyDown;

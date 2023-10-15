@@ -5,7 +5,7 @@ using System.Windows.Forms;
 
 namespace SwRebellionEditor
 {
-    partial class CMUNAllianceTablesForm
+    partial class AllianceFleetsTableForm
     {
         /// <summary>
         /// Required designer variable.
@@ -40,7 +40,7 @@ namespace SwRebellionEditor
         /// </summary>
         private void InitializeComponent()
         {
-            DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
             openNew = new Button();
             SaveAs = new Button();
             Cancel = new Button();
@@ -196,14 +196,14 @@ namespace SwRebellionEditor
             armiesDataGridView.AllowUserToResizeRows = false;
             armiesDataGridView.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             armiesDataGridView.Columns.AddRange(new DataGridViewColumn[] { idColumn, percentColumn, armyColumn });
-            dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = SystemColors.Window;
-            dataGridViewCellStyle2.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            dataGridViewCellStyle2.ForeColor = SystemColors.ControlText;
-            dataGridViewCellStyle2.SelectionBackColor = SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = DataGridViewTriState.False;
-            armiesDataGridView.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = SystemColors.Window;
+            dataGridViewCellStyle1.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            dataGridViewCellStyle1.ForeColor = SystemColors.ControlText;
+            dataGridViewCellStyle1.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = DataGridViewTriState.False;
+            armiesDataGridView.DefaultCellStyle = dataGridViewCellStyle1;
             armiesDataGridView.Location = new Point(6, 31);
             armiesDataGridView.Name = "armiesDataGridView";
             armiesDataGridView.RowHeadersVisible = false;
@@ -243,9 +243,9 @@ namespace SwRebellionEditor
             infoLabel.Name = "infoLabel";
             infoLabel.Size = new Size(539, 15);
             infoLabel.TabIndex = 63;
-            infoLabel.Text = "You can define here the Alliance armies randomly spread in the galaxy at start with their probabilities.";
+            infoLabel.Text = "You can define here the Alliance fleets randomly spread in the galaxy at start with their probabilities.";
             // 
-            // CMUNAllianceTablesForm
+            // AllianceArmiesTableForm
             // 
             AcceptButton = Ok;
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -268,8 +268,8 @@ namespace SwRebellionEditor
             Margin = new Padding(4, 3, 4, 3);
             MaximumSize = new Size(625, 525);
             MinimumSize = new Size(625, 525);
-            Name = "CMUNAllianceTablesForm";
-            Text = "Costing Maintenance Units - Alliance Tables (CMUNALTB.DAT)";
+            Name = "AllianceFleetsTableForm";
+            Text = "Alliance Fleets Table (CMUNAFTB.DAT)";
             Load += GameObjectsListForm_Load;
             ((ISupportInitialize)armiesDataGridView).EndInit();
             ResumeLayout(false);

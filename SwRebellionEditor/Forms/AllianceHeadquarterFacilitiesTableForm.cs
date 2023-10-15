@@ -1,13 +1,13 @@
 ﻿namespace SwRebellionEditor;
 
-public partial class CMUNEmpireTablesForm : CMUNEmpireTablesDesignForm
+public partial class AllianceHeadquarterFacilitiesTableForm : AllianceHeadquarterFacilitiesTableDesignForm
 {
     #region .ctor
 
-    public CMUNEmpireTablesForm()
+    public AllianceHeadquarterFacilitiesTableForm()
     {
-        GameFilePath = Path.Combine(Settings.Current.GDataFolder, "CMUNEMTB.DAT");
-        GameFile = DatFile.Load<CMUNEMTB>(GameFilePath);
+        GameFilePath = Path.Combine(Settings.Current.GDataFolder, "FACLHQTB.DAT");
+        GameFile = DatFile.Load<FACLHQTB>(GameFilePath);
         InitializeComponent();
     }
 
@@ -19,10 +19,10 @@ public partial class CMUNEmpireTablesForm : CMUNEmpireTablesDesignForm
     {
         var previousUnsavedData = GameFile.UnsavedData;
 
-        armyComboBox.Items.AddRange(Identifier.EmpireCapitalShips);
-        armyComboBox.Items.AddRange(Identifier.EmpireUnits);
-        unitComboBox.Items.AddRange(Identifier.EmpireCapitalShips);
-        unitComboBox.Items.AddRange(Identifier.EmpireUnits);
+        armyComboBox.Items.AddRange(Identifier.AllianceCapitalShips);
+        armyComboBox.Items.AddRange(Identifier.AllianceUnits);
+        unitComboBox.Items.AddRange(Identifier.AllianceCapitalShips);
+        unitComboBox.Items.AddRange(Identifier.AllianceUnits);
         foreach (var army in GameFile.Armies)
         {
             armiesDataGridView.Rows.Add(new object[3]
@@ -78,23 +78,23 @@ public partial class CMUNEmpireTablesForm : CMUNEmpireTablesDesignForm
     {
         if (armyComboBox.SelectedItem == null)
             return;
-        var unit = new CMUNEMTB_Unit()
+        var unit = new FACLHQTB_Unit()
         {
             Field1_1 = 1,
             Field2_0 = 0,
             Unit = Identifier.ToValue(armyComboBox.Text)
         };
-        var army = new CMUNEMTB_Army()
+        var army = new FACLHQTB_Army()
         {
             Field2_1 = 1,
             Field4_1 = 1,
             Field5_1 = 1,
             Index = (uint)GameFile.Armies.Length + 1,
             Probability = 100,
-            Units = new CMUNEMTB_Unit[] { unit },
+            Units = new FACLHQTB_Unit[] { unit },
             UnitsCount = 1
         };
-        var armies = new List<CMUNEMTB_Army>(GameFile.Armies);
+        var armies = new List<FACLHQTB_Army>(GameFile.Armies);
         armies.Add(army);
         GameFile.Armies = armies.ToArray();
         armiesDataGridView.Rows.Add(new object[3]
@@ -113,7 +113,7 @@ public partial class CMUNEmpireTablesForm : CMUNEmpireTablesDesignForm
         if (armiesDataGridView.SelectedCells.Count != 1)
             return;
         var armyId = Int32.Parse(armiesDataGridView.SelectedCells[0].RowIndex.ToString());
-        var armies = new List<CMUNEMTB_Army>(GameFile.Armies);
+        var armies = new List<FACLHQTB_Army>(GameFile.Armies);
         armies.RemoveAt(armyId);
         GameFile.Armies = armies.ToArray();
         armiesDataGridView.Rows.RemoveAt(armyId);
@@ -133,8 +133,8 @@ public partial class CMUNEmpireTablesForm : CMUNEmpireTablesDesignForm
             return;
         var armyId = Int32.Parse(armiesDataGridView.SelectedCells[0].RowIndex.ToString());
         var army = GameFile.Armies[armyId];
-        var units = new List<CMUNEMTB_Unit>(army.Units);
-        units.Add(new CMUNEMTB_Unit()
+        var units = new List<FACLHQTB_Unit>(army.Units);
+        units.Add(new FACLHQTB_Unit()
         {
             Field1_1 = 1,
             Field2_0 = 0,
@@ -157,7 +157,7 @@ public partial class CMUNEmpireTablesForm : CMUNEmpireTablesDesignForm
             return;
         var armyId = Int32.Parse(armiesDataGridView.SelectedCells[0].RowIndex.ToString());
         var army = GameFile.Armies[armyId];
-        var units = new List<CMUNEMTB_Unit>(army.Units);
+        var units = new List<FACLHQTB_Unit>(army.Units);
         units.RemoveAt(unitId);
         army.Units = units.ToArray();
         army.UnitsCount = (uint)units.Count;

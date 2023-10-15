@@ -130,14 +130,14 @@ namespace SwRebellionEditor
             rimSystemsFacilitiesToolStripMenuItem = new ToolStripMenuItem();
             toolStripSeparator6 = new ToolStripSeparator();
             allianceFleetsToolStripMenuItem = new ToolStripMenuItem();
-            allianceSystemArmiesToolStripMenuItem = new ToolStripMenuItem();
-            allianceHeadquarterArmiesToolStripMenuItem = new ToolStripMenuItem();
+            allianceSystemUnitsToolStripMenuItem = new ToolStripMenuItem();
+            allianceHeadquarterUnitsToolStripMenuItem = new ToolStripMenuItem();
             allianceHeadquarterFacilitiesToolStripMenuItem = new ToolStripMenuItem();
-            allianceYavin4ArmiesToolStripMenuItem = new ToolStripMenuItem();
+            allianceYavin4UnitsToolStripMenuItem = new ToolStripMenuItem();
             toolStripSeparator5 = new ToolStripSeparator();
             empireFleetsToolStripMenuItem = new ToolStripMenuItem();
-            empireSystemsFleetsToolStripMenuItem = new ToolStripMenuItem();
-            empireCoruscantArmiesToolStripMenuItem = new ToolStripMenuItem();
+            empireSystemsUnitsToolStripMenuItem = new ToolStripMenuItem();
+            empireCoruscantUnitsToolStripMenuItem = new ToolStripMenuItem();
             empireCoruscantFacilitiesToolStripMenuItem = new ToolStripMenuItem();
             Patch_ToolStripMenuItem = new ToolStripMenuItem();
             Export_ToolStripMenuItem = new ToolStripMenuItem();
@@ -282,7 +282,7 @@ namespace SwRebellionEditor
             // 
             mapToolStripMenuItem.Image = Resources.galaxy_16x16_bmp;
             mapToolStripMenuItem.Name = "mapToolStripMenuItem";
-            mapToolStripMenuItem.Size = new Size(180, 22);
+            mapToolStripMenuItem.Size = new Size(117, 22);
             mapToolStripMenuItem.Text = "Map";
             mapToolStripMenuItem.Click += Map_ToolStripMenuItem_Click;
             // 
@@ -290,7 +290,7 @@ namespace SwRebellionEditor
             // 
             Sectors_ToolStripMenuItem.Image = Resources.sector_16x16_bmp;
             Sectors_ToolStripMenuItem.Name = "Sectors_ToolStripMenuItem";
-            Sectors_ToolStripMenuItem.Size = new Size(180, 22);
+            Sectors_ToolStripMenuItem.Size = new Size(117, 22);
             Sectors_ToolStripMenuItem.Text = "Sectors";
             Sectors_ToolStripMenuItem.Click += Sectors_ToolStripMenuItem_Click;
             // 
@@ -298,7 +298,7 @@ namespace SwRebellionEditor
             // 
             Systems_ToolStripMenuItem.Image = Resources.planet_37x37_bmp;
             Systems_ToolStripMenuItem.Name = "Systems_ToolStripMenuItem";
-            Systems_ToolStripMenuItem.Size = new Size(180, 22);
+            Systems_ToolStripMenuItem.Size = new Size(117, 22);
             Systems_ToolStripMenuItem.Text = "Systems";
             Systems_ToolStripMenuItem.Click += Systems_ToolStripMenuItem_Click;
             // 
@@ -400,7 +400,7 @@ namespace SwRebellionEditor
             // 
             // initialGameSetupToolStripMenuItem
             // 
-            initialGameSetupToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { generalParametersToolStripMenuItem, sideParametersToolStripMenuItem, toolStripSeparator7, coreSystemsFacilitiesToolStripMenuItem, rimSystemsFacilitiesToolStripMenuItem, toolStripSeparator6, allianceFleetsToolStripMenuItem, allianceSystemArmiesToolStripMenuItem, allianceHeadquarterArmiesToolStripMenuItem, allianceHeadquarterFacilitiesToolStripMenuItem, allianceYavin4ArmiesToolStripMenuItem, toolStripSeparator5, empireFleetsToolStripMenuItem, empireSystemsFleetsToolStripMenuItem, empireCoruscantArmiesToolStripMenuItem, empireCoruscantFacilitiesToolStripMenuItem });
+            initialGameSetupToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { generalParametersToolStripMenuItem, sideParametersToolStripMenuItem, toolStripSeparator7, coreSystemsFacilitiesToolStripMenuItem, rimSystemsFacilitiesToolStripMenuItem, toolStripSeparator6, allianceFleetsToolStripMenuItem, allianceSystemUnitsToolStripMenuItem, allianceHeadquarterFacilitiesToolStripMenuItem, allianceHeadquarterUnitsToolStripMenuItem, allianceYavin4UnitsToolStripMenuItem, toolStripSeparator5, empireFleetsToolStripMenuItem, empireSystemsUnitsToolStripMenuItem, empireCoruscantFacilitiesToolStripMenuItem, empireCoruscantUnitsToolStripMenuItem });
             initialGameSetupToolStripMenuItem.Name = "initialGameSetupToolStripMenuItem";
             initialGameSetupToolStripMenuItem.Size = new Size(195, 22);
             initialGameSetupToolStripMenuItem.Text = "Initial Game Setup";
@@ -450,19 +450,19 @@ namespace SwRebellionEditor
             allianceFleetsToolStripMenuItem.Text = "Alliance: Fleets";
             allianceFleetsToolStripMenuItem.Click += allianceFleetsToolStripMenuItem_Click;
             // 
-            // allianceSystemArmiesToolStripMenuItem
+            // allianceSystemUnitsToolStripMenuItem
             // 
-            allianceSystemArmiesToolStripMenuItem.Name = "allianceSystemArmiesToolStripMenuItem";
-            allianceSystemArmiesToolStripMenuItem.Size = new Size(236, 22);
-            allianceSystemArmiesToolStripMenuItem.Text = "Alliance: Systems Armies";
-            allianceSystemArmiesToolStripMenuItem.Click += allianceSystemArmiesToolStripMenuItem_Click;
+            allianceSystemUnitsToolStripMenuItem.Name = "allianceSystemUnitsToolStripMenuItem";
+            allianceSystemUnitsToolStripMenuItem.Size = new Size(236, 22);
+            allianceSystemUnitsToolStripMenuItem.Text = "Alliance: Systems Units";
+            allianceSystemUnitsToolStripMenuItem.Click += allianceSystemUnitsToolStripMenuItem_Click;
             // 
-            // allianceHeadquarterArmiesToolStripMenuItem
+            // allianceHeadquarterUnitsToolStripMenuItem
             // 
-            allianceHeadquarterArmiesToolStripMenuItem.Name = "allianceHeadquarterArmiesToolStripMenuItem";
-            allianceHeadquarterArmiesToolStripMenuItem.Size = new Size(236, 22);
-            allianceHeadquarterArmiesToolStripMenuItem.Text = "Alliance: Headquarter Armies";
-            allianceHeadquarterArmiesToolStripMenuItem.Click += allianceHeadquarterArmiesToolStripMenuItem_Click;
+            allianceHeadquarterUnitsToolStripMenuItem.Name = "allianceHeadquarterUnitsToolStripMenuItem";
+            allianceHeadquarterUnitsToolStripMenuItem.Size = new Size(236, 22);
+            allianceHeadquarterUnitsToolStripMenuItem.Text = "Alliance: Headquarter Units";
+            allianceHeadquarterUnitsToolStripMenuItem.Click += allianceHeadquarterUnitsToolStripMenuItem_Click;
             // 
             // allianceHeadquarterFacilitiesToolStripMenuItem
             // 
@@ -471,12 +471,12 @@ namespace SwRebellionEditor
             allianceHeadquarterFacilitiesToolStripMenuItem.Text = "Alliance: Headquarter Facilities";
             allianceHeadquarterFacilitiesToolStripMenuItem.Click += allianceHeadquarterFacilitiesToolStripMenuItem_Click;
             // 
-            // allianceYavin4ArmiesToolStripMenuItem
+            // allianceYavin4UnitsToolStripMenuItem
             // 
-            allianceYavin4ArmiesToolStripMenuItem.Name = "allianceYavin4ArmiesToolStripMenuItem";
-            allianceYavin4ArmiesToolStripMenuItem.Size = new Size(236, 22);
-            allianceYavin4ArmiesToolStripMenuItem.Text = "Alliance: Yavin 4 Armies";
-            allianceYavin4ArmiesToolStripMenuItem.Click += allianceYavin4ArmiesToolStripMenuItem_Click;
+            allianceYavin4UnitsToolStripMenuItem.Name = "allianceYavin4UnitsToolStripMenuItem";
+            allianceYavin4UnitsToolStripMenuItem.Size = new Size(236, 22);
+            allianceYavin4UnitsToolStripMenuItem.Text = "Alliance: Yavin 4 Units";
+            allianceYavin4UnitsToolStripMenuItem.Click += allianceYavin4UnitsToolStripMenuItem_Click;
             // 
             // toolStripSeparator5
             // 
@@ -490,19 +490,19 @@ namespace SwRebellionEditor
             empireFleetsToolStripMenuItem.Text = "Empire: Fleets";
             empireFleetsToolStripMenuItem.Click += empireFleetsToolStripMenuItem_Click;
             // 
-            // empireSystemsFleetsToolStripMenuItem
+            // empireSystemsUnitsToolStripMenuItem
             // 
-            empireSystemsFleetsToolStripMenuItem.Name = "empireSystemsFleetsToolStripMenuItem";
-            empireSystemsFleetsToolStripMenuItem.Size = new Size(236, 22);
-            empireSystemsFleetsToolStripMenuItem.Text = "Empire: Systems Armies";
-            empireSystemsFleetsToolStripMenuItem.Click += empireSystemsFleetsToolStripMenuItem_Click;
+            empireSystemsUnitsToolStripMenuItem.Name = "empireSystemsUnitsToolStripMenuItem";
+            empireSystemsUnitsToolStripMenuItem.Size = new Size(236, 22);
+            empireSystemsUnitsToolStripMenuItem.Text = "Empire: Systems Units";
+            empireSystemsUnitsToolStripMenuItem.Click += empireSystemsUnitsToolStripMenuItem_Click;
             // 
-            // empireCoruscantArmiesToolStripMenuItem
+            // empireCoruscantUnitsToolStripMenuItem
             // 
-            empireCoruscantArmiesToolStripMenuItem.Name = "empireCoruscantArmiesToolStripMenuItem";
-            empireCoruscantArmiesToolStripMenuItem.Size = new Size(236, 22);
-            empireCoruscantArmiesToolStripMenuItem.Text = "Empire: Coruscant Armies";
-            empireCoruscantArmiesToolStripMenuItem.Click += empireCoruscantArmiesToolStripMenuItem_Click;
+            empireCoruscantUnitsToolStripMenuItem.Name = "empireCoruscantUnitsToolStripMenuItem";
+            empireCoruscantUnitsToolStripMenuItem.Size = new Size(236, 22);
+            empireCoruscantUnitsToolStripMenuItem.Text = "Empire: Coruscant Units";
+            empireCoruscantUnitsToolStripMenuItem.Click += empireCoruscantUnitsToolStripMenuItem_Click;
             // 
             // empireCoruscantFacilitiesToolStripMenuItem
             // 
@@ -886,13 +886,13 @@ namespace SwRebellionEditor
         private ToolStripMenuItem Export_ToolStripMenuItem;
         private ToolStripMenuItem initialGameSetupToolStripMenuItem;
         private ToolStripMenuItem allianceFleetsToolStripMenuItem;
-        private ToolStripMenuItem allianceHeadquarterArmiesToolStripMenuItem;
+        private ToolStripMenuItem allianceHeadquarterUnitsToolStripMenuItem;
         private ToolStripMenuItem allianceHeadquarterFacilitiesToolStripMenuItem;
-        private ToolStripMenuItem allianceSystemArmiesToolStripMenuItem;
-        private ToolStripMenuItem allianceYavin4ArmiesToolStripMenuItem;
-        private ToolStripMenuItem empireCoruscantArmiesToolStripMenuItem;
+        private ToolStripMenuItem allianceSystemUnitsToolStripMenuItem;
+        private ToolStripMenuItem allianceYavin4UnitsToolStripMenuItem;
+        private ToolStripMenuItem empireCoruscantUnitsToolStripMenuItem;
         private ToolStripMenuItem empireFleetsToolStripMenuItem;
-        private ToolStripMenuItem empireSystemsFleetsToolStripMenuItem;
+        private ToolStripMenuItem empireSystemsUnitsToolStripMenuItem;
         private ToolStripMenuItem empireCoruscantFacilitiesToolStripMenuItem;
         private ToolStripSeparator toolStripSeparator5;
         private ToolStripMenuItem generalParametersToolStripMenuItem;

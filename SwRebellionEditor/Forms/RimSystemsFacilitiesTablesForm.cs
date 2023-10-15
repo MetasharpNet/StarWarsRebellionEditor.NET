@@ -1,13 +1,13 @@
 ﻿namespace SwRebellionEditor;
 
-public partial class SystemFacilitiesCoreTablesForm : SystemFacilitiesCoreTablesDesignForm
+public partial class RimSystemsFacilitiesTablesForm : RimSystemsFacilitiesTablesDesignForm
 {
     #region .ctor
 
-    public SystemFacilitiesCoreTablesForm()
+    public RimSystemsFacilitiesTablesForm()
     {
-        GameFilePath = Path.Combine(Settings.Current.GDataFolder, "SYFCCRTB.DAT");
-        GameFile = DatFile.Load<SYFCCRTB>(GameFilePath);
+        GameFilePath = Path.Combine(Settings.Current.GDataFolder, "SYFCRMTB.DAT");
+        GameFile = DatFile.Load<SYFCRMTB>(GameFilePath);
         InitializeComponent();
     }
 
@@ -25,7 +25,6 @@ public partial class SystemFacilitiesCoreTablesForm : SystemFacilitiesCoreTables
         facilityPercent4.Value = GameFile.FacilityProbabilities[4].Percent;
         facilityPercent5.Value = GameFile.FacilityProbabilities[5].Percent;
         facilityPercent6.Value = GameFile.FacilityProbabilities[6].Percent;
-        facilityPercent7.Value = GameFile.FacilityProbabilities[7].Percent;
         facilityType0.Value = GameFile.FacilityProbabilities[0].TypeId;
         facilityType1.Value = GameFile.FacilityProbabilities[1].TypeId;
         facilityType2.Value = GameFile.FacilityProbabilities[2].TypeId;
@@ -33,7 +32,6 @@ public partial class SystemFacilitiesCoreTablesForm : SystemFacilitiesCoreTables
         facilityType4.Value = GameFile.FacilityProbabilities[4].TypeId;
         facilityType5.Value = GameFile.FacilityProbabilities[5].TypeId;
         facilityType6.Value = GameFile.FacilityProbabilities[6].TypeId;
-        facilityType7.Value = GameFile.FacilityProbabilities[7].TypeId;
         SelectFacilityIndex(facilityBox0, GameFile.FacilityProbabilities[0]);
         SelectFacilityIndex(facilityBox1, GameFile.FacilityProbabilities[1]);
         SelectFacilityIndex(facilityBox2, GameFile.FacilityProbabilities[2]);
@@ -41,7 +39,6 @@ public partial class SystemFacilitiesCoreTablesForm : SystemFacilitiesCoreTables
         SelectFacilityIndex(facilityBox4, GameFile.FacilityProbabilities[4]);
         SelectFacilityIndex(facilityBox5, GameFile.FacilityProbabilities[5]);
         SelectFacilityIndex(facilityBox6, GameFile.FacilityProbabilities[6]);
-        SelectFacilityIndex(facilityBox7, GameFile.FacilityProbabilities[7]);
         GameFile.UnsavedData = previousUnsavedData;
     }
     public byte FacilityStringToByte(string facility)
@@ -117,7 +114,7 @@ public partial class SystemFacilitiesCoreTablesForm : SystemFacilitiesCoreTables
         else if (facility.Text == "Shipyard" && newFacilityId == 6)
             facility.Text = "Advanced Shipyard";
     }
-    private void SelectFacilityIndex(ComboBox facility, SYFCCRTB_FacilityProbability facilityProbability)
+    private void SelectFacilityIndex(ComboBox facility, SYFCRMTB_FacilityProbability facilityProbability)
     {
         switch (facilityProbability.FacilityId)
         {
@@ -206,12 +203,6 @@ public partial class SystemFacilitiesCoreTablesForm : SystemFacilitiesCoreTables
         facilityType6.Value = FacilityStringToFacilityTypeDecimal(facilityBox6.Text);
         GameFile.UnsavedData = true;
     }
-    private void facilityBox7_SelectionChangeCommitted(object sender, EventArgs e)
-    {
-        GameFile.FacilityProbabilities[7].FacilityId = FacilityStringToByte(facilityBox7.Text);
-        facilityType7.Value = FacilityStringToFacilityTypeDecimal(facilityBox7.Text);
-        GameFile.UnsavedData = true;
-    }
     private void facilityPercent0_ValueChanged(object sender, EventArgs e)
     {
         GameFile.FacilityProbabilities[0].Percent = (ushort)facilityPercent0.Value;
@@ -245,11 +236,6 @@ public partial class SystemFacilitiesCoreTablesForm : SystemFacilitiesCoreTables
     private void facilityPercent6_ValueChanged(object sender, EventArgs e)
     {
         GameFile.FacilityProbabilities[6].Percent = (ushort)facilityPercent6.Value;
-        GameFile.UnsavedData = true;
-    }
-    private void facilityPercent7_ValueChanged(object sender, EventArgs e)
-    {
-        GameFile.FacilityProbabilities[7].Percent = (ushort)facilityPercent7.Value;
         GameFile.UnsavedData = true;
     }
     private void facilityType0_ValueChanged(object sender, EventArgs e)
@@ -292,12 +278,6 @@ public partial class SystemFacilitiesCoreTablesForm : SystemFacilitiesCoreTables
     {
         UpdateFacilityComboBox(facilityBox6, facilityType6.Value);
         GameFile.FacilityProbabilities[6].TypeId = (byte)facilityType6.Value;
-        GameFile.UnsavedData = true;
-    }
-    private void facilityType7_ValueChanged(object sender, EventArgs e)
-    {
-        UpdateFacilityComboBox(facilityBox7, facilityType7.Value);
-        GameFile.FacilityProbabilities[7].TypeId = (byte)facilityType7.Value;
         GameFile.UnsavedData = true;
     }
 

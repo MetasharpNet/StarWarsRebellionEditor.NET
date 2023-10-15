@@ -323,6 +323,71 @@ public partial class MainForm : Form
     {
         Show<ProductionFacilitiesForm>();
     }
+    // Initial Game Setup - General Parameters
+    private void generalParametersToolStripMenuItem_Click(object sender, EventArgs e)
+    {
+        Show<GeneralParamTableEntryForm>();
+    }
+    // Initial Game Setup - Side Parameters
+    private void sideParametersToolStripMenuItem_Click(object sender, EventArgs e)
+    {
+        Show<SideParamTableEntryForm>();
+    }
+    // Initial Game Setup - Core Systems: Facilities
+    private void coreSystemsFacilitiesToolStripMenuItem_Click(object sender, EventArgs e)
+    {
+        Show<CoreSystemsFacilitiesTablesForm>();
+    }
+    // Initial Game Setup - Rim Systems: Facilities
+    private void rimSystemsFacilitiesToolStripMenuItem_Click(object sender, EventArgs e)
+    {
+        Show<RimSystemsFacilitiesTablesForm>();
+    }
+    // Initial Game Setup - Alliance: Fleets
+    private void allianceFleetsToolStripMenuItem_Click(object sender, EventArgs e)
+    {
+        Show<AllianceFleetsTableForm>();
+    }
+    // Initial Game Setup - Alliance: Systems Units
+    private void allianceSystemUnitsToolStripMenuItem_Click(object sender, EventArgs e)
+    {
+        Show<AllianceUnitsTableForm>();
+    }
+    // Initial Game Setup - Alliance: Headquarter Facilities
+    private void allianceHeadquarterFacilitiesToolStripMenuItem_Click(object sender, EventArgs e)
+    {
+        Show<AllianceHeadquarterFacilitiesTableForm>();
+    }
+    // Initial Game Setup - Alliance: Headquarter Units
+    private void allianceHeadquarterUnitsToolStripMenuItem_Click(object sender, EventArgs e)
+    {
+        Show<AllianceHeadquarterUnitsTableForm>();
+    }
+    // Initial Game Setup - Alliance: Yavin 4 Units
+    private void allianceYavin4UnitsToolStripMenuItem_Click(object sender, EventArgs e)
+    {
+        Show<AllianceYavin4UnitsTableForm>();
+    }
+    // Initial Game Setup - Empire: Fleets
+    private void empireFleetsToolStripMenuItem_Click(object sender, EventArgs e)
+    {
+        Show<EmpireFleetsTableForm>();
+    }
+    // Initial Game Setup - Empire: Units
+    private void empireSystemsUnitsToolStripMenuItem_Click(object sender, EventArgs e)
+    {
+        Show<EmpireUnitsTableForm>();
+    }
+    // Initial Game Setup - Empire: Coruscant Facilities
+    private void empireCoruscantFacilitiesToolStripMenuItem_Click(object sender, EventArgs e)
+    {
+        Show<EmpireCoruscantFacilitiesTableForm>();
+    }
+    // Initial Game Setup - Empire: Coruscant Units
+    private void empireCoruscantUnitsToolStripMenuItem_Click(object sender, EventArgs e)
+    {
+        Show<EmpireCoruscantUnitsTableForm>();
+    }
     // Editor - Patch
     private void Patch_ToolStripMenuItem_Click(object sender, EventArgs e)
     {
@@ -414,69 +479,4 @@ public partial class MainForm : Form
     }
 
     #endregion
-
-    private void generalParametersToolStripMenuItem_Click(object sender, EventArgs e)
-    {
-        Show<GeneralParamTableEntryForm>();
-    }
-
-    private void sideParametersToolStripMenuItem_Click(object sender, EventArgs e)
-    {
-        Show<SideParamTableEntryForm>();
-    }
-
-    private void coreSystemsFacilitiesToolStripMenuItem_Click(object sender, EventArgs e)
-    {
-        Show<SystemFacilitiesCoreTablesForm>();
-    }
-
-    private void rimSystemsFacilitiesToolStripMenuItem_Click(object sender, EventArgs e)
-    {
-        Show<SystemFacilitiesRimTablesForm>();
-    }
-
-    private void allianceFleetsToolStripMenuItem_Click(object sender, EventArgs e)
-    {
-
-    }
-
-    private void allianceSystemArmiesToolStripMenuItem_Click(object sender, EventArgs e)
-    {
-        Show<CMUNAllianceTablesForm>();
-    }
-
-    private void allianceHeadquarterArmiesToolStripMenuItem_Click(object sender, EventArgs e)
-    {
-
-    }
-
-    private void allianceHeadquarterFacilitiesToolStripMenuItem_Click(object sender, EventArgs e)
-    {
-
-    }
-
-    private void allianceYavin4ArmiesToolStripMenuItem_Click(object sender, EventArgs e)
-    {
-
-    }
-
-    private void empireFleetsToolStripMenuItem_Click(object sender, EventArgs e)
-    {
-
-    }
-
-    private void empireSystemsFleetsToolStripMenuItem_Click(object sender, EventArgs e)
-    {
-        Show<CMUNEmpireTablesForm>();
-    }
-
-    private void empireCoruscantArmiesToolStripMenuItem_Click(object sender, EventArgs e)
-    {
-
-    }
-
-    private void empireCoruscantFacilitiesToolStripMenuItem_Click(object sender, EventArgs e)
-    {
-
-    }
 }
