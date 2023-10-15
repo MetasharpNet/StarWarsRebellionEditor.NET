@@ -171,7 +171,7 @@ namespace SwRebellionEditor
             delArmyButton.ForeColor = Color.Red;
             delArmyButton.Location = new Point(288, 421);
             delArmyButton.Name = "delArmyButton";
-            delArmyButton.Size = new Size(38, 23);
+            delArmyButton.Size = new Size(38, 24);
             delArmyButton.TabIndex = 60;
             delArmyButton.Text = "Del";
             delArmyButton.UseVisualStyleBackColor = true;
@@ -241,11 +241,11 @@ namespace SwRebellionEditor
             infoLabel.AutoSize = true;
             infoLabel.Location = new Point(13, 9);
             infoLabel.Name = "infoLabel";
-            infoLabel.Size = new Size(539, 15);
+            infoLabel.Size = new Size(532, 15);
             infoLabel.TabIndex = 63;
             infoLabel.Text = "You can define here the Alliance fleets randomly spread in the galaxy at start with their probabilities.";
             // 
-            // AllianceArmiesTableForm
+            // AllianceFleetsTableForm
             // 
             AcceptButton = Ok;
             AutoScaleDimensions = new SizeF(7F, 15F);

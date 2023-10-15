@@ -19,10 +19,8 @@ public partial class AllianceHeadquarterFacilitiesTableForm : AllianceHeadquarte
     {
         var previousUnsavedData = GameFile.UnsavedData;
 
-        armyComboBox.Items.AddRange(Identifier.AllianceCapitalShips);
-        armyComboBox.Items.AddRange(Identifier.AllianceUnits);
-        unitComboBox.Items.AddRange(Identifier.AllianceCapitalShips);
-        unitComboBox.Items.AddRange(Identifier.AllianceUnits);
+        armyComboBox.Items.AddRange(Identifier.Facilities);
+        unitComboBox.Items.AddRange(Identifier.Facilities);
         foreach (var army in GameFile.Armies)
         {
             armiesDataGridView.Rows.Add(new object[3]

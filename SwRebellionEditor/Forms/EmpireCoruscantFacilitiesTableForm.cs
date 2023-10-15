@@ -19,10 +19,8 @@ public partial class EmpireCoruscantFacilitiesTableForm : EmpireCoruscantFacilit
     {
         var previousUnsavedData = GameFile.UnsavedData;
 
-        armyComboBox.Items.AddRange(Identifier.EmpireCapitalShips);
-        armyComboBox.Items.AddRange(Identifier.EmpireUnits);
-        unitComboBox.Items.AddRange(Identifier.EmpireCapitalShips);
-        unitComboBox.Items.AddRange(Identifier.EmpireUnits);
+        armyComboBox.Items.AddRange(Identifier.Facilities);
+        unitComboBox.Items.AddRange(Identifier.Facilities);
         foreach (var army in GameFile.Armies)
         {
             armiesDataGridView.Rows.Add(new object[3]

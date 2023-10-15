@@ -159,6 +159,7 @@ namespace SwRebellionEditor
             // 
             // armyComboBox
             // 
+            armyComboBox.Enabled = false;
             armyComboBox.FormattingEnabled = true;
             armyComboBox.Location = new Point(6, 421);
             armyComboBox.Name = "armyComboBox";
@@ -167,11 +168,12 @@ namespace SwRebellionEditor
             // 
             // delArmyButton
             // 
+            delArmyButton.Enabled = false;
             delArmyButton.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
             delArmyButton.ForeColor = Color.Red;
             delArmyButton.Location = new Point(288, 421);
             delArmyButton.Name = "delArmyButton";
-            delArmyButton.Size = new Size(38, 23);
+            delArmyButton.Size = new Size(38, 24);
             delArmyButton.TabIndex = 60;
             delArmyButton.Text = "Del";
             delArmyButton.UseVisualStyleBackColor = true;
@@ -179,6 +181,7 @@ namespace SwRebellionEditor
             // 
             // addArmyButton
             // 
+            addArmyButton.Enabled = false;
             addArmyButton.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
             addArmyButton.Location = new Point(244, 421);
             addArmyButton.Name = "addArmyButton";
@@ -241,11 +244,11 @@ namespace SwRebellionEditor
             infoLabel.AutoSize = true;
             infoLabel.Location = new Point(13, 9);
             infoLabel.Name = "infoLabel";
-            infoLabel.Size = new Size(530, 15);
+            infoLabel.Size = new Size(454, 15);
             infoLabel.TabIndex = 63;
             infoLabel.Text = "You can define here the Alliance Headquarter facilities at start with their probabilities.";
             // 
-            // AllianceUnitsTableForm
+            // AllianceHeadquarterFacilitiesTableForm
             // 
             AcceptButton = Ok;
             AutoScaleDimensions = new SizeF(7F, 15F);

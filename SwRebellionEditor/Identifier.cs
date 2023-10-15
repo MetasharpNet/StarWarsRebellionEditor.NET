@@ -52,15 +52,17 @@ public static class Identifier
             "B-wing",
             "X-wing",
             "Y-wing",
+
             "Alliance Army Regiment",
             "Alliance Fleet Regiment",
             "Mon Calamari Regiment",
             "Sullustan Regiment",
             "Wookie Regiment",
+            
             "Bothan Spies",
             "Guerillas",
             "Infiltrators",
-            "Longprobe Y-wing Recon Team"
+            "Longprobe Y-wing Recon Team",
         };
     #endregion
 
@@ -89,16 +91,42 @@ public static class Identifier
             "TIE Defender",
             "TIE Fighter",
             "TIE Interceptor",
+
             "Dark Trooper Regiment",
             "Imperial Army Regiment",
             "Imperial Fleet Regiment",
             "Stormtrooper Regiment",
             "War Droid Regiment",
+            
             "Bounty Hunters",
             "Imperial Commandos",
             "Imperial Espionage Droid",
             "Imperial Probe Droid",
-            "Noghri Death Commandos"
+            "Noghri Death Commandos",
+        };
+    #endregion
+
+    #region Neutral
+    public static string[] Facilities = new string[]
+        {
+            "Mine",
+            "Refinery",
+
+            "Construction Yard",
+            "Advanced Construction Yard",
+            "Training Facility",
+            "Advanced Training Facility",
+            "Orbital Shipyard",
+            "Advanced Shipyard",
+
+            "Death Star Shield",
+            "GenCore Level I",
+            "GenCore Level II",
+            "KDY-150",
+            "LNR Series I",
+            "LNR Series II",
+
+            "Alliance Headquarters",
         };
     #endregion
 }
