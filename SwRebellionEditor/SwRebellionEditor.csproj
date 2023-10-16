@@ -34,7 +34,7 @@
     <Compile Update="FormsParents\AllianceHeadquarterUnitsTableDesignForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="FormsParents\AllianceFleetsTableDesignForm.cs">
+    <Compile Update="FormsParents\AllianceFleetTableDesignForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="FormsParents\EmpireCoruscantFacilitiesTableDesignForm.cs">
@@ -43,7 +43,7 @@
     <Compile Update="FormsParents\EmpireCoruscantUnitsTableDesignForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="FormsParents\EmpireFleetsTableDesignForm.cs" />
+    <Compile Update="FormsParents\EmpireFleetTableDesignForm.cs" />
     <Compile Update="FormsParents\EmpireUnitsTableDesignForm.cs" />
     <Compile Update="FormsParents\GalaxyMapDesignForm.cs" />
     <Compile Update="FormsParents\ExportDesignForm.cs">
@@ -53,7 +53,7 @@
     <Compile Update="FormsParents\SideParamTableEntryDesignForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Forms\AllianceFleetsTableForm.cs">
+    <Compile Update="Forms\AllianceFleetTableForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Forms\AllianceHeadquarterFacilitiesTableForm.cs" />
@@ -64,7 +64,7 @@
     </Compile>
     <Compile Update="Forms\AllianceHeadquarterUnitsTableForm.cs" />
     <Compile Update="Forms\EmpireCoruscantFacilitiesTableForm.cs" />
-    <Compile Update="Forms\EmpireFleetsTableForm.cs" />
+    <Compile Update="Forms\EmpireFleetTableForm.cs" />
     <Compile Update="Forms\EmpireCoruscantUnitsTableForm.cs">
       <SubType>Form</SubType>
     </Compile>

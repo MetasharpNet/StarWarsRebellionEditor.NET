@@ -343,50 +343,50 @@ public partial class MainForm : Form
     {
         Show<RimSystemsFacilitiesTablesForm>();
     }
-    // Initial Game Setup - Alliance: Fleets
-    private void allianceFleetsToolStripMenuItem_Click(object sender, EventArgs e)
-    {
-        Show<AllianceFleetsTableForm>();
-    }
-    // Initial Game Setup - Alliance: Random Units
-    private void allianceRandomUnitsToolStripMenuItem_Click(object sender, EventArgs e)
-    {
-        Show<AllianceUnitsTableForm>();
-    }
     // Initial Game Setup - Alliance: Headquarter Facilities
     private void allianceHeadquarterFacilitiesToolStripMenuItem_Click(object sender, EventArgs e)
     {
         Show<AllianceHeadquarterFacilitiesTableForm>();
-    }
-    // Initial Game Setup - Alliance: Headquarter Units
-    private void allianceHeadquarterUnitsToolStripMenuItem_Click(object sender, EventArgs e)
-    {
-        Show<AllianceHeadquarterUnitsTableForm>();
-    }
-    // Initial Game Setup - Alliance: Yavin 4 Units
-    private void allianceYavin4UnitsToolStripMenuItem_Click(object sender, EventArgs e)
-    {
-        Show<AllianceYavin4UnitsTableForm>();
-    }
-    // Initial Game Setup - Empire: Fleets
-    private void empireFleetsToolStripMenuItem_Click(object sender, EventArgs e)
-    {
-        Show<EmpireFleetsTableForm>();
-    }
-    // Initial Game Setup - Empire: Random Units
-    private void empireRandomUnitsToolStripMenuItem_Click(object sender, EventArgs e)
-    {
-        Show<EmpireUnitsTableForm>();
     }
     // Initial Game Setup - Empire: Coruscant Facilities
     private void empireCoruscantFacilitiesToolStripMenuItem_Click(object sender, EventArgs e)
     {
         Show<EmpireCoruscantFacilitiesTableForm>();
     }
+    // Initial Game Setup - Alliance: Yavin 4 Units
+    private void allianceYavin4UnitsToolStripMenuItem_Click(object sender, EventArgs e)
+    {
+        Show<AllianceYavin4UnitsTableForm>();
+    }
+    // Initial Game Setup - Alliance: Headquarter Units
+    private void allianceHeadquarterUnitsToolStripMenuItem_Click(object sender, EventArgs e)
+    {
+        Show<AllianceHeadquarterUnitsTableForm>();
+    }
     // Initial Game Setup - Empire: Coruscant Units
     private void empireCoruscantUnitsToolStripMenuItem_Click(object sender, EventArgs e)
     {
         Show<EmpireCoruscantUnitsTableForm>();
+    }
+    // Initial Game Setup - Alliance: Fleet (Headquarter or Yavin 4)
+    private void allianceFleetToolStripMenuItem_Click(object sender, EventArgs e)
+    {
+        Show<AllianceFleetTableForm>();
+    }
+    // Initial Game Setup - Empire: Fleet (Coruscant)
+    private void empireFleetToolStripMenuItem_Click(object sender, EventArgs e)
+    {
+        Show<EmpireFleetTableForm>();
+    }
+    // Initial Game Setup - Alliance: Random Units
+    private void allianceRandomUnitsToolStripMenuItem_Click(object sender, EventArgs e)
+    {
+        Show<AllianceUnitsTableForm>();
+    }
+    // Initial Game Setup - Empire: Random Units
+    private void empireRandomUnitsToolStripMenuItem_Click(object sender, EventArgs e)
+    {
+        Show<EmpireUnitsTableForm>();
     }
     // Editor - Patch
     private void Patch_ToolStripMenuItem_Click(object sender, EventArgs e)

@@ -27,7 +27,7 @@ public partial class AllianceUnitsTableForm : AllianceUnitsTableDesignForm
         {
             groupsDataGridView.Rows.Add(new object[3]
             {
-                    group.Index,
+                    group.Entry,
                     group.RandomTreshold,
                     group.ToString()
                 });
@@ -48,8 +48,8 @@ public partial class AllianceUnitsTableForm : AllianceUnitsTableDesignForm
         var orderedGroups = GameFile.Groups.OrderBy(f => f.RandomTreshold).ToList();
         for (int i = 0; i < orderedGroups.Count; i++)
         {
-            orderedGroups[i].Index = (uint)i + 1;
-            groupsDataGridView.Rows[i].Cells[0].Value = orderedGroups[i].Index;
+            orderedGroups[i].Entry = (uint)i + 1;
+            groupsDataGridView.Rows[i].Cells[0].Value = orderedGroups[i].Entry;
             groupsDataGridView.Rows[i].Cells[1].Value = orderedGroups[i].RandomTreshold;
             groupsDataGridView.Rows[i].Cells[2].Value = orderedGroups[i].ToString();
         }
@@ -94,27 +94,27 @@ public partial class AllianceUnitsTableForm : AllianceUnitsTableDesignForm
         if (groupComboBox.SelectedItem == null)
             return;
         var item = new CMUNALTB_Item
-            {
-                Field1_1 = 1,
-                Field2_0 = 0,
-                Item = Identifier.ToValue(groupComboBox.Text)
-            };
+        {
+            Field1_1 = 1,
+            Field2_0 = 0,
+            Item = Identifier.ToValue(groupComboBox.Text)
+        };
         var group = new CMUNALTB_Group
-            {
-                Field2_1 = 1,
-                Field4_1 = 1,
-                Field5_1 = 1,
-                Index = (uint)GameFile.Groups.Length + 1,
-                RandomTreshold = 100,
-                Items = new CMUNALTB_Item[] { item },
-                ItemsCount = 1
-            };
+        {
+            Field2_1 = 1,
+            Field4_1 = 1,
+            Field5_1 = 1,
+            Entry = (uint)GameFile.Groups.Length + 1,
+            RandomTreshold = 100,
+            Items = new CMUNALTB_Item[] { item },
+            ItemsCount = 1
+        };
         var groups = new List<CMUNALTB_Group>(GameFile.Groups);
         groups.Add(group);
         GameFile.Groups = groups.ToArray();
         groupsDataGridView.Rows.Add(new object[3]
             {
-                group.Index,
+                group.Entry,
                 group.RandomTreshold,
                 group.ToString()
             });
@@ -137,8 +137,8 @@ public partial class AllianceUnitsTableForm : AllianceUnitsTableDesignForm
         GameFile.UnsavedData = true;
         for (int i = 0; i < GameFile.Groups.Length; i++)
         {
-            GameFile.Groups[i].Index = (uint)i + 1;
-            groupsDataGridView.Rows[i].Cells[0].Value = GameFile.Groups[i].Index;
+            GameFile.Groups[i].Entry = (uint)i + 1;
+            groupsDataGridView.Rows[i].Cells[0].Value = GameFile.Groups[i].Entry;
         }
         UpdateIndexes();
         groupsDataGridView_SelectionChanged(sender, e);
@@ -156,11 +156,11 @@ public partial class AllianceUnitsTableForm : AllianceUnitsTableDesignForm
         var group = GameFile.Groups[groupId];
         var items = new List<CMUNALTB_Item>(group.Items);
         items.Add(new CMUNALTB_Item
-            {
-                Field1_1 = 1,
-                Field2_0 = 0,
-                Item = Identifier.ToValue(itemComboBox.Text)
-            });
+        {
+            Field1_1 = 1,
+            Field2_0 = 0,
+            Item = Identifier.ToValue(itemComboBox.Text)
+        });
         group.Items = items.ToArray();
         group.ItemsCount = (uint)items.Count;
         GameFile.UnsavedData = true;

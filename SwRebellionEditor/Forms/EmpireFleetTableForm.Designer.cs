@@ -5,7 +5,7 @@ using System.Windows.Forms;
 
 namespace SwRebellionEditor
 {
-    partial class EmpireFleetsTableForm
+    partial class EmpireFleetTableForm
     {
         /// <summary>
         /// Required designer variable.
@@ -40,7 +40,7 @@ namespace SwRebellionEditor
         /// </summary>
         private void InitializeComponent()
         {
-            DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
             openNew = new Button();
             SaveAs = new Button();
             Cancel = new Button();
@@ -55,7 +55,7 @@ namespace SwRebellionEditor
             addGroupButton = new Button();
             groupsDataGridView = new DataGridView();
             infoLabel = new Label();
-            idColumn = new DataGridViewTextBoxColumn();
+            entryColumn = new DataGridViewTextBoxColumn();
             groupColumn = new DataGridViewTextBoxColumn();
             ((ISupportInitialize)groupsDataGridView).BeginInit();
             SuspendLayout();
@@ -122,7 +122,7 @@ namespace SwRebellionEditor
             // 
             // itemColumn
             // 
-            itemColumn.Text = "Fleet Units (Carrier in first)";
+            itemColumn.Text = "Units (carrying Capital Ship in first)";
             itemColumn.Width = 265;
             // 
             // addItemButton
@@ -194,15 +194,15 @@ namespace SwRebellionEditor
             groupsDataGridView.AllowUserToResizeColumns = false;
             groupsDataGridView.AllowUserToResizeRows = false;
             groupsDataGridView.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            groupsDataGridView.Columns.AddRange(new DataGridViewColumn[] { idColumn, groupColumn });
-            dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = SystemColors.Window;
-            dataGridViewCellStyle2.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            dataGridViewCellStyle2.ForeColor = SystemColors.ControlText;
-            dataGridViewCellStyle2.SelectionBackColor = SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = DataGridViewTriState.False;
-            groupsDataGridView.DefaultCellStyle = dataGridViewCellStyle2;
+            groupsDataGridView.Columns.AddRange(new DataGridViewColumn[] { entryColumn, groupColumn });
+            dataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = SystemColors.Window;
+            dataGridViewCellStyle1.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            dataGridViewCellStyle1.ForeColor = SystemColors.ControlText;
+            dataGridViewCellStyle1.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = DataGridViewTriState.False;
+            groupsDataGridView.DefaultCellStyle = dataGridViewCellStyle1;
             groupsDataGridView.Location = new Point(6, 31);
             groupsDataGridView.Name = "groupsDataGridView";
             groupsDataGridView.RowHeadersVisible = false;
@@ -216,27 +216,27 @@ namespace SwRebellionEditor
             infoLabel.AutoSize = true;
             infoLabel.Location = new Point(13, 9);
             infoLabel.Name = "infoLabel";
-            infoLabel.Size = new Size(173, 15);
+            infoLabel.Size = new Size(290, 15);
             infoLabel.TabIndex = 63;
-            infoLabel.Text = "Define here initial Empire fleets.";
+            infoLabel.Text = "Define here initial Empire fleet deployed at Coruscant.";
             // 
-            // idColumn
+            // entryColumn
             // 
-            idColumn.HeaderText = "Id";
-            idColumn.Name = "idColumn";
-            idColumn.ReadOnly = true;
-            idColumn.Resizable = DataGridViewTriState.False;
-            idColumn.Width = 32;
+            entryColumn.HeaderText = "N°";
+            entryColumn.Name = "entryColumn";
+            entryColumn.ReadOnly = true;
+            entryColumn.Resizable = DataGridViewTriState.False;
+            entryColumn.Width = 32;
             // 
             // groupColumn
             // 
-            groupColumn.HeaderText = "Fleets";
+            groupColumn.HeaderText = "Capital Ships";
             groupColumn.Name = "groupColumn";
             groupColumn.ReadOnly = true;
             groupColumn.Resizable = DataGridViewTriState.False;
             groupColumn.Width = 287;
             // 
-            // EmpireFleetsTableForm
+            // EmpireFleetTableForm
             // 
             AcceptButton = Ok;
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -259,8 +259,8 @@ namespace SwRebellionEditor
             Margin = new Padding(4, 3, 4, 3);
             MaximumSize = new Size(625, 525);
             MinimumSize = new Size(625, 525);
-            Name = "EmpireFleetsTableForm";
-            Text = "Empire Fleets Table (CMUNEFTB.DAT)";
+            Name = "EmpireFleetTableForm";
+            Text = "Empire Fleet Table (CMUNEFTB.DAT)";
             Load += GameObjectsListForm_Load;
             ((ISupportInitialize)groupsDataGridView).EndInit();
             ResumeLayout(false);
@@ -278,7 +278,7 @@ namespace SwRebellionEditor
         private Button addGroupButton;
         private DataGridView groupsDataGridView;
         private Label infoLabel;
-        private DataGridViewTextBoxColumn idColumn;
+        private DataGridViewTextBoxColumn entryColumn;
         private DataGridViewTextBoxColumn groupColumn;
     }
 }

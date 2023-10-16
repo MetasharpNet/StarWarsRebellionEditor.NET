@@ -49,7 +49,7 @@ namespace SwRebellionEditor
             delGroupButton = new Button();
             addGroupButton = new Button();
             facilitiesDataGridView = new DataGridView();
-            idColumn = new DataGridViewTextBoxColumn();
+            entryColumn = new DataGridViewTextBoxColumn();
             randomTresholdColumn = new DataGridViewTextBoxColumn();
             groupColumn = new DataGridViewTextBoxColumn();
             infoLabel = new Label();
@@ -140,7 +140,7 @@ namespace SwRebellionEditor
             facilitiesDataGridView.AllowUserToResizeColumns = false;
             facilitiesDataGridView.AllowUserToResizeRows = false;
             facilitiesDataGridView.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            facilitiesDataGridView.Columns.AddRange(new DataGridViewColumn[] { idColumn, randomTresholdColumn, groupColumn });
+            facilitiesDataGridView.Columns.AddRange(new DataGridViewColumn[] { entryColumn, randomTresholdColumn, groupColumn });
             dataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle1.BackColor = SystemColors.Window;
             dataGridViewCellStyle1.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
@@ -157,13 +157,13 @@ namespace SwRebellionEditor
             facilitiesDataGridView.TabIndex = 62;
             facilitiesDataGridView.CellValueChanged += facilitiesDataGridView_CellValueChanged;
             // 
-            // idColumn
+            // entryColumn
             // 
-            idColumn.HeaderText = "Id";
-            idColumn.Name = "idColumn";
-            idColumn.ReadOnly = true;
-            idColumn.Resizable = DataGridViewTriState.False;
-            idColumn.Width = 32;
+            entryColumn.HeaderText = "Id";
+            entryColumn.Name = "entryColumn";
+            entryColumn.ReadOnly = true;
+            entryColumn.Resizable = DataGridViewTriState.False;
+            entryColumn.Width = 32;
             // 
             // randomTresholdColumn
             // 
@@ -232,7 +232,7 @@ namespace SwRebellionEditor
         private Button addGroupButton;
         private DataGridView facilitiesDataGridView;
         private Label infoLabel;
-        private DataGridViewTextBoxColumn idColumn;
+        private DataGridViewTextBoxColumn entryColumn;
         private DataGridViewTextBoxColumn randomTresholdColumn;
         private DataGridViewTextBoxColumn groupColumn;
         private Label formulaLabel;

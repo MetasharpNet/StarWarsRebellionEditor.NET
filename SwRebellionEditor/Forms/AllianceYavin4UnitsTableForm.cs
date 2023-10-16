@@ -22,7 +22,7 @@ public partial class AllianceYavin4UnitsTableForm : AllianceYavin4UnitsTableDesi
         itemComboBox.Items.AddRange(Identifier.AllianceUnits);
         foreach (var group in GameFile.Groups)
         {
-            groupsDataGridView.Rows.Add(new object[2] { group.Index, group.ToString() });
+            groupsDataGridView.Rows.Add(new object[2] { group.Entry, group.ToString() });
         }
         GameFile.UnsavedData = previousUnsavedData;
     }
@@ -57,25 +57,25 @@ public partial class AllianceYavin4UnitsTableForm : AllianceYavin4UnitsTableDesi
         if (groupComboBox.SelectedItem == null)
             return;
         var item = new CMUNYVTB_Item
-            {
-                Field1_1 = 1,
-                Field2_0 = 0,
-                Item = Identifier.ToValue(groupComboBox.Text)
-            };
+        {
+            Field1_1 = 1,
+            Field2_0 = 0,
+            Item = Identifier.ToValue(groupComboBox.Text)
+        };
         var group = new CMUNYVTB_Group
-            {
-                Field2_1 = 1,
-                Field4_1 = 1,
-                Field5_1 = 1,
-                Index = (uint)GameFile.Groups.Length + 1,
-                IndexBis = (uint)GameFile.Groups.Length + 1,
-                Items = new CMUNYVTB_Item[] { item },
-                ItemsCount = 1
-            };
+        {
+            Field2_1 = 1,
+            Field4_1 = 1,
+            Field5_1 = 1,
+            Entry = (uint)GameFile.Groups.Length + 1,
+            EntryBis = (uint)GameFile.Groups.Length + 1,
+            Items = new CMUNYVTB_Item[] { item },
+            ItemsCount = 1
+        };
         var groups = new List<CMUNYVTB_Group>(GameFile.Groups);
         groups.Add(group);
         GameFile.Groups = groups.ToArray();
-        groupsDataGridView.Rows.Add(new object[2] { group.Index, group.ToString() });
+        groupsDataGridView.Rows.Add(new object[2] { group.Entry, group.ToString() });
         GameFile.GroupsCount++;
         GameFile.UnsavedData = true;
         groupsDataGridView_SelectionChanged(sender, e);
@@ -95,9 +95,9 @@ public partial class AllianceYavin4UnitsTableForm : AllianceYavin4UnitsTableDesi
         GameFile.UnsavedData = true;
         for (int i = 0; i < GameFile.Groups.Length; i++)
         {
-            GameFile.Groups[i].Index = (uint)i + 1;
-            GameFile.Groups[i].IndexBis = (uint)i + 1;
-            groupsDataGridView.Rows[i].Cells[0].Value = GameFile.Groups[i].Index;
+            GameFile.Groups[i].Entry = (uint)i + 1;
+            GameFile.Groups[i].EntryBis = (uint)i + 1;
+            groupsDataGridView.Rows[i].Cells[0].Value = GameFile.Groups[i].Entry;
         }
         groupsDataGridView_SelectionChanged(sender, e);
         if (GameFile.GroupsCount > 0)
@@ -114,11 +114,11 @@ public partial class AllianceYavin4UnitsTableForm : AllianceYavin4UnitsTableDesi
         var group = GameFile.Groups[groupId];
         var items = new List<CMUNYVTB_Item>(group.Items);
         items.Add(new CMUNYVTB_Item
-            {
-                Field1_1 = 1,
-                Field2_0 = 0,
-                Item = Identifier.ToValue(itemComboBox.Text)
-            });
+        {
+            Field1_1 = 1,
+            Field2_0 = 0,
+            Item = Identifier.ToValue(itemComboBox.Text)
+        });
         group.Items = items.ToArray();
         group.ItemsCount = (uint)items.Count;
         GameFile.UnsavedData = true;

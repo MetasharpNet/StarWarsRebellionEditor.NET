@@ -55,10 +55,10 @@ namespace SwRebellionEditor
             addGroupButton = new Button();
             groupsDataGridView = new DataGridView();
             infoLabel = new Label();
-            idColumn = new DataGridViewTextBoxColumn();
+            formulaLabel = new Label();
+            entryColumn = new DataGridViewTextBoxColumn();
             randomTresholdColumn = new DataGridViewTextBoxColumn();
             groupColumn = new DataGridViewTextBoxColumn();
-            formulaLabel = new Label();
             ((ISupportInitialize)groupsDataGridView).BeginInit();
             SuspendLayout();
             // 
@@ -196,7 +196,7 @@ namespace SwRebellionEditor
             groupsDataGridView.AllowUserToResizeColumns = false;
             groupsDataGridView.AllowUserToResizeRows = false;
             groupsDataGridView.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            groupsDataGridView.Columns.AddRange(new DataGridViewColumn[] { idColumn, randomTresholdColumn, groupColumn });
+            groupsDataGridView.Columns.AddRange(new DataGridViewColumn[] { entryColumn, randomTresholdColumn, groupColumn });
             dataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle1.BackColor = SystemColors.Window;
             dataGridViewCellStyle1.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
@@ -223,13 +223,22 @@ namespace SwRebellionEditor
             infoLabel.TabIndex = 63;
             infoLabel.Text = "Define here initial random Alliance units.";
             // 
-            // idColumn
+            // formulaLabel
             // 
-            idColumn.HeaderText = "Id";
-            idColumn.Name = "idColumn";
-            idColumn.ReadOnly = true;
-            idColumn.Resizable = DataGridViewTriState.False;
-            idColumn.Width = 32;
+            formulaLabel.AutoSize = true;
+            formulaLabel.Location = new Point(13, 26);
+            formulaLabel.Name = "formulaLabel";
+            formulaLabel.Size = new Size(499, 15);
+            formulaLabel.TabIndex = 65;
+            formulaLabel.Text = "Game rolls 1-100 numbers N. Each creates an army with highest random treshold < N (if any).";
+            // 
+            // entryColumn
+            // 
+            entryColumn.HeaderText = "N°";
+            entryColumn.Name = "entryColumn";
+            entryColumn.ReadOnly = true;
+            entryColumn.Resizable = DataGridViewTriState.False;
+            entryColumn.Width = 32;
             // 
             // randomTresholdColumn
             // 
@@ -245,15 +254,6 @@ namespace SwRebellionEditor
             groupColumn.ReadOnly = true;
             groupColumn.Resizable = DataGridViewTriState.False;
             groupColumn.Width = 232;
-            // 
-            // formulaLabel
-            // 
-            formulaLabel.AutoSize = true;
-            formulaLabel.Location = new Point(13, 26);
-            formulaLabel.Name = "formulaLabel";
-            formulaLabel.Size = new Size(499, 15);
-            formulaLabel.TabIndex = 65;
-            formulaLabel.Text = "Game rolls 0-100 numbers N. Each creates an army with highest random treshold < N (if any).";
             // 
             // AllianceUnitsTableForm
             // 
@@ -298,9 +298,9 @@ namespace SwRebellionEditor
         private Button addGroupButton;
         private DataGridView groupsDataGridView;
         private Label infoLabel;
-        private DataGridViewTextBoxColumn idColumn;
+        private Label formulaLabel;
+        private DataGridViewTextBoxColumn entryColumn;
         private DataGridViewTextBoxColumn randomTresholdColumn;
         private DataGridViewTextBoxColumn groupColumn;
-        private Label formulaLabel;
     }
 }

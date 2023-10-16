@@ -12,7 +12,7 @@ public class CMUNEMTB : DatFile
 }
 public class CMUNEMTB_Group
 {
-    public uint Index; // index based 1
+    public uint Entry; // 1, 2, ...
     public uint Field2_1; // 1
     public uint RandomTreshold; // 1, 9, 13, 27, 36, 40, 54, 58, 89, 90, 93, 97
     public uint Field4_1; // 1

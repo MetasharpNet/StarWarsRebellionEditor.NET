@@ -54,9 +54,9 @@ namespace SwRebellionEditor
             delGroupButton = new Button();
             addGroupButton = new Button();
             groupsDataGridView = new DataGridView();
-            idColumn = new DataGridViewTextBoxColumn();
-            groupColumn = new DataGridViewTextBoxColumn();
             infoLabel = new Label();
+            entryColumn = new DataGridViewTextBoxColumn();
+            groupColumn = new DataGridViewTextBoxColumn();
             ((ISupportInitialize)groupsDataGridView).BeginInit();
             SuspendLayout();
             // 
@@ -197,7 +197,7 @@ namespace SwRebellionEditor
             groupsDataGridView.AllowUserToResizeColumns = false;
             groupsDataGridView.AllowUserToResizeRows = false;
             groupsDataGridView.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            groupsDataGridView.Columns.AddRange(new DataGridViewColumn[] { idColumn, groupColumn });
+            groupsDataGridView.Columns.AddRange(new DataGridViewColumn[] { entryColumn, groupColumn });
             dataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle1.BackColor = SystemColors.Window;
             dataGridViewCellStyle1.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
@@ -214,22 +214,6 @@ namespace SwRebellionEditor
             groupsDataGridView.TabIndex = 62;
             groupsDataGridView.SelectionChanged += groupsDataGridView_SelectionChanged;
             // 
-            // idColumn
-            // 
-            idColumn.HeaderText = "Id";
-            idColumn.Name = "idColumn";
-            idColumn.ReadOnly = true;
-            idColumn.Resizable = DataGridViewTriState.False;
-            idColumn.Width = 32;
-            // 
-            // groupColumn
-            // 
-            groupColumn.HeaderText = "Group";
-            groupColumn.Name = "groupColumn";
-            groupColumn.ReadOnly = true;
-            groupColumn.Resizable = DataGridViewTriState.False;
-            groupColumn.Width = 287;
-            // 
             // infoLabel
             // 
             infoLabel.AutoSize = true;
@@ -238,6 +222,22 @@ namespace SwRebellionEditor
             infoLabel.Size = new Size(262, 15);
             infoLabel.TabIndex = 63;
             infoLabel.Text = "Define here initial Alliance Headquarter facilities.";
+            // 
+            // entryColumn
+            // 
+            entryColumn.HeaderText = "N°";
+            entryColumn.Name = "entryColumn";
+            entryColumn.ReadOnly = true;
+            entryColumn.Resizable = DataGridViewTriState.False;
+            entryColumn.Width = 32;
+            // 
+            // groupColumn
+            // 
+            groupColumn.HeaderText = "Group";
+            groupColumn.Name = "groupColumn";
+            groupColumn.ReadOnly = true;
+            groupColumn.Resizable = DataGridViewTriState.False;
+            groupColumn.Width = 287;
             // 
             // AllianceHeadquarterFacilitiesTableForm
             // 
@@ -281,7 +281,7 @@ namespace SwRebellionEditor
         private Button addGroupButton;
         private DataGridView groupsDataGridView;
         private Label infoLabel;
-        private DataGridViewTextBoxColumn idColumn;
+        private DataGridViewTextBoxColumn entryColumn;
         private DataGridViewTextBoxColumn groupColumn;
     }
 }

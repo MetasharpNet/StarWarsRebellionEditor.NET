@@ -1,13 +1,13 @@
 ﻿namespace SwRebellionEditor;
 
-public partial class EmpireFleetsTableForm : EmpireFleetsTableDesignForm
+public partial class AllianceFleetTableForm : AllianceFleetTableDesignForm
 {
     #region .ctor
 
-    public EmpireFleetsTableForm()
+    public AllianceFleetTableForm()
     {
-        GameFilePath = Path.Combine(Settings.Current.GDataFolder, "CMUNEFTB.DAT");
-        GameFile = DatFile.Load<CMUNEFTB>(GameFilePath);
+        GameFilePath = Path.Combine(Settings.Current.GDataFolder, "CMUNAFTB.DAT");
+        GameFile = DatFile.Load<CMUNAFTB>(GameFilePath);
         InitializeComponent();
     }
 
@@ -18,20 +18,12 @@ public partial class EmpireFleetsTableForm : EmpireFleetsTableDesignForm
     protected override void DisplayGameItemsImages()
     {
         var previousUnsavedData = GameFile.UnsavedData;
-
-        groupComboBox.Items.AddRange(Identifier.EmpireCapitalShips);
-        groupComboBox.Items.AddRange(Identifier.EmpireUnits);
-        itemComboBox.Items.AddRange(Identifier.EmpireCapitalShips);
-        itemComboBox.Items.AddRange(Identifier.EmpireUnits);
+        groupComboBox.Items.AddRange(Identifier.AllianceCapitalShips);
+        itemComboBox.Items.AddRange(Identifier.AllianceUnits);
         foreach (var group in GameFile.Groups)
         {
-            groupsDataGridView.Rows.Add(new object[2]
-                {
-                    group.Index,
-                    group.ToString()
-                });
+            groupsDataGridView.Rows.Add(new object[2] { group.Entry, group.ToString() });
         }
-
         GameFile.UnsavedData = previousUnsavedData;
     }
 
@@ -52,10 +44,7 @@ public partial class EmpireFleetsTableForm : EmpireFleetsTableDesignForm
         itemsListView.Items.Clear();
         foreach (var item in group.Items)
         {
-            itemsListView.Items.Add(new ListViewItem(new string[1]
-                {
-                    item.ToString()
-                }));
+            itemsListView.Items.Add(new ListViewItem(new string[1] { item.ToString() }));
         }
     }
 
@@ -67,30 +56,26 @@ public partial class EmpireFleetsTableForm : EmpireFleetsTableDesignForm
     {
         if (groupComboBox.SelectedItem == null)
             return;
-        var item = new CMUNEFTB_Item
-            {
-                Field1_1 = 1,
-                Field2_0 = 0,
-                Item = Identifier.ToValue(groupComboBox.Text)
-            };
-        var group = new CMUNEFTB_Group
-            {
-                Field2_1 = 1,
-                Field4_1 = 1,
-                Field5_1 = 1,
-                Index = (uint)GameFile.Groups.Length + 1,
-                IndexBis = (uint)GameFile.Groups.Length + 1,
-                Items = new CMUNEFTB_Item[] { item },
-                ItemsCount = 1
-            };
-        var groups = new List<CMUNEFTB_Group>(GameFile.Groups);
+        var item = new CMUNAFTB_Item
+        {
+            Field1_1 = 1,
+            Field2_0 = 0,
+            Item = Identifier.ToValue(groupComboBox.Text)
+        };
+        var group = new CMUNAFTB_Group
+        {
+            Field2_1 = 1,
+            Field4_1 = 1,
+            Field5_1 = 1,
+            Entry = (uint)GameFile.Groups.Length + 1,
+            EntryBis = (uint)GameFile.Groups.Length + 1,
+            Items = new CMUNAFTB_Item[] { item },
+            ItemsCount = 1
+        };
+        var groups = new List<CMUNAFTB_Group>(GameFile.Groups);
         groups.Add(group);
         GameFile.Groups = groups.ToArray();
-        groupsDataGridView.Rows.Add(new object[2]
-            {
-                group.Index,
-                group.ToString()
-            });
+        groupsDataGridView.Rows.Add(new object[2] { group.Entry, group.ToString() });
         GameFile.GroupsCount++;
         GameFile.UnsavedData = true;
         groupsDataGridView_SelectionChanged(sender, e);
@@ -101,7 +86,7 @@ public partial class EmpireFleetsTableForm : EmpireFleetsTableDesignForm
         if (groupsDataGridView.SelectedCells.Count != 1)
             return;
         var groupId = Int32.Parse(groupsDataGridView.SelectedCells[0].RowIndex.ToString());
-        var groups = new List<CMUNEFTB_Group>(GameFile.Groups);
+        var groups = new List<CMUNAFTB_Group>(GameFile.Groups);
         groups.RemoveAt(groupId);
         GameFile.Groups = groups.ToArray();
         groupsDataGridView.Rows.RemoveAt(groupId);
@@ -110,9 +95,9 @@ public partial class EmpireFleetsTableForm : EmpireFleetsTableDesignForm
         GameFile.UnsavedData = true;
         for (int i = 0; i < GameFile.Groups.Length; i++)
         {
-            GameFile.Groups[i].Index = (uint)i + 1;
-            GameFile.Groups[i].IndexBis = (uint)i + 1;
-            groupsDataGridView.Rows[i].Cells[0].Value = GameFile.Groups[i].Index;
+            GameFile.Groups[i].Entry = (uint)i + 1;
+            GameFile.Groups[i].EntryBis = (uint)i + 1;
+            groupsDataGridView.Rows[i].Cells[0].Value = GameFile.Groups[i].Entry;
         }
         groupsDataGridView_SelectionChanged(sender, e);
         if (GameFile.GroupsCount > 0)
@@ -127,13 +112,13 @@ public partial class EmpireFleetsTableForm : EmpireFleetsTableDesignForm
             return;
         var groupId = Int32.Parse(groupsDataGridView.SelectedCells[0].RowIndex.ToString());
         var group = GameFile.Groups[groupId];
-        var items = new List<CMUNEFTB_Item>(group.Items);
-        items.Add(new CMUNEFTB_Item
-            {
-                Field1_1 = 1,
-                Field2_0 = 0,
-                Item = Identifier.ToValue(itemComboBox.Text)
-            });
+        var items = new List<CMUNAFTB_Item>(group.Items);
+        items.Add(new CMUNAFTB_Item
+        {
+            Field1_1 = 1,
+            Field2_0 = 0,
+            Item = Identifier.ToValue(itemComboBox.Text)
+        });
         group.Items = items.ToArray();
         group.ItemsCount = (uint)items.Count;
         GameFile.UnsavedData = true;
@@ -151,7 +136,7 @@ public partial class EmpireFleetsTableForm : EmpireFleetsTableDesignForm
             return;
         var groupId = Int32.Parse(groupsDataGridView.SelectedCells[0].RowIndex.ToString());
         var group = GameFile.Groups[groupId];
-        var items = new List<CMUNEFTB_Item>(group.Items);
+        var items = new List<CMUNAFTB_Item>(group.Items);
         items.RemoveAt(itemId);
         group.Items = items.ToArray();
         group.ItemsCount = (uint)items.Count;

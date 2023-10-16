@@ -23,7 +23,7 @@ public partial class RimSystemsFacilitiesTablesForm : RimSystemsFacilitiesTables
         {
             facilitiesDataGridView.Rows.Add(new object[3]
                 {
-                    facility.Index,
+                    facility.Entry,
                     facility.RandomTreshold,
                     facility.ToString()
                 });
@@ -43,8 +43,8 @@ public partial class RimSystemsFacilitiesTablesForm : RimSystemsFacilitiesTables
         var orderedFacilities = GameFile.Facilities.OrderBy(f => f.RandomTreshold).ToList();
         for (int i = 0; i < orderedFacilities.Count; i++)
         {
-            orderedFacilities[i].Index = (uint)i + 1;
-            facilitiesDataGridView.Rows[i].Cells[0].Value = orderedFacilities[i].Index;
+            orderedFacilities[i].Entry = (uint)i + 1;
+            facilitiesDataGridView.Rows[i].Cells[0].Value = orderedFacilities[i].Entry;
             facilitiesDataGridView.Rows[i].Cells[1].Value = orderedFacilities[i].RandomTreshold;
             facilitiesDataGridView.Rows[i].Cells[2].Value = orderedFacilities[i].ToString();
         }
@@ -75,7 +75,7 @@ public partial class RimSystemsFacilitiesTablesForm : RimSystemsFacilitiesTables
             return;
         var facility = new SYFCRMTB_Facility
         {
-            Index = (uint)GameFile.Facilities.Length + 1,
+            Entry = (uint)GameFile.Facilities.Length + 1,
             Field2_1 = 1,
             RandomTreshold = 100,
             Facility = Identifier.ToValue(facilityComboBox.SelectedItem.ToString())
@@ -85,7 +85,7 @@ public partial class RimSystemsFacilitiesTablesForm : RimSystemsFacilitiesTables
         GameFile.Facilities = facilities.ToArray();
         facilitiesDataGridView.Rows.Add(new object[3]
             {
-                facility.Index,
+                facility.Entry,
                 facility.RandomTreshold,
                 facility.ToString()
             });

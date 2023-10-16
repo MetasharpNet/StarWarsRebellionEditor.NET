@@ -17,20 +17,20 @@ public class GNPRTB : DatFile
         GeneralParamTableEntries.First(spe => spe.Id == 60).Name = "Space Travel Time: Han Solo (%, lower=faster)";
         GeneralParamTableEntries.First(spe => spe.Id == 83).Name = "Fleet 1 location probability: Yavin vs HQ";
         
-        GeneralParamTableEntries.First(spe => spe.Id == 84).Name = "CMUNYVTB.DAT - First parent item";
-        GeneralParamTableEntries.First(spe => spe.Id == 85).Name = "CMUNYVTB.DAT - Max parent items";
-        GeneralParamTableEntries.First(spe => spe.Id == 86).Name = "CMUNHQTB.DAT - First parent item";
-        GeneralParamTableEntries.First(spe => spe.Id == 87).Name = "CMUNHQTB.DAT - Max parent items";
-        GeneralParamTableEntries.First(spe => spe.Id == 88).Name = "CMUNCRTB.DAT - First parent item";
-        GeneralParamTableEntries.First(spe => spe.Id == 89).Name = "CMUNCRTB.DAT - Max parent items";
-        GeneralParamTableEntries.First(spe => spe.Id == 90).Name = "CMUNAFTB.DAT - First parent item";
-        GeneralParamTableEntries.First(spe => spe.Id == 91).Name = "CMUNAFTB.DAT - Max parent items";
-        GeneralParamTableEntries.First(spe => spe.Id == 92).Name = "CMUNEFTB.DAT - First parent item";
-        GeneralParamTableEntries.First(spe => spe.Id == 93).Name = "CMUNEFTB.DAT - Max parent items";
-        GeneralParamTableEntries.First(spe => spe.Id == 94).Name = "FACLHQTB.DAT - First parent item";
-        GeneralParamTableEntries.First(spe => spe.Id == 95).Name = "FACLHQTB.DAT - Max parent items";
-        GeneralParamTableEntries.First(spe => spe.Id == 96).Name = "FACLCRTB.DAT - First parent item";
-        GeneralParamTableEntries.First(spe => spe.Id == 97).Name = "FACLCRTB.DAT - Max parent items";
+        GeneralParamTableEntries.First(spe => spe.Id == 84).Name = "CMUNYVTB.DAT - Alliance Yavin 4: min army n° to deploy";
+        GeneralParamTableEntries.First(spe => spe.Id == 85).Name = "CMUNYVTB.DAT - Alliance Yavin 4: max army n° to deploy";
+        GeneralParamTableEntries.First(spe => spe.Id == 86).Name = "CMUNHQTB.DAT - Alliance HQ: min army n° to deploy";
+        GeneralParamTableEntries.First(spe => spe.Id == 87).Name = "CMUNHQTB.DAT - Alliance HQ: max army n° to deploy";
+        GeneralParamTableEntries.First(spe => spe.Id == 88).Name = "CMUNCRTB.DAT - Empire Coruscant: min army n° to deploy";
+        GeneralParamTableEntries.First(spe => spe.Id == 89).Name = "CMUNCRTB.DAT - Empire Coruscant: max army n° to deploy";
+        GeneralParamTableEntries.First(spe => spe.Id == 90).Name = "CMUNAFTB.DAT - Alliance HQ or Yavin 4 Fleet: min capital ship n° to deploy";
+        GeneralParamTableEntries.First(spe => spe.Id == 91).Name = "CMUNAFTB.DAT - Alliance HQ or Yavin 4 Fleet: max capital ship n° to deploy";
+        GeneralParamTableEntries.First(spe => spe.Id == 92).Name = "CMUNEFTB.DAT - Empire Coruscant Fleet: min capital ship n° to deploy";
+        GeneralParamTableEntries.First(spe => spe.Id == 93).Name = "CMUNEFTB.DAT - Empire Coruscant Fleet: max capital ship n° to deploy";
+        GeneralParamTableEntries.First(spe => spe.Id == 94).Name = "FACLHQTB.DAT - Alliance HQ: min facilities group n° to deploy";
+        GeneralParamTableEntries.First(spe => spe.Id == 95).Name = "FACLHQTB.DAT - Alliance HQ: max facilities group n° to deploy";
+        GeneralParamTableEntries.First(spe => spe.Id == 96).Name = "FACLCRTB.DAT - Empire Coruscant: min facilities group n° to deploy";
+        GeneralParamTableEntries.First(spe => spe.Id == 97).Name = "FACLCRTB.DAT - Empire Coruscant: max facilities group n° to deploy";
         
         GeneralParamTableEntries.First(spe => spe.Id == 101).Name = "Luke goes to Dagobah: base (days)";
         GeneralParamTableEntries.First(spe => spe.Id == 102).Name = "Luke goes to Dagobah: random extra (days)";

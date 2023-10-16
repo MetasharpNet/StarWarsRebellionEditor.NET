@@ -12,7 +12,7 @@ public class SYFCRMTB : DatFile
 }
 public class SYFCRMTB_Facility
 {
-    public uint Index; // index based 1
+    public uint Entry; // 1, 2, ...
     public uint Field2_1; // 1
     public uint RandomTreshold; // 0-100
     public uint Facility;

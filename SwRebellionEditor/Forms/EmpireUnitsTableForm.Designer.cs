@@ -56,7 +56,7 @@ namespace SwRebellionEditor
             groupsDataGridView = new DataGridView();
             infoLabel = new Label();
             formulaLabel = new Label();
-            idColumn = new DataGridViewTextBoxColumn();
+            entryColumn = new DataGridViewTextBoxColumn();
             randomTresholdColumn = new DataGridViewTextBoxColumn();
             groupColumn = new DataGridViewTextBoxColumn();
             ((ISupportInitialize)groupsDataGridView).BeginInit();
@@ -196,7 +196,7 @@ namespace SwRebellionEditor
             groupsDataGridView.AllowUserToResizeColumns = false;
             groupsDataGridView.AllowUserToResizeRows = false;
             groupsDataGridView.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            groupsDataGridView.Columns.AddRange(new DataGridViewColumn[] { idColumn, randomTresholdColumn, groupColumn });
+            groupsDataGridView.Columns.AddRange(new DataGridViewColumn[] { entryColumn, randomTresholdColumn, groupColumn });
             dataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle1.BackColor = SystemColors.Window;
             dataGridViewCellStyle1.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
@@ -230,15 +230,15 @@ namespace SwRebellionEditor
             formulaLabel.Name = "formulaLabel";
             formulaLabel.Size = new Size(499, 15);
             formulaLabel.TabIndex = 64;
-            formulaLabel.Text = "Game rolls 0-100 numbers N. Each creates an army with highest random treshold < N (if any).";
+            formulaLabel.Text = "Game rolls 1-100 numbers N. Each creates an army with highest random treshold < N (if any).";
             // 
-            // idColumn
+            // entryColumn
             // 
-            idColumn.HeaderText = "Id";
-            idColumn.Name = "idColumn";
-            idColumn.ReadOnly = true;
-            idColumn.Resizable = DataGridViewTriState.False;
-            idColumn.Width = 32;
+            entryColumn.HeaderText = "N°";
+            entryColumn.Name = "entryColumn";
+            entryColumn.ReadOnly = true;
+            entryColumn.Resizable = DataGridViewTriState.False;
+            entryColumn.Width = 32;
             // 
             // randomTresholdColumn
             // 
@@ -298,9 +298,9 @@ namespace SwRebellionEditor
         private Button addGroupButton;
         private DataGridView groupsDataGridView;
         private Label infoLabel;
-        private DataGridViewTextBoxColumn idColumn;
+        private Label formulaLabel;
+        private DataGridViewTextBoxColumn entryColumn;
         private DataGridViewTextBoxColumn randomTresholdColumn;
         private DataGridViewTextBoxColumn groupColumn;
-        private Label formulaLabel;
     }
 }

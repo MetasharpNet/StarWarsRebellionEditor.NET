@@ -12,9 +12,9 @@ public class FACLCRTB : DatFile
 }
 public class FACLCRTB_Group
 {
-    public uint Index; // index based 1
+    public uint Entry; // 1, 2, ...
     public uint Field2_1; // 1
-    public uint IndexBis; // = Index
+    public uint EntryBis; // = Entry
     public uint Field4_1; // 1
     public uint Field5_1; // 1
     [ArraySize]
