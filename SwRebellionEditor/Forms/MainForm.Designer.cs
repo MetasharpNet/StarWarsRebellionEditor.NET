@@ -133,6 +133,7 @@ namespace SwRebellionEditor
             allianceHeadquarterFacilitiesToolStripMenuItem = new ToolStripMenuItem();
             empireCoruscantFacilitiesToolStripMenuItem = new ToolStripMenuItem();
             toolStripSeparator6 = new ToolStripSeparator();
+            systemsGarrisonTroopsSideParams2435ToolStripMenuItem = new ToolStripMenuItem();
             systemsRandomUnitsSideParametersToolStripMenuItem = new ToolStripMenuItem();
             toolStripSeparator9 = new ToolStripSeparator();
             allianceYavin4UnitsToolStripMenuItem = new ToolStripMenuItem();
@@ -187,7 +188,6 @@ namespace SwRebellionEditor
             galaxyMapButton = new ToolStripButton();
             toolStripSeparator4 = new ToolStripSeparator();
             Patch_Button = new ToolStripButton();
-            systemsGarrisonTroopsSideParams2435ToolStripMenuItem = new ToolStripMenuItem();
             menuStrip.SuspendLayout();
             statusStrip.SuspendLayout();
             toolStrip.SuspendLayout();
@@ -473,6 +473,13 @@ namespace SwRebellionEditor
             // 
             toolStripSeparator6.Name = "toolStripSeparator6";
             toolStripSeparator6.Size = new Size(339, 6);
+            // 
+            // systemsGarrisonTroopsSideParams2435ToolStripMenuItem
+            // 
+            systemsGarrisonTroopsSideParams2435ToolStripMenuItem.Enabled = false;
+            systemsGarrisonTroopsSideParams2435ToolStripMenuItem.Name = "systemsGarrisonTroopsSideParams2435ToolStripMenuItem";
+            systemsGarrisonTroopsSideParams2435ToolStripMenuItem.Size = new Size(342, 22);
+            systemsGarrisonTroopsSideParams2435ToolStripMenuItem.Text = "Systems: Garrison Troops (Side Params 23,34-35)";
             // 
             // systemsRandomUnitsSideParametersToolStripMenuItem
             // 
@@ -874,13 +881,6 @@ namespace SwRebellionEditor
             Patch_Button.Size = new Size(23, 22);
             Patch_Button.Text = "Patch";
             Patch_Button.Click += Patch_Button_Click;
-            // 
-            // systemsGarrisonTroopsSideParams2435ToolStripMenuItem
-            // 
-            systemsGarrisonTroopsSideParams2435ToolStripMenuItem.Enabled = false;
-            systemsGarrisonTroopsSideParams2435ToolStripMenuItem.Name = "systemsGarrisonTroopsSideParams2435ToolStripMenuItem";
-            systemsGarrisonTroopsSideParams2435ToolStripMenuItem.Size = new Size(342, 22);
-            systemsGarrisonTroopsSideParams2435ToolStripMenuItem.Text = "Systems: Garrison Troops (Side Params 34-35)";
             // 
             // MainForm
             // 
