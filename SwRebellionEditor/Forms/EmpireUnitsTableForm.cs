@@ -21,7 +21,6 @@ public partial class EmpireUnitsTableForm : EmpireUnitsTableDesignForm
 
         groupComboBox.Items.AddRange(Identifier.EmpireCapitalShips);
         groupComboBox.Items.AddRange(Identifier.EmpireUnits);
-        itemComboBox.Items.AddRange(Identifier.EmpireCapitalShips);
         itemComboBox.Items.AddRange(Identifier.EmpireUnits);
         foreach (var group in GameFile.Groups)
         {

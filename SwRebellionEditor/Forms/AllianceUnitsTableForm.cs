@@ -21,7 +21,6 @@ public partial class AllianceUnitsTableForm : AllianceUnitsTableDesignForm
 
         groupComboBox.Items.AddRange(Identifier.AllianceCapitalShips);
         groupComboBox.Items.AddRange(Identifier.AllianceUnits);
-        itemComboBox.Items.AddRange(Identifier.AllianceCapitalShips);
         itemComboBox.Items.AddRange(Identifier.AllianceUnits);
         foreach (var group in GameFile.Groups)
         {
