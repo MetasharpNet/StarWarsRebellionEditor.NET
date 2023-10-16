@@ -40,6 +40,23 @@ public partial class AllianceUnitsTableForm : AllianceUnitsTableDesignForm
 
     #region Changed events
 
+    private bool _eventsEnabled = true;
+
+    private void UpdateIndexes()
+    {
+        _eventsEnabled = false;
+        var orderedGroups = GameFile.Groups.OrderBy(f => f.RandomTreshold).ToList();
+        for (int i = 0; i < orderedGroups.Count; i++)
+        {
+            orderedGroups[i].Index = (uint)i + 1;
+            groupsDataGridView.Rows[i].Cells[0].Value = orderedGroups[i].Index;
+            groupsDataGridView.Rows[i].Cells[1].Value = orderedGroups[i].RandomTreshold;
+            groupsDataGridView.Rows[i].Cells[2].Value = orderedGroups[i].ToString();
+        }
+        GameFile.Groups = orderedGroups.ToArray();
+        _eventsEnabled = true;
+    }
+
     private void groupsDataGridView_SelectionChanged(object sender, EventArgs e)
     {
         if (groupsDataGridView.SelectedCells.Count != 1)
@@ -58,11 +75,12 @@ public partial class AllianceUnitsTableForm : AllianceUnitsTableDesignForm
     }
     private void groupsDataGridView_CellValueChanged(object sender, DataGridViewCellEventArgs e)
     {
-        if (e.ColumnIndex == 1 && e.RowIndex >= 0)
+        if (_eventsEnabled && e.ColumnIndex == 1 && e.RowIndex >= 0)
         {
             var groupId = e.RowIndex;
             var group = GameFile.Groups[groupId];
             group.RandomTreshold = uint.Parse(groupsDataGridView.Rows[e.RowIndex].Cells[e.ColumnIndex].Value.ToString());
+            UpdateIndexes();
             GameFile.UnsavedData = true;
         }
     }
@@ -122,6 +140,7 @@ public partial class AllianceUnitsTableForm : AllianceUnitsTableDesignForm
             GameFile.Groups[i].Index = (uint)i + 1;
             groupsDataGridView.Rows[i].Cells[0].Value = GameFile.Groups[i].Index;
         }
+        UpdateIndexes();
         groupsDataGridView_SelectionChanged(sender, e);
         if (GameFile.GroupsCount > 0)
             groupsDataGridView.CurrentCell = groupsDataGridView.Rows[(int)Math.Min(groupId, GameFile.GroupsCount - 1)].Cells[2];
