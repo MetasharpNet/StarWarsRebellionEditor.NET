@@ -142,9 +142,9 @@ namespace SwRebellionEditor
             line5Label.AutoSize = true;
             line5Label.Location = new Point(33, 147);
             line5Label.Name = "line5Label";
-            line5Label.Size = new Size(670, 15);
+            line5Label.Size = new Size(678, 15);
             line5Label.TabIndex = 1162;
-            line5Label.Text = "- Unique sprites and pictures for ALL 200 systems! + New Encyclopedia descriptions! + New tactical sprites & 3D models (23/29).";
+            line5Label.Text = "- Unique sprites and pictures for ALL 200 systems! + New Encyclopedia descriptions! + New tactical sprites + 3D models (26/29).";
             // 
             // warningLabel
             // 
@@ -154,7 +154,7 @@ namespace SwRebellionEditor
             warningLabel.Name = "warningLabel";
             warningLabel.Size = new Size(672, 15);
             warningLabel.TabIndex = 1163;
-            warningLabel.Text = "This patch was released 2023-08-08 and is provided without any warranty of any kind. Doesn't work with pre-patch savegames.";
+            warningLabel.Text = "This patch was released 2023-08-05 and is provided without any warranty of any kind. Doesn't work with pre-patch savegames.";
             // 
             // patchInfoLabel
             // 
@@ -175,7 +175,7 @@ namespace SwRebellionEditor
             label1Requirement.Name = "label1Requirement";
             label1Requirement.Size = new Size(253, 15);
             label1Requirement.TabIndex = 1165;
-            label1Requirement.Text = "Includes update 1.02 (dgvoodoo2 directx 2.81.1)";
+            label1Requirement.Text = "Includes update 1.02 (dgvoodoo2 directx 2.81.3)";
             // 
             // label1
             // 
