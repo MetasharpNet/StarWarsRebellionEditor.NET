@@ -187,6 +187,7 @@ namespace SwRebellionEditor
             galaxyMapButton = new ToolStripButton();
             toolStripSeparator4 = new ToolStripSeparator();
             Patch_Button = new ToolStripButton();
+            systemsGarrisonTroopsSideParams2435ToolStripMenuItem = new ToolStripMenuItem();
             menuStrip.SuspendLayout();
             statusStrip.SuspendLayout();
             toolStrip.SuspendLayout();
@@ -404,7 +405,7 @@ namespace SwRebellionEditor
             // 
             // initialGameSetupToolStripMenuItem
             // 
-            initialGameSetupToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { generalParametersToolStripMenuItem, sideParametersToolStripMenuItem, toolStripSeparator5, mineshardcodedInExeToolStripMenuItem, toolStripSeparator7, coreSystemsFacilitiesToolStripMenuItem, rimSystemsFacilitiesToolStripMenuItem, allianceHeadquarterFacilitiesToolStripMenuItem, empireCoruscantFacilitiesToolStripMenuItem, toolStripSeparator6, systemsRandomUnitsSideParametersToolStripMenuItem, toolStripSeparator9, allianceYavin4UnitsToolStripMenuItem, allianceHeadquarterUnitsToolStripMenuItem, empireCoruscantUnitsToolStripMenuItem, allianceFleetsToolStripMenuItem, empireFleetsToolStripMenuItem, toolStripSeparator8, allianceRandomUnitsToolStripMenuItem, empireRandomUnitsToolStripMenuItem });
+            initialGameSetupToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { generalParametersToolStripMenuItem, sideParametersToolStripMenuItem, toolStripSeparator5, mineshardcodedInExeToolStripMenuItem, toolStripSeparator7, coreSystemsFacilitiesToolStripMenuItem, rimSystemsFacilitiesToolStripMenuItem, allianceHeadquarterFacilitiesToolStripMenuItem, empireCoruscantFacilitiesToolStripMenuItem, toolStripSeparator6, systemsGarrisonTroopsSideParams2435ToolStripMenuItem, systemsRandomUnitsSideParametersToolStripMenuItem, toolStripSeparator9, allianceYavin4UnitsToolStripMenuItem, allianceHeadquarterUnitsToolStripMenuItem, empireCoruscantUnitsToolStripMenuItem, allianceFleetsToolStripMenuItem, empireFleetsToolStripMenuItem, toolStripSeparator8, allianceRandomUnitsToolStripMenuItem, empireRandomUnitsToolStripMenuItem });
             initialGameSetupToolStripMenuItem.Name = "initialGameSetupToolStripMenuItem";
             initialGameSetupToolStripMenuItem.Size = new Size(195, 22);
             initialGameSetupToolStripMenuItem.Text = "Initial Game Setup";
@@ -412,130 +413,130 @@ namespace SwRebellionEditor
             // generalParametersToolStripMenuItem
             // 
             generalParametersToolStripMenuItem.Name = "generalParametersToolStripMenuItem";
-            generalParametersToolStripMenuItem.Size = new Size(325, 22);
+            generalParametersToolStripMenuItem.Size = new Size(342, 22);
             generalParametersToolStripMenuItem.Text = "General Parameters";
             generalParametersToolStripMenuItem.Click += generalParametersToolStripMenuItem_Click;
             // 
             // sideParametersToolStripMenuItem
             // 
             sideParametersToolStripMenuItem.Name = "sideParametersToolStripMenuItem";
-            sideParametersToolStripMenuItem.Size = new Size(325, 22);
+            sideParametersToolStripMenuItem.Size = new Size(342, 22);
             sideParametersToolStripMenuItem.Text = "Side Parameters";
             sideParametersToolStripMenuItem.Click += sideParametersToolStripMenuItem_Click;
             // 
             // toolStripSeparator5
             // 
             toolStripSeparator5.Name = "toolStripSeparator5";
-            toolStripSeparator5.Size = new Size(322, 6);
+            toolStripSeparator5.Size = new Size(339, 6);
             // 
             // mineshardcodedInExeToolStripMenuItem
             // 
             mineshardcodedInExeToolStripMenuItem.Enabled = false;
             mineshardcodedInExeToolStripMenuItem.Name = "mineshardcodedInExeToolStripMenuItem";
-            mineshardcodedInExeToolStripMenuItem.Size = new Size(325, 22);
+            mineshardcodedInExeToolStripMenuItem.Size = new Size(342, 22);
             mineshardcodedInExeToolStripMenuItem.Text = "Mines (hardcoded in exe)";
             // 
             // toolStripSeparator7
             // 
             toolStripSeparator7.Name = "toolStripSeparator7";
-            toolStripSeparator7.Size = new Size(322, 6);
+            toolStripSeparator7.Size = new Size(339, 6);
             // 
             // coreSystemsFacilitiesToolStripMenuItem
             // 
             coreSystemsFacilitiesToolStripMenuItem.Name = "coreSystemsFacilitiesToolStripMenuItem";
-            coreSystemsFacilitiesToolStripMenuItem.Size = new Size(325, 22);
+            coreSystemsFacilitiesToolStripMenuItem.Size = new Size(342, 22);
             coreSystemsFacilitiesToolStripMenuItem.Text = "Core Systems: Facilities";
             coreSystemsFacilitiesToolStripMenuItem.Click += coreSystemsFacilitiesToolStripMenuItem_Click;
             // 
             // rimSystemsFacilitiesToolStripMenuItem
             // 
             rimSystemsFacilitiesToolStripMenuItem.Name = "rimSystemsFacilitiesToolStripMenuItem";
-            rimSystemsFacilitiesToolStripMenuItem.Size = new Size(325, 22);
+            rimSystemsFacilitiesToolStripMenuItem.Size = new Size(342, 22);
             rimSystemsFacilitiesToolStripMenuItem.Text = "Rim Systems: Facilities";
             rimSystemsFacilitiesToolStripMenuItem.Click += rimSystemsFacilitiesToolStripMenuItem_Click;
             // 
             // allianceHeadquarterFacilitiesToolStripMenuItem
             // 
             allianceHeadquarterFacilitiesToolStripMenuItem.Name = "allianceHeadquarterFacilitiesToolStripMenuItem";
-            allianceHeadquarterFacilitiesToolStripMenuItem.Size = new Size(325, 22);
+            allianceHeadquarterFacilitiesToolStripMenuItem.Size = new Size(342, 22);
             allianceHeadquarterFacilitiesToolStripMenuItem.Text = "Alliance: Headquarter Facilities";
             allianceHeadquarterFacilitiesToolStripMenuItem.Click += allianceHeadquarterFacilitiesToolStripMenuItem_Click;
             // 
             // empireCoruscantFacilitiesToolStripMenuItem
             // 
             empireCoruscantFacilitiesToolStripMenuItem.Name = "empireCoruscantFacilitiesToolStripMenuItem";
-            empireCoruscantFacilitiesToolStripMenuItem.Size = new Size(325, 22);
+            empireCoruscantFacilitiesToolStripMenuItem.Size = new Size(342, 22);
             empireCoruscantFacilitiesToolStripMenuItem.Text = "Empire: Coruscant Facilities";
             empireCoruscantFacilitiesToolStripMenuItem.Click += empireCoruscantFacilitiesToolStripMenuItem_Click;
             // 
             // toolStripSeparator6
             // 
             toolStripSeparator6.Name = "toolStripSeparator6";
-            toolStripSeparator6.Size = new Size(322, 6);
+            toolStripSeparator6.Size = new Size(339, 6);
             // 
             // systemsRandomUnitsSideParametersToolStripMenuItem
             // 
             systemsRandomUnitsSideParametersToolStripMenuItem.Enabled = false;
             systemsRandomUnitsSideParametersToolStripMenuItem.Name = "systemsRandomUnitsSideParametersToolStripMenuItem";
-            systemsRandomUnitsSideParametersToolStripMenuItem.Size = new Size(325, 22);
-            systemsRandomUnitsSideParametersToolStripMenuItem.Text = "Systems: Random Units (Side Parameters 30-35)";
+            systemsRandomUnitsSideParametersToolStripMenuItem.Size = new Size(342, 22);
+            systemsRandomUnitsSideParametersToolStripMenuItem.Text = "Systems: Garrison Troops (General Params 207-208)";
             // 
             // toolStripSeparator9
             // 
             toolStripSeparator9.Name = "toolStripSeparator9";
-            toolStripSeparator9.Size = new Size(322, 6);
+            toolStripSeparator9.Size = new Size(339, 6);
             // 
             // allianceYavin4UnitsToolStripMenuItem
             // 
             allianceYavin4UnitsToolStripMenuItem.Name = "allianceYavin4UnitsToolStripMenuItem";
-            allianceYavin4UnitsToolStripMenuItem.Size = new Size(325, 22);
+            allianceYavin4UnitsToolStripMenuItem.Size = new Size(342, 22);
             allianceYavin4UnitsToolStripMenuItem.Text = "Alliance: Yavin 4 Units";
             allianceYavin4UnitsToolStripMenuItem.Click += allianceYavin4UnitsToolStripMenuItem_Click;
             // 
             // allianceHeadquarterUnitsToolStripMenuItem
             // 
             allianceHeadquarterUnitsToolStripMenuItem.Name = "allianceHeadquarterUnitsToolStripMenuItem";
-            allianceHeadquarterUnitsToolStripMenuItem.Size = new Size(325, 22);
+            allianceHeadquarterUnitsToolStripMenuItem.Size = new Size(342, 22);
             allianceHeadquarterUnitsToolStripMenuItem.Text = "Alliance: Headquarter Units";
             allianceHeadquarterUnitsToolStripMenuItem.Click += allianceHeadquarterUnitsToolStripMenuItem_Click;
             // 
             // empireCoruscantUnitsToolStripMenuItem
             // 
             empireCoruscantUnitsToolStripMenuItem.Name = "empireCoruscantUnitsToolStripMenuItem";
-            empireCoruscantUnitsToolStripMenuItem.Size = new Size(325, 22);
+            empireCoruscantUnitsToolStripMenuItem.Size = new Size(342, 22);
             empireCoruscantUnitsToolStripMenuItem.Text = "Empire: Coruscant Units";
             empireCoruscantUnitsToolStripMenuItem.Click += empireCoruscantUnitsToolStripMenuItem_Click;
             // 
             // allianceFleetsToolStripMenuItem
             // 
             allianceFleetsToolStripMenuItem.Name = "allianceFleetsToolStripMenuItem";
-            allianceFleetsToolStripMenuItem.Size = new Size(325, 22);
+            allianceFleetsToolStripMenuItem.Size = new Size(342, 22);
             allianceFleetsToolStripMenuItem.Text = "Alliance: Fleet (Headquarter or Yavin 4)";
             allianceFleetsToolStripMenuItem.Click += allianceFleetToolStripMenuItem_Click;
             // 
             // empireFleetsToolStripMenuItem
             // 
             empireFleetsToolStripMenuItem.Name = "empireFleetsToolStripMenuItem";
-            empireFleetsToolStripMenuItem.Size = new Size(325, 22);
+            empireFleetsToolStripMenuItem.Size = new Size(342, 22);
             empireFleetsToolStripMenuItem.Text = "Empire: Fleet (Coruscant)";
             empireFleetsToolStripMenuItem.Click += empireFleetToolStripMenuItem_Click;
             // 
             // toolStripSeparator8
             // 
             toolStripSeparator8.Name = "toolStripSeparator8";
-            toolStripSeparator8.Size = new Size(322, 6);
+            toolStripSeparator8.Size = new Size(339, 6);
             // 
             // allianceRandomUnitsToolStripMenuItem
             // 
             allianceRandomUnitsToolStripMenuItem.Name = "allianceRandomUnitsToolStripMenuItem";
-            allianceRandomUnitsToolStripMenuItem.Size = new Size(325, 22);
+            allianceRandomUnitsToolStripMenuItem.Size = new Size(342, 22);
             allianceRandomUnitsToolStripMenuItem.Text = "Alliance: Random Units";
             allianceRandomUnitsToolStripMenuItem.Click += allianceRandomUnitsToolStripMenuItem_Click;
             // 
             // empireRandomUnitsToolStripMenuItem
             // 
             empireRandomUnitsToolStripMenuItem.Name = "empireRandomUnitsToolStripMenuItem";
-            empireRandomUnitsToolStripMenuItem.Size = new Size(325, 22);
+            empireRandomUnitsToolStripMenuItem.Size = new Size(342, 22);
             empireRandomUnitsToolStripMenuItem.Text = "Empire: Random Units";
             empireRandomUnitsToolStripMenuItem.Click += empireRandomUnitsToolStripMenuItem_Click;
             // 
@@ -564,35 +565,35 @@ namespace SwRebellionEditor
             // Cascade_ToolStripMenuItem
             // 
             Cascade_ToolStripMenuItem.Name = "Cascade_ToolStripMenuItem";
-            Cascade_ToolStripMenuItem.Size = new Size(180, 22);
+            Cascade_ToolStripMenuItem.Size = new Size(150, 22);
             Cascade_ToolStripMenuItem.Text = "Cascade";
             Cascade_ToolStripMenuItem.Click += Cascade_ToolStripMenuItem_Click;
             // 
             // TileVertical_ToolStripMenuItem
             // 
             TileVertical_ToolStripMenuItem.Name = "TileVertical_ToolStripMenuItem";
-            TileVertical_ToolStripMenuItem.Size = new Size(180, 22);
+            TileVertical_ToolStripMenuItem.Size = new Size(150, 22);
             TileVertical_ToolStripMenuItem.Text = "Tile Vertical";
             TileVertical_ToolStripMenuItem.Click += TileVertical_ToolStripMenuItem_Click;
             // 
             // TileHorizontal_ToolStripMenuItem
             // 
             TileHorizontal_ToolStripMenuItem.Name = "TileHorizontal_ToolStripMenuItem";
-            TileHorizontal_ToolStripMenuItem.Size = new Size(180, 22);
+            TileHorizontal_ToolStripMenuItem.Size = new Size(150, 22);
             TileHorizontal_ToolStripMenuItem.Text = "Tile Horizontal";
             TileHorizontal_ToolStripMenuItem.Click += TileHorizontal_ToolStripMenuItem_Click;
             // 
             // CloseAll_ToolStripMenuItem
             // 
             CloseAll_ToolStripMenuItem.Name = "CloseAll_ToolStripMenuItem";
-            CloseAll_ToolStripMenuItem.Size = new Size(180, 22);
+            CloseAll_ToolStripMenuItem.Size = new Size(150, 22);
             CloseAll_ToolStripMenuItem.Text = "Close All";
             CloseAll_ToolStripMenuItem.Click += CloseAll_ToolStripMenuItem_Click;
             // 
             // ArrangeIcons_ToolStripMenuItem
             // 
             ArrangeIcons_ToolStripMenuItem.Name = "ArrangeIcons_ToolStripMenuItem";
-            ArrangeIcons_ToolStripMenuItem.Size = new Size(180, 22);
+            ArrangeIcons_ToolStripMenuItem.Size = new Size(150, 22);
             ArrangeIcons_ToolStripMenuItem.Text = "Arrange Icons";
             ArrangeIcons_ToolStripMenuItem.Click += ArrangeIcons_ToolStripMenuItem_Click;
             // 
@@ -600,7 +601,7 @@ namespace SwRebellionEditor
             // 
             Options_ToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { Size1280x1024_ToolStripMenuItem, Size1024x768_ToolStripMenuItem, Size800x600_ToolStripMenuItem, Size640x480_ToolStripMenuItem, RestoreDefaults_ToolStripMenuItem });
             Options_ToolStripMenuItem.Name = "Options_ToolStripMenuItem";
-            Options_ToolStripMenuItem.Size = new Size(180, 22);
+            Options_ToolStripMenuItem.Size = new Size(150, 22);
             Options_ToolStripMenuItem.Text = "Options";
             // 
             // Size1280x1024_ToolStripMenuItem
@@ -874,6 +875,13 @@ namespace SwRebellionEditor
             Patch_Button.Text = "Patch";
             Patch_Button.Click += Patch_Button_Click;
             // 
+            // systemsGarrisonTroopsSideParams2435ToolStripMenuItem
+            // 
+            systemsGarrisonTroopsSideParams2435ToolStripMenuItem.Enabled = false;
+            systemsGarrisonTroopsSideParams2435ToolStripMenuItem.Name = "systemsGarrisonTroopsSideParams2435ToolStripMenuItem";
+            systemsGarrisonTroopsSideParams2435ToolStripMenuItem.Size = new Size(342, 22);
+            systemsGarrisonTroopsSideParams2435ToolStripMenuItem.Text = "Systems: Garrison Troops (Side Params 34-35)";
+            // 
             // MainForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -933,6 +941,7 @@ namespace SwRebellionEditor
         private ToolStripMenuItem mineshardcodedInExeToolStripMenuItem;
         private ToolStripMenuItem systemsRandomUnitsSideParametersToolStripMenuItem;
         private ToolStripSeparator toolStripSeparator9;
+        private ToolStripMenuItem systemsGarrisonTroopsSideParams2435ToolStripMenuItem;
     }
 }
 #endregion

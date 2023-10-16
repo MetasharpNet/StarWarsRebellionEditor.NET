@@ -68,14 +68,14 @@ public class GNPRTB_GeneralParamTableEntry
     public uint Id;
     public uint Field2_1; // 1
     public uint Unknown; // Second Byte sets Entry Group (???)
-    public uint AllianceMultiPlayer;
-    public uint AllianceSinglePlayerEasy;
-    public uint AllianceSinglePlayerMedium;
-    public uint AllianceSinglePlayerHard;
-    public uint EmpireSinglePlayerEasy;
-    public uint EmpireSinglePlayerMedium;
-    public uint EmpireSinglePlayerHard;
-    public uint EmpireMultiPlayer;
+    public int AllianceMultiPlayer;
+    public int AllianceSinglePlayerEasy;
+    public int AllianceSinglePlayerMedium;
+    public int AllianceSinglePlayerHard;
+    public int EmpireSinglePlayerEasy;
+    public int EmpireSinglePlayerMedium;
+    public int EmpireSinglePlayerHard;
+    public int EmpireMultiPlayer;
     [Ignore]
     public string Name = "Unknown General Param Table Entry";
 }

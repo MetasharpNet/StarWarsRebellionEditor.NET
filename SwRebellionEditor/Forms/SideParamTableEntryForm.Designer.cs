@@ -312,12 +312,13 @@ namespace SwRebellionEditor
             allianceSinglePlayerHardEmpire.ForeColor = Color.Black;
             allianceSinglePlayerHardEmpire.Location = new Point(7, 111);
             allianceSinglePlayerHardEmpire.Margin = new Padding(4, 3, 4, 3);
-            allianceSinglePlayerHardEmpire.Maximum = new decimal(new int[] { -1, 0, 0, 0 });
+            allianceSinglePlayerHardEmpire.Maximum = new decimal(new int[] { int.MaxValue, 0, 0, 0 });
+            allianceSinglePlayerHardEmpire.Minimum = new decimal(new int[] { int.MinValue, 0, 0, int.MinValue });
             allianceSinglePlayerHardEmpire.Name = "allianceSinglePlayerHardEmpire";
             allianceSinglePlayerHardEmpire.Size = new Size(92, 23);
             allianceSinglePlayerHardEmpire.TabIndex = 174;
             allianceSinglePlayerHardEmpire.TextAlign = HorizontalAlignment.Right;
-            allianceSinglePlayerHardEmpire.Value = new decimal(new int[] { -1, 0, 0, 0 });
+            allianceSinglePlayerHardEmpire.Value = new decimal(new int[] { int.MaxValue, 0, 0, 0 });
             allianceSinglePlayerHardEmpire.ValueChanged += allianceSinglePlayerHardEmpire_ValueChanged;
             // 
             // allianceSinglePlayerMediumEmpire
@@ -325,12 +326,13 @@ namespace SwRebellionEditor
             allianceSinglePlayerMediumEmpire.ForeColor = Color.Black;
             allianceSinglePlayerMediumEmpire.Location = new Point(7, 82);
             allianceSinglePlayerMediumEmpire.Margin = new Padding(4, 3, 4, 3);
-            allianceSinglePlayerMediumEmpire.Maximum = new decimal(new int[] { -1, 0, 0, 0 });
+            allianceSinglePlayerMediumEmpire.Maximum = new decimal(new int[] { int.MaxValue, 0, 0, 0 });
+            allianceSinglePlayerMediumEmpire.Minimum = new decimal(new int[] { int.MinValue, 0, 0, int.MinValue });
             allianceSinglePlayerMediumEmpire.Name = "allianceSinglePlayerMediumEmpire";
             allianceSinglePlayerMediumEmpire.Size = new Size(92, 23);
             allianceSinglePlayerMediumEmpire.TabIndex = 173;
             allianceSinglePlayerMediumEmpire.TextAlign = HorizontalAlignment.Right;
-            allianceSinglePlayerMediumEmpire.Value = new decimal(new int[] { -1, 0, 0, 0 });
+            allianceSinglePlayerMediumEmpire.Value = new decimal(new int[] { int.MaxValue, 0, 0, 0 });
             allianceSinglePlayerMediumEmpire.ValueChanged += allianceSinglePlayerMediumEmpire_ValueChanged;
             // 
             // allianceSinglePlayerEasyEmpire
@@ -338,12 +340,13 @@ namespace SwRebellionEditor
             allianceSinglePlayerEasyEmpire.ForeColor = Color.Black;
             allianceSinglePlayerEasyEmpire.Location = new Point(7, 53);
             allianceSinglePlayerEasyEmpire.Margin = new Padding(4, 3, 4, 3);
-            allianceSinglePlayerEasyEmpire.Maximum = new decimal(new int[] { -1, 0, 0, 0 });
+            allianceSinglePlayerEasyEmpire.Maximum = new decimal(new int[] { int.MaxValue, 0, 0, 0 });
+            allianceSinglePlayerEasyEmpire.Minimum = new decimal(new int[] { int.MinValue, 0, 0, int.MinValue });
             allianceSinglePlayerEasyEmpire.Name = "allianceSinglePlayerEasyEmpire";
             allianceSinglePlayerEasyEmpire.Size = new Size(92, 23);
             allianceSinglePlayerEasyEmpire.TabIndex = 172;
             allianceSinglePlayerEasyEmpire.TextAlign = HorizontalAlignment.Right;
-            allianceSinglePlayerEasyEmpire.Value = new decimal(new int[] { -1, 0, 0, 0 });
+            allianceSinglePlayerEasyEmpire.Value = new decimal(new int[] { int.MaxValue, 0, 0, 0 });
             allianceSinglePlayerEasyEmpire.ValueChanged += allianceSinglePlayerEasyEmpire_ValueChanged;
             // 
             // allianceMultiPlayerEmpire
@@ -351,12 +354,13 @@ namespace SwRebellionEditor
             allianceMultiPlayerEmpire.ForeColor = Color.Black;
             allianceMultiPlayerEmpire.Location = new Point(7, 24);
             allianceMultiPlayerEmpire.Margin = new Padding(4, 3, 4, 3);
-            allianceMultiPlayerEmpire.Maximum = new decimal(new int[] { -1, 0, 0, 0 });
+            allianceMultiPlayerEmpire.Maximum = new decimal(new int[] { int.MaxValue, 0, 0, 0 });
+            allianceMultiPlayerEmpire.Minimum = new decimal(new int[] { int.MinValue, 0, 0, int.MinValue });
             allianceMultiPlayerEmpire.Name = "allianceMultiPlayerEmpire";
             allianceMultiPlayerEmpire.Size = new Size(92, 23);
             allianceMultiPlayerEmpire.TabIndex = 172;
             allianceMultiPlayerEmpire.TextAlign = HorizontalAlignment.Right;
-            allianceMultiPlayerEmpire.Value = new decimal(new int[] { -1, 0, 0, 0 });
+            allianceMultiPlayerEmpire.Value = new decimal(new int[] { int.MaxValue, 0, 0, 0 });
             allianceMultiPlayerEmpire.ValueChanged += allianceMultiPlayerEmpire_ValueChanged;
             // 
             // allianceSinglePlayerHardLabel
@@ -410,12 +414,13 @@ namespace SwRebellionEditor
             allianceSinglePlayerHardAlliance.ForeColor = Color.Black;
             allianceSinglePlayerHardAlliance.Location = new Point(7, 111);
             allianceSinglePlayerHardAlliance.Margin = new Padding(4, 3, 4, 3);
-            allianceSinglePlayerHardAlliance.Maximum = new decimal(new int[] { -1, 0, 0, 0 });
+            allianceSinglePlayerHardAlliance.Maximum = new decimal(new int[] { int.MaxValue, 0, 0, 0 });
+            allianceSinglePlayerHardAlliance.Minimum = new decimal(new int[] { int.MinValue, 0, 0, int.MinValue });
             allianceSinglePlayerHardAlliance.Name = "allianceSinglePlayerHardAlliance";
             allianceSinglePlayerHardAlliance.Size = new Size(92, 23);
             allianceSinglePlayerHardAlliance.TabIndex = 174;
             allianceSinglePlayerHardAlliance.TextAlign = HorizontalAlignment.Right;
-            allianceSinglePlayerHardAlliance.Value = new decimal(new int[] { -1, 0, 0, 0 });
+            allianceSinglePlayerHardAlliance.Value = new decimal(new int[] { int.MaxValue, 0, 0, 0 });
             allianceSinglePlayerHardAlliance.ValueChanged += allianceSinglePlayerHardAlliance_ValueChanged;
             // 
             // allianceSinglePlayerMediumAlliance
@@ -423,12 +428,13 @@ namespace SwRebellionEditor
             allianceSinglePlayerMediumAlliance.ForeColor = Color.Black;
             allianceSinglePlayerMediumAlliance.Location = new Point(7, 82);
             allianceSinglePlayerMediumAlliance.Margin = new Padding(4, 3, 4, 3);
-            allianceSinglePlayerMediumAlliance.Maximum = new decimal(new int[] { -1, 0, 0, 0 });
+            allianceSinglePlayerMediumAlliance.Maximum = new decimal(new int[] { int.MaxValue, 0, 0, 0 });
+            allianceSinglePlayerMediumAlliance.Minimum = new decimal(new int[] { int.MinValue, 0, 0, int.MinValue });
             allianceSinglePlayerMediumAlliance.Name = "allianceSinglePlayerMediumAlliance";
             allianceSinglePlayerMediumAlliance.Size = new Size(92, 23);
             allianceSinglePlayerMediumAlliance.TabIndex = 173;
             allianceSinglePlayerMediumAlliance.TextAlign = HorizontalAlignment.Right;
-            allianceSinglePlayerMediumAlliance.Value = new decimal(new int[] { -1, 0, 0, 0 });
+            allianceSinglePlayerMediumAlliance.Value = new decimal(new int[] { int.MaxValue, 0, 0, 0 });
             allianceSinglePlayerMediumAlliance.ValueChanged += allianceSinglePlayerMediumAlliance_ValueChanged;
             // 
             // allianceSinglePlayerEasyAlliance
@@ -436,12 +442,13 @@ namespace SwRebellionEditor
             allianceSinglePlayerEasyAlliance.ForeColor = Color.Black;
             allianceSinglePlayerEasyAlliance.Location = new Point(7, 53);
             allianceSinglePlayerEasyAlliance.Margin = new Padding(4, 3, 4, 3);
-            allianceSinglePlayerEasyAlliance.Maximum = new decimal(new int[] { -1, 0, 0, 0 });
+            allianceSinglePlayerEasyAlliance.Maximum = new decimal(new int[] { int.MaxValue, 0, 0, 0 });
+            allianceSinglePlayerEasyAlliance.Minimum = new decimal(new int[] { int.MinValue, 0, 0, int.MinValue });
             allianceSinglePlayerEasyAlliance.Name = "allianceSinglePlayerEasyAlliance";
             allianceSinglePlayerEasyAlliance.Size = new Size(92, 23);
             allianceSinglePlayerEasyAlliance.TabIndex = 172;
             allianceSinglePlayerEasyAlliance.TextAlign = HorizontalAlignment.Right;
-            allianceSinglePlayerEasyAlliance.Value = new decimal(new int[] { -1, 0, 0, 0 });
+            allianceSinglePlayerEasyAlliance.Value = new decimal(new int[] { int.MaxValue, 0, 0, 0 });
             allianceSinglePlayerEasyAlliance.ValueChanged += allianceSinglePlayerEasyAlliance_ValueChanged;
             // 
             // allianceMultiPlayerAlliance
@@ -449,12 +456,13 @@ namespace SwRebellionEditor
             allianceMultiPlayerAlliance.ForeColor = Color.Black;
             allianceMultiPlayerAlliance.Location = new Point(7, 24);
             allianceMultiPlayerAlliance.Margin = new Padding(4, 3, 4, 3);
-            allianceMultiPlayerAlliance.Maximum = new decimal(new int[] { -1, 0, 0, 0 });
+            allianceMultiPlayerAlliance.Maximum = new decimal(new int[] { int.MaxValue, 0, 0, 0 });
+            allianceMultiPlayerAlliance.Minimum = new decimal(new int[] { int.MinValue, 0, 0, int.MinValue });
             allianceMultiPlayerAlliance.Name = "allianceMultiPlayerAlliance";
             allianceMultiPlayerAlliance.Size = new Size(92, 23);
             allianceMultiPlayerAlliance.TabIndex = 172;
             allianceMultiPlayerAlliance.TextAlign = HorizontalAlignment.Right;
-            allianceMultiPlayerAlliance.Value = new decimal(new int[] { -1, 0, 0, 0 });
+            allianceMultiPlayerAlliance.Value = new decimal(new int[] { int.MaxValue, 0, 0, 0 });
             allianceMultiPlayerAlliance.ValueChanged += allianceMultiPlayerAlliance_ValueChanged;
             // 
             // allianceMultiplayerLabel
@@ -501,12 +509,13 @@ namespace SwRebellionEditor
             empireMultiPlayerEmpire.ForeColor = Color.Black;
             empireMultiPlayerEmpire.Location = new Point(7, 111);
             empireMultiPlayerEmpire.Margin = new Padding(4, 3, 4, 3);
-            empireMultiPlayerEmpire.Maximum = new decimal(new int[] { -1, 0, 0, 0 });
+            empireMultiPlayerEmpire.Maximum = new decimal(new int[] { int.MaxValue, 0, 0, 0 });
+            empireMultiPlayerEmpire.Minimum = new decimal(new int[] { int.MinValue, 0, 0, int.MinValue });
             empireMultiPlayerEmpire.Name = "empireMultiPlayerEmpire";
             empireMultiPlayerEmpire.Size = new Size(92, 23);
             empireMultiPlayerEmpire.TabIndex = 174;
             empireMultiPlayerEmpire.TextAlign = HorizontalAlignment.Right;
-            empireMultiPlayerEmpire.Value = new decimal(new int[] { -1, 0, 0, 0 });
+            empireMultiPlayerEmpire.Value = new decimal(new int[] { int.MaxValue, 0, 0, 0 });
             empireMultiPlayerEmpire.ValueChanged += empireMultiPlayerEmpire_ValueChanged;
             // 
             // empireSinglePlayerHardEmpire
@@ -514,12 +523,13 @@ namespace SwRebellionEditor
             empireSinglePlayerHardEmpire.ForeColor = Color.Black;
             empireSinglePlayerHardEmpire.Location = new Point(7, 82);
             empireSinglePlayerHardEmpire.Margin = new Padding(4, 3, 4, 3);
-            empireSinglePlayerHardEmpire.Maximum = new decimal(new int[] { -1, 0, 0, 0 });
+            empireSinglePlayerHardEmpire.Maximum = new decimal(new int[] { int.MaxValue, 0, 0, 0 });
+            empireSinglePlayerHardEmpire.Minimum = new decimal(new int[] { int.MinValue, 0, 0, int.MinValue });
             empireSinglePlayerHardEmpire.Name = "empireSinglePlayerHardEmpire";
             empireSinglePlayerHardEmpire.Size = new Size(92, 23);
             empireSinglePlayerHardEmpire.TabIndex = 173;
             empireSinglePlayerHardEmpire.TextAlign = HorizontalAlignment.Right;
-            empireSinglePlayerHardEmpire.Value = new decimal(new int[] { -1, 0, 0, 0 });
+            empireSinglePlayerHardEmpire.Value = new decimal(new int[] { int.MaxValue, 0, 0, 0 });
             empireSinglePlayerHardEmpire.ValueChanged += empireSinglePlayerHardEmpire_ValueChanged;
             // 
             // empireSinglePlayerMediumEmpire
@@ -527,12 +537,13 @@ namespace SwRebellionEditor
             empireSinglePlayerMediumEmpire.ForeColor = Color.Black;
             empireSinglePlayerMediumEmpire.Location = new Point(7, 53);
             empireSinglePlayerMediumEmpire.Margin = new Padding(4, 3, 4, 3);
-            empireSinglePlayerMediumEmpire.Maximum = new decimal(new int[] { -1, 0, 0, 0 });
+            empireSinglePlayerMediumEmpire.Maximum = new decimal(new int[] { int.MaxValue, 0, 0, 0 });
+            empireSinglePlayerMediumEmpire.Minimum = new decimal(new int[] { int.MinValue, 0, 0, int.MinValue });
             empireSinglePlayerMediumEmpire.Name = "empireSinglePlayerMediumEmpire";
             empireSinglePlayerMediumEmpire.Size = new Size(92, 23);
             empireSinglePlayerMediumEmpire.TabIndex = 172;
             empireSinglePlayerMediumEmpire.TextAlign = HorizontalAlignment.Right;
-            empireSinglePlayerMediumEmpire.Value = new decimal(new int[] { -1, 0, 0, 0 });
+            empireSinglePlayerMediumEmpire.Value = new decimal(new int[] { int.MaxValue, 0, 0, 0 });
             empireSinglePlayerMediumEmpire.ValueChanged += empireSinglePlayerMediumEmpire_ValueChanged;
             // 
             // empireSinglePlayerEasyEmpire
@@ -540,12 +551,13 @@ namespace SwRebellionEditor
             empireSinglePlayerEasyEmpire.ForeColor = Color.Black;
             empireSinglePlayerEasyEmpire.Location = new Point(7, 24);
             empireSinglePlayerEasyEmpire.Margin = new Padding(4, 3, 4, 3);
-            empireSinglePlayerEasyEmpire.Maximum = new decimal(new int[] { -1, 0, 0, 0 });
+            empireSinglePlayerEasyEmpire.Maximum = new decimal(new int[] { int.MaxValue, 0, 0, 0 });
+            empireSinglePlayerEasyEmpire.Minimum = new decimal(new int[] { int.MinValue, 0, 0, int.MinValue });
             empireSinglePlayerEasyEmpire.Name = "empireSinglePlayerEasyEmpire";
             empireSinglePlayerEasyEmpire.Size = new Size(92, 23);
             empireSinglePlayerEasyEmpire.TabIndex = 172;
             empireSinglePlayerEasyEmpire.TextAlign = HorizontalAlignment.Right;
-            empireSinglePlayerEasyEmpire.Value = new decimal(new int[] { -1, 0, 0, 0 });
+            empireSinglePlayerEasyEmpire.Value = new decimal(new int[] { int.MaxValue, 0, 0, 0 });
             empireSinglePlayerEasyEmpire.ValueChanged += empireSinglePlayerEasyEmpire_ValueChanged;
             // 
             // empireSinglePlayerHardLabel
@@ -599,12 +611,13 @@ namespace SwRebellionEditor
             empireMultiPlayerAlliance.ForeColor = Color.Black;
             empireMultiPlayerAlliance.Location = new Point(7, 111);
             empireMultiPlayerAlliance.Margin = new Padding(4, 3, 4, 3);
-            empireMultiPlayerAlliance.Maximum = new decimal(new int[] { -1, 0, 0, 0 });
+            empireMultiPlayerAlliance.Maximum = new decimal(new int[] { int.MaxValue, 0, 0, 0 });
+            empireMultiPlayerAlliance.Minimum = new decimal(new int[] { int.MinValue, 0, 0, int.MinValue });
             empireMultiPlayerAlliance.Name = "empireMultiPlayerAlliance";
             empireMultiPlayerAlliance.Size = new Size(92, 23);
             empireMultiPlayerAlliance.TabIndex = 174;
             empireMultiPlayerAlliance.TextAlign = HorizontalAlignment.Right;
-            empireMultiPlayerAlliance.Value = new decimal(new int[] { -1, 0, 0, 0 });
+            empireMultiPlayerAlliance.Value = new decimal(new int[] { int.MaxValue, 0, 0, 0 });
             empireMultiPlayerAlliance.ValueChanged += empireMultiPlayerAlliance_ValueChanged;
             // 
             // empireSinglePlayerHardAlliance
@@ -612,12 +625,13 @@ namespace SwRebellionEditor
             empireSinglePlayerHardAlliance.ForeColor = Color.Black;
             empireSinglePlayerHardAlliance.Location = new Point(7, 82);
             empireSinglePlayerHardAlliance.Margin = new Padding(4, 3, 4, 3);
-            empireSinglePlayerHardAlliance.Maximum = new decimal(new int[] { -1, 0, 0, 0 });
+            empireSinglePlayerHardAlliance.Maximum = new decimal(new int[] { int.MaxValue, 0, 0, 0 });
+            empireSinglePlayerHardAlliance.Minimum = new decimal(new int[] { int.MinValue, 0, 0, int.MinValue });
             empireSinglePlayerHardAlliance.Name = "empireSinglePlayerHardAlliance";
             empireSinglePlayerHardAlliance.Size = new Size(92, 23);
             empireSinglePlayerHardAlliance.TabIndex = 173;
             empireSinglePlayerHardAlliance.TextAlign = HorizontalAlignment.Right;
-            empireSinglePlayerHardAlliance.Value = new decimal(new int[] { -1, 0, 0, 0 });
+            empireSinglePlayerHardAlliance.Value = new decimal(new int[] { int.MaxValue, 0, 0, 0 });
             empireSinglePlayerHardAlliance.ValueChanged += empireSinglePlayerHardAlliance_ValueChanged;
             // 
             // empireSinglePlayerMediumAlliance
@@ -625,12 +639,13 @@ namespace SwRebellionEditor
             empireSinglePlayerMediumAlliance.ForeColor = Color.Black;
             empireSinglePlayerMediumAlliance.Location = new Point(7, 53);
             empireSinglePlayerMediumAlliance.Margin = new Padding(4, 3, 4, 3);
-            empireSinglePlayerMediumAlliance.Maximum = new decimal(new int[] { -1, 0, 0, 0 });
+            empireSinglePlayerMediumAlliance.Maximum = new decimal(new int[] { int.MaxValue, 0, 0, 0 });
+            empireSinglePlayerMediumAlliance.Minimum = new decimal(new int[] { int.MinValue, 0, 0, int.MinValue });
             empireSinglePlayerMediumAlliance.Name = "empireSinglePlayerMediumAlliance";
             empireSinglePlayerMediumAlliance.Size = new Size(92, 23);
             empireSinglePlayerMediumAlliance.TabIndex = 172;
             empireSinglePlayerMediumAlliance.TextAlign = HorizontalAlignment.Right;
-            empireSinglePlayerMediumAlliance.Value = new decimal(new int[] { -1, 0, 0, 0 });
+            empireSinglePlayerMediumAlliance.Value = new decimal(new int[] { int.MaxValue, 0, 0, 0 });
             empireSinglePlayerMediumAlliance.ValueChanged += empireSinglePlayerMediumAlliance_ValueChanged;
             // 
             // empireSinglePlayerEasyAlliance
@@ -638,12 +653,13 @@ namespace SwRebellionEditor
             empireSinglePlayerEasyAlliance.ForeColor = Color.Black;
             empireSinglePlayerEasyAlliance.Location = new Point(7, 24);
             empireSinglePlayerEasyAlliance.Margin = new Padding(4, 3, 4, 3);
-            empireSinglePlayerEasyAlliance.Maximum = new decimal(new int[] { -1, 0, 0, 0 });
+            empireSinglePlayerEasyAlliance.Maximum = new decimal(new int[] { int.MaxValue, 0, 0, 0 });
+            empireSinglePlayerEasyAlliance.Minimum = new decimal(new int[] { int.MinValue, 0, 0, int.MinValue });
             empireSinglePlayerEasyAlliance.Name = "empireSinglePlayerEasyAlliance";
             empireSinglePlayerEasyAlliance.Size = new Size(92, 23);
             empireSinglePlayerEasyAlliance.TabIndex = 172;
             empireSinglePlayerEasyAlliance.TextAlign = HorizontalAlignment.Right;
-            empireSinglePlayerEasyAlliance.Value = new decimal(new int[] { -1, 0, 0, 0 });
+            empireSinglePlayerEasyAlliance.Value = new decimal(new int[] { int.MaxValue, 0, 0, 0 });
             empireSinglePlayerEasyAlliance.ValueChanged += empireSinglePlayerEasyAlliance_ValueChanged;
             // 
             // empireMultiPlayerLabel

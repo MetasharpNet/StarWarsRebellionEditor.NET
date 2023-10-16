@@ -49,22 +49,22 @@ public class SDPRTB_SideParamTableEntry
     public uint Id;
     public uint Field2_1; // 1
     public uint Unknown; // Second Byte sets Entry Group (???)
-    public uint AllianceMultiPlayerAlliance;
-    public uint AllianceMultiPlayerEmpire;
-    public uint AllianceSinglePlayerEasyAlliance;
-    public uint AllianceSinglePlayerEasyEmpire;
-    public uint AllianceSinglePlayerMediumAlliance;
-    public uint AllianceSinglePlayerMediumEmpire;
-    public uint AllianceSinglePlayerHardAlliance;
-    public uint AllianceSinglePlayerHardEmpire;
-    public uint EmpireSinglePlayerEasyAlliance;
-    public uint EmpireSinglePlayerEasyEmpire;
-    public uint EmpireSinglePlayerMediumAlliance;
-    public uint EmpireSinglePlayerMediumEmpire;
-    public uint EmpireSinglePlayerHardAlliance;
-    public uint EmpireSinglePlayerHardEmpire;
-    public uint EmpireMultiPlayerAlliance;
-    public uint EmpireMultiPlayerEmpire;
+    public int AllianceMultiPlayerAlliance;
+    public int AllianceMultiPlayerEmpire;
+    public int AllianceSinglePlayerEasyAlliance;
+    public int AllianceSinglePlayerEasyEmpire;
+    public int AllianceSinglePlayerMediumAlliance;
+    public int AllianceSinglePlayerMediumEmpire;
+    public int AllianceSinglePlayerHardAlliance;
+    public int AllianceSinglePlayerHardEmpire;
+    public int EmpireSinglePlayerEasyAlliance;
+    public int EmpireSinglePlayerEasyEmpire;
+    public int EmpireSinglePlayerMediumAlliance;
+    public int EmpireSinglePlayerMediumEmpire;
+    public int EmpireSinglePlayerHardAlliance;
+    public int EmpireSinglePlayerHardEmpire;
+    public int EmpireMultiPlayerAlliance;
+    public int EmpireMultiPlayerEmpire;
     [Ignore]
     public string Name = "Unknown Side Param Table Entry";
 }

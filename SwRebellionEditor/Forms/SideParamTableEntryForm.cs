@@ -60,82 +60,82 @@ public partial class SideParamTableEntryForm : SideParamTableEntryDesignForm
 
     private void allianceMultiPlayerAlliance_ValueChanged(object sender, EventArgs e)
     {
-        GameFile.SideParamTableEntries[selector.Value].AllianceMultiPlayerAlliance = (uint)allianceMultiPlayerAlliance.Value;
+        GameFile.SideParamTableEntries[selector.Value].AllianceMultiPlayerAlliance = (int)allianceMultiPlayerAlliance.Value;
         GameFile.UnsavedData = true;
     }
     private void allianceMultiPlayerEmpire_ValueChanged(object sender, EventArgs e)
     {
-        GameFile.SideParamTableEntries[selector.Value].AllianceMultiPlayerEmpire = (uint)allianceMultiPlayerEmpire.Value;
+        GameFile.SideParamTableEntries[selector.Value].AllianceMultiPlayerEmpire = (int)allianceMultiPlayerEmpire.Value;
         GameFile.UnsavedData = true;
     }
     private void allianceSinglePlayerEasyAlliance_ValueChanged(object sender, EventArgs e)
     {
-        GameFile.SideParamTableEntries[selector.Value].AllianceSinglePlayerEasyAlliance = (uint)allianceSinglePlayerEasyAlliance.Value;
+        GameFile.SideParamTableEntries[selector.Value].AllianceSinglePlayerEasyAlliance = (int)allianceSinglePlayerEasyAlliance.Value;
         GameFile.UnsavedData = true;
     }
     private void allianceSinglePlayerEasyEmpire_ValueChanged(object sender, EventArgs e)
     {
-        GameFile.SideParamTableEntries[selector.Value].AllianceSinglePlayerEasyEmpire = (uint)allianceSinglePlayerEasyEmpire.Value;
+        GameFile.SideParamTableEntries[selector.Value].AllianceSinglePlayerEasyEmpire = (int)allianceSinglePlayerEasyEmpire.Value;
         GameFile.UnsavedData = true;
     }
     private void allianceSinglePlayerHardAlliance_ValueChanged(object sender, EventArgs e)
     {
-        GameFile.SideParamTableEntries[selector.Value].AllianceSinglePlayerHardAlliance = (uint)allianceSinglePlayerHardAlliance.Value;
+        GameFile.SideParamTableEntries[selector.Value].AllianceSinglePlayerHardAlliance = (int)allianceSinglePlayerHardAlliance.Value;
         GameFile.UnsavedData = true;
     }
     private void allianceSinglePlayerHardEmpire_ValueChanged(object sender, EventArgs e)
     {
-        GameFile.SideParamTableEntries[selector.Value].AllianceSinglePlayerHardEmpire = (uint)allianceSinglePlayerHardEmpire.Value;
+        GameFile.SideParamTableEntries[selector.Value].AllianceSinglePlayerHardEmpire = (int)allianceSinglePlayerHardEmpire.Value;
         GameFile.UnsavedData = true;
     }
     private void allianceSinglePlayerMediumAlliance_ValueChanged(object sender, EventArgs e)
     {
-        GameFile.SideParamTableEntries[selector.Value].AllianceSinglePlayerMediumAlliance = (uint)allianceSinglePlayerMediumAlliance.Value;
+        GameFile.SideParamTableEntries[selector.Value].AllianceSinglePlayerMediumAlliance = (int)allianceSinglePlayerMediumAlliance.Value;
         GameFile.UnsavedData = true;
     }
     private void allianceSinglePlayerMediumEmpire_ValueChanged(object sender, EventArgs e)
     {
-        GameFile.SideParamTableEntries[selector.Value].AllianceSinglePlayerMediumEmpire = (uint)allianceSinglePlayerMediumEmpire.Value;
+        GameFile.SideParamTableEntries[selector.Value].AllianceSinglePlayerMediumEmpire = (int)allianceSinglePlayerMediumEmpire.Value;
         GameFile.UnsavedData = true;
     }
     private void empireMultiPlayerAlliance_ValueChanged(object sender, EventArgs e)
     {
-        GameFile.SideParamTableEntries[selector.Value].EmpireMultiPlayerAlliance = (uint)empireMultiPlayerAlliance.Value;
+        GameFile.SideParamTableEntries[selector.Value].EmpireMultiPlayerAlliance = (int)empireMultiPlayerAlliance.Value;
         GameFile.UnsavedData = true;
     }
     private void empireMultiPlayerEmpire_ValueChanged(object sender, EventArgs e)
     {
-        GameFile.SideParamTableEntries[selector.Value].EmpireMultiPlayerEmpire = (uint)empireMultiPlayerEmpire.Value;
+        GameFile.SideParamTableEntries[selector.Value].EmpireMultiPlayerEmpire = (int)empireMultiPlayerEmpire.Value;
         GameFile.UnsavedData = true;
     }
     private void empireSinglePlayerEasyAlliance_ValueChanged(object sender, EventArgs e)
     {
-        GameFile.SideParamTableEntries[selector.Value].EmpireSinglePlayerEasyAlliance = (uint)empireSinglePlayerEasyAlliance.Value;
+        GameFile.SideParamTableEntries[selector.Value].EmpireSinglePlayerEasyAlliance = (int)empireSinglePlayerEasyAlliance.Value;
         GameFile.UnsavedData = true;
     }
     private void empireSinglePlayerEasyEmpire_ValueChanged(object sender, EventArgs e)
     {
-        GameFile.SideParamTableEntries[selector.Value].EmpireSinglePlayerEasyEmpire = (uint)empireSinglePlayerEasyEmpire.Value;
+        GameFile.SideParamTableEntries[selector.Value].EmpireSinglePlayerEasyEmpire = (int)empireSinglePlayerEasyEmpire.Value;
         GameFile.UnsavedData = true;
     }
     private void empireSinglePlayerHardAlliance_ValueChanged(object sender, EventArgs e)
     {
-        GameFile.SideParamTableEntries[selector.Value].EmpireSinglePlayerHardAlliance = (uint)empireSinglePlayerHardAlliance.Value;
+        GameFile.SideParamTableEntries[selector.Value].EmpireSinglePlayerHardAlliance = (int)empireSinglePlayerHardAlliance.Value;
         GameFile.UnsavedData = true;
     }
     private void empireSinglePlayerHardEmpire_ValueChanged(object sender, EventArgs e)
     {
-        GameFile.SideParamTableEntries[selector.Value].EmpireSinglePlayerHardEmpire = (uint)empireSinglePlayerHardEmpire.Value;
+        GameFile.SideParamTableEntries[selector.Value].EmpireSinglePlayerHardEmpire = (int)empireSinglePlayerHardEmpire.Value;
         GameFile.UnsavedData = true;
     }
     private void empireSinglePlayerMediumAlliance_ValueChanged(object sender, EventArgs e)
     {
-        GameFile.SideParamTableEntries[selector.Value].EmpireSinglePlayerMediumAlliance = (uint)empireSinglePlayerMediumAlliance.Value;
+        GameFile.SideParamTableEntries[selector.Value].EmpireSinglePlayerMediumAlliance = (int)empireSinglePlayerMediumAlliance.Value;
         GameFile.UnsavedData = true;
     }
     private void empireSinglePlayerMediumEmpire_ValueChanged(object sender, EventArgs e)
     {
-        GameFile.SideParamTableEntries[selector.Value].EmpireSinglePlayerMediumEmpire = (uint)empireSinglePlayerMediumEmpire.Value;
+        GameFile.SideParamTableEntries[selector.Value].EmpireSinglePlayerMediumEmpire = (int)empireSinglePlayerMediumEmpire.Value;
         GameFile.UnsavedData = true;
     }
     private void field2_1_ValueChanged(object sender, EventArgs e)
