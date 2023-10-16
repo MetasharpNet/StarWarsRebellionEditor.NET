@@ -40,7 +40,7 @@ namespace SwRebellionEditor
         /// </summary>
         private void InitializeComponent()
         {
-            DataGridViewCellStyle dataGridViewCellStyle3 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
             openNew = new Button();
             SaveAs = new Button();
             Cancel = new Button();
@@ -54,10 +54,11 @@ namespace SwRebellionEditor
             delGroupButton = new Button();
             addGroupButton = new Button();
             groupsDataGridView = new DataGridView();
-            idColumn = new DataGridViewTextBoxColumn();
-            percentColumn = new DataGridViewTextBoxColumn();
-            groupColumn = new DataGridViewTextBoxColumn();
             infoLabel = new Label();
+            formulaLabel = new Label();
+            idColumn = new DataGridViewTextBoxColumn();
+            randomTresholdColumn = new DataGridViewTextBoxColumn();
+            groupColumn = new DataGridViewTextBoxColumn();
             ((ISupportInitialize)groupsDataGridView).BeginInit();
             SuspendLayout();
             // 
@@ -112,11 +113,11 @@ namespace SwRebellionEditor
             itemsListView.FullRowSelect = true;
             itemsListView.GridLines = true;
             itemsListView.HeaderStyle = ColumnHeaderStyle.Nonclickable;
-            itemsListView.Location = new Point(332, 31);
+            itemsListView.Location = new Point(332, 44);
             itemsListView.Margin = new Padding(4, 3, 4, 3);
             itemsListView.MultiSelect = false;
             itemsListView.Name = "itemsListView";
-            itemsListView.Size = new Size(271, 384);
+            itemsListView.Size = new Size(271, 371);
             itemsListView.TabIndex = 55;
             itemsListView.UseCompatibleStateImageBehavior = false;
             itemsListView.View = View.Details;
@@ -195,23 +196,41 @@ namespace SwRebellionEditor
             groupsDataGridView.AllowUserToResizeColumns = false;
             groupsDataGridView.AllowUserToResizeRows = false;
             groupsDataGridView.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            groupsDataGridView.Columns.AddRange(new DataGridViewColumn[] { idColumn, percentColumn, groupColumn });
-            dataGridViewCellStyle3.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = SystemColors.Window;
-            dataGridViewCellStyle3.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            dataGridViewCellStyle3.ForeColor = SystemColors.ControlText;
-            dataGridViewCellStyle3.SelectionBackColor = SystemColors.Highlight;
-            dataGridViewCellStyle3.SelectionForeColor = SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = DataGridViewTriState.False;
-            groupsDataGridView.DefaultCellStyle = dataGridViewCellStyle3;
-            groupsDataGridView.Location = new Point(6, 31);
+            groupsDataGridView.Columns.AddRange(new DataGridViewColumn[] { idColumn, randomTresholdColumn, groupColumn });
+            dataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = SystemColors.Window;
+            dataGridViewCellStyle1.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            dataGridViewCellStyle1.ForeColor = SystemColors.ControlText;
+            dataGridViewCellStyle1.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = DataGridViewTriState.False;
+            groupsDataGridView.DefaultCellStyle = dataGridViewCellStyle1;
+            groupsDataGridView.Location = new Point(6, 44);
             groupsDataGridView.Name = "groupsDataGridView";
             groupsDataGridView.RowHeadersVisible = false;
             groupsDataGridView.RowTemplate.Height = 25;
-            groupsDataGridView.Size = new Size(322, 384);
+            groupsDataGridView.Size = new Size(322, 371);
             groupsDataGridView.TabIndex = 62;
             groupsDataGridView.CellValueChanged += groupsDataGridView_CellValueChanged;
             groupsDataGridView.SelectionChanged += groupsDataGridView_SelectionChanged;
+            // 
+            // infoLabel
+            // 
+            infoLabel.AutoSize = true;
+            infoLabel.Location = new Point(13, 9);
+            infoLabel.Name = "infoLabel";
+            infoLabel.Size = new Size(216, 15);
+            infoLabel.TabIndex = 63;
+            infoLabel.Text = "Define here initial random Empire units.";
+            // 
+            // formulaLabel
+            // 
+            formulaLabel.AutoSize = true;
+            formulaLabel.Location = new Point(13, 26);
+            formulaLabel.Name = "formulaLabel";
+            formulaLabel.Size = new Size(499, 15);
+            formulaLabel.TabIndex = 64;
+            formulaLabel.Text = "Game rolls 0-100 numbers N. Each creates an army with highest random treshold < N (if any).";
             // 
             // idColumn
             // 
@@ -221,12 +240,12 @@ namespace SwRebellionEditor
             idColumn.Resizable = DataGridViewTriState.False;
             idColumn.Width = 32;
             // 
-            // percentColumn
+            // randomTresholdColumn
             // 
-            percentColumn.HeaderText = "%";
-            percentColumn.Name = "percentColumn";
-            percentColumn.Resizable = DataGridViewTriState.False;
-            percentColumn.Width = 32;
+            randomTresholdColumn.HeaderText = "Random Treshold";
+            randomTresholdColumn.Name = "randomTresholdColumn";
+            randomTresholdColumn.Resizable = DataGridViewTriState.False;
+            randomTresholdColumn.Width = 55;
             // 
             // groupColumn
             // 
@@ -234,16 +253,7 @@ namespace SwRebellionEditor
             groupColumn.Name = "groupColumn";
             groupColumn.ReadOnly = true;
             groupColumn.Resizable = DataGridViewTriState.False;
-            groupColumn.Width = 255;
-            // 
-            // infoLabel
-            // 
-            infoLabel.AutoSize = true;
-            infoLabel.Location = new Point(13, 9);
-            infoLabel.Name = "infoLabel";
-            infoLabel.Size = new Size(334, 15);
-            infoLabel.TabIndex = 63;
-            infoLabel.Text = "Define here initial random Empire units and their probabilities.";
+            groupColumn.Width = 232;
             // 
             // EmpireUnitsTableForm
             // 
@@ -252,6 +262,7 @@ namespace SwRebellionEditor
             AutoScaleMode = AutoScaleMode.Font;
             CancelButton = Cancel;
             ClientSize = new Size(609, 486);
+            Controls.Add(formulaLabel);
             Controls.Add(infoLabel);
             Controls.Add(groupsDataGridView);
             Controls.Add(groupComboBox);
@@ -286,9 +297,10 @@ namespace SwRebellionEditor
         private Button delGroupButton;
         private Button addGroupButton;
         private DataGridView groupsDataGridView;
-        private DataGridViewTextBoxColumn idColumn;
-        private DataGridViewTextBoxColumn percentColumn;
-        private DataGridViewTextBoxColumn groupColumn;
         private Label infoLabel;
+        private DataGridViewTextBoxColumn idColumn;
+        private DataGridViewTextBoxColumn randomTresholdColumn;
+        private DataGridViewTextBoxColumn groupColumn;
+        private Label formulaLabel;
     }
 }

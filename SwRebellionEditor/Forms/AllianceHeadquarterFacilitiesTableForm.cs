@@ -57,21 +57,21 @@ public partial class AllianceHeadquarterFacilitiesTableForm : AllianceHeadquarte
         if (groupComboBox.SelectedItem == null)
             return;
         var item = new FACLHQTB_Item
-        {
-            Field1_1 = 1,
-            Field2_0 = 0,
-            Item = Identifier.ToValue(groupComboBox.Text)
-        };
+            {
+                Field1_1 = 1,
+                Field2_0 = 0,
+                Item = Identifier.ToValue(groupComboBox.Text)
+            };
         var group = new FACLHQTB_Group
-        {
-            Field2_1 = 1,
-            Field4_1 = 1,
-            Field5_1 = 1,
-            Index = (uint)GameFile.Groups.Length + 1,
-            IndexBis = (uint)GameFile.Groups.Length + 1,
-            Items = new FACLHQTB_Item[] { item },
-            ItemsCount = 1
-        };
+            {
+                Field2_1 = 1,
+                Field4_1 = 1,
+                Field5_1 = 1,
+                Index = (uint)GameFile.Groups.Length + 1,
+                IndexBis = (uint)GameFile.Groups.Length + 1,
+                Items = new FACLHQTB_Item[] { item },
+                ItemsCount = 1
+            };
         var groups = new List<FACLHQTB_Group>(GameFile.Groups);
         groups.Add(group);
         GameFile.Groups = groups.ToArray();
@@ -98,7 +98,6 @@ public partial class AllianceHeadquarterFacilitiesTableForm : AllianceHeadquarte
             GameFile.Groups[i].Index = (uint)i + 1;
             GameFile.Groups[i].IndexBis = (uint)i + 1;
             groupsDataGridView.Rows[i].Cells[0].Value = GameFile.Groups[i].Index;
-
         }
         groupsDataGridView_SelectionChanged(sender, e);
         if (GameFile.GroupsCount > 0)
@@ -115,11 +114,11 @@ public partial class AllianceHeadquarterFacilitiesTableForm : AllianceHeadquarte
         var group = GameFile.Groups[groupId];
         var items = new List<FACLHQTB_Item>(group.Items);
         items.Add(new FACLHQTB_Item
-        {
-            Field1_1 = 1,
-            Field2_0 = 0,
-            Item = Identifier.ToValue(itemComboBox.Text)
-        });
+            {
+                Field1_1 = 1,
+                Field2_0 = 0,
+                Item = Identifier.ToValue(itemComboBox.Text)
+            });
         group.Items = items.ToArray();
         group.ItemsCount = (uint)items.Count;
         GameFile.UnsavedData = true;

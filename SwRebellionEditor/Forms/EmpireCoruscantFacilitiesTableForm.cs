@@ -57,21 +57,21 @@ public partial class EmpireCoruscantFacilitiesTableForm : EmpireCoruscantFacilit
         if (groupComboBox.SelectedItem == null)
             return;
         var item = new FACLCRTB_Item
-        {
-            Field1_1 = 1,
-            Field2_0 = 0,
-            Item = Identifier.ToValue(groupComboBox.Text)
-        };
+            {
+                Field1_1 = 1,
+                Field2_0 = 0,
+                Item = Identifier.ToValue(groupComboBox.Text)
+            };
         var group = new FACLCRTB_Group
-        {
-            Field2_1 = 1,
-            Field4_1 = 1,
-            Field5_1 = 1,
-            Index = (uint)GameFile.Groups.Length + 1,
-            IndexBis = (uint)GameFile.Groups.Length + 1,
-            Items = new FACLCRTB_Item[] { item },
-            ItemsCount = 1
-        };
+            {
+                Field2_1 = 1,
+                Field4_1 = 1,
+                Field5_1 = 1,
+                Index = (uint)GameFile.Groups.Length + 1,
+                IndexBis = (uint)GameFile.Groups.Length + 1,
+                Items = new FACLCRTB_Item[] { item },
+                ItemsCount = 1
+            };
         var groups = new List<FACLCRTB_Group>(GameFile.Groups);
         groups.Add(group);
         GameFile.Groups = groups.ToArray();
@@ -114,11 +114,11 @@ public partial class EmpireCoruscantFacilitiesTableForm : EmpireCoruscantFacilit
         var group = GameFile.Groups[groupId];
         var items = new List<FACLCRTB_Item>(group.Items);
         items.Add(new FACLCRTB_Item
-        {
-            Field1_1 = 1,
-            Field2_0 = 0,
-            Item = Identifier.ToValue(itemComboBox.Text)
-        });
+            {
+                Field1_1 = 1,
+                Field2_0 = 0,
+                Item = Identifier.ToValue(itemComboBox.Text)
+            });
         group.Items = items.ToArray();
         group.ItemsCount = (uint)items.Count;
         GameFile.UnsavedData = true;

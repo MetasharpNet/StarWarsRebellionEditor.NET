@@ -116,11 +116,11 @@ public partial class AllianceFleetsTableForm : AllianceFleetsTableDesignForm
         var group = GameFile.Groups[groupId];
         var items = new List<CMUNAFTB_Item>(group.Items);
         items.Add(new CMUNAFTB_Item
-        {
-            Field1_1 = 1,
-            Field2_0 = 0,
-            Item = Identifier.ToValue(itemComboBox.Text)
-        });
+            {
+                Field1_1 = 1,
+                Field2_0 = 0,
+                Item = Identifier.ToValue(itemComboBox.Text)
+            });
         group.Items = items.ToArray();
         group.ItemsCount = (uint)items.Count;
         GameFile.UnsavedData = true;

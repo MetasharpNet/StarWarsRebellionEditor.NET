@@ -26,9 +26,9 @@ public partial class EmpireUnitsTableForm : EmpireUnitsTableDesignForm
         foreach (var group in GameFile.Groups)
         {
             groupsDataGridView.Rows.Add(new object[3]
-            {
+                {
                     group.Index,
-                    group.Probability,
+                    group.RandomTreshold,
                     group.ToString()
                 });
         }
@@ -53,11 +53,7 @@ public partial class EmpireUnitsTableForm : EmpireUnitsTableDesignForm
         itemsListView.Items.Clear();
         foreach (var item in group.Items)
         {
-            itemsListView.Items.Add(new ListViewItem(new string[2]
-                {
-                    item.ToString(),
-                    ""
-                }));
+            itemsListView.Items.Add(new ListViewItem(new string[1] { item.ToString() }));
         }
     }
     private void groupsDataGridView_CellValueChanged(object sender, DataGridViewCellEventArgs e)
@@ -66,7 +62,7 @@ public partial class EmpireUnitsTableForm : EmpireUnitsTableDesignForm
         {
             var groupId = e.RowIndex;
             var group = GameFile.Groups[groupId];
-            group.Probability = uint.Parse(groupsDataGridView.Rows[e.RowIndex].Cells[e.ColumnIndex].Value.ToString());
+            group.RandomTreshold = uint.Parse(groupsDataGridView.Rows[e.RowIndex].Cells[e.ColumnIndex].Value.ToString());
             GameFile.UnsavedData = true;
         }
     }
@@ -79,29 +75,29 @@ public partial class EmpireUnitsTableForm : EmpireUnitsTableDesignForm
     {
         if (groupComboBox.SelectedItem == null)
             return;
-        var item = new CMUNEMTB_Item()
-        {
-            Field1_1 = 1,
-            Field2_0 = 0,
-            Item = Identifier.ToValue(groupComboBox.Text)
-        };
-        var group = new CMUNEMTB_Group()
-        {
-            Field2_1 = 1,
-            Field4_1 = 1,
-            Field5_1 = 1,
-            Index = (uint)GameFile.Groups.Length + 1,
-            Probability = 100,
-            Items = new CMUNEMTB_Item[] { item },
-            ItemsCount = 1
-        };
+        var item = new CMUNEMTB_Item
+            {
+                Field1_1 = 1,
+                Field2_0 = 0,
+                Item = Identifier.ToValue(groupComboBox.Text)
+            };
+        var group = new CMUNEMTB_Group
+            {
+                Field2_1 = 1,
+                Field4_1 = 1,
+                Field5_1 = 1,
+                Index = (uint)GameFile.Groups.Length + 1,
+                RandomTreshold = 100,
+                Items = new CMUNEMTB_Item[] { item },
+                ItemsCount = 1
+            };
         var groups = new List<CMUNEMTB_Group>(GameFile.Groups);
         groups.Add(group);
         GameFile.Groups = groups.ToArray();
         groupsDataGridView.Rows.Add(new object[3]
             {
                 group.Index,
-                group.Probability,
+                group.RandomTreshold,
                 group.ToString()
             });
         GameFile.GroupsCount++;
@@ -140,12 +136,12 @@ public partial class EmpireUnitsTableForm : EmpireUnitsTableDesignForm
         var groupId = Int32.Parse(groupsDataGridView.SelectedCells[0].RowIndex.ToString());
         var group = GameFile.Groups[groupId];
         var items = new List<CMUNEMTB_Item>(group.Items);
-        items.Add(new CMUNEMTB_Item()
-        {
-            Field1_1 = 1,
-            Field2_0 = 0,
-            Item = Identifier.ToValue(itemComboBox.Text)
-        });
+        items.Add(new CMUNEMTB_Item
+            {
+                Field1_1 = 1,
+                Field2_0 = 0,
+                Item = Identifier.ToValue(itemComboBox.Text)
+            });
         group.Items = items.ToArray();
         group.ItemsCount = (uint)items.Count;
         GameFile.UnsavedData = true;
