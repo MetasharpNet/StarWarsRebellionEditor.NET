@@ -134,7 +134,6 @@ namespace SwRebellionEditor
             allianceHeadquarterFacilitiesToolStripMenuItem = new ToolStripMenuItem();
             allianceHeadquarterUnitsToolStripMenuItem = new ToolStripMenuItem();
             allianceYavin4UnitsToolStripMenuItem = new ToolStripMenuItem();
-            toolStripSeparator5 = new ToolStripSeparator();
             empireFleetsToolStripMenuItem = new ToolStripMenuItem();
             empireRandomUnitsToolStripMenuItem = new ToolStripMenuItem();
             empireCoruscantFacilitiesToolStripMenuItem = new ToolStripMenuItem();
@@ -183,6 +182,7 @@ namespace SwRebellionEditor
             galaxyMapButton = new ToolStripButton();
             toolStripSeparator4 = new ToolStripSeparator();
             Patch_Button = new ToolStripButton();
+            toolStripSeparator8 = new ToolStripSeparator();
             menuStrip.SuspendLayout();
             statusStrip.SuspendLayout();
             toolStrip.SuspendLayout();
@@ -400,7 +400,7 @@ namespace SwRebellionEditor
             // 
             // initialGameSetupToolStripMenuItem
             // 
-            initialGameSetupToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { generalParametersToolStripMenuItem, sideParametersToolStripMenuItem, toolStripSeparator7, coreSystemsFacilitiesToolStripMenuItem, rimSystemsFacilitiesToolStripMenuItem, toolStripSeparator6, allianceFleetsToolStripMenuItem, allianceRandomUnitsToolStripMenuItem, allianceHeadquarterFacilitiesToolStripMenuItem, allianceHeadquarterUnitsToolStripMenuItem, allianceYavin4UnitsToolStripMenuItem, toolStripSeparator5, empireFleetsToolStripMenuItem, empireRandomUnitsToolStripMenuItem, empireCoruscantFacilitiesToolStripMenuItem, empireCoruscantUnitsToolStripMenuItem });
+            initialGameSetupToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { generalParametersToolStripMenuItem, sideParametersToolStripMenuItem, toolStripSeparator7, coreSystemsFacilitiesToolStripMenuItem, rimSystemsFacilitiesToolStripMenuItem, allianceHeadquarterFacilitiesToolStripMenuItem, empireCoruscantFacilitiesToolStripMenuItem, toolStripSeparator6, allianceRandomUnitsToolStripMenuItem, empireRandomUnitsToolStripMenuItem, toolStripSeparator8, allianceFleetsToolStripMenuItem, allianceHeadquarterUnitsToolStripMenuItem, allianceYavin4UnitsToolStripMenuItem, empireFleetsToolStripMenuItem, empireCoruscantUnitsToolStripMenuItem });
             initialGameSetupToolStripMenuItem.Name = "initialGameSetupToolStripMenuItem";
             initialGameSetupToolStripMenuItem.Size = new Size(195, 22);
             initialGameSetupToolStripMenuItem.Text = "Initial Game Setup";
@@ -477,11 +477,6 @@ namespace SwRebellionEditor
             allianceYavin4UnitsToolStripMenuItem.Size = new Size(236, 22);
             allianceYavin4UnitsToolStripMenuItem.Text = "Alliance: Yavin 4 Units";
             allianceYavin4UnitsToolStripMenuItem.Click += allianceYavin4UnitsToolStripMenuItem_Click;
-            // 
-            // toolStripSeparator5
-            // 
-            toolStripSeparator5.Name = "toolStripSeparator5";
-            toolStripSeparator5.Size = new Size(233, 6);
             // 
             // empireFleetsToolStripMenuItem
             // 
@@ -846,6 +841,11 @@ namespace SwRebellionEditor
             Patch_Button.Text = "Patch";
             Patch_Button.Click += Patch_Button_Click;
             // 
+            // toolStripSeparator8
+            // 
+            toolStripSeparator8.Name = "toolStripSeparator8";
+            toolStripSeparator8.Size = new Size(233, 6);
+            // 
             // MainForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -894,13 +894,13 @@ namespace SwRebellionEditor
         private ToolStripMenuItem empireFleetsToolStripMenuItem;
         private ToolStripMenuItem empireRandomUnitsToolStripMenuItem;
         private ToolStripMenuItem empireCoruscantFacilitiesToolStripMenuItem;
-        private ToolStripSeparator toolStripSeparator5;
         private ToolStripMenuItem generalParametersToolStripMenuItem;
         private ToolStripMenuItem sideParametersToolStripMenuItem;
         private ToolStripSeparator toolStripSeparator7;
         private ToolStripMenuItem coreSystemsFacilitiesToolStripMenuItem;
         private ToolStripMenuItem rimSystemsFacilitiesToolStripMenuItem;
         private ToolStripSeparator toolStripSeparator6;
+        private ToolStripSeparator toolStripSeparator8;
     }
 }
 #endregion
