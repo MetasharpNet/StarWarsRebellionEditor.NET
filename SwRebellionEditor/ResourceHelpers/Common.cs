@@ -1,11 +1,17 @@
 ﻿namespace SwRebellionEditor;
 
-public static class Common
-{
-    public static ResourceFile Resources;
+// WAVE, Bitmap, RCData, Version Info
 
-    static Common()
+public class Common : ResourcesDll
+{
+    public Common(string fileName) : base(fileName)
     {
-        Resources = new ResourceFile(Path.Combine(Settings.Current.GameFolder, "COMMON.DLL"));
+        NamesBitmap = new Dictionary<string, string>
+            {
+                { "20001", "common-main-screen" },
+            };
+        NamesWave = new Dictionary<string, string>
+            {
+            };
     }
 }

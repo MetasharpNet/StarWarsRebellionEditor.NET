@@ -1,11 +1,13 @@
 ﻿namespace SwRebellionEditor;
 
-public static class Rebdlog
-{
-    public static ResourceFile Resources;
+// Bitmap, String Table, Version Info
 
-    static Rebdlog()
+public class Rebdlog : ResourcesDll
+{
+    public Rebdlog(string fileName) : base(fileName)
     {
-        Resources = new ResourceFile(Path.Combine(Settings.Current.GameFolder, "REBDLOG.DLL"));
+        NamesBitmap = new Dictionary<string, string>
+            {
+            };
     }
 }

@@ -1,11 +1,10 @@
 ﻿namespace SwRebellionEditor;
 
-public static class EncyText
-{
-    public static ResourceFile Resources;
+// RCData
 
-    static EncyText()
+public class Encytext : ResourcesDll
+{
+    public Encytext(string fileName) : base(fileName)
     {
-        Resources = new ResourceFile(Path.Combine(Settings.Current.GameFolder, "ENCYTEXT.DLL"));
     }
 }

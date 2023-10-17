@@ -1,4 +1,5 @@
-﻿using System.ComponentModel;
+﻿using SwRebellionEditor.ResourceHelpers;
+using System.ComponentModel;
 using System.Runtime.InteropServices;
 using System.Text;
 using Vestris.ResourceLib;
@@ -18,7 +19,7 @@ public enum LoadLibraryExFlags : uint
 
 #endregion
 
-public class ResourceFile
+public class ResourcesDll
 {
     #region kernel32.dll
 
@@ -34,6 +35,7 @@ public class ResourceFile
     #endregion
 
     #region variables
+    protected string _fileName;
     protected string _filePath;
     public Dictionary<string, byte[]> RT_301;
     public Dictionary<string, ushort> RT_301_lang;
@@ -45,17 +47,21 @@ public class ResourceFile
     public Dictionary<string, ushort> RT_RCDATA_lang;
     public Dictionary<ushort, string> RT_STRING;
     public Dictionary<ushort, ushort> RT_STRING_lang;
+    public Dictionary<string, byte[]> RT_WAVE;
+    public Dictionary<string, ushort> RT_WAVE_lang;
     public ushort RT_301_lang_default => RT_301_lang.Values.GroupBy(l => l).OrderByDescending(g => g.Count()).First().Key;
     public ushort RT_303_lang_default => RT_303_lang.Values.GroupBy(l => l).OrderByDescending(g => g.Count()).First().Key;
     public ushort RT_BITMAP_lang_default => RT_BITMAP_lang.Values.GroupBy(l => l).OrderByDescending(g => g.Count()).First().Key;
     public ushort RT_RCDATA_lang_default => RT_RCDATA_lang.Values.GroupBy(l => l).OrderByDescending(g => g.Count()).First().Key;
     public ushort RT_STRING_lang_default => RT_STRING_lang.Values.GroupBy(l => l).OrderByDescending(g => g.Count()).First().Key;
+    public ushort RT_WAVE_lang_default => RT_WAVE_lang.Values.GroupBy(l => l).OrderByDescending(g => g.Count()).First().Key;
     #endregion
 
     #region .ctor
-    public ResourceFile(string filePath)
+    public ResourcesDll(string fileName)
     {
-        _filePath = filePath;
+        _fileName = fileName.ToUpper();
+        _filePath = Path.Combine(Settings.Current.GameFolder, _fileName);
         RT_301 = new Dictionary<string, byte[]>();
         RT_301_lang = new Dictionary<string, ushort>();
         RT_303 = new Dictionary<string, byte[]>();
@@ -66,11 +72,13 @@ public class ResourceFile
         RT_RCDATA_lang = new Dictionary<string, ushort>();
         RT_STRING = new Dictionary<ushort, string>();
         RT_STRING_lang = new Dictionary<ushort, ushort>();
+        RT_WAVE = new Dictionary<string, byte[]>();
+        RT_WAVE_lang = new Dictionary<string, ushort>();
         Load();
     }
     #endregion
 
-    #region Load/Save (RT_RCDATA, RT_BITMAP, RT_STRING, RT_303)
+    #region Load/Save (RT_RCDATA, RT_BITMAP, RT_STRING, RT_303, RT_WAVE)
     public void Load()
     {
         using (ResourceInfo ri = new ResourceInfo())
@@ -121,6 +129,15 @@ public class ResourceFile
                     RT_303_lang.Add(r.Name.Name, r.Language);
                 }
             }
+            if (ri.ResourceTypes.Any(t => t.Name == "WAVE"))
+            {
+                var resources = ri.Resources.FirstOrDefault(dr => dr.Key.TypeName == "WAVE").Value;
+                foreach (var r in resources)
+                {
+                    RT_WAVE.Add(r.Name.Name, r.WriteAndGetBytes());
+                    RT_WAVE_lang.Add(r.Name.Name, r.Language);
+                }
+            }
             ri.Dispose();
         }
     }
@@ -134,6 +151,8 @@ public class ResourceFile
             SaveBitmap(key, RT_BITMAP[key]);
         foreach (var key in RT_303.Keys)
             Save303(key, RT_303[key]);
+        foreach (var key in RT_WAVE.Keys)
+            SaveWave(key, RT_WAVE[key]);
     }
     #endregion
 
@@ -209,7 +228,7 @@ public class ResourceFile
 
         if (!UpdateResourceW(h, 303, idAsNint, lang, bytes, (bytes == null ? 0 : (uint)bytes.Length)))
             throw new Win32Exception(Marshal.GetLastWin32Error());
-        
+
         if (!EndUpdateResourceW(h, false))
             throw new Win32Exception(Marshal.GetLastWin32Error());
 
@@ -331,5 +350,146 @@ public class ResourceFile
         RT_STRING[id] = text;
         sr.SaveTo(_filePath);
     }
+    #endregion
+
+    #region RT_WAVE
+    public ushort GetWaveLanguage(string id)
+    {
+        if (RT_WAVE_lang.ContainsKey(id))
+            return RT_WAVE_lang[id];
+        return RT_WAVE_lang_default;
+    }
+    public void SaveWave(string id, byte[] bytes)
+    {
+        var lang = Get303Language(id);
+        nint idAsNint;
+        try
+        {
+            idAsNint = Convert.ToInt32(id);
+        }
+        catch
+        {
+            idAsNint = new ResourceId(id).Id;
+        }
+
+        IntPtr h = BeginUpdateResourceW(_filePath, false);
+        if (h == IntPtr.Zero)
+            throw new Win32Exception(Marshal.GetLastWin32Error());
+
+        if (bytes != null && bytes.Length == 0)
+            bytes = null;
+
+        if (!UpdateResourceW(h, 646, idAsNint, lang, bytes, (bytes == null ? 0 : (uint)bytes.Length)))
+            throw new Win32Exception(Marshal.GetLastWin32Error());
+
+        if (!EndUpdateResourceW(h, false))
+            throw new Win32Exception(Marshal.GetLastWin32Error());
+
+        if (RT_WAVE.ContainsKey(id))
+            RT_WAVE[id] = bytes;
+        else
+        {
+            RT_WAVE.Add(id, bytes);
+            RT_WAVE_lang.Add(id, lang);
+        }
+    }
+    #endregion
+
+    #region Export
+
+    public void Export(string folder = "export")
+    {
+        Export301();
+        Export303();
+        ExportBitmap();
+        ExportWAVE();
+    }
+
+    public void Export301(string folder = "export")
+    {
+        var ids = RT_301.Keys.ToList();
+        if (ids.Any())
+        {
+            Directory.CreateDirectory(folder + "\\" + _fileName);
+            Directory.CreateDirectory(folder + "\\" + _fileName + "\\301");
+        }
+        foreach (var id in ids)
+        {
+            var lang = GetBitmapLanguage(id);
+            var name = Names301.ContainsKey(id) ? Names301[id] : "";
+            File.WriteAllBytes(".\\" + folder + "\\" + _fileName + "\\301\\" + id + "-" + lang + "-" + name + ".x", RT_301[id]);
+        }
+    }
+
+    public void Export303(string folder = "export")
+    {
+        var ids = RT_303.Keys.ToList();
+        if (ids.Any())
+        {
+            Directory.CreateDirectory(folder + "\\" + _fileName);
+            Directory.CreateDirectory(folder + "\\" + _fileName + "\\303");
+        }
+        foreach (var id in ids)
+        {
+            var lang = Get303Language(id);
+            var name = Names303.ContainsKey(id) ? Names303[id] : "";
+            File.WriteAllBytes(".\\" + folder + "\\" + _fileName + "\\303\\" + id + "-" + lang + "-" + name + ".bin", RT_303[id]);
+            try
+            {
+                var bi = new BinImage(".\\" + folder + "\\" + _fileName + "\\303\\" + id + "-" + lang + "-" + name + ".bin");
+                var b = bi.ToBitmap(new AdobeColorTable(".\\" + _fileName.ToLowerInvariant().Replace(".", "-") + ".act"));
+                b.Save(".\\" + folder + "\\" + _fileName + "\\303\\" + id + "-" + lang + "-" + name + ".bmp");
+            }
+            catch
+            {
+                File.Move(".\\" + folder + "\\" + _fileName + "\\303\\" + id + "-" + lang + "-" + name + ".bin", ".\\" + folder + "\\" + _fileName + "\\303\\" + id + "-" + lang + "-" + name + ".act");
+            }
+        }
+    }
+
+    public void ExportBitmap(string folder = "export")
+    {
+        var ids = RT_BITMAP.Keys.ToList();
+        if (ids.Any())
+        {
+            Directory.CreateDirectory(folder + "\\" + _fileName);
+            Directory.CreateDirectory(folder + "\\" + _fileName + "\\Bitmap");
+        }
+        foreach (var id in ids)
+        {
+            var lang = GetBitmapLanguage(id);
+            var name = NamesBitmap.ContainsKey(id) ? NamesBitmap[id] : "";
+            DIB.ToDDB(RT_BITMAP[id].Bitmap, ".\\" + folder + "\\" + _fileName + "\\Bitmap\\" + id + "-" + lang + "-" + name + ".bmp");
+        }
+    }
+
+    public void ExportWAVE(string folder = "export")
+    {
+        var ids = RT_WAVE.Keys.ToList();
+        if (ids.Any())
+        {
+            Directory.CreateDirectory(folder + "\\" + _fileName);
+            Directory.CreateDirectory(folder + "\\" + _fileName + "\\WAVE");
+        }
+        foreach (var id in ids)
+        {
+            var lang = GetWaveLanguage(id);
+            var name = NamesWave.ContainsKey(id) ? NamesWave[id] : "";
+            File.WriteAllBytes(".\\" + folder + "\\" + _fileName + "\\WAVE\\" + id + "-" + lang + "-" + name + ".wav", RT_WAVE[id]);
+        }
+    }
+
+    #endregion
+
+    #region Names
+
+    public Dictionary<string, string> Names301;
+
+    public Dictionary<string, string> Names303;
+
+    public Dictionary<string, string> NamesBitmap;
+
+    public Dictionary<string, string> NamesWave;
+
     #endregion
 }

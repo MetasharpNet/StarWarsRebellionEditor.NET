@@ -36,7 +36,7 @@ public class SDPRTB : DatFile
         SideParamTableEntries.First(spe => spe.Id == 4).Name = "Starting Minor Characters in Small Galaxy = 7 + ?";
         SideParamTableEntries.First(spe => spe.Id == 5).Name = "Starting Minor Characters in Medium Galaxy = 7 + ?";
         SideParamTableEntries.First(spe => spe.Id == 6).Name = "Starting Minor Characters in Large Galaxy = 7 + ?";
-        SideParamTableEntries.First(spe => spe.Id == 23).Name = "% of Available Maintenance used to deploy Units at Day 0.";
+        SideParamTableEntries.First(spe => spe.Id == 23).Name = "% of Available Maintenance used to deploy Random Units at Day 0.";
         SideParamTableEntries.First(spe => spe.Id == 30).Name = "Core Sector Owned Systems with support";
         SideParamTableEntries.First(spe => spe.Id == 31).Name = "Core Sector Owned Systems without support";
         SideParamTableEntries.First(spe => spe.Id == 32).Name = "Core Sector Owned Systems with support Base Popularity (%)";

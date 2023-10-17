@@ -99,14 +99,14 @@ public partial class MinorCharactersForm : MinorCharactersDesignForm
     {
         foreach (var mc in GameFile.MinorCharacters)
         {
-            mc.Name = TextStra.Resources.RT_STRING[mc.TextStraDllId];
-            mc.EncyclopediaDescription = EncyText.Resources.RT_RCDATA[(mc.TextStraDllId - 4096).ToString()];
+            mc.Name = ResourcesDlls.Textstra.RT_STRING[mc.TextStraDllId];
+            mc.EncyclopediaDescription = ResourcesDlls.Encytext.RT_RCDATA[(mc.TextStraDllId - 4096).ToString()];
         }
     }
     protected override void SaveSideInfo()
     {
-        TextStra.SaveCharacterName(Convert.ToUInt16(textStraDllId.Value), name.Text);
-        EncyText.Resources.SaveRcdata((textStraDllId.Value - 4096).ToString(), encyclopediaDescription.Text);
+        ResourcesDlls.Textstra.SaveCharacterName(Convert.ToUInt16(textStraDllId.Value), name.Text);
+        ResourcesDlls.Encytext.SaveRcdata((textStraDllId.Value - 4096).ToString(), encyclopediaDescription.Text);
     }
 
     #endregion

@@ -1,11 +1,16 @@
 ﻿namespace SwRebellionEditor;
 
-public static class Emsprite
-{
-    public static ResourceFile Resources;
+// WAVE, Bitmap, RCData, Version Info, 302
 
-    static Emsprite()
+public class Emsprite : ResourcesDll
+{
+    public Emsprite(string fileName) : base(fileName)
     {
-        Resources = new ResourceFile(Path.Combine(Settings.Current.GameFolder, "EMSPRITE.DLL"));
+        NamesBitmap = new Dictionary<string, string>
+            {
+            };
+        NamesWave = new Dictionary<string, string>
+            {
+            };
     }
 }

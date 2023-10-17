@@ -26,8 +26,8 @@ public partial class PatchForm : PatchDesignForm
     {
         foreach (var s in GameFile.Systems)
         {
-            s.Name = TextStra.Resources.RT_STRING[s.TextStraDllId];
-            s.EncyclopediaDescription = EncyText.Resources.RT_RCDATA[(s.TextStraDllId - 4096).ToString()];
+            s.Name = ResourcesDlls.Textstra.RT_STRING[s.TextStraDllId];
+            s.EncyclopediaDescription = ResourcesDlls.Encytext.RT_RCDATA[(s.TextStraDllId - 4096).ToString()];
         }
     }
     private void cancel_Click(object sender, EventArgs e)
@@ -103,7 +103,7 @@ public partial class PatchForm : PatchDesignForm
 
         // ---------------------------- PICTURES ---------------------------
 
-        var defaultTacticalPalette = new AdobeColorTable(Tactical.Resources.RT_303["5557"]);
+        var defaultTacticalPalette = new AdobeColorTable(ResourcesDlls.Tactical.RT_303["5557"]);
         int coruscantId = -1;
         foreach (var setFolder in Directory.GetDirectories("."))
         {
@@ -137,7 +137,7 @@ public partial class PatchForm : PatchDesignForm
                             ebId = ebId.Split('-')[0];
                         else if (ebId.StartsWith("EDATA."))
                             ebId = ebId.Split('.')[1];
-                        EncyBmap.Resources.SaveString(Convert.ToUInt16(ebId), "EDATA." + ebId);
+                        ResourcesDlls.Encybmap.SaveString(Convert.ToUInt16(ebId), "EDATA." + ebId);
                         File.Copy(filePath, Path.Combine(Settings.Current.EDataFolder, "EDATA." + ebId), true);
                     }
                 }
@@ -160,7 +160,7 @@ public partial class PatchForm : PatchDesignForm
                                 else
                                     throw new ApplicationException("Accepted 3D model extension: x. File provided: " + filePath);
                                 if (patchFolderOnly == "TACTICAL.DLL")
-                                    Tactical.Resources.Save301(id301, bytes);
+                                    ResourcesDlls.Tactical.Save301(id301, bytes);
                             }
                         }
                         else if (resourceFolderOnly == "303")
@@ -191,16 +191,16 @@ public partial class PatchForm : PatchDesignForm
                                     throw new ApplicationException("Accepted extensions: jpg, jpeg, bmp, png, bin. File provided: " + filePath);
                                 if (patchFolderOnly == "TACTICAL.DLL")
                                 {
-                                    Tactical.Resources.Save303(id303, bytes);
+                                    ResourcesDlls.Tactical.Save303(id303, bytes);
                                     if (res > 10000)
                                     {
                                         var id303PalId = (Convert.ToInt32(id303) + 1000).ToString();
-                                        Tactical.Resources.Save303(id303PalId, bi.ColorTable.Bytes);
+                                        ResourcesDlls.Tactical.Save303(id303PalId, bi.ColorTable.Bytes);
                                     }
                                 }
                             }
                         }
-                        else if (resourceFolderOnly == "Bitmap")
+                        else if (resourceFolderOnly.ToLowerInvariant() == "bitmap")
                         {
                             var files = Directory.GetFiles(resourceFolder);
                             var coruscantFile = files.FirstOrDefault(f => f.ToLowerInvariant().Contains("coruscant"));
@@ -210,10 +210,16 @@ public partial class PatchForm : PatchDesignForm
                                 if (Path.GetExtension(filePath).ToLowerInvariant() == ".txt")
                                     continue;
                                 var id = Path.GetFileNameWithoutExtension(filePath).Split('-')[0];
-                                if (patchFolderOnly == "COMMON.DLL")
-                                    Common.Resources.SaveBitmap(id, filePath);
+                                if (patchFolderOnly == "ALSPRITE.DLL")
+                                    ResourcesDlls.Alsprite.SaveBitmap(id, filePath);
+                                else if (patchFolderOnly == "COMMON.DLL")
+                                    ResourcesDlls.Common.SaveBitmap(id, filePath);
+                                if (patchFolderOnly == "EMSPRITE.DLL")
+                                    ResourcesDlls.Emsprite.SaveBitmap(id, filePath);
                                 else if (patchFolderOnly == "GOKRES.DLL")
-                                    Gokres.Resources.SaveBitmap(id, filePath);
+                                    ResourcesDlls.Gokres.SaveBitmap(id, filePath);
+                                else if (patchFolderOnly == "REBDLOG.DLL")
+                                    ResourcesDlls.Rebdlog.SaveBitmap(id, filePath);
                                 else if (patchFolderOnly == "STRATEGY.DLL")
                                 {
                                     if (coruscantId < 0 && coruscantFile != null)
@@ -221,10 +227,10 @@ public partial class PatchForm : PatchDesignForm
                                     int idAsInt;
                                     if (Int32.TryParse(id, out idAsInt) && idAsInt > 10000)
                                         idsFound.Add(idAsInt);
-                                    Strategy.Resources.SaveBitmap(id, filePath);
+                                    ResourcesDlls.Strategy.SaveBitmap(id, filePath);
                                 }
                                 else if (patchFolderOnly == "TACTICAL.DLL")
-                                    Tactical.Resources.SaveBitmap(id, filePath);
+                                    ResourcesDlls.Tactical.SaveBitmap(id, filePath);
                             }
                             if (idsFound.Any())
                             { // if only a few planets are provided, use the wireframe for the rest
@@ -234,10 +240,40 @@ public partial class PatchForm : PatchDesignForm
                                     for (int p = 14001; p <= 14200; ++p)
                                     {
                                         var key = p.ToString();
-                                        if (!Tactical.Resources.RT_BITMAP.ContainsKey(key))
-                                            Tactical.Resources.SaveBitmap(key, f);
+                                        if (!ResourcesDlls.Tactical.RT_BITMAP.ContainsKey(key))
+                                            ResourcesDlls.Tactical.SaveBitmap(key, f);
                                     }
                                 }
+                            }
+                        }
+                        else if (resourceFolderOnly.ToLowerInvariant() == "wave")
+                        {
+                            var files = Directory.GetFiles(resourceFolder);
+                            foreach (var filePath in files)
+                            {
+                                var extension = Path.GetExtension(filePath).ToLowerInvariant();
+                                if (extension == ".txt")
+                                    continue;
+                                var idWave = Path.GetFileNameWithoutExtension(filePath).Split('-')[0];
+                                byte[] bytes;
+                                if (extension == ".wav")
+                                    bytes = File.ReadAllBytes(filePath);
+                                else
+                                    throw new ApplicationException("Accepted sound extension: wav. File provided: " + filePath);
+                                if (patchFolderOnly == "ALSPRITE.DLL")
+                                    ResourcesDlls.Alsprite.SaveWave(idWave, bytes);
+                                else if (patchFolderOnly == "COMMON.DLL")
+                                    ResourcesDlls.Common.SaveWave(idWave, bytes);
+                                else if (patchFolderOnly == "EMSPRITE.DLL")
+                                    ResourcesDlls.Emsprite.SaveWave(idWave, bytes);
+                                else if (patchFolderOnly == "STRATEGY.DLL")
+                                    ResourcesDlls.Strategy.SaveWave(idWave, bytes);
+                                else if (patchFolderOnly == "TACTICAL.DLL")
+                                    ResourcesDlls.Tactical.SaveWave(idWave, bytes);
+                                else if (patchFolderOnly == "VOICEFXA.DLL")
+                                    ResourcesDlls.Voicefxa.SaveWave(idWave, bytes);
+                                else if (patchFolderOnly == "VOICEFXE.DLL")
+                                    ResourcesDlls.Voicefxe.SaveWave(idWave, bytes);
                             }
                         }
                     }
@@ -359,7 +395,7 @@ public partial class PatchForm : PatchDesignForm
             GameFile.Systems[i].YPosition = Convert.ToUInt16(TrimDecimal(systemColumns[5]));
             GameFile.Systems[i].FamilyId = (uint)(systemColumns[6] == "Rim" ? 146 : 144);
             GameFile.Systems[i].PictureId = Convert.ToUInt32(TrimDecimal(systemColumns[7]));
-            if (!Strategy.Resources.RT_BITMAP.ContainsKey((14000 + Convert.ToInt32(systemColumns[7])).ToString()))
+            if (!ResourcesDlls.Strategy.RT_BITMAP.ContainsKey((14000 + Convert.ToInt32(systemColumns[7])).ToString()))
                 GameFile.Systems[i].PictureId = 0;
             if (systemColumns[8]?.Length > 0)
                 GameFile.Systems[i].EncyclopediaDescription = systemColumns[8].TrimStart('"').TrimEnd('"');
@@ -373,12 +409,12 @@ public partial class PatchForm : PatchDesignForm
         // save
         SectorsGameFile.Save(SectorsGameFilePath);
         foreach (var sector in SectorsGameFile.Sectors)
-            TextStra.Resources.SaveString(Convert.ToUInt16(sector.TextStraDllId), sector.Name);
+            ResourcesDlls.Textstra.SaveString(Convert.ToUInt16(sector.TextStraDllId), sector.Name);
         GameFile.Save(GameFilePath);
         foreach (var system in GameFile.Systems)
         {
-            TextStra.Resources.SaveString(Convert.ToUInt16(system.TextStraDllId), system.Name);
-            EncyText.Resources.SaveRcdata((system.TextStraDllId - 4096).ToString(), system.EncyclopediaDescription);
+            ResourcesDlls.Textstra.SaveString(Convert.ToUInt16(system.TextStraDllId), system.Name);
+            ResourcesDlls.Encytext.SaveRcdata((system.TextStraDllId - 4096).ToString(), system.EncyclopediaDescription);
         }
         Close();
     }

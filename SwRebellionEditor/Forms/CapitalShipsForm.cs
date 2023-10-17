@@ -85,14 +85,14 @@ public partial class CapitalShipsForm : CapitalShipsDesignForm
     {
         foreach (var cs in GameFile.CapitalShips)
         {
-            cs.Name = TextStra.Resources.RT_STRING[cs.TextStraDllId];
-            cs.EncyclopediaDescription = EncyText.Resources.RT_RCDATA[(cs.TextStraDllId - 4096).ToString()];
+            cs.Name = ResourcesDlls.Textstra.RT_STRING[cs.TextStraDllId];
+            cs.EncyclopediaDescription = ResourcesDlls.Encytext.RT_RCDATA[(cs.TextStraDllId - 4096).ToString()];
         }
     }
     protected override void SaveSideInfo()
     {
-        TextStra.Resources.SaveString(Convert.ToUInt16(textStraDllId.Value), name.Text);
-        EncyText.Resources.SaveRcdata((textStraDllId.Value - 4096).ToString(), encyclopediaDescription.Text);
+        ResourcesDlls.Textstra.SaveString(Convert.ToUInt16(textStraDllId.Value), name.Text);
+        ResourcesDlls.Encytext.SaveRcdata((textStraDllId.Value - 4096).ToString(), encyclopediaDescription.Text);
     }
     private void UpdateTotals(int selectorIndex)
     {

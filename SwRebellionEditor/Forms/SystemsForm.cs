@@ -72,7 +72,7 @@ public partial class SystemsForm : SystemsDesignForm
         for (int selectorIndex = 0; selectorIndex < GameFile.SystemsCount; ++selectorIndex)
         {
             ushort encybmapId = (ushort)GetEncybmapId(GameFile.Systems[selectorIndex].PictureId);
-            GetEncyclopediaImageAndAddToList(EncyBmap.Resources.RT_STRING[encybmapId], systemsImageList, Resources.missing_encyclopedia_picture_400x200_bmp);
+            GetEncyclopediaImageAndAddToList(ResourcesDlls.Encybmap.RT_STRING[encybmapId], systemsImageList, Resources.missing_encyclopedia_picture_400x200_bmp);
             systemsListView.Items.Add(GameFile.Systems[selectorIndex].Name, selectorIndex);
         }
     }
@@ -102,13 +102,13 @@ public partial class SystemsForm : SystemsDesignForm
 
         picture.SizeMode = PictureBoxSizeMode.Zoom;
         ushort encybmapId = (ushort)GetEncybmapId(GameFile.Systems[selectorIndex].PictureId);
-        picture.Image = GetEncyclopediaImageAndAddToList(EncyBmap.Resources.RT_STRING[encybmapId], null, Resources.missing_encyclopedia_picture_400x200_bmp);
+        picture.Image = GetEncyclopediaImageAndAddToList(ResourcesDlls.Encybmap.RT_STRING[encybmapId], null, Resources.missing_encyclopedia_picture_400x200_bmp);
 
         sprite.SizeMode = PictureBoxSizeMode.Zoom;
         var strategyId = GetStrategyId(GameFile.Systems[selectorIndex].PictureId).ToString();
         try
         {
-            sprite.Image = DIB.ToDDB(Strategy.Resources.RT_BITMAP[strategyId].Bitmap);
+            sprite.Image = DIB.ToDDB(ResourcesDlls.Strategy.RT_BITMAP[strategyId].Bitmap);
         }
         catch { sprite.Image = null; }
         GameFile.UnsavedData = previousUnsavedData;
@@ -116,7 +116,7 @@ public partial class SystemsForm : SystemsDesignForm
     private void LoadSector(uint sectorId)
     {
         var sector = SectorsGameFile.Sectors[sectorId - 20U];
-        sectorName.Text = TextStra.Resources.RT_STRING[sector.TextStraDllId];
+        sectorName.Text = ResourcesDlls.Textstra.RT_STRING[sector.TextStraDllId];
         sectorFamilyId.Value = sector.FamilyId;
         sectorFamilyIdHexLabel.Text = "0x" + sector.FamilyId.ToString("X");
         sectorGalaxySize.Value = sector.GalaxySize;
@@ -129,14 +129,14 @@ public partial class SystemsForm : SystemsDesignForm
     {
         foreach (var s in GameFile.Systems)
         {
-            s.Name = TextStra.Resources.RT_STRING[s.TextStraDllId];
-            s.EncyclopediaDescription = EncyText.Resources.RT_RCDATA[(s.TextStraDllId - 4096).ToString()];
+            s.Name = ResourcesDlls.Textstra.RT_STRING[s.TextStraDllId];
+            s.EncyclopediaDescription = ResourcesDlls.Encytext.RT_RCDATA[(s.TextStraDllId - 4096).ToString()];
         }
     }
     protected override void SaveSideInfo()
     {
-        TextStra.Resources.SaveString(Convert.ToUInt16(textStraDllId.Value), name.Text);
-        EncyText.Resources.SaveRcdata((textStraDllId.Value - 4096).ToString(), encyclopediaDescription.Text);
+        ResourcesDlls.Textstra.SaveString(Convert.ToUInt16(textStraDllId.Value), name.Text);
+        ResourcesDlls.Encytext.SaveRcdata((textStraDllId.Value - 4096).ToString(), encyclopediaDescription.Text);
     }
 
     #endregion
@@ -280,7 +280,7 @@ public partial class SystemsForm : SystemsDesignForm
             if (File.Exists(file) && Path.GetExtension(file).ToLowerInvariant() == ".bmp")
             {
                 sprite.Image = Image.FromFile(file);
-                Strategy.Resources.SaveBitmap(GetStrategyId(Convert.ToUInt32(pictureId.Value)).ToString(), file);
+                ResourcesDlls.Strategy.SaveBitmap(GetStrategyId(Convert.ToUInt32(pictureId.Value)).ToString(), file);
             }
         }
     }

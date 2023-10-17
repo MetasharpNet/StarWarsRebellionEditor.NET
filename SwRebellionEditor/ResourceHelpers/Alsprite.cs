@@ -1,11 +1,16 @@
 ﻿namespace SwRebellionEditor;
 
-public static class Alsprite
-{
-    public static ResourceFile Resources;
+// WAVE, Bitmap, RCData, Version Info, 302
 
-    static Alsprite()
+public class Alsprite : ResourcesDll
+{
+    public Alsprite(string fileName) : base(fileName)
     {
-        Resources = new ResourceFile(Path.Combine(Settings.Current.GameFolder, "ALSPRITE.DLL"));
+        NamesBitmap = new Dictionary<string, string>
+            {
+            };
+        NamesWave = new Dictionary<string, string>
+            {
+            };
     }
 }

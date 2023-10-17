@@ -1,11 +1,10 @@
 ﻿namespace SwRebellionEditor;
 
-public static class EncyBmap
-{
-    public static ResourceFile Resources;
+// String Table
 
-    static EncyBmap()
+public class Encybmap : ResourcesDll
+{
+    public Encybmap(string fileName) : base(fileName)
     {
-        Resources = new ResourceFile(Path.Combine(Settings.Current.GameFolder, "ENCYBMAP.DLL"));
     }
 }
