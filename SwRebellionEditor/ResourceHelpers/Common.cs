@@ -8,7 +8,7 @@ public class Common : ResourcesDll
     {
         NamesBitmap = new Dictionary<string, string>
             {
-                { "20001", "common-main-screen" },
+                { "20001", "main-screen" },
             };
         NamesWave = new Dictionary<string, string>
             {
