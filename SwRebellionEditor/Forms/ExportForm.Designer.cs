@@ -48,6 +48,7 @@ namespace SwRebellionEditor
             line4Label = new Label();
             line5Label = new Label();
             exportInfoLabel = new Label();
+            label1 = new Label();
             SuspendLayout();
             // 
             // systemsImageList
@@ -134,11 +135,11 @@ namespace SwRebellionEditor
             // line5Label
             // 
             line5Label.AutoSize = true;
-            line5Label.Location = new Point(33, 147);
+            line5Label.Location = new Point(33, 163);
             line5Label.Name = "line5Label";
-            line5Label.Size = new Size(99, 15);
+            line5Label.Size = new Size(242, 15);
             line5Label.TabIndex = 1162;
-            line5Label.Text = "- More to come...";
+            line5Label.Text = "- Resource exported: 301, 303, Bitmap, WAVE";
             // 
             // exportInfoLabel
             // 
@@ -150,11 +151,21 @@ namespace SwRebellionEditor
             exportInfoLabel.TabIndex = 1164;
             exportInfoLabel.Text = "This window will freeze for a few minutes then close when the export is completed.";
             // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(120, 144);
+            label1.Name = "label1";
+            label1.Size = new Size(165, 15);
+            label1.TabIndex = 1165;
+            label1.Text = "VOICEFXA.DLL, VOICEFXE.DLL";
+            // 
             // ExportForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(735, 278);
+            Controls.Add(label1);
             Controls.Add(exportInfoLabel);
             Controls.Add(line5Label);
             Controls.Add(line4Label);
@@ -191,5 +202,6 @@ namespace SwRebellionEditor
         private Label line4Label;
         private Label line5Label;
         private Label exportInfoLabel;
+        private Label label1;
     }
 }
