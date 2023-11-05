@@ -65,6 +65,8 @@
 * Run the game.
 
 If you have issues with full screen you can try to :
+* Use Display Port cable instead of HDMI
+* Make sure your shortcut to run the game has the -w option
 * Change settings with : dgVoodooCpl.exe from your game folder
 * Read that page for more possible ways to fix your graphic issues : https://swrebellion.net/files/file/260-star-wars-rebellion-update/
   * The 1.02 patch is automatically installed when you install the patch. No need to do it twice.
