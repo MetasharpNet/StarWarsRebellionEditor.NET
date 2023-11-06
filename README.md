@@ -19,6 +19,7 @@
 ### 25th Anniversary Patch Features :
 * Game's 1.02 community update
 * Dgvoodoo 2.81.3 (2023-09-06) directx libraries : http://dege.fw.hu/dgVoodoo2/dgVoodoo2/
+  * Forum : https://www.vogons.org/viewforum.php?f=58
 * New Galaxy map using top 200 star wars planets (called systems in game) from 2023 canon mostly positioned as accurately as possible within game engine limits!
 * 200/200 systems sprites (instead of 26 original sprites shared amongst 200 systems)
 * 200/200 systems tactical sprites
@@ -64,6 +65,8 @@
 * Run the game.
 
 If you have issues with full screen you can try to :
+* Use Display Port cable instead of HDMI
+* Make sure your shortcut to run the game has the -w option
 * Change settings with : dgVoodooCpl.exe from your game folder
 * Read that page for more possible ways to fix your graphic issues : https://swrebellion.net/files/file/260-star-wars-rebellion-update/
   * The 1.02 patch is automatically installed when you install the patch. No need to do it twice.
