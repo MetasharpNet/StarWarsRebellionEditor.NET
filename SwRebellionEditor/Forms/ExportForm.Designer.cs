@@ -49,6 +49,7 @@ namespace SwRebellionEditor
             line5Label = new Label();
             exportInfoLabel = new Label();
             label1 = new Label();
+            label2 = new Label();
             SuspendLayout();
             // 
             // systemsImageList
@@ -160,11 +161,21 @@ namespace SwRebellionEditor
             label1.TabIndex = 1165;
             label1.Text = "VOICEFXA.DLL, VOICEFXE.DLL";
             // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Location = new Point(33, 183);
+            label2.Name = "label2";
+            label2.Size = new Size(349, 15);
+            label2.TabIndex = 1166;
+            label2.Text = "- Exported Data (US ANSI .csv files split with ';') : Sectors, Systems";
+            // 
             // ExportForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(735, 278);
+            Controls.Add(label2);
             Controls.Add(label1);
             Controls.Add(exportInfoLabel);
             Controls.Add(line5Label);
@@ -203,5 +214,6 @@ namespace SwRebellionEditor
         private Label line5Label;
         private Label exportInfoLabel;
         private Label label1;
+        private Label label2;
     }
 }

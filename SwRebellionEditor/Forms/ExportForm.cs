@@ -81,7 +81,7 @@ public partial class ExportForm : ExportDesignForm
             export = export + s.Name + ";"
                             + s.Id + ";"
                             + s.TextStraDllId + ";"
-                            + (sectorNames.ContainsKey(s.SectorId) ? sectorNames[s.SectorId] : s.SectorId)  + ";"
+                            + (sectorNames.ContainsKey(s.SectorId) ? sectorNames[s.SectorId] : s.SectorId) + ";"
                             + s.XPosition + ";"
                             + s.YPosition + ";"
                             + (s.FamilyId == 144 ? "Core" : (s.FamilyId == 146 ? "Rim" : s.FamilyId)) + ";"
