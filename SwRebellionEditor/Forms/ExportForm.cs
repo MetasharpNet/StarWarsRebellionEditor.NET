@@ -69,7 +69,7 @@ public partial class ExportForm : ExportDesignForm
                             + s.Id + ";"
                             + s.XPosition + ";"
                             + s.YPosition + ";"
-                            + (s.Group == 1 ? "Core" : (s.Group == 2 ? "Core (inner)" : (s.Group == 3 ? "Core (outer)" : s.Group))) + ";"
+                            + (s.Group == 1 ? "Core" : (s.Group == 2 ? "Rim (inner)" : (s.Group == 3 ? "Rim (outer)" : s.Group))) + ";"
                             + (s.GalaxySize == 1 ? "Standard" : (s.GalaxySize == 2 ? "Large" : (s.GalaxySize == 3 ? "Huge" : s.GalaxySize)))
                             + Environment.NewLine;
         }
