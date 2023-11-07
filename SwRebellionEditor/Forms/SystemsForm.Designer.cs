@@ -11,7 +11,7 @@ namespace SwRebellionEditor
         /// <summary>
         /// Required designer variable.
         /// </summary>
-        private System.ComponentModel.IContainer components = null;
+        private IContainer components = null;
         private Button Open;
         private Button SaveAs;
         private Button Cancel;
@@ -137,7 +137,6 @@ namespace SwRebellionEditor
             nameLabel = new Label();
             encyclopediaDescription = new RichTextBox();
             hiddenDataGroupBox = new GroupBox();
-            export = new Button();
             infoLabel = new Label();
             ((ISupportInitialize)selector).BeginInit();
             sectorGroupBox.SuspendLayout();
@@ -881,16 +880,6 @@ namespace SwRebellionEditor
             hiddenDataGroupBox.TabStop = false;
             hiddenDataGroupBox.Text = "Hidden Data";
             // 
-            // export
-            // 
-            export.Location = new Point(551, 449);
-            export.Name = "export";
-            export.Size = new Size(75, 23);
-            export.TabIndex = 1154;
-            export.Text = "Export";
-            export.UseVisualStyleBackColor = true;
-            export.Click += export_Click;
-            // 
             // infoLabel
             // 
             infoLabel.ForeColor = Color.Blue;
@@ -909,7 +898,6 @@ namespace SwRebellionEditor
             CancelButton = Cancel;
             ClientSize = new Size(949, 481);
             Controls.Add(infoLabel);
-            Controls.Add(export);
             Controls.Add(hiddenDataGroupBox);
             Controls.Add(inGameDataGroupBox);
             Controls.Add(sectorGroupBox);
@@ -979,7 +967,6 @@ namespace SwRebellionEditor
         private Label sectorSecImportLabel;
         private Label encyclopediaDescriptionLabel;
         private GroupBox hiddenDataGroupBox;
-        private Button export;
         private PictureBox sprite;
         private Label infoLabel;
     }

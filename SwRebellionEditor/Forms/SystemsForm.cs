@@ -250,26 +250,6 @@ public partial class SystemsForm : SystemsDesignForm
 
     #endregion
 
-    #region Export event
-
-    private void export_Click(object sender, EventArgs e)
-    {
-        string export = "Name;Id;TextStraDllId;X;Y;FamilyId;SectorId;EncyclopediaDescription" + Environment.NewLine;
-        foreach (var s in GameFile.Systems)
-            export = export + s.Name + ";"
-                            + s.Id + ";"
-                            + s.TextStraDllId + ";"
-                            + s.XPosition + ";"
-                            + s.YPosition + ";"
-                            + (s.FamilyId == 144 ? "Core" : "Rim") + ";"
-                            + s.SectorId + ";\""
-                            + s.EncyclopediaDescription + "\""
-                            + Environment.NewLine;
-        File.WriteAllText("systems.csv", export);
-    }
-
-    #endregion
-
     #region Drag&Drop events
     private void sprite_DragDrop(object sender, DragEventArgs e)
     {

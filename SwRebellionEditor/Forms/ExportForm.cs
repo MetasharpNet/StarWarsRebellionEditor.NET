@@ -28,6 +28,10 @@ public partial class ExportForm : ExportDesignForm
             s.Name = ResourcesDlls.Textstra.RT_STRING[s.TextStraDllId];
             s.EncyclopediaDescription = ResourcesDlls.Encytext.RT_RCDATA[(s.TextStraDllId - 4096).ToString()];
         }
+        foreach (var s in SectorsGameFile.Sectors)
+        {
+            s.Name = ResourcesDlls.Textstra.RT_STRING[s.TextStraDllId];
+        }
     }
     private void cancel_Click(object sender, EventArgs e)
     {
@@ -52,6 +56,40 @@ public partial class ExportForm : ExportDesignForm
 
         try { Directory.Delete("export", true); } catch { }
         Directory.CreateDirectory("export");
+
+        // --------------------- SYSTEMS & SECTORS ---------------------
+        Directory.CreateDirectory("export\\systems");
+
+        var export = "Sector;Id;X;Y;Group;Galaxy Size" + Environment.NewLine;
+        var sectorNames = new Dictionary<uint, string>();
+        foreach (var s in SectorsGameFile.Sectors)
+        {
+            sectorNames.Add(s.Id, s.Name);
+            export = export + s.Name + ";"
+                            + s.Id + ";"
+                            + s.XPosition + ";"
+                            + s.YPosition + ";"
+                            + (s.Group == 1 ? "Core" : (s.Group == 2 ? "Core (inner)" : (s.Group == 3 ? "Core (outer)" : s.Group))) + ";"
+                            + (s.GalaxySize == 1 ? "Standard" : (s.GalaxySize == 2 ? "Large" : (s.GalaxySize == 3 ? "Huge" : s.GalaxySize)))
+                            + Environment.NewLine;
+        }
+        File.WriteAllText(".\\export\\systems\\sectors.csv", export);
+
+        export = "Name;Id;TextStraDllId;Sector;X;Y;FamilyId;PictureId;EncyclopediaDescription" + Environment.NewLine;
+        foreach (var s in GameFile.Systems)
+        {
+            export = export + s.Name + ";"
+                            + s.Id + ";"
+                            + s.TextStraDllId + ";"
+                            + (sectorNames.ContainsKey(s.SectorId) ? sectorNames[s.SectorId] : s.SectorId)  + ";"
+                            + s.XPosition + ";"
+                            + s.YPosition + ";"
+                            + (s.FamilyId == 144 ? "Core" : (s.FamilyId == 146 ? "Rim" : s.FamilyId)) + ";"
+                            + s.PictureId + ";"
+                            + "\"" + s.EncyclopediaDescription + "\""
+                            + Environment.NewLine;
+        }
+        File.WriteAllText(".\\export\\systems\\systems.csv", export);
 
         // ---------------------------- EDATA ----------------------------
         Directory.CreateDirectory("export\\EDATA");

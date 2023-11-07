@@ -123,6 +123,108 @@ public partial class PatchForm : PatchDesignForm
             }
             else if (setFolderOnly != "test")
                 continue;
+
+            // ---------------------------- CSV ---------------------------
+
+            foreach (var filePath in Directory.GetFiles(setFolder))
+            {
+                if (Path.GetExtension(filePath).ToLowerInvariant() == ".csv")
+                {
+                    if (Path.GetFileNameWithoutExtension(filePath).Contains("sectors"))
+                    {
+                        var newSectorsAsString = File.ReadAllText(filePath);
+                        var newSectorsLines = newSectorsAsString.Split(Environment.NewLine);
+                        int i = -1;
+                        foreach (var newSectorsLine in newSectorsLines)
+                        {
+                            if (newSectorsLine.Length <= 0) continue;
+                            if (i == -1)
+                            { // skip header line
+                                i = 0;
+                                continue;
+                            }
+                            var sectorColumns = newSectorsLine.Split(';');
+                            SectorsGameFile.Sectors[i].Name = sectorColumns[0];
+                            SectorsGameFile.Sectors[i].Id = Convert.ToUInt32(sectorColumns[1]);
+                            SectorsGameFile.Sectors[i].XPosition = Convert.ToUInt16(TrimDecimal(sectorColumns[2]));
+                            SectorsGameFile.Sectors[i].YPosition = Convert.ToUInt16(TrimDecimal(sectorColumns[3]));
+                            if (sectorColumns[4] == "Core")
+                                SectorsGameFile.Sectors[i].Group = 1;
+                            else if (sectorColumns[4] == "Rim (inner)")
+                                SectorsGameFile.Sectors[i].Group = 2;
+                            else if (sectorColumns[4] == "Rim (outer)")
+                                SectorsGameFile.Sectors[i].Group = 3;
+                            else
+                                SectorsGameFile.Sectors[i].Group = uint.Parse(sectorColumns[4]);
+                            if (sectorColumns[5] == "Standard")
+                                SectorsGameFile.Sectors[i].GalaxySize = 1;
+                            else if (sectorColumns[5] == "Large")
+                                SectorsGameFile.Sectors[i].GalaxySize = 2;
+                            else if (sectorColumns[5] == "Huge")
+                                SectorsGameFile.Sectors[i].GalaxySize = 3;
+                            else
+                                SectorsGameFile.Sectors[i].GalaxySize = uint.Parse(sectorColumns[5]);
+                            ++i;
+                        }
+                    }
+                    SectorsGameFile.Save(SectorsGameFilePath);
+                    foreach (var sector in SectorsGameFile.Sectors)
+                        ResourcesDlls.Textstra.SaveString(Convert.ToUInt16(sector.TextStraDllId), sector.Name);
+
+                    if (Path.GetFileNameWithoutExtension(filePath).Contains("systems"))
+                    {
+                        var descDic = new Dictionary<string, string>();
+                        foreach (var system in GameFile.Systems)
+                            descDic.Add(system.Name.ToLowerInvariant(), system.EncyclopediaDescription);
+                        var newSystemsAsString = File.ReadAllText(filePath);
+                        var newSystemsLines = newSystemsAsString.Split(Environment.NewLine);
+                        int i = -1;
+                        foreach (var newSystemsLine in newSystemsLines)
+                        {
+                            if (newSystemsLine.Length <= 0) continue;
+                            if (i == -1)
+                            { // skip header line
+                                i = 0;
+                                continue;
+                            }
+                            var systemColumns = newSystemsLine.Split(';');
+                            GameFile.Systems[i].Name = systemColumns[0];
+                            GameFile.Systems[i].Id = Convert.ToUInt32(systemColumns[1]);
+                            GameFile.Systems[i].TextStraDllId = Convert.ToUInt16(systemColumns[2]);
+                            try
+                            {
+                                GameFile.Systems[i].SectorId = SectorsGameFile.Sectors.First(s => s.Name == systemColumns[3]).Id;
+                            }
+                            catch
+                            {
+                                GameFile.Systems[i].SectorId = uint.Parse(systemColumns[3]);
+                            }
+                            GameFile.Systems[i].XPosition = Convert.ToUInt16(TrimDecimal(systemColumns[4]));
+                            GameFile.Systems[i].YPosition = Convert.ToUInt16(TrimDecimal(systemColumns[5]));
+                            GameFile.Systems[i].FamilyId = (uint)(systemColumns[6] == "Core" ? 144 : (systemColumns[6] == "Rim" ? 146 : uint.Parse(systemColumns[6])));
+                            GameFile.Systems[i].PictureId = Convert.ToUInt32(TrimDecimal(systemColumns[7]));
+                            if (!ResourcesDlls.Strategy.RT_BITMAP.ContainsKey((14000 + Convert.ToInt32(systemColumns[7])).ToString()))
+                                GameFile.Systems[i].PictureId = 0;
+                            if (systemColumns[8]?.Length > 0)
+                                GameFile.Systems[i].EncyclopediaDescription = systemColumns[8].TrimStart('"').TrimEnd('"');
+                            else if (descDic.ContainsKey(GameFile.Systems[i].Name.ToLowerInvariant()))
+                                GameFile.Systems[i].EncyclopediaDescription = descDic[GameFile.Systems[i].Name.ToLowerInvariant()];
+                            else
+                                GameFile.Systems[i].EncyclopediaDescription = "";
+                            ++i;
+                        }
+                    }
+                    GameFile.Save(GameFilePath);
+                    foreach (var system in GameFile.Systems)
+                    {
+                        ResourcesDlls.Textstra.SaveString(Convert.ToUInt16(system.TextStraDllId), system.Name);
+                        ResourcesDlls.Encytext.SaveRcdata((system.TextStraDllId - 4096).ToString(), system.EncyclopediaDescription);
+                    }
+                }
+            }
+
+            // ---------------------------- RSRC ---------------------------
+
             foreach (var patchFolder in Directory.GetDirectories(setFolder))
             {
                 var patchFolderOnly = Path.GetFileName(patchFolder);
@@ -337,85 +439,6 @@ public partial class PatchForm : PatchDesignForm
             stream.WriteByte(0x00); // +0
         }
 
-        // ---------------------------- DATA ----------------------------
-
-        // sectors
-        var newSectorsAsString = File.ReadAllText("new-sectors.csv");
-        var newSectorsLines = newSectorsAsString.Split(Environment.NewLine);
-        int i = -1;
-        foreach (var newSectorsLine in newSectorsLines)
-        {
-            if (newSectorsLine.Length <= 0) continue;
-            if (i == -1)
-            { // skip header line
-                i = 0;
-                continue;
-            }
-            var sectorColumns = newSectorsLine.Split(';');
-            SectorsGameFile.Sectors[i].Name = sectorColumns[0];
-            SectorsGameFile.Sectors[i].Id = Convert.ToUInt32(sectorColumns[1]);
-            SectorsGameFile.Sectors[i].XPosition = Convert.ToUInt16(TrimDecimal(sectorColumns[2]));
-            SectorsGameFile.Sectors[i].YPosition = Convert.ToUInt16(TrimDecimal(sectorColumns[3]));
-            if (sectorColumns[4] == "Core")
-                SectorsGameFile.Sectors[i].Group = 1;
-            if (sectorColumns[4] == "Rim (inner)")
-                SectorsGameFile.Sectors[i].Group = 2;
-            if (sectorColumns[4] == "Rim (outer)")
-                SectorsGameFile.Sectors[i].Group = 3;
-            if (sectorColumns[5] == "Standard")
-                SectorsGameFile.Sectors[i].GalaxySize = 1;
-            if (sectorColumns[5] == "Large")
-                SectorsGameFile.Sectors[i].GalaxySize = 2;
-            if (sectorColumns[5] == "Huge")
-                SectorsGameFile.Sectors[i].GalaxySize = 3;
-            ++i;
-        }
-
-        // systems
-        var descDic = new Dictionary<string, string>();
-        foreach (var system in GameFile.Systems)
-            descDic.Add(system.Name.ToLowerInvariant(), system.EncyclopediaDescription);
-        var newSystemsAsString = File.ReadAllText("new-systems.csv");
-        var newSystemsLines = newSystemsAsString.Split(Environment.NewLine);
-        i = -1;
-        foreach (var newSystemsLine in newSystemsLines)
-        {
-            if (newSystemsLine.Length <= 0) continue;
-            if (i == -1)
-            { // skip header line
-                i = 0;
-                continue;
-            }
-            var systemColumns = newSystemsLine.Split(';');
-            GameFile.Systems[i].Name = systemColumns[0];
-            GameFile.Systems[i].Id = Convert.ToUInt32(systemColumns[1]);
-            GameFile.Systems[i].TextStraDllId = Convert.ToUInt16(systemColumns[2]);
-            GameFile.Systems[i].SectorId = SectorsGameFile.Sectors.First(s => s.Name == systemColumns[3]).Id;
-            GameFile.Systems[i].XPosition = Convert.ToUInt16(TrimDecimal(systemColumns[4]));
-            GameFile.Systems[i].YPosition = Convert.ToUInt16(TrimDecimal(systemColumns[5]));
-            GameFile.Systems[i].FamilyId = (uint)(systemColumns[6] == "Rim" ? 146 : 144);
-            GameFile.Systems[i].PictureId = Convert.ToUInt32(TrimDecimal(systemColumns[7]));
-            if (!ResourcesDlls.Strategy.RT_BITMAP.ContainsKey((14000 + Convert.ToInt32(systemColumns[7])).ToString()))
-                GameFile.Systems[i].PictureId = 0;
-            if (systemColumns[8]?.Length > 0)
-                GameFile.Systems[i].EncyclopediaDescription = systemColumns[8].TrimStart('"').TrimEnd('"');
-            else if (descDic.ContainsKey(GameFile.Systems[i].Name.ToLowerInvariant()))
-                GameFile.Systems[i].EncyclopediaDescription = descDic[GameFile.Systems[i].Name.ToLowerInvariant()];
-            else
-                GameFile.Systems[i].EncyclopediaDescription = "";
-            ++i;
-        }
-
-        // save
-        SectorsGameFile.Save(SectorsGameFilePath);
-        foreach (var sector in SectorsGameFile.Sectors)
-            ResourcesDlls.Textstra.SaveString(Convert.ToUInt16(sector.TextStraDllId), sector.Name);
-        GameFile.Save(GameFilePath);
-        foreach (var system in GameFile.Systems)
-        {
-            ResourcesDlls.Textstra.SaveString(Convert.ToUInt16(system.TextStraDllId), system.Name);
-            ResourcesDlls.Encytext.SaveRcdata((system.TextStraDllId - 4096).ToString(), system.EncyclopediaDescription);
-        }
         Close();
     }
 

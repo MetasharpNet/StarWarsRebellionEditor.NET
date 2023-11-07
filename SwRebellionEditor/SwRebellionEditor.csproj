@@ -1447,10 +1447,10 @@
     <None Update="interface\STRATEGY.DLL\Bitmap\903-strategy-galaxy-background-dark.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="new-sectors.csv">
+    <None Update="systems\sectors.csv">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="new-systems.csv">
+    <None Update="systems\systems.csv">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="Properties\Settings.settings">
