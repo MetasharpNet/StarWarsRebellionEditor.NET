@@ -43,12 +43,12 @@ namespace SwRebellionEditor
         private Label sectorTextStraDllIdLabel;
         private NumericUpDown sectorFamilyId;
         private NumericUpDown sectorTextStraDllId;
-        private NumericUpDown sectorSecImport;
+        private NumericUpDown sectorGroup;
         private NumericUpDown sectorGalaxySize;
         private NumericUpDown sectorYPosition;
         private NumericUpDown sectorXPosition;
         private Label label4;
-        private Label familyIdHexLabel;
+        private Label familyIdStringLabel;
         private Label idHexLabel;
         private NumericUpDown id;
         private Label sectorFamilyIdHexLabel;
@@ -99,13 +99,13 @@ namespace SwRebellionEditor
             sectorTextStraDllIdLabel = new Label();
             sectorXPosition = new NumericUpDown();
             sectorTextStraDllId = new NumericUpDown();
-            sectorSecImport = new NumericUpDown();
+            sectorGroup = new NumericUpDown();
             sectorGalaxySize = new NumericUpDown();
             Field7_2Label = new Label();
             field10_1 = new NumericUpDown();
             sectorId = new NumericUpDown();
             sectorIdLabel = new Label();
-            familyIdHexLabel = new Label();
+            familyIdStringLabel = new Label();
             productionFamily_0 = new NumericUpDown();
             productionFamily_0Label = new Label();
             idHexLabel = new Label();
@@ -144,7 +144,7 @@ namespace SwRebellionEditor
             ((ISupportInitialize)sectorYPosition).BeginInit();
             ((ISupportInitialize)sectorXPosition).BeginInit();
             ((ISupportInitialize)sectorTextStraDllId).BeginInit();
-            ((ISupportInitialize)sectorSecImport).BeginInit();
+            ((ISupportInitialize)sectorGroup).BeginInit();
             ((ISupportInitialize)sectorGalaxySize).BeginInit();
             ((ISupportInitialize)field10_1).BeginInit();
             ((ISupportInitialize)sectorId).BeginInit();
@@ -261,7 +261,7 @@ namespace SwRebellionEditor
             sectorGroupBox.Controls.Add(sectorTextStraDllIdLabel);
             sectorGroupBox.Controls.Add(sectorXPosition);
             sectorGroupBox.Controls.Add(sectorTextStraDllId);
-            sectorGroupBox.Controls.Add(sectorSecImport);
+            sectorGroupBox.Controls.Add(sectorGroup);
             sectorGroupBox.Controls.Add(sectorGalaxySize);
             sectorGroupBox.Location = new Point(193, 337);
             sectorGroupBox.Margin = new Padding(4, 3, 4, 3);
@@ -309,9 +309,9 @@ namespace SwRebellionEditor
             sectorSecImportLabel.Location = new Point(259, 25);
             sectorSecImportLabel.Margin = new Padding(4, 0, 4, 0);
             sectorSecImportLabel.Name = "sectorSecImportLabel";
-            sectorSecImportLabel.Size = new Size(64, 15);
+            sectorSecImportLabel.Size = new Size(40, 15);
             sectorSecImportLabel.TabIndex = 0;
-            sectorSecImportLabel.Text = "Sec Import";
+            sectorSecImportLabel.Text = "Group";
             // 
             // sectorFamilyIdHexLabel
             // 
@@ -407,17 +407,17 @@ namespace SwRebellionEditor
             sectorTextStraDllId.TextAlign = HorizontalAlignment.Right;
             sectorTextStraDllId.Value = new decimal(new int[] { -1, 0, 0, 0 });
             // 
-            // sectorSecImport
+            // sectorGroup
             // 
-            sectorSecImport.Enabled = false;
-            sectorSecImport.Location = new Point(350, 22);
-            sectorSecImport.Margin = new Padding(4, 3, 4, 3);
-            sectorSecImport.Maximum = new decimal(new int[] { -1, 0, 0, 0 });
-            sectorSecImport.Name = "sectorSecImport";
-            sectorSecImport.Size = new Size(59, 23);
-            sectorSecImport.TabIndex = 0;
-            sectorSecImport.TextAlign = HorizontalAlignment.Right;
-            sectorSecImport.Value = new decimal(new int[] { -1, 0, 0, 0 });
+            sectorGroup.Enabled = false;
+            sectorGroup.Location = new Point(350, 22);
+            sectorGroup.Margin = new Padding(4, 3, 4, 3);
+            sectorGroup.Maximum = new decimal(new int[] { -1, 0, 0, 0 });
+            sectorGroup.Name = "sectorGroup";
+            sectorGroup.Size = new Size(59, 23);
+            sectorGroup.TabIndex = 0;
+            sectorGroup.TextAlign = HorizontalAlignment.Right;
+            sectorGroup.Value = new decimal(new int[] { -1, 0, 0, 0 });
             // 
             // sectorGalaxySize
             // 
@@ -479,16 +479,16 @@ namespace SwRebellionEditor
             sectorIdLabel.TabIndex = 0;
             sectorIdLabel.Text = "Sector Id";
             // 
-            // familyIdHexLabel
+            // familyIdStringLabel
             // 
-            familyIdHexLabel.AutoSize = true;
-            familyIdHexLabel.ForeColor = Color.Red;
-            familyIdHexLabel.Location = new Point(220, 128);
-            familyIdHexLabel.Margin = new Padding(4, 0, 4, 0);
-            familyIdHexLabel.Name = "familyIdHexLabel";
-            familyIdHexLabel.Size = new Size(31, 15);
-            familyIdHexLabel.TabIndex = 0;
-            familyIdHexLabel.Text = "0x00";
+            familyIdStringLabel.AutoSize = true;
+            familyIdStringLabel.ForeColor = Color.Blue;
+            familyIdStringLabel.Location = new Point(220, 128);
+            familyIdStringLabel.Margin = new Padding(4, 0, 4, 0);
+            familyIdStringLabel.Name = "familyIdStringLabel";
+            familyIdStringLabel.Size = new Size(31, 15);
+            familyIdStringLabel.TabIndex = 0;
+            familyIdStringLabel.Text = "0x00";
             // 
             // productionFamily_0
             // 
@@ -587,7 +587,7 @@ namespace SwRebellionEditor
             // 
             // familyId
             // 
-            familyId.ForeColor = Color.Red;
+            familyId.ForeColor = Color.Blue;
             familyId.Location = new Point(153, 126);
             familyId.Margin = new Padding(4, 3, 4, 3);
             familyId.Maximum = new decimal(new int[] { -1, 0, 0, 0 });
@@ -738,9 +738,9 @@ namespace SwRebellionEditor
             familyIdInfoLabel.Location = new Point(684, 345);
             familyIdInfoLabel.Margin = new Padding(4, 0, 4, 0);
             familyIdInfoLabel.Name = "familyIdInfoLabel";
-            familyIdInfoLabel.Size = new Size(116, 15);
+            familyIdInfoLabel.Size = new Size(177, 15);
             familyIdInfoLabel.TabIndex = 0;
-            familyIdInfoLabel.Text = "* 144=Core 146=Rim";
+            familyIdInfoLabel.Text = "* 144=Explored 146=Unexplored";
             // 
             // pictureIdLabel
             // 
@@ -857,7 +857,7 @@ namespace SwRebellionEditor
             hiddenDataGroupBox.Controls.Add(field2_1Label);
             hiddenDataGroupBox.Controls.Add(familyIdLabel);
             hiddenDataGroupBox.Controls.Add(familyId);
-            hiddenDataGroupBox.Controls.Add(familyIdHexLabel);
+            hiddenDataGroupBox.Controls.Add(familyIdStringLabel);
             hiddenDataGroupBox.Controls.Add(textStraDllIdLabel);
             hiddenDataGroupBox.Controls.Add(Field7_2Label);
             hiddenDataGroupBox.Controls.Add(positionLabel);
@@ -888,7 +888,7 @@ namespace SwRebellionEditor
             infoLabel.Name = "infoLabel";
             infoLabel.Size = new Size(252, 67);
             infoLabel.TabIndex = 1155;
-            infoLabel.Text = "Starting support is 100% for alliance and 50%-50% for empire controlled Rim Systems (planets). Side Param Table Entries 30 to 31 defines the % of affiliated Systems (planets).";
+            infoLabel.Text = "Unexplored Systems (planets): alliance starts at 100% support, empire at 50%-50%. Side Param Table Entries 30 to 31 defines the % of affiliated Systems (planets).";
             // 
             // SystemsForm
             // 
@@ -926,7 +926,7 @@ namespace SwRebellionEditor
             ((ISupportInitialize)sectorYPosition).EndInit();
             ((ISupportInitialize)sectorXPosition).EndInit();
             ((ISupportInitialize)sectorTextStraDllId).EndInit();
-            ((ISupportInitialize)sectorSecImport).EndInit();
+            ((ISupportInitialize)sectorGroup).EndInit();
             ((ISupportInitialize)sectorGalaxySize).EndInit();
             ((ISupportInitialize)field10_1).EndInit();
             ((ISupportInitialize)sectorId).EndInit();

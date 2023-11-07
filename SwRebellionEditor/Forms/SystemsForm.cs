@@ -83,7 +83,7 @@ public partial class SystemsForm : SystemsDesignForm
         var system = GameFile.Systems[selectorIndex];
         encyclopediaDescription.Text = system.EncyclopediaDescription;
         familyId.Value = system.FamilyId;
-        familyIdHexLabel.Text = "0x" + system.FamilyId.ToString("X");
+        familyIdStringLabel.Text = system.FamilyId == 144 ? "Explored" : (system.FamilyId == 146 ? "Unexplored" : "?");
         field2_1.Value = system.Field2_1;
         field7_2.Value = system.Field7_2;
         field10_1.Value = system.Field10_1;
@@ -120,7 +120,7 @@ public partial class SystemsForm : SystemsDesignForm
         sectorFamilyId.Value = sector.FamilyId;
         sectorFamilyIdHexLabel.Text = "0x" + sector.FamilyId.ToString("X");
         sectorGalaxySize.Value = sector.GalaxySize;
-        sectorSecImport.Value = sector.Group;
+        sectorGroup.Value = sector.Group;
         sectorTextStraDllId.Value = sector.TextStraDllId;
         sectorXPosition.Value = sector.XPosition;
         sectorYPosition.Value = sector.YPosition;
@@ -180,6 +180,7 @@ public partial class SystemsForm : SystemsDesignForm
     {
         GameFile.Systems[selector.Value].FamilyId = (uint)familyId.Value;
         GameFile.UnsavedData = true;
+        DisplaySelectedGameObject(selector.Value);
     }
     private void field2_1_ValueChanged(object sender, EventArgs e)
     {
