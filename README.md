@@ -64,6 +64,11 @@
   * Close the editor
 * Run the game.
 
+Fast game start :
+* rename ALBRIEF.DLL to ALBRIEF.DLL.OLD
+* rename EMBRIEF.DLL to EMBRIEF.DLL.OLD
+* This will skip new game's 5 minute briefings.
+
 If you have issues with full screen you can try to :
 * Use Display Port cable instead of HDMI
 * Make sure your shortcut to run the game has the -w option
