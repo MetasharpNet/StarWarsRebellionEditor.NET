@@ -152,9 +152,9 @@ namespace SwRebellionEditor
             warningLabel.ForeColor = Color.Red;
             warningLabel.Location = new Point(24, 177);
             warningLabel.Name = "warningLabel";
-            warningLabel.Size = new Size(672, 15);
+            warningLabel.Size = new Size(647, 15);
             warningLabel.TabIndex = 1163;
-            warningLabel.Text = "This patch was released 2023-08-05 and is provided without any warranty of any kind. Doesn't work with pre-patch savegames.";
+            warningLabel.Text = "This patch was released 2023-11-08 and is provided without any warranty of any kind. Doesn't work with older savegames.";
             // 
             // patchInfoLabel
             // 
