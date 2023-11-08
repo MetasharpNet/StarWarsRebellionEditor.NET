@@ -84,7 +84,7 @@ public partial class ExportForm : ExportDesignForm
                             + (sectorNames.ContainsKey(s.SectorId) ? sectorNames[s.SectorId] : s.SectorId) + ";"
                             + s.XPosition + ";"
                             + s.YPosition + ";"
-                            + (s.FamilyId == 144 ? "Core" : (s.FamilyId == 146 ? "Rim" : s.FamilyId)) + ";"
+                            + (s.FamilyId == 144 ? "Explored" : (s.FamilyId == 146 ? "Unexplored" : s.FamilyId)) + ";"
                             + s.PictureId + ";"
                             + "\"" + s.EncyclopediaDescription + "\""
                             + Environment.NewLine;
