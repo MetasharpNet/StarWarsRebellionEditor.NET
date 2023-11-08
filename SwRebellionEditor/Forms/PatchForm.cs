@@ -203,8 +203,8 @@ public partial class PatchForm : PatchDesignForm
                             GameFile.Systems[i].YPosition = Convert.ToUInt16(TrimDecimal(systemColumns[5]));
                             GameFile.Systems[i].FamilyId = (uint)(systemColumns[6] == "Explored" ? 144 : (systemColumns[6] == "Unexplored" ? 146 : uint.Parse(systemColumns[6])));
                             GameFile.Systems[i].PictureId = Convert.ToUInt32(TrimDecimal(systemColumns[7]));
-                            if (!ResourcesDlls.Strategy.RT_BITMAP.ContainsKey((14000 + Convert.ToInt32(systemColumns[7])).ToString()))
-                                GameFile.Systems[i].PictureId = 0;
+                            //if (!ResourcesDlls.Strategy.RT_BITMAP.ContainsKey((14000 + Convert.ToInt32(systemColumns[7])).ToString()))
+                            //    GameFile.Systems[i].PictureId = 0;
                             if (systemColumns[8]?.Length > 0)
                                 GameFile.Systems[i].EncyclopediaDescription = systemColumns[8].TrimStart('"').TrimEnd('"');
                             else if (descDic.ContainsKey(GameFile.Systems[i].Name.ToLowerInvariant()))
