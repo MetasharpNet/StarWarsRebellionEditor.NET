@@ -1405,6 +1405,9 @@
     <None Update="game-update\dgVoodoo.conf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="game-update\dgVoodoo.conf.best">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="game-update\dgVoodooCpl.exe">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
