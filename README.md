@@ -73,6 +73,7 @@ If you have issues with full screen you can try to :
 * Use Display Port cable instead of HDMI
 * Make sure your shortcut to run the game has the -w option
 * Change settings with : dgVoodooCpl.exe from your game folder
+
 If you have an Nvidia Card:
 * Open Nvidia Control Panel (right click on desktop and click on Nvidia icon)
 * Change resolution
@@ -87,6 +88,7 @@ If you have an Nvidia Card:
   * Choose Perform scaling on : GPU
   * Check Override the scaling mode set by games and programs
   * Apply
+
 If you have another GPU brand than Nvidia, do the same as above and get some more info here:
 * https://www.pcgamingwiki.com/wiki/Glossary:Custom_resolution
 
