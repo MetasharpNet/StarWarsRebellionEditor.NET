@@ -894,7 +894,7 @@ namespace SwRebellionEditor
             // 
             AcceptButton = Ok;
             AutoScaleDimensions = new SizeF(7F, 15F);
-            AutoScaleMode = AutoScaleMode.Font;
+            AutoScaleMode = AutoScaleMode.None;
             CancelButton = Cancel;
             ClientSize = new Size(949, 481);
             Controls.Add(infoLabel);

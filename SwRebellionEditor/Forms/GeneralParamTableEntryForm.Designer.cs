@@ -492,7 +492,7 @@ namespace SwRebellionEditor
             // 
             AcceptButton = Ok;
             AutoScaleDimensions = new SizeF(7F, 15F);
-            AutoScaleMode = AutoScaleMode.Font;
+            AutoScaleMode = AutoScaleMode.None;
             CancelButton = Cancel;
             ClientSize = new Size(504, 343);
             Controls.Add(empireGroupBox);

@@ -170,7 +170,7 @@ namespace SwRebellionEditor
             // AboutForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
-            AutoScaleMode = AutoScaleMode.Font;
+            AutoScaleMode = AutoScaleMode.None;
             BackColor = Color.Black;
             BackgroundImageLayout = ImageLayout.None;
             ClientSize = new Size(903, 402);

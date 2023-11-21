@@ -893,7 +893,7 @@ namespace SwRebellionEditor
             // MainForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
-            AutoScaleMode = AutoScaleMode.Font;
+            AutoScaleMode = AutoScaleMode.None;
             BackgroundImage = Resources.galaxy_640x480_bmp;
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(1008, 729);
