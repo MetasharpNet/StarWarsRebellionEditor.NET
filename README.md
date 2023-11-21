@@ -18,8 +18,8 @@
 
 ### 25th Anniversary Patch Features :
 * Game's 1.02 community update
-* Dgvoodoo 2.81.3 (2023-09-06) directx libraries : http://dege.fw.hu/dgVoodoo2/dgVoodoo2/
-  * Forum : https://www.vogons.org/viewforum.php?f=58
+* Dgvoodoo 2.82 (2023-11-21) directx libraries : http://dege.fw.hu/dgVoodoo2/dgVoodoo2/
+  * Forum : https://www.vogons.org/viewforum.php?f=58 and https://www.vogons.org/viewtopic.php?f=59&t=97303
 * New Galaxy map using top 200 star wars planets (called systems in game) from 2023 canon mostly positioned as accurately as possible within game engine limits!
 * 200/200 systems sprites (instead of 26 original sprites shared amongst 200 systems)
 * 200/200 systems tactical sprites
@@ -29,7 +29,7 @@
 * 61/61 enhanced character sprites displaying their base average stats
 * 27/29 high definition 3d models for capital ships
 * 80 high definition sprites for space fighters (X-wing, ...)
-* Savegame Test Pack : https://github.com/MetasharpNet/StarWarsRebellionEditor.NET/releases/tag/swr-editor.net-savegame-20231015
+* Savegame Test Pack (broken, will need to redo) : https://github.com/MetasharpNet/StarWarsRebellionEditor.NET/releases/tag/swr-editor.net-savegame-20231015
 * Screenshots :
 
 ![New Canon Galaxy map](https://i.ibb.co/c8XZD0j/1.png)
