@@ -6,7 +6,7 @@
         // Format
         // uint: Width
         // uint: Height
-        // [byte, byte] list : [occurences, colot table's color index] with occurences=00 meaning 255
+        // [byte, byte] list : [occurences, color table's color index] with occurences=00 meaning 255
         public int Width;
         public int Height;
         public List<BinPixelOccurences> BinPixelsOccurences = new List<BinPixelOccurences>();
@@ -28,6 +28,7 @@
         }
         public BinImage(Bitmap bitmap)
         {
+            // TODO: add embedded color table usage
             Width = bitmap.Width;
             Height = bitmap.Height;
             var colorTableBytes = new List<byte>();
@@ -55,11 +56,11 @@
             Set(bytes.ToArray());
             ColorTable.Set(colorTableBytes.ToArray());
         }
-        public BinImage(Bitmap bitmap, AdobeColorTable colorTable, bool restricted = true, int x = -1, int y = -1)
+        public BinImage(Bitmap bitmap, AdobeColorTable colorTable, bool restricted = true, int width = -1, int height = -1)
         {
             // possible resize
-            if (x > -1 && y > -1)
-                bitmap = new Bitmap(bitmap.GetThumbnailImage(x, y, null, IntPtr.Zero));
+            if (width > -1 && height > -1)
+                bitmap = new Bitmap(bitmap.GetThumbnailImage(width, height, null, IntPtr.Zero));
             Width = bitmap.Width;
             Height = bitmap.Height;
             ColorTable = colorTable;
@@ -69,8 +70,8 @@
             bytes.AddRange(BitConverter.GetBytes(Height));
             if (!restricted)
                 ExtendColorTable(bitmap);
-            for (y = 0; y < Height; ++y)
-                for (x = 0; x < Width; ++x)
+            for (int y = 0; y < Height; ++y)
+                for (int x = 0; x < Width; ++x)
                 {
                     var color = bitmap.GetPixel(x, y);
                     var colorTableIndex = FindClosestColor(color, colorTable, restricted);
@@ -78,6 +79,27 @@
                     bytes.Add(1);
                     bytes.Add(colorTableIndex);
                 }
+            Set(bytes.ToArray());
+        }
+        // color palette tester
+        public BinImage(int pixelSquaresWidthPerColor)
+        {
+            Width = pixelSquaresWidthPerColor * 16;
+            Height = pixelSquaresWidthPerColor * 16;
+            ColorTable = null;
+            Bytes = new byte[Width * Height];
+            var bytes = new List<byte>();
+            bytes.AddRange(BitConverter.GetBytes(Width));
+            bytes.AddRange(BitConverter.GetBytes(Height));
+            for (int y = 0; y < 16; ++y)
+                for (int py = 0; py < pixelSquaresWidthPerColor; ++py)
+                    for (int x = 0; x < 16; ++x)
+                        for (int px = 0; px < pixelSquaresWidthPerColor; ++px)
+                        {
+                            byte color = (byte)(y * 16 + x);
+                            bytes.Add(1);
+                            bytes.Add(color);
+                        }
             Set(bytes.ToArray());
         }
         public void Set(byte[] bytes)

@@ -77,7 +77,6 @@ public partial class PatchForm : PatchDesignForm
             catch { MessageBox.Show("Please set in the editor a proper game folder."); }
             return;
         }
-
         this.Enabled = false;
         // MANDATORY EXPECTATIONS
         // systems
