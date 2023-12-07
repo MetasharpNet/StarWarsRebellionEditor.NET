@@ -77,6 +77,11 @@ public partial class PatchForm : PatchDesignForm
             catch { MessageBox.Show("Please set in the editor a proper game folder."); }
             return;
         }
+
+        // test texture
+        var bix = new BinImage(16);
+        bix.Save("test.bmp-256 colors palette 256x256.bin");
+
         this.Enabled = false;
         // MANDATORY EXPECTATIONS
         // systems

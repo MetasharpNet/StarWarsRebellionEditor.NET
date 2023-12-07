@@ -1450,6 +1450,24 @@
     <None Update="interface\STRATEGY.DLL\Bitmap\903-strategy-galaxy-background-dark.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="ships\TACTICAL.DLL\301\2080-alliance-bulk-transport-close.x">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="ships\TACTICAL.DLL\301\2081-alliance-bulk-transport-medium.x">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="ships\TACTICAL.DLL\301\2082-alliance-bulk-transport-far.x">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="ships\TACTICAL.DLL\303\ALLIANCE_BULK_TRANSPORT_CLOSE.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="ships\TACTICAL.DLL\303\ALLIANCE_BULK_TRANSPORT_FAR.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="ships\TACTICAL.DLL\303\ALLIANCE_BULK_TRANSPORT_MEDIUM.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="systems\sectors.csv">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
@@ -1528,15 +1546,6 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="ships\TACTICAL.DLL\301\2072-1033-tactical-alliance-medium-transport-far-%28base%29.x">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Update="ships\TACTICAL.DLL\301\2080-1033-tactical-alliance-bulk-transport-close-%28base%29.x">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Update="ships\TACTICAL.DLL\301\2081-1033-tactical-alliance-bulk-transport-medium-%28base%29.x">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Update="ships\TACTICAL.DLL\301\2082-1033-tactical-alliance-bulk-transport-far-%28base%29.x">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="ships\TACTICAL.DLL\301\2090-1033-tactical-alliance-dp20-frigate-corellian-gunship-close.x">
