@@ -247,6 +247,20 @@ public partial class PatchForm : PatchDesignForm
                         File.Copy(filePath, Path.Combine(Settings.Current.EDataFolder, "EDATA." + ebId), true);
                     }
                 }
+                else if (patchFolderOnly == "MDATA")
+                { // musics
+                    foreach (var filePath in Directory.GetFiles(patchFolder))
+                    {
+                        if (Path.GetExtension(filePath).ToLowerInvariant() == ".txt")
+                            continue;
+                        var mwId = Path.GetFileNameWithoutExtension(filePath);
+                        if (mwId.Contains("-"))
+                            mwId = mwId.Split('-')[0];
+                        else if (mwId.StartsWith("MDATA."))
+                            mwId = mwId.Split('.')[1];
+                        File.Copy(filePath, Path.Combine(Settings.Current.EDataFolder, "MDATA." + mwId), true);
+                    }
+                }
                 else if (patchFolderOnly.EndsWith(".DLL"))
                 { // dll resources
                     foreach (var resourceFolder in Directory.GetDirectories(patchFolder))

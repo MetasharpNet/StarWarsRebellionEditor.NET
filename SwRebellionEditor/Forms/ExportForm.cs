@@ -103,8 +103,19 @@ public partial class ExportForm : ExportDesignForm
             File.Copy(filePath, Path.Combine(".\\export\\EDATA", newFileName), true);
         }
 
-        // ------------------------------ DLL -----------------------------
+        // ---------------------------- MDATA ----------------------------
+        Directory.CreateDirectory("export\\MDATA");
+        var files = Directory.GetFiles(Settings.Current.MDATAFolder);
+        foreach (var filePath in files)
+        {
+            var fileName = Path.GetFileName(filePath);
+            var extension = Path.GetExtension(fileName).Substring(1);
+            var name = NamesMDATA.ContainsKey(extension) ? NamesMDATA[extension] : "";
+            var newFileName = extension + "-" + name + ".wav";
+            File.Copy(filePath, Path.Combine(".\\export\\MDATA", newFileName), true);
+        }
 
+        // ------------------------------ DLL -----------------------------
         ResourcesDlls.Alsprite.Export(); // WAVE, Bitmap, RCData, Version Info, 302
         ResourcesDlls.Cdderr.Export();   // String Table
         ResourcesDlls.Common.Export();   // WAVE, Bitmap, RCData, Version Info
@@ -533,5 +544,9 @@ public partial class ExportForm : ExportDesignForm
         { "14200", "edata-zygerria" },
     };
 
+    Dictionary<string, string> NamesMDATA = new Dictionary<string, string>
+    {
+    };
+    
     #endregion
 }
