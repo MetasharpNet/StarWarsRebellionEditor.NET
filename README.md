@@ -28,6 +28,7 @@
 * 61/61 new character sprites from LordLaForge to be closer to canon/lgends character faces
 * 61/61 enhanced character sprites displaying their base average stats
 * 27/29 high definition 3d models for capital ships
+* Higher definition game musics
 * 80 high definition sprites for space fighters (X-wing, ...)
 * Savegame Test Pack (broken, will need to redo) : https://github.com/MetasharpNet/StarWarsRebellionEditor.NET/releases/tag/swr-editor.net-savegame-20231015
 * Screenshots :
