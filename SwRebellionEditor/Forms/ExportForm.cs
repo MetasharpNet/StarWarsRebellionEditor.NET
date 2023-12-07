@@ -105,13 +105,18 @@ public partial class ExportForm : ExportDesignForm
 
         // ---------------------------- MDATA ----------------------------
         Directory.CreateDirectory("export\\MDATA");
-        var files = Directory.GetFiles(Settings.Current.MDATAFolder);
+        files = Directory.GetFiles(Settings.Current.MDATAFolder);
         foreach (var filePath in files)
         {
             var fileName = Path.GetFileName(filePath);
             var extension = Path.GetExtension(fileName).Substring(1);
             var name = NamesMDATA.ContainsKey(extension) ? NamesMDATA[extension] : "";
-            var newFileName = extension + "-" + name + ".wav";
+            // if 3 first bytes are SMK, then it's a video
+            var bytes = File.ReadAllBytes(filePath);
+            string ext = "wav";
+            if (bytes[0] == 0x53 && bytes[1] == 0x4D && bytes[2] == 0x4B)
+                ext = "smk";
+            var newFileName = extension + "-" + name + "." + ext;
             File.Copy(filePath, Path.Combine(".\\export\\MDATA", newFileName), true);
         }
 

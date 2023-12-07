@@ -248,7 +248,7 @@ public partial class PatchForm : PatchDesignForm
                     }
                 }
                 else if (patchFolderOnly == "MDATA")
-                { // musics
+                { // media (smk videos, wav sounds)
                     foreach (var filePath in Directory.GetFiles(patchFolder))
                     {
                         if (Path.GetExtension(filePath).ToLowerInvariant() == ".txt")
