@@ -102,9 +102,9 @@ namespace SwRebellionEditor
             line3Label.AutoSize = true;
             line3Label.Location = new Point(33, 103);
             line3Label.Name = "line3Label";
-            line3Label.Size = new Size(143, 15);
+            line3Label.Size = new Size(188, 15);
             line3Label.TabIndex = 1158;
-            line3Label.Text = "- Exported Folders: EDATA";
+            line3Label.Text = "- Exported Folders: EDATA, MDATA";
             // 
             // line1Label
             // 
@@ -172,7 +172,6 @@ namespace SwRebellionEditor
             // 
             // ExportForm
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.None;
             ClientSize = new Size(735, 278);
             Controls.Add(label2);

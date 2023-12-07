@@ -54,6 +54,7 @@ namespace SwRebellionEditor
             charactersWithStatsCheckBox = new CheckBox();
             charactersWithoutStatsCheckBox = new CheckBox();
             patchTest = new Button();
+            label2 = new Label();
             SuspendLayout();
             // 
             // systemsImageList
@@ -64,7 +65,7 @@ namespace SwRebellionEditor
             // 
             // cancel
             // 
-            cancel.Location = new Point(604, 246);
+            cancel.Location = new Point(604, 280);
             cancel.Name = "cancel";
             cancel.Size = new Size(75, 23);
             cancel.TabIndex = 1154;
@@ -74,7 +75,7 @@ namespace SwRebellionEditor
             // 
             // patch
             // 
-            patch.Location = new Point(24, 246);
+            patch.Location = new Point(24, 280);
             patch.Name = "patch";
             patch.Size = new Size(110, 23);
             patch.TabIndex = 1155;
@@ -144,13 +145,13 @@ namespace SwRebellionEditor
             line5Label.Name = "line5Label";
             line5Label.Size = new Size(678, 15);
             line5Label.TabIndex = 1162;
-            line5Label.Text = "- Unique sprites and pictures for ALL 200 systems! + New Encyclopedia descriptions! + New tactical sprites + 3D models (26/29).";
+            line5Label.Text = "- Unique sprites and pictures for ALL 200 systems! + New Encyclopedia descriptions! + New tactical sprites + 3D models (27/29).";
             // 
             // warningLabel
             // 
             warningLabel.AutoSize = true;
             warningLabel.ForeColor = Color.Red;
-            warningLabel.Location = new Point(24, 177);
+            warningLabel.Location = new Point(24, 211);
             warningLabel.Name = "warningLabel";
             warningLabel.Size = new Size(647, 15);
             warningLabel.TabIndex = 1163;
@@ -160,7 +161,7 @@ namespace SwRebellionEditor
             // 
             patchInfoLabel.AutoSize = true;
             patchInfoLabel.Font = new Font("Segoe UI", 9F, FontStyle.Italic, GraphicsUnit.Point);
-            patchInfoLabel.Location = new Point(140, 250);
+            patchInfoLabel.Location = new Point(140, 284);
             patchInfoLabel.Name = "patchInfoLabel";
             patchInfoLabel.Size = new Size(432, 15);
             patchInfoLabel.TabIndex = 1164;
@@ -193,7 +194,7 @@ namespace SwRebellionEditor
             charactersWithStatsCheckBox.AutoSize = true;
             charactersWithStatsCheckBox.Checked = true;
             charactersWithStatsCheckBox.CheckState = CheckState.Checked;
-            charactersWithStatsCheckBox.Location = new Point(33, 210);
+            charactersWithStatsCheckBox.Location = new Point(33, 244);
             charactersWithStatsCheckBox.Name = "charactersWithStatsCheckBox";
             charactersWithStatsCheckBox.Size = new Size(158, 19);
             charactersWithStatsCheckBox.TabIndex = 1167;
@@ -204,7 +205,7 @@ namespace SwRebellionEditor
             // charactersWithoutStatsCheckBox
             // 
             charactersWithoutStatsCheckBox.AutoSize = true;
-            charactersWithoutStatsCheckBox.Location = new Point(233, 210);
+            charactersWithoutStatsCheckBox.Location = new Point(233, 244);
             charactersWithoutStatsCheckBox.Name = "charactersWithoutStatsCheckBox";
             charactersWithoutStatsCheckBox.Size = new Size(176, 19);
             charactersWithoutStatsCheckBox.TabIndex = 1168;
@@ -214,7 +215,7 @@ namespace SwRebellionEditor
             // 
             // patchTest
             // 
-            patchTest.Location = new Point(450, 207);
+            patchTest.Location = new Point(450, 241);
             patchTest.Name = "patchTest";
             patchTest.Size = new Size(132, 23);
             patchTest.TabIndex = 1169;
@@ -222,11 +223,20 @@ namespace SwRebellionEditor
             patchTest.UseVisualStyleBackColor = true;
             patchTest.Click += patchTest_Click;
             // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Location = new Point(33, 172);
+            label2.Name = "label2";
+            label2.Size = new Size(148, 15);
+            label2.TabIndex = 1170;
+            label2.Text = "- Higher definition musics.";
+            // 
             // PatchForm
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.None;
-            ClientSize = new Size(735, 278);
+            ClientSize = new Size(735, 317);
+            Controls.Add(label2);
             Controls.Add(patchTest);
             Controls.Add(charactersWithoutStatsCheckBox);
             Controls.Add(charactersWithStatsCheckBox);
@@ -247,7 +257,6 @@ namespace SwRebellionEditor
             KeyPreview = true;
             Margin = new Padding(4, 3, 4, 3);
             MaximizeBox = false;
-            MaximumSize = new Size(751, 317);
             MinimumSize = new Size(751, 317);
             Name = "PatchForm";
             Text = "Patch";
@@ -275,5 +284,6 @@ namespace SwRebellionEditor
         private CheckBox charactersWithStatsCheckBox;
         private CheckBox charactersWithoutStatsCheckBox;
         private Button patchTest;
+        private Label label2;
     }
 }
