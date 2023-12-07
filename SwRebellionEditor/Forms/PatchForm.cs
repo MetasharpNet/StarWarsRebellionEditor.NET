@@ -79,8 +79,8 @@ public partial class PatchForm : PatchDesignForm
         }
 
         // test texture
-        var bix = new BinImage(16);
-        bix.Save("test.bmp-256 colors palette 256x256.bin");
+        //var bix = new BinImage(16);
+        //bix.Save("test.bmp-256 colors palette 256x256.bin");
 
         this.Enabled = false;
         // MANDATORY EXPECTATIONS
