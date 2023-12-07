@@ -479,4 +479,9 @@ public partial class MainForm : Form
     }
 
     #endregion
+
+    private void picturesConverterToolStripMenuItem_Click(object sender, EventArgs e)
+    {
+        Show<ConverterForm>();
+    }
 }

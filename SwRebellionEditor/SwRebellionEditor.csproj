@@ -57,6 +57,9 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Forms\AllianceHeadquarterFacilitiesTableForm.cs" />
+    <Compile Update="Forms\ConverterForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Forms\CoreSystemsFacilitiesTablesForm.cs" />
     <Compile Update="Forms\RimSystemsFacilitiesTablesForm.cs" />
     <Compile Update="Forms\AllianceYavin4UnitsTableForm.cs">

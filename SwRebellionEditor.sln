@@ -5,8 +5,6 @@ VisualStudioVersion = 17.0.32112.339
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SwRebellionEditor", "SwRebellionEditor\SwRebellionEditor.csproj", "{A66D14A2-3EEF-46C6-8CBB-9D6D29EEB277}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SwRebellionConverter", "SwRebellionConverter\SwRebellionConverter.csproj", "{10D157B0-372D-4B7F-848B-7456DFB2A216}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,10 +15,6 @@ Global
 		{A66D14A2-3EEF-46C6-8CBB-9D6D29EEB277}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A66D14A2-3EEF-46C6-8CBB-9D6D29EEB277}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A66D14A2-3EEF-46C6-8CBB-9D6D29EEB277}.Release|Any CPU.Build.0 = Release|Any CPU
-		{10D157B0-372D-4B7F-848B-7456DFB2A216}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{10D157B0-372D-4B7F-848B-7456DFB2A216}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{10D157B0-372D-4B7F-848B-7456DFB2A216}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{10D157B0-372D-4B7F-848B-7456DFB2A216}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
