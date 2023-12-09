@@ -1687,13 +1687,13 @@
     <None Update="ships\TACTICAL.DLL\301\2522-1033-tactical-empire-lancer-class-frigate-far.x">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\301\2530-1033-tactical-empire-dominator-interdictor-class-star-destroyer-close.x">
+    <None Update="ships\TACTICAL.DLL\301\2530-1033-tactical-empire-immobilizer-418-cruiser-close.x">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\301\2531-1033-tactical-empire-dominator-interdictor-class-star-destroyer-medium.x">
+    <None Update="ships\TACTICAL.DLL\301\2531-1033-tactical-empire-immobilizer-418-cruiser-medium.x">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\301\2532-1033-tactical-empire-dominator-interdictor-class-star-destroyer-far.x">
+    <None Update="ships\TACTICAL.DLL\301\2532-1033-tactical-empire-immobilizer-418-cruiser-far.x">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="ships\TACTICAL.DLL\301\2540-1033-tactical-empire-carrack-class-light-cruiser-close.x">
@@ -2173,13 +2173,13 @@
     <None Update="ships\TACTICAL.DLL\303\EMPIRE_CARRACK_CLASS_LIGHT_CRUISER_MEDIUM.BMP">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\303\EMPIRE_DOMINATOR_INTERDICTOR_CLASS_STAR_DESTROYER_CLOSE.BMP">
+    <None Update="ships\TACTICAL.DLL\303\EMPIRE_IMMOBILIZER_418_CRUISER_CLOSE.BMP">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\303\EMPIRE_DOMINATOR_INTERDICTOR_CLASS_STAR_DESTROYER_FAR.BMP">
+    <None Update="ships\TACTICAL.DLL\303\EMPIRE_IMMOBILIZER_418_CRUISER_FAR.BMP">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\303\EMPIRE_DOMINATOR_INTERDICTOR_CLASS_STAR_DESTROYER_MEDIUM.BMP">
+    <None Update="ships\TACTICAL.DLL\303\EMPIRE_IMMOBILIZER_418_CRUISER_MEDIUM.BMP">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="ships\TACTICAL.DLL\303\EMPIRE_EXECUTOR_CLASS_STAR_DREADNOUGHT_CLOSE.BMP">
