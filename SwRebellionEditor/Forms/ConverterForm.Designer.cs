@@ -37,6 +37,7 @@ partial class ConverterForm
         label1 = new Label();
         label2 = new Label();
         extendedColorTable = new CheckBox();
+        bmpToBmp = new CheckBox();
         ((System.ComponentModel.ISupportInitialize)source).BeginInit();
         ((System.ComponentModel.ISupportInitialize)destination).BeginInit();
         SuspendLayout();
@@ -126,10 +127,21 @@ partial class ConverterForm
         extendedColorTable.Text = "extended color table";
         extendedColorTable.UseVisualStyleBackColor = true;
         // 
+        // bmpToBmp
+        // 
+        bmpToBmp.AutoSize = true;
+        bmpToBmp.Location = new Point(399, 32);
+        bmpToBmp.Name = "bmpToBmp";
+        bmpToBmp.Size = new Size(118, 19);
+        bmpToBmp.TabIndex = 9;
+        bmpToBmp.Text = "bmp to bin+bmp";
+        bmpToBmp.UseVisualStyleBackColor = true;
+        // 
         // ConverterForm
         // 
         AutoScaleMode = AutoScaleMode.None;
         ClientSize = new Size(557, 363);
+        Controls.Add(bmpToBmp);
         Controls.Add(extendedColorTable);
         Controls.Add(label2);
         Controls.Add(label1);
@@ -158,4 +170,5 @@ partial class ConverterForm
     private Label label1;
     private Label label2;
     private CheckBox extendedColorTable;
+    private CheckBox bmpToBmp;
 }

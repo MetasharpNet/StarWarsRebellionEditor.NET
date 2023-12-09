@@ -1,4 +1,6 @@
-﻿using System.Runtime.InteropServices;
+﻿using System.Drawing;
+using System.Drawing.Imaging;
+using System.Runtime.InteropServices;
 using System.Text;
 
 namespace SwRebellionEditor;
@@ -38,6 +40,23 @@ public static class Tools
             }
             // Add more cases for other non-blittable types if needed
         }
+    }
+    public static Bitmap ToMemoryBitmap(Bitmap b)
+    {
+        if (b == null)
+            return null;
+        var ms = new MemoryStream();
+        b.Save(ms, ImageFormat.Bmp);
+        ms.Seek(0, SeekOrigin.Begin);
+        return new Bitmap(ms);
+    }
+    public static Bitmap ToMemoryBitmap(string filePath)
+    {
+        if (filePath == null || !File.Exists(filePath))
+            return null;
+        var bytes = File.ReadAllBytes(filePath);
+        var ms = new MemoryStream(bytes);
+        return new Bitmap(ms);
     }
     public static string ToString(byte[] text)
     {
