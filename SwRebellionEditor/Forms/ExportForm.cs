@@ -39,6 +39,7 @@ public partial class ExportForm : ExportDesignForm
         foreach (var cs in CapitalShipsGameFile.CapitalShips)
         {
             cs.Name = ResourcesDlls.Textstra.RT_STRING[cs.TextStraDllId];
+            cs.EncyclopediaDescription = ResourcesDlls.Encytext.RT_RCDATA[(cs.TextStraDllId - 4096).ToString()];
         }
     }
     private void cancel_Click(object sender, EventArgs e)

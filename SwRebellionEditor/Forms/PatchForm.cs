@@ -1,5 +1,6 @@
 ﻿using SwRebellionEditor.ResourceHelpers;
 using System.Globalization;
+using System.Xml.Linq;
 
 namespace SwRebellionEditor;
 
@@ -152,14 +153,18 @@ public partial class PatchForm : PatchDesignForm
                                 continue;
                             }
                             var capitalShipsColumns = newCapitalShipsLine.Split(';');
-                            SectorsGameFile.Sectors[i].Name = capitalShipsColumns[0];
-                            SectorsGameFile.Sectors[i].Id = Convert.ToUInt32(capitalShipsColumns[1]);
+                            CapitalShipsGameFile.CapitalShips[i].Name = capitalShipsColumns[0];
+                            CapitalShipsGameFile.CapitalShips[i].Id = Convert.ToUInt32(capitalShipsColumns[1]);
+                            CapitalShipsGameFile.CapitalShips[i].EncyclopediaDescription = capitalShipsColumns[2];
                             ++i;
                         }
                     }
                     CapitalShipsGameFile.Save(CapitalShipsGameFilePath);
                     foreach (var capitalShip in CapitalShipsGameFile.CapitalShips)
+                    {
                         ResourcesDlls.Textstra.SaveString(Convert.ToUInt16(capitalShip.TextStraDllId), capitalShip.Name);
+                        ResourcesDlls.Encytext.SaveRcdata((capitalShip.TextStraDllId - 4096).ToString(), capitalShip.EncyclopediaDescription);
+                    }
 
                     if (Path.GetFileNameWithoutExtension(filePath).Contains("sectors"))
                     {
