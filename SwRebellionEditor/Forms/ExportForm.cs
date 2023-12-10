@@ -14,7 +14,7 @@ public partial class ExportForm : ExportDesignForm
     public ExportForm()
     {
         CapitalShipsGameFilePath = Path.Combine(Settings.Current.GDataFolder, "CAPSHPSD.DAT");
-        CapitalShipsGameFile = DatFile.Load<CAPSHPSD>(GameFilePath);
+        CapitalShipsGameFile = DatFile.Load<CAPSHPSD>(CapitalShipsGameFilePath);
         SectorsGameFilePath = Path.Combine(Settings.Current.GDataFolder, "SECTORSD.DAT");
         SectorsGameFile = DatFile.Load<SECTORSD>(SectorsGameFilePath);
         GameFilePath = Path.Combine(Settings.Current.GDataFolder, "SYSTEMSD.DAT");
