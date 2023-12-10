@@ -69,13 +69,16 @@ public partial class ExportForm : ExportDesignForm
         // --------------------- SYSTEMS & SECTORS ---------------------
         Directory.CreateDirectory("export\\csv");
 
+        /*
         var export = "Sector;Id;X;Y;Group;Galaxy Size" + Environment.NewLine;
         var sectorNames = new Dictionary<uint, string>();
         foreach (var s in SectorsGameFile.Sectors)
         {
             sectorNames.Add(s.Id, s.Name);
             export = export + s.Name + ";"
+
                             + s.Id + ";"
+                            + s.Field2_1 + ";"
                             + s.XPosition + ";"
                             + s.YPosition + ";"
                             + (s.Group == 1 ? "Core" : (s.Group == 2 ? "Rim (inner)" : (s.Group == 3 ? "Rim (outer)" : s.Group))) + ";"
@@ -99,19 +102,11 @@ public partial class ExportForm : ExportDesignForm
                             + Environment.NewLine;
         }
         File.WriteAllText(".\\export\\csv\\systems.csv", export);
-
-        // --------------------- SHIPS ---------------------
-        Directory.CreateDirectory("export\\csv");
-
-        export = "CapitalShip;Id;EncyclopediaDescription" + Environment.NewLine;
-        foreach (var cs in CapitalShipsGameFile.CapitalShips)
-        {
-            export = export + cs.Name + ";"
-                            + cs.Id + ";"
-                            + "\"" + cs.EncyclopediaDescription + "\""
-                            + Environment.NewLine;
-        }
-        File.WriteAllText(".\\export\\csv\\capitalships.csv", export);
+        */
+        // --------------------- CSVS ---------------------
+        File.WriteAllText(".\\export\\csv\\sectors.csv", SectorsGameFile.EntriesToCsv("Sectors"));
+        File.WriteAllText(".\\export\\csv\\systems.csv", GameFile.EntriesToCsv("Systems"));
+        File.WriteAllText(".\\export\\csv\\capitalships.csv", CapitalShipsGameFile.EntriesToCsv("CapitalShips"));
 
         // ---------------------------- EDATA ----------------------------
         Directory.CreateDirectory("export\\EDATA");
