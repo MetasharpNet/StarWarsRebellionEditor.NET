@@ -66,44 +66,8 @@ public partial class ExportForm : ExportDesignForm
         try { Directory.Delete("export", true); } catch { }
         Directory.CreateDirectory("export");
 
-        // --------------------- SYSTEMS & SECTORS ---------------------
-        Directory.CreateDirectory("export\\csv");
-
-        /*
-        var export = "Sector;Id;X;Y;Group;Galaxy Size" + Environment.NewLine;
-        var sectorNames = new Dictionary<uint, string>();
-        foreach (var s in SectorsGameFile.Sectors)
-        {
-            sectorNames.Add(s.Id, s.Name);
-            export = export + s.Name + ";"
-
-                            + s.Id + ";"
-                            + s.Field2_1 + ";"
-                            + s.XPosition + ";"
-                            + s.YPosition + ";"
-                            + (s.Group == 1 ? "Core" : (s.Group == 2 ? "Rim (inner)" : (s.Group == 3 ? "Rim (outer)" : s.Group))) + ";"
-                            + (s.GalaxySize == 1 ? "Standard" : (s.GalaxySize == 2 ? "Large" : (s.GalaxySize == 3 ? "Huge" : s.GalaxySize)))
-                            + Environment.NewLine;
-        }
-        File.WriteAllText(".\\export\\csv\\sectors.csv", export);
-
-        export = "System;Id;TextStraDllId;Sector;X;Y;FamilyId;PictureId;EncyclopediaDescription" + Environment.NewLine;
-        foreach (var s in GameFile.Systems)
-        {
-            export = export + s.Name + ";"
-                            + s.Id + ";"
-                            + s.TextStraDllId + ";"
-                            + (sectorNames.ContainsKey(s.SectorId) ? sectorNames[s.SectorId] : s.SectorId) + ";"
-                            + s.XPosition + ";"
-                            + s.YPosition + ";"
-                            + (s.FamilyId == 144 ? "Explored" : (s.FamilyId == 146 ? "Unexplored" : s.FamilyId)) + ";"
-                            + s.PictureId + ";"
-                            + "\"" + s.EncyclopediaDescription + "\""
-                            + Environment.NewLine;
-        }
-        File.WriteAllText(".\\export\\csv\\systems.csv", export);
-        */
         // --------------------- CSVS ---------------------
+        Directory.CreateDirectory("export\\csv");
         File.WriteAllText(".\\export\\csv\\sectors.csv", SectorsGameFile.EntriesToCsv("Sectors"));
         File.WriteAllText(".\\export\\csv\\systems.csv", GameFile.EntriesToCsv("Systems"));
         File.WriteAllText(".\\export\\csv\\capitalships.csv", CapitalShipsGameFile.EntriesToCsv("CapitalShips"));

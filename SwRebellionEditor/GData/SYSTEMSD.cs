@@ -1,4 +1,6 @@
-﻿namespace SwRebellionEditor;
+﻿using System.Reflection;
+
+namespace SwRebellionEditor;
 
 public class SYSTEMSD : DatFile
 {
@@ -8,6 +10,31 @@ public class SYSTEMSD : DatFile
     public uint FamilyId; // 144
     public uint Field4_152; // 152
     public SYSTEMSD_System[] Systems;
+
+    #region Custom Import/Export
+    protected override bool CustomCsvToField(FieldInfo? entryField, object? entry, string fieldName, string fieldValue)
+    {
+        switch (fieldName)
+        {
+            case "FamilyId":
+                entryField.SetValue(entry, (fieldValue == "Explored" ? 144 : (fieldValue == "Unexplored" ? 146 : UInt32.Parse(fieldValue))));
+                return true;
+            default:
+                return false;
+        }
+    }
+    protected override string CustomFieldToCsv(string fieldName, object fieldValue)
+    {
+        switch (fieldName)
+        {
+            case "FamilyId":
+                var group = (uint)fieldValue;
+                return (group == 144 ? "Explored" : (group == 146 ? "Unexplored" : group.ToString()));
+            default:
+                return "";
+        }
+    }
+    #endregion
 }
 public class SYSTEMSD_System
 {

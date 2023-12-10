@@ -1,4 +1,6 @@
-﻿namespace SwRebellionEditor;
+﻿using System.Reflection;
+
+namespace SwRebellionEditor;
 
 public class SECTORSD : DatFile
 {
@@ -8,6 +10,37 @@ public class SECTORSD : DatFile
     public uint FamilyId;
     public uint Field4_Unknown;
     public SECTORSD_Sector[] Sectors;
+
+    #region Custom Import/Export
+    protected override bool CustomCsvToField(FieldInfo? entryField, object? entry, string fieldName, string fieldValue)
+    {
+        switch (fieldName)
+        {
+            case "Group":
+                entryField.SetValue(entry, (fieldValue == "Core" ? 1 : (fieldValue == "Rim(inner)" ? 2 : (fieldValue == "Rim (outer)" ? 3 : UInt32.Parse(fieldValue)))));
+                return true;
+            case "GalaxySize":
+                entryField.SetValue(entry, (fieldValue == "Standard" ? 1 : (fieldValue == "Large" ? 2 : (fieldValue == "Huge" ? 3 : UInt32.Parse(fieldValue)))));
+                return true;
+            default:
+                return false;
+        }
+    }
+    protected override string CustomFieldToCsv(string fieldName, object fieldValue)
+    {
+        switch (fieldName)
+        {
+            case "Group":
+                var group = (uint)fieldValue;
+                return (group == 1 ? "Core" : (group == 2 ? "Rim (inner)" : (group == 3 ? "Rim (outer)" : group.ToString())));
+            case "GalaxySize":
+                var galaxySize = (uint)fieldValue;
+                return (galaxySize == 1 ? "Standard" : (galaxySize == 2 ? "Large" : (galaxySize == 3 ? "Huge" : galaxySize.ToString())));
+            default:
+                return "";
+        }
+    }
+    #endregion
 }
 public class SECTORSD_Sector
 {

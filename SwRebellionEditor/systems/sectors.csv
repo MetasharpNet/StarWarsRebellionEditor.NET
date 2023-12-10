@@ -1,21 +1,21 @@
-Sector;Id;X;Y;Group;Galaxy Size
-Bothan Space;20;741;546;Rim (inner);Large
-Colonies;21;498;336;Core;Standard
-Crossroads;22;632;314;Core;Huge
-Deep Core;23;332;412;Rim (inner);Standard
-Core Worlds South;24;462;444;Core;Standard
-Hutt Space;25;765;364;Rim (inner);Standard
-Inner Rim;26;574;478;Core;Huge
-Mandalorian Space;27;508;185;Rim (inner);Standard
-Mid Rim North;28;344;173;Rim (inner);Standard
-Mid Rim South;29;492;604;Core;Large
-Outer Rim East;30;757;241;Rim (inner);Large
-Outer Rim North;31;372;67;Rim (outer);Large
-Outer Rim South;32;468;736;Rim (inner);Huge
-Outer Rim West;33;311;631;Rim (outer);Standard
-Tingel Arm;34;776;138;Rim (outer);Huge
-Unknown Regions;35;107;356;Rim (outer);Huge
-Core Worlds North;36;407;308;Core;Standard
-Western Reaches;37;342;734;Rim (outer);Large
-Sith Worlds;38;666;135;Rim (outer);Standard
-Wild Space;39;661;642;Rim (outer);Standard
+Id;Field2_1;ProductionFamily_0;NextProductionFamily_0;FamilyId;TextStraDllId;Field7_2;Group;GalaxySize;XPosition;YPosition;Name
+20;1;0;0;128;11648;2;Rim (inner);Large;741;546;Bothan Space
+21;1;0;0;128;11649;2;Core;Standard;498;336;Colonies
+22;1;0;0;128;11650;2;Core;Huge;632;314;Crossroads
+23;1;0;0;128;11651;2;Rim (inner);Standard;332;412;Deep Core
+24;1;0;0;128;11652;2;Core;Standard;462;444;Core Worlds South
+25;1;0;0;128;11653;2;Rim (inner);Standard;765;364;Hutt Space
+26;1;0;0;128;11654;2;Core;Huge;574;478;Inner Rim
+27;1;0;0;128;11655;2;Rim (inner);Standard;508;185;Mandalorian Space
+28;1;0;0;128;11656;2;Rim (inner);Standard;344;173;Mid Rim North
+29;1;0;0;128;11657;2;Core;Large;492;604;Mid Rim South
+30;1;0;0;128;11658;2;Rim (inner);Large;757;241;Outer Rim East
+31;1;0;0;128;11659;2;Rim (outer);Large;372;67;Outer Rim North
+32;1;0;0;128;11660;2;Rim (inner);Huge;468;736;Outer Rim South
+33;1;0;0;128;11661;2;Rim (outer);Standard;311;631;Outer Rim West
+34;1;0;0;128;11662;2;Rim (outer);Huge;776;138;Tingel Arm
+35;1;0;0;128;11663;2;Rim (outer);Huge;107;356;Unknown Regions
+36;1;0;0;128;11664;2;Core;Standard;407;308;Core Worlds North
+37;1;0;0;128;11665;2;Rim (outer);Large;342;734;Western Reaches
+38;1;0;0;128;11666;2;Rim (outer);Standard;666;135;Sith Worlds
+39;1;0;0;128;11667;2;Rim (outer);Standard;661;642;Wild Space

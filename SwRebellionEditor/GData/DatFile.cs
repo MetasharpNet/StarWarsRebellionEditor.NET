@@ -263,7 +263,7 @@ public abstract class DatFile
                 var fieldPosition = fieldPositions[fieldName];
                 var fieldType = entryField.FieldType;
 
-                if (CustomCsvToField(fieldType.Name, columns[fieldPosition]))
+                if (CustomCsvToField(entryField, entry, fieldName, columns[fieldPosition]))
                 {
                     continue;
                 }
@@ -380,7 +380,7 @@ public abstract class DatFile
             foreach (var entryField in entryFields)
             {
                 var fieldType = entryField.FieldType;
-                var customField = CustomFieldToCsv(fieldType.Name, entryField.GetValue(entry));
+                var customField = CustomFieldToCsv(entryField.Name, entryField.GetValue(entry));
                 if (!String.IsNullOrEmpty(customField))
                 {
                     csv += customField + separator;
@@ -471,29 +471,29 @@ public abstract class DatFile
     /// <param name="separator"></param>
     /// <returns></returns>
     /// <exception cref="NotImplementedException"></exception>
-    protected string CustomCsvToEntries(string csv, string entriesFieldName, string entriesCountFieldName, string separator = ";")
+    protected virtual string CustomCsvToEntries(string csv, string entriesFieldName, string entriesCountFieldName, string separator = ";")
     {
         throw new NotImplementedException();
     }
-
     /// <summary>
     /// To override in child class if the entries contain arrays
     /// </summary>
     /// <param name="separator"></param>
     /// <returns></returns>
     /// <exception cref="NotImplementedException"></exception>
-    protected string CustomEntriesToCsv(string separator = ";")
+    protected virtual string CustomEntriesToCsv(string separator = ";")
     {
         throw new NotImplementedException();
     }
-
     /// <summary>
     /// To override in child class if the entries contain arrays
     /// </summary>
+    /// <param name="entryField"></param>
+    /// <param name="entry"></param>
     /// <param name="fieldName"></param>
     /// <param name="fieldValue"></param>
     /// <returns></returns>
-    protected bool CustomCsvToField(string fieldName, string fieldValue)
+    protected virtual bool CustomCsvToField(FieldInfo? entryField, object? entry, string fieldName, string fieldValue)
     {
         return false;
     }
@@ -503,7 +503,7 @@ public abstract class DatFile
     /// <param name="fieldName"></param>
     /// <param name="fieldValue"></param>
     /// <returns></returns>
-    protected string CustomFieldToCsv(string fieldName, object fieldValue)
+    protected virtual string CustomFieldToCsv(string fieldName, object fieldValue)
     {
         return "";
     }
