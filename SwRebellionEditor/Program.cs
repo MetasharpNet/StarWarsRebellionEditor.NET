@@ -6,6 +6,7 @@ namespace SwRebellionEditor;
 
 // DPI Rendering: https://github.com/dotnet/winforms/blob/main/docs/designer/designer-high-dpi-mode.md
 //                https://learn.microsoft.com/fr-fr/visualstudio/designers/scaling-percentage-display-setting-message?view=vs-2022&WT.mc_id=visualstudio_ide_fwlink_875609
+//                https://learn.microsoft.com/fr-fr/visualstudio/designers/disable-dpi-awareness?view=vs-2022
 internal static class Program
 {
     /// <summary>
