@@ -1,6 +1,5 @@
 ﻿using SwRebellionEditor.ResourceHelpers;
 using System.Globalization;
-using System.Xml.Linq;
 
 namespace SwRebellionEditor;
 
@@ -152,19 +151,25 @@ public partial class PatchForm : PatchDesignForm
                                 i = 0;
                                 continue;
                             }
-                            var capitalShipsColumns = newCapitalShipsLine.Split(';');
-                            CapitalShipsGameFile.CapitalShips[i].Name = capitalShipsColumns[0];
-                            CapitalShipsGameFile.CapitalShips[i].Id = Convert.ToUInt32(capitalShipsColumns[1]);
-                            CapitalShipsGameFile.CapitalShips[i].EncyclopediaDescription = capitalShipsColumns[2];
+                            var capitalShipColumns = newCapitalShipsLine.Split(';');
+                            var row = new CAPSHPSD_CapitalShip();
+                            row.Name = capitalShipColumns[0];
+                            row.Id = Convert.ToUInt32(capitalShipColumns[1]);
+                            row.EncyclopediaDescription = capitalShipColumns[2];
+
+                            var gdEntry = CapitalShipsGameFile.CapitalShips.FirstOrDefault(p => p.Id == row.Id);
+                            if (gdEntry != null)
+                            {
+                                gdEntry.Name = row.Name;
+                                ResourcesDlls.Textstra.SaveString(Convert.ToUInt16(gdEntry.TextStraDllId), gdEntry.Name);
+                                gdEntry.EncyclopediaDescription = row.EncyclopediaDescription;
+                                ResourcesDlls.Encytext.SaveRcdata((gdEntry.TextStraDllId - 4096).ToString(), gdEntry.EncyclopediaDescription);
+                            }
+
                             ++i;
                         }
                     }
                     CapitalShipsGameFile.Save(CapitalShipsGameFilePath);
-                    foreach (var capitalShip in CapitalShipsGameFile.CapitalShips)
-                    {
-                        ResourcesDlls.Textstra.SaveString(Convert.ToUInt16(capitalShip.TextStraDllId), capitalShip.Name);
-                        ResourcesDlls.Encytext.SaveRcdata((capitalShip.TextStraDllId - 4096).ToString(), capitalShip.EncyclopediaDescription);
-                    }
 
                     if (Path.GetFileNameWithoutExtension(filePath).Contains("sectors"))
                     {
