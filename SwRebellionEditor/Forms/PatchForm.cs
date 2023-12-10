@@ -7,11 +7,15 @@ public partial class PatchForm : PatchDesignForm
 {
     #region .ctor
 
+    private string CapitalShipsGameFilePath;
+    private CAPSHPSD CapitalShipsGameFile;
     private string SectorsGameFilePath;
     private SECTORSD SectorsGameFile;
 
     public PatchForm()
     {
+        CapitalShipsGameFilePath = Path.Combine(Settings.Current.GDataFolder, "CAPSHPSD.DAT");
+        CapitalShipsGameFile = DatFile.Load<CAPSHPSD>(CapitalShipsGameFilePath);
         SectorsGameFilePath = Path.Combine(Settings.Current.GDataFolder, "SECTORSD.DAT");
         SectorsGameFile = DatFile.Load<SECTORSD>(SectorsGameFilePath);
         GameFilePath = Path.Combine(Settings.Current.GDataFolder, "SYSTEMSD.DAT");
@@ -134,6 +138,29 @@ public partial class PatchForm : PatchDesignForm
             {
                 if (Path.GetExtension(filePath).ToLowerInvariant() == ".csv")
                 {
+                    if (Path.GetFileNameWithoutExtension(filePath).Contains("capitalships"))
+                    {
+                        var newCapitalShipsAsString = File.ReadAllText(filePath);
+                        var newCapitalShipsLines = newCapitalShipsAsString.Split(Environment.NewLine);
+                        int i = -1;
+                        foreach (var newCapitalShipsLine in newCapitalShipsLines)
+                        {
+                            if (newCapitalShipsLine.Length <= 0) continue;
+                            if (i == -1)
+                            { // skip header line
+                                i = 0;
+                                continue;
+                            }
+                            var capitalShipsColumns = newCapitalShipsLine.Split(';');
+                            SectorsGameFile.Sectors[i].Name = capitalShipsColumns[0];
+                            SectorsGameFile.Sectors[i].Id = Convert.ToUInt32(capitalShipsColumns[1]);
+                            ++i;
+                        }
+                    }
+                    CapitalShipsGameFile.Save(CapitalShipsGameFilePath);
+                    foreach (var capitalShip in CapitalShipsGameFile.CapitalShips)
+                        ResourcesDlls.Textstra.SaveString(Convert.ToUInt16(capitalShip.TextStraDllId), capitalShip.Name);
+
                     if (Path.GetFileNameWithoutExtension(filePath).Contains("sectors"))
                     {
                         var newSectorsAsString = File.ReadAllText(filePath);

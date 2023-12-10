@@ -6,11 +6,15 @@ public partial class ExportForm : ExportDesignForm
 {
     #region .ctor
 
+    private string CapitalShipsGameFilePath;
+    private CAPSHPSD CapitalShipsGameFile;
     private string SectorsGameFilePath;
     private SECTORSD SectorsGameFile;
 
     public ExportForm()
     {
+        CapitalShipsGameFilePath = Path.Combine(Settings.Current.GDataFolder, "CAPSHPSD.DAT");
+        CapitalShipsGameFile = DatFile.Load<CAPSHPSD>(GameFilePath);
         SectorsGameFilePath = Path.Combine(Settings.Current.GDataFolder, "SECTORSD.DAT");
         SectorsGameFile = DatFile.Load<SECTORSD>(SectorsGameFilePath);
         GameFilePath = Path.Combine(Settings.Current.GDataFolder, "SYSTEMSD.DAT");
@@ -31,6 +35,10 @@ public partial class ExportForm : ExportDesignForm
         foreach (var s in SectorsGameFile.Sectors)
         {
             s.Name = ResourcesDlls.Textstra.RT_STRING[s.TextStraDllId];
+        }
+        foreach (var cs in CapitalShipsGameFile.CapitalShips)
+        {
+            cs.Name = ResourcesDlls.Textstra.RT_STRING[cs.TextStraDllId];
         }
     }
     private void cancel_Click(object sender, EventArgs e)
@@ -73,9 +81,9 @@ public partial class ExportForm : ExportDesignForm
                             + (s.GalaxySize == 1 ? "Standard" : (s.GalaxySize == 2 ? "Large" : (s.GalaxySize == 3 ? "Huge" : s.GalaxySize)))
                             + Environment.NewLine;
         }
-        File.WriteAllText(".\\export\\systems\\sectors.csv", export);
+        File.WriteAllText(".\\export\\data\\sectors.csv", export);
 
-        export = "Name;Id;TextStraDllId;Sector;X;Y;FamilyId;PictureId;EncyclopediaDescription" + Environment.NewLine;
+        export = "System;Id;TextStraDllId;Sector;X;Y;FamilyId;PictureId;EncyclopediaDescription" + Environment.NewLine;
         foreach (var s in GameFile.Systems)
         {
             export = export + s.Name + ";"
@@ -89,7 +97,20 @@ public partial class ExportForm : ExportDesignForm
                             + "\"" + s.EncyclopediaDescription + "\""
                             + Environment.NewLine;
         }
-        File.WriteAllText(".\\export\\systems\\systems.csv", export);
+        File.WriteAllText(".\\export\\data\\systems.csv", export);
+
+        // --------------------- SHIPS ---------------------
+        Directory.CreateDirectory("export\\ships");
+
+        export = "CapitalShip;Id;EncyclopediaDescription" + Environment.NewLine;
+        foreach (var cs in CapitalShipsGameFile.CapitalShips)
+        {
+            export = export + cs.Name + ";"
+                            + cs.Id + ";"
+                            + "\"" + cs.EncyclopediaDescription + "\""
+                            + Environment.NewLine;
+        }
+        File.WriteAllText(".\\export\\data\\capitalships.csv", export);
 
         // ---------------------------- EDATA ----------------------------
         Directory.CreateDirectory("export\\EDATA");
