@@ -17,7 +17,7 @@ public class SECTORSD : DatFile
         switch (fieldName)
         {
             case "Group":
-                entryField.SetValue(entry, (fieldValue == "Core" ? 1 : (fieldValue == "Rim(inner)" ? 2 : (fieldValue == "Rim (outer)" ? 3 : UInt32.Parse(fieldValue)))));
+                entryField.SetValue(entry, (fieldValue == "Core" ? 1 : (fieldValue == "Rim (inner)" ? 2 : (fieldValue == "Rim (outer)" ? 3 : UInt32.Parse(fieldValue)))));
                 return true;
             case "GalaxySize":
                 entryField.SetValue(entry, (fieldValue == "Standard" ? 1 : (fieldValue == "Large" ? 2 : (fieldValue == "Huge" ? 3 : UInt32.Parse(fieldValue)))));
