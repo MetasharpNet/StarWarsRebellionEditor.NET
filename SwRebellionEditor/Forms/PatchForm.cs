@@ -138,17 +138,17 @@ public partial class PatchForm : PatchDesignForm
             {
                 if (Path.GetExtension(filePath).ToLowerInvariant() == ".csv")
                 {
-                    if (Path.GetFileNameWithoutExtension(filePath).Contains("capitalships"))
+                    if (Path.GetFileNameWithoutExtension(filePath).Contains("capitalships.csv"))
                     {
                         CapitalShipsGameFile.CsvToEntries(File.ReadAllText(filePath), "CapitalShips", "CapitalShipsCount");
                         CapitalShipsGameFile.Save(CapitalShipsGameFilePath);
                     }
-                    if (Path.GetFileNameWithoutExtension(filePath).Contains("sectors"))
+                    if (Path.GetFileNameWithoutExtension(filePath).Contains("sectors.csv"))
                     {
                         SectorsGameFile.CsvToEntries(File.ReadAllText(filePath), "Sectors", "SectorsCount");
                         SectorsGameFile.Save(SectorsGameFilePath);
                     }
-                    if (Path.GetFileNameWithoutExtension(filePath).Contains("systems"))
+                    if (Path.GetFileNameWithoutExtension(filePath).Contains("systems.csv"))
                     {
                         GameFile.CsvToEntries(File.ReadAllText(filePath), "Systems", "SystemsCount");
                         GameFile.Save(GameFilePath);
