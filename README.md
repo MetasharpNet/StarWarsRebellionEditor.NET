@@ -13,12 +13,13 @@
 * Drag and drop a new System 37x37 BMP picture on current to update it
 * Export : Systems
 * Other features in testing accessible in menus only
-* Extract : Export in 1 click game resources in an export folder (bitmaps and 3d models for now)
+* Extract : Export in 1 click game resources in an export folder (bitmaps and 3d models and data in CSV for now)
 * Patch : Star Wars Rebellion 25th Anniversary patch
+* Test Patch : Patch your custom content from the CSV folder. It can be anything from the export modified to your taste.
 
 ### 25th Anniversary Patch Features :
 * Game's 1.02 community update
-* Dgvoodoo 2.82 (2023-11-21) directx libraries : http://dege.fw.hu/dgVoodoo2/dgVoodoo2/
+* Dgvoodoo 2.82.1 (2023-11-28) directx libraries : http://dege.fw.hu/dgVoodoo2/dgVoodoo2/
   * Forum : https://www.vogons.org/viewforum.php?f=58 and https://www.vogons.org/viewtopic.php?f=59&t=97303
 * New Galaxy map using top 200 star wars planets (called systems in game) from 2023 canon mostly positioned as accurately as possible within game engine limits!
 * 200/200 systems sprites (instead of 26 original sprites shared amongst 200 systems)
