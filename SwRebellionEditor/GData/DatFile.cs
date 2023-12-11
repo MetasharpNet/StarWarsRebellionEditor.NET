@@ -229,6 +229,7 @@ public abstract class DatFile
         var datFileFields = datFileType.GetFields();
         var entriesField  = datFileType.GetField(entriesFieldName);
         var entries       = entriesField.GetValue(this);
+        var entriesType   = entriesField.FieldType;
         var entryType     = entriesField.FieldType.GetElementType();
         var entryFields   = entryType.GetFields();
 
@@ -350,6 +351,8 @@ public abstract class DatFile
                         
                 }
             }
+            dynamic entriesArray = entriesField.GetValue(this);
+            entriesArray.SetValue(entry, entriesCount);
             ++entriesCount;
         }
         // entries count
