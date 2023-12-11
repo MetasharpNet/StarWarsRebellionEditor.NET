@@ -27,56 +27,32 @@
     <PackageReference Include="Vestris.ResourceLib" Version="2.1.0" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Update="FormsParents\AllianceHeadquarterFacilitiesTableDesignForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Update="FormsParents\AllianceYavin4UnitsTableDesignForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Update="FormsParents\AllianceHeadquarterUnitsTableDesignForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Update="FormsParents\AllianceFleetTableDesignForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Update="FormsParents\EmpireCoruscantFacilitiesTableDesignForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Update="FormsParents\EmpireCoruscantUnitsTableDesignForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Update="FormsParents\AllianceHeadquarterFacilitiesTableDesignForm.cs" />
+    <Compile Update="FormsParents\AllianceYavin4UnitsTableDesignForm.cs" />
+    <Compile Update="FormsParents\AllianceHeadquarterUnitsTableDesignForm.cs" />
+    <Compile Update="FormsParents\AllianceFleetTableDesignForm.cs" />
+    <Compile Update="FormsParents\EmpireCoruscantFacilitiesTableDesignForm.cs" />
+    <Compile Update="FormsParents\EmpireCoruscantUnitsTableDesignForm.cs" />
     <Compile Update="FormsParents\EmpireFleetTableDesignForm.cs" />
     <Compile Update="FormsParents\EmpireUnitsTableDesignForm.cs" />
     <Compile Update="FormsParents\GalaxyMapDesignForm.cs" />
-    <Compile Update="FormsParents\ExportDesignForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Update="FormsParents\ExportDesignForm.cs" />
     <Compile Update="FormsParents\PatchDesignForm.cs" />
-    <Compile Update="FormsParents\SideParamTableEntryDesignForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Update="Forms\AllianceFleetTableForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Update="FormsParents\SideParamTableEntryDesignForm.cs" />
+    <Compile Update="Forms\AllianceFleetTableForm.cs" />
     <Compile Update="Forms\AllianceHeadquarterFacilitiesTableForm.cs" />
     <Compile Update="Forms\ConverterForm.cs" />
     <Compile Update="Forms\CoreSystemsFacilitiesTablesForm.cs" />
     <Compile Update="Forms\RimSystemsFacilitiesTablesForm.cs" />
-    <Compile Update="Forms\AllianceYavin4UnitsTableForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Update="Forms\AllianceYavin4UnitsTableForm.cs" />
     <Compile Update="Forms\AllianceHeadquarterUnitsTableForm.cs" />
     <Compile Update="Forms\EmpireCoruscantFacilitiesTableForm.cs" />
     <Compile Update="Forms\EmpireFleetTableForm.cs" />
-    <Compile Update="Forms\EmpireCoruscantUnitsTableForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Update="Forms\EmpireCoruscantUnitsTableForm.cs" />
     <Compile Update="Forms\EmpireUnitsTableForm.cs" />
     <Compile Update="Forms\GalaxyMapForm.cs" />
     <Compile Update="Forms\ExportForm.cs" />
-    <Compile Update="Forms\SideParamTableEntryForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Update="Forms\SideParamTableEntryForm.cs" />
     <Compile Update="Forms\SectorsForm.cs" />
     <Compile Update="Forms\PatchForm.cs" />
     <Compile Update="Properties\Settings.Designer.cs">

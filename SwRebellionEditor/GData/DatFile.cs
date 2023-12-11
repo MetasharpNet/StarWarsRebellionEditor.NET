@@ -226,15 +226,12 @@ public abstract class DatFile
     public void CsvToEntries(string csv, string entriesFieldName, string entriesCountFieldName, string separator = ";")
     {
         var datFileType   = GetType();
-        var datFileFields = datFileType.GetFields();
         var entriesField  = datFileType.GetField(entriesFieldName);
-        var entries       = entriesField.GetValue(this);
-        var entriesType   = entriesField.FieldType;
         var entryType     = entriesField.FieldType.GetElementType();
         var entryFields   = entryType.GetFields();
-
-        var lines = csv.Split(Environment.NewLine);
-        var header = lines[0].Split(separator);
+        var lines         = csv.Split(Environment.NewLine);
+        lines             = lines.Where(x => !string.IsNullOrWhiteSpace(x)).ToArray();
+        var header        = lines[0].Split(separator);
         // identify fields columns positions
         var fieldPositions = new Dictionary<string, int>();
         for (int i = 0; i < header.Length; ++i)
@@ -251,6 +248,7 @@ public abstract class DatFile
         }
         // entries
         uint entriesCount = 0;
+        dynamic entriesArray = Activator.CreateInstance(entriesField.FieldType, lines.Length - 1);
         for (int i = 1; i < lines.Length; ++i)
         {
             var line = lines[i];
@@ -351,13 +349,12 @@ public abstract class DatFile
                         
                 }
             }
-            dynamic entriesArray = entriesField.GetValue(this);
             entriesArray.SetValue(entry, entriesCount);
             ++entriesCount;
         }
-        // entries count
         var entriesCountField = datFileType.GetField(entriesCountFieldName);
         entriesCountField.SetValue(this, entriesCount);
+        entriesField.SetValue(this, entriesArray);
     }
 
     public string EntriesToCsv(string entriesFieldName, string separator = ";")

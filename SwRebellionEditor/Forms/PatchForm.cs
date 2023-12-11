@@ -133,29 +133,29 @@ public partial class PatchForm : PatchDesignForm
                 continue;
 
             // ---------------------------- CSV ---------------------------
-
+            
             foreach (var filePath in Directory.GetFiles(setFolder))
             {
                 if (Path.GetExtension(filePath).ToLowerInvariant() == ".csv")
                 {
-                    if (filePath.Contains("capitalships.csv"))
-                    {
-                        CapitalShipsGameFile.CsvToEntries(File.ReadAllText(filePath), "CapitalShips", "CapitalShipsCount");
-                        CapitalShipsGameFile.Save(CapitalShipsGameFilePath);
-                    }
-                    if (filePath.Contains("sectors.csv"))
+                    if (filePath.ToLowerInvariant().Contains("sectors.csv"))
                     {
                         SectorsGameFile.CsvToEntries(File.ReadAllText(filePath), "Sectors", "SectorsCount");
                         SectorsGameFile.Save(SectorsGameFilePath);
                     }
-                    if (filePath.Contains("systems.csv"))
+                    if (filePath.ToLowerInvariant().Contains("systems.csv"))
                     {
                         GameFile.CsvToEntries(File.ReadAllText(filePath), "Systems", "SystemsCount");
                         GameFile.Save(GameFilePath);
                     }
+                    if (filePath.ToLowerInvariant().Contains("capitalships.csv"))
+                    {
+                        CapitalShipsGameFile.CsvToEntries(File.ReadAllText(filePath), "CapitalShips", "CapitalShipsCount");
+                        CapitalShipsGameFile.Save(CapitalShipsGameFilePath);
+                    }
                 }
             }
-
+            
             // ---------------------------- RSRC ---------------------------
 
             foreach (var patchFolder in Directory.GetDirectories(setFolder))
@@ -329,6 +329,7 @@ public partial class PatchForm : PatchDesignForm
                 }
             }
         }
+
 
         if (testOnly)
         {
