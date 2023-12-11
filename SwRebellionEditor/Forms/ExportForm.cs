@@ -6,46 +6,19 @@ public partial class ExportForm : ExportDesignForm
 {
     #region .ctor
 
-    private string CapitalShipsGameFilePath;
-    private CAPSHPSD CapitalShipsGameFile;
-    private string SectorsGameFilePath;
-    private SECTORSD SectorsGameFile;
-
     public ExportForm()
     {
-        CapitalShipsGameFilePath = Path.Combine(Settings.Current.GDataFolder, "CAPSHPSD.DAT");
-        CapitalShipsGameFile = DatFile.Load<CAPSHPSD>(CapitalShipsGameFilePath);
-        SectorsGameFilePath = Path.Combine(Settings.Current.GDataFolder, "SECTORSD.DAT");
-        SectorsGameFile = DatFile.Load<SECTORSD>(SectorsGameFilePath);
-        GameFilePath = Path.Combine(Settings.Current.GDataFolder, "SYSTEMSD.DAT");
-        GameFile = DatFile.Load<SYSTEMSD>(GameFilePath);
         InitializeComponent();
     }
 
     #endregion
 
     #region Events
-    protected override void LoadSideInfo()
-    {
-        foreach (var s in GameFile.Systems)
-        {
-            s.Name = ResourcesDlls.Textstra.RT_STRING[s.TextStraDllId];
-            s.EncyclopediaDescription = ResourcesDlls.Encytext.RT_RCDATA[(s.TextStraDllId - 4096).ToString()];
-        }
-        foreach (var s in SectorsGameFile.Sectors)
-        {
-            s.Name = ResourcesDlls.Textstra.RT_STRING[s.TextStraDllId];
-        }
-        foreach (var cs in CapitalShipsGameFile.CapitalShips)
-        {
-            cs.Name = ResourcesDlls.Textstra.RT_STRING[cs.TextStraDllId];
-            cs.EncyclopediaDescription = ResourcesDlls.Encytext.RT_RCDATA[(cs.TextStraDllId - 4096).ToString()];
-        }
-    }
     private void cancel_Click(object sender, EventArgs e)
     {
         Close();
     }
+
     private void export_Click(object sender, EventArgs e)
     {
         if (!File.Exists(Settings.Current.REBEXEFilePath))
@@ -68,10 +41,107 @@ public partial class ExportForm : ExportDesignForm
 
         // --------------------- CSVS ---------------------
         Directory.CreateDirectory("export\\csv");
-        File.WriteAllText(".\\export\\csv\\sectors.csv", SectorsGameFile.EntriesToCsv("Sectors"));
-        File.WriteAllText(".\\export\\csv\\systems.csv", GameFile.EntriesToCsv("Systems"));
-        File.WriteAllText(".\\export\\csv\\capitalships.csv", CapitalShipsGameFile.EntriesToCsv("CapitalShips"));
 
+        var sectorsGameFilePath = Path.Combine(Settings.Current.GDataFolder, "SECTORSD.DAT");
+        var sectorsGameFile = DatFile.Load<SECTORSD>(sectorsGameFilePath);
+        foreach (var s in sectorsGameFile.Sectors)
+        {
+            s.Name = ResourcesDlls.Textstra.RT_STRING[s.TextStraDllId];
+        }
+        File.WriteAllText(".\\export\\csv\\sectors.csv", sectorsGameFile.EntriesToCsv("Sectors"));
+
+        GameFilePath = Path.Combine(Settings.Current.GDataFolder, "SYSTEMSD.DAT");
+        GameFile = DatFile.Load<SYSTEMSD>(GameFilePath);
+        foreach (var s in GameFile.Systems)
+        {
+            s.Name = ResourcesDlls.Textstra.RT_STRING[s.TextStraDllId];
+            s.EncyclopediaDescription = ResourcesDlls.Encytext.RT_RCDATA[(s.TextStraDllId - 4096).ToString()];
+        }
+        File.WriteAllText(".\\export\\csv\\systems.csv", GameFile.EntriesToCsv("Systems"));
+
+        var majorCharactersGameFilePath = Path.Combine(Settings.Current.GDataFolder, "MJCHARSD.DAT");
+        var majorCharactersGameFile = DatFile.Load<MJCHARSD>(majorCharactersGameFilePath);
+        foreach (var mc in majorCharactersGameFile.MajorCharacters)
+        {
+            mc.Name = ResourcesDlls.Textstra.RT_STRING[mc.TextStraDllId];
+            mc.EncyclopediaDescription = ResourcesDlls.Encytext.RT_RCDATA[(mc.TextStraDllId - 4096).ToString()];
+        }
+        File.WriteAllText(".\\export\\csv\\majorcharacters.csv", majorCharactersGameFile.EntriesToCsv("MajorCharacters"));
+
+        var minorCharactersGameFilePath = Path.Combine(Settings.Current.GDataFolder, "MNCHARSD.DAT");
+        var minorCharactersGameFile = DatFile.Load<MNCHARSD>(minorCharactersGameFilePath);
+        foreach (var mc in minorCharactersGameFile.MinorCharacters)
+        {
+            mc.Name = ResourcesDlls.Textstra.RT_STRING[mc.TextStraDllId];
+            mc.EncyclopediaDescription = ResourcesDlls.Encytext.RT_RCDATA[(mc.TextStraDllId - 4096).ToString()];
+        }
+        File.WriteAllText(".\\export\\csv\\minorcharacters.csv", minorCharactersGameFile.EntriesToCsv("MinorCharacters"));
+
+        var troopsGameFilePath = Path.Combine(Settings.Current.GDataFolder, "TROOPSD.DAT");
+        var troopsGameFile = DatFile.Load<TROOPSD>(troopsGameFilePath);
+        foreach (var t in troopsGameFile.Troops)
+        {
+            t.Name = ResourcesDlls.Textstra.RT_STRING[t.TextStraDllId];
+            t.EncyclopediaDescription = ResourcesDlls.Encytext.RT_RCDATA[(t.TextStraDllId - 4096).ToString()];
+        }
+        File.WriteAllText(".\\export\\csv\\troops.csv", troopsGameFile.EntriesToCsv("Troops"));
+
+        var specialForcesGameFilePath = Path.Combine(Settings.Current.GDataFolder, "SPECFCSD.DAT");
+        var specialForcesGameFile = DatFile.Load<SPECFCSD>(specialForcesGameFilePath);
+        foreach (var sf in specialForcesGameFile.SpecialForces)
+        {
+            sf.Name = ResourcesDlls.Textstra.RT_STRING[sf.TextStraDllId];
+            sf.EncyclopediaDescription = ResourcesDlls.Encytext.RT_RCDATA[(sf.TextStraDllId - 4096).ToString()];
+        }
+        File.WriteAllText(".\\export\\csv\\specialforces.csv", specialForcesGameFile.EntriesToCsv("SpecialForces"));
+
+        var capitalShipsGameFilePath = Path.Combine(Settings.Current.GDataFolder, "CAPSHPSD.DAT");
+        var capitalShipsGameFile = DatFile.Load<CAPSHPSD>(capitalShipsGameFilePath);
+        foreach (var cs in capitalShipsGameFile.CapitalShips)
+        {
+            cs.Name = ResourcesDlls.Textstra.RT_STRING[cs.TextStraDllId];
+            cs.EncyclopediaDescription = ResourcesDlls.Encytext.RT_RCDATA[(cs.TextStraDllId - 4096).ToString()];
+        }
+        File.WriteAllText(".\\export\\csv\\capitalships.csv", capitalShipsGameFile.EntriesToCsv("CapitalShips"));
+
+        var fightersGameFilePath = Path.Combine(Settings.Current.GDataFolder, "FIGHTSD.DAT");
+        var fightersGameFile = DatFile.Load<FIGHTSD>(fightersGameFilePath);
+        foreach (var f in fightersGameFile.Fighters)
+        {
+            f.Name = ResourcesDlls.Textstra.RT_STRING[f.TextStraDllId];
+            f.EncyclopediaDescription = ResourcesDlls.Encytext.RT_RCDATA[(f.TextStraDllId - 4096).ToString()];
+        }
+        File.WriteAllText(".\\export\\csv\\fighters.csv", fightersGameFile.EntriesToCsv("Fighters"));
+
+        var defenseFacilitiesGameFilePath = Path.Combine(Settings.Current.GDataFolder, "DEFFACSD.DAT");
+        var defenseFacilitiesGameFile = DatFile.Load<DEFFACSD>(defenseFacilitiesGameFilePath);
+        foreach (var df in defenseFacilitiesGameFile.DefenseFacilities)
+        {
+            df.Name = ResourcesDlls.Textstra.RT_STRING[df.TextStraDllId];
+            df.EncyclopediaDescription = ResourcesDlls.Encytext.RT_RCDATA[(df.TextStraDllId - 4096).ToString()];
+        }
+        File.WriteAllText(".\\export\\csv\\defensefacilities.csv", defenseFacilitiesGameFile.EntriesToCsv("DefenseFacilities"));
+
+        var manufacturingFacilitiesGameFilePath = Path.Combine(Settings.Current.GDataFolder, "MANFACSD.DAT");
+        var manufacturingFacilitiesGameFile = DatFile.Load<MANFACSD>(manufacturingFacilitiesGameFilePath);
+        foreach (var mf in manufacturingFacilitiesGameFile.ManufacturingFacilities)
+        {
+            mf.Name = ResourcesDlls.Textstra.RT_STRING[mf.TextStraDllId];
+            mf.EncyclopediaDescription = ResourcesDlls.Encytext.RT_RCDATA[(mf.TextStraDllId - 4096).ToString()];
+        }
+        File.WriteAllText(".\\export\\csv\\manufacturingfacilities.csv", manufacturingFacilitiesGameFile.EntriesToCsv("ManufacturingFacilities"));
+
+        var productionFacilitiesGameFilePath = Path.Combine(Settings.Current.GDataFolder, "PROFACSD.DAT");
+        var productionFacilitiesGameFile = DatFile.Load<PROFACSD>(productionFacilitiesGameFilePath);
+        foreach (var pf in productionFacilitiesGameFile.ProductionFacilities)
+        {
+            pf.Name = ResourcesDlls.Textstra.RT_STRING[pf.TextStraDllId];
+            pf.EncyclopediaDescription = ResourcesDlls.Encytext.RT_RCDATA[(pf.TextStraDllId - 4096).ToString()];
+        }
+        File.WriteAllText(".\\export\\csv\\productionfacilities.csv", productionFacilitiesGameFile.EntriesToCsv("ProductionFacilities"));
+
+        Close();
+        return;
         // ---------------------------- EDATA ----------------------------
         Directory.CreateDirectory("export\\EDATA");
         var files = Directory.GetFiles(Settings.Current.EDataFolder);

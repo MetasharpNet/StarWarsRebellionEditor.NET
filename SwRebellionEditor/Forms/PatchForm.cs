@@ -7,19 +7,8 @@ public partial class PatchForm : PatchDesignForm
 {
     #region .ctor
 
-    private string CapitalShipsGameFilePath;
-    private CAPSHPSD CapitalShipsGameFile;
-    private string SectorsGameFilePath;
-    private SECTORSD SectorsGameFile;
-
     public PatchForm()
     {
-        CapitalShipsGameFilePath = Path.Combine(Settings.Current.GDataFolder, "CAPSHPSD.DAT");
-        CapitalShipsGameFile = DatFile.Load<CAPSHPSD>(CapitalShipsGameFilePath);
-        SectorsGameFilePath = Path.Combine(Settings.Current.GDataFolder, "SECTORSD.DAT");
-        SectorsGameFile = DatFile.Load<SECTORSD>(SectorsGameFilePath);
-        GameFilePath = Path.Combine(Settings.Current.GDataFolder, "SYSTEMSD.DAT");
-        GameFile = DatFile.Load<SYSTEMSD>(GameFilePath);
         InitializeComponent();
     }
 
@@ -133,25 +122,94 @@ public partial class PatchForm : PatchDesignForm
                 continue;
 
             // ---------------------------- CSV ---------------------------
-            
+
             foreach (var filePath in Directory.GetFiles(setFolder))
             {
                 if (Path.GetExtension(filePath).ToLowerInvariant() == ".csv")
                 {
                     if (filePath.ToLowerInvariant().Contains("sectors.csv"))
                     {
-                        SectorsGameFile.CsvToEntries(File.ReadAllText(filePath), "Sectors", "SectorsCount");
-                        SectorsGameFile.Save(SectorsGameFilePath);
+                        var sectorsGameFilePath = Path.Combine(Settings.Current.GDataFolder, "SECTORSD.DAT");
+                        var sectorsGameFile = DatFile.Load<SECTORSD>(sectorsGameFilePath);
+                        sectorsGameFile.CsvToEntries(File.ReadAllText(filePath), "Sectors", "SectorsCount");
+                        sectorsGameFile.Save(sectorsGameFilePath);
                     }
                     if (filePath.ToLowerInvariant().Contains("systems.csv"))
                     {
+                        GameFilePath = Path.Combine(Settings.Current.GDataFolder, "SYSTEMSD.DAT");
+                        GameFile = DatFile.Load<SYSTEMSD>(GameFilePath);
                         GameFile.CsvToEntries(File.ReadAllText(filePath), "Systems", "SystemsCount");
                         GameFile.Save(GameFilePath);
                     }
+                    if (filePath.ToLowerInvariant().Contains("majorcharacters.csv"))
+                    {
+                        var majorCharactersGameFilePath = Path.Combine(Settings.Current.GDataFolder, "MJCHARSD.DAT");
+                        var majorCharactersGameFile = DatFile.Load<MJCHARSD>(majorCharactersGameFilePath);
+                        majorCharactersGameFile.CsvToEntries(File.ReadAllText(filePath), "MajorCharacters", "MajorCharactersCount");
+                        majorCharactersGameFile.Save(majorCharactersGameFilePath);
+                    }
+                    if (filePath.ToLowerInvariant().Contains("minorcharacters.csv"))
+                    {
+                        var minorCharactersGameFilePath = Path.Combine(Settings.Current.GDataFolder, "MNCHARSD.DAT");
+                        var minorCharactersGameFile = DatFile.Load<MNCHARSD>(minorCharactersGameFilePath);
+                        minorCharactersGameFile.CsvToEntries(File.ReadAllText(filePath), "MinorCharacters", "MinorCharactersCount");
+                        minorCharactersGameFile.Save(minorCharactersGameFilePath);
+                    }
+                    if (filePath.ToLowerInvariant().Contains("troops.csv"))
+                    {
+                        var troopsGameFilePath = Path.Combine(Settings.Current.GDataFolder, "TROOPSD.DAT");
+                        var troopsGameFile = DatFile.Load<TROOPSD>(troopsGameFilePath);
+                        troopsGameFile.CsvToEntries(File.ReadAllText(filePath), "Troops", "TroopsCount");
+                        troopsGameFile.Save(troopsGameFilePath);
+                    }
+                    if (filePath.ToLowerInvariant().Contains("specialforces.csv"))
+                    {
+                        var specialForcesGameFilePath = Path.Combine(Settings.Current.GDataFolder, "SPECFCSD.DAT");
+                        var specialForcesGameFile = DatFile.Load<SPECFCSD>(specialForcesGameFilePath);
+                        specialForcesGameFile.CsvToEntries(File.ReadAllText(filePath), "SpecialForces", "SpecialForcesCount");
+                        specialForcesGameFile.Save(specialForcesGameFilePath);
+                    }
+                    if (filePath.ToLowerInvariant().Contains("specialforces.csv"))
+                    {
+                        var specialForcesGameFilePath = Path.Combine(Settings.Current.GDataFolder, "SPECFCSD.DAT");
+                        var specialForcesGameFile = DatFile.Load<SPECFCSD>(specialForcesGameFilePath);
+                        specialForcesGameFile.CsvToEntries(File.ReadAllText(filePath), "SpecialForces", "SpecialForcesCount");
+                        specialForcesGameFile.Save(specialForcesGameFilePath);
+                    }
                     if (filePath.ToLowerInvariant().Contains("capitalships.csv"))
                     {
-                        CapitalShipsGameFile.CsvToEntries(File.ReadAllText(filePath), "CapitalShips", "CapitalShipsCount");
-                        CapitalShipsGameFile.Save(CapitalShipsGameFilePath);
+                        var capitalShipsGameFilePath = Path.Combine(Settings.Current.GDataFolder, "CAPSHPSD.DAT");
+                        var capitalShipsGameFile = DatFile.Load<CAPSHPSD>(capitalShipsGameFilePath);
+                        capitalShipsGameFile.CsvToEntries(File.ReadAllText(filePath), "CapitalShips", "CapitalShipsCount");
+                        capitalShipsGameFile.Save(capitalShipsGameFilePath);
+                    }
+                    if (filePath.ToLowerInvariant().Contains("fighters.csv"))
+                    {
+                        var fightersGameFilePath = Path.Combine(Settings.Current.GDataFolder, "FIGHTSD.DAT");
+                        var fightersGameFile = DatFile.Load<FIGHTSD>(fightersGameFilePath);
+                        fightersGameFile.CsvToEntries(File.ReadAllText(filePath), "Fighters", "FightersCount");
+                        fightersGameFile.Save(fightersGameFilePath);
+                    }
+                    if (filePath.ToLowerInvariant().Contains("defenseFacilities.csv"))
+                    {
+                        var defenseFacilitiesGameFilePath = Path.Combine(Settings.Current.GDataFolder, "DEFFACSD.DAT");
+                        var defenseFacilitiesGameFile = DatFile.Load<DEFFACSD>(defenseFacilitiesGameFilePath);
+                        defenseFacilitiesGameFile.CsvToEntries(File.ReadAllText(filePath), "DefenseFacilities", "DefenseFacilitiesCount");
+                        defenseFacilitiesGameFile.Save(defenseFacilitiesGameFilePath);
+                    }
+                    if (filePath.ToLowerInvariant().Contains("manufacturingFacilities.csv"))
+                    {
+                        var manufacturingFacilitiesGameFilePath = Path.Combine(Settings.Current.GDataFolder, "MANFACSD.DAT");
+                        var manufacturingFacilitiesGameFile = DatFile.Load<MANFACSD>(manufacturingFacilitiesGameFilePath);
+                        manufacturingFacilitiesGameFile.CsvToEntries(File.ReadAllText(filePath), "ManufacturingFacilities", "ManufacturingFacilitiesCount");
+                        manufacturingFacilitiesGameFile.Save(manufacturingFacilitiesGameFilePath);
+                    }
+                    if (filePath.ToLowerInvariant().Contains("productionFacilities.csv"))
+                    {
+                        var productionFacilitiesGameFilePath = Path.Combine(Settings.Current.GDataFolder, "PROFACSD.DAT");
+                        var productionFacilitiesGameFile = DatFile.Load<PROFACSD>(productionFacilitiesGameFilePath);
+                        productionFacilitiesGameFile.CsvToEntries(File.ReadAllText(filePath), "ProductionFacilities", "ProductionFacilitiesCount");
+                        productionFacilitiesGameFile.Save(productionFacilitiesGameFilePath);
                     }
                 }
             }

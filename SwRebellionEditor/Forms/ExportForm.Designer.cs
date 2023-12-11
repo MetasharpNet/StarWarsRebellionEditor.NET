@@ -166,9 +166,9 @@ namespace SwRebellionEditor
             label2.AutoSize = true;
             label2.Location = new Point(33, 183);
             label2.Name = "label2";
-            label2.Size = new Size(349, 15);
+            label2.Size = new Size(516, 15);
             label2.TabIndex = 1166;
-            label2.Text = "- Exported Data (US ANSI .csv files split with ';') : Sectors, Systems";
+            label2.Text = "- Exported Data (US ANSI .csv files split with ';') : Sectors, Systems, Characters, Ships and Facilities";
             // 
             // ExportForm
             // 

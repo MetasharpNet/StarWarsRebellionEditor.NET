@@ -1,4 +1,6 @@
-﻿namespace SwRebellionEditor;
+﻿using System.Reflection;
+
+namespace SwRebellionEditor;
 
 public class MNCHARSD : DatFile
 {
@@ -8,6 +10,37 @@ public class MNCHARSD : DatFile
     public uint FamilyId; // 56
     public uint Field4_60; // 60
     public MNCHARSD_MinorCharacter[] MinorCharacters;
+
+    #region Custom Import/Export
+    protected override bool CustomCsvToField(FieldInfo? entryField, object? entry, string fieldName, string fieldValue)
+    {
+        switch (fieldName)
+        {
+            case "AdmiralName":
+                return true;
+            case "CommanderName":
+                return true;
+            case "GeneralName":
+                return true;
+            default:
+                return false;
+        }
+    }
+    protected override string CustomFieldToCsv(string fieldName, object fieldValue)
+    {
+        switch (fieldName)
+        {
+            case "AdmiralName":
+                return "-";
+            case "CommanderName":
+                return "-";
+            case "GeneralName":
+                return "-";
+            default:
+                return "";
+        }
+    }
+    #endregion
 }
 public class MNCHARSD_MinorCharacter
 {
