@@ -140,8 +140,6 @@ public partial class ExportForm : ExportDesignForm
         }
         File.WriteAllText(".\\export\\csv\\productionfacilities.csv", productionFacilitiesGameFile.EntriesToCsv("ProductionFacilities"));
 
-        Close();
-        return;
         // ---------------------------- EDATA ----------------------------
         Directory.CreateDirectory("export\\EDATA");
         var files = Directory.GetFiles(Settings.Current.EDataFolder);
