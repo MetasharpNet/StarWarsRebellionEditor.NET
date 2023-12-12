@@ -19,7 +19,9 @@ public partial class AllianceFleetTableForm : AllianceFleetTableDesignForm
     {
         var previousUnsavedData = GameFile.UnsavedData;
         groupComboBox.Items.AddRange(Identifier.AllianceCapitalShips);
+        groupComboBox.Items.AddRange(Identifier.EmpireCapitalShips);
         itemComboBox.Items.AddRange(Identifier.AllianceUnits);
+        itemComboBox.Items.AddRange(Identifier.EmpireUnits);
         foreach (var group in GameFile.Groups)
         {
             groupsDataGridView.Rows.Add(new object[2] { group.Entry, group.ToString() });

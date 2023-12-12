@@ -20,7 +20,8 @@ public partial class EmpireFleetTableForm : EmpireFleetTableDesignForm
         var previousUnsavedData = GameFile.UnsavedData;
 
         groupComboBox.Items.AddRange(Identifier.EmpireCapitalShips);
-        itemComboBox.Items.AddRange(Identifier.EmpireUnits);
+        groupComboBox.Items.AddRange(Identifier.AllianceCapitalShips);
+        itemComboBox.Items.AddRange(Identifier.AllianceUnits);
         foreach (var group in GameFile.Groups)
         {
             groupsDataGridView.Rows.Add(new object[2]
