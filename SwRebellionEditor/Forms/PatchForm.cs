@@ -17,11 +17,6 @@ public partial class PatchForm : PatchDesignForm
     #region Events
     protected override void LoadSideInfo()
     {
-        foreach (var s in GameFile.Systems)
-        {
-            s.Name = ResourcesDlls.Textstra.RT_STRING[s.TextStraDllId];
-            s.EncyclopediaDescription = ResourcesDlls.Encytext.RT_RCDATA[(s.TextStraDllId - 4096).ToString()];
-        }
     }
     private void cancel_Click(object sender, EventArgs e)
     {
