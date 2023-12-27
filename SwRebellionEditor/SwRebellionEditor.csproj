@@ -1477,6 +1477,21 @@
     <None Update="medias\MDATA\315-.wav">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="ships\EDATA\027-edata-longprobe-y-wing-recon-team.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="ships\EDATA\034-edata-a-wing.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="ships\EDATA\035-edata-b-wing.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="ships\EDATA\036-edata-x-wing.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="ships\EDATA\037-edata-y-wing.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="ships\TACTICAL.DLL\301\2080-1033-tactical-alliance-bulk-transport-close.x">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
