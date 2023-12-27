@@ -600,6 +600,40 @@ public partial class ExportForm : ExportDesignForm
 
     Dictionary<string, string> NamesMDATA = new Dictionary<string, string>
     {
+        { "000", "mdata-lucas arts intro" },
+        { "001", "mdata-opening intro" },
+        { "003", "mdata-rebel alliance intro" },
+        { "004", "mdata-empire intro" },
+        { "005", "mdata-end credits" },
+        { "101", "mdata-death star fires" },
+        { "102", "mdata-rebel headquarters destroyed" },
+        { "103", "mdata-coruscant captured" },
+        { "104", "mdata-death star sabotaged" },
+        { "105", "mdata-rebel alliance wins" },
+        { "106", "mdata-rebel alliance defeated" },
+        { "107", "mdata-empire defeated" },
+        { "108", "mdata-empire wins" },
+        { "201", "mdata-trench run succeeds" },
+        { "202", "mdata-trench run fails" },
+        { "300", "mdata-episode 6 the battle of endor 1 (into the trap, forest ambush, scout walker scramble, prime weapon fires) (medley) 0m00s~0m35s" },
+        { "301", "mdata-episode 4 rescue of the princess 3m51s-4m10 + episode 5 the heroics of luke and han 1m52s-2m17s + episode 5 the wampa’s lair, vision of obi‐wan, snowspeeders take flight (medley) 2m36s-2m57s + unknown" },
+        { "302", "mdata-episode 4 main title, approaching the death star, tatooine rendezvous 1m30s-2m24s + 2m34s-2m44s + unknown" },
+        { "303", "mdata-brother and sister, father and son, the fleet enters h... + inner city (end)" },
+        { "304", "mdata-episode 5 carbon freeze, darth vader's trap, departure of boba fett 0m0s-0m21s + the imperial probe, aboard the executor (medley) 0m13s-1m40s + carbon freeze, darth vader's trap, departure of boba fett 11m40s-11m50s" },
+        { "305", "mdata-lando's palace" },
+        // 0s-10s   lando palace 3m02s
+        // 10s-     endor 2 40s
+        // brother and sister, father and son, the fleet enters hyperspace, inner city (end)
+        { "306", "mdata-episode 6 the emperor arrives, the death of yoda, obi‐wan’s revelation (medley) 3m45s-6m13s" },
+        { "307", "mdata-episode 5 attacking a star destroyer 0m59s-1m30s" },
+        { "308", "mdata-episode 6 sail barge assault (alternate) 4m27s-4m56s" },
+        { "309", "mdata-episode 6 the emperor arrives, the death of yoda, obi‐wan’s revelation (medley) 7m04s-8m06s" },
+        { "310", "mdata-episode 5 the imperial march (darth vader's theme 0m0s-0m42s + 2m52s-2m57s" },
+        { "311", "mdata-episode 6 the emperor arrives, the death of yoda, obi‐wan’s revelation (medley) 0m09s-0m46s" },
+        { "312", "mdata-episode 5 the battle of hoth (ion cannon, imperial walkers, beneath the at‐at, escape in the millennium falcon) (medley) 0m39s-1m11s" },
+        { "313", "mdata-episode 5 the battle of hoth (ion cannon, imperial walkers, beneath the at‐at, escape in the millennium falcon) (medley) 11m03s-11m42s +fade10s" },
+        { "314", "mdata-episode 5 the imperial march (darth vader's theme) 2m15s-3m03s" },
+        { "315", "mdata-episode 6 the battle of endor 3 (superstructure chase, darth vader's death, the main reactor) (medley) 3m40s~4m28s" },
     };
     
     #endregion
