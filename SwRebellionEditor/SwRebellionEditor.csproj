@@ -1429,52 +1429,52 @@
     <None Update="interface\STRATEGY.DLL\Bitmap\903-strategy-galaxy-background-dark.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="medias\MDATA\300-.wav">
+    <None Update="medias\MDATA\300-mdata-episode 6 the battle of endor 1 %28into the trap, forest ambush, scout walker scramble, prime weapon fires%29 %28medley%29 0m00s~0m35s-remix.wav">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="medias\MDATA\301-.wav">
+    <None Update="medias\MDATA\301-mdata-.wav">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="medias\MDATA\302-.wav">
+    <None Update="medias\MDATA\302-mdata-.wav">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="medias\MDATA\303-.wav">
+    <None Update="medias\MDATA\303-mdata-.wav">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="medias\MDATA\304-.wav">
+    <None Update="medias\MDATA\304-mdata-.wav">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="medias\MDATA\305-.wav">
+    <None Update="medias\MDATA\305-mdata-.wav">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="medias\MDATA\306-.wav">
+    <None Update="medias\MDATA\306-mdata-episode 6 the emperor arrives, the death of yoda, obi‐wan’s revelation %28medley%29 3m45s-6m14s-remix.wav">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="medias\MDATA\307-.wav">
+    <None Update="medias\MDATA\307-mdata-episode 5 attacking a star destroyer 0m59s-1m32s-remix.wav">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="medias\MDATA\308-.wav">
+    <None Update="medias\MDATA\308-mdata-episode 6 sail barge assault %28alternate%29 4m27s-4m59s-remix.wav">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="medias\MDATA\309-.wav">
+    <None Update="medias\MDATA\309-mdata-episode 6 the emperor arrives, the death of yoda, obi‐wan’s revelation %28medley%29 7m04s-8m06s-remix.wav">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="medias\MDATA\310-.wav">
+    <None Update="medias\MDATA\310-mdata-episode 5 the imperial march %28darth vader%27s theme 0m0s-0m43s + 2m52s-2m58s-remix.wav">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="medias\MDATA\311-.wav">
+    <None Update="medias\MDATA\311-mdata-episode 6 the emperor arrives, the death of yoda, obi‐wan’s revelation %28medley%29 0m09s-0m46s-remix.wav">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="medias\MDATA\312-.wav">
+    <None Update="medias\MDATA\312-mdata-episode 5 the battle of hoth %28ion cannon, imperial walkers, beneath the at‐at, escape in the millennium falcon%29 %28medley%29 0m39s-1m11s-remix.wav">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="medias\MDATA\313-.wav">
+    <None Update="medias\MDATA\313-mdata-episode 5 the battle of hoth %28ion cannon, imperial walkers, beneath the at‐at, escape in the millennium falcon%29 %28medley%29 11m03s-11m42s-remix.wav">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="medias\MDATA\314-.wav">
+    <None Update="medias\MDATA\314-mdata-episode 5 the imperial march %28darth vader%27s theme%29 2m15s-3m03s-remix.wav">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="medias\MDATA\315-.wav">
+    <None Update="medias\MDATA\315-mdata-episode 6 the battle of endor 3 %28superstructure chase, darth vader%27s death, the main reactor%29 %28medley%29 3m40s~4m28s-remix.wav">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="ships\EDATA\027-edata-longprobe-y-wing-recon-team.bmp">

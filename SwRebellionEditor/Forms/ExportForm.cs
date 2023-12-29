@@ -1,4 +1,5 @@
 ﻿using SwRebellionEditor.ResourceHelpers;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace SwRebellionEditor;
 
@@ -624,14 +625,14 @@ public partial class ExportForm : ExportDesignForm
         // 0s-10s   lando palace 3m02s
         // 10s-     endor 2 40s
         // brother and sister, father and son, the fleet enters hyperspace, inner city (end)
-        { "306", "mdata-episode 6 the emperor arrives, the death of yoda, obi‐wan’s revelation (medley) 3m45s-6m13s" },
-        { "307", "mdata-episode 5 attacking a star destroyer 0m59s-1m30s" },
-        { "308", "mdata-episode 6 sail barge assault (alternate) 4m27s-4m56s" },
+        { "306", "mdata-episode 6 the emperor arrives, the death of yoda, obi‐wan’s revelation (medley) 3m45s-6m14s" },
+        { "307", "mdata-episode 5 attacking a star destroyer 0m59s-1m32s" },
+        { "308", "mdata-episode 6 sail barge assault (alternate) 4m27s-4m59s" },
         { "309", "mdata-episode 6 the emperor arrives, the death of yoda, obi‐wan’s revelation (medley) 7m04s-8m06s" },
-        { "310", "mdata-episode 5 the imperial march (darth vader's theme 0m0s-0m42s + 2m52s-2m57s" },
+        { "310", "mdata-episode 5 the imperial march (darth vader's theme 0m0s-0m43s + 2m52s-2m58s" },
         { "311", "mdata-episode 6 the emperor arrives, the death of yoda, obi‐wan’s revelation (medley) 0m09s-0m46s" },
         { "312", "mdata-episode 5 the battle of hoth (ion cannon, imperial walkers, beneath the at‐at, escape in the millennium falcon) (medley) 0m39s-1m11s" },
-        { "313", "mdata-episode 5 the battle of hoth (ion cannon, imperial walkers, beneath the at‐at, escape in the millennium falcon) (medley) 11m03s-11m42s +fade10s" },
+        { "313", "mdata-episode 5 the battle of hoth (ion cannon, imperial walkers, beneath the at‐at, escape in the millennium falcon) (medley) 11m03s-11m42s + fade 10s" },
         { "314", "mdata-episode 5 the imperial march (darth vader's theme) 2m15s-3m03s" },
         { "315", "mdata-episode 6 the battle of endor 3 (superstructure chase, darth vader's death, the main reactor) (medley) 3m40s~4m28s" },
     };
