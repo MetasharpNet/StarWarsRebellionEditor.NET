@@ -1432,19 +1432,19 @@
     <None Update="medias\MDATA\300-mdata-e6_battle_of_endor_1_medley_0m0-0m35.wav">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="medias\MDATA\301-mdata-.wav">
+    <None Update="medias\MDATA\301-mdata-ai-remastered.wav">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="medias\MDATA\302-mdata-e4_main_title,approaching_death_star,tatooine_rdv_1m30-2m26+2m34-2m49+e6_main_title_%28story_continues%29_4m30-4m50+e6_emperor_2m17-2m41.wav">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="medias\MDATA\303-mdata-.wav">
+    <None Update="medias\MDATA\303-mdata-ai-remastered.wav">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="medias\MDATA\304-mdata-.wav">
+    <None Update="medias\MDATA\304-mdata-ai-remastered.wav">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="medias\MDATA\305-mdata-.wav">
+    <None Update="medias\MDATA\305-mdata-ai-remastered.wav">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="medias\MDATA\306-mdata-e6_emperor_arrives,death_of_yoda,obi‐wan_revelation_medley_3m45-6m14.wav">
@@ -1478,7 +1478,7 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="medias\MDATA\readme.txt">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </None>
     <None Update="ships\EDATA\027-edata-longprobe-y-wing-recon-team.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
