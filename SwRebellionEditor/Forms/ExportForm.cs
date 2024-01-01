@@ -617,14 +617,11 @@ public partial class ExportForm : ExportDesignForm
         { "201", "mdata-trench_run_succeeds" },
         { "202", "mdata-trench_run_fails" },
         { "300", "mdata-e6_battle_of_endor_1_medley_0m0-0m35" },
-        { "301", "mdata-e4_rescue_princess_3m51-4m10+e5_heroics_of_luke_and_han_1m52-2m17+e5_wampa’s_lair_medley_2m36-2m57+unknown" },
+        { "301", "mdata-" },
         { "302", "mdata-e4_main_title,approaching_death_star,tatooine_rdv_1m30-2m26+2m34-2m49+e6_main_title_(story_continues)_4m30-4m50+e6_emperor_2m17-2m41" },
-        { "303", "mdata-brother and sister, father and son, the fleet enters h... + inner city (end)" },
-        { "304", "mdata-e5 carbon freeze, darth vader's trap, departure of boba fett 0m0s-0m21s + the imperial probe, aboard the executor (medley) 0m13s-1m40s + carbon freeze, darth vader's trap, departure of boba fett 11m40s-11m50s" },
-        { "305", "mdata-lando's palace" },
-        // 0s-10s   lando palace 3m02s
-        // 10s-     endor 2 40s
-        // brother and sister, father and son, the fleet enters hyperspace, inner city (end)
+        { "303", "mdata-" },
+        { "304", "mdata-" },
+        { "305", "mdata-" },
         { "306", "mdata-e6_emperor_arrives,death_of_yoda,obi‐wan_revelation_medley_3m45-6m14" },
         { "307", "mdata-e5_attacking_a_star destroyer_0m59-1m32" },
         { "308", "mdata-e6_sail_barge_assault_alternate_4m27-4m59" },
