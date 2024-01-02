@@ -1795,10 +1795,10 @@
     <None Update="ships\TACTICAL.DLL\303\ALLIANCE_BULK_TRANSPORT_CLOSE.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\303\ALLIANCE_BULK_TRANSPORT_FAR.bmp">
+    <None Update="ships\TACTICAL.DLL\303\ALLIANCE_BULK_TRANSPORT_FAR.BMP">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\303\ALLIANCE_BULK_TRANSPORT_MEDIUM.bmp">
+    <None Update="ships\TACTICAL.DLL\303\ALLIANCE_BULK_TRANSPORT_MEDIUM.BMP">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="ships\TACTICAL.DLL\303\ALLIANCE_BULWARK_CLASS_BATTLECRUISER_MARK_3_CLOSE.BMP">
@@ -1819,13 +1819,13 @@
     <None Update="ships\TACTICAL.DLL\303\ALLIANCE_CC_7700_FRIGATE_MEDIUM.BMP">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\303\ALLIANCE_CC_9600_FRIGATE_CLOSE.bmp">
+    <None Update="ships\TACTICAL.DLL\303\ALLIANCE_CC_9600_FRIGATE_CLOSE.BMP">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\303\ALLIANCE_CC_9600_FRIGATE_FAR.bmp">
+    <None Update="ships\TACTICAL.DLL\303\ALLIANCE_CC_9600_FRIGATE_FAR.BMP">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\303\ALLIANCE_CC_9600_FRIGATE_MEDIUM.bmp">
+    <None Update="ships\TACTICAL.DLL\303\ALLIANCE_CC_9600_FRIGATE_MEDIUM.BMP">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="ships\TACTICAL.DLL\303\ALLIANCE_CORELLIAN_CORVETTE_CLOSE.BMP">
@@ -1900,13 +1900,13 @@
     <None Update="ships\TACTICAL.DLL\303\ALLIANCE_REPUBLIC_DREADNAUGHT_CLASS_HEAVY_CRUISER_MEDIUM.BMP">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\303\EMPIRE_ASSAULT_TRANSPORT_CLOSE.bmp">
+    <None Update="ships\TACTICAL.DLL\303\EMPIRE_ASSAULT_TRANSPORT_CLOSE.BMP">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\303\EMPIRE_ASSAULT_TRANSPORT_FAR.bmp">
+    <None Update="ships\TACTICAL.DLL\303\EMPIRE_ASSAULT_TRANSPORT_FAR.BMP">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\303\EMPIRE_ASSAULT_TRANSPORT_MEDIUM.bmp">
+    <None Update="ships\TACTICAL.DLL\303\EMPIRE_ASSAULT_TRANSPORT_MEDIUM.BMP">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="ships\TACTICAL.DLL\303\EMPIRE_CARRACK_CLASS_LIGHT_CRUISER_CLOSE.BMP">
@@ -1954,13 +1954,13 @@
     <None Update="ships\TACTICAL.DLL\303\EMPIRE_IMPERIAL_2_STAR_DESTROYER_MEDIUM.BMP">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\303\EMPIRE_IMPERIAL_DREADNOUGHT_CLOSE.bmp">
+    <None Update="ships\TACTICAL.DLL\303\EMPIRE_IMPERIAL_DREADNOUGHT_CLOSE.BMP">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\303\EMPIRE_IMPERIAL_DREADNOUGHT_FAR.bmp">
+    <None Update="ships\TACTICAL.DLL\303\EMPIRE_IMPERIAL_DREADNOUGHT_FAR.BMP">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\303\EMPIRE_IMPERIAL_DREADNOUGHT_MEDIUM.bmp">
+    <None Update="ships\TACTICAL.DLL\303\EMPIRE_IMPERIAL_DREADNOUGHT_MEDIUM.BMP">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="ships\TACTICAL.DLL\303\EMPIRE_IMPERIAL_ESCORT_CARRIER_CLOSE.BMP">
