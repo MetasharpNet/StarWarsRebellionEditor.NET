@@ -155,7 +155,7 @@ namespace SwRebellionEditor
             warningLabel.Name = "warningLabel";
             warningLabel.Size = new Size(647, 15);
             warningLabel.TabIndex = 1163;
-            warningLabel.Text = "This patch was released 2023-12-11 and is provided without any warranty of any kind. Doesn't work with older savegames.";
+            warningLabel.Text = "This patch was released 2024-01-02 and is provided without any warranty of any kind. Doesn't work with older savegames.";
             // 
             // patchInfoLabel
             // 
@@ -176,7 +176,7 @@ namespace SwRebellionEditor
             label1Requirement.Name = "label1Requirement";
             label1Requirement.Size = new Size(253, 15);
             label1Requirement.TabIndex = 1165;
-            label1Requirement.Text = "Includes update 1.02 (dgvoodoo2 directx 2.82.1)";
+            label1Requirement.Text = "Includes update 1.02 (dgvoodoo2 directx 2.82.2)";
             // 
             // label1
             // 
