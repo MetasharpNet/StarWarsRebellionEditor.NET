@@ -117,8 +117,13 @@ public partial class PatchForm : PatchDesignForm
                 continue;
 
             // ---------------------------- CSV ---------------------------
-
-            foreach (var filePath in Directory.GetFiles(setFolder))
+            var csvFiles = new List<string>();
+            csvFiles.AddRange(Directory.GetFiles(setFolder, "*.csv"));
+            foreach (var folder in Directory.GetDirectories(setFolder))
+            {
+                csvFiles.AddRange(Directory.GetFiles(folder, "*.csv"));
+            }
+            foreach (var filePath in csvFiles)
             {
                 if (Path.GetExtension(filePath).ToLowerInvariant() == ".csv")
                 {
