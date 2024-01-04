@@ -4104,6 +4104,210 @@
     <None Update="tactical-dll.act">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="tactical-ui\TACTICAL.DLL\BITMAP\1000-1033-tactical-control-panel.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="tactical-ui\TACTICAL.DLL\BITMAP\1001-1033-tactical-task-forces-alliance.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="tactical-ui\TACTICAL.DLL\BITMAP\1004-1033-tactical-task-forces-empire.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="tactical-ui\TACTICAL.DLL\BITMAP\1005-1033-tactical-task-force-button-unpressed.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="tactical-ui\TACTICAL.DLL\BITMAP\1006-1033-tactical-task-force-button-pressed.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="tactical-ui\TACTICAL.DLL\BITMAP\1007-1033-tactical-task-force-button-unassigned.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="tactical-ui\TACTICAL.DLL\BITMAP\1008-1033-tactical-fighter-squadrons-alliance.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="tactical-ui\TACTICAL.DLL\BITMAP\1010-1033-tactical-fighter-squadrons-empire.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="tactical-ui\TACTICAL.DLL\BITMAP\1012-1033-tactical-red-squadron-button-unpressed.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="tactical-ui\TACTICAL.DLL\BITMAP\1013-1033-tactical-blue-squadron-button-unpressed.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="tactical-ui\TACTICAL.DLL\BITMAP\1014-1033-tactical-green-squadron-button-unpressed.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="tactical-ui\TACTICAL.DLL\BITMAP\1015-1033-tactical-gold-squadron-button-unpressed.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="tactical-ui\TACTICAL.DLL\BITMAP\1016-1033-tactical-red-squadron-button-pressed.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="tactical-ui\TACTICAL.DLL\BITMAP\1017-1033-tactical-blue-squadron-button-pressed.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="tactical-ui\TACTICAL.DLL\BITMAP\1018-1033-tactical-green-squadron-button-pressed.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="tactical-ui\TACTICAL.DLL\BITMAP\1019-1033-tactical-gold-squadron-button-pressed.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="tactical-ui\TACTICAL.DLL\BITMAP\1020-1033-tactical-squadron-unassigned.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="tactical-ui\TACTICAL.DLL\BITMAP\1021-1033-tactical-death-star-laser-ready.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="tactical-ui\TACTICAL.DLL\BITMAP\1022-1033-tactical-death-star-laser-fired.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="tactical-ui\TACTICAL.DLL\BITMAP\1023-1033-tactical-death star-laser-loading.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="tactical-ui\TACTICAL.DLL\BITMAP\1024-1033-tactical-death-star-laser-gauge.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="tactical-ui\TACTICAL.DLL\BITMAP\1034-1033-tactical-highlight-alliance-ships.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="tactical-ui\TACTICAL.DLL\BITMAP\1035-1033-tactical-dim-alliance-ships.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="tactical-ui\TACTICAL.DLL\BITMAP\1036-1033-tactical-highlight-empire-ships.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="tactical-ui\TACTICAL.DLL\BITMAP\1037-1033-tactical-dim-empire-ships.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="tactical-ui\TACTICAL.DLL\BITMAP\1105-1033-tactical-maneuvers-tactics-unpressed.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="tactical-ui\TACTICAL.DLL\BITMAP\1106-1033-tactical-maneuvers-tactics-pressed.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="tactical-ui\TACTICAL.DLL\BITMAP\1107-1033-tactical-missions-unpressed.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="tactical-ui\TACTICAL.DLL\BITMAP\1108-1033-tactical-missions-pressed.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="tactical-ui\TACTICAL.DLL\BITMAP\1113-1033-tactical-assign-maneuver-tactics-unpressed.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="tactical-ui\TACTICAL.DLL\BITMAP\1114-1033-tactical-assign-maneuver-tactics-pressed.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="tactical-ui\TACTICAL.DLL\BITMAP\1115-1033-tactical-cancel-unpressed.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="tactical-ui\TACTICAL.DLL\BITMAP\1116-1033-tactical-cancel-pressed.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="tactical-ui\TACTICAL.DLL\BITMAP\1149-1033-tactical-withdraw-from-battle-unpressed.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="tactical-ui\TACTICAL.DLL\BITMAP\1150-1033-tactical-withdraw-from-battle-pressed.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="tactical-ui\TACTICAL.DLL\BITMAP\1170-1033-tactical-recover-empire-unpressed.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="tactical-ui\TACTICAL.DLL\BITMAP\1171-1033-tactical-recover-empire-pressed.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="tactical-ui\TACTICAL.DLL\BITMAP\1172-1033-tactical-recover-empire-disabled.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="tactical-ui\TACTICAL.DLL\BITMAP\1173-1033-tactical-recover-alliance-unpressed.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="tactical-ui\TACTICAL.DLL\BITMAP\1174-1033-tactical-recover-alliance-pressed.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="tactical-ui\TACTICAL.DLL\BITMAP\1175-1033-tactical-recover-alliance-disabled.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="tactical-ui\TACTICAL.DLL\BITMAP\1176-1033-tactical-attack-death-star-unpressed.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="tactical-ui\TACTICAL.DLL\BITMAP\1177-1033-tactical-attack-death-star-pressed.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="tactical-ui\TACTICAL.DLL\BITMAP\1178-1033-tactical-attack-death-star-disabled.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="tactical-ui\TACTICAL.DLL\BITMAP\1179-1033-tactical-attack-capital-ships-alliance-unpressed.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="tactical-ui\TACTICAL.DLL\BITMAP\1180-1033-tactical-attack-capital-ships-alliance-pressed.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="tactical-ui\TACTICAL.DLL\BITMAP\1182-1033-tactical-attack-capital-ships-empire-unpressed.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="tactical-ui\TACTICAL.DLL\BITMAP\1183-1033-tactical-attack-capital-ships-empire-pressed.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="tactical-ui\TACTICAL.DLL\BITMAP\1191-1033-tactical-attack-fighters-alliance-unpressed.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="tactical-ui\TACTICAL.DLL\BITMAP\1192-1033-tactical-attack-fighters-alliance-pressed.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="tactical-ui\TACTICAL.DLL\BITMAP\1194-1033-tactical-attack-fighters-empire-unpressed.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="tactical-ui\TACTICAL.DLL\BITMAP\1195-1033-tactical-attack-fighters-empire-pressed.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="tactical-ui\TACTICAL.DLL\BITMAP\1206-1033-tactical-weapon-recharge-0%25.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="tactical-ui\TACTICAL.DLL\BITMAP\1207-1033-tactical-weapon-recharge-25%25.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="tactical-ui\TACTICAL.DLL\BITMAP\1208-1033-tactical-weapon-recharge-50%25.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="tactical-ui\TACTICAL.DLL\BITMAP\1209-1033-tactical-weapon-recharge-75%25.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="tactical-ui\TACTICAL.DLL\BITMAP\1210-1033-tactical-weapon-recharge-100%25.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="tactical-ui\TACTICAL.DLL\BITMAP\1302-1033-tactical-right-panel-hull-integrity-shield-strength.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="tactical-ui\TACTICAL.DLL\BITMAP\1303-1033-tactical-shutter-alliance.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="tactical-ui\TACTICAL.DLL\BITMAP\1304-1033-tactical-shutter-empire.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="tactical-ui\TACTICAL.DLL\BITMAP\2151-1033-tactical-missions-hud-attack-capital-ships-alliance.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="tactical-ui\TACTICAL.DLL\BITMAP\2152-1033-tactical-missions-hud-attack-fighters-alliance.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="tactical-ui\TACTICAL.DLL\BITMAP\2153-1033-tactical-missions-hud-recover-alliance.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="tactical-ui\TACTICAL.DLL\BITMAP\2154-1033-tactical-missions-hud-attack-death-star-alliance.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="tactical-ui\TACTICAL.DLL\BITMAP\2155-1033-tactical-missions-hud-attack-capital-ships-empire.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="tactical-ui\TACTICAL.DLL\BITMAP\2156-1033-tactical-missions-hud-attack-fighters-empire.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="tactical-ui\TACTICAL.DLL\BITMAP\2157-1033-tactical-missions-hud-recover-empire.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="tactical-ui\TACTICAL.DLL\BITMAP\2158-1033-tactical-hud-empty.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="test\readme.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
