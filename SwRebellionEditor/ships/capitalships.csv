@@ -1,0 +1,451 @@
+Id;Field2_1;ProductionFamily;NextProductionFamily;FamilyId;TextStraDllId;Field7_2;IsAlliance;IsEmpire;RefinedMaterialCost;MaintenanceCost;ResearchOrder;ResearchDifficulty;UprisingDefense;Detection;ShieldStrength;SubLightEngine;Maneuverability;Hyperdrive;HyperdriveIfDamaged;TurbolaserFore;IonCannonFore;LaserCannonFore;TurbolaserAft;IonCannonAft;LaserCannonAft;TurbolaserPort;IonCannonPort;LaserCannonPort;TurbolaserStarboard;IonCannonStarboard;LaserCannonStarboard;TurbolaserRange;IonCannonRange;LaserCannonRange;TurbolaserAttackStrength;IonCannonAttackStrength;LaserCannonAttackStrength;OverallAttackStrength;Hull;TractorBeamPower;TractorBeamRange;GravityWellProjector;InterdictionStrength;BombardmentModifier;DamageControl;WeaponRechargeRate;ShieldRechargeRate;FighterCapacity;TroopCapacity;Field51_0;Name;EncyclopediaDescription
+64;1;40;41;20;10048;2;1;0;92;70;2;24;42;10;300;4;2;60;100;60;40;0;60;40;0;120;60;0;120;60;0;50;35;0;360;200;0;560;2400;2;20;0;0;2;50;18;15;3;1;0;MC80 Liberty Cruiser;"[ALLIANCE] MC80 Liberty type Heavy Star Cruiser (1200m)
+  Cost 92, Maintenance 70, Fighters 3, Troops 1
+
+ATK: vs Ships 180, vs Fighters 0, Reload 18
+DEF: Shield/Recharge 300/15, DamageControl 50, Hull 2400
+MOV: Maneuverability 2, Hyperdrive/Backup 60/100
+SPE: Bombardment 2
+
+DMG: Front, Back, Sides (Range)
+    + Turbolasers: 60, 60, 120 (5000m)
+    + Ions/Torpedoes: 40, 40, 60 (3500m)
+    + Lasers: -
+
+Company: Mon Calamari Shipyards
+History: Recently developed in  Mon Cala, a planet renowned for its shipbuilding expertise, these cruisers are fast becoming a backbone for the Rebel Alliance's fleet. Transitioning from peaceful star liners to formidable warships, they embody the Mon Calamari's steadfast commitment to resisting the Galactic Empire. Each MC80 is distinct, a testament to Mon Cala's approach to individualized design. Their participation in the Galactic Civil War, especially in recent key conflicts, marks them as potent symbols of hope and rebellion against the Empire's tyranny. Their unique design and capabilities have quickly made them a subject of both awe and inspiration in the fight for freedom across the galaxy."
+65;1;40;41;20;10049;2;1;0;30;30;0;0;15;10;200;3;1;80;120;15;0;0;0;0;0;30;0;0;30;0;0;35;0;0;75;0;0;75;1200;1;20;0;0;1;5;6;10;0;0;0;Bulk Cruiser;"[ALLIANCE] Neutron Star-class Bulk Cruiser (600m)
+  Cost 30, Maintenance 30, Fighters 0, Troops 0
+
+ATK: vs Ships 30, vs Fighters 0, Reload 6
+DEF: Shield/Recharge 200/10, DamageControl 5, Hull 1200
+MOV: Maneuverability 1, Hyperdrive/Backup 80/120
+SPE: Bombardment 1
+
+DMG: Front, Back, Sides (Range)
+    + Turbolasers: 15, 0, 30 (3500m)
+    + Ions/Torpedoes: -
+    + Lasers: -
+
+Company: Rendili StarDrive
+History: These ships, distinguished by their robust structures and versatile capabilities, have been involved in various roles across the galaxy. They were primarily seen in service with the Galactic Empire, often deployed for military logistics and transport duties. Their design allows for modifications, making them a common choice for specialized missions. The destruction of the Death Star at the Battle of Yavin marked a period where the Empire relied heavily on such cruisers for rapid redeployment of resources, highlighting their strategic importance in the wake of significant losses."
+66;1;40;41;20;10050;2;1;0;60;60;7;60;30;15;600;5;2;80;120;70;50;0;0;0;0;120;40;0;120;40;0;60;35;0;310;130;0;440;1400;0;0;0;0;2;30;16;30;0;0;0;Assault Frigate;"[ALLIANCE] Assault Frigate Mark I (700m)
+  Cost 60, Maintenance 60, Fighters 0, Troops 0
+
+ATK: vs Ships 160, vs Fighters 0, Reload 16
+DEF: Shield/Recharge 600/30, DamageControl 30, Hull 1400
+MOV: Maneuverability 2, Hyperdrive/Backup 80/120
+SPE: Bombardment 2
+
+DMG: Front, Back, Sides (Range)
+    + Turbolasers: 70, 0, 120 (6000m)
+    + Ions/Torpedoes: 50, 0, 40 (3500m)
+    + Lasers: -
+
+Company: Galactic Republic
+History: This frigate, a Rendili StarDrive Dreadnaught-class heavy cruiser, was extensively modified by the Rebel Alliance. These modifications were primarily for combat effectiveness against the Galactic Empire, particularly after the destruction of the Death Star at the Battle of Yavin. The Assault Frigate Mark I played a crucial role in the Rebel fleet, serving as a backbone for their naval forces. Its firepower, speed, and shielding made it a formidable opponent against Imperial forces. The ship's presence in key battles and its adaptability to various combat roles underscored its importance in the Alliance's efforts to restore democracy to the galaxy."
+67;1;40;41;20;10051;2;1;0;34;35;1;12;15;30;300;3;2;80;120;80;0;60;0;0;60;40;0;30;40;0;30;60;0;17;160;0;180;340;600;1;20;0;0;1;20;12;15;2;0;0;Nebulon-B Frigate;"[ALLIANCE] EF76 Nebulon-B Escort Frigate (300m)
+  Cost 34, Maintenance 35, Fighters 2, Troops 0
+
+ATK: vs Ships 80, vs Fighters 60, Reload 12
+DEF: Shield/Recharge 300/15, DamageControl 20, Hull 600
+MOV: Maneuverability 2, Hyperdrive/Backup 80/120
+SPE: Bombardment 1
+
+DMG: Front, Back, Sides (Range)
+    + Turbolasers: 80, 0, 40 (6000m)
+    + Ions/Torpedoes: -
+    + Lasers: 60, 60, 30 (1700m)
+
+Company: Kuat Drive Yards
+History: Initially designed for the Imperial Navy, these frigates became a symbol of versatility and resilience. After the Battle of Yavin and the destruction of the Death Star, several Nebulon-B frigates were captured or defected to the Rebel Alliance, where they served as key assets. Their adaptability for roles ranging from escort missions to medical services made them invaluable. The Nebulon-B's distinctive elongated design and its presence in numerous critical engagements made it a noteworthy contributor to the Galactic Civil War's naval operations."
+68;1;40;41;20;10052;2;1;0;32;29;0;0;10;10;200;2;1;80;120;0;0;30;0;0;0;0;0;60;0;0;60;0;0;17;0;0;150;150;900;0;0;0;0;0;5;4;10;6;0;0;Alliance Escort Carrier;"[ALLIANCE] Quasar Fire-class Cruiser-Carrier (350m)
+  Cost 32, Maintenance 29, Fighters 6, Troops 0
+
+ATK: vs Ships 0, vs Fighters 60, Reload 4
+DEF: Shield/Recharge 200/10, DamageControl 5, Hull 900
+MOV: Maneuverability 1, Hyperdrive/Backup 80/120
+SPE: Bombardment 0
+
+DMG: Front, Back, Sides (Range)
+    + Turbolasers: -
+    + Ions/Torpedoes: -
+    + Lasers: 30, 0, 60 (1700m)
+
+Company: Sienar Fleet Systems
+History: The Alliance Escort Carrier, was originally a Quasar Fire-class cruiser-carrier later repurposed by the Rebel Alliance. These vessels became crucial to the Alliance's fleet, primarily used for launching and supporting starfighter squadrons. Their adaptation from commercial cargo ships to military use was emblematic of the Rebellion's resourcefulness. These carriers played a significant role in the aftermath of the Death Star's destruction, enhancing the Rebel fleet's operational capabilities and providing vital starfighter support in numerous engagements against the Galactic Empire. The presence of these carriers allowed the Rebel Alliance to project power and maintain a mobile presence, crucial for their hit-and-run tactics against the more massive Imperial Navy."
+69;1;40;41;20;10053;2;1;0;14;23;0;0;7;20;200;6;3;80;0;0;0;120;0;0;90;0;0;120;0;0;120;0;0;17;0;0;450;450;500;0;0;0;0;1;10;8;10;0;0;0;Corellian Corvette;"[ALLIANCE] CR90 Correlian Corvette (150m)
+  Cost 14, Maintenance 23, Fighters 0, Troops 0
+
+ATK: vs Ships 0, vs Fighters 120, Reload 8
+DEF: Shield/Recharge 200/10, DamageControl 10, Hull 500
+MOV: Maneuverability 3, Hyperdrive/Backup 80/-
+SPE: Bombardment 1
+
+DMG: Front, Back, Sides (Range)
+    + Turbolasers: -
+    + Ions/Torpedoes: -
+    + Lasers: 120, 90, 120 (1700m)
+
+Company: Corellian Engineering Corporation
+History: These corvettes are celebrated for their speed and versatility, making them a staple in various fleets. Notably, the CR90 became synonymous with the Rebel Alliance, serving as a key asset in their fight against the Galactic Empire. The most famous of these, the Tantive IV, played a crucial role in the events leading to the Battle of Yavin, involving the theft of the Death Star plans. The CR90's durability and adaptability have made it a symbol of resistance and hope in the Galactic Civil War."
+70;1;40;41;20;10054;2;1;0;10;12;0;0;3;5;100;2;2;100;0;0;0;0;0;0;0;0;0;30;0;0;30;0;0;17;0;0;60;60;360;0;0;0;0;0;5;2;5;0;2;0;Medium Transport;"[ALLIANCE] GR-75 Medium Transport (90m)
+  Cost 10, Maintenance 12, Fighters 0, Troops 2
+
+ATK: vs Ships 0, vs Fighters 30, Reload 2
+DEF: Shield/Recharge 100/5, DamageControl 5, Hull 360
+MOV: Maneuverability 2, Hyperdrive/Backup 100/-
+SPE: Bombardment 0
+
+DMG: Front, Back, Sides (Range)
+    + Turbolasers: -
+    + Ions/Torpedoes: -
+    + Lasers: 0, 0, 30 (1700m)
+
+Company: Gallofree Yards, Inc.
+History: This transport has a distinguished history, particularly for its role within the Rebel Alliance. Initially designed for commercial cargo transport, these ships were repurposed by the Rebellion due to their high cargo capacity and modifiability. They were crucial in evacuating Rebel bases, most notably during the evacuation of Hoth, where their effectiveness in rapid deployment and retreat was demonstrated. GR-75 transports were often seen in Rebel convoys, transporting troops, supplies, and equipment crucial for the survival and operations of the Alliance in their struggle against the Galactic Empire. Their utilitarian design and reliability made them a backbone in the logistics of the Rebel fleet."
+71;1;40;41;20;10055;2;1;0;24;22;0;0;6;1;200;1;1;90;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;600;0;0;0;0;0;5;0;10;0;6;0;Bulk Freighter;"[ALLIANCE] Action VI Bulk Freighter (100m)
+  Cost 24, Maintenance 22, Fighters 0, Troops 6
+
+ATK: vs Ships 0, vs Fighters 0, Reload -
+DEF: Shield/Recharge 200/10, DamageControl 5, Hull 600
+MOV: Maneuverability 1, Hyperdrive/Backup 90/-
+SPE: Bombardment 0
+
+DMG: Front, Back, Sides (Range)
+    + Turbolasers: -
+    + Ions/Torpedoes: -
+    + Lasers: -
+
+Company: Corellian Engineering Corporation
+History: This freighter holds a significant place in the logistical and trade networks of the galaxy. Designed primarily for cargo transport, these freighters were a common sight in commercial space lanes, transporting goods across various sectors. Their robust design and large cargo holds made them popular among shipping companies and independent traders. While not heavily armed or particularly fast, the Action VI's reliability and ease of modification allowed it to maintain prominence in the galactic economy. In the wake of the Death Star's destruction, these freighters continued to play a vital role in both commercial and, occasionally, covert operations, supporting various factions during the Galactic Civil War."
+72;1;40;41;20;10056;2;1;0;10;23;4;48;5;30;200;10;4;80;160;0;0;90;0;0;90;0;0;150;0;0;150;0;0;25;0;0;480;480;300;0;0;0;0;0;20;10;10;0;0;0;Corellian Gunship;"[ALLIANCE] DP20 Frigate Corellian Gunship (120m)
+  Cost 10, Maintenance 23, Fighters 0, Troops 0
+
+ATK: vs Ships 0, vs Fighters 150, Reload 10
+DEF: Shield/Recharge 200/10, DamageControl 20, Hull 300
+MOV: Maneuverability 4, Hyperdrive/Backup 80/160
+SPE: Bombardment 0
+
+DMG: Front, Back, Sides (Range)
+    + Turbolasers: -
+    + Ions/Torpedoes: -
+    + Lasers: 90, 90, 150 (2500m)
+
+Company: Corellian Engineering Corporation
+History: Designed for fast-paced combat, these frigates were integral to numerous engagements during the Galactic Civil War. Their role was particularly pronounced within the Rebel Alliance, where they were valued for their speed and firepower. Capable of engaging larger Imperial ships and providing crucial support in fleet battles, DP20s were often at the forefront of skirmishes. Their effectiveness in hit-and-run tactics and ability to punch above their weight class made them a preferred choice for missions requiring agility and combat prowess. In the aftermath of the Death Star's destruction, DP20 frigates continued to play a key role in the ongoing conflict against the Empire."
+73;1;40;41;20;10057;2;1;0;44;33;0;0;19;10;200;3;1;80;180;40;0;0;20;0;0;70;0;0;70;0;0;60;0;0;200;0;0;200;1200;0;0;0;0;1;10;7;10;1;2;0;MC40a Light Cruiser;"[ALLIANCE] MC40a Light Cruiser (550m)
+  Cost 44, Maintenance 33, Fighters 1, Troops 2
+
+ATK: vs Ships 70, vs Fighters 0, Reload 7
+DEF: Shield/Recharge 200/10, DamageControl 10, Hull 1200
+MOV: Maneuverability 1, Hyperdrive/Backup 80/180
+SPE: Bombardment 1
+
+DMG: Front, Back, Sides (Range)
+    + Turbolasers: 40, 20, 70 (6000m)
+    + Ions/Torpedoes: -
+    + Lasers: -
+
+Company: Mon Calamari Shipyards
+History: This cruiser is a vessel that became increasingly significant in these times, particularly within the ranks of the Rebel Alliance. These cruisers are known for their unique design, a hallmark of Mon Calamari engineering. The MC40a played a critical role in the Rebel fleet due to its versatility as a warship. Equipped with formidable armaments and deflector shields, it was more than capable of engaging Imperial forces in various confrontations. The MC40a's blend of firepower and maneuverability made it a valuable asset in the Rebel Alliance's arsenal, particularly in the wake of the Death Star's destruction, contributing significantly to their strategic operations during the Galactic Civil War."
+74;1;40;41;20;10058;2;1;0;42;37;6;70;17;10;300;4;1;70;140;10;0;60;0;0;90;20;0;90;20;0;90;50;0;17;50;0;330;380;1400;1;20;4;100;1;30;8;15;0;0;0;CC-7700 Frigate;"[ALLIANCE] CC-7700 Frigate (180m)
+  Cost 42, Maintenance 37, Fighters 0, Troops 0
+
+ATK: vs Ships 20, vs Fighters 90, Reload 8
+DEF: Shield/Recharge 300/15, DamageControl 30, Hull 1400
+MOV: Maneuverability 1, Hyperdrive/Backup 70/140
+SPE: Bombardment 1, Interdictor
+
+DMG: Front, Back, Sides (Range)
+    + Turbolasers: 10, 0, 20 (5000m)
+    + Ions/Torpedoes: -
+    + Lasers: 60, 90, 90 (1700m)
+
+Company: Rendili StarDrive
+History: This model, primarily noted for its experimental nature, was part of a series of frigates that featured cutting-edge technologies. The CC-7700's notable feature was its gravity well projectors, intended to prevent enemy ships from escaping into hyperspace, making it a strategic asset in controlling enemy movements during engagements. While not as heavily armed as some other combat vessels, the tactical advantage provided by its unique technology made it valuable in the Galactic Empire's fleet composition, especially in the period following the destruction of the Death Star, where controlling rebel movements became increasingly important."
+75;1;40;41;20;10059;2;1;0;248;175;11;100;110;10;1100;3;2;60;100;600;200;0;120;80;0;300;150;0;300;150;0;70;40;0;1320;580;0;1900;3000;6;20;0;0;4;40;80;60;10;4;0;Viscount Star Defender;"[ALLIANCE] Viscount-class Star Defender (17000m)
+  Cost 248, Maintenance 175, Fighters 10, Troops 4
+
+ATK: vs Ships 800, vs Fighters 0, Reload 80
+DEF: Shield/Recharge 1100/60, DamageControl 40, Hull 3000
+MOV: Maneuverability 2, Hyperdrive/Backup 60/100
+SPE: Bombardment 4
+
+DMG: Front, Back, Sides (Range)
+    + Turbolasers: 600, 120, 300 (7000m)
+    + Ions/Torpedoes: 200, 80, 150 (4000m)
+    + Lasers: -
+
+Company: Mon Calamari Shipyards
+History: The Viscount represents a significant development in starship design. This class was conceived as a direct response to the growing threat of the Galactic Empire, especially its Star Destroyers. The Viscount-class was designed to be a formidable opponent in large-scale space battles, equipped with heavy armaments and strong shields, making it capable of engaging the Empire's most powerful warships. Its development symbolized the increasing scale and intensity of the Galactic Civil War, as the Rebel Alliance and other factions sought more powerful ships to challenge Imperial supremacy in the galaxy. The Viscount-class played a crucial role in shifting the balance of power in space combat during this tumultuous period."
+76;1;40;41;20;10060;2;1;0;66;55;8;80;34;10;600;4;2;80;120;40;40;0;40;0;0;80;80;0;80;80;0;60;40;0;240;200;0;440;1840;1;20;0;0;2;25;16;30;6;3;0;Liberator Cruiser;"[ALLIANCE] Liberator-class cruiser (470m)
+  Cost 66, Maintenance 55, Fighters 6, Troops 3
+
+ATK: vs Ships 160, vs Fighters 0, Reload 16
+DEF: Shield/Recharge 600/30, DamageControl 25, Hull 1840
+MOV: Maneuverability 2, Hyperdrive/Backup 80/120
+SPE: Bombardment 2
+
+DMG: Front, Back, Sides (Range)
+    + Turbolasers: 40, 40, 80 (6000m)
+    + Ions/Torpedoes: 40, 0, 80 (4000m)
+    + Lasers: -
+
+Company: SoroSuub Corporation
+History: This cruiser class became especially prominent within the ranks of the Rebel Alliance. Known for its combination of speed and firepower, the Liberator-class was adept at performing a variety of roles, from engaging in direct combat with Imperial forces to providing escort and support for other Alliance vessels. Its versatility made it a valuable asset in the Rebel fleet, especially in the strategic shifts following the destruction of the Death Star, where the Alliance increasingly relied on flexible and multi-role ships to challenge the Galactic Empire's dominance in space warfare."
+77;1;40;41;20;10061;2;1;0;58;53;9;80;28;10;600;6;2;60;100;60;40;0;40;0;0;120;40;0;120;40;0;75;35;0;340;120;0;460;1200;1;20;0;0;1;35;16;30;0;1;0;MC30c Frigate;"[ALLIANCE] MC30c Frigate (380m)
+  Cost 58, Maintenance 53, Fighters 0, Troops 1
+
+ATK: vs Ships 160, vs Fighters 0, Reload 16
+DEF: Shield/Recharge 600/30, DamageControl 35, Hull 1200
+MOV: Maneuverability 2, Hyperdrive/Backup 60/100
+SPE: Bombardment 1
+
+DMG: Front, Back, Sides (Range)
+    + Turbolasers: 60, 40, 120 (7500m)
+    + Ions/Torpedoes: 40, 0, 40 (3500m)
+    + Lasers: -
+
+Company: Mon Calamari Shipyards
+History: This class of frigate was primarily utilized by the Rebel Alliance and is recognized for its role in various naval engagements against the Galactic Empire. The MC30c, with its advanced shielding and substantial firepower, especially in the form of torpedoes and missiles, was designed for hit-and-run tactics, making it highly effective against larger Imperial warships. The versatility and firepower of the MC30c made it a key component in the Rebel fleet, particularly in the wake of the Death Star's destruction, where rapid, agile, and hard-hitting vessels became increasingly crucial in the asymmetric warfare tactics employed by the Rebellion."
+78;1;40;41;20;10062;2;1;0;136;90;10;100;62;10;800;4;1;60;100;120;60;0;60;60;0;200;200;0;200;200;0;65;40;0;580;520;0;1100;2200;2;20;0;0;2;45;40;20;4;2;0;MC80a HomeOne Cruiser;"[ALLIANCE] MC80 Home One type Star Cruiser (1400m)
+  Cost 136, Maintenance 90, Fighters 4, Troops 2
+
+ATK: vs Ships 400, vs Fighters 0, Reload 40
+DEF: Shield/Recharge 800/20, DamageControl 45, Hull 2200
+MOV: Maneuverability 1, Hyperdrive/Backup 60/100
+SPE: Bombardment 2
+
+DMG: Front, Back, Sides (Range)
+    + Turbolasers: 120, 60, 200 (6500m)
+    + Ions/Torpedoes: 60, 60, 200 (4000m)
+    + Lasers: -
+
+Company: Mon Calamari Shipyards
+History: This cruiser has a pivotal role in the Rebel Alliance's fleet. This class of star cruiser, with its distinctive organic design, was a symbol of Mon Calamari craftsmanship and engineering. The MC80, particularly the flagship ""Home One,"" commanded by Admiral Ackbar, became a beacon of hope and resilience for the Rebellion. Its advanced shielding and diverse armament made it a formidable opponent against the Imperial fleet. The Home One type played a central role in major battles, including the decisive Battle of Endor, contributing significantly to the downfall of the Galactic Empire and the restoration of peace in the galaxy."
+128;1;40;41;20;10112;2;0;1;70;60;9;80;34;10;600;4;2;80;120;120;60;0;80;0;0;40;40;0;40;40;0;60;60;0;280;140;0;420;1600;3;20;0;0;1;10;18;30;1;0;0;Vindicator Heavy Cruiser;"[EMPIRE] Vindicator-class Heavy Cruiser (600m)
+  Cost 70, Maintenance 60, Fighters 1, Troops 0
+
+ATK: vs Ships 180, vs Fighters 0, Reload 18
+DEF: Shield/Recharge 600/30, DamageControl 10, Hull 1600
+MOV: Maneuverability 2, Hyperdrive/Backup 80/120
+SPE: Bombardment 1
+
+DMG: Front, Back, Sides (Range)
+    + Turbolasers: 120, 80, 40 (6000m)
+    + Ions/Torpedoes: 60, 0, 40 (6000m)
+    + Lasers: -
+
+Company: Rendili StarDrive
+History: These cruisers were primarily utilized by the Galactic Empire, serving as a core part of its formidable fleet. The Vindicator-class was known for its balance of firepower, speed, and defensive capabilities, making it a versatile asset in various combat scenarios. These ships were often deployed in key battles against the Rebel Alliance, especially in the aftermath of the Death Star's destruction. Their presence in the Imperial fleet underscored the Empire's reliance on well-rounded and heavily armed vessels to maintain control over the galaxy."
+129;1;40;41;20;10113;2;0;1;14;30;2;28;7;30;300;6;3;80;140;0;0;150;0;0;150;0;0;150;0;0;150;0;0;17;0;0;600;600;500;0;0;0;0;0;20;10;15;0;0;0;Lancer Frigate;"[EMPIRE] Lancer-class Frigate (250m)
+  Cost 14, Maintenance 30, Fighters 0, Troops 0
+
+ATK: vs Ships 0, vs Fighters 150, Reload 10
+DEF: Shield/Recharge 300/15, DamageControl 20, Hull 500
+MOV: Maneuverability 3, Hyperdrive/Backup 80/140
+SPE: Bombardment 0
+
+DMG: Front, Back, Sides (Range)
+    + Turbolasers: -
+    + Ions/Torpedoes: -
+    + Lasers: 150, 150, 150 (1700m)
+
+Company: Kuat Drive Yards
+History: This class of frigate was specifically designed to counter the threat of starfighters, which had become increasingly prominent and effective, as evidenced by the destruction of the Death Star. Equipped with numerous laser cannons, the Lancer-class excelled in providing anti-fighter support for larger Imperial vessels. Their deployment signified a strategic shift in the Imperial Navy, acknowledging the need for dedicated anti-starfighter vessels to protect their capital ships from agile Rebel fighters. The Lancer-class frigates' specialized role made them a crucial component in the Empire's efforts to maintain space superiority."
+130;1;40;41;20;10114;2;0;1;40;34;6;70;16;30;600;4;1;80;100;10;0;90;0;0;0;20;10;60;20;10;60;50;35;17;50;20;210;280;1200;0;0;4;100;0;10;7;15;0;0;0;Immobilizer Cruiser;"[EMPIRE] Immobilizer 418 Cruiser (600m)
+  Cost 40, Maintenance 34, Fighters 0, Troops 0
+
+ATK: vs Ships 30, vs Fighters 90, Reload 7
+DEF: Shield/Recharge 600/15, DamageControl 10, Hull 1200
+MOV: Maneuverability 1, Hyperdrive/Backup 80/100
+SPE: Bombardment 0, Interdictor
+
+DMG: Front, Back, Sides (Range)
+    + Turbolasers: 10, 0, 20 (5000m)
+    + Ions/Torpedoes: 0, 0, 10 (3500m)
+    + Lasers: 90, 0, 60 (1700m)
+
+Company: Sienar Fleet Systems
+History: Known colloquially as the Interdictor, this vessel became infamous for its ability to generate gravity well projectors, effectively preventing hyperspace travel in its vicinity. The Immobilizer 418 played a critical role in the Galactic Empire's strategy, especially after the destruction of the Death Star. It was instrumental in trapping Rebel ships, hindering their escape or reinforcements via hyperspace, and thus becoming a key asset in blockades and ambushes. The introduction of this technology marked a significant development in galactic warfare, altering the dynamics of space engagements and showcasing the Empire's continuous innovation in military technology."
+131;1;40;41;20;10115;2;0;1;26;24;0;0;13;20;200;6;2;60;120;5;0;60;5;0;60;15;0;90;15;0;90;50;0;17;40;0;300;340;1000;1;20;0;0;1;30;6;10;0;0;0;Arquitens Light Cruiser;"[EMPIRE] Arquitens-class Light Cruiser (325m)
+  Cost 26, Maintenance 24, Fighters 0, Troops 0
+
+ATK: vs Ships 15, vs Fighters 90, Reload 6
+DEF: Shield/Recharge 200/10, DamageControl 30, Hull 1000
+MOV: Maneuverability 2, Hyperdrive/Backup 60/120
+SPE: Bombardment 1
+
+DMG: Front, Back, Sides (Range)
+    + Turbolasers: 5, 5, 15 (5000m)
+    + Ions/Torpedoes: -
+    + Lasers: 60, 60, 90 (1700m)
+
+Company: Kuat Drive Yards
+History: This class of cruiser was recognized for its distinctive design, featuring a slender frame and elongated bridge. Employed extensively by the Galactic Empire, these cruisers served various roles, including patrol, escort, and support missions. Their versatility made them a common sight in the Empire's efforts to maintain control across the galaxy. In the aftermath of the Death Star's destruction, the Arquitens-class light cruisers continued to be a crucial component of the Imperial Navy, particularly in smaller-scale operations where their agility and moderate firepower were most effective. Their presence in numerous conflicts underscored their reliability and adaptability in a wide range of tactical scenarios."
+132;1;40;41;20;10116;2;0;1;68;44;0;0;30;10;200;3;1;60;140;120;0;0;0;0;0;100;0;0;100;0;0;50;0;0;320;0;0;320;1800;2;20;0;0;4;20;12;10;2;2;0;Victory I Star Destroyer;"[EMPIRE] Victory I-class Star Destroyer (900m)
+  Cost 68, Maintenance 44, Fighters 2, Troops 2
+
+ATK: vs Ships 120, vs Fighters 0, Reload 12
+DEF: Shield/Recharge 200/10, DamageControl 20, Hull 1800
+MOV: Maneuverability 1, Hyperdrive/Backup 60/140
+SPE: Bombardment 4
+
+DMG: Front, Back, Sides (Range)
+    + Turbolasers: 120, 0, 100 (5000m)
+    + Ions/Torpedoes: -
+    + Lasers: -
+
+Company: Kuat Drive Yards
+History: Initially designed during the final years of the Galactic Republic, these Star Destroyers became an integral part of the Imperial Navy. The Victory I-class was known for its formidable firepower, which included turbolasers and concussion missile launchers, making it a significant threat in various battles. Its capabilities in both planetary siege and space combat allowed the Galactic Empire to maintain a strong presence in multiple sectors. Following the destruction of the Death Star, the Victory I-class Star Destroyers continued to enforce Imperial dominance, participating in key operations against the Rebel Alliance and other insurgent elements. Their deployment was a testament to the Empire's military strategy of overwhelming force and control."
+133;1;40;41;20;10117;2;0;1;112;71;0;0;47;10;300;4;1;80;100;100;100;0;40;40;0;60;40;0;60;40;0;50;35;0;260;220;0;480;2750;3;20;0;0;2;30;20;15;6;3;0;Imperial I Star Destroyer;"[EMPIRE] Imperial I-class Star Destroyer (1600m)
+  Cost 112, Maintenance 71, Fighters 6, Troops 3
+
+ATK: vs Ships 200, vs Fighters 0, Reload 20
+DEF: Shield/Recharge 300/15, DamageControl 30, Hull 2750
+MOV: Maneuverability 1, Hyperdrive/Backup 80/100
+SPE: Bombardment 2
+
+DMG: Front, Back, Sides (Range)
+    + Turbolasers: 100, 40, 60 (5000m)
+    + Ions/Torpedoes: 100, 40, 40 (3500m)
+    + Lasers: -
+
+Company: Kuat Drive Yards
+History: This Star Destroyer stands as one of the most iconic symbols of the Galactic Empire's military might. These colossal warships were central to the Empire's strategy of asserting control and instilling fear across the galaxy. Equipped with a vast array of weaponry and capable of carrying a large complement of TIE fighters, stormtroopers, and various ground vehicles, the Imperial I-class excelled in both space battles and ground assaults. Following the destruction of the Death Star, these Star Destroyers played a crucial role in the Empire's efforts to quell the Rebel Alliance and maintain its grip on the galaxy. Their formidable presence in numerous battles showcased the Empire's reliance on overwhelming power and technological superiority to achieve its objectives."
+134;1;40;41;20;10118;2;0;1;282;170;11;100;120;5;1200;2;1;80;110;500;200;0;150;100;0;300;200;0;300;200;0;70;40;0;1250;700;0;1950;5000;6;20;0;0;3;20;70;60;12;9;0;Super Star Destroyer;"[EMPIRE] Executor-class Star Dreadnought (19000m)
+  Cost 282, Maintenance 170, Fighters 12, Troops 9
+
+ATK: vs Ships 700, vs Fighters 0, Reload 70
+DEF: Shield/Recharge 1200/60, DamageControl 20, Hull 5000
+MOV: Maneuverability 1, Hyperdrive/Backup 80/110
+SPE: Bombardment 3
+
+DMG: Front, Back, Sides (Range)
+    + Turbolasers: 500, 150, 300 (7000m)
+    + Ions/Torpedoes: 200, 100, 200 (4000m)
+    + Lasers: -
+
+Company: Kuat Drive Yards, Fondor Shipyards
+History: The Super Star Destroyer, is one of the most formidable warships in the galaxy. This class, including the infamous flagship Executor of Darth Vader, represented the pinnacle of Imperial naval power. With overwhelming firepower and a massive complement of troops and TIE fighters, the Executor-class played a pivotal role in asserting the Galactic Empire's dominance. Its deployment often signified the importance of a mission or the need to exert maximum force. Post the destruction of the Death Star, the Executor and its sister ships became symbols of the Empire's response and commitment to crushing the Rebel Alliance, serving as a key element in major battles and strategic operations across the galaxy."
+135;1;40;41;20;10119;2;0;1;12;29;5;40;5;1;300;8;3;50;100;0;0;150;0;0;0;0;0;60;0;0;60;0;0;25;0;0;270;270;320;0;0;0;0;0;10;10;15;0;1;0;Gladiator Star Destroyer;"[EMPIRE] Gladiator-class Star Destroyer (600m)
+  Cost 12, Maintenance 29, Fighters 0, Troops 1
+
+ATK: vs Ships 0, vs Fighters 150, Reload 10
+DEF: Shield/Recharge 300/15, DamageControl 60, Hull 320
+MOV: Maneuverability 3, Hyperdrive/Backup 50/100
+SPE: Bombardment 0
+
+DMG: Front, Back, Sides (Range)
+    + Turbolasers: -
+    + Ions/Torpedoes: -
+    + Lasers: 150, 0, 60 (2500m)
+
+Company: Kuat Drive Yards
+History: Originally designed as a patrol ship, its role evolved to become more combat-oriented. This class of Star Destroyer was smaller than the larger Imperial-class but was highly effective in its designated roles, including escort missions, planetary defense, and rapid response actions. The Gladiator-class was particularly noted for its firepower and versatility, capable of operating independently in environments where larger Star Destroyers were not as effective. In the wake of the Death Star's destruction, the Gladiator-class vessels were increasingly utilized in the Empire's military campaigns, playing a vital role in asserting control over the Outer Rim territories and engaging Rebel forces in key conflicts. Their deployment demonstrated the Empire's strategic shift to a more diverse and adaptable fleet composition."
+136;1;40;41;24;10120;2;0;1;584;600;0;0;250;5;2000;1;0;80;140;1400;400;0;1400;400;0;1400;400;0;1400;400;0;60;40;0;5600;1600;0;7200;25000;15;24;0;0;15;60;180;100;24;18;0;Death Star;"[EMPIRE] Death Star (160000m)
+  Cost 584, Maintenance 600, Fighters 24, Troops 18
+
+ATK: vs Ships 1800, vs Fighters 0, Reload 180
+DEF: Shield/Recharge 2000/100, DamageControl 60, Hull 25000
+MOV: Maneuverability 0, Hyperdrive/Backup 80/140
+SPE: Bombardment 15
+
+DMG: Front, Back, Sides (Range)
+    + Turbolasers: 1400, 1400, 1400 (6000m)
+    + Ions/Torpedoes: 400, 400, 400 (4000m)
+    + Lasers: -
+
+Company: Imperial Department of Military Research, Sienar Fleet Systems, and various other contractors
+History: The Death Star is a massive space station and superweapon. It represents the pinnacle of the Galactic Empire's quest for dominance, designed to instill fear and suppress rebellion through its planet-destroying capabilities. Completed around ABY 0, the Death Star was a focal point in the Galactic Civil War. Its first and only use on the planet Alderaan showcased its destructive power. However, it also became a symbol of Imperial hubris, as the Rebel Alliance exploited a critical weakness to destroy it during the Battle of Yavin, marking a significant turning point in the war and galvanizing resistance across the galaxy."
+137;1;40;41;20;10121;2;0;1;10;10;0;0;3;1;100;2;1;80;140;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;300;0;0;0;0;0;5;0;5;0;2;0;Acclamator Assault Ship;"[EMPIRE] Acclamator-class Assault Ship (752m)
+  Cost 10, Maintenance 10, Fighters 0, Troops 2
+
+ATK: vs Ships 0, vs Fighters 0, Reload -
+DEF: Shield/Recharge 100/5, DamageControl 5, Hull 300
+MOV: Maneuverability 1, Hyperdrive/Backup 80/140
+SPE: Bombardment 0
+
+DMG: Front, Back, Sides (Range)
+    + Turbolasers: -
+    + Ions/Torpedoes: -
+    + Lasers: -
+
+Company: Rothana Heavy Engineering
+History: These ships have made a significant historical impact. Originally designed for troop transport and planetary invasion, the Acclamator-class was heavily armed and armored, making it suitable for direct combat engagements as well. Its deployment in the Battle of Geonosis marked the beginning of widespread conflict across the galaxy. Although their prominence decreased with the rise of more advanced Imperial ships, their legacy continued, as they laid the groundwork for future Star Destroyer designs used by the Galactic Empire. Their role in the Clone Wars and transformation of galactic warfare remains a critical part of their historical significance."
+138;1;40;41;20;10122;2;0;1;72;63;7;80;34;10;600;4;2;60;140;120;40;0;80;40;0;80;40;0;80;40;0;60;35;0;360;160;0;520;1800;2;20;0;0;5;25;16;30;2;0;0;Victory II Star Destroyer;"[EMPIRE] Victory II-class Star Destroyer (900m)
+  Cost 72, Maintenance 63, Fighters 2, Troops 0
+
+ATK: vs Ships 160, vs Fighters 0, Reload 16
+DEF: Shield/Recharge 600/30, DamageControl 25, Hull 1800
+MOV: Maneuverability 2, Hyperdrive/Backup 60/140
+SPE: Bombardment 5
+
+DMG: Front, Back, Sides (Range)
+    + Turbolasers: 120, 80, 80 (6000m)
+    + Ions/Torpedoes: 40, 40, 40 (3500m)
+    + Lasers: -
+
+Company: Kuat Drive Yards
+History: This Destroyer is an evolution of the earlier Victory I-class, tailored for enhanced combat performance. By ABY 0, these ships played a notable role in the Imperial fleet. The Victory II-class was distinguished by improved ion engines and greater firepower, including enhanced turbolaser batteries and ion cannons. Designed to be faster and more versatile than its predecessor, it was adept in both space and atmospheric combat, making it a more flexible option for the Galactic Empire's diverse military needs. Following the destruction of the Death Star, the Victory II-class Star Destroyers were instrumental in enforcing Imperial rule and engaging Rebel forces, reflecting the Empire's ongoing efforts to adapt and strengthen its naval capabilities."
+139;1;40;41;20;10123;2;0;1;158;99;10;100;70;10;800;4;1;60;100;200;200;0;60;20;0;120;80;0;120;80;0;70;40;0;500;380;0;880;3000;3;20;0;0;2;35;40;20;6;3;0;Imperial II Star Destroyer;"[EMPIRE] Imperial II-class Star Destroyer (1600m)
+  Cost 158, Maintenance 99, Fighters 6, Troops 3
+
+ATK: vs Ships 400, vs Fighters 0, Reload 40
+DEF: Shield/Recharge 800/20, DamageControl 35, Hull 3000
+MOV: Maneuverability 1, Hyperdrive/Backup 60/100
+SPE: Bombardment 2
+
+DMG: Front, Back, Sides (Range)
+    + Turbolasers: 200, 60, 120 (7000m)
+    + Ions/Torpedoes: 200, 20, 80 (4000m)
+    + Lasers: -
+
+Company: Kuat Drive Yards
+History: This Destroyer is a significant upgrade from the original Imperial I-class, with a strong presence in the Imperial fleet. These Star Destroyers featured enhanced armaments, including more powerful turbolasers and ion cannons, and improved shields, making them a formidable presence in any battle. The Imperial II-class became the standard for the Galactic Empire's capital ships, showcasing the Empire's commitment to military superiority and technological advancement. In the aftermath of the Death Star's destruction, the Imperial II-class Star Destroyers were pivotal in the Empire's efforts to suppress the growing Rebel Alliance, playing a central role in major battles and maintaining the Empire's dominion across the galaxy. Their deployment symbolized the Empire's response to evolving threats and its relentless pursuit of galactic control."
+140;1;40;41;20;10124;2;0;1;15;20;4;24;5;4;200;3;1;80;140;0;0;0;0;0;30;0;0;30;0;0;30;0;0;17;0;0;90;90;400;0;0;0;0;0;5;1;10;0;3;0;Nomad Frigate;"[EMPIRE] Nomad Star Galleon Frigate (300m)
+  Cost 15, Maintenance 20, Fighters 0, Troops 3
+
+ATK: vs Ships 0, vs Fighters 30, Reload 1
+DEF: Shield/Recharge 200/10, DamageControl 5, Hull 400
+MOV: Maneuverability 1, Hyperdrive/Backup 80/140
+SPE: Bombardment 0
+
+DMG: Front, Back, Sides (Range)
+    + Turbolasers: -
+    + Ions/Torpedoes: -
+    + Lasers: 0, 30, 30 (1700m)
+
+Company: Kuat Drive Yards
+History: The Star Galleon is a heavily armed freighter. It was used by the Galactic Empire for secure transportation of valuable cargo, including currency, artifacts, and other resources crucial to Imperial operations. The Star Galleon combined the robust defensive capabilities of a military vessel with the cargo capacity of a freighter, making it an ideal choice for high-risk transport missions. Its ability to defend itself against pirate attacks and other threats was highly valued in the volatile climate of the Galactic Civil War, where the security of supply lines was paramount for both the Empire and the Rebel Alliance. The Star Galleon's design and purpose reflected the Empire's need for versatile ships capable of both combat and logistics in a galaxy rife with conflict and rebellion."
+141;1;40;41;20;10125;2;0;1;34;30;0;0;11;4;200;3;1;80;140;0;0;30;0;0;30;0;0;60;0;0;60;0;0;17;0;0;180;180;1000;0;0;0;0;0;5;4;10;6;0;0;Imperial Escort Carrier;"[EMPIRE] Imperial Escort Carrier (500m)
+  Cost 34, Maintenance 30, Fighters 6, Troops 0
+
+ATK: vs Ships 0, vs Fighters 60, Reload 4
+DEF: Shield/Recharge 200/10, DamageControl 5, Hull 1000
+MOV: Maneuverability 1, Hyperdrive/Backup 80/140
+SPE: Bombardment 0
+
+DMG: Front, Back, Sides (Range)
+    + Turbolasers: -
+    + Ions/Torpedoes: -
+    + Lasers: 30, 30, 60 (1700m)
+
+Company: Kuat Drive Yards
+History: This Carrier is an essential component of the Galactic Empire's naval strategy. This carrier was primarily designed for the rapid deployment and support of TIE fighter squadrons, significantly enhancing the Empire's patrol and enforcement capabilities across various star systems. Its ability to quickly transport and launch a sizable contingent of starfighters made it a valuable asset in both offensive and defensive operations. In the aftermath of the Death Star's destruction, the Imperial Escort Carriers played a pivotal role in maintaining Imperial space superiority, especially in outlying regions where larger Star Destroyers were less practical. These carriers were a testament to the Empire's adaptation to the changing dynamics of the Galactic Civil War, relying on fast, efficient, and versatile ships to extend their reach and control."
+142;1;40;41;20;10126;2;0;1;44;33;0;0;19;10;200;3;1;80;180;40;0;0;20;0;0;70;0;0;70;0;0;60;0;0;200;0;0;200;1200;0;0;0;0;1;10;7;10;1;2;0;Imperial Dreadnought;"[EMPIRE] Imperial Dreadnought-class Heavy Cruiser (600m)
+  Cost 44, Maintenance 33, Fighters 1, Troops 2
+
+ATK: vs Ships 70, vs Fighters 0, Reload 7
+DEF: Shield/Recharge 200/10, DamageControl 10, Hull 1200
+MOV: Maneuverability 1, Hyperdrive/Backup 80/180
+SPE: Bombardment 1
+
+DMG: Front, Back, Sides (Range)
+    + Turbolasers: 40, 20, 70 (6000m)
+    + Ions/Torpedoes: -
+    + Lasers: -
+
+Company: Rendili StarDrive
+History: This Dreadnought is an evolution of the earlier Republic-era Dreadnought-class cruisers. Around ABY 0, these vessels were incorporated into the Imperial Navy, reflecting the Empire's strategy of modifying existing ship designs for their purposes. The Imperial Dreadnought-class was known for its durability and firepower, making it a reliable asset in various combat scenarios. While not as large or as powerful as the Star Destroyers, these heavy cruisers were often used in secondary roles such as patrol, escort, and occupation duties across the galaxy. In the period following the destruction of the Death Star, the Imperial Dreadnought-class Heavy Cruisers continued to be a part of the Empire's efforts to maintain control, showcasing the versatility and adaptability of the Imperial fleet."
