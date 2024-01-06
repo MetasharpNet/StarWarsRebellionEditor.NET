@@ -359,7 +359,7 @@ DMG: Front, Back, Sides (Range)
 
 Company: Imperial Department of Military Research, Sienar Fleet Systems, and various other contractors
 History: The Death Star is a massive space station and superweapon. It represents the pinnacle of the Galactic Empire's quest for dominance, designed to instill fear and suppress rebellion through its planet-destroying capabilities. Completed around ABY 0, the Death Star was a focal point in the Galactic Civil War. Its first and only use on the planet Alderaan showcased its destructive power. However, it also became a symbol of Imperial hubris, as the Rebel Alliance exploited a critical weakness to destroy it during the Battle of Yavin, marking a significant turning point in the war and galvanizing resistance across the galaxy."
-137;1;40;41;20;10121;2;0;1;10;10;0;0;3;1;100;2;1;80;140;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;300;0;0;0;0;0;5;0;5;0;2;0;Acclamator Assault Ship;"[EMPIRE] Acclamator-class Assault Ship (752m)
+137;1;40;41;20;10121;2;0;1;10;10;0;0;3;1;100;2;1;80;140;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;300;0;0;0;0;0;5;0;5;0;2;0;Acclamator Drop Ship;"[EMPIRE] Acclamator-class Transport Drop Ship (752m)
   Cost 10, Maintenance 10, Fighters 0, Troops 2
 
 ATK: vs Ships 0, vs Fighters 0, Reload -
@@ -373,7 +373,7 @@ DMG: Front, Back, Sides (Range)
     + Lasers: -
 
 Company: Rothana Heavy Engineering
-History: These ships have made a significant historical impact. Originally designed for troop transport and planetary invasion, the Acclamator-class was heavily armed and armored, making it suitable for direct combat engagements as well. Its deployment in the Battle of Geonosis marked the beginning of widespread conflict across the galaxy. Although their prominence decreased with the rise of more advanced Imperial ships, their legacy continued, as they laid the groundwork for future Star Destroyer designs used by the Galactic Empire. Their role in the Clone Wars and transformation of galactic warfare remains a critical part of their historical significance."
+History: These ships were primarily used as troop transports and dropships, capable of rapid deployment of ground forces and vehicles, including walkers and speeder bikes. Their notable use began with the Battle of Geonosis, marking the start of the Clone Wars. Acclamator-class ships were heavily armed, doubling as assault ships capable of space and ground combat. Post-Clone Wars, some of these transports were adapted by the Galactic Empire, continuing their service in a different capacity. Their design influenced later Imperial ships, showcasing their lasting impact on military shipbuilding in the galaxy."
 138;1;40;41;20;10122;2;0;1;72;63;7;80;34;10;600;4;2;60;140;120;40;0;80;40;0;80;40;0;80;40;0;60;35;0;360;160;0;520;1800;2;20;0;0;5;25;16;30;2;0;0;Victory II Star Destroyer;"[EMPIRE] Victory II-class Star Destroyer (900m)
   Cost 72, Maintenance 63, Fighters 2, Troops 0
 
