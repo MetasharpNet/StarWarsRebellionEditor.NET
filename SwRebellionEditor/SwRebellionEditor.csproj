@@ -4311,5 +4311,26 @@
     <None Update="test\readme.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="test\TACTICAL.DLL\301\2510-1033-tactical-empire-vindicator-heavy-cruiser-close.x">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="test\TACTICAL.DLL\301\2511-1033-tactical-empire-vindicator-heavy-cruiser-medium.x">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="test\TACTICAL.DLL\301\2512-1033-tactical-empire-vindicator-heavy-cruiser-far.x">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="test\TACTICAL.DLL\303\EMPIRE_VINDICATOR_HEAVY_CRUISER_CLOSE.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="test\TACTICAL.DLL\303\EMPIRE_VINDICATOR_HEAVY_CRUISER_FAR.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="test\TACTICAL.DLL\303\EMPIRE_VINDICATOR_HEAVY_CRUISER_MEDIUM.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="test\TACTICAL.DLL\capitalships.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
 </Project>
