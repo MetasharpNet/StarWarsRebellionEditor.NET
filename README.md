@@ -98,7 +98,6 @@ If you have another GPU brand than Nvidia, do the same as above and get some mor
 * new high definition 3d models for all capital ships
 
 ### Final Roadmap (low chance i'll invest time on it):
-* Cleanup code on rarely used windows
 * Identify unknown fields usage
 * Other features from RebEd
 * etc.
