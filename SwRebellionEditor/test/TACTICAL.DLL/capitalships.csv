@@ -404,7 +404,7 @@ DMG: Front, Back, Sides (Range)
 
 Company: Kuat Drive Yards
 History: This Destroyer is a significant upgrade from the original Imperial I-class, with a strong presence in the Imperial fleet. These Star Destroyers featured enhanced armaments, including more powerful turbolasers and ion cannons, and improved shields, making them a formidable presence in any battle. The Imperial II-class became the standard for the Galactic Empire's capital ships, showcasing the Empire's commitment to military superiority and technological advancement. In the aftermath of the Death Star's destruction, the Imperial II-class Star Destroyers were pivotal in the Empire's efforts to suppress the growing Rebel Alliance, playing a central role in major battles and maintaining the Empire's dominion across the galaxy. Their deployment symbolized the Empire's response to evolving threats and its relentless pursuit of galactic control."
-140;1;40;41;20;10124;2;0;1;15;20;4;24;5;4;200;3;1;80;140;0;0;0;0;0;30;0;0;30;0;0;30;0;0;17;0;0;90;90;400;0;0;0;0;0;5;1;10;0;3;0;Nomad Frigate;"[EMPIRE] Nomad Star Galleon Frigate (300m)
+140;1;40;41;20;10124;2;0;1;15;20;4;24;5;4;200;3;1;80;140;0;0;0;0;0;30;0;0;30;0;0;30;0;0;17;0;0;90;90;400;0;0;0;0;0;5;1;10;0;3;0;Star Galleon Frigate;"[EMPIRE] Star Galleon Frigate (300m)
   Cost 15, Maintenance 20, Fighters 0, Troops 3
 
 ATK: vs Ships 0, vs Fighters 30, Reload 1
