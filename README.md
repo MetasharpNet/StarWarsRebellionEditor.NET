@@ -28,7 +28,7 @@
 * 200/200 encyclopedia descriptions
 * 61/61 new character sprites from LordLaForge to be closer to canon/lgends character faces
 * 61/61 enhanced character sprites displaying their base average stats
-* 7/29 HD 3d models for capital ships + (22 mid definition 3d models)
+* 8/29 HD 3d models for capital ships + (21 mid definition 3d models)
 * 16/16 HD background musics (44KHz vs 11KHz)
 * 80 HD sprites for space fighters (X-wing, ...)
 * Savegame Test Pack (broken, will need to redo) : https://github.com/MetasharpNet/StarWarsRebellionEditor.NET/releases/tag/swr-editor.net-savegame-20231015
@@ -52,7 +52,7 @@
 
 ### 25th Anniversary Installation guide:
 * Install the latest .NET Desktop runtime : https://dotnet.microsoft.com/en-us/download/dotnet
-  * Direct link to latest version : https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/runtime-7.0.14-windows-x64-installer
+  * Direct link to latest version : https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/runtime-desktop-7.0.15-windows-x64-installer
 * Reboot
 * Install a fresh GoG or Steam Star Wars Rebellion game
 * Download the latest editor release : https://github.com/MetasharpNet/StarWarsRebellionEditor.NET/releases
@@ -91,7 +91,9 @@ If you have an Nvidia Card:
   * Check Override the scaling mode set by games and programs
   * Apply
 
-If you have another GPU brand than Nvidia, do the same as above and get some more info here:
+For AMD (Radeon, ...) GPU, you can try this link: https://www.amd.com/en/support/kb/faq/dh-019#:~:text=To%20enable%20GPU%20Scaling%2C%20follow,GPU%20Scaling%20option%20to%20On
+
+If you have another GPU brand than Nvidia or AMD, do the same as above and get some more info here:
 * https://www.pcgamingwiki.com/wiki/Glossary:Custom_resolution
 
 ### Current Roadmap:
