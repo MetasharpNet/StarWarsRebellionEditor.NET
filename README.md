@@ -52,7 +52,7 @@
 
 ### 25th Anniversary Installation guide:
 * Install the latest .NET Desktop runtime : https://dotnet.microsoft.com/en-us/download/dotnet
-  * Direct link to latest version : https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/runtime-desktop-7.0.15-windows-x64-installer
+  * Direct link to latest version : https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/runtime-desktop-7.0.16-windows-x64-installer
 * Reboot
 * Install a fresh GoG or Steam Star Wars Rebellion game
 * Download the latest editor release : https://github.com/MetasharpNet/StarWarsRebellionEditor.NET/releases
@@ -72,6 +72,7 @@
 * This will skip new game's 5 minute briefings.
 
 ### If you have issues with full screen
+* Try pressing ALT+F11 to go in/out of full screen mode
 * Use Display Port cable instead of HDMI
 * Make sure your shortcut to run the game has the -w option
 * Change settings with : dgVoodooCpl.exe from your game folder
