@@ -13,7 +13,7 @@
 * Drag and drop a new System 37x37 BMP picture on current to update it
 * Export : Systems
 * Other features in testing accessible in menus only
-* Extract : Export in 1 click game resources in an export folder (bitmaps and 3d models and data in CSV for now)
+* Extract : Export in 1 click game resources in an export folder (bitmaps, sounds, videos 3d models and data in CSV for now)
 * Patch : Star Wars Rebellion 25th Anniversary patch
 * Test Patch : Patch your custom content from the CSV folder. It can be anything from the export modified to your taste.
 
