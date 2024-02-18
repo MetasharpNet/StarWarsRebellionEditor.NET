@@ -72,7 +72,7 @@
 * This will skip new game's 5 minute briefings.
 
 ### If you have issues with full screen
-* Try pressing ALT+F11 to go in/out of full screen mode
+* Try pressing Alr Gr + F11 to go in/out of full screen mode
 * Use Display Port cable instead of HDMI
 * Make sure your shortcut to run the game has the -w option
 * Change settings with : dgVoodooCpl.exe from your game folder
