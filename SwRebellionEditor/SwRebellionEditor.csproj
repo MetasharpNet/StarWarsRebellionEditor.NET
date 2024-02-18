@@ -1417,8 +1417,14 @@
     <None Update="game-update\_readme.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="interface\COMMON.DLL\Bitmap\20001-1033-common-main-screen.bmp">
+    <None Update="interface\COMMON.DLL\Bitmap\20001-1033-common-main-screen-accurate.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="interface\COMMON.DLL\Bitmap\20001-1033-common-main-screen-compatible.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="interface\COMMON.DLL\Bitmap\20001-1033-common-main-screen.bmp">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </None>
     <None Update="interface\readme.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
@@ -2026,10 +2032,16 @@
     <None Update="ships\TACTICAL.DLL\303\EMPIRE_VICTORY_2_STAR_DESTROYER_MEDIUM.BMP">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="systems\sectors.csv">
+    <None Update="systems\sectors-accurate.csv">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="systems\systems.csv">
+    <None Update="systems\sectors-compatible.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="systems\systems-accurate.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="systems\systems-compatible.csv">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="Properties\Settings.settings">

@@ -55,6 +55,8 @@ namespace SwRebellionEditor
             charactersWithoutStatsCheckBox = new CheckBox();
             patchTest = new Button();
             label2 = new Label();
+            compatibleGalaxyMapCheckBox = new CheckBox();
+            accurateGalaxyMapCheckBox = new CheckBox();
             SuspendLayout();
             // 
             // systemsImageList
@@ -96,7 +98,7 @@ namespace SwRebellionEditor
             // contentLabel
             // 
             contentLabel.AutoSize = true;
-            contentLabel.Location = new Point(24, 38);
+            contentLabel.Location = new Point(12, 39);
             contentLabel.Name = "contentLabel";
             contentLabel.Size = new Size(56, 15);
             contentLabel.TabIndex = 1157;
@@ -105,7 +107,7 @@ namespace SwRebellionEditor
             // line3Label
             // 
             line3Label.AutoSize = true;
-            line3Label.Location = new Point(33, 103);
+            line3Label.Location = new Point(21, 104);
             line3Label.Name = "line3Label";
             line3Label.Size = new Size(384, 15);
             line3Label.TabIndex = 1158;
@@ -114,7 +116,7 @@ namespace SwRebellionEditor
             // line1Label
             // 
             line1Label.AutoSize = true;
-            line1Label.Location = new Point(33, 59);
+            line1Label.Location = new Point(21, 60);
             line1Label.Name = "line1Label";
             line1Label.Size = new Size(686, 15);
             line1Label.TabIndex = 1159;
@@ -123,7 +125,7 @@ namespace SwRebellionEditor
             // line2Label
             // 
             line2Label.AutoSize = true;
-            line2Label.Location = new Point(33, 81);
+            line2Label.Location = new Point(21, 82);
             line2Label.Name = "line2Label";
             line2Label.Size = new Size(607, 15);
             line2Label.TabIndex = 1160;
@@ -132,7 +134,7 @@ namespace SwRebellionEditor
             // line4Label
             // 
             line4Label.AutoSize = true;
-            line4Label.Location = new Point(33, 125);
+            line4Label.Location = new Point(21, 126);
             line4Label.Name = "line4Label";
             line4Label.Size = new Size(623, 15);
             line4Label.TabIndex = 1161;
@@ -141,7 +143,7 @@ namespace SwRebellionEditor
             // line5Label
             // 
             line5Label.AutoSize = true;
-            line5Label.Location = new Point(33, 147);
+            line5Label.Location = new Point(21, 148);
             line5Label.Name = "line5Label";
             line5Label.Size = new Size(678, 15);
             line5Label.TabIndex = 1162;
@@ -151,11 +153,11 @@ namespace SwRebellionEditor
             // 
             warningLabel.AutoSize = true;
             warningLabel.ForeColor = Color.Red;
-            warningLabel.Location = new Point(24, 211);
+            warningLabel.Location = new Point(12, 194);
             warningLabel.Name = "warningLabel";
             warningLabel.Size = new Size(647, 15);
             warningLabel.TabIndex = 1163;
-            warningLabel.Text = "This patch was released 2024-01-02 and is provided without any warranty of any kind. Doesn't work with older savegames.";
+            warningLabel.Text = "This patch was released 2024-02-18 and is provided without any warranty of any kind. Doesn't work with older savegames.";
             // 
             // patchInfoLabel
             // 
@@ -176,7 +178,7 @@ namespace SwRebellionEditor
             label1Requirement.Name = "label1Requirement";
             label1Requirement.Size = new Size(253, 15);
             label1Requirement.TabIndex = 1165;
-            label1Requirement.Text = "Includes update 1.02 (dgvoodoo2 directx 2.82.2)";
+            label1Requirement.Text = "Includes update 1.02 (dgvoodoo2 directx 2.82.3)";
             // 
             // label1
             // 
@@ -194,7 +196,7 @@ namespace SwRebellionEditor
             charactersWithStatsCheckBox.AutoSize = true;
             charactersWithStatsCheckBox.Checked = true;
             charactersWithStatsCheckBox.CheckState = CheckState.Checked;
-            charactersWithStatsCheckBox.Location = new Point(33, 244);
+            charactersWithStatsCheckBox.Location = new Point(21, 245);
             charactersWithStatsCheckBox.Name = "charactersWithStatsCheckBox";
             charactersWithStatsCheckBox.Size = new Size(158, 19);
             charactersWithStatsCheckBox.TabIndex = 1167;
@@ -205,7 +207,7 @@ namespace SwRebellionEditor
             // charactersWithoutStatsCheckBox
             // 
             charactersWithoutStatsCheckBox.AutoSize = true;
-            charactersWithoutStatsCheckBox.Location = new Point(233, 244);
+            charactersWithoutStatsCheckBox.Location = new Point(189, 244);
             charactersWithoutStatsCheckBox.Name = "charactersWithoutStatsCheckBox";
             charactersWithoutStatsCheckBox.Size = new Size(176, 19);
             charactersWithoutStatsCheckBox.TabIndex = 1168;
@@ -226,16 +228,42 @@ namespace SwRebellionEditor
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(33, 172);
+            label2.Location = new Point(21, 173);
             label2.Name = "label2";
             label2.Size = new Size(148, 15);
             label2.TabIndex = 1170;
             label2.Text = "- Higher definition musics.";
             // 
+            // compatibleGalaxyMapCheckBox
+            // 
+            compatibleGalaxyMapCheckBox.AutoSize = true;
+            compatibleGalaxyMapCheckBox.Checked = true;
+            compatibleGalaxyMapCheckBox.CheckState = CheckState.Checked;
+            compatibleGalaxyMapCheckBox.Location = new Point(21, 218);
+            compatibleGalaxyMapCheckBox.Name = "compatibleGalaxyMapCheckBox";
+            compatibleGalaxyMapCheckBox.Size = new Size(150, 19);
+            compatibleGalaxyMapCheckBox.TabIndex = 1171;
+            compatibleGalaxyMapCheckBox.Text = "compatible galaxy map";
+            compatibleGalaxyMapCheckBox.UseVisualStyleBackColor = true;
+            compatibleGalaxyMapCheckBox.CheckedChanged += compatibleGalaxyMapCheckBox_CheckedChanged;
+            // 
+            // accurateGalaxyMapCheckBox
+            // 
+            accurateGalaxyMapCheckBox.AutoSize = true;
+            accurateGalaxyMapCheckBox.Location = new Point(189, 218);
+            accurateGalaxyMapCheckBox.Name = "accurateGalaxyMapCheckBox";
+            accurateGalaxyMapCheckBox.Size = new Size(511, 19);
+            accurateGalaxyMapCheckBox.TabIndex = 1172;
+            accurateGalaxyMapCheckBox.Text = "accurate galaxy map (not compatible with base game savegames or base game multiplayer)";
+            accurateGalaxyMapCheckBox.UseVisualStyleBackColor = true;
+            accurateGalaxyMapCheckBox.CheckedChanged += accurateGalaxyMapCheckBox_CheckedChanged;
+            // 
             // PatchForm
             // 
             AutoScaleMode = AutoScaleMode.None;
             ClientSize = new Size(735, 317);
+            Controls.Add(accurateGalaxyMapCheckBox);
+            Controls.Add(compatibleGalaxyMapCheckBox);
             Controls.Add(label2);
             Controls.Add(patchTest);
             Controls.Add(charactersWithoutStatsCheckBox);
@@ -285,5 +313,7 @@ namespace SwRebellionEditor
         private CheckBox charactersWithoutStatsCheckBox;
         private Button patchTest;
         private Label label2;
+        private CheckBox compatibleGalaxyMapCheckBox;
+        private CheckBox accurateGalaxyMapCheckBox;
     }
 }

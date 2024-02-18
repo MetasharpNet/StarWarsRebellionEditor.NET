@@ -32,6 +32,18 @@ public partial class PatchForm : PatchDesignForm
         if (charactersWithStatsCheckBox.Checked)
             charactersWithoutStatsCheckBox.Checked = false;
     }
+
+    private void compatibleGalaxyMapCheckBox_CheckedChanged(object sender, EventArgs e)
+    {
+        if (compatibleGalaxyMapCheckBox.Checked)
+            accurateGalaxyMapCheckBox.Checked = false;
+    }
+
+    private void accurateGalaxyMapCheckBox_CheckedChanged(object sender, EventArgs e)
+    {
+        if (accurateGalaxyMapCheckBox.Checked)
+            compatibleGalaxyMapCheckBox.Checked = false;
+    }
     private void patch_Click(object sender, EventArgs e)
     {
         Patch(false);
@@ -127,14 +139,28 @@ public partial class PatchForm : PatchDesignForm
             {
                 if (Path.GetExtension(filePath).ToLowerInvariant() == ".csv")
                 {
-                    if (filePath.ToLowerInvariant().Contains("sectors.csv"))
+                    if (compatibleGalaxyMapCheckBox.Checked && filePath.ToLowerInvariant().Contains("sectors-compatible.csv"))
                     {
                         var sectorsGameFilePath = Path.Combine(Settings.Current.GDataFolder, "SECTORSD.DAT");
                         var sectorsGameFile = DatFile.Load<SECTORSD>(sectorsGameFilePath);
                         sectorsGameFile.CsvToEntries(File.ReadAllText(filePath), "Sectors", "SectorsCount");
                         sectorsGameFile.Save(sectorsGameFilePath);
                     }
-                    if (filePath.ToLowerInvariant().Contains("systems.csv"))
+                    if (accurateGalaxyMapCheckBox.Checked && filePath.ToLowerInvariant().Contains("sectors-accurate.csv"))
+                    {
+                        var sectorsGameFilePath = Path.Combine(Settings.Current.GDataFolder, "SECTORSD.DAT");
+                        var sectorsGameFile = DatFile.Load<SECTORSD>(sectorsGameFilePath);
+                        sectorsGameFile.CsvToEntries(File.ReadAllText(filePath), "Sectors", "SectorsCount");
+                        sectorsGameFile.Save(sectorsGameFilePath);
+                    }
+                    if (compatibleGalaxyMapCheckBox.Checked && filePath.ToLowerInvariant().Contains("systems-compatible.csv"))
+                    {
+                        GameFilePath = Path.Combine(Settings.Current.GDataFolder, "SYSTEMSD.DAT");
+                        GameFile = DatFile.Load<SYSTEMSD>(GameFilePath);
+                        GameFile.CsvToEntries(File.ReadAllText(filePath), "Systems", "SystemsCount");
+                        GameFile.Save(GameFilePath);
+                    }
+                    if (accurateGalaxyMapCheckBox.Checked && filePath.ToLowerInvariant().Contains("systems-accurate.csv"))
                     {
                         GameFilePath = Path.Combine(Settings.Current.GDataFolder, "SYSTEMSD.DAT");
                         GameFile = DatFile.Load<SYSTEMSD>(GameFilePath);
@@ -213,7 +239,7 @@ public partial class PatchForm : PatchDesignForm
                     }
                 }
             }
-            
+
             // ---------------------------- RSRC ---------------------------
 
             foreach (var patchFolder in Directory.GetDirectories(setFolder))
@@ -320,8 +346,12 @@ public partial class PatchForm : PatchDesignForm
                                 if (patchFolderOnly == "ALSPRITE.DLL")
                                     ResourcesDlls.Alsprite.SaveBitmap(id, filePath);
                                 else if (patchFolderOnly == "COMMON.DLL")
-                                    ResourcesDlls.Common.SaveBitmap(id, filePath);
-                                if (patchFolderOnly == "EMSPRITE.DLL")
+                                {
+                                    if (!((filePath.ToLowerInvariant().Contains("20001-1033-common-main-screen-compatible.bmp") && !compatibleGalaxyMapCheckBox.Checked) ||
+                                         (filePath.ToLowerInvariant().Contains("20001-1033-common-main-screen-accurate.bmp"  ) && !accurateGalaxyMapCheckBox  .Checked)))
+                                        ResourcesDlls.Common.SaveBitmap(id, filePath);
+                                }
+                                else if (patchFolderOnly == "EMSPRITE.DLL")
                                     ResourcesDlls.Emsprite.SaveBitmap(id, filePath);
                                 else if (patchFolderOnly == "GOKRES.DLL")
                                     ResourcesDlls.Gokres.SaveBitmap(id, filePath);
@@ -449,4 +479,5 @@ public partial class PatchForm : PatchDesignForm
     }
 
     #endregion
+
 }
