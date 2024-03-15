@@ -59,12 +59,14 @@
 * Download the latest editor release : https://github.com/MetasharpNet/StarWarsRebellionEditor.NET/releases
   * (the file : swr-editor.net-?.?.????.?????.zip)
 * Extract the whole zip file content to a separate folder (not in the game folder directly! you can however create an editor subfolder in the game folder if you want, this is ok)
+* Disable Antivirus such as Norton: they might silently block the patching process and make the resulting game bugged (Windows Defender seems fine, try with your Antivirus on first and see if you experience in game bugs)
 * Run : SwRebellionEditor.exe
   * If prompted, adjust the game folder.
 * Click on the death star icon (the last icon) or through the menu : Editor / 25th Anniversary Patch
 * Click on the patch button
   * The UI will freeze. Wait for the patch to complete. When done, the patch window will be closed automatically.
   * Close the editor
+* Enable again your antivirus
 * Run the game.
 
 ### Fast game start
