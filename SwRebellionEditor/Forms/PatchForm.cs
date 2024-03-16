@@ -81,7 +81,6 @@ public partial class PatchForm : PatchDesignForm
     private void BackgroundWorker_PatchCompleted(object sender, RunWorkerCompletedEventArgs e)
     {
         logForm.OkButton.Enabled = true;
-        logForm.CancelButton.Enabled = false;
     }
 
 

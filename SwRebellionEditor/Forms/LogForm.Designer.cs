@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             LogTextBox = new TextBox();
-            CancelButton = new Button();
             OkButton = new Button();
             SuspendLayout();
             // 
@@ -43,20 +42,10 @@
             LogTextBox.TabIndex = 0;
             LogTextBox.WordWrap = false;
             // 
-            // CancelButton
-            // 
-            CancelButton.Location = new Point(12, 420);
-            CancelButton.Name = "CancelButton";
-            CancelButton.Size = new Size(131, 23);
-            CancelButton.TabIndex = 1;
-            CancelButton.Text = "Cancel";
-            CancelButton.UseVisualStyleBackColor = true;
-            CancelButton.Click += cancelButton_Click;
-            // 
             // OkButton
             // 
             OkButton.Enabled = false;
-            OkButton.Location = new Point(657, 420);
+            OkButton.Location = new Point(337, 420);
             OkButton.Name = "OkButton";
             OkButton.Size = new Size(131, 23);
             OkButton.TabIndex = 2;
@@ -70,7 +59,6 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
             Controls.Add(OkButton);
-            Controls.Add(CancelButton);
             Controls.Add(LogTextBox);
             Name = "LogForm";
             ResumeLayout(false);
@@ -80,7 +68,6 @@
         #endregion
 
         private TextBox LogTextBox;
-        public Button CancelButton;
         public Button OkButton;
     }
 }

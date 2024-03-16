@@ -145,9 +145,9 @@ namespace SwRebellionEditor
             line5Label.AutoSize = true;
             line5Label.Location = new Point(21, 148);
             line5Label.Name = "line5Label";
-            line5Label.Size = new Size(678, 15);
+            line5Label.Size = new Size(698, 15);
             line5Label.TabIndex = 1162;
-            line5Label.Text = "- Unique sprites and pictures for ALL 200 systems! + New Encyclopedia descriptions! + New tactical sprites + 3D models (27/29).";
+            line5Label.Text = "- Unique sprites and pictures for ALL 200 systems! + New Encyclopedia descriptions! + New tactical sprites + HD 3D models (12/29).";
             // 
             // warningLabel
             // 
