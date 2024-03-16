@@ -13,7 +13,7 @@
 * Drag and drop a new System 37x37 BMP picture on current to update it
 * Export : Systems
 * Other features in testing accessible in menus only
-* Extract : Export in 1 click game resources in an export folder (bitmaps and 3d models and data in CSV for now)
+* Extract : Export in 1 click game resources in an export folder (bitmaps, sounds, videos 3d models and data in CSV for now)
 * Patch : Star Wars Rebellion 25th Anniversary patch
 * Test Patch : Patch your custom content from the CSV folder. It can be anything from the export modified to your taste.
 
@@ -22,13 +22,25 @@
 * Dgvoodoo 2.82.3 (2024-01-31) directx libraries : http://dege.fw.hu/dgVoodoo2/dgVoodoo2/
   * Forum : https://www.vogons.org/viewforum.php?f=58 and https://www.vogons.org/viewtopic.php?f=59&t=97303
 * New Galaxy map using top 200 star wars planets (called systems in game) from 2023 canon mostly positioned as accurately as possible within game engine limits!
+  * 2 modes available : compatible with base game or accurate positionning 
 * 200/200 systems sprites (instead of 26 original sprites shared amongst 200 systems)
 * 200/200 systems tactical sprites
 * 200/200 systems encyclopedia pictures
 * 200/200 encyclopedia descriptions
 * 61/61 new character sprites from LordLaForge to be closer to canon/lgends character faces
 * 61/61 enhanced character sprites displaying their base average stats
-* 8/29 HD 3d models for capital ships + (21 mid definition 3d models)
+* 12/29 HD 3d models for capital ships + (17 mid definition 3d models)
+  * 2024-01-02 Alliance Action 6 Transport Bulk Freighter
+  * 2024-01-02 Empire Executor Super Star Destroyer
+  * 2024-01-02 Empire Immobilizer 418 Cruiser
+  * 2024-01-02 Empire Imperial Dreadnought Class Heavy Cruiser
+  * 2024-01-08 Empire Vindicator Heavy Cruiser
+  * 2024-01-08 Empire Victory Class Start Destroyher Mark 1
+  * 2024-01-18 Alliance CR90 Corellian Corvette
+  * 2024-02-11 Alliance MC80 Liberty Type Star Cruiser
+  * 2024-02-11 Alliance Assault Frigate Mark 1
+  * 2024-03-17 Alliance CC-7700 Frigate
+  * 2024-03-17 Alliance DP20 Frigate Correlian Gunship
 * 16/16 HD background musics (44KHz vs 11KHz)
 * 80 HD sprites for space fighters (X-wing, ...)
 * Savegame Test Pack (broken, will need to redo) : https://github.com/MetasharpNet/StarWarsRebellionEditor.NET/releases/tag/swr-editor.net-savegame-20231015
@@ -58,12 +70,14 @@
 * Download the latest editor release : https://github.com/MetasharpNet/StarWarsRebellionEditor.NET/releases
   * (the file : swr-editor.net-?.?.????.?????.zip)
 * Extract the whole zip file content to a separate folder (not in the game folder directly! you can however create an editor subfolder in the game folder if you want, this is ok)
+* Disable Antivirus such as Norton: they might silently block the patching process and make the resulting game bugged (Windows Defender seems fine, try with your Antivirus on first and see if you experience in game bugs)
 * Run : SwRebellionEditor.exe
   * If prompted, adjust the game folder.
 * Click on the death star icon (the last icon) or through the menu : Editor / 25th Anniversary Patch
 * Click on the patch button
   * The UI will freeze. Wait for the patch to complete. When done, the patch window will be closed automatically.
   * Close the editor
+* Enable again your antivirus
 * Run the game.
 
 ### Fast game start
@@ -72,7 +86,7 @@
 * This will skip new game's 5 minute briefings.
 
 ### If you have issues with full screen
-* Try pressing ALT+F11 to go in/out of full screen mode
+* Try pressing Alr Gr + F11 to go in/out of full screen mode
 * Use Display Port cable instead of HDMI
 * Make sure your shortcut to run the game has the -w option
 * Change settings with : dgVoodooCpl.exe from your game folder
