@@ -48,7 +48,6 @@ namespace SwRebellionEditor
             line4Label = new Label();
             line5Label = new Label();
             warningLabel = new Label();
-            patchInfoLabel = new Label();
             label1Requirement = new Label();
             label1 = new Label();
             charactersWithStatsCheckBox = new CheckBox();
@@ -57,6 +56,7 @@ namespace SwRebellionEditor
             label2 = new Label();
             compatibleGalaxyMapCheckBox = new CheckBox();
             accurateGalaxyMapCheckBox = new CheckBox();
+            label3 = new Label();
             SuspendLayout();
             // 
             // systemsImageList
@@ -67,7 +67,7 @@ namespace SwRebellionEditor
             // 
             // cancel
             // 
-            cancel.Location = new Point(604, 280);
+            cancel.Location = new Point(604, 326);
             cancel.Name = "cancel";
             cancel.Size = new Size(75, 23);
             cancel.TabIndex = 1154;
@@ -77,7 +77,7 @@ namespace SwRebellionEditor
             // 
             // patch
             // 
-            patch.Location = new Point(24, 280);
+            patch.Location = new Point(24, 326);
             patch.Name = "patch";
             patch.Size = new Size(110, 23);
             patch.TabIndex = 1155;
@@ -153,21 +153,11 @@ namespace SwRebellionEditor
             // 
             warningLabel.AutoSize = true;
             warningLabel.ForeColor = Color.Red;
-            warningLabel.Location = new Point(12, 194);
+            warningLabel.Location = new Point(24, 231);
             warningLabel.Name = "warningLabel";
-            warningLabel.Size = new Size(647, 15);
+            warningLabel.Size = new Size(350, 15);
             warningLabel.TabIndex = 1163;
-            warningLabel.Text = "This patch was released 2024-02-18 and is provided without any warranty of any kind. Doesn't work with older savegames.";
-            // 
-            // patchInfoLabel
-            // 
-            patchInfoLabel.AutoSize = true;
-            patchInfoLabel.Font = new Font("Segoe UI", 9F, FontStyle.Italic, GraphicsUnit.Point);
-            patchInfoLabel.Location = new Point(140, 284);
-            patchInfoLabel.Name = "patchInfoLabel";
-            patchInfoLabel.Size = new Size(432, 15);
-            patchInfoLabel.TabIndex = 1164;
-            patchInfoLabel.Text = "This window will freeze for a few minutes then close when the patch is completed.";
+            warningLabel.Text = "Released 2024-03 and provided without any warranty of any kind.";
             // 
             // label1Requirement
             // 
@@ -196,7 +186,7 @@ namespace SwRebellionEditor
             charactersWithStatsCheckBox.AutoSize = true;
             charactersWithStatsCheckBox.Checked = true;
             charactersWithStatsCheckBox.CheckState = CheckState.Checked;
-            charactersWithStatsCheckBox.Location = new Point(21, 245);
+            charactersWithStatsCheckBox.Location = new Point(21, 291);
             charactersWithStatsCheckBox.Name = "charactersWithStatsCheckBox";
             charactersWithStatsCheckBox.Size = new Size(158, 19);
             charactersWithStatsCheckBox.TabIndex = 1167;
@@ -207,7 +197,7 @@ namespace SwRebellionEditor
             // charactersWithoutStatsCheckBox
             // 
             charactersWithoutStatsCheckBox.AutoSize = true;
-            charactersWithoutStatsCheckBox.Location = new Point(189, 244);
+            charactersWithoutStatsCheckBox.Location = new Point(189, 290);
             charactersWithoutStatsCheckBox.Name = "charactersWithoutStatsCheckBox";
             charactersWithoutStatsCheckBox.Size = new Size(176, 19);
             charactersWithoutStatsCheckBox.TabIndex = 1168;
@@ -217,7 +207,7 @@ namespace SwRebellionEditor
             // 
             // patchTest
             // 
-            patchTest.Location = new Point(450, 241);
+            patchTest.Location = new Point(450, 287);
             patchTest.Name = "patchTest";
             patchTest.Size = new Size(132, 23);
             patchTest.TabIndex = 1169;
@@ -228,7 +218,7 @@ namespace SwRebellionEditor
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(21, 173);
+            label2.Location = new Point(21, 171);
             label2.Name = "label2";
             label2.Size = new Size(148, 15);
             label2.TabIndex = 1170;
@@ -239,7 +229,7 @@ namespace SwRebellionEditor
             compatibleGalaxyMapCheckBox.AutoSize = true;
             compatibleGalaxyMapCheckBox.Checked = true;
             compatibleGalaxyMapCheckBox.CheckState = CheckState.Checked;
-            compatibleGalaxyMapCheckBox.Location = new Point(21, 218);
+            compatibleGalaxyMapCheckBox.Location = new Point(21, 264);
             compatibleGalaxyMapCheckBox.Name = "compatibleGalaxyMapCheckBox";
             compatibleGalaxyMapCheckBox.Size = new Size(150, 19);
             compatibleGalaxyMapCheckBox.TabIndex = 1171;
@@ -250,7 +240,7 @@ namespace SwRebellionEditor
             // accurateGalaxyMapCheckBox
             // 
             accurateGalaxyMapCheckBox.AutoSize = true;
-            accurateGalaxyMapCheckBox.Location = new Point(189, 218);
+            accurateGalaxyMapCheckBox.Location = new Point(189, 264);
             accurateGalaxyMapCheckBox.Name = "accurateGalaxyMapCheckBox";
             accurateGalaxyMapCheckBox.Size = new Size(511, 19);
             accurateGalaxyMapCheckBox.TabIndex = 1172;
@@ -258,10 +248,21 @@ namespace SwRebellionEditor
             accurateGalaxyMapCheckBox.UseVisualStyleBackColor = true;
             accurateGalaxyMapCheckBox.CheckedChanged += accurateGalaxyMapCheckBox_CheckedChanged;
             // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.ForeColor = Color.Red;
+            label3.Location = new Point(24, 206);
+            label3.Name = "label3";
+            label3.Size = new Size(664, 15);
+            label3.TabIndex = 1173;
+            label3.Text = "For the patch  to work, you might need to disable antivirus such as Norton which might silentlt prevent proper files patching.";
+            // 
             // PatchForm
             // 
             AutoScaleMode = AutoScaleMode.None;
-            ClientSize = new Size(735, 317);
+            ClientSize = new Size(735, 362);
+            Controls.Add(label3);
             Controls.Add(accurateGalaxyMapCheckBox);
             Controls.Add(compatibleGalaxyMapCheckBox);
             Controls.Add(label2);
@@ -270,7 +271,6 @@ namespace SwRebellionEditor
             Controls.Add(charactersWithStatsCheckBox);
             Controls.Add(label1);
             Controls.Add(label1Requirement);
-            Controls.Add(patchInfoLabel);
             Controls.Add(warningLabel);
             Controls.Add(line5Label);
             Controls.Add(line4Label);
@@ -306,7 +306,6 @@ namespace SwRebellionEditor
         private Label line4Label;
         private Label line5Label;
         private Label warningLabel;
-        private Label patchInfoLabel;
         private Label label1Requirement;
         private Label label1;
         private CheckBox charactersWithStatsCheckBox;
@@ -315,5 +314,6 @@ namespace SwRebellionEditor
         private Label label2;
         private CheckBox compatibleGalaxyMapCheckBox;
         private CheckBox accurateGalaxyMapCheckBox;
+        private Label label3;
     }
 }
