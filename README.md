@@ -29,7 +29,17 @@
 * 200/200 encyclopedia descriptions
 * 61/61 new character sprites from LordLaForge to be closer to canon/lgends character faces
 * 61/61 enhanced character sprites displaying their base average stats
-* 8/29 HD 3d models for capital ships + (21 mid definition 3d models)
+* 11/29 HD 3d models for capital ships + (18 mid definition 3d models)
+  * Alliance MC80 Liberty Type Star Cruiser
+  * Alliance Assault Frigate Mark 1
+  * Alliance CR90 Corellian Corvette
+  * Alliance Action 6 Transport Bulk Freighter
+  * Alliance CC-7700 Frigate
+  * Empire Vindicator Heavy Cruiser
+  * Empire Immobilizer 418 Cruiser
+  * Empire Victory Class Start Destroyher Mark 1
+  * Empire Executor Super Star Destroyer
+  * Empire Imperial Dreadnought Class Heavy Cruiser
 * 16/16 HD background musics (44KHz vs 11KHz)
 * 80 HD sprites for space fighters (X-wing, ...)
 * Savegame Test Pack (broken, will need to redo) : https://github.com/MetasharpNet/StarWarsRebellionEditor.NET/releases/tag/swr-editor.net-savegame-20231015
