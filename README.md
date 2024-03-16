@@ -29,7 +29,7 @@
 * 200/200 encyclopedia descriptions
 * 61/61 new character sprites from LordLaForge to be closer to canon/lgends character faces
 * 61/61 enhanced character sprites displaying their base average stats
-* 11/29 HD 3d models for capital ships + (18 mid definition 3d models)
+* 12/29 HD 3d models for capital ships + (17 mid definition 3d models)
   * 2024-01-02 Alliance Action 6 Transport Bulk Freighter
   * 2024-01-02 Empire Executor Super Star Destroyer
   * 2024-01-02 Empire Immobilizer 418 Cruiser
