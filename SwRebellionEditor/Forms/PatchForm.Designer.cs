@@ -168,7 +168,7 @@ namespace SwRebellionEditor
             label1Requirement.Name = "label1Requirement";
             label1Requirement.Size = new Size(253, 15);
             label1Requirement.TabIndex = 1165;
-            label1Requirement.Text = "Includes update 1.02 (dgvoodoo2 directx 2.82.3)";
+            label1Requirement.Text = "Includes update 1.02 (dgvoodoo2 directx 2.82.4)";
             // 
             // label1
             // 
