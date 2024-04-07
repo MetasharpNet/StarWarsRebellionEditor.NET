@@ -13,6 +13,7 @@
     <Copyright>https://github.com/MetasharpNet/StarWarsRebellionEditor.NET</Copyright>
     <Product>Star Wars Rebellion Editor .NET</Product>
     <ApplicationIcon>Resources\app_icon.ico</ApplicationIcon>
+    <SupportedOSPlatformVersion>7.0</SupportedOSPlatformVersion>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
     <Deterministic>False</Deterministic>
