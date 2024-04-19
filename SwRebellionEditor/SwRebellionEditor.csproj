@@ -1502,6 +1502,36 @@
     <None Update="ships\EDATA\037-edata-y-wing.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="ships\EDATA\042-edata-mc80-liberty-cruiser.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="ships\EDATA\044-edata-assault-frigate.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="ships\EDATA\047-edata-corellian-corvette.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="ships\EDATA\049-edata-bulk-freighter.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="ships\EDATA\050-edata-corellian-gunship.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="ships\EDATA\052-edata-cc-7700-frigate.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="ships\EDATA\059-edata-immobilizer-cruiser.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="ships\EDATA\061-edata-victory-i-star-destroyer.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="ships\EDATA\063-edata-super-star-destroyer.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="ships\EDATA\071-edata-imperial-dreadnought.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="ships\TACTICAL.DLL\301\2010-1033-tactical-alliance-mc80-liberty-cruiser-close.x">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
@@ -4319,6 +4349,15 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="tactical-ui\TACTICAL.DLL\BITMAP\2158-1033-tactical-hud-empty.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="test\EDATA\057-edata-vindicator-heavy-cruiser.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="test\EDATA\060-edata-arquitens-light-cruiser.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="test\EDATA\066-edata-acclamator-drop-ship.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="test\readme.txt">
