@@ -29,7 +29,7 @@
 * 200/200 encyclopedia descriptions
 * 61/61 new character sprites from LordLaForge to be closer to canon/lgends character faces
 * 61/61 enhanced character sprites displaying their base average stats
-* 12/29 HD 3d models for capital ships + (17 mid definition 3d models)
+* 13/29 HD 3d models for capital ships + (17 mid definition 3d models)
   * 2024-01-02 Alliance Action 6 Transport Bulk Freighter
   * 2024-01-02 Empire Executor Super Star Destroyer
   * 2024-01-02 Empire Immobilizer 418 Cruiser
@@ -41,6 +41,8 @@
   * 2024-02-11 Alliance Assault Frigate Mark 1
   * 2024-03-17 Alliance CC-7700 Frigate
   * 2024-03-17 Alliance DP20 Frigate Correlian Gunship
+  * 2024-04-19 Empire Acclamator-Class Dropship
+  * 2024-04-19 Empire Arquitens Light Cruiser
 * 16/16 HD background musics (44KHz vs 11KHz)
 * 80 HD sprites for space fighters (X-wing, ...)
 * Savegame Test Pack (broken, will need to redo) : https://github.com/MetasharpNet/StarWarsRebellionEditor.NET/releases/tag/swr-editor.net-savegame-20231015
