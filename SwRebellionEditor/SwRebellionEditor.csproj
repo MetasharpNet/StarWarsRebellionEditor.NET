@@ -4333,6 +4333,42 @@
     <None Update="test\TACTICAL.DLL\301\2512-1033-tactical-empire-vindicator-heavy-cruiser-far.x">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="test\TACTICAL.DLL\301\2540-empire-arquitens-light-cruiser-close.x">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="test\TACTICAL.DLL\301\2541-empire-arquitens-light-cruiser-medium.x">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="test\TACTICAL.DLL\301\2542-empire-arquitens-light-cruiser-far.x">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="test\TACTICAL.DLL\301\2590-empire-acclamator-class-dropship-close.x">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="test\TACTICAL.DLL\301\2591-empire-acclamator-class-dropship-medium.x">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="test\TACTICAL.DLL\301\2592-empire-acclamator-class-dropship-far.x">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="test\TACTICAL.DLL\303\EMPIRE_ACCLAMATOR_CLASS_DROPSHIP_CLOSE.BMP">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="test\TACTICAL.DLL\303\EMPIRE_ACCLAMATOR_CLASS_DROPSHIP_FAR.BMP">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="test\TACTICAL.DLL\303\EMPIRE_ACCLAMATOR_CLASS_DROPSHIP_MEDIUM.BMP">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="test\TACTICAL.DLL\303\EMPIRE_ARQUITENS_CLASS_LIGHT_CRUISER_CLOSE.BMP">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="test\TACTICAL.DLL\303\EMPIRE_ARQUITENS_CLASS_LIGHT_CRUISER_FAR.BMP">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="test\TACTICAL.DLL\303\EMPIRE_ARQUITENS_CLASS_LIGHT_CRUISER_MEDIUM.BMP">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="test\TACTICAL.DLL\303\EMPIRE_VINDICATOR_HEAVY_CRUISER_CLOSE.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
