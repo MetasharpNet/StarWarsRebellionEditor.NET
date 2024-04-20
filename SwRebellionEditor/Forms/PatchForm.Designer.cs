@@ -88,7 +88,7 @@ namespace SwRebellionEditor
             // titleLabel
             // 
             titleLabel.AutoSize = true;
-            titleLabel.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            titleLabel.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             titleLabel.Location = new Point(12, 14);
             titleLabel.Name = "titleLabel";
             titleLabel.Size = new Size(239, 15);
@@ -147,7 +147,7 @@ namespace SwRebellionEditor
             line5Label.Name = "line5Label";
             line5Label.Size = new Size(698, 15);
             line5Label.TabIndex = 1162;
-            line5Label.Text = "- Unique sprites and pictures for ALL 200 systems! + New Encyclopedia descriptions! + New tactical sprites + HD 3D models (12/29).";
+            line5Label.Text = "- Unique sprites and pictures for ALL 200 systems! + New Encyclopedia descriptions! + New tactical sprites + HD 3D models (13/29).";
             // 
             // warningLabel
             // 
@@ -162,18 +162,18 @@ namespace SwRebellionEditor
             // label1Requirement
             // 
             label1Requirement.AutoSize = true;
-            label1Requirement.Font = new Font("Segoe UI", 9F, FontStyle.Italic, GraphicsUnit.Point);
+            label1Requirement.Font = new Font("Segoe UI", 9F, FontStyle.Italic);
             label1Requirement.ForeColor = Color.Red;
             label1Requirement.Location = new Point(393, 14);
             label1Requirement.Name = "label1Requirement";
             label1Requirement.Size = new Size(253, 15);
             label1Requirement.TabIndex = 1165;
-            label1Requirement.Text = "Includes update 1.02 (dgvoodoo2 directx 2.82.4)";
+            label1Requirement.Text = "Includes update 1.02 (dgvoodoo2 directx 2.82.5)";
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 9F, FontStyle.Italic, GraphicsUnit.Point);
+            label1.Font = new Font("Segoe UI", 9F, FontStyle.Italic);
             label1.ForeColor = Color.Black;
             label1.Location = new Point(408, 29);
             label1.Name = "label1";
