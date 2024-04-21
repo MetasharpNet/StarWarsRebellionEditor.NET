@@ -66,7 +66,7 @@
 
 ### 25th Anniversary Installation guide:
 * Install the latest .NET Desktop runtime : https://dotnet.microsoft.com/en-us/download/dotnet
-  * Direct link to latest version : https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/runtime-desktop-8.0.3-windows-x64-installer
+  * Direct link to latest version : https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/runtime-desktop-8.0.4-windows-x64-installer
 * Reboot
 * Install a fresh GoG or Steam Star Wars Rebellion game
 * Download the latest editor release : https://github.com/MetasharpNet/StarWarsRebellionEditor.NET/releases
