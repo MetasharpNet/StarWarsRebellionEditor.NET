@@ -21,6 +21,7 @@ public partial class EmpireFleetTableForm : EmpireFleetTableDesignForm
 
         groupComboBox.Items.AddRange(Identifier.EmpireCapitalShips);
         groupComboBox.Items.AddRange(Identifier.AllianceCapitalShips);
+        itemComboBox.Items.AddRange(Identifier.EmpireUnits);
         itemComboBox.Items.AddRange(Identifier.AllianceUnits);
         foreach (var group in GameFile.Groups)
         {
