@@ -29,7 +29,7 @@
 * 200/200 encyclopedia descriptions
 * 61/61 new character sprites from LordLaForge to be closer to canon/lgends character faces
 * 61/61 enhanced character sprites displaying their base average stats
-* 13/29 HD 3d models for capital ships + (17 mid definition 3d models)
+* 13/29 HD 3d models for capital ships + (16 mid definition 3d models)
   * 2024-01-02 Alliance Action 6 Transport Bulk Freighter
   * 2024-01-02 Empire Executor Super Star Destroyer
   * 2024-01-02 Empire Immobilizer 418 Cruiser
@@ -66,7 +66,7 @@
 
 ### 25th Anniversary Installation guide:
 * Install the latest .NET Desktop runtime : https://dotnet.microsoft.com/en-us/download/dotnet
-  * Direct link to latest version : https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/runtime-desktop-8.0.3-windows-x64-installer
+  * Direct link to latest version : https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/runtime-desktop-8.0.4-windows-x64-installer
 * Reboot
 * Install a fresh GoG or Steam Star Wars Rebellion game
 * Download the latest editor release : https://github.com/MetasharpNet/StarWarsRebellionEditor.NET/releases
