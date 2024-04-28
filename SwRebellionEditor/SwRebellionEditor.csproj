@@ -1502,31 +1502,94 @@
     <None Update="ships\EDATA\037-edata-y-wing.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="ships\EDATA\042-edata-2010-mc80-liberty-cruiser.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="ships\EDATA\042-edata-mc80-liberty-cruiser.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="ships\EDATA\043-edata-2020-bulk-cruiser.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="ships\EDATA\044-edata-2030-assault-frigate.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="ships\EDATA\044-edata-assault-frigate.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="ships\EDATA\045-edata-2040-nebulon-b-frigate.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="ships\EDATA\046-edata-2050-alliance-escort-carrier.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="ships\EDATA\047-edata-2060-corellian-corvette.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="ships\EDATA\047-edata-corellian-corvette.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="ships\EDATA\048-edata-2070-medium-transport.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="ships\EDATA\049-edata-2080-bulk-freighter.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="ships\EDATA\049-edata-bulk-freighter.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="ships\EDATA\050-edata-2090-corellian-gunship.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="ships\EDATA\050-edata-corellian-gunship.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="ships\EDATA\052-edata-2110-cc-7700-frigate.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="ships\EDATA\052-edata-cc-7700-frigate.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="ships\EDATA\054-edata-2140-liberator-cruiser.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="ships\EDATA\058-edata-2520-lancer-frigate.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="ships\EDATA\059-edata-2530-immobilizer-cruiser.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="ships\EDATA\059-edata-immobilizer-cruiser.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="ships\EDATA\061-edata-2550-victory-i-star-destroyer.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="ships\EDATA\061-edata-victory-i-star-destroyer.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="ships\EDATA\062-edata-2560-imperial-i-star-destroyer.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="ships\EDATA\063-edata-2570-super-star-destroyer.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="ships\EDATA\063-edata-super-star-destroyer.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="ships\EDATA\067-edata-2600-victory-ii-star-destroyer.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="ships\EDATA\068-edata-2610-imperial-ii-star-destroyer.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="ships\EDATA\069-edata-2620-star-galleon-frigate.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="ships\EDATA\070-edata-2630-imperial-escort-carrier.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="ships\EDATA\071-edata-2640-imperial-dreadnought.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="ships\EDATA\071-edata-imperial-dreadnought.bmp">
@@ -4351,10 +4414,34 @@
     <None Update="tactical-ui\TACTICAL.DLL\BITMAP\2158-1033-tactical-hud-empty.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="test\EDATA\051-edata-2100-mc40a-light-cruiser.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="test\EDATA\053-edata-2130-viscount-star-defender.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="test\EDATA\055-edata-2120-mc30c-frigate.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="test\EDATA\056-edata-2150-mc80a-homeone-cruiser.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="test\EDATA\057-edata-2510-vindicator-heavy-cruiser.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="test\EDATA\057-edata-vindicator-heavy-cruiser.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="test\EDATA\060-edata-2540-arquitens-light-cruiser.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="test\EDATA\060-edata-arquitens-light-cruiser.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="test\EDATA\064-edata-2580-gladiator-star-destroyer.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="test\EDATA\066-edata-2590-acclamator-drop-ship.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="test\EDATA\066-edata-acclamator-drop-ship.bmp">
