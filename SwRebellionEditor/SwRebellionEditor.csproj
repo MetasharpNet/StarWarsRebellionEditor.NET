@@ -1577,6 +1577,9 @@
     <None Update="ships\EDATA\063-edata-super-star-destroyer.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="ships\EDATA\065-edata-death-star.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="ships\EDATA\067-edata-2600-victory-ii-star-destroyer.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
