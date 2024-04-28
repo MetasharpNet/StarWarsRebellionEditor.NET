@@ -1652,13 +1652,13 @@
     <None Update="ships\TACTICAL.DLL\301\2062-1033-tactical-alliance-corellian-corvette-far.x">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\301\2070-1033-tactical-alliance-medium-transport-close-%28base%29.x">
+    <None Update="ships\TACTICAL.DLL\301\2070-1033-tactical-alliance-medium-transport-close.x">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\301\2071-1033-tactical-alliance-medium-transport-medium-%28base%29.x">
+    <None Update="ships\TACTICAL.DLL\301\2071-1033-tactical-alliance-medium-transport-medium.x">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\301\2072-1033-tactical-alliance-medium-transport-far-%28base%29.x">
+    <None Update="ships\TACTICAL.DLL\301\2072-1033-tactical-alliance-medium-transport-far.x">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="ships\TACTICAL.DLL\301\2080-1033-tactical-alliance-bulk-freighter-close.x">
@@ -1983,6 +1983,15 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="ships\TACTICAL.DLL\303\ALLIANCE_MC80_LIBERTY_CRUISER_MEDIUM.BMP">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="ships\TACTICAL.DLL\303\ALLIANCE_MEDIUM_TRANSPORT_CLOSE.BMP">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="ships\TACTICAL.DLL\303\ALLIANCE_MEDIUM_TRANSPORT_FAR.BMP">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="ships\TACTICAL.DLL\303\ALLIANCE_MEDIUM_TRANSPORT_MEDIUM.BMP">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="ships\TACTICAL.DLL\303\ALLIANCE_NEBULON_B_FRIGATE_CLOSE.BMP">
@@ -4453,6 +4462,15 @@
     <None Update="test\readme.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="test\TACTICAL.DLL\301\2120-1033-tactical-alliance-mc30c-frigate-close.x">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="test\TACTICAL.DLL\301\2121-1033-tactical-alliance-mc30c-frigate-medium.x">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="test\TACTICAL.DLL\301\2122-1033-tactical-alliance-mc30c-frigate-far.x">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="test\TACTICAL.DLL\301\2510-1033-tactical-empire-vindicator-heavy-cruiser-close.x">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
@@ -4478,6 +4496,15 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="test\TACTICAL.DLL\301\2592-empire-acclamator-class-dropship-far.x">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="test\TACTICAL.DLL\303\ALLIANCE_MC30C_FRIGATE_CLOSE.BMP">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="test\TACTICAL.DLL\303\ALLIANCE_MC30C_FRIGATE_FAR.BMP">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="test\TACTICAL.DLL\303\ALLIANCE_MC30C_FRIGATE_MEDIUM.BMP">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="test\TACTICAL.DLL\303\EMPIRE_ACCLAMATOR_CLASS_DROPSHIP_CLOSE.BMP">
