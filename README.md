@@ -19,7 +19,7 @@
 
 ### 25th Anniversary Patch Features :
 * Game's 1.02 community update
-* Dgvoodoo 2.82.4 (2024-04-07) directx libraries : http://dege.fw.hu/dgVoodoo2/dgVoodoo2/
+* Dgvoodoo 2.82.5 (2024-04-16) directx libraries : http://dege.fw.hu/dgVoodoo2/dgVoodoo2/
   * Forum : https://www.vogons.org/viewforum.php?f=58 and https://www.vogons.org/viewtopic.php?f=59&t=97303
 * New Galaxy map using top 200 star wars planets (called systems in game) from 2023 canon mostly positioned as accurately as possible within game engine limits!
   * 2 modes available : compatible with base game or accurate positionning 
@@ -29,7 +29,7 @@
 * 200/200 encyclopedia descriptions
 * 61/61 new character sprites from LordLaForge to be closer to canon/lgends character faces
 * 61/61 enhanced character sprites displaying their base average stats
-* 13/29 HD 3d models for capital ships + (16 mid definition 3d models)
+* 15/29 HD 3d models for capital ships + (14 mid definition 3d models)
   * 2024-01-02 Alliance Action 6 Transport Bulk Freighter
   * 2024-01-02 Empire Executor Super Star Destroyer
   * 2024-01-02 Empire Immobilizer 418 Cruiser
@@ -43,6 +43,8 @@
   * 2024-03-17 Alliance DP20 Frigate Correlian Gunship
   * 2024-04-19 Empire Acclamator-Class Dropship
   * 2024-04-19 Empire Arquitens Light Cruiser
+  * 2024-04-28 Alliance GR-75 Medium Transport
+  * 2024-04-28 Alliance MC30C Frigate
 * 16/16 HD background musics (44KHz vs 11KHz)
 * 80 HD sprites for space fighters (X-wing, ...)
 * Savegame Test Pack (broken, will need to redo) : https://github.com/MetasharpNet/StarWarsRebellionEditor.NET/releases/tag/swr-editor.net-savegame-20231015
