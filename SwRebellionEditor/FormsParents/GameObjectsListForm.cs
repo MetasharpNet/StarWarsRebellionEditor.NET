@@ -195,12 +195,12 @@ public abstract class GameObjectsListForm<TDatFile> : Form
 
     #region Utilities
 
-    public Image GetEncyclopediaImageAndAddToList(int edataId, ImageList imagesList = null, Image defaultImage = null)
+    public Image GetEncyclopediaImageAndAddToList(int edataId, ImageList? imagesList = null, Image? defaultImage = null)
     {
         return GetEncyclopediaImageAndAddToList("EDATA." + edataId.ToString("000"), imagesList, defaultImage);
     }
 
-    public Image GetEncyclopediaImageAndAddToList(string edataId, ImageList imagesList = null, Image defaultImage = null)
+    public Image GetEncyclopediaImageAndAddToList(string edataId, ImageList? imagesList = null, Image? defaultImage = null)
     {
         var filepath = Path.Combine(Settings.Current.EDataFolder, edataId);
         if (File.Exists(filepath))

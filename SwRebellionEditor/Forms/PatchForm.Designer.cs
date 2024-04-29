@@ -147,7 +147,7 @@ namespace SwRebellionEditor
             line5Label.Name = "line5Label";
             line5Label.Size = new Size(698, 15);
             line5Label.TabIndex = 1162;
-            line5Label.Text = "- Unique sprites and pictures for ALL 200 systems! + New Encyclopedia descriptions! + New tactical sprites + HD 3D models (13/29).";
+            line5Label.Text = "- Unique sprites and pictures for ALL 200 systems! + New Encyclopedia descriptions! + New tactical sprites + HD 3D models (15/29).";
             // 
             // warningLabel
             // 
@@ -157,7 +157,7 @@ namespace SwRebellionEditor
             warningLabel.Name = "warningLabel";
             warningLabel.Size = new Size(350, 15);
             warningLabel.TabIndex = 1163;
-            warningLabel.Text = "Released 2024-03 and provided without any warranty of any kind.";
+            warningLabel.Text = "Released 2024-04 and provided without any warranty of any kind.";
             // 
             // label1Requirement
             // 

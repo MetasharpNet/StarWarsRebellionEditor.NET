@@ -6,7 +6,7 @@
 public class AdobeColorTable
 {
     public List<Color> Colors = new List<Color>();
-    public byte[] Bytes;
+    public byte[] Bytes = new byte[0];
 
     public AdobeColorTable()
     {
