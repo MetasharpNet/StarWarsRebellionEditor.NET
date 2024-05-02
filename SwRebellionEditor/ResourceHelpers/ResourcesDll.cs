@@ -445,7 +445,31 @@ public class ResourcesDll
             catch
             {
                 File.Move(".\\" + folder + "\\" + _fileName + "\\303\\" + id + "-" + lang + "-" + _fileNameWithoutExtension + "-" + name + ".bin",
-                          ".\\" + folder + "\\" + _fileName + "\\303\\" + id + "-" + lang + "-" + _fileNameWithoutExtension + "-" + name + ".act");
+                            ".\\" + folder + "\\" + _fileName + "\\303\\" + id + "-" + lang + "-" + _fileNameWithoutExtension + "-" + name + ".act");
+            }
+        }
+        if (_fileName == "TACTICAL.DLL")
+        {
+            // specific palette BMP exports
+            foreach (var id in ids)
+            {
+                var lang = Get303Language(id);
+                var name = Names303.ContainsKey(id) ? Names303[id] : "";
+                try
+                {
+                    int idAsInt;
+                    if (Int32.TryParse(id, out idAsInt) && 5501 <= idAsInt && idAsInt <= 5527)
+                    {
+                        var bi = new BinImage(".\\" + folder + "\\" + _fileName + "\\303\\" + id + "-" + lang + "-" + _fileNameWithoutExtension + "-" + name + ".bin");
+                        var b = bi.ToBitmap(new AdobeColorTable(".\\" + folder + "\\" + _fileName + "\\303\\" + (idAsInt + 30).ToString() + "-" + lang + "-" + _fileNameWithoutExtension + "-" + name + ".act"));
+                        b.Save(".\\" + folder + "\\" + _fileName + "\\303\\" + id + "-" + lang + "-" + _fileNameWithoutExtension + "-" + name + ".bmp");
+                    }
+                }
+                catch
+                {
+                    File.Move(".\\" + folder + "\\" + _fileName + "\\303\\" + id + "-" + lang + "-" + _fileNameWithoutExtension + "-" + name + ".bin",
+                              ".\\" + folder + "\\" + _fileName + "\\303\\" + id + "-" + lang + "-" + _fileNameWithoutExtension + "-" + name + ".act");
+                }
             }
         }
     }
