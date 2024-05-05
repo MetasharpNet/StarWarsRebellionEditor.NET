@@ -14,7 +14,7 @@
 * Drag and drop a new System 37x37 BMP picture on current to update it
 * Export in 1 click game resources in an export folder (bitmaps, sounds, videos, 3d models and data in CSV for now)
 * Patch : Star Wars Rebellion 25th Anniversary patch
-* Test Patch : Patch your custom content from the test folder. It can be anything from the export modified to your taste. By default it contains 25th anniv patch content still in testing phase such as the new capital ships)
+* Test Patch : Patch your custom content from the test folder. It can be anything from the export modified to your taste. By default it contains 25th anniv patch content still in testing phase such as the new capital ships.
 
 ### 25th Anniversary Patch Features :
 * Game's 1.02 community update
