@@ -1,21 +1,20 @@
 ## Star Wars Rebellion Editor .NET
 * Need some help, talk with us on :
-  * Discord : https://swrebellion.link/discord
+  * Discord : https://swrebellion.link/discord ([#game-midd](https://discord.com/channels/263439494508707840/789989647761145907)
+    * Contact Metasharp user 
   * Steam : https://steamcommunity.com/app/441550/discussions/0/5913829825701729169/
   * GoG : https://www.gog.com/forum/star_wars_rebellion/star_wars_rebellion_in_2023_25th_anniv_patch_fix_fr_patch_guides
 * C# 12.0 project built with .NET 8 in Visual Studio 2022 : https://visualstudio.microsoft.com/vs/community/
 * To find where to buy the game or get free fan mods, check : https://swrebellion.net/
-  * I advise to go for GoG version of the game.
+  * I advise to go for GoG version of the game (Steam version should work as well).
 
 ### Current Editor Features :
 * Galaxy Map editor : can drag&drop sectors and systems
 * Editor for : Sectors, Systems, Characters, Units, Building (all fields can be modified, unlimited names and encyclopedia descriptions lengths)
 * Drag and drop a new System 37x37 BMP picture on current to update it
-* Export : Systems
-* Other features in testing accessible in menus only
-* Extract : Export in 1 click game resources in an export folder (bitmaps, sounds, videos 3d models and data in CSV for now)
+* Export in 1 click game resources in an export folder (bitmaps, sounds, videos, 3d models and data in CSV for now)
 * Patch : Star Wars Rebellion 25th Anniversary patch
-* Test Patch : Patch your custom content from the CSV folder. It can be anything from the export modified to your taste.
+* Test Patch : Patch your custom content from the test folder. It can be anything from the export modified to your taste. By default it contains 25th anniv patch content still in testing phase such as the new capital ships)
 
 ### 25th Anniversary Patch Features :
 * Game's 1.02 community update
@@ -74,6 +73,7 @@
 * Download the latest editor release : https://github.com/MetasharpNet/StarWarsRebellionEditor.NET/releases
   * (the file : swr-editor.net-?.?.????.?????.zip)
 * Extract the whole zip file content to a separate folder (not in the game folder directly! you can however create an editor subfolder in the game folder if you want, this is ok)
+* If the editor windows seem to show overlapping fields, you probably have activated Font or Icons zoom factor in Windows. Try to set it back to 100%. (https://community.microcenter.com/kb/articles/746-how-to-adjust-display-scaling-in-windows-11)
 * Disable Antivirus such as Norton: they might silently block the patching process and make the resulting game bugged (Windows Defender seems fine, try with your Antivirus on first and see if you experience in game bugs)
 * Run : SwRebellionEditor.exe
   * If prompted, adjust the game folder.
