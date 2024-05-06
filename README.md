@@ -79,9 +79,10 @@
   * If prompted, adjust the game folder.
 * Click on the death star icon (the last icon) or through the menu : Editor / 25th Anniversary Patch
 * Click on the patch button
-  * The UI will freeze. Wait for the patch to complete. When done, the patch window will be closed automatically.
+  * The UI will pop a window detailling in real time what is being patched. Wait for the patch to complete.
+  * To get the latest features, also patch with the Patch Test button.
   * Close the editor
-* Enable again your antivirus
+* Enable again your antivirus if you had to disable it
 * Run the game.
 
 ### Fast game start
