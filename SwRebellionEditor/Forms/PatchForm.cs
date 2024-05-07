@@ -347,7 +347,7 @@ public partial class PatchForm : PatchDesignForm
                         else if (mwId.StartsWith("MDATA."))
                             mwId = mwId.Split('.')[1];
                         logForm.AppendMessage("Source: " + filePath + " -> Destination: " + Path.Combine(Settings.Current.EDataFolder, "MDATA." + mwId));
-                        File.Copy(filePath, Path.Combine(Settings.Current.EDataFolder, "MDATA." + mwId), true);
+                        File.Copy(filePath, Path.Combine(Settings.Current.MDATAFolder, "MDATA." + mwId), true);
                     }
                 }
                 else if (patchFolderOnly.EndsWith(".DLL"))
