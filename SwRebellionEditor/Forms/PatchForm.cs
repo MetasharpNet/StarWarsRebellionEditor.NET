@@ -151,8 +151,8 @@ public partial class PatchForm : PatchDesignForm
             logForm.AppendMessage("[INFO] Game Update");
             foreach (var filePath in Directory.GetFiles("game-update"))
             {
-                if (Path.GetExtension(filePath).ToLowerInvariant() == ".txt")
-                    continue;
+                //if (Path.GetExtension(filePath).ToLowerInvariant() == ".txt")
+                //    continue;
                 var filename = Path.GetFileName(filePath);
                 try
                 {
