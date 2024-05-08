@@ -419,7 +419,8 @@ public class ResourcesDll
         {
             var lang = GetBitmapLanguage(id);
             var name = Names301.ContainsKey(id) ? Names301[id] : "";
-            File.WriteAllBytes(".\\" + folder + "\\" + _fileName + "\\301\\" + id + "-" + lang + "-" + _fileNameWithoutExtension + "-" + name + ".x", RT_301[id]);
+            var nameWithoutExtension = name == null ? id : id + "-" + lang + "-" + _fileNameWithoutExtension + "-" + name;
+            File.WriteAllBytes(".\\" + folder + "\\" + _fileName + "\\301\\" + nameWithoutExtension + ".x", RT_301[id]);
         }
     }
 
@@ -442,7 +443,7 @@ public class ResourcesDll
             {
                 var bi = new BinImage(".\\" + folder + "\\" + _fileName + "\\303\\" + nameWithoutExtension + ".bin");
                 var b = bi.ToBitmap(new AdobeColorTable(".\\" + _fileName.ToLowerInvariant().Replace(".", "-") + ".act"));
-                b.Save(".\\" + folder + "\\" + _fileName + "\\303\\" + nameWithoutExtension + ".bmp");
+                b.Save(".\\" + folder + "\\" + _fileName + "\\303\\" + nameWithoutExtension + (nameWithoutExtension.ToLowerInvariant().EndsWith(".bmp")?"":".bmp"));
             }
             catch
             {
@@ -465,8 +466,9 @@ public class ResourcesDll
                     if (Int32.TryParse(id, out idAsInt) && 5501 <= idAsInt && idAsInt <= 5527)
                     {
                         var bi = new BinImage(".\\" + folder + "\\" + _fileName + "\\303\\" + nameWithoutExtension + ".bin");
-                        var b = bi.ToBitmap(new AdobeColorTable(".\\" + folder + "\\" + _fileName + "\\303\\" + (idAsInt + 30).ToString() + "-" + lang + "-" + _fileNameWithoutExtension + "-" + name + ".act"));
-                        b.Save(".\\" + folder + "\\" + _fileName + "\\303\\" + nameWithoutExtension + ".bmp");
+                        var nameActWithoutExtension = name == null ? id : (idAsInt + 30).ToString() + "-" + lang + "-" + _fileNameWithoutExtension + "-" + name;
+                        var b = bi.ToBitmap(new AdobeColorTable(".\\" + folder + "\\" + _fileName + "\\303\\" + nameActWithoutExtension + ".act"));
+                        b.Save(".\\" + folder + "\\" + _fileName + "\\303\\" + nameWithoutExtension + (nameWithoutExtension.ToLowerInvariant().EndsWith(".bmp") ? "" : ".bmp"));
                     }
                 }
                 catch
@@ -490,7 +492,8 @@ public class ResourcesDll
         {
             var lang = GetBitmapLanguage(id);
             var name = NamesBitmap.ContainsKey(id) ? NamesBitmap[id] : "";
-            DIB.ToDDB(RT_BITMAP[id].Bitmap, ".\\" + folder + "\\" + _fileName + "\\Bitmap\\" + id + "-" + lang + "-" + _fileNameWithoutExtension + "-" + name + ".bmp");
+            var nameWithoutExtension = name == null ? id : id + "-" + lang + "-" + _fileNameWithoutExtension + "-" + name;
+            DIB.ToDDB(RT_BITMAP[id].Bitmap, ".\\" + folder + "\\" + _fileName + "\\Bitmap\\" + nameWithoutExtension + ".bmp");
         }
     }
 
@@ -506,7 +509,8 @@ public class ResourcesDll
         {
             var lang = GetWaveLanguage(id);
             var name = NamesWave.ContainsKey(id) ? NamesWave[id] : "";
-            File.WriteAllBytes(".\\" + folder + "\\" + _fileName + "\\WAVE\\" + id + "-" + lang + "-" + _fileNameWithoutExtension + "-" + name + ".wav", RT_WAVE[id]);
+            var nameWithoutExtension = name == null ? id : id + "-" + lang + "-" + _fileNameWithoutExtension + "-" + name;
+            File.WriteAllBytes(".\\" + folder + "\\" + _fileName + "\\WAVE\\" + nameWithoutExtension + ".wav", RT_WAVE[id]);
         }
     }
 
