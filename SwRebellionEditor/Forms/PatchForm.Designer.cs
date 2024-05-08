@@ -50,8 +50,8 @@ namespace SwRebellionEditor
             warningLabel = new Label();
             label1Requirement = new Label();
             label1 = new Label();
-            charactersWithStatsCheckBox = new CheckBox();
-            charactersWithoutStatsCheckBox = new CheckBox();
+            unitsWithStatsCheckBox = new CheckBox();
+            unitsWithoutStatsCheckBox = new CheckBox();
             patchTest = new Button();
             label2 = new Label();
             compatibleGalaxyMapCheckBox = new CheckBox();
@@ -181,29 +181,29 @@ namespace SwRebellionEditor
             label1.TabIndex = 1166;
             label1.Text = "Run dgVoodooCpl.exe after to setup your graphic settings.";
             // 
-            // charactersWithStatsCheckBox
+            // unitsWithStatsCheckBox
             // 
-            charactersWithStatsCheckBox.AutoSize = true;
-            charactersWithStatsCheckBox.Checked = true;
-            charactersWithStatsCheckBox.CheckState = CheckState.Checked;
-            charactersWithStatsCheckBox.Location = new Point(21, 291);
-            charactersWithStatsCheckBox.Name = "charactersWithStatsCheckBox";
-            charactersWithStatsCheckBox.Size = new Size(158, 19);
-            charactersWithStatsCheckBox.TabIndex = 1167;
-            charactersWithStatsCheckBox.Text = "new characters with stats";
-            charactersWithStatsCheckBox.UseVisualStyleBackColor = true;
-            charactersWithStatsCheckBox.CheckedChanged += charactersWithStatsCheckBox_CheckedChanged;
+            unitsWithStatsCheckBox.AutoSize = true;
+            unitsWithStatsCheckBox.Checked = true;
+            unitsWithStatsCheckBox.CheckState = CheckState.Checked;
+            unitsWithStatsCheckBox.Location = new Point(21, 291);
+            unitsWithStatsCheckBox.Name = "unitsWithStatsCheckBox";
+            unitsWithStatsCheckBox.Size = new Size(105, 19);
+            unitsWithStatsCheckBox.TabIndex = 1167;
+            unitsWithStatsCheckBox.Text = "units with stats";
+            unitsWithStatsCheckBox.UseVisualStyleBackColor = true;
+            unitsWithStatsCheckBox.CheckedChanged += unitsWithStatsCheckBox_CheckedChanged;
             // 
-            // charactersWithoutStatsCheckBox
+            // unitsWithoutStatsCheckBox
             // 
-            charactersWithoutStatsCheckBox.AutoSize = true;
-            charactersWithoutStatsCheckBox.Location = new Point(189, 290);
-            charactersWithoutStatsCheckBox.Name = "charactersWithoutStatsCheckBox";
-            charactersWithoutStatsCheckBox.Size = new Size(176, 19);
-            charactersWithoutStatsCheckBox.TabIndex = 1168;
-            charactersWithoutStatsCheckBox.Text = "new characters without stats";
-            charactersWithoutStatsCheckBox.UseVisualStyleBackColor = true;
-            charactersWithoutStatsCheckBox.CheckedChanged += charactersWithoutStatsCheckBox_CheckedChanged;
+            unitsWithoutStatsCheckBox.AutoSize = true;
+            unitsWithoutStatsCheckBox.Location = new Point(189, 290);
+            unitsWithoutStatsCheckBox.Name = "unitsWithoutStatsCheckBox";
+            unitsWithoutStatsCheckBox.Size = new Size(123, 19);
+            unitsWithoutStatsCheckBox.TabIndex = 1168;
+            unitsWithoutStatsCheckBox.Text = "units without stats";
+            unitsWithoutStatsCheckBox.UseVisualStyleBackColor = true;
+            unitsWithoutStatsCheckBox.CheckedChanged += unitsWithoutStatsCheckBox_CheckedChanged;
             // 
             // patchTest
             // 
@@ -267,8 +267,8 @@ namespace SwRebellionEditor
             Controls.Add(compatibleGalaxyMapCheckBox);
             Controls.Add(label2);
             Controls.Add(patchTest);
-            Controls.Add(charactersWithoutStatsCheckBox);
-            Controls.Add(charactersWithStatsCheckBox);
+            Controls.Add(unitsWithoutStatsCheckBox);
+            Controls.Add(unitsWithStatsCheckBox);
             Controls.Add(label1);
             Controls.Add(label1Requirement);
             Controls.Add(warningLabel);
@@ -308,8 +308,8 @@ namespace SwRebellionEditor
         private Label warningLabel;
         private Label label1Requirement;
         private Label label1;
-        private CheckBox charactersWithStatsCheckBox;
-        private CheckBox charactersWithoutStatsCheckBox;
+        private CheckBox unitsWithStatsCheckBox;
+        private CheckBox unitsWithoutStatsCheckBox;
         private Button patchTest;
         private Label label2;
         private CheckBox compatibleGalaxyMapCheckBox;

@@ -74,385 +74,739 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <None Update="characters+stats\00000-template-major-fleet.bmp">
+    <None Update="units+stats\00000-template-fighter.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="characters+stats\00000-template-major-minimalistic-fleet.bmp">
+    <None Update="units+stats\00000-template-major-fleet.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="characters+stats\00000-template-minor-fleet.bmp">
+    <None Update="units+stats\00000-template-major-minimalistic-fleet.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="characters+stats\GOKRES.DLL\Bitmap\18496-1033-gokres-character-alliance-mon-mothma.bmp">
+    <None Update="units+stats\00000-template-minor-fleet.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="characters+stats\GOKRES.DLL\Bitmap\18497-1033-gokres-character-alliance-leia-organa.bmp">
+    <None Update="units+stats\00000-template-ship.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="characters+stats\GOKRES.DLL\Bitmap\18498-1033-gokres-character-alliance-luke-skywalker.bmp">
+    <None Update="units+stats\00000-template-special-force.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="characters+stats\GOKRES.DLL\Bitmap\18499-1033-gokres-character-alliance-han-solo.bmp">
+    <None Update="units+stats\00000-template-troop.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="characters+stats\GOKRES.DLL\Bitmap\18512-1033-gokres-character-alliance-luke-knight.bmp">
+    <None Update="units+stats\GOKRES.DLL\Bitmap\17472-1033-gokres-troop-alliance-alliance-fleet-regiment.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="characters+stats\GOKRES.DLL\Bitmap\18560-1033-gokres-character-empire-emperor-palpatine.bmp">
+    <None Update="units+stats\GOKRES.DLL\Bitmap\17473-1033-gokres-troop-alliance-alliance-army-regiment.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="characters+stats\GOKRES.DLL\Bitmap\18561-1033-gokres-character-empire-darth-vader.bmp">
+    <None Update="units+stats\GOKRES.DLL\Bitmap\17474-1033-gokres-troop-alliance-sullustan-regiment.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="characters+stats\GOKRES.DLL\Bitmap\19008-1033-gokres-character-alliance-ackbar.bmp">
+    <None Update="units+stats\GOKRES.DLL\Bitmap\17475-1033-gokres-troop-alliance-wookiee-regiment.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="characters+stats\GOKRES.DLL\Bitmap\19009-1033-gokres-character-alliance-wedge-antilles.bmp">
+    <None Update="units+stats\GOKRES.DLL\Bitmap\17476-1033-gokres-troop-alliance-mon-calamari-regiment.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="characters+stats\GOKRES.DLL\Bitmap\19010-1033-gokres-character-alliance-lando-calrissian.bmp">
+    <None Update="units+stats\GOKRES.DLL\Bitmap\17536-1033-gokres-troop-empire-stormtrooper-regiment.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="characters+stats\GOKRES.DLL\Bitmap\19011-1033-gokres-character-alliance-chewbacca.bmp">
+    <None Update="units+stats\GOKRES.DLL\Bitmap\17537-1033-gokres-troop-empire-imperial-fleet-regiment.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="characters+stats\GOKRES.DLL\Bitmap\19012-1033-gokres-character-alliance-jan-dodonna.bmp">
+    <None Update="units+stats\GOKRES.DLL\Bitmap\17538-1033-gokres-troop-empire-imperial-army-regiment.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="characters+stats\GOKRES.DLL\Bitmap\19013-1033-gokres-character-alliance-crix-madine.bmp">
+    <None Update="units+stats\GOKRES.DLL\Bitmap\17539-1033-gokres-troop-empire-war-droid-regiment.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="characters+stats\GOKRES.DLL\Bitmap\19014-1033-gokres-character-alliance-carlist-rieekan.bmp">
+    <None Update="units+stats\GOKRES.DLL\Bitmap\17540-1033-gokres-troop-empire-dark-trooper-regiment.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="characters+stats\GOKRES.DLL\Bitmap\19015-1033-gokres-character-alliance-afyon.bmp">
+    <None Update="units+stats\GOKRES.DLL\Bitmap\17728-1033-gokres-special-force-alliance-guerillas.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="characters+stats\GOKRES.DLL\Bitmap\19016-1033-gokres-character-alliance-drayson.bmp">
+    <None Update="units+stats\GOKRES.DLL\Bitmap\17729-1033-gokres-special-force-alliance-infiltrators.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="characters+stats\GOKRES.DLL\Bitmap\19017-1033-gokres-character-alliance-borsk-fey%27lya.bmp">
+    <None Update="units+stats\GOKRES.DLL\Bitmap\17730-1033-gokres-special-force-alliance-longprobe-y-wing-recon-team.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="characters+stats\GOKRES.DLL\Bitmap\19018-1033-gokres-character-alliance-tura-raftican.bmp">
+    <None Update="units+stats\GOKRES.DLL\Bitmap\17731-1033-gokres-special-force-alliance-bothan-spies.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="characters+stats\GOKRES.DLL\Bitmap\19019-1033-gokres-character-alliance-bren-derlin.bmp">
+    <None Update="units+stats\GOKRES.DLL\Bitmap\17792-1033-gokres-special-force-empire-imperial-probe-droid.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="characters+stats\GOKRES.DLL\Bitmap\19020-1033-gokres-character-alliance-garm-bel-iblis.bmp">
+    <None Update="units+stats\GOKRES.DLL\Bitmap\17793-1033-gokres-special-force-empire-imperial-espionage-droid.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="characters+stats\GOKRES.DLL\Bitmap\19021-1033-gokres-character-alliance-talon-karrde.bmp">
+    <None Update="units+stats\GOKRES.DLL\Bitmap\17794-1033-gokres-special-force-empire-imperial-commandos.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="characters+stats\GOKRES.DLL\Bitmap\19022-1033-gokres-character-alliance-narra.bmp">
+    <None Update="units+stats\GOKRES.DLL\Bitmap\17795-1033-gokres-special-force-empire-noghri-death-commandos.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="characters+stats\GOKRES.DLL\Bitmap\19023-1033-gokres-character-alliance-huoba-neva.bmp">
+    <None Update="units+stats\GOKRES.DLL\Bitmap\17796-1033-gokres-special-force-empire-bounty-hunters.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="characters+stats\GOKRES.DLL\Bitmap\19024-1033-gokres-character-alliance-page.bmp">
+    <None Update="units+stats\GOKRES.DLL\Bitmap\17984-1033-gokres-fighter-alliance-a-wing.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="characters+stats\GOKRES.DLL\Bitmap\19025-1033-gokres-character-alliance-syub-snunb.bmp">
+    <None Update="units+stats\GOKRES.DLL\Bitmap\17985-1033-gokres-fighter-alliance-b-wing.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="characters+stats\GOKRES.DLL\Bitmap\19026-1033-gokres-character-alliance-adar-tallon.bmp">
+    <None Update="units+stats\GOKRES.DLL\Bitmap\17986-1033-gokres-fighter-alliance-x-wing.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="characters+stats\GOKRES.DLL\Bitmap\19027-1033-gokres-character-alliance-sarin-virgilio.bmp">
+    <None Update="units+stats\GOKRES.DLL\Bitmap\17987-1033-gokres-fighter-alliance-y-wing.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="characters+stats\GOKRES.DLL\Bitmap\19028-1033-gokres-character-alliance-vanden-willard.bmp">
+    <None Update="units+stats\GOKRES.DLL\Bitmap\18048-1033-gokres-fighter-empire-tie-fighter.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="characters+stats\GOKRES.DLL\Bitmap\19029-1033-gokres-character-alliance-roget-jiriss.bmp">
+    <None Update="units+stats\GOKRES.DLL\Bitmap\18049-1033-gokres-fighter-empire-tie-interceptor.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="characters+stats\GOKRES.DLL\Bitmap\19030-1033-gokres-character-alliance-kaiya-andrimetrum.bmp">
+    <None Update="units+stats\GOKRES.DLL\Bitmap\18050-1033-gokres-fighter-empire-tie-bomber.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="characters+stats\GOKRES.DLL\Bitmap\19031-1033-gokres-character-alliance-mazer-rackus.bmp">
+    <None Update="units+stats\GOKRES.DLL\Bitmap\18051-1033-gokres-fighter-empire-tie-defender.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="characters+stats\GOKRES.DLL\Bitmap\19032-1033-gokres-character-alliance-orrimaarko.bmp">
+    <None Update="units+stats\GOKRES.DLL\Bitmap\18240-1033-gokres-ship-alliance-mon-calamari-cruiser_mc80-liberty-cruiser.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="characters+stats\GOKRES.DLL\Bitmap\19033-1033-gokres-character-alliance-ma%27w%27shiye.bmp">
+    <None Update="units+stats\GOKRES.DLL\Bitmap\18241-1033-gokres-ship-alliance-bulk-cruiser.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="characters+stats\GOKRES.DLL\Bitmap\19072-1033-gokres-character-empire-jerjerrod.bmp">
+    <None Update="units+stats\GOKRES.DLL\Bitmap\18242-1033-gokres-ship-alliance-assault-frigate.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="characters+stats\GOKRES.DLL\Bitmap\19073-1033-gokres-character-empire-ozzel.bmp">
+    <None Update="units+stats\GOKRES.DLL\Bitmap\18243-1033-gokres-ship-alliance-nebulon-b-frigate.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="characters+stats\GOKRES.DLL\Bitmap\19074-1033-gokres-character-empire-piett.bmp">
+    <None Update="units+stats\GOKRES.DLL\Bitmap\18244-1033-gokres-ship-alliance-alliance-escort-carrier.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="characters+stats\GOKRES.DLL\Bitmap\19075-1033-gokres-character-empire-veers.bmp">
+    <None Update="units+stats\GOKRES.DLL\Bitmap\18245-1033-gokres-ship-alliance-corellian-corvette.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="characters+stats\GOKRES.DLL\Bitmap\19076-1033-gokres-character-empire-brandei.bmp">
+    <None Update="units+stats\GOKRES.DLL\Bitmap\18246-1033-gokres-ship-alliance-medium-transport.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="characters+stats\GOKRES.DLL\Bitmap\19077-1033-gokres-character-empire-covell.bmp">
+    <None Update="units+stats\GOKRES.DLL\Bitmap\18247-1033-gokres-ship-alliance-bulk-transport_bulk-freighter.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="characters+stats\GOKRES.DLL\Bitmap\19078-1033-gokres-character-empire-dorja.bmp">
+    <None Update="units+stats\GOKRES.DLL\Bitmap\18248-1033-gokres-ship-alliance-corellian-gunship.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="characters+stats\GOKRES.DLL\Bitmap\19079-1033-gokres-character-empire-bin-essada.bmp">
+    <None Update="units+stats\GOKRES.DLL\Bitmap\18249-1033-gokres-ship-alliance-alliance-dreadnaught_mc40a-light-cruiser.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="characters+stats\GOKRES.DLL\Bitmap\19080-1033-gokres-character-empire-niles-ferrier.bmp">
+    <None Update="units+stats\GOKRES.DLL\Bitmap\18250-1033-gokres-ship-alliance-cc-7700-frigate.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="characters+stats\GOKRES.DLL\Bitmap\19081-1033-gokres-character-empire-grammel.bmp">
+    <None Update="units+stats\GOKRES.DLL\Bitmap\18251-1033-gokres-ship-alliance-bulwark-battlecruiser_viscount-star-defender.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="characters+stats\GOKRES.DLL\Bitmap\19082-1033-gokres-character-empire-griff.bmp">
+    <None Update="units+stats\GOKRES.DLL\Bitmap\18252-1033-gokres-ship-alliance-liberator-cruiser.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="characters+stats\GOKRES.DLL\Bitmap\19083-1033-gokres-character-empire-klev.bmp">
+    <None Update="units+stats\GOKRES.DLL\Bitmap\18253-1033-gokres-ship-alliance-cc-9600-frigate_mc30c-frigate.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="characters+stats\GOKRES.DLL\Bitmap\19084-1033-gokres-character-empire-needa.bmp">
+    <None Update="units+stats\GOKRES.DLL\Bitmap\18254-1033-gokres-ship-alliance-dauntless-cruiser_mc80a-homeone-cruiser.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="characters+stats\GOKRES.DLL\Bitmap\19085-1033-gokres-character-empire-bane-nothos.bmp">
+    <None Update="units+stats\GOKRES.DLL\Bitmap\18304-1033-gokres-ship-empire-strike-cruiser_vindicator-heavy-cruiser.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="characters+stats\GOKRES.DLL\Bitmap\19086-1033-gokres-character-empire-orlok.bmp">
+    <None Update="units+stats\GOKRES.DLL\Bitmap\18305-1033-gokres-ship-empire-lancer-frigate.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="characters+stats\GOKRES.DLL\Bitmap\19087-1033-gokres-character-empire-pellaeon.bmp">
+    <None Update="units+stats\GOKRES.DLL\Bitmap\18306-1033-gokres-ship-empire-interdictor-cruiser_immobilizer-cruiser.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="characters+stats\GOKRES.DLL\Bitmap\19088-1033-gokres-character-empire-screed.bmp">
+    <None Update="units+stats\GOKRES.DLL\Bitmap\18307-1033-gokres-ship-empire-carrack-light-cruiser_arquitens-light-cruiser.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="characters+stats\GOKRES.DLL\Bitmap\19089-1033-gokres-character-empire-thrawn.bmp">
+    <None Update="units+stats\GOKRES.DLL\Bitmap\18308-1033-gokres-ship-empire-victory-destroyer_victory-1-star-destroyer.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="characters+stats\GOKRES.DLL\Bitmap\19090-1033-gokres-character-empire-zuggs.bmp">
+    <None Update="units+stats\GOKRES.DLL\Bitmap\18309-1033-gokres-ship-empire-imperial-star-destroyer_imperial-1-star-destroyer.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="characters+stats\GOKRES.DLL\Bitmap\19091-1033-gokres-character-empire-daala.bmp">
+    <None Update="units+stats\GOKRES.DLL\Bitmap\18310-1033-gokres-ship-empire-super-star-destroyer.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="characters+stats\GOKRES.DLL\Bitmap\19092-1033-gokres-character-empire-pter-thanas.bmp">
+    <None Update="units+stats\GOKRES.DLL\Bitmap\18311-1033-gokres-ship-empire-assault-transport_gladiator-star-destroyer.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="characters+stats\GOKRES.DLL\Bitmap\19093-1033-gokres-character-empire-bevel-lemelisk.bmp">
+    <None Update="units+stats\GOKRES.DLL\Bitmap\18312-1033-gokres-ship-empire-death-star.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="characters+stats\GOKRES.DLL\Bitmap\19094-1033-gokres-character-empire-shenir-rix.bmp">
+    <None Update="units+stats\GOKRES.DLL\Bitmap\18313-1033-gokres-ship-empire-galleon_acclamator-drop-ship.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="characters+stats\GOKRES.DLL\Bitmap\19095-1033-gokres-character-empire-noval-garaint.bmp">
+    <None Update="units+stats\GOKRES.DLL\Bitmap\18314-1033-gokres-ship-empire-victory-2-star-destroyer.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="characters+stats\GOKRES.DLL\Bitmap\19096-1033-gokres-character-empire-garindan.bmp">
+    <None Update="units+stats\GOKRES.DLL\Bitmap\18315-1033-gokres-ship-empire-imperial-2-star-destroyer.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="characters+stats\GOKRES.DLL\Bitmap\19097-1033-gokres-character-empire-menndo.bmp">
+    <None Update="units+stats\GOKRES.DLL\Bitmap\18316-1033-gokres-ship-empire-star-galleon_star-galleon-frigate.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="characters+stats\GOKRES.DLL\Bitmap\19098-1033-gokres-character-empire-labansat.bmp">
+    <None Update="units+stats\GOKRES.DLL\Bitmap\18317-1033-gokres-ship-empire-imperial-escort-carrier.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="characters+stats\GOKRES.DLL\Bitmap\19099-1033-gokres-character-empire-villar.bmp">
+    <None Update="units+stats\GOKRES.DLL\Bitmap\18318-1033-gokres-ship-empire-imperial-dreadnaught_imperial-dreadnought.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="characters+stats\readme.txt">
+    <None Update="units+stats\GOKRES.DLL\Bitmap\18496-1033-gokres-character-alliance-mon-mothma.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="characters-stats\GOKRES.DLL\Bitmap\18496-1033-gokres-character-alliance-mon-mothma.bmp">
+    <None Update="units+stats\GOKRES.DLL\Bitmap\18497-1033-gokres-character-alliance-leia-organa.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="characters-stats\GOKRES.DLL\Bitmap\18497-1033-gokres-character-alliance-leia-organa.bmp">
+    <None Update="units+stats\GOKRES.DLL\Bitmap\18498-1033-gokres-character-alliance-luke-skywalker.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="characters-stats\GOKRES.DLL\Bitmap\18498-1033-gokres-character-alliance-luke-skywalker.bmp">
+    <None Update="units+stats\GOKRES.DLL\Bitmap\18499-1033-gokres-character-alliance-han-solo.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="characters-stats\GOKRES.DLL\Bitmap\18499-1033-gokres-character-alliance-han-solo.bmp">
+    <None Update="units+stats\GOKRES.DLL\Bitmap\18512-1033-gokres-character-alliance-luke-knight.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="characters-stats\GOKRES.DLL\Bitmap\18512-1033-gokres-character-alliance-luke-knight.bmp">
+    <None Update="units+stats\GOKRES.DLL\Bitmap\18560-1033-gokres-character-empire-emperor-palpatine.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="characters-stats\GOKRES.DLL\Bitmap\18560-1033-gokres-character-empire-emperor-palpatine.bmp">
+    <None Update="units+stats\GOKRES.DLL\Bitmap\18561-1033-gokres-character-empire-darth-vader.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="characters-stats\GOKRES.DLL\Bitmap\18561-1033-gokres-character-empire-darth-vader.bmp">
+    <None Update="units+stats\GOKRES.DLL\Bitmap\19008-1033-gokres-character-alliance-ackbar.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="characters-stats\GOKRES.DLL\Bitmap\19008-1033-gokres-character-alliance-ackbar.bmp">
+    <None Update="units+stats\GOKRES.DLL\Bitmap\19009-1033-gokres-character-alliance-wedge-antilles.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="characters-stats\GOKRES.DLL\Bitmap\19009-1033-gokres-character-alliance-wedge-antilles.bmp">
+    <None Update="units+stats\GOKRES.DLL\Bitmap\19010-1033-gokres-character-alliance-lando-calrissian.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="characters-stats\GOKRES.DLL\Bitmap\19010-1033-gokres-character-alliance-lando-calrissian.bmp">
+    <None Update="units+stats\GOKRES.DLL\Bitmap\19011-1033-gokres-character-alliance-chewbacca.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="characters-stats\GOKRES.DLL\Bitmap\19011-1033-gokres-character-alliance-chewbacca.bmp">
+    <None Update="units+stats\GOKRES.DLL\Bitmap\19012-1033-gokres-character-alliance-jan-dodonna.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="characters-stats\GOKRES.DLL\Bitmap\19012-1033-gokres-character-alliance-jan-dodonna.bmp">
+    <None Update="units+stats\GOKRES.DLL\Bitmap\19013-1033-gokres-character-alliance-crix-madine.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="characters-stats\GOKRES.DLL\Bitmap\19013-1033-gokres-character-alliance-crix-madine.bmp">
+    <None Update="units+stats\GOKRES.DLL\Bitmap\19014-1033-gokres-character-alliance-carlist-rieekan.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="characters-stats\GOKRES.DLL\Bitmap\19014-1033-gokres-character-alliance-carlist-rieekan.bmp">
+    <None Update="units+stats\GOKRES.DLL\Bitmap\19015-1033-gokres-character-alliance-afyon.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="characters-stats\GOKRES.DLL\Bitmap\19015-1033-gokres-character-alliance-afyon.bmp">
+    <None Update="units+stats\GOKRES.DLL\Bitmap\19016-1033-gokres-character-alliance-drayson.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="characters-stats\GOKRES.DLL\Bitmap\19016-1033-gokres-character-alliance-drayson.bmp">
+    <None Update="units+stats\GOKRES.DLL\Bitmap\19017-1033-gokres-character-alliance-borsk-fey%27lya.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="characters-stats\GOKRES.DLL\Bitmap\19017-1033-gokres-character-alliance-borsk-fey%27lya.bmp">
+    <None Update="units+stats\GOKRES.DLL\Bitmap\19018-1033-gokres-character-alliance-tura-raftican.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="characters-stats\GOKRES.DLL\Bitmap\19018-1033-gokres-character-alliance-tura-raftican.bmp">
+    <None Update="units+stats\GOKRES.DLL\Bitmap\19019-1033-gokres-character-alliance-bren-derlin.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="characters-stats\GOKRES.DLL\Bitmap\19019-1033-gokres-character-alliance-bren-derlin.bmp">
+    <None Update="units+stats\GOKRES.DLL\Bitmap\19020-1033-gokres-character-alliance-garm-bel-iblis.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="characters-stats\GOKRES.DLL\Bitmap\19020-1033-gokres-character-alliance-garm-bel-iblis.bmp">
+    <None Update="units+stats\GOKRES.DLL\Bitmap\19021-1033-gokres-character-alliance-talon-karrde.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="characters-stats\GOKRES.DLL\Bitmap\19021-1033-gokres-character-alliance-talon-karrde.bmp">
+    <None Update="units+stats\GOKRES.DLL\Bitmap\19022-1033-gokres-character-alliance-narra.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="characters-stats\GOKRES.DLL\Bitmap\19022-1033-gokres-character-alliance-narra.bmp">
+    <None Update="units+stats\GOKRES.DLL\Bitmap\19023-1033-gokres-character-alliance-huoba-neva.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="characters-stats\GOKRES.DLL\Bitmap\19023-1033-gokres-character-alliance-huoba-neva.bmp">
+    <None Update="units+stats\GOKRES.DLL\Bitmap\19024-1033-gokres-character-alliance-page.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="characters-stats\GOKRES.DLL\Bitmap\19024-1033-gokres-character-alliance-page.bmp">
+    <None Update="units+stats\GOKRES.DLL\Bitmap\19025-1033-gokres-character-alliance-syub-snunb.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="characters-stats\GOKRES.DLL\Bitmap\19025-1033-gokres-character-alliance-syub-snunb.bmp">
+    <None Update="units+stats\GOKRES.DLL\Bitmap\19026-1033-gokres-character-alliance-adar-tallon.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="characters-stats\GOKRES.DLL\Bitmap\19026-1033-gokres-character-alliance-adar-tallon.bmp">
+    <None Update="units+stats\GOKRES.DLL\Bitmap\19027-1033-gokres-character-alliance-sarin-virgilio.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="characters-stats\GOKRES.DLL\Bitmap\19027-1033-gokres-character-alliance-sarin-virgilio.bmp">
+    <None Update="units+stats\GOKRES.DLL\Bitmap\19028-1033-gokres-character-alliance-vanden-willard.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="characters-stats\GOKRES.DLL\Bitmap\19028-1033-gokres-character-alliance-vanden-willard.bmp">
+    <None Update="units+stats\GOKRES.DLL\Bitmap\19029-1033-gokres-character-alliance-roget-jiriss.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="characters-stats\GOKRES.DLL\Bitmap\19029-1033-gokres-character-alliance-roget-jiriss.bmp">
+    <None Update="units+stats\GOKRES.DLL\Bitmap\19030-1033-gokres-character-alliance-kaiya-andrimetrum.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="characters-stats\GOKRES.DLL\Bitmap\19030-1033-gokres-character-alliance-kaiya-andrimetrum.bmp">
+    <None Update="units+stats\GOKRES.DLL\Bitmap\19031-1033-gokres-character-alliance-mazer-rackus.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="characters-stats\GOKRES.DLL\Bitmap\19031-1033-gokres-character-alliance-mazer-rackus.bmp">
+    <None Update="units+stats\GOKRES.DLL\Bitmap\19032-1033-gokres-character-alliance-orrimaarko.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="characters-stats\GOKRES.DLL\Bitmap\19032-1033-gokres-character-alliance-orrimaarko.bmp">
+    <None Update="units+stats\GOKRES.DLL\Bitmap\19033-1033-gokres-character-alliance-ma%27w%27shiye.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="characters-stats\GOKRES.DLL\Bitmap\19033-1033-gokres-character-alliance-ma%27w%27shiye.bmp">
+    <None Update="units+stats\GOKRES.DLL\Bitmap\19072-1033-gokres-character-empire-jerjerrod.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="characters-stats\GOKRES.DLL\Bitmap\19072-1033-gokres-character-empire-jerjerrod.bmp">
+    <None Update="units+stats\GOKRES.DLL\Bitmap\19073-1033-gokres-character-empire-ozzel.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="characters-stats\GOKRES.DLL\Bitmap\19073-1033-gokres-character-empire-ozzel.bmp">
+    <None Update="units+stats\GOKRES.DLL\Bitmap\19074-1033-gokres-character-empire-piett.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="characters-stats\GOKRES.DLL\Bitmap\19074-1033-gokres-character-empire-piett.bmp">
+    <None Update="units+stats\GOKRES.DLL\Bitmap\19075-1033-gokres-character-empire-veers.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="characters-stats\GOKRES.DLL\Bitmap\19075-1033-gokres-character-empire-veers.bmp">
+    <None Update="units+stats\GOKRES.DLL\Bitmap\19076-1033-gokres-character-empire-brandei.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="characters-stats\GOKRES.DLL\Bitmap\19076-1033-gokres-character-empire-brandei.bmp">
+    <None Update="units+stats\GOKRES.DLL\Bitmap\19077-1033-gokres-character-empire-covell.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="characters-stats\GOKRES.DLL\Bitmap\19077-1033-gokres-character-empire-covell.bmp">
+    <None Update="units+stats\GOKRES.DLL\Bitmap\19078-1033-gokres-character-empire-dorja.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="characters-stats\GOKRES.DLL\Bitmap\19078-1033-gokres-character-empire-dorja.bmp">
+    <None Update="units+stats\GOKRES.DLL\Bitmap\19079-1033-gokres-character-empire-bin-essada.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="characters-stats\GOKRES.DLL\Bitmap\19079-1033-gokres-character-empire-bin-essada.bmp">
+    <None Update="units+stats\GOKRES.DLL\Bitmap\19080-1033-gokres-character-empire-niles-ferrier.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="characters-stats\GOKRES.DLL\Bitmap\19080-1033-gokres-character-empire-niles-ferrier.bmp">
+    <None Update="units+stats\GOKRES.DLL\Bitmap\19081-1033-gokres-character-empire-grammel.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="characters-stats\GOKRES.DLL\Bitmap\19081-1033-gokres-character-empire-grammel.bmp">
+    <None Update="units+stats\GOKRES.DLL\Bitmap\19082-1033-gokres-character-empire-griff.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="characters-stats\GOKRES.DLL\Bitmap\19082-1033-gokres-character-empire-griff.bmp">
+    <None Update="units+stats\GOKRES.DLL\Bitmap\19083-1033-gokres-character-empire-klev.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="characters-stats\GOKRES.DLL\Bitmap\19083-1033-gokres-character-empire-klev.bmp">
+    <None Update="units+stats\GOKRES.DLL\Bitmap\19084-1033-gokres-character-empire-needa.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="characters-stats\GOKRES.DLL\Bitmap\19084-1033-gokres-character-empire-needa.bmp">
+    <None Update="units+stats\GOKRES.DLL\Bitmap\19085-1033-gokres-character-empire-bane-nothos.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="characters-stats\GOKRES.DLL\Bitmap\19085-1033-gokres-character-empire-bane-nothos.bmp">
+    <None Update="units+stats\GOKRES.DLL\Bitmap\19086-1033-gokres-character-empire-orlok.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="characters-stats\GOKRES.DLL\Bitmap\19086-1033-gokres-character-empire-orlok.bmp">
+    <None Update="units+stats\GOKRES.DLL\Bitmap\19087-1033-gokres-character-empire-pellaeon.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="characters-stats\GOKRES.DLL\Bitmap\19087-1033-gokres-character-empire-pellaeon.bmp">
+    <None Update="units+stats\GOKRES.DLL\Bitmap\19088-1033-gokres-character-empire-screed.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="characters-stats\GOKRES.DLL\Bitmap\19088-1033-gokres-character-empire-screed.bmp">
+    <None Update="units+stats\GOKRES.DLL\Bitmap\19089-1033-gokres-character-empire-thrawn.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="characters-stats\GOKRES.DLL\Bitmap\19089-1033-gokres-character-empire-thrawn.bmp">
+    <None Update="units+stats\GOKRES.DLL\Bitmap\19090-1033-gokres-character-empire-zuggs.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="characters-stats\GOKRES.DLL\Bitmap\19090-1033-gokres-character-empire-zuggs.bmp">
+    <None Update="units+stats\GOKRES.DLL\Bitmap\19091-1033-gokres-character-empire-daala.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="characters-stats\GOKRES.DLL\Bitmap\19091-1033-gokres-character-empire-daala.bmp">
+    <None Update="units+stats\GOKRES.DLL\Bitmap\19092-1033-gokres-character-empire-pter-thanas.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="characters-stats\GOKRES.DLL\Bitmap\19092-1033-gokres-character-empire-pter-thanas.bmp">
+    <None Update="units+stats\GOKRES.DLL\Bitmap\19093-1033-gokres-character-empire-bevel-lemelisk.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="characters-stats\GOKRES.DLL\Bitmap\19093-1033-gokres-character-empire-bevel-lemelisk.bmp">
+    <None Update="units+stats\GOKRES.DLL\Bitmap\19094-1033-gokres-character-empire-shenir-rix.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="characters-stats\GOKRES.DLL\Bitmap\19094-1033-gokres-character-empire-shenir-rix.bmp">
+    <None Update="units+stats\GOKRES.DLL\Bitmap\19095-1033-gokres-character-empire-noval-garaint.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="characters-stats\GOKRES.DLL\Bitmap\19095-1033-gokres-character-empire-noval-garaint.bmp">
+    <None Update="units+stats\GOKRES.DLL\Bitmap\19096-1033-gokres-character-empire-garindan.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="characters-stats\GOKRES.DLL\Bitmap\19096-1033-gokres-character-empire-garindan.bmp">
+    <None Update="units+stats\GOKRES.DLL\Bitmap\19097-1033-gokres-character-empire-menndo.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="characters-stats\GOKRES.DLL\Bitmap\19097-1033-gokres-character-empire-menndo.bmp">
+    <None Update="units+stats\GOKRES.DLL\Bitmap\19098-1033-gokres-character-empire-labansat.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="characters-stats\GOKRES.DLL\Bitmap\19098-1033-gokres-character-empire-labansat.bmp">
+    <None Update="units+stats\GOKRES.DLL\Bitmap\19099-1033-gokres-character-empire-villar.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="characters-stats\GOKRES.DLL\Bitmap\19099-1033-gokres-character-empire-villar.bmp">
+    <None Update="units+stats\readme.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="characters-stats\readme.txt">
+    <None Update="units-stats\GOKRES.DLL\Bitmap\17472-1033-gokres-troop-alliance-alliance-fleet-regiment.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="units-stats\GOKRES.DLL\Bitmap\17473-1033-gokres-troop-alliance-alliance-army-regiment.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="units-stats\GOKRES.DLL\Bitmap\17474-1033-gokres-troop-alliance-sullustan-regiment.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="units-stats\GOKRES.DLL\Bitmap\17475-1033-gokres-troop-alliance-wookiee-regiment.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="units-stats\GOKRES.DLL\Bitmap\17476-1033-gokres-troop-alliance-mon-calamari-regiment.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="units-stats\GOKRES.DLL\Bitmap\17536-1033-gokres-troop-empire-stormtrooper-regiment.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="units-stats\GOKRES.DLL\Bitmap\17537-1033-gokres-troop-empire-imperial-fleet-regiment.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="units-stats\GOKRES.DLL\Bitmap\17538-1033-gokres-troop-empire-imperial-army-regiment.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="units-stats\GOKRES.DLL\Bitmap\17539-1033-gokres-troop-empire-war-droid-regiment.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="units-stats\GOKRES.DLL\Bitmap\17540-1033-gokres-troop-empire-dark-trooper-regiment.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="units-stats\GOKRES.DLL\Bitmap\17728-1033-gokres-special-force-alliance-guerillas.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="units-stats\GOKRES.DLL\Bitmap\17729-1033-gokres-special-force-alliance-infiltrators.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="units-stats\GOKRES.DLL\Bitmap\17730-1033-gokres-special-force-alliance-longprobe-y-wing-recon-team.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="units-stats\GOKRES.DLL\Bitmap\17731-1033-gokres-special-force-alliance-bothan-spies.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="units-stats\GOKRES.DLL\Bitmap\17792-1033-gokres-special-force-empire-imperial-probe-droid.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="units-stats\GOKRES.DLL\Bitmap\17793-1033-gokres-special-force-empire-imperial-espionage-droid.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="units-stats\GOKRES.DLL\Bitmap\17794-1033-gokres-special-force-empire-imperial-commandos.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="units-stats\GOKRES.DLL\Bitmap\17795-1033-gokres-special-force-empire-noghri-death-commandos.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="units-stats\GOKRES.DLL\Bitmap\17796-1033-gokres-special-force-empire-bounty-hunters.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="units-stats\GOKRES.DLL\Bitmap\17984-1033-gokres-fighter-alliance-a-wing.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="units-stats\GOKRES.DLL\Bitmap\17985-1033-gokres-fighter-alliance-b-wing.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="units-stats\GOKRES.DLL\Bitmap\17986-1033-gokres-fighter-alliance-x-wing.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="units-stats\GOKRES.DLL\Bitmap\17987-1033-gokres-fighter-alliance-y-wing.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="units-stats\GOKRES.DLL\Bitmap\18048-1033-gokres-fighter-empire-tie-fighter.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="units-stats\GOKRES.DLL\Bitmap\18049-1033-gokres-fighter-empire-tie-interceptor.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="units-stats\GOKRES.DLL\Bitmap\18050-1033-gokres-fighter-empire-tie-bomber.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="units-stats\GOKRES.DLL\Bitmap\18051-1033-gokres-fighter-empire-tie-defender.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="units-stats\GOKRES.DLL\Bitmap\18240-1033-gokres-ship-alliance-mon-calamari-cruiser_mc80-liberty-cruiser.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="units-stats\GOKRES.DLL\Bitmap\18241-1033-gokres-ship-alliance-bulk-cruiser.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="units-stats\GOKRES.DLL\Bitmap\18242-1033-gokres-ship-alliance-assault-frigate.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="units-stats\GOKRES.DLL\Bitmap\18243-1033-gokres-ship-alliance-nebulon-b-frigate.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="units-stats\GOKRES.DLL\Bitmap\18244-1033-gokres-ship-alliance-alliance-escort-carrier.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="units-stats\GOKRES.DLL\Bitmap\18245-1033-gokres-ship-alliance-corellian-corvette.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="units-stats\GOKRES.DLL\Bitmap\18246-1033-gokres-ship-alliance-medium-transport.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="units-stats\GOKRES.DLL\Bitmap\18247-1033-gokres-ship-alliance-bulk-transport_bulk-freighter.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="units-stats\GOKRES.DLL\Bitmap\18248-1033-gokres-ship-alliance-corellian-gunship.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="units-stats\GOKRES.DLL\Bitmap\18249-1033-gokres-ship-alliance-alliance-dreadnaught_mc40a-light-cruiser.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="units-stats\GOKRES.DLL\Bitmap\18250-1033-gokres-ship-alliance-cc-7700-frigate.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="units-stats\GOKRES.DLL\Bitmap\18251-1033-gokres-ship-alliance-bulwark-battlecruiser_viscount-star-defender.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="units-stats\GOKRES.DLL\Bitmap\18252-1033-gokres-ship-alliance-liberator-cruiser.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="units-stats\GOKRES.DLL\Bitmap\18253-1033-gokres-ship-alliance-cc-9600-frigate_mc30c-frigate.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="units-stats\GOKRES.DLL\Bitmap\18254-1033-gokres-ship-alliance-dauntless-cruiser_mc80a-homeone-cruiser.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="units-stats\GOKRES.DLL\Bitmap\18304-1033-gokres-ship-empire-strike-cruiser_vindicator-heavy-cruiser.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="units-stats\GOKRES.DLL\Bitmap\18305-1033-gokres-ship-empire-lancer-frigate.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="units-stats\GOKRES.DLL\Bitmap\18306-1033-gokres-ship-empire-interdictor-cruiser_immobilizer-cruiser.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="units-stats\GOKRES.DLL\Bitmap\18307-1033-gokres-ship-empire-carrack-light-cruiser_arquitens-light-cruiser.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="units-stats\GOKRES.DLL\Bitmap\18308-1033-gokres-ship-empire-victory-destroyer_victory-1-star-destroyer.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="units-stats\GOKRES.DLL\Bitmap\18309-1033-gokres-ship-empire-imperial-star-destroyer_imperial-1-star-destroyer.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="units-stats\GOKRES.DLL\Bitmap\18310-1033-gokres-ship-empire-super-star-destroyer.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="units-stats\GOKRES.DLL\Bitmap\18311-1033-gokres-ship-empire-assault-transport_gladiator-star-destroyer.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="units-stats\GOKRES.DLL\Bitmap\18312-1033-gokres-ship-empire-death-star.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="units-stats\GOKRES.DLL\Bitmap\18313-1033-gokres-ship-empire-galleon_acclamator-drop-ship.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="units-stats\GOKRES.DLL\Bitmap\18314-1033-gokres-ship-empire-victory-2-star-destroyer.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="units-stats\GOKRES.DLL\Bitmap\18315-1033-gokres-ship-empire-imperial-2-star-destroyer.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="units-stats\GOKRES.DLL\Bitmap\18316-1033-gokres-ship-empire-star-galleon_star-galleon-frigate.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="units-stats\GOKRES.DLL\Bitmap\18317-1033-gokres-ship-empire-imperial-escort-carrier.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="units-stats\GOKRES.DLL\Bitmap\18318-1033-gokres-ship-empire-imperial-dreadnaught_imperial-dreadnought.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="units-stats\GOKRES.DLL\Bitmap\18496-1033-gokres-character-alliance-mon-mothma.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="units-stats\GOKRES.DLL\Bitmap\18497-1033-gokres-character-alliance-leia-organa.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="units-stats\GOKRES.DLL\Bitmap\18498-1033-gokres-character-alliance-luke-skywalker.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="units-stats\GOKRES.DLL\Bitmap\18499-1033-gokres-character-alliance-han-solo.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="units-stats\GOKRES.DLL\Bitmap\18512-1033-gokres-character-alliance-luke-knight.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="units-stats\GOKRES.DLL\Bitmap\18560-1033-gokres-character-empire-emperor-palpatine.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="units-stats\GOKRES.DLL\Bitmap\18561-1033-gokres-character-empire-darth-vader.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="units-stats\GOKRES.DLL\Bitmap\19008-1033-gokres-character-alliance-ackbar.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="units-stats\GOKRES.DLL\Bitmap\19009-1033-gokres-character-alliance-wedge-antilles.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="units-stats\GOKRES.DLL\Bitmap\19010-1033-gokres-character-alliance-lando-calrissian.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="units-stats\GOKRES.DLL\Bitmap\19011-1033-gokres-character-alliance-chewbacca.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="units-stats\GOKRES.DLL\Bitmap\19012-1033-gokres-character-alliance-jan-dodonna.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="units-stats\GOKRES.DLL\Bitmap\19013-1033-gokres-character-alliance-crix-madine.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="units-stats\GOKRES.DLL\Bitmap\19014-1033-gokres-character-alliance-carlist-rieekan.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="units-stats\GOKRES.DLL\Bitmap\19015-1033-gokres-character-alliance-afyon.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="units-stats\GOKRES.DLL\Bitmap\19016-1033-gokres-character-alliance-drayson.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="units-stats\GOKRES.DLL\Bitmap\19017-1033-gokres-character-alliance-borsk-fey%27lya.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="units-stats\GOKRES.DLL\Bitmap\19018-1033-gokres-character-alliance-tura-raftican.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="units-stats\GOKRES.DLL\Bitmap\19019-1033-gokres-character-alliance-bren-derlin.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="units-stats\GOKRES.DLL\Bitmap\19020-1033-gokres-character-alliance-garm-bel-iblis.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="units-stats\GOKRES.DLL\Bitmap\19021-1033-gokres-character-alliance-talon-karrde.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="units-stats\GOKRES.DLL\Bitmap\19022-1033-gokres-character-alliance-narra.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="units-stats\GOKRES.DLL\Bitmap\19023-1033-gokres-character-alliance-huoba-neva.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="units-stats\GOKRES.DLL\Bitmap\19024-1033-gokres-character-alliance-page.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="units-stats\GOKRES.DLL\Bitmap\19025-1033-gokres-character-alliance-syub-snunb.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="units-stats\GOKRES.DLL\Bitmap\19026-1033-gokres-character-alliance-adar-tallon.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="units-stats\GOKRES.DLL\Bitmap\19027-1033-gokres-character-alliance-sarin-virgilio.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="units-stats\GOKRES.DLL\Bitmap\19028-1033-gokres-character-alliance-vanden-willard.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="units-stats\GOKRES.DLL\Bitmap\19029-1033-gokres-character-alliance-roget-jiriss.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="units-stats\GOKRES.DLL\Bitmap\19030-1033-gokres-character-alliance-kaiya-andrimetrum.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="units-stats\GOKRES.DLL\Bitmap\19031-1033-gokres-character-alliance-mazer-rackus.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="units-stats\GOKRES.DLL\Bitmap\19032-1033-gokres-character-alliance-orrimaarko.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="units-stats\GOKRES.DLL\Bitmap\19033-1033-gokres-character-alliance-ma%27w%27shiye.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="units-stats\GOKRES.DLL\Bitmap\19072-1033-gokres-character-empire-jerjerrod.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="units-stats\GOKRES.DLL\Bitmap\19073-1033-gokres-character-empire-ozzel.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="units-stats\GOKRES.DLL\Bitmap\19074-1033-gokres-character-empire-piett.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="units-stats\GOKRES.DLL\Bitmap\19075-1033-gokres-character-empire-veers.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="units-stats\GOKRES.DLL\Bitmap\19076-1033-gokres-character-empire-brandei.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="units-stats\GOKRES.DLL\Bitmap\19077-1033-gokres-character-empire-covell.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="units-stats\GOKRES.DLL\Bitmap\19078-1033-gokres-character-empire-dorja.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="units-stats\GOKRES.DLL\Bitmap\19079-1033-gokres-character-empire-bin-essada.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="units-stats\GOKRES.DLL\Bitmap\19080-1033-gokres-character-empire-niles-ferrier.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="units-stats\GOKRES.DLL\Bitmap\19081-1033-gokres-character-empire-grammel.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="units-stats\GOKRES.DLL\Bitmap\19082-1033-gokres-character-empire-griff.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="units-stats\GOKRES.DLL\Bitmap\19083-1033-gokres-character-empire-klev.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="units-stats\GOKRES.DLL\Bitmap\19084-1033-gokres-character-empire-needa.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="units-stats\GOKRES.DLL\Bitmap\19085-1033-gokres-character-empire-bane-nothos.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="units-stats\GOKRES.DLL\Bitmap\19086-1033-gokres-character-empire-orlok.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="units-stats\GOKRES.DLL\Bitmap\19087-1033-gokres-character-empire-pellaeon.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="units-stats\GOKRES.DLL\Bitmap\19088-1033-gokres-character-empire-screed.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="units-stats\GOKRES.DLL\Bitmap\19089-1033-gokres-character-empire-thrawn.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="units-stats\GOKRES.DLL\Bitmap\19090-1033-gokres-character-empire-zuggs.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="units-stats\GOKRES.DLL\Bitmap\19091-1033-gokres-character-empire-daala.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="units-stats\GOKRES.DLL\Bitmap\19092-1033-gokres-character-empire-pter-thanas.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="units-stats\GOKRES.DLL\Bitmap\19093-1033-gokres-character-empire-bevel-lemelisk.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="units-stats\GOKRES.DLL\Bitmap\19094-1033-gokres-character-empire-shenir-rix.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="units-stats\GOKRES.DLL\Bitmap\19095-1033-gokres-character-empire-noval-garaint.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="units-stats\GOKRES.DLL\Bitmap\19096-1033-gokres-character-empire-garindan.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="units-stats\GOKRES.DLL\Bitmap\19097-1033-gokres-character-empire-menndo.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="units-stats\GOKRES.DLL\Bitmap\19098-1033-gokres-character-empire-labansat.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="units-stats\GOKRES.DLL\Bitmap\19099-1033-gokres-character-empire-villar.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="units-stats\readme.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="characters\EDATA\072-edata-character-alliance-mon-mothma.bmp">
@@ -4458,7 +4812,7 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="characters+stats\GOKRES.DLL\Bitmap\" />
+    <Folder Include="units+stats\GOKRES.DLL\Bitmap\" />
     <Folder Include="characters\EDATA\" />
     <Folder Include="characters\GOKRES.DLL\Bitmap\" />
     <Folder Include="characters\STRATEGY.DLL\Bitmap\" />

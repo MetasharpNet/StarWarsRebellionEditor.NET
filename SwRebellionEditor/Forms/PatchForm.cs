@@ -28,15 +28,15 @@ public partial class PatchForm : PatchDesignForm
     {
         Close();
     }
-    private void charactersWithoutStatsCheckBox_CheckedChanged(object sender, EventArgs e)
+    private void unitsWithoutStatsCheckBox_CheckedChanged(object sender, EventArgs e)
     {
-        if (charactersWithoutStatsCheckBox.Checked)
-            charactersWithStatsCheckBox.Checked = false;
+        if (unitsWithoutStatsCheckBox.Checked)
+            unitsWithStatsCheckBox.Checked = false;
     }
-    private void charactersWithStatsCheckBox_CheckedChanged(object sender, EventArgs e)
+    private void unitsWithStatsCheckBox_CheckedChanged(object sender, EventArgs e)
     {
-        if (charactersWithStatsCheckBox.Checked)
-            charactersWithoutStatsCheckBox.Checked = false;
+        if (unitsWithStatsCheckBox.Checked)
+            unitsWithoutStatsCheckBox.Checked = false;
     }
 
     private void compatibleGalaxyMapCheckBox_CheckedChanged(object sender, EventArgs e)
@@ -183,9 +183,9 @@ public partial class PatchForm : PatchDesignForm
                     continue;
                 if (setFolderOnly == "test")
                     continue;
-                if (setFolderOnly == "characters+stats" && charactersWithoutStatsCheckBox.Checked)
+                if (setFolderOnly == "units+stats" && unitsWithoutStatsCheckBox.Checked)
                     continue;
-                if (setFolderOnly == "characters-stats" && charactersWithStatsCheckBox.Checked)
+                if (setFolderOnly == "units-stats" && unitsWithStatsCheckBox.Checked)
                     continue;
             }
             else if (setFolderOnly != "test")
