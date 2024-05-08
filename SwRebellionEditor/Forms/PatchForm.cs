@@ -477,10 +477,10 @@ public partial class PatchForm : PatchDesignForm
                                     for (int p = 14001; p <= 14200; ++p)
                                     {
                                         var key = p.ToString();
-                                        if (!ResourcesDlls.Tactical.RT_BITMAP.ContainsKey(key))
+                                        if (!ResourcesDlls.Strategy.RT_BITMAP.ContainsKey(key))
                                         {
                                             logForm.AppendMessage("Source: " + f + " DestinationResource: bitmap/" + key);
-                                            ResourcesDlls.Tactical.SaveBitmap(key, f);
+                                            ResourcesDlls.Strategy.SaveBitmap(key, f);
                                         }
                                     }
                                 }

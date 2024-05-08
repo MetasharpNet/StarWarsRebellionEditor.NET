@@ -843,66 +843,166 @@ public class Tactical : ResourcesDll
                 { "15198", "system-ziost" },
                 { "15199", "system-zonama-sekot-(atlas)" },
                 { "15200", "system-zygerria" },
-                // ships (base game)
-                { "ASSFRG52.BMP", "ship-alliance-assault-frigate-close" },
-                { "ASSFRG_M.BMP", "ship-alliance-assault-frigate-medium" },
-                { "ATMAP.BMP"   , "ship-empire-assault-transport-close" },
-                { "ATMAP_M.BMP" , "ship-empire-assault-transport-medium" },
-                { "A_ESCR.BMP"  , "ship-alliance-alliance-escort-carrier-close" },
-                { "A_ESCR_M.BMP", "ship-alliance-alliance-escort-carrier-medium" },
-                { "BCRSER52.BMP", "ship-alliance-bulk-cruiser-close" },
-                { "BCRSER_M.BMP", "ship-alliance-bulk-cruiser-mediu" },
-                { "BULK52.BMP"  , "ship-alliance-bulk-transport-close" },
-                { "BULK_M.BMP"  , "ship-alliance-bulk-transport-medium" },
-                { "CARRAK52.BMP", "ship-empire-carrack-light-cruiser-close" },
-                { "CARRAK_M.BMP", "ship-empire-carrack-light-cruiser-medium" },
-                { "CORVET52.BMP", "ship-alliance-correlian-corvette-close" },
-                { "CORVET_M.BMP", "ship-alliance-correlian-corvette-medium" },
-                { "ESCARRIM.BMP", "ship-empire-imperial-escort-carrier-medium" },
-                { "ESCARR_I.BMP", "ship-empire-imperial-escort-carrier-close" },
-                { "E_DRED52.BMP", "ship-empire-imperial-dreadnaught-close" },
-                { "E_DRED_M.BMP", "ship-empire-imperial-dreadnaught-medium" },
-                { "GLMAP128.BMP", "ship-empire-galleon-close" },
-                { "GLMAP_M.BMP" , "ship-empire-galleon-medium" },
-                { "GUNSHIP.BMP" , "ship-alliance-correlian-gunship-close" },
-                { "GUNSHP_M.BMP", "ship-alliance-correlian-gunship-medium" },
-                { "INTERD.BMP"  , "ship-empire-interdictor-cruiser-close" },
-                { "INTERD_M.BMP", "ship-empire-interdictor-cruiser-medium" },
-                { "LANCER52.BMP", "ship-empire-lancer-frigate-close" },
-                { "LANCER_M.BMP", "ship-empire-lancer-frigate-medium" },
-                { "MONCAL52.BMP", "ship-alliance-mon-calamari-cruiser-close" },
-                { "MONCAL_M.BMP", "ship-alliance-mon-calamari-cruiser-medium" },
-                { "NEBUL52.BMP" , "ship-alliance-nebulon-b-frigate-close" },
-                { "NEBUL_M.BMP" , "ship-alliance-nebulon-b-frigate-medium" },
-                { "R1MAP.BMP"   , "ship-alliance-cc-7700-frigate-close" },
-                { "R1MAP_M.BMP" , "ship-alliance-cc-7700-frigate-medium" },
-                { "R2MAP.BMP"   , "ship-alliance-bulwark-battlecruiser-close" },
-                { "R2MAP_M.BMP" , "ship-alliance-bulwark-battlecruiser-medium" },
-                { "R3MAP2.BMP"  , "ship-alliance-cc-9600-frigate-close" },
-                { "R3MAP2_M.BMP", "ship-alliance-cc-9600-frigate-medium" },
-                { "R4MAP.BMP"   , "ship-alliance-liberator-cruiser-close" },
-                { "R4MAP_M.BMP" , "ship-alliance-liberator-cruiser-medium" },
-                { "R5MAP.BMP"   , "ship-alliance-dauntless-cruiser-close" },
-                { "R5MAP_M.BMP" , "ship-alliance-dauntless-cruiser-medium" },
-                { "R_DRED52.BMP", "ship-alliance-alliance-dreadnaught-close" },
-                { "R_DRED_M.BMP", "ship-alliance-alliance-dreadnaught-medium" },
-                { "SDESTI52.BMP", "ship-empire-imperial-star-destroyer-close" },
-                { "SDESTI_M.BMP", "ship-empire-imperial-star-destroyer-medium" },
-                { "SDESTV52.BMP", "ship-empire-victory-destroyer-close" },
-                { "SDESTV_M.BMP", "ship-empire-victory-destroyer-medium" },
-                { "SDSTI252.BMP", "ship-empire-imperial-2-star-destroyer-close" },
-                { "SDSTI2_M.BMP", "ship-empire-imperial-2-star-destroyer-medium" },
-                { "SDSTV252.BMP", "ship-empire-victory-2-star-destroyer-close" },
-                { "SDSTV2_M.BMP", "ship-empire-victory-2-star-destroyer-medium" },
-                { "SPDEST24.BMP", "ship-empire-super-star-destroyer-medium" },
-                { "SPDEST52.BMP", "ship-empire-super-star-destroyer-close" },
-                { "SPDEST_S.BMP", "ship-empire-super-star-destroyer-far" },
-                { "STRGAL.BMP"  , "ship-empire-star-galleon-close" },
-                { "STRGAL_M.BMP", "ship-empire-star-galleon-medium" },
-                { "STRIKE52.BMP", "ship-empire-strike-cruiser-close" },
-                { "STRIKE_M.BMP", "ship-empire-strike-cruiser-medium" },
-                { "TUNA52.BMP"  , "ship-alliance-medium-transport-close" },
-                { "TUNA_M.BMP"  , "ship-alliance-medium-transport-medium" },
+                // capital ships textures (base game)
+                { "A_ESCR.BMP"  , null }, // ship-alliance-alliance-escort-carrier-close
+                { "A_ESCR_M.BMP", null }, // ship-alliance-alliance-escort-carrier-medium
+                { "ASSFRG_M.BMP", null }, // ship-alliance-assault-frigate-medium
+                { "ASSFRG52.BMP", null }, // ship-alliance-assault-frigate-close
+                { "ATMAP.BMP"   , null }, // ship-empire-assault-transport-close
+                { "ATMAP_M.BMP" , null }, // ship-empire-assault-transport-medium
+                { "BCRSER_M.BMP", null }, // ship-alliance-bulk-cruiser-medium
+                { "BCRSER52.BMP", null }, // ship-alliance-bulk-cruiser-close
+                { "BULK_M.BMP"  , null }, // ship-alliance-bulk-transport-medium
+                { "BULK52.BMP"  , null }, // ship-alliance-bulk-transport-close
+                { "CARRAK_M.BMP", null }, // ship-empire-carrack-light-cruiser-medium
+                { "CARRAK52.BMP", null }, // ship-empire-carrack-light-cruiser-close
+                { "CORVET_M.BMP", null }, // ship-alliance-correlian-corvette-medium
+                { "CORVET52.BMP", null }, // ship-alliance-correlian-corvette-close
+                { "E_DRED_M.BMP", null }, // ship-empire-imperial-dreadnaught-medium
+                { "E_DRED52.BMP", null }, // ship-empire-imperial-dreadnaught-close
+                { "ESCARR_I.BMP", null }, // ship-empire-imperial-escort-carrier-close
+                { "ESCARRIM.BMP", null }, // ship-empire-imperial-escort-carrier-medium
+                { "GLMAP_M.BMP" , null }, // ship-empire-galleon-medium
+                { "GLMAP128.BMP", null }, // ship-empire-galleon-close
+                { "GUNSHIP.BMP" , null }, // ship-alliance-correlian-gunship-close
+                { "GUNSHP_M.BMP", null }, // ship-alliance-correlian-gunship-medium
+                { "INTERD.BMP"  , null }, // ship-empire-interdictor-cruiser-close
+                { "INTERD_M.BMP", null }, // ship-empire-interdictor-cruiser-medium
+                { "LANCER_M.BMP", null }, // ship-empire-lancer-frigate-medium
+                { "LANCER52.BMP", null }, // ship-empire-lancer-frigate-close
+                { "MONCAL_M.BMP", null }, // ship-alliance-mon-calamari-cruiser-medium
+                { "MONCAL52.BMP", null }, // ship-alliance-mon-calamari-cruiser-close
+                { "NEBUL_M.BMP" , null }, // ship-alliance-nebulon-b-frigate-medium
+                { "NEBUL52.BMP" , null }, // ship-alliance-nebulon-b-frigate-close
+                { "R_DRED_M.BMP", null }, // ship-alliance-alliance-dreadnaught-medium
+                { "R_DRED52.BMP", null }, // ship-alliance-alliance-dreadnaught-close
+                { "R1MAP.BMP"   , null }, // ship-alliance-cc-7700-frigate-close
+                { "R1MAP_M.BMP" , null }, // ship-alliance-cc-7700-frigate-medium
+                { "R2MAP.BMP"   , null }, // ship-alliance-bulwark-battlecruiser-close
+                { "R2MAP_M.BMP" , null }, // ship-alliance-bulwark-battlecruiser-medium
+                { "R3MAP2.BMP"  , null }, // ship-alliance-cc-9600-frigate-close
+                { "R3MAP2_M.BMP", null }, // ship-alliance-cc-9600-frigate-medium
+                { "R4MAP.BMP"   , null }, // ship-alliance-liberator-cruiser-close
+                { "R4MAP_M.BMP" , null }, // ship-alliance-liberator-cruiser-medium
+                { "R5MAP.BMP"   , null }, // ship-alliance-dauntless-cruiser-close
+                { "R5MAP_M.BMP" , null }, // ship-alliance-dauntless-cruiser-medium
+                { "SDESTI_M.BMP", null }, // ship-empire-imperial-star-destroyer-medium
+                { "SDESTI52.BMP", null }, // ship-empire-imperial-star-destroyer-close
+                { "SDESTV_M.BMP", null }, // ship-empire-victory-destroyer-medium
+                { "SDESTV52.BMP", null }, // ship-empire-victory-destroyer-close
+                { "SDSTI2_M.BMP", null }, // ship-empire-imperial-2-star-destroyer-medium
+                { "SDSTI252.BMP", null }, // ship-empire-imperial-2-star-destroyer-close
+                { "SDSTV2_M.BMP", null }, // ship-empire-victory-2-star-destroyer-medium
+                { "SDSTV252.BMP", null }, // ship-empire-victory-2-star-destroyer-close
+                { "SPDEST_S.BMP", null }, // ship-empire-super-star-destroyer-far
+                { "SPDEST24.BMP", null }, // ship-empire-super-star-destroyer-medium
+                { "SPDEST52.BMP", null }, // ship-empire-super-star-destroyer-close
+                { "STRGAL.BMP"  , null }, // ship-empire-star-galleon-close
+                { "STRGAL_M.BMP", null }, // ship-empire-star-galleon-medium
+                { "STRIKE_M.BMP", null }, // ship-empire-strike-cruiser-medium
+                { "STRIKE52.BMP", null }, // ship-empire-strike-cruiser-close
+                { "TUNA_M.BMP"  , null }, // ship-alliance-medium-transport-medium
+                { "TUNA52.BMP"  , null }, // ship-alliance-medium-transport-close
+                // capital ships textures (25th anniv patch)
+                { "ALLIANCE_ASSAULT_FRIGATE_CLOSE.BMP"                          , null },
+                { "ALLIANCE_ASSAULT_FRIGATE_FAR.BMP"                            , null },
+                { "ALLIANCE_ASSAULT_FRIGATE_MEDIUM.BMP"                         , null },
+                { "ALLIANCE_BULK_CRUISER_CLOSE.BMP"                             , null },
+                { "ALLIANCE_BULK_CRUISER_FAR.BMP"                               , null },
+                { "ALLIANCE_BULK_CRUISER_MEDIUM.BMP"                            , null },
+                { "ALLIANCE_BULK_FREIGHTER_CLOSE.BMP"                           , null },
+                { "ALLIANCE_BULK_FREIGHTER_FAR.BMP"                             , null },
+                { "ALLIANCE_BULK_FREIGHTER_MEDIUM.BMP"                          , null },
+                { "ALLIANCE_BULWARK_CLASS_BATTLECRUISER_MARK_3_CLOSE.BMP"       , null },
+                { "ALLIANCE_BULWARK_CLASS_BATTLECRUISER_MARK_3_FAR.BMP"         , null },
+                { "ALLIANCE_BULWARK_CLASS_BATTLECRUISER_MARK_3_MEDIUM.BMP"      , null },
+                { "ALLIANCE_CC_7700_FRIGATE_CLOSE.BMP"                          , null },
+                { "ALLIANCE_CC_7700_FRIGATE_FAR.BMP"                            , null },
+                { "ALLIANCE_CC_7700_FRIGATE_MEDIUM.BMP"                         , null },
+                { "ALLIANCE_CC_9600_FRIGATE_CLOSE.BMP"                          , null },
+                { "ALLIANCE_CC_9600_FRIGATE_FAR.BMP"                            , null },
+                { "ALLIANCE_CC_9600_FRIGATE_MEDIUM.BMP"                         , null },
+                { "ALLIANCE_CORELLIAN_CORVETTE_CLOSE.BMP"                       , null },
+                { "ALLIANCE_CORELLIAN_CORVETTE_FAR.BMP"                         , null },
+                { "ALLIANCE_CORELLIAN_CORVETTE_MEDIUM.BMP"                      , null },
+                { "ALLIANCE_CORELLIAN_GUNSHIP_CLOSE.BMP"                        , null },
+                { "ALLIANCE_CORELLIAN_GUNSHIP_FAR.BMP"                          , null },
+                { "ALLIANCE_CORELLIAN_GUNSHIP_MEDIUM.BMP"                       , null },
+                { "ALLIANCE_DAUNTLESS_CLASS_HEAVY_CRUISER_CLOSE.BMP"            , null },
+                { "ALLIANCE_DAUNTLESS_CLASS_HEAVY_CRUISER_FAR.BMP"              , null },
+                { "ALLIANCE_DAUNTLESS_CLASS_HEAVY_CRUISER_MEDIUM.BMP"           , null },
+                { "ALLIANCE_ESCORT_CARRIER_CLOSE.BMP"                           , null },
+                { "ALLIANCE_ESCORT_CARRIER_FAR.BMP"                             , null },
+                { "ALLIANCE_ESCORT_CARRIER_MEDIUM.BMP"                          , null },
+                { "ALLIANCE_LIBERATOR_CRUISER_CLOSE.BMP"                        , null },
+                { "ALLIANCE_LIBERATOR_CRUISER_FAR.BMP"                          , null },
+                { "ALLIANCE_LIBERATOR_CRUISER_MEDIUM.BMP"                       , null },
+                { "ALLIANCE_MC30C_FRIGATE_CLOSE.BMP"                            , null },
+                { "ALLIANCE_MC30C_FRIGATE_FAR.BMP"                              , null },
+                { "ALLIANCE_MC30C_FRIGATE_MEDIUM.BMP"                           , null },
+                { "ALLIANCE_MC80_LIBERTY_CRUISER_CLOSE.BMP"                     , null },
+                { "ALLIANCE_MC80_LIBERTY_CRUISER_FAR.BMP"                       , null },
+                { "ALLIANCE_MC80_LIBERTY_CRUISER_MEDIUM.BMP"                    , null },
+                { "ALLIANCE_MEDIUM_TRANSPORT_CLOSE.BMP"                         , null },
+                { "ALLIANCE_MEDIUM_TRANSPORT_FAR.BMP"                           , null },
+                { "ALLIANCE_MEDIUM_TRANSPORT_MEDIUM.BMP"                        , null },
+                { "ALLIANCE_NEBULON_B_FRIGATE_CLOSE.BMP"                        , null },
+                { "ALLIANCE_NEBULON_B_FRIGATE_FAR.BMP"                          , null },
+                { "ALLIANCE_NEBULON_B_FRIGATE_MEDIUM.BMP"                       , null },
+                { "ALLIANCE_REPUBLIC_DREADNAUGHT_CLASS_HEAVY_CRUISER_CLOSE.BMP" , null },
+                { "ALLIANCE_REPUBLIC_DREADNAUGHT_CLASS_HEAVY_CRUISER_FAR.BMP"   , null },
+                { "ALLIANCE_REPUBLIC_DREADNAUGHT_CLASS_HEAVY_CRUISER_MEDIUM.BMP", null },
+                { "EMPIRE_ACCLAMATOR_CLASS_DROPSHIP_CLOSE.BMP"                  , null },
+                { "EMPIRE_ACCLAMATOR_CLASS_DROPSHIP_FAR.BMP"                    , null },
+                { "EMPIRE_ACCLAMATOR_CLASS_DROPSHIP_MEDIUM.BMP"                 , null },
+                { "EMPIRE_ARQUITENS_CLASS_LIGHT_CRUISER_CLOSE.BMP"              , null },
+                { "EMPIRE_ARQUITENS_CLASS_LIGHT_CRUISER_FAR.BMP"                , null },
+                { "EMPIRE_ARQUITENS_CLASS_LIGHT_CRUISER_MEDIUM.BMP"             , null },
+                { "EMPIRE_ASSAULT_TRANSPORT_CLOSE.BMP"                          , null },
+                { "EMPIRE_ASSAULT_TRANSPORT_FAR.BMP"                            , null },
+                { "EMPIRE_ASSAULT_TRANSPORT_MEDIUM.BMP"                         , null },
+                { "EMPIRE_CARRACK_CLASS_LIGHT_CRUISER_CLOSE.BMP"                , null },
+                { "EMPIRE_CARRACK_CLASS_LIGHT_CRUISER_FAR.BMP"                  , null },
+                { "EMPIRE_CARRACK_CLASS_LIGHT_CRUISER_MEDIUM.BMP"               , null },
+                { "EMPIRE_GALLEON_CLOSE.BMP"                                    , null },
+                { "EMPIRE_GALLEON_FAR.BMP"                                      , null },
+                { "EMPIRE_GALLEON_MEDIUM.BMP"                                   , null },
+                { "EMPIRE_IMMOBILIZER_CRUISER_CLOSE.BMP"                        , null },
+                { "EMPIRE_IMMOBILIZER_CRUISER_FAR.BMP"                          , null },
+                { "EMPIRE_IMMOBILIZER_CRUISER_MEDIUM.BMP"                       , null },
+                { "EMPIRE_IMPERIAL_1_STAR_DESTROYER_CLOSE.BMP"                  , null },
+                { "EMPIRE_IMPERIAL_1_STAR_DESTROYER_FAR.BMP"                    , null },
+                { "EMPIRE_IMPERIAL_1_STAR_DESTROYER_MEDIUM.BMP"                 , null },
+                { "EMPIRE_IMPERIAL_2_STAR_DESTROYER_CLOSE.BMP"                  , null },
+                { "EMPIRE_IMPERIAL_2_STAR_DESTROYER_FAR.BMP"                    , null },
+                { "EMPIRE_IMPERIAL_2_STAR_DESTROYER_MEDIUM.BMP"                 , null },
+                { "EMPIRE_IMPERIAL_DREADNOUGHT_CLOSE.BMP"                       , null },
+                { "EMPIRE_IMPERIAL_DREADNOUGHT_FAR.BMP"                         , null },
+                { "EMPIRE_IMPERIAL_DREADNOUGHT_MEDIUM.BMP"                      , null },
+                { "EMPIRE_IMPERIAL_ESCORT_CARRIER_CLOSE.BMP"                    , null },
+                { "EMPIRE_IMPERIAL_ESCORT_CARRIER_FAR.BMP"                      , null },
+                { "EMPIRE_IMPERIAL_ESCORT_CARRIER_MEDIUM.BMP"                   , null },
+                { "EMPIRE_LANCER_FRIGATE_CLOSE.BMP"                             , null },
+                { "EMPIRE_LANCER_FRIGATE_FAR.BMP"                               , null },
+                { "EMPIRE_LANCER_FRIGATE_MEDIUM.BMP"                            , null },
+                { "EMPIRE_STAR_GALLEON_CLASS_FRIGATE_CLOSE.BMP"                 , null },
+                { "EMPIRE_STAR_GALLEON_CLASS_FRIGATE_FAR.BMP"                   , null },
+                { "EMPIRE_STAR_GALLEON_CLASS_FRIGATE_MEDIUM.BMP"                , null },
+                { "EMPIRE_STRIKE_CLASS_MEDIUM_CRUISER_CLOSE.BMP"                , null },
+                { "EMPIRE_STRIKE_CLASS_MEDIUM_CRUISER_FAR.BMP"                  , null },
+                { "EMPIRE_STRIKE_CLASS_MEDIUM_CRUISER_MEDIUM.BMP"               , null },
+                { "EMPIRE_SUPER_STAR_DESTROYER_CLOSE.BMP"                       , null },
+                { "EMPIRE_SUPER_STAR_DESTROYER_FAR.BMP"                         , null },
+                { "EMPIRE_SUPER_STAR_DESTROYER_MEDIUM.BMP"                      , null },
+                { "EMPIRE_VICTORY_1_STAR_DESTROYER_CLOSE.BMP"                   , null },
+                { "EMPIRE_VICTORY_1_STAR_DESTROYER_FAR.BMP"                     , null },
+                { "EMPIRE_VICTORY_1_STAR_DESTROYER_MEDIUM.BMP"                  , null },
+                { "EMPIRE_VICTORY_2_STAR_DESTROYER_CLOSE.BMP"                   , null },
+                { "EMPIRE_VICTORY_2_STAR_DESTROYER_FAR.BMP"                     , null },
+                { "EMPIRE_VICTORY_2_STAR_DESTROYER_MEDIUM.BMP"                  , null },
+                { "EMPIRE_VINDICATOR_HEAVY_CRUISER_CLOSE.BMP"                   , null },
+                { "EMPIRE_VINDICATOR_HEAVY_CRUISER_FAR.BMP"                     , null },
+                { "EMPIRE_VINDICATOR_HEAVY_CRUISER_MEDIUM.BMP"                  , null },
             };
         NamesBitmap = new Dictionary<string, string>
             {

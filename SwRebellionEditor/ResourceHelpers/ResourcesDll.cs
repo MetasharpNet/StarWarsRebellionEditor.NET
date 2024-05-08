@@ -435,17 +435,19 @@ public class ResourcesDll
         {
             var lang = Get303Language(id);
             var name = Names303.ContainsKey(id) ? Names303[id] : "";
-            File.WriteAllBytes(".\\" + folder + "\\" + _fileName + "\\303\\" + id + "-" + lang + "-" + _fileNameWithoutExtension + "-" + name + ".bin", RT_303[id]);
+            var nameWithoutExtension = name == null ? id : id + "-" + lang + "-" + _fileNameWithoutExtension + "-" + name;
+
+            File.WriteAllBytes(".\\" + folder + "\\" + _fileName + "\\303\\" + nameWithoutExtension + ".bin", RT_303[id]);
             try
             {
-                var bi = new BinImage(".\\" + folder + "\\" + _fileName + "\\303\\" + id + "-" + lang + "-" + _fileNameWithoutExtension + "-" + name + ".bin");
+                var bi = new BinImage(".\\" + folder + "\\" + _fileName + "\\303\\" + nameWithoutExtension + ".bin");
                 var b = bi.ToBitmap(new AdobeColorTable(".\\" + _fileName.ToLowerInvariant().Replace(".", "-") + ".act"));
-                b.Save(".\\" + folder + "\\" + _fileName + "\\303\\" + id + "-" + lang + "-" + _fileNameWithoutExtension + "-" + name + ".bmp");
+                b.Save(".\\" + folder + "\\" + _fileName + "\\303\\" + nameWithoutExtension + ".bmp");
             }
             catch
             {
-                File.Move(".\\" + folder + "\\" + _fileName + "\\303\\" + id + "-" + lang + "-" + _fileNameWithoutExtension + "-" + name + ".bin",
-                            ".\\" + folder + "\\" + _fileName + "\\303\\" + id + "-" + lang + "-" + _fileNameWithoutExtension + "-" + name + ".act");
+                File.Move(".\\" + folder + "\\" + _fileName + "\\303\\" + nameWithoutExtension + ".bin",
+                            ".\\" + folder + "\\" + _fileName + "\\303\\" + nameWithoutExtension + ".act");
             }
         }
         if (_fileName == "TACTICAL.DLL")
@@ -455,20 +457,22 @@ public class ResourcesDll
             {
                 var lang = Get303Language(id);
                 var name = Names303.ContainsKey(id) ? Names303[id] : "";
+                var nameWithoutExtension = name == null ? id : id + "-" + lang + "-" + _fileNameWithoutExtension + "-" + name;
+
                 try
                 {
                     int idAsInt;
                     if (Int32.TryParse(id, out idAsInt) && 5501 <= idAsInt && idAsInt <= 5527)
                     {
-                        var bi = new BinImage(".\\" + folder + "\\" + _fileName + "\\303\\" + id + "-" + lang + "-" + _fileNameWithoutExtension + "-" + name + ".bin");
+                        var bi = new BinImage(".\\" + folder + "\\" + _fileName + "\\303\\" + nameWithoutExtension + ".bin");
                         var b = bi.ToBitmap(new AdobeColorTable(".\\" + folder + "\\" + _fileName + "\\303\\" + (idAsInt + 30).ToString() + "-" + lang + "-" + _fileNameWithoutExtension + "-" + name + ".act"));
-                        b.Save(".\\" + folder + "\\" + _fileName + "\\303\\" + id + "-" + lang + "-" + _fileNameWithoutExtension + "-" + name + ".bmp");
+                        b.Save(".\\" + folder + "\\" + _fileName + "\\303\\" + nameWithoutExtension + ".bmp");
                     }
                 }
                 catch
                 {
-                    File.Move(".\\" + folder + "\\" + _fileName + "\\303\\" + id + "-" + lang + "-" + _fileNameWithoutExtension + "-" + name + ".bin",
-                              ".\\" + folder + "\\" + _fileName + "\\303\\" + id + "-" + lang + "-" + _fileNameWithoutExtension + "-" + name + ".act");
+                    File.Move(".\\" + folder + "\\" + _fileName + "\\303\\" + nameWithoutExtension + ".bin",
+                              ".\\" + folder + "\\" + _fileName + "\\303\\" + nameWithoutExtension + ".act");
                 }
             }
         }
