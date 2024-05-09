@@ -66,6 +66,8 @@
 * Savegame Test Pack (broken, will need to redo) : https://github.com/MetasharpNet/StarWarsRebellionEditor.NET/releases/tag/swr-editor.net-savegame-20231015
 * Screenshots :
 
+![image](https://github.com/MetasharpNet/StarWarsRebellionEditor.NET/assets/70144948/9eab72f8-4d48-4293-9c77-c73d4f9baa7f)
+
 ![New Canon Galaxy map](https://i.ibb.co/c8XZD0j/1.png)
 
 ![New planets and sprites](https://i.ibb.co/LpdxfcR/2.png)
