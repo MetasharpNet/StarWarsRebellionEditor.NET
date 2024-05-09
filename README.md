@@ -63,11 +63,6 @@
   * 2024-04-28 [Alliance] MC30C Frigate
 * 80/80 new Space Fighters sprites for 3D battles (X-wing, ...)
 * 16/16 HD background musics (44KHz vs 11KHz rebuilt from CDs and completed with AI remasters)
-
-![image](https://github.com/MetasharpNet/StarWarsRebellionEditor.NET/assets/70144948/c1fcffad-54a7-47cd-94a4-1642c1e9b765)
-
-
-
 * Savegame Test Pack (broken, will need to redo) : https://github.com/MetasharpNet/StarWarsRebellionEditor.NET/releases/tag/swr-editor.net-savegame-20231015
 * Screenshots :
 
