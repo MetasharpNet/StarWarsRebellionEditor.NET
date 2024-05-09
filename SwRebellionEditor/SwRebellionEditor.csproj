@@ -77,13 +77,10 @@
     <None Update="units+stats\00000-template-fighter.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="units+stats\00000-template-major-fleet.bmp">
+    <None Update="units+stats\00000-template-character.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="units+stats\00000-template-major-minimalistic-fleet.bmp">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Update="units+stats\00000-template-minor-fleet.bmp">
+    <None Update="units+stats\00000-template-character-minimalistic.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="units+stats\00000-template-ship.bmp">
@@ -447,9 +444,6 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="units+stats\GOKRES.DLL\Bitmap\19099-1033-gokres-character-empire-villar.bmp">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Update="units+stats\readme.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="units-stats\GOKRES.DLL\Bitmap\17472-1033-gokres-troop-alliance-alliance-fleet-regiment.bmp">
