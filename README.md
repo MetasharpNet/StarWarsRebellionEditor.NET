@@ -17,35 +17,57 @@
 * Test Patch : Patch your custom content from the test folder. It can be anything from the export modified to your taste. By default it contains 25th anniv patch content still in testing phase such as the new capital ships.
 
 ### 25th Anniversary Patch Features :
-* Game's 1.02 community update
-* Dgvoodoo 2.82.5 (2024-04-16) directx libraries : http://dege.fw.hu/dgVoodoo2/dgVoodoo2/
-  * Forum : https://www.vogons.org/viewforum.php?f=58 and https://www.vogons.org/viewtopic.php?f=59&t=97303
-* New Galaxy map using top 200 star wars planets (called systems in game) from 2023 canon mostly positioned as accurately as possible within game engine limits!
-  * 2 modes available : compatible with base game or accurate positionning 
-* 200/200 systems sprites (instead of 26 original sprites shared amongst 200 systems)
-* 200/200 systems tactical sprites
-* 200/200 systems encyclopedia pictures
-* 200/200 encyclopedia descriptions
-* 61/61 new character sprites from LordLaForge to be closer to canon/lgends character faces
-* 61/61 enhanced character sprites displaying their base average stats
-* 15/29 HD 3d models for capital ships + (14 mid definition 3d models)
-  * 2024-01-02 Alliance Action 6 Transport Bulk Freighter
-  * 2024-01-02 Empire Executor Super Star Destroyer
-  * 2024-01-02 Empire Immobilizer 418 Cruiser
-  * 2024-01-02 Empire Imperial Dreadnought Class Heavy Cruiser
-  * 2024-01-08 Empire Vindicator Heavy Cruiser
-  * 2024-01-08 Empire Victory Class Start Destroyher Mark 1
-  * 2024-01-18 Alliance CR90 Corellian Corvette
-  * 2024-02-11 Alliance MC80 Liberty Type Star Cruiser
-  * 2024-02-11 Alliance Assault Frigate Mark 1
-  * 2024-03-17 Alliance CC-7700 Frigate
-  * 2024-03-17 Alliance DP20 Frigate Correlian Gunship
-  * 2024-04-19 Empire Acclamator-Class Dropship
-  * 2024-04-19 Empire Arquitens Light Cruiser
-  * 2024-04-28 Alliance GR-75 Medium Transport
-  * 2024-04-28 Alliance MC30C Frigate
-* 16/16 HD background musics (44KHz vs 11KHz)
-* 80 HD sprites for space fighters (X-wing, ...)
+* Game version: 1.02 (includes various community fixes)
+* DirectX libraries: DgVoodoo 2.82.5 (2024-04-16)
+* New Galaxy map using Top 200 Star Wars planets (using 2023 canon & positioned as accurately as possible)
+  * 2 modes: compatible with base game or accurate positions (savegames/multi not compatible with base game ones)
+* 20/20 new Sector names
+* 200/200 new Planets including:
+  * Names & encyclopedia (picture, name, position, area, connections, geology, species, economy, history, sources)
+  * Individual Planets sprites (instead of only 26 base game sprites reused for 200 planets)
+* 61/61 new Character sprites (closer to canon/legends character real faces)
+* 118/118 sprites displaying base stats (optional)
+  * 10/10 troops, 9/9 special forces, 8/8 fighters, 30/30 capital ships, 61/61 characters
+* 30/30 new Capital Ships Encyclopedia (picture, faction, full name, size, easy stats, company, history)
+* 8 Capital Ships changed to use more known ones (+ 7 names improved)
+  * [Alliance] Mon Calamari Cruiser → MC80 Liberty Cruiser (name change)
+  * [Alliance] Bulk Transport → Bulk Freighter (name change)
+  * [Alliance] Alliance Dreadnaught → MC40a Light Cruiser (ship change)
+  * [Alliance] CC-9600 Frigate → MC30c Frigate (ship change)
+  * [Alliance] Bulwark Battlecruiser → Viscount Star Defender (ship change)
+  * [Alliance] Dauntless Cruiser → MC80a HomeOne Cruiser (ship change)
+  * [Empire] Strike Cruiser → Vindicator Heavy Cruiser (ship change)
+  * [Empire] Interdictor Cruiser → Immobilizer Cruiser (name change)
+  * [Empire] Carrack Light Cruiser → Arquitens Light Cruiser (ship change)
+  * [Empire] Victory Destroyer → Victory I Star Destroyer (name change)
+  * [Empire] Imperial Star Destroyer → Imperial I Star Destroyer (name change)
+  * [Empire] Assault Transport → Gladiator Star Destroyer (ship change)
+  * [Empire] Galleon → Acclamator Drop Ship (ship change)
+  * [Empire] Star Galleon → Star Galleon Frigate (name change)
+  * [Empire] Imperial Dreadnaught → Imperial Dreadnought (name change)
+* 15/29 new Capital Ships 3D models  (+14 other 3d models still to redo)
+  * 2024-01-02 [Alliance] Action 6 Transport Bulk Freighter
+  * 2024-01-02 [Empire] Executor Super Star Destroyer
+  * 2024-01-02 [Empire] Immobilizer 418 Cruiser
+  * 2024-01-02 [Empire] Imperial Dreadnought Class Heavy Cruiser
+  * 2024-01-08 [Empire] Vindicator Heavy Cruiser
+  * 2024-01-08 [Empire] Victory Class Start Destroyher Mark 1
+  * 2024-01-18 [Alliance] CR90 Corellian Corvette
+  * 2024-02-11 [Alliance] MC80 Liberty Type Star Cruiser
+  * 2024-02-11 [Alliance] Assault Frigate Mark 1
+  * 2024-03-17 [Alliance] CC-7700 Frigate
+  * 2024-03-17 [Alliance] DP20 Frigate Correlian Gunship
+  * 2024-04-19 [Empire] Acclamator-Class Dropship
+  * 2024-04-19 [Empire] Arquitens Light Cruiser
+  * 2024-04-28 [Alliance] GR-75 Medium Transport
+  * 2024-04-28 [Alliance] MC30C Frigate
+* 80/80 new Space Fighters sprites for 3D battles (X-wing, ...)
+* 16/16 HD background musics (44KHz vs 11KHz rebuilt from CDs and completed with AI remasters)
+
+![image](https://github.com/MetasharpNet/StarWarsRebellionEditor.NET/assets/70144948/c1fcffad-54a7-47cd-94a4-1642c1e9b765)
+
+
+
 * Savegame Test Pack (broken, will need to redo) : https://github.com/MetasharpNet/StarWarsRebellionEditor.NET/releases/tag/swr-editor.net-savegame-20231015
 * Screenshots :
 
