@@ -1,6 +1,6 @@
 ## Star Wars Rebellion Editor .NET
 * Need some help, talk with us on :
-  * Discord : https://swrebellion.link/discord ([#game-midd](https://discord.com/channels/263439494508707840/789989647761145907)
+  * Discord : https://swrebellion.link/discord
     * Contact Metasharp user 
   * Steam : https://steamcommunity.com/app/441550/discussions/0/5913829825701729169/
   * GoG : https://www.gog.com/forum/star_wars_rebellion/star_wars_rebellion_in_2023_25th_anniv_patch_fix_fr_patch_guides
@@ -18,7 +18,8 @@
 
 ### 25th Anniversary Patch Features :
 * Game version: 1.02 (includes various community fixes)
-* DirectX libraries: DgVoodoo 2.82.5 (2024-04-16)
+* DirectX libraries: DgVoodoo 2.82.5 (2024-04-16) : http://dege.fw.hu/dgVoodoo2/dgVoodoo2/
+  * Forum : https://www.vogons.org/viewforum.php?f=58 and https://www.vogons.org/viewtopic.php?f=59&t=97303 
 * New Galaxy map using Top 200 Star Wars planets (using 2023 canon & positioned as accurately as possible)
   * 2 modes: compatible with base game or accurate positions (savegames/multi not compatible with base game ones)
 * 20/20 new Sector names
