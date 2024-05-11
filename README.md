@@ -84,6 +84,31 @@
 
 ![image](https://github.com/MetasharpNet/StarWarsRebellionEditor.NET/assets/70144948/1f2461fe-576f-4d91-9321-0f6791c2378e)
 
+### Star Wars Rebellion Original Game install/update:
+* Avoid all extra software (GOG Galaxy, etc.) by getting a clean installer if available.
+  * GOG direct offline installer : https://www.gog.com/downloads/star_wars_rebellion/en1installer0  (link works if logged in and game already bought)
+  * Steam : I don't know
+* Install the game
+* If you want to play in french, download from swrebellion.net the french patch and extract it into your Star Wars Rebellion folder. This will overwrite 28 files and add 1 file. If you want to go back to english, do the same with the english-patch from swrebellion.net and overwrite these same file with original english ones.
+  * FR patch: https://swrebellion.net/files/file/258-star-wars-rebellion-patch-francais-officiel/?do=getNewComment
+  * EN patch: https://swrebellion.net/files/file/259-star-wars-rebellion-english-patch-official/?do=getNewComment
+* Copy "game update" folder content into your game's folder (you can skip this step if you patch with the 25th anniversary patch, since it's going to be done automatically). This will overwrite 2 files and add 12 new files.
+* Optional: In your Star Wars Rebellion folder, right-click REBEXE.EXE
+  * Properties
+    * Compatibility tab
+      * Change settings for all users
+      * Uncheck all boxes
+      * Apply
+      * OK
+* Create a shortcut on your desktop to REBEXE.EXE
+* Right-click the shortcut file you've just created
+  * Properties
+    * Shortcut
+      * In Target, add a space then -w at the end: "C:\?????????\REBEXE.EXE" -w
+      * Apply
+      * OK
+* Run the game from that shortcut
+
 ### 25th Anniversary Installation guide:
 * Install the latest .NET Desktop runtime : https://dotnet.microsoft.com/en-us/download/dotnet
   * Direct link to latest version : https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/runtime-desktop-8.0.4-windows-x64-installer
@@ -134,6 +159,9 @@ For AMD (Radeon, ...) GPU, you can try this link: https://www.amd.com/en/support
 
 If you have another GPU brand than Nvidia or AMD, do the same as above and get some more info here:
 * https://www.pcgamingwiki.com/wiki/Glossary:Custom_resolution
+
+### Other issues
+* If you get: "The pixel format was invalid as specified." error when entering tactical battle, ... it shouldn't bother the game working, but I have no known solution as of now. Try googling and share if you find a solution. This problem happens on base game install as well and is not related to 25th anniversary patch.
 
 ### Current Roadmap:
 * new high definition 3d models for all capital ships
