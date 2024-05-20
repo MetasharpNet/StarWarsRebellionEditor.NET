@@ -19,7 +19,8 @@
 ### 25th Anniversary Patch Features :
 * Game version: 1.02 (includes various community fixes)
 * DirectX libraries: DgVoodoo 2.82.5 (2024-04-16) : http://dege.fw.hu/dgVoodoo2/dgVoodoo2/
-  * Forum : https://www.vogons.org/viewforum.php?f=58 and https://www.vogons.org/viewtopic.php?f=59&t=97303 
+  * Forum : https://www.vogons.org/viewforum.php?f=58 and https://www.vogons.org/viewtopic.php?f=59&t=97303
+* Microsoft latest D3DRM.DLL 5.2.3790.0
 * New Galaxy map using Top 200 Star Wars planets (using 2023 canon & positioned as accurately as possible)
   * 2 modes: compatible with base game or accurate positions (savegames/multi not compatible with base game ones)
 * 20/20 new Sector names
@@ -174,6 +175,11 @@ If you have another GPU brand than Nvidia or AMD, do the same as above and get s
 
 ### Statistics:
 GitHub Downloads stats : https://hanadigital.github.io/grev/?user=MetasharpNet&repo=StarWarsRebellionEditor.NET
+
+### Links
+* Youtube content about Star Wars Rebellion : https://www.youtube.com/channel/UC5i5AnRuz-czXmxYoAEkW_g
+* Gamefaqs : https://gamefaqs.gamespot.com/pc/198776-star-wars-rebellion/faqs
+* Pen and Paper Videos : https://www.youtube.com/watch?v=dPj-E28VwFQ&list=PLdyTWLFZyc8MQQcXmg4J2G49PJ1Nkm769
 
 --
 
