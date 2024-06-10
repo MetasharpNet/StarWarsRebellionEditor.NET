@@ -157,7 +157,7 @@ If you have an Nvidia Card:
   * Check Override the scaling mode set by games and programs
   * Apply
 
-For AMD (Radeon, ...) GPU, you can try this link: https://www.amd.com/en/support/kb/faq/dh-019#:~:text=To%20enable%20GPU%20Scaling%2C%20follow,GPU%20Scaling%20option%20to%20On
+For AMD (Radeon, ...) GPU, you can try this link: [https://www.amd.com/en/support/kb/faq/dh-019#:~:text=To%20enable%20GPU%20Scaling%2C%20follow,GPU%20Scaling%20option%20to%20On](https://www.amd.com/en/resources/support-articles/faqs/DH-019.html)
 
 If you have another GPU brand than Nvidia or AMD, do the same as above and get some more info here:
 * https://www.pcgamingwiki.com/wiki/Glossary:Custom_resolution
