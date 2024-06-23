@@ -420,7 +420,7 @@ public class ResourcesDll
             var lang = GetBitmapLanguage(id);
             var name = Names301.ContainsKey(id) ? Names301[id] : "";
             var nameWithoutExtension = name == null ? id : id + "-" + lang + "-" + _fileNameWithoutExtension + "-" + name;
-            File.WriteAllBytes(".\\" + folder + "\\" + _fileName + "\\301\\" + nameWithoutExtension + ".x", RT_301[id]);
+            File.WriteAllBytes(Tools.ShortenFilePath(".\\" + folder + "\\" + _fileName + "\\301\\" + nameWithoutExtension + ".x"), RT_301[id]);
         }
     }
 
@@ -448,7 +448,7 @@ public class ResourcesDll
             catch
             {
                 File.Move(".\\" + folder + "\\" + _fileName + "\\303\\" + nameWithoutExtension + ".bin",
-                            ".\\" + folder + "\\" + _fileName + "\\303\\" + nameWithoutExtension + ".act");
+                          ".\\" + folder + "\\" + _fileName + "\\303\\" + nameWithoutExtension + ".act");
             }
         }
         if (_fileName == "TACTICAL.DLL")
@@ -493,7 +493,7 @@ public class ResourcesDll
             var lang = GetBitmapLanguage(id);
             var name = NamesBitmap.ContainsKey(id) ? NamesBitmap[id] : "";
             var nameWithoutExtension = name == null ? id : id + "-" + lang + "-" + _fileNameWithoutExtension + "-" + name;
-            DIB.ToDDB(RT_BITMAP[id].Bitmap, ".\\" + folder + "\\" + _fileName + "\\Bitmap\\" + nameWithoutExtension + ".bmp");
+            DIB.ToDDB(RT_BITMAP[id].Bitmap, Tools.ShortenFilePath(".\\" + folder + "\\" + _fileName + "\\Bitmap\\" + nameWithoutExtension + ".bmp"));
         }
     }
 
@@ -510,7 +510,7 @@ public class ResourcesDll
             var lang = GetWaveLanguage(id);
             var name = NamesWave.ContainsKey(id) ? NamesWave[id] : "";
             var nameWithoutExtension = name == null ? id : id + "-" + lang + "-" + _fileNameWithoutExtension + "-" + name;
-            File.WriteAllBytes(".\\" + folder + "\\" + _fileName + "\\WAVE\\" + nameWithoutExtension + ".wav", RT_WAVE[id]);
+            File.WriteAllBytes(Tools.ShortenFilePath(".\\" + folder + "\\" + _fileName + "\\WAVE\\" + nameWithoutExtension + ".wav"), RT_WAVE[id]);
         }
     }
 

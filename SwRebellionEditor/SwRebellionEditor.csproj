@@ -74,6 +74,24 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
+    <None Update="test\TACTICAL.DLL\301\2130-1033-tactical-ship-alliance-bulwark-battlecruiser_viscount-star-defender-close.x">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="test\TACTICAL.DLL\301\2131-1033-tactical-ship-alliance-bulwark-battlecruiser_viscount-star-defender-medium.x">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="test\TACTICAL.DLL\301\2132-1033-tactical-ship-alliance-bulwark-battlecruiser_viscount-star-defender-far.x">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="test\TACTICAL.DLL\303\ALLIANCE_VISCOUNT_STAR_DEFENDER_CLOSE.BMP">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="test\TACTICAL.DLL\303\ALLIANCE_VISCOUNT_STAR_DEFENDER_FAR.BMP">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="test\TACTICAL.DLL\303\ALLIANCE_VISCOUNT_STAR_DEFENDER_MEDIUM.BMP">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="units+stats\00000-template-fighter.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>

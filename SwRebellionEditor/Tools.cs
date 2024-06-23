@@ -41,6 +41,26 @@ public static class Tools
             // Add more cases for other non-blittable types if needed
         }
     }
+
+    public static string ShortenFilePath(string filePath, int maxLength = 260) // MAX_PATH
+    {
+        if (filePath.Length <= maxLength)
+            return filePath;
+
+        string directory = Path.GetDirectoryName(filePath);
+        string fileName = Path.GetFileNameWithoutExtension(filePath);
+        string extension = Path.GetExtension(filePath);
+
+        int maxFileNameLength = maxLength - directory.Length - extension.Length - 1; // 1 for the backslash
+
+        if (maxFileNameLength <= 0)
+            throw new ArgumentException("The maximum length is too short to accommodate the directory and extension.");
+
+        string shortenedFileName = fileName.Substring(0, maxFileNameLength);
+
+        return Path.Combine(directory, shortenedFileName + extension);
+    }
+
     public static Bitmap ToMemoryBitmap(Bitmap b)
     {
         if (b == null)
