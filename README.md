@@ -47,7 +47,7 @@
   * [Empire] Galleon → Acclamator Drop Ship (ship change)
   * [Empire] Star Galleon → Star Galleon Frigate (name change)
   * [Empire] Imperial Dreadnaught → Imperial Dreadnought (name change)
-* 15/29 new Capital Ships 3D models  (+14 other 3d models still to redo)
+* 17/29 new Capital Ships 3D models  (+12 other 3d models still to redo)
   * 2024-01-02 [Alliance] Action 6 Transport Bulk Freighter
   * 2024-01-02 [Empire] Executor Super Star Destroyer
   * 2024-01-02 [Empire] Immobilizer 418 Cruiser
@@ -63,6 +63,8 @@
   * 2024-04-19 [Empire] Arquitens Light Cruiser
   * 2024-04-28 [Alliance] GR-75 Medium Transport
   * 2024-04-28 [Alliance] MC30C Frigate
+  * 2024-04-05 [Alliance] Alliance Escort Carrier
+  * 2024-06-19 [Alliance] Viscount Star Defender
 * 80/80 new Space Fighters sprites for 3D battles (X-wing, ...)
 * 16/16 HD background musics (44KHz vs 11KHz rebuilt from CDs and completed with AI remasters)
 * Savegame Test Pack (broken, will need to redo) : https://github.com/MetasharpNet/StarWarsRebellionEditor.NET/releases/tag/swr-editor.net-savegame-20231015
