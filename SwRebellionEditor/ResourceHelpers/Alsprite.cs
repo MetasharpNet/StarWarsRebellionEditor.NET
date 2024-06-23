@@ -41,7 +41,7 @@ public class Alsprite : ResourcesDll
                 { "16500", "c3p0-anim 16" },
                 { "16600", "c3p0-anim 17" },
                 { "19600", "c3p0-anim 18" },
-                { "19910", "c3p0-anim 19" },
+                { "19610", "c3p0-anim 19" },
                 { "19630", "c3p0-anim 20" },
                 { "19650", "c3p0-anim 21" },
                 { "19670", "c3p0-anim 22" },
