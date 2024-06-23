@@ -148,7 +148,7 @@ public class Alsprite : ResourcesDll
                 { "1311", "luke-i've arrived" },
                 { "1312", "luke-all set" },
                 { "1313", "luke-we're on our way back" },
-                { "1314", "luke-what's wrong?" },
+                { "1314", "luke-what's wrong" },
                 { "1315", "luke-i've escaped" },
                 { "1316", "luke-i've slipped away from the empire" },
                 { "1317", "luke-i feel like i could take on the whole empire myself" },
