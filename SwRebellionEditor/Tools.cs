@@ -44,6 +44,7 @@ public static class Tools
 
     public static string ShortenFilePath(string filePath, int maxLength = 260) // MAX_PATH
     {
+        filePath = Path.GetFullPath(filePath);
         if (filePath.Length <= maxLength)
             return filePath;
 
