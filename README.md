@@ -63,7 +63,7 @@
   * 2024-04-19 [Empire] Arquitens Light Cruiser
   * 2024-04-28 [Alliance] GR-75 Medium Transport
   * 2024-04-28 [Alliance] MC30C Frigate
-  * 2024-04-05 [Alliance] Alliance Escort Carrier
+  * 2024-06-05 [Alliance] Alliance Escort Carrier
   * 2024-06-19 [Alliance] Viscount Star Defender
 * 80/80 new Space Fighters sprites for 3D battles (X-wing, ...)
 * 16/16 HD background musics (44KHz vs 11KHz rebuilt from CDs and completed with AI remasters)
