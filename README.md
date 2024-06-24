@@ -50,7 +50,6 @@
 * 17/29 new Capital Ships 3D models  (+12 other 3d models still to redo)
   * 2024-01-02 [Alliance] Action 6 Transport Bulk Freighter
   * 2024-01-02 [Empire] Executor Super Star Destroyer
-  * 2024-01-02 [Empire] Immobilizer 418 Cruiser
   * 2024-01-02 [Empire] Imperial Dreadnought Class Heavy Cruiser
   * 2024-01-08 [Empire] Vindicator Heavy Cruiser
   * 2024-01-08 [Empire] Victory Class Start Destroyher Mark 1
@@ -63,6 +62,7 @@
   * 2024-04-19 [Empire] Arquitens Light Cruiser
   * 2024-04-28 [Alliance] GR-75 Medium Transport
   * 2024-04-28 [Alliance] MC30C Frigate
+  * 2024-06-02 [Empire] Immobilizer 418 Cruiser
   * 2024-06-05 [Alliance] Alliance Escort Carrier
   * 2024-06-19 [Alliance] Viscount Star Defender
 * 80/80 new Space Fighters sprites for 3D battles (X-wing, ...)
