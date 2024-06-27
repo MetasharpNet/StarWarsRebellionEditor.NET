@@ -1,5 +1,5 @@
 ## Star Wars Rebellion Editor .NET
-* 25th anniversary patch in video : https://www.youtube.com/watch?v=2QI-di2l4S8 (not made by us, and remmemner, patch is not final/completed)
+* 25th anniversary patch in video : https://www.youtube.com/watch?v=2QI-di2l4S8 (not made by us, and remember, patch is not final/completed)
 * Need some help, talk with us on :
   * Discord : https://swrebellion.link/discord
     * Contact Metasharp user 
