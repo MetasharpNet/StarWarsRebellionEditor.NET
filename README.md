@@ -1,4 +1,5 @@
 ## Star Wars Rebellion Editor .NET
+* 25th anniversary patch in video : https://www.youtube.com/watch?v=2QI-di2l4S8 (not made by us, and remmemner, patch is not final/completed)
 * Need some help, talk with us on :
   * Discord : https://swrebellion.link/discord
     * Contact Metasharp user 
@@ -182,6 +183,7 @@ GitHub Downloads stats : https://hanadigital.github.io/grev/?user=MetasharpNet&r
 * Youtube content about Star Wars Rebellion : https://www.youtube.com/channel/UC5i5AnRuz-czXmxYoAEkW_g
 * Gamefaqs : https://gamefaqs.gamespot.com/pc/198776-star-wars-rebellion/faqs
 * Pen and Paper Videos : https://www.youtube.com/watch?v=dPj-E28VwFQ&list=PLdyTWLFZyc8MQQcXmg4J2G49PJ1Nkm769
+* Captain Katarn Videos : https://www.youtube.com/@IntrepidDawn/search?query=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3D2QI-di2l4S8
 
 --
 
