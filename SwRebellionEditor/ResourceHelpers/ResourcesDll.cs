@@ -490,10 +490,17 @@ public class ResourcesDll
         }
         foreach (var id in ids)
         {
-            var lang = GetBitmapLanguage(id);
-            var name = NamesBitmap.ContainsKey(id) ? NamesBitmap[id] : "";
-            var nameWithoutExtension = name == null ? id : id + "-" + lang + "-" + _fileNameWithoutExtension + "-" + name;
-            DIB.ToDDB(RT_BITMAP[id].Bitmap, Tools.ShortenFilePath(".\\" + folder + "\\" + _fileName + "\\Bitmap\\" + nameWithoutExtension + ".bmp"));
+            try
+            {
+                var lang = GetBitmapLanguage(id);
+                var name = NamesBitmap.ContainsKey(id) ? NamesBitmap[id] : "";
+                var nameWithoutExtension = name == null ? id : id + "-" + lang + "-" + _fileNameWithoutExtension + "-" + name;
+                DIB.ToDDB(RT_BITMAP[id].Bitmap, Tools.ShortenFilePath(".\\" + folder + "\\" + _fileName + "\\Bitmap\\" + nameWithoutExtension + ".bmp"));
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Bitmap Export Error. Filename=" + _fileName +  " Id=" + id + " Exception=" + ex.Message);
+            }
         }
     }
 
