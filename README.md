@@ -1,4 +1,5 @@
 ## Star Wars Rebellion Editor .NET
+* 25th anniversary patch in video : https://www.youtube.com/watch?v=2QI-di2l4S8 (not made by us, and remember, patch is not final/completed)
 * Need some help, talk with us on :
   * Discord : https://swrebellion.link/discord
     * Contact Metasharp user 
@@ -50,7 +51,6 @@
 * 17/29 new Capital Ships 3D models  (+12 other 3d models still to redo)
   * 2024-01-02 [Alliance] Action 6 Transport Bulk Freighter
   * 2024-01-02 [Empire] Executor Super Star Destroyer
-  * 2024-01-02 [Empire] Immobilizer 418 Cruiser
   * 2024-01-02 [Empire] Imperial Dreadnought Class Heavy Cruiser
   * 2024-01-08 [Empire] Vindicator Heavy Cruiser
   * 2024-01-08 [Empire] Victory Class Start Destroyher Mark 1
@@ -63,6 +63,7 @@
   * 2024-04-19 [Empire] Arquitens Light Cruiser
   * 2024-04-28 [Alliance] GR-75 Medium Transport
   * 2024-04-28 [Alliance] MC30C Frigate
+  * 2024-06-02 [Empire] Immobilizer 418 Cruiser
   * 2024-06-05 [Alliance] Alliance Escort Carrier
   * 2024-06-19 [Alliance] Viscount Star Defender
 * 80/80 new Space Fighters sprites for 3D battles (X-wing, ...)
@@ -115,7 +116,7 @@
 
 ### 25th Anniversary Installation guide:
 * Install the latest .NET Desktop runtime : https://dotnet.microsoft.com/en-us/download/dotnet
-  * Direct link to latest version : https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/runtime-desktop-8.0.5-windows-x64-installer
+  * Direct link to latest version : https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/runtime-desktop-8.0.6-windows-x64-installer
 * Reboot
 * Install a fresh GoG or Steam Star Wars Rebellion game
 * Download the latest editor release : https://github.com/MetasharpNet/StarWarsRebellionEditor.NET/releases
@@ -182,6 +183,7 @@ GitHub Downloads stats : https://hanadigital.github.io/grev/?user=MetasharpNet&r
 * Youtube content about Star Wars Rebellion : https://www.youtube.com/channel/UC5i5AnRuz-czXmxYoAEkW_g
 * Gamefaqs : https://gamefaqs.gamespot.com/pc/198776-star-wars-rebellion/faqs
 * Pen and Paper Videos : https://www.youtube.com/watch?v=dPj-E28VwFQ&list=PLdyTWLFZyc8MQQcXmg4J2G49PJ1Nkm769
+* Captain Katarn Videos : https://www.youtube.com/@IntrepidDawn/search?query=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3D2QI-di2l4S8
 
 --
 
