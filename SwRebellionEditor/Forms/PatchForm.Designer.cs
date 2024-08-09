@@ -157,7 +157,7 @@ namespace SwRebellionEditor
             warningLabel.Name = "warningLabel";
             warningLabel.Size = new Size(350, 15);
             warningLabel.TabIndex = 1163;
-            warningLabel.Text = "Released 2024-04 and provided without any warranty of any kind.";
+            warningLabel.Text = "Released 2024-08 and provided without any warranty of any kind.";
             // 
             // label1Requirement
             // 
@@ -166,9 +166,9 @@ namespace SwRebellionEditor
             label1Requirement.ForeColor = Color.Red;
             label1Requirement.Location = new Point(393, 14);
             label1Requirement.Name = "label1Requirement";
-            label1Requirement.Size = new Size(253, 15);
+            label1Requirement.Size = new Size(244, 15);
             label1Requirement.TabIndex = 1165;
-            label1Requirement.Text = "Includes update 1.02 (dgvoodoo2 directx 2.82.5)";
+            label1Requirement.Text = "Includes update 1.02 (dgvoodoo2 directx 2.83)";
             // 
             // label1
             // 
