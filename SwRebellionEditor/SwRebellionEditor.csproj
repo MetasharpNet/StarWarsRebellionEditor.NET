@@ -74,6 +74,15 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
+    <None Update="systems\EDATA\14094-edata-system-kuat.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="systems\STRATEGY.DLL\Bitmap\14094-1033-strategy-system-kuat.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="systems\TACTICAL.DLL\303\14094-1033-tactical-system-kuat.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="test\TACTICAL.DLL\301\2130-1033-tactical-ship-alliance-bulwark-battlecruiser_viscount-star-defender-close.x">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
@@ -3010,9 +3019,6 @@
     <None Update="systems\EDATA\14093-edata-system-kimiji.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="systems\EDATA\14094-edata-system-kuat-%28atlas%29.bmp">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
     <None Update="systems\EDATA\14095-edata-system-lah%27mu.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
@@ -3625,9 +3631,6 @@
     <None Update="systems\STRATEGY.DLL\Bitmap\14093-1033-strategy-system-kimiji.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="systems\STRATEGY.DLL\Bitmap\14094-1033-strategy-system-kuat-%28atlas%29.bmp">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
     <None Update="systems\STRATEGY.DLL\Bitmap\14095-1033-strategy-system-lah%27mu.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
@@ -4229,9 +4232,6 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="systems\TACTICAL.DLL\303\14093-1033-tactical-system-kimiji.bmp">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Update="systems\TACTICAL.DLL\303\14094-1033-tactical-system-kuat-%28atlas%29.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="systems\TACTICAL.DLL\303\14095-1033-tactical-system-lah%27mu.bmp">
