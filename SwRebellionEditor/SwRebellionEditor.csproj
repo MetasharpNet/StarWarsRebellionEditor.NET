@@ -83,6 +83,15 @@
     <None Update="test\TACTICAL.DLL\301\2132-1033-tactical-ship-alliance-bulwark-battlecruiser_viscount-star-defender-far.x">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="test\TACTICAL.DLL\301\2580-1033-tactical-ship-empire-assault-transport_gladiator-star-destroyer-close.x">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="test\TACTICAL.DLL\301\2581-1033-tactical-ship-empire-assault-transport_gladiator-star-destroyer-medium.x">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="test\TACTICAL.DLL\301\2582-1033-tactical-ship-empire-assault-transport_gladiator-star-destroyer-far.x">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="test\TACTICAL.DLL\303\ALLIANCE_VISCOUNT_STAR_DEFENDER_CLOSE.BMP">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
@@ -90,6 +99,15 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="test\TACTICAL.DLL\303\ALLIANCE_VISCOUNT_STAR_DEFENDER_MEDIUM.BMP">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="test\TACTICAL.DLL\303\EMPIRE_GLADIATOR_STAR_DESTROYER_CLOSE.BMP">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="test\TACTICAL.DLL\303\EMPIRE_GLADIATOR_STAR_DESTROYER_FAR.BMP">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="test\TACTICAL.DLL\303\EMPIRE_GLADIATOR_STAR_DESTROYER_MEDIUM.BMP">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="units+stats\00000-template-fighter.bmp">
