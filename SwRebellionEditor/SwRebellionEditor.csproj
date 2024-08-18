@@ -119,6 +119,30 @@
     <None Update="test\TACTICAL.DLL\303\EMPIRE_GLADIATOR_STAR_DESTROYER_MEDIUM.BMP">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="troops\EDATA\017-edata-troop-alliance-sullustan-regiment.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="troops\EDATA\021-edata-troop-empire-imperial-fleet-regiment.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="troops\GOKRES.DLL\Bitmap\1090-1033-gokres-status-troop-alliance-sullustan-regiment.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="troops\GOKRES.DLL\Bitmap\1153-1033-gokres-status-troop-empire-imperial-fleet-regiment.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="troops\GOKRES.DLL\Bitmap\17474-1033-gokres-troop-alliance-sullustan-regiment.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="troops\GOKRES.DLL\Bitmap\17537-1033-gokres-troop-empire-imperial-fleet-regiment.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="troops\TACTICAL.DLL\Bitmap\2307-1033-tactical-troop-empire-imperial-fleet-regiment.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="troops\TACTICAL.DLL\Bitmap\2314-1033-tactical-troop-alliance-sullustan-regiment.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="units+stats\00000-template-fighter.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
