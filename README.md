@@ -158,7 +158,7 @@ If you have an Nvidia Card:
 * Adjust Desktop size and Position
   * Click on Scaling
   * Check Aspect ratio
-  * Choose Perform scaling on : GPU
+  * Choose Perform scaling on : Display (not GPU, it's important)
   * Check Override the scaling mode set by games and programs
   * Apply
 
