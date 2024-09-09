@@ -19,7 +19,7 @@
 
 ### 25th Anniversary Patch Features :
 * Game version: 1.02 (includes various community fixes)
-* DirectX libraries: DgVoodoo 2.82.5 (2024-04-16) : http://dege.fw.hu/dgVoodoo2/dgVoodoo2/
+* DirectX libraries: DgVoodoo 2.83 (2024-08-08) : http://dege.fw.hu/dgVoodoo2/dgVoodoo2/
   * Forum : https://www.vogons.org/viewforum.php?f=58 and https://www.vogons.org/viewtopic.php?f=59&t=97303
 * Microsoft latest D3DRM.DLL 5.2.3790.0
 * New Galaxy map using Top 200 Star Wars planets (using 2023 canon & positioned as accurately as possible)
@@ -48,7 +48,7 @@
   * [Empire] Galleon → Acclamator Drop Ship (ship change)
   * [Empire] Star Galleon → Star Galleon Frigate (name change)
   * [Empire] Imperial Dreadnaught → Imperial Dreadnought (name change)
-* 19/29 new Capital Ships 3D models  (+12 other 3d models still to redo)
+* 21/29 new Capital Ships 3D models  (+8 other 3d models still to redo)
   * 2024-01-02 [Alliance] Action 6 Transport Bulk Freighter
   * 2024-01-02 [Empire] Executor Super Star Destroyer
   * 2024-01-02 [Empire] Imperial Dreadnought Class Heavy Cruiser
@@ -68,6 +68,8 @@
   * 2024-06-19 [Alliance] Viscount Star Defender
   * 2024-08-16 [Empire] Gladiator Star Destroyer
   * 2024-08-16 [Empire] Star Galleon Frigate
+  * 2024-09-09 [Empire] Escort Carrier
+  * 2024-09-09 [Empire] Lancer Frigate
 * 80/80 new Space Fighters sprites for 3D battles (X-wing, ...)
 * 16/16 HD background musics (44KHz vs 11KHz rebuilt from CDs and completed with AI remasters)
 * Savegame Test Pack (broken, will need to redo) : https://github.com/MetasharpNet/StarWarsRebellionEditor.NET/releases/tag/swr-editor.net-savegame-20231015
