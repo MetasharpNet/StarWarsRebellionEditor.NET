@@ -4,7 +4,7 @@
 ;     want to modify some advanced properties not available via the CPL.
 ;==========================================================================
 
-Version                              = 0x282
+Version                              = 0x283
 
 ;--------------------------------------------------------------------------
 
@@ -255,6 +255,10 @@ FastVideoMemoryAccess               = true
 ;           MaxVSConstRegisters: Max number of vertex shader constant registers (DX8/9 only)
 ;                                Can be defined only for SVGA and Internal3D card types
 ;                                Valid values are 256 (default), 512 or 1024
+;           D3D12BoundsChecking: If enabled then the D3D12 backend does bound checking on vs const register file accesses (D3D8/9 only)
+;                                It should always be enabled to be fully compatible with the D3D8/9 specs but unfortunately that can cause
+;                                performance loss while the vast majority of games do not need it; try to enable it if you experience a
+;                                GPU crash with a D3D8/9 game
 
 ;        NPatchTesselationLevel: Force N-Patch tesselation level (D3D8/9)
 ;                                0 = app driven
@@ -309,6 +313,7 @@ DepthBuffersBitDepth                = forcemin24bit ; forcemin24bit IS MANDATORY
 Default3DRenderFormat               = auto
 
 MaxVSConstRegisters                 = 256
+D3D12BoundsChecking                 = false
 
 NPatchTesselationLevel              = 0
 
