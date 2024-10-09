@@ -18,12 +18,12 @@ namespace SwRebellionEditor
         private Button Ok;
         private Label field2_1Label;
         private Label idLabel;
-        private Label unknownLabel;
+        private Label parameterIdLabel;
         private Label nameLabel;
         private Label idHexLabel;
         private NumericUpDown id;
         private NumericUpDown field2_1;
-        private NumericUpDown unknown;
+        private NumericUpDown parameterId;
         private TextBox name;
         private TrackBar selector;
 
@@ -54,12 +54,12 @@ namespace SwRebellionEditor
             Cancel = new Button();
             Ok = new Button();
             selector = new TrackBar();
-            unknown = new NumericUpDown();
+            parameterId = new NumericUpDown();
             id = new NumericUpDown();
             field2_1Label = new Label();
             field2_1 = new NumericUpDown();
             idLabel = new Label();
-            unknownLabel = new Label();
+            parameterIdLabel = new Label();
             name = new TextBox();
             nameLabel = new Label();
             idHexLabel = new Label();
@@ -94,7 +94,7 @@ namespace SwRebellionEditor
             empireSinglePlayerEasyAlliance = new NumericUpDown();
             empireMultiPlayerLabel = new Label();
             ((ISupportInitialize)selector).BeginInit();
-            ((ISupportInitialize)unknown).BeginInit();
+            ((ISupportInitialize)parameterId).BeginInit();
             ((ISupportInitialize)id).BeginInit();
             ((ISupportInitialize)field2_1).BeginInit();
             playingAsAllianceGroupBox.SuspendLayout();
@@ -179,17 +179,17 @@ namespace SwRebellionEditor
             selector.TabIndex = 149;
             selector.ValueChanged += GameObjectsSelector_ValueChanged;
             // 
-            // unknown
+            // parameterId
             // 
-            unknown.Location = new Point(128, 135);
-            unknown.Margin = new Padding(4, 3, 4, 3);
-            unknown.Maximum = new decimal(new int[] { -1, 0, 0, 0 });
-            unknown.Name = "unknown";
-            unknown.Size = new Size(85, 23);
-            unknown.TabIndex = 7;
-            unknown.TextAlign = HorizontalAlignment.Right;
-            unknown.Value = new decimal(new int[] { -1, 0, 0, 0 });
-            unknown.ValueChanged += unknown_ValueChanged;
+            parameterId.Location = new Point(128, 135);
+            parameterId.Margin = new Padding(4, 3, 4, 3);
+            parameterId.Maximum = new decimal(new int[] { -1, 0, 0, 0 });
+            parameterId.Name = "parameterId";
+            parameterId.Size = new Size(85, 23);
+            parameterId.TabIndex = 7;
+            parameterId.TextAlign = HorizontalAlignment.Right;
+            parameterId.Value = new decimal(new int[] { -1, 0, 0, 0 });
+            parameterId.ValueChanged += parameterId_ValueChanged;
             // 
             // id
             // 
@@ -239,16 +239,16 @@ namespace SwRebellionEditor
             idLabel.TabIndex = 0;
             idLabel.Text = "Id";
             // 
-            // unknownLabel
+            // parameterIdLabel
             // 
-            unknownLabel.AutoSize = true;
-            unknownLabel.ForeColor = Color.Black;
-            unknownLabel.Location = new Point(17, 137);
-            unknownLabel.Margin = new Padding(4, 0, 4, 0);
-            unknownLabel.Name = "unknownLabel";
-            unknownLabel.Size = new Size(58, 15);
-            unknownLabel.TabIndex = 166;
-            unknownLabel.Text = "Unknown";
+            parameterIdLabel.AutoSize = true;
+            parameterIdLabel.ForeColor = Color.Black;
+            parameterIdLabel.Location = new Point(17, 137);
+            parameterIdLabel.Margin = new Padding(4, 0, 4, 0);
+            parameterIdLabel.Name = "parameterIdLabel";
+            parameterIdLabel.Size = new Size(74, 15);
+            parameterIdLabel.TabIndex = 166;
+            parameterIdLabel.Text = "Parameter Id";
             // 
             // name
             // 
@@ -676,19 +676,18 @@ namespace SwRebellionEditor
             // SideParamTableEntryForm
             // 
             AcceptButton = Ok;
-            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.None;
             CancelButton = Cancel;
             ClientSize = new Size(473, 541);
             Controls.Add(playingAsEmpireGroupBox);
             Controls.Add(idLabel);
-            Controls.Add(unknownLabel);
+            Controls.Add(parameterIdLabel);
             Controls.Add(name);
             Controls.Add(nameLabel);
             Controls.Add(playingAsAllianceGroupBox);
             Controls.Add(idHexLabel);
             Controls.Add(Open);
-            Controls.Add(unknown);
+            Controls.Add(parameterId);
             Controls.Add(SaveAs);
             Controls.Add(id);
             Controls.Add(Cancel);
@@ -709,7 +708,7 @@ namespace SwRebellionEditor
             Load += GameObjectsListForm_Load;
             KeyDown += GameObjectsListForm_KeyDown;
             ((ISupportInitialize)selector).EndInit();
-            ((ISupportInitialize)unknown).EndInit();
+            ((ISupportInitialize)parameterId).EndInit();
             ((ISupportInitialize)id).EndInit();
             ((ISupportInitialize)field2_1).EndInit();
             playingAsAllianceGroupBox.ResumeLayout(false);

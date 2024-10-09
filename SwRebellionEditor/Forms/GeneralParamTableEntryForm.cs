@@ -24,7 +24,7 @@ public partial class GeneralParamTableEntryForm : GeneralParamTableEntryDesignFo
         id.Value = generalParamTableEntry.Id;
         idHexLabel.Text = "0x" + generalParamTableEntry.Id.ToString("X");
         field2_1.Value = generalParamTableEntry.Field2_1;
-        unknown.Value = generalParamTableEntry.Unknown;
+        parameterId.Value = generalParamTableEntry.ParameterId;
         allianceMultiPlayer.Value = generalParamTableEntry.AllianceMultiPlayer;
         allianceSinglePlayerEasy.Value = generalParamTableEntry.AllianceSinglePlayerEasy;
         allianceSinglePlayerMedium.Value = generalParamTableEntry.AllianceSinglePlayerMedium;
@@ -100,9 +100,9 @@ public partial class GeneralParamTableEntryForm : GeneralParamTableEntryDesignFo
         GameFile.GeneralParamTableEntries[selector.Value].Id = (uint)id.Value;
         GameFile.UnsavedData = true;
     }
-    private void unknown_ValueChanged(object sender, EventArgs e)
+    private void parameterId_ValueChanged(object sender, EventArgs e)
     {
-        GameFile.GeneralParamTableEntries[selector.Value].Unknown = (uint)unknown.Value;
+        GameFile.GeneralParamTableEntries[selector.Value].ParameterId = (uint)parameterId.Value;
         GameFile.UnsavedData = true;
     }
 

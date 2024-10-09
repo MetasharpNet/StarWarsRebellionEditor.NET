@@ -24,7 +24,7 @@ public partial class SideParamTableEntryForm : SideParamTableEntryDesignForm
         id.Value = sideParamTableEntry.Id;
         idHexLabel.Text = "0x" + sideParamTableEntry.Id.ToString("X");
         field2_1.Value = sideParamTableEntry.Field2_1;
-        unknown.Value = sideParamTableEntry.Unknown;
+        parameterId.Value = sideParamTableEntry.ParameterId;
         allianceMultiPlayerAlliance.Value = sideParamTableEntry.AllianceMultiPlayerAlliance;
         allianceMultiPlayerEmpire.Value = sideParamTableEntry.AllianceMultiPlayerEmpire;
         allianceSinglePlayerEasyAlliance.Value = sideParamTableEntry.AllianceSinglePlayerEasyAlliance;
@@ -148,9 +148,9 @@ public partial class SideParamTableEntryForm : SideParamTableEntryDesignForm
         GameFile.SideParamTableEntries[selector.Value].Id = (uint)id.Value;
         GameFile.UnsavedData = true;
     }
-    private void unknown_ValueChanged(object sender, EventArgs e)
+    private void parameterId_ValueChanged(object sender, EventArgs e)
     {
-        GameFile.SideParamTableEntries[selector.Value].Unknown = (uint)unknown.Value;
+        GameFile.SideParamTableEntries[selector.Value].ParameterId = (uint)parameterId.Value;
         GameFile.UnsavedData = true;
     }
 

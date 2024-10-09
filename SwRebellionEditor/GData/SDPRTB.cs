@@ -57,7 +57,7 @@ public class SDPRTB_SideParamTableEntry
 {
     public uint Id;
     public uint Field2_1; // 1
-    public uint Unknown; // Second Byte sets Entry Group (???)
+    public uint ParameterId;
     public int AllianceMultiPlayerAlliance;
     public int AllianceMultiPlayerEmpire;
     public int AllianceSinglePlayerEasyAlliance;
