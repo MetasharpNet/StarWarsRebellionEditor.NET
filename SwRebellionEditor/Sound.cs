@@ -41,6 +41,6 @@ public static class Sound
     {
         if (!Settings.Current.IsRebellionCdLoaded)
             return;
-        PlayMusic(Settings.Current.GameFolder + "MDATA\\MDATA." + _random.Next(300, 315));
+        PlayMusic(Path.Combine(Settings.Current.GameFolder, "MDATA\\MDATA." + _random.Next(300, 315)));
     }
 }
