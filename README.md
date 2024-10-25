@@ -19,7 +19,7 @@
 
 ### 25th Anniversary Patch Features :
 * Game version: 1.02 (includes various community fixes)
-* DirectX libraries: DgVoodoo 2.83 (2024-08-08) : http://dege.fw.hu/dgVoodoo2/dgVoodoo2/
+* DirectX libraries: DgVoodoo 2.83.2 (2024-10-06) : http://dege.fw.hu/dgVoodoo2/dgVoodoo2/
   * Forum : https://www.vogons.org/viewforum.php?f=58 and https://www.vogons.org/viewtopic.php?f=59&t=97303
 * Microsoft latest D3DRM.DLL 5.2.3790.0
 * New Galaxy map using Top 200 Star Wars planets (using 2023 canon & positioned as accurately as possible)
@@ -120,7 +120,7 @@
 
 ### 25th Anniversary Installation guide:
 * Install the latest .NET Desktop runtime : https://dotnet.microsoft.com/en-us/download/dotnet
-  * Direct link to latest version : https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/runtime-desktop-8.0.8-windows-x64-installer
+  * Direct link to latest version : https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/runtime-desktop-8.0.10-windows-x64-installer
 * Reboot
 * Install a fresh GoG or Steam Star Wars Rebellion game
 * Download the latest editor release : https://github.com/MetasharpNet/StarWarsRebellionEditor.NET/releases
