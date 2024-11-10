@@ -13,8 +13,15 @@ public class GNPRTB : DatFile
     public override void PostLoad()
     {
         GeneralParamTableEntries.First(spe => spe.Id ==   1).Name = "Space Travel Time: base (%, lower=faster)";
+        
+        GeneralParamTableEntries.First(spe => spe.Id ==  25).Name = "Injured character:  Combat points recovered by day";
+
         GeneralParamTableEntries.First(spe => spe.Id ==  53).Name = "Seat of Power (Emperor on Coruscant): Leadership percentage bonus";
         GeneralParamTableEntries.First(spe => spe.Id ==  60).Name = "Space Travel Time: Han Solo (%, lower=faster)";
+        
+        GeneralParamTableEntries.First(spe => spe.Id ==  72).Name = "Damaged Squadron: Days to recover 1 Fighter if Shipyard";
+        GeneralParamTableEntries.First(spe => spe.Id ==  73).Name = "Damaged Squadron:Days to recover 1 Fighter if no Shipyard";
+
         GeneralParamTableEntries.First(spe => spe.Id ==  74).Name = "Space Travel Time: distance divisor (higher=faster)";
         GeneralParamTableEntries.First(spe => spe.Id ==  83).Name = "Fleet 1 location probability: Yavin vs HQ";
         
@@ -37,14 +44,42 @@ public class GNPRTB : DatFile
         GeneralParamTableEntries.First(spe => spe.Id == 102).Name = "Luke goes to Dagobah: random extra (days)";
         GeneralParamTableEntries.First(spe => spe.Id == 103).Name = "Bounty Hunter Frequency: base (days)";
         GeneralParamTableEntries.First(spe => spe.Id == 104).Name = "Bounty Hunter Frequency: random extra (days)";
+
+        GeneralParamTableEntries.First(spe => spe.Id == 111).Name = "Diplomacy points gain after Diplomacy success";
+        GeneralParamTableEntries.First(spe => spe.Id == 112).Name = "Espionage points gain after Espionage success";
+        GeneralParamTableEntries.First(spe => spe.Id == 114).Name = "Leadership points gain after Recruitment success";
+        GeneralParamTableEntries.First(spe => spe.Id == 115).Name = "Leadership points gain after Incite Uprising success";
+        GeneralParamTableEntries.First(spe => spe.Id == 116).Name = "Leadership points gain after Subdue Uprising success";
+        GeneralParamTableEntries.First(spe => spe.Id == 118).Name = "Combat points gain after Abduction success";
+        GeneralParamTableEntries.First(spe => spe.Id == 120).Name = "Espionage points gain after Sabotage success";
+        GeneralParamTableEntries.First(spe => spe.Id == 121).Name = "Combat points gain after Sabotage success";
+
+        GeneralParamTableEntries.First(spe => spe.Id == 137).Name = "Popularity % gain after diplomacy success on occupied system: Base Value";
+        GeneralParamTableEntries.First(spe => spe.Id == 138).Name = "Popularity % gain after diplomacy success on occupied system: Random Extra";
+        GeneralParamTableEntries.First(spe => spe.Id == 139).Name = "Popularity % gain after diplomacy success on neutral system: Base Value";
+        GeneralParamTableEntries.First(spe => spe.Id == 140).Name = "Popularity % gain after diplomacy success on neutral system: Random Extra";
+
         GeneralParamTableEntries.First(spe => spe.Id == 145).Name = "Maintenance Shortfall Frequency (days)";
+        GeneralParamTableEntries.First(spe => spe.Id == 146).Name = "Related to default (non mission) research rate (lower=faster) - To test";
+        GeneralParamTableEntries.First(spe => spe.Id == 147).Name = "Related to default (non mission) research rate (lower=faster) - To test";
+        
         GeneralParamTableEntries.First(spe => spe.Id == 151).Name = "Required Shield Generators to Prevent Assault";
 
+        GeneralParamTableEntries.First(spe => spe.Id == 171).Name = "Informants Info Frequency: Base Value (lower=faster)";
+        GeneralParamTableEntries.First(spe => spe.Id == 172).Name = "Informants Info Frequency: Random Extra (lower=faster)";
+
+        GeneralParamTableEntries.First(spe => spe.Id == 175).Name = "Uprising: BAse Value";
+        GeneralParamTableEntries.First(spe => spe.Id == 176).Name = "Uprising: Random Extra";
+        GeneralParamTableEntries.First(spe => spe.Id == 175).Name = "Inform Table: Base Value";
+        GeneralParamTableEntries.First(spe => spe.Id == 176).Name = "Inform Table: Random Extra";
+        GeneralParamTableEntries.First(spe => spe.Id == 177).Name = "Informants: Success Event Index in table increment to random(8)";
+        GeneralParamTableEntries.First(spe => spe.Id == 178).Name = "Informants: Success if random(8) is above";
         GeneralParamTableEntries.First(spe => spe.Id == 179).Name = "Systems: Mines slots (Raw Materials) min value allowed";
         GeneralParamTableEntries.First(spe => spe.Id == 180).Name = "Systems: Mines slots (Raw Materials) max value allowed";
         GeneralParamTableEntries.First(spe => spe.Id == 181).Name = "Systems: Buildings slots (Energy) min value allowed";
         GeneralParamTableEntries.First(spe => spe.Id == 182).Name = "Systems: Buildings slots (Energy) max value allowed";
-
+        GeneralParamTableEntries.First(spe => spe.Id == 183).Name = "Natural Disaster: Raw material lost & Energy slots lost";
+        GeneralParamTableEntries.First(spe => spe.Id == 184).Name = "Natural Disaster: % to lose a Facility (applied to each)";
         GeneralParamTableEntries.First(spe => spe.Id == 185).Name = "Natural Disaster: Frequency base (days)";
         GeneralParamTableEntries.First(spe => spe.Id == 186).Name = "Natural Disaster: Frequency random extra (days)";
         GeneralParamTableEntries.First(spe => spe.Id == 187).Name = "Resource Event: Frequency base (days)";
@@ -62,8 +97,11 @@ public class GNPRTB : DatFile
         GeneralParamTableEntries.First(spe => spe.Id == 198).Name = "Core Systems: Populated systems percentage";
         GeneralParamTableEntries.First(spe => spe.Id == 199).Name = "Rim Systems: Populated systems percentage";
 
+        GeneralParamTableEntries.First(spe => spe.Id == 206).Name = "Populary % required on system to join side";
         GeneralParamTableEntries.First(spe => spe.Id == 207).Name = "Garrison Requirement: Uprising threshold";
         GeneralParamTableEntries.First(spe => spe.Id == 208).Name = "Garrison Requirement: Troop's order contribution";
+
+        GeneralParamTableEntries.First(spe => spe.Id == 210).Name = "??? Core Sector Neutral System support Base Popularity (%)";
     }
 }
 public class GNPRTB_GeneralParamTableEntry
