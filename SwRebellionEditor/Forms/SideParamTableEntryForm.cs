@@ -25,8 +25,8 @@ public partial class SideParamTableEntryForm : SideParamTableEntryDesignForm
         idHexLabel.Text = "0x" + sideParamTableEntry.Id.ToString("X");
         field2_1.Value = sideParamTableEntry.Field2_1;
         parameterId.Value = sideParamTableEntry.ParameterId;
-        allianceMultiPlayerAlliance.Value = sideParamTableEntry.AllianceMultiPlayerAlliance;
-        allianceMultiPlayerEmpire.Value = sideParamTableEntry.AllianceMultiPlayerEmpire;
+        developmentAlliance.Value = sideParamTableEntry.DevelopmentAlliance;
+        developmentEmpire.Value = sideParamTableEntry.DevelopmentEmpire;
         allianceSinglePlayerEasyAlliance.Value = sideParamTableEntry.AllianceSinglePlayerEasyAlliance;
         allianceSinglePlayerEasyEmpire.Value = sideParamTableEntry.AllianceSinglePlayerEasyEmpire;
         allianceSinglePlayerMediumAlliance.Value = sideParamTableEntry.AllianceSinglePlayerMediumAlliance;
@@ -39,8 +39,8 @@ public partial class SideParamTableEntryForm : SideParamTableEntryDesignForm
         empireSinglePlayerMediumEmpire.Value = sideParamTableEntry.EmpireSinglePlayerMediumEmpire;
         empireSinglePlayerHardAlliance.Value = sideParamTableEntry.EmpireSinglePlayerHardAlliance;
         empireSinglePlayerHardEmpire.Value = sideParamTableEntry.EmpireSinglePlayerHardEmpire;
-        empireMultiPlayerAlliance.Value = sideParamTableEntry.EmpireMultiPlayerAlliance;
-        empireMultiPlayerEmpire.Value = sideParamTableEntry.EmpireMultiPlayerEmpire;
+        multiPlayerAlliance.Value = sideParamTableEntry.MultiPlayerAlliance;
+        multiPlayerEmpire.Value = sideParamTableEntry.MultiPlayerEmpire;
         name.Text = sideParamTableEntry.Name;
         GameFile.UnsavedData = previousUnsavedData;
     }
@@ -58,14 +58,14 @@ public partial class SideParamTableEntryForm : SideParamTableEntryDesignForm
 
     #region Changed events
 
-    private void allianceMultiPlayerAlliance_ValueChanged(object sender, EventArgs e)
+    private void developmentAlliance_ValueChanged(object sender, EventArgs e)
     {
-        GameFile.SideParamTableEntries[selector.Value].AllianceMultiPlayerAlliance = (int)allianceMultiPlayerAlliance.Value;
+        GameFile.SideParamTableEntries[selector.Value].DevelopmentAlliance = (int)developmentAlliance.Value;
         GameFile.UnsavedData = true;
     }
-    private void allianceMultiPlayerEmpire_ValueChanged(object sender, EventArgs e)
+    private void developmentEmpire_ValueChanged(object sender, EventArgs e)
     {
-        GameFile.SideParamTableEntries[selector.Value].AllianceMultiPlayerEmpire = (int)allianceMultiPlayerEmpire.Value;
+        GameFile.SideParamTableEntries[selector.Value].DevelopmentEmpire = (int)developmentEmpire.Value;
         GameFile.UnsavedData = true;
     }
     private void allianceSinglePlayerEasyAlliance_ValueChanged(object sender, EventArgs e)
@@ -98,14 +98,14 @@ public partial class SideParamTableEntryForm : SideParamTableEntryDesignForm
         GameFile.SideParamTableEntries[selector.Value].AllianceSinglePlayerMediumEmpire = (int)allianceSinglePlayerMediumEmpire.Value;
         GameFile.UnsavedData = true;
     }
-    private void empireMultiPlayerAlliance_ValueChanged(object sender, EventArgs e)
+    private void multiPlayerAlliance_ValueChanged(object sender, EventArgs e)
     {
-        GameFile.SideParamTableEntries[selector.Value].EmpireMultiPlayerAlliance = (int)empireMultiPlayerAlliance.Value;
+        GameFile.SideParamTableEntries[selector.Value].MultiPlayerAlliance = (int)multiPlayerAlliance.Value;
         GameFile.UnsavedData = true;
     }
-    private void empireMultiPlayerEmpire_ValueChanged(object sender, EventArgs e)
+    private void multiPlayerEmpire_ValueChanged(object sender, EventArgs e)
     {
-        GameFile.SideParamTableEntries[selector.Value].EmpireMultiPlayerEmpire = (int)empireMultiPlayerEmpire.Value;
+        GameFile.SideParamTableEntries[selector.Value].MultiPlayerEmpire = (int)multiPlayerEmpire.Value;
         GameFile.UnsavedData = true;
     }
     private void empireSinglePlayerEasyAlliance_ValueChanged(object sender, EventArgs e)

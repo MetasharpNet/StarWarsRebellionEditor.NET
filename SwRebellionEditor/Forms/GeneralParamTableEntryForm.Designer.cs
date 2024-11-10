@@ -68,18 +68,18 @@ namespace SwRebellionEditor
             allianceSinglePlayerHardLabel = new Label();
             allianceSinglePlayerEasy = new NumericUpDown();
             allianceSinglePlayerMediumLabel = new Label();
-            allianceMultiPlayer = new NumericUpDown();
             allianceSinglePlayerEasyLabel = new Label();
-            allianceMultiplayerLabel = new Label();
+            development = new NumericUpDown();
+            developmentLabel = new Label();
             empireGroupBox = new GroupBox();
-            empireMultiPlayer = new NumericUpDown();
             empireSinglePlayerHard = new NumericUpDown();
             empireSinglePlayerHardLabel = new Label();
             empireSinglePlayerMedium = new NumericUpDown();
             empireSinglePlayerMediumLabel = new Label();
             empireSinglePlayerEasy = new NumericUpDown();
             empireSinglePlayerEasyLabel = new Label();
-            empireMultiPlayerLabel = new Label();
+            multiPlayer = new NumericUpDown();
+            multiPlayerLabel = new Label();
             ((ISupportInitialize)selector).BeginInit();
             ((ISupportInitialize)parameterId).BeginInit();
             ((ISupportInitialize)id).BeginInit();
@@ -88,17 +88,17 @@ namespace SwRebellionEditor
             ((ISupportInitialize)allianceSinglePlayerHard).BeginInit();
             ((ISupportInitialize)allianceSinglePlayerMedium).BeginInit();
             ((ISupportInitialize)allianceSinglePlayerEasy).BeginInit();
-            ((ISupportInitialize)allianceMultiPlayer).BeginInit();
+            ((ISupportInitialize)development).BeginInit();
             empireGroupBox.SuspendLayout();
-            ((ISupportInitialize)empireMultiPlayer).BeginInit();
             ((ISupportInitialize)empireSinglePlayerHard).BeginInit();
             ((ISupportInitialize)empireSinglePlayerMedium).BeginInit();
             ((ISupportInitialize)empireSinglePlayerEasy).BeginInit();
+            ((ISupportInitialize)multiPlayer).BeginInit();
             SuspendLayout();
             // 
             // Open
             // 
-            Open.Location = new Point(307, 310);
+            Open.Location = new Point(307, 347);
             Open.Margin = new Padding(4, 3, 4, 3);
             Open.Name = "Open";
             Open.Size = new Size(88, 27);
@@ -110,7 +110,7 @@ namespace SwRebellionEditor
             // 
             // SaveAs
             // 
-            SaveAs.Location = new Point(211, 310);
+            SaveAs.Location = new Point(211, 347);
             SaveAs.Margin = new Padding(4, 3, 4, 3);
             SaveAs.Name = "SaveAs";
             SaveAs.Size = new Size(88, 27);
@@ -123,7 +123,7 @@ namespace SwRebellionEditor
             // Cancel
             // 
             Cancel.DialogResult = DialogResult.Cancel;
-            Cancel.Location = new Point(115, 310);
+            Cancel.Location = new Point(115, 347);
             Cancel.Margin = new Padding(4, 3, 4, 3);
             Cancel.Name = "Cancel";
             Cancel.Size = new Size(88, 27);
@@ -134,7 +134,7 @@ namespace SwRebellionEditor
             // 
             // Ok
             // 
-            Ok.Location = new Point(19, 310);
+            Ok.Location = new Point(19, 347);
             Ok.Margin = new Padding(4, 3, 4, 3);
             Ok.Name = "Ok";
             Ok.Size = new Size(88, 27);
@@ -156,11 +156,11 @@ namespace SwRebellionEditor
             // 
             // parameterId
             // 
-            parameterId.Location = new Point(128, 135);
+            parameterId.Location = new Point(153, 135);
             parameterId.Margin = new Padding(4, 3, 4, 3);
             parameterId.Maximum = new decimal(new int[] { -1, 0, 0, 0 });
             parameterId.Name = "parameterId";
-            parameterId.Size = new Size(85, 23);
+            parameterId.Size = new Size(92, 23);
             parameterId.TabIndex = 7;
             parameterId.TextAlign = HorizontalAlignment.Right;
             parameterId.Value = new decimal(new int[] { -1, 0, 0, 0 });
@@ -169,11 +169,11 @@ namespace SwRebellionEditor
             // id
             // 
             id.ForeColor = Color.Red;
-            id.Location = new Point(128, 77);
+            id.Location = new Point(153, 77);
             id.Margin = new Padding(4, 3, 4, 3);
             id.Maximum = new decimal(new int[] { -1, 0, 0, 0 });
             id.Name = "id";
-            id.Size = new Size(85, 23);
+            id.Size = new Size(92, 23);
             id.TabIndex = 10;
             id.TextAlign = HorizontalAlignment.Right;
             id.Value = new decimal(new int[] { -1, 0, 0, 0 });
@@ -193,11 +193,11 @@ namespace SwRebellionEditor
             // field2_1
             // 
             field2_1.ForeColor = Color.Red;
-            field2_1.Location = new Point(128, 106);
+            field2_1.Location = new Point(153, 106);
             field2_1.Margin = new Padding(4, 3, 4, 3);
             field2_1.Maximum = new decimal(new int[] { -1, 0, 0, 0 });
             field2_1.Name = "field2_1";
-            field2_1.Size = new Size(85, 23);
+            field2_1.Size = new Size(92, 23);
             field2_1.TabIndex = 8;
             field2_1.TextAlign = HorizontalAlignment.Right;
             field2_1.Value = new decimal(new int[] { 1, 0, 0, 0 });
@@ -247,7 +247,7 @@ namespace SwRebellionEditor
             // 
             idHexLabel.AutoSize = true;
             idHexLabel.ForeColor = Color.Red;
-            idHexLabel.Location = new Point(221, 79);
+            idHexLabel.Location = new Point(253, 79);
             idHexLabel.Margin = new Padding(4, 0, 4, 0);
             idHexLabel.Name = "idHexLabel";
             idHexLabel.Size = new Size(31, 15);
@@ -261,12 +261,10 @@ namespace SwRebellionEditor
             allianceGroupBox.Controls.Add(allianceSinglePlayerHardLabel);
             allianceGroupBox.Controls.Add(allianceSinglePlayerEasy);
             allianceGroupBox.Controls.Add(allianceSinglePlayerMediumLabel);
-            allianceGroupBox.Controls.Add(allianceMultiPlayer);
             allianceGroupBox.Controls.Add(allianceSinglePlayerEasyLabel);
-            allianceGroupBox.Controls.Add(allianceMultiplayerLabel);
-            allianceGroupBox.Location = new Point(12, 160);
+            allianceGroupBox.Location = new Point(12, 191);
             allianceGroupBox.Name = "allianceGroupBox";
-            allianceGroupBox.Size = new Size(240, 141);
+            allianceGroupBox.Size = new Size(240, 114);
             allianceGroupBox.TabIndex = 170;
             allianceGroupBox.TabStop = false;
             allianceGroupBox.Text = "Alliance";
@@ -274,7 +272,7 @@ namespace SwRebellionEditor
             // allianceSinglePlayerHard
             // 
             allianceSinglePlayerHard.ForeColor = Color.Black;
-            allianceSinglePlayerHard.Location = new Point(141, 108);
+            allianceSinglePlayerHard.Location = new Point(141, 81);
             allianceSinglePlayerHard.Margin = new Padding(4, 3, 4, 3);
             allianceSinglePlayerHard.Maximum = new decimal(new int[] { int.MaxValue, 0, 0, 0 });
             allianceSinglePlayerHard.Minimum = new decimal(new int[] { int.MinValue, 0, 0, int.MinValue });
@@ -288,7 +286,7 @@ namespace SwRebellionEditor
             // allianceSinglePlayerMedium
             // 
             allianceSinglePlayerMedium.ForeColor = Color.Black;
-            allianceSinglePlayerMedium.Location = new Point(141, 79);
+            allianceSinglePlayerMedium.Location = new Point(141, 52);
             allianceSinglePlayerMedium.Margin = new Padding(4, 3, 4, 3);
             allianceSinglePlayerMedium.Maximum = new decimal(new int[] { int.MaxValue, 0, 0, 0 });
             allianceSinglePlayerMedium.Minimum = new decimal(new int[] { int.MinValue, 0, 0, int.MinValue });
@@ -303,7 +301,7 @@ namespace SwRebellionEditor
             // 
             allianceSinglePlayerHardLabel.AutoSize = true;
             allianceSinglePlayerHardLabel.ForeColor = Color.Black;
-            allianceSinglePlayerHardLabel.Location = new Point(9, 110);
+            allianceSinglePlayerHardLabel.Location = new Point(9, 83);
             allianceSinglePlayerHardLabel.Margin = new Padding(4, 0, 4, 0);
             allianceSinglePlayerHardLabel.Name = "allianceSinglePlayerHardLabel";
             allianceSinglePlayerHardLabel.Size = new Size(103, 15);
@@ -313,7 +311,7 @@ namespace SwRebellionEditor
             // allianceSinglePlayerEasy
             // 
             allianceSinglePlayerEasy.ForeColor = Color.Black;
-            allianceSinglePlayerEasy.Location = new Point(141, 50);
+            allianceSinglePlayerEasy.Location = new Point(141, 23);
             allianceSinglePlayerEasy.Margin = new Padding(4, 3, 4, 3);
             allianceSinglePlayerEasy.Maximum = new decimal(new int[] { int.MaxValue, 0, 0, 0 });
             allianceSinglePlayerEasy.Minimum = new decimal(new int[] { int.MinValue, 0, 0, int.MinValue });
@@ -328,84 +326,68 @@ namespace SwRebellionEditor
             // 
             allianceSinglePlayerMediumLabel.AutoSize = true;
             allianceSinglePlayerMediumLabel.ForeColor = Color.Black;
-            allianceSinglePlayerMediumLabel.Location = new Point(9, 81);
+            allianceSinglePlayerMediumLabel.Location = new Point(9, 54);
             allianceSinglePlayerMediumLabel.Margin = new Padding(4, 0, 4, 0);
             allianceSinglePlayerMediumLabel.Name = "allianceSinglePlayerMediumLabel";
             allianceSinglePlayerMediumLabel.Size = new Size(122, 15);
             allianceSinglePlayerMediumLabel.TabIndex = 176;
             allianceSinglePlayerMediumLabel.Text = "Single Player Medium";
             // 
-            // allianceMultiPlayer
-            // 
-            allianceMultiPlayer.ForeColor = Color.Black;
-            allianceMultiPlayer.Location = new Point(141, 21);
-            allianceMultiPlayer.Margin = new Padding(4, 3, 4, 3);
-            allianceMultiPlayer.Maximum = new decimal(new int[] { int.MaxValue, 0, 0, 0 });
-            allianceMultiPlayer.Minimum = new decimal(new int[] { int.MinValue, 0, 0, int.MinValue });
-            allianceMultiPlayer.Name = "allianceMultiPlayer";
-            allianceMultiPlayer.Size = new Size(92, 23);
-            allianceMultiPlayer.TabIndex = 172;
-            allianceMultiPlayer.TextAlign = HorizontalAlignment.Right;
-            allianceMultiPlayer.Value = new decimal(new int[] { int.MaxValue, 0, 0, 0 });
-            allianceMultiPlayer.ValueChanged += allianceMultiPlayer_ValueChanged;
-            // 
             // allianceSinglePlayerEasyLabel
             // 
             allianceSinglePlayerEasyLabel.AutoSize = true;
             allianceSinglePlayerEasyLabel.ForeColor = Color.Black;
-            allianceSinglePlayerEasyLabel.Location = new Point(9, 52);
+            allianceSinglePlayerEasyLabel.Location = new Point(9, 25);
             allianceSinglePlayerEasyLabel.Margin = new Padding(4, 0, 4, 0);
             allianceSinglePlayerEasyLabel.Name = "allianceSinglePlayerEasyLabel";
             allianceSinglePlayerEasyLabel.Size = new Size(100, 15);
             allianceSinglePlayerEasyLabel.TabIndex = 175;
             allianceSinglePlayerEasyLabel.Text = "Single Player Easy";
             // 
-            // allianceMultiplayerLabel
+            // development
             // 
-            allianceMultiplayerLabel.AutoSize = true;
-            allianceMultiplayerLabel.ForeColor = Color.Black;
-            allianceMultiplayerLabel.Location = new Point(9, 23);
-            allianceMultiplayerLabel.Margin = new Padding(4, 0, 4, 0);
-            allianceMultiplayerLabel.Name = "allianceMultiplayerLabel";
-            allianceMultiplayerLabel.Size = new Size(70, 15);
-            allianceMultiplayerLabel.TabIndex = 172;
-            allianceMultiplayerLabel.Text = "Multi Player";
+            development.ForeColor = Color.Red;
+            development.Location = new Point(153, 164);
+            development.Margin = new Padding(4, 3, 4, 3);
+            development.Maximum = new decimal(new int[] { int.MaxValue, 0, 0, 0 });
+            development.Minimum = new decimal(new int[] { int.MinValue, 0, 0, int.MinValue });
+            development.Name = "development";
+            development.Size = new Size(92, 23);
+            development.TabIndex = 172;
+            development.TextAlign = HorizontalAlignment.Right;
+            development.Value = new decimal(new int[] { int.MaxValue, 0, 0, 0 });
+            development.ValueChanged += development_ValueChanged;
+            // 
+            // developmentLabel
+            // 
+            developmentLabel.AutoSize = true;
+            developmentLabel.ForeColor = Color.Red;
+            developmentLabel.Location = new Point(18, 166);
+            developmentLabel.Margin = new Padding(4, 0, 4, 0);
+            developmentLabel.Name = "developmentLabel";
+            developmentLabel.Size = new Size(128, 15);
+            developmentLabel.TabIndex = 172;
+            developmentLabel.Text = "Development (unused)";
             // 
             // empireGroupBox
             // 
-            empireGroupBox.Controls.Add(empireMultiPlayer);
             empireGroupBox.Controls.Add(empireSinglePlayerHard);
             empireGroupBox.Controls.Add(empireSinglePlayerHardLabel);
             empireGroupBox.Controls.Add(empireSinglePlayerMedium);
             empireGroupBox.Controls.Add(empireSinglePlayerMediumLabel);
             empireGroupBox.Controls.Add(empireSinglePlayerEasy);
             empireGroupBox.Controls.Add(empireSinglePlayerEasyLabel);
-            empireGroupBox.Controls.Add(empireMultiPlayerLabel);
-            empireGroupBox.Location = new Point(258, 160);
+            empireGroupBox.Location = new Point(258, 191);
             empireGroupBox.Name = "empireGroupBox";
-            empireGroupBox.Size = new Size(240, 141);
+            empireGroupBox.Size = new Size(240, 114);
             empireGroupBox.TabIndex = 178;
             empireGroupBox.TabStop = false;
             empireGroupBox.Text = "Empire";
             // 
-            // empireMultiPlayer
-            // 
-            empireMultiPlayer.ForeColor = Color.Black;
-            empireMultiPlayer.Location = new Point(141, 108);
-            empireMultiPlayer.Margin = new Padding(4, 3, 4, 3);
-            empireMultiPlayer.Maximum = new decimal(new int[] { int.MaxValue, 0, 0, 0 });
-            empireMultiPlayer.Minimum = new decimal(new int[] { int.MinValue, 0, 0, int.MinValue });
-            empireMultiPlayer.Name = "empireMultiPlayer";
-            empireMultiPlayer.Size = new Size(92, 23);
-            empireMultiPlayer.TabIndex = 174;
-            empireMultiPlayer.TextAlign = HorizontalAlignment.Right;
-            empireMultiPlayer.Value = new decimal(new int[] { int.MaxValue, 0, 0, 0 });
-            empireMultiPlayer.ValueChanged += empireMultiPlayer_ValueChanged;
-            // 
             // empireSinglePlayerHard
             // 
             empireSinglePlayerHard.ForeColor = Color.Black;
-            empireSinglePlayerHard.Location = new Point(141, 79);
+            empireSinglePlayerHard.Location = new Point(141, 81);
             empireSinglePlayerHard.Margin = new Padding(4, 3, 4, 3);
             empireSinglePlayerHard.Maximum = new decimal(new int[] { int.MaxValue, 0, 0, 0 });
             empireSinglePlayerHard.Minimum = new decimal(new int[] { int.MinValue, 0, 0, int.MinValue });
@@ -420,7 +402,7 @@ namespace SwRebellionEditor
             // 
             empireSinglePlayerHardLabel.AutoSize = true;
             empireSinglePlayerHardLabel.ForeColor = Color.Black;
-            empireSinglePlayerHardLabel.Location = new Point(10, 81);
+            empireSinglePlayerHardLabel.Location = new Point(10, 83);
             empireSinglePlayerHardLabel.Margin = new Padding(4, 0, 4, 0);
             empireSinglePlayerHardLabel.Name = "empireSinglePlayerHardLabel";
             empireSinglePlayerHardLabel.Size = new Size(103, 15);
@@ -430,7 +412,7 @@ namespace SwRebellionEditor
             // empireSinglePlayerMedium
             // 
             empireSinglePlayerMedium.ForeColor = Color.Black;
-            empireSinglePlayerMedium.Location = new Point(141, 50);
+            empireSinglePlayerMedium.Location = new Point(141, 52);
             empireSinglePlayerMedium.Margin = new Padding(4, 3, 4, 3);
             empireSinglePlayerMedium.Maximum = new decimal(new int[] { int.MaxValue, 0, 0, 0 });
             empireSinglePlayerMedium.Minimum = new decimal(new int[] { int.MinValue, 0, 0, int.MinValue });
@@ -445,7 +427,7 @@ namespace SwRebellionEditor
             // 
             empireSinglePlayerMediumLabel.AutoSize = true;
             empireSinglePlayerMediumLabel.ForeColor = Color.Black;
-            empireSinglePlayerMediumLabel.Location = new Point(10, 52);
+            empireSinglePlayerMediumLabel.Location = new Point(10, 54);
             empireSinglePlayerMediumLabel.Margin = new Padding(4, 0, 4, 0);
             empireSinglePlayerMediumLabel.Name = "empireSinglePlayerMediumLabel";
             empireSinglePlayerMediumLabel.Size = new Size(122, 15);
@@ -455,7 +437,7 @@ namespace SwRebellionEditor
             // empireSinglePlayerEasy
             // 
             empireSinglePlayerEasy.ForeColor = Color.Black;
-            empireSinglePlayerEasy.Location = new Point(141, 21);
+            empireSinglePlayerEasy.Location = new Point(141, 23);
             empireSinglePlayerEasy.Margin = new Padding(4, 3, 4, 3);
             empireSinglePlayerEasy.Maximum = new decimal(new int[] { int.MaxValue, 0, 0, 0 });
             empireSinglePlayerEasy.Minimum = new decimal(new int[] { int.MinValue, 0, 0, int.MinValue });
@@ -470,36 +452,55 @@ namespace SwRebellionEditor
             // 
             empireSinglePlayerEasyLabel.AutoSize = true;
             empireSinglePlayerEasyLabel.ForeColor = Color.Black;
-            empireSinglePlayerEasyLabel.Location = new Point(10, 23);
+            empireSinglePlayerEasyLabel.Location = new Point(10, 25);
             empireSinglePlayerEasyLabel.Margin = new Padding(4, 0, 4, 0);
             empireSinglePlayerEasyLabel.Name = "empireSinglePlayerEasyLabel";
             empireSinglePlayerEasyLabel.Size = new Size(100, 15);
             empireSinglePlayerEasyLabel.TabIndex = 175;
             empireSinglePlayerEasyLabel.Text = "Single Player Easy";
+            empireSinglePlayerEasyLabel.Click += empireSinglePlayerEasyLabel_Click;
             // 
-            // empireMultiPlayerLabel
+            // multiPlayer
             // 
-            empireMultiPlayerLabel.AutoSize = true;
-            empireMultiPlayerLabel.ForeColor = Color.Black;
-            empireMultiPlayerLabel.Location = new Point(10, 110);
-            empireMultiPlayerLabel.Margin = new Padding(4, 0, 4, 0);
-            empireMultiPlayerLabel.Name = "empireMultiPlayerLabel";
-            empireMultiPlayerLabel.Size = new Size(70, 15);
-            empireMultiPlayerLabel.TabIndex = 172;
-            empireMultiPlayerLabel.Text = "Multi Player";
+            multiPlayer.ForeColor = Color.Black;
+            multiPlayer.Location = new Point(153, 312);
+            multiPlayer.Margin = new Padding(4, 3, 4, 3);
+            multiPlayer.Maximum = new decimal(new int[] { int.MaxValue, 0, 0, 0 });
+            multiPlayer.Minimum = new decimal(new int[] { int.MinValue, 0, 0, int.MinValue });
+            multiPlayer.Name = "multiPlayer";
+            multiPlayer.Size = new Size(92, 23);
+            multiPlayer.TabIndex = 174;
+            multiPlayer.TextAlign = HorizontalAlignment.Right;
+            multiPlayer.Value = new decimal(new int[] { int.MaxValue, 0, 0, 0 });
+            multiPlayer.ValueChanged += multiPlayer_ValueChanged;
+            // 
+            // multiPlayerLabel
+            // 
+            multiPlayerLabel.AutoSize = true;
+            multiPlayerLabel.ForeColor = Color.Black;
+            multiPlayerLabel.Location = new Point(21, 314);
+            multiPlayerLabel.Margin = new Padding(4, 0, 4, 0);
+            multiPlayerLabel.Name = "multiPlayerLabel";
+            multiPlayerLabel.Size = new Size(70, 15);
+            multiPlayerLabel.TabIndex = 172;
+            multiPlayerLabel.Text = "Multi Player";
             // 
             // GeneralParamTableEntryForm
             // 
             AcceptButton = Ok;
             AutoScaleMode = AutoScaleMode.None;
             CancelButton = Cancel;
-            ClientSize = new Size(504, 343);
+            ClientSize = new Size(504, 383);
+            Controls.Add(multiPlayer);
             Controls.Add(empireGroupBox);
             Controls.Add(idLabel);
             Controls.Add(parameterIdLabel);
             Controls.Add(name);
             Controls.Add(nameLabel);
+            Controls.Add(development);
             Controls.Add(allianceGroupBox);
+            Controls.Add(multiPlayerLabel);
+            Controls.Add(developmentLabel);
             Controls.Add(idHexLabel);
             Controls.Add(Open);
             Controls.Add(parameterId);
@@ -514,8 +515,8 @@ namespace SwRebellionEditor
             KeyPreview = true;
             Margin = new Padding(4, 3, 4, 3);
             MaximizeBox = false;
-            MaximumSize = new Size(520, 382);
-            MinimumSize = new Size(520, 382);
+            MaximumSize = new Size(520, 422);
+            MinimumSize = new Size(520, 422);
             Name = "GeneralParamTableEntryForm";
             Text = "General Parameters Tables (GNPRTB.DAT)";
             FormClosing += GameObjectsListForm_FormClosing;
@@ -530,13 +531,13 @@ namespace SwRebellionEditor
             ((ISupportInitialize)allianceSinglePlayerHard).EndInit();
             ((ISupportInitialize)allianceSinglePlayerMedium).EndInit();
             ((ISupportInitialize)allianceSinglePlayerEasy).EndInit();
-            ((ISupportInitialize)allianceMultiPlayer).EndInit();
+            ((ISupportInitialize)development).EndInit();
             empireGroupBox.ResumeLayout(false);
             empireGroupBox.PerformLayout();
-            ((ISupportInitialize)empireMultiPlayer).EndInit();
             ((ISupportInitialize)empireSinglePlayerHard).EndInit();
             ((ISupportInitialize)empireSinglePlayerMedium).EndInit();
             ((ISupportInitialize)empireSinglePlayerEasy).EndInit();
+            ((ISupportInitialize)multiPlayer).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -550,16 +551,16 @@ namespace SwRebellionEditor
         private NumericUpDown allianceSinglePlayerHard;
         private NumericUpDown allianceSinglePlayerMedium;
         private NumericUpDown allianceSinglePlayerEasy;
-        private NumericUpDown allianceMultiPlayer;
-        private Label allianceMultiplayerLabel;
+        private NumericUpDown development;
+        private Label developmentLabel;
         private GroupBox empireGroupBox;
         private Label empireSinglePlayerHardLabel;
         private Label empireSinglePlayerMediumLabel;
         private Label empireSinglePlayerEasyLabel;
-        private NumericUpDown empireMultiPlayer;
+        private NumericUpDown multiPlayer;
         private NumericUpDown empireSinglePlayerHard;
         private NumericUpDown empireSinglePlayerMedium;
         private NumericUpDown empireSinglePlayerEasy;
-        private Label empireMultiPlayerLabel;
+        private Label multiPlayerLabel;
     }
 }

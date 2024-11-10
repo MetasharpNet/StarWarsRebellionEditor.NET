@@ -97,8 +97,8 @@ public class SDPRTB_SideParamTableEntry
     public uint Id;
     public uint Field2_1; // 1
     public uint ParameterId;
-    public int AllianceMultiPlayerAlliance;
-    public int AllianceMultiPlayerEmpire;
+    public int DevelopmentAlliance;
+    public int DevelopmentEmpire;
     public int AllianceSinglePlayerEasyAlliance;
     public int AllianceSinglePlayerEasyEmpire;
     public int AllianceSinglePlayerMediumAlliance;
@@ -111,8 +111,8 @@ public class SDPRTB_SideParamTableEntry
     public int EmpireSinglePlayerMediumEmpire;
     public int EmpireSinglePlayerHardAlliance;
     public int EmpireSinglePlayerHardEmpire;
-    public int EmpireMultiPlayerAlliance;
-    public int EmpireMultiPlayerEmpire;
+    public int MultiPlayerAlliance;
+    public int MultiPlayerEmpire;
     [Ignore]
     public string Name = "Unknown Side Param Table Entry";
 }

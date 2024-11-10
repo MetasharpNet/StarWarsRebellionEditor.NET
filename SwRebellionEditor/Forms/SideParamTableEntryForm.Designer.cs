@@ -68,7 +68,6 @@ namespace SwRebellionEditor
             allianceSinglePlayerHardEmpire = new NumericUpDown();
             allianceSinglePlayerMediumEmpire = new NumericUpDown();
             allianceSinglePlayerEasyEmpire = new NumericUpDown();
-            allianceMultiPlayerEmpire = new NumericUpDown();
             allianceSinglePlayerHardLabel = new Label();
             allianceSinglePlayerMediumLabel = new Label();
             allianceSinglePlayerEasyLabel = new Label();
@@ -76,11 +75,11 @@ namespace SwRebellionEditor
             allianceSinglePlayerHardAlliance = new NumericUpDown();
             allianceSinglePlayerMediumAlliance = new NumericUpDown();
             allianceSinglePlayerEasyAlliance = new NumericUpDown();
-            allianceMultiPlayerAlliance = new NumericUpDown();
-            allianceMultiplayerLabel = new Label();
+            developmentEmpire = new NumericUpDown();
+            developmentAlliance = new NumericUpDown();
+            developmentLabel = new Label();
             playingAsEmpireGroupBox = new GroupBox();
             empireEmpireGroupBox = new GroupBox();
-            empireMultiPlayerEmpire = new NumericUpDown();
             empireSinglePlayerHardEmpire = new NumericUpDown();
             empireSinglePlayerMediumEmpire = new NumericUpDown();
             empireSinglePlayerEasyEmpire = new NumericUpDown();
@@ -88,11 +87,16 @@ namespace SwRebellionEditor
             empireSinglePlayerMediumLabel = new Label();
             empireSinglePlayerEasyLabel = new Label();
             empireAllianceGroupBox = new GroupBox();
-            empireMultiPlayerAlliance = new NumericUpDown();
             empireSinglePlayerHardAlliance = new NumericUpDown();
             empireSinglePlayerMediumAlliance = new NumericUpDown();
             empireSinglePlayerEasyAlliance = new NumericUpDown();
-            empireMultiPlayerLabel = new Label();
+            multiPlayerEmpire = new NumericUpDown();
+            multiPlayerAlliance = new NumericUpDown();
+            multiPlayerLabel = new Label();
+            groupBox1 = new GroupBox();
+            groupBox2 = new GroupBox();
+            groupBox3 = new GroupBox();
+            groupBox4 = new GroupBox();
             ((ISupportInitialize)selector).BeginInit();
             ((ISupportInitialize)parameterId).BeginInit();
             ((ISupportInitialize)id).BeginInit();
@@ -102,31 +106,35 @@ namespace SwRebellionEditor
             ((ISupportInitialize)allianceSinglePlayerHardEmpire).BeginInit();
             ((ISupportInitialize)allianceSinglePlayerMediumEmpire).BeginInit();
             ((ISupportInitialize)allianceSinglePlayerEasyEmpire).BeginInit();
-            ((ISupportInitialize)allianceMultiPlayerEmpire).BeginInit();
             allianceAllianceGroupBox.SuspendLayout();
             ((ISupportInitialize)allianceSinglePlayerHardAlliance).BeginInit();
             ((ISupportInitialize)allianceSinglePlayerMediumAlliance).BeginInit();
             ((ISupportInitialize)allianceSinglePlayerEasyAlliance).BeginInit();
-            ((ISupportInitialize)allianceMultiPlayerAlliance).BeginInit();
+            ((ISupportInitialize)developmentEmpire).BeginInit();
+            ((ISupportInitialize)developmentAlliance).BeginInit();
             playingAsEmpireGroupBox.SuspendLayout();
             empireEmpireGroupBox.SuspendLayout();
-            ((ISupportInitialize)empireMultiPlayerEmpire).BeginInit();
             ((ISupportInitialize)empireSinglePlayerHardEmpire).BeginInit();
             ((ISupportInitialize)empireSinglePlayerMediumEmpire).BeginInit();
             ((ISupportInitialize)empireSinglePlayerEasyEmpire).BeginInit();
             empireAllianceGroupBox.SuspendLayout();
-            ((ISupportInitialize)empireMultiPlayerAlliance).BeginInit();
             ((ISupportInitialize)empireSinglePlayerHardAlliance).BeginInit();
             ((ISupportInitialize)empireSinglePlayerMediumAlliance).BeginInit();
             ((ISupportInitialize)empireSinglePlayerEasyAlliance).BeginInit();
+            ((ISupportInitialize)multiPlayerEmpire).BeginInit();
+            ((ISupportInitialize)multiPlayerAlliance).BeginInit();
+            groupBox1.SuspendLayout();
+            groupBox2.SuspendLayout();
+            groupBox3.SuspendLayout();
+            groupBox4.SuspendLayout();
             SuspendLayout();
             // 
             // Open
             // 
-            Open.Location = new Point(297, 504);
+            Open.Location = new Point(305, 414);
             Open.Margin = new Padding(4, 3, 4, 3);
             Open.Name = "Open";
-            Open.Size = new Size(88, 27);
+            Open.Size = new Size(88, 34);
             Open.TabIndex = 146;
             Open.TabStop = false;
             Open.Text = "Open...";
@@ -135,10 +143,10 @@ namespace SwRebellionEditor
             // 
             // SaveAs
             // 
-            SaveAs.Location = new Point(201, 504);
+            SaveAs.Location = new Point(209, 414);
             SaveAs.Margin = new Padding(4, 3, 4, 3);
             SaveAs.Name = "SaveAs";
-            SaveAs.Size = new Size(88, 27);
+            SaveAs.Size = new Size(88, 34);
             SaveAs.TabIndex = 147;
             SaveAs.TabStop = false;
             SaveAs.Text = "&SaveAs...";
@@ -148,10 +156,10 @@ namespace SwRebellionEditor
             // Cancel
             // 
             Cancel.DialogResult = DialogResult.Cancel;
-            Cancel.Location = new Point(105, 504);
+            Cancel.Location = new Point(113, 414);
             Cancel.Margin = new Padding(4, 3, 4, 3);
             Cancel.Name = "Cancel";
-            Cancel.Size = new Size(88, 27);
+            Cancel.Size = new Size(88, 34);
             Cancel.TabIndex = 154;
             Cancel.Text = "&Cancel";
             Cancel.UseVisualStyleBackColor = true;
@@ -159,10 +167,10 @@ namespace SwRebellionEditor
             // 
             // Ok
             // 
-            Ok.Location = new Point(9, 504);
+            Ok.Location = new Point(17, 414);
             Ok.Margin = new Padding(4, 3, 4, 3);
             Ok.Name = "Ok";
-            Ok.Size = new Size(88, 27);
+            Ok.Size = new Size(88, 34);
             Ok.TabIndex = 153;
             Ok.Text = "&Ok";
             Ok.UseVisualStyleBackColor = true;
@@ -175,17 +183,17 @@ namespace SwRebellionEditor
             selector.Margin = new Padding(4, 3, 4, 3);
             selector.Maximum = 19;
             selector.Name = "selector";
-            selector.Size = new Size(456, 45);
+            selector.Size = new Size(752, 45);
             selector.TabIndex = 149;
             selector.ValueChanged += GameObjectsSelector_ValueChanged;
             // 
             // parameterId
             // 
-            parameterId.Location = new Point(128, 135);
+            parameterId.Location = new Point(165, 135);
             parameterId.Margin = new Padding(4, 3, 4, 3);
             parameterId.Maximum = new decimal(new int[] { -1, 0, 0, 0 });
             parameterId.Name = "parameterId";
-            parameterId.Size = new Size(85, 23);
+            parameterId.Size = new Size(92, 23);
             parameterId.TabIndex = 7;
             parameterId.TextAlign = HorizontalAlignment.Right;
             parameterId.Value = new decimal(new int[] { -1, 0, 0, 0 });
@@ -194,11 +202,11 @@ namespace SwRebellionEditor
             // id
             // 
             id.ForeColor = Color.Red;
-            id.Location = new Point(128, 77);
+            id.Location = new Point(165, 77);
             id.Margin = new Padding(4, 3, 4, 3);
             id.Maximum = new decimal(new int[] { -1, 0, 0, 0 });
             id.Name = "id";
-            id.Size = new Size(85, 23);
+            id.Size = new Size(93, 23);
             id.TabIndex = 10;
             id.TextAlign = HorizontalAlignment.Right;
             id.Value = new decimal(new int[] { -1, 0, 0, 0 });
@@ -218,11 +226,11 @@ namespace SwRebellionEditor
             // field2_1
             // 
             field2_1.ForeColor = Color.Red;
-            field2_1.Location = new Point(128, 106);
+            field2_1.Location = new Point(165, 106);
             field2_1.Margin = new Padding(4, 3, 4, 3);
             field2_1.Maximum = new decimal(new int[] { -1, 0, 0, 0 });
             field2_1.Name = "field2_1";
-            field2_1.Size = new Size(85, 23);
+            field2_1.Size = new Size(93, 23);
             field2_1.TabIndex = 8;
             field2_1.TextAlign = HorizontalAlignment.Right;
             field2_1.Value = new decimal(new int[] { 1, 0, 0, 0 });
@@ -255,7 +263,7 @@ namespace SwRebellionEditor
             name.Enabled = false;
             name.Location = new Point(57, 49);
             name.Name = "name";
-            name.Size = new Size(412, 23);
+            name.Size = new Size(699, 23);
             name.TabIndex = 169;
             // 
             // nameLabel
@@ -272,7 +280,7 @@ namespace SwRebellionEditor
             // 
             idHexLabel.AutoSize = true;
             idHexLabel.ForeColor = Color.Red;
-            idHexLabel.Location = new Point(221, 79);
+            idHexLabel.Location = new Point(267, 79);
             idHexLabel.Margin = new Padding(4, 0, 4, 0);
             idHexLabel.Name = "idHexLabel";
             idHexLabel.Size = new Size(31, 15);
@@ -286,10 +294,9 @@ namespace SwRebellionEditor
             playingAsAllianceGroupBox.Controls.Add(allianceSinglePlayerMediumLabel);
             playingAsAllianceGroupBox.Controls.Add(allianceSinglePlayerEasyLabel);
             playingAsAllianceGroupBox.Controls.Add(allianceAllianceGroupBox);
-            playingAsAllianceGroupBox.Controls.Add(allianceMultiplayerLabel);
-            playingAsAllianceGroupBox.Location = new Point(12, 164);
+            playingAsAllianceGroupBox.Location = new Point(17, 217);
             playingAsAllianceGroupBox.Name = "playingAsAllianceGroupBox";
-            playingAsAllianceGroupBox.Size = new Size(370, 164);
+            playingAsAllianceGroupBox.Size = new Size(370, 132);
             playingAsAllianceGroupBox.TabIndex = 170;
             playingAsAllianceGroupBox.TabStop = false;
             playingAsAllianceGroupBox.Text = "Playing as Alliance";
@@ -299,10 +306,9 @@ namespace SwRebellionEditor
             allianceEmpireGroupBox.Controls.Add(allianceSinglePlayerHardEmpire);
             allianceEmpireGroupBox.Controls.Add(allianceSinglePlayerMediumEmpire);
             allianceEmpireGroupBox.Controls.Add(allianceSinglePlayerEasyEmpire);
-            allianceEmpireGroupBox.Controls.Add(allianceMultiPlayerEmpire);
             allianceEmpireGroupBox.Location = new Point(254, 13);
             allianceEmpireGroupBox.Name = "allianceEmpireGroupBox";
-            allianceEmpireGroupBox.Size = new Size(107, 144);
+            allianceEmpireGroupBox.Size = new Size(107, 113);
             allianceEmpireGroupBox.TabIndex = 175;
             allianceEmpireGroupBox.TabStop = false;
             allianceEmpireGroupBox.Text = "Empire Side";
@@ -310,7 +316,7 @@ namespace SwRebellionEditor
             // allianceSinglePlayerHardEmpire
             // 
             allianceSinglePlayerHardEmpire.ForeColor = Color.Black;
-            allianceSinglePlayerHardEmpire.Location = new Point(7, 111);
+            allianceSinglePlayerHardEmpire.Location = new Point(8, 82);
             allianceSinglePlayerHardEmpire.Margin = new Padding(4, 3, 4, 3);
             allianceSinglePlayerHardEmpire.Maximum = new decimal(new int[] { int.MaxValue, 0, 0, 0 });
             allianceSinglePlayerHardEmpire.Minimum = new decimal(new int[] { int.MinValue, 0, 0, int.MinValue });
@@ -324,7 +330,7 @@ namespace SwRebellionEditor
             // allianceSinglePlayerMediumEmpire
             // 
             allianceSinglePlayerMediumEmpire.ForeColor = Color.Black;
-            allianceSinglePlayerMediumEmpire.Location = new Point(7, 82);
+            allianceSinglePlayerMediumEmpire.Location = new Point(7, 53);
             allianceSinglePlayerMediumEmpire.Margin = new Padding(4, 3, 4, 3);
             allianceSinglePlayerMediumEmpire.Maximum = new decimal(new int[] { int.MaxValue, 0, 0, 0 });
             allianceSinglePlayerMediumEmpire.Minimum = new decimal(new int[] { int.MinValue, 0, 0, int.MinValue });
@@ -338,7 +344,7 @@ namespace SwRebellionEditor
             // allianceSinglePlayerEasyEmpire
             // 
             allianceSinglePlayerEasyEmpire.ForeColor = Color.Black;
-            allianceSinglePlayerEasyEmpire.Location = new Point(7, 53);
+            allianceSinglePlayerEasyEmpire.Location = new Point(7, 24);
             allianceSinglePlayerEasyEmpire.Margin = new Padding(4, 3, 4, 3);
             allianceSinglePlayerEasyEmpire.Maximum = new decimal(new int[] { int.MaxValue, 0, 0, 0 });
             allianceSinglePlayerEasyEmpire.Minimum = new decimal(new int[] { int.MinValue, 0, 0, int.MinValue });
@@ -349,25 +355,11 @@ namespace SwRebellionEditor
             allianceSinglePlayerEasyEmpire.Value = new decimal(new int[] { int.MaxValue, 0, 0, 0 });
             allianceSinglePlayerEasyEmpire.ValueChanged += allianceSinglePlayerEasyEmpire_ValueChanged;
             // 
-            // allianceMultiPlayerEmpire
-            // 
-            allianceMultiPlayerEmpire.ForeColor = Color.Black;
-            allianceMultiPlayerEmpire.Location = new Point(7, 24);
-            allianceMultiPlayerEmpire.Margin = new Padding(4, 3, 4, 3);
-            allianceMultiPlayerEmpire.Maximum = new decimal(new int[] { int.MaxValue, 0, 0, 0 });
-            allianceMultiPlayerEmpire.Minimum = new decimal(new int[] { int.MinValue, 0, 0, int.MinValue });
-            allianceMultiPlayerEmpire.Name = "allianceMultiPlayerEmpire";
-            allianceMultiPlayerEmpire.Size = new Size(92, 23);
-            allianceMultiPlayerEmpire.TabIndex = 172;
-            allianceMultiPlayerEmpire.TextAlign = HorizontalAlignment.Right;
-            allianceMultiPlayerEmpire.Value = new decimal(new int[] { int.MaxValue, 0, 0, 0 });
-            allianceMultiPlayerEmpire.ValueChanged += allianceMultiPlayerEmpire_ValueChanged;
-            // 
             // allianceSinglePlayerHardLabel
             // 
             allianceSinglePlayerHardLabel.AutoSize = true;
             allianceSinglePlayerHardLabel.ForeColor = Color.Black;
-            allianceSinglePlayerHardLabel.Location = new Point(9, 126);
+            allianceSinglePlayerHardLabel.Location = new Point(10, 97);
             allianceSinglePlayerHardLabel.Margin = new Padding(4, 0, 4, 0);
             allianceSinglePlayerHardLabel.Name = "allianceSinglePlayerHardLabel";
             allianceSinglePlayerHardLabel.Size = new Size(103, 15);
@@ -378,7 +370,7 @@ namespace SwRebellionEditor
             // 
             allianceSinglePlayerMediumLabel.AutoSize = true;
             allianceSinglePlayerMediumLabel.ForeColor = Color.Black;
-            allianceSinglePlayerMediumLabel.Location = new Point(9, 97);
+            allianceSinglePlayerMediumLabel.Location = new Point(10, 68);
             allianceSinglePlayerMediumLabel.Margin = new Padding(4, 0, 4, 0);
             allianceSinglePlayerMediumLabel.Name = "allianceSinglePlayerMediumLabel";
             allianceSinglePlayerMediumLabel.Size = new Size(122, 15);
@@ -389,7 +381,7 @@ namespace SwRebellionEditor
             // 
             allianceSinglePlayerEasyLabel.AutoSize = true;
             allianceSinglePlayerEasyLabel.ForeColor = Color.Black;
-            allianceSinglePlayerEasyLabel.Location = new Point(9, 68);
+            allianceSinglePlayerEasyLabel.Location = new Point(10, 39);
             allianceSinglePlayerEasyLabel.Margin = new Padding(4, 0, 4, 0);
             allianceSinglePlayerEasyLabel.Name = "allianceSinglePlayerEasyLabel";
             allianceSinglePlayerEasyLabel.Size = new Size(100, 15);
@@ -401,10 +393,9 @@ namespace SwRebellionEditor
             allianceAllianceGroupBox.Controls.Add(allianceSinglePlayerHardAlliance);
             allianceAllianceGroupBox.Controls.Add(allianceSinglePlayerMediumAlliance);
             allianceAllianceGroupBox.Controls.Add(allianceSinglePlayerEasyAlliance);
-            allianceAllianceGroupBox.Controls.Add(allianceMultiPlayerAlliance);
             allianceAllianceGroupBox.Location = new Point(141, 13);
             allianceAllianceGroupBox.Name = "allianceAllianceGroupBox";
-            allianceAllianceGroupBox.Size = new Size(107, 144);
+            allianceAllianceGroupBox.Size = new Size(107, 113);
             allianceAllianceGroupBox.TabIndex = 173;
             allianceAllianceGroupBox.TabStop = false;
             allianceAllianceGroupBox.Text = "Alliance Side";
@@ -412,7 +403,7 @@ namespace SwRebellionEditor
             // allianceSinglePlayerHardAlliance
             // 
             allianceSinglePlayerHardAlliance.ForeColor = Color.Black;
-            allianceSinglePlayerHardAlliance.Location = new Point(7, 111);
+            allianceSinglePlayerHardAlliance.Location = new Point(7, 82);
             allianceSinglePlayerHardAlliance.Margin = new Padding(4, 3, 4, 3);
             allianceSinglePlayerHardAlliance.Maximum = new decimal(new int[] { int.MaxValue, 0, 0, 0 });
             allianceSinglePlayerHardAlliance.Minimum = new decimal(new int[] { int.MinValue, 0, 0, int.MinValue });
@@ -426,7 +417,7 @@ namespace SwRebellionEditor
             // allianceSinglePlayerMediumAlliance
             // 
             allianceSinglePlayerMediumAlliance.ForeColor = Color.Black;
-            allianceSinglePlayerMediumAlliance.Location = new Point(7, 82);
+            allianceSinglePlayerMediumAlliance.Location = new Point(7, 53);
             allianceSinglePlayerMediumAlliance.Margin = new Padding(4, 3, 4, 3);
             allianceSinglePlayerMediumAlliance.Maximum = new decimal(new int[] { int.MaxValue, 0, 0, 0 });
             allianceSinglePlayerMediumAlliance.Minimum = new decimal(new int[] { int.MinValue, 0, 0, int.MinValue });
@@ -440,7 +431,7 @@ namespace SwRebellionEditor
             // allianceSinglePlayerEasyAlliance
             // 
             allianceSinglePlayerEasyAlliance.ForeColor = Color.Black;
-            allianceSinglePlayerEasyAlliance.Location = new Point(7, 53);
+            allianceSinglePlayerEasyAlliance.Location = new Point(7, 24);
             allianceSinglePlayerEasyAlliance.Margin = new Padding(4, 3, 4, 3);
             allianceSinglePlayerEasyAlliance.Maximum = new decimal(new int[] { int.MaxValue, 0, 0, 0 });
             allianceSinglePlayerEasyAlliance.Minimum = new decimal(new int[] { int.MinValue, 0, 0, int.MinValue });
@@ -451,30 +442,44 @@ namespace SwRebellionEditor
             allianceSinglePlayerEasyAlliance.Value = new decimal(new int[] { int.MaxValue, 0, 0, 0 });
             allianceSinglePlayerEasyAlliance.ValueChanged += allianceSinglePlayerEasyAlliance_ValueChanged;
             // 
-            // allianceMultiPlayerAlliance
+            // developmentEmpire
             // 
-            allianceMultiPlayerAlliance.ForeColor = Color.Black;
-            allianceMultiPlayerAlliance.Location = new Point(7, 24);
-            allianceMultiPlayerAlliance.Margin = new Padding(4, 3, 4, 3);
-            allianceMultiPlayerAlliance.Maximum = new decimal(new int[] { int.MaxValue, 0, 0, 0 });
-            allianceMultiPlayerAlliance.Minimum = new decimal(new int[] { int.MinValue, 0, 0, int.MinValue });
-            allianceMultiPlayerAlliance.Name = "allianceMultiPlayerAlliance";
-            allianceMultiPlayerAlliance.Size = new Size(92, 23);
-            allianceMultiPlayerAlliance.TabIndex = 172;
-            allianceMultiPlayerAlliance.TextAlign = HorizontalAlignment.Right;
-            allianceMultiPlayerAlliance.Value = new decimal(new int[] { int.MaxValue, 0, 0, 0 });
-            allianceMultiPlayerAlliance.ValueChanged += allianceMultiPlayerAlliance_ValueChanged;
+            developmentEmpire.ForeColor = Color.Red;
+            developmentEmpire.Location = new Point(7, 22);
+            developmentEmpire.Margin = new Padding(4, 3, 4, 3);
+            developmentEmpire.Maximum = new decimal(new int[] { int.MaxValue, 0, 0, 0 });
+            developmentEmpire.Minimum = new decimal(new int[] { int.MinValue, 0, 0, int.MinValue });
+            developmentEmpire.Name = "developmentEmpire";
+            developmentEmpire.Size = new Size(92, 23);
+            developmentEmpire.TabIndex = 172;
+            developmentEmpire.TextAlign = HorizontalAlignment.Right;
+            developmentEmpire.Value = new decimal(new int[] { int.MaxValue, 0, 0, 0 });
+            developmentEmpire.ValueChanged += developmentEmpire_ValueChanged;
             // 
-            // allianceMultiplayerLabel
+            // developmentAlliance
             // 
-            allianceMultiplayerLabel.AutoSize = true;
-            allianceMultiplayerLabel.ForeColor = Color.Black;
-            allianceMultiplayerLabel.Location = new Point(9, 39);
-            allianceMultiplayerLabel.Margin = new Padding(4, 0, 4, 0);
-            allianceMultiplayerLabel.Name = "allianceMultiplayerLabel";
-            allianceMultiplayerLabel.Size = new Size(70, 15);
-            allianceMultiplayerLabel.TabIndex = 172;
-            allianceMultiplayerLabel.Text = "Multi Player";
+            developmentAlliance.ForeColor = Color.Red;
+            developmentAlliance.Location = new Point(8, 22);
+            developmentAlliance.Margin = new Padding(4, 3, 4, 3);
+            developmentAlliance.Maximum = new decimal(new int[] { int.MaxValue, 0, 0, 0 });
+            developmentAlliance.Minimum = new decimal(new int[] { int.MinValue, 0, 0, int.MinValue });
+            developmentAlliance.Name = "developmentAlliance";
+            developmentAlliance.Size = new Size(92, 23);
+            developmentAlliance.TabIndex = 172;
+            developmentAlliance.TextAlign = HorizontalAlignment.Right;
+            developmentAlliance.Value = new decimal(new int[] { int.MaxValue, 0, 0, 0 });
+            developmentAlliance.ValueChanged += developmentAlliance_ValueChanged;
+            // 
+            // developmentLabel
+            // 
+            developmentLabel.AutoSize = true;
+            developmentLabel.ForeColor = Color.Red;
+            developmentLabel.Location = new Point(17, 188);
+            developmentLabel.Margin = new Padding(4, 0, 4, 0);
+            developmentLabel.Name = "developmentLabel";
+            developmentLabel.Size = new Size(128, 15);
+            developmentLabel.TabIndex = 172;
+            developmentLabel.Text = "Development (unused)";
             // 
             // playingAsEmpireGroupBox
             // 
@@ -483,40 +488,24 @@ namespace SwRebellionEditor
             playingAsEmpireGroupBox.Controls.Add(empireSinglePlayerMediumLabel);
             playingAsEmpireGroupBox.Controls.Add(empireSinglePlayerEasyLabel);
             playingAsEmpireGroupBox.Controls.Add(empireAllianceGroupBox);
-            playingAsEmpireGroupBox.Controls.Add(empireMultiPlayerLabel);
-            playingAsEmpireGroupBox.Location = new Point(12, 334);
+            playingAsEmpireGroupBox.Location = new Point(395, 217);
             playingAsEmpireGroupBox.Name = "playingAsEmpireGroupBox";
-            playingAsEmpireGroupBox.Size = new Size(370, 164);
+            playingAsEmpireGroupBox.Size = new Size(370, 132);
             playingAsEmpireGroupBox.TabIndex = 178;
             playingAsEmpireGroupBox.TabStop = false;
             playingAsEmpireGroupBox.Text = "Playing as Empire";
             // 
             // empireEmpireGroupBox
             // 
-            empireEmpireGroupBox.Controls.Add(empireMultiPlayerEmpire);
             empireEmpireGroupBox.Controls.Add(empireSinglePlayerHardEmpire);
             empireEmpireGroupBox.Controls.Add(empireSinglePlayerMediumEmpire);
             empireEmpireGroupBox.Controls.Add(empireSinglePlayerEasyEmpire);
             empireEmpireGroupBox.Location = new Point(254, 13);
             empireEmpireGroupBox.Name = "empireEmpireGroupBox";
-            empireEmpireGroupBox.Size = new Size(107, 144);
+            empireEmpireGroupBox.Size = new Size(107, 113);
             empireEmpireGroupBox.TabIndex = 175;
             empireEmpireGroupBox.TabStop = false;
             empireEmpireGroupBox.Text = "Empire Side";
-            // 
-            // empireMultiPlayerEmpire
-            // 
-            empireMultiPlayerEmpire.ForeColor = Color.Black;
-            empireMultiPlayerEmpire.Location = new Point(7, 111);
-            empireMultiPlayerEmpire.Margin = new Padding(4, 3, 4, 3);
-            empireMultiPlayerEmpire.Maximum = new decimal(new int[] { int.MaxValue, 0, 0, 0 });
-            empireMultiPlayerEmpire.Minimum = new decimal(new int[] { int.MinValue, 0, 0, int.MinValue });
-            empireMultiPlayerEmpire.Name = "empireMultiPlayerEmpire";
-            empireMultiPlayerEmpire.Size = new Size(92, 23);
-            empireMultiPlayerEmpire.TabIndex = 174;
-            empireMultiPlayerEmpire.TextAlign = HorizontalAlignment.Right;
-            empireMultiPlayerEmpire.Value = new decimal(new int[] { int.MaxValue, 0, 0, 0 });
-            empireMultiPlayerEmpire.ValueChanged += empireMultiPlayerEmpire_ValueChanged;
             // 
             // empireSinglePlayerHardEmpire
             // 
@@ -595,30 +584,15 @@ namespace SwRebellionEditor
             // 
             // empireAllianceGroupBox
             // 
-            empireAllianceGroupBox.Controls.Add(empireMultiPlayerAlliance);
             empireAllianceGroupBox.Controls.Add(empireSinglePlayerHardAlliance);
             empireAllianceGroupBox.Controls.Add(empireSinglePlayerMediumAlliance);
             empireAllianceGroupBox.Controls.Add(empireSinglePlayerEasyAlliance);
             empireAllianceGroupBox.Location = new Point(141, 13);
             empireAllianceGroupBox.Name = "empireAllianceGroupBox";
-            empireAllianceGroupBox.Size = new Size(107, 144);
+            empireAllianceGroupBox.Size = new Size(107, 113);
             empireAllianceGroupBox.TabIndex = 173;
             empireAllianceGroupBox.TabStop = false;
             empireAllianceGroupBox.Text = "Alliance Side";
-            // 
-            // empireMultiPlayerAlliance
-            // 
-            empireMultiPlayerAlliance.ForeColor = Color.Black;
-            empireMultiPlayerAlliance.Location = new Point(7, 111);
-            empireMultiPlayerAlliance.Margin = new Padding(4, 3, 4, 3);
-            empireMultiPlayerAlliance.Maximum = new decimal(new int[] { int.MaxValue, 0, 0, 0 });
-            empireMultiPlayerAlliance.Minimum = new decimal(new int[] { int.MinValue, 0, 0, int.MinValue });
-            empireMultiPlayerAlliance.Name = "empireMultiPlayerAlliance";
-            empireMultiPlayerAlliance.Size = new Size(92, 23);
-            empireMultiPlayerAlliance.TabIndex = 174;
-            empireMultiPlayerAlliance.TextAlign = HorizontalAlignment.Right;
-            empireMultiPlayerAlliance.Value = new decimal(new int[] { int.MaxValue, 0, 0, 0 });
-            empireMultiPlayerAlliance.ValueChanged += empireMultiPlayerAlliance_ValueChanged;
             // 
             // empireSinglePlayerHardAlliance
             // 
@@ -662,26 +636,100 @@ namespace SwRebellionEditor
             empireSinglePlayerEasyAlliance.Value = new decimal(new int[] { int.MaxValue, 0, 0, 0 });
             empireSinglePlayerEasyAlliance.ValueChanged += empireSinglePlayerEasyAlliance_ValueChanged;
             // 
-            // empireMultiPlayerLabel
+            // multiPlayerEmpire
             // 
-            empireMultiPlayerLabel.AutoSize = true;
-            empireMultiPlayerLabel.ForeColor = Color.Black;
-            empireMultiPlayerLabel.Location = new Point(10, 126);
-            empireMultiPlayerLabel.Margin = new Padding(4, 0, 4, 0);
-            empireMultiPlayerLabel.Name = "empireMultiPlayerLabel";
-            empireMultiPlayerLabel.Size = new Size(70, 15);
-            empireMultiPlayerLabel.TabIndex = 172;
-            empireMultiPlayerLabel.Text = "Multi Player";
+            multiPlayerEmpire.ForeColor = Color.Black;
+            multiPlayerEmpire.Location = new Point(7, 22);
+            multiPlayerEmpire.Margin = new Padding(4, 3, 4, 3);
+            multiPlayerEmpire.Maximum = new decimal(new int[] { int.MaxValue, 0, 0, 0 });
+            multiPlayerEmpire.Minimum = new decimal(new int[] { int.MinValue, 0, 0, int.MinValue });
+            multiPlayerEmpire.Name = "multiPlayerEmpire";
+            multiPlayerEmpire.Size = new Size(92, 23);
+            multiPlayerEmpire.TabIndex = 174;
+            multiPlayerEmpire.TextAlign = HorizontalAlignment.Right;
+            multiPlayerEmpire.Value = new decimal(new int[] { int.MaxValue, 0, 0, 0 });
+            multiPlayerEmpire.ValueChanged += multiPlayerEmpire_ValueChanged;
+            // 
+            // multiPlayerAlliance
+            // 
+            multiPlayerAlliance.ForeColor = Color.Black;
+            multiPlayerAlliance.Location = new Point(7, 22);
+            multiPlayerAlliance.Margin = new Padding(4, 3, 4, 3);
+            multiPlayerAlliance.Maximum = new decimal(new int[] { int.MaxValue, 0, 0, 0 });
+            multiPlayerAlliance.Minimum = new decimal(new int[] { int.MinValue, 0, 0, int.MinValue });
+            multiPlayerAlliance.Name = "multiPlayerAlliance";
+            multiPlayerAlliance.Size = new Size(92, 23);
+            multiPlayerAlliance.TabIndex = 174;
+            multiPlayerAlliance.TextAlign = HorizontalAlignment.Right;
+            multiPlayerAlliance.Value = new decimal(new int[] { int.MaxValue, 0, 0, 0 });
+            multiPlayerAlliance.ValueChanged += multiPlayerAlliance_ValueChanged;
+            // 
+            // multiPlayerLabel
+            // 
+            multiPlayerLabel.AutoSize = true;
+            multiPlayerLabel.ForeColor = Color.Black;
+            multiPlayerLabel.Location = new Point(27, 379);
+            multiPlayerLabel.Margin = new Padding(4, 0, 4, 0);
+            multiPlayerLabel.Name = "multiPlayerLabel";
+            multiPlayerLabel.Size = new Size(70, 15);
+            multiPlayerLabel.TabIndex = 172;
+            multiPlayerLabel.Text = "Multi Player";
+            // 
+            // groupBox1
+            // 
+            groupBox1.Controls.Add(developmentAlliance);
+            groupBox1.Location = new Point(158, 164);
+            groupBox1.Name = "groupBox1";
+            groupBox1.Size = new Size(107, 53);
+            groupBox1.TabIndex = 175;
+            groupBox1.TabStop = false;
+            groupBox1.Text = "Alliance Side";
+            // 
+            // groupBox2
+            // 
+            groupBox2.Controls.Add(developmentEmpire);
+            groupBox2.Location = new Point(271, 164);
+            groupBox2.Name = "groupBox2";
+            groupBox2.Size = new Size(107, 53);
+            groupBox2.TabIndex = 176;
+            groupBox2.TabStop = false;
+            groupBox2.Text = "Empire Side";
+            // 
+            // groupBox3
+            // 
+            groupBox3.Controls.Add(multiPlayerAlliance);
+            groupBox3.Location = new Point(158, 355);
+            groupBox3.Name = "groupBox3";
+            groupBox3.Size = new Size(107, 53);
+            groupBox3.TabIndex = 176;
+            groupBox3.TabStop = false;
+            groupBox3.Text = "Alliance Side";
+            // 
+            // groupBox4
+            // 
+            groupBox4.Controls.Add(multiPlayerEmpire);
+            groupBox4.Location = new Point(271, 355);
+            groupBox4.Name = "groupBox4";
+            groupBox4.Size = new Size(107, 53);
+            groupBox4.TabIndex = 177;
+            groupBox4.TabStop = false;
+            groupBox4.Text = "Empire Side";
             // 
             // SideParamTableEntryForm
             // 
             AcceptButton = Ok;
             AutoScaleMode = AutoScaleMode.None;
             CancelButton = Cancel;
-            ClientSize = new Size(473, 541);
+            ClientSize = new Size(772, 456);
+            Controls.Add(groupBox4);
+            Controls.Add(groupBox3);
+            Controls.Add(groupBox2);
+            Controls.Add(groupBox1);
             Controls.Add(playingAsEmpireGroupBox);
             Controls.Add(idLabel);
             Controls.Add(parameterIdLabel);
+            Controls.Add(multiPlayerLabel);
+            Controls.Add(developmentLabel);
             Controls.Add(name);
             Controls.Add(nameLabel);
             Controls.Add(playingAsAllianceGroupBox);
@@ -700,8 +748,8 @@ namespace SwRebellionEditor
             KeyPreview = true;
             Margin = new Padding(4, 3, 4, 3);
             MaximizeBox = false;
-            MaximumSize = new Size(489, 580);
-            MinimumSize = new Size(489, 580);
+            MaximumSize = new Size(788, 495);
+            MinimumSize = new Size(788, 495);
             Name = "SideParamTableEntryForm";
             Text = "Side Parameters Tables (SDPRTB.DAT)";
             FormClosing += GameObjectsListForm_FormClosing;
@@ -717,24 +765,28 @@ namespace SwRebellionEditor
             ((ISupportInitialize)allianceSinglePlayerHardEmpire).EndInit();
             ((ISupportInitialize)allianceSinglePlayerMediumEmpire).EndInit();
             ((ISupportInitialize)allianceSinglePlayerEasyEmpire).EndInit();
-            ((ISupportInitialize)allianceMultiPlayerEmpire).EndInit();
             allianceAllianceGroupBox.ResumeLayout(false);
             ((ISupportInitialize)allianceSinglePlayerHardAlliance).EndInit();
             ((ISupportInitialize)allianceSinglePlayerMediumAlliance).EndInit();
             ((ISupportInitialize)allianceSinglePlayerEasyAlliance).EndInit();
-            ((ISupportInitialize)allianceMultiPlayerAlliance).EndInit();
+            ((ISupportInitialize)developmentEmpire).EndInit();
+            ((ISupportInitialize)developmentAlliance).EndInit();
             playingAsEmpireGroupBox.ResumeLayout(false);
             playingAsEmpireGroupBox.PerformLayout();
             empireEmpireGroupBox.ResumeLayout(false);
-            ((ISupportInitialize)empireMultiPlayerEmpire).EndInit();
             ((ISupportInitialize)empireSinglePlayerHardEmpire).EndInit();
             ((ISupportInitialize)empireSinglePlayerMediumEmpire).EndInit();
             ((ISupportInitialize)empireSinglePlayerEasyEmpire).EndInit();
             empireAllianceGroupBox.ResumeLayout(false);
-            ((ISupportInitialize)empireMultiPlayerAlliance).EndInit();
             ((ISupportInitialize)empireSinglePlayerHardAlliance).EndInit();
             ((ISupportInitialize)empireSinglePlayerMediumAlliance).EndInit();
             ((ISupportInitialize)empireSinglePlayerEasyAlliance).EndInit();
+            ((ISupportInitialize)multiPlayerEmpire).EndInit();
+            ((ISupportInitialize)multiPlayerAlliance).EndInit();
+            groupBox1.ResumeLayout(false);
+            groupBox2.ResumeLayout(false);
+            groupBox3.ResumeLayout(false);
+            groupBox4.ResumeLayout(false);
             ResumeLayout(false);
             PerformLayout();
         }
@@ -745,7 +797,7 @@ namespace SwRebellionEditor
         private NumericUpDown allianceSinglePlayerHardEmpire;
         private NumericUpDown allianceSinglePlayerMediumEmpire;
         private NumericUpDown allianceSinglePlayerEasyEmpire;
-        private NumericUpDown allianceMultiPlayerEmpire;
+        private NumericUpDown developmentEmpire;
         private Label allianceSinglePlayerHardLabel;
         private Label allianceSinglePlayerMediumLabel;
         private Label allianceSinglePlayerEasyLabel;
@@ -753,11 +805,11 @@ namespace SwRebellionEditor
         private NumericUpDown allianceSinglePlayerHardAlliance;
         private NumericUpDown allianceSinglePlayerMediumAlliance;
         private NumericUpDown allianceSinglePlayerEasyAlliance;
-        private NumericUpDown allianceMultiPlayerAlliance;
-        private Label allianceMultiplayerLabel;
+        private NumericUpDown developmentAlliance;
+        private Label developmentLabel;
         private GroupBox playingAsEmpireGroupBox;
         private GroupBox empireEmpireGroupBox;
-        private NumericUpDown empireMultiPlayerEmpire;
+        private NumericUpDown multiPlayerEmpire;
         private NumericUpDown empireSinglePlayerHardEmpire;
         private NumericUpDown empireSinglePlayerMediumEmpire;
         private NumericUpDown empireSinglePlayerEasyEmpire;
@@ -765,10 +817,14 @@ namespace SwRebellionEditor
         private Label empireSinglePlayerMediumLabel;
         private Label empireSinglePlayerEasyLabel;
         private GroupBox empireAllianceGroupBox;
-        private NumericUpDown empireMultiPlayerAlliance;
+        private NumericUpDown multiPlayerAlliance;
         private NumericUpDown empireSinglePlayerHardAlliance;
         private NumericUpDown empireSinglePlayerMediumAlliance;
         private NumericUpDown empireSinglePlayerEasyAlliance;
-        private Label empireMultiPlayerLabel;
+        private Label multiPlayerLabel;
+        private GroupBox groupBox1;
+        private GroupBox groupBox2;
+        private GroupBox groupBox3;
+        private GroupBox groupBox4;
     }
 }

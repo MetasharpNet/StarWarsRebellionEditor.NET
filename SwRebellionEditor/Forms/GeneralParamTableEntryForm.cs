@@ -25,14 +25,14 @@ public partial class GeneralParamTableEntryForm : GeneralParamTableEntryDesignFo
         idHexLabel.Text = "0x" + generalParamTableEntry.Id.ToString("X");
         field2_1.Value = generalParamTableEntry.Field2_1;
         parameterId.Value = generalParamTableEntry.ParameterId;
-        allianceMultiPlayer.Value = generalParamTableEntry.AllianceMultiPlayer;
+        development.Value = generalParamTableEntry.Development;
         allianceSinglePlayerEasy.Value = generalParamTableEntry.AllianceSinglePlayerEasy;
         allianceSinglePlayerMedium.Value = generalParamTableEntry.AllianceSinglePlayerMedium;
         allianceSinglePlayerHard.Value = generalParamTableEntry.AllianceSinglePlayerHard;
         empireSinglePlayerEasy.Value = generalParamTableEntry.EmpireSinglePlayerEasy;
         empireSinglePlayerMedium.Value = generalParamTableEntry.EmpireSinglePlayerMedium;
         empireSinglePlayerHard.Value = generalParamTableEntry.EmpireSinglePlayerHard;
-        empireMultiPlayer.Value = generalParamTableEntry.EmpireMultiPlayer;
+        multiPlayer.Value = generalParamTableEntry.MultiPlayer;
         name.Text = generalParamTableEntry.Name;
         GameFile.UnsavedData = previousUnsavedData;
     }
@@ -50,9 +50,9 @@ public partial class GeneralParamTableEntryForm : GeneralParamTableEntryDesignFo
 
     #region Changed events
 
-    private void allianceMultiPlayer_ValueChanged(object sender, EventArgs e)
+    private void development_ValueChanged(object sender, EventArgs e)
     {
-        GameFile.GeneralParamTableEntries[selector.Value].AllianceMultiPlayer = (int)allianceMultiPlayer.Value;
+        GameFile.GeneralParamTableEntries[selector.Value].Development = (int)development.Value;
         GameFile.UnsavedData = true;
     }
     private void allianceSinglePlayerEasy_ValueChanged(object sender, EventArgs e)
@@ -70,9 +70,9 @@ public partial class GeneralParamTableEntryForm : GeneralParamTableEntryDesignFo
         GameFile.GeneralParamTableEntries[selector.Value].AllianceSinglePlayerMedium = (int)allianceSinglePlayerMedium.Value;
         GameFile.UnsavedData = true;
     }
-    private void empireMultiPlayer_ValueChanged(object sender, EventArgs e)
+    private void multiPlayer_ValueChanged(object sender, EventArgs e)
     {
-        GameFile.GeneralParamTableEntries[selector.Value].EmpireMultiPlayer = (int)empireMultiPlayer.Value;
+        GameFile.GeneralParamTableEntries[selector.Value].MultiPlayer = (int)multiPlayer.Value;
         GameFile.UnsavedData = true;
     }
     private void empireSinglePlayerEasy_ValueChanged(object sender, EventArgs e)
@@ -107,4 +107,9 @@ public partial class GeneralParamTableEntryForm : GeneralParamTableEntryDesignFo
     }
 
     #endregion
+
+    private void empireSinglePlayerEasyLabel_Click(object sender, EventArgs e)
+    {
+
+    }
 }

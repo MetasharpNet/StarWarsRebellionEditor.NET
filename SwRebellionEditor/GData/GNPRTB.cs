@@ -256,14 +256,14 @@ public class GNPRTB_GeneralParamTableEntry
     public uint Id;
     public uint Field2_1; // 1
     public uint ParameterId;
-    public int AllianceMultiPlayer;
+    public int Development;
     public int AllianceSinglePlayerEasy;
     public int AllianceSinglePlayerMedium;
     public int AllianceSinglePlayerHard;
     public int EmpireSinglePlayerEasy;
     public int EmpireSinglePlayerMedium;
     public int EmpireSinglePlayerHard;
-    public int EmpireMultiPlayer;
+    public int MultiPlayer;
     [Ignore]
     public string Name = "Unknown General Param Table Entry";
 }
