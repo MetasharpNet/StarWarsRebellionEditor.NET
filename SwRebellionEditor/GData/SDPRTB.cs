@@ -77,10 +77,10 @@ public class SDPRTB : DatFile
 
         SideParamTableEntries.First(spe => spe.Id == 30).Name = "Core Sector Owned Systems with support"; // ParamId=7680
         SideParamTableEntries.First(spe => spe.Id == 31).Name = "Core Sector Owned Systems without support"; // ParamId=7681
-        SideParamTableEntries.First(spe => spe.Id == 32).Name = "Core Sector Owned Systems with support Base Popularity (%)"; // ParamId=7682
-        SideParamTableEntries.First(spe => spe.Id == 33).Name = "Core Sector Owned Systems with support Random Extra Popularity (%)"; // ParamId=7683
-        SideParamTableEntries.First(spe => spe.Id == 34).Name = "Core Sector Owned Systems without support Base Popularity (%)"; // ParamId=7684
-        SideParamTableEntries.First(spe => spe.Id == 35).Name = "Core Sector Owned Systems without support Random Extra Popularity (%)"; // ParamId=7685
+        SideParamTableEntries.First(spe => spe.Id == 32).Name = "Core Sector Owned Systems with support Popularity: Base (%)"; // ParamId=7682
+        SideParamTableEntries.First(spe => spe.Id == 33).Name = "Core Sector Owned Systems with support Popularity: Max Random Extra (%)"; // ParamId=7683
+        SideParamTableEntries.First(spe => spe.Id == 34).Name = "Core Sector Owned Systems without support Popularity: Baset (%)"; // ParamId=7684
+        SideParamTableEntries.First(spe => spe.Id == 35).Name = "Core Sector Owned Systems without support Popularity: Max Random Extra (%)"; // ParamId=7685
 
         foreach (var param in SideParamTableEntries)
         {
