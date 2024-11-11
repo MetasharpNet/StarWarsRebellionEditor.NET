@@ -53,7 +53,7 @@
   * 2024-01-02 [Empire] Executor Super Star Destroyer
   * 2024-01-02 [Empire] Imperial Dreadnought Class Heavy Cruiser
   * 2024-01-08 [Empire] Vindicator Heavy Cruiser
-  * 2024-01-08 [Empire] Victory Class Start Destroyher Mark 1
+  * 2024-01-08 [Empire] Victory Class Star Destroyer Mark 1
   * 2024-01-18 [Alliance] CR90 Corellian Corvette
   * 2024-02-11 [Alliance] MC80 Liberty Type Star Cruiser
   * 2024-02-11 [Alliance] Assault Frigate Mark 1
