@@ -70,6 +70,10 @@
   * 2024-08-16 [Empire] Star Galleon Frigate
   * 2024-09-09 [Empire] Escort Carrier
   * 2024-09-09 [Empire] Lancer Frigate
+  * 2024-11-11 [Alliance] Bulk Cruiser
+  * 2024-11-11 [Alliance] Nebulon B Frigate 
+  * 2024-11-11 [Empire] Imperial Star Destroyer 2
+  * 2024-11-11 [Empire] Victory Star Destroyer 2
 * 80/80 new Space Fighters sprites for 3D battles (X-wing, ...)
 * 16/16 HD background musics (44KHz vs 11KHz rebuilt from CDs and completed with AI remasters)
 * Savegame Test Pack (broken, will need to redo) : https://github.com/MetasharpNet/StarWarsRebellionEditor.NET/releases/tag/swr-editor.net-savegame-20231015
