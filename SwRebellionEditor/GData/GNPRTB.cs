@@ -239,8 +239,8 @@ public class GNPRTB : DatFile
         GeneralParamTableEntries.First(spe => spe.Id == 209).Name = "Raw and Refined Materials collection rate (lower=faster)"; // ParamId=7763
         GeneralParamTableEntries.First(spe => spe.Id == 210).Name = "??? Core Sector Neutral System support Initial Popularity (%)"; // ParamId=7764
         GeneralParamTableEntries.First(spe => spe.Id == 211).Name = "Rim Systems: Neutral system support at day 0. Random range=[50%*(1-X%),50%*(1+X%)]"; // ParamId=7765
-        GeneralParamTableEntries.First(spe => spe.Id == 212).Name = "Core Systems: Non-Mine Slots Multiplicator to Generate Facilities"; // ParamId=7766
-        GeneralParamTableEntries.First(spe => spe.Id == 213).Name = "Rim Systems: Mine placement at day 0 (higher=more mines)"; // ParamId=7767
+        GeneralParamTableEntries.First(spe => spe.Id == 212).Name = "Core Systems: Each free slot gets: FreeSlots*X% chances to generate a mine"; // ParamId=7766
+        GeneralParamTableEntries.First(spe => spe.Id == 213).Name = "Rim Systems: Each free slot gets: FreeSlots*X% chances to generate a mine"; // ParamId=7767
 
         foreach (var param in GeneralParamTableEntries)
         {
