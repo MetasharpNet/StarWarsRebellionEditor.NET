@@ -48,12 +48,12 @@
   * [Empire] Galleon → Acclamator Drop Ship (ship change)
   * [Empire] Star Galleon → Star Galleon Frigate (name change)
   * [Empire] Imperial Dreadnaught → Imperial Dreadnought (name change)
-* 21/29 new Capital Ships 3D models  (+8 other 3d models still to redo)
+* 25/29 new Capital Ships 3D models  (+8 other 3d models still to redo)
   * 2024-01-02 [Alliance] Action 6 Transport Bulk Freighter
   * 2024-01-02 [Empire] Executor Super Star Destroyer
   * 2024-01-02 [Empire] Imperial Dreadnought Class Heavy Cruiser
   * 2024-01-08 [Empire] Vindicator Heavy Cruiser
-  * 2024-01-08 [Empire] Victory Class Start Destroyher Mark 1
+  * 2024-01-08 [Empire] Victory Class Star Destroyer Mark 1
   * 2024-01-18 [Alliance] CR90 Corellian Corvette
   * 2024-02-11 [Alliance] MC80 Liberty Type Star Cruiser
   * 2024-02-11 [Alliance] Assault Frigate Mark 1
@@ -70,6 +70,10 @@
   * 2024-08-16 [Empire] Star Galleon Frigate
   * 2024-09-09 [Empire] Escort Carrier
   * 2024-09-09 [Empire] Lancer Frigate
+  * 2024-11-11 [Alliance] Bulk Cruiser
+  * 2024-11-11 [Alliance] Nebulon B Frigate 
+  * 2024-11-11 [Empire] Imperial Star Destroyer 2
+  * 2024-11-11 [Empire] Victory Star Destroyer 2
 * 80/80 new Space Fighters sprites for 3D battles (X-wing, ...)
 * 16/16 HD background musics (44KHz vs 11KHz rebuilt from CDs and completed with AI remasters)
 * Savegame Test Pack (broken, will need to redo) : https://github.com/MetasharpNet/StarWarsRebellionEditor.NET/releases/tag/swr-editor.net-savegame-20231015
