@@ -136,13 +136,13 @@ public class GNPRTB : DatFile
         GeneralParamTableEntries.First(spe => spe.Id == 110).Name = ""; // ParamId=6155
         GeneralParamTableEntries.First(spe => spe.Id == 111).Name = "Diplomacy success: Diplomacy points gain"; // ParamId=6156
         GeneralParamTableEntries.First(spe => spe.Id == 112).Name = "Espionage success: Espionage points gain"; // ParamId=6157
-        GeneralParamTableEntries.First(spe => spe.Id == 113).Name = ""; // ParamId=6158
+        GeneralParamTableEntries.First(spe => spe.Id == 113).Name = "Research success: Research points gain"; // ParamId=6158
         GeneralParamTableEntries.First(spe => spe.Id == 114).Name = "Recruitment success: Leadership points gain"; // ParamId=6159
         GeneralParamTableEntries.First(spe => spe.Id == 115).Name = "Incite Uprising success: Leadership points gain"; // ParamId=6160
         GeneralParamTableEntries.First(spe => spe.Id == 116).Name = "Subdue Uprising success: Leadership points gain"; // ParamId=6161
-        GeneralParamTableEntries.First(spe => spe.Id == 117).Name = ""; // ParamId=6162
+        GeneralParamTableEntries.First(spe => spe.Id == 117).Name = "Rescue success: Combat points gain"; // ParamId=6162
         GeneralParamTableEntries.First(spe => spe.Id == 118).Name = "Abduction success: Combat points gain"; // ParamId=6163
-        GeneralParamTableEntries.First(spe => spe.Id == 119).Name = ""; // ParamId=6164
+        GeneralParamTableEntries.First(spe => spe.Id == 119).Name = "Assassination success: Combat points gain"; // ParamId=6164
         GeneralParamTableEntries.First(spe => spe.Id == 120).Name = "Sabotage success: Espionage points gain"; // ParamId=6165
         GeneralParamTableEntries.First(spe => spe.Id == 121).Name = "Sabotage success: Combat points gain"; // ParamId=6166
         GeneralParamTableEntries.First(spe => spe.Id == 122).Name = ""; // ParamId=6167
@@ -151,7 +151,7 @@ public class GNPRTB : DatFile
         GeneralParamTableEntries.First(spe => spe.Id == 125).Name = ""; // ParamId=6170
         GeneralParamTableEntries.First(spe => spe.Id == 126).Name = ""; // ParamId=6171
         GeneralParamTableEntries.First(spe => spe.Id == 127).Name = ""; // ParamId=6172
-        GeneralParamTableEntries.First(spe => spe.Id == 128).Name = ""; // ParamId=6173
+        GeneralParamTableEntries.First(spe => spe.Id == 128).Name = "Jedi Training success: Jedi level gain: Max Random Extra"; // ParamId=6173
         GeneralParamTableEntries.First(spe => spe.Id == 129).Name = ""; // ParamId=6174
         GeneralParamTableEntries.First(spe => spe.Id == 130).Name = ""; // ParamId=6175
         GeneralParamTableEntries.First(spe => spe.Id == 131).Name = ""; // ParamId=6176
@@ -233,14 +233,14 @@ public class GNPRTB : DatFile
         GeneralParamTableEntries.First(spe => spe.Id == 204).Name = ""; // ParamId=7736
         GeneralParamTableEntries.First(spe => spe.Id == 205).Name = ""; // ParamId=7737
 
-        GeneralParamTableEntries.First(spe => spe.Id == 206).Name = "Populary required on System to Join Side (%)"; // ParamId=7760
+        GeneralParamTableEntries.First(spe => spe.Id == 206).Name = "Popularity required on System to Join Side (%)"; // ParamId=7760
         GeneralParamTableEntries.First(spe => spe.Id == 207).Name = "Garrison Requirement: Uprising Threshold"; // ParamId=7761
         GeneralParamTableEntries.First(spe => spe.Id == 208).Name = "Garrison Requirement: Troop's Order Contribution"; // ParamId=7762
-        GeneralParamTableEntries.First(spe => spe.Id == 209).Name = ""; // ParamId=7763
+        GeneralParamTableEntries.First(spe => spe.Id == 209).Name = "Raw and Refined Materials collection rate (lower=faster)"; // ParamId=7763
         GeneralParamTableEntries.First(spe => spe.Id == 210).Name = "??? Core Sector Neutral System support Initial Popularity (%)"; // ParamId=7764
-        GeneralParamTableEntries.First(spe => spe.Id == 211).Name = ""; // ParamId=7765
-        GeneralParamTableEntries.First(spe => spe.Id == 212).Name = "Core System Non-Mine Slots Multiplicator to Generate Facilities"; // ParamId=7766
-        GeneralParamTableEntries.First(spe => spe.Id == 213).Name = ""; // ParamId=7767
+        GeneralParamTableEntries.First(spe => spe.Id == 211).Name = "Rim Systems: Neutral system support at day 0. Random range=[50%*(1-X%),50%*(1+X%)]"; // ParamId=7765
+        GeneralParamTableEntries.First(spe => spe.Id == 212).Name = "Core Systems: Non-Mine Slots Multiplicator to Generate Facilities"; // ParamId=7766
+        GeneralParamTableEntries.First(spe => spe.Id == 213).Name = "Rim Systems: Mine placement at day 0 (higher=more mines)"; // ParamId=7767
 
         foreach (var param in GeneralParamTableEntries)
         {
