@@ -83,6 +83,15 @@
     <None Update="systems\TACTICAL.DLL\303\14094-1033-tactical-system-kuat.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="test\TACTICAL.DLL\301\2100-1033-tactical-ship-alliance-alliance-dreadnaught_mc40a-light-cruiser-close.x">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="test\TACTICAL.DLL\301\2101-1033-tactical-ship-alliance-alliance-dreadnaught_mc40a-light-cruiser-medium.x">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="test\TACTICAL.DLL\301\2102-1033-tactical-ship-alliance-alliance-dreadnaught_mc40a-light-cruiser-far.x">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="test\TACTICAL.DLL\301\2130-1033-tactical-ship-alliance-bulwark-battlecruiser_viscount-star-defender-close.x">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
@@ -92,6 +101,15 @@
     <None Update="test\TACTICAL.DLL\301\2132-1033-tactical-ship-alliance-bulwark-battlecruiser_viscount-star-defender-far.x">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="test\TACTICAL.DLL\301\2150-1033-tactical-ship-alliance-dauntless-cruiser_mc80a-homeone-cruiser-close.x">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="test\TACTICAL.DLL\301\2151-1033-tactical-ship-alliance-dauntless-cruiser_mc80a-homeone-cruiser-medium.x">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="test\TACTICAL.DLL\301\2152-1033-tactical-ship-alliance-dauntless-cruiser_mc80a-homeone-cruiser-far.x">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="test\TACTICAL.DLL\301\2580-1033-tactical-ship-empire-assault-transport_gladiator-star-destroyer-close.x">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
@@ -99,6 +117,24 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="test\TACTICAL.DLL\301\2582-1033-tactical-ship-empire-assault-transport_gladiator-star-destroyer-far.x">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="test\TACTICAL.DLL\303\ALLIANCE_MC40A_LIGHT_CRUISER_CLOSE.BMP">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="test\TACTICAL.DLL\303\ALLIANCE_MC40A_LIGHT_CRUISER_FAR.BMP">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="test\TACTICAL.DLL\303\ALLIANCE_MC40A_LIGHT_CRUISER_MEDIUM.BMP">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="test\TACTICAL.DLL\303\ALLIANCE_MC80A_HOMEONE_CRUISER_CLOSE.BMP">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="test\TACTICAL.DLL\303\ALLIANCE_MC80A_HOMEONE_CRUISER_FAR.BMP">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="test\TACTICAL.DLL\303\ALLIANCE_MC80A_HOMEONE_CRUISER_MEDIUM.BMP">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="test\TACTICAL.DLL\303\ALLIANCE_VISCOUNT_STAR_DEFENDER_CLOSE.BMP">
