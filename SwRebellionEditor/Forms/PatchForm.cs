@@ -213,7 +213,14 @@ public partial class PatchForm : PatchDesignForm
                             sectorsGameFile.CsvToEntries(File.ReadAllText(filePath), "Sectors", "SectorsCount");
                             sectorsGameFile.Save(sectorsGameFilePath);
                         }
-                        if (accurateGalaxyMapCheckBox.Checked && filePath.ToLowerInvariant().Contains("sectors-accurate.csv"))
+                        else if (accurateGalaxyMapCheckBox.Checked && filePath.ToLowerInvariant().Contains("sectors-accurate.csv"))
+                        {
+                            var sectorsGameFilePath = Path.Combine(Settings.Current.GDataFolder, "SECTORSD.DAT");
+                            var sectorsGameFile = DatFile.Load<SECTORSD>(sectorsGameFilePath);
+                            sectorsGameFile.CsvToEntries(File.ReadAllText(filePath), "Sectors", "SectorsCount");
+                            sectorsGameFile.Save(sectorsGameFilePath);
+                        }
+                        else if (filePath.ToLowerInvariant().Contains("sectors.csv"))
                         {
                             var sectorsGameFilePath = Path.Combine(Settings.Current.GDataFolder, "SECTORSD.DAT");
                             var sectorsGameFile = DatFile.Load<SECTORSD>(sectorsGameFilePath);
@@ -227,7 +234,14 @@ public partial class PatchForm : PatchDesignForm
                             GameFile.CsvToEntries(File.ReadAllText(filePath), "Systems", "SystemsCount");
                             GameFile.Save(GameFilePath);
                         }
-                        if (accurateGalaxyMapCheckBox.Checked && filePath.ToLowerInvariant().Contains("systems-accurate.csv"))
+                        else if (accurateGalaxyMapCheckBox.Checked && filePath.ToLowerInvariant().Contains("systems-accurate.csv"))
+                        {
+                            GameFilePath = Path.Combine(Settings.Current.GDataFolder, "SYSTEMSD.DAT");
+                            GameFile = DatFile.Load<SYSTEMSD>(GameFilePath);
+                            GameFile.CsvToEntries(File.ReadAllText(filePath), "Systems", "SystemsCount");
+                            GameFile.Save(GameFilePath);
+                        }
+                        else if (filePath.ToLowerInvariant().Contains("systems"))
                         {
                             GameFilePath = Path.Combine(Settings.Current.GDataFolder, "SYSTEMSD.DAT");
                             GameFile = DatFile.Load<SYSTEMSD>(GameFilePath);
