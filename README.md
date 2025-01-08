@@ -19,7 +19,7 @@
 
 ### 25th Anniversary Patch Features :
 * Game version: 1.02 (includes various community fixes)
-* DirectX libraries: DgVoodoo 2.83.2 (2024-10-06) : http://dege.fw.hu/dgVoodoo2/dgVoodoo2/
+* DirectX libraries: DgVoodoo 2.84 (2024-12-22) : http://dege.fw.hu/dgVoodoo2/dgVoodoo2/
   * Forum : https://www.vogons.org/viewforum.php?f=58 and https://www.vogons.org/viewtopic.php?f=59&t=97303
 * Microsoft latest D3DRM.DLL 5.2.3790.0
 * New Galaxy map using Top 200 Star Wars planets (using 2023 canon & positioned as accurately as possible)
@@ -48,7 +48,7 @@
   * [Empire] Galleon → Acclamator Drop Ship (ship change)
   * [Empire] Star Galleon → Star Galleon Frigate (name change)
   * [Empire] Imperial Dreadnaught → Imperial Dreadnought (name change)
-* 25/29 new Capital Ships 3D models  (+8 other 3d models still to redo)
+* 29/29 new Capital Ships 3D models
   * 2024-01-02 [Alliance] Action 6 Transport Bulk Freighter
   * 2024-01-02 [Empire] Executor Super Star Destroyer
   * 2024-01-02 [Empire] Imperial Dreadnought Class Heavy Cruiser
@@ -70,10 +70,14 @@
   * 2024-08-16 [Empire] Star Galleon Frigate
   * 2024-09-09 [Empire] Escort Carrier
   * 2024-09-09 [Empire] Lancer Frigate
+  * 2024-09-25 [Empire] Imperial Star Destroyer
   * 2024-11-11 [Alliance] Bulk Cruiser
   * 2024-11-11 [Alliance] Nebulon B Frigate 
   * 2024-11-11 [Empire] Imperial Star Destroyer 2
   * 2024-11-11 [Empire] Victory Star Destroyer 2
+  * 2024-12-23 [Alliance] MC40A Light Cruiser
+  * 2024-12-23 [Alliance] MC80A Home One Cruiser
+  * 2024-12-23 [Alliance] Liberator Cruiser
 * 80/80 new Space Fighters sprites for 3D battles (X-wing, ...)
 * 16/16 HD background musics (44KHz vs 11KHz rebuilt from CDs and completed with AI remasters)
 * Savegame Test Pack (broken, will need to redo) : https://github.com/MetasharpNet/StarWarsRebellionEditor.NET/releases/tag/swr-editor.net-savegame-20231015
