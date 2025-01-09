@@ -19,7 +19,7 @@
 
 ### 25th Anniversary Patch Features :
 * Game version: 1.02 (includes various community fixes)
-* DirectX libraries: DgVoodoo 2.84 (2024-12-22) : http://dege.fw.hu/dgVoodoo2/dgVoodoo2/
+* DirectX libraries: DgVoodoo 2.84.1 (2024-12-31) : http://dege.fw.hu/dgVoodoo2/dgVoodoo2/
   * Forum : https://www.vogons.org/viewforum.php?f=58 and https://www.vogons.org/viewtopic.php?f=59&t=97303
 * Microsoft latest D3DRM.DLL 5.2.3790.0
 * New Galaxy map using Top 200 Star Wars planets (using 2023 canon & positioned as accurately as possible)
