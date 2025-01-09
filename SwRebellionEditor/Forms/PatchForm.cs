@@ -352,6 +352,8 @@ public partial class PatchForm : PatchDesignForm
             foreach (var patchFolder in Directory.GetDirectories(setFolder))
             {
                 var patchFolderOnly = Path.GetFileName(patchFolder);
+                if (patchFolderOnly == "game-update")
+                    continue; // skip for test mode
                 logForm.AppendMessage("[INFO] Sub-Folder: " + patchFolderOnly);
                 if (patchFolderOnly == "EDATA")
                 { // encyclopedia
