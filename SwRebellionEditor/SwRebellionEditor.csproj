@@ -74,6 +74,9 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
+    <None Update="game-update\_patch_exe.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="systems\EDATA\14094-edata-system-kuat.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>

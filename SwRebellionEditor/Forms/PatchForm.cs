@@ -166,6 +166,26 @@ public partial class PatchForm : PatchDesignForm
             }
             logForm.AppendMessage("[INFO] Game Update -> Done");
         }
+        else if (Directory.Exists("test\\game-update"))
+        {
+            logForm.AppendMessage("[INFO] Game Update");
+            foreach (var filePath in Directory.GetFiles("test\\game-update"))
+            {
+                //if (Path.GetExtension(filePath).ToLowerInvariant() == ".txt")
+                //    continue;
+                var filename = Path.GetFileName(filePath);
+                try
+                {
+                    logForm.AppendMessage("Source: " + filePath + " -> Destination: " + Path.Combine(Settings.Current.GameFolder, filename));
+                    File.Copy(filePath, Path.Combine(Settings.Current.GameFolder, filename), true);
+                }
+                catch (Exception ex)
+                {
+                    logForm.AppendMessage("[ERROR] " + ex.Message);
+                }
+            }
+            logForm.AppendMessage("[INFO] Game Update -> Done");
+        }
 
         // ---------------------------- FOLDERS ---------------------------
 
@@ -557,6 +577,67 @@ public partial class PatchForm : PatchDesignForm
         }
         logForm.AppendMessage("[INFO] Folders -> Done");
 
+        // ---------------------------- REBEXE.EXE ----------------------------
+
+        if (!testOnly || File.Exists("test\\game-update\\_patch_exe.txt"))
+        {
+            // patching rebexe.exe
+            logForm.AppendMessage("[INFO] Patching rebexe.exe");
+            try
+            {
+                using (var stream = new FileStream(Settings.Current.REBEXEFilePath, FileMode.Open, FileAccess.ReadWrite))
+                {
+                    // to use 14001+ ids for galaxy map planet sprites
+                    stream.Position = int.Parse("5B1E4", NumberStyles.HexNumber);
+                    stream.WriteByte(0x05); // add eax, 14000
+                    stream.WriteByte(0xB0);
+                    stream.WriteByte(0x36);
+                    stream.WriteByte(0x00);
+                    stream.WriteByte(0x00);
+                    stream.WriteByte(0xC3); // retn
+                    if (coruscantId > 0)
+                    {
+                        // to use coruscant sprite for empire objective to keep coruscant
+                        stream.Position = int.Parse("4A46F", NumberStyles.HexNumber);
+                        stream.WriteByte((byte)(coruscantId & 0x00FF)); // 14036 36D4 => D4 then 36
+                        stream.WriteByte((byte)((coruscantId & 0xFF00) >> 8));
+                        // to use coruscant sprite for rebel alliance objective to take coruscant
+                        stream.Position = int.Parse("49BCF", NumberStyles.HexNumber);
+                        stream.WriteByte((byte)(coruscantId & 0x00FF)); // 14036 36D4 => D4 then 36
+                        stream.WriteByte((byte)((coruscantId & 0xFF00) >> 8));
+                    }
+                    // to use 14001+ ids for encyclopedia edata planets pictures
+                    stream.Position = int.Parse("5DED6", NumberStyles.HexNumber);
+                    stream.WriteByte(0x89); // move eax, ecx
+                    stream.WriteByte(0xC8);
+                    stream.WriteByte(0x05); // add eax, 14000
+                    stream.WriteByte(0xB0);
+                    stream.WriteByte(0x36);
+                    stream.WriteByte(0x00);
+                    stream.WriteByte(0x00);
+                    stream.WriteByte(0xC2); // retn 4
+                    stream.WriteByte(0x04);
+                    // to use 14001+ ids for tactical planets bin images
+                    stream.Position = int.Parse("1AA022", NumberStyles.HexNumber);
+                    stream.WriteByte(0xB0); // 14000
+                    stream.WriteByte(0x36);
+                    // to use 15001+ ids for tactical planets bin palettes
+                    stream.Position = int.Parse("19456E", NumberStyles.HexNumber);
+                    stream.WriteByte(0x98); // 15000
+                    stream.WriteByte(0x3A);
+                    stream.Position = int.Parse("1C0929", NumberStyles.HexNumber);
+                    stream.WriteByte(0x00); // +0
+                                            // to use 14000 ids for tactical destroyed planet
+                    stream.Position = int.Parse("197A25", NumberStyles.HexNumber);
+                    stream.WriteByte(0x00); // +0
+                }
+                logForm.AppendMessage("[INFO] Patching rebexe.exe -> Done");
+            }
+            catch (Exception ex)
+            {
+                logForm.AppendMessage("[ERROR] " + ex.Message);
+            }
+        }
 
         if (testOnly)
         {
@@ -565,64 +646,7 @@ public partial class PatchForm : PatchDesignForm
             return;
         }
 
-        // ---------------------------- REBEXE.EXE ----------------------------
 
-        // patching rebexe.exe
-        logForm.AppendMessage("[INFO] Patching rebexe.exe");
-        try
-        {
-            using (var stream = new FileStream(Settings.Current.REBEXEFilePath, FileMode.Open, FileAccess.ReadWrite))
-            {
-                // to use 14001+ ids for galaxy map planet sprites
-                stream.Position = int.Parse("5B1E4", NumberStyles.HexNumber);
-                stream.WriteByte(0x05); // add eax, 14000
-                stream.WriteByte(0xB0);
-                stream.WriteByte(0x36);
-                stream.WriteByte(0x00);
-                stream.WriteByte(0x00);
-                stream.WriteByte(0xC3); // retn
-                if (coruscantId > 0)
-                {
-                    // to use coruscant sprite for empire objective to keep coruscant
-                    stream.Position = int.Parse("4A46F", NumberStyles.HexNumber);
-                    stream.WriteByte((byte)(coruscantId & 0x00FF)); // 14036 36D4 => D4 then 36
-                    stream.WriteByte((byte)((coruscantId & 0xFF00) >> 8));
-                    // to use coruscant sprite for rebel alliance objective to take coruscant
-                    stream.Position = int.Parse("49BCF", NumberStyles.HexNumber);
-                    stream.WriteByte((byte)(coruscantId & 0x00FF)); // 14036 36D4 => D4 then 36
-                    stream.WriteByte((byte)((coruscantId & 0xFF00) >> 8));
-                }
-                // to use 14001+ ids for encyclopedia edata planets pictures
-                stream.Position = int.Parse("5DED6", NumberStyles.HexNumber);
-                stream.WriteByte(0x89); // move eax, ecx
-                stream.WriteByte(0xC8);
-                stream.WriteByte(0x05); // add eax, 14000
-                stream.WriteByte(0xB0);
-                stream.WriteByte(0x36);
-                stream.WriteByte(0x00);
-                stream.WriteByte(0x00);
-                stream.WriteByte(0xC2); // retn 4
-                stream.WriteByte(0x04);
-                // to use 14001+ ids for tactical planets bin images
-                stream.Position = int.Parse("1AA022", NumberStyles.HexNumber);
-                stream.WriteByte(0xB0); // 14000
-                stream.WriteByte(0x36);
-                // to use 15001+ ids for tactical planets bin palettes
-                stream.Position = int.Parse("19456E", NumberStyles.HexNumber);
-                stream.WriteByte(0x98); // 15000
-                stream.WriteByte(0x3A);
-                stream.Position = int.Parse("1C0929", NumberStyles.HexNumber);
-                stream.WriteByte(0x00); // +0
-                                        // to use 14000 ids for tactical destroyed planet
-                stream.Position = int.Parse("197A25", NumberStyles.HexNumber);
-                stream.WriteByte(0x00); // +0
-            }
-            logForm.AppendMessage("[INFO] Patching rebexe.exe -> Done");
-        }
-        catch (Exception ex)
-        {
-            logForm.AppendMessage("[ERROR] " + ex.Message);
-        }
         logForm.AppendMessage("[PATCH MODE] 25th Anniversary -> Done");
         logForm.AppendMessage("You can now close the window and play the game.");
     }

@@ -1,0 +1,1 @@
+﻿if this file is in test\game-update folder, it will trigger the patching process of rebexe.exe
