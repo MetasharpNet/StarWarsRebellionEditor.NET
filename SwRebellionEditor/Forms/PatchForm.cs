@@ -154,6 +154,8 @@ public partial class PatchForm : PatchDesignForm
                 //if (Path.GetExtension(filePath).ToLowerInvariant() == ".txt")
                 //    continue;
                 var filename = Path.GetFileName(filePath);
+                if (filename == "_patch_exe.txt")
+                    continue; // skip that file
                 try
                 {
                     logForm.AppendMessage("Source: " + filePath + " -> Destination: " + Path.Combine(Settings.Current.GameFolder, filename));
