@@ -95,11 +95,11 @@
 
 ![New encyclopedia entries and hd pictures](https://i.ibb.co/KxVDTLc/4.png)
 
-3D Ships Before/After comparison (not completely updated):
+3D Ships Before/After comparison :
 
-![image](https://github.com/MetasharpNet/StarWarsRebellionEditor.NET/assets/70144948/d2a09e53-8278-4073-ab99-b2821cea182d)
+![image](https://github.com/user-attachments/assets/217edec7-4a4f-4f5f-b7b6-8f00d542c541)
 
-![image](https://github.com/MetasharpNet/StarWarsRebellionEditor.NET/assets/70144948/1f2461fe-576f-4d91-9321-0f6791c2378e)
+![image](https://github.com/user-attachments/assets/2b987730-456d-4ac7-a3da-622da14de791)
 
 ### Star Wars Rebellion Original Game install/update:
 * Avoid all extra software (GOG Galaxy, etc.) by getting a clean installer if available.
@@ -128,7 +128,7 @@
 
 ### 25th Anniversary Installation guide:
 * Install the latest .NET Desktop runtime : https://dotnet.microsoft.com/en-us/download/dotnet
-  * Direct link to latest version : https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/runtime-desktop-8.0.10-windows-x64-installer
+  * Direct link to latest version : https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/runtime-desktop-9.0.0-windows-x64-installer
 * Reboot
 * Install a fresh GoG or Steam Star Wars Rebellion game
 * Download the latest editor release : https://github.com/MetasharpNet/StarWarsRebellionEditor.NET/releases
@@ -139,9 +139,15 @@
 * Run : SwRebellionEditor.exe
   * If prompted, adjust the game folder.
 * Click on the death star icon (the last icon) or through the menu : Editor / 25th Anniversary Patch
-* Click on the patch button
+* Check either :
+  * compatible galaxy map : new sectors and planets keep original planet positions to keep compatibility with base game savegames and multiplayer
+  * accurate galaxy map : new sectors and planets positions are changed to match as close as possible the real star war map
+* Check either :
+  * units with stats : units sprites display average base stats to give you a rough idea of their strenghts/weaknesses
+  * units without stats : unit sprites display no stats, like in the base game
+* Click on the patch my game button
   * The UI will pop a window detailling in real time what is being patched. Wait for the patch to complete.
-  * To get the latest features, also patch with the Patch Test button.
+  * To get the latest features, also patch with the Patch test folder only button.
   * Close the editor
 * Enable again your antivirus if you had to disable it
 * Run the game.
