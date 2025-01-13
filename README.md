@@ -139,9 +139,15 @@
 * Run : SwRebellionEditor.exe
   * If prompted, adjust the game folder.
 * Click on the death star icon (the last icon) or through the menu : Editor / 25th Anniversary Patch
-* Click on the patch button
+* Check either :
+  * Compatible galaxy map : new sectors and planets keep original planet positions to keep compatibility with base game savegames and multiplayer
+  * accurate galaxy map : new sectors and planets positions are changed to match as close as possible the real star war map
+* Check either :
+  * units with stats : units sprites display average base stats to give you a rough idea of their strenghts/weaknesses
+  * units without stats : unit sprites display no stats, like in the base game
+* Click on the patch my game button
   * The UI will pop a window detailling in real time what is being patched. Wait for the patch to complete.
-  * To get the latest features, also patch with the Patch Test button.
+  * To get the latest features, also patch with the Patch test folder only button.
   * Close the editor
 * Enable again your antivirus if you had to disable it
 * Run the game.
