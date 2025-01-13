@@ -95,11 +95,11 @@
 
 ![New encyclopedia entries and hd pictures](https://i.ibb.co/KxVDTLc/4.png)
 
-3D Ships Before/After comparison (not completely updated):
+3D Ships Before/After comparison :
 
-![image](https://github.com/MetasharpNet/StarWarsRebellionEditor.NET/assets/70144948/d2a09e53-8278-4073-ab99-b2821cea182d)
+![image](https://github.com/user-attachments/assets/217edec7-4a4f-4f5f-b7b6-8f00d542c541)
 
-![image](https://github.com/MetasharpNet/StarWarsRebellionEditor.NET/assets/70144948/1f2461fe-576f-4d91-9321-0f6791c2378e)
+![image](https://github.com/user-attachments/assets/2b987730-456d-4ac7-a3da-622da14de791)
 
 ### Star Wars Rebellion Original Game install/update:
 * Avoid all extra software (GOG Galaxy, etc.) by getting a clean installer if available.
