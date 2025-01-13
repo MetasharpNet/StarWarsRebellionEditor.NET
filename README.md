@@ -140,7 +140,7 @@
   * If prompted, adjust the game folder.
 * Click on the death star icon (the last icon) or through the menu : Editor / 25th Anniversary Patch
 * Check either :
-  * Compatible galaxy map : new sectors and planets keep original planet positions to keep compatibility with base game savegames and multiplayer
+  * compatible galaxy map : new sectors and planets keep original planet positions to keep compatibility with base game savegames and multiplayer
   * accurate galaxy map : new sectors and planets positions are changed to match as close as possible the real star war map
 * Check either :
   * units with stats : units sprites display average base stats to give you a rough idea of their strenghts/weaknesses
