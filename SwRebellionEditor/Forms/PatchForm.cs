@@ -263,7 +263,7 @@ public partial class PatchForm : PatchDesignForm
                             GameFile.CsvToEntries(File.ReadAllText(filePath), "Systems", "SystemsCount");
                             GameFile.Save(GameFilePath);
                         }
-                        else if (Path.GetFileName(filePath).ToLowerInvariant().Contains("systems"))
+                        else if (Path.GetFileName(filePath).ToLowerInvariant().Contains("systems.csv"))
                         {
                             GameFilePath = Path.Combine(Settings.Current.GDataFolder, "SYSTEMSD.DAT");
                             GameFile = DatFile.Load<SYSTEMSD>(GameFilePath);
