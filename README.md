@@ -81,7 +81,8 @@
 * 80/80 new Space Fighters sprites for 3D battles (X-wing, ...)
 * 16/16 HD background musics (44KHz vs 11KHz rebuilt from CDs and completed with AI remasters)
 * Savegame Test Pack (broken, will need to redo) : https://github.com/MetasharpNet/StarWarsRebellionEditor.NET/releases/tag/swr-editor.net-savegame-20231015
-* Screenshots :
+
+### Screenshots :
 
 ![image](https://github.com/MetasharpNet/StarWarsRebellionEditor.NET/assets/70144948/9eab72f8-4d48-4293-9c77-c73d4f9baa7f)
 
