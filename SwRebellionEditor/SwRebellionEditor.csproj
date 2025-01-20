@@ -77,6 +77,15 @@
     <None Update="game-update\_patch_exe.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="interface\COMMON.DLL\Bitmap\10035-1033-common-restart the game-unpressed.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="interface\COMMON.DLL\Bitmap\10036-1033-common-restart the game-pressed.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="interface\COMMON.DLL\Bitmap\10037-1033-common-restart the game-disabled.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="systems\EDATA\14094-edata-system-kuat.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
