@@ -86,6 +86,489 @@
     <None Update="interface\COMMON.DLL\Bitmap\10037-1033-common-restart the game-disabled.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="missions+events\EDATA\132-edata-events-fleet-alliance.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="missions+events\EDATA\133-edata-events-fleet-empire.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="missions+events\EDATA\139-edata-mission-sabotage-empire.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="missions+events\EDATA\140-edata-mission-espionage-alliance.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="missions+events\EDATA\141-edata-mission-espionage-empire.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="missions+events\EDATA\142-edata-mission-ship-design-research-alliance.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="missions+events\EDATA\143-edata-mission-ship-design-research-empire.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="missions+events\EDATA\146-edata-mission-facility-design-research.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="missions+events\EDATA\149-edata-mission-troop-training-research-empire.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="missions+events\EDATA\151-edata-mission-reconnaissance-empire.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="missions+events\EDATA\153-edata-mission-recruitment-empire.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="missions+events\EDATA\155-edata-mission-abduction-empire.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="missions+events\EDATA\156-edata-mission-incite-uprising-alliance.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="missions+events\EDATA\157-edata-mission-incite uprising-empire.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="missions+events\EDATA\158-edata-mission-death-star-sabotage.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="missions+events\EDATA\160-edata-mission-jedi-training-alliance.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="missions+events\EDATA\161-edata-mission-jedi-training-empire.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="missions+events\EDATA\163-edata-mission-subdue-uprising-empire.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="missions+events\EDATA\164-edata-mission-assassination.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="missions+events\GOKRES.DLL\19472-1033-gokres-mission-alliance-diplomacy.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="missions+events\GOKRES.DLL\19473-1033-gokres-mission-alliance-rescue.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="missions+events\GOKRES.DLL\19475-1033-gokres-mission-alliance-espionage.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="missions+events\GOKRES.DLL\19476-1033-gokres-mission-alliance-ship-design-research.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="missions+events\GOKRES.DLL\19488-1033-gokres-mission-alliance-ship-design-research.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="missions+events\GOKRES.DLL\19489-1033-gokres-mission-alliance-facility-design-research.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="missions+events\GOKRES.DLL\19520-1033-gokres-mission-alliance-incite-uprising.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="missions+events\GOKRES.DLL\19521-1033-gokres-mission-alliance-death-star-sabotage.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="missions+events\GOKRES.DLL\19522-1033-gokres-mission-alliance-jedi-training.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="missions+events\GOKRES.DLL\19523-1033-gokres-mission-alliance-jedi-training.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="missions+events\GOKRES.DLL\19525-1033-gokres-mission-alliance-jedi-training.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="missions+events\GOKRES.DLL\19526-1033-gokres-mission-alliance-jedi-training.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="missions+events\GOKRES.DLL\19585-1033-gokres-mission-alliance-assassination.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="missions+events\GOKRES.DLL\23568-1033-gokres-mission-empire-diplomacy.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="missions+events\GOKRES.DLL\23570-1033-gokres-mission-empire-sabotage.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="missions+events\GOKRES.DLL\23571-1033-gokres-mission-empire-espionage.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="missions+events\GOKRES.DLL\23572-1033-gokres-mission-empire-ship-design-research.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="missions+events\GOKRES.DLL\23573-1033-gokres-mission-empire-reconnaissance.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="missions+events\GOKRES.DLL\23574-1033-gokres-mission-empire-recruitment.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="missions+events\GOKRES.DLL\23584-1033-gokres-mission-empire-ship-design-research.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="missions+events\GOKRES.DLL\23585-1033-gokres-mission-empire-facility-design-research.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="missions+events\GOKRES.DLL\23586-1033-gokres-mission-empire-troop-training-research.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="missions+events\GOKRES.DLL\23616-1033-gokres-mission-empire-incite-uprising.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="missions+events\GOKRES.DLL\23617-1033-gokres-mission-empire-death-star-sabotage.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="missions+events\GOKRES.DLL\23618-1033-gokres-mission-empire-jedi-training.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="missions+events\GOKRES.DLL\23619-1033-gokres-mission-empire-jedi-training.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="missions+events\GOKRES.DLL\23621-1033-gokres-mission-empire-jedi-training.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="missions+events\GOKRES.DLL\23622-1033-gokres-mission-empire-jedi-training.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="missions+events\GOKRES.DLL\23680-1033-gokres-mission-empire-subdue-uprising.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="missions+events\GOKRES.DLL\23681-1033-gokres-mission-empire-assassination.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="missions+events\GOKRES.DLL\3088-1033-gokres-status-mission-alliance-diplomacy.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="missions+events\GOKRES.DLL\3089-1033-gokres-status-mission-alliance-rescue.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="missions+events\GOKRES.DLL\3090-1033-gokres-status-mission-alliance-sabotage.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="missions+events\GOKRES.DLL\3091-1033-gokres-status-mission-alliance-espionage.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="missions+events\GOKRES.DLL\3092-1033-gokres-status-mission-alliance-ship-design-research.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="missions+events\GOKRES.DLL\3093-1033-gokres-status-mission-alliance-reconnaissance.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="missions+events\GOKRES.DLL\3104-1033-gokres-status-mission-alliance-ship-design-research.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="missions+events\GOKRES.DLL\3105-1033-gokres-status-mission-alliance-facility-design-research.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="missions+events\GOKRES.DLL\3136-1033-gokres-status-mission-alliance-incite-uprising.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="missions+events\GOKRES.DLL\3137-1033-gokres-status-mission-alliance-death-star-sabotage.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="missions+events\GOKRES.DLL\3138-1033-gokres-status-mission-alliance-jedi-training.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="missions+events\GOKRES.DLL\3139-1033-gokres-status-mission-alliance-jedi-training.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="missions+events\GOKRES.DLL\3141-1033-gokres-status-mission-alliance-jedi-training.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="missions+events\GOKRES.DLL\3142-1033-gokres-status-mission-alliance-jedi-training.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="missions+events\GOKRES.DLL\3201-1033-gokres-status-mission-alliance-assassination.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="missions+events\GOKRES.DLL\7186-1033-gokres-status-mission-empire-sabotage.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="missions+events\GOKRES.DLL\7187-1033-gokres-status-mission-empire-espionage.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="missions+events\GOKRES.DLL\7188-1033-gokres-status-mission-empire-ship-design-research.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="missions+events\GOKRES.DLL\7189-1033-gokres-status-mission-empire-reconnaissance.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="missions+events\GOKRES.DLL\7190-1033-gokres-status-mission-empire-recruitment.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="missions+events\GOKRES.DLL\7200-1033-gokres-status-mission-empire-ship-design-research.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="missions+events\GOKRES.DLL\7201-1033-gokres-status-mission-empire-facility-design-research.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="missions+events\GOKRES.DLL\7202-1033-gokres-status-mission-empire-troop-training-research.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="missions+events\GOKRES.DLL\7232-1033-gokres-status-mission-empire-incite-uprising.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="missions+events\GOKRES.DLL\7233-1033-gokres-status-mission-empire-death-star-sabotage.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="missions+events\GOKRES.DLL\7234-1033-gokres-status-mission-empire-jedi-training.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="missions+events\GOKRES.DLL\7235-1033-gokres-status-mission-empire-jedi-training.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="missions+events\GOKRES.DLL\7237-1033-gokres-status-mission-empire-jedi-training.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="missions+events\GOKRES.DLL\7238-1033-gokres-status-mission-empire-jedi-training.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="missions+events\GOKRES.DLL\7296-1033-gokres-status-mission-empire-subdue-uprising.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="missions+events\GOKRES.DLL\7297-1033-gokres-status-mission-empire-assassination.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="missions+events\STRATEGY.DLL\Bitmap\1000-1033-strategy-event-informants-provide-information.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="missions+events\STRATEGY.DLL\Bitmap\1002-1033-strategy-resources.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="missions+events\STRATEGY.DLL\Bitmap\1003-1033-strategy-event-natural-disaster.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="missions+events\STRATEGY.DLL\Bitmap\1004-1033-strategy-event-smuggling-losses-or-benefits.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="missions+events\STRATEGY.DLL\Bitmap\1005-1033-strategy-event-planet-allegiance-evolves-alliance.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="missions+events\STRATEGY.DLL\Bitmap\1009-1033-strategy-event-planet-near-uprising-empire.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="missions+events\STRATEGY.DLL\Bitmap\1010-1033-strategy-event-uprising-begins-on-planet_subdue-uprising-mission-report.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="missions+events\STRATEGY.DLL\Bitmap\1012-1033-strategy-event-uprising-ends-on-planet-empire.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="missions+events\STRATEGY.DLL\Bitmap\1013-1033-strategy-event-maintenance-shortfall-alliance_saboteurs-strike-at-planet.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="missions+events\STRATEGY.DLL\Bitmap\1014-1033-strategy-event-maintenance-shortfall-empire_saboteurs-strike-at-planet.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="missions+events\STRATEGY.DLL\Bitmap\1015-1033-strategy--alliance.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="missions+events\STRATEGY.DLL\Bitmap\1016-1033-strategy--empire.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="missions+events\STRATEGY.DLL\Bitmap\1017-1033-strategy-research.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="missions+events\STRATEGY.DLL\Bitmap\1018-1033-strategy-event-fleet-arrives-at-planet-alliance.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="missions+events\STRATEGY.DLL\Bitmap\1019-1033-strategy-event-fleet-arrives-at-planet-empire.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="missions+events\STRATEGY.DLL\Bitmap\1020-1033-strategy-units-arrive-alliance.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="missions+events\STRATEGY.DLL\Bitmap\1021-1033-strategy-units-arrive-empire.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="missions+events\STRATEGY.DLL\Bitmap\1022-1033-strategy-headquarters-arrive-alliance.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="missions+events\STRATEGY.DLL\Bitmap\1023-1033-strategy--alliance.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="missions+events\STRATEGY.DLL\Bitmap\1024-1033-strategy--empire.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="missions+events\STRATEGY.DLL\Bitmap\1025-1033-strategy--alliance.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="missions+events\STRATEGY.DLL\Bitmap\1026-1033-strategy--empire.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="missions+events\STRATEGY.DLL\Bitmap\1027-1033-strategy-event-fleet-initiates-blockade-of-planet-alliance_planet-under-blockade.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="missions+events\STRATEGY.DLL\Bitmap\1028-1033-strategy-event-fleet-initiates-blockade-of-planet-empire_planet-under-blockade.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="missions+events\STRATEGY.DLL\Bitmap\1030-1033-strategy-planetary-blockade-breaching-fails-empire.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="missions+events\STRATEGY.DLL\Bitmap\1031-1033-strategy-planetary-blockade-breaching-fails-alliance.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="missions+events\STRATEGY.DLL\Bitmap\1032-1033-strategy-unit-facility-decommission-alliance.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="missions+events\STRATEGY.DLL\Bitmap\1033-1033-strategy-unit-facility-decommission-empire.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="missions+events\STRATEGY.DLL\Bitmap\1034-1033-strategy-character-retirement-alliance.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="missions+events\STRATEGY.DLL\Bitmap\1035-1033-strategy-character-retirement-empire.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="missions+events\STRATEGY.DLL\Bitmap\1036-1033-strategy--alliance.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="missions+events\STRATEGY.DLL\Bitmap\1037-1033-strategy--empire.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="missions+events\STRATEGY.DLL\Bitmap\1039-1033-strategy--empire.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="missions+events\STRATEGY.DLL\Bitmap\1040-1033-strategy-multiplayer-chat-alliance.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="missions+events\STRATEGY.DLL\Bitmap\1041-1033-strategy-multiplayer-chat-empire.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="missions+events\STRATEGY.DLL\Bitmap\1042-1033-strategy-event-character-mission-report-recruitment-alliance_jedi-discovered.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="missions+events\STRATEGY.DLL\Bitmap\1043-1033-strategy-event-character-mission-report-recruitment-empire.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="missions+events\STRATEGY.DLL\Bitmap\1044-1033-strategy-event-character-mission-report-diplomacy.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="missions+events\STRATEGY.DLL\Bitmap\1045-1033-strategy-event-character-mission-report-espionage.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="missions+events\STRATEGY.DLL\Bitmap\1046-1033-strategy-event-character-mission-foiled-incite-uprising-alliance.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="missions+events\STRATEGY.DLL\Bitmap\1047-1033-strategy-event-character-mission-foiled-incite-uprising-empire.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="missions+events\STRATEGY.DLL\Bitmap\1048-1033-strategy-rebel-character-captured-empire.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="missions+events\STRATEGY.DLL\Bitmap\1049-1033-strategy-empire-character-captured-empire.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="missions+events\STRATEGY.DLL\Bitmap\1050-1033-strategy-character-injured.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="missions+events\STRATEGY.DLL\Bitmap\1051-1033-strategy-character-recovered.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="missions+events\STRATEGY.DLL\Bitmap\1052-1033-strategy-bounty-hunters-defeated.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="missions+events\STRATEGY.DLL\Bitmap\1053-1033-strategy-jabba-captures-solo.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="missions+events\STRATEGY.DLL\Bitmap\1054-1033-strategy-bounty-hunters-locate-solo.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="missions+events\STRATEGY.DLL\Bitmap\1055-1033-strategy-vader-vs-leia.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="missions+events\STRATEGY.DLL\Bitmap\1056-1033-strategy-emperor-vs-leia.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="missions+events\STRATEGY.DLL\Bitmap\1057-1033-strategy-luke-travels-dagobah.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="missions+events\STRATEGY.DLL\Bitmap\1058-1033-strategy-luke-discovers-heritage.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="missions+events\STRATEGY.DLL\Bitmap\1059-1033-strategy-vader-vs-student-luke.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="missions+events\STRATEGY.DLL\Bitmap\1060-1033-strategy-vader-vs-knight-luke.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="missions+events\STRATEGY.DLL\Bitmap\1061-1033-strategy-emperor-vs-student-luke.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="missions+events\STRATEGY.DLL\Bitmap\1062-1033-strategy-emperor-vs-knight-luke.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="missions+events\STRATEGY.DLL\Bitmap\1064-1033-strategy-emperor-vader-vs-knight-luke.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="missions+events\STRATEGY.DLL\Bitmap\1065-1033-strategy-jabba-vs-luke.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="missions+events\STRATEGY.DLL\Bitmap\1068-1033-strategy-emperor-arrives-coruscant.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="missions+events\STRATEGY.DLL\Bitmap\1070-1033-strategy-character-killed-alliance.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="missions+events\STRATEGY.DLL\Bitmap\10712-1033-strategy-event-battle-at-planet-imperial-fleet-attemps-to-break-blockade.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="missions+events\STRATEGY.DLL\Bitmap\10713-1033-strategy-event-battle-at-planet-alliance-fleet-attemps-to-break-blockade.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="missions+events\STRATEGY.DLL\Bitmap\10714-1033-strategy-.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="missions+events\STRATEGY.DLL\Bitmap\10715-1033-strategy-.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="missions+events\STRATEGY.DLL\Bitmap\1073-1033-strategy-event-enemy-mission-foiled-alliance.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="missions+events\STRATEGY.DLL\Bitmap\1074-1033-strategy-event-enemy-mission-foiled-empire.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="missions+events\STRATEGY.DLL\Bitmap\1075-1033-strategy-character-killed-empire.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="missions+events\STRATEGY.DLL\Bitmap\10757-1033-strategy-event-battle-at-planet-the-alliance-fleet-is-defeated.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="missions+events\STRATEGY.DLL\Bitmap\10758-1033-strategy-event-battle-at-planet-the-empire-fleet-is-defeated.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="missions+events\STRATEGY.DLL\Bitmap\10759-1033-strategy-event-battle-at-planet-the-alliance-fleet-is-victorious.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="missions+events\STRATEGY.DLL\Bitmap\10760-1033-strategy-event-battle-at-planet-the-empire-fleet-is-victorious.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="missions+events\STRATEGY.DLL\Bitmap\10764-1033-strategy-ui-.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="missions+events\STRATEGY.DLL\Bitmap\10765-1033-strategy-ui-.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="missions+events\STRATEGY.DLL\Bitmap\10766-1033-strategy-ui-.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="missions+events\STRATEGY.DLL\Bitmap\10769-1033-strategy-ui-.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="missions+events\STRATEGY.DLL\Bitmap\11160-1033-strategy-event-assault-on-planet-alliance.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="missions+events\STRATEGY.DLL\Bitmap\11161-1033-strategy-event-assault-on-planet-empire.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="missions+events\STRATEGY.DLL\Bitmap\11162-1033-strategy-event-orbital-bombardment-of-planet.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="missions+events\STRATEGY.DLL\Bitmap\11163-1033-strategy-event-orbital-bombardment-of-planet.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="missions+events\STRATEGY.DLL\Bitmap\11164-1033-strategy-.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="missions+events\STRATEGY.DLL\Bitmap\11619-1033-strategy-ui-.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="systems\EDATA\14094-edata-system-kuat.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
