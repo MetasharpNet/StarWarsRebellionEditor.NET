@@ -74,6 +74,162 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
+    <None Update="buildings\EDATA\001-edata-facility-mine.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="buildings\EDATA\002-edata-facility-refinery.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="buildings\EDATA\003-edata-facility-orbital-shipyard.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="buildings\EDATA\006-edata-facility-advanced-shipyard.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="buildings\EDATA\009-edata-facility-kdy-150.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="buildings\EDATA\010-edata-facility-lnr-series-1.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="buildings\EDATA\011-edata-facility-gencore-level-1.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="buildings\EDATA\012-edata-facility-lnr-series-2.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="buildings\EDATA\013-edata-facility-gencore-level-2.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="buildings\EDATA\014-edata-facility-death-star-shield.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="buildings\GOKRES.DLL\Bitmap\1-1033-gokres-status-facility-mine.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="buildings\GOKRES.DLL\Bitmap\16385-1033-gokres-facility-mine.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="buildings\GOKRES.DLL\Bitmap\16386-1033-gokres-facility-refinery.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="buildings\GOKRES.DLL\Bitmap\16640-1033-gokres-facility-orbital-shipyard.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="buildings\GOKRES.DLL\Bitmap\16643-1033-gokres-facility-advanced-shipyard.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="buildings\GOKRES.DLL\Bitmap\16896-1033-gokres-facility-kdy-150.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="buildings\GOKRES.DLL\Bitmap\16897-1033-gokres-facility-lnr-series-1.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="buildings\GOKRES.DLL\Bitmap\16898-1033-gokres-facility-gencore-level-1.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="buildings\GOKRES.DLL\Bitmap\16899-1033-gokres-facility-lnr-series-2.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="buildings\GOKRES.DLL\Bitmap\16900-1033-gokres-facility-gencore-level-2.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="buildings\GOKRES.DLL\Bitmap\17024-1033-gokres-facility-death-star-shield.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="buildings\GOKRES.DLL\Bitmap\17216-1033-gokres-facility-alliance-headquarters.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="buildings\GOKRES.DLL\Bitmap\2-1033-gokres-status-facility-refinery.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="buildings\GOKRES.DLL\Bitmap\256-1033-gokres-status-facility-orbital-shipyard.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="buildings\GOKRES.DLL\Bitmap\259-1033-gokres-status-facility-advanced-shipyard.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="buildings\GOKRES.DLL\Bitmap\262-1033-gokres-tab-facility-orbital-shipyard.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="buildings\GOKRES.DLL\Bitmap\512-1033-gokres-status-facility-kdy-150.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="buildings\GOKRES.DLL\Bitmap\513-1033-gokres-status-facility-lnr-series-1.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="buildings\GOKRES.DLL\Bitmap\514-1033-gokres-status-facility-gencore-level-1.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="buildings\GOKRES.DLL\Bitmap\515-1033-gokres-status-facility-lnr-series-2.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="buildings\GOKRES.DLL\Bitmap\516-1033-gokres-status-facility-gencore-level-2.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="buildings\GOKRES.DLL\Bitmap\640-1033-gokres-status-facility-death-star-shield.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="buildings\GOKRES.DLL\Bitmap\832-1033-gokres-status-facility-alliance-headquarters.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="buildings\STRATEGY.DLL\Bitmap\10553-1033-strategy-ui-.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="buildings\STRATEGY.DLL\Bitmap\10554-1033-strategy-ui-.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="buildings\STRATEGY.DLL\Bitmap\10555-1033-strategy-ui-.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="buildings\STRATEGY.DLL\Bitmap\9001-1033-strategy-system-mine-active.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="buildings\STRATEGY.DLL\Bitmap\9002-1033-strategy-system-mine-empire-under-construction.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="buildings\STRATEGY.DLL\Bitmap\9003-1033-strategy-system-mine-alliance-under-construction.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="buildings\STRATEGY.DLL\Bitmap\9004-1033-strategy-system-mine-enroute.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="buildings\STRATEGY.DLL\Bitmap\9006-1033-strategy-system-orbital-shipyard-active.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="buildings\STRATEGY.DLL\Bitmap\9007-1033-strategy-system-orbital-shipyard-empire-under-construction.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="buildings\STRATEGY.DLL\Bitmap\9008-1033-strategy-system-orbital-shipyard-alliance-under-construction.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="buildings\STRATEGY.DLL\Bitmap\9009-1033-strategy-system-orbital-shipyard-enroute.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="buildings\STRATEGY.DLL\Bitmap\9010-1033-strategy-system-advanced-shipyard-active.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="buildings\STRATEGY.DLL\Bitmap\9011-1033-strategy-system-advanced-shipyard-empire-under-construction.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="buildings\STRATEGY.DLL\Bitmap\9012-1033-strategy-system-advanced-shipyard-alliance-under-construction.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="buildings\STRATEGY.DLL\Bitmap\9013-1033-strategy-system-advanced-shipyard-enroute.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="buildings\STRATEGY.DLL\Bitmap\9030-1033-strategy-system-refinery-active.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="buildings\STRATEGY.DLL\Bitmap\9031-1033-strategy-system-refinery-empire-under-construction.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="buildings\STRATEGY.DLL\Bitmap\9032-1033-strategy-system-refinery-alliance-under-construction.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="buildings\STRATEGY.DLL\Bitmap\9033-1033-strategy-system-refinery-enroute.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="game-update\_patch_exe.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
@@ -567,6 +723,75 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="missions+events\STRATEGY.DLL\Bitmap\11619-1033-strategy-ui-.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="special forces\EDATA\025-edata-special-force-alliance-guerillas.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="special forces\EDATA\026-edata-special-force-alliance-infiltrators.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="special forces\EDATA\028-edata-special-force-alliance-bothan-spies.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="special forces\EDATA\031-edata-special-force-empire-imperial-commandos.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="special forces\EDATA\032-edata-special-force-empire-noghri-death-commandos.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="special forces\EDATA\033-edata-special-force-empire-bounty-hunters.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="special forces\GOKRES.DLL\Bitmap\1344-1033-gokres-status-special-force-alliance-guerillas.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="special forces\GOKRES.DLL\Bitmap\1345-1033-gokres-status-special-force-alliance-infiltrators.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="special forces\GOKRES.DLL\Bitmap\1347-1033-gokres-status-special-force-alliance-bothan-spies.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="special forces\GOKRES.DLL\Bitmap\1410-1033-gokres-status-special-force-empire-imperial-commandos.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="special forces\GOKRES.DLL\Bitmap\1411-1033-gokres-status-special-force-empire-noghri-death-commandos.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="special forces\GOKRES.DLL\Bitmap\1412-1033-gokres-status-special-force-empire-bounty-hunters.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="special forces\GOKRES.DLL\Bitmap\17728-1033-gokres-special-force-alliance-guerillas.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="special forces\GOKRES.DLL\Bitmap\17729-1033-gokres-special-force-alliance-infiltrators.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="special forces\GOKRES.DLL\Bitmap\17731-1033-gokres-special-force-alliance-bothan-spies.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="special forces\GOKRES.DLL\Bitmap\17794-1033-gokres-special-force-empire-imperial-commandos.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="special forces\GOKRES.DLL\Bitmap\17795-1033-gokres-special-force-empire-noghri-death-commandos.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="special forces\GOKRES.DLL\Bitmap\17796-1033-gokres-special-force-empire-bounty-hunters.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="special forces\TACTICAL.DLL\Bitmap\2302-1033-tactical-special-force-alliance-bothan-spies.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="special forces\TACTICAL.DLL\Bitmap\2303-1033-tactical-special-force-empire-imperial-commandos.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="special forces\TACTICAL.DLL\Bitmap\2308-1033-tactical-special-force-alliance-guerillas.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="special forces\TACTICAL.DLL\Bitmap\2309-1033-tactical-special-force-alliance-infiltrators.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="special forces\TACTICAL.DLL\Bitmap\2312-1033-tactical-special-force-empire-noghri-death-commandos.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="systems\EDATA\14094-edata-system-kuat.bmp">
