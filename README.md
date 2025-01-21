@@ -32,6 +32,7 @@
 * 118/118 sprites displaying base stats (optional)
   * 10/10 troops, 9/9 special forces, 8/8 fighters, 30/30 capital ships, 61/61 characters
 * 30/30 new Capital Ships Encyclopedia (picture, faction, full name, size, easy stats, company, history)
+* 161/217 Mission+Events sprites
 * 8 Capital Ships changed to use more known ones (+ 7 names improved)
   * [Alliance] Mon Calamari Cruiser → MC80 Liberty Cruiser (name change)
   * [Alliance] Bulk Transport → Bulk Freighter (name change)
