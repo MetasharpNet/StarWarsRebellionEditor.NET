@@ -57,6 +57,7 @@ namespace SwRebellionEditor
             compatibleGalaxyMapCheckBox = new CheckBox();
             accurateGalaxyMapCheckBox = new CheckBox();
             label3 = new Label();
+            label4 = new Label();
             SuspendLayout();
             // 
             // systemsImageList
@@ -157,7 +158,7 @@ namespace SwRebellionEditor
             warningLabel.Name = "warningLabel";
             warningLabel.Size = new Size(350, 15);
             warningLabel.TabIndex = 1163;
-            warningLabel.Text = "Released 2025-01 and provided without any warranty of any kind.";
+            warningLabel.Text = "Released 2025-05 and provided without any warranty of any kind.";
             // 
             // label1Requirement
             // 
@@ -168,7 +169,7 @@ namespace SwRebellionEditor
             label1Requirement.Name = "label1Requirement";
             label1Requirement.Size = new Size(253, 15);
             label1Requirement.TabIndex = 1165;
-            label1Requirement.Text = "Includes update 1.02 (dgvoodoo2 directx 2.84.1)";
+            label1Requirement.Text = "Includes update 1.02 (dgvoodoo2 directx 2.86.2)";
             // 
             // label1
             // 
@@ -258,10 +259,21 @@ namespace SwRebellionEditor
             label3.TabIndex = 1173;
             label3.Text = "For the patch  to work, you might need to disable antivirus such as Norton which might silentlt prevent proper files patching.";
             // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.ForeColor = Color.Red;
+            label4.Location = new Point(349, 308);
+            label4.Name = "label4";
+            label4.Size = new Size(358, 15);
+            label4.TabIndex = 1174;
+            label4.Text = "Possible tactical crash if using all new ships, we're reworking them.";
+            // 
             // PatchForm
             // 
             AutoScaleMode = AutoScaleMode.None;
             ClientSize = new Size(735, 362);
+            Controls.Add(label4);
             Controls.Add(label3);
             Controls.Add(accurateGalaxyMapCheckBox);
             Controls.Add(compatibleGalaxyMapCheckBox);
@@ -315,5 +327,6 @@ namespace SwRebellionEditor
         private CheckBox compatibleGalaxyMapCheckBox;
         private CheckBox accurateGalaxyMapCheckBox;
         private Label label3;
+        private Label label4;
     }
 }

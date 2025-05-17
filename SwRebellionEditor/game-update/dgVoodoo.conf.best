@@ -4,7 +4,7 @@
 ;     want to modify some advanced properties not available via the CPL.
 ;==========================================================================
 
-Version                              = 0x283
+Version                              = 0x286
 
 ;--------------------------------------------------------------------------
 
@@ -22,6 +22,8 @@ Version                              = 0x283
 ;                  is explicitly selected. Disabled case is intended for avoiding extra
 ;                  rendering resources on old hardware for better performance, if required.
 
+; DisableScreenSaver: If true then screen saver and monitor sleep mode are disabled while rendering through dgVoodoo is active
+
 OutputAPI                            = d3d12_fl11_0
 Adapters                             = all
 FullScreenOutput                     = default
@@ -38,6 +40,7 @@ InheritColorProfileInFullScreenMode  = true
 KeepWindowAspectRatio                = true
 CaptureMouse                         = true
 CenterAppWindow                      = false
+DisableScreenSaver                   = true
 
 ;--------------------------------------------------------------------------
 
@@ -187,6 +190,8 @@ DitherOrderedMatrixSizeScale        = 0
 ; Mipmapping: "appdriven", "disabled", "autogen_point", "autogen_bilinear"
 ;  KeepFilterIfPointSampled: if enabled then forced filtering affects only non-point sampled textures
 ;      Bilinear2DOperations: if enabled then DirectDraw Blit and CPU-written data is transferred with bilinear scaling
+;       DisableD3DTnLDevice: if disabled then D3D TnL device is not enumerated and hardware Transform&Light vertex processing
+;                            is not available
 
 DisableAndPassThru                  = false
 
@@ -206,6 +211,7 @@ PhongShadingWhenPossible            = true
 ForceVerticalSync                   = true
 dgVoodooWatermark                   = false
 FastVideoMemoryAccess               = true
+DisableD3DTnLDevice                 = false
 
 ;--------------------------------------------------------------------------
 

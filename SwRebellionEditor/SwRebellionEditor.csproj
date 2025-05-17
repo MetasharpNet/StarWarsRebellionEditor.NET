@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
-    <TargetFramework>net8.0-windows7.0</TargetFramework>
+    <TargetFramework>net9.0-windows7.0</TargetFramework>
     <Nullable>enable</Nullable>
     <UseWindowsForms>true</UseWindowsForms>
 	  <ImplicitUsings>enable</ImplicitUsings>
@@ -774,9 +774,6 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="special forces\GOKRES.DLL\Bitmap\17795-1033-gokres-special-force-empire-noghri-death-commandos.bmp">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Update="special forces\GOKRES.DLL\Bitmap\17796-1033-gokres-special-force-empire-bounty-hunters.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="special forces\TACTICAL.DLL\Bitmap\2302-1033-tactical-special-force-alliance-bothan-spies.bmp">
