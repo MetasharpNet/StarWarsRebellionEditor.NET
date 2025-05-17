@@ -5,7 +5,7 @@
     * Contact Metasharp user 
   * Steam : https://steamcommunity.com/app/441550/discussions/0/5913829825701729169/
   * GoG : https://www.gog.com/forum/star_wars_rebellion/star_wars_rebellion_in_2023_25th_anniv_patch_fix_fr_patch_guides
-* C# 12.0 project built with .NET 8 in Visual Studio 2022 : https://visualstudio.microsoft.com/vs/community/
+* C# 13.0 project built with .NET 9 in Visual Studio 2022 : https://visualstudio.microsoft.com/vs/community/
 * To find where to buy the game or get free fan mods, check : https://swrebellion.net/
   * I advise to go for GoG version of the game (Steam version should work as well).
 
