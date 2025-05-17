@@ -5,7 +5,7 @@
     * Contact Metasharp user 
   * Steam : https://steamcommunity.com/app/441550/discussions/0/5913829825701729169/
   * GoG : https://www.gog.com/forum/star_wars_rebellion/star_wars_rebellion_in_2023_25th_anniv_patch_fix_fr_patch_guides
-* C# 12.0 project built with .NET 8 in Visual Studio 2022 : https://visualstudio.microsoft.com/vs/community/
+* C# 13.0 project built with .NET 9 in Visual Studio 2022 : https://visualstudio.microsoft.com/vs/community/
 * To find where to buy the game or get free fan mods, check : https://swrebellion.net/
   * I advise to go for GoG version of the game (Steam version should work as well).
 
@@ -19,7 +19,7 @@
 
 ### 25th Anniversary Patch Features :
 * Game version: 1.02 (includes various community fixes)
-* DirectX libraries: DgVoodoo 2.84.1 (2024-12-31) : http://dege.fw.hu/dgVoodoo2/dgVoodoo2/
+* DirectX libraries: DgVoodoo 2.86.2 (2025-04-02) : http://dege.fw.hu/dgVoodoo2/dgVoodoo2/
   * Forum : https://www.vogons.org/viewforum.php?f=58 and https://www.vogons.org/viewtopic.php?f=59&t=97303
 * Microsoft latest D3DRM.DLL 5.2.3790.0
 * New Galaxy map using Top 200 Star Wars planets (using 2023 canon & positioned as accurately as possible)
@@ -130,7 +130,7 @@
 
 ### 25th Anniversary Installation guide:
 * Install the latest .NET Desktop runtime : https://dotnet.microsoft.com/en-us/download/dotnet
-  * Direct link to latest version : https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/runtime-desktop-9.0.0-windows-x64-installer
+  * Direct link to latest version : https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/runtime-desktop-9.0.5-windows-x64-installer
 * Reboot
 * Install a fresh GoG or Steam Star Wars Rebellion game
 * Download the latest editor release : https://github.com/MetasharpNet/StarWarsRebellionEditor.NET/releases
@@ -149,7 +149,7 @@
   * units without stats : unit sprites display no stats, like in the base game
 * Click on the patch my game button
   * The UI will pop a window detailling in real time what is being patched. Wait for the patch to complete.
-  * To get the latest features, also patch with the Patch test folder only button.
+  * To get the latest preview features (ships in progress...), also patch with the Patch test folder only button.
   * Close the editor
 * Enable again your antivirus if you had to disable it
 * Run the game.
