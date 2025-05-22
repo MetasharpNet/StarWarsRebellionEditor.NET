@@ -185,6 +185,9 @@ For AMD (Radeon, ...) GPU, you can try this link: [https://www.amd.com/en/suppor
 If you have another GPU brand than Nvidia or AMD, do the same as above and get some more info here:
 * https://www.pcgamingwiki.com/wiki/Glossary:Custom_resolution
 
+### Color fringing
+* If you get this issue (on the side of pixels, you can see a colored ghost of them in multiple places, red, black, ... The are invisible in screenshots and can only be captured with a photo), try to play in 60Hz. No other fix found yet.
+
 ### Other issues
 * If you get: "The pixel format was invalid as specified." error when entering tactical battle, ... it shouldn't bother the game working, but I have no known solution as of now. Try googling and share if you find a solution. This problem happens on base game install as well and is not related to 25th anniversary patch.
 
