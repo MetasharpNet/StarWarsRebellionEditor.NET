@@ -6,8 +6,9 @@
   * Steam : https://steamcommunity.com/app/441550/discussions/0/5913829825701729169/
   * GoG : https://www.gog.com/forum/star_wars_rebellion/star_wars_rebellion_in_2023_25th_anniv_patch_fix_fr_patch_guides
 * C# 13.0 project built with .NET 9 in Visual Studio 2022 : https://visualstudio.microsoft.com/vs/community/
-* To find where to buy the game or get free fan mods, check : https://swrebellion.net/
-  * I advise to go for GoG version of the game (Steam version should work as well).
+* To buy the game
+  * GoG : https://www.gog.com/en/game/star_wars_rebellion
+  * Steam : https://store.steampowered.com/app/441550/STAR_WARS_Rebellion/
 
 ### Current Editor Features :
 * Galaxy Map editor : can drag&drop sectors and systems
