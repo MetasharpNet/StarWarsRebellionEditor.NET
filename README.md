@@ -1,7 +1,7 @@
 ## Star Wars Rebellion Editor .NET
 * 25th anniversary patch in video : https://www.youtube.com/watch?v=2QI-di2l4S8 (not made by us, and remember, patch is not final/completed)
 * Need some help, talk with us on :
-  * Discord : https://swrebellion.link/discord
+  * Discord : to be communicated soon
     * Contact Metasharp user 
   * Steam : https://steamcommunity.com/app/441550/discussions/0/5913829825701729169/
   * GoG : https://www.gog.com/forum/star_wars_rebellion/star_wars_rebellion_in_2023_25th_anniv_patch_fix_fr_patch_guides
