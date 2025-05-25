@@ -33,6 +33,8 @@ Welcome to the open-source editor for Star Wars Rebellion made in .NET. You will
 - Steam : https://steamcommunity.com/app/441550/discussions/0/5913829825701729169/
 - GoG : https://www.gog.com/forum/star_wars_rebellion/star_wars_rebellion_in_2023_25th_anniv_patch_fix_fr_patch_guides
 
+---
+
 # Star Wars Rebellion
 
 - To buy the game
@@ -171,6 +173,8 @@ If you have another GPU brand than Nvidia or AMD, do the same as above and get s
 - Other features from RebEd
 - etc
 
+---
+
 # 25th Anniversary Patch
 
 The 25th anniversary patch aims to refresh the game experience with mostly cannon Star wars Wniverse content:
@@ -299,6 +303,8 @@ The 25th anniversary patch aims to refresh the game experience with mostly canno
 ## Statistics
 
 GitHub Downloads stats : https://hanadigital.github.io/grev/?user=MetasharpNet&repo=StarWarsRebellionEditor.NET
+
+---
 
 # Links
 
