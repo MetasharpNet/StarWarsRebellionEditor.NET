@@ -158,7 +158,7 @@ namespace SwRebellionEditor
             OK_Button.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
             OK_Button.DialogResult = DialogResult.Cancel;
             OK_Button.FlatAppearance.BorderSize = 2;
-            OK_Button.Font = new Font("Microsoft Sans Serif", 8.25F, FontStyle.Bold, GraphicsUnit.Point);
+            OK_Button.Font = new Font("Microsoft Sans Serif", 8.25F, FontStyle.Bold);
             OK_Button.Location = new Point(39, 374);
             OK_Button.Margin = new Padding(4, 3, 4, 3);
             OK_Button.Name = "OK_Button";
@@ -169,7 +169,6 @@ namespace SwRebellionEditor
             // 
             // AboutForm
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.None;
             BackColor = Color.Black;
             BackgroundImageLayout = ImageLayout.None;

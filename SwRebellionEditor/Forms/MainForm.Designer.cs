@@ -147,6 +147,8 @@ namespace SwRebellionEditor
             empireFleetsToolStripMenuItem = new ToolStripMenuItem();
             Patch_ToolStripMenuItem = new ToolStripMenuItem();
             Export_ToolStripMenuItem = new ToolStripMenuItem();
+            toolsToolStripMenuItem = new ToolStripMenuItem();
+            picturesConverterToolStripMenuItem = new ToolStripMenuItem();
             Windows_Menu = new ToolStripMenuItem();
             Cascade_ToolStripMenuItem = new ToolStripMenuItem();
             TileVertical_ToolStripMenuItem = new ToolStripMenuItem();
@@ -161,6 +163,9 @@ namespace SwRebellionEditor
             RestoreDefaults_ToolStripMenuItem = new ToolStripMenuItem();
             Help_Menu = new ToolStripMenuItem();
             About_ToolStripMenuItem = new ToolStripMenuItem();
+            joinTheDiscordToolStripMenuItem = new ToolStripMenuItem();
+            githubPageToolStripMenuItem = new ToolStripMenuItem();
+            getLatestVersionToolStripMenuItem = new ToolStripMenuItem();
             statusStrip = new StatusStrip();
             Save_ToolStripStatusLabel = new ToolStripStatusLabel();
             roopDataStatus = new ToolStripStatusLabel();
@@ -189,8 +194,6 @@ namespace SwRebellionEditor
             galaxyMapButton = new ToolStripButton();
             toolStripSeparator4 = new ToolStripSeparator();
             Patch_Button = new ToolStripButton();
-            toolsToolStripMenuItem = new ToolStripMenuItem();
-            picturesConverterToolStripMenuItem = new ToolStripMenuItem();
             menuStrip.SuspendLayout();
             statusStrip.SuspendLayout();
             toolStrip.SuspendLayout();
@@ -572,6 +575,20 @@ namespace SwRebellionEditor
             Export_ToolStripMenuItem.Text = "Export Game Data";
             Export_ToolStripMenuItem.Click += Export_ToolStripMenuItem_Click;
             // 
+            // toolsToolStripMenuItem
+            // 
+            toolsToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { picturesConverterToolStripMenuItem });
+            toolsToolStripMenuItem.Name = "toolsToolStripMenuItem";
+            toolsToolStripMenuItem.Size = new Size(46, 20);
+            toolsToolStripMenuItem.Text = "Tools";
+            // 
+            // picturesConverterToolStripMenuItem
+            // 
+            picturesConverterToolStripMenuItem.Name = "picturesConverterToolStripMenuItem";
+            picturesConverterToolStripMenuItem.Size = new Size(171, 22);
+            picturesConverterToolStripMenuItem.Text = "Pictures Converter";
+            picturesConverterToolStripMenuItem.Click += picturesConverterToolStripMenuItem_Click;
+            // 
             // Windows_Menu
             // 
             Windows_Menu.DropDownItems.AddRange(new ToolStripItem[] { Cascade_ToolStripMenuItem, TileVertical_ToolStripMenuItem, TileHorizontal_ToolStripMenuItem, CloseAll_ToolStripMenuItem, ArrangeIcons_ToolStripMenuItem, Options_ToolStripMenuItem });
@@ -582,35 +599,35 @@ namespace SwRebellionEditor
             // Cascade_ToolStripMenuItem
             // 
             Cascade_ToolStripMenuItem.Name = "Cascade_ToolStripMenuItem";
-            Cascade_ToolStripMenuItem.Size = new Size(180, 22);
+            Cascade_ToolStripMenuItem.Size = new Size(150, 22);
             Cascade_ToolStripMenuItem.Text = "Cascade";
             Cascade_ToolStripMenuItem.Click += Cascade_ToolStripMenuItem_Click;
             // 
             // TileVertical_ToolStripMenuItem
             // 
             TileVertical_ToolStripMenuItem.Name = "TileVertical_ToolStripMenuItem";
-            TileVertical_ToolStripMenuItem.Size = new Size(180, 22);
+            TileVertical_ToolStripMenuItem.Size = new Size(150, 22);
             TileVertical_ToolStripMenuItem.Text = "Tile Vertical";
             TileVertical_ToolStripMenuItem.Click += TileVertical_ToolStripMenuItem_Click;
             // 
             // TileHorizontal_ToolStripMenuItem
             // 
             TileHorizontal_ToolStripMenuItem.Name = "TileHorizontal_ToolStripMenuItem";
-            TileHorizontal_ToolStripMenuItem.Size = new Size(180, 22);
+            TileHorizontal_ToolStripMenuItem.Size = new Size(150, 22);
             TileHorizontal_ToolStripMenuItem.Text = "Tile Horizontal";
             TileHorizontal_ToolStripMenuItem.Click += TileHorizontal_ToolStripMenuItem_Click;
             // 
             // CloseAll_ToolStripMenuItem
             // 
             CloseAll_ToolStripMenuItem.Name = "CloseAll_ToolStripMenuItem";
-            CloseAll_ToolStripMenuItem.Size = new Size(180, 22);
+            CloseAll_ToolStripMenuItem.Size = new Size(150, 22);
             CloseAll_ToolStripMenuItem.Text = "Close All";
             CloseAll_ToolStripMenuItem.Click += CloseAll_ToolStripMenuItem_Click;
             // 
             // ArrangeIcons_ToolStripMenuItem
             // 
             ArrangeIcons_ToolStripMenuItem.Name = "ArrangeIcons_ToolStripMenuItem";
-            ArrangeIcons_ToolStripMenuItem.Size = new Size(180, 22);
+            ArrangeIcons_ToolStripMenuItem.Size = new Size(150, 22);
             ArrangeIcons_ToolStripMenuItem.Text = "Arrange Icons";
             ArrangeIcons_ToolStripMenuItem.Click += ArrangeIcons_ToolStripMenuItem_Click;
             // 
@@ -618,7 +635,7 @@ namespace SwRebellionEditor
             // 
             Options_ToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { Size1280x1024_ToolStripMenuItem, Size1024x768_ToolStripMenuItem, Size800x600_ToolStripMenuItem, Size640x480_ToolStripMenuItem, RestoreDefaults_ToolStripMenuItem });
             Options_ToolStripMenuItem.Name = "Options_ToolStripMenuItem";
-            Options_ToolStripMenuItem.Size = new Size(180, 22);
+            Options_ToolStripMenuItem.Size = new Size(150, 22);
             Options_ToolStripMenuItem.Text = "Options";
             // 
             // Size1280x1024_ToolStripMenuItem
@@ -658,7 +675,7 @@ namespace SwRebellionEditor
             // 
             // Help_Menu
             // 
-            Help_Menu.DropDownItems.AddRange(new ToolStripItem[] { About_ToolStripMenuItem });
+            Help_Menu.DropDownItems.AddRange(new ToolStripItem[] { About_ToolStripMenuItem, joinTheDiscordToolStripMenuItem, githubPageToolStripMenuItem, getLatestVersionToolStripMenuItem });
             Help_Menu.Name = "Help_Menu";
             Help_Menu.Size = new Size(44, 20);
             Help_Menu.Text = "&Help";
@@ -666,9 +683,30 @@ namespace SwRebellionEditor
             // About_ToolStripMenuItem
             // 
             About_ToolStripMenuItem.Name = "About_ToolStripMenuItem";
-            About_ToolStripMenuItem.Size = new Size(107, 22);
+            About_ToolStripMenuItem.Size = new Size(180, 22);
             About_ToolStripMenuItem.Text = "&About";
             About_ToolStripMenuItem.Click += About_ToolStripMenuItem_Click;
+            // 
+            // joinTheDiscordToolStripMenuItem
+            // 
+            joinTheDiscordToolStripMenuItem.Name = "joinTheDiscordToolStripMenuItem";
+            joinTheDiscordToolStripMenuItem.Size = new Size(180, 22);
+            joinTheDiscordToolStripMenuItem.Text = "Join the Discord";
+            joinTheDiscordToolStripMenuItem.Click += joinTheDiscordToolStripMenuItem_Click;
+            // 
+            // githubPageToolStripMenuItem
+            // 
+            githubPageToolStripMenuItem.Name = "githubPageToolStripMenuItem";
+            githubPageToolStripMenuItem.Size = new Size(180, 22);
+            githubPageToolStripMenuItem.Text = "Github Page";
+            githubPageToolStripMenuItem.Click += githubPageToolStripMenuItem_Click;
+            // 
+            // getLatestVersionToolStripMenuItem
+            // 
+            getLatestVersionToolStripMenuItem.Name = "getLatestVersionToolStripMenuItem";
+            getLatestVersionToolStripMenuItem.Size = new Size(180, 22);
+            getLatestVersionToolStripMenuItem.Text = "Get Latest Version";
+            getLatestVersionToolStripMenuItem.Click += getLatestVersionToolStripMenuItem_Click;
             // 
             // statusStrip
             // 
@@ -892,20 +930,6 @@ namespace SwRebellionEditor
             Patch_Button.Text = "Patch";
             Patch_Button.Click += Patch_Button_Click;
             // 
-            // toolsToolStripMenuItem
-            // 
-            toolsToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { picturesConverterToolStripMenuItem });
-            toolsToolStripMenuItem.Name = "toolsToolStripMenuItem";
-            toolsToolStripMenuItem.Size = new Size(46, 20);
-            toolsToolStripMenuItem.Text = "Tools";
-            // 
-            // picturesConverterToolStripMenuItem
-            // 
-            picturesConverterToolStripMenuItem.Name = "picturesConverterToolStripMenuItem";
-            picturesConverterToolStripMenuItem.Size = new Size(180, 22);
-            picturesConverterToolStripMenuItem.Text = "Pictures Converter";
-            picturesConverterToolStripMenuItem.Click += picturesConverterToolStripMenuItem_Click;
-            // 
             // MainForm
             // 
             AutoScaleMode = AutoScaleMode.None;
@@ -968,6 +992,9 @@ namespace SwRebellionEditor
         private ToolStripMenuItem systemsRandomUnitsSideParams23ToolStripMenuItem;
         private ToolStripMenuItem toolsToolStripMenuItem;
         private ToolStripMenuItem picturesConverterToolStripMenuItem;
+        private ToolStripMenuItem joinTheDiscordToolStripMenuItem;
+        private ToolStripMenuItem githubPageToolStripMenuItem;
+        private ToolStripMenuItem getLatestVersionToolStripMenuItem;
     }
 }
 #endregion

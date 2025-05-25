@@ -8,12 +8,15 @@
 	  <ApplicationHighDpiMode>SystemAware</ApplicationHighDpiMode>
 	  <ForceDesignerDpiUnaware>true</ForceDesignerDpiUnaware>
 	  <AssemblyVersion>3.0.*</AssemblyVersion>
-    <Description>This program is Freeware and may be distributed and used by anyone with a legal copy of Star Wars Rebellion.  It is built from past works of the community such as SWRDE, RebEd, etc.  Bitmaps and Sounds, Copyright ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â© 1998,LucasArts Entertainment Company LLC and are used without permission. This software is provided 'as is' and is NOT warrented in any way, no support is provided, and its creator is not liable for ANY data loss that may occur. Use it at your own risks. Special Thanks to: Ryushinaka, Hexdragon, Finsterbach, Geir389, TheArchitect2018, Stratus.</Description>
+    <Description>This program is Freeware and may be distributed and used by anyone with a legal copy of Star Wars Rebellion.  It is built from past works of the community such as SWRDE, RebEd, etc.  Bitmaps and Sounds, Copyright © 1998, Disney and are used without permission. This software is provided 'as is' and is NOT warrented in any way, no support is provided, and its creator is not liable for ANY data loss that may occur. Use it at your own risks. Special Thanks to: Ryushinaka, Hexdragon, Finsterbach, Geir389, TheArchitect2018 and MercureCobra.</Description>
     <Company>Metasharp</Company>
-    <Copyright>https://github.com/MetasharpNet/StarWarsRebellionEditor.NET</Copyright>
+    <Copyright>Metasharp</Copyright>
     <Product>Star Wars Rebellion Editor .NET</Product>
     <ApplicationIcon>Resources\app_icon.ico</ApplicationIcon>
     <SupportedOSPlatformVersion>7.0</SupportedOSPlatformVersion>
+    <PackageProjectUrl>https://github.com/MetasharpNet/StarWarsRebellionEditor.NET</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/MetasharpNet/StarWarsRebellionEditor.NET</RepositoryUrl>
+    <RepositoryType>github</RepositoryType>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
     <Deterministic>False</Deterministic>

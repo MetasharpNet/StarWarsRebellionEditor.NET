@@ -402,6 +402,11 @@ public partial class MainForm : Form
     {
         Show<ExportForm>();
     }
+    // Tools - Pictures Converter
+    private void picturesConverterToolStripMenuItem_Click(object sender, EventArgs e)
+    {
+        Show<ConverterForm>();
+    }
     // Windows - Cascade
     private void Cascade_ToolStripMenuItem_Click(object sender, EventArgs e)
     {
@@ -477,11 +482,18 @@ public partial class MainForm : Form
     {
         Show<AboutForm>();
     }
+    private void joinTheDiscordToolStripMenuItem_Click(object sender, EventArgs e)
+    {
+        System.Diagnostics.Process.Start("https://discord.gg/avwsecxtBb");
+    }
+    private void githubPageToolStripMenuItem_Click(object sender, EventArgs e)
+    {
+        System.Diagnostics.Process.Start("https://github.com/MetasharpNet/StarWarsRebellionEditor.NET/");
+    }
+    private void getLatestVersionToolStripMenuItem_Click(object sender, EventArgs e)
+    {
+        System.Diagnostics.Process.Start("https://github.com/MetasharpNet/StarWarsRebellionEditor.NET/releases/latest");
+    }
 
     #endregion
-
-    private void picturesConverterToolStripMenuItem_Click(object sender, EventArgs e)
-    {
-        Show<ConverterForm>();
-    }
 }
