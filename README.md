@@ -319,4 +319,4 @@ GitHub Downloads stats : https://hanadigital.github.io/grev/?user=MetasharpNet&r
 
 --
 
-**Meta**
+**Metasharp**
