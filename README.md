@@ -96,6 +96,15 @@ Welcome to the open-source editor for Star Wars Rebellion made in .NET. You will
       - OK
 - Make sure you use your shortcut to run the game has the -w option
 
+#### Steam settings
+
+- Steam dashboard
+- game
+- properties
+- General
+- Launch Options
+  - "-popupwindow"
+
 #### ALT-GR + F11
 
 - Try pressing Alr Gr + F11 to go in/out of full screen mode
