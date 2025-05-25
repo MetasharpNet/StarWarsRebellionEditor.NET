@@ -1,9 +1,8 @@
-Welcome to Star Wars Rebellion Editor .NET
+Welcome to the open-source editor for Star Wars Rebellion made in .NET. You will find here the 25th anniversary patch and solutions to most problems encounterred with the game.
 
 # Table of Contents
 
-- [News](#news)
-- [Contact](#news)
+- [Contact](#contact)
 - [Star Wars Rebellion](#star-wars-rebellion-game)
   - [Install](#install)
   - [Language](#language)
@@ -26,10 +25,6 @@ Welcome to Star Wars Rebellion Editor .NET
   - [Extras](#extras)
   - [Statistics](#statistics)
 - [Links](#links)
-
-# News
-
-- We now have our own Discord, please join.
 
 # Contact
 
