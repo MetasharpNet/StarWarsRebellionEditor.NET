@@ -72,7 +72,7 @@ Welcome to the open-source editor for Star Wars Rebellion made in .NET. You will
 
 - Not needed if you use the 25th anniversary patch (since it's included in it already)
 - Extract the zip into your game directory. This will overwrite 2 files and add 12 new files.
-  - Update 1.02 zip : https://github.com/MetasharpNet/StarWarsRebellionEditor.NET/releases/download/update-1.02/update-1.02.zip
+  - Update 1.02 zip : https://github.com/MetasharpNet/StarWarsRebellionEditor.NET/releases/download/update-1.02-.dgvoodoo2-directx-2.86.2/update-1.02-.dgvoodoo2-directx-2.86.2.zip
 - This should fix upside down sprites or sprites with weird colors
 
 ## Fast game start
