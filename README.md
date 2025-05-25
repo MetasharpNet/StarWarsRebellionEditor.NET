@@ -12,7 +12,7 @@ Welcome to the open-source editor for Star Wars Rebellion made in .NET. You will
     - [Fullscreen](#fullscreen)
     - [Color Fringing](#color-fringing)
     - [Other](#other)
-- [Editor](#editor)
+- [Star Wars Rebellion Editor .NET](#star-wars-rebellion-editor-.net)
   - [Setup](#setup)
   - [Features](#features)
   - [To Do](#to-do)
@@ -140,7 +140,9 @@ If you have another GPU brand than Nvidia or AMD, do the same as above and get s
 
 - If you get: "The pixel format was invalid as specified." error when entering tactical battle, ... it shouldn't bother the game working, but we have no known solution as of now. Try googling and share if you find a solution. This problem is not related to 25th anniversary patch.
 
-# Editor
+---
+
+# Star Wars Rebellion Editor .NET
 
 - C# 13.0 project built with .NET 9 in Visual Studio 2022 : https://visualstudio.microsoft.com/vs/community/
 
