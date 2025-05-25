@@ -110,10 +110,9 @@
   * Steam : I don't know
 * Install the game
 * If you want to play in french
-  * download from : 
-  * Extract patch files into your Star Wars Rebellion folder. This will overwrite 28 files and add 1 file. If you want to go back to english, do the same with the english-patch and overwrite these same file with original english ones.
-  * FR patch: https://github.com/MetasharpNet/StarWarsRebellionEditor.NET/releases/download/french-patch-2024-04-12/french-patch.zip
-  * EN patch: https://github.com/MetasharpNet/StarWarsRebellionEditor.NET/releases/download/english-patch-2024-04-12/english-patch.zip
+  * Extract language patch files into your Star Wars Rebellion folder. This will overwrite 28 files and add 1 file. If you want to go back to english, do the same with the english-patch and overwrite these same file with original english ones.
+    * FR patch: https://github.com/MetasharpNet/StarWarsRebellionEditor.NET/releases/download/french-patch-2024-04-12/french-patch.zip
+    * EN patch: https://github.com/MetasharpNet/StarWarsRebellionEditor.NET/releases/download/english-patch-2024-04-12/english-patch.zip
 * Copy "game update" folder content into your game's folder (you can skip this step if you patch with the 25th anniversary patch, since it's going to be done automatically). This will overwrite 2 files and add 12 new files.
 * Optional: In your Star Wars Rebellion folder, right-click REBEXE.EXE
   * Properties
