@@ -195,7 +195,11 @@ If you have another GPU brand than Nvidia or AMD, do the same as above and get s
 * If you get: "The pixel format was invalid as specified." error when entering tactical battle, ... it shouldn't bother the game working, but I have no known solution as of now. Try googling and share if you find a solution. This problem happens on base game install as well and is not related to 25th anniversary patch.
 
 ### Current Roadmap:
-* new high definition 3d models for all capital ships
+* fix new high definition 3d models for all capital ships to avoid tactical crash (some tests needed)
+* new capital ships sprites
+* new units sprites
+* new missions sprites
+* new events sprites
 
 ### Final Roadmap (low chance i'll invest time on it):
 * Identify unknown fields usage
