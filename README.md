@@ -3,7 +3,7 @@ Welcome to the open-source editor for Star Wars Rebellion made in .NET. You will
 # Table of Contents
 
 - [Contact](#contact)
-- [Star Wars Rebellion](#star-wars-rebellion-game)
+- [Star Wars Rebellion](#star-wars-rebellion)
   - [Install](#install)
   - [Language](#language)
   - [Update 1.02](#update-1.02)
@@ -25,6 +25,8 @@ Welcome to the open-source editor for Star Wars Rebellion made in .NET. You will
   - [Extras](#extras)
   - [Statistics](#statistics)
 - [Links](#links)
+
+---
 
 # Contact
 
