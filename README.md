@@ -43,8 +43,8 @@ Welcome to the open-source editor for Star Wars Rebellion made in .NET. You will
   - GoG : https://www.gog.com/en/game/star_wars_rebellion
   - Steam : https://store.steampowered.com/app/441550/STAR_WARS_Rebellion/
 - Game Guides:
-  - GameFaqs community guides : gamefaqs.gamespot.com/pc/198776-star-wars-rebellion/faqs
-  - Official Prima guide available here : archive.org/details/star-wars-rebellion-guide/mode/2up
+  - GameFaqs community guides : https://gamefaqs.gamespot.com/pc/198776-star-wars-rebellion/faqs
+  - Official Prima guide available here : https://archive.org/details/star-wars-rebellion-guide/mode/2up
 
 ## Install
 
