@@ -1,4 +1,6 @@
-﻿namespace SwRebellionEditor;
+﻿using System.Diagnostics;
+
+namespace SwRebellionEditor;
 
 public partial class MainForm : Form
 {
@@ -484,15 +486,15 @@ public partial class MainForm : Form
     }
     private void joinTheDiscordToolStripMenuItem_Click(object sender, EventArgs e)
     {
-        System.Diagnostics.Process.Start("https://discord.gg/avwsecxtBb");
+        Process.Start(new ProcessStartInfo("https://discord.gg/avwsecxtBb") { UseShellExecute = true });
     }
     private void githubPageToolStripMenuItem_Click(object sender, EventArgs e)
     {
-        System.Diagnostics.Process.Start("https://github.com/MetasharpNet/StarWarsRebellionEditor.NET/");
+        Process.Start(new ProcessStartInfo("https://github.com/MetasharpNet/StarWarsRebellionEditor.NET/") { UseShellExecute = true });
     }
     private void getLatestVersionToolStripMenuItem_Click(object sender, EventArgs e)
     {
-        System.Diagnostics.Process.Start("https://github.com/MetasharpNet/StarWarsRebellionEditor.NET/releases/latest");
+        Process.Start(new ProcessStartInfo("https://github.com/MetasharpNet/StarWarsRebellionEditor.NET/releases/latest") { UseShellExecute = true });
     }
 
     #endregion
