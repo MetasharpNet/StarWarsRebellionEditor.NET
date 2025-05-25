@@ -1,13 +1,14 @@
 ## Star Wars Rebellion Editor .NET
 * 25th anniversary patch in video : https://www.youtube.com/watch?v=2QI-di2l4S8 (not made by us, and remember, patch is not final/completed)
 * Need some help, talk with us on :
-  * Discord : https://swrebellion.link/discord
+  * Discord : https://discord.gg/avwsecxtBb
     * Contact Metasharp user 
   * Steam : https://steamcommunity.com/app/441550/discussions/0/5913829825701729169/
   * GoG : https://www.gog.com/forum/star_wars_rebellion/star_wars_rebellion_in_2023_25th_anniv_patch_fix_fr_patch_guides
 * C# 13.0 project built with .NET 9 in Visual Studio 2022 : https://visualstudio.microsoft.com/vs/community/
-* To find where to buy the game or get free fan mods, check : https://swrebellion.net/
-  * I advise to go for GoG version of the game (Steam version should work as well).
+* To buy the game
+  * GoG : https://www.gog.com/en/game/star_wars_rebellion
+  * Steam : https://store.steampowered.com/app/441550/STAR_WARS_Rebellion/
 
 ### Current Editor Features :
 * Galaxy Map editor : can drag&drop sectors and systems
@@ -108,9 +109,11 @@
   * GOG direct offline installer : https://www.gog.com/downloads/star_wars_rebellion/en1installer0  (link works if logged in and game already bought)
   * Steam : I don't know
 * Install the game
-* If you want to play in french, download from swrebellion.net the french patch and extract it into your Star Wars Rebellion folder. This will overwrite 28 files and add 1 file. If you want to go back to english, do the same with the english-patch from swrebellion.net and overwrite these same file with original english ones.
-  * FR patch: https://swrebellion.net/files/file/258-star-wars-rebellion-patch-francais-officiel/?do=getNewComment
-  * EN patch: https://swrebellion.net/files/file/259-star-wars-rebellion-english-patch-official/?do=getNewComment
+* If you want to play in french
+  * download from : 
+  * Extract patch files into your Star Wars Rebellion folder. This will overwrite 28 files and add 1 file. If you want to go back to english, do the same with the english-patch and overwrite these same file with original english ones.
+  * FR patch: https://github.com/MetasharpNet/StarWarsRebellionEditor.NET/releases/download/french-patch-2024-04-12/french-patch.zip
+  * EN patch: https://github.com/MetasharpNet/StarWarsRebellionEditor.NET/releases/download/english-patch-2024-04-12/english-patch.zip
 * Copy "game update" folder content into your game's folder (you can skip this step if you patch with the 25th anniversary patch, since it's going to be done automatically). This will overwrite 2 files and add 12 new files.
 * Optional: In your Star Wars Rebellion folder, right-click REBEXE.EXE
   * Properties
@@ -184,6 +187,9 @@ For AMD (Radeon, ...) GPU, you can try this link: [https://www.amd.com/en/suppor
 
 If you have another GPU brand than Nvidia or AMD, do the same as above and get some more info here:
 * https://www.pcgamingwiki.com/wiki/Glossary:Custom_resolution
+
+### Color fringing
+* If you get this issue (on the side of pixels, you can see a colored ghost of them in multiple places, red, black, ... The are invisible in screenshots and can only be captured with a photo), try to play in 60Hz. No other fix found yet.
 
 ### Other issues
 * If you get: "The pixel format was invalid as specified." error when entering tactical battle, ... it shouldn't bother the game working, but I have no known solution as of now. Try googling and share if you find a solution. This problem happens on base game install as well and is not related to 25th anniversary patch.
