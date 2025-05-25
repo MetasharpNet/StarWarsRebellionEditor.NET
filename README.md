@@ -6,7 +6,7 @@ Welcome to the open-source editor for Star Wars Rebellion made in .NET. You will
 - [Star Wars Rebellion](#star-wars-rebellion)
   - [Install](#install)
   - [Language](#language)
-  - [Update 1.02](#update-1.02)
+  - [Update 1.02](#update-102)
   - [Fast Game Start](#fast-game-start)
   - [Issues and Fixes](#issues-and-fixes)
     - [Fullscreen](#fullscreen)
