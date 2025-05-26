@@ -323,6 +323,7 @@ GitHub Downloads stats : https://hanadigital.github.io/grev/?user=MetasharpNet&r
 
 # Links
 
+- TheArchitect2018 researchs: https://github.com/TheArchitect2018/Deep-Dive-into-SW-Rebellion-PC-Game-Internals/wiki
 - Youtube content about Star Wars Rebellion : https://www.youtube.com/channel/UC5i5AnRuz-czXmxYoAEkW_g
 - Gamefaqs : https://gamefaqs.gamespot.com/pc/198776-star-wars-rebellion/faqs
 - Pen and Paper Videos : https://www.youtube.com/watch?v=dPj-E28VwFQ&list=PLdyTWLFZyc8MQQcXmg4J2G49PJ1Nkm769
