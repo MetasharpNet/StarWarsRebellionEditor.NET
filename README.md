@@ -1,3 +1,4 @@
+
 Welcome to the open-source editor for Star Wars Rebellion made in .NET. You will find here the 25th anniversary patch and solutions to most problems encounterred with the game.
 
 # Table of Contents
@@ -84,6 +85,8 @@ Welcome to the open-source editor for Star Wars Rebellion made in .NET. You will
 ## Issues and Fixes
 
 ### Fullscreen
+
+First make sure you have installed either [Update 1.02](#update-102) or [25th Anniversary Patch](#patching)!
 
 #### Shortcut with -w
 
