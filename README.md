@@ -86,7 +86,7 @@ Welcome to the open-source editor for Star Wars Rebellion made in .NET. You will
 
 ### Fullscreen
 
-First make sure you have installed either [Update 1.02](#update-102) or [25th Anniversary Patch](#patching)!
+First make sure you have installed either [Update 1.02](#update-102) or [25th Anniversary Patch](#patching) !
 
 #### Shortcut with -w
 
