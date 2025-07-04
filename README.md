@@ -51,6 +51,9 @@ Welcome to the open-source editor for Star Wars Rebellion made in .NET. You will
 
 - Avoid all extra software (GOG Galaxy, etc.) by getting a clean installer if available.
   - GOG direct offline installer : https://www.gog.com/downloads/star_wars_rebellion/en1installer0 (link works if logged in and game already bought)
+    - Previous installer is required for 1.02 or 25th anniversary patch : setup_star_wars_rebellion_1.0_(17121).exe
+      - We can provide old installer on discord to people who show they have bought the game in screen sharing
+    - Latest installer introduced a fullscreen fix not compatible : setup_star_wars_rebellion_1.0_v4_gog_(82789).exe
   - Steam : I don't know
 - Install the game
 - Optional: In your Star Wars Rebellion folder, right-click REBEXE.EXE
@@ -88,16 +91,18 @@ Welcome to the open-source editor for Star Wars Rebellion made in .NET. You will
 
 First make sure you have installed either [Update 1.02](#update-102) or [25th Anniversary Patch](#patching) !
 
-#### Shortcut with -w
+#### Shortcut with -w -windowed -fullscreen
 
 - Create a shortcut on your desktop to REBEXE.EXE
 - Right-click the shortcut file you've just created
   - Properties
     - Shortcut
-      - In Target, add a space and -w at the end. It should look like this: "C:\?????????\REBEXE.EXE" -w
+      - In Target, add a space and -w at the end. It should look like this: "C:\?????????\REBEXE.EXE" -w -windowed -fullscreen
       - Apply
       - OK
-- Make sure you use your shortcut to run the game has the -w option
+- Make sure you use your shortcut to run the game has the -w -windowed -fullscreen options
+- Tick the option : Run in 640x480
+- Selection the Compatibility Mode : Windows 8 (optional)
 
 #### Steam settings
 
@@ -163,7 +168,7 @@ C# 13.0 project built with .NET 9 in Visual Studio 2022 : https://visualstudio.m
 ## Setup
 
 - Install the latest .NET Desktop runtime : https://dotnet.microsoft.com/en-us/download/dotnet
-  - Direct link to latest version : https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/runtime-desktop-9.0.5-windows-x64-installer
+  - Direct link to latest version : https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/runtime-desktop-9.0.6-windows-x64-installer
 - Reboot
 - Install a fresh GoG or Steam Star Wars Rebellion game
 - Download the latest editor release : https://github.com/MetasharpNet/StarWarsRebellionEditor.NET/releases
