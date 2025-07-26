@@ -168,7 +168,7 @@ C# 13.0 project built with .NET 9 in Visual Studio 2022 : https://visualstudio.m
 ## Setup
 
 - Install the latest .NET Desktop runtime : https://dotnet.microsoft.com/en-us/download/dotnet
-  - Direct link to latest version : https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/runtime-desktop-9.0.6-windows-x64-installer
+  - Direct link to latest version : https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/runtime-desktop-9.0.7-windows-x64-installer
 - Reboot
 - Install a fresh GoG or Steam Star Wars Rebellion game
 - Download the latest editor release : https://github.com/MetasharpNet/StarWarsRebellionEditor.NET/releases
