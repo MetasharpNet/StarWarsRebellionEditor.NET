@@ -149,21 +149,32 @@ public partial class PatchForm : PatchDesignForm
         if (!testOnly)
         {
             logForm.AppendMessage("[INFO] Game Update");
-            foreach (var filePath in Directory.GetFiles("game-update"))
+            if (File.Exists(Path.Combine(Settings.Current.GameFolder, "DDrawCompat-REBEXE.ini")))
             {
-                //if (Path.GetExtension(filePath).ToLowerInvariant() == ".txt")
-                //    continue;
-                var filename = Path.GetFileName(filePath);
-                if (filename == "_patch_exe.txt")
-                    continue; // skip that file
-                try
+                File.Copy(Path.Combine("game-update", "d3drm.dll"), Path.Combine(Settings.Current.GameFolder, "d3drm.dll"), true);
+                File.Copy(Path.Combine("game-update", "REBEXE-FULLSCREEN.cmd"), Path.Combine(Settings.Current.GameFolder, "REBEXE-FULLSCREEN.cmd"), true);
+                var filePath = Path.Combine(Settings.Current.GameFolder, "REBEXE-FULLSCREEN.cmd");
+                var content = File.ReadAllText(filePath).Replace("-w", "-fullscreen");
+                File.WriteAllText(filePath, content);
+            }
+            else
+            {
+                foreach (var filePath in Directory.GetFiles("game-update"))
                 {
-                    logForm.AppendMessage("Source: " + filePath + " -> Destination: " + Path.Combine(Settings.Current.GameFolder, filename));
-                    File.Copy(filePath, Path.Combine(Settings.Current.GameFolder, filename), true);
-                }
-                catch (Exception ex)
-                {
-                    logForm.AppendMessage("[ERROR] " + ex.Message);
+                    //if (Path.GetExtension(filePath).ToLowerInvariant() == ".txt")
+                    //    continue;
+                    var filename = Path.GetFileName(filePath);
+                    if (filename == "_patch_exe.txt")
+                        continue; // skip that file
+                    try
+                    {
+                        logForm.AppendMessage("Source: " + filePath + " -> Destination: " + Path.Combine(Settings.Current.GameFolder, filename));
+                        File.Copy(filePath, Path.Combine(Settings.Current.GameFolder, filename), true);
+                    }
+                    catch (Exception ex)
+                    {
+                        logForm.AppendMessage("[ERROR] " + ex.Message);
+                    }
                 }
             }
             logForm.AppendMessage("[INFO] Game Update -> Done");
@@ -171,19 +182,30 @@ public partial class PatchForm : PatchDesignForm
         else if (Directory.Exists("test\\game-update"))
         {
             logForm.AppendMessage("[INFO] Game Update");
-            foreach (var filePath in Directory.GetFiles("test\\game-update"))
+            if (File.Exists(Path.Combine(Settings.Current.GameFolder, "DDrawCompat-REBEXE.ini")))
             {
-                //if (Path.GetExtension(filePath).ToLowerInvariant() == ".txt")
-                //    continue;
-                var filename = Path.GetFileName(filePath);
-                try
+                File.Copy(Path.Combine("test\\game-update", "d3drm.dll"), Path.Combine(Settings.Current.GameFolder, "d3drm.dll"), true);
+                File.Copy(Path.Combine("test\\game-update", "REBEXE-FULLSCREEN.cmd"), Path.Combine(Settings.Current.GameFolder, "REBEXE-FULLSCREEN.cmd"), true);
+                var filePath = Path.Combine("test\\game-update", "REBEXE-FULLSCREEN.cmd");
+                var content = File.ReadAllText(filePath).Replace("-w", "-fullscreen");
+                File.WriteAllText(filePath, content);
+            }
+            else
+            {
+                foreach (var filePath in Directory.GetFiles("test\\game-update"))
                 {
-                    logForm.AppendMessage("Source: " + filePath + " -> Destination: " + Path.Combine(Settings.Current.GameFolder, filename));
-                    File.Copy(filePath, Path.Combine(Settings.Current.GameFolder, filename), true);
-                }
-                catch (Exception ex)
-                {
-                    logForm.AppendMessage("[ERROR] " + ex.Message);
+                    //if (Path.GetExtension(filePath).ToLowerInvariant() == ".txt")
+                    //    continue;
+                    var filename = Path.GetFileName(filePath);
+                    try
+                    {
+                        logForm.AppendMessage("Source: " + filePath + " -> Destination: " + Path.Combine(Settings.Current.GameFolder, filename));
+                        File.Copy(filePath, Path.Combine(Settings.Current.GameFolder, filename), true);
+                    }
+                    catch (Exception ex)
+                    {
+                        logForm.AppendMessage("[ERROR] " + ex.Message);
+                    }
                 }
             }
             logForm.AppendMessage("[INFO] Game Update -> Done");
@@ -592,7 +614,10 @@ public partial class PatchForm : PatchDesignForm
                 using (var stream = new FileStream(Settings.Current.REBEXEFilePath, FileMode.Open, FileAccess.ReadWrite))
                 {
                     // to use 14001+ ids for galaxy map planet sprites
-                    stream.Position = int.Parse("5B1E4", NumberStyles.HexNumber);
+                    // before @ 5B1E4=373220 (1.02) : ... 8B442404 [4883F8190F87] 89000000 ...
+                    // before @ 5BD74=376180 (1.0v4): ... 8B442404 [4883F8190F87] 89000000 ... (spread 2960?)
+                    //stream.Position = int.Parse("5B1E4", NumberStyles.HexNumber);
+                    stream.Position = FindPosition(stream, "4883F8190F8789000000", "8B442404");
                     stream.WriteByte(0x05); // add eax, 14000
                     stream.WriteByte(0xB0);
                     stream.WriteByte(0x36);
@@ -602,16 +627,27 @@ public partial class PatchForm : PatchDesignForm
                     if (coruscantId > 0)
                     {
                         // to use coruscant sprite for empire objective to keep coruscant
-                        stream.Position = int.Parse("4A46F", NumberStyles.HexNumber);
+                        // before @ 4A46F=304239 (1.02) : ... 136A0A68 [FA27] 0000578B ...
+                        // before @ 4B00F=307215 (1.0v4): ... 136A0A68 [FA27] 0000578B ...
+                        //stream.Position = int.Parse("4A46F", NumberStyles.HexNumber);
+                        stream.Position = FindPosition(stream, "FA270000578B", "136A0A68");
                         stream.WriteByte((byte)(coruscantId & 0x00FF)); // 14036 36D4 => D4 then 36
                         stream.WriteByte((byte)((coruscantId & 0xFF00) >> 8));
+
                         // to use coruscant sprite for rebel alliance objective to take coruscant
-                        stream.Position = int.Parse("49BCF", NumberStyles.HexNumber);
+                        // before @ 49BCF=302031 (1.02) : ... 116A0A68 [FA27] 0000578B ...
+                        // before @ 4A76F=305007 (1.0v4): ... 116A0A68 [FA27] 0000578B ...
+                        //stream.Position = int.Parse("49BCF", NumberStyles.HexNumber);
+                        stream.Position = FindPosition(stream, "FA270000578B", "116A0A68");
                         stream.WriteByte((byte)(coruscantId & 0x00FF)); // 14036 36D4 => D4 then 36
                         stream.WriteByte((byte)((coruscantId & 0xFF00) >> 8));
                     }
+
                     // to use 14001+ ids for encyclopedia edata planets pictures
-                    stream.Position = int.Parse("5DED6", NumberStyles.HexNumber);
+                    // before @ 5DED6=384726 (1.02) : ... 240433C0 [4983F9190F87D40000] 00FF248D ...
+                    // before @ 5EA66=387686 (1.0v4): ... 240433C0 [4983F9190F87D40000] 00FF248D ...
+                    //stream.Position = int.Parse("5DED6", NumberStyles.HexNumber);
+                    stream.Position = FindPosition(stream, "4983F9190F87D4000000FF248D", "240433C0");
                     stream.WriteByte(0x89); // move eax, ecx
                     stream.WriteByte(0xC8);
                     stream.WriteByte(0x05); // add eax, 14000
@@ -621,18 +657,33 @@ public partial class PatchForm : PatchDesignForm
                     stream.WriteByte(0x00);
                     stream.WriteByte(0xC2); // retn 4
                     stream.WriteByte(0x04);
+
                     // to use 14001+ ids for tactical planets bin images
-                    stream.Position = int.Parse("1AA022", NumberStyles.HexNumber);
+                    // before @ 1AA022=1744930 (1.02) : ... 006681C2 [7C15] 518B4C24 ...
+                    // before @ 1AA92B=1747243 (1.0v4): ... 006681C2 [7C15] 518B4C24 ...
+                    //stream.Position = int.Parse("1AA022", NumberStyles.HexNumber);
+                    stream.Position = FindPosition(stream, "7C15518B4C24", "006681C2");
                     stream.WriteByte(0xB0); // 14000
                     stream.WriteByte(0x36);
+
                     // to use 15001+ ids for tactical planets bin palettes
-                    stream.Position = int.Parse("19456E", NumberStyles.HexNumber);
+                    // before @ 19456E=1656174 (1.02) : ... 00006605 [7C15] C3909090 ...
+                    // before @ 195EDE=1662686 (1.0v4): ... 00006605 [7C15] C3909090 ...
+                    //stream.Position = int.Parse("19456E", NumberStyles.HexNumber);
+                    stream.Position = FindPosition(stream, "7C15C3909090", "00006605");
                     stream.WriteByte(0x98); // 15000
                     stream.WriteByte(0x3A);
-                    stream.Position = int.Parse("1C0929", NumberStyles.HexNumber);
+                    // before @ 1C0929=1837353 (1.02) : ... FDFF83C0 [1E] 682F0100 ...
+                    // before @ 1C2279=1843833 (1.0v4): ... FDFF83C0 [1E] 682F0100 ...
+                    //stream.Position = int.Parse("1C0929", NumberStyles.HexNumber);
+                    stream.Position = FindPosition(stream, "1E682F0100", "FDFF83C0");
                     stream.WriteByte(0x00); // +0
-                                            // to use 14000 ids for tactical destroyed planet
-                    stream.Position = int.Parse("197A25", NumberStyles.HexNumber);
+
+                    // to use 14000 ids for tactical destroyed planet
+                    // before @ 197A25=1668669 (1.02) : ... 241C026A [1B] EB1D83EC ...
+                    // before @ 199395=1676181 (1.0v4): ... 241C026A [1B] EB1D83EC ...
+                    //stream.Position = int.Parse("197A25", NumberStyles.HexNumber);
+                    stream.Position = FindPosition(stream, "1BEB1D83EC", "241C026A");
                     stream.WriteByte(0x00); // +0
                 }
                 logForm.AppendMessage("[INFO] Patching rebexe.exe -> Done");
@@ -653,6 +704,50 @@ public partial class PatchForm : PatchDesignForm
 
         logForm.AppendMessage("[PATCH MODE] 25th Anniversary -> Done");
         logForm.AppendMessage("You can now close the window and play the game.");
+    }
+
+    // method to find an hexadecimal space free pattern position given as a string + a string preceeding it in a stream
+    private static long FindPosition(Stream stream, string hexadecimalPattern, string preceedingHexadecimalPattern = "")
+    {
+        var pattern = (preceedingHexadecimalPattern + hexadecimalPattern).Replace(" ", "").ToUpperInvariant();
+        var patternBytes = HexadecimalToBytes(pattern);
+        // stream .Position = 0; // reset stream position
+        if (stream.Length < patternBytes.Length)
+            return -1; // not enough data in stream
+        // stream to byte[]
+        if (stream.Position != 0)
+            stream.Position = 0; // reset stream position
+        var streamBytes = new byte[stream.Length];
+        stream.Read(streamBytes, 0, (int)stream.Length);
+        // find pattern in stream
+        for (var start = 0; start <= streamBytes.Length - patternBytes.Length; start++)
+        {
+            bool found = true;
+            for (var p = 0; p < patternBytes.Length; p++)
+            {
+                if (streamBytes[start + p] != patternBytes[p])
+                {
+                    found = false;
+                    break;
+                }
+            }
+            if (found)
+            {
+                return start + (preceedingHexadecimalPattern.Length / 2); // found at position s
+            }
+        }
+        return -1; // not found
+    }
+    private static byte[] HexadecimalToBytes(string hexadecimal)
+    {
+        if (hexadecimal.Length % 2 != 0)
+            throw new ArgumentException("Hexadecimal string must have an even length.", nameof(hexadecimal));
+        var bytes = new byte[hexadecimal.Length / 2];
+        for (int i = 0; i < hexadecimal.Length; i += 2)
+        {
+            bytes[i / 2] = Convert.ToByte(hexadecimal.Substring(i, 2), 16);
+        }
+        return bytes;
     }
 
     #endregion

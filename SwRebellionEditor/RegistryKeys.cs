@@ -15,6 +15,11 @@ public class RegistryKeys
                 _registrykey = Registry.LocalMachine.OpenSubKey("SOFTWARE\\LucasArts Entertainment Company LLC\\Star Wars Rebellion");
                 InstalledLocation = GetValue<string>("InstalledLocation");
                 if (String.IsNullOrWhiteSpace(InstalledLocation))
+                {
+                    _registrykey = Registry.LocalMachine.OpenSubKey("SOFTWARE\\WOW6432Node\\GOG.com\\Games\\1421404828");
+                    InstalledLocation = GetValue<string>("workingDir");
+                }
+                if (String.IsNullOrWhiteSpace(InstalledLocation))
                     askPath = true;
             }
             catch (Exception ex)
@@ -36,6 +41,8 @@ public class RegistryKeys
 
     private static TReturn GetValue<TReturn>(string name)
     {
+        if (_registrykey == null)
+            return default(TReturn);
         return (TReturn)_registrykey.GetValue(name);
     }
 }
