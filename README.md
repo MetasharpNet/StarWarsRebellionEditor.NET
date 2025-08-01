@@ -74,6 +74,7 @@ Welcome to the open-source editor for Star Wars Rebellion made in .NET. You will
 
 ## Update 1.02
 
+- Usefull for old GoG setup_star_wars_rebellion_1.0_(17121).exe installer or Steam versions. Useless for GoG 1.0 v4 version at the moment.
 - Not needed if you use the 25th anniversary patch (since it's included in it already)
 - Extract the zip into your game directory. This will overwrite 2 files and add 12 new files.
   - Update 1.02 zip : https://github.com/MetasharpNet/StarWarsRebellionEditor.NET/releases/download/update-1.02-.dgvoodoo2-directx-2.86.2/update-1.02-.dgvoodoo2-directx-2.86.2.zip
