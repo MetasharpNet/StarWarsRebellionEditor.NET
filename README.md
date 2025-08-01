@@ -91,13 +91,14 @@ Welcome to the open-source editor for Star Wars Rebellion made in .NET. You will
 
 First make sure you have installed either [Update 1.02](#update-102) or [25th Anniversary Patch](#patching) !
 
-#### Shortcut with -w
+#### Shortcut with -w (or -fullscreen for Gog 1.0 v4)
 
 - Create a shortcut on your desktop to REBEXE.EXE
 - Right-click the shortcut file you've just created
   - Properties
     - Shortcut
       - In Target, add a space and -w at the end. It should look like this: "C:\?????????\REBEXE.EXE" -w
+      - or -fullscreen at the end instead of -w if you use GoG 1.0 v4 version
       - Apply
       - OK
 - Make sure you use your shortcut to run the game has the -w option
