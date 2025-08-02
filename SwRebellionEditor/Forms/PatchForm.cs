@@ -152,6 +152,8 @@ public partial class PatchForm : PatchDesignForm
             if (File.Exists(Path.Combine(Settings.Current.GameFolder, "DDrawCompat-REBEXE.ini")))
             {
                 File.Copy(Path.Combine("game-update", "d3drm.dll"), Path.Combine(Settings.Current.GameFolder, "d3drm.dll"), true);
+                File.Copy(Path.Combine("game-update", "wined3d.dll"), Path.Combine(Settings.Current.GameFolder, "wined3d.dll"), true);
+                File.Copy(Path.Combine("game-update", "winethc.dll"), Path.Combine(Settings.Current.GameFolder, "winethc.dll"), true);
                 File.Copy(Path.Combine("game-update", "REBEXE-FULLSCREEN.cmd"), Path.Combine(Settings.Current.GameFolder, "REBEXE-FULLSCREEN.cmd"), true);
                 var filePath = Path.Combine(Settings.Current.GameFolder, "REBEXE-FULLSCREEN.cmd");
                 var content = File.ReadAllText(filePath).Replace("-w", "-fullscreen");
@@ -185,6 +187,8 @@ public partial class PatchForm : PatchDesignForm
             if (File.Exists(Path.Combine(Settings.Current.GameFolder, "DDrawCompat-REBEXE.ini")))
             {
                 File.Copy(Path.Combine("test\\game-update", "d3drm.dll"), Path.Combine(Settings.Current.GameFolder, "d3drm.dll"), true);
+                File.Copy(Path.Combine("test\\game-update", "wined3d.dll"), Path.Combine(Settings.Current.GameFolder, "wined3d.dll"), true);
+                File.Copy(Path.Combine("test\\game-update", "winethc.dll"), Path.Combine(Settings.Current.GameFolder, "winethc.dll"), true);
                 File.Copy(Path.Combine("test\\game-update", "REBEXE-FULLSCREEN.cmd"), Path.Combine(Settings.Current.GameFolder, "REBEXE-FULLSCREEN.cmd"), true);
                 var filePath = Path.Combine("test\\game-update", "REBEXE-FULLSCREEN.cmd");
                 var content = File.ReadAllText(filePath).Replace("-w", "-fullscreen");
@@ -615,76 +619,141 @@ public partial class PatchForm : PatchDesignForm
                 {
                     // to use 14001+ ids for galaxy map planet sprites
                     // before @ 5B1E4=373220 (1.02) : ... 8B442404 [4883F8190F87] 89000000 ...
-                    // before @ 5BD74=376180 (1.0v4): ... 8B442404 [4883F8190F87] 89000000 ... (spread 2960?)
+                    // before @ 5BD74=376180 (1.0v4): ... 8B442404 [4883F8190F87] 89000000 ...
                     //stream.Position = int.Parse("5B1E4", NumberStyles.HexNumber);
-                    stream.Position = FindPosition(stream, "4883F8190F8789000000", "8B442404");
-                    stream.WriteByte(0x05); // add eax, 14000
-                    stream.WriteByte(0xB0);
-                    stream.WriteByte(0x36);
-                    stream.WriteByte(0x00);
-                    stream.WriteByte(0x00);
-                    stream.WriteByte(0xC3); // retn
-                    if (coruscantId > 0)
+                    var pos = FindPosition(stream, "4883F8190F8789000000", "8B442404");
+                    if (pos > -1)
+                    {
+                        stream.Position = pos;
+                        stream.WriteByte(0x05); // add eax, 14000
+                        stream.WriteByte(0xB0);
+                        stream.WriteByte(0x36);
+                        stream.WriteByte(0x00);
+                        stream.WriteByte(0x00);
+                        stream.WriteByte(0xC3); // retn
+                    }
+                    else
+                    {
+                        logForm.AppendMessage("[ERROR] Unable to find position for 14001+ ids for galaxy map planet sprites.");
+                    }
+                    if (coruscantId > 0) // 1068 usually
                     {
                         // to use coruscant sprite for empire objective to keep coruscant
                         // before @ 4A46F=304239 (1.02) : ... 136A0A68 [FA27] 0000578B ...
                         // before @ 4B00F=307215 (1.0v4): ... 136A0A68 [FA27] 0000578B ...
                         //stream.Position = int.Parse("4A46F", NumberStyles.HexNumber);
-                        stream.Position = FindPosition(stream, "FA270000578B", "136A0A68");
-                        stream.WriteByte((byte)(coruscantId & 0x00FF)); // 14036 36D4 => D4 then 36
-                        stream.WriteByte((byte)((coruscantId & 0xFF00) >> 8));
+                        pos = FindPosition(stream, "FA270000578B", "136A0A68");
+                        if (pos > -1)
+                        {
+                            stream.Position = pos;
+                            stream.WriteByte((byte)(coruscantId & 0x00FF)); // 14036 36D4 => D4 then 36
+                            stream.WriteByte((byte)((coruscantId & 0xFF00) >> 8));
+                        }
+                        else
+                        {
+                            logForm.AppendMessage("[ERROR] Unable to find position for coruscant sprite for empire objective to keep coruscant.");
+                        }
 
                         // to use coruscant sprite for rebel alliance objective to take coruscant
                         // before @ 49BCF=302031 (1.02) : ... 116A0A68 [FA27] 0000578B ...
                         // before @ 4A76F=305007 (1.0v4): ... 116A0A68 [FA27] 0000578B ...
                         //stream.Position = int.Parse("49BCF", NumberStyles.HexNumber);
-                        stream.Position = FindPosition(stream, "FA270000578B", "116A0A68");
-                        stream.WriteByte((byte)(coruscantId & 0x00FF)); // 14036 36D4 => D4 then 36
-                        stream.WriteByte((byte)((coruscantId & 0xFF00) >> 8));
+                        pos = FindPosition(stream, "FA270000578B", "116A0A68");
+                        if (pos > -1)
+                        {
+                            stream.Position = pos;
+                            stream.WriteByte((byte)(coruscantId & 0x00FF)); // 14036 36D4 => D4 then 36
+                            stream.WriteByte((byte)((coruscantId & 0xFF00) >> 8));
+                        }
+                        else
+                        {
+                            logForm.AppendMessage("[ERROR] Unable to find position for coruscant sprite for rebel alliance objective to take coruscant.");
+                        }
                     }
 
                     // to use 14001+ ids for encyclopedia edata planets pictures
                     // before @ 5DED6=384726 (1.02) : ... 240433C0 [4983F9190F87D40000] 00FF248D ...
                     // before @ 5EA66=387686 (1.0v4): ... 240433C0 [4983F9190F87D40000] 00FF248D ...
                     //stream.Position = int.Parse("5DED6", NumberStyles.HexNumber);
-                    stream.Position = FindPosition(stream, "4983F9190F87D4000000FF248D", "240433C0");
-                    stream.WriteByte(0x89); // move eax, ecx
-                    stream.WriteByte(0xC8);
-                    stream.WriteByte(0x05); // add eax, 14000
-                    stream.WriteByte(0xB0);
-                    stream.WriteByte(0x36);
-                    stream.WriteByte(0x00);
-                    stream.WriteByte(0x00);
-                    stream.WriteByte(0xC2); // retn 4
-                    stream.WriteByte(0x04);
+                    pos = FindPosition(stream, "4983F9190F87D4000000FF248D", "240433C0");
+                    if (pos > -1)
+                    {
+                        stream.Position = pos;
+                        stream.WriteByte(0x89); // move eax, ecx
+                        stream.WriteByte(0xC8);
+                        stream.WriteByte(0x05); // add eax, 14000
+                        stream.WriteByte(0xB0);
+                        stream.WriteByte(0x36);
+                        stream.WriteByte(0x00);
+                        stream.WriteByte(0x00);
+                        stream.WriteByte(0xC2); // retn 4
+                        stream.WriteByte(0x04);
+                    }
+                    else
+                    {
+                        logForm.AppendMessage("[ERROR] Unable to find position for 14001+ ids for encyclopedia edata planets pictures.");
+                    }
 
                     // to use 14001+ ids for tactical planets bin images
                     // before @ 1AA022=1744930 (1.02) : ... 006681C2 [7C15] 518B4C24 ...
-                    // before @ 1AA92B=1747243 (1.0v4): ... 006681C2 [7C15] 518B4C24 ...
+                    // before @ 1AB9B2=1751474 (1.0v4): ... 006681C2 [7C15] 518B4C24 ...
                     //stream.Position = int.Parse("1AA022", NumberStyles.HexNumber);
-                    stream.Position = FindPosition(stream, "7C15518B4C24", "006681C2");
-                    stream.WriteByte(0xB0); // 14000
-                    stream.WriteByte(0x36);
+                    pos = FindPosition(stream, "7C15518B4C24", "86CC0800006681C2");
+                    if (pos > -1)
+                    {
+                        stream.Position = pos;
+                        stream.WriteByte(0xB0); // 14000
+                        stream.WriteByte(0x36);
+                    }
+                    else
+                    {
+                        logForm.AppendMessage("[ERROR] Unable to find position for 14001+ ids for tactical planets bin images.");
+                    }
 
                     // to use 15001+ ids for tactical planets bin palettes
                     // before @ 19456E=1656174 (1.02) : ... 00006605 [7C15] C3909090 ...
                     // before @ 195EDE=1662686 (1.0v4): ... 00006605 [7C15] C3909090 ...
                     //stream.Position = int.Parse("19456E", NumberStyles.HexNumber);
-                    stream.Position = FindPosition(stream, "7C15C3909090", "00006605");
-                    stream.WriteByte(0x98); // 15000
-                    stream.WriteByte(0x3A);
+                    pos = FindPosition(stream, "7C15C3909090", "00006605");
+                    if (pos > -1)
+                    {
+                        stream.Position = pos;
+                        stream.WriteByte(0x98); // 15000
+                        stream.WriteByte(0x3A);
+                    }
+                    else
+                    {
+                        logForm.AppendMessage("[ERROR] Unable to find position for 15001+ ids for tactical planets bin palettes (part 1).");
+                    }
+
                     // before @ 1C0929=1837353 (1.02) : ... FDFF83C0 [1E] 682F0100 ...
                     // before @ 1C2279=1843833 (1.0v4): ... FDFF83C0 [1E] 682F0100 ...
                     //stream.Position = int.Parse("1C0929", NumberStyles.HexNumber);
-                    stream.Position = FindPosition(stream, "1E682F0100", "FDFF83C0");
-                    stream.WriteByte(0x00); // +0
+                    pos = FindPosition(stream, "1E682F0100", "FDFF83C0");
+                    if (pos > -1)
+                    {
+                        stream.Position = pos;
+                        stream.WriteByte(0x00); // +0
+                    }
+                    else
+                    {
+                        logForm.AppendMessage("[ERROR] Unable to find position for 15001+ ids for tactical planets bin palettes (part 2).");
+                    }
 
                     // to use 14000 ids for tactical destroyed planet
                     // before @ 197A25=1668669 (1.02) : ... 241C026A [1B] EB1D83EC ...
                     // before @ 199395=1676181 (1.0v4): ... 241C026A [1B] EB1D83EC ...
                     //stream.Position = int.Parse("197A25", NumberStyles.HexNumber);
-                    stream.Position = FindPosition(stream, "1BEB1D83EC", "241C026A");
-                    stream.WriteByte(0x00); // +0
+                    pos = FindPosition(stream, "1BEB1D83EC", "241C026A");
+                    if (pos > -1)
+                    {
+                        stream.Position = pos;
+                        stream.WriteByte(0x00); // +0
+                    }
+                    else
+                    {
+                        logForm.AppendMessage("[ERROR] Unable to find position for 14000 ids for tactical destroyed planet.");
+                    }
                 }
                 logForm.AppendMessage("[INFO] Patching rebexe.exe -> Done");
             }

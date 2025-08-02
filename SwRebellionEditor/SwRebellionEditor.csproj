@@ -233,6 +233,12 @@
     <None Update="buildings\STRATEGY.DLL\Bitmap\9033-1033-strategy-system-refinery-enroute.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="game-update\wined3d.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="game-update\winethc.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="game-update\_patch_exe.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
