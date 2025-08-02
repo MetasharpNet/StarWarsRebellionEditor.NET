@@ -157,9 +157,11 @@ If you have another GPU brand than Nvidia or AMD, do the same as above and get s
 
 - If you get this issue (on the side of pixels, you can see a colored ghost of them in multiple places, red, black, ... The are invisible in screenshots and can only be captured with a photo), try to play in 60Hz. No other fix found yet.
 
-### Other
+### Pixel format error
 
-- If you get: "The pixel format was invalid as specified." error when entering tactical battle, ... it shouldn't bother the game working, but we have no known solution as of now. Try googling and share if you find a solution. This problem is not related to 25th anniversary patch.
+- If you get: "The pixel format was invalid as specified." error when entering tactical battle, ... it shouldn't bother the game working.
+- In theory we recently fixed it, but if you still get this with latest editor, come tell us on our Discord.
+- This problem is not related to 25th anniversary patch, it seems it's due to some wine files in windows (wined3d.dll or winethc.dll for example)
 
 ---
 
