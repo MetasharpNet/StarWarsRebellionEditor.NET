@@ -5,21 +5,21 @@
 public class Textstra : ResourcesDll
 {
     public readonly string LocalizedAdmiral;
-    private const ushort LocalizedAdmiralId = 34817;
+    private const ushort   LocalizedAdmiralId   = 34817;
     public readonly string LocalizedCommander;
-    private const ushort LocalizedCommanderId = 34818;
+    private const ushort   LocalizedCommanderId = 34818;
     public readonly string LocalizedGeneral;
-    private const ushort LocalizedGeneralId = 34816;
+    private const ushort   LocalizedGeneralId   = 34816;
 
-    private const ushort AdmiralOffset = 27648;
+    private const ushort AdmiralOffset   = 27648;
     private const ushort CommanderOffset = 26624;
-    private const ushort GeneralOffset = 28672;
+    private const ushort GeneralOffset   = 28672;
 
     public Textstra(string fileName) : base(fileName)
     {
-        LocalizedAdmiral = RT_STRING[LocalizedAdmiralId];
+        LocalizedAdmiral   = RT_STRING[LocalizedAdmiralId];
         LocalizedCommander = RT_STRING[LocalizedCommanderId];
-        LocalizedGeneral = RT_STRING[LocalizedGeneralId];
+        LocalizedGeneral   = RT_STRING[LocalizedGeneralId];
     }
     public void SaveCharacterName(ushort id, string text)
     {
