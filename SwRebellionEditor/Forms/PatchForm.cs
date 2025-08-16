@@ -222,6 +222,8 @@ public partial class PatchForm : PatchDesignForm
         int coruscantId = -1;
         foreach (var setFolder in Directory.GetDirectories("."))
         {
+            if (!Directory.Exists(setFolder))
+                continue; // skip if not a folder
             var setFolderOnly = Path.GetFileName(setFolder);
             if (!testOnly)
             {

@@ -233,6 +233,633 @@
     <None Update="buildings\STRATEGY.DLL\Bitmap\9033-1033-strategy-system-refinery-enroute.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="capital ships\GOKRES.DLL\Bitmap\10048-1033-gokres-status-damage-ship-alliance-mon-calamari-cruiser_mc80-liberty-cruiser.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="capital ships\GOKRES.DLL\Bitmap\10049-1033-gokres-status-damage-ship-alliance-bulk-cruiser.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="capital ships\GOKRES.DLL\Bitmap\10050-1033-gokres-status-damage-ship-alliance-assault-frigate.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="capital ships\GOKRES.DLL\Bitmap\10051-1033-gokres-status-damage-ship-alliance-nebulon-b-frigate.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="capital ships\GOKRES.DLL\Bitmap\10052-1033-gokres-status-damage-ship-alliance-alliance-escort-carrier.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="capital ships\GOKRES.DLL\Bitmap\10053-1033-gokres-status-damage-ship-alliance-corellian-corvette.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="capital ships\GOKRES.DLL\Bitmap\10054-1033-gokres-status-damage-ship-alliance-medium-transport.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="capital ships\GOKRES.DLL\Bitmap\10055-1033-gokres-status-damage-ship-alliance-bulk-transport_bulk-freighter.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="capital ships\GOKRES.DLL\Bitmap\10056-1033-gokres-status-damage-ship-alliance-corellian-gunship.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="capital ships\GOKRES.DLL\Bitmap\10057-1033-gokres-status-damage-ship-alliance-alliance-dreadnaught_mc40a-light-cruiser.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="capital ships\GOKRES.DLL\Bitmap\10058-1033-gokres-status-damage-ship-alliance-cc-7700-frigate.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="capital ships\GOKRES.DLL\Bitmap\10059-1033-gokres-status-damage-ship-alliance-bulwark-battlecruiser_viscount-star-defender.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="capital ships\GOKRES.DLL\Bitmap\10060-1033-gokres-status-damage-ship-alliance-liberator-cruiser.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="capital ships\GOKRES.DLL\Bitmap\10061-1033-gokres-status-damage-ship-alliance-cc-9600-frigate_mc30c-frigate.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="capital ships\GOKRES.DLL\Bitmap\10062-1033-gokres-status-damage-ship-alliance-dauntless-cruiser_mc80a-homeone-cruiser.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="capital ships\GOKRES.DLL\Bitmap\10112-1033-gokres-status-damage-ship-empire-strike-cruiser_vindicator-heavy-cruiser.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="capital ships\GOKRES.DLL\Bitmap\10113-1033-gokres-status-damage-ship-empire-lancer-frigate.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="capital ships\GOKRES.DLL\Bitmap\10114-1033-gokres-status-damage-ship-empire-interdictor-cruiser_immobilizer-cruiser.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="capital ships\GOKRES.DLL\Bitmap\10115-1033-gokres-status-damage-ship-empire-carrack-light-cruiser_arquitens-light-cruiser.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="capital ships\GOKRES.DLL\Bitmap\10116-1033-gokres-status-damage-ship-empire-victory-destroyer_victory-1-star-destroyer.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="capital ships\GOKRES.DLL\Bitmap\10117-1033-gokres-status-damage-ship-empire-imperial-star-destroyer_imperial-1-star-destroyer.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="capital ships\GOKRES.DLL\Bitmap\10118-1033-gokres-status-damage-ship-empire-super-star-destroyer.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="capital ships\GOKRES.DLL\Bitmap\10119-1033-gokres-status-damage-ship-empire-assault-transport_gladiator-star-destroyer.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="capital ships\GOKRES.DLL\Bitmap\10120-1033-gokres-status-damage-ship-empire-death-star.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="capital ships\GOKRES.DLL\Bitmap\10121-1033-gokres-status-damage-ship-empire-galleon_acclamator-drop-ship.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="capital ships\GOKRES.DLL\Bitmap\10122-1033-gokres-status-damage-ship-empire-victory-2-star-destroyer.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="capital ships\GOKRES.DLL\Bitmap\10123-1033-gokres-status-damage-ship-empire-imperial-2-star-destroyer.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="capital ships\GOKRES.DLL\Bitmap\10124-1033-gokres-status-damage-ship-empire-star-galleon_star-galleon-frigate.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="capital ships\GOKRES.DLL\Bitmap\10125-1033-gokres-status-damage-ship-empire-imperial-escort-carrier.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="capital ships\GOKRES.DLL\Bitmap\10126-1033-gokres-status-damage-ship-empire-imperial-dreadnaught_imperial-dreadnought.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="units-stats\GOKRES.DLL\Bitmap\18240-1033-gokres-ship-alliance-mon-calamari-cruiser_mc80-liberty-cruiser.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="units-stats\GOKRES.DLL\Bitmap\18241-1033-gokres-ship-alliance-bulk-cruiser.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="units-stats\GOKRES.DLL\Bitmap\18242-1033-gokres-ship-alliance-assault-frigate.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="units-stats\GOKRES.DLL\Bitmap\18243-1033-gokres-ship-alliance-nebulon-b-frigate.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="units-stats\GOKRES.DLL\Bitmap\18244-1033-gokres-ship-alliance-alliance-escort-carrier.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="units-stats\GOKRES.DLL\Bitmap\18245-1033-gokres-ship-alliance-corellian-corvette.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="units-stats\GOKRES.DLL\Bitmap\18246-1033-gokres-ship-alliance-medium-transport.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="units-stats\GOKRES.DLL\Bitmap\18247-1033-gokres-ship-alliance-bulk-transport_bulk-freighter.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="units-stats\GOKRES.DLL\Bitmap\18248-1033-gokres-ship-alliance-corellian-gunship.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="units-stats\GOKRES.DLL\Bitmap\18249-1033-gokres-ship-alliance-alliance-dreadnaught_mc40a-light-cruiser.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="units-stats\GOKRES.DLL\Bitmap\18250-1033-gokres-ship-alliance-cc-7700-frigate.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="units-stats\GOKRES.DLL\Bitmap\18251-1033-gokres-ship-alliance-bulwark-battlecruiser_viscount-star-defender.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="units-stats\GOKRES.DLL\Bitmap\18252-1033-gokres-ship-alliance-liberator-cruiser.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="units-stats\GOKRES.DLL\Bitmap\18253-1033-gokres-ship-alliance-cc-9600-frigate_mc30c-frigate.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="units-stats\GOKRES.DLL\Bitmap\18254-1033-gokres-ship-alliance-dauntless-cruiser_mc80a-homeone-cruiser.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="units-stats\GOKRES.DLL\Bitmap\18304-1033-gokres-ship-empire-strike-cruiser_vindicator-heavy-cruiser.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="units-stats\GOKRES.DLL\Bitmap\18305-1033-gokres-ship-empire-lancer-frigate.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="units-stats\GOKRES.DLL\Bitmap\18306-1033-gokres-ship-empire-interdictor-cruiser_immobilizer-cruiser.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="units-stats\GOKRES.DLL\Bitmap\18307-1033-gokres-ship-empire-carrack-light-cruiser_arquitens-light-cruiser.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="units-stats\GOKRES.DLL\Bitmap\18308-1033-gokres-ship-empire-victory-destroyer_victory-1-star-destroyer.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="units-stats\GOKRES.DLL\Bitmap\18309-1033-gokres-ship-empire-imperial-star-destroyer_imperial-1-star-destroyer.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="units-stats\GOKRES.DLL\Bitmap\18310-1033-gokres-ship-empire-super-star-destroyer.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="units-stats\GOKRES.DLL\Bitmap\18311-1033-gokres-ship-empire-assault-transport_gladiator-star-destroyer.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="units-stats\GOKRES.DLL\Bitmap\18312-1033-gokres-ship-empire-death-star.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="units-stats\GOKRES.DLL\Bitmap\18313-1033-gokres-ship-empire-galleon_acclamator-drop-ship.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="units-stats\GOKRES.DLL\Bitmap\18314-1033-gokres-ship-empire-victory-2-star-destroyer.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="units-stats\GOKRES.DLL\Bitmap\18315-1033-gokres-ship-empire-imperial-2-star-destroyer.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="units-stats\GOKRES.DLL\Bitmap\18316-1033-gokres-ship-empire-star-galleon_star-galleon-frigate.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="units-stats\GOKRES.DLL\Bitmap\18317-1033-gokres-ship-empire-imperial-escort-carrier.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="units-stats\GOKRES.DLL\Bitmap\18318-1033-gokres-ship-empire-imperial-dreadnaught_imperial-dreadnought.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="capital ships\GOKRES.DLL\Bitmap\1856-1033-gokres-status-ship-alliance-mon-calamari-cruiser_mc80-liberty-cruiser.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="capital ships\GOKRES.DLL\Bitmap\1857-1033-gokres-status-ship-alliance-bulk-cruiser.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="capital ships\GOKRES.DLL\Bitmap\1858-1033-gokres-status-ship-alliance-assault-frigate.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="capital ships\GOKRES.DLL\Bitmap\1859-1033-gokres-status-ship-alliance-nebulon-b-frigate.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="capital ships\GOKRES.DLL\Bitmap\1860-1033-gokres-status-ship-alliance-alliance-escort-carrier.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="capital ships\GOKRES.DLL\Bitmap\1861-1033-gokres-status-ship-alliance-corellian-corvette.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="capital ships\GOKRES.DLL\Bitmap\1862-1033-gokres-status-ship-alliance-medium-transport.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="capital ships\GOKRES.DLL\Bitmap\1863-1033-gokres-status-ship-alliance-bulk-transport_bulk-freighter.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="capital ships\GOKRES.DLL\Bitmap\1864-1033-gokres-status-ship-alliance-corellian-gunship.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="capital ships\GOKRES.DLL\Bitmap\1865-1033-gokres-status-ship-alliance-alliance-dreadnaught_mc40a-light-cruiser.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="capital ships\GOKRES.DLL\Bitmap\1866-1033-gokres-status-ship-alliance-cc-7700-frigate.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="capital ships\GOKRES.DLL\Bitmap\1867-1033-gokres-status-ship-alliance-bulwark-battlecruiser_viscount-star-defender.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="capital ships\GOKRES.DLL\Bitmap\1868-1033-gokres-status-ship-alliance-liberator-cruiser.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="capital ships\GOKRES.DLL\Bitmap\1869-1033-gokres-status-ship-alliance-cc-9600-frigate_mc30c-frigate.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="capital ships\GOKRES.DLL\Bitmap\1870-1033-gokres-status-ship-alliance-dauntless-cruiser_mc80a-homeone-cruiser.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="capital ships\GOKRES.DLL\Bitmap\1920-1033-gokres-status-ship-empire-strike-cruiser_vindicator-heavy-cruiser.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="capital ships\GOKRES.DLL\Bitmap\1921-1033-gokres-status-ship-empire-lancer-frigate.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="capital ships\GOKRES.DLL\Bitmap\1922-1033-gokres-status-ship-empire-interdictor-cruiser_immobilizer-cruiser.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="capital ships\GOKRES.DLL\Bitmap\1923-1033-gokres-status-ship-empire-carrack-light-cruiser_arquitens-light-cruiser.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="capital ships\GOKRES.DLL\Bitmap\1924-1033-gokres-status-ship-empire-victory-destroyer_victory-1-star-destroyer.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="capital ships\GOKRES.DLL\Bitmap\1925-1033-gokres-status-ship-empire-imperial-star-destroyer_imperial-1-star-destroyer.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="capital ships\GOKRES.DLL\Bitmap\1926-1033-gokres-status-ship-empire-super-star-destroyer.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="capital ships\GOKRES.DLL\Bitmap\1927-1033-gokres-status-ship-empire-assault-transport_gladiator-star-destroyer.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="capital ships\GOKRES.DLL\Bitmap\1928-1033-gokres-status-ship-empire-death-star.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="capital ships\GOKRES.DLL\Bitmap\1929-1033-gokres-status-ship-empire-galleon_acclamator-drop-ship.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="capital ships\GOKRES.DLL\Bitmap\1930-1033-gokres-status-ship-empire-victory-2-star-destroyer.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="capital ships\GOKRES.DLL\Bitmap\1931-1033-gokres-status-ship-empire-imperial-2-star-destroyer.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="capital ships\GOKRES.DLL\Bitmap\1932-1033-gokres-status-ship-empire-star-galleon_star-galleon-frigate.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="capital ships\GOKRES.DLL\Bitmap\1933-1033-gokres-status-ship-empire-imperial-escort-carrier.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="capital ships\GOKRES.DLL\Bitmap\1934-1033-gokres-status-ship-empire-imperial-dreadnaught_imperial-dreadnought.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="capital ships\GOKRES.DLL\Bitmap\22336-1033-gokres-reactors-ship-alliance-mon-calamari-cruiser_mc80-liberty-cruiser.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="capital ships\GOKRES.DLL\Bitmap\22337-1033-gokres-reactors-ship-alliance-bulk-cruiser.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="capital ships\GOKRES.DLL\Bitmap\22338-1033-gokres-reactors-ship-alliance-assault-frigate.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="capital ships\GOKRES.DLL\Bitmap\22339-1033-gokres-reactors-ship-alliance-nebulon-b-frigate.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="capital ships\GOKRES.DLL\Bitmap\22340-1033-gokres-reactors-ship-alliance-alliance-escort-carrier.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="capital ships\GOKRES.DLL\Bitmap\22341-1033-gokres-reactors-ship-alliance-corellian-corvette.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="capital ships\GOKRES.DLL\Bitmap\22342-1033-gokres-reactors-ship-alliance-medium-transport.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="capital ships\GOKRES.DLL\Bitmap\22343-1033-gokres-reactors-ship-alliance-bulk-transport_bulk-freighter.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="capital ships\GOKRES.DLL\Bitmap\22344-1033-gokres-reactors-ship-alliance-corellian-gunship.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="capital ships\GOKRES.DLL\Bitmap\22345-1033-gokres-reactors-ship-alliance-alliance-dreadnaught_mc40a-light-cruiser.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="capital ships\GOKRES.DLL\Bitmap\22346-1033-gokres-reactors-ship-alliance-cc-7700-frigate.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="capital ships\GOKRES.DLL\Bitmap\22347-1033-gokres-reactors-ship-alliance-bulwark-battlecruiser_viscount-star-defender.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="capital ships\GOKRES.DLL\Bitmap\22348-1033-gokres-reactors-ship-alliance-liberator-cruiser.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="capital ships\GOKRES.DLL\Bitmap\22349-1033-gokres-reactors-ship-alliance-cc-9600-frigate_mc30c-frigate.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="capital ships\GOKRES.DLL\Bitmap\22350-1033-gokres-reactors-ship-alliance-dauntless-cruiser_mc80a-homeone-cruiser.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="capital ships\GOKRES.DLL\Bitmap\22400-1033-gokres-reactors-ship-empire-strike-cruiser_vindicator-heavy-cruiser.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="capital ships\GOKRES.DLL\Bitmap\22401-1033-gokres-reactors-ship-empire-lancer-frigate.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="capital ships\GOKRES.DLL\Bitmap\22402-1033-gokres-reactors-ship-empire-interdictor-cruiser_immobilizer-cruiser.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="capital ships\GOKRES.DLL\Bitmap\22403-1033-gokres-reactors-ship-empire-carrack-light-cruiser_arquitens-light-cruiser.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="capital ships\GOKRES.DLL\Bitmap\22404-1033-gokres-reactors-ship-empire-victory-destroyer_victory-1-star-destroyer.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="capital ships\GOKRES.DLL\Bitmap\22405-1033-gokres-reactors-ship-empire-imperial-star-destroyer_imperial-1-star-destroyer.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="capital ships\GOKRES.DLL\Bitmap\22406-1033-gokres-reactors-ship-empire-super-star-destroyer.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="capital ships\GOKRES.DLL\Bitmap\22407-1033-gokres-reactors-ship-empire-assault-transport_gladiator-star-destroyer.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="capital ships\GOKRES.DLL\Bitmap\22408-1033-gokres-reactors-ship-empire-death-star.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="capital ships\GOKRES.DLL\Bitmap\22409-1033-gokres-reactors-ship-empire-galleon_acclamator-drop-ship.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="capital ships\GOKRES.DLL\Bitmap\22410-1033-gokres-reactors-ship-empire-victory-2-star-destroyer.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="capital ships\GOKRES.DLL\Bitmap\22411-1033-gokres-reactors-ship-empire-imperial-2-star-destroyer.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="capital ships\GOKRES.DLL\Bitmap\22412-1033-gokres-reactors-ship-empire-star-galleon_star-galleon-frigate.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="capital ships\GOKRES.DLL\Bitmap\22413-1033-gokres-reactors-ship-empire-imperial-escort-carrier.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="capital ships\GOKRES.DLL\Bitmap\22414-1033-gokres-reactors-ship-empire-imperial-dreadnaught_imperial-dreadnought.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="capital ships\GOKRES.DLL\Bitmap\26432-1033-gokres-damage-ship-alliance-mon-calamari-cruiser_mc80-liberty-cruiser.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="capital ships\GOKRES.DLL\Bitmap\26433-1033-gokres-damage-ship-alliance-bulk-cruiser.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="capital ships\GOKRES.DLL\Bitmap\26434-1033-gokres-damage-ship-alliance-assault-frigate.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="capital ships\GOKRES.DLL\Bitmap\26435-1033-gokres-damage-ship-alliance-nebulon-b-frigate.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="capital ships\GOKRES.DLL\Bitmap\26436-1033-gokres-damage-ship-alliance-alliance-escort-carrier.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="capital ships\GOKRES.DLL\Bitmap\26437-1033-gokres-damage-ship-alliance-corellian-corvette.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="capital ships\GOKRES.DLL\Bitmap\26438-1033-gokres-damage-ship-alliance-medium-transport.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="capital ships\GOKRES.DLL\Bitmap\26439-1033-gokres-damage-ship-alliance-bulk-transport_bulk-freighter.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="capital ships\GOKRES.DLL\Bitmap\26440-1033-gokres-damage-ship-alliance-corellian-gunship.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="capital ships\GOKRES.DLL\Bitmap\26441-1033-gokres-damage-ship-alliance-alliance-dreadnaught_mc40a-light-cruiser.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="capital ships\GOKRES.DLL\Bitmap\26442-1033-gokres-damage-ship-alliance-cc-7700-frigate.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="capital ships\GOKRES.DLL\Bitmap\26443-1033-gokres-damage-ship-alliance-bulwark-battlecruiser_viscount-star-defender.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="capital ships\GOKRES.DLL\Bitmap\26444-1033-gokres-damage-ship-alliance-liberator-cruiser.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="capital ships\GOKRES.DLL\Bitmap\26445-1033-gokres-damage-ship-alliance-cc-9600-frigate_mc30c-frigate.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="capital ships\GOKRES.DLL\Bitmap\26446-1033-gokres-damage-ship-alliance-dauntless-cruiser_mc80a-homeone-cruiser.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="capital ships\GOKRES.DLL\Bitmap\26496-1033-gokres-damage-ship-empire-strike-cruiser_vindicator-heavy-cruiser.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="capital ships\GOKRES.DLL\Bitmap\26497-1033-gokres-damage-ship-empire-lancer-frigate.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="capital ships\GOKRES.DLL\Bitmap\26498-1033-gokres-damage-ship-empire-interdictor-cruiser_immobilizer-cruiser.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="capital ships\GOKRES.DLL\Bitmap\26499-1033-gokres-damage-ship-empire-carrack-light-cruiser_arquitens-light-cruiser.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="capital ships\GOKRES.DLL\Bitmap\26500-1033-gokres-damage-ship-empire-victory-destroyer_victory-1-star-destroyer.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="capital ships\GOKRES.DLL\Bitmap\26501-1033-gokres-damage-ship-empire-imperial-star-destroyer_imperial-1-star-destroyer.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="capital ships\GOKRES.DLL\Bitmap\26502-1033-gokres-damage-ship-empire-super-star-destroyer.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="capital ships\GOKRES.DLL\Bitmap\26503-1033-gokres-damage-ship-empire-assault-transport_gladiator-star-destroyer.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="capital ships\GOKRES.DLL\Bitmap\26504-1033-gokres-damage-ship-empire-death-star.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="capital ships\GOKRES.DLL\Bitmap\26505-1033-gokres-damage-ship-empire-galleon_acclamator-drop-ship.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="capital ships\GOKRES.DLL\Bitmap\26506-1033-gokres-damage-ship-empire-victory-2-star-destroyer.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="capital ships\GOKRES.DLL\Bitmap\26507-1033-gokres-damage-ship-empire-imperial-2-star-destroyer.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="capital ships\GOKRES.DLL\Bitmap\26508-1033-gokres-damage-ship-empire-star-galleon_star-galleon-frigate.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="capital ships\GOKRES.DLL\Bitmap\26509-1033-gokres-damage-ship-empire-imperial-escort-carrier.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="capital ships\GOKRES.DLL\Bitmap\26510-1033-gokres-damage-ship-empire-imperial-dreadnaught_imperial-dreadnought.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="capital ships\GOKRES.DLL\Bitmap\5952-1033-gokres-status-reactors-ship-alliance-mon-calamari-cruiser_mc80-liberty-cruiser.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="capital ships\GOKRES.DLL\Bitmap\5953-1033-gokres-status-reactors-ship-alliance-bulk-cruiser.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="capital ships\GOKRES.DLL\Bitmap\5954-1033-gokres-status-reactors-ship-alliance-assault-frigate.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="capital ships\GOKRES.DLL\Bitmap\5955-1033-gokres-status-reactors-ship-alliance-nebulon-b-frigate.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="capital ships\GOKRES.DLL\Bitmap\5956-1033-gokres-status-reactors-ship-alliance-alliance-escort-carrier.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="capital ships\GOKRES.DLL\Bitmap\5957-1033-gokres-status-reactors-ship-alliance-corellian-corvette.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="capital ships\GOKRES.DLL\Bitmap\5958-1033-gokres-status-reactors-ship-alliance-medium-transport.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="capital ships\GOKRES.DLL\Bitmap\5959-1033-gokres-status-reactors-ship-alliance-bulk-transport_bulk-freighter.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="capital ships\GOKRES.DLL\Bitmap\5960-1033-gokres-status-reactors-ship-alliance-corellian-gunship.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="capital ships\GOKRES.DLL\Bitmap\5961-1033-gokres-status-reactors-ship-alliance-alliance-dreadnaught_mc40a-light-cruiser.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="capital ships\GOKRES.DLL\Bitmap\5962-1033-gokres-status-reactors-ship-alliance-cc-7700-frigate.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="capital ships\GOKRES.DLL\Bitmap\5963-1033-gokres-status-reactors-ship-alliance-bulwark-battlecruiser_viscount-star-defender.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="capital ships\GOKRES.DLL\Bitmap\5964-1033-gokres-status-reactors-ship-alliance-liberator-cruiser.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="capital ships\GOKRES.DLL\Bitmap\5965-1033-gokres-status-reactors-ship-alliance-cc-9600-frigate_mc30c-frigate.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="capital ships\GOKRES.DLL\Bitmap\5966-1033-gokres-status-reactors-ship-alliance-dauntless-cruiser_mc80a-homeone-cruiser.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="capital ships\GOKRES.DLL\Bitmap\6016-1033-gokres-status-reactors-ship-empire-strike-cruiser_vindicator-heavy-cruiser.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="capital ships\GOKRES.DLL\Bitmap\6017-1033-gokres-status-reactors-ship-empire-lancer-frigate.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="capital ships\GOKRES.DLL\Bitmap\6018-1033-gokres-status-reactors-ship-empire-interdictor-cruiser_immobilizer-cruiser.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="capital ships\GOKRES.DLL\Bitmap\6019-1033-gokres-status-reactors-ship-empire-carrack-light-cruiser_arquitens-light-cruiser.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="capital ships\GOKRES.DLL\Bitmap\6020-1033-gokres-status-reactors-ship-empire-victory-destroyer_victory-1-star-destroyer.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="capital ships\GOKRES.DLL\Bitmap\6021-1033-gokres-status-reactors-ship-empire-imperial-star-destroyer_imperial-1-star-destroyer.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="capital ships\GOKRES.DLL\Bitmap\6022-1033-gokres-status-reactors-ship-empire-super-star-destroyer.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="capital ships\GOKRES.DLL\Bitmap\6023-1033-gokres-status-reactors-ship-empire-assault-transport_gladiator-star-destroyer.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="capital ships\GOKRES.DLL\Bitmap\6024-1033-gokres-status-reactors-ship-empire-death-star.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="capital ships\GOKRES.DLL\Bitmap\6025-1033-gokres-status-reactors-ship-empire-galleon_acclamator-drop-ship.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="capital ships\GOKRES.DLL\Bitmap\6026-1033-gokres-status-reactors-ship-empire-victory-2-star-destroyer.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="capital ships\GOKRES.DLL\Bitmap\6027-1033-gokres-status-reactors-ship-empire-imperial-2-star-destroyer.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="capital ships\GOKRES.DLL\Bitmap\6028-1033-gokres-status-reactors-ship-empire-star-galleon_star-galleon-frigate.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="capital ships\GOKRES.DLL\Bitmap\6029-1033-gokres-status-reactors-ship-empire-imperial-escort-carrier.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="capital ships\GOKRES.DLL\Bitmap\6030-1033-gokres-status-reactors-ship-empire-imperial-dreadnaught_imperial-dreadnought.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="capital ships\TACTICAL.DLL\Bitmap\2001-1033-tactical-ship-alliance-mon-calamari-cruiser_mc80-liberty-cruiser.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="capital ships\TACTICAL.DLL\Bitmap\2002-1033-tactical-ship-alliance-bulk-cruiser.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="capital ships\TACTICAL.DLL\Bitmap\2003-1033-tactical-ship-alliance-assault-frigate.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="capital ships\TACTICAL.DLL\Bitmap\2004-1033-tactical-ship-alliance-nebulon-b-frigate.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="capital ships\TACTICAL.DLL\Bitmap\2005-1033-tactical-ship-alliance-alliance-escort-carrier.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="capital ships\TACTICAL.DLL\Bitmap\2006-1033-tactical-ship-alliance-corellian-corvette.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="capital ships\TACTICAL.DLL\Bitmap\2007-1033-tactical-ship-alliance-medium-transport.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="capital ships\TACTICAL.DLL\Bitmap\2008-1033-tactical-ship-alliance-bulk-transport_bulk-freighter.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="capital ships\TACTICAL.DLL\Bitmap\2009-1033-tactical-ship-alliance-corellian-gunship.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="capital ships\TACTICAL.DLL\Bitmap\2010-1033-tactical-ship-alliance-alliance-dreadnaught_mc40a-light-cruiser.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="capital ships\TACTICAL.DLL\Bitmap\2011-1033-tactical-ship-alliance-cc-7700-frigate.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="capital ships\TACTICAL.DLL\Bitmap\2012-1033-tactical-ship-alliance-cc-9600-frigate_mc30c-frigate.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="capital ships\TACTICAL.DLL\Bitmap\2013-1033-tactical-ship-alliance-bulwark-battlecruiser_viscount-star-defender.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="capital ships\TACTICAL.DLL\Bitmap\2014-1033-tactical-ship-alliance-liberator-cruiser.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="capital ships\TACTICAL.DLL\Bitmap\2015-1033-tactical-ship-alliance-dauntless-cruiser_mc80a-homeone-cruiser.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="capital ships\TACTICAL.DLL\Bitmap\2016-1033-tactical-ship-empire-strike-cruiser_vindicator-heavy-cruiser.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="capital ships\TACTICAL.DLL\Bitmap\2017-1033-tactical-ship-empire-lancer-frigate.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="capital ships\TACTICAL.DLL\Bitmap\2018-1033-tactical-ship-empire-interdictor-cruiser_immobilizer-cruiser.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="capital ships\TACTICAL.DLL\Bitmap\2019-1033-tactical-ship-empire-carrack-light-cruiser_arquitens-light-cruiser.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="capital ships\TACTICAL.DLL\Bitmap\2020-1033-tactical-ship-empire-victory-destroyer_victory-1-star-destroyer.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="capital ships\TACTICAL.DLL\Bitmap\2021-1033-tactical-ship-empire-imperial-star-destroyer_imperial-1-star-destroyer.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="capital ships\TACTICAL.DLL\Bitmap\2022-1033-tactical-ship-empire-super-star-destroyer.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="capital ships\TACTICAL.DLL\Bitmap\2023-1033-tactical-ship-empire-assault-transport_gladiator-star-destroyer.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="capital ships\TACTICAL.DLL\Bitmap\2024-1033-tactical-ship-empire-galleon_acclamator-drop-ship.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="capital ships\TACTICAL.DLL\Bitmap\2025-1033-tactical-ship-empire-victory-2-star-destroyer.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="capital ships\TACTICAL.DLL\Bitmap\2026-1033-tactical-ship-empire-imperial-2-star-destroyer.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="capital ships\TACTICAL.DLL\Bitmap\2027-1033-tactical-ship-empire-star-galleon_star-galleon-frigate.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="capital ships\TACTICAL.DLL\Bitmap\2028-1033-tactical-ship-empire-imperial-escort-carrier.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="capital ships\TACTICAL.DLL\Bitmap\2029-1033-tactical-ship-empire-imperial-dreadnaught_imperial-dreadnought.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="game-update\wined3d.dll">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
@@ -809,76 +1436,40 @@
     <None Update="systems\TACTICAL.DLL\303\14094-1033-tactical-system-kuat.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="test\TACTICAL.DLL\301\2100-1033-tactical-ship-alliance-alliance-dreadnaught_mc40a-light-cruiser-close.x">
+    <None Update="capital ships\TACTICAL.DLL\303\ALLIANCE_MC40A_LIGHT_CRUISER_CLOSE.BMP">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="test\TACTICAL.DLL\301\2101-1033-tactical-ship-alliance-alliance-dreadnaught_mc40a-light-cruiser-medium.x">
+    <None Update="capital ships\TACTICAL.DLL\303\ALLIANCE_MC40A_LIGHT_CRUISER_FAR.BMP">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="test\TACTICAL.DLL\301\2102-1033-tactical-ship-alliance-alliance-dreadnaught_mc40a-light-cruiser-far.x">
+    <None Update="capital ships\TACTICAL.DLL\303\ALLIANCE_MC40A_LIGHT_CRUISER_MEDIUM.BMP">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="test\TACTICAL.DLL\301\2130-1033-tactical-ship-alliance-bulwark-battlecruiser_viscount-star-defender-close.x">
+    <None Update="capital ships\TACTICAL.DLL\303\ALLIANCE_MC80A_HOMEONE_CRUISER_CLOSE.BMP">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="test\TACTICAL.DLL\301\2131-1033-tactical-ship-alliance-bulwark-battlecruiser_viscount-star-defender-medium.x">
+    <None Update="capital ships\TACTICAL.DLL\303\ALLIANCE_MC80A_HOMEONE_CRUISER_FAR.BMP">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="test\TACTICAL.DLL\301\2132-1033-tactical-ship-alliance-bulwark-battlecruiser_viscount-star-defender-far.x">
+    <None Update="capital ships\TACTICAL.DLL\303\ALLIANCE_MC80A_HOMEONE_CRUISER_MEDIUM.BMP">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="test\TACTICAL.DLL\301\2150-1033-tactical-ship-alliance-dauntless-cruiser_mc80a-homeone-cruiser-close.x">
+    <None Update="capital ships\TACTICAL.DLL\303\ALLIANCE_VISCOUNT_STAR_DEFENDER_CLOSE.BMP">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="test\TACTICAL.DLL\301\2151-1033-tactical-ship-alliance-dauntless-cruiser_mc80a-homeone-cruiser-medium.x">
+    <None Update="capital ships\TACTICAL.DLL\303\ALLIANCE_VISCOUNT_STAR_DEFENDER_FAR.BMP">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="test\TACTICAL.DLL\301\2152-1033-tactical-ship-alliance-dauntless-cruiser_mc80a-homeone-cruiser-far.x">
+    <None Update="capital ships\TACTICAL.DLL\303\ALLIANCE_VISCOUNT_STAR_DEFENDER_MEDIUM.BMP">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="test\TACTICAL.DLL\301\2580-1033-tactical-ship-empire-assault-transport_gladiator-star-destroyer-close.x">
+    <None Update="capital ships\TACTICAL.DLL\303\EMPIRE_GLADIATOR_STAR_DESTROYER_CLOSE.BMP">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="test\TACTICAL.DLL\301\2581-1033-tactical-ship-empire-assault-transport_gladiator-star-destroyer-medium.x">
+    <None Update="capital ships\TACTICAL.DLL\303\EMPIRE_GLADIATOR_STAR_DESTROYER_FAR.BMP">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="test\TACTICAL.DLL\301\2582-1033-tactical-ship-empire-assault-transport_gladiator-star-destroyer-far.x">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Update="test\TACTICAL.DLL\303\ALLIANCE_MC40A_LIGHT_CRUISER_CLOSE.BMP">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Update="test\TACTICAL.DLL\303\ALLIANCE_MC40A_LIGHT_CRUISER_FAR.BMP">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Update="test\TACTICAL.DLL\303\ALLIANCE_MC40A_LIGHT_CRUISER_MEDIUM.BMP">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Update="test\TACTICAL.DLL\303\ALLIANCE_MC80A_HOMEONE_CRUISER_CLOSE.BMP">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Update="test\TACTICAL.DLL\303\ALLIANCE_MC80A_HOMEONE_CRUISER_FAR.BMP">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Update="test\TACTICAL.DLL\303\ALLIANCE_MC80A_HOMEONE_CRUISER_MEDIUM.BMP">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Update="test\TACTICAL.DLL\303\ALLIANCE_VISCOUNT_STAR_DEFENDER_CLOSE.BMP">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Update="test\TACTICAL.DLL\303\ALLIANCE_VISCOUNT_STAR_DEFENDER_FAR.BMP">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Update="test\TACTICAL.DLL\303\ALLIANCE_VISCOUNT_STAR_DEFENDER_MEDIUM.BMP">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Update="test\TACTICAL.DLL\303\EMPIRE_GLADIATOR_STAR_DESTROYER_CLOSE.BMP">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Update="test\TACTICAL.DLL\303\EMPIRE_GLADIATOR_STAR_DESTROYER_FAR.BMP">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Update="test\TACTICAL.DLL\303\EMPIRE_GLADIATOR_STAR_DESTROYER_MEDIUM.BMP">
+    <None Update="capital ships\TACTICAL.DLL\303\EMPIRE_GLADIATOR_STAR_DESTROYER_MEDIUM.BMP">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="troops\EDATA\017-edata-troop-alliance-sullustan-regiment.bmp">
@@ -1356,96 +1947,6 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="units-stats\GOKRES.DLL\Bitmap\18051-1033-gokres-fighter-empire-tie-defender.bmp">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Update="units-stats\GOKRES.DLL\Bitmap\18240-1033-gokres-ship-alliance-mon-calamari-cruiser_mc80-liberty-cruiser.bmp">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Update="units-stats\GOKRES.DLL\Bitmap\18241-1033-gokres-ship-alliance-bulk-cruiser.bmp">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Update="units-stats\GOKRES.DLL\Bitmap\18242-1033-gokres-ship-alliance-assault-frigate.bmp">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Update="units-stats\GOKRES.DLL\Bitmap\18243-1033-gokres-ship-alliance-nebulon-b-frigate.bmp">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Update="units-stats\GOKRES.DLL\Bitmap\18244-1033-gokres-ship-alliance-alliance-escort-carrier.bmp">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Update="units-stats\GOKRES.DLL\Bitmap\18245-1033-gokres-ship-alliance-corellian-corvette.bmp">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Update="units-stats\GOKRES.DLL\Bitmap\18246-1033-gokres-ship-alliance-medium-transport.bmp">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Update="units-stats\GOKRES.DLL\Bitmap\18247-1033-gokres-ship-alliance-bulk-transport_bulk-freighter.bmp">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Update="units-stats\GOKRES.DLL\Bitmap\18248-1033-gokres-ship-alliance-corellian-gunship.bmp">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Update="units-stats\GOKRES.DLL\Bitmap\18249-1033-gokres-ship-alliance-alliance-dreadnaught_mc40a-light-cruiser.bmp">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Update="units-stats\GOKRES.DLL\Bitmap\18250-1033-gokres-ship-alliance-cc-7700-frigate.bmp">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Update="units-stats\GOKRES.DLL\Bitmap\18251-1033-gokres-ship-alliance-bulwark-battlecruiser_viscount-star-defender.bmp">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Update="units-stats\GOKRES.DLL\Bitmap\18252-1033-gokres-ship-alliance-liberator-cruiser.bmp">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Update="units-stats\GOKRES.DLL\Bitmap\18253-1033-gokres-ship-alliance-cc-9600-frigate_mc30c-frigate.bmp">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Update="units-stats\GOKRES.DLL\Bitmap\18254-1033-gokres-ship-alliance-dauntless-cruiser_mc80a-homeone-cruiser.bmp">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Update="units-stats\GOKRES.DLL\Bitmap\18304-1033-gokres-ship-empire-strike-cruiser_vindicator-heavy-cruiser.bmp">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Update="units-stats\GOKRES.DLL\Bitmap\18305-1033-gokres-ship-empire-lancer-frigate.bmp">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Update="units-stats\GOKRES.DLL\Bitmap\18306-1033-gokres-ship-empire-interdictor-cruiser_immobilizer-cruiser.bmp">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Update="units-stats\GOKRES.DLL\Bitmap\18307-1033-gokres-ship-empire-carrack-light-cruiser_arquitens-light-cruiser.bmp">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Update="units-stats\GOKRES.DLL\Bitmap\18308-1033-gokres-ship-empire-victory-destroyer_victory-1-star-destroyer.bmp">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Update="units-stats\GOKRES.DLL\Bitmap\18309-1033-gokres-ship-empire-imperial-star-destroyer_imperial-1-star-destroyer.bmp">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Update="units-stats\GOKRES.DLL\Bitmap\18310-1033-gokres-ship-empire-super-star-destroyer.bmp">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Update="units-stats\GOKRES.DLL\Bitmap\18311-1033-gokres-ship-empire-assault-transport_gladiator-star-destroyer.bmp">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Update="units-stats\GOKRES.DLL\Bitmap\18312-1033-gokres-ship-empire-death-star.bmp">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Update="units-stats\GOKRES.DLL\Bitmap\18313-1033-gokres-ship-empire-galleon_acclamator-drop-ship.bmp">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Update="units-stats\GOKRES.DLL\Bitmap\18314-1033-gokres-ship-empire-victory-2-star-destroyer.bmp">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Update="units-stats\GOKRES.DLL\Bitmap\18315-1033-gokres-ship-empire-imperial-2-star-destroyer.bmp">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Update="units-stats\GOKRES.DLL\Bitmap\18316-1033-gokres-ship-empire-star-galleon_star-galleon-frigate.bmp">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Update="units-stats\GOKRES.DLL\Bitmap\18317-1033-gokres-ship-empire-imperial-escort-carrier.bmp">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Update="units-stats\GOKRES.DLL\Bitmap\18318-1033-gokres-ship-empire-imperial-dreadnaught_imperial-dreadnought.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="units-stats\GOKRES.DLL\Bitmap\18496-1033-gokres-character-alliance-mon-mothma.bmp">
@@ -2671,856 +3172,847 @@
       <Pack>True</Pack>
       <PackagePath>\</PackagePath>
     </None>
-    <None Update="ships\EDATA\027-edata-special-force-alliance-longprobe-y-wing-recon-team.bmp">
+    <None Update="special forces\EDATA\027-edata-special-force-alliance-longprobe-y-wing-recon-team.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\EDATA\034-edata-fighter-alliance-a-wing.bmp">
+    <None Update="fighters\EDATA\034-edata-fighter-alliance-a-wing.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\EDATA\035-edata-fighter-alliance-b-wing.bmp">
+    <None Update="fighters\EDATA\035-edata-fighter-alliance-b-wing.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\EDATA\036-edata-fighter-alliance-x-wing.bmp">
+    <None Update="fighters\EDATA\036-edata-fighter-alliance-x-wing.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\EDATA\037-edata-fighter-alliance-y-wing.bmp">
+    <None Update="fighters\EDATA\037-edata-fighter-alliance-y-wing.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\EDATA\042-edata-2010-ship-alliance-mon-calamari-cruiser_mc80-liberty-cruiser.bmp">
+    <None Update="capital ships\EDATA\042-edata-2010-ship-alliance-mon-calamari-cruiser_mc80-liberty-cruiser.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\EDATA\043-edata-2020-ship-alliance-bulk-cruiser.bmp">
+    <None Update="capital ships\EDATA\043-edata-2020-ship-alliance-bulk-cruiser.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\EDATA\044-edata-2030-ship-alliance-assault-frigate.bmp">
+    <None Update="capital ships\EDATA\044-edata-2030-ship-alliance-assault-frigate.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\EDATA\045-edata-2040-ship-alliance-nebulon-b-frigate.bmp">
+    <None Update="capital ships\EDATA\045-edata-2040-ship-alliance-nebulon-b-frigate.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\EDATA\046-edata-2050-ship-alliance-alliance-escort-carrier.bmp">
+    <None Update="capital ships\EDATA\046-edata-2050-ship-alliance-alliance-escort-carrier.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\EDATA\047-edata-2060-ship-alliance-corellian-corvette.bmp">
+    <None Update="capital ships\EDATA\047-edata-2060-ship-alliance-corellian-corvette.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\EDATA\048-edata-2070-ship-alliance-medium-transport.bmp">
+    <None Update="capital ships\EDATA\048-edata-2070-ship-alliance-medium-transport.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\EDATA\049-edata-2080-ship-alliance-bulk-transport_bulk-freighter.bmp">
+    <None Update="capital ships\EDATA\049-edata-2080-ship-alliance-bulk-transport_bulk-freighter.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\EDATA\050-edata-2090-ship-alliance-corellian-gunship.bmp">
+    <None Update="capital ships\EDATA\050-edata-2090-ship-alliance-corellian-gunship.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\EDATA\052-edata-2110-ship-alliance-cc-7700-frigate.bmp">
+    <None Update="capital ships\EDATA\052-edata-2110-ship-alliance-cc-7700-frigate.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\EDATA\054-edata-2140-ship-alliance-liberator-cruiser.bmp">
+    <None Update="capital ships\EDATA\054-edata-2140-ship-alliance-liberator-cruiser.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\EDATA\058-edata-2520-ship-empire-lancer-frigate.bmp">
+    <None Update="capital ships\EDATA\058-edata-2520-ship-empire-lancer-frigate.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\EDATA\059-edata-2530-ship-empire-interdictor-cruiser_immobilizer-cruiser.bmp">
+    <None Update="capital ships\EDATA\059-edata-2530-ship-empire-interdictor-cruiser_immobilizer-cruiser.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\EDATA\061-edata-2550-ship-empire-victory-destroyer_victory-1-star-destroyer.bmp">
+    <None Update="capital ships\EDATA\061-edata-2550-ship-empire-victory-destroyer_victory-1-star-destroyer.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\EDATA\062-edata-2560-ship-empire-imperial-star-destroyer_imperial-1-star-destroyer.bmp">
+    <None Update="capital ships\EDATA\062-edata-2560-ship-empire-imperial-star-destroyer_imperial-1-star-destroyer.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\EDATA\063-edata-2570-ship-empire-super-star-destroyer.bmp">
+    <None Update="capital ships\EDATA\063-edata-2570-ship-empire-super-star-destroyer.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\EDATA\065-edata-5010-ship-empire-death-star.bmp">
+    <None Update="capital ships\EDATA\065-edata-5010-ship-empire-death-star.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\EDATA\067-edata-2600-ship-empire-victory-2-star-destroyer.bmp">
+    <None Update="capital ships\EDATA\067-edata-2600-ship-empire-victory-2-star-destroyer.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\EDATA\068-edata-2610-ship-empire-imperial-2-star-destroyer.bmp">
+    <None Update="capital ships\EDATA\068-edata-2610-ship-empire-imperial-2-star-destroyer.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\EDATA\069-edata-2620-ship-empire-star-galleon_star-galleon-frigate.bmp">
+    <None Update="capital ships\EDATA\069-edata-2620-ship-empire-star-galleon_star-galleon-frigate.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\EDATA\070-edata-2630-ship-empire-imperial-escort-carrier.bmp">
+    <None Update="capital ships\EDATA\070-edata-2630-ship-empire-imperial-escort-carrier.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\EDATA\071-edata-2640-ship-empire-imperial-dreadnaught_imperial-dreadnought.bmp">
+    <None Update="capital ships\EDATA\071-edata-2640-ship-empire-imperial-dreadnaught_imperial-dreadnought.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\readme.txt">
+    <None Update="capital ships\readme.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\301\2010-1033-tactical-ship-alliance-mon-calamari-cruiser_mc80-liberty-cruiser-close.x">
+    <None Update="capital ships\TACTICAL.DLL\301\2010-1033-tactical-ship-alliance-mon-calamari-cruiser_mc80-liberty-cruiser-close.x">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\301\2011-1033-tactical-ship-alliance-mon-calamari-cruiser_mc80-liberty-cruiser-medium.x">
+    <None Update="capital ships\TACTICAL.DLL\301\2011-1033-tactical-ship-alliance-mon-calamari-cruiser_mc80-liberty-cruiser-medium.x">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\301\2012-1033-tactical-ship-alliance-mon-calamari-cruiser_mc80-liberty-cruiser-far.x">
+    <None Update="capital ships\TACTICAL.DLL\301\2012-1033-tactical-ship-alliance-mon-calamari-cruiser_mc80-liberty-cruiser-far.x">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\301\2020-1033-tactical-ship-alliance-bulk-cruiser-close.x">
+    <None Update="capital ships\TACTICAL.DLL\301\2020-1033-tactical-ship-alliance-bulk-cruiser-close.x">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\301\2021-1033-tactical-ship-alliance-bulk-cruiser-medium.x">
+    <None Update="capital ships\TACTICAL.DLL\301\2021-1033-tactical-ship-alliance-bulk-cruiser-medium.x">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\301\2022-1033-tactical-ship-alliance-bulk-cruiser-far.x">
+    <None Update="capital ships\TACTICAL.DLL\301\2022-1033-tactical-ship-alliance-bulk-cruiser-far.x">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\301\2030-1033-tactical-ship-alliance-assault-frigate-close.x">
+    <None Update="capital ships\TACTICAL.DLL\301\2030-1033-tactical-ship-alliance-assault-frigate-close.x">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\301\2031-1033-tactical-ship-alliance-assault-frigate-medium.x">
+    <None Update="capital ships\TACTICAL.DLL\301\2031-1033-tactical-ship-alliance-assault-frigate-medium.x">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\301\2032-1033-tactical-ship-alliance-assault-frigate-far.x">
+    <None Update="capital ships\TACTICAL.DLL\301\2032-1033-tactical-ship-alliance-assault-frigate-far.x">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\301\2040-1033-tactical-ship-alliance-nebulon-b-frigate-close.x">
+    <None Update="capital ships\TACTICAL.DLL\301\2040-1033-tactical-ship-alliance-nebulon-b-frigate-close.x">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\301\2041-1033-tactical-ship-alliance-nebulon-b-frigate-medium.x">
+    <None Update="capital ships\TACTICAL.DLL\301\2041-1033-tactical-ship-alliance-nebulon-b-frigate-medium.x">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\301\2042-1033-tactical-ship-alliance-nebulon-b-frigate-far.x">
+    <None Update="capital ships\TACTICAL.DLL\301\2042-1033-tactical-ship-alliance-nebulon-b-frigate-far.x">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\301\2050-1033-tactical-ship-alliance-alliance-escort-carrier-close.x">
+    <None Update="capital ships\TACTICAL.DLL\301\2050-1033-tactical-ship-alliance-alliance-escort-carrier-close.x">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\301\2051-1033-tactical-ship-alliance-alliance-escort-carrier-medium.x">
+    <None Update="capital ships\TACTICAL.DLL\301\2051-1033-tactical-ship-alliance-alliance-escort-carrier-medium.x">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\301\2052-1033-tactical-ship-alliance-alliance-escort-carrier-far.x">
+    <None Update="capital ships\TACTICAL.DLL\301\2052-1033-tactical-ship-alliance-alliance-escort-carrier-far.x">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\301\2060-1033-tactical-ship-alliance-corellian-corvette-close.x">
+    <None Update="capital ships\TACTICAL.DLL\301\2060-1033-tactical-ship-alliance-corellian-corvette-close.x">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\301\2061-1033-tactical-ship-alliance-corellian-corvette-medium.x">
+    <None Update="capital ships\TACTICAL.DLL\301\2061-1033-tactical-ship-alliance-corellian-corvette-medium.x">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\301\2062-1033-tactical-ship-alliance-corellian-corvette-far.x">
+    <None Update="capital ships\TACTICAL.DLL\301\2062-1033-tactical-ship-alliance-corellian-corvette-far.x">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\301\2070-1033-tactical-ship-alliance-medium-transport-close.x">
+    <None Update="capital ships\TACTICAL.DLL\301\2070-1033-tactical-ship-alliance-medium-transport-close.x">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\301\2071-1033-tactical-ship-alliance-medium-transport-medium.x">
+    <None Update="capital ships\TACTICAL.DLL\301\2071-1033-tactical-ship-alliance-medium-transport-medium.x">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\301\2072-1033-tactical-ship-alliance-medium-transport-far.x">
+    <None Update="capital ships\TACTICAL.DLL\301\2072-1033-tactical-ship-alliance-medium-transport-far.x">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\301\2080-1033-tactical-ship-alliance-bulk-transport_bulk-freighter-close.x">
+    <None Update="capital ships\TACTICAL.DLL\301\2080-1033-tactical-ship-alliance-bulk-transport_bulk-freighter-close.x">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\301\2081-1033-tactical-ship-alliance-bulk-transport_bulk-freighter-medium.x">
+    <None Update="capital ships\TACTICAL.DLL\301\2081-1033-tactical-ship-alliance-bulk-transport_bulk-freighter-medium.x">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\301\2082-1033-tactical-ship-alliance-bulk-transport_bulk-freighter-far.x">
+    <None Update="capital ships\TACTICAL.DLL\301\2082-1033-tactical-ship-alliance-bulk-transport_bulk-freighter-far.x">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\301\2090-1033-tactical-ship-alliance-corellian-gunship-close.x">
+    <None Update="capital ships\TACTICAL.DLL\301\2090-1033-tactical-ship-alliance-corellian-gunship-close.x">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\301\2091-1033-tactical-ship-alliance-corellian-gunship-medium.x">
+    <None Update="capital ships\TACTICAL.DLL\301\2091-1033-tactical-ship-alliance-corellian-gunship-medium.x">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\301\2092-1033-tactical-ship-alliance-corellian-gunship-far.x">
+    <None Update="capital ships\TACTICAL.DLL\301\2092-1033-tactical-ship-alliance-corellian-gunship-far.x">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\301\2100-1033-tactical-ship-alliance-alliance-dreadnaught_mc40a-light-cruiser-close.x">
+    <None Update="capital ships\TACTICAL.DLL\301\2100-1033-tactical-ship-alliance-alliance-dreadnaught_mc40a-light-cruiser-close.x">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\301\2101-1033-tactical-ship-alliance-alliance-dreadnaught_mc40a-light-cruiser-medium.x">
+    <None Update="capital ships\TACTICAL.DLL\301\2101-1033-tactical-ship-alliance-alliance-dreadnaught_mc40a-light-cruiser-medium.x">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\301\2102-1033-tactical-ship-alliance-alliance-dreadnaught_mc40a-light-cruiser-far.x">
+    <None Update="capital ships\TACTICAL.DLL\301\2102-1033-tactical-ship-alliance-alliance-dreadnaught_mc40a-light-cruiser-far.x">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\301\2110-1033-tactical-ship-alliance-cc-7700-frigate-close.x">
+    <None Update="capital ships\TACTICAL.DLL\301\2110-1033-tactical-ship-alliance-cc-7700-frigate-close.x">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\301\2111-1033-tactical-ship-alliance-cc-7700-frigate-medium.x">
+    <None Update="capital ships\TACTICAL.DLL\301\2111-1033-tactical-ship-alliance-cc-7700-frigate-medium.x">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\301\2112-1033-tactical-ship-alliance-cc-7700-frigate-far.x">
+    <None Update="capital ships\TACTICAL.DLL\301\2112-1033-tactical-ship-alliance-cc-7700-frigate-far.x">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\301\2120-1033-tactical-ship-alliance-cc-9600-frigate_mc30c-frigate-close.x">
+    <None Update="capital ships\TACTICAL.DLL\301\2120-1033-tactical-ship-alliance-cc-9600-frigate_mc30c-frigate-close.x">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\301\2121-1033-tactical-ship-alliance-cc-9600-frigate_mc30c-frigate-medium.x">
+    <None Update="capital ships\TACTICAL.DLL\301\2121-1033-tactical-ship-alliance-cc-9600-frigate_mc30c-frigate-medium.x">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\301\2122-1033-tactical-ship-alliance-cc-9600-frigate_mc30c-frigate-far.x">
+    <None Update="capital ships\TACTICAL.DLL\301\2122-1033-tactical-ship-alliance-cc-9600-frigate_mc30c-frigate-far.x">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\301\2130-1033-tactical-ship-alliance-bulwark-battlecruiser_viscount-star-defender-close.x">
+    <None Update="capital ships\TACTICAL.DLL\301\2130-1033-tactical-ship-alliance-bulwark-battlecruiser_viscount-star-defender-close.x">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\301\2131-1033-tactical-ship-alliance-bulwark-battlecruiser_viscount-star-defender-medium.x">
+    <None Update="capital ships\TACTICAL.DLL\301\2131-1033-tactical-ship-alliance-bulwark-battlecruiser_viscount-star-defender-medium.x">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\301\2132-1033-tactical-ship-alliance-bulwark-battlecruiser_viscount-star-defender-far.x">
+    <None Update="capital ships\TACTICAL.DLL\301\2132-1033-tactical-ship-alliance-bulwark-battlecruiser_viscount-star-defender-far.x">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\301\2140-1033-tactical-ship-alliance-liberator-cruiser-close.x">
+    <None Update="capital ships\TACTICAL.DLL\301\2140-1033-tactical-ship-alliance-liberator-cruiser-close.x">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\301\2141-1033-tactical-ship-alliance-liberator-cruiser-medium.x">
+    <None Update="capital ships\TACTICAL.DLL\301\2141-1033-tactical-ship-alliance-liberator-cruiser-medium.x">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\301\2142-1033-tactical-ship-alliance-liberator-cruiser-far.x">
+    <None Update="capital ships\TACTICAL.DLL\301\2142-1033-tactical-ship-alliance-liberator-cruiser-far.x">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\301\2150-1033-tactical-ship-alliance-dauntless-cruiser_mc80a-homeone-cruiser-close.x">
+    <None Update="capital ships\TACTICAL.DLL\301\2150-1033-tactical-ship-alliance-dauntless-cruiser_mc80a-homeone-cruiser-close.x">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\301\2151-1033-tactical-ship-alliance-dauntless-cruiser_mc80a-homeone-cruiser-medium.x">
+    <None Update="capital ships\TACTICAL.DLL\301\2151-1033-tactical-ship-alliance-dauntless-cruiser_mc80a-homeone-cruiser-medium.x">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\301\2152-1033-tactical-ship-alliance-dauntless-cruiser_mc80a-homeone-cruiser-far.x">
+    <None Update="capital ships\TACTICAL.DLL\301\2152-1033-tactical-ship-alliance-dauntless-cruiser_mc80a-homeone-cruiser-far.x">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\301\2510-1033-tactical-ship-empire-strike-cruiser_vindicator-heavy-cruiser-close.x">
+    <None Update="capital ships\TACTICAL.DLL\301\2510-1033-tactical-ship-empire-strike-cruiser_vindicator-heavy-cruiser-close.x">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\301\2511-1033-tactical-ship-empire-strike-cruiser_vindicator-heavy-cruiser-medium.x">
+    <None Update="capital ships\TACTICAL.DLL\301\2511-1033-tactical-ship-empire-strike-cruiser_vindicator-heavy-cruiser-medium.x">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\301\2512-1033-tactical-ship-empire-strike-cruiser_vindicator-heavy-cruiser-far.x">
+    <None Update="capital ships\TACTICAL.DLL\301\2512-1033-tactical-ship-empire-strike-cruiser_vindicator-heavy-cruiser-far.x">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\301\2520-1033-tactical-ship-empire-lancer-frigate-close.x">
+    <None Update="capital ships\TACTICAL.DLL\301\2520-1033-tactical-ship-empire-lancer-frigate-close.x">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\301\2521-1033-tactical-ship-empire-lancer-frigate-medium.x">
+    <None Update="capital ships\TACTICAL.DLL\301\2521-1033-tactical-ship-empire-lancer-frigate-medium.x">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\301\2522-1033-tactical-ship-empire-lancer-frigate-far.x">
+    <None Update="capital ships\TACTICAL.DLL\301\2522-1033-tactical-ship-empire-lancer-frigate-far.x">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\301\2530-1033-tactical-ship-empire-interdictor-cruiser_immobilizer-cruiser-close.x">
+    <None Update="capital ships\TACTICAL.DLL\301\2540-1033-tactical-ship-empire-carrack-light-cruiser_arquitens-light-cruiser-close.x">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\301\2531-1033-tactical-ship-empire-interdictor-cruiser_immobilizer-cruiser-medium.x">
+    <None Update="capital ships\TACTICAL.DLL\301\2541-1033-tactical-ship-empire-carrack-light-cruiser_arquitens-light-cruiser-medium.x">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\301\2532-1033-tactical-ship-empire-interdictor-cruiser_immobilizer-cruiser-far.x">
+    <None Update="capital ships\TACTICAL.DLL\301\2542-1033-tactical-ship-empire-carrack-light-cruiser_arquitens-light-cruiser-far.x">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\301\2540-1033-tactical-ship-empire-carrack-light-cruiser_arquitens-light-cruiser-close.x">
+    <None Update="capital ships\TACTICAL.DLL\301\2550-1033-tactical-ship-empire-victory-destroyer_victory-1-star-destroyer-close.x">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\301\2541-1033-tactical-ship-empire-carrack-light-cruiser_arquitens-light-cruiser-medium.x">
+    <None Update="capital ships\TACTICAL.DLL\301\2551-1033-tactical-ship-empire-victory-destroyer_victory-1-star-destroyer-medium.x">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\301\2542-1033-tactical-ship-empire-carrack-light-cruiser_arquitens-light-cruiser-far.x">
+    <None Update="capital ships\TACTICAL.DLL\301\2552-1033-tactical-ship-empire-victory-destroyer_victory-1-star-destroyer-far.x">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\301\2550-1033-tactical-ship-empire-victory-destroyer_victory-1-star-destroyer-close.x">
+    <None Update="capital ships\TACTICAL.DLL\301\2560-1033-tactical-ship-empire-imperial-star-destroyer_imperial-1-star-destroyer-close.x">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\301\2551-1033-tactical-ship-empire-victory-destroyer_victory-1-star-destroyer-medium.x">
+    <None Update="capital ships\TACTICAL.DLL\301\2561-1033-tactical-ship-empire-imperial-star-destroyer_imperial-1-star-destroyer-medium.x">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\301\2552-1033-tactical-ship-empire-victory-destroyer_victory-1-star-destroyer-far.x">
+    <None Update="capital ships\TACTICAL.DLL\301\2562-1033-tactical-ship-empire-imperial-star-destroyer_imperial-1-star-destroyer-far.x">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\301\2560-1033-tactical-ship-empire-imperial-star-destroyer_imperial-1-star-destroyer-close.x">
+    <None Update="capital ships\TACTICAL.DLL\301\2570-1033-tactical-ship-empire-super-star-destroyer-close.x">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\301\2561-1033-tactical-ship-empire-imperial-star-destroyer_imperial-1-star-destroyer-medium.x">
+    <None Update="capital ships\TACTICAL.DLL\301\2571-1033-tactical-ship-empire-super-star-destroyer-medium.x">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\301\2562-1033-tactical-ship-empire-imperial-star-destroyer_imperial-1-star-destroyer-far.x">
+    <None Update="capital ships\TACTICAL.DLL\301\2572-1033-tactical-ship-empire-super-star-destroyer-far.x">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\301\2570-1033-tactical-ship-empire-super-star-destroyer-close.x">
+    <None Update="capital ships\TACTICAL.DLL\301\2580-1033-tactical-ship-empire-assault-transport_gladiator-star-destroyer-close.x">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\301\2571-1033-tactical-ship-empire-super-star-destroyer-medium.x">
+    <None Update="capital ships\TACTICAL.DLL\301\2581-1033-tactical-ship-empire-assault-transport_gladiator-star-destroyer-medium.x">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\301\2572-1033-tactical-ship-empire-super-star-destroyer-far.x">
+    <None Update="capital ships\TACTICAL.DLL\301\2582-1033-tactical-ship-empire-assault-transport_gladiator-star-destroyer-far.x">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\301\2580-1033-tactical-ship-empire-assault-transport_gladiator-star-destroyer-close.x">
+    <None Update="capital ships\TACTICAL.DLL\301\2590-1033-tactical-ship-empire-galleon_acclamator-drop-ship-close.x">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\301\2581-1033-tactical-ship-empire-assault-transport_gladiator-star-destroyer-medium.x">
+    <None Update="capital ships\TACTICAL.DLL\301\2591-1033-tactical-ship-empire-galleon_acclamator-drop-ship-medium.x">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\301\2582-1033-tactical-ship-empire-assault-transport_gladiator-star-destroyer-far.x">
+    <None Update="capital ships\TACTICAL.DLL\301\2592-1033-tactical-ship-empire-galleon_acclamator-drop-ship-far.x">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\301\2590-1033-tactical-ship-empire-galleon_acclamator-drop-ship-close.x">
+    <None Update="capital ships\TACTICAL.DLL\301\2600-1033-tactical-ship-empire-victory-2-star-destroyer-close.x">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\301\2591-1033-tactical-ship-empire-galleon_acclamator-drop-ship-medium.x">
+    <None Update="capital ships\TACTICAL.DLL\301\2601-1033-tactical-ship-empire-victory-2-star-destroyer-medium.x">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\301\2592-1033-tactical-ship-empire-galleon_acclamator-drop-ship-far.x">
+    <None Update="capital ships\TACTICAL.DLL\301\2602-1033-tactical-ship-empire-victory-2-star-destroyer-far.x">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\301\2600-1033-tactical-ship-empire-victory-2-star-destroyer-close.x">
+    <None Update="capital ships\TACTICAL.DLL\301\2610-1033-tactical-ship-empire-imperial-2-star-destroyer-close.x">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\301\2601-1033-tactical-ship-empire-victory-2-star-destroyer-medium.x">
+    <None Update="capital ships\TACTICAL.DLL\301\2611-1033-tactical-ship-empire-imperial-2-star-destroyer-medium.x">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\301\2602-1033-tactical-ship-empire-victory-2-star-destroyer-far.x">
+    <None Update="capital ships\TACTICAL.DLL\301\2612-1033-tactical-ship-empire-imperial-2-star-destroyer-far.x">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\301\2610-1033-tactical-ship-empire-imperial-2-star-destroyer-close.x">
+    <None Update="capital ships\TACTICAL.DLL\301\2620-1033-tactical-ship-empire-star-galleon_star-galleon-frigate-close.x">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\301\2611-1033-tactical-ship-empire-imperial-2-star-destroyer-medium.x">
+    <None Update="capital ships\TACTICAL.DLL\301\2621-1033-tactical-ship-empire-star-galleon_star-galleon-frigate-medium.x">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\301\2612-1033-tactical-ship-empire-imperial-2-star-destroyer-far.x">
+    <None Update="capital ships\TACTICAL.DLL\301\2622-1033-tactical-ship-empire-star-galleon_star-galleon-frigate-far.x">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\301\2620-1033-tactical-ship-empire-star-galleon_star-galleon-frigate-close.x">
+    <None Update="capital ships\TACTICAL.DLL\301\2630-1033-tactical-ship-empire-imperial-escort-carrier-close.x">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\301\2621-1033-tactical-ship-empire-star-galleon_star-galleon-frigate-medium.x">
+    <None Update="capital ships\TACTICAL.DLL\301\2631-1033-tactical-ship-empire-imperial-escort-carrier-medium.x">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\301\2622-1033-tactical-ship-empire-star-galleon_star-galleon-frigate-far.x">
+    <None Update="capital ships\TACTICAL.DLL\301\2632-1033-tactical-ship-empire-imperial-escort-carrier-far.x">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\301\2630-1033-tactical-ship-empire-imperial-escort-carrier-close.x">
+    <None Update="capital ships\TACTICAL.DLL\301\2640-1033-tactical-ship-empire-imperial-dreadnaught_imperial-dreadnought-close.x">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\301\2631-1033-tactical-ship-empire-imperial-escort-carrier-medium.x">
+    <None Update="capital ships\TACTICAL.DLL\301\2641-1033-tactical-ship-empire-imperial-dreadnaught_imperial-dreadnought-medium.x">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\301\2632-1033-tactical-ship-empire-imperial-escort-carrier-far.x">
+    <None Update="capital ships\TACTICAL.DLL\301\2642-1033-tactical-ship-empire-imperial-dreadnaught_imperial-dreadnought-far.x">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\301\2640-1033-tactical-ship-empire-imperial-dreadnaught_imperial-dreadnought-close.x">
+    <None Update="fighters\TACTICAL.DLL\303\4000-1033-tactical-fighter-alliance-x-wing-red-close.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\301\2641-1033-tactical-ship-empire-imperial-dreadnaught_imperial-dreadnought-medium.x">
+    <None Update="fighters\TACTICAL.DLL\303\4001-1033-tactical-fighter-alliance-x-wing-blue-close.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\301\2642-1033-tactical-ship-empire-imperial-dreadnaught_imperial-dreadnought-far.x">
+    <None Update="fighters\TACTICAL.DLL\303\4002-1033-tactical-fighter-alliance-x-wing-green-close.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\303\4000-1033-tactical-fighter-alliance-x-wing-red-close.bmp">
+    <None Update="fighters\TACTICAL.DLL\303\4003-1033-tactical-fighter-alliance-x-wing-gold-close.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\303\4001-1033-tactical-fighter-alliance-x-wing-blue-close.bmp">
+    <None Update="fighters\TACTICAL.DLL\303\4004-1033-tactical-fighter-alliance-x-wing-gray-close.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\303\4002-1033-tactical-fighter-alliance-x-wing-green-close.bmp">
+    <None Update="fighters\TACTICAL.DLL\303\4005-1033-tactical-fighter-alliance-x-wing-red-far.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\303\4003-1033-tactical-fighter-alliance-x-wing-gold-close.bmp">
+    <None Update="fighters\TACTICAL.DLL\303\4006-1033-tactical-fighter-alliance-x-wing-blue-far.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\303\4004-1033-tactical-fighter-alliance-x-wing-gray-close.bmp">
+    <None Update="fighters\TACTICAL.DLL\303\4007-1033-tactical-fighter-alliance-x-wing-gold-far.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\303\4005-1033-tactical-fighter-alliance-x-wing-red-far.bmp">
+    <None Update="fighters\TACTICAL.DLL\303\4008-1033-tactical-fighter-alliance-x-wing-green-far.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\303\4006-1033-tactical-fighter-alliance-x-wing-blue-far.bmp">
+    <None Update="fighters\TACTICAL.DLL\303\4009-1033-tactical-fighter-alliance-x-wing-gray-far.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\303\4007-1033-tactical-fighter-alliance-x-wing-gold-far.bmp">
+    <None Update="fighters\TACTICAL.DLL\303\4010-1033-tactical-fighter-alliance-y-wing-red-close.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\303\4008-1033-tactical-fighter-alliance-x-wing-green-far.bmp">
+    <None Update="fighters\TACTICAL.DLL\303\4011-1033-tactical-fighter-alliance-y-wing-blue-close.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\303\4009-1033-tactical-fighter-alliance-x-wing-gray-far.bmp">
+    <None Update="fighters\TACTICAL.DLL\303\4012-1033-tactical-fighter-alliance-y-wing-green-close.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\303\4010-1033-tactical-fighter-alliance-y-wing-red-close.bmp">
+    <None Update="fighters\TACTICAL.DLL\303\4013-1033-tactical-fighter-alliance-y-wing-gold-close.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\303\4011-1033-tactical-fighter-alliance-y-wing-blue-close.bmp">
+    <None Update="fighters\TACTICAL.DLL\303\4014-1033-tactical-fighter-alliance-y-wing-gray-close.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\303\4012-1033-tactical-fighter-alliance-y-wing-green-close.bmp">
+    <None Update="fighters\TACTICAL.DLL\303\4015-1033-tactical-fighter-alliance-y-wing-red-far.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\303\4013-1033-tactical-fighter-alliance-y-wing-gold-close.bmp">
+    <None Update="fighters\TACTICAL.DLL\303\4016-1033-tactical-fighter-alliance-y-wing-blue-far.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\303\4014-1033-tactical-fighter-alliance-y-wing-gray-close.bmp">
+    <None Update="fighters\TACTICAL.DLL\303\4017-1033-tactical-fighter-alliance-y-wing-green-far.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\303\4015-1033-tactical-fighter-alliance-y-wing-red-far.bmp">
+    <None Update="fighters\TACTICAL.DLL\303\4018-1033-tactical-fighter-alliance-y-wing-gold-far.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\303\4016-1033-tactical-fighter-alliance-y-wing-blue-far.bmp">
+    <None Update="fighters\TACTICAL.DLL\303\4019-1033-tactical-fighter-alliance-y-wing-gray-far.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\303\4017-1033-tactical-fighter-alliance-y-wing-green-far.bmp">
+    <None Update="fighters\TACTICAL.DLL\303\4020-1033-tactical-fighter-alliance-a-wing-red-close.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\303\4018-1033-tactical-fighter-alliance-y-wing-gold-far.bmp">
+    <None Update="fighters\TACTICAL.DLL\303\4021-1033-tactical-fighter-alliance-a-wing-blue-close.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\303\4019-1033-tactical-fighter-alliance-y-wing-gray-far.bmp">
+    <None Update="fighters\TACTICAL.DLL\303\4022-1033-tactical-fighter-alliance-a-wing-green-close.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\303\4020-1033-tactical-fighter-alliance-a-wing-red-close.bmp">
+    <None Update="fighters\TACTICAL.DLL\303\4023-1033-tactical-fighter-alliance-a-wing-gold-close.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\303\4021-1033-tactical-fighter-alliance-a-wing-blue-close.bmp">
+    <None Update="fighters\TACTICAL.DLL\303\4024-1033-tactical-fighter-alliance-a-wing-gray-close.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\303\4022-1033-tactical-fighter-alliance-a-wing-green-close.bmp">
+    <None Update="fighters\TACTICAL.DLL\303\4025-1033-tactical-fighter-alliance-a-wing-red-far.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\303\4023-1033-tactical-fighter-alliance-a-wing-gold-close.bmp">
+    <None Update="fighters\TACTICAL.DLL\303\4026-1033-tactical-fighter-alliance-a-wing-blue-far.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\303\4024-1033-tactical-fighter-alliance-a-wing-gray-close.bmp">
+    <None Update="fighters\TACTICAL.DLL\303\4027-1033-tactical-fighter-alliance-a-wing-green-far.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\303\4025-1033-tactical-fighter-alliance-a-wing-red-far.bmp">
+    <None Update="fighters\TACTICAL.DLL\303\4028-1033-tactical-fighter-alliance-a-wing-gold-far.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\303\4026-1033-tactical-fighter-alliance-a-wing-blue-far.bmp">
+    <None Update="fighters\TACTICAL.DLL\303\4029-1033-tactical-fighter-alliance-a-wing-gray-far.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\303\4027-1033-tactical-fighter-alliance-a-wing-green-far.bmp">
+    <None Update="fighters\TACTICAL.DLL\303\4030-1033-tactical-fighter-alliance-b-wing-red-close.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\303\4028-1033-tactical-fighter-alliance-a-wing-gold-far.bmp">
+    <None Update="fighters\TACTICAL.DLL\303\4031-1033-tactical-fighter-alliance-b-wing-blue-close.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\303\4029-1033-tactical-fighter-alliance-a-wing-gray-far.bmp">
+    <None Update="fighters\TACTICAL.DLL\303\4032-1033-tactical-fighter-alliance-b-wing-green-close.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\303\4030-1033-tactical-fighter-alliance-b-wing-red-close.bmp">
+    <None Update="fighters\TACTICAL.DLL\303\4033-1033-tactical-fighter-alliance-b-wing-gold-close.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\303\4031-1033-tactical-fighter-alliance-b-wing-blue-close.bmp">
+    <None Update="fighters\TACTICAL.DLL\303\4034-1033-tactical-fighter-alliance-b-wing-gray-close.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\303\4032-1033-tactical-fighter-alliance-b-wing-green-close.bmp">
+    <None Update="fighters\TACTICAL.DLL\303\4035-1033-tactical-fighter-alliance-b-wing-red-far.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\303\4033-1033-tactical-fighter-alliance-b-wing-gold-close.bmp">
+    <None Update="fighters\TACTICAL.DLL\303\4036-1033-tactical-fighter-alliance-b-wing-blue-far.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\303\4034-1033-tactical-fighter-alliance-b-wing-gray-close.bmp">
+    <None Update="fighters\TACTICAL.DLL\303\4037-1033-tactical-fighter-alliance-b-wing-green-far.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\303\4035-1033-tactical-fighter-alliance-b-wing-red-far.bmp">
+    <None Update="fighters\TACTICAL.DLL\303\4038-1033-tactical-fighter-alliance-b-wing-gold-far.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\303\4036-1033-tactical-fighter-alliance-b-wing-blue-far.bmp">
+    <None Update="fighters\TACTICAL.DLL\303\4039-1033-tactical-fighter-alliance-b-wing-gray-far.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\303\4037-1033-tactical-fighter-alliance-b-wing-green-far.bmp">
+    <None Update="fighters\TACTICAL.DLL\303\4100-1033-tactical-fighter-empire-tie-fighter-red-close.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\303\4038-1033-tactical-fighter-alliance-b-wing-gold-far.bmp">
+    <None Update="fighters\TACTICAL.DLL\303\4101-1033-tactical-fighter-empire-tie-fighter-blue-close.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\303\4039-1033-tactical-fighter-alliance-b-wing-gray-far.bmp">
+    <None Update="fighters\TACTICAL.DLL\303\4102-1033-tactical-fighter-empire-tie-fighter-green-close.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\303\4100-1033-tactical-fighter-empire-tie-fighter-red-close.bmp">
+    <None Update="fighters\TACTICAL.DLL\303\4103-1033-tactical-fighter-empire-tie-fighter-gold-close.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\303\4101-1033-tactical-fighter-empire-tie-fighter-blue-close.bmp">
+    <None Update="fighters\TACTICAL.DLL\303\4104-1033-tactical-fighter-empire-tie-fighter-gray-close.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\303\4102-1033-tactical-fighter-empire-tie-fighter-green-close.bmp">
+    <None Update="fighters\TACTICAL.DLL\303\4105-1033-tactical-fighter-empire-tie-fighter-red-far.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\303\4103-1033-tactical-fighter-empire-tie-fighter-gold-close.bmp">
+    <None Update="fighters\TACTICAL.DLL\303\4106-1033-tactical-fighter-empire-tie-fighter-blue-far.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\303\4104-1033-tactical-fighter-empire-tie-fighter-gray-close.bmp">
+    <None Update="fighters\TACTICAL.DLL\303\4107-1033-tactical-fighter-empire-tie-fighter-green-far.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\303\4105-1033-tactical-fighter-empire-tie-fighter-red-far.bmp">
+    <None Update="fighters\TACTICAL.DLL\303\4108-1033-tactical-fighter-empire-tie-fighter-gold-far.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\303\4106-1033-tactical-fighter-empire-tie-fighter-blue-far.bmp">
+    <None Update="fighters\TACTICAL.DLL\303\4109-1033-tactical-fighter-empire-tie-fighter-gray-far.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\303\4107-1033-tactical-fighter-empire-tie-fighter-green-far.bmp">
+    <None Update="fighters\TACTICAL.DLL\303\4110-1033-tactical-fighter-empire-tie-interceptor-red-close.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\303\4108-1033-tactical-fighter-empire-tie-fighter-gold-far.bmp">
+    <None Update="fighters\TACTICAL.DLL\303\4111-1033-tactical-fighter-empire-tie-interceptor-blue-close.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\303\4109-1033-tactical-fighter-empire-tie-fighter-gray-far.bmp">
+    <None Update="fighters\TACTICAL.DLL\303\4112-1033-tactical-fighter-empire-tie-interceptor-green-close.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\303\4110-1033-tactical-fighter-empire-tie-interceptor-red-close.bmp">
+    <None Update="fighters\TACTICAL.DLL\303\4113-1033-tactical-fighter-empire-tie-interceptor-gold-close.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\303\4111-1033-tactical-fighter-empire-tie-interceptor-blue-close.bmp">
+    <None Update="fighters\TACTICAL.DLL\303\4114-1033-tactical-fighter-empire-tie-interceptor-gray-close.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\303\4112-1033-tactical-fighter-empire-tie-interceptor-green-close.bmp">
+    <None Update="fighters\TACTICAL.DLL\303\4115-1033-tactical-fighter-empire-tie-interceptor-red-far.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\303\4113-1033-tactical-fighter-empire-tie-interceptor-gold-close.bmp">
+    <None Update="fighters\TACTICAL.DLL\303\4116-1033-tactical-fighter-empire-tie-interceptor-blue-far.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\303\4114-1033-tactical-fighter-empire-tie-interceptor-gray-close.bmp">
+    <None Update="fighters\TACTICAL.DLL\303\4117-1033-tactical-fighter-empire-tie-interceptor-green-far.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\303\4115-1033-tactical-fighter-empire-tie-interceptor-red-far.bmp">
+    <None Update="fighters\TACTICAL.DLL\303\4118-1033-tactical-fighter-empire-tie-interceptor-gold-far.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\303\4116-1033-tactical-fighter-empire-tie-interceptor-blue-far.bmp">
+    <None Update="fighters\TACTICAL.DLL\303\4119-1033-tactical-fighter-empire-tie-interceptor-gray-far.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\303\4117-1033-tactical-fighter-empire-tie-interceptor-green-far.bmp">
+    <None Update="fighters\TACTICAL.DLL\303\4120-1033-tactical-fighter-empire-tie-bomber-red-close.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\303\4118-1033-tactical-fighter-empire-tie-interceptor-gold-far.bmp">
+    <None Update="fighters\TACTICAL.DLL\303\4121-1033-tactical-fighter-empire-tie-bomber-blue-close.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\303\4119-1033-tactical-fighter-empire-tie-interceptor-gray-far.bmp">
+    <None Update="fighters\TACTICAL.DLL\303\4122-1033-tactical-fighter-empire-tie-bomber-green-close.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\303\4120-1033-tactical-fighter-empire-tie-bomber-red-close.bmp">
+    <None Update="fighters\TACTICAL.DLL\303\4123-1033-tactical-fighter-empire-tie-bomber-gold-close.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\303\4121-1033-tactical-fighter-empire-tie-bomber-blue-close.bmp">
+    <None Update="fighters\TACTICAL.DLL\303\4124-1033-tactical-fighter-empire-tie-bomber-gray-close.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\303\4122-1033-tactical-fighter-empire-tie-bomber-green-close.bmp">
+    <None Update="fighters\TACTICAL.DLL\303\4125-1033-tactical-fighter-empire-tie-bomber-red-far.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\303\4123-1033-tactical-fighter-empire-tie-bomber-gold-close.bmp">
+    <None Update="fighters\TACTICAL.DLL\303\4126-1033-tactical-fighter-empire-tie-bomber-blue-far.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\303\4124-1033-tactical-fighter-empire-tie-bomber-gray-close.bmp">
+    <None Update="fighters\TACTICAL.DLL\303\4127-1033-tactical-fighter-empire-tie-bomber-green-far.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\303\4125-1033-tactical-fighter-empire-tie-bomber-red-far.bmp">
+    <None Update="fighters\TACTICAL.DLL\303\4128-1033-tactical-fighter-empire-tie-bomber-gold-far.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\303\4126-1033-tactical-fighter-empire-tie-bomber-blue-far.bmp">
+    <None Update="fighters\TACTICAL.DLL\303\4129-1033-tactical-fighter-empire-tie-bomber-gray-far.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\303\4127-1033-tactical-fighter-empire-tie-bomber-green-far.bmp">
+    <None Update="fighters\TACTICAL.DLL\303\4130-1033-tactical-fighter-empire-tie-defender-red-close.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\303\4128-1033-tactical-fighter-empire-tie-bomber-gold-far.bmp">
+    <None Update="fighters\TACTICAL.DLL\303\4131-1033-tactical-fighter-empire-tie-defender-blue-close.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\303\4129-1033-tactical-fighter-empire-tie-bomber-gray-far.bmp">
+    <None Update="fighters\TACTICAL.DLL\303\4132-1033-tactical-fighter-empire-tie-defender-green-close.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\303\4130-1033-tactical-fighter-empire-tie-defender-red-close.bmp">
+    <None Update="fighters\TACTICAL.DLL\303\4133-1033-tactical-fighter-empire-tie-defender-gold-close.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\303\4131-1033-tactical-fighter-empire-tie-defender-blue-close.bmp">
+    <None Update="fighters\TACTICAL.DLL\303\4134-1033-tactical-fighter-empire-tie-defender-gray-close.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\303\4132-1033-tactical-fighter-empire-tie-defender-green-close.bmp">
+    <None Update="fighters\TACTICAL.DLL\303\4135-1033-tactical-fighter-empire-tie-defender-red-far.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\303\4133-1033-tactical-fighter-empire-tie-defender-gold-close.bmp">
+    <None Update="fighters\TACTICAL.DLL\303\4136-1033-tactical-fighter-empire-tie-defender-blue-far.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\303\4134-1033-tactical-fighter-empire-tie-defender-gray-close.bmp">
+    <None Update="fighters\TACTICAL.DLL\303\4137-1033-tactical-fighter-empire-tie-defender-green-far.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\303\4135-1033-tactical-fighter-empire-tie-defender-red-far.bmp">
+    <None Update="fighters\TACTICAL.DLL\303\4138-1033-tactical-fighter-empire-tie-defender-gold-far.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\303\4136-1033-tactical-fighter-empire-tie-defender-blue-far.bmp">
+    <None Update="fighters\TACTICAL.DLL\303\4139-1033-tactical-fighter-empire-tie-defender-gray-far.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\303\4137-1033-tactical-fighter-empire-tie-defender-green-far.bmp">
+    <None Update="capital ships\TACTICAL.DLL\303\5010-1033-tactical-ship-empire-death-star-completed.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\303\4138-1033-tactical-fighter-empire-tie-defender-gold-far.bmp">
+    <None Update="capital ships\TACTICAL.DLL\303\5020-1033-tactical-ship-empire-death-star-under-construction.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\303\4139-1033-tactical-fighter-empire-tie-defender-gray-far.bmp">
+    <None Update="capital ships\TACTICAL.DLL\303\ALLIANCE_ASSAULT_FRIGATE_CLOSE.BMP">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\303\5010-1033-tactical-ship-empire-death-star-completed.bmp">
+    <None Update="capital ships\TACTICAL.DLL\303\ALLIANCE_ASSAULT_FRIGATE_FAR.BMP">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\303\5020-1033-tactical-ship-empire-death-star-under-construction.bmp">
+    <None Update="capital ships\TACTICAL.DLL\303\ALLIANCE_ASSAULT_FRIGATE_MEDIUM.BMP">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\303\ALLIANCE_ASSAULT_FRIGATE_CLOSE.BMP">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Update="ships\TACTICAL.DLL\303\ALLIANCE_ASSAULT_FRIGATE_FAR.BMP">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Update="ships\TACTICAL.DLL\303\ALLIANCE_ASSAULT_FRIGATE_MEDIUM.BMP">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Update="ships\TACTICAL.DLL\303\ALLIANCE_BULK_CRUISER_CLOSE.BMP">
+    <None Update="capital ships\TACTICAL.DLL\303\ALLIANCE_BULK_CRUISER_CLOSE.BMP">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="ships\TACTICAL.DLL\303\ALLIANCE_BULK_CRUISER_FAR.BMP">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\303\ALLIANCE_BULK_CRUISER_MEDIUM.BMP">
+    <None Update="capital ships\TACTICAL.DLL\303\ALLIANCE_BULK_CRUISER_MEDIUM.BMP">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\303\ALLIANCE_BULK_FREIGHTER_CLOSE.BMP">
+    <None Update="capital ships\TACTICAL.DLL\303\ALLIANCE_BULK_FREIGHTER_CLOSE.BMP">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\303\ALLIANCE_BULK_FREIGHTER_FAR.BMP">
+    <None Update="capital ships\TACTICAL.DLL\303\ALLIANCE_BULK_FREIGHTER_FAR.BMP">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\303\ALLIANCE_BULK_FREIGHTER_MEDIUM.BMP">
+    <None Update="capital ships\TACTICAL.DLL\303\ALLIANCE_BULK_FREIGHTER_MEDIUM.BMP">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\303\ALLIANCE_BULWARK_CLASS_BATTLECRUISER_MARK_3_CLOSE.BMP">
+    <None Update="capital ships\TACTICAL.DLL\303\ALLIANCE_BULWARK_CLASS_BATTLECRUISER_MARK_3_CLOSE.BMP">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\303\ALLIANCE_BULWARK_CLASS_BATTLECRUISER_MARK_3_FAR.BMP">
+    <None Update="capital ships\TACTICAL.DLL\303\ALLIANCE_BULWARK_CLASS_BATTLECRUISER_MARK_3_FAR.BMP">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\303\ALLIANCE_BULWARK_CLASS_BATTLECRUISER_MARK_3_MEDIUM.BMP">
+    <None Update="capital ships\TACTICAL.DLL\303\ALLIANCE_BULWARK_CLASS_BATTLECRUISER_MARK_3_MEDIUM.BMP">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\303\ALLIANCE_CC_7700_FRIGATE_CLOSE.BMP">
+    <None Update="capital ships\TACTICAL.DLL\303\ALLIANCE_CC_7700_FRIGATE_CLOSE.BMP">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\303\ALLIANCE_CC_7700_FRIGATE_FAR.BMP">
+    <None Update="capital ships\TACTICAL.DLL\303\ALLIANCE_CC_7700_FRIGATE_FAR.BMP">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\303\ALLIANCE_CC_7700_FRIGATE_MEDIUM.BMP">
+    <None Update="capital ships\TACTICAL.DLL\303\ALLIANCE_CC_7700_FRIGATE_MEDIUM.BMP">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\303\ALLIANCE_CC_9600_FRIGATE_CLOSE.BMP">
+    <None Update="capital ships\TACTICAL.DLL\303\ALLIANCE_CC_9600_FRIGATE_CLOSE.BMP">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\303\ALLIANCE_CC_9600_FRIGATE_FAR.BMP">
+    <None Update="capital ships\TACTICAL.DLL\303\ALLIANCE_CC_9600_FRIGATE_FAR.BMP">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\303\ALLIANCE_CC_9600_FRIGATE_MEDIUM.BMP">
+    <None Update="capital ships\TACTICAL.DLL\303\ALLIANCE_CC_9600_FRIGATE_MEDIUM.BMP">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\303\ALLIANCE_CORELLIAN_CORVETTE_CLOSE.BMP">
+    <None Update="capital ships\TACTICAL.DLL\303\ALLIANCE_CORELLIAN_CORVETTE_CLOSE.BMP">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\303\ALLIANCE_CORELLIAN_CORVETTE_FAR.BMP">
+    <None Update="capital ships\TACTICAL.DLL\303\ALLIANCE_CORELLIAN_CORVETTE_FAR.BMP">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\303\ALLIANCE_CORELLIAN_CORVETTE_MEDIUM.BMP">
+    <None Update="capital ships\TACTICAL.DLL\303\ALLIANCE_CORELLIAN_CORVETTE_MEDIUM.BMP">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\303\ALLIANCE_CORELLIAN_GUNSHIP_CLOSE.BMP">
+    <None Update="capital ships\TACTICAL.DLL\303\ALLIANCE_CORELLIAN_GUNSHIP_CLOSE.BMP">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\303\ALLIANCE_CORELLIAN_GUNSHIP_FAR.BMP">
+    <None Update="capital ships\TACTICAL.DLL\303\ALLIANCE_CORELLIAN_GUNSHIP_FAR.BMP">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\303\ALLIANCE_CORELLIAN_GUNSHIP_MEDIUM.BMP">
+    <None Update="capital ships\TACTICAL.DLL\303\ALLIANCE_CORELLIAN_GUNSHIP_MEDIUM.BMP">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\303\ALLIANCE_DAUNTLESS_CLASS_HEAVY_CRUISER_CLOSE.BMP">
+    <None Update="capital ships\TACTICAL.DLL\303\ALLIANCE_DAUNTLESS_CLASS_HEAVY_CRUISER_CLOSE.BMP">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\303\ALLIANCE_DAUNTLESS_CLASS_HEAVY_CRUISER_FAR.BMP">
+    <None Update="capital ships\TACTICAL.DLL\303\ALLIANCE_DAUNTLESS_CLASS_HEAVY_CRUISER_FAR.BMP">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\303\ALLIANCE_DAUNTLESS_CLASS_HEAVY_CRUISER_MEDIUM.BMP">
+    <None Update="capital ships\TACTICAL.DLL\303\ALLIANCE_DAUNTLESS_CLASS_HEAVY_CRUISER_MEDIUM.BMP">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\303\ALLIANCE_ESCORT_CARRIER_CLOSE.BMP">
+    <None Update="capital ships\TACTICAL.DLL\303\ALLIANCE_ESCORT_CARRIER_CLOSE.BMP">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\303\ALLIANCE_ESCORT_CARRIER_FAR.BMP">
+    <None Update="capital ships\TACTICAL.DLL\303\ALLIANCE_ESCORT_CARRIER_FAR.BMP">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\303\ALLIANCE_ESCORT_CARRIER_MEDIUM.BMP">
+    <None Update="capital ships\TACTICAL.DLL\303\ALLIANCE_ESCORT_CARRIER_MEDIUM.BMP">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\303\ALLIANCE_LIBERATOR_CRUISER_CLOSE.BMP">
+    <None Update="capital ships\TACTICAL.DLL\303\ALLIANCE_LIBERATOR_CRUISER_CLOSE.BMP">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\303\ALLIANCE_LIBERATOR_CRUISER_FAR.BMP">
+    <None Update="capital ships\TACTICAL.DLL\303\ALLIANCE_LIBERATOR_CRUISER_FAR.BMP">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\303\ALLIANCE_LIBERATOR_CRUISER_MEDIUM.BMP">
+    <None Update="capital ships\TACTICAL.DLL\303\ALLIANCE_LIBERATOR_CRUISER_MEDIUM.BMP">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\303\ALLIANCE_MC80_LIBERTY_CRUISER_CLOSE.BMP">
+    <None Update="capital ships\TACTICAL.DLL\303\ALLIANCE_MC80_LIBERTY_CRUISER_CLOSE.BMP">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\303\ALLIANCE_MC80_LIBERTY_CRUISER_FAR.BMP">
+    <None Update="capital ships\TACTICAL.DLL\303\ALLIANCE_MC80_LIBERTY_CRUISER_FAR.BMP">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\303\ALLIANCE_MC80_LIBERTY_CRUISER_MEDIUM.BMP">
+    <None Update="capital ships\TACTICAL.DLL\303\ALLIANCE_MC80_LIBERTY_CRUISER_MEDIUM.BMP">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\303\ALLIANCE_MEDIUM_TRANSPORT_CLOSE.BMP">
+    <None Update="capital ships\TACTICAL.DLL\303\ALLIANCE_MEDIUM_TRANSPORT_CLOSE.BMP">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\303\ALLIANCE_MEDIUM_TRANSPORT_FAR.BMP">
+    <None Update="capital ships\TACTICAL.DLL\303\ALLIANCE_MEDIUM_TRANSPORT_FAR.BMP">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\303\ALLIANCE_MEDIUM_TRANSPORT_MEDIUM.BMP">
+    <None Update="capital ships\TACTICAL.DLL\303\ALLIANCE_MEDIUM_TRANSPORT_MEDIUM.BMP">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\303\ALLIANCE_NEBULON_B_FRIGATE_CLOSE.BMP">
+    <None Update="capital ships\TACTICAL.DLL\303\ALLIANCE_NEBULON_B_FRIGATE_CLOSE.BMP">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\303\ALLIANCE_NEBULON_B_FRIGATE_FAR.BMP">
+    <None Update="capital ships\TACTICAL.DLL\303\ALLIANCE_NEBULON_B_FRIGATE_FAR.BMP">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\303\ALLIANCE_NEBULON_B_FRIGATE_MEDIUM.BMP">
+    <None Update="capital ships\TACTICAL.DLL\303\ALLIANCE_NEBULON_B_FRIGATE_MEDIUM.BMP">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\303\ALLIANCE_REPUBLIC_DREADNAUGHT_CLASS_HEAVY_CRUISER_CLOSE.BMP">
+    <None Update="capital ships\TACTICAL.DLL\303\ALLIANCE_REPUBLIC_DREADNAUGHT_CLASS_HEAVY_CRUISER_CLOSE.BMP">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\303\ALLIANCE_REPUBLIC_DREADNAUGHT_CLASS_HEAVY_CRUISER_FAR.BMP">
+    <None Update="capital ships\TACTICAL.DLL\303\ALLIANCE_REPUBLIC_DREADNAUGHT_CLASS_HEAVY_CRUISER_FAR.BMP">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\303\ALLIANCE_REPUBLIC_DREADNAUGHT_CLASS_HEAVY_CRUISER_MEDIUM.BMP">
+    <None Update="capital ships\TACTICAL.DLL\303\ALLIANCE_REPUBLIC_DREADNAUGHT_CLASS_HEAVY_CRUISER_MEDIUM.BMP">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\303\EMPIRE_ASSAULT_TRANSPORT_CLOSE.BMP">
+    <None Update="capital ships\TACTICAL.DLL\303\EMPIRE_ASSAULT_TRANSPORT_CLOSE.BMP">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\303\EMPIRE_ASSAULT_TRANSPORT_FAR.BMP">
+    <None Update="capital ships\TACTICAL.DLL\303\EMPIRE_ASSAULT_TRANSPORT_FAR.BMP">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\303\EMPIRE_ASSAULT_TRANSPORT_MEDIUM.BMP">
+    <None Update="capital ships\TACTICAL.DLL\303\EMPIRE_ASSAULT_TRANSPORT_MEDIUM.BMP">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\303\EMPIRE_CARRACK_CLASS_LIGHT_CRUISER_CLOSE.BMP">
+    <None Update="capital ships\TACTICAL.DLL\303\EMPIRE_CARRACK_CLASS_LIGHT_CRUISER_CLOSE.BMP">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\303\EMPIRE_CARRACK_CLASS_LIGHT_CRUISER_FAR.BMP">
+    <None Update="capital ships\TACTICAL.DLL\303\EMPIRE_CARRACK_CLASS_LIGHT_CRUISER_FAR.BMP">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\303\EMPIRE_CARRACK_CLASS_LIGHT_CRUISER_MEDIUM.BMP">
+    <None Update="capital ships\TACTICAL.DLL\303\EMPIRE_CARRACK_CLASS_LIGHT_CRUISER_MEDIUM.BMP">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\303\EMPIRE_GALLEON_CLOSE.BMP">
+    <None Update="capital ships\TACTICAL.DLL\303\EMPIRE_GALLEON_CLOSE.BMP">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\303\EMPIRE_GALLEON_FAR.BMP">
+    <None Update="capital ships\TACTICAL.DLL\303\EMPIRE_GALLEON_FAR.BMP">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\303\EMPIRE_GALLEON_MEDIUM.BMP">
+    <None Update="capital ships\TACTICAL.DLL\303\EMPIRE_GALLEON_MEDIUM.BMP">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\303\EMPIRE_IMMOBILIZER_CRUISER_CLOSE.BMP">
+    <None Update="capital ships\TACTICAL.DLL\303\EMPIRE_IMMOBILIZER_CRUISER_CLOSE.BMP">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\303\EMPIRE_IMMOBILIZER_CRUISER_FAR.BMP">
+    <None Update="capital ships\TACTICAL.DLL\303\EMPIRE_IMMOBILIZER_CRUISER_FAR.BMP">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\303\EMPIRE_IMMOBILIZER_CRUISER_MEDIUM.BMP">
+    <None Update="capital ships\TACTICAL.DLL\303\EMPIRE_IMMOBILIZER_CRUISER_MEDIUM.BMP">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\303\EMPIRE_IMPERIAL_1_STAR_DESTROYER_CLOSE.BMP">
+    <None Update="capital ships\TACTICAL.DLL\303\EMPIRE_IMPERIAL_1_STAR_DESTROYER_CLOSE.BMP">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\303\EMPIRE_IMPERIAL_1_STAR_DESTROYER_FAR.BMP">
+    <None Update="capital ships\TACTICAL.DLL\303\EMPIRE_IMPERIAL_1_STAR_DESTROYER_FAR.BMP">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\303\EMPIRE_IMPERIAL_1_STAR_DESTROYER_MEDIUM.BMP">
+    <None Update="capital ships\TACTICAL.DLL\303\EMPIRE_IMPERIAL_1_STAR_DESTROYER_MEDIUM.BMP">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\303\EMPIRE_IMPERIAL_2_STAR_DESTROYER_CLOSE.BMP">
+    <None Update="capital ships\TACTICAL.DLL\303\EMPIRE_IMPERIAL_2_STAR_DESTROYER_CLOSE.BMP">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\303\EMPIRE_IMPERIAL_2_STAR_DESTROYER_FAR.BMP">
+    <None Update="capital ships\TACTICAL.DLL\303\EMPIRE_IMPERIAL_2_STAR_DESTROYER_FAR.BMP">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\303\EMPIRE_IMPERIAL_2_STAR_DESTROYER_MEDIUM.BMP">
+    <None Update="capital ships\TACTICAL.DLL\303\EMPIRE_IMPERIAL_2_STAR_DESTROYER_MEDIUM.BMP">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\303\EMPIRE_IMPERIAL_DREADNOUGHT_CLOSE.BMP">
+    <None Update="capital ships\TACTICAL.DLL\303\EMPIRE_IMPERIAL_DREADNOUGHT_CLOSE.BMP">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\303\EMPIRE_IMPERIAL_DREADNOUGHT_FAR.BMP">
+    <None Update="capital ships\TACTICAL.DLL\303\EMPIRE_IMPERIAL_DREADNOUGHT_FAR.BMP">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\303\EMPIRE_IMPERIAL_DREADNOUGHT_MEDIUM.BMP">
+    <None Update="capital ships\TACTICAL.DLL\303\EMPIRE_IMPERIAL_DREADNOUGHT_MEDIUM.BMP">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\303\EMPIRE_IMPERIAL_ESCORT_CARRIER_CLOSE.BMP">
+    <None Update="capital ships\TACTICAL.DLL\303\EMPIRE_IMPERIAL_ESCORT_CARRIER_CLOSE.BMP">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\303\EMPIRE_IMPERIAL_ESCORT_CARRIER_FAR.BMP">
+    <None Update="capital ships\TACTICAL.DLL\303\EMPIRE_IMPERIAL_ESCORT_CARRIER_FAR.BMP">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\303\EMPIRE_IMPERIAL_ESCORT_CARRIER_MEDIUM.BMP">
+    <None Update="capital ships\TACTICAL.DLL\303\EMPIRE_IMPERIAL_ESCORT_CARRIER_MEDIUM.BMP">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\303\EMPIRE_LANCER_FRIGATE_CLOSE.BMP">
+    <None Update="capital ships\TACTICAL.DLL\303\EMPIRE_LANCER_FRIGATE_CLOSE.BMP">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\303\EMPIRE_LANCER_FRIGATE_FAR.BMP">
+    <None Update="capital ships\TACTICAL.DLL\303\EMPIRE_LANCER_FRIGATE_FAR.BMP">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\303\EMPIRE_LANCER_FRIGATE_MEDIUM.BMP">
+    <None Update="capital ships\TACTICAL.DLL\303\EMPIRE_LANCER_FRIGATE_MEDIUM.BMP">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\303\EMPIRE_STAR_GALLEON_CLASS_FRIGATE_CLOSE.BMP">
+    <None Update="capital ships\TACTICAL.DLL\303\EMPIRE_STAR_GALLEON_CLASS_FRIGATE_CLOSE.BMP">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\303\EMPIRE_STAR_GALLEON_CLASS_FRIGATE_FAR.BMP">
+    <None Update="capital ships\TACTICAL.DLL\303\EMPIRE_STAR_GALLEON_CLASS_FRIGATE_FAR.BMP">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\303\EMPIRE_STAR_GALLEON_CLASS_FRIGATE_MEDIUM.BMP">
+    <None Update="capital ships\TACTICAL.DLL\303\EMPIRE_STAR_GALLEON_CLASS_FRIGATE_MEDIUM.BMP">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\303\EMPIRE_STRIKE_CLASS_MEDIUM_CRUISER_CLOSE.BMP">
+    <None Update="capital ships\TACTICAL.DLL\303\EMPIRE_STRIKE_CLASS_MEDIUM_CRUISER_CLOSE.BMP">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\303\EMPIRE_STRIKE_CLASS_MEDIUM_CRUISER_FAR.BMP">
+    <None Update="capital ships\TACTICAL.DLL\303\EMPIRE_STRIKE_CLASS_MEDIUM_CRUISER_FAR.BMP">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\303\EMPIRE_STRIKE_CLASS_MEDIUM_CRUISER_MEDIUM.BMP">
+    <None Update="capital ships\TACTICAL.DLL\303\EMPIRE_STRIKE_CLASS_MEDIUM_CRUISER_MEDIUM.BMP">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\303\EMPIRE_SUPER_STAR_DESTROYER_CLOSE.BMP">
+    <None Update="capital ships\TACTICAL.DLL\303\EMPIRE_SUPER_STAR_DESTROYER_CLOSE.BMP">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\303\EMPIRE_SUPER_STAR_DESTROYER_FAR.BMP">
+    <None Update="capital ships\TACTICAL.DLL\303\EMPIRE_SUPER_STAR_DESTROYER_FAR.BMP">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\303\EMPIRE_SUPER_STAR_DESTROYER_MEDIUM.BMP">
+    <None Update="capital ships\TACTICAL.DLL\303\EMPIRE_SUPER_STAR_DESTROYER_MEDIUM.BMP">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\303\EMPIRE_VICTORY_1_STAR_DESTROYER_CLOSE.BMP">
+    <None Update="capital ships\TACTICAL.DLL\303\EMPIRE_VICTORY_1_STAR_DESTROYER_CLOSE.BMP">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\303\EMPIRE_VICTORY_1_STAR_DESTROYER_FAR.BMP">
+    <None Update="capital ships\TACTICAL.DLL\303\EMPIRE_VICTORY_1_STAR_DESTROYER_FAR.BMP">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\303\EMPIRE_VICTORY_1_STAR_DESTROYER_MEDIUM.BMP">
+    <None Update="capital ships\TACTICAL.DLL\303\EMPIRE_VICTORY_1_STAR_DESTROYER_MEDIUM.BMP">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\303\EMPIRE_VICTORY_2_STAR_DESTROYER_CLOSE.BMP">
+    <None Update="capital ships\TACTICAL.DLL\303\EMPIRE_VICTORY_2_STAR_DESTROYER_CLOSE.BMP">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\303\EMPIRE_VICTORY_2_STAR_DESTROYER_FAR.BMP">
+    <None Update="capital ships\TACTICAL.DLL\303\EMPIRE_VICTORY_2_STAR_DESTROYER_FAR.BMP">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="ships\TACTICAL.DLL\303\EMPIRE_VICTORY_2_STAR_DESTROYER_MEDIUM.BMP">
+    <None Update="capital ships\TACTICAL.DLL\303\EMPIRE_VICTORY_2_STAR_DESTROYER_MEDIUM.BMP">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="strategy-dll.act">
@@ -5524,106 +6016,70 @@
     <None Update="tactical-ui\TACTICAL.DLL\BITMAP\2158-1033-tactical-ui-hud-empty.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="test\EDATA\051-edata-2100-ship-alliance-alliance-dreadnaught_mc40a-light-cruiser.bmp">
+    <None Update="capital ships\EDATA\051-edata-2100-ship-alliance-alliance-dreadnaught_mc40a-light-cruiser.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="test\EDATA\053-edata-2130-ship-alliance-bulwark-battlecruiser_viscount-star-defender.bmp">
+    <None Update="capital ships\EDATA\053-edata-2130-ship-alliance-bulwark-battlecruiser_viscount-star-defender.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="test\EDATA\055-edata-2120-ship-alliance-cc-9600-frigate_mc30c-frigate.bmp">
+    <None Update="capital ships\EDATA\055-edata-2120-ship-alliance-cc-9600-frigate_mc30c-frigate.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="test\EDATA\056-edata-2150-ship-alliance-dauntless-cruiser_mc80a-homeone-cruiser.bmp">
+    <None Update="capital ships\EDATA\056-edata-2150-ship-alliance-dauntless-cruiser_mc80a-homeone-cruiser.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="test\EDATA\057-edata-2510-ship-empire-strike-cruiser_vindicator-heavy-cruiser.bmp">
+    <None Update="capital ships\EDATA\057-edata-2510-ship-empire-strike-cruiser_vindicator-heavy-cruiser.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="test\EDATA\060-edata-2540-ship-empire-carrack-light-cruiser_arquitens-light-cruiser.bmp">
+    <None Update="capital ships\EDATA\060-edata-2540-ship-empire-carrack-light-cruiser_arquitens-light-cruiser.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="test\EDATA\064-edata-2580-ship-empire-assault-transport_gladiator-star-destroyer.bmp">
+    <None Update="capital ships\EDATA\064-edata-2580-ship-empire-assault-transport_gladiator-star-destroyer.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="test\EDATA\066-edata-2590-ship-empire-galleon_acclamator-drop-ship.bmp">
+    <None Update="capital ships\EDATA\066-edata-2590-ship-empire-galleon_acclamator-drop-ship.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="test\readme.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="test\TACTICAL.DLL\301\2120-1033-tactical-ship-alliance-cc-9600-frigate_mc30c-frigate-close.x">
+    <None Update="capital ships\TACTICAL.DLL\303\ALLIANCE_MC30C_FRIGATE_CLOSE.BMP">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="test\TACTICAL.DLL\301\2121-1033-tactical-ship-alliance-cc-9600-frigate_mc30c-frigate-medium.x">
+    <None Update="capital ships\TACTICAL.DLL\303\ALLIANCE_MC30C_FRIGATE_FAR.BMP">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="test\TACTICAL.DLL\301\2122-1033-tactical-ship-alliance-cc-9600-frigate_mc30c-frigate-far.x">
+    <None Update="capital ships\TACTICAL.DLL\303\ALLIANCE_MC30C_FRIGATE_MEDIUM.BMP">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="test\TACTICAL.DLL\301\2510-1033-tactical-ship-empire-strike-cruiser_vindicator-heavy-cruiser-close.x">
+    <None Update="capital ships\TACTICAL.DLL\303\EMPIRE_ACCLAMATOR_CLASS_DROPSHIP_CLOSE.BMP">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="test\TACTICAL.DLL\301\2511-1033-tactical-ship-empire-strike-cruiser_vindicator-heavy-cruiser-medium.x">
+    <None Update="capital ships\TACTICAL.DLL\303\EMPIRE_ACCLAMATOR_CLASS_DROPSHIP_FAR.BMP">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="test\TACTICAL.DLL\301\2512-1033-tactical-ship-empire-strike-cruiser_vindicator-heavy-cruiser-far.x">
+    <None Update="capital ships\TACTICAL.DLL\303\EMPIRE_ACCLAMATOR_CLASS_DROPSHIP_MEDIUM.BMP">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="test\TACTICAL.DLL\301\2540-1033-tactical-ship-empire-carrack-light-cruiser_arquitens-light-cruiser-close.x">
+    <None Update="capital ships\TACTICAL.DLL\303\EMPIRE_ARQUITENS_CLASS_LIGHT_CRUISER_CLOSE.BMP">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="test\TACTICAL.DLL\301\2541-1033-tactical-ship-empire-carrack-light-cruiser_arquitens-light-cruiser-medium.x">
+    <None Update="capital ships\TACTICAL.DLL\303\EMPIRE_ARQUITENS_CLASS_LIGHT_CRUISER_FAR.BMP">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="test\TACTICAL.DLL\301\2542-1033-tactical-ship-empire-carrack-light-cruiser_arquitens-light-cruiser-far.x">
+    <None Update="capital ships\TACTICAL.DLL\303\EMPIRE_ARQUITENS_CLASS_LIGHT_CRUISER_MEDIUM.BMP">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="test\TACTICAL.DLL\301\2590-1033-tactical-ship-empire-galleon_acclamator-drop-ship-close.x">
+    <None Update="capital ships\TACTICAL.DLL\303\EMPIRE_VINDICATOR_HEAVY_CRUISER_CLOSE.BMP">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="test\TACTICAL.DLL\301\2591-1033-tactical-ship-empire-galleon_acclamator-drop-ship-medium.x">
+    <None Update="capital ships\TACTICAL.DLL\303\EMPIRE_VINDICATOR_HEAVY_CRUISER_FAR.BMP">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="test\TACTICAL.DLL\301\2592-1033-tactical-ship-empire-galleon_acclamator-drop-ship-far.x">
+    <None Update="capital ships\TACTICAL.DLL\303\EMPIRE_VINDICATOR_HEAVY_CRUISER_MEDIUM.BMP">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="test\TACTICAL.DLL\303\ALLIANCE_MC30C_FRIGATE_CLOSE.BMP">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Update="test\TACTICAL.DLL\303\ALLIANCE_MC30C_FRIGATE_FAR.BMP">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Update="test\TACTICAL.DLL\303\ALLIANCE_MC30C_FRIGATE_MEDIUM.BMP">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Update="test\TACTICAL.DLL\303\EMPIRE_ACCLAMATOR_CLASS_DROPSHIP_CLOSE.BMP">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Update="test\TACTICAL.DLL\303\EMPIRE_ACCLAMATOR_CLASS_DROPSHIP_FAR.BMP">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Update="test\TACTICAL.DLL\303\EMPIRE_ACCLAMATOR_CLASS_DROPSHIP_MEDIUM.BMP">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Update="test\TACTICAL.DLL\303\EMPIRE_ARQUITENS_CLASS_LIGHT_CRUISER_CLOSE.BMP">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Update="test\TACTICAL.DLL\303\EMPIRE_ARQUITENS_CLASS_LIGHT_CRUISER_FAR.BMP">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Update="test\TACTICAL.DLL\303\EMPIRE_ARQUITENS_CLASS_LIGHT_CRUISER_MEDIUM.BMP">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Update="test\TACTICAL.DLL\303\EMPIRE_VINDICATOR_HEAVY_CRUISER_CLOSE.BMP">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Update="test\TACTICAL.DLL\303\EMPIRE_VINDICATOR_HEAVY_CRUISER_FAR.BMP">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Update="test\TACTICAL.DLL\303\EMPIRE_VINDICATOR_HEAVY_CRUISER_MEDIUM.BMP">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Update="test\TACTICAL.DLL\capitalships.csv">
+    <None Update="capital ships\capitalships.csv">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
   </ItemGroup>
@@ -5633,12 +6089,7 @@
     <Folder Include="characters\GOKRES.DLL\Bitmap\" />
     <Folder Include="characters\STRATEGY.DLL\Bitmap\" />
     <Folder Include="characters\TACTICAL.DLL\Bitmap\" />
-    <Folder Include="ships\EDATA\" />
-    <Folder Include="ships\TACTICAL.DLL\301\" />
     <Folder Include="systems\TACTICAL.DLL\303\" />
     <Folder Include="tactical-ui\TACTICAL.DLL\BITMAP\" />
-    <Folder Include="test\EDATA\" />
-    <Folder Include="test\TACTICAL.DLL\301\" />
-    <Folder Include="test\TACTICAL.DLL\303\" />
   </ItemGroup>
 </Project>
