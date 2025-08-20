@@ -74,7 +74,7 @@ Welcome to the open-source editor for Star Wars Rebellion made in .NET. You will
 
 ## Update 1.02
 
-- Usefull for old GoG setup_star_wars_rebellion_1.0_(17121).exe installer or Steam versions. Useless for GoG 1.0 v4 version at the moment.
+- Usefull for old GoG setup_star_wars_rebellion_1.0_(17121).exe installer or Steam versions. Not compatible with GoG 1.0 v4 latest version (and not needed).
 - Not needed if you use the 25th anniversary patch (since it's included in it already)
 - Extract the zip into your game directory. This will overwrite 2 files and add 12 new files.
   - Update 1.02 zip : https://github.com/MetasharpNet/StarWarsRebellionEditor.NET/releases/download/update-1.02-.dgvoodoo2-directx-2.86.2/update-1.02-.dgvoodoo2-directx-2.86.2.zip
@@ -172,7 +172,7 @@ C# 13.0 project built with .NET 9 in Visual Studio 2022 : https://visualstudio.m
 ## Setup
 
 - Install the latest .NET Desktop runtime : https://dotnet.microsoft.com/en-us/download/dotnet
-  - Direct link to latest version : https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/runtime-desktop-9.0.7-windows-x64-installer
+  - Direct link to latest version : https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/runtime-desktop-9.0.8-windows-x64-installer
 - Reboot
 - Install a fresh GoG or Steam Star Wars Rebellion game
 - Download the latest editor release : https://github.com/MetasharpNet/StarWarsRebellionEditor.NET/releases
@@ -191,7 +191,7 @@ C# 13.0 project built with .NET 9 in Visual Studio 2022 : https://visualstudio.m
 - Initial game setup, general and side parameters tables
 - Export in 1 click game resources in an export folder (bitmaps, sounds, videos, 3d models and data in CSV for now)
 - Patch : Star Wars Rebellion 25th Anniversary patch
-  - Test Patch : Patch your custom content from the test folder. It can be anything from the export modified to your taste. By default it contains 25th anniv patch content still in testing phase such as the new capital ships.
+  - Test Patch : Patch your custom content from the test folder. It can be anything from the export modified to your taste. By default it contains 25th anniv patch content still in testing phase (nothing as of today).
 - Pictures format converter
 
 ## To do
@@ -269,6 +269,7 @@ The 25th anniversary patch aims to refresh the game experience with mostly canno
   - 2024-12-23 [Alliance] MC40A Light Cruiser
   - 2024-12-23 [Alliance] MC80A Home One Cruiser
   - 2024-12-23 [Alliance] Liberator Cruiser
+- New capital ships sprites (in beta test at the moment)
 - 80/80 new Space Fighters sprites for 3D battles (X-wing, ...)
 - 16/16 HD background musics (44KHz vs 11KHz rebuilt from CDs and completed with AI remasters)
 
@@ -293,8 +294,6 @@ The 25th anniversary patch aims to refresh the game experience with mostly canno
 
 ## Roadmap
 
-- fix new high definition 3d models for all capital ships to avoid tactical crash (some tests needed)
-- new capital ships sprites
 - new units sprites
 - new missions sprites
 - new events sprites
