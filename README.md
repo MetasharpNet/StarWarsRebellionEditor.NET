@@ -269,7 +269,7 @@ The 25th anniversary patch aims to refresh the game experience with mostly canno
   - 2024-12-23 [Alliance] MC40A Light Cruiser
   - 2024-12-23 [Alliance] MC80A Home One Cruiser
   - 2024-12-23 [Alliance] Liberator Cruiser
-- New capital ships sprites (in beta test at the moment)
+- New capital ships sprites 30/30
 - 80/80 new Space Fighters sprites for 3D battles (X-wing, ...)
 - 16/16 HD background musics (44KHz vs 11KHz rebuilt from CDs and completed with AI remasters)
 
