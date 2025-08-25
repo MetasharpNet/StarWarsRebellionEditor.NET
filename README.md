@@ -60,9 +60,8 @@ Welcome to the open-source editor for Star Wars Rebellion made in .NET. You will
 
 - Avoid all extra software (GOG Galaxy, etc.) by getting a clean installer if available.
   - GOG direct offline installer : https://www.gog.com/downloads/star_wars_rebellion/en1installer0 (link works if logged in and game already bought)
-    - Previous installer is required for 1.02 or 25th anniversary patch : setup_star_wars_rebellion_1.0_(17121).exe
+    - Previous installer ( setup_star_wars_rebellion_1.0_(17121).exe ) allows the use of dgvoodoo directx files (but it's not required, the new installer is more friendly with fullscreen and windows interactions)
       - We can provide old installer on discord to people who show they have bought the game in screen sharing
-    - Latest installer introduced a fullscreen fix not compatible : setup_star_wars_rebellion_1.0_v4_gog_(82789).exe
   - Steam : I don't know
 - Install the game
 - Optional: In your Star Wars Rebellion folder, right-click REBEXE.EXE
