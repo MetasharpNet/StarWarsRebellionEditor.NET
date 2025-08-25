@@ -4,6 +4,7 @@ Welcome to the open-source editor for Star Wars Rebellion made in .NET. You will
 # Table of Contents
 
 - [Contact](#contact)
+- [Quick Procedure](#quick-procedure)
 - [Star Wars Rebellion](#star-wars-rebellion)
   - [Install](#install)
   - [Language](#language)
@@ -39,7 +40,9 @@ Welcome to the open-source editor for Star Wars Rebellion made in .NET. You will
 # Quick Procedure
 
   1- [Install](#install) the game
+  
   2- [Setup](#setup) the editor
+  
   3- [Patching](#patching) the game to upgrade to 25th anniversary
 
 ---
