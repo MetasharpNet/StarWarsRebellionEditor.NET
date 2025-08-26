@@ -61,6 +61,12 @@ namespace SwRebellionEditor
             label4 = new Label();
             label5 = new Label();
             buttonSwitchToAccurate = new Button();
+            buttonDisableBriefings = new Button();
+            groupBoxMap = new GroupBox();
+            groupBoxBriefings = new GroupBox();
+            buttonEnableBriefings = new Button();
+            groupBoxMap.SuspendLayout();
+            groupBoxBriefings.SuspendLayout();
             SuspendLayout();
             // 
             // systemsImageList
@@ -267,7 +273,7 @@ namespace SwRebellionEditor
             // buttonSwitchToCompatible
             // 
             buttonSwitchToCompatible.ForeColor = Color.Green;
-            buttonSwitchToCompatible.Location = new Point(24, 423);
+            buttonSwitchToCompatible.Location = new Point(21, 72);
             buttonSwitchToCompatible.Name = "buttonSwitchToCompatible";
             buttonSwitchToCompatible.Size = new Size(177, 23);
             buttonSwitchToCompatible.TabIndex = 1174;
@@ -278,7 +284,7 @@ namespace SwRebellionEditor
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(12, 376);
+            label4.Location = new Point(9, 25);
             label4.Name = "label4";
             label4.Size = new Size(459, 15);
             label4.TabIndex = 1175;
@@ -287,7 +293,7 @@ namespace SwRebellionEditor
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(30, 396);
+            label5.Location = new Point(27, 45);
             label5.Name = "label5";
             label5.Size = new Size(418, 15);
             label5.TabIndex = 1176;
@@ -296,7 +302,7 @@ namespace SwRebellionEditor
             // buttonSwitchToAccurate
             // 
             buttonSwitchToAccurate.ForeColor = Color.Red;
-            buttonSwitchToAccurate.Location = new Point(222, 423);
+            buttonSwitchToAccurate.Location = new Point(219, 72);
             buttonSwitchToAccurate.Name = "buttonSwitchToAccurate";
             buttonSwitchToAccurate.Size = new Size(166, 23);
             buttonSwitchToAccurate.TabIndex = 1177;
@@ -304,14 +310,56 @@ namespace SwRebellionEditor
             buttonSwitchToAccurate.UseVisualStyleBackColor = true;
             buttonSwitchToAccurate.Click += buttonSwitchToAccurate_Click;
             // 
+            // buttonDisableBriefings
+            // 
+            buttonDisableBriefings.Location = new Point(17, 30);
+            buttonDisableBriefings.Name = "buttonDisableBriefings";
+            buttonDisableBriefings.Size = new Size(166, 23);
+            buttonDisableBriefings.TabIndex = 1178;
+            buttonDisableBriefings.Text = "Disable Briefings";
+            buttonDisableBriefings.UseVisualStyleBackColor = true;
+            buttonDisableBriefings.Click += buttonDisableBriefings_Click;
+            // 
+            // groupBoxMap
+            // 
+            groupBoxMap.Controls.Add(buttonSwitchToAccurate);
+            groupBoxMap.Controls.Add(buttonSwitchToCompatible);
+            groupBoxMap.Controls.Add(label4);
+            groupBoxMap.Controls.Add(label5);
+            groupBoxMap.Location = new Point(12, 367);
+            groupBoxMap.Name = "groupBoxMap";
+            groupBoxMap.Size = new Size(477, 105);
+            groupBoxMap.TabIndex = 1179;
+            groupBoxMap.TabStop = false;
+            groupBoxMap.Text = "Map Type Switchs";
+            // 
+            // groupBoxBriefings
+            // 
+            groupBoxBriefings.Controls.Add(buttonEnableBriefings);
+            groupBoxBriefings.Controls.Add(buttonDisableBriefings);
+            groupBoxBriefings.Location = new Point(500, 372);
+            groupBoxBriefings.Name = "groupBoxBriefings";
+            groupBoxBriefings.Size = new Size(200, 100);
+            groupBoxBriefings.TabIndex = 1180;
+            groupBoxBriefings.TabStop = false;
+            groupBoxBriefings.Text = "New Game Briefings";
+            // 
+            // buttonEnableBriefings
+            // 
+            buttonEnableBriefings.Location = new Point(17, 61);
+            buttonEnableBriefings.Name = "buttonEnableBriefings";
+            buttonEnableBriefings.Size = new Size(166, 23);
+            buttonEnableBriefings.TabIndex = 1179;
+            buttonEnableBriefings.Text = "(Re) Enable Briefings";
+            buttonEnableBriefings.UseVisualStyleBackColor = true;
+            buttonEnableBriefings.Click += buttonEnableBriefings_Click;
+            // 
             // PatchForm
             // 
             AutoScaleMode = AutoScaleMode.None;
-            ClientSize = new Size(735, 457);
-            Controls.Add(buttonSwitchToAccurate);
-            Controls.Add(label5);
-            Controls.Add(label4);
-            Controls.Add(buttonSwitchToCompatible);
+            ClientSize = new Size(735, 487);
+            Controls.Add(groupBoxBriefings);
+            Controls.Add(groupBoxMap);
             Controls.Add(label3);
             Controls.Add(accurateGalaxyMapCheckBox);
             Controls.Add(compatibleGalaxyMapCheckBox);
@@ -341,6 +389,9 @@ namespace SwRebellionEditor
             FormClosing += GameObjectsListForm_FormClosing;
             Load += GameObjectsListForm_Load;
             KeyDown += GameObjectsListForm_KeyDown;
+            groupBoxMap.ResumeLayout(false);
+            groupBoxMap.PerformLayout();
+            groupBoxBriefings.ResumeLayout(false);
             ResumeLayout(false);
             PerformLayout();
         }
@@ -369,5 +420,9 @@ namespace SwRebellionEditor
         private Label label4;
         private Label label5;
         private Button buttonSwitchToAccurate;
+        private Button buttonDisableBriefings;
+        private GroupBox groupBoxMap;
+        private GroupBox groupBoxBriefings;
+        private Button buttonEnableBriefings;
     }
 }

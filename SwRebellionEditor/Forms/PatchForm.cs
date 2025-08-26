@@ -888,7 +888,7 @@ public partial class PatchForm : PatchDesignForm
                 }
             }
         }
-        MessageBox.Show(this, "Switch to compatible galaxy map done. You can now play the game.", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        MessageBox.Show("Switch to compatible galaxy map done. You can now play the game.");
     }
 
     private void buttonSwitchToAccurate_Click(object sender, EventArgs e)
@@ -956,6 +956,48 @@ public partial class PatchForm : PatchDesignForm
                 }
             }
         }
-        MessageBox.Show(this, "Switch to accurate galaxy map done. You can now play the game.", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        MessageBox.Show("Switch to accurate galaxy map done. You can now play the game.");
+    }
+
+    private void buttonDisableBriefings_Click(object sender, EventArgs e)
+    {
+        var allianceBriefingPath    = Path.Combine(Settings.Current.GameFolder, "ALBRIEF.DLL");
+        var allianceBriefingSavPath = Path.Combine(Settings.Current.GameFolder, "ALBRIEF.DLL.SAV");
+        var empireBriefingPath      = Path.Combine(Settings.Current.GameFolder, "EMBRIEF.DLL");
+        var empireBriefingSavPath   = Path.Combine(Settings.Current.GameFolder, "EMBRIEF.DLL.SAV");
+        if (File.Exists(allianceBriefingPath))
+        {
+            if (File.Exists(allianceBriefingSavPath))
+                File.Delete(allianceBriefingSavPath);
+            File.Move(allianceBriefingPath, allianceBriefingSavPath);
+        }
+        if (File.Exists(empireBriefingPath))
+        {
+            if (File.Exists(empireBriefingSavPath))
+                File.Delete(empireBriefingSavPath);
+            File.Move(empireBriefingPath, empireBriefingSavPath);
+        }
+        MessageBox.Show("Briefings disabled. You can now play the game.");
+    }
+
+    private void buttonEnableBriefings_Click(object sender, EventArgs e)
+    {
+        var allianceBriefingPath    = Path.Combine(Settings.Current.GameFolder, "ALBRIEF.DLL");
+        var allianceBriefingSavPath = Path.Combine(Settings.Current.GameFolder, "ALBRIEF.DLL.SAV");
+        var empireBriefingPath      = Path.Combine(Settings.Current.GameFolder, "EMBRIEF.DLL");
+        var empireBriefingSavPath   = Path.Combine(Settings.Current.GameFolder, "EMBRIEF.DLL.SAV");
+        if (File.Exists(allianceBriefingSavPath))
+        {
+            if (File.Exists(allianceBriefingPath))
+                File.Delete(allianceBriefingPath);
+            File.Move(allianceBriefingSavPath, allianceBriefingPath);
+        }
+        if (File.Exists(empireBriefingSavPath))
+        {
+            if (File.Exists(empireBriefingPath))
+                File.Delete(empireBriefingPath);
+            File.Move(empireBriefingSavPath, empireBriefingPath);
+        }
+        MessageBox.Show("Briefings (re)enabled. You can now play the game.");
     }
 }
