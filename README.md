@@ -4,6 +4,7 @@ Welcome to the open-source editor for Star Wars Rebellion made in .NET. You will
 # Table of Contents
 
 - [Contact](#contact)
+- [Quick Procedure](#quick-procedure)
 - [Star Wars Rebellion](#star-wars-rebellion)
   - [Install](#install)
   - [Language](#language)
@@ -36,6 +37,14 @@ Welcome to the open-source editor for Star Wars Rebellion made in .NET. You will
 - Steam : https://steamcommunity.com/app/441550/discussions/0/5913829825701729169/
 - GoG : https://www.gog.com/forum/star_wars_rebellion/star_wars_rebellion_in_2023_25th_anniv_patch_fix_fr_patch_guides
 
+# Quick Procedure
+
+  1- [Install](#install) the game
+  
+  2- [Setup](#setup) the editor
+  
+  3- [Patching](#patching) the game to upgrade to 25th anniversary
+
 ---
 
 # Star Wars Rebellion
@@ -51,9 +60,8 @@ Welcome to the open-source editor for Star Wars Rebellion made in .NET. You will
 
 - Avoid all extra software (GOG Galaxy, etc.) by getting a clean installer if available.
   - GOG direct offline installer : https://www.gog.com/downloads/star_wars_rebellion/en1installer0 (link works if logged in and game already bought)
-    - Previous installer is required for 1.02 or 25th anniversary patch : setup_star_wars_rebellion_1.0_(17121).exe
+    - Previous installer ( setup_star_wars_rebellion_1.0_(17121).exe ) allows the use of dgvoodoo directx files (it should provide nicer tactical rendering, but it's not required, the new installer is more friendly with fullscreen and windows interactions)
       - We can provide old installer on discord to people who show they have bought the game in screen sharing
-    - Latest installer introduced a fullscreen fix not compatible : setup_star_wars_rebellion_1.0_v4_gog_(82789).exe
   - Steam : I don't know
 - Install the game
 - Optional: In your Star Wars Rebellion folder, right-click REBEXE.EXE
@@ -269,7 +277,7 @@ The 25th anniversary patch aims to refresh the game experience with mostly canno
   - 2024-12-23 [Alliance] MC40A Light Cruiser
   - 2024-12-23 [Alliance] MC80A Home One Cruiser
   - 2024-12-23 [Alliance] Liberator Cruiser
-- New capital ships sprites (in beta test at the moment)
+- New capital ships sprites 30/30
 - 80/80 new Space Fighters sprites for 3D battles (X-wing, ...)
 - 16/16 HD background musics (44KHz vs 11KHz rebuilt from CDs and completed with AI remasters)
 
