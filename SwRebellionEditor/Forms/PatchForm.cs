@@ -914,7 +914,7 @@ public partial class PatchForm : PatchDesignForm
                         sectorsGameFile.CsvToEntries(File.ReadAllText(filePath), "Sectors", "SectorsCount");
                         sectorsGameFile.Save(sectorsGameFilePath);
                     }
-                    if (accurateGalaxyMapCheckBox.Checked && Path.GetFileName(filePath).ToLowerInvariant().Contains("systems-accurate.csv"))
+                    if (Path.GetFileName(filePath).ToLowerInvariant().Contains("systems-accurate.csv"))
                     {
                         GameFilePath = Path.Combine(Settings.Current.GDataFolder, "SYSTEMSD.DAT");
                         GameFile = DatFile.Load<SYSTEMSD>(GameFilePath);
