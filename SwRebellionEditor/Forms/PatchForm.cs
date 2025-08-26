@@ -823,4 +823,137 @@ public partial class PatchForm : PatchDesignForm
 
     #endregion
 
+    private void buttonSwitchToCompatible_Click(object sender, EventArgs e)
+    {
+        // ---------------------------- CSV ---------------------------
+        var systemsFolder = Path.GetDirectoryName(".\\systems");
+        var csvFiles = new List<string>();
+        csvFiles.AddRange(Directory.GetFiles(systemsFolder, "*.csv"));
+        foreach (var folder in Directory.GetDirectories(systemsFolder))
+        {
+            csvFiles.AddRange(Directory.GetFiles(folder, "*.csv"));
+        }
+        foreach (var filePath in csvFiles)
+        {
+            if (Path.GetExtension(filePath).ToLowerInvariant() == ".csv")
+            {
+                try
+                {
+                    if (Path.GetFileName(filePath).ToLowerInvariant().Contains("sectors-compatible.csv"))
+                    {
+                        var sectorsGameFilePath = Path.Combine(Settings.Current.GDataFolder, "SECTORSD.DAT");
+                        var sectorsGameFile = DatFile.Load<SECTORSD>(sectorsGameFilePath);
+                        sectorsGameFile.CsvToEntries(File.ReadAllText(filePath), "Sectors", "SectorsCount");
+                        sectorsGameFile.Save(sectorsGameFilePath);
+                    }
+                    if (Path.GetFileName(filePath).ToLowerInvariant().Contains("systems-compatible.csv"))
+                    {
+                        GameFilePath = Path.Combine(Settings.Current.GDataFolder, "SYSTEMSD.DAT");
+                        GameFile = DatFile.Load<SYSTEMSD>(GameFilePath);
+                        GameFile.CsvToEntries(File.ReadAllText(filePath), "Systems", "SystemsCount");
+                        GameFile.Save(GameFilePath);
+                    }
+                }
+                catch (Exception ex)
+                {
+                }
+            }
+        }
+        // ---------------------------- RSRC ---------------------------
+        var interfaceFolder = Path.GetDirectoryName(".\\interface");
+        foreach (var patchFolder in Directory.GetDirectories(interfaceFolder))
+        {
+            if (patchFolder.EndsWith(".DLL"))
+            { // dll resources
+                foreach (var resourceFolder in Directory.GetDirectories(patchFolder))
+                {
+                    var resourceFolderOnly = Path.GetFileName(resourceFolder);
+                    if (resourceFolderOnly.ToLowerInvariant() == "bitmap")
+                    {
+                        var files = Directory.GetFiles(resourceFolder);
+                        foreach (var filePath in files)
+                        {
+                            if (Path.GetExtension(filePath).ToLowerInvariant() == ".txt")
+                                continue;
+                            var id = Path.GetFileNameWithoutExtension(filePath).Split('-')[0];
+                            if (patchFolder == "COMMON.DLL")
+                            {
+                                if (filePath.ToLowerInvariant().Contains("20001-1033-common-main-screen-accurate.bmp"))
+                                {
+                                    ResourcesDlls.Common.SaveBitmap(id, filePath);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    private void buttonSwitchToAccurate_Click(object sender, EventArgs e)
+    {
+        // ---------------------------- CSV ---------------------------
+        var systemsFolder = Path.GetDirectoryName(".\\systems");
+        var csvFiles = new List<string>();
+        csvFiles.AddRange(Directory.GetFiles(systemsFolder, "*.csv"));
+        foreach (var folder in Directory.GetDirectories(systemsFolder))
+        {
+            csvFiles.AddRange(Directory.GetFiles(folder, "*.csv"));
+        }
+        foreach (var filePath in csvFiles)
+        {
+            if (Path.GetExtension(filePath).ToLowerInvariant() == ".csv")
+            {
+                try
+                {
+                    if (Path.GetFileName(filePath).ToLowerInvariant().Contains("sectors-accurate.csv"))
+                    {
+                        var sectorsGameFilePath = Path.Combine(Settings.Current.GDataFolder, "SECTORSD.DAT");
+                        var sectorsGameFile = DatFile.Load<SECTORSD>(sectorsGameFilePath);
+                        sectorsGameFile.CsvToEntries(File.ReadAllText(filePath), "Sectors", "SectorsCount");
+                        sectorsGameFile.Save(sectorsGameFilePath);
+                    }
+                    if (accurateGalaxyMapCheckBox.Checked && Path.GetFileName(filePath).ToLowerInvariant().Contains("systems-accurate.csv"))
+                    {
+                        GameFilePath = Path.Combine(Settings.Current.GDataFolder, "SYSTEMSD.DAT");
+                        GameFile = DatFile.Load<SYSTEMSD>(GameFilePath);
+                        GameFile.CsvToEntries(File.ReadAllText(filePath), "Systems", "SystemsCount");
+                        GameFile.Save(GameFilePath);
+                    }
+                }
+                catch (Exception ex)
+                {
+                }
+            }
+        }
+        // ---------------------------- RSRC ---------------------------
+        var interfaceFolder = Path.GetDirectoryName(".\\interface");
+        foreach (var patchFolder in Directory.GetDirectories(interfaceFolder))
+        {
+            if (patchFolder.EndsWith(".DLL"))
+            { // dll resources
+                foreach (var resourceFolder in Directory.GetDirectories(patchFolder))
+                {
+                    var resourceFolderOnly = Path.GetFileName(resourceFolder);
+                    if (resourceFolderOnly.ToLowerInvariant() == "bitmap")
+                    {
+                        var files = Directory.GetFiles(resourceFolder);
+                        foreach (var filePath in files)
+                        {
+                            if (Path.GetExtension(filePath).ToLowerInvariant() == ".txt")
+                                continue;
+                            var id = Path.GetFileNameWithoutExtension(filePath).Split('-')[0];
+                            if (patchFolder == "COMMON.DLL")
+                            {
+                                if (filePath.ToLowerInvariant().Contains("20001-1033-common-main-screen-accurate.bmp"))
+                                {
+                                    ResourcesDlls.Common.SaveBitmap(id, filePath);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 }

@@ -57,7 +57,10 @@ namespace SwRebellionEditor
             compatibleGalaxyMapCheckBox = new CheckBox();
             accurateGalaxyMapCheckBox = new CheckBox();
             label3 = new Label();
+            buttonSwitchToCompatible = new Button();
             label4 = new Label();
+            label5 = new Label();
+            buttonSwitchToAccurate = new Button();
             SuspendLayout();
             // 
             // systemsImageList
@@ -68,6 +71,7 @@ namespace SwRebellionEditor
             // 
             // cancel
             // 
+            cancel.ForeColor = SystemColors.ActiveCaptionText;
             cancel.Location = new Point(604, 326);
             cancel.Name = "cancel";
             cancel.Size = new Size(75, 23);
@@ -80,7 +84,7 @@ namespace SwRebellionEditor
             // 
             patch.Location = new Point(24, 326);
             patch.Name = "patch";
-            patch.Size = new Size(110, 23);
+            patch.Size = new Size(119, 23);
             patch.TabIndex = 1155;
             patch.Text = "Patch my game";
             patch.UseVisualStyleBackColor = true;
@@ -158,7 +162,7 @@ namespace SwRebellionEditor
             warningLabel.Name = "warningLabel";
             warningLabel.Size = new Size(350, 15);
             warningLabel.TabIndex = 1163;
-            warningLabel.Text = "Released 2025-05 and provided without any warranty of any kind.";
+            warningLabel.Text = "Released 2025-08 and provided without any warranty of any kind.";
             // 
             // label1Requirement
             // 
@@ -208,12 +212,13 @@ namespace SwRebellionEditor
             // 
             // patchTest
             // 
-            patchTest.Location = new Point(450, 287);
+            patchTest.ForeColor = Color.Purple;
+            patchTest.Location = new Point(310, 326);
             patchTest.Name = "patchTest";
-            patchTest.Size = new Size(132, 23);
+            patchTest.Size = new Size(150, 23);
             patchTest.TabIndex = 1169;
             patchTest.Text = "Patch test folder only";
-            patchTest.UseVisualStyleBackColor = true;
+            patchTest.UseVisualStyleBackColor = false;
             patchTest.Click += patchTest_Click;
             // 
             // label2
@@ -259,21 +264,54 @@ namespace SwRebellionEditor
             label3.TabIndex = 1173;
             label3.Text = "For the patch  to work, you might need to disable antivirus such as Norton which might silentlt prevent proper files patching.";
             // 
+            // buttonSwitchToCompatible
+            // 
+            buttonSwitchToCompatible.ForeColor = Color.Green;
+            buttonSwitchToCompatible.Location = new Point(24, 423);
+            buttonSwitchToCompatible.Name = "buttonSwitchToCompatible";
+            buttonSwitchToCompatible.Size = new Size(177, 23);
+            buttonSwitchToCompatible.TabIndex = 1174;
+            buttonSwitchToCompatible.Text = "Switch to Compatible map";
+            buttonSwitchToCompatible.UseVisualStyleBackColor = true;
+            buttonSwitchToCompatible.Click += buttonSwitchToCompatible_Click;
+            // 
             // label4
             // 
             label4.AutoSize = true;
-            label4.ForeColor = Color.Red;
-            label4.Location = new Point(349, 308);
+            label4.Location = new Point(12, 376);
             label4.Name = "label4";
-            label4.Size = new Size(358, 15);
-            label4.TabIndex = 1174;
-            label4.Text = "Possible tactical crash if using all new ships, we're reworking them.";
+            label4.Size = new Size(459, 15);
+            label4.TabIndex = 1175;
+            label4.Text = "After successfull install, you can quick switch planet positions with the buttons below.";
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Location = new Point(30, 396);
+            label5.Name = "label5";
+            label5.Size = new Size(418, 15);
+            label5.TabIndex = 1176;
+            label5.Text = "This allow you for ex to use some saves for compatible and some for accurate.";
+            // 
+            // buttonSwitchToAccurate
+            // 
+            buttonSwitchToAccurate.ForeColor = Color.Red;
+            buttonSwitchToAccurate.Location = new Point(222, 423);
+            buttonSwitchToAccurate.Name = "buttonSwitchToAccurate";
+            buttonSwitchToAccurate.Size = new Size(166, 23);
+            buttonSwitchToAccurate.TabIndex = 1177;
+            buttonSwitchToAccurate.Text = "Switch to Accurate map";
+            buttonSwitchToAccurate.UseVisualStyleBackColor = true;
+            buttonSwitchToAccurate.Click += buttonSwitchToAccurate_Click;
             // 
             // PatchForm
             // 
             AutoScaleMode = AutoScaleMode.None;
-            ClientSize = new Size(735, 362);
+            ClientSize = new Size(735, 457);
+            Controls.Add(buttonSwitchToAccurate);
+            Controls.Add(label5);
             Controls.Add(label4);
+            Controls.Add(buttonSwitchToCompatible);
             Controls.Add(label3);
             Controls.Add(accurateGalaxyMapCheckBox);
             Controls.Add(compatibleGalaxyMapCheckBox);
@@ -327,6 +365,9 @@ namespace SwRebellionEditor
         private CheckBox compatibleGalaxyMapCheckBox;
         private CheckBox accurateGalaxyMapCheckBox;
         private Label label3;
+        private Button buttonSwitchToCompatible;
         private Label label4;
+        private Label label5;
+        private Button buttonSwitchToAccurate;
     }
 }
