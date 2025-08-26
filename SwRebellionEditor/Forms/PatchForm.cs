@@ -826,7 +826,7 @@ public partial class PatchForm : PatchDesignForm
     private void buttonSwitchToCompatible_Click(object sender, EventArgs e)
     {
         // ---------------------------- CSV ---------------------------
-        var systemsFolder = Path.GetDirectoryName(".\\systems");
+        var systemsFolder = ".\\systems\\";
         var csvFiles = new List<string>();
         csvFiles.AddRange(Directory.GetFiles(systemsFolder, "*.csv"));
         foreach (var folder in Directory.GetDirectories(systemsFolder))
@@ -860,10 +860,10 @@ public partial class PatchForm : PatchDesignForm
             }
         }
         // ---------------------------- RSRC ---------------------------
-        var interfaceFolder = Path.GetDirectoryName(".\\interface");
-        foreach (var patchFolder in Directory.GetDirectories(interfaceFolder))
+        foreach (var patchFolder in Directory.GetDirectories(".\\interface\\"))
         {
-            if (patchFolder.EndsWith(".DLL"))
+            var patchFolderOnly = Path.GetFileName(patchFolder);
+            if (patchFolderOnly.EndsWith(".DLL"))
             { // dll resources
                 foreach (var resourceFolder in Directory.GetDirectories(patchFolder))
                 {
@@ -876,9 +876,9 @@ public partial class PatchForm : PatchDesignForm
                             if (Path.GetExtension(filePath).ToLowerInvariant() == ".txt")
                                 continue;
                             var id = Path.GetFileNameWithoutExtension(filePath).Split('-')[0];
-                            if (patchFolder == "COMMON.DLL")
+                            if (patchFolderOnly == "COMMON.DLL")
                             {
-                                if (filePath.ToLowerInvariant().Contains("20001-1033-common-main-screen-accurate.bmp"))
+                                if (filePath.ToLowerInvariant().Contains("20001-1033-common-main-screen-compatible.bmp"))
                                 {
                                     ResourcesDlls.Common.SaveBitmap(id, filePath);
                                 }
@@ -888,12 +888,13 @@ public partial class PatchForm : PatchDesignForm
                 }
             }
         }
+        MessageBox.Show("Switch to compatible galaxy map done. You can now play the game.", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
     }
 
     private void buttonSwitchToAccurate_Click(object sender, EventArgs e)
     {
         // ---------------------------- CSV ---------------------------
-        var systemsFolder = Path.GetDirectoryName(".\\systems");
+        var systemsFolder = ".\\systems\\";
         var csvFiles = new List<string>();
         csvFiles.AddRange(Directory.GetFiles(systemsFolder, "*.csv"));
         foreach (var folder in Directory.GetDirectories(systemsFolder))
@@ -927,10 +928,10 @@ public partial class PatchForm : PatchDesignForm
             }
         }
         // ---------------------------- RSRC ---------------------------
-        var interfaceFolder = Path.GetDirectoryName(".\\interface");
-        foreach (var patchFolder in Directory.GetDirectories(interfaceFolder))
+        foreach (var patchFolder in Directory.GetDirectories(".\\interface\\"))
         {
-            if (patchFolder.EndsWith(".DLL"))
+            var patchFolderOnly = Path.GetFileName(patchFolder);
+            if (patchFolderOnly.EndsWith(".DLL"))
             { // dll resources
                 foreach (var resourceFolder in Directory.GetDirectories(patchFolder))
                 {
@@ -943,7 +944,7 @@ public partial class PatchForm : PatchDesignForm
                             if (Path.GetExtension(filePath).ToLowerInvariant() == ".txt")
                                 continue;
                             var id = Path.GetFileNameWithoutExtension(filePath).Split('-')[0];
-                            if (patchFolder == "COMMON.DLL")
+                            if (patchFolderOnly == "COMMON.DLL")
                             {
                                 if (filePath.ToLowerInvariant().Contains("20001-1033-common-main-screen-accurate.bmp"))
                                 {
@@ -955,5 +956,6 @@ public partial class PatchForm : PatchDesignForm
                 }
             }
         }
+        MessageBox.Show("Switch to accurate galaxy map done. You can now play the game.", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
     }
 }
