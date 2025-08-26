@@ -888,7 +888,7 @@ public partial class PatchForm : PatchDesignForm
                 }
             }
         }
-        MessageBox.Show("Switch to compatible galaxy map done. You can now play the game.", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        MessageBox.Show(this, "Switch to compatible galaxy map done. You can now play the game.", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
     }
 
     private void buttonSwitchToAccurate_Click(object sender, EventArgs e)
@@ -956,6 +956,6 @@ public partial class PatchForm : PatchDesignForm
                 }
             }
         }
-        MessageBox.Show("Switch to accurate galaxy map done. You can now play the game.", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        MessageBox.Show(this, "Switch to accurate galaxy map done. You can now play the game.", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
     }
 }
