@@ -59,10 +59,12 @@ Welcome to the open-source editor for Star Wars Rebellion made in .NET. You will
 ## Install
 
 - Avoid all extra software (GOG Galaxy, etc.) by getting a clean installer if available.
-  - GOG direct offline installer : https://www.gog.com/downloads/star_wars_rebellion/en1installer0 (link works if logged in and game already bought)
-    - Previous installer ( setup_star_wars_rebellion_1.0_(17121).exe ) allows the use of dgvoodoo directx files (it should provide nicer tactical rendering, but it's not required, the new installer is more friendly with fullscreen and windows interactions)
-      - We can provide old installer on discord to people who show they have bought the game in screen sharing
-  - Steam : I don't know
+- Multiple options are available, from best to worst :
+  - GOG older installer  ( setup_star_wars_rebellion_1.0_(17121).exe ) : allows the use of dgvoodoo files, which dramatically improves the tactical 3D combat rendering
+  - Steam installer : also allows the use of dgvoodoo files, which dramatically improves the tactical 3D combat rendering
+  - GoG latest installer ( setup_star_wars_rebellion_1.0_v4_gog_(82789).exe ) : https://www.gog.com/downloads/star_wars_rebellion/en1installer0 (link works if logged in and game already bought)
+    - This latest installer is not compatible with dgvoodoo files, the rendering in 3D combat is pretty poor, but the compatiblity with Windows is very good
+    - We can provide older installer on discord to people who show they have bought the game in screen sharing
 - Install the game
 - Optional: In your Star Wars Rebellion folder, right-click REBEXE.EXE
   - Properties
