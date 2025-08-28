@@ -323,10 +323,118 @@
     <None Update="capital ships\GOKRES.DLL\Bitmap\10126-1033-gokres-status-damage-ship-empire-imperial-dreadnaught_imperial-dreadnought.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="capital ships\TACTICAL.DLL\301\2530-1033-tactical-ship-empire-interdictor-cruiser_immobilizer-cruiser-close.x">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="capital ships\TACTICAL.DLL\301\2531-1033-tactical-ship-empire-interdictor-cruiser_immobilizer-cruiser-medium.x">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="capital ships\TACTICAL.DLL\301\2532-1033-tactical-ship-empire-interdictor-cruiser_immobilizer-cruiser-far.x">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="capital ships\TACTICAL.DLL\303\ALLIANCE_BULK_CRUISER_FAR.BMP">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="capital ships\TACTICAL.DLL\Bitmap\2038-1033-tactical-ship-empire-death-star.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="troops\EDATA\015-edata-troop-alliance-alliance-fleet-regiment.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="troops\EDATA\016-edata-troop-alliance-alliance-army-regiment.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="troops\EDATA\018-edata-troop-alliance-wookiee-regiment.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="troops\EDATA\019-edata-troop-alliance-mon-calamari-regiment.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="troops\EDATA\020-edata-troop-empire-stormtrooper-regiment.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="troops\EDATA\022-edata-troop-empire-imperial-army-regiment.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="troops\EDATA\023-edata-troop-empire-war-droid-regiment.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="troops\EDATA\024-edata-troop-empire-dark-trooper-regiment.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="troops\GOKRES.DLL\Bitmap\1088-1033-gokres-status-troop-alliance-alliance-fleet-regiment.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="troops\GOKRES.DLL\Bitmap\1089-1033-gokres-status-troop-alliance-alliance-army-regiment.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="troops\GOKRES.DLL\Bitmap\1091-1033-gokres-status-troop-alliance-wookiee-regiment.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="troops\GOKRES.DLL\Bitmap\1092-1033-gokres-status-troop-alliance-mon-calamari-regiment.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="troops\GOKRES.DLL\Bitmap\1152-1033-gokres-status-troop-empire-stormtrooper-regiment.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="troops\GOKRES.DLL\Bitmap\1154-1033-gokres-status-troop-empire-imperial-army-regiment.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="troops\GOKRES.DLL\Bitmap\1155-1033-gokres-status-troop-empire-war-droid-regiment.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="troops\GOKRES.DLL\Bitmap\1156-1033-gokres-status-troop-empire-dark-trooper-regiment.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="troops\GOKRES.DLL\Bitmap\17472-1033-gokres-troop-alliance-alliance-fleet-regiment.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="troops\GOKRES.DLL\Bitmap\17473-1033-gokres-troop-alliance-alliance-army-regiment.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="troops\GOKRES.DLL\Bitmap\17475-1033-gokres-troop-alliance-wookiee-regiment.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="troops\GOKRES.DLL\Bitmap\17476-1033-gokres-troop-alliance-mon-calamari-regiment.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="troops\GOKRES.DLL\Bitmap\17536-1033-gokres-troop-empire-stormtrooper-regiment.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="troops\GOKRES.DLL\Bitmap\17538-1033-gokres-troop-empire-imperial-army-regiment.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="troops\GOKRES.DLL\Bitmap\17539-1033-gokres-troop-empire-war-droid-regiment.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="troops\GOKRES.DLL\Bitmap\17540-1033-gokres-troop-empire-dark-trooper-regiment.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="troops\TACTICAL.DLL\Bitmap\2301-1033-tactical-troop-alliance-alliance-army-regiment.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="troops\TACTICAL.DLL\Bitmap\2304-1033-tactical-troop-empire-dark-trooper-regiment.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="troops\TACTICAL.DLL\Bitmap\2306-1033-tactical-troop-empire-imperial-army-regiment.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="troops\TACTICAL.DLL\Bitmap\2310-1033-tactical-troop-alliance-alliance-fleet-regiment.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="troops\TACTICAL.DLL\Bitmap\2311-1033-tactical-troop-alliance-mon-calamari-regiment.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="troops\TACTICAL.DLL\Bitmap\2312-1033-tactical-special-force-empire-noghri-death-commandos.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="troops\TACTICAL.DLL\Bitmap\2315-1033-tactical-troop-empire-war-droid-regiment.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="troops\TACTICAL.DLL\Bitmap\2316-1033-tactical-troop-alliance-wookiee-regiment.bmp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="troops\TACTICAL.DLL\Bitmap\2317-1033-tactical-troop-empire-stormtrooper-regiment.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="units-stats\GOKRES.DLL\Bitmap\18240-1033-gokres-ship-alliance-mon-calamari-cruiser_mc80-liberty-cruiser.bmp">
