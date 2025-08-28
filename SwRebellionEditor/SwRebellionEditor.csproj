@@ -3784,15 +3784,6 @@
     <None Update="capital ships\TACTICAL.DLL\303\ALLIANCE_BULK_FREIGHTER_MEDIUM.BMP">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="capital ships\TACTICAL.DLL\303\ALLIANCE_BULWARK_CLASS_BATTLECRUISER_MARK_3_CLOSE.BMP">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Update="capital ships\TACTICAL.DLL\303\ALLIANCE_BULWARK_CLASS_BATTLECRUISER_MARK_3_FAR.BMP">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Update="capital ships\TACTICAL.DLL\303\ALLIANCE_BULWARK_CLASS_BATTLECRUISER_MARK_3_MEDIUM.BMP">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
     <None Update="capital ships\TACTICAL.DLL\303\ALLIANCE_CC_7700_FRIGATE_CLOSE.BMP">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
@@ -3800,15 +3791,6 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="capital ships\TACTICAL.DLL\303\ALLIANCE_CC_7700_FRIGATE_MEDIUM.BMP">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Update="capital ships\TACTICAL.DLL\303\ALLIANCE_CC_9600_FRIGATE_CLOSE.BMP">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Update="capital ships\TACTICAL.DLL\303\ALLIANCE_CC_9600_FRIGATE_FAR.BMP">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Update="capital ships\TACTICAL.DLL\303\ALLIANCE_CC_9600_FRIGATE_MEDIUM.BMP">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="capital ships\TACTICAL.DLL\303\ALLIANCE_CORELLIAN_CORVETTE_CLOSE.BMP">
@@ -3827,15 +3809,6 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="capital ships\TACTICAL.DLL\303\ALLIANCE_CORELLIAN_GUNSHIP_MEDIUM.BMP">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Update="capital ships\TACTICAL.DLL\303\ALLIANCE_DAUNTLESS_CLASS_HEAVY_CRUISER_CLOSE.BMP">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Update="capital ships\TACTICAL.DLL\303\ALLIANCE_DAUNTLESS_CLASS_HEAVY_CRUISER_FAR.BMP">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Update="capital ships\TACTICAL.DLL\303\ALLIANCE_DAUNTLESS_CLASS_HEAVY_CRUISER_MEDIUM.BMP">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="capital ships\TACTICAL.DLL\303\ALLIANCE_ESCORT_CARRIER_CLOSE.BMP">
@@ -3881,42 +3854,6 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="capital ships\TACTICAL.DLL\303\ALLIANCE_NEBULON_B_FRIGATE_MEDIUM.BMP">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Update="capital ships\TACTICAL.DLL\303\ALLIANCE_REPUBLIC_DREADNAUGHT_CLASS_HEAVY_CRUISER_CLOSE.BMP">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Update="capital ships\TACTICAL.DLL\303\ALLIANCE_REPUBLIC_DREADNAUGHT_CLASS_HEAVY_CRUISER_FAR.BMP">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Update="capital ships\TACTICAL.DLL\303\ALLIANCE_REPUBLIC_DREADNAUGHT_CLASS_HEAVY_CRUISER_MEDIUM.BMP">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Update="capital ships\TACTICAL.DLL\303\EMPIRE_ASSAULT_TRANSPORT_CLOSE.BMP">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Update="capital ships\TACTICAL.DLL\303\EMPIRE_ASSAULT_TRANSPORT_FAR.BMP">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Update="capital ships\TACTICAL.DLL\303\EMPIRE_ASSAULT_TRANSPORT_MEDIUM.BMP">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Update="capital ships\TACTICAL.DLL\303\EMPIRE_CARRACK_CLASS_LIGHT_CRUISER_CLOSE.BMP">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Update="capital ships\TACTICAL.DLL\303\EMPIRE_CARRACK_CLASS_LIGHT_CRUISER_FAR.BMP">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Update="capital ships\TACTICAL.DLL\303\EMPIRE_CARRACK_CLASS_LIGHT_CRUISER_MEDIUM.BMP">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Update="capital ships\TACTICAL.DLL\303\EMPIRE_GALLEON_CLOSE.BMP">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Update="capital ships\TACTICAL.DLL\303\EMPIRE_GALLEON_FAR.BMP">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Update="capital ships\TACTICAL.DLL\303\EMPIRE_GALLEON_MEDIUM.BMP">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="capital ships\TACTICAL.DLL\303\EMPIRE_IMMOBILIZER_CRUISER_CLOSE.BMP">
@@ -3980,15 +3917,6 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="capital ships\TACTICAL.DLL\303\EMPIRE_STAR_GALLEON_CLASS_FRIGATE_MEDIUM.BMP">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Update="capital ships\TACTICAL.DLL\303\EMPIRE_STRIKE_CLASS_MEDIUM_CRUISER_CLOSE.BMP">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Update="capital ships\TACTICAL.DLL\303\EMPIRE_STRIKE_CLASS_MEDIUM_CRUISER_FAR.BMP">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Update="capital ships\TACTICAL.DLL\303\EMPIRE_STRIKE_CLASS_MEDIUM_CRUISER_MEDIUM.BMP">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="capital ships\TACTICAL.DLL\303\EMPIRE_SUPER_STAR_DESTROYER_CLOSE.BMP">
