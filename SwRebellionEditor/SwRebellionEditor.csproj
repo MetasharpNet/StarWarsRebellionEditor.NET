@@ -323,6 +323,9 @@
     <None Update="capital ships\GOKRES.DLL\Bitmap\10126-1033-gokres-status-damage-ship-empire-imperial-dreadnaught_imperial-dreadnought.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="capital ships\TACTICAL.DLL\303\ALLIANCE_BULK_CRUISER_FAR.BMP">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="capital ships\TACTICAL.DLL\Bitmap\2038-1033-tactical-ship-empire-death-star.bmp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
