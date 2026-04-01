@@ -39,47 +39,47 @@ public class SDPRTB : DatFile
 
     public override void PostLoad()
     {
-        SideParamTableEntries.First(spe => spe.Id ==  1).Name = ""; // ParamId=2560
-        SideParamTableEntries.First(spe => spe.Id ==  2).Name = ""; // ParamId=2561
-        SideParamTableEntries.First(spe => spe.Id ==  3).Name = ""; // ParamId=2562
+        SideParamTableEntries.First(spe => spe.Id ==  1).Name = "Loyalty Drift Divisor"; // ParamId=2560
+        SideParamTableEntries.First(spe => spe.Id ==  2).Name = "Incoming Side Loyalty Shift: Random Spread"; // ParamId=2561
+        SideParamTableEntries.First(spe => spe.Id ==  3).Name = "Incoming Side Loyalty Shift: Base Amount"; // ParamId=2562
 
-        SideParamTableEntries.First(spe => spe.Id ==  4).Name = "Starting Minor Characters in Small Galaxy = 7 + ?"; // ParamId=5120
-        SideParamTableEntries.First(spe => spe.Id ==  5).Name = "Starting Minor Characters in Medium Galaxy = 7 + ?"; // ParamId=5121
-        SideParamTableEntries.First(spe => spe.Id ==  6).Name = "Starting Minor Characters in Large Galaxy = 7 + ?"; // ParamId=5122
+        SideParamTableEntries.First(spe => spe.Id ==  4).Name = "Startup Minor Characters in Standard Galaxy = 7 + ?"; // ParamId=5120
+        SideParamTableEntries.First(spe => spe.Id ==  5).Name = "Startup Minor Characters in Large Galaxy = 7 + ?"; // ParamId=5121
+        SideParamTableEntries.First(spe => spe.Id ==  6).Name = "Startup Minor Characters in Huge Galaxy = 7 + ?"; // ParamId=5122
 
-        SideParamTableEntries.First(spe => spe.Id ==  7).Name = ""; // ParamId=5128
-        SideParamTableEntries.First(spe => spe.Id ==  8).Name = ""; // ParamId=5129
-        SideParamTableEntries.First(spe => spe.Id ==  9).Name = ""; // ParamId=5130
-        SideParamTableEntries.First(spe => spe.Id == 10).Name = ""; // ParamId=5131
+        SideParamTableEntries.First(spe => spe.Id ==  7).Name = "Local Direct System Support Shift Amount"; // ParamId=5128
+        SideParamTableEntries.First(spe => spe.Id ==  8).Name = "Local Direct System Support Threshold"; // ParamId=5129
+        SideParamTableEntries.First(spe => spe.Id ==  9).Name = "Local Sector Scan Support Shift Amount"; // ParamId=5130
+        SideParamTableEntries.First(spe => spe.Id == 10).Name = "Local Sector Scan Support Threshold"; // ParamId=5131
 
-        SideParamTableEntries.First(spe => spe.Id == 11).Name = ""; // ParamId=5136
-        SideParamTableEntries.First(spe => spe.Id == 12).Name = ""; // ParamId=5137
-        SideParamTableEntries.First(spe => spe.Id == 13).Name = ""; // ParamId=5138
-        SideParamTableEntries.First(spe => spe.Id == 14).Name = ""; // ParamId=5139
-        SideParamTableEntries.First(spe => spe.Id == 15).Name = ""; // ParamId=5140
-        SideParamTableEntries.First(spe => spe.Id == 16).Name = ""; // ParamId=5141
+        SideParamTableEntries.First(spe => spe.Id == 11).Name = "Startup Balance: Counterpart Support Threshold"; // ParamId=5136
+        SideParamTableEntries.First(spe => spe.Id == 12).Name = "Startup Balance: Payload Magnitude Cap"; // ParamId=5137
+        SideParamTableEntries.First(spe => spe.Id == 13).Name = "Startup Balance: Leading Branch Flat Base"; // ParamId=5138
+        SideParamTableEntries.First(spe => spe.Id == 14).Name = "Startup Balance: Leading Branch Gap Scale (%)"; // ParamId=5139
+        SideParamTableEntries.First(spe => spe.Id == 15).Name = "Startup Balance: Trailing Branch Flat Base"; // ParamId=5140
+        SideParamTableEntries.First(spe => spe.Id == 16).Name = "Startup Balance: Trailing Branch Gap Scale (%)"; // ParamId=5141
 
-        SideParamTableEntries.First(spe => spe.Id == 17).Name = ""; // ParamId=5152
-        SideParamTableEntries.First(spe => spe.Id == 18).Name = ""; // ParamId=5153
-        SideParamTableEntries.First(spe => spe.Id == 19).Name = ""; // ParamId=5154
-        SideParamTableEntries.First(spe => spe.Id == 20).Name = ""; // ParamId=5155
+        SideParamTableEntries.First(spe => spe.Id == 17).Name = "Peaceful Control Change: Payload Offset"; // ParamId=5152
+        SideParamTableEntries.First(spe => spe.Id == 18).Name = "Peaceful Control Change: Event Row"; // ParamId=5153
+        SideParamTableEntries.First(spe => spe.Id == 19).Name = "Alternate Control Change: Payload Offset"; // ParamId=5154
+        SideParamTableEntries.First(spe => spe.Id == 20).Name = "Alternate Control Change: Event Row"; // ParamId=5155
 
-        SideParamTableEntries.First(spe => spe.Id == 21).Name = "% of Maintenance to deploy Random Units at Day 0 (Small Galaxy)"; // ParamId=5168
-        SideParamTableEntries.First(spe => spe.Id == 22).Name = "% of Maintenance to deploy Random Units at Day 0 (Medium Galaxy)"; // ParamId=5169
-        SideParamTableEntries.First(spe => spe.Id == 23).Name = "% of Maintenance to deploy Random Units at Day 0 (Large Galaxy)"; // ParamId=5170
+        SideParamTableEntries.First(spe => spe.Id == 21).Name = "% of Maintenance to deploy Random Units at Day 0 (Standard Galaxy)"; // ParamId=5168
+        SideParamTableEntries.First(spe => spe.Id == 22).Name = "% of Maintenance to deploy Random Units at Day 0 (Large Galaxy)"; // ParamId=5169
+        SideParamTableEntries.First(spe => spe.Id == 23).Name = "% of Maintenance to deploy Random Units at Day 0 (Huge Galaxy)"; // ParamId=5170
 
-        SideParamTableEntries.First(spe => spe.Id == 24).Name = ""; // ParamId=5184
-        SideParamTableEntries.First(spe => spe.Id == 25).Name = ""; // ParamId=5185
-        SideParamTableEntries.First(spe => spe.Id == 26).Name = ""; // ParamId=5186
-        SideParamTableEntries.First(spe => spe.Id == 27).Name = ""; // ParamId=5187
-        SideParamTableEntries.First(spe => spe.Id == 28).Name = ""; // ParamId=5188
-        SideParamTableEntries.First(spe => spe.Id == 29).Name = ""; // ParamId=5189
+        SideParamTableEntries.First(spe => spe.Id == 24).Name = "Troop Arrival Control Change: Payload"; // ParamId=5184
+        SideParamTableEntries.First(spe => spe.Id == 25).Name = "Troop Arrival Control Change: Event Row"; // ParamId=5185
+        SideParamTableEntries.First(spe => spe.Id == 26).Name = "Troop Withdrawal Control Change: Payload"; // ParamId=5186
+        SideParamTableEntries.First(spe => spe.Id == 27).Name = "Troop Withdrawal Control Change: Event Row"; // ParamId=5187
+        SideParamTableEntries.First(spe => spe.Id == 28).Name = "Contested Troop Presence Control Change: Payload"; // ParamId=5188
+        SideParamTableEntries.First(spe => spe.Id == 29).Name = "Contested Troop Presence Control Change: Event Row"; // ParamId=5189
 
         SideParamTableEntries.First(spe => spe.Id == 30).Name = "Core Sector Owned Systems with support"; // ParamId=7680
         SideParamTableEntries.First(spe => spe.Id == 31).Name = "Core Sector Owned Systems without support"; // ParamId=7681
         SideParamTableEntries.First(spe => spe.Id == 32).Name = "Core Sector Owned Systems with support Popularity: Base (%)"; // ParamId=7682
         SideParamTableEntries.First(spe => spe.Id == 33).Name = "Core Sector Owned Systems with support Popularity: Max Random Extra (%)"; // ParamId=7683
-        SideParamTableEntries.First(spe => spe.Id == 34).Name = "Core Sector Owned Systems without support Popularity: Baset (%)"; // ParamId=7684
+        SideParamTableEntries.First(spe => spe.Id == 34).Name = "Core Sector Owned Systems without support Popularity: Base (%)"; // ParamId=7684
         SideParamTableEntries.First(spe => spe.Id == 35).Name = "Core Sector Owned Systems without support Popularity: Max Random Extra (%)"; // ParamId=7685
 
         foreach (var param in SideParamTableEntries)
