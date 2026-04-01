@@ -183,7 +183,7 @@ C# 13.0 project built with .NET 9 in Visual Studio 2022 : https://visualstudio.m
 ## Setup
 
 - Install the latest .NET Desktop runtime : https://dotnet.microsoft.com/en-us/download/dotnet
-  - Direct link to latest version : https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/runtime-desktop-9.0.8-windows-x64-installer
+  - Direct link to latest version : [https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/runtime-desktop-10.0.5-windows-x64-installer]
 - Reboot
 - Install a fresh GoG or Steam Star Wars Rebellion game
 - Download the latest editor release : https://github.com/MetasharpNet/StarWarsRebellionEditor.NET/releases
@@ -220,7 +220,7 @@ The 25th anniversary patch aims to refresh the game experience with mostly canno
 ## Content
 
 - Game version: 1.02 (includes various community fixes)
-- DgVoodoo DirectX libraries v2.86.2 (2025-04-02) : http://dege.fw.hu/dgVoodoo2/dgVoodoo2/
+- DgVoodoo DirectX libraries v2.87 (2026-03-29) : http://dege.fw.hu/dgVoodoo2/dgVoodoo2/
   - Forum : https://www.vogons.org/viewforum.php?f=58 and https://www.vogons.org/viewtopic.php?f=59&t=97303
 - Microsoft latest D3DRM.DLL 5.2.3790.0
 - New Galaxy map using Top 200 Star Wars planets (using 2023 canon & positioned as accurately as possible)
