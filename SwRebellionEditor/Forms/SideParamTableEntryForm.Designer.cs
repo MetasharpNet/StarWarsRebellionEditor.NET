@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.ComponentModel;
 using System.Drawing;
 using System.IO;
@@ -717,8 +717,9 @@ namespace SwRebellionEditor
             // 
             // SideParamTableEntryForm
             // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             AcceptButton = Ok;
-            AutoScaleMode = AutoScaleMode.None;
             CancelButton = Cancel;
             ClientSize = new Size(772, 456);
             Controls.Add(groupBox4);
@@ -748,9 +749,6 @@ namespace SwRebellionEditor
             KeyPreview = true;
             Margin = new Padding(4, 3, 4, 3);
             MaximizeBox = false;
-            MaximumSize = new Size(788, 495);
-            MinimumSize = new Size(788, 495);
-            Name = "SideParamTableEntryForm";
             Text = "Side Parameters Tables (SDPRTB.DAT)";
             FormClosing += GameObjectsListForm_FormClosing;
             Load += GameObjectsListForm_Load;

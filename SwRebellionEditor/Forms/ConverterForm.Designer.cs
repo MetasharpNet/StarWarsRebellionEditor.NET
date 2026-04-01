@@ -1,4 +1,4 @@
-﻿namespace SwRebellionEditor;
+namespace SwRebellionEditor;
 
 partial class ConverterForm
 {
@@ -139,7 +139,8 @@ partial class ConverterForm
         // 
         // ConverterForm
         // 
-        AutoScaleMode = AutoScaleMode.None;
+        AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
+        AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
         ClientSize = new Size(557, 363);
         Controls.Add(bmpToBmp);
         Controls.Add(extendedColorTable);

@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.ComponentModel;
 using System.Drawing;
 using System.IO;
@@ -772,8 +772,8 @@ namespace SwRebellionEditor
             // DefenseFacilitiesForm
             // 
             this.AcceptButton = this.Ok;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.CancelButton = this.Cancel;
             this.ClientSize = new System.Drawing.Size(749, 316);
             this.Controls.Add(this.hiddenDataGroupBox);
@@ -787,7 +787,6 @@ namespace SwRebellionEditor
             this.KeyPreview = true;
             this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.MaximizeBox = false;
-            this.MaximumSize = new System.Drawing.Size(765, 355);
             this.MinimumSize = new System.Drawing.Size(765, 355);
             this.Name = "DefenseFacilitiesForm";
             this.Text = "Defense Facilities (DEFFACSD.DAT)";

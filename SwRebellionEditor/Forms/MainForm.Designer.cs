@@ -1,4 +1,4 @@
-﻿using System.Media;
+using System.Media;
 
 namespace SwRebellionEditor
 {
@@ -932,7 +932,8 @@ namespace SwRebellionEditor
             // 
             // MainForm
             // 
-            AutoScaleMode = AutoScaleMode.None;
+            this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             BackgroundImage = Resources.galaxy_640x480_bmp;
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(1008, 729);

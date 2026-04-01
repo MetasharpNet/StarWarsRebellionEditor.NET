@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.ComponentModel;
 using System.Drawing;
 using System.IO;
@@ -37,261 +37,260 @@ namespace SwRebellionEditor
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GalaxyMapForm));
-            this.Cancel = new System.Windows.Forms.Button();
-            this.Ok = new System.Windows.Forms.Button();
-            this.saveFileDialog = new System.Windows.Forms.SaveFileDialog();
-            this.galaxyMap = new System.Windows.Forms.PictureBox();
-            this.sectorXLabel = new System.Windows.Forms.Label();
-            this.sectorYLabel = new System.Windows.Forms.Label();
-            this.sectorY = new System.Windows.Forms.Label();
-            this.sectorX = new System.Windows.Forms.Label();
-            this.sectorMap = new System.Windows.Forms.PictureBox();
-            this.sectorLabel = new System.Windows.Forms.Label();
-            this.sectorName = new System.Windows.Forms.Label();
-            this.systemName = new System.Windows.Forms.Label();
-            this.systemLabel = new System.Windows.Forms.Label();
-            this.systemY = new System.Windows.Forms.Label();
-            this.systemX = new System.Windows.Forms.Label();
-            this.systemYLabel = new System.Windows.Forms.Label();
-            this.systemXLabel = new System.Windows.Forms.Label();
-            this.systemInfo1Label = new System.Windows.Forms.Label();
-            this.systemInfo2Label = new System.Windows.Forms.Label();
-            this.systemInfo3Label = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.galaxyMap)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.sectorMap)).BeginInit();
-            this.SuspendLayout();
+            ComponentResourceManager resources = new ComponentResourceManager(typeof(GalaxyMapForm));
+            Cancel = new Button();
+            Ok = new Button();
+            saveFileDialog = new SaveFileDialog();
+            galaxyMap = new PictureBox();
+            sectorXLabel = new Label();
+            sectorYLabel = new Label();
+            sectorY = new Label();
+            sectorX = new Label();
+            sectorMap = new PictureBox();
+            sectorLabel = new Label();
+            sectorName = new Label();
+            systemName = new Label();
+            systemLabel = new Label();
+            systemY = new Label();
+            systemX = new Label();
+            systemYLabel = new Label();
+            systemXLabel = new Label();
+            systemInfo1Label = new Label();
+            systemInfo2Label = new Label();
+            systemInfo3Label = new Label();
+            ((ISupportInitialize)galaxyMap).BeginInit();
+            ((ISupportInitialize)sectorMap).BeginInit();
+            SuspendLayout();
             // 
             // Cancel
             // 
-            this.Cancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.Cancel.Location = new System.Drawing.Point(107, 794);
-            this.Cancel.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.Cancel.Name = "Cancel";
-            this.Cancel.Size = new System.Drawing.Size(88, 27);
-            this.Cancel.TabIndex = 20;
-            this.Cancel.Text = "&Cancel";
-            this.Cancel.UseVisualStyleBackColor = true;
-            this.Cancel.Click += new System.EventHandler(this.Cancel_Click);
+            Cancel.DialogResult = DialogResult.Cancel;
+            Cancel.Location = new Point(112, 803);
+            Cancel.Margin = new Padding(4, 3, 4, 3);
+            Cancel.Name = "Cancel";
+            Cancel.Size = new Size(88, 27);
+            Cancel.TabIndex = 20;
+            Cancel.Text = "&Cancel";
+            Cancel.UseVisualStyleBackColor = true;
+            Cancel.Click += Cancel_Click;
             // 
             // Ok
             // 
-            this.Ok.Location = new System.Drawing.Point(13, 794);
-            this.Ok.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.Ok.Name = "Ok";
-            this.Ok.Size = new System.Drawing.Size(88, 27);
-            this.Ok.TabIndex = 19;
-            this.Ok.Text = "&Ok";
-            this.Ok.UseVisualStyleBackColor = true;
-            this.Ok.Click += new System.EventHandler(this.Ok_Click);
+            Ok.Location = new Point(13, 803);
+            Ok.Margin = new Padding(4, 3, 4, 3);
+            Ok.Name = "Ok";
+            Ok.Size = new Size(88, 27);
+            Ok.TabIndex = 19;
+            Ok.Text = "&Ok";
+            Ok.UseVisualStyleBackColor = true;
+            Ok.Click += Ok_Click;
             // 
             // saveFileDialog
             // 
-            this.saveFileDialog.DefaultExt = "DAT";
-            this.saveFileDialog.Filter = "Data files|*.dat";
+            saveFileDialog.DefaultExt = "DAT";
+            saveFileDialog.Filter = "Data files|*.dat";
             // 
             // galaxyMap
             // 
-            this.galaxyMap.BackColor = System.Drawing.Color.Black;
-            this.galaxyMap.Image = global::SwRebellionEditor.Resources.galaxy_768x788_bmp;
-            this.galaxyMap.Location = new System.Drawing.Point(3, 3);
-            this.galaxyMap.Margin = new System.Windows.Forms.Padding(0);
-            this.galaxyMap.Name = "galaxyMap";
-            this.galaxyMap.Size = new System.Drawing.Size(768, 788);
-            this.galaxyMap.TabIndex = 23;
-            this.galaxyMap.TabStop = false;
+            galaxyMap.BackColor = Color.Black;
+            galaxyMap.Image = Resources.galaxy_768x788_bmp;
+            galaxyMap.Location = new Point(3, 9);
+            galaxyMap.Margin = new Padding(0);
+            galaxyMap.Name = "galaxyMap";
+            galaxyMap.Size = new Size(768, 788);
+            galaxyMap.SizeMode = PictureBoxSizeMode.Zoom;
+            galaxyMap.TabIndex = 23;
+            galaxyMap.TabStop = false;
             // 
             // sectorXLabel
             // 
-            this.sectorXLabel.AutoSize = true;
-            this.sectorXLabel.Location = new System.Drawing.Point(804, 58);
-            this.sectorXLabel.Name = "sectorXLabel";
-            this.sectorXLabel.Size = new System.Drawing.Size(22, 15);
-            this.sectorXLabel.TabIndex = 25;
-            this.sectorXLabel.Text = "X=";
+            sectorXLabel.AutoSize = true;
+            sectorXLabel.Location = new Point(804, 62);
+            sectorXLabel.Name = "sectorXLabel";
+            sectorXLabel.Size = new Size(22, 15);
+            sectorXLabel.TabIndex = 25;
+            sectorXLabel.Text = "X=";
             // 
             // sectorYLabel
             // 
-            this.sectorYLabel.AutoSize = true;
-            this.sectorYLabel.Location = new System.Drawing.Point(804, 82);
-            this.sectorYLabel.Name = "sectorYLabel";
-            this.sectorYLabel.Size = new System.Drawing.Size(22, 15);
-            this.sectorYLabel.TabIndex = 26;
-            this.sectorYLabel.Text = "Y=";
+            sectorYLabel.AutoSize = true;
+            sectorYLabel.Location = new Point(804, 91);
+            sectorYLabel.Name = "sectorYLabel";
+            sectorYLabel.Size = new Size(22, 15);
+            sectorYLabel.TabIndex = 26;
+            sectorYLabel.Text = "Y=";
             // 
             // sectorY
             // 
-            this.sectorY.AutoSize = true;
-            this.sectorY.Location = new System.Drawing.Point(828, 82);
-            this.sectorY.Name = "sectorY";
-            this.sectorY.Size = new System.Drawing.Size(12, 15);
-            this.sectorY.TabIndex = 28;
-            this.sectorY.Text = "-";
+            sectorY.AutoSize = true;
+            sectorY.Location = new Point(844, 91);
+            sectorY.Name = "sectorY";
+            sectorY.Size = new Size(12, 15);
+            sectorY.TabIndex = 28;
+            sectorY.Text = "-";
             // 
             // sectorX
             // 
-            this.sectorX.AutoSize = true;
-            this.sectorX.Location = new System.Drawing.Point(828, 58);
-            this.sectorX.Name = "sectorX";
-            this.sectorX.Size = new System.Drawing.Size(12, 15);
-            this.sectorX.TabIndex = 27;
-            this.sectorX.Text = "-";
+            sectorX.AutoSize = true;
+            sectorX.Location = new Point(844, 62);
+            sectorX.Name = "sectorX";
+            sectorX.Size = new Size(12, 15);
+            sectorX.TabIndex = 27;
+            sectorX.Text = "-";
             // 
             // sectorMap
             // 
-            this.sectorMap.BackColor = System.Drawing.Color.Black;
-            this.sectorMap.Image = global::SwRebellionEditor.Resources.sector_79x102_bmp;
-            this.sectorMap.Location = new System.Drawing.Point(785, 133);
-            this.sectorMap.Name = "sectorMap";
-            this.sectorMap.Size = new System.Drawing.Size(79, 102);
-            this.sectorMap.TabIndex = 29;
-            this.sectorMap.TabStop = false;
+            sectorMap.BackColor = Color.Black;
+            sectorMap.Image = Resources.sector_79x102_bmp;
+            sectorMap.Location = new Point(785, 133);
+            sectorMap.Name = "sectorMap";
+            sectorMap.Size = new Size(79, 102);
+            sectorMap.SizeMode = PictureBoxSizeMode.Zoom;
+            sectorMap.TabIndex = 29;
+            sectorMap.TabStop = false;
             // 
             // sectorLabel
             // 
-            this.sectorLabel.AutoSize = true;
-            this.sectorLabel.Location = new System.Drawing.Point(785, 34);
-            this.sectorLabel.Name = "sectorLabel";
-            this.sectorLabel.Size = new System.Drawing.Size(40, 15);
-            this.sectorLabel.TabIndex = 30;
-            this.sectorLabel.Text = "Sector";
+            sectorLabel.AutoSize = true;
+            sectorLabel.Location = new Point(785, 34);
+            sectorLabel.Name = "sectorLabel";
+            sectorLabel.Size = new Size(40, 15);
+            sectorLabel.TabIndex = 30;
+            sectorLabel.Text = "Sector";
             // 
             // sectorName
             // 
-            this.sectorName.AutoSize = true;
-            this.sectorName.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.sectorName.Location = new System.Drawing.Point(828, 34);
-            this.sectorName.Name = "sectorName";
-            this.sectorName.Size = new System.Drawing.Size(40, 15);
-            this.sectorName.TabIndex = 31;
-            this.sectorName.Text = "Name";
+            sectorName.AutoSize = true;
+            sectorName.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            sectorName.Location = new Point(841, 34);
+            sectorName.Name = "sectorName";
+            sectorName.Size = new Size(40, 15);
+            sectorName.TabIndex = 31;
+            sectorName.Text = "Name";
             // 
             // systemName
             // 
-            this.systemName.AutoSize = true;
-            this.systemName.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.systemName.Location = new System.Drawing.Point(828, 291);
-            this.systemName.Name = "systemName";
-            this.systemName.Size = new System.Drawing.Size(40, 15);
-            this.systemName.TabIndex = 37;
-            this.systemName.Text = "Name";
+            systemName.AutoSize = true;
+            systemName.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            systemName.Location = new Point(844, 338);
+            systemName.Name = "systemName";
+            systemName.Size = new Size(40, 15);
+            systemName.TabIndex = 37;
+            systemName.Text = "Name";
             // 
             // systemLabel
             // 
-            this.systemLabel.AutoSize = true;
-            this.systemLabel.Location = new System.Drawing.Point(785, 291);
-            this.systemLabel.Name = "systemLabel";
-            this.systemLabel.Size = new System.Drawing.Size(45, 15);
-            this.systemLabel.TabIndex = 36;
-            this.systemLabel.Text = "System";
+            systemLabel.AutoSize = true;
+            systemLabel.Location = new Point(785, 338);
+            systemLabel.Name = "systemLabel";
+            systemLabel.Size = new Size(45, 15);
+            systemLabel.TabIndex = 36;
+            systemLabel.Text = "System";
             // 
             // systemY
             // 
-            this.systemY.AutoSize = true;
-            this.systemY.Location = new System.Drawing.Point(828, 339);
-            this.systemY.Name = "systemY";
-            this.systemY.Size = new System.Drawing.Size(12, 15);
-            this.systemY.TabIndex = 35;
-            this.systemY.Text = "-";
+            systemY.AutoSize = true;
+            systemY.Location = new Point(848, 386);
+            systemY.Name = "systemY";
+            systemY.Size = new Size(12, 15);
+            systemY.TabIndex = 35;
+            systemY.Text = "-";
             // 
             // systemX
             // 
-            this.systemX.AutoSize = true;
-            this.systemX.Location = new System.Drawing.Point(828, 315);
-            this.systemX.Name = "systemX";
-            this.systemX.Size = new System.Drawing.Size(12, 15);
-            this.systemX.TabIndex = 34;
-            this.systemX.Text = "-";
+            systemX.AutoSize = true;
+            systemX.Location = new Point(848, 362);
+            systemX.Name = "systemX";
+            systemX.Size = new Size(12, 15);
+            systemX.TabIndex = 34;
+            systemX.Text = "-";
             // 
             // systemYLabel
             // 
-            this.systemYLabel.AutoSize = true;
-            this.systemYLabel.Location = new System.Drawing.Point(804, 339);
-            this.systemYLabel.Name = "systemYLabel";
-            this.systemYLabel.Size = new System.Drawing.Size(22, 15);
-            this.systemYLabel.TabIndex = 33;
-            this.systemYLabel.Text = "Y=";
+            systemYLabel.AutoSize = true;
+            systemYLabel.Location = new Point(804, 386);
+            systemYLabel.Name = "systemYLabel";
+            systemYLabel.Size = new Size(22, 15);
+            systemYLabel.TabIndex = 33;
+            systemYLabel.Text = "Y=";
             // 
             // systemXLabel
             // 
-            this.systemXLabel.AutoSize = true;
-            this.systemXLabel.Location = new System.Drawing.Point(804, 315);
-            this.systemXLabel.Name = "systemXLabel";
-            this.systemXLabel.Size = new System.Drawing.Size(22, 15);
-            this.systemXLabel.TabIndex = 32;
-            this.systemXLabel.Text = "X=";
+            systemXLabel.AutoSize = true;
+            systemXLabel.Location = new Point(804, 362);
+            systemXLabel.Name = "systemXLabel";
+            systemXLabel.Size = new Size(22, 15);
+            systemXLabel.TabIndex = 32;
+            systemXLabel.Text = "X=";
             // 
             // systemInfo1Label
             // 
-            this.systemInfo1Label.AutoSize = true;
-            this.systemInfo1Label.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
-            this.systemInfo1Label.ForeColor = System.Drawing.Color.Maroon;
-            this.systemInfo1Label.Location = new System.Drawing.Point(785, 237);
-            this.systemInfo1Label.Name = "systemInfo1Label";
-            this.systemInfo1Label.Size = new System.Drawing.Size(127, 15);
-            this.systemInfo1Label.TabIndex = 38;
-            this.systemInfo1Label.Text = "System rectangle has 4";
+            systemInfo1Label.AutoSize = true;
+            systemInfo1Label.Font = new Font("Segoe UI", 9F, FontStyle.Italic);
+            systemInfo1Label.ForeColor = Color.Maroon;
+            systemInfo1Label.Location = new Point(784, 258);
+            systemInfo1Label.Name = "systemInfo1Label";
+            systemInfo1Label.Size = new Size(127, 15);
+            systemInfo1Label.TabIndex = 38;
+            systemInfo1Label.Text = "System rectangle has 4";
             // 
             // systemInfo2Label
             // 
-            this.systemInfo2Label.AutoSize = true;
-            this.systemInfo2Label.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
-            this.systemInfo2Label.ForeColor = System.Drawing.Color.Maroon;
-            this.systemInfo2Label.Location = new System.Drawing.Point(785, 252);
-            this.systemInfo2Label.Name = "systemInfo2Label";
-            this.systemInfo2Label.Size = new System.Drawing.Size(133, 15);
-            this.systemInfo2Label.TabIndex = 39;
-            this.systemInfo2Label.Text = "pixels of X margin and 1";
+            systemInfo2Label.AutoSize = true;
+            systemInfo2Label.Font = new Font("Segoe UI", 9F, FontStyle.Italic);
+            systemInfo2Label.ForeColor = Color.Maroon;
+            systemInfo2Label.Location = new Point(785, 280);
+            systemInfo2Label.Name = "systemInfo2Label";
+            systemInfo2Label.Size = new Size(133, 15);
+            systemInfo2Label.TabIndex = 39;
+            systemInfo2Label.Text = "pixels of X margin and 1";
             // 
             // systemInfo3Label
             // 
-            this.systemInfo3Label.AutoSize = true;
-            this.systemInfo3Label.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
-            this.systemInfo3Label.ForeColor = System.Drawing.Color.Maroon;
-            this.systemInfo3Label.Location = new System.Drawing.Point(785, 267);
-            this.systemInfo3Label.Name = "systemInfo3Label";
-            this.systemInfo3Label.Size = new System.Drawing.Size(132, 15);
-            this.systemInfo3Label.TabIndex = 40;
-            this.systemInfo3Label.Text = "pixel of Y margin inside.";
+            systemInfo3Label.AutoSize = true;
+            systemInfo3Label.Font = new Font("Segoe UI", 9F, FontStyle.Italic);
+            systemInfo3Label.ForeColor = Color.Maroon;
+            systemInfo3Label.Location = new Point(785, 303);
+            systemInfo3Label.Name = "systemInfo3Label";
+            systemInfo3Label.Size = new Size(132, 15);
+            systemInfo3Label.TabIndex = 40;
+            systemInfo3Label.Text = "pixel of Y margin inside.";
             // 
             // GalaxyMapForm
             // 
-            this.AcceptButton = this.Ok;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.CancelButton = this.Cancel;
-            this.ClientSize = new System.Drawing.Size(940, 826);
-            this.Controls.Add(this.systemInfo3Label);
-            this.Controls.Add(this.systemInfo2Label);
-            this.Controls.Add(this.systemInfo1Label);
-            this.Controls.Add(this.systemName);
-            this.Controls.Add(this.systemLabel);
-            this.Controls.Add(this.systemY);
-            this.Controls.Add(this.systemX);
-            this.Controls.Add(this.systemYLabel);
-            this.Controls.Add(this.systemXLabel);
-            this.Controls.Add(this.sectorName);
-            this.Controls.Add(this.sectorLabel);
-            this.Controls.Add(this.sectorMap);
-            this.Controls.Add(this.sectorY);
-            this.Controls.Add(this.sectorX);
-            this.Controls.Add(this.sectorYLabel);
-            this.Controls.Add(this.sectorXLabel);
-            this.Controls.Add(this.galaxyMap);
-            this.Controls.Add(this.Cancel);
-            this.Controls.Add(this.Ok);
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.MaximumSize = new System.Drawing.Size(956, 865);
-            this.MinimumSize = new System.Drawing.Size(956, 865);
-            this.Name = "GalaxyMapForm";
-            this.Text = "Galaxy Map";
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.GameObjectsListForm_FormClosing);
-            this.Load += new System.EventHandler(this.GameObjectsListForm_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.galaxyMap)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.sectorMap)).EndInit();
-            this.ResumeLayout(false);
-            this.PerformLayout();
+            AcceptButton = Ok;
+            AutoScaleMode = AutoScaleMode.None;
+            CancelButton = Cancel;
+            ClientSize = new Size(985, 835);
+            Controls.Add(systemInfo3Label);
+            Controls.Add(systemInfo2Label);
+            Controls.Add(systemInfo1Label);
+            Controls.Add(systemName);
+            Controls.Add(systemLabel);
+            Controls.Add(systemY);
+            Controls.Add(systemX);
+            Controls.Add(systemYLabel);
+            Controls.Add(systemXLabel);
+            Controls.Add(sectorName);
+            Controls.Add(sectorLabel);
+            Controls.Add(sectorMap);
+            Controls.Add(sectorY);
+            Controls.Add(sectorX);
+            Controls.Add(sectorYLabel);
+            Controls.Add(sectorXLabel);
+            Controls.Add(galaxyMap);
+            Controls.Add(Cancel);
+            Controls.Add(Ok);
+            Icon = (Icon)resources.GetObject("$this.Icon");
+            Margin = new Padding(4, 3, 4, 3);
+            Name = "GalaxyMapForm";
+            Text = "Galaxy Map";
+            FormClosing += GameObjectsListForm_FormClosing;
+            Load += GameObjectsListForm_Load;
+            ((ISupportInitialize)galaxyMap).EndInit();
+            ((ISupportInitialize)sectorMap).EndInit();
+            ResumeLayout(false);
+            PerformLayout();
 
         }
 

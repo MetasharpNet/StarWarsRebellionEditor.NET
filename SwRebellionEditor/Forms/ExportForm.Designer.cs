@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.ComponentModel;
 using System.Drawing;
 using System.IO;
@@ -172,7 +172,8 @@ namespace SwRebellionEditor
             // 
             // ExportForm
             // 
-            AutoScaleMode = AutoScaleMode.None;
+            this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             ClientSize = new Size(735, 278);
             Controls.Add(label2);
             Controls.Add(label1);
@@ -190,9 +191,6 @@ namespace SwRebellionEditor
             KeyPreview = true;
             Margin = new Padding(4, 3, 4, 3);
             MaximizeBox = false;
-            MaximumSize = new Size(751, 317);
-            MinimumSize = new Size(751, 317);
-            Name = "ExportForm";
             Text = "Export";
             FormClosing += GameObjectsListForm_FormClosing;
             Load += GameObjectsListForm_Load;

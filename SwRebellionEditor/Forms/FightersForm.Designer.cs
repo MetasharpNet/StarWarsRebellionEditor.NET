@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.ComponentModel;
 using System.Drawing;
 using System.IO;
@@ -87,7 +87,6 @@ namespace SwRebellionEditor
         private Label idLabel;
         private Label familyIdHexLabel;
         private Label idHexLabel;
-
 
         /// <summary>
         /// Clean up any resources being used.
@@ -1441,8 +1440,9 @@ namespace SwRebellionEditor
             // 
             // FightersForm
             // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             AcceptButton = Ok;
-            AutoScaleMode = AutoScaleMode.None;
             CancelButton = Cancel;
             ClientSize = new Size(686, 548);
             Controls.Add(hiddenDataGroupBox);
@@ -1456,9 +1456,6 @@ namespace SwRebellionEditor
             KeyPreview = true;
             Margin = new Padding(4, 3, 4, 3);
             MaximizeBox = false;
-            MaximumSize = new Size(702, 587);
-            MinimumSize = new Size(702, 587);
-            Name = "FightersForm";
             Text = "Fighters (FIGHTSD.DAT)";
             FormClosing += GameObjectsListForm_FormClosing;
             Load += GameObjectsListForm_Load;

@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.ComponentModel;
 using System.Drawing;
 using System.IO;
@@ -539,10 +539,10 @@ namespace SwRebellionEditor
             // 
             // SectorsForm
             // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             AcceptButton = Ok;
-            AutoScaleDimensions = new SizeF(7F, 15F);
-            AutoScaleMode = AutoScaleMode.None;
-            CancelButton = Cancel;
+                        CancelButton = Cancel;
             ClientSize = new Size(650, 328);
             Controls.Add(infoLabel);
             Controls.Add(label1);
@@ -559,9 +559,6 @@ namespace SwRebellionEditor
             KeyPreview = true;
             Margin = new Padding(4, 3, 4, 3);
             MaximizeBox = false;
-            MaximumSize = new Size(666, 367);
-            MinimumSize = new Size(666, 367);
-            Name = "SectorsForm";
             Text = "Sectors (SECTORSD.DAT)";
             FormClosing += GameObjectsListForm_FormClosing;
             Load += GameObjectsListForm_Load;

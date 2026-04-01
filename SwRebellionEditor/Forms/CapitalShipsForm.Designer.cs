@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.ComponentModel;
 using System.Drawing;
 using System.IO;
@@ -1684,25 +1684,25 @@ namespace SwRebellionEditor
             // 
             // CapitalShipsForm
             // 
-            AcceptButton = Ok;
-            AutoScaleMode = AutoScaleMode.None;
-            CancelButton = Cancel;
-            ClientSize = new Size(686, 596);
-            Controls.Add(hiddenDataGroupBox);
-            Controls.Add(inGameDataGroupBox);
-            Controls.Add(Open);
-            Controls.Add(SaveAs);
-            Controls.Add(Cancel);
-            Controls.Add(Ok);
-            Controls.Add(selector);
-            Icon = (Icon)resources.GetObject("$this.Icon");
-            KeyPreview = true;
-            Margin = new Padding(4, 3, 4, 3);
-            MaximizeBox = false;
-            MaximumSize = new Size(702, 635);
-            MinimumSize = new Size(702, 635);
-            Name = "CapitalShipsForm";
-            Text = "Capital Ships (CAPSHPSD.DAT)";
+            this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
+            this.AcceptButton = this.Ok;
+            this.CancelButton = this.Cancel;
+            this.ClientSize = new System.Drawing.Size(686, 596);
+            this.Controls.Add(this.hiddenDataGroupBox);
+            this.Controls.Add(this.inGameDataGroupBox);
+            this.Controls.Add(this.Open);
+            this.Controls.Add(this.SaveAs);
+            this.Controls.Add(this.Cancel);
+            this.Controls.Add(this.Ok);
+            this.Controls.Add(this.selector);
+            this.Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
+            this.KeyPreview = true;
+            this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.MaximizeBox = false;
+            this.MinimumSize = new System.Drawing.Size(702, 635);
+            this.Name = "CapitalShipsForm";
+            this.Text = "Capital Ships (CAPSHPSD.DAT)";
             FormClosing += GameObjectsListForm_FormClosing;
             Load += GameObjectsListForm_Load;
             Enter += GameObjectsSelector_ValueChanged;

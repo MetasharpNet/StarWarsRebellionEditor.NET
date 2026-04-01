@@ -4,7 +4,7 @@
 ;     want to modify some advanced properties not available via the CPL.
 ;==========================================================================
 
-Version                              = 0x286
+Version                              = 0x287
 
 ;--------------------------------------------------------------------------
 
@@ -91,6 +91,8 @@ DisableScreenSaver                   = true
 ;                         "argb2101010_sdr"     - 32 bit extended precision for SDR displays
 ;                         "argb2101010_sdr_wcg" - Wide Color Gamut format for SDR displays (available from Windows 11 22H2)
 ;                         "argb16161616_hdr"    - Float16 HDR output (available from Windows 10 1709)
+;WatermarkDisplayDuration: Display duration in secs for the watermark(s) if they are enabled (per swapchain)
+;                          0 or undefined means infinite time
 ;              FreeMouse: If true then physical mouse is free to move inside the game window
 ;                         when using emulated scaling and/or application and forced resolution
 ;                         differs; can be useful when a game relies on the physical window size
@@ -117,6 +119,7 @@ DisplayROI                           =
 Resampling                           = bilinear
 PresentationModel                    = auto
 ColorSpace                           = appdriven
+WatermarkDisplayDuration             = 0
 FreeMouse                            = false
 WindowedAttributes                   = 
 FullscreenAttributes                 = 

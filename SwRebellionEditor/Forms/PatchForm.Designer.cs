@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.ComponentModel;
 using System.Drawing;
 using System.IO;
@@ -177,9 +177,9 @@ namespace SwRebellionEditor
             label1Requirement.ForeColor = Color.Red;
             label1Requirement.Location = new Point(393, 14);
             label1Requirement.Name = "label1Requirement";
-            label1Requirement.Size = new Size(253, 15);
+            label1Requirement.Size = new Size(244, 15);
             label1Requirement.TabIndex = 1165;
-            label1Requirement.Text = "Includes update 1.02 (dgvoodoo2 directx 2.86.2)";
+            label1Requirement.Text = "Includes update 1.02 (dgvoodoo2 directx 2.87)";
             // 
             // label1
             // 
@@ -356,7 +356,8 @@ namespace SwRebellionEditor
             // 
             // PatchForm
             // 
-            AutoScaleMode = AutoScaleMode.None;
+            AutoScaleDimensions = new SizeF(96F, 96F);
+            AutoScaleMode = AutoScaleMode.Dpi;
             ClientSize = new Size(735, 487);
             Controls.Add(groupBoxBriefings);
             Controls.Add(groupBoxMap);

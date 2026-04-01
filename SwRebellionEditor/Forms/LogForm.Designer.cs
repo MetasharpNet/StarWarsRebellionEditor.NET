@@ -1,4 +1,4 @@
-﻿namespace SwRebellionEditor.Forms
+namespace SwRebellionEditor.Forms
 {
     partial class LogForm
     {
@@ -55,8 +55,9 @@
             // 
             // LogForm
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
-            AutoScaleMode = AutoScaleMode.Font;
+            this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
+                        AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
             Controls.Add(OkButton);
             Controls.Add(LogTextBox);

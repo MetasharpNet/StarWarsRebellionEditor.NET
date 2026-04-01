@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.ComponentModel;
 using System.Drawing;
 using System.IO;
@@ -487,8 +487,9 @@ namespace SwRebellionEditor
             // 
             // GeneralParamTableEntryForm
             // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             AcceptButton = Ok;
-            AutoScaleMode = AutoScaleMode.None;
             CancelButton = Cancel;
             ClientSize = new Size(504, 383);
             Controls.Add(multiPlayer);
@@ -515,9 +516,6 @@ namespace SwRebellionEditor
             KeyPreview = true;
             Margin = new Padding(4, 3, 4, 3);
             MaximizeBox = false;
-            MaximumSize = new Size(520, 422);
-            MinimumSize = new Size(520, 422);
-            Name = "GeneralParamTableEntryForm";
             Text = "General Parameters Tables (GNPRTB.DAT)";
             FormClosing += GameObjectsListForm_FormClosing;
             Load += GameObjectsListForm_Load;

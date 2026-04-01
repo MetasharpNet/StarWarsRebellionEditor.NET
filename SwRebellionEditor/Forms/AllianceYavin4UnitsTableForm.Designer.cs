@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.ComponentModel;
 using System.Drawing;
 using System.Windows.Forms;
@@ -225,7 +225,7 @@ namespace SwRebellionEditor
             // 
             // entryColumn
             // 
-            entryColumn.HeaderText = "N°";
+            entryColumn.HeaderText = "N�";
             entryColumn.Name = "entryColumn";
             entryColumn.ReadOnly = true;
             entryColumn.Resizable = DataGridViewTriState.False;
@@ -241,10 +241,10 @@ namespace SwRebellionEditor
             // 
             // AllianceYavin4UnitsTableForm
             // 
+            AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
+            AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             AcceptButton = Ok;
-            AutoScaleDimensions = new SizeF(7F, 15F);
-            AutoScaleMode = AutoScaleMode.None;
-            CancelButton = Cancel;
+                        CancelButton = Cancel;
             ClientSize = new Size(609, 486);
             Controls.Add(infoLabel);
             Controls.Add(groupsDataGridView);
@@ -260,9 +260,6 @@ namespace SwRebellionEditor
             Controls.Add(Cancel);
             Controls.Add(Ok);
             Margin = new Padding(4, 3, 4, 3);
-            MaximumSize = new Size(625, 525);
-            MinimumSize = new Size(625, 525);
-            Name = "AllianceYavin4UnitsTableForm";
             Text = "Alliance Yavin 4 Units Table (CMUNYVTB.DAT)";
             Load += GameObjectsListForm_Load;
             ((ISupportInitialize)groupsDataGridView).EndInit();

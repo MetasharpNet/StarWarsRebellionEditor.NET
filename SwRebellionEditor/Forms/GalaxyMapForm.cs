@@ -21,6 +21,14 @@ public partial class GalaxyMapForm : GalaxyMapDesignForm
         SectorsDic = new Dictionary<MovableLabel, SECTORSD_Sector>();
         SystemsDic = new Dictionary<MovableLabel, SYSTEMSD_System>();
         SystemsSprites = new List<MovableLabel>();
+
+        // GalaxyMapForm uses AutoScaleMode.None to preserve logical coordinates (0-768, 0-788)
+        // This is necessary because the map uses coordinate mapping that must remain 1:1 with screen pixels
+        // The drag-drop operations depend on these exact coordinates being preserved
+
+        // Reduce button fonts to prevent text overflow
+        Ok.Font = new Font(Ok.Font.FontFamily, 8f, Ok.Font.Style);
+        Cancel.Font = new Font(Cancel.Font.FontFamily, 8f, Cancel.Font.Style);
     }
 
     #endregion
@@ -39,7 +47,8 @@ public partial class GalaxyMapForm : GalaxyMapDesignForm
                     Text = sector.Name,
                     TextAlign = ContentAlignment.MiddleCenter,
                     ForeColor = Color.Black,
-                    BackColor = Color.LightBlue
+                    BackColor = Color.LightBlue,
+                    Font = new Font(FontFamily.GenericSansSerif, 8f)  // Reduced font for drag-drop labels
                 };
             sectorSprite.MouseDown += sector_MouseDown;
             sectorSprite.MouseMove += sector_PositionChanged;
@@ -96,7 +105,8 @@ public partial class GalaxyMapForm : GalaxyMapDesignForm
                     Text = system.Name[0].ToString(),
                     TextAlign = ContentAlignment.MiddleCenter,
                     ForeColor = Color.Black,
-                    BackColor = colors[c++]
+                    BackColor = colors[c++],
+                    Font = new Font(FontFamily.GenericSansSerif, 7f)  // Reduced font for small drag-drop rectangles
                 };
             systemSprite.MouseMove += system_PositionChanged;
             systemSprite.MouseDown += system_MouseDown;

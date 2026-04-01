@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.ComponentModel;
 using System.Drawing;
 using System.Windows.Forms;
@@ -200,10 +200,10 @@ namespace SwRebellionEditor
             // 
             // RimSystemsFacilitiesTablesForm
             // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             AcceptButton = Ok;
-            AutoScaleDimensions = new SizeF(7F, 15F);
-            AutoScaleMode = AutoScaleMode.None;
-            CancelButton = Cancel;
+                        CancelButton = Cancel;
             ClientSize = new Size(609, 486);
             Controls.Add(formulaLabel);
             Controls.Add(infoLabel);
@@ -216,9 +216,6 @@ namespace SwRebellionEditor
             Controls.Add(Cancel);
             Controls.Add(Ok);
             Margin = new Padding(4, 3, 4, 3);
-            MaximumSize = new Size(625, 525);
-            MinimumSize = new Size(625, 525);
-            Name = "RimSystemsFacilitiesTablesForm";
             Text = "Rim Systems Facilities Table (SYFCRMTB.DAT)";
             Load += GameObjectsListForm_Load;
             ((ISupportInitialize)facilitiesDataGridView).EndInit();

@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.ComponentModel;
 using System.Drawing;
 using System.IO;
@@ -169,7 +169,8 @@ namespace SwRebellionEditor
             // 
             // AboutForm
             // 
-            AutoScaleMode = AutoScaleMode.None;
+            AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
+            AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             BackColor = Color.Black;
             BackgroundImageLayout = ImageLayout.None;
             ClientSize = new Size(903, 402);
