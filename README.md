@@ -1,5 +1,6 @@
-
 Welcome to the open-source editor for Star Wars Rebellion made in .NET. You will find here the 25th anniversary patch and solutions to most problems encounterred with the game.
+
+If you like my work, please star the project on Github (top right of the page, press the star button).
 
 # Table of Contents
 
@@ -59,10 +60,12 @@ Welcome to the open-source editor for Star Wars Rebellion made in .NET. You will
 ## Install
 
 - Avoid all extra software (GOG Galaxy, etc.) by getting a clean installer if available.
-  - GOG direct offline installer : https://www.gog.com/downloads/star_wars_rebellion/en1installer0 (link works if logged in and game already bought)
-    - Previous installer ( setup_star_wars_rebellion_1.0_(17121).exe ) allows the use of dgvoodoo directx files (it should provide nicer tactical rendering, but it's not required, the new installer is more friendly with fullscreen and windows interactions)
-      - We can provide old installer on discord to people who show they have bought the game in screen sharing
-  - Steam : I don't know
+- Multiple options are available, from best to worst :
+  - GOG older installer  ( setup_star_wars_rebellion_1.0_(17121).exe ) : allows the use of dgvoodoo files, which dramatically improves the tactical 3D combat rendering
+  - Steam installer : also allows the use of dgvoodoo files, which dramatically improves the 3D combat visual quality
+  - GoG latest installer ( setup_star_wars_rebellion_1.0_v4_gog_(82789).exe ) : https://www.gog.com/downloads/star_wars_rebellion/en1installer0 (link works if logged in and game already bought)
+    - This latest installer is not compatible with dgvoodoo files, the  3D combat visual quality is pretty poor, but the compatiblity with Windows is very good
+    - We can provide older installer on discord to people who show they have bought the game in screen sharing
 - Install the game
 - Optional: In your Star Wars Rebellion folder, right-click REBEXE.EXE
   - Properties
@@ -85,7 +88,7 @@ Welcome to the open-source editor for Star Wars Rebellion made in .NET. You will
 - Usefull for old GoG setup_star_wars_rebellion_1.0_(17121).exe installer or Steam versions. Not compatible with GoG 1.0 v4 latest version (and not needed).
 - Not needed if you use the 25th anniversary patch (since it's included in it already)
 - Extract the zip into your game directory. This will overwrite 2 files and add 12 new files.
-  - Update 1.02 zip : https://github.com/MetasharpNet/StarWarsRebellionEditor.NET/releases/download/update-1.02-.dgvoodoo2-directx-2.86.2/update-1.02-.dgvoodoo2-directx-2.86.2.zip
+  - Update 1.02 zip : https://github.com/MetasharpNet/StarWarsRebellionEditor.NET/releases/download/update-1.02-.dgvoodoo2-directx-2.86.5/update-1.02-.dgvoodoo2-directx-2.86.5.zip
 - This should fix upside down sprites or sprites with weird colors
 
 ## Fast game start
