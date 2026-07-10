@@ -8,14 +8,17 @@ public static class Sound
 
     public static void Play(Stream audioStream)
     {
-        ThreadPool.QueueUserWorkItem(ignoredState =>
+        // foreground thread: keeps the process alive until the clip ends when closing the app,
+        // and PlaySync keeps the player alive for the whole playback, all without blocking the UI
+        var thread = new Thread(() =>
         {
             using (var soundPlayer = new SoundPlayer(audioStream))
             {
-                soundPlayer.Play();
+                soundPlayer.PlaySync();
             }
         });
-        Thread.Sleep(520);
+        thread.IsBackground = false;
+        thread.Start();
     }
 
     private static SoundPlayer _musicSoundPlayer;
