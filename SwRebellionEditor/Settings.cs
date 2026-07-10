@@ -52,6 +52,7 @@ public class Settings
     public Point MainWindowTopLeftCornerPosition;
     public bool PlaySounds;
     public bool PlayMusic;
+    public string SkippedUpdateTag = ""; // release tag the user declined; never re-proposed
 
     public void SetDefaultValues()
     {
@@ -61,6 +62,7 @@ public class Settings
         MainWindowTopLeftCornerPosition = new Point(0, 0);
         PlayMusic = false;
         PlaySounds = false;
+        SkippedUpdateTag = "";
     }
 
     #region CreateDefaultIfMissing, Deserialize, Serialize

@@ -80,6 +80,8 @@ public partial class MainForm : Form
         specOpDataStatus.Text = "";
         CapShipDataStatus.Text = "";
         fighterDataStatus.Text = "";
+
+        _ = AutoUpdate.CheckAndProposeAsync(this); // background check, never blocks startup
     }
 
     private void MainForm_FormClosing(object sender, FormClosingEventArgs e)
