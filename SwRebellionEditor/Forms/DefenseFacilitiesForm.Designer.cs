@@ -12,10 +12,8 @@ namespace SwRebellionEditor
         /// Required designer variable.
         /// </summary>
         private IContainer components = null;
-        private Button openNew;
-        private Button SaveAs;
         private Button Cancel;
-        private Button Ok;
+        private Button Save;
         private TrackBar selector;
         private RichTextBox encyclopediaDescription;
         private Label textStraDllIdLabel;
@@ -58,10 +56,8 @@ namespace SwRebellionEditor
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DefenseFacilitiesForm));
-            this.openNew = new System.Windows.Forms.Button();
-            this.SaveAs = new System.Windows.Forms.Button();
-            this.Cancel = new System.Windows.Forms.Button();
-            this.Ok = new System.Windows.Forms.Button();
+                                    this.Cancel = new System.Windows.Forms.Button();
+            this.Save = new System.Windows.Forms.Button();
             this.encyclopediaDescription = new System.Windows.Forms.RichTextBox();
             this.textStraDllIdLabel = new System.Windows.Forms.Label();
             this.textStraDllId = new System.Windows.Forms.NumericUpDown();
@@ -121,28 +117,6 @@ namespace SwRebellionEditor
             this.hiddenDataGroupBox.SuspendLayout();
             this.SuspendLayout();
             // 
-            // openNew
-            // 
-            this.openNew.Location = new System.Drawing.Point(386, 283);
-            this.openNew.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.openNew.Name = "openNew";
-            this.openNew.Size = new System.Drawing.Size(88, 27);
-            this.openNew.TabIndex = 92;
-            this.openNew.Text = "Open...";
-            this.openNew.UseVisualStyleBackColor = true;
-            this.openNew.Click += new System.EventHandler(this.Open_Click);
-            // 
-            // SaveAs
-            // 
-            this.SaveAs.Location = new System.Drawing.Point(291, 283);
-            this.SaveAs.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.SaveAs.Name = "SaveAs";
-            this.SaveAs.Size = new System.Drawing.Size(88, 27);
-            this.SaveAs.TabIndex = 91;
-            this.SaveAs.Text = "&SaveAs...";
-            this.SaveAs.UseVisualStyleBackColor = true;
-            this.SaveAs.Click += new System.EventHandler(this.SaveAs_Click);
-            // 
             // Cancel
             // 
             this.Cancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
@@ -155,16 +129,16 @@ namespace SwRebellionEditor
             this.Cancel.UseVisualStyleBackColor = true;
             this.Cancel.Click += new System.EventHandler(this.Cancel_Click);
             // 
-            // Ok
+            // Save
             // 
-            this.Ok.Location = new System.Drawing.Point(82, 283);
-            this.Ok.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.Ok.Name = "Ok";
-            this.Ok.Size = new System.Drawing.Size(88, 27);
-            this.Ok.TabIndex = 88;
-            this.Ok.Text = "&Ok";
-            this.Ok.UseVisualStyleBackColor = true;
-            this.Ok.Click += new System.EventHandler(this.Ok_Click);
+            this.Save.Location = new System.Drawing.Point(82, 283);
+            this.Save.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.Save.Name = "Save";
+            this.Save.Size = new System.Drawing.Size(88, 27);
+            this.Save.TabIndex = 88;
+            this.Save.Text = "&Save";
+            this.Save.UseVisualStyleBackColor = true;
+            this.Save.Click += new System.EventHandler(this.Save_Click);
             // 
             // encyclopediaDescription
             // 
@@ -771,17 +745,15 @@ namespace SwRebellionEditor
             // 
             // DefenseFacilitiesForm
             // 
-            this.AcceptButton = this.Ok;
+            this.AcceptButton = this.Save;
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.CancelButton = this.Cancel;
             this.ClientSize = new System.Drawing.Size(749, 316);
             this.Controls.Add(this.hiddenDataGroupBox);
             this.Controls.Add(this.inGameDataGroupBox);
-            this.Controls.Add(this.openNew);
-            this.Controls.Add(this.SaveAs);
             this.Controls.Add(this.Cancel);
-            this.Controls.Add(this.Ok);
+            this.Controls.Add(this.Save);
             this.Controls.Add(this.selector);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.KeyPreview = true;
@@ -844,3 +816,11 @@ namespace SwRebellionEditor
         private TextBox name;
     }
 }
+
+
+
+
+
+
+
+

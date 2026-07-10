@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.ComponentModel;
 using System.Drawing;
 using System.IO;
@@ -12,10 +12,8 @@ namespace SwRebellionEditor
         /// Required designer variable.
         /// </summary>
         private IContainer components = null;
-        private Button Open;
-        private Button SaveAs;
         private Button Cancel;
-        private Button Ok;
+        private Button Save;
         private Label field2_1Label;
         private Label idLabel;
         private Label parameterIdLabel;
@@ -49,10 +47,8 @@ namespace SwRebellionEditor
         private void InitializeComponent()
         {
             ComponentResourceManager resources = new ComponentResourceManager(typeof(SideParamTableEntryForm));
-            Open = new Button();
-            SaveAs = new Button();
             Cancel = new Button();
-            Ok = new Button();
+            Save = new Button();
             selector = new TrackBar();
             parameterId = new NumericUpDown();
             id = new NumericUpDown();
@@ -129,30 +125,6 @@ namespace SwRebellionEditor
             groupBox4.SuspendLayout();
             SuspendLayout();
             // 
-            // Open
-            // 
-            Open.Location = new Point(305, 414);
-            Open.Margin = new Padding(4, 3, 4, 3);
-            Open.Name = "Open";
-            Open.Size = new Size(88, 34);
-            Open.TabIndex = 146;
-            Open.TabStop = false;
-            Open.Text = "Open...";
-            Open.UseVisualStyleBackColor = true;
-            Open.Click += Open_Click;
-            // 
-            // SaveAs
-            // 
-            SaveAs.Location = new Point(209, 414);
-            SaveAs.Margin = new Padding(4, 3, 4, 3);
-            SaveAs.Name = "SaveAs";
-            SaveAs.Size = new Size(88, 34);
-            SaveAs.TabIndex = 147;
-            SaveAs.TabStop = false;
-            SaveAs.Text = "&SaveAs...";
-            SaveAs.UseVisualStyleBackColor = true;
-            SaveAs.Click += SaveAs_Click;
-            // 
             // Cancel
             // 
             Cancel.DialogResult = DialogResult.Cancel;
@@ -165,16 +137,16 @@ namespace SwRebellionEditor
             Cancel.UseVisualStyleBackColor = true;
             Cancel.Click += Cancel_Click;
             // 
-            // Ok
+            // Save
             // 
-            Ok.Location = new Point(17, 414);
-            Ok.Margin = new Padding(4, 3, 4, 3);
-            Ok.Name = "Ok";
-            Ok.Size = new Size(88, 34);
-            Ok.TabIndex = 153;
-            Ok.Text = "&Ok";
-            Ok.UseVisualStyleBackColor = true;
-            Ok.Click += Ok_Click;
+            Save.Location = new Point(17, 414);
+            Save.Margin = new Padding(4, 3, 4, 3);
+            Save.Name = "Save";
+            Save.Size = new Size(88, 34);
+            Save.TabIndex = 153;
+            Save.Text = "&Save";
+            Save.UseVisualStyleBackColor = true;
+            Save.Click += Save_Click;
             // 
             // selector
             // 
@@ -719,7 +691,7 @@ namespace SwRebellionEditor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
-            AcceptButton = Ok;
+            AcceptButton = Save;
             CancelButton = Cancel;
             ClientSize = new Size(772, 456);
             Controls.Add(groupBox4);
@@ -735,12 +707,10 @@ namespace SwRebellionEditor
             Controls.Add(nameLabel);
             Controls.Add(playingAsAllianceGroupBox);
             Controls.Add(idHexLabel);
-            Controls.Add(Open);
             Controls.Add(parameterId);
-            Controls.Add(SaveAs);
             Controls.Add(id);
             Controls.Add(Cancel);
-            Controls.Add(Ok);
+            Controls.Add(Save);
             Controls.Add(selector);
             Controls.Add(field2_1Label);
             Controls.Add(field2_1);
@@ -826,3 +796,5 @@ namespace SwRebellionEditor
         private GroupBox groupBox4;
     }
 }
+
+

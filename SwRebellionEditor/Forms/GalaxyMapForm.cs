@@ -27,7 +27,7 @@ public partial class GalaxyMapForm : GalaxyMapDesignForm
         // The drag-drop operations depend on these exact coordinates being preserved
 
         // Reduce button fonts to prevent text overflow
-        Ok.Font = new Font(Ok.Font.FontFamily, 8f, Ok.Font.Style);
+        Save.Font = new Font(Save.Font.FontFamily, 8f, Save.Font.Style);
         Cancel.Font = new Font(Cancel.Font.FontFamily, 8f, Cancel.Font.Style);
     }
 

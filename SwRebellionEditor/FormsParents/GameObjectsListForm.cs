@@ -13,7 +13,7 @@ namespace SwRebellionEditor;
 ///         InitializeComponent();
 ///         InitializeBaseComponent(selector);
 /// - Assign provided events to your form : GameObjectsListForm_FormClosing, GameObjectsListForm_KeyDown, GameObjectsListForm_Load
-/// - Assign provided events to your controls : Cancel_Click, Ok_Click, Open_Click, SaveAs_Click
+/// - Assign provided events to your controls : Cancel_Click, Ok_Click
 /// </summary>
 public abstract class GameObjectsListForm<TDatFile> : Form
     where TDatFile : DatFile, new()
@@ -40,16 +40,6 @@ public abstract class GameObjectsListForm<TDatFile> : Form
     protected void InitializeBaseComponent(TrackBar selector)
     {
         TrackBarSelector = selector;
-    }
-    protected void OpenSpecificGameFile()
-    {
-        var openFileDialog = new OpenFileDialog();
-        if (openFileDialog.ShowDialog() != DialogResult.OK)
-            return;
-        GameFilePath = openFileDialog.FileName;
-        GameFile = DatFile.Load<TDatFile>(GameFilePath);
-        LoadSideInfo();
-        GameFile.UnsavedData = false;
     }
 
     #endregion
@@ -129,7 +119,7 @@ public abstract class GameObjectsListForm<TDatFile> : Form
             return;
         Close();
     }
-    protected void Ok_Click(object sender, EventArgs e)
+    protected void Save_Click(object sender, EventArgs e)
     {
         if (GameFile.UnsavedData)
         {
@@ -138,37 +128,6 @@ public abstract class GameObjectsListForm<TDatFile> : Form
             GameFile.UnsavedData = false;
         }
         Close();
-    }
-    protected void Open_Click(object sender, EventArgs e)
-    {
-        if (GameFile.UnsavedData && MessageBox.Show(this, "Save file before opening a new one?", "Save data", MessageBoxButtons.YesNo) == DialogResult.Yes)
-        {
-            GameFile.Save(GameFilePath);
-            SaveSideInfo();
-            GameFile.UnsavedData = false;
-        }
-        OpenSpecificGameFile();
-        if (TrackBarSelector != null)
-            DisplaySelectedGameObject(TrackBarSelector.Value);
-        else
-            DisplaySelectedGameObject(-1);
-        DisplayGameItemsImages();
-        if (TrackBarSelector != null)
-            TrackBarSelector.Select();
-    }
-    protected void SaveAs_Click(object sender, EventArgs e)
-    {
-        var saveFileDialog = new SaveFileDialog();
-        saveFileDialog.InitialDirectory = Settings.Current.GDataFolder;
-        saveFileDialog.Filter = "Data Files (*.dat)| *.dat";
-        if (saveFileDialog.ShowDialog(this) == DialogResult.OK)
-        {
-            GameFile.Save(saveFileDialog.FileName);
-            SaveSideInfo();
-            GameFile.UnsavedData = false;
-            int num = (int)MessageBox.Show(this, "File saved", "", MessageBoxButtons.OK);
-        }
-        TrackBarSelector.Focus();
     }
 
     #endregion

@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.ComponentModel;
 using System.Drawing;
 using System.IO;
@@ -13,7 +13,7 @@ namespace SwRebellionEditor
         /// </summary>
         private System.ComponentModel.IContainer components = null;
         private Button Cancel;
-        private Button Ok;
+        private Button Save;
         private SaveFileDialog saveFileDialog;
 
         /// <summary>
@@ -39,7 +39,7 @@ namespace SwRebellionEditor
         {
             ComponentResourceManager resources = new ComponentResourceManager(typeof(GalaxyMapForm));
             Cancel = new Button();
-            Ok = new Button();
+            Save = new Button();
             saveFileDialog = new SaveFileDialog();
             galaxyMap = new PictureBox();
             sectorXLabel = new Label();
@@ -74,16 +74,16 @@ namespace SwRebellionEditor
             Cancel.UseVisualStyleBackColor = true;
             Cancel.Click += Cancel_Click;
             // 
-            // Ok
+            // Save
             // 
-            Ok.Location = new Point(13, 803);
-            Ok.Margin = new Padding(4, 3, 4, 3);
-            Ok.Name = "Ok";
-            Ok.Size = new Size(88, 27);
-            Ok.TabIndex = 19;
-            Ok.Text = "&Ok";
-            Ok.UseVisualStyleBackColor = true;
-            Ok.Click += Ok_Click;
+            Save.Location = new Point(13, 803);
+            Save.Margin = new Padding(4, 3, 4, 3);
+            Save.Name = "Save";
+            Save.Size = new Size(88, 27);
+            Save.TabIndex = 19;
+            Save.Text = "&Save";
+            Save.UseVisualStyleBackColor = true;
+            Save.Click += Save_Click;
             // 
             // saveFileDialog
             // 
@@ -258,7 +258,7 @@ namespace SwRebellionEditor
             // 
             // GalaxyMapForm
             // 
-            AcceptButton = Ok;
+            AcceptButton = Save;
             AutoScaleMode = AutoScaleMode.None;
             CancelButton = Cancel;
             ClientSize = new Size(985, 835);
@@ -280,7 +280,7 @@ namespace SwRebellionEditor
             Controls.Add(sectorXLabel);
             Controls.Add(galaxyMap);
             Controls.Add(Cancel);
-            Controls.Add(Ok);
+            Controls.Add(Save);
             Icon = (Icon)resources.GetObject("$this.Icon");
             Margin = new Padding(4, 3, 4, 3);
             Name = "GalaxyMapForm";
@@ -315,3 +315,6 @@ namespace SwRebellionEditor
         private Label systemInfo3Label;
     }
 }
+
+
+

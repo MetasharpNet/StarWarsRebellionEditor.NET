@@ -12,10 +12,8 @@ namespace SwRebellionEditor
         /// Required designer variable.
         /// </summary>
         private IContainer components = null;
-        private Button Open;
-        private Button SaveAs;
         private Button Cancel;
-        private Button Ok;
+        private Button Save;
         private Label field2_1Label;
         private Label idLabel;
         private Label parameterIdLabel;
@@ -48,10 +46,8 @@ namespace SwRebellionEditor
         /// </summary>
         private void InitializeComponent()
         {
-            Open = new Button();
-            SaveAs = new Button();
             Cancel = new Button();
-            Ok = new Button();
+            Save = new Button();
             selector = new TrackBar();
             parameterId = new NumericUpDown();
             id = new NumericUpDown();
@@ -96,30 +92,6 @@ namespace SwRebellionEditor
             ((ISupportInitialize)multiPlayer).BeginInit();
             SuspendLayout();
             // 
-            // Open
-            // 
-            Open.Location = new Point(307, 347);
-            Open.Margin = new Padding(4, 3, 4, 3);
-            Open.Name = "Open";
-            Open.Size = new Size(88, 27);
-            Open.TabIndex = 146;
-            Open.TabStop = false;
-            Open.Text = "Open...";
-            Open.UseVisualStyleBackColor = true;
-            Open.Click += Open_Click;
-            // 
-            // SaveAs
-            // 
-            SaveAs.Location = new Point(211, 347);
-            SaveAs.Margin = new Padding(4, 3, 4, 3);
-            SaveAs.Name = "SaveAs";
-            SaveAs.Size = new Size(88, 27);
-            SaveAs.TabIndex = 147;
-            SaveAs.TabStop = false;
-            SaveAs.Text = "&SaveAs...";
-            SaveAs.UseVisualStyleBackColor = true;
-            SaveAs.Click += SaveAs_Click;
-            // 
             // Cancel
             // 
             Cancel.DialogResult = DialogResult.Cancel;
@@ -132,16 +104,16 @@ namespace SwRebellionEditor
             Cancel.UseVisualStyleBackColor = true;
             Cancel.Click += Cancel_Click;
             // 
-            // Ok
+            // Save
             // 
-            Ok.Location = new Point(19, 347);
-            Ok.Margin = new Padding(4, 3, 4, 3);
-            Ok.Name = "Ok";
-            Ok.Size = new Size(88, 27);
-            Ok.TabIndex = 153;
-            Ok.Text = "&Ok";
-            Ok.UseVisualStyleBackColor = true;
-            Ok.Click += Ok_Click;
+            Save.Location = new Point(19, 347);
+            Save.Margin = new Padding(4, 3, 4, 3);
+            Save.Name = "Save";
+            Save.Size = new Size(88, 27);
+            Save.TabIndex = 153;
+            Save.Text = "&Save";
+            Save.UseVisualStyleBackColor = true;
+            Save.Click += Save_Click;
             // 
             // selector
             // 
@@ -489,7 +461,7 @@ namespace SwRebellionEditor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
-            AcceptButton = Ok;
+            AcceptButton = Save;
             CancelButton = Cancel;
             ClientSize = new Size(504, 383);
             Controls.Add(multiPlayer);
@@ -503,12 +475,10 @@ namespace SwRebellionEditor
             Controls.Add(multiPlayerLabel);
             Controls.Add(developmentLabel);
             Controls.Add(idHexLabel);
-            Controls.Add(Open);
             Controls.Add(parameterId);
-            Controls.Add(SaveAs);
             Controls.Add(id);
             Controls.Add(Cancel);
-            Controls.Add(Ok);
+            Controls.Add(Save);
             Controls.Add(selector);
             Controls.Add(field2_1Label);
             Controls.Add(field2_1);

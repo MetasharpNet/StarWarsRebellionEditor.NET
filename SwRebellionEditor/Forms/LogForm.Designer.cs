@@ -1,4 +1,4 @@
-namespace SwRebellionEditor.Forms
+﻿namespace SwRebellionEditor.Forms
 {
     partial class LogForm
     {
@@ -49,15 +49,14 @@ namespace SwRebellionEditor.Forms
             OkButton.Name = "OkButton";
             OkButton.Size = new Size(131, 23);
             OkButton.TabIndex = 2;
-            OkButton.Text = "OK";
+            OkButton.Text = "&OK";
             OkButton.UseVisualStyleBackColor = true;
             OkButton.Click += OkButton_Click;
             // 
             // LogForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
-                        AutoScaleMode = AutoScaleMode.Font;
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
             Controls.Add(OkButton);
             Controls.Add(LogTextBox);

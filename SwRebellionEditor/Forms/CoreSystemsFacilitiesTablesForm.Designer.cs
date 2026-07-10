@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.ComponentModel;
 using System.Drawing;
 using System.Windows.Forms;
@@ -14,10 +14,8 @@ namespace SwRebellionEditor
         private int currIndex;
         private static string shipSelected = "";
         private static int unitType = 0;
-        private Button openNew;
-        private Button SaveAs;
         private Button Cancel;
-        private Button Ok;
+        private Button Save;
 
         /// <summary>
         /// Clean up any resources being used.
@@ -41,10 +39,8 @@ namespace SwRebellionEditor
         private void InitializeComponent()
         {
             DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
-            openNew = new Button();
-            SaveAs = new Button();
             Cancel = new Button();
-            Ok = new Button();
+            Save = new Button();
             facilityComboBox = new ComboBox();
             delGroupButton = new Button();
             addGroupButton = new Button();
@@ -56,28 +52,9 @@ namespace SwRebellionEditor
             formulaLabel = new Label();
             ((ISupportInitialize)facilitiesDataGridView).BeginInit();
             SuspendLayout();
+            //             // SaveAs
             // 
-            // openNew
-            // 
-            openNew.Location = new Point(496, 453);
-            openNew.Margin = new Padding(4, 3, 4, 3);
-            openNew.Name = "openNew";
-            openNew.Size = new Size(88, 27);
-            openNew.TabIndex = 53;
-            openNew.Text = "Open...";
-            openNew.UseVisualStyleBackColor = true;
-            openNew.Click += Open_Click;
-            // 
-            // SaveAs
-            // 
-            SaveAs.Location = new Point(402, 453);
-            SaveAs.Margin = new Padding(4, 3, 4, 3);
-            SaveAs.Name = "SaveAs";
-            SaveAs.Size = new Size(88, 27);
-            SaveAs.TabIndex = 52;
-            SaveAs.Text = "&SaveAs...";
-            SaveAs.UseVisualStyleBackColor = true;
-            SaveAs.Click += SaveAs_Click;
+            
             // 
             // Cancel
             // 
@@ -91,16 +68,16 @@ namespace SwRebellionEditor
             Cancel.UseVisualStyleBackColor = true;
             Cancel.Click += Cancel_Click;
             // 
-            // Ok
+            // Save
             // 
-            Ok.Location = new Point(34, 453);
-            Ok.Margin = new Padding(4, 3, 4, 3);
-            Ok.Name = "Ok";
-            Ok.Size = new Size(88, 27);
-            Ok.TabIndex = 50;
-            Ok.Text = "&Ok";
-            Ok.UseVisualStyleBackColor = true;
-            Ok.Click += Ok_Click;
+            Save.Location = new Point(34, 453);
+            Save.Margin = new Padding(4, 3, 4, 3);
+            Save.Name = "Save";
+            Save.Size = new Size(88, 27);
+            Save.TabIndex = 50;
+            Save.Text = "&Save";
+            Save.UseVisualStyleBackColor = true;
+            Save.Click += Save_Click;
             // 
             // facilityComboBox
             // 
@@ -200,7 +177,7 @@ namespace SwRebellionEditor
             // 
             // RimSystemsFacilitiesTablesForm
             // 
-            AcceptButton = Ok;
+            AcceptButton = Save;
                         AutoScaleMode = AutoScaleMode.None;
             CancelButton = Cancel;
             ClientSize = new Size(609, 486);
@@ -210,10 +187,8 @@ namespace SwRebellionEditor
             Controls.Add(facilityComboBox);
             Controls.Add(delGroupButton);
             Controls.Add(addGroupButton);
-            Controls.Add(openNew);
-            Controls.Add(SaveAs);
             Controls.Add(Cancel);
-            Controls.Add(Ok);
+            Controls.Add(Save);
             Margin = new Padding(4, 3, 4, 3);
             Text = "Core Systems Facilities Table (SYFCCRTB.DAT)";
             Load += GameObjectsListForm_Load;
@@ -234,3 +209,9 @@ namespace SwRebellionEditor
         private Label formulaLabel;
     }
 }
+
+
+
+
+
+

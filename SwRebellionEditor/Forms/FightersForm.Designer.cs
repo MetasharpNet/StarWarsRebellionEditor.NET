@@ -13,10 +13,8 @@ namespace SwRebellionEditor
         /// </summary>
         private System.ComponentModel.IContainer components = null;
         private TrackBar selector;
-        private Button Open;
-        private Button SaveAs;
         private Button Cancel;
-        private Button Ok;
+        private Button Save;
         private RichTextBox encyclopediaDescription;
         private Label textStraDllIdLabel;
         private NumericUpDown textStraDllId;
@@ -110,10 +108,8 @@ namespace SwRebellionEditor
         private void InitializeComponent()
         {
             ComponentResourceManager resources = new ComponentResourceManager(typeof(FightersForm));
-            Open = new Button();
-            SaveAs = new Button();
             Cancel = new Button();
-            Ok = new Button();
+            Save = new Button();
             encyclopediaDescription = new RichTextBox();
             textStraDllIdLabel = new Label();
             textStraDllId = new NumericUpDown();
@@ -250,31 +246,7 @@ namespace SwRebellionEditor
             ((ISupportInitialize)torpedoesRange).BeginInit();
             SuspendLayout();
             // 
-            // Open
-            // 
-            Open.Location = new Point(362, 517);
-            Open.Margin = new Padding(4, 3, 4, 3);
-            Open.Name = "Open";
-            Open.Size = new Size(88, 27);
-            Open.TabIndex = 0;
-            Open.TabStop = false;
-            Open.Text = "Open...";
-            Open.UseVisualStyleBackColor = true;
-            Open.Click += Open_Click;
-            // 
-            // SaveAs
-            // 
-            SaveAs.Location = new Point(270, 517);
-            SaveAs.Margin = new Padding(4, 3, 4, 3);
-            SaveAs.Name = "SaveAs";
-            SaveAs.Size = new Size(88, 27);
-            SaveAs.TabIndex = 0;
-            SaveAs.TabStop = false;
-            SaveAs.Text = "&SaveAs...";
-            SaveAs.UseVisualStyleBackColor = true;
-            SaveAs.Click += SaveAs_Click;
-            // 
-            // Cancel
+                        //             // Cancel
             // 
             Cancel.DialogResult = DialogResult.Cancel;
             Cancel.Location = new Point(179, 517);
@@ -286,16 +258,16 @@ namespace SwRebellionEditor
             Cancel.UseVisualStyleBackColor = true;
             Cancel.Click += Cancel_Click;
             // 
-            // Ok
+            // Save
             // 
-            Ok.Location = new Point(88, 517);
-            Ok.Margin = new Padding(4, 3, 4, 3);
-            Ok.Name = "Ok";
-            Ok.Size = new Size(88, 27);
-            Ok.TabIndex = 38;
-            Ok.Text = "&Ok";
-            Ok.UseVisualStyleBackColor = true;
-            Ok.Click += Ok_Click;
+            Save.Location = new Point(88, 517);
+            Save.Margin = new Padding(4, 3, 4, 3);
+            Save.Name = "Save";
+            Save.Size = new Size(88, 27);
+            Save.TabIndex = 38;
+            Save.Text = "&Save";
+            Save.UseVisualStyleBackColor = true;
+            Save.Click += Save_Click;
             // 
             // encyclopediaDescription
             // 
@@ -1442,15 +1414,13 @@ namespace SwRebellionEditor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
-            AcceptButton = Ok;
+            AcceptButton = Save;
             CancelButton = Cancel;
             ClientSize = new Size(686, 548);
             Controls.Add(hiddenDataGroupBox);
             Controls.Add(inGameDataGroupBox);
-            Controls.Add(Open);
-            Controls.Add(SaveAs);
             Controls.Add(Cancel);
-            Controls.Add(Ok);
+            Controls.Add(Save);
             Controls.Add(selector);
             Icon = (Icon)resources.GetObject("$this.Icon");
             KeyPreview = true;
@@ -1535,3 +1505,9 @@ namespace SwRebellionEditor
         private Label warningLabel;
     }
 }
+
+
+
+
+
+

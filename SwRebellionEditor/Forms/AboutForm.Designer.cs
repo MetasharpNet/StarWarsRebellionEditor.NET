@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.ComponentModel;
 using System.Drawing;
 using System.IO;
@@ -155,22 +155,24 @@ namespace SwRebellionEditor
             // 
             // OK_Button
             // 
-            OK_Button.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
+            OK_Button.Anchor = AnchorStyles.Left;
+            OK_Button.BackColor = Color.White;
             OK_Button.DialogResult = DialogResult.Cancel;
             OK_Button.FlatAppearance.BorderSize = 2;
             OK_Button.Font = new Font("Microsoft Sans Serif", 8.25F, FontStyle.Bold);
-            OK_Button.Location = new Point(39, 374);
+            OK_Button.Location = new Point(39, 348);
             OK_Button.Margin = new Padding(4, 3, 4, 3);
             OK_Button.Name = "OK_Button";
             OK_Button.Size = new Size(88, 27);
             OK_Button.TabIndex = 1;
-            OK_Button.Text = "&OK";
+            OK_Button.Text = "&Ok";
+            OK_Button.UseVisualStyleBackColor = false;
             OK_Button.Click += OK_Button_Click;
             // 
             // AboutForm
             // 
-            AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
-            AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
+            AutoScaleDimensions = new SizeF(96F, 96F);
+            AutoScaleMode = AutoScaleMode.Dpi;
             BackColor = Color.Black;
             BackgroundImageLayout = ImageLayout.None;
             ClientSize = new Size(903, 402);

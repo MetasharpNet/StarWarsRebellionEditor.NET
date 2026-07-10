@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.ComponentModel;
 using System.Drawing;
 using System.IO;
@@ -13,10 +13,8 @@ namespace SwRebellionEditor
         /// </summary>
         private System.ComponentModel.IContainer components = null;
         private TrackBar selector;
-        private Button Open;
-        private Button SaveAs;
         private Button Cancel;
-        private Button Ok;
+        private Button Save;
         private RichTextBox encyclopediaDescription;
         private Label textStraDllIdLabel;
         private NumericUpDown textStraDllId;
@@ -129,10 +127,8 @@ namespace SwRebellionEditor
         private void InitializeComponent()
         {
             ComponentResourceManager resources = new ComponentResourceManager(typeof(CapitalShipsForm));
-            Open = new Button();
-            SaveAs = new Button();
             Cancel = new Button();
-            Ok = new Button();
+            Save = new Button();
             encyclopediaDescription = new RichTextBox();
             textStraDllIdLabel = new Label();
             textStraDllId = new NumericUpDown();
@@ -293,30 +289,6 @@ namespace SwRebellionEditor
             hiddenDataGroupBox.SuspendLayout();
             SuspendLayout();
             // 
-            // Open
-            // 
-            Open.Location = new Point(362, 565);
-            Open.Margin = new Padding(4, 3, 4, 3);
-            Open.Name = "Open";
-            Open.Size = new Size(88, 27);
-            Open.TabIndex = 0;
-            Open.TabStop = false;
-            Open.Text = "Open...";
-            Open.UseVisualStyleBackColor = true;
-            Open.Click += Open_Click;
-            // 
-            // SaveAs
-            // 
-            SaveAs.Location = new Point(270, 565);
-            SaveAs.Margin = new Padding(4, 3, 4, 3);
-            SaveAs.Name = "SaveAs";
-            SaveAs.Size = new Size(88, 27);
-            SaveAs.TabIndex = 0;
-            SaveAs.TabStop = false;
-            SaveAs.Text = "&SaveAs...";
-            SaveAs.UseVisualStyleBackColor = true;
-            SaveAs.Click += SaveAs_Click;
-            // 
             // Cancel
             // 
             Cancel.DialogResult = DialogResult.Cancel;
@@ -329,16 +301,16 @@ namespace SwRebellionEditor
             Cancel.UseVisualStyleBackColor = true;
             Cancel.Click += Cancel_Click;
             // 
-            // Ok
+            // Save
             // 
-            Ok.Location = new Point(88, 565);
-            Ok.Margin = new Padding(4, 3, 4, 3);
-            Ok.Name = "Ok";
-            Ok.Size = new Size(88, 27);
-            Ok.TabIndex = 38;
-            Ok.Text = "&Ok";
-            Ok.UseVisualStyleBackColor = true;
-            Ok.Click += Ok_Click;
+            Save.Location = new Point(88, 565);
+            Save.Margin = new Padding(4, 3, 4, 3);
+            Save.Name = "Save";
+            Save.Size = new Size(88, 27);
+            Save.TabIndex = 38;
+            Save.Text = "&Save";
+            Save.UseVisualStyleBackColor = true;
+            Save.Click += Save_Click;
             // 
             // encyclopediaDescription
             // 
@@ -1686,15 +1658,13 @@ namespace SwRebellionEditor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
-            this.AcceptButton = this.Ok;
+            this.AcceptButton = this.Save;
             this.CancelButton = this.Cancel;
             this.ClientSize = new System.Drawing.Size(686, 596);
             this.Controls.Add(this.hiddenDataGroupBox);
             this.Controls.Add(this.inGameDataGroupBox);
-            this.Controls.Add(this.Open);
-            this.Controls.Add(this.SaveAs);
             this.Controls.Add(this.Cancel);
-            this.Controls.Add(this.Ok);
+            this.Controls.Add(this.Save);
             this.Controls.Add(this.selector);
             this.Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
             this.KeyPreview = true;
@@ -1787,3 +1757,8 @@ namespace SwRebellionEditor
         private Label warningLabel;
     }
 }
+
+
+
+
+

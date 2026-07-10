@@ -12,10 +12,8 @@ namespace SwRebellionEditor
         /// Required designer variable.
         /// </summary>
         private IContainer components = null;
-        private Button Open;
-        private Button SaveAs;
         private Button Cancel;
-        private Button Ok;
+        private Button Save;
         private TrackBar selector;
         private ListView systemsListView;
         private ImageList systemsImageList;
@@ -81,10 +79,8 @@ namespace SwRebellionEditor
             ComponentResourceManager resources = new ComponentResourceManager(typeof(SystemsForm));
             systemsListView = new ListView();
             systemsImageList = new ImageList(components);
-            Open = new Button();
-            SaveAs = new Button();
             Cancel = new Button();
-            Ok = new Button();
+            Save = new Button();
             selector = new TrackBar();
             sectorGroupBox = new GroupBox();
             sectorName = new TextBox();
@@ -189,31 +185,7 @@ namespace SwRebellionEditor
             systemsImageList.ImageSize = new Size(120, 60);
             systemsImageList.TransparentColor = Color.Transparent;
             // 
-            // Open
-            // 
-            Open.Location = new Point(403, 449);
-            Open.Margin = new Padding(4, 3, 4, 3);
-            Open.Name = "Open";
-            Open.Size = new Size(88, 27);
-            Open.TabIndex = 21;
-            Open.TabStop = false;
-            Open.Text = "Open...";
-            Open.UseVisualStyleBackColor = true;
-            Open.Click += Open_Click;
-            // 
-            // SaveAs
-            // 
-            SaveAs.Location = new Point(307, 449);
-            SaveAs.Margin = new Padding(4, 3, 4, 3);
-            SaveAs.Name = "SaveAs";
-            SaveAs.Size = new Size(88, 27);
-            SaveAs.TabIndex = 20;
-            SaveAs.TabStop = false;
-            SaveAs.Text = "&SaveAs...";
-            SaveAs.UseVisualStyleBackColor = true;
-            SaveAs.Click += SaveAs_Click;
-            // 
-            // Cancel
+                        //             // Cancel
             // 
             Cancel.DialogResult = DialogResult.Cancel;
             Cancel.Location = new Point(211, 449);
@@ -225,16 +197,16 @@ namespace SwRebellionEditor
             Cancel.UseVisualStyleBackColor = true;
             Cancel.Click += Cancel_Click;
             // 
-            // Ok
+            // Save
             // 
-            Ok.Location = new Point(115, 449);
-            Ok.Margin = new Padding(4, 3, 4, 3);
-            Ok.Name = "Ok";
-            Ok.Size = new Size(88, 27);
-            Ok.TabIndex = 18;
-            Ok.Text = "&Ok";
-            Ok.UseVisualStyleBackColor = true;
-            Ok.Click += Ok_Click;
+            Save.Location = new Point(115, 449);
+            Save.Margin = new Padding(4, 3, 4, 3);
+            Save.Name = "Save";
+            Save.Size = new Size(88, 27);
+            Save.TabIndex = 18;
+            Save.Text = "&Save";
+            Save.UseVisualStyleBackColor = true;
+            Save.Click += Save_Click;
             // 
             // selector
             // 
@@ -894,7 +866,7 @@ namespace SwRebellionEditor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
-            this.AcceptButton = this.Ok;
+            this.AcceptButton = this.Save;
             this.CancelButton = this.Cancel;
             this.ClientSize = new System.Drawing.Size(949, 481);
             this.Controls.Add(this.infoLabel);
@@ -903,10 +875,8 @@ namespace SwRebellionEditor
             this.Controls.Add(this.sectorGroupBox);
             this.Controls.Add(this.familyIdInfoLabel);
             this.Controls.Add(this.systemsListView);
-            this.Controls.Add(this.Open);
-            this.Controls.Add(this.SaveAs);
             this.Controls.Add(this.Cancel);
-            this.Controls.Add(this.Ok);
+            this.Controls.Add(this.Save);
             this.Controls.Add(this.selector);
             this.Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
             this.KeyPreview = true;
@@ -970,3 +940,10 @@ namespace SwRebellionEditor
         private Label infoLabel;
     }
 }
+
+
+
+
+
+
+

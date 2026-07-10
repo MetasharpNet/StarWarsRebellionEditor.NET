@@ -12,10 +12,8 @@ namespace SwRebellionEditor
         /// Required designer variable.
         /// </summary>
         private System.ComponentModel.IContainer components = null;
-        private Button Open;
-        private Button SaveAs;
         private Button Cancel;
-        private Button Ok;
+        private Button Save;
         private GroupBox inGameDataGroupBox;
         private Label productionFamily_0Label;
         private Label field2_1Label;
@@ -67,10 +65,8 @@ namespace SwRebellionEditor
         private void InitializeComponent()
         {
             ComponentResourceManager resources = new ComponentResourceManager(typeof(SectorsForm));
-            Open = new Button();
-            SaveAs = new Button();
             Cancel = new Button();
-            Ok = new Button();
+            Save = new Button();
             selector = new TrackBar();
             familyId = new NumericUpDown();
             galaxySize = new NumericUpDown();
@@ -118,31 +114,7 @@ namespace SwRebellionEditor
             hiddenDataGroupBox.SuspendLayout();
             SuspendLayout();
             // 
-            // Open
-            // 
-            Open.Location = new Point(363, 296);
-            Open.Margin = new Padding(4, 3, 4, 3);
-            Open.Name = "Open";
-            Open.Size = new Size(88, 27);
-            Open.TabIndex = 146;
-            Open.TabStop = false;
-            Open.Text = "Open...";
-            Open.UseVisualStyleBackColor = true;
-            Open.Click += Open_Click;
-            // 
-            // SaveAs
-            // 
-            SaveAs.Location = new Point(267, 296);
-            SaveAs.Margin = new Padding(4, 3, 4, 3);
-            SaveAs.Name = "SaveAs";
-            SaveAs.Size = new Size(88, 27);
-            SaveAs.TabIndex = 147;
-            SaveAs.TabStop = false;
-            SaveAs.Text = "&SaveAs...";
-            SaveAs.UseVisualStyleBackColor = true;
-            SaveAs.Click += SaveAs_Click;
-            // 
-            // Cancel
+                        //             // Cancel
             // 
             Cancel.DialogResult = DialogResult.Cancel;
             Cancel.Location = new Point(171, 296);
@@ -154,16 +126,16 @@ namespace SwRebellionEditor
             Cancel.UseVisualStyleBackColor = true;
             Cancel.Click += Cancel_Click;
             // 
-            // Ok
+            // Save
             // 
-            Ok.Location = new Point(75, 296);
-            Ok.Margin = new Padding(4, 3, 4, 3);
-            Ok.Name = "Ok";
-            Ok.Size = new Size(88, 27);
-            Ok.TabIndex = 153;
-            Ok.Text = "&Ok";
-            Ok.UseVisualStyleBackColor = true;
-            Ok.Click += Ok_Click;
+            Save.Location = new Point(75, 296);
+            Save.Margin = new Padding(4, 3, 4, 3);
+            Save.Name = "Save";
+            Save.Size = new Size(88, 27);
+            Save.TabIndex = 153;
+            Save.Text = "&Save";
+            Save.UseVisualStyleBackColor = true;
+            Save.Click += Save_Click;
             // 
             // selector
             // 
@@ -541,7 +513,7 @@ namespace SwRebellionEditor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
-            AcceptButton = Ok;
+            AcceptButton = Save;
                         CancelButton = Cancel;
             ClientSize = new Size(650, 328);
             Controls.Add(infoLabel);
@@ -549,10 +521,8 @@ namespace SwRebellionEditor
             Controls.Add(hiddenDataGroupBox);
             Controls.Add(inGameDataGroupBox);
             Controls.Add(familyCommentLabel);
-            Controls.Add(Open);
-            Controls.Add(SaveAs);
             Controls.Add(Cancel);
-            Controls.Add(Ok);
+            Controls.Add(Save);
             Controls.Add(selector);
             FormBorderStyle = FormBorderStyle.FixedSingle;
             Icon = (Icon)resources.GetObject("$this.Icon");
@@ -589,3 +559,9 @@ namespace SwRebellionEditor
         private Label infoLabel;
     }
 }
+
+
+
+
+
+

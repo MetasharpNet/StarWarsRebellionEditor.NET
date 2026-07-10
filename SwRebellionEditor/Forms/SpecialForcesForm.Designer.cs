@@ -12,10 +12,8 @@ namespace SwRebellionEditor
         /// Required designer variable.
         /// </summary>
         private System.ComponentModel.IContainer components = null;
-        private Button Open;
-        private Button SaveAs;
         private Button Cancel;
-        private Button Ok;
+        private Button Save;
         private TrackBar selector;
         private CheckBox isAlliance;
         private CheckBox isEmpire;
@@ -143,10 +141,8 @@ namespace SwRebellionEditor
             this.selector = new System.Windows.Forms.TrackBar();
             this.isAlliance = new System.Windows.Forms.CheckBox();
             this.isEmpire = new System.Windows.Forms.CheckBox();
-            this.Open = new System.Windows.Forms.Button();
-            this.SaveAs = new System.Windows.Forms.Button();
-            this.Cancel = new System.Windows.Forms.Button();
-            this.Ok = new System.Windows.Forms.Button();
+                                    this.Cancel = new System.Windows.Forms.Button();
+            this.Save = new System.Windows.Forms.Button();
             this.specialForcesImages = new System.Windows.Forms.ImageList(this.components);
             this.specialForcesListView = new System.Windows.Forms.ListView();
             this.picture = new System.Windows.Forms.PictureBox();
@@ -1066,33 +1062,7 @@ namespace SwRebellionEditor
             this.isEmpire.TabIndex = 16;
             this.isEmpire.Text = "Empire";
             this.isEmpire.UseVisualStyleBackColor = true;
-            this.isEmpire.CheckStateChanged += new System.EventHandler(this.isEmpire_CheckStateChanged);
-            // 
-            // Open
-            // 
-            this.Open.Location = new System.Drawing.Point(459, 481);
-            this.Open.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.Open.Name = "Open";
-            this.Open.Size = new System.Drawing.Size(88, 27);
-            this.Open.TabIndex = 0;
-            this.Open.TabStop = false;
-            this.Open.Text = "Open...";
-            this.Open.UseVisualStyleBackColor = true;
-            this.Open.Click += new System.EventHandler(this.Open_Click);
-            // 
-            // SaveAs
-            // 
-            this.SaveAs.Location = new System.Drawing.Point(364, 481);
-            this.SaveAs.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.SaveAs.Name = "SaveAs";
-            this.SaveAs.Size = new System.Drawing.Size(88, 27);
-            this.SaveAs.TabIndex = 0;
-            this.SaveAs.TabStop = false;
-            this.SaveAs.Text = "&SaveAs...";
-            this.SaveAs.UseVisualStyleBackColor = true;
-            this.SaveAs.Click += new System.EventHandler(this.SaveAs_Click);
-            // 
-            // Cancel
+            this.isEmpire.CheckStateChanged += new System.EventHandler(this.isEmpire_CheckStateChanged);            //             // Cancel
             // 
             this.Cancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.Cancel.Location = new System.Drawing.Point(186, 481);
@@ -1104,16 +1074,16 @@ namespace SwRebellionEditor
             this.Cancel.UseVisualStyleBackColor = true;
             this.Cancel.Click += new System.EventHandler(this.Cancel_Click);
             // 
-            // Ok
+            // Save
             // 
-            this.Ok.Location = new System.Drawing.Point(91, 481);
-            this.Ok.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.Ok.Name = "Ok";
-            this.Ok.Size = new System.Drawing.Size(88, 27);
-            this.Ok.TabIndex = 7;
-            this.Ok.Text = "&Ok";
-            this.Ok.UseVisualStyleBackColor = true;
-            this.Ok.Click += new System.EventHandler(this.Ok_Click);
+            this.Save.Location = new System.Drawing.Point(91, 481);
+            this.Save.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.Save.Name = "Save";
+            this.Save.Size = new System.Drawing.Size(88, 27);
+            this.Save.TabIndex = 7;
+            this.Save.Text = "&Save";
+            this.Save.UseVisualStyleBackColor = true;
+            this.Save.Click += new System.EventHandler(this.Save_Click);
             // 
             // specialForcesImages
             // 
@@ -1257,7 +1227,7 @@ namespace SwRebellionEditor
             // 
             // SpecialForcesForm
             // 
-            this.AcceptButton = this.Ok;
+            this.AcceptButton = this.Save;
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.CancelButton = this.Cancel;
@@ -1265,10 +1235,8 @@ namespace SwRebellionEditor
             this.Controls.Add(this.hiddenDataGroupBox);
             this.Controls.Add(this.gameDataGroupBox);
             this.Controls.Add(this.specialForcesListView);
-            this.Controls.Add(this.Open);
-            this.Controls.Add(this.SaveAs);
             this.Controls.Add(this.Cancel);
-            this.Controls.Add(this.Ok);
+            this.Controls.Add(this.Save);
             this.Controls.Add(this.selector);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.KeyPreview = true;
@@ -1342,3 +1310,11 @@ namespace SwRebellionEditor
         private Label missionIdLabel;
     }
 }
+
+
+
+
+
+
+
+
