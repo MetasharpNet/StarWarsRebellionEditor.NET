@@ -5,6 +5,7 @@ If you like my work, please star the project on Github (top right of the page, p
 # Table of Contents
 
 - [Contact](#contact)
+- [Support](#how-to-support)
 - [Quick Procedure](#quick-procedure)
 - [Star Wars Rebellion](#star-wars-rebellion)
   - [Install](#install)
@@ -37,6 +38,12 @@ If you like my work, please star the project on Github (top right of the page, p
   - Contact : Metasharp
 - Steam : https://steamcommunity.com/app/441550/discussions/0/5913829825701729169/
 - GoG : https://www.gog.com/forum/star_wars_rebellion/star_wars_rebellion_in_2023_25th_anniv_patch_fix_fr_patch_guides
+
+# How to support?
+
+1- Star this github repository
+
+2- Tip me on : https://ko-fi.com/metasharp
 
 # Quick Procedure
 
@@ -183,7 +190,7 @@ C# 14.0 project built with .NET 10 in Visual Studio 2022 : https://visualstudio.
 ## Setup
 
 - Install the latest .NET Desktop runtime : https://dotnet.microsoft.com/en-us/download/dotnet
-  - Direct link to latest version : [https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/runtime-desktop-10.0.5-windows-x64-installer]
+  - Direct link to latest version : [https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/runtime-desktop-10.0.7-windows-x64-installer]
 - Reboot
 - Install a fresh GoG or Steam Star Wars Rebellion game
 - Download the latest editor release : https://github.com/MetasharpNet/StarWarsRebellionEditor.NET/releases
