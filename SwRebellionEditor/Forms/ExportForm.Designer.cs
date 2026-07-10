@@ -65,7 +65,10 @@ namespace SwRebellionEditor
             cancel.Size = new Size(75, 23);
             cancel.TabIndex = 1154;
             cancel.Text = "Cancel";
-            cancel.UseVisualStyleBackColor = true;
+            cancel.BackColor = Color.Red;
+            cancel.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            cancel.ForeColor = Color.White;
+            cancel.UseVisualStyleBackColor = false;
             cancel.Click += cancel_Click;
             // 
             // export

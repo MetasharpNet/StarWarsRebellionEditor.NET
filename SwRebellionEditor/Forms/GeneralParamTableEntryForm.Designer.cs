@@ -101,7 +101,10 @@ namespace SwRebellionEditor
             Cancel.Size = new Size(88, 27);
             Cancel.TabIndex = 154;
             Cancel.Text = "&Cancel";
-            Cancel.UseVisualStyleBackColor = true;
+            Cancel.BackColor = Color.Red;
+            Cancel.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            Cancel.ForeColor = Color.White;
+            Cancel.UseVisualStyleBackColor = false;
             Cancel.Click += Cancel_Click;
             // 
             // Save
@@ -112,7 +115,10 @@ namespace SwRebellionEditor
             Save.Size = new Size(88, 27);
             Save.TabIndex = 153;
             Save.Text = "&Save";
-            Save.UseVisualStyleBackColor = true;
+            Save.BackColor = Color.FromArgb(0, 192, 0);
+            Save.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            Save.ForeColor = Color.White;
+            Save.UseVisualStyleBackColor = false;
             Save.Click += Save_Click;
             // 
             // selector

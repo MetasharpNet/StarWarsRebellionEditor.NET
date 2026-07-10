@@ -1333,7 +1333,10 @@ namespace SwRebellionEditor
             this.Cancel.Size = new System.Drawing.Size(88, 27);
             this.Cancel.TabIndex = 8;
             this.Cancel.Text = "&Cancel";
-            this.Cancel.UseVisualStyleBackColor = true;
+            this.Cancel.BackColor = System.Drawing.Color.Red;
+            this.Cancel.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Cancel.ForeColor = System.Drawing.Color.White;
+            this.Cancel.UseVisualStyleBackColor = false;
             this.Cancel.Click += new System.EventHandler(this.Cancel_Click);
             // 
             // Save
@@ -1344,7 +1347,10 @@ namespace SwRebellionEditor
             this.Save.Size = new System.Drawing.Size(88, 27);
             this.Save.TabIndex = 7;
             this.Save.Text = "&Save";
-            this.Save.UseVisualStyleBackColor = true;
+            this.Save.BackColor = System.Drawing.Color.FromArgb(0, 192, 0);
+            this.Save.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Save.ForeColor = System.Drawing.Color.White;
+            this.Save.UseVisualStyleBackColor = false;
             this.Save.Click += new System.EventHandler(this.Save_Click);
             // 
             // minorCharactersImages
