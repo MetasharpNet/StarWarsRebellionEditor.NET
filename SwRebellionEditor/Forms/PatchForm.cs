@@ -789,7 +789,7 @@ public partial class PatchForm : PatchDesignForm
         if (stream.Position != 0)
             stream.Position = 0; // reset stream position
         var streamBytes = new byte[stream.Length];
-        stream.Read(streamBytes, 0, (int)stream.Length);
+        stream.ReadExactly(streamBytes);
         // find pattern in stream
         for (var start = 0; start <= streamBytes.Length - patternBytes.Length; start++)
         {
@@ -856,6 +856,7 @@ public partial class PatchForm : PatchDesignForm
                 }
                 catch (Exception ex)
                 {
+                    MessageBox.Show(this, "Failed to apply " + Path.GetFileName(filePath) + ": " + ex.Message, "Galaxy map switch", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
             }
         }
@@ -924,6 +925,7 @@ public partial class PatchForm : PatchDesignForm
                 }
                 catch (Exception ex)
                 {
+                    MessageBox.Show(this, "Failed to apply " + Path.GetFileName(filePath) + ": " + ex.Message, "Galaxy map switch", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
             }
         }

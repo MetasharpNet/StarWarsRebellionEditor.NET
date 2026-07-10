@@ -13,7 +13,7 @@ namespace SwRebellionEditor;
 ///         InitializeComponent();
 ///         InitializeBaseComponent(selector);
 /// - Assign provided events to your form : GameObjectsListForm_FormClosing, GameObjectsListForm_KeyDown, GameObjectsListForm_Load
-/// - Assign provided events to your controls : Cancel_Click, Ok_Click
+/// - Assign provided events to your controls : Cancel_Click, Save_Click
 /// </summary>
 public abstract class GameObjectsListForm<TDatFile> : Form
     where TDatFile : DatFile, new()

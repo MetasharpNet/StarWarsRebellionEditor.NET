@@ -22,7 +22,7 @@ public class RegistryKeys
                 if (String.IsNullOrWhiteSpace(InstalledLocation))
                     askPath = true;
             }
-            catch (Exception ex)
+            catch
             {
                 askPath = true;
             }

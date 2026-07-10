@@ -11,9 +11,6 @@ namespace SwRebellionEditor
         /// Required designer variable.
         /// </summary>
         private IContainer components = null;
-        private int currIndex;
-        private static string shipSelected = "";
-        private static int unitType = 0;
         private Button Cancel;
         private Button Save;
 

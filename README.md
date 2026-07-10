@@ -15,7 +15,7 @@ If you like my work, please star the project on Github (top right of the page, p
     - [Fullscreen](#fullscreen)
     - [Color Fringing](#color-fringing)
     - [Pixel Format](#pixel-format)
-- [Star Wars Rebellion Editor .NET](#star-wars-rebellion-editor-.net)
+- [Star Wars Rebellion Editor .NET](#star-wars-rebellion-editor-net)
   - [Setup](#setup)
   - [Features](#features)
   - [To Do](#to-do)
@@ -178,7 +178,7 @@ If you have another GPU brand than Nvidia or AMD, do the same as above and get s
 
 # Star Wars Rebellion Editor .NET
 
-C# 13.0 project built with .NET 9 in Visual Studio 2022 : https://visualstudio.microsoft.com/vs/community/
+C# 14.0 project built with .NET 10 in Visual Studio 2022 : https://visualstudio.microsoft.com/vs/community/
 
 ## Setup
 

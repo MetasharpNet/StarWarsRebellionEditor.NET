@@ -8,7 +8,6 @@ public partial class SystemsForm : SystemsDesignForm
 
     private string SectorsGameFilePath;
     private SECTORSD SectorsGameFile;
-    private bool HasPatchedRebexeForSprites;
     private bool HasPatchedRebexeForEncyclopedia;
 
     public SystemsForm()
@@ -23,17 +22,10 @@ public partial class SystemsForm : SystemsDesignForm
         // checking if patched rebexe.exe
         using (var stream = new FileStream(Settings.Current.REBEXEFilePath, FileMode.Open, FileAccess.ReadWrite))
         {
-            // to use 14001+ ids for planet sprites
-            stream.Position = int.Parse("5B1E5", NumberStyles.HexNumber);
-            int bB0 = stream.ReadByte();
-            int b36 = stream.ReadByte();
-            Console.WriteLine(bB0 + " " + b36);
-            if (bB0 == 176 && b36 == 54)
-                HasPatchedRebexeForSprites = true;
             // to use 14001+ ids for encyclopedia edata planets pictures
             stream.Position = int.Parse("5DED9", NumberStyles.HexNumber);
-            bB0 = stream.ReadByte();
-            b36 = stream.ReadByte();
+            int bB0 = stream.ReadByte();
+            int b36 = stream.ReadByte();
             Console.WriteLine(bB0 + " " + b36);
             if (bB0 == 176 && b36 == 54)
                 HasPatchedRebexeForEncyclopedia = true;

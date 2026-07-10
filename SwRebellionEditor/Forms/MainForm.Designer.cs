@@ -53,7 +53,6 @@ namespace SwRebellionEditor
         private ToolStripMenuItem Size800x600_ToolStripMenuItem;
         private ToolStripMenuItem Size640x480_ToolStripMenuItem;
         private ToolStripMenuItem RestoreDefaults_ToolStripMenuItem;
-        private ToolStripMenuItem GeneralParametersTables_ToolStripMenuItem;
         private ToolStripMenuItem Size1280x1024_ToolStripMenuItem;
         private ToolStripButton Sectors_Button;
         private ToolStripButton Systems_Button;
