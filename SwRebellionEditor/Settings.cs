@@ -47,7 +47,7 @@ public class Settings
     #endregion
 
     public Size BackgroundSize;
-    public string GameFolder;
+    public string GameFolder = "";
     public bool IsFirstStartup;
     public Point MainWindowTopLeftCornerPosition;
     public bool PlaySounds;
@@ -84,7 +84,7 @@ public class Settings
         CreateDefaultIfMissing(filePath);
         var deserializer = new XmlSerializer(typeof(Settings));
         TextReader textReader = new StreamReader(filePath);
-        var settings = (Settings)deserializer.Deserialize(textReader);
+        var settings = (Settings)deserializer.Deserialize(textReader)!;
         textReader.Close();
         return settings;
     }

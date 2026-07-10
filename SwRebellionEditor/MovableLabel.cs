@@ -6,14 +6,14 @@ public class MovableLabel : Label
     private int _originX;
     private int _originY;
     public int _xDiff;
-    private Label _xLabel;
+    private Label? _xLabel;
     public int _yDiff;
-    private Label _yLabel;
+    private Label? _yLabel;
     public ushort X => (ushort)(base.Location.X - _hostingPictureBox.Location.X + _originX);
     public ushort Y => (ushort)(base.Location.Y - _hostingPictureBox.Location.Y + _originY);
 
     // Used to store the current cursor shape when we start to move the control
-    private Cursor _currentCursor;
+    private Cursor _currentCursor = Cursors.Hand;
     // Holds the mouse position relative to the inside of our control when the mouse button goes down
     private Point _cursorOffset;
     // Used by the MoveMove event handler to show that the setup to move the control has completed
@@ -24,7 +24,7 @@ public class MovableLabel : Label
         return Text + " [" + X + "," + Y + "]";
     }
 
-    public MovableLabel(PictureBox hostingPictureBox, int originX = 0, int originY = 0, Label xLabel = null, Label yLabel = null)
+    public MovableLabel(PictureBox hostingPictureBox, int originX = 0, int originY = 0, Label? xLabel = null, Label? yLabel = null)
     {
         base.Cursor = Cursors.Hand;
         _hostingPictureBox = hostingPictureBox;
@@ -36,7 +36,7 @@ public class MovableLabel : Label
         MouseMove += MovableLabel_MouseMove;
         MouseUp += MovableLabel_MouseUp;
     }
-    public void MovableLabel_MouseDown(object sender, MouseEventArgs e)
+    public void MovableLabel_MouseDown(object? sender, MouseEventArgs e)
     {
         if (e.Button == MouseButtons.Left)
         {
@@ -54,12 +54,12 @@ public class MovableLabel : Label
                 _yLabel.Text = Y.ToString();
         }
     }
-    public void MovableLabel_MouseMove(object sender, MouseEventArgs e)
+    public void MovableLabel_MouseMove(object? sender, MouseEventArgs e)
     {
         if (IsMoving)
         {
             // get the screen position of the mouse pointer and map it to the position relative to the top-left corner of our parent container
-            var clientPosition = base.Parent.PointToClient(Cursor.Position);
+            var clientPosition = base.Parent!.PointToClient(Cursor.Position);
             // Calculate the new position of our control, maintaining the relative position stored by the MoveDown event
             var adjustedLocation = new Point(clientPosition.X - _cursorOffset.X, clientPosition.Y - _cursorOffset.Y);
             // Set the new position of our control

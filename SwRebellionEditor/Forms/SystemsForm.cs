@@ -1,4 +1,4 @@
-﻿using System.Globalization;
+using System.Globalization;
 
 namespace SwRebellionEditor;
 
@@ -148,13 +148,13 @@ public partial class SystemsForm : SystemsDesignForm
     }
     private void systemsListView_DoubleClick(object sender, EventArgs e)
     {
-        selector.Value = systemsListView.Items.IndexOf(systemsListView.FocusedItem);
+        selector.Value = systemsListView.Items.IndexOf(systemsListView.FocusedItem!);
         DisplaySelectedGameObject(selector.Value);
         selector.Select();
     }
     private void systemsListView_Click(object sender, EventArgs e)
     {
-        selector.Value = systemsListView.Items.IndexOf(systemsListView.FocusedItem);
+        selector.Value = systemsListView.Items.IndexOf(systemsListView.FocusedItem!);
         DisplaySelectedGameObject(selector.Value);
         selector.Select();
     }
@@ -246,7 +246,7 @@ public partial class SystemsForm : SystemsDesignForm
     #region Drag&Drop events
     private void sprite_DragDrop(object sender, DragEventArgs e)
     {
-        string[] files = (string[])e.Data.GetData(DataFormats.FileDrop);
+        string[] files = (string[])e.Data!.GetData(DataFormats.FileDrop)!;
         if (files.Length > 0)
         {
             string file = files[0];
@@ -259,7 +259,7 @@ public partial class SystemsForm : SystemsDesignForm
     }
     private void sprite_DragEnter(object sender, DragEventArgs e)
     {
-        if (e.Data.GetDataPresent(DataFormats.FileDrop))
+        if (e.Data!.GetDataPresent(DataFormats.FileDrop))
         {
             e.Effect = DragDropEffects.Copy;
         }

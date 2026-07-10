@@ -1,4 +1,4 @@
-﻿namespace SwRebellionEditor;
+namespace SwRebellionEditor;
 
 // WAVE, Bitmap, RCData, Version Info, 302
 
@@ -6,7 +6,7 @@ public class Alsprite : ResourcesDll
 {
     public Alsprite(string fileName) : base(fileName)
     {
-        NamesBitmap = new Dictionary<string, string>
+        NamesBitmap = new Dictionary<string, string?>
             {
                 { "2001" , "c3p0-anim 01" },
                 { "2041" , "c3p0-anim 02" },
@@ -47,7 +47,7 @@ public class Alsprite : ResourcesDll
                 { "19670", "c3p0-anim 22" },
                 { "19690", "c3p0-anim 23" },
             };
-        NamesWave = new Dictionary<string, string>
+        NamesWave = new Dictionary<string, string?>
             {
                 { "1017", "c3po-well, if you'll not be needing me, i'll close down for a while" },
                 { "1018", "c3po-oh, ah, ah, yes, i am here" },

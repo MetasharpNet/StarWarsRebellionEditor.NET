@@ -1,4 +1,4 @@
-﻿namespace SwRebellionEditor;
+namespace SwRebellionEditor;
 
 public partial class TroopsForm : TroopsDesignForm
 {
@@ -78,13 +78,13 @@ public partial class TroopsForm : TroopsDesignForm
 
     private void troopsListView_DoubleClick(object sender, EventArgs e)
     {
-        selector.Value = troopsListView.Items.IndexOf(troopsListView.FocusedItem);
+        selector.Value = troopsListView.Items.IndexOf(troopsListView.FocusedItem!);
         DisplaySelectedGameObject(selector.Value);
         selector.Select();
     }
     private void troopsListView_Click(object sender, EventArgs e)
     {
-        selector.Value = troopsListView.Items.IndexOf(troopsListView.FocusedItem);
+        selector.Value = troopsListView.Items.IndexOf(troopsListView.FocusedItem!);
         DisplaySelectedGameObject(selector.Value);
         selector.Select();
     }

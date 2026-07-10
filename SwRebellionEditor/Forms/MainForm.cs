@@ -58,7 +58,7 @@ public partial class MainForm : Form
     public MainForm()
     {
         InitializeComponent();
-        Text = "Star Wars Rebellion Editor .NET " + GetType().Assembly.GetName().Version.ToString() + " final";
+        Text = "Star Wars Rebellion Editor .NET " + GetType().Assembly.GetName().Version!.ToString() + " final";
     }
 
     #endregion

@@ -1,4 +1,4 @@
-﻿namespace SwRebellionEditor;
+namespace SwRebellionEditor;
 
 public class CMUNEFTB : DatFile
 {
@@ -7,8 +7,8 @@ public class CMUNEFTB : DatFile
     public uint GroupsCount; // 12
     [ArraySize(0)]
     public uint InfoLength; // 20
-    public byte[] Info; // "SeedFamilyTableEntry" as 1 byte per char
-    public CMUNEFTB_Group[] Groups;
+    public byte[] Info = null!; // "SeedFamilyTableEntry" as 1 byte per char
+    public CMUNEFTB_Group[] Groups = null!;
 }
 public class CMUNEFTB_Group
 {
@@ -19,7 +19,7 @@ public class CMUNEFTB_Group
     public uint Field5_1; // 1
     [ArraySize]
     public uint ItemsCount;
-    public CMUNEFTB_Item[] Items;
+    public CMUNEFTB_Item[] Items = null!;
     public override string ToString()
     {
         return String.Join<CMUNEFTB_Item>(",", Items);

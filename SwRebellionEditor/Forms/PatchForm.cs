@@ -10,8 +10,8 @@ public partial class PatchForm : PatchDesignForm
 {
     #region .ctor
 
-    private BackgroundWorker backgroundWorker;
-    private LogForm logForm;
+    private BackgroundWorker backgroundWorker = null!; // created by the patch buttons before any use
+    private LogForm logForm = null!;                   // created by the patch buttons before any use
 
     public PatchForm()
     {
@@ -78,7 +78,7 @@ public partial class PatchForm : PatchDesignForm
         backgroundWorker.RunWorkerAsync();
     }
 
-    private void BackgroundWorker_PatchCompleted(object sender, RunWorkerCompletedEventArgs e)
+    private void BackgroundWorker_PatchCompleted(object? sender, RunWorkerCompletedEventArgs e)
     {
         logForm.OkButton.Enabled = true;
     }
@@ -99,12 +99,12 @@ public partial class PatchForm : PatchDesignForm
 
     #region Patch
 
-    private void BackgroundWorker_PatchTest(object sender, DoWorkEventArgs e)
+    private void BackgroundWorker_PatchTest(object? sender, DoWorkEventArgs e)
     {
         Patch(true);
     }
 
-    private void BackgroundWorker_PatchFull(object sender, DoWorkEventArgs e)
+    private void BackgroundWorker_PatchFull(object? sender, DoWorkEventArgs e)
     {
         Patch(false);
     }

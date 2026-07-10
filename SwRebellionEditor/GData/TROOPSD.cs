@@ -1,4 +1,4 @@
-﻿namespace SwRebellionEditor;
+namespace SwRebellionEditor;
 
 public class TROOPSD : DatFile
 {
@@ -7,7 +7,7 @@ public class TROOPSD : DatFile
     public uint TroopsCount; // 10
     public uint FamilyId; // 16
     public uint Field4_20;  // 20
-    public TROOPSD_Troop[] Troops;
+    public TROOPSD_Troop[] Troops = null!;
 }
 public class TROOPSD_Troop
 {
@@ -30,7 +30,7 @@ public class TROOPSD_Troop
     public uint AttackStrength;
     public uint DefenseStrength;
     [Ignore]
-    public string Name;
+    public string Name = null!;
     [Ignore]
-    public string EncyclopediaDescription;
+    public string EncyclopediaDescription = null!;
 }

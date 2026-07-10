@@ -1,4 +1,4 @@
-﻿namespace SwRebellionEditor;
+namespace SwRebellionEditor;
 
 // https://swrebellion.net/forums/topic/9639-mechanics-inside-rebellion-part-ii/
 
@@ -9,8 +9,8 @@ public class SDPRTB : DatFile
     public uint SideParamTableEntriesCount;
     [ArraySize(0)]
     public uint InfoLength; // 19
-    public byte[] Info; // "SideParamTableEntry" as 1 byte per char
-    public SDPRTB_SideParamTableEntry[] SideParamTableEntries;
+    public byte[] Info = null!; // "SideParamTableEntry" as 1 byte per char
+    public SDPRTB_SideParamTableEntry[] SideParamTableEntries = null!;
 
     [Ignore]
     public SDPRTB_SideParamTableEntry MinorCharactersInSmallGalaxy => SideParamTableEntries.First(spe => spe.Id == 4);

@@ -1,4 +1,4 @@
-﻿using System.Reflection;
+using System.Reflection;
 
 namespace SwRebellionEditor;
 
@@ -34,7 +34,7 @@ public abstract class DatFile
                     inputFieldInfo.SetValue(outputObject, inputBinaryReader.ReadByte());
                     break;
                 case "Byte[]":
-                    dynamic byteArray = inputFieldInfo.GetValue(outputObject);
+                    dynamic? byteArray = inputFieldInfo.GetValue(outputObject);
                     var byteArraySize = (byteArray != null) ? byteArray.Length : arraySizes[currentArray++];
                     inputFieldInfo.SetValue(outputObject, inputBinaryReader.ReadBytes(byteArraySize));
                     break;
@@ -42,7 +42,7 @@ public abstract class DatFile
                     inputFieldInfo.SetValue(outputObject, inputBinaryReader.ReadChar());
                     break;
                 case "Char[]":
-                    dynamic charArray = inputFieldInfo.GetValue(outputObject);
+                    dynamic? charArray = inputFieldInfo.GetValue(outputObject);
                     var charArraySize = (charArray != null) ? charArray.Length : arraySizes[currentArray++];
                     inputFieldInfo.SetValue(outputObject, inputBinaryReader.ReadChars(charArraySize));
                     break;
@@ -85,14 +85,14 @@ public abstract class DatFile
                 default:
                     if (fieldType.IsArray)
                     {
-                        dynamic tArray = inputFieldInfo.GetValue(outputObject);
+                        dynamic? tArray = inputFieldInfo.GetValue(outputObject);
                         var arraySize = (tArray != null) ? tArray.Length : arraySizes[currentArray++];
                         dynamic array = Activator.CreateInstance(inputFieldInfo.FieldType, arraySize);
                         for (int i = 0; i < arraySize; ++i)
                         {
-                            dynamic arrayElement = Activator.CreateInstance(inputFieldInfo.FieldType.GetElementType());
+                            dynamic arrayElement = Activator.CreateInstance(inputFieldInfo.FieldType.GetElementType()!)!;
                             array[i] = arrayElement;
-                            LoadFields(inputBinaryReader, inputFieldInfo.FieldType.GetElementType().GetFields(), arrayElement);
+                            LoadFields(inputBinaryReader, inputFieldInfo.FieldType.GetElementType()!.GetFields(), arrayElement);
                         }
                         inputFieldInfo.SetValue(outputObject, array);
                         break;
@@ -137,68 +137,68 @@ public abstract class DatFile
             switch (fieldType.Name)
             {
                 case "7BitEncodedInt":
-                    outputBinaryWriter.Write((int)inputFieldInfo.GetValue(inputObject));
+                    outputBinaryWriter.Write((int)inputFieldInfo.GetValue(inputObject)!);
                     break;
                 case "7BitEncodedInt64":
-                    outputBinaryWriter.Write((long)inputFieldInfo.GetValue(inputObject));
+                    outputBinaryWriter.Write((long)inputFieldInfo.GetValue(inputObject)!);
                     break;
                 case "Boolean":
-                    outputBinaryWriter.Write((bool)inputFieldInfo.GetValue(inputObject));
+                    outputBinaryWriter.Write((bool)inputFieldInfo.GetValue(inputObject)!);
                     break;
                 case "Byte":
-                    outputBinaryWriter.Write((byte)inputFieldInfo.GetValue(inputObject));
+                    outputBinaryWriter.Write((byte)inputFieldInfo.GetValue(inputObject)!);
                     break;
                 case "Byte[]":
-                    outputBinaryWriter.Write((byte[])inputFieldInfo.GetValue(inputObject));
+                    outputBinaryWriter.Write((byte[])inputFieldInfo.GetValue(inputObject)!);
                     ++currentArray;
                     break;
                 case "Char":
-                    outputBinaryWriter.Write((char)inputFieldInfo.GetValue(inputObject));
+                    outputBinaryWriter.Write((char)inputFieldInfo.GetValue(inputObject)!);
                     break;
                 case "Char[]":
-                    outputBinaryWriter.Write((char[])inputFieldInfo.GetValue(inputObject));
+                    outputBinaryWriter.Write((char[])inputFieldInfo.GetValue(inputObject)!);
                     ++currentArray;
                     break;
                 case "Decimal":
-                    outputBinaryWriter.Write((decimal)inputFieldInfo.GetValue(inputObject));
+                    outputBinaryWriter.Write((decimal)inputFieldInfo.GetValue(inputObject)!);
                     break;
                 case "Double":
-                    outputBinaryWriter.Write((double)inputFieldInfo.GetValue(inputObject));
+                    outputBinaryWriter.Write((double)inputFieldInfo.GetValue(inputObject)!);
                     break;
                 case "Half":
-                    outputBinaryWriter.Write((Half)inputFieldInfo.GetValue(inputObject));
+                    outputBinaryWriter.Write((Half)inputFieldInfo.GetValue(inputObject)!);
                     break;
                 case "Int16":
-                    outputBinaryWriter.Write((short)inputFieldInfo.GetValue(inputObject));
+                    outputBinaryWriter.Write((short)inputFieldInfo.GetValue(inputObject)!);
                     break;
                 case "Int32":
-                    outputBinaryWriter.Write((int)inputFieldInfo.GetValue(inputObject));
+                    outputBinaryWriter.Write((int)inputFieldInfo.GetValue(inputObject)!);
                     break;
                 case "Int64":
-                    outputBinaryWriter.Write((long)inputFieldInfo.GetValue(inputObject));
+                    outputBinaryWriter.Write((long)inputFieldInfo.GetValue(inputObject)!);
                     break;
                 case "SByte":
-                    outputBinaryWriter.Write((sbyte)inputFieldInfo.GetValue(inputObject));
+                    outputBinaryWriter.Write((sbyte)inputFieldInfo.GetValue(inputObject)!);
                     break;
                 case "Single":
-                    outputBinaryWriter.Write((Single)inputFieldInfo.GetValue(inputObject));
+                    outputBinaryWriter.Write((Single)inputFieldInfo.GetValue(inputObject)!);
                     break;
                 case "String":
-                    outputBinaryWriter.Write((string)inputFieldInfo.GetValue(inputObject));
+                    outputBinaryWriter.Write((string)inputFieldInfo.GetValue(inputObject)!);
                     break;
                 case "UInt16":
-                    outputBinaryWriter.Write((ushort)inputFieldInfo.GetValue(inputObject));
+                    outputBinaryWriter.Write((ushort)inputFieldInfo.GetValue(inputObject)!);
                     break;
                 case "UInt32":
-                    outputBinaryWriter.Write((uint)inputFieldInfo.GetValue(inputObject));
+                    outputBinaryWriter.Write((uint)inputFieldInfo.GetValue(inputObject)!);
                     break;
                 case "UInt64":
-                    outputBinaryWriter.Write((ulong)inputFieldInfo.GetValue(inputObject));
+                    outputBinaryWriter.Write((ulong)inputFieldInfo.GetValue(inputObject)!);
                     break;
                 default:
                     if (fieldType.IsArray)
                     {
-                        dynamic array = inputFieldInfo.GetValue(inputObject);
+                        dynamic array = inputFieldInfo.GetValue(inputObject)!;
                         for (int i = 0; i < arraySizes[currentArray]; ++i)
                             SaveFields(outputBinaryWriter, array[i].GetType().GetFields(), array[i]);
                         ++currentArray;
@@ -209,7 +209,7 @@ public abstract class DatFile
             }
             var arrayAttribute = inputFieldInfo.GetCustomAttribute<ArraySizeAttribute>();
             if (arrayAttribute != null)
-                arraySizes[arrayAttribute.Id] = Convert.ToInt32(inputFieldInfo.GetValue(inputObject));
+                arraySizes[arrayAttribute.Id] = Convert.ToInt32(inputFieldInfo.GetValue(inputObject)!);
         }
     }
 
@@ -226,8 +226,8 @@ public abstract class DatFile
     public void CsvToEntries(string csv, string entriesFieldName, string entriesCountFieldName, string separator = ";")
     {
         var datFileType   = GetType();
-        var entriesField  = datFileType.GetField(entriesFieldName);
-        var entryType     = entriesField.FieldType.GetElementType();
+        var entriesField  = datFileType.GetField(entriesFieldName)!;
+        var entryType     = entriesField.FieldType.GetElementType()!;
         var entryFields   = entryType.GetFields();
         var lines         = csv.Split(Environment.NewLine);
         lines             = lines.Where(x => !string.IsNullOrWhiteSpace(x)).ToArray();
@@ -248,7 +248,7 @@ public abstract class DatFile
         }
         // entries
         uint entriesCount = 0;
-        dynamic entriesArray = Activator.CreateInstance(entriesField.FieldType, lines.Length - 1);
+        dynamic entriesArray = Activator.CreateInstance(entriesField.FieldType, lines.Length - 1)!;
         for (int i = 1; i < lines.Length; ++i)
         {
             var line = lines[i];
@@ -352,7 +352,7 @@ public abstract class DatFile
             entriesArray.SetValue(entry, entriesCount);
             ++entriesCount;
         }
-        var entriesCountField = datFileType.GetField(entriesCountFieldName);
+        var entriesCountField = datFileType.GetField(entriesCountFieldName)!;
         entriesCountField.SetValue(this, entriesCount);
         entriesField.SetValue(this, entriesArray);
     }
@@ -361,9 +361,9 @@ public abstract class DatFile
     {
         var datFileType   = GetType();
         var datFileFields = datFileType.GetFields();
-        var entriesField  = datFileType.GetField(entriesFieldName);
+        var entriesField  = datFileType.GetField(entriesFieldName)!;
         var entries       = entriesField.GetValue(this);
-        var entryType     = entriesField.FieldType.GetElementType();
+        var entryType     = entriesField.FieldType.GetElementType()!;
         var entryFields   = entryType.GetFields();
 
         var csv = "";
@@ -375,7 +375,7 @@ public abstract class DatFile
         csv += Environment.NewLine;
 
         // data
-        foreach (var entry in (dynamic)entries)
+        foreach (var entry in (dynamic)entries!)
         {
             foreach (var entryField in entryFields)
             {

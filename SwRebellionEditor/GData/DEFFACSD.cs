@@ -1,4 +1,4 @@
-﻿namespace SwRebellionEditor;
+namespace SwRebellionEditor;
 
 public class DEFFACSD : DatFile
 {
@@ -7,7 +7,7 @@ public class DEFFACSD : DatFile
     public uint DefenseFacilitiesCount; // 6
     public uint FamilyId; // 34
     public uint Field4_40; // 40
-    public DEFFACSD_DefenseFacility[] DefenseFacilities;
+    public DEFFACSD_DefenseFacility[] DefenseFacilities = null!;
 }
 public class DEFFACSD_DefenseFacility
 {
@@ -28,7 +28,7 @@ public class DEFFACSD_DefenseFacility
     public uint AttackStrength;
     public uint ShieldStrength;
     [Ignore]
-    public string Name;
+    public string Name = null!;
     [Ignore]
-    public string EncyclopediaDescription;
+    public string EncyclopediaDescription = null!;
 }

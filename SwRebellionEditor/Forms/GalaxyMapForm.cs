@@ -9,7 +9,7 @@ public partial class GalaxyMapForm : GalaxyMapDesignForm
     public List<MovableLabel> SystemsSprites;
     public SYSTEMSD SystemsGameFile;
     public string SystemsGameFilePath;
-    public MovableLabel CurrentSectorSprite;
+    public MovableLabel CurrentSectorSprite = null!; // set on first sector click
 
     public GalaxyMapForm()
     {
@@ -74,9 +74,9 @@ public partial class GalaxyMapForm : GalaxyMapDesignForm
 
     #region Changed events
 
-    private void sector_MouseDown(object sender, MouseEventArgs e)
+    private void sector_MouseDown(object? sender, MouseEventArgs e)
     {
-        CurrentSectorSprite = (MovableLabel)sender;
+        CurrentSectorSprite = (MovableLabel)sender!;
         var sector = SectorsDic[CurrentSectorSprite];
         sectorName.Text = sector.Name;
         systemName.Text = "-";
@@ -117,9 +117,9 @@ public partial class GalaxyMapForm : GalaxyMapDesignForm
         }
     }
 
-    private void sector_PositionChanged(object sender, MouseEventArgs e)
+    private void sector_PositionChanged(object? sender, MouseEventArgs e)
     {
-        var sectorSprite = (MovableLabel)sender;
+        var sectorSprite = (MovableLabel)sender!;
         if (sectorSprite.IsMoving)
         {
             var sector = SectorsDic[sectorSprite];
@@ -136,17 +136,17 @@ public partial class GalaxyMapForm : GalaxyMapDesignForm
             GameFile.UnsavedData = true;
         }
     }
-    private void system_MouseDown(object sender, MouseEventArgs e)
+    private void system_MouseDown(object? sender, MouseEventArgs e)
     {
-        var systemSprite = (MovableLabel)sender;
+        var systemSprite = (MovableLabel)sender!;
         var system = SystemsDic[systemSprite];
         systemName.Text = system.Name;
         systemX.Text = system.XPosition.ToString();
         systemY.Text = system.YPosition.ToString();
     }
-    private void system_PositionChanged(object sender, MouseEventArgs e)
+    private void system_PositionChanged(object? sender, MouseEventArgs e)
     {
-        var systemSprite = (MovableLabel)sender;
+        var systemSprite = (MovableLabel)sender!;
         if (systemSprite.IsMoving)
         {
             var system = SystemsDic[systemSprite];

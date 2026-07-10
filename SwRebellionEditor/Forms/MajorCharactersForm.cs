@@ -1,4 +1,4 @@
-﻿namespace SwRebellionEditor;
+namespace SwRebellionEditor;
 
 public partial class MajorCharactersForm : MajorCharactersDesignForm
 {
@@ -115,13 +115,13 @@ public partial class MajorCharactersForm : MajorCharactersDesignForm
 
     private void majorCharactersListView_DoubleClick(object sender, EventArgs e)
     {
-        selector.Value = majorCharactersListView.Items.IndexOf(majorCharactersListView.FocusedItem);
+        selector.Value = majorCharactersListView.Items.IndexOf(majorCharactersListView.FocusedItem!);
         DisplaySelectedGameObject(selector.Value);
         selector.Select();
     }
     private void majorCharactersListView_Click(object sender, EventArgs e)
     {
-        selector.Value = majorCharactersListView.Items.IndexOf(majorCharactersListView.FocusedItem);
+        selector.Value = majorCharactersListView.Items.IndexOf(majorCharactersListView.FocusedItem!);
         DisplaySelectedGameObject(selector.Value);
         selector.Select();
     }

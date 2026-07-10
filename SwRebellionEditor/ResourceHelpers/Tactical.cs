@@ -1,10 +1,10 @@
-﻿namespace SwRebellionEditor;
+namespace SwRebellionEditor;
 
 public class Tactical : ResourcesDll
 {
     public Tactical(string fileName) : base(fileName)
     {
-        Names301 = new Dictionary<string, string>
+        Names301 = new Dictionary<string, string?>
             {
                 // capital ships 3d models
                 { "2010", "ship-alliance-mon-calamari-cruiser_mc80-liberty-cruiser-close" },
@@ -95,7 +95,7 @@ public class Tactical : ResourcesDll
                 { "2641", "ship-empire-imperial-dreadnaught_imperial-dreadnought-medium" },
                 { "2642", "ship-empire-imperial-dreadnaught_imperial-dreadnought-far" },
             };
-        Names303 = new Dictionary<string, string>
+        Names303 = new Dictionary<string, string?>
             {
                 // fx
                 { "3020" , "fx-orange-split-blast-far-1" },
@@ -992,7 +992,7 @@ public class Tactical : ResourcesDll
                 { "EMPIRE_VINDICATOR_HEAVY_CRUISER_FAR.BMP"                     , null },
                 { "EMPIRE_VINDICATOR_HEAVY_CRUISER_MEDIUM.BMP"                  , null },
             };
-        NamesBitmap = new Dictionary<string, string>
+        NamesBitmap = new Dictionary<string, string?>
             {
                 // ui
                 { "1000", "ui-control-panel" },
@@ -1292,7 +1292,7 @@ public class Tactical : ResourcesDll
                 { "DATA_BUTTON_UP_FIGHTERGROUP_RECOVER", "ui-unpressed" },
                 { "DATA_BUTTON_UP_FIGHTERGROUP_TACTICS", "ui-unpressed" },
         };
-        NamesWave = new Dictionary<string, string>
+        NamesWave = new Dictionary<string, string?>
             {
                 { "13000", "blast" },
                 { "13001", "blast" },

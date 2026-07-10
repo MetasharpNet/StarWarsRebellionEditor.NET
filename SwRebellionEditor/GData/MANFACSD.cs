@@ -1,4 +1,4 @@
-﻿namespace SwRebellionEditor;
+namespace SwRebellionEditor;
 
 public class MANFACSD : DatFile
 {
@@ -7,7 +7,7 @@ public class MANFACSD : DatFile
     public uint ManufacturingFacilitiesCount; // 6
     public uint FamilyId; // 40
     public uint Field4_44; // 44
-    public MANFACSD_ManufacturingFacility[] ManufacturingFacilities;
+    public MANFACSD_ManufacturingFacility[] ManufacturingFacilities = null!;
 }
 public class MANFACSD_ManufacturingFacility
 {
@@ -27,7 +27,7 @@ public class MANFACSD_ManufacturingFacility
     public uint BombardmentDefense;
     public uint ProcessingRate;
     [Ignore]
-    public string Name;
+    public string Name = null!;
     [Ignore]
-    public string EncyclopediaDescription;
+    public string EncyclopediaDescription = null!;
 }

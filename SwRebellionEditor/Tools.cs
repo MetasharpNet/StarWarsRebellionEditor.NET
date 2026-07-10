@@ -48,7 +48,7 @@ public static class Tools
         if (filePath.Length <= maxLength)
             return filePath;
 
-        string directory = Path.GetDirectoryName(filePath);
+        string directory = Path.GetDirectoryName(filePath)!; // full path always has a directory here
         string fileName = Path.GetFileNameWithoutExtension(filePath);
         string extension = Path.GetExtension(filePath);
 
@@ -62,7 +62,7 @@ public static class Tools
         return Path.Combine(directory, shortenedFileName + extension);
     }
 
-    public static Bitmap ToMemoryBitmap(Bitmap b)
+    public static Bitmap? ToMemoryBitmap(Bitmap? b)
     {
         if (b == null)
             return null;
@@ -71,7 +71,7 @@ public static class Tools
         ms.Seek(0, SeekOrigin.Begin);
         return new Bitmap(ms);
     }
-    public static Bitmap ToMemoryBitmap(string filePath)
+    public static Bitmap? ToMemoryBitmap(string? filePath)
     {
         if (filePath == null || !File.Exists(filePath))
             return null;
@@ -79,7 +79,7 @@ public static class Tools
         var ms = new MemoryStream(bytes);
         return new Bitmap(ms);
     }
-    public static string ToString(byte[] text)
+    public static string ToString(byte[]? text)
     {
         if (text == null || text.Length < 1)
             return "";

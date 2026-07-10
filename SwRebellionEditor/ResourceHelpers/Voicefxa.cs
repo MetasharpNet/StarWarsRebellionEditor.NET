@@ -1,4 +1,4 @@
-﻿namespace SwRebellionEditor;
+namespace SwRebellionEditor;
 
 // WAVE, Version Info
 
@@ -6,7 +6,7 @@ public class Voicefxa : ResourcesDll
 {
     public Voicefxa(string fileName) : base(fileName)
     {
-        NamesWave = new Dictionary<string, string>
+        NamesWave = new Dictionary<string, string?>
             {
                 // alliance voice messages
                 { "14001", "the fleet is ready admiral, what are your orders" },

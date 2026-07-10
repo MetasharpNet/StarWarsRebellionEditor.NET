@@ -1,4 +1,4 @@
-﻿using System.Reflection;
+using System.Reflection;
 
 namespace SwRebellionEditor;
 
@@ -9,7 +9,7 @@ public class MNCHARSD : DatFile
     public uint MinorCharactersCount; // 54
     public uint FamilyId; // 56
     public uint Field4_60; // 60
-    public MNCHARSD_MinorCharacter[] MinorCharacters;
+    public MNCHARSD_MinorCharacter[] MinorCharacters = null!;
 
     #region Custom Import/Export
     protected override bool CustomCsvToField(FieldInfo? entryField, object? entry, string fieldName, string fieldValue)
@@ -83,13 +83,13 @@ public class MNCHARSD_MinorCharacter
     public uint IsUnableToBetray;
     public uint IsJediTrainer;
     [Ignore]
-    public string Name;
+    public string Name = null!;
     [Ignore]
-    public string AdmiralName;
+    public string AdmiralName = null!;
     [Ignore]
-    public string CommanderName;
+    public string CommanderName = null!;
     [Ignore]
-    public string GeneralName;
+    public string GeneralName = null!;
     [Ignore]
-    public string EncyclopediaDescription;
+    public string EncyclopediaDescription = null!;
 }

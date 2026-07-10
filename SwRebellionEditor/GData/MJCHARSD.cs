@@ -1,4 +1,4 @@
-﻿using System.Reflection;
+using System.Reflection;
 
 namespace SwRebellionEditor;
 
@@ -9,7 +9,7 @@ public class MJCHARSD : DatFile
     public uint MajorCharactersCount; // 6
     public uint FamilyId; // 48
     public uint Field4_56; // 56
-    public MJCHARSD_Character[] MajorCharacters;
+    public MJCHARSD_Character[] MajorCharacters = null!;
 
     #region Custom Import/Export
     protected override bool CustomCsvToField(FieldInfo? entryField, object? entry, string fieldName, string fieldValue)
@@ -83,13 +83,13 @@ public class MJCHARSD_Character
     public uint IsUnableToBetray;
     public uint IsJediTrainer;
     [Ignore]
-    public string Name;
+    public string Name = null!;
     [Ignore]
-    public string AdmiralName;
+    public string AdmiralName = null!;
     [Ignore]
-    public string CommanderName;
+    public string CommanderName = null!;
     [Ignore]
-    public string GeneralName;
+    public string GeneralName = null!;
     [Ignore]
-    public string EncyclopediaDescription;
+    public string EncyclopediaDescription = null!;
 }

@@ -2,8 +2,8 @@
 
 public class SAVEGAME
 {
-    private static OpenFileDialog openFileDialog;
-    private static string SaveGameFullPathname;
+    private static OpenFileDialog? openFileDialog;
+    private static string SaveGameFullPathname = "";
     public static int numUnits = 200;
     public static bool unsavedSaveGameData;
     private static bool lockChange;
@@ -11,7 +11,7 @@ public class SAVEGAME
     public static uint headerUnknown2;
     public static uint headerFamlyNum;
     public static uint headerUnknown3;
-    public static SavegameChunks[] SaveGame;
+    public static SavegameChunks[] SaveGame = null!; // allocated by the SAVEGAME() constructor
 
     public SAVEGAME()
     {

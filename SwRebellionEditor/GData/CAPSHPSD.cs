@@ -1,4 +1,4 @@
-﻿namespace SwRebellionEditor;
+namespace SwRebellionEditor;
 
 public class CAPSHPSD : DatFile
 {
@@ -7,7 +7,7 @@ public class CAPSHPSD : DatFile
     public uint CapitalShipsCount; // 30
     public uint FamilyId; // 20
     public uint Field4_28; // 28
-    public CAPSHPSD_CapitalShip[] CapitalShips;
+    public CAPSHPSD_CapitalShip[] CapitalShips = null!;
 }
 public class CAPSHPSD_CapitalShip
 {
@@ -63,7 +63,7 @@ public class CAPSHPSD_CapitalShip
     public uint TroopCapacity;
     public uint Field51_0; // 0
     [Ignore]
-    public string Name;
+    public string Name = null!;
     [Ignore]
-    public string EncyclopediaDescription;
+    public string EncyclopediaDescription = null!;
 }

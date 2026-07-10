@@ -27,7 +27,7 @@ public class ResourcesDll
     protected static extern IntPtr BeginUpdateResourceW(string pFileName, bool bDeleteExistingResources);
 
     [DllImport("kernel32.dll", SetLastError = true, CharSet = CharSet.Unicode, ExactSpelling = true, CallingConvention = CallingConvention.StdCall)]
-    protected static extern bool UpdateResourceW(IntPtr hUpdate, IntPtr lpType, IntPtr lpName, ushort wLanguage, byte[] lpData, UInt32 cbData);
+    protected static extern bool UpdateResourceW(IntPtr hUpdate, IntPtr lpType, IntPtr lpName, ushort wLanguage, byte[]? lpData, UInt32 cbData);
 
     [DllImport("kernel32.dll", SetLastError = true, CharSet = CharSet.Unicode, ExactSpelling = true, CallingConvention = CallingConvention.StdCall)]
     protected static extern bool EndUpdateResourceW(IntPtr hUpdate, bool fDiscard);
@@ -182,20 +182,20 @@ public class ResourcesDll
         if (h == IntPtr.Zero)
             throw new Win32Exception(Marshal.GetLastWin32Error());
 
-        if (bytes != null && bytes.Length == 0)
-            bytes = null;
+        // UpdateResourceW deletes the resource when lpData is null (empty input)
+        byte[]? data = bytes.Length == 0 ? null : bytes;
 
-        if (!UpdateResourceW(h, 301, idAsNint, lang, bytes, (bytes == null ? 0 : (uint)bytes.Length)))
+        if (!UpdateResourceW(h, 301, idAsNint, lang, data, (data == null ? 0 : (uint)data.Length)))
             throw new Win32Exception(Marshal.GetLastWin32Error());
 
         if (!EndUpdateResourceW(h, false))
             throw new Win32Exception(Marshal.GetLastWin32Error());
 
         if (RT_301.ContainsKey(id))
-            RT_301[id] = bytes;
+            RT_301[id] = data!;
         else
         {
-            RT_301.Add(id, bytes);
+            RT_301.Add(id, data!);
             RT_301_lang.Add(id, lang);
         }
     }
@@ -225,20 +225,20 @@ public class ResourcesDll
         if (h == IntPtr.Zero)
             throw new Win32Exception(Marshal.GetLastWin32Error());
 
-        if (bytes != null && bytes.Length == 0)
-            bytes = null;
+        // UpdateResourceW deletes the resource when lpData is null (empty input)
+        byte[]? data = bytes.Length == 0 ? null : bytes;
 
-        if (!UpdateResourceW(h, 303, idAsNint, lang, bytes, (bytes == null ? 0 : (uint)bytes.Length)))
+        if (!UpdateResourceW(h, 303, idAsNint, lang, data, (data == null ? 0 : (uint)data.Length)))
             throw new Win32Exception(Marshal.GetLastWin32Error());
 
         if (!EndUpdateResourceW(h, false))
             throw new Win32Exception(Marshal.GetLastWin32Error());
 
         if (RT_303.ContainsKey(id))
-            RT_303[id] = bytes;
+            RT_303[id] = data!;
         else
         {
-            RT_303.Add(id, bytes);
+            RT_303.Add(id, data!);
             RT_303_lang.Add(id, lang);
         }
     }
@@ -265,7 +265,7 @@ public class ResourcesDll
             throw new Win32Exception(Marshal.GetLastWin32Error());
 
         var bitmapFile = new BitmapFile(bitmapFilePath);
-        var bytes = bitmapFile.Bitmap.Data;
+        byte[]? bytes = bitmapFile.Bitmap.Data;
         if (bytes != null && bytes.Length == 0)
             bytes = null;
 
@@ -378,20 +378,20 @@ public class ResourcesDll
         if (h == IntPtr.Zero)
             throw new Win32Exception(Marshal.GetLastWin32Error());
 
-        if (bytes != null && bytes.Length == 0)
-            bytes = null;
+        // UpdateResourceW deletes the resource when lpData is null (empty input)
+        byte[]? data = bytes.Length == 0 ? null : bytes;
 
-        if (!UpdateResourceW(h, 646, idAsNint, lang, bytes, (bytes == null ? 0 : (uint)bytes.Length)))
+        if (!UpdateResourceW(h, 646, idAsNint, lang, data, (data == null ? 0 : (uint)data.Length)))
             throw new Win32Exception(Marshal.GetLastWin32Error());
 
         if (!EndUpdateResourceW(h, false))
             throw new Win32Exception(Marshal.GetLastWin32Error());
 
         if (RT_WAVE.ContainsKey(id))
-            RT_WAVE[id] = bytes;
+            RT_WAVE[id] = data!;
         else
         {
-            RT_WAVE.Add(id, bytes);
+            RT_WAVE.Add(id, data!);
             RT_WAVE_lang.Add(id, lang);
         }
     }
@@ -525,13 +525,14 @@ public class ResourcesDll
 
     #region Names
 
-    public Dictionary<string, string> Names301;
+    // value null = keep the raw resource id as filename (see Export* methods)
+    public Dictionary<string, string?> Names301 = new();
 
-    public Dictionary<string, string> Names303;
+    public Dictionary<string, string?> Names303 = new();
 
-    public Dictionary<string, string> NamesBitmap;
+    public Dictionary<string, string?> NamesBitmap = new();
 
-    public Dictionary<string, string> NamesWave;
+    public Dictionary<string, string?> NamesWave = new();
 
     #endregion
 }

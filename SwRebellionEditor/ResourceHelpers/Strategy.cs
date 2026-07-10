@@ -1,4 +1,4 @@
-﻿namespace SwRebellionEditor;
+namespace SwRebellionEditor;
 
 // WAVE, Bitmap, RCData, Version Info
 
@@ -6,7 +6,7 @@ public class Strategy : ResourcesDll
 {
     public Strategy(string fileName) : base(fileName)
     {
-        NamesBitmap = new Dictionary<string, string>
+        NamesBitmap = new Dictionary<string, string?>
             {
                 // ui
                 { "900"  , "ui-command-bridge-alliance" },
@@ -1271,7 +1271,7 @@ public class Strategy : ResourcesDll
                 { "14199", "system-zonama-sekot-(atlas)" },
                 { "14200", "system-zygerria" },
             };
-        NamesWave = new Dictionary<string, string>
+        NamesWave = new Dictionary<string, string?>
             {
                 {"600" , "" },
                 {"601" , "" },

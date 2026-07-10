@@ -1,4 +1,4 @@
-﻿namespace SwRebellionEditor;
+namespace SwRebellionEditor;
 
 public class GNPRTB : DatFile
 {
@@ -7,8 +7,8 @@ public class GNPRTB : DatFile
     public uint GeneralParamTableEntriesCount; // 213
     [ArraySize(0)]
     public uint InfoLength; // 22
-    public byte[] Info; // "GeneralParamTableEntry" as 1 byte per char
-    public GNPRTB_GeneralParamTableEntry[] GeneralParamTableEntries;
+    public byte[] Info = null!; // "GeneralParamTableEntry" as 1 byte per char
+    public GNPRTB_GeneralParamTableEntry[] GeneralParamTableEntries = null!;
 
     public override void PostLoad()
     {

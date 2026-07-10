@@ -1,4 +1,4 @@
-﻿namespace SwRebellionEditor;
+namespace SwRebellionEditor;
 
 public partial class AllianceUnitsTableForm : AllianceUnitsTableDesignForm
 {
@@ -78,7 +78,7 @@ public partial class AllianceUnitsTableForm : AllianceUnitsTableDesignForm
         {
             var groupId = e.RowIndex;
             var group = GameFile.Groups[groupId];
-            group.RandomTreshold = uint.Parse(groupsDataGridView.Rows[e.RowIndex].Cells[e.ColumnIndex].Value.ToString());
+            group.RandomTreshold = uint.Parse(groupsDataGridView.Rows[e.RowIndex].Cells[e.ColumnIndex].Value!.ToString()!);
             UpdateIndexes();
             GameFile.UnsavedData = true;
         }

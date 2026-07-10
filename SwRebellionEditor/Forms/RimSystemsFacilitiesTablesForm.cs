@@ -1,4 +1,4 @@
-﻿namespace SwRebellionEditor;
+namespace SwRebellionEditor;
 
 public partial class RimSystemsFacilitiesTablesForm : RimSystemsFacilitiesTablesDesignForm
 {
@@ -58,7 +58,7 @@ public partial class RimSystemsFacilitiesTablesForm : RimSystemsFacilitiesTables
         {
             var facilityId = e.RowIndex;
             var facility = GameFile.Facilities[facilityId];
-            facility.RandomTreshold = uint.Parse(facilitiesDataGridView.Rows[e.RowIndex].Cells[e.ColumnIndex].Value.ToString());
+            facility.RandomTreshold = uint.Parse(facilitiesDataGridView.Rows[e.RowIndex].Cells[e.ColumnIndex].Value!.ToString()!);
             UpdateIndexes();
             GameFile.UnsavedData = true;
             _eventsEnabled = true;
@@ -78,7 +78,7 @@ public partial class RimSystemsFacilitiesTablesForm : RimSystemsFacilitiesTables
             Entry = (uint)GameFile.Facilities.Length + 1,
             Field2_1 = 1,
             RandomTreshold = 100,
-            Facility = Identifier.ToValue(facilityComboBox.SelectedItem.ToString())
+            Facility = Identifier.ToValue(facilityComboBox.SelectedItem.ToString()!)
         };
         var facilities = new List<SYFCRMTB_Facility>(GameFile.Facilities);
         facilities.Add(facility);

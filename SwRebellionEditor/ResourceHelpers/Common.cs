@@ -1,4 +1,4 @@
-﻿namespace SwRebellionEditor;
+namespace SwRebellionEditor;
 
 // WAVE, Bitmap, RCData, Version Info
 
@@ -6,7 +6,7 @@ public class Common : ResourcesDll
 {
     public Common(string fileName) : base(fileName)
     {
-        NamesBitmap = new Dictionary<string, string>
+        NamesBitmap = new Dictionary<string, string?>
             {
                 { "10001", "select galaxy size-huge-low" },
                 { "10002", "select galaxy size-large-mid" },
@@ -335,7 +335,7 @@ public class Common : ResourcesDll
                 { "COCKPIT_BUTTON_GAMESCALE_LARGE_UP", "large galaxy" },
                 { "COCKPIT_BUTTON_GAMESCALE_STD_UP"  , "standard galaxy" },
             };
-        NamesWave = new Dictionary<string, string>
+        NamesWave = new Dictionary<string, string?>
             {
                 { "8000", "main menu-galaxy size" },
                 { "8001", "main menu-setup multiplayer" },

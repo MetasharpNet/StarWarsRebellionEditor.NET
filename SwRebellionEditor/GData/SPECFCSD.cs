@@ -1,4 +1,4 @@
-﻿namespace SwRebellionEditor;
+namespace SwRebellionEditor;
 
 public class SPECFCSD : DatFile
 {
@@ -7,7 +7,7 @@ public class SPECFCSD : DatFile
     public uint SpecialForcesCount; // 9
     public uint FamilyId; // 60
     public uint Field4_64; // 64
-    public SPECFCSD_SpecialForce[] SpecialForces;
+    public SPECFCSD_SpecialForce[] SpecialForces = null!;
 }
 public class SPECFCSD_SpecialForce
 {
@@ -42,7 +42,7 @@ public class SPECFCSD_SpecialForce
     public uint LoyaltyVariance;
     public uint MissionId; // 2^n
     [Ignore]
-    public string Name;
+    public string Name = null!;
     [Ignore]
-    public string EncyclopediaDescription;
+    public string EncyclopediaDescription = null!;
 }

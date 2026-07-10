@@ -4,7 +4,7 @@ using System.Drawing.Imaging;
 
 public class BinImage
 {
-    public byte[] Bytes;
+    public byte[] Bytes = null!; // populated by Set() from every non-empty constructor
     // Format
     // uint: Width
     // uint: Height
@@ -15,7 +15,7 @@ public class BinImage
 
     public AdobeColorTable ColorTable = new AdobeColorTable();
 
-    public byte[,] IndexedColors;
+    public byte[,] IndexedColors = null!; // populated by Set(); ToBitmap() checks it at runtime
 
     public BinImage()
     {
@@ -96,7 +96,7 @@ public class BinImage
     {
         Width = pixelSquaresWidthPerColor * 16;
         Height = pixelSquaresWidthPerColor * 16;
-        ColorTable = null;
+        ColorTable = null!; // palette tester has no color table; ToBitmap() checks it at runtime
         Bytes = new byte[Width * Height];
         var bytes = new List<byte>();
         bytes.AddRange(BitConverter.GetBytes(Width));

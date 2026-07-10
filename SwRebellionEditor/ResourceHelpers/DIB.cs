@@ -15,7 +15,7 @@ namespace SwRebellionEditor;
 
 public static class DIB
 {
-    public static Bitmap ToDDB(DeviceIndependentBitmap dib, string filePath = null)
+    public static Bitmap? ToDDB(DeviceIndependentBitmap dib, string? filePath = null)
     {
         var ddbHeaderSize = 54;
         int dibWidth = dib.Image.Width;

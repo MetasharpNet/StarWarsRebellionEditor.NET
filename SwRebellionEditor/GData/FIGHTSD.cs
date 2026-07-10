@@ -1,4 +1,4 @@
-﻿namespace SwRebellionEditor;
+namespace SwRebellionEditor;
 
 public class FIGHTSD : DatFile
 {
@@ -7,7 +7,7 @@ public class FIGHTSD : DatFile
     public uint FightersCount; // 8
     public uint FamilyId; // 28
     public uint Field4_32; // 32
-    public FIGHTSD_Fighter[] Fighters;
+    public FIGHTSD_Fighter[] Fighters = null!;
 }
 public class FIGHTSD_Fighter
 {
@@ -55,7 +55,7 @@ public class FIGHTSD_Fighter
     public uint SquadronSize;
     public uint BombardmentDefense;
     [Ignore]
-    public string Name;
+    public string Name = null!;
     [Ignore]
-    public string EncyclopediaDescription;
+    public string EncyclopediaDescription = null!;
 }

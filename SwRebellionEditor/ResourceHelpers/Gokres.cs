@@ -1,4 +1,4 @@
-﻿namespace SwRebellionEditor;
+namespace SwRebellionEditor;
 
 // Bitmap, Version Info
 
@@ -6,7 +6,7 @@ public class Gokres : ResourcesDll
 {
     public Gokres(string fileName) : base(fileName)
     {
-        NamesBitmap = new Dictionary<string, string>
+        NamesBitmap = new Dictionary<string, string?>
             {
                 // facilities (status window)
                 { "1"    , "status-facility-mine" },

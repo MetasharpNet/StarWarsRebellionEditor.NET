@@ -1,4 +1,4 @@
-﻿namespace SwRebellionEditor;
+namespace SwRebellionEditor;
 
 // WAVE, Bitmap, RCData, Version Info, 302
 
@@ -6,7 +6,7 @@ public class Emsprite : ResourcesDll
 {
     public Emsprite(string fileName) : base(fileName)
     {
-        NamesBitmap = new Dictionary<string, string>
+        NamesBitmap = new Dictionary<string, string?>
             {
                 { "2001" , "droid-anim 01" },
                 { "2100" , "droid-anim 02" },
@@ -43,7 +43,7 @@ public class Emsprite : ResourcesDll
                 { "8770" , "droid-anim 25" },
                 { "8790" , "droid-anim 26" },
             };
-        NamesWave = new Dictionary<string, string>
+        NamesWave = new Dictionary<string, string?>
             {
                 { "1100" , "droid-damage to one or more ships in that fleet prevents them from entering hyperspace" },
                 { "1101" , "droid-if you recall, you ordered that system destroyed. no units can be sent to that location" },

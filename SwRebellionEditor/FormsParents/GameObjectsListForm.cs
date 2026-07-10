@@ -18,9 +18,9 @@ namespace SwRebellionEditor;
 public abstract class GameObjectsListForm<TDatFile> : Form
     where TDatFile : DatFile, new()
 {
-    public TDatFile GameFile;
-    public string GameFilePath;
-    protected TrackBar TrackBarSelector;
+    public TDatFile GameFile = null!;     // assigned by every derived constructor before use (see class doc)
+    public string GameFilePath = null!;   // assigned by every derived constructor before use (see class doc)
+    protected TrackBar? TrackBarSelector; // stays null for forms without a selector
     public List<MemoryStream> ImagesMemoryStreams = new List<MemoryStream>();
 
     #region Business Layer
@@ -154,12 +154,12 @@ public abstract class GameObjectsListForm<TDatFile> : Form
 
     #region Utilities
 
-    public Image GetEncyclopediaImageAndAddToList(int edataId, ImageList? imagesList = null, Image? defaultImage = null)
+    public Image? GetEncyclopediaImageAndAddToList(int edataId, ImageList? imagesList = null, Image? defaultImage = null)
     {
         return GetEncyclopediaImageAndAddToList("EDATA." + edataId.ToString("000"), imagesList, defaultImage);
     }
 
-    public Image GetEncyclopediaImageAndAddToList(string edataId, ImageList? imagesList = null, Image? defaultImage = null)
+    public Image? GetEncyclopediaImageAndAddToList(string edataId, ImageList? imagesList = null, Image? defaultImage = null)
     {
         var filepath = Path.Combine(Settings.Current.EDataFolder, edataId);
         if (File.Exists(filepath))
@@ -175,7 +175,7 @@ public abstract class GameObjectsListForm<TDatFile> : Form
         else
         {
             if (imagesList != null)
-                imagesList.Images.Add(defaultImage);
+                imagesList.Images.Add(defaultImage!); // callers always provide a default image alongside an image list
         }
         return null;
     }

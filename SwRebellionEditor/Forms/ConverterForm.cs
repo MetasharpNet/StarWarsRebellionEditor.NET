@@ -17,7 +17,7 @@ public partial class ConverterForm : Form
 
     private void source_DragDrop(object sender, DragEventArgs e)
     {
-        var filesPaths = ((string[])e.Data.GetData(DataFormats.FileDrop)).ToList();
+        var filesPaths = ((string[])e.Data!.GetData(DataFormats.FileDrop)!).ToList();
         var actFiles = filesPaths.Where(f => f.ToLowerInvariant().EndsWith(".act")).ToList();
         foreach (var file in filesPaths.Where(f => !f.ToLowerInvariant().EndsWith(".act")))
         {
@@ -36,9 +36,9 @@ public partial class ConverterForm : Form
                     else
                         bi = new BinImage(b, new AdobeColorTable(colorTable.Text), !extendedColorTable.Checked);
                     destination.Image = Tools.ToMemoryBitmap(bi.ToBitmap());
-                    bi.Save(Path.Combine(Path.GetDirectoryName(file), Path.GetFileNameWithoutExtension(file) + ".bin"));
+                    bi.Save(Path.Combine(Path.GetDirectoryName(file)!, Path.GetFileNameWithoutExtension(file) + ".bin"));
                     if (extendedColorTable.Checked)
-                        bi.ColorTable.Save(Path.Combine(Path.GetDirectoryName(file), Path.GetFileNameWithoutExtension(file) + ".act"));
+                        bi.ColorTable.Save(Path.Combine(Path.GetDirectoryName(file)!, Path.GetFileNameWithoutExtension(file) + ".act"));
                     b.Dispose();
 
                     if (bmpToBmp.Checked)
@@ -46,7 +46,7 @@ public partial class ConverterForm : Form
                         b = bi.ToBitmap();
                         source.Image = Tools.ToMemoryBitmap(b);
                         destination.Image = Tools.ToMemoryBitmap(bi.ToBitmap());
-                        b.Save(Path.Combine(Path.GetDirectoryName(file), Path.GetFileNameWithoutExtension(file) + "+.bmp"));
+                        b.Save(Path.Combine(Path.GetDirectoryName(file)!, Path.GetFileNameWithoutExtension(file) + "+.bmp"));
                         b.Dispose();
                     }
                 }
@@ -60,7 +60,7 @@ public partial class ConverterForm : Form
                     var b = bi.ToBitmap();
                     source.Image = Tools.ToMemoryBitmap(b);
                     destination.Image = Tools.ToMemoryBitmap(bi.ToBitmap());
-                    b.Save(Path.Combine(Path.GetDirectoryName(file), Path.GetFileNameWithoutExtension(file) + ".bmp"));
+                    b.Save(Path.Combine(Path.GetDirectoryName(file)!, Path.GetFileNameWithoutExtension(file) + ".bmp"));
                     b.Dispose();
                 }
             }
@@ -69,7 +69,7 @@ public partial class ConverterForm : Form
 
     private void source_DragEnter(object sender, DragEventArgs e)
     {
-        if (e.Data.GetDataPresent(DataFormats.FileDrop))
+        if (e.Data!.GetDataPresent(DataFormats.FileDrop))
         {
             e.Effect = DragDropEffects.Copy;
         }

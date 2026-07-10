@@ -1,4 +1,4 @@
-﻿namespace SwRebellionEditor;
+namespace SwRebellionEditor;
 
 public partial class SpecialForcesForm : SpecialForcesDesignForm
 {
@@ -90,13 +90,13 @@ public partial class SpecialForcesForm : SpecialForcesDesignForm
 
     private void specialForcesListView_DoubleClick(object sender, EventArgs e)
     {
-        selector.Value = specialForcesListView.Items.IndexOf(specialForcesListView.FocusedItem);
+        selector.Value = specialForcesListView.Items.IndexOf(specialForcesListView.FocusedItem!);
         DisplaySelectedGameObject(selector.Value);
         selector.Select();
     }
     private void specialForcesListView_Click(object sender, EventArgs e)
     {
-        selector.Value = specialForcesListView.Items.IndexOf(specialForcesListView.FocusedItem);
+        selector.Value = specialForcesListView.Items.IndexOf(specialForcesListView.FocusedItem!);
         DisplaySelectedGameObject(selector.Value);
         selector.Select();
     }

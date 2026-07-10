@@ -1,4 +1,4 @@
-﻿namespace SwRebellionEditor;
+namespace SwRebellionEditor;
 
 public class PROFACSD : DatFile
 {
@@ -7,7 +7,7 @@ public class PROFACSD : DatFile
     public uint ProductionFacilitiesCount; // 2
     public uint FamilyId; // 44
     public uint Field4_48; // 48
-    public PROFACSD_ProductionFacility[] ProductionFacilities;
+    public PROFACSD_ProductionFacility[] ProductionFacilities = null!;
 }
 public class PROFACSD_ProductionFacility
 {
@@ -27,7 +27,7 @@ public class PROFACSD_ProductionFacility
     public uint BombardmentDefense;
     public uint ProcessingRate;
     [Ignore]
-    public string Name;
+    public string Name = null!;
     [Ignore]
-    public string EncyclopediaDescription;
+    public string EncyclopediaDescription = null!;
 }
