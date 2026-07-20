@@ -346,7 +346,7 @@ The 25th anniversary patch aims to refresh the game experience with mostly canno
 
 ## Statistics
 
-GitHub Downloads stats : https://hanadigital.github.io/grev/?user=MetasharpNet&repo=StarWarsRebellionEditor.NET
+GitHub Downloads stats : https://grev.shehryar.ae/?user=MetasharpNet&repo=StarWarsRebellionEditor.NET
 
 ---
 
