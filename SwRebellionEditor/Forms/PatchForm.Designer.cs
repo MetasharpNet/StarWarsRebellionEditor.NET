@@ -77,14 +77,14 @@ namespace SwRebellionEditor
             // 
             // cancel
             // 
+            cancel.BackColor = Color.Red;
+            cancel.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            cancel.ForeColor = Color.White;
             cancel.Location = new Point(604, 326);
             cancel.Name = "cancel";
             cancel.Size = new Size(75, 23);
             cancel.TabIndex = 1154;
             cancel.Text = "Cancel";
-            cancel.BackColor = Color.Red;
-            cancel.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            cancel.ForeColor = Color.White;
             cancel.UseVisualStyleBackColor = false;
             cancel.Click += cancel_Click;
             // 
@@ -181,7 +181,7 @@ namespace SwRebellionEditor
             label1Requirement.Name = "label1Requirement";
             label1Requirement.Size = new Size(253, 15);
             label1Requirement.TabIndex = 1165;
-            label1Requirement.Text = "Includes update 1.02 (dgvoodoo2 directx 2.87.3)";
+            label1Requirement.Text = "Includes update 1.02 (dgvoodoo2 directx 2.87.5)";
             // 
             // label1
             // 
